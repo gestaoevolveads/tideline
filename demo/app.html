@@ -1125,6 +1125,26 @@ if (!localStorage.getItem('tl_demo_auth')) {
 let gMarine = null, gForecast = null, gSelectedIdx = 0, gSelectedDay = 0;
 let gBeach = { name:'Praia do Forte', city:'Cabo Frio', state:'RJ', lat:-22.88, lon:-42.01, region:'sudeste', art:'na' };
 let gLastScore=0, gLastWaveH=0, gLastWaveP=0, gLastWind='';
+let gNarratorCache = null;
+
+/* ── NARRATOR CACHE ─────────────────────────────────── */
+async function loadNarratorCache() {
+  try {
+    const res = await fetch('./narrator-cache.json?v=' + Date.now());
+    if (!res.ok) return;
+    gNarratorCache = await res.json();
+  } catch (e) { /* silently fall back to templates */ }
+}
+
+function getNarratorPeriod(beachName, timeStr) {
+  if (!gNarratorCache || !beachName) return null;
+  const bd = gNarratorCache.beaches[beachName];
+  if (!bd || bd.erro) return null;
+  const dateKey = timeStr.split('T')[0];
+  const h = parseInt(timeStr.split('T')[1]);
+  const periodo = h >= 5 && h < 11 ? 'manha' : h >= 11 && h < 18 ? 'tarde' : 'noite';
+  return bd.dias?.[dateKey]?.[periodo] || null;
+}
 
 /* art = artigo locativo: 'na', 'no', 'em' */
 function beachArticle(beach) {
@@ -1839,23 +1859,27 @@ function renderMar(marine, forecast, idx) {
   const tide=buildTideGraph();
   const dailyHtml=buildDailyForecast(marine,forecast);
 
-  const headline = scoreToHeadline(score, gBeach);
+  const narrator = getNarratorPeriod(gBeach?.name, mTimes[idx]);
+  const headline = narrator?.titulo || scoreToHeadline(score, gBeach);
   const DAYS2=['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'];
   const selDate=new Date(mTimes[idx]);
   const maxDay=Math.min(14, Math.floor((new Date(mTimes[mTimes.length-1])-new Date(mTimes[0]))/(86400000)));
   const dayNavLabel=(gSelectedDay===0?'Hoje':DAYS2[selDate.getDay()])+' '+selDate.getDate()+'/'+String(selDate.getMonth()+1).padStart(2,'0');
   const dayNavHtml=`<span class="sh-dot">·</span><span class="day-nav-pill"><button class="day-nav-btn" onclick="selectDay(${gSelectedDay-1})" ${gSelectedDay===0?'disabled':''}>◀</button><span class="day-nav-label">${dayNavLabel}</span><button class="day-nav-btn" onclick="selectDay(${gSelectedDay+1})" ${gSelectedDay>=maxDay?'disabled':''}>▶</button></span>`;
+  const narratorJanelaHtml = narrator?.janela ? `<span class="sh-dot">·</span><span>Janela: <strong>${narrator.janela}</strong></span>` : '';
+  const narratorAvisoHtml = narrator?.aviso ? `<div class="localism-note"><div class="localism-icon">⚠️</div><div class="localism-text">${narrator.aviso}</div></div>` : '';
 
   const html=`
     ${swellAlert ? `<div class="swell-alert"><span class="swell-icon">🌊</span>${swellAlert}</div>` : ''}
     <div id="vibe-section">
       <div class="condition-tag"><span class="c-dot ${vibe.dot}"></span>${vibe.tag}</div>
       <h1 class="vibe-headline">${headline}</h1>
-      <div class="session-hint">${terralHtml}${bestHrHtml}${dayNavHtml}</div>
+      <div class="session-hint">${terralHtml}${narratorJanelaHtml || bestHrHtml}${dayNavHtml}</div>
     </div>
     <div id="translation">
       <div class="section-label">Tradução do Mar</div>
-      <p class="translation-text">${buildTranslation(wind,waveP,waveH,windD,gBeach)}</p>
+      <p class="translation-text">${narrator?.analise || buildTranslation(wind,waveP,waveH,windD,gBeach)}</p>
+      ${narratorAvisoHtml}
       ${localHtml}
       <div class="gear-line"><span class="gear-icon">🏄</span>${gearRec(waveH,waterT,waveP)}</div>
     </div>
@@ -3653,8 +3677,8 @@ async function setWSLGender(g) {
 
 /* ── INIT ──────────────────────────────────────────── */
 setStar(3);
-loadData();
-setInterval(loadData,30*60*1000);
+loadNarratorCache().then(() => loadData());
+setInterval(() => loadNarratorCache().then(() => loadData()), 30*60*1000);
 renderLoja();
 </script>
 </body>
