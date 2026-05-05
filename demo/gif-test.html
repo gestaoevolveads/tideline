@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Tideline · Teste GIFs Manobras</title>
+<style>
+  body{font-family:sans-serif;background:#172726;color:#fff;padding:24px;margin:0}
+  h1{color:#F95831;font-size:18px;margin-bottom:24px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
+  .card{background:#243F3D;border-radius:12px;overflow:hidden}
+  .card img{width:100%;height:140px;object-fit:cover;display:block;background:#172726}
+  .card .info{padding:10px 12px}
+  .card .name{font-size:13px;font-weight:700;color:#fff}
+  .card .level{font-size:11px;margin-top:2px;color:#476664}
+  .card .status{font-size:11px;margin-top:4px;color:#F95831;display:none}
+  .card img.error{opacity:.3}
+  .note{font-size:12px;color:#476664;margin-bottom:16px}
+</style>
+</head>
+<body>
+<h1>🏄 Preview GIFs — Manobras Tideline</h1>
+<p class="note">GIFs confirmados no app. Os que aparecerem escurecidos não carregaram.</p>
+<div class="grid" id="grid"></div>
+<script>
+const MANOBRAS = [
+  {name:'Remada',    level:'Iniciante',    url:'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGdjZmE4MWxweGd6YmU5dmhtaGR5amd4Znl3Nmp5NmFpOGg0ZmVkaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fXh2g6Jm7MBkxwCNXq/giphy.gif'},
+  {name:'Duck Dive', level:'Iniciante',    url:'https://i.makeagif.com/media/8-05-2015/DE5Sqh.gif'},
+  {name:'Pop-Up',    level:'Iniciante',    url:null},
+  {name:'Cutback',   level:'Intermediário',url:'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWd2Y2dqZmdudGRjNXV6djIwN3c5dHZ2am43cnBlMzltdW1jNDRkciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QAnP56WaLHXcIzBs1z/giphy.gif'},
+  {name:'Floater',   level:'Intermediário',url:'https://palavrasdosurf.wordpress.com/wp-content/uploads/2015/11/floater-2.gif'},
+  {name:'Tubo',      level:'Avançado',     url:'https://media.giphy.com/media/fH64CaLeHKg1gRbor7/giphy.gif'},
+  {name:'360',       level:'Avançado',     url:'https://palavrasdosurf.wordpress.com/wp-content/uploads/2015/11/aereo-360.gif'},
+  {name:'Aéreo',     level:'Avançado',     url:'https://palavrasdosurf.wordpress.com/wp-content/uploads/2015/11/ac3a9reo.gif'},
+  {name:'Air Reverse',level:'Avançado',   url:null},
+  {name:'Backflip',  level:'Avançado',     url:'https://i.imgur.com/vxWIQRG.gif'},
+];
+const grid = document.getElementById('grid');
+MANOBRAS.forEach(m => {
+  const card = document.createElement('div');
+  card.className = 'card';
+  if (m.url) {
+    const img = document.createElement('img');
+    img.src = m.url;
+    img.alt = m.name;
+    img.onerror = function(){ this.classList.add('error'); card.querySelector('.status').style.display='block'; };
+    card.appendChild(img);
+  } else {
+    const placeholder = document.createElement('div');
+    placeholder.style.cssText = 'width:100%;height:140px;background:#172726;display:flex;align-items:center;justify-content:center;font-size:11px;color:#476664';
+    placeholder.textContent = 'SVG animado';
+    card.appendChild(placeholder);
+  }
+  const info = document.createElement('div');
+  info.className = 'info';
+  info.innerHTML = `<div class="name">${m.name}</div><div class="level">${m.level}</div><div class="status">⚠ GIF não carregou</div>`;
+  card.appendChild(info);
+  grid.appendChild(card);
+});
+</script>
+</body>
+</html>

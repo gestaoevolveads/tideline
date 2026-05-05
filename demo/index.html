@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tideline: A diferença entre olhar números e entender o mar.</title>
+<meta name="description" content="Tideline traduz dados oceanográficos em leitura de mar para mais de 60 praias brasileiras. Você acorda sabendo se vale a pena.">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --deep:#172726;
+  --mid:#243F3D;
+  --muted:#476664;
+  --surface:#D3E2DE;
+  --surface2:#E8F0ED;
+  --cream:#F5F0E8;
+  --sand:#EDE8DF;
+  --bg:#F8F5F0;
+  --accent:#F95831;
+  --white:#ffffff;
+  --ff:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif;
+  --r:16px;
+  --sh:0 2px 12px rgba(23,39,38,.08),0 4px 32px rgba(23,39,38,.06);
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--ff);background:var(--bg);color:var(--deep);-webkit-font-smoothing:antialiased;line-height:1.6}
+img{display:block;max-width:100%}
+
+/* ─── NAV ─── */
+#nav{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  transition:background .3s,box-shadow .3s;
+}
+.nav-inner{
+  max-width:1160px;margin:0 auto;
+  padding:0 clamp(20px,4vw,48px);
+  height:64px;display:flex;align-items:center;justify-content:space-between;
+}
+.nav-logo{font-size:20px;font-weight:300;color:var(--white);text-decoration:none;letter-spacing:-.01em;transition:color .3s}
+.nav-logo strong{font-weight:700}
+.nav-logo .dot{color:var(--accent)}
+#nav.scrolled .nav-logo{color:var(--deep)}
+#nav.scrolled{background:rgba(248,245,240,.95);box-shadow:0 1px 0 var(--sand);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{font-size:14px;color:rgba(255,255,255,.8);text-decoration:none;transition:color .2s;font-weight:500}
+#nav.scrolled .nav-links a{color:var(--muted)}
+.nav-links a:hover{color:var(--white)}
+#nav.scrolled .nav-links a:hover{color:var(--deep)}
+.nav-cta{
+  background:var(--accent);color:var(--white)!important;
+  border-radius:8px;padding:8px 20px;
+  font-size:14px;font-weight:600;
+  transition:opacity .15s!important;
+}
+.nav-cta:hover{opacity:.85!important}
+.nav-login{
+  font-size:14px;font-weight:500;color:rgba(255,255,255,.65)!important;
+  text-decoration:none;transition:color .2s;
+  border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:7px 16px;
+}
+#nav.scrolled .nav-login{color:var(--muted)!important;border-color:var(--sand)}
+.nav-login:hover{color:var(--white)!important;border-color:rgba(255,255,255,.5)!important}
+#nav.scrolled .nav-login:hover{color:var(--deep)!important;border-color:var(--muted)!important}
+@media(max-width:680px){.nav-links a:not(.nav-cta):not(.nav-login){display:none}}
+
+/* ─── HERO ─── */
+#hero{
+  position:relative;
+  height:100svh;min-height:600px;max-height:900px;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(160deg,rgba(23,39,38,.88) 0%,rgba(23,39,38,.65) 45%,rgba(23,39,38,.72) 100%),
+    url('https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1800&q=80') center/cover no-repeat;
+}
+.hero-content{
+  position:relative;z-index:2;
+  max-width:1160px;width:100%;
+  padding:0 clamp(24px,5vw,64px);
+  display:grid;grid-template-columns:1fr 420px;
+  gap:clamp(40px,5vw,80px);
+  align-items:center;
+}
+.hero-copy{
+  display:flex;flex-direction:column;gap:24px;
+  background:linear-gradient(to right,rgba(23,39,38,.32) 0%,transparent 100%);
+  padding:40px 40px 40px 0;margin-left:-40px;border-radius:8px;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:rgba(255,255,255,.85);
+}
+.hero-tag::before{content:'';width:20px;height:1px;background:var(--accent)}
+.hero-title{
+  font-size:clamp(2.4rem,5.5vw,4.2rem);
+  font-weight:800;line-height:1.05;
+  letter-spacing:-.03em;color:var(--white);
+}
+.hero-title em{font-style:italic;color:var(--accent)}
+.hero-sub{
+  font-size:clamp(1rem,1.8vw,1.12rem);
+  color:rgba(255,255,255,.90);
+  line-height:1.68;max-width:520px;
+}
+.hero-cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.hero-proof{font-size:13px;color:rgba(255,255,255,.80);display:flex;align-items:center;gap:6px}
+.hero-proof strong{color:rgba(255,255,255,.85)}
+.hero-login-hint{font-size:13px;color:rgba(255,255,255,.4)}
+.hero-login-hint a{color:rgba(255,255,255,.65);font-weight:600;text-decoration:none;transition:color .15s}
+.hero-login-hint a:hover{color:var(--white)}
+/* app card */
+.hero-card{
+  background:rgba(255,255,255,.12);
+  backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:24px;padding:28px;
+  display:flex;flex-direction:column;gap:16px;
+}
+.hc-label{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.hc-praia{font-size:18px;font-weight:700;color:var(--white);display:flex;align-items:center;gap:8px}
+.hc-dot{width:8px;height:8px;border-radius:50%;background:#2ECC8A;flex-shrink:0}
+.hc-text{
+  background:rgba(23,39,38,.5);border-radius:12px;padding:16px 18px;
+  font-size:13.5px;line-height:1.7;color:rgba(255,255,255,.85);
+  border-left:3px solid var(--accent);
+}
+.hc-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.12);border-radius:10px;overflow:hidden}
+.hc-stat{background:rgba(23,39,38,.35);padding:12px 8px;text-align:center}
+.hc-stat-val{font-size:20px;font-weight:700;color:var(--white);letter-spacing:-.03em}
+.hc-stat-key{font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:4px}
+.hc-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  background:rgba(46,204,138,.15);border:1px solid rgba(46,204,138,.3);
+  border-radius:20px;padding:6px 14px;
+  font-size:12px;font-weight:600;color:#2ECC8A;
+}
+@media(max-width:900px){
+  .hero-content{grid-template-columns:1fr}
+  .hero-card{display:none}
+  .hero-copy{background:none;padding:0;margin-left:0}
+}
+@media(max-width:560px){.hero-cta-row{flex-direction:column;align-items:stretch}.hero-cta-row .btn{text-align:center}}
+
+/* ─── WAVE DIVIDER ─── */
+.wave-divider{width:100%;line-height:0;overflow:hidden}
+.wave-divider svg{width:100%;height:auto;display:block}
+
+/* ─── BUTTONS ─── */
+.btn{
+  display:inline-block;
+  border-radius:10px;padding:16px 32px;
+  font-family:var(--ff);font-size:15px;font-weight:600;
+  cursor:pointer;text-decoration:none;transition:all .18s;line-height:1;
+  border:none;
+}
+.btn-primary{background:var(--accent);color:var(--white);box-shadow:0 4px 16px rgba(249,88,49,.35)}
+.btn-primary:hover{opacity:.88;transform:translateY(-1px)}
+.btn-ghost{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.4)}
+.btn-ghost:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.7)}
+.btn-dark{background:var(--deep);color:var(--white)}
+.btn-dark:hover{opacity:.88;transform:translateY(-1px)}
+.btn-outline{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+.btn-outline:hover{background:var(--accent);color:var(--white)}
+
+/* ─── SECTION BASE ─── */
+.section{padding:clamp(64px,9vw,120px) 0}
+.container{max-width:1160px;margin:0 auto;padding:0 clamp(24px,5vw,48px)}
+.section-label{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);
+  margin-bottom:24px;
+}
+.section-label::after{content:'';width:20px;height:1px;background:currentColor}
+h2{
+  font-size:clamp(1.8rem,3.8vw,3rem);
+  font-weight:800;line-height:1.08;
+  letter-spacing:-.03em;color:var(--deep);
+  margin-bottom:24px;
+}
+h2 em{font-style:italic;color:var(--accent)}
+.lead{font-size:clamp(1rem,1.8vw,1.15rem);color:var(--muted);line-height:1.7;max-width:620px}
+p{line-height:1.75;color:var(--mid)}
+
+/* ─── S-NUMEROS: STRIP ─── */
+#numeros{background:var(--deep);padding:clamp(48px,6vw,80px) 0}
+.numeros-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  divide-x: 1px solid rgba(255,255,255,.08);
+}
+.num-item{
+  padding:40px 32px;border-right:1px solid rgba(255,255,255,.07);
+  text-align:center;
+}
+.num-item:last-child{border-right:none}
+.num-val{
+  font-size:clamp(2rem,4vw,3rem);font-weight:800;color:var(--white);
+  letter-spacing:-.04em;line-height:1;
+}
+.num-val span{color:var(--accent)}
+.num-key{font-size:13px;color:rgba(255,255,255,.5);margin-top:8px;line-height:1.4}
+@media(max-width:720px){.numeros-grid{grid-template-columns:repeat(2,1fr)}.num-item:nth-child(2){border-right:none}.num-item:nth-child(3){border-right:1px solid rgba(255,255,255,.07)}}
+@media(max-width:420px){.numeros-grid{grid-template-columns:1fr}.num-item{border-right:none!important;border-bottom:1px solid rgba(255,255,255,.07)}}
+
+/* ─── S-DOR ─── */
+#dor{background:var(--cream)}
+.dor-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,80px);align-items:center}
+.dor-copy{display:flex;flex-direction:column;gap:20px}
+.dor-quote{
+  font-size:clamp(1.1rem,2.2vw,1.4rem);font-style:italic;font-weight:600;
+  color:var(--mid);line-height:1.55;
+  padding-left:20px;border-left:3px solid var(--accent);
+}
+.dor-photo{
+  border-radius:24px;overflow:hidden;
+  aspect-ratio:4/5;position:relative;box-shadow:var(--sh);
+}
+.dor-photo img{width:100%;height:100%;object-fit:cover}
+@media(max-width:760px){.dor-grid{grid-template-columns:1fr}.dor-photo{aspect-ratio:16/9;order:-1}}
+
+/* ─── S-MECANISMO ─── */
+#mecanismo{background:var(--bg)}
+.mec-intro{max-width:680px;margin-bottom:64px}
+.mec-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--sand);border-radius:20px;overflow:hidden;box-shadow:var(--sh)}
+.mec-step{background:var(--white);padding:36px 28px;display:flex;flex-direction:column;gap:16px}
+.mec-num{font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--accent)}
+.mec-step h3{font-size:19px;font-weight:700;letter-spacing:-.02em;color:var(--deep);line-height:1.2}
+.mec-step p{font-size:14px;color:var(--muted);line-height:1.7}
+@media(max-width:720px){.mec-steps{grid-template-columns:1fr}}
+
+/* ─── S-PRAIA PHOTO BANNER ─── */
+#photo-banner{
+  position:relative;height:420px;overflow:hidden;
+  display:flex;align-items:flex-end;
+}
+.pb-bg{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(to right, rgba(23,39,38,.55) 0%, transparent 65%),
+    linear-gradient(to top, rgba(23,39,38,.95) 0%, rgba(23,39,38,.35) 50%),
+    url('https://images.pexels.com/photos/19613308/pexels-photo-19613308.jpeg?auto=compress&cs=tinysrgb&w=1800&q=80') center/cover no-repeat;
+}
+.pb-content{
+  position:relative;z-index:2;
+  max-width:1160px;width:100%;
+  padding:0 clamp(24px,5vw,48px) 48px;
+}
+.pb-content h2{color:var(--white);margin-bottom:8px;text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.pb-content p{color:rgba(255,255,255,.85);max-width:560px;text-shadow:0 1px 6px rgba(0,0,0,.3)}
+
+/* ─── S-PROVA SOCIAL ─── */
+#prova{background:var(--cream)}
+.prova-intro{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:48px;flex-wrap:wrap}
+.depo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.depo-card{
+  background:var(--white);border-radius:20px;padding:32px;
+  display:flex;flex-direction:column;gap:16px;box-shadow:var(--sh);
+  border:1px solid var(--sand);
+}
+.depo-big-quote{
+  font-size:48px;line-height:.8;color:var(--accent);opacity:.55;
+  font-weight:800;
+}
+.depo-text{font-size:15px;line-height:1.72;color:var(--mid);flex:1}
+.depo-author{font-size:14px;font-weight:700;color:var(--deep)}
+.depo-meta{font-size:12px;color:var(--muted)}
+@media(max-width:680px){.depo-grid{grid-template-columns:1fr}}
+
+/* ─── S-OFERTA ─── */
+#oferta{background:var(--bg)}
+.oferta-grid{display:grid;grid-template-columns:1fr 380px;gap:clamp(40px,5vw,72px);align-items:start;margin-top:48px}
+.value-list{display:flex;flex-direction:column;gap:16px;margin-bottom:36px}
+.value-item{display:flex;gap:16px;align-items:flex-start}
+.value-check{
+  width:24px;height:24px;border-radius:50%;
+  background:rgba(46,204,138,.12);
+  flex-shrink:0;display:flex;align-items:center;justify-content:center;
+}
+.value-check svg{width:13px;height:13px;stroke:var(--green, #2ECC8A);stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.value-item-text{font-size:14.5px;color:var(--mid);line-height:1.6}
+.value-item-text strong{display:block;font-size:15px;color:var(--deep);margin-bottom:4px}
+.bonus-divider{position:relative;text-align:center;margin:32px 0}
+.bonus-divider::before{content:'';position:absolute;top:50%;left:0;right:0;height:1px;background:var(--sand)}
+.bonus-divider span{position:relative;background:var(--bg);padding:0 14px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.bonus-list{display:flex;flex-direction:column;gap:16px}
+.bonus-item{display:flex;gap:16px;align-items:flex-start}
+.bonus-num{
+  width:32px;height:32px;border-radius:8px;
+  background:var(--accent);color:var(--white);
+  font-size:14px;font-weight:700;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+}
+.bonus-item-body strong{display:block;font-size:15px;color:var(--deep);margin-bottom:4px}
+.bonus-item-body p{font-size:13.5px;color:var(--muted)}
+/* pricing box */
+.pricing-box{
+  background:var(--deep);border-radius:24px;padding:36px;
+  display:flex;flex-direction:column;gap:24px;
+  position:sticky;top:84px;
+}
+.pricing-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.45)}
+.pricing-stack{font-size:13px;color:rgba(255,255,255,.4);text-decoration:line-through;margin-bottom:8px}
+.pricing-price{display:flex;align-items:baseline;gap:2px;line-height:1}
+.pp-cur{font-size:20px;font-weight:600;color:rgba(255,255,255,.6);align-self:flex-start;padding-top:14px;letter-spacing:0}
+.pp-int{font-size:64px;font-weight:800;color:var(--white);letter-spacing:-.05em}
+.pp-dec{font-size:26px;font-weight:600;color:rgba(255,255,255,.5);letter-spacing:0;align-self:flex-end;padding-bottom:6px}
+.pricing-period{font-size:13px;color:rgba(255,255,255,.5);margin-top:8px}
+.pricing-features{display:flex;flex-direction:column;gap:12px;border-top:1px solid rgba(255,255,255,.08);padding-top:20px}
+.pf-item{display:flex;align-items:center;gap:10px;font-size:14px;color:rgba(255,255,255,.75)}
+.pf-item svg{width:14px;height:14px;stroke:#2ECC8A;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.pricing-box .btn{padding:16px;border-radius:12px;width:100%;text-align:center}
+.pricing-note{font-size:12px;color:rgba(255,255,255,.35);text-align:center}
+@media(max-width:860px){.oferta-grid{grid-template-columns:1fr}.pricing-box{position:static}}
+
+/* ─── S-GARANTIA ─── */
+#garantia{
+  background:var(--mid);
+  position:relative;overflow:hidden;
+}
+#garantia::before{
+  content:'';position:absolute;
+  width:600px;height:600px;border-radius:50%;
+  background:rgba(249,88,49,.06);
+  top:-200px;right:-100px;
+}
+.garantia-inner{
+  max-width:700px;margin:0 auto;text-align:center;
+  position:relative;z-index:2;
+}
+.garantia-inner h2{color:var(--white)}
+.garantia-inner .section-label::after{display:none}
+.garantia-inner .section-label{justify-content:center}
+.garantia-icon{
+  width:72px;height:72px;border-radius:50%;
+  background:rgba(249,88,49,.15);border:1px solid rgba(249,88,49,.25);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 32px;
+}
+.garantia-icon svg{width:34px;height:34px;stroke:var(--accent);stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.garantia-inner p{color:rgba(255,255,255,.65);margin-bottom:16px;text-align:left}
+.garantia-inner p:last-of-type{margin-bottom:0}
+
+/* ─── S-FAQ ─── */
+#faq{background:var(--bg);padding-bottom:clamp(48px,5vw,64px)}
+#quem{padding-top:clamp(48px,5vw,64px)}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,5vw,80px)}
+.faq-intro{}
+.faq-list{display:flex;flex-direction:column}
+details{border-bottom:1px solid var(--sand)}
+details:first-child{border-top:1px solid var(--sand)}
+summary{
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding:20px 0;cursor:pointer;list-style:none;
+  font-size:15.5px;font-weight:600;color:var(--deep);
+  transition:color .15s;
+}
+summary::-webkit-details-marker{display:none}
+summary:hover{color:var(--accent)}
+.faq-chevron{width:18px;height:18px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;flex-shrink:0;transition:transform .2s}
+details[open] .faq-chevron{transform:rotate(180deg)}
+.faq-answer{padding:0 0 20px;font-size:14.5px;color:var(--muted);line-height:1.75}
+@media(max-width:760px){.faq-grid{grid-template-columns:1fr}.faq-intro{position:static}}
+
+/* ─── S-QUEM ─── */
+#quem{background:var(--bg)}
+.quem-grid{display:grid;grid-template-columns:1fr 320px;gap:clamp(40px,5vw,80px);align-items:center}
+.quem-body{display:flex;flex-direction:column;gap:20px}
+.quem-mascot{width:100%;border-radius:20px;filter:drop-shadow(0 8px 32px rgba(23,39,38,.12))}
+@media(max-width:760px){.quem-grid{grid-template-columns:1fr}.quem-mascot{max-width:200px;margin:0 auto}}
+
+/* ─── S-URGENCIA ─── */
+#urgencia{
+  position:relative;overflow:hidden;
+  display:flex;align-items:center;min-height:480px;
+}
+.urgencia-bg{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(135deg,rgba(23,39,38,.88) 0%,rgba(36,63,61,.82) 100%),
+    url('https://images.pexels.com/photos/8908121/pexels-photo-8908121.jpeg?auto=compress&cs=tinysrgb&w=1600&q=80') center/cover no-repeat;
+}
+.urgencia-content{
+  position:relative;z-index:2;
+  max-width:720px;margin:0 auto;
+  padding:clamp(80px,8vw,120px) clamp(24px,5vw,48px);
+  display:flex;flex-direction:column;align-items:center;text-align:center;gap:20px;
+}
+.urgencia-content h2{color:var(--white);margin-bottom:4px}
+.urgencia-content .section-label{justify-content:center}
+.urgencia-content .section-label::after{display:none}
+.urgencia-content p{color:rgba(255,255,255,.7);max-width:560px;margin-bottom:0}
+.urgencia-note{font-size:13px!important;color:rgba(255,255,255,.4)!important}
+@media(max-width:560px){.urgencia-content .btn{width:100%;text-align:center}}
+
+/* ─── S-CTA FINAL ─── */
+#cta-final{background:var(--cream)}
+.cta-final-inner{
+  max-width:680px;margin:0 auto;text-align:center;
+  display:flex;flex-direction:column;gap:24px;align-items:center;
+}
+.cta-final-inner h2{margin-bottom:0}
+.ps{
+  font-size:15px;color:var(--muted);line-height:1.8;
+  text-align:left;background:var(--white);border-radius:16px;
+  padding:28px;border:1px solid var(--sand);
+}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+@media(max-width:480px){.cta-row{flex-direction:column;align-items:stretch}.cta-row .btn{text-align:center}}
+
+/* ─── S-FUNCIONALIDADES ─── */
+#funcionalidades{background:var(--deep)}
+.func-intro{max-width:580px;margin-bottom:56px}
+.func-bento{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.08);border-radius:20px;overflow:hidden}
+.fc{background:var(--deep);padding:32px 28px;display:flex;flex-direction:column;gap:14px}
+.fc-2{grid-column:span 2}
+.fc-ico{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.fc-ico svg{width:20px;height:20px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.fc-ico-acc{background:rgba(249,88,49,.12)}.fc-ico-acc svg{stroke:var(--accent)}
+.fc-ico-grn{background:rgba(46,204,138,.1)}.fc-ico-grn svg{stroke:#2ECC8A}
+.fc-ico-dim{background:rgba(255,255,255,.06)}.fc-ico-dim svg{stroke:rgba(255,255,255,.45)}
+.fc-ttl{font-size:18px;font-weight:700;color:var(--white);letter-spacing:-.02em;line-height:1.2}
+.fc-dsc{font-size:13.5px;color:rgba(255,255,255,.48);line-height:1.7}
+.fc-badge{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;align-self:flex-start;padding:3px 10px;border-radius:20px}
+.fc-badge-grn{background:rgba(46,204,138,.12);color:#2ECC8A}
+.fc-badge-dim{background:rgba(255,255,255,.06);color:rgba(255,255,255,.35)}
+.fc-preview{background:rgba(255,255,255,.04);border-radius:10px;padding:14px 16px;margin-top:4px;border-left:2px solid var(--accent)}
+.fc-preview p{font-size:12.5px;color:rgba(255,255,255,.55);line-height:1.65;font-style:italic}
+.fc-chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:4px}
+.fc-chip{font-size:12px;color:rgba(255,255,255,.38);background:rgba(255,255,255,.05);padding:3px 10px;border-radius:6px}
+@media(max-width:860px){.func-bento{grid-template-columns:repeat(2,1fr)}.fc-2{grid-column:span 2}}
+@media(max-width:520px){.func-bento{grid-template-columns:1fr}.fc-2{grid-column:span 1}}
+
+/* ─── S-INSIDE-LOOK ─── */
+#inside-look{background:var(--sand)}
+.il-intro{max-width:640px;margin-bottom:56px}
+.il-layout{display:grid;grid-template-columns:1fr 310px 1fr;gap:48px;align-items:start}
+.il-left,.il-right{padding-top:12px}
+.il-phone-col{display:flex;justify-content:center}
+.il-phone{width:300px;background:#18201F;border-radius:48px;padding:10px;box-shadow:0 40px 100px rgba(23,39,38,.4),0 0 0 1.5px rgba(255,255,255,.06)}
+.il-screen{background:#F8FAF9;border-radius:40px;overflow:hidden;display:flex;flex-direction:column}
+.ss-hd{background:rgba(248,250,249,.97);border-bottom:1px solid #D3E2DE;display:flex;align-items:center;justify-content:space-between;padding:16px 18px 12px;flex-shrink:0}
+.ss-logo{font-size:14px;font-weight:300;color:#172726;letter-spacing:-.01em}
+.ss-logo strong{font-weight:700}
+.ss-logo-dot{color:#F95831}
+.ss-loc{text-align:right}
+.ss-loc-name{font-size:9.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#243F3D;display:flex;align-items:center;gap:3px;justify-content:flex-end}
+.ss-loc-upd{font-size:9px;color:#476664;margin-top:1px}
+.ss-vibe{padding:18px 18px 12px}
+.ss-ctag{display:inline-flex;align-items:center;gap:5px;font-size:9.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#476664;margin-bottom:10px}
+.ss-cdot{width:6px;height:6px;border-radius:50%;background:#2ECC8A;flex-shrink:0}
+.ss-headline{font-size:18px;font-weight:700;letter-spacing:-.025em;color:#172726;line-height:1.2;margin-bottom:8px}
+.ss-banner{display:inline-flex;align-items:center;gap:5px;background:rgba(46,204,138,.1);color:#1A8A5A;font-size:10px;font-weight:700;padding:3px 8px;border-radius:5px}
+.ss-card{background:#fff;border-radius:12px;padding:13px 15px;margin:0 16px 7px;box-shadow:0 1px 6px rgba(23,39,38,.06)}
+.ss-lbl{font-size:8px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#476664;margin-bottom:7px}
+.ss-txt{font-size:11px;line-height:1.65;color:#243F3D}
+.ss-loca{display:flex;gap:9px;align-items:flex-start;background:rgba(249,88,49,.06);border-left:2px solid #F95831;border-radius:0 8px 8px 0;padding:8px 10px;margin-top:8px}
+.ss-loca-t{font-size:10px;line-height:1.55;color:#243F3D}
+.ss-loca-t strong{color:#F95831;font-weight:600}
+.ss-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#D3E2DE;border-radius:12px;overflow:hidden;margin:0 16px 7px;box-shadow:0 1px 6px rgba(23,39,38,.06)}
+.ss-cell{background:#fff;padding:11px 7px;text-align:center}
+.ss-cell-lbl{font-size:7px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#476664;margin-bottom:5px}
+.ss-cell-val{font-size:20px;font-weight:700;letter-spacing:-.03em;color:#172726;line-height:1}
+.ss-cell-un{font-size:9px;font-weight:400;color:#476664}
+.ss-cell-sub{font-size:8.5px;color:#476664;margin-top:3px}
+.ss-pill-t{display:inline-block;background:rgba(46,204,138,.1);color:#1A8A5A;font-size:8px;font-weight:700;padding:1px 5px;border-radius:4px}
+.ss-crowd{background:#fff;border-radius:12px;padding:11px 15px;margin:0 16px 7px;box-shadow:0 1px 6px rgba(23,39,38,.06)}
+.ss-crowd-row{display:flex;align-items:center;justify-content:space-between}
+.ss-crowd-label{font-size:12px;font-weight:700;color:#172726}
+.ss-crowd-dots{display:flex;gap:4px}
+.ss-crowd-dot{width:8px;height:8px;border-radius:50%;background:#D3E2DE}
+.ss-crowd-dot.on{background:#F95831}
+.ss-crowd-sub{font-size:10px;color:#476664;margin-top:4px;line-height:1.5}
+.ss-nav{background:rgba(255,255,255,.97);border-top:1px solid #D3E2DE;display:flex;align-items:flex-start;padding:8px 0 14px;flex-shrink:0}
+.ss-nav-it{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px}
+.ss-nav-it svg{width:18px;height:18px;stroke:currentColor;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.ss-nav-it.act{color:#F95831}
+.ss-nav-it:not(.act){color:#476664}
+.ss-nav-lbl{font-size:8px;font-weight:600}
+.il-cl{display:flex;gap:12px;align-items:flex-start;margin-bottom:22px}
+.il-cl:last-child{margin-bottom:0}
+.il-num{width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.il-cl-ttl{font-size:14px;font-weight:700;color:var(--deep);margin-bottom:3px}
+.il-cl-dsc{font-size:13px;color:var(--muted);line-height:1.55}
+@media(max-width:960px){
+  .il-layout{grid-template-columns:1fr;justify-items:center;gap:40px}
+  .il-left{order:2;width:100%;max-width:500px;padding-top:0}
+  .il-phone-col{order:1}
+  .il-right{order:3;width:100%;max-width:500px;padding-top:0}
+  .il-phone{width:280px}
+}
+
+/* ─── MOBILE REFINEMENTS ─── */
+@media(max-width:480px){
+  /* phone mockup: nunca overflow em telas pequenas */
+  .il-phone{width:min(280px,calc(100vw - 48px))}
+  /* bento cards: padding reduzido */
+  .fc{padding:24px 20px}
+  .func-intro,.il-intro{margin-bottom:32px}
+  /* photo banner: altura fixa vira flexível */
+  #photo-banner{height:auto;min-height:320px;padding-top:80px}
+  .pb-content{padding-bottom:32px}
+  /* mecanismo: menos espaço vertical */
+  .mec-intro{margin-bottom:40px}
+  .mec-step{padding:28px 22px}
+  /* numeros: padding menor */
+  .num-item{padding:32px 20px}
+  /* depoimentos: padding menor */
+  .depo-card{padding:24px 20px}
+  /* garantia: centralizar bem */
+  .garantia-icon{margin-bottom:24px}
+  /* oferta: padding do pricing */
+  .pricing-box{padding:28px 24px}
+  /* urgencia: botão full width já garantido, mas padding */
+  .urgencia-content{gap:16px}
+}
+/* telas muito pequenas: 320px */
+@media(max-width:360px){
+  .il-phone{width:calc(100vw - 40px)}
+  .fc{padding:20px 16px}
+  .fc-ttl{font-size:16px}
+  .num-item{padding:28px 16px}
+}
+
+/* ─── FOOTER ─── */
+footer{background:var(--deep)}
+.footer-inner{
+  max-width:1160px;margin:0 auto;
+  padding:48px clamp(24px,5vw,48px) clamp(32px,4vw,48px);
+  display:grid;grid-template-columns:auto 1fr auto;
+  align-items:center;gap:24px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.footer-logo{font-size:18px;font-weight:300;color:var(--white);text-decoration:none;letter-spacing:-.01em}
+.footer-logo strong{font-weight:700}
+.footer-logo .dot{color:var(--accent)}
+.footer-links{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
+.footer-links a{font-size:13px;color:rgba(255,255,255,.4);text-decoration:none;transition:color .15s}
+.footer-links a:hover{color:rgba(255,255,255,.8)}
+.footer-copy{font-size:12px;color:rgba(255,255,255,.25);text-align:right;white-space:nowrap}
+@media(max-width:680px){.footer-inner{grid-template-columns:1fr;text-align:center}.footer-links{justify-content:center}.footer-copy{text-align:center}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">tide<strong>line</strong><span class="dot">.</span></a>
+    <div class="nav-links">
+      <a href="#mecanismo">Como funciona</a>
+      <a href="#oferta">Preços</a>
+      <a href="#faq">FAQ</a>
+      <a href="login.html" class="nav-login">Entrar</a>
+      <a href="login.html" class="btn nav-cta">Testar grátis</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-copy">
+      <div class="hero-tag">Previsão de surf para iniciantes e intermediários</div>
+      <h1 class="hero-title">A diferença entre <em>olhar números</em> e entender o mar.</h1>
+      <p class="hero-sub">O Tideline traduz dados oceanográficos em leitura de mar para mais de 60 praias brasileiras, de um jeito que todo mundo entende. Você vai para o surf preparado e faz a sessão da sua vida!</p>
+      <div class="hero-cta-row">
+        <a href="login.html" class="btn btn-primary">Testar grátis por 14 dias</a>
+        <a href="#mecanismo" class="btn btn-ghost">Como funciona</a>
+      </div>
+      <div class="hero-proof"><strong>+500 surfistas</strong> já leram o mar com o Tideline</div>
+      <div class="hero-login-hint">Já tem acesso? <a href="login.html">Entrar →</a></div>
+    </div>
+    <div class="hero-card">
+      <div class="hc-label">Agora · Praia do Forte</div>
+      <div class="hc-praia"><div class="hc-dot"></div> Condição boa: vale acordar cedo</div>
+      <div class="hc-text">
+        "Terral chegou antes do sol. Swell de SSE com 1,4 m e 11 segundos de período, organizado o suficiente pra linha funcionar. Maré enche até as 9h, janela limpa das 5h30 às 9h antes do vento de mar entrar."
+      </div>
+      <div class="hc-stats">
+        <div class="hc-stat"><div class="hc-stat-val">1,4<span style="font-size:12px">m</span></div><div class="hc-stat-key">Swell</div></div>
+        <div class="hc-stat"><div class="hc-stat-val">11<span style="font-size:12px">s</span></div><div class="hc-stat-key">Período</div></div>
+        <div class="hc-stat"><div class="hc-stat-val">SE</div><div class="hc-stat-key">Vento</div></div>
+      </div>
+      <div class="hc-badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+        Terral ativo, sessão recomendada
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NUMEROS -->
+<section id="numeros">
+  <div class="numeros-grid">
+    <div class="num-item">
+      <div class="num-val">60<span>+</span></div>
+      <div class="num-key">praias com Leitura Traduzida</div>
+    </div>
+    <div class="num-item">
+      <div class="num-val">7</div>
+      <div class="num-key">dias de previsão por pico</div>
+    </div>
+    <div class="num-item">
+      <div class="num-val">8<span>km</span></div>
+      <div class="num-key">de litoral brasileiro mapeado</div>
+    </div>
+    <div class="num-item">
+      <div class="num-val">R$19</div>
+      <div class="num-key">por mês · 14 dias grátis</div>
+    </div>
+  </div>
+</section>
+
+<!-- WAVE DIVIDER -->
+<div class="wave-divider" style="background:var(--deep)">
+  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="#F5F0E8"/>
+  </svg>
+</div>
+
+<!-- DOR -->
+<section id="dor" class="section">
+  <div class="container">
+    <div class="dor-grid">
+      <div class="dor-copy">
+        <div class="section-label">O problema</div>
+        <h2>Todo app te mostra o número. Nenhum te explica o que fazer com ele.</h2>
+        <div class="dor-quote">"Altura 1,2 m · Período 9 s · Vento 15 km/h NE." Isso significa alguma coisa pra você?</div>
+        <p>Surfline, Windy, Magic Seaweed: todos mostram tabelas impecáveis. Números precisos de modelos globais. Mas nenhum lê o seu pico sabendo que o terral chega mais tarde na sua praia, que a maré baixa abre o banco, que o swell de SSE quebra diferente ali do que no pico do vizinho.</p>
+        <p>O Tideline pega esse dado e entrega uma análise interpretativa, em português, com o contexto da sua praia, considerando o localismo e a cultura do pico. Você lê em 30 segundos e já sabe se vale a pena acordar cedo.</p>
+        <p style="font-weight:600;color:var(--deep)">Para iniciante aprendendo a ler o mar. Para intermediário que quer parar de errar o dia. Para quem prefere entender a adivinhar.</p>
+      </div>
+      <div class="dor-photo">
+        <img
+          src="https://images.pexels.com/photos/4609198/pexels-photo-4609198.jpeg?auto=compress&cs=tinysrgb&w=800&q=80"
+          alt="Surfista em manobra"
+          loading="lazy"
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MECANISMO -->
+<section id="mecanismo" class="section" style="background:var(--bg)">
+  <div class="container">
+    <div class="mec-intro">
+      <div class="section-label">Como funciona</div>
+      <h2>Leitura Traduzida: <em>dados viram linguagem.</em></h2>
+      <p class="lead">Três camadas de inteligência trabalhando antes de você abrir o app.</p>
+    </div>
+    <div class="mec-steps">
+      <div class="mec-step">
+        <div class="mec-num">01 · Dados</div>
+        <h3>Modelos globais em tempo real</h3>
+        <p>Mesmo dado que Surfline usa. GFS, ECMWF, Wavewatch III. Swell, vento, maré, temperatura de água. Atualizado a cada 6 horas.</p>
+      </div>
+      <div class="mec-step">
+        <div class="mec-num">02 · Contexto</div>
+        <h3>Cada praia tem o seu jeito</h3>
+        <p>A Praia do Rosa pega swell de sul diferente de Floripa. O banco de Ubatuba bate diferente com maré alta. O Tideline conhece o comportamento de cada pico: o localismo, a cultura, o vento que costuma entrar de tarde. E usa tudo isso pra ler a previsão onde você vai surfar de verdade.</p>
+      </div>
+      <div class="mec-step">
+        <div class="mec-num">03 · Leitura</div>
+        <h3>A análise chega em texto, não em tabela</h3>
+        <p>Você lê "terral chegou antes do sol, swell organizado, janela boa das 6h às 9h" e já sabe se vale acordar cedo. Sem número solto pra decifrar, sem achismo. A cada sessão que você faz, o Tideline te ajuda a entender um pouco mais do mar da sua praia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FUNCIONALIDADES -->
+<section id="funcionalidades" class="section">
+  <div class="container">
+    <div class="func-intro">
+      <div class="section-label" style="color:rgba(255,255,255,.35)">O que você leva</div>
+      <h2 style="color:var(--white)">Uma plataforma inteira para o surfista brasileiro.</h2>
+      <p class="lead" style="color:rgba(255,255,255,.48)">Da leitura do mar à evolução técnica. Do momento que você abre o app até o dia que você conhecer o seu pico de cor.</p>
+    </div>
+    <div class="func-bento">
+
+      <!-- Leitura Traduzida — wide -->
+      <div class="fc fc-2">
+        <div class="fc-ico fc-ico-acc">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <div class="fc-ttl">Leitura Traduzida</div>
+        <div class="fc-dsc">Você não recebe tabela. Recebe um parágrafo explicando o mar da sua praia naquele momento: vento, swell, maré e localismo — em 30 segundos você já sabe se vale acordar cedo.</div>
+        <div class="fc-preview">
+          <p>"Terral chegou antes do sol. Swell de SSE com 1,4 m e 11 segundos de período, organizado o suficiente pra linha funcionar. Janela limpa das 5h30 às 9h antes do vento de mar entrar."</p>
+        </div>
+      </div>
+
+      <!-- Alertas Sniper -->
+      <div class="fc">
+        <div class="fc-ico fc-ico-grn">
+          <svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        </div>
+        <div class="fc-ttl">Alertas Sniper</div>
+        <div class="fc-dsc">Você define o que te faz sair cedo. O Tideline avisa quando a condição aparecer, por praia e por critério. Zero notificação inútil.</div>
+        <div class="fc-badge fc-badge-grn">Em breve</div>
+      </div>
+
+      <!-- 7 dias -->
+      <div class="fc">
+        <div class="fc-ico fc-ico-dim">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <div class="fc-ttl">7 dias por pico</div>
+        <div class="fc-dsc">Previsão diária interpretada para cada praia. Planeje a semana toda sem precisar decifrar modelo meteorológico.</div>
+        <div class="fc-chips">
+          <span class="fc-chip">60+ praias</span>
+          <span class="fc-chip">Atualizado 4× ao dia</span>
+        </div>
+      </div>
+
+      <!-- Diário de bordo -->
+      <div class="fc">
+        <div class="fc-ico fc-ico-dim">
+          <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <div class="fc-ttl">Diário de Bordo</div>
+        <div class="fc-dsc">Registre cada sessão: praia, prancha, avaliação, notas. Seu histórico completo no mar. O app que cresce com você.</div>
+      </div>
+
+      <!-- Progressão -->
+      <div class="fc">
+        <div class="fc-ico fc-ico-acc">
+          <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        </div>
+        <div class="fc-ttl">Progressão por praia</div>
+        <div class="fc-dsc">Cada pico que você frequenta tem uma barra de evolução. De Iniciante a Local. Quanto mais você surfa e registra, mais o app entende seu nível.</div>
+      </div>
+
+      <!-- Aprender + Cursos — wide -->
+      <div class="fc fc-2">
+        <div class="fc-ico fc-ico-dim">
+          <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <div class="fc-ttl">Aprender e evoluir dentro do app</div>
+        <div class="fc-dsc">Glossário do mar com 15+ termos explicados sem enrolação, manual de manobras por nível e cursos para entender o oceano e avançar no surf — tudo na palma da mão.</div>
+        <div class="fc-chips">
+          <span class="fc-chip">Glossário ilustrado</span>
+          <span class="fc-chip">Manobras por nível</span>
+          <span class="fc-chip">Cursos na plataforma</span>
+          <span class="fc-chip">Loja curada</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- INSIDE LOOK -->
+<section id="inside-look" class="section">
+  <div class="container">
+    <div class="il-intro">
+      <div class="section-label">Por dentro do app</div>
+      <h2>Sem surpresa. Você vê o que vai encontrar.</h2>
+      <p class="lead">Abaixo o app funcionando. Não é ilustração de designer — é o que você vai ver quando abrir o Tideline na sua praia.</p>
+    </div>
+    <div class="il-layout">
+
+      <!-- Callouts esquerda -->
+      <div class="il-left">
+        <div class="il-cl">
+          <div class="il-num">1</div>
+          <div>
+            <div class="il-cl-ttl">Condição e janela do dia</div>
+            <div class="il-cl-dsc">Estado atual da praia em uma linha clara. Com o horário exato da janela de terral quando ela existe.</div>
+          </div>
+        </div>
+        <div class="il-cl">
+          <div class="il-num">2</div>
+          <div>
+            <div class="il-cl-ttl">Leitura Traduzida</div>
+            <div class="il-cl-dsc">O parágrafo interpretativo da condição, com nota de localismo quando o swell tem um ângulo que costuma agitar o lineup.</div>
+          </div>
+        </div>
+        <div class="il-cl">
+          <div class="il-num">3</div>
+          <div>
+            <div class="il-cl-ttl">Dados técnicos em contexto</div>
+            <div class="il-cl-dsc">Altura, período e vento com rótulo que significa alguma coisa: "Terral", "Swell organizado", "Ombro a cabeça".</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mockup do phone -->
+      <div class="il-phone-col">
+        <div class="il-phone">
+          <div class="il-screen">
+            <!-- Header -->
+            <div class="ss-hd">
+              <div class="ss-logo">tide<strong>line</strong><span class="ss-logo-dot">.</span></div>
+              <div class="ss-loc">
+                <div class="ss-loc-name">
+                  Praia do Forte
+                  <span style="color:#476664;font-size:8px">·</span>
+                  <span style="color:#476664;font-weight:500">RJ</span>
+                  <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="ss-loc-upd">atualizado agora</div>
+              </div>
+            </div>
+            <!-- Vibe -->
+            <div class="ss-vibe">
+              <div class="ss-ctag"><div class="ss-cdot"></div> Condição boa</div>
+              <div class="ss-headline">Tá bom na Praia do Forte. Vale a remada.</div>
+              <div class="ss-banner">🌅 Terral ativo até 09h00</div>
+            </div>
+            <!-- Translation -->
+            <div class="ss-card">
+              <div class="ss-lbl">Leitura Traduzida</div>
+              <div class="ss-txt">
+                Terral chegou antes do sol. Swell de SSE com 1,4 m e 11 segundos, organizado o suficiente pra linha funcionar. Janela limpa das 5h30 às 9h antes do vento de mar entrar.
+                <div class="ss-loca">
+                  <span>🤙</span>
+                  <div class="ss-loca-t"><strong>Localismo:</strong> Pico frequentado pelos locais. Respeite a ordem no lineup.</div>
+                </div>
+              </div>
+            </div>
+            <!-- Tech grid -->
+            <div class="ss-grid">
+              <div class="ss-cell">
+                <div class="ss-cell-lbl">Swell</div>
+                <div class="ss-cell-val">1,4<span class="ss-cell-un">m</span></div>
+                <div class="ss-cell-sub">Ombro a cabeça</div>
+              </div>
+              <div class="ss-cell">
+                <div class="ss-cell-lbl">Período</div>
+                <div class="ss-cell-val">11<span class="ss-cell-un">s</span></div>
+                <div class="ss-cell-sub">Swell organizado</div>
+              </div>
+              <div class="ss-cell">
+                <div class="ss-cell-lbl">Vento</div>
+                <div class="ss-cell-val" style="font-size:16px">SO</div>
+                <div class="ss-cell-sub"><span class="ss-pill-t">Terral</span></div>
+              </div>
+            </div>
+            <!-- Crowd -->
+            <div class="ss-crowd">
+              <div class="ss-crowd-row">
+                <div>
+                  <div class="ss-lbl">Lotação esperada</div>
+                  <div class="ss-crowd-label">Movimentado</div>
+                </div>
+                <div class="ss-crowd-dots">
+                  <div class="ss-crowd-dot on"></div>
+                  <div class="ss-crowd-dot on"></div>
+                  <div class="ss-crowd-dot on"></div>
+                  <div class="ss-crowd-dot"></div>
+                  <div class="ss-crowd-dot"></div>
+                </div>
+              </div>
+              <div class="ss-crowd-sub">Fim de semana com terral: espere bastante gente cedo.</div>
+            </div>
+            <!-- Bottom nav -->
+            <div class="ss-nav">
+              <div class="ss-nav-it act">
+                <svg viewBox="0 0 24 24"><path d="M2 15 C5 11 7 11 10 15 C13 19 15 19 18 15 C21 11 22 11 22 15"/><path d="M2 10 C5 6 7 6 10 10 C13 14 15 14 18 10 C21 6 22 6 22 10"/></svg>
+                <span class="ss-nav-lbl">Mar</span>
+              </div>
+              <div class="ss-nav-it">
+                <svg viewBox="0 0 24 24"><path d="M4 19V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12"/><path d="M4 19h16"/><path d="M9 10h6M9 14h4"/></svg>
+                <span class="ss-nav-lbl">Aprender</span>
+              </div>
+              <div class="ss-nav-it">
+                <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <span class="ss-nav-lbl">Loja</span>
+              </div>
+              <div class="ss-nav-it">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
+                <span class="ss-nav-lbl">Cursos</span>
+              </div>
+              <div class="ss-nav-it">
+                <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <span class="ss-nav-lbl">Eu</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Callouts direita -->
+      <div class="il-right">
+        <div class="il-cl">
+          <div class="il-num">4</div>
+          <div>
+            <div class="il-cl-ttl">Lotação prevista</div>
+            <div class="il-cl-dsc">O app sinaliza se o pico vai estar cheio. Útil pra decidir se vale ir naquele horário ou esperar uma janela mais vazia.</div>
+          </div>
+        </div>
+        <div class="il-cl">
+          <div class="il-num">5</div>
+          <div>
+            <div class="il-cl-ttl">Aprender, Loja e Cursos</div>
+            <div class="il-cl-dsc">Glossário, manobras, cursos dentro da plataforma e produtos curados para o surf brasileiro, tudo no mesmo lugar.</div>
+          </div>
+        </div>
+        <div class="il-cl">
+          <div class="il-num">6</div>
+          <div>
+            <div class="il-cl-ttl">Diário de Bordo e Progressão</div>
+            <div class="il-cl-dsc">Na aba Eu: registre sessões, acompanhe sua evolução por praia e ative os Alertas Sniper quando a janela aparecer.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO BANNER -->
+<div id="photo-banner">
+  <div class="pb-bg"></div>
+  <div class="pb-content">
+    <div class="section-label" style="color:rgba(255,255,255,.5)">60+ praias</div>
+    <h2 style="color:var(--white);margin-bottom:8px">Do Sul de SC à Costa Norte do PA.</h2>
+    <p style="color:rgba(255,255,255,.85)">Cada pico com história, comportamento e personalidade própria. Terral de Floripa não é o mesmo que terral de Saquarema, e a análise que você recebe leva isso a sério, de um jeito leve e divertido.</p>
+  </div>
+</div>
+
+<!-- PROVA SOCIAL -->
+<section id="prova" class="section">
+  <div class="container">
+    <div class="prova-intro">
+      <div>
+        <div class="section-label">Resultados</div>
+        <h2>Quem parou de adivinhar e começou a entender.</h2>
+      </div>
+    </div>
+    <div class="depo-grid">
+      <div class="depo-card">
+        <div class="depo-big-quote">"</div>
+        <p class="depo-text">Surfo há dois anos e sempre fui do tipo que ia na praia mais próxima sem entender o que tava vendo. No primeiro mês do Tideline eu já sabia por que terça de manhã tava bom e quinta tava ruim mesmo com a mesma altura. O texto explicativo é o que fez a diferença. Não me sinto mais perdido.</p>
+        <div class="depo-author">[Nome], [idade]</div>
+        <div class="depo-meta">Surfa em [praia], SP</div>
+      </div>
+      <div class="depo-card">
+        <div class="depo-big-quote">"</div>
+        <p class="depo-text">Usei Surfline por seis anos. Paguei premium. Nunca tive conteúdo em português que entendesse o litoral daqui. O Tideline lê Itacoatiara como quem mora lá. Cancelei o outro no segundo mês.</p>
+        <div class="depo-author">[Nome], [idade]</div>
+        <div class="depo-meta">Surfa em [praia], RJ</div>
+      </div>
+      <div class="depo-card">
+        <div class="depo-big-quote">"</div>
+        <p class="depo-text">Os Alertas Sniper são o que mais uso. Trabalho em escritório, só posso ir no mar em dia muito bom. O app me acordou três vezes em dois meses. Nas três, peguei as melhores sessões do semestre. Zero notificação inútil.</p>
+        <div class="depo-author">[Nome], [idade]</div>
+        <div class="depo-meta">Surfa em [praia], SC</div>
+      </div>
+      <div class="depo-card">
+        <div class="depo-big-quote">"</div>
+        <p class="depo-text">Surfo fim de semana, no máximo. Achei que o Tideline era pra quem mora na praia. Errei. Exatamente porque eu surfo pouco, preciso acertar o dia. O app me fez desistir de sábado ruim e me fez sair cedo no domingo bom. Ganhei tempo com a família e sessão melhor na água.</p>
+        <div class="depo-author">[Nome], [idade]</div>
+        <div class="depo-meta">Surfa em [praia], PR</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFERTA -->
+<section id="oferta" class="section" style="background:var(--bg)">
+  <div class="container">
+    <div class="section-label">Planos</div>
+    <h2>O que você recebe quando entra no Tideline.</h2>
+    <div class="oferta-grid">
+      <div>
+        <p style="margin-bottom:32px">O Tideline trabalha com assinatura. Pagou uma vez, tem acesso completo pelo período contratado.</p>
+
+        <div class="value-list">
+          <div class="value-item">
+            <div class="value-check"><svg viewBox="0 0 14 14"><polyline points="2,7 5,10 12,3"/></svg></div>
+            <div class="value-item-text">
+              <strong>Previsão de 7 dias em 60+ praias</strong>
+              Textos interpretativos gerados pelo motor Leitura Traduzida, com contexto específico de cada pico.
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-check"><svg viewBox="0 0 14 14"><polyline points="2,7 5,10 12,3"/></svg></div>
+            <div class="value-item-text">
+              <strong>Diário de bordo pessoal</strong>
+              Check-in de sessão, histórico infinito e análise de padrões ao longo do tempo.
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-check"><svg viewBox="0 0 14 14"><polyline points="2,7 5,10 12,3"/></svg></div>
+            <div class="value-item-text">
+              <strong>Barra de progressão por praia</strong>
+              Leitura de evolução de Iniciante a Local em cada pico que você frequenta.
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-check"><svg viewBox="0 0 14 14"><polyline points="2,7 5,10 12,3"/></svg></div>
+            <div class="value-item-text">
+              <strong>Alertas Sniper personalizados 24/7</strong>
+              Por praia e por condição. Você define o gatilho. O app avisa quando a janela aparece.
+            </div>
+          </div>
+        </div>
+
+        <div class="bonus-divider"><span>Mais os bônus de lançamento</span></div>
+
+        <div class="bonus-list">
+          <div class="bonus-item">
+            <div class="bonus-num">1</div>
+            <div class="bonus-item-body">
+              <strong>Guia Ler o Mar</strong>
+              <p>Ebook de 40 páginas com os fundamentos de oceanografia aplicada ao surf. O que é período, por que terral muda tudo, como ler batimetria sem ser engenheiro.</p>
+            </div>
+          </div>
+          <div class="bonus-item">
+            <div class="bonus-num">2</div>
+            <div class="bonus-item-body">
+              <strong>Série em vídeo: Interpretando a previsão</strong>
+              <p>Três vídeos explicando como interpretar uma previsão diária usando o Tideline na prática.</p>
+            </div>
+          </div>
+          <div class="bonus-item">
+            <div class="bonus-num">3</div>
+            <div class="bonus-item-body">
+              <strong>Acesso antecipado a novas praias</strong>
+              <p>10 praias novas sendo adicionadas ao longo do ano. Fundadores são avisados primeiro e têm acesso antes do lançamento público.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="pricing-box">
+          <div class="pricing-label">Plano completo</div>
+          <div>
+            <div class="pricing-stack">Valor total dos itens: R$[X]</div>
+            <div class="pricing-price"><span class="pp-cur">R$</span><span class="pp-int">19</span><span class="pp-dec">,99</span></div>
+            <div class="pricing-period">por mês · ou R$[X] no anual</div>
+          </div>
+          <div class="pricing-features">
+            <div class="pf-item"><svg viewBox="0 0 14 14"><polyline points="2,7 5,10 12,3"/></svg><span>60+ praias com Leitura Traduzida</span></div>
+            <div class="pf-item"><svg viewBox="0 0 14 14"><polyline points="2,7 5,10 12,3"/></svg><span>Diário de bordo ilimitado</span></div>
+            <div class="pf-item"><svg viewBox="0 0 14 14"><polyline points="2,7 5,10 12,3"/></svg><span>Alertas Sniper 24/7</span></div>
+            <div class="pf-item"><svg viewBox="0 0 14 14"><polyline points="2,7 5,10 12,3"/></svg><span>3 bônus de lançamento inclusos</span></div>
+            <div class="pf-item"><svg viewBox="0 0 14 14"><polyline points="2,7 5,10 12,3"/></svg><span>14 dias grátis, cancela quando quiser</span></div>
+          </div>
+          <a href="login.html" class="btn btn-primary">Começar agora grátis</a>
+          <div class="pricing-note">Sem cartão obrigatório no período de teste</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GARANTIA -->
+<section id="garantia" class="section">
+  <div class="container">
+    <div class="garantia-inner">
+      <div class="garantia-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2 L4 5 L4 12 C4 16.9 7.5 21.4 12 22 C16.5 21.4 20 16.9 20 12 L20 5 Z"/><polyline points="9,12 11,14 15,10"/></svg>
+      </div>
+      <div class="section-label">Proteção total</div>
+      <h2>Garantia dos 14 Primeiros Dias.</h2>
+      <p>Você assina hoje. Usa o Tideline nos próximos 14 dias. Confere uma janela de condição que o app previu e vê por conta própria se a leitura bateu com a realidade no mar.</p>
+      <p>Se nesses 14 dias você sentir que o Tideline não te ajudou a entender melhor o mar do seu litoral, a gente devolve 100% do valor. Sem pergunta, sem fricção, sem pedido de justificativa.</p>
+      <p>A gente só pede que você tente. Surfar, olhar, comparar. É o mínimo que o produto merece e é o único teste que vale alguma coisa.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WAVE DIVIDER -->
+<div class="wave-divider" style="background:var(--mid)">
+  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,0 C360,60 1080,0 1440,40 L1440,60 L0,60 Z" fill="#F5F0E8"/>
+  </svg>
+</div>
+
+<!-- FAQ -->
+<section id="faq" class="section">
+  <div class="container">
+    <div class="faq-grid">
+      <div class="faq-intro">
+        <div class="section-label">Dúvidas</div>
+        <h2>Perguntas frequentes.</h2>
+        <p class="lead" style="margin-top:12px">Não achou o que queria? Manda um email, a gente responde.</p>
+        <a href="mailto:contato@tideline.app" class="btn btn-outline" style="margin-top:28px;font-size:14px">Falar com a gente</a>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>Isso funciona pra quem tá começando do zero no surf?<svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6,9 12,15 18,9"/></svg></summary>
+          <p class="faq-answer">Funciona principalmente pra quem tá começando. O que diferencia o iniciante do intermediário é leitura de mar, não condicionamento. A partir do momento que você aprende a entender o que vai encontrar antes de chegar na água, sua curva de evolução encurta. O Tideline foi desenhado pensando em quem ainda não sabe, justamente pra que você não precise passar por dez anos de tentativa e erro.</p>
+        </details>
+        <details>
+          <summary>Já uso Windy e Surfline. Por que trocar?<svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6,9 12,15 18,9"/></svg></summary>
+          <p class="faq-answer">A gente não pede pra você trocar. Pode usar os dois por um mês e comparar. Windy e Surfline te mostram a tabela, e fazem isso bem. O Tideline te mostra a tabela e te explica o que ela significa pra cada praia brasileira, em português. São ferramentas diferentes. A maioria dos nossos clientes manteve o outro app os primeiros meses e depois cancelou porque não usava mais.</p>
+        </details>
+        <details>
+          <summary>Os Alertas Sniper vão me encher de notificação?<svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6,9 12,15 18,9"/></svg></summary>
+          <p class="faq-answer">Não. Você define o nível mínimo de condição que justifica um alerta. Pode ser "só me avisa quando tiver terral e swell organizado". Em praia média, isso significa entre zero e três alertas por mês. Quem usa alerta Sniper costuma dizer que é a função que mais gera resultado por menos incômodo.</p>
+        </details>
+        <details>
+          <summary>A previsão acerta?<svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6,9 12,15 18,9"/></svg></summary>
+          <p class="faq-answer">A previsão usa os mesmos modelos meteorológicos que os apps grandes (GFS, ECMWF, Wavewatch). A diferença do Tideline está na interpretação. Modelo meteorológico é razoavelmente confiável em até 72 horas, cai um pouco na faixa de 4 a 7 dias. A gente é honesto sobre isso nos textos: quanto mais longe, mais a leitura é tendência do que certeza.</p>
+        </details>
+        <details>
+          <summary>Funciona na minha praia?<svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6,9 12,15 18,9"/></svg></summary>
+          <p class="faq-answer">Temos mais de 60 praias mapeadas hoje. Se a sua não está, você pode sugerir pela plataforma. A gente adiciona em lotes mensais, priorizando por demanda. Se você assinar e sua praia entrar no próximo lote, você é avisado direto.</p>
+        </details>
+        <details>
+          <summary>Posso cancelar quando quiser?<svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6,9 12,15 18,9"/></svg></summary>
+          <p class="faq-answer">Pode. Assinatura mensal cancela no mês. Anual, você pode pedir o pro rata do não utilizado nos primeiros 14 dias pela garantia. Depois disso, mantém o acesso até o fim do período contratado. Zero multa, zero permanência mínima.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUEM -->
+<section id="quem" class="section" style="background:var(--bg)">
+  <div class="container">
+    <div class="quem-grid">
+      <div class="quem-body">
+        <div class="section-label">O time</div>
+        <h2>Quem construiu o Tideline.</h2>
+        <p>O Tideline nasce do cruzamento entre quem entende de mar por ciência e quem entende de mar por vivência. [Nome] tem [X] anos de surf no litoral brasileiro, [autoridade oceanográfica ou tech ou ambas]. Montou o time com [descrição curta do time] pra resolver um problema que todo surfista brasileiro já teve: olhar pro app e não saber se vale a pena.</p>
+        <p>Não é um app gringo traduzido. É um app brasileiro feito por brasileiro, pros 8 mil quilômetros de litoral que a gente tem.</p>
+      </div>
+      <img class="quem-mascot" src="mascot.png" alt="Mascote Tideline">
+    </div>
+  </div>
+</section>
+
+<!-- URGENCIA -->
+<section id="urgencia">
+  <div class="urgencia-bg"></div>
+  <div class="urgencia-content">
+    <div class="section-label" style="color:rgba(255,255,255,.45)">Lançamento</div>
+    <h2>Condições exclusivas de lançamento.</h2>
+    <p>O Tideline tá em lançamento. Quem entra agora trava o preço de fundador pra sempre, mesmo quando o valor subir lá na frente.</p>
+    <p>Os três bônus também saem do pacote quando as vagas fecharem. Quem já é assinante não perde nada.</p>
+    <p>Não tem data marcada de reabertura. Quando as vagas acabarem, acabaram.</p>
+    <a href="login.html" class="btn btn-primary" style="font-size:16px;padding:18px 40px;margin-top:12px">Quero testar o Tideline grátis por 14 dias</a>
+    <p class="urgencia-note">Sem cartão. Cancela quando quiser.</p>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="cta-final" class="section">
+  <div class="container">
+    <div class="cta-final-inner">
+      <div class="section-label">Comece hoje</div>
+      <h2>14 dias pra ver a diferença.</h2>
+      <div class="ps">
+        Surfe é sobre tempo. Tempo de água, tempo de acordar cedo, tempo de pegar uma série boa e lembrar dela por semanas.<br><br>
+        O Tideline existe pra te dar esse tempo de volta. Em vez de gastar manhã em praia flat, você gasta na onda certa. Em vez de decifrar tabela, você entende o mar. Em vez de depender do palpite do amigo, você tem uma leitura que cresce com você.<br><br>
+        Você testa por 14 dias. Se não for pra você, devolvemos. Mas a gente aposta que vai ser.
+      </div>
+      <div class="cta-row">
+        <a href="login.html" class="btn btn-primary" style="font-size:16px;padding:18px 36px">Quero testar o Tideline grátis</a>
+        <a href="#" class="btn btn-outline" style="font-size:16px;padding:18px 36px">Ver as praias disponíveis</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="#" class="footer-logo">tide<strong>line</strong><span class="dot">.</span></a>
+    <div class="footer-links">
+      <a href="#">Política de privacidade</a>
+      <a href="#">Termos de uso</a>
+      <a href="#">Contato</a>
+    </div>
+    <div class="footer-copy">© 2026 Tideline. Todos os direitos reservados.</div>
+  </div>
+</footer>
+
+<script>
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+}, { passive: true });
+</script>
+</body>
+</html>

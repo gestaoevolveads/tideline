@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Tideline — Compositor Temos Novidades</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #111; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; min-height: 100vh; padding: 32px 24px; font-family: -apple-system, "Helvetica Neue", sans-serif; color: #fff; gap: 20px; }
+  h2 { font-size: 14px; font-weight: 600; letter-spacing: .05em; color: #888; text-transform: uppercase; }
+  canvas { border-radius: 12px; max-width: 100%; box-shadow: 0 8px 40px rgba(0,0,0,.6); }
+  .controls { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; justify-content: center; }
+  .btn { padding: 11px 24px; border-radius: 10px; font-size: 13px; font-weight: 700; cursor: pointer; border: none; font-family: inherit; transition: opacity .15s; }
+  .btn:hover { opacity: .85; }
+  .btn-pick { background: #243F3D; color: #D3E2DE; border: 1.5px solid #476664; }
+  .btn-dl { background: #F95831; color: #fff; }
+  .note { font-size: 12px; color: #555; text-align: center; line-height: 1.6; max-width: 480px; }
+  #filename { font-size: 12px; color: #476664; }
+</style>
+</head>
+<body>
+
+<h2>Tideline — Arte Temos Novidades</h2>
+
+<canvas id="c" width="1080" height="1080"></canvas>
+
+<div class="controls">
+  <label class="btn btn-pick" for="img-input">+ Escolher ilustração</label>
+  <input type="file" id="img-input" accept="image/*" style="display:none" onchange="loadIlustration(this)">
+  <span id="filename">nenhuma imagem selecionada</span>
+  <button class="btn btn-dl" onclick="download()">⬇ Baixar PNG</button>
+</div>
+
+<p class="note">Selecione a ilustração do Gemini. O compositor vai encaixá-la no slot superior e gerar o PNG final 1080×1080px.</p>
+
+<script>
+const W = 1080, H = 1080;
+const DEEP   = '#172726';
+const MID    = '#243F3D';
+const MUTED  = '#476664';
+const SURF   = '#D3E2DE';
+const ACCENT = '#F95831';
+const FF = '"Helvetica Neue", Helvetica, Arial, sans-serif';
+
+let gIlustration = null;
+
+function rrect(ctx, x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x+r, y); ctx.lineTo(x+w-r, y);
+  ctx.arcTo(x+w, y, x+w, y+r, r); ctx.lineTo(x+w, y+h-r);
+  ctx.arcTo(x+w, y+h, x+w-r, y+h, r); ctx.lineTo(x+r, y+h);
+  ctx.arcTo(x, y+h, x, y+h-r, r); ctx.lineTo(x, y+r);
+  ctx.arcTo(x, y, x+r, y, r); ctx.closePath();
+}
+
+function render() {
+  const canvas = document.getElementById('c');
+  const ctx = canvas.getContext('2d');
+
+  // Background
+  ctx.fillStyle = DEEP;
+  ctx.fillRect(0, 0, W, H);
+
+  // Illustration slot (top portion)
+  const SLOT_H = 620;
+  if (gIlustration) {
+    // Cover fit into slot
+    const imgR = gIlustration.naturalWidth / gIlustration.naturalHeight;
+    const boxR = W / SLOT_H;
+    let sw, sh, sx, sy;
+    if (imgR > boxR) {
+      sh = gIlustration.naturalHeight;
+      sw = sh * boxR;
+      sx = (gIlustration.naturalWidth - sw) / 2;
+      sy = 0;
+    } else {
+      sw = gIlustration.naturalWidth;
+      sh = sw / boxR;
+      sx = 0;
+      sy = (gIlustration.naturalHeight - sh) / 2;
+    }
+    ctx.drawImage(gIlustration, sx, sy, sw, sh, 0, 0, W, SLOT_H);
+
+    // Subtle gradient overlay at bottom of illustration (blends into card)
+    const grad = ctx.createLinearGradient(0, SLOT_H - 120, 0, SLOT_H);
+    grad.addColorStop(0, 'rgba(23,39,38,0)');
+    grad.addColorStop(1, 'rgba(23,39,38,0.85)');
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, SLOT_H - 120, W, 120);
+  } else {
+    // Placeholder
+    ctx.fillStyle = MID;
+    ctx.fillRect(0, 0, W, SLOT_H);
+    ctx.fillStyle = MUTED;
+    ctx.font = `500 16px ${FF}`;
+    ctx.textAlign = 'center';
+    ctx.fillText('SELECIONE A ILUSTRAÇÃO ACIMA', W/2, SLOT_H/2);
+    ctx.textAlign = 'left';
+  }
+
+  // Separator line + orange dot
+  const SEP_Y = SLOT_H + 18;
+  ctx.strokeStyle = ACCENT;
+  ctx.lineWidth = 1.5;
+  ctx.globalAlpha = 0.6;
+  ctx.beginPath();
+  ctx.moveTo(52, SEP_Y);
+  ctx.lineTo(W - 36, SEP_Y);
+  ctx.stroke();
+  ctx.globalAlpha = 1;
+  ctx.fillStyle = ACCENT;
+  ctx.beginPath();
+  ctx.arc(44, SEP_Y, 5, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Main card
+  const CARD_X = 30, CARD_Y = SLOT_H + 36;
+  const CARD_W = W - 60, CARD_H = H - CARD_Y - 30;
+  rrect(ctx, CARD_X, CARD_Y, CARD_W, CARD_H, 20);
+  ctx.fillStyle = MID;
+  ctx.fill();
+
+  // Card content
+  const TX = CARD_X + 36;
+  let ty = CARD_Y + 52;
+
+  // "ALOHA! ATENÇÃO, USUÁRIOS:"
+  ctx.fillStyle = ACCENT;
+  ctx.font = `700 15px ${FF}`;
+  ctx.letterSpacing = '0.1em';
+  ctx.fillText('ALOHA! ATENÇÃO, USUÁRIOS:', TX, ty);
+  ctx.letterSpacing = '0';
+  ty += 72;
+
+  // "Temos novidades!"
+  ctx.fillStyle = SURF;
+  ctx.font = `800 86px ${FF}`;
+  // Shrink if too wide
+  let fs = 86;
+  const maxW = CARD_W - 72;
+  while (ctx.measureText('Temos novidades!').width > maxW && fs > 48) {
+    fs--;
+    ctx.font = `800 ${fs}px ${FF}`;
+  }
+  ctx.fillText('Temos novidades!', TX, ty);
+  ty += 52;
+
+  // Body text — wrap manually
+  ctx.fillStyle = 'rgba(211,226,222,0.65)';
+  ctx.font = `400 22px ${FF}`;
+  const bodyText = 'O Tideline atualizou e você pode conferir agora no app as novidades. Confira já!';
+  const words = bodyText.split(' ');
+  let line = '';
+  const lineH = 34, bodyMaxW = CARD_W - 72;
+  words.forEach(word => {
+    const test = line ? line + ' ' + word : word;
+    if (ctx.measureText(test).width > bodyMaxW) {
+      ctx.fillText(line, TX, ty);
+      ty += lineH;
+      line = word;
+    } else {
+      line = test;
+    }
+  });
+  if (line) ctx.fillText(line, TX, ty);
+
+  // "tideline." bottom right of card
+  const LY = CARD_Y + CARD_H - 32;
+  const LX = CARD_X + CARD_W - 36;
+  ctx.fillStyle = SURF;
+  ctx.font = `300 22px ${FF}`;
+  ctx.textAlign = 'right';
+  const tideW = ctx.measureText('tide').width;
+  const lineW = ctx.measureText('line').width;
+  const dotW  = ctx.measureText('.').width;
+  const totalW = tideW + lineW + dotW;
+  const startX = LX - totalW;
+  ctx.textAlign = 'left';
+  ctx.font = `300 22px ${FF}`; ctx.fillStyle = SURF;
+  ctx.fillText('tide', startX, LY);
+  ctx.font = `700 22px ${FF}`;
+  ctx.fillText('line', startX + tideW, LY);
+  ctx.fillStyle = ACCENT;
+  ctx.fillText('.', startX + tideW + lineW, LY);
+}
+
+function loadIlustration(input) {
+  if (!input.files || !input.files[0]) return;
+  document.getElementById('filename').textContent = input.files[0].name;
+  const reader = new FileReader();
+  reader.onload = e => {
+    const img = new Image();
+    img.onload = () => { gIlustration = img; render(); };
+    img.src = e.target.result;
+  };
+  reader.readAsDataURL(input.files[0]);
+}
+
+function download() {
+  const canvas = document.getElementById('c');
+  const a = document.createElement('a');
+  a.download = 'tideline-novidades.png';
+  a.href = canvas.toDataURL('image/png');
+  a.click();
+}
+
+render();
+</script>
+</body>
+</html>

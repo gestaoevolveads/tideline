@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Tideline · Entrar</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#F8FAF9;--surface:#D3E2DE;--surface2:#E8F0ED;
+  --deep:#172726;--mid:#243F3D;--muted:#476664;
+  --accent:#F95831;--white:#FFFFFF;
+  --ff:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif;
+}
+html{font-size:16px;-webkit-font-smoothing:antialiased}
+body{font-family:var(--ff);background:var(--bg);color:var(--deep);min-height:100dvh;display:flex;flex-direction:column;align-items:center}
+
+.login-wrap{
+  width:100%;max-width:420px;
+  display:flex;flex-direction:column;align-items:center;
+  padding-bottom:48px;
+}
+
+.login-mascot{
+  width:90%;max-width:340px;
+  display:block;margin-top:24px;
+}
+
+.login-wordmark{
+  font-size:26px;font-weight:300;color:var(--deep);
+  letter-spacing:-.01em;margin:8px 0 32px;text-align:center;
+}
+.login-wordmark strong{font-weight:700}
+.login-wordmark .dot{color:var(--accent)}
+
+.login-form{width:100%;padding:0 24px}
+
+.form-group{margin-bottom:16px}
+.form-group label{
+  display:block;font-size:12px;font-weight:700;
+  letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:7px;
+}
+.form-input{
+  width:100%;padding:13px 14px;
+  background:var(--surface2);border:1.5px solid transparent;
+  border-radius:10px;font-family:var(--ff);font-size:15px;
+  color:var(--deep);outline:none;transition:border-color .15s,background .15s;
+  -webkit-appearance:none;
+}
+.form-input:focus{border-color:var(--muted);background:var(--white)}
+.form-input::placeholder{color:var(--muted)}
+
+.btn-entrar{
+  display:block;width:100%;padding:14px;
+  background:var(--accent);color:#fff;border:none;
+  border-radius:12px;font-family:var(--ff);font-size:15px;
+  font-weight:700;letter-spacing:-.01em;cursor:pointer;
+  transition:opacity .15s;margin-top:8px;
+  -webkit-tap-highlight-color:transparent;
+}
+.btn-entrar:hover{opacity:.88}
+.btn-entrar:active{opacity:.75}
+
+.login-err{
+  display:none;
+  margin-top:14px;padding:10px 14px;
+  background:rgba(249,88,49,.08);border-radius:8px;
+  font-size:13.5px;color:#C04020;text-align:center;line-height:1.5;
+}
+.login-err.show{display:block}
+
+.login-beta{
+  margin-top:24px;font-size:12px;color:var(--muted);
+  text-align:center;line-height:1.6;padding:0 24px;
+}
+</style>
+</head>
+<body>
+
+<div class="login-wrap">
+  <img class="login-mascot" src="mascot.png" alt="Tideline mascote">
+  <div class="login-wordmark">tide<strong>line</strong><span class="dot">.</span></div>
+
+  <div class="login-form">
+    <div class="form-group">
+      <label>Usuário</label>
+      <input class="form-input" type="text" id="inp-user"
+        placeholder="seu usuário" autocomplete="username"
+        autocapitalize="none" autocorrect="off" spellcheck="false">
+    </div>
+    <div class="form-group">
+      <label>Senha</label>
+      <input class="form-input" type="password" id="inp-pass"
+        placeholder="••••••" autocomplete="current-password">
+    </div>
+    <button class="btn-entrar" onclick="entrar()">Entrar</button>
+    <div class="login-err" id="login-err">Usuário ou senha incorretos.</div>
+    <div class="login-beta">Acesso beta fechado. Use as credenciais recebidas.</div>
+  </div>
+</div>
+
+<script>
+/* ── credenciais ─────────────────────────────────────────
+   Para adicionar um usuário: 'nome': 'senha',
+   Para remover: apague a linha.
+──────────────────────────────────────────────────────── */
+const USUARIOS = {
+  'hudson':    '852456',
+  'anna':      '852456',
+  'diego':     '852456',
+  'batata':    '852456tibia',
+  'vitor olv': 'fluzao2026',
+  'pedro olv': 'fluzao2026',
+};
+
+/* verifica se já está logado */
+if (localStorage.getItem('tl_demo_auth')) {
+  window.location.replace('app.html');
+}
+
+function entrar() {
+  const user = document.getElementById('inp-user').value.trim().toLowerCase();
+  const pass = document.getElementById('inp-pass').value;
+  const err  = document.getElementById('login-err');
+
+  if (USUARIOS[user] && USUARIOS[user] === pass) {
+    localStorage.setItem('tl_demo_auth', user);
+    window.location.replace('app.html');
+  } else {
+    err.classList.add('show');
+    document.getElementById('inp-pass').value = '';
+    document.getElementById('inp-pass').focus();
+  }
+}
+
+/* Enter para submeter */
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter') entrar();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 160" width="480" height="160">
+  <rect width="480" height="160" fill="#172726"/>
+
+  <!-- Wave mark icon -->
+  <g transform="translate(32, 48)">
+    <!-- Wave shape - stylized barrel wave -->
+    <path d="M0,48 C8,32 20,16 36,12 C52,8 60,20 68,28 C76,36 80,40 92,36 C104,32 108,20 116,16 C120,14 124,14 128,16"
+          fill="none" stroke="#F95831" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M0,64 C12,52 28,40 44,40 C56,40 60,52 68,56 C80,64 92,60 108,52 C116,48 124,44 136,44"
+          fill="none" stroke="#476664" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="176" y="104"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="52"
+        font-weight="700"
+        letter-spacing="6"
+        fill="#D3E2DE">TIDELINE</text>
+
+  <!-- Tagline -->
+  <text x="178" y="128"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="13"
+        font-weight="400"
+        letter-spacing="4"
+        fill="#476664">SURF · LOG · EVOLVE</text>
+
+  <!-- Accent line under wordmark -->
+  <line x1="176" y1="112" x2="452" y2="112" stroke="#F95831" stroke-width="2" opacity="0.6"/>
+</svg>

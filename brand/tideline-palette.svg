@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="600" height="320">
+  <rect width="600" height="320" fill="#1a1a1a"/>
+
+  <!-- Title -->
+  <text x="32" y="44" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="14" font-weight="600" letter-spacing="3" fill="#ffffff" opacity="0.5">TIDELINE — PALETA DE CORES</text>
+
+  <!-- Swatch 1: Deep -->
+  <rect x="32" y="64" width="96" height="160" rx="8" fill="#172726"/>
+  <rect x="32" y="64" width="96" height="160" rx="8" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+  <text x="80" y="252" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">#172726</text>
+  <text x="80" y="268" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="10" fill="#ffffff" opacity="0.5" text-anchor="middle">Deep</text>
+
+  <!-- Swatch 2: Mid -->
+  <rect x="144" y="64" width="96" height="160" rx="8" fill="#243F3D"/>
+  <text x="192" y="252" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">#243F3D</text>
+  <text x="192" y="268" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="10" fill="#ffffff" opacity="0.5" text-anchor="middle">Mid</text>
+
+  <!-- Swatch 3: Muted -->
+  <rect x="256" y="64" width="96" height="160" rx="8" fill="#476664"/>
+  <text x="304" y="252" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">#476664</text>
+  <text x="304" y="268" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="10" fill="#ffffff" opacity="0.5" text-anchor="middle">Muted</text>
+
+  <!-- Swatch 4: Surface -->
+  <rect x="368" y="64" width="96" height="160" rx="8" fill="#D3E2DE"/>
+  <text x="416" y="252" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">#D3E2DE</text>
+  <text x="416" y="268" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="10" fill="#ffffff" opacity="0.5" text-anchor="middle">Surface</text>
+
+  <!-- Swatch 5: Accent -->
+  <rect x="480" y="64" width="96" height="160" rx="8" fill="#F95831"/>
+  <text x="528" y="252" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">#F95831</text>
+  <text x="528" y="268" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="10" fill="#ffffff" opacity="0.5" text-anchor="middle">Accent</text>
+
+  <!-- Usage note -->
+  <text x="32" y="304" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="10" fill="#ffffff" opacity="0.3">Deep e Mid = fundos · Surface = texto principal · Muted = texto secundário · Accent = destaques, CTAs, números</text>
+</svg>

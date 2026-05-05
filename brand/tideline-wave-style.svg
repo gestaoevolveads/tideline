@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- Background - ocean deep -->
+  <rect width="800" height="500" fill="#172726"/>
+
+  <!-- Sky gradient area -->
+  <rect width="800" height="200" fill="#243F3D" opacity="0.4"/>
+
+  <!-- Horizon line subtle -->
+  <line x1="0" y1="200" x2="800" y2="200" stroke="#476664" stroke-width="1" opacity="0.3"/>
+
+  <!-- Background swell - distant wave -->
+  <path d="M-20,220 C60,200 120,195 180,205 C240,215 280,230 340,218 C400,206 440,195 500,200 C560,205 600,220 660,210 C720,200 760,195 820,200 L820,500 L-20,500 Z"
+        fill="#243F3D" opacity="0.6"/>
+
+  <!-- Mid wave body - the main barrel -->
+  <path d="M-20,280 C20,240 80,200 160,190 C200,185 230,192 250,210 C270,228 275,255 265,275 C255,295 235,308 210,310"
+        fill="none" stroke="#476664" stroke-width="2" opacity="0.5"/>
+
+  <!-- Main wave - large barrel rolling left -->
+  <!-- Wave back/body -->
+  <path d="M-20,380 C40,320 120,260 220,240 C280,230 320,240 340,268 C360,296 352,335 330,355 C308,375 275,382 240,378 C200,374 165,360 130,355 C80,348 30,358 -20,380 Z"
+        fill="#243F3D"/>
+
+  <!-- Wave face - lighter teal -->
+  <path d="M130,355 C165,360 200,374 240,378 C275,382 308,375 330,355 C352,335 360,296 340,268 C320,240 280,230 220,240 C190,246 165,258 145,274 C130,286 118,302 115,320 C112,338 118,350 130,355 Z"
+        fill="#2d5250" opacity="0.8"/>
+
+  <!-- Wave lip / curl top -->
+  <path d="M200,238 C240,228 290,228 330,245 C360,258 375,278 370,295 C365,285 345,268 315,260 C285,252 250,250 220,255 C200,258 185,265 175,275 C178,258 188,244 200,238 Z"
+        fill="#476664" opacity="0.7"/>
+
+  <!-- Foam/spray at lip -->
+  <path d="M195,236 C215,226 248,222 278,228 C308,234 332,248 340,262 C320,248 292,238 262,234 C232,230 205,234 195,236 Z"
+        fill="#D3E2DE" opacity="0.6"/>
+
+  <!-- Foam trail on wave face -->
+  <path d="M240,340 C255,330 270,318 278,305 C268,316 252,328 240,340 Z"
+        fill="#D3E2DE" opacity="0.3"/>
+  <path d="M215,358 C228,350 242,338 250,325 C238,337 222,350 215,358 Z"
+        fill="#D3E2DE" opacity="0.25"/>
+
+  <!-- Whitewater / foam base -->
+  <path d="M-20,380 C30,358 80,348 130,355 C110,362 80,368 50,372 C20,376 -5,378 -20,380 Z"
+        fill="#D3E2DE" opacity="0.15"/>
+
+  <!-- Surfer silhouette on wave face -->
+  <g transform="translate(268, 285)" opacity="0.95">
+    <!-- Board -->
+    <ellipse cx="0" cy="18" rx="14" ry="4" fill="#F95831" opacity="0.9" transform="rotate(-8)"/>
+    <!-- Body -->
+    <rect x="-4" y="4" width="8" height="12" rx="3" fill="#172726"/>
+    <!-- Head -->
+    <circle cx="0" cy="1" r="5" fill="#172726"/>
+    <!-- Front arm extended -->
+    <path d="M4,8 L14,4" stroke="#172726" stroke-width="3" stroke-linecap="round"/>
+    <!-- Back arm -->
+    <path d="M-4,10 L-10,14" stroke="#172726" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Legs bent (crouching stance) -->
+    <path d="M-3,16 L-6,24" stroke="#172726" stroke-width="3" stroke-linecap="round"/>
+    <path d="M3,16 L6,23" stroke="#172726" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Spray particles at surfer -->
+  <circle cx="282" cy="278" r="2" fill="#D3E2DE" opacity="0.5"/>
+  <circle cx="276" cy="274" r="1.5" fill="#D3E2DE" opacity="0.4"/>
+  <circle cx="288" cy="272" r="1" fill="#D3E2DE" opacity="0.3"/>
+  <circle cx="270" cy="281" r="1.5" fill="#D3E2DE" opacity="0.35"/>
+
+  <!-- Foreground water/foam -->
+  <path d="M-20,420 C80,400 180,408 280,415 C380,422 480,412 580,418 C680,424 750,415 820,420 L820,500 L-20,500 Z"
+        fill="#243F3D" opacity="0.5"/>
+  <path d="M-20,450 C100,438 220,445 340,440 C460,435 580,442 820,438 L820,500 L-20,500 Z"
+        fill="#172726" opacity="0.8"/>
+
+  <!-- Foam ripples foreground -->
+  <path d="M40,430 C80,425 120,428 160,430" stroke="#D3E2DE" stroke-width="2" fill="none" opacity="0.15"/>
+  <path d="M300,442 C350,438 400,440 450,443" stroke="#D3E2DE" stroke-width="1.5" fill="none" opacity="0.12"/>
+  <path d="M600,435 C640,432 680,434 720,436" stroke="#D3E2DE" stroke-width="1.5" fill="none" opacity="0.1"/>
+
+  <!-- Label -->
+  <rect x="0" y="464" width="800" height="36" fill="#172726" opacity="0.7"/>
+  <text x="32" y="486" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="11" letter-spacing="3" fill="#476664">TIDELINE — ESTILO DE ILUSTRAÇÃO · ONDA + SURFISTA · PALETA OFICIAL</text>
+</svg>
