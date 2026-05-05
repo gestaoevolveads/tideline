@@ -203,6 +203,20 @@ async function sleep(ms) {
   return new Promise(r => setTimeout(r, ms));
 }
 
+async function processBeach(client, beach, narratorKnowledge, index, total) {
+  console.log(`[${index}/${total}] ${beach.name}...`);
+  try {
+    const { marine, forecast } = await fetchBeachData(beach);
+    const blocos = aggregateBlocos(marine, forecast);
+    const analysis = await analyzeBeach(client, beach, blocos, narratorKnowledge);
+    console.log(`  OK: ${beach.name}`);
+    return { name: beach.name, data: analysis };
+  } catch (err) {
+    console.error(`  Erro em ${beach.name}:`, err.message);
+    return { name: beach.name, data: { erro: true } };
+  }
+}
+
 async function main() {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) throw new Error('ANTHROPIC_API_KEY não definida');
@@ -218,24 +232,26 @@ async function main() {
     beaches: {},
   };
 
-  console.log(`Gerando narrações para ${BEACHES.length} praias...`);
+  const BATCH_SIZE = 5; // 5 praias em paralelo
+  const total = BEACHES.length;
+  console.log(`Gerando narrações para ${total} praias em lotes de ${BATCH_SIZE}...`);
 
-  for (let i = 0; i < BEACHES.length; i++) {
-    const beach = BEACHES[i];
-    console.log(`[${i + 1}/${BEACHES.length}] ${beach.name}...`);
+  for (let i = 0; i < total; i += BATCH_SIZE) {
+    const batch = BEACHES.slice(i, i + BATCH_SIZE);
+    const batchNum = Math.floor(i / BATCH_SIZE) + 1;
+    const totalBatches = Math.ceil(total / BATCH_SIZE);
+    console.log(`\nLote ${batchNum}/${totalBatches}: ${batch.map(b => b.name).join(', ')}`);
 
-    try {
-      const { marine, forecast } = await fetchBeachData(beach);
-      const blocos = aggregateBlocos(marine, forecast);
-      const analysis = await analyzeBeach(client, beach, blocos, narratorKnowledge);
-      cache.beaches[beach.name] = analysis;
-    } catch (err) {
-      console.error(`  Erro em ${beach.name}:`, err.message);
-      cache.beaches[beach.name] = { erro: true };
+    const results = await Promise.all(
+      batch.map((beach, j) => processBeach(client, beach, narratorKnowledge, i + j + 1, total))
+    );
+
+    for (const r of results) {
+      cache.beaches[r.name] = r.data;
     }
 
-    // pausa entre chamadas pra respeitar rate limits
-    if (i < BEACHES.length - 1) await sleep(800);
+    // pausa entre lotes pra respeitar rate limits da Anthropic
+    if (i + BATCH_SIZE < total) await sleep(2000);
   }
 
   const outPath = path.join(__dirname, '../demo/narrator-cache.json');
