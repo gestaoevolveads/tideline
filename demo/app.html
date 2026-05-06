@@ -1350,11 +1350,11 @@ function buildTranslation(wind, period, height, windDir, beach) {
 
   let p1;
   if(wind.label==='Terral'){
-    p1=`${windTerm} de ${cardSpan} soprando da terra pro mar, segura o lip no ar e esculpe a face antes de quebrar. ${isFort?'Essa é a janela de manhã no Forte: vale acordar cedo enquanto durar.':'É a janela da manhã: enquanto durar, vale o esforço de entrar.'}`;
+    p1=`${windTerm} de ${cardSpan} soprando da terra pro mar, segura o lip no ar e esculpe a face. Acorde cedo: é a janela da manhã e o vento vai virar.`;
   } else if(wind.label==='Maral'){
-    p1=`${windTerm} de ${cardSpan} chegando direto do Atlântico, empurra a onda por cima antes de ela fechar e desfaz a parede antes de você ter tempo de descer. O resultado é aquele mar picado e sem forma.`;
+    p1=`${windTerm} de ${cardSpan} chegando direto do mar, empurra a onda por cima antes de ela fechar e desfaz a parede. O resultado é aquele mar picado e sem forma.`;
   } else {
-    p1=`Vento ${windTerm} de ${cardSpan} correndo paralelo à praia. ${isFort?'Nos 7km de beach break do Forte o efeito é misturado: tem canto com parede mais limpa que outro. Vale caminhar a praia e observar antes de entrar.':'O efeito é misturado: sempre tem algum canto onde o vento pega melhor.'}`;
+    p1=`Vento ${windTerm} de ${cardSpan} correndo paralelo à praia. O efeito é misturado: sempre tem algum canto com parede mais limpa. Vale andar a praia e observar antes de entrar.`;
   }
 
   const conj=isBad?'Mesmo assim, com':'Com';
@@ -1362,14 +1362,14 @@ function buildTranslation(wind, period, height, windDir, beach) {
   const big=height>=1.5,good=height>=1.0,ok=height>=0.6,small=height>=0.3;
 
   if(period>=12){
-    const src=`${conj} ${pTerm} de ${period}s, esse swell veio de longe. Uma tempestade no Atlântico Sul mandou energia por dias antes de chegar aqui.`;
-    if(big) p2=`${src} Ondas de ombro pra cima com potência real. ${isFort?'Atenção às pedras nas extremidades com o swell grande.':'Dia pra surfista experiente.'}`;
-    else if(good) p2=`${src} ${isFort?'Ondas de peito a ombro com parede aberta, tamanho ideal pra trabalhar as lefts do Forte sem pressa.':'Ondas de peito a ombro com boa parede formada.'}`;
+    const src=`${conj} ${pTerm} de ${period}s, as séries chegam bem espaçadas e organizadas. Dá pra ver cada grupo vindo lá de trás e escolher a onda com calma.`;
+    if(big) p2=`${src} Ondas de ombro pra cima com potência real. Dia pra surfista experiente.`;
+    else if(good) p2=`${src} Ondas de peito a ombro com parede aberta, tamanho ideal pra manobrar sem pressão.`;
     else p2=`${src} Ondas ainda pequenas, mas com a qualidade que um período longo traz. Pode crescer ao longo do dia.`;
   } else if(period>=10){
-    const src=`${conj} ${pTerm} de ${period}s, o swell chega organizado, séries bem espaçadas. Dá pra ver cada grupo vindo lá de trás e escolher a onda.`;
+    const src=`${conj} ${pTerm} de ${period}s, o swell chega organizado. Dá pra antecipar cada série e se posicionar.`;
     if(big) p2=`${src} Ondas de ombro pra cima. Swell com tamanho e ritmo.`;
-    else if(good) p2=`${src} ${isFort?'Ondas de peito a ombro, bom tamanho pra manobrar as lefts do Forte com espaço.':'Ondas de peito a ombro com espaço pra manobrar.'}`;
+    else if(good) p2=`${src} Ondas de peito a ombro com espaço pra manobrar.`;
     else p2=`${src} Ondas pequenas mas com forma real, bom pra trabalhar posicionamento e remada.`;
   } else if(period>=8){
     const src=`${conj} ${pTerm} de ${period}s, as séries chegam com algum ritmo, dá pra antecipar a próxima.`;
