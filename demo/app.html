@@ -3634,9 +3634,9 @@ async function fetchWSLLive(gender) {
 }
 
 function _athleteAvatar(name, photo) {
-  if (photo) return `<img class="wsl-photo" src="${photo}" alt="${name}" onerror="this.style.display='none';this.nextSibling.style.display='flex'"><div class="wsl-photo-init" style="display:none">${name.split(' ').map(w=>w[0]).slice(0,2).join('')}</div>`;
   const initials = name.split(' ').map(w=>w[0]).slice(0,2).join('');
-  return `<div class="wsl-photo-init">${initials}</div>`;
+  const localSrc = photo || `./athletes/${encodeURIComponent(name)}.jpg`;
+  return `<img class="wsl-photo" src="${localSrc}" alt="${name}" onerror="this.style.display='none';this.nextSibling.style.display='flex'"><div class="wsl-photo-init" style="display:none">${initials}</div>`;
 }
 
 function renderWSLRanking(ranking) {
