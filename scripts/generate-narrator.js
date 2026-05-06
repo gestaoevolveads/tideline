@@ -25,7 +25,14 @@ const BEACHES = [
   {name:'Macumba',state:'RJ',lat:-23.02,lon:-43.49},
   {name:'Itacoatiara',state:'RJ',lat:-22.97,lon:-43.04},
   {name:'Geribá',state:'RJ',lat:-22.77,lon:-41.90},
+  {name:'Tucuns',state:'RJ',lat:-22.77,lon:-41.88},
+  {name:'Monte Alto',state:'RJ',lat:-22.75,lon:-41.89},
+  {name:'Figueira',state:'RJ',lat:-22.77,lon:-41.87},
   {name:'Praia Rasa',state:'RJ',lat:-22.73,lon:-41.93},
+  {name:'Foguete',state:'RJ',lat:-22.92,lon:-42.06},
+  {name:'Unamar',state:'RJ',lat:-22.94,lon:-42.22},
+  {name:'Praia Grande',state:'RJ',lat:-22.97,lon:-42.00},
+  {name:'Praia Brava',state:'RJ',lat:-22.97,lon:-42.02},
   {name:'Tombo',state:'SP',lat:-23.99,lon:-46.26},
   {name:'Pitangueiras',state:'SP',lat:-23.98,lon:-46.25},
   {name:'Barra do Sahy',state:'SP',lat:-23.74,lon:-45.53},
@@ -60,6 +67,16 @@ const BEACHES = [
   {name:'Cidreira',state:'RS',lat:-30.17,lon:-50.22},
   {name:'Arroio do Sal',state:'RS',lat:-29.56,lon:-49.89},
   {name:'Capão da Canoa',state:'RS',lat:-29.77,lon:-50.01},
+  // Mundial WT
+  {name:'Snapper Rocks',state:'AUS',lat:-28.164,lon:153.543},
+  {name:'Bells Beach',state:'AUS',lat:-38.367,lon:144.282},
+  {name:'Jeffreys Bay',state:'ZAF',lat:-34.050,lon:24.912},
+  {name:'Hossegor',state:'FRA',lat:43.670,lon:-1.427},
+  {name:'Teahupoo',state:'PYF',lat:-17.848,lon:-149.250},
+  {name:'Pipeline',state:'HAW',lat:21.665,lon:-158.053},
+  {name:'Cloudbreak',state:'FJI',lat:-17.923,lon:177.217},
+  {name:'Mundaka',state:'ESP',lat:43.408,lon:-2.699},
+  {name:'Peniche',state:'PRT',lat:39.355,lon:-9.379},
 ];
 
 const PERIODOS = [

@@ -748,7 +748,7 @@
 </svg>
 
 <header>
-  <div class="logo">tide<strong>line</strong><span class="logo-dot">.</span></div>
+  <div class="logo" onclick="showTab('mar')" style="cursor:pointer">tide<strong>line</strong><span class="logo-dot">.</span></div>
   <div class="header-right" id="header-location" onclick="openBeachSearch()">
     <div class="location-name">
       <span id="loc-name">Praia do Forte</span>
@@ -1029,67 +1029,52 @@
   <div class="modal-sheet">
     <div class="modal-handle"></div>
     <div class="modal-header">
-      <div class="modal-title">Marcar sessão</div>
+      <div class="modal-title">Registrar sessão</div>
       <button class="modal-close" onclick="closeCheckinModal()">×</button>
     </div>
-    <div style="padding:12px 0 0">
-      <div class="ci-form-row">
-        <label class="ci-form-label">Onde você surfou?</label>
+    <div class="modal-body" style="padding-top:4px">
+      <div class="form-group">
+        <label>Onde você surfou?</label>
         <div style="position:relative">
           <input class="form-input" id="ci-beach-input" type="text" placeholder="Buscar praia..." oninput="filterCiBeaches(this.value)" onfocus="filterCiBeaches(this.value)" onblur="setTimeout(hideCiDrop,150)" autocomplete="off">
           <input type="hidden" id="ci-beach-val">
           <div class="beach-drop" id="ci-beach-drop" style="display:none"></div>
         </div>
       </div>
-      <div class="ci-form-row">
-        <label class="ci-form-label">Que horas você surfou?</label>
-        <input class="form-input" id="ci-time" type="time">
+      <div style="display:flex;gap:12px">
+        <div class="form-group" style="flex:1">
+          <label>Data</label>
+          <input class="form-input" id="ci-date" type="date">
+        </div>
+        <div class="form-group" style="flex:1">
+          <label>Horário</label>
+          <input class="form-input" id="ci-time" type="time">
+        </div>
       </div>
-    </div>
-    <div style="padding:0 24px">
-      <button class="checkin-btn" onclick="confirmCheckin()" style="width:100%;margin:0">Confirmar sessão</button>
+      <div class="form-group">
+        <label>Avaliação</label>
+        <div class="star-rating" id="ci-star-ui">
+          <span class="star" onclick="setCiStar(1)">★</span>
+          <span class="star" onclick="setCiStar(2)">★</span>
+          <span class="star" onclick="setCiStar(3)">★</span>
+          <span class="star" onclick="setCiStar(4)">★</span>
+          <span class="star" onclick="setCiStar(5)">★</span>
+        </div>
+        <input type="hidden" id="ci-rating" value="3">
+      </div>
+      <div class="form-group">
+        <label>Prancha <span style="font-weight:400;color:var(--muted)">(opcional)</span></label>
+        <input class="form-input" id="ci-board" type="text" placeholder="Ex: Shortboard 6'2">
+      </div>
+      <div class="form-group">
+        <label>Notas <span style="font-weight:400;color:var(--muted)">(opcional)</span></label>
+        <textarea class="form-input form-textarea" id="ci-notes" placeholder="Como foi a sessão?"></textarea>
+      </div>
+      <button class="checkin-btn" onclick="confirmCheckin()" style="width:100%;margin:0">Salvar sessão</button>
     </div>
   </div>
 </div>
 
-<!-- Logbook Modal -->
-<div class="modal" id="log-modal">
-  <div class="modal-overlay" onclick="closeLogModal()"></div>
-  <div class="modal-sheet">
-    <div class="modal-handle"></div>
-    <div class="modal-header">
-      <div class="modal-title">Nova sessão</div>
-      <button class="modal-close" onclick="closeLogModal()">×</button>
-    </div>
-    <div class="modal-body">
-      <form onsubmit="saveLogEntry(event)">
-        <div class="form-group"><label>Data</label><input class="form-input" type="date" id="log-date" required></div>
-        <div class="form-group"><label>Horário</label><input class="form-input" type="time" id="log-time" required></div>
-        <div class="form-group"><label>Praia</label>
-          <div style="position:relative">
-            <input class="form-input" type="text" id="log-spot-input" autocomplete="off" placeholder="Buscar praia..." oninput="filterLogSpot(this.value)" onfocus="filterLogSpot(this.value)" onblur="setTimeout(()=>hideLogDrop(),150)">
-            <input type="hidden" id="log-spot" required>
-            <div class="beach-drop" id="log-spot-drop" style="display:none"></div>
-          </div>
-        </div>
-        <div class="form-group">
-          <label>Avaliação da sessão</label>
-          <div class="star-rating" id="star-ui">
-            <span class="star" onclick="setStar(1)">★</span>
-            <span class="star" onclick="setStar(2)">★</span>
-            <span class="star" onclick="setStar(3)">★</span>
-            <span class="star" onclick="setStar(4)">★</span>
-            <span class="star" onclick="setStar(5)">★</span>
-          </div>
-          <input type="hidden" id="log-rating" value="3">
-        </div>
-        <div class="form-group"><label>Prancha</label><input class="form-input" type="text" id="log-board" placeholder="Ex: Shortboard 6'2"></div>
-        <div class="form-group"><label>Notas</label><textarea class="form-input form-textarea" id="log-notes" placeholder="Como foi a sessão?"></textarea></div>
-        <button type="submit" class="btn-primary">Salvar sessão</button>
-      </form>
-    </div>
-  </div>
-</div>
 
 <!-- Bottom Nav -->
 <nav id="bottom-nav">
@@ -1534,6 +1519,20 @@ const BEACH_CROWD_PROFILE = {
   'Pântano do Sul':      {base:2, tourism:1, local:2},
   'Praia do Ferrugem':   {base:2, tourism:1, local:2},
   'Matinhos':            {base:2, tourism:2, local:1},
+  'Tucuns':              {base:3, tourism:3, local:1},
+  'Monte Alto':          {base:2, tourism:2, local:1},
+  'Figueira':            {base:2, tourism:2, local:1},
+  'Foguete':             {base:2, tourism:2, local:2},
+  'Unamar':              {base:1, tourism:1, local:2},
+  'Praia Grande':        {base:2, tourism:2, local:1},
+  'Praia Brava':         {base:2, tourism:1, local:2},
+  'Snapper Rocks':       {base:5, tourism:3, local:3},
+  'Pipeline':            {base:5, tourism:3, local:4},
+  'Teahupoo':            {base:4, tourism:2, local:3},
+  'Bells Beach':         {base:3, tourism:2, local:2},
+  'Jeffreys Bay':        {base:3, tourism:2, local:2},
+  'Hossegor':            {base:3, tourism:2, local:2},
+  'Mundaka':             {base:4, tourism:2, local:3},
 };
 
 function _isBrHoliday(d) {
@@ -2401,24 +2400,24 @@ function renderLoggedIn(user, logs) {
         </div>`).join('')}
     </div>`:'';
 
-  const entries=logs.length===0
-    ?`<div class="log-empty"><strong>Nenhuma entrada ainda.</strong>Registre detalhes de uma sessão: prancha, condições, notas.</div>`
-    :logs.slice().reverse().map((l,i)=>{
-        const stars='★'.repeat(l.rating)+'☆'.repeat(5-l.rating);
-        const realIdx=logs.length-1-i;
-        const isBest=best&&best.realIdx===realIdx;
+  const allSessions=getAllSessions();
+  const entries=allSessions.length===0
+    ?`<div class="log-empty"><strong>Nenhuma sessão ainda.</strong>Toca em "Registrar sessão" pra marcar sua primeira.</div>`
+    :allSessions.map((s,i)=>{
+        const stars=s.rating?'★'.repeat(s.rating)+'☆'.repeat(5-s.rating):'';
+        const shareArgs=`'${s.spot.replace(/'/g,"\\'")}','${s.date}','${s.time}',${s.rating||0},'${(s.notes||'').replace(/'/g,"\\'")}',${s.waveH||0}`;
         return`<div class="log-entry">
           <div class="log-entry-top">
-            <div class="log-entry-date">${l.date}${l.time?' · '+l.time:''}</div>
+            <div class="log-entry-date">${s.date}${s.time?' · '+s.time:''}</div>
             <div style="display:flex;align-items:center;gap:6px">
-              <button class="btn-mark-best${isBest?' marked':''}" onclick="markBestSession(${realIdx})" title="${isBest?'Remover destaque':'Marcar como melhor sessão'}">⭐</button>
-              <div class="log-stars">${stars}</div>
-              <button class="btn-del" onclick="deleteLog(${realIdx})">✕</button>
+              ${stars?`<div class="log-stars">${stars}</div>`:''}
+              <button class="btn-del" style="font-size:16px;background:none;border:none;color:var(--muted);cursor:pointer;padding:2px 4px" onclick="shareSession(${shareArgs})" title="Compartilhar">↗</button>
             </div>
           </div>
-          <div class="log-spot">${l.spot}</div>
-          ${l.board?`<div class="log-board">${l.board}</div>`:''}
-          ${l.notes?`<div class="log-notes">${l.notes}</div>`:''}
+          <div class="log-spot">${s.spot}</div>
+          ${s.waveH>0?`<div class="log-board">🌊 ${parseFloat(s.waveH).toFixed(1)}m</div>`:''}
+          ${s.board?`<div class="log-board">${s.board}</div>`:''}
+          ${s.notes?`<div class="log-notes">${s.notes}</div>`:''}
         </div>`;
       }).join('');
 
@@ -2463,8 +2462,8 @@ function renderLoggedIn(user, logs) {
     ${buildCondHistHtml()}
     ${buildMapaPraias(checkins)}
     <div class="logbook-header">
-      <div class="logbook-title">Diário de Bordo</div>
-      <button class="btn-add-entry" onclick="openLogModal()">+ Nova entrada</button>
+      <div class="logbook-title">Sessões</div>
+      <button class="btn-add-entry" onclick="openCheckinModal()">+ Nova sessão</button>
     </div>
     ${entries}
     <div class="sniper-card">
@@ -2507,44 +2506,16 @@ function deleteLog(idx) {
   renderEuTab();
 }
 
-/* ── LOG MODAL ──────────────────────────────────────── */
-let logStarVal=3;
-function openLogModal() {
-  const today=new Date().toISOString().split('T')[0];
-  document.getElementById('log-date').value=today;
-  const now=new Date();
-  document.getElementById('log-time').value=now.toTimeString().slice(0,5);
-  document.getElementById('log-board').value='';
-  document.getElementById('log-notes').value='';
-  setStar(3);
-  const beachName=gBeach?gBeach.name:'Praia do Forte';
-  document.getElementById('log-spot-input').value=beachName;
-  document.getElementById('log-spot').value=beachName;
-  document.getElementById('log-spot-drop').style.display='none';
-  document.getElementById('log-modal').classList.add('open');
+/* ── SESSION MODAL (unified) ────────────────────────── */
+let ciStarVal=3;
+function setCiStar(v) {
+  ciStarVal=v;
+  document.getElementById('ci-rating').value=v;
+  document.querySelectorAll('#ci-star-ui .star').forEach((s,i)=>s.classList.toggle('on',i<v));
 }
-function closeLogModal(){ document.getElementById('log-modal').classList.remove('open'); }
-function setStar(v) {
-  logStarVal=v;
-  document.getElementById('log-rating').value=v;
-  document.querySelectorAll('#star-ui .star').forEach((s,i)=>{
-    s.classList.toggle('on',i<v);
-  });
-}
-function filterLogSpot(q) {
-  const drop=document.getElementById('log-spot-drop');
-  const val=(q||'').toLowerCase();
-  const matches=BEACHES.filter(b=>(b.name+b.city+b.state).toLowerCase().includes(val)).slice(0,8);
-  if(!matches.length){drop.style.display='none';return;}
-  drop.innerHTML=matches.map(b=>`<div class="beach-drop-item" onmousedown="selectLogSpot('${b.name.replace(/'/g,"\\'")}')"><span>${b.name}</span><span class="beach-drop-state">${b.state}</span></div>`).join('');
-  drop.style.display='block';
-}
-function selectLogSpot(name) {
-  document.getElementById('log-spot-input').value=name;
-  document.getElementById('log-spot').value=name;
-  document.getElementById('log-spot-drop').style.display='none';
-}
-function hideLogDrop(){ document.getElementById('log-spot-drop').style.display='none'; }
+// kept for backward compat (setStar used by old log refs in conquistas etc)
+function setStar(v){ ciStarVal=v; }
+function closeLogModal(){}
 
 /* ── CHECKINS ───────────────────────────────────────── */
 const CHECKIN_KEY='tideline-checkins';
@@ -2552,16 +2523,18 @@ function getCheckins(){ try{return JSON.parse(localStorage.getItem(CHECKIN_KEY))
 function saveCheckins(c){ try{localStorage.setItem(CHECKIN_KEY,JSON.stringify(c));}catch{} }
 function todayStr(){ return new Date().toISOString().slice(0,10); }
 function alreadyCheckedIn(){ return getCheckins().some(c=>c.date===todayStr()); }
-function openCheckinModal() {
+function openCheckinModal(prefillDate) {
+  const beachName = gBeach ? gBeach.name : 'Praia do Forte';
   const inp = document.getElementById('ci-beach-input');
   const val = document.getElementById('ci-beach-val');
-  const beachName = gBeach ? gBeach.name : 'Praia do Forte';
   if (inp) inp.value = beachName;
   if (val) val.value = beachName;
   const now = new Date();
-  const timeStr = String(now.getHours()).padStart(2,'0') + ':' + String(now.getMinutes()).padStart(2,'0');
-  const timeInp = document.getElementById('ci-time');
-  if (timeInp) timeInp.value = timeStr;
+  document.getElementById('ci-date').value = prefillDate || now.toISOString().slice(0,10);
+  document.getElementById('ci-time').value = String(now.getHours()).padStart(2,'0') + ':' + String(now.getMinutes()).padStart(2,'0');
+  document.getElementById('ci-board').value = '';
+  document.getElementById('ci-notes').value = '';
+  setCiStar(3);
   document.getElementById('checkin-modal').classList.add('open');
 }
 function closeCheckinModal() {
@@ -2602,10 +2575,14 @@ function waveHForTime(timeStr) {
 }
 function confirmCheckin() {
   const beach = (document.getElementById('ci-beach-val').value || document.getElementById('ci-beach-input').value || (gBeach ? gBeach.name : 'Praia do Forte')).trim();
+  const dateStr = document.getElementById('ci-date').value || todayStr();
   const timeStr = document.getElementById('ci-time').value || String(new Date().getHours()).padStart(2,'0') + ':00';
-  const waveH = waveHForTime(timeStr);
+  const rating = parseInt(document.getElementById('ci-rating').value) || 3;
+  const board = document.getElementById('ci-board').value.trim();
+  const notes = document.getElementById('ci-notes').value.trim();
+  const waveH = dateStr === todayStr() ? waveHForTime(timeStr) : 0;
   const c = getCheckins();
-  c.push({date:todayStr(), beach, ts:Date.now(), time:timeStr, waveH});
+  c.push({date:dateStr, beach, ts:Date.now(), time:timeStr, waveH, rating, board, notes});
   saveCheckins(c);
   closeCheckinModal();
   renderEuTab();
@@ -2627,22 +2604,33 @@ function fmtDate(iso){
   return`${d}/${m}`;
 }
 
-function saveLogEntry(e) {
-  e.preventDefault();
-  const entry={
-    date:document.getElementById('log-date').value,
-    time:document.getElementById('log-time').value,
-    spot:document.getElementById('log-spot').value||document.getElementById('log-spot-input').value,
-    rating:parseInt(document.getElementById('log-rating').value)||3,
-    board:document.getElementById('log-board').value.trim(),
-    notes:document.getElementById('log-notes').value.trim(),
-    ts:Date.now()
-  };
-  const logs=getLogs();
-  logs.push(entry);
-  saveLogs(logs);
-  closeLogModal();
-  renderEuTab();
+function getAllSessions() {
+  const checkins = getCheckins().map(c=>({
+    date:c.date, time:c.time||'', spot:c.beach,
+    rating:c.rating||0, board:c.board||'', notes:c.notes||'',
+    ts:c.ts, waveH:c.waveH||0, _src:'ci'
+  }));
+  const logs = getLogs().map(l=>({
+    date:l.date, time:l.time||'', spot:l.spot,
+    rating:l.rating||3, board:l.board||'', notes:l.notes||'',
+    ts:l.ts, waveH:0, _src:'log'
+  }));
+  return [...checkins,...logs].sort((a,b)=>b.ts-a.ts);
+}
+
+function shareSession(spot,date,time,rating,notes,waveH) {
+  const stars='⭐'.repeat(rating||0)||'';
+  const lines=[
+    '🏄 Sessão registrada no Tideline',
+    `📍 ${spot} · ${date}${time?' · '+time:''}`,
+    stars,
+    waveH>0?`🌊 Ondas: ${parseFloat(waveH).toFixed(1)}m`:'',
+    notes?`📝 ${notes}`:'',
+    'tideline.app',
+  ].filter(Boolean);
+  const text=lines.join('\n');
+  if(navigator.share){navigator.share({text}).catch(()=>{});}
+  else{window.open('https://wa.me/?text='+encodeURIComponent(text),'_blank');}
 }
 
 /* ── DATA FETCH ─────────────────────────────────────── */
@@ -2693,7 +2681,14 @@ const BEACHES = [
   {name:'Macumba',city:'Rio de Janeiro',state:'RJ',lat:-23.02,lon:-43.49,region:'sudeste'},
   {name:'Itacoatiara',city:'Niterói',state:'RJ',lat:-22.97,lon:-43.04,region:'sudeste'},
   {name:'Geribá',city:'Búzios',state:'RJ',lat:-22.77,lon:-41.90,region:'sudeste',art:'em'},
+  {name:'Tucuns',city:'Búzios',state:'RJ',lat:-22.77,lon:-41.88,region:'sudeste',art:'em'},
+  {name:'Monte Alto',city:'Búzios',state:'RJ',lat:-22.75,lon:-41.89,region:'sudeste'},
+  {name:'Figueira',city:'Búzios',state:'RJ',lat:-22.77,lon:-41.87,region:'sudeste'},
   {name:'Praia Rasa',city:'Búzios',state:'RJ',lat:-22.73,lon:-41.93,region:'sudeste'},
+  {name:'Foguete',city:'Cabo Frio',state:'RJ',lat:-22.92,lon:-42.06,region:'sudeste'},
+  {name:'Unamar',city:'Cabo Frio',state:'RJ',lat:-22.94,lon:-42.22,region:'sudeste'},
+  {name:'Praia Grande',city:'Arraial do Cabo',state:'RJ',lat:-22.97,lon:-42.00,region:'sudeste'},
+  {name:'Praia Brava',city:'Arraial do Cabo',state:'RJ',lat:-22.97,lon:-42.02,region:'sudeste'},
   {name:'Tombo',city:'Guarujá',state:'SP',lat:-23.99,lon:-46.26,region:'sudeste'},
   {name:'Pitangueiras',city:'Guarujá',state:'SP',lat:-23.98,lon:-46.25,region:'sudeste',art:'em'},
   {name:'Barra do Sahy',city:'São Sebastião',state:'SP',lat:-23.74,lon:-45.53,region:'sudeste'},
@@ -2729,6 +2724,17 @@ const BEACHES = [
   {name:'Cidreira',city:'Cidreira',state:'RS',lat:-30.17,lon:-50.22,region:'sul'},
   {name:'Arroio do Sal',city:'Arroio do Sal',state:'RS',lat:-29.56,lon:-49.89,region:'sul'},
   {name:'Capão da Canoa',city:'Capão da Canoa',state:'RS',lat:-29.77,lon:-50.01,region:'sul'},
+  // MUNDIAL — WT spots
+  {name:'Snapper Rocks',city:'Gold Coast',state:'AUS',lat:-28.164,lon:153.543,region:'world'},
+  {name:'Bells Beach',city:'Torquay',state:'AUS',lat:-38.367,lon:144.282,region:'world'},
+  {name:'Jeffreys Bay',city:'Eastern Cape',state:'ZAF',lat:-34.050,lon:24.912,region:'world'},
+  {name:'Hossegor',city:'Hossegor',state:'FRA',lat:43.670,lon:-1.427,region:'world'},
+  {name:'Teahupoo',city:'Tahiti',state:'PYF',lat:-17.848,lon:-149.250,region:'world'},
+  {name:'Pipeline',city:'North Shore',state:'HAW',lat:21.665,lon:-158.053,region:'world'},
+  {name:'Cloudbreak',city:'Tavarua',state:'FJI',lat:-17.923,lon:177.217,region:'world'},
+  {name:'Lemoore',city:'California',state:'USA',lat:36.300,lon:-119.770,region:'world'},
+  {name:'Mundaka',city:'Mundaka',state:'ESP',lat:43.408,lon:-2.699,region:'world'},
+  {name:'Peniche',city:'Peniche',state:'PRT',lat:39.355,lon:-9.379,region:'world'},
 ];
 
 const RECENT_KEY = 'tideline_recent';
