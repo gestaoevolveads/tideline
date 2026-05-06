@@ -193,15 +193,13 @@ AVISO: alerta real (corrente, recife, tamanho perigoso) ou null`;
 
   const response = await client.messages.create({
     model: 'claude-haiku-4-5-20251001',
-    max_tokens: 4096,
-    system: narratorKnowledge,
+    max_tokens: 8000,
+    system: [{ type: 'text', text: narratorKnowledge, cache_control: { type: 'ephemeral' } }],
     messages: [{ role: 'user', content: prompt }],
   });
 
   let text = response.content[0].text.trim();
-  // strip markdown code fences if present
   text = text.replace(/^```(?:json)?\s*/i, '').replace(/\s*```\s*$/, '');
-  // find first { to last } in case there's preamble text
   const start = text.indexOf('{');
   const end = text.lastIndexOf('}');
   if (start !== -1 && end !== -1) text = text.slice(start, end + 1);
@@ -212,8 +210,8 @@ async function sleep(ms) {
   return new Promise(r => setTimeout(r, ms));
 }
 
-async function processBeach(client, beach, narratorKnowledge, index, total) {
-  console.log(`[${index}/${total}] ${beach.name}...`);
+async function processBeach(client, beach, narratorKnowledge, index, total, retry = 0) {
+  console.log(`[${index}/${total}] ${beach.name}${retry ? ` (tentativa ${retry + 1})` : ''}...`);
   try {
     const { marine, forecast } = await fetchBeachData(beach);
     const blocos = aggregateBlocos(marine, forecast);
@@ -222,6 +220,10 @@ async function processBeach(client, beach, narratorKnowledge, index, total) {
     return { name: beach.name, data: analysis };
   } catch (err) {
     console.error(`  Erro em ${beach.name}:`, err.message);
+    if (retry < 2) {
+      await sleep(8000);
+      return processBeach(client, beach, narratorKnowledge, index, total, retry + 1);
+    }
     return { name: beach.name, data: { erro: true } };
   }
 }
@@ -241,9 +243,10 @@ async function main() {
     beaches: {},
   };
 
-  const BATCH_SIZE = 3; // 3 praias em paralelo — evita rate limit do Haiku
+  const BATCH_SIZE = 2;
+  const SLEEP_MS = 5000;
   const total = BEACHES.length;
-  console.log(`Gerando narrações para ${total} praias em lotes de ${BATCH_SIZE}...`);
+  console.log(`Gerando narrações para ${total} praias em lotes de ${BATCH_SIZE} (com prompt caching)...`);
 
   for (let i = 0; i < total; i += BATCH_SIZE) {
     const batch = BEACHES.slice(i, i + BATCH_SIZE);
@@ -259,8 +262,7 @@ async function main() {
       cache.beaches[r.name] = r.data;
     }
 
-    // pausa entre lotes pra respeitar rate limits da Anthropic
-    if (i + BATCH_SIZE < total) await sleep(3000);
+    if (i + BATCH_SIZE < total) await sleep(SLEEP_MS);
   }
 
   const outPath = path.join(__dirname, '../demo/narrator-cache.json');
