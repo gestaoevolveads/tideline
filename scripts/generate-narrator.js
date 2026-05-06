@@ -166,25 +166,30 @@ function aggregateBlocos(marine, forecast) {
 }
 
 async function analyzeBeach(client, beach, blocos, narratorKnowledge) {
-  const prompt = `Analise as condições de surf para ${beach.name}, ${beach.state} nos próximos 7 dias.
+  const datas = [...new Set(blocos.map(b => b.data))].sort();
+  const prompt = `Analise as condições de surf para ${beach.name}, ${beach.state}.
 
-DADOS (agregados por período do dia):
+DADOS por período (use EXATAMENTE estas datas: ${datas.join(', ')}):
 ${JSON.stringify(blocos, null, 2)}
 
-Retorne SOMENTE um objeto JSON, sem markdown, sem texto fora do JSON. Use exatamente este formato com as datas reais dos dados:
+INSTRUÇÃO: Retorne SOMENTE JSON válido. Sem markdown. Sem texto antes ou depois. Comece com { e termine com }.
 
-{"dias":{"2025-01-01":{"manha":{"score":3,"titulo":"Terral limpo de manhã","analise":"Offshore organizando a face, 10s de período deixa a onda com forma. 15 kW/m de energia, dá pra fazer manobras. Entra cedo antes do vento virar.","janela":"6h-9h","aviso":null},"tarde":{"score":1,"titulo":"Vento virou, perdeu","analise":"Maral entrou e picou o mar. Ainda tem onda mas sem forma. Quem ficou de manhã fez a sessão certa.","janela":null,"aviso":null},"noite":{"score":0,"titulo":"Flat, deixa pra amanhã","analise":"Mar caiu, não vale entrar. Descanse pra amanhã.","janela":null,"aviso":null}}}}
+O JSON deve ter EXATAMENTE esta estrutura, substituindo as datas pelos valores reais acima (${datas[0]}, ${datas[1]}, etc):
+{"dias":{"${datas[0]}":{"manha":{"score":0,"titulo":"","analise":"","janela":null,"aviso":null},"tarde":{"score":0,"titulo":"","analise":"","janela":null,"aviso":null},"noite":{"score":0,"titulo":"","analise":"","janela":null,"aviso":null}},"${datas[1]}":{"manha":{"score":0,"titulo":"","analise":"","janela":null,"aviso":null},"tarde":{"score":0,"titulo":"","analise":"","janela":null,"aviso":null},"noite":{"score":0,"titulo":"","analise":"","janela":null,"aviso":null}}}}
 
-Scores: 5=épico 4=muito bom 3=bom 2=razoável 1=fraco 0=não vale -1 a -5=ruim/perigoso
-Título: máximo 5 palavras, direto ao ponto
-Analise: 2 a 4 frases, coloquial brasileiro de surf, sem travessão
-- Escreva como surfista falando pra outro surfista, não como relato técnico
-- Não repita fórmulas genéricas tipo "o vento empurra a onda antes de quebrar"
-- Seja específico sobre o que o surfista VAI SENTIR na água naquele momento
-- Use dados reais: mencione altura, período e energia quando relevante
-- Gírias naturais: pico, tubão, bombando, fechou geral, set limpo, remada pesada, etc
-Janela: horário ideal ex "6h-9h" ou null
-Aviso: alerta de segurança real (corrente forte, recife, tamanho) ou null`;
+Preencha para TODAS as ${datas.length} datas listadas acima.
+
+SCORES: 5=épico 4=muito bom 3=bom 2=razoável 1=fraco 0=não vale -1 a -5=ruim/perigoso
+TÍTULO: máximo 5 palavras
+ANALISE: 2-3 frases em português coloquial de surf
+- Escreva o que o surfista VAI SENTIR na água, não de onde veio o swell
+- PROIBIDO: "tempestade no Atlântico", "swell veio de longe", "energia por dias", "mandou energia"
+- Varie a abertura de cada período — nunca comece duas com a mesma palavra
+- Mencione dados concretos: altura, período em segundos, energia em kW/m
+- Gírias naturais: pico, tubão, bombando, set limpo, remada pesada, fechar geral, etc
+- Dias ruins: seja breve e honesto
+JANELA: horário ex "6h-9h" ou null
+AVISO: alerta real (corrente, recife, tamanho perigoso) ou null`;
 
   const response = await client.messages.create({
     model: 'claude-haiku-4-5-20251001',
