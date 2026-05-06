@@ -166,55 +166,40 @@ function aggregateBlocos(marine, forecast) {
 }
 
 async function analyzeBeach(client, beach, blocos, narratorKnowledge) {
-  const prompt = `Você vai analisar as condições de surf para ${beach.name}, ${beach.state}.
+  const prompt = `Analise as condições de surf para ${beach.name}, ${beach.state} nos próximos 7 dias.
 
-Dados dos próximos 7 dias por período:
+DADOS (agregados por período do dia):
 ${JSON.stringify(blocos, null, 2)}
 
-Gere a análise completa. Retorne APENAS JSON válido, sem markdown, sem texto antes ou depois:
+Retorne SOMENTE um objeto JSON, sem markdown, sem texto fora do JSON. Use exatamente este formato com as datas reais dos dados:
 
-{
-  "dias": {
-    "YYYY-MM-DD": {
-      "manha": {
-        "score": <inteiro de -5 a 5>,
-        "titulo": "<máximo 5 palavras>",
-        "analise": "<2 a 4 frases em português brasileiro autêntico de surf>",
-        "janela": "<melhor horário ex: 6h-9h, ou null se não vale surfar>",
-        "aviso": "<alerta de segurança se necessário, ou null>"
-      },
-      "tarde": { ... },
-      "noite": { ... }
-    }
-  }
-}
+{"dias":{"2025-01-01":{"manha":{"score":3,"titulo":"Terral limpo de manhã","analise":"Offshore organizando a face, 10s de período deixa a onda com forma. 15 kW/m de energia, dá pra fazer manobras. Entra cedo antes do vento virar.","janela":"6h-9h","aviso":null},"tarde":{"score":1,"titulo":"Vento virou, perdeu","analise":"Maral entrou e picou o mar. Ainda tem onda mas sem forma. Quem ficou de manhã fez a sessão certa.","janela":null,"aviso":null},"noite":{"score":0,"titulo":"Flat, deixa pra amanhã","analise":"Mar caiu, não vale entrar. Descanse pra amanhã.","janela":null,"aviso":null}}}}
 
-Regras de score:
-5 = épico, condições raras
-4 = muito bom, vale muito a pena
-3 = bom, sessão agradável
-2 = razoável, dá pra surfar
-1 = fraco mas surfável
-0 = não vale
--1 a -5 = ruim a péssimo (flat, onshore forte, perigoso)
-
-Regras de linguagem:
-- Português brasileiro coloquial de surf, sem formalidade
-- Use gírias quando natural: pico, tubão, bombando, offshore, crowd, rabear, etc
-- Frases curtas e diretas
-- Sem travessão (—)
-- Seja específico: mencione o período em segundos, a energia em kW/m, a direção do vento
-- Para dias ruins seja honesto e breve
-- Para dias bons seja entusiasmado mas preciso`;
+Scores: 5=épico 4=muito bom 3=bom 2=razoável 1=fraco 0=não vale -1 a -5=ruim/perigoso
+Título: máximo 5 palavras, direto ao ponto
+Analise: 2 a 4 frases, coloquial brasileiro de surf, sem travessão
+- Escreva como surfista falando pra outro surfista, não como relato técnico
+- Não repita fórmulas genéricas tipo "o vento empurra a onda antes de quebrar"
+- Seja específico sobre o que o surfista VAI SENTIR na água naquele momento
+- Use dados reais: mencione altura, período e energia quando relevante
+- Gírias naturais: pico, tubão, bombando, fechou geral, set limpo, remada pesada, etc
+Janela: horário ideal ex "6h-9h" ou null
+Aviso: alerta de segurança real (corrente forte, recife, tamanho) ou null`;
 
   const response = await client.messages.create({
     model: 'claude-haiku-4-5-20251001',
-    max_tokens: 4000,
+    max_tokens: 4096,
     system: narratorKnowledge,
     messages: [{ role: 'user', content: prompt }],
   });
 
-  const text = response.content[0].text.trim();
+  let text = response.content[0].text.trim();
+  // strip markdown code fences if present
+  text = text.replace(/^```(?:json)?\s*/i, '').replace(/\s*```\s*$/, '');
+  // find first { to last } in case there's preamble text
+  const start = text.indexOf('{');
+  const end = text.lastIndexOf('}');
+  if (start !== -1 && end !== -1) text = text.slice(start, end + 1);
   return JSON.parse(text);
 }
 
@@ -251,7 +236,7 @@ async function main() {
     beaches: {},
   };
 
-  const BATCH_SIZE = 5; // 5 praias em paralelo
+  const BATCH_SIZE = 3; // 3 praias em paralelo — evita rate limit do Haiku
   const total = BEACHES.length;
   console.log(`Gerando narrações para ${total} praias em lotes de ${BATCH_SIZE}...`);
 
@@ -270,7 +255,7 @@ async function main() {
     }
 
     // pausa entre lotes pra respeitar rate limits da Anthropic
-    if (i + BATCH_SIZE < total) await sleep(2000);
+    if (i + BATCH_SIZE < total) await sleep(3000);
   }
 
   const outPath = path.join(__dirname, '../demo/narrator-cache.json');
