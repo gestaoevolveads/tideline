@@ -15,7 +15,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Instalar dependências
         run: npm install
@@ -32,5 +32,5 @@ jobs:
           git config --global user.name 'Tideline Bot'
           git config --global user.email 'bot@tideline.app'
           git add demo/narrator-cache.json
-          git diff --staged --quiet || git commit -m "chore: atualiza narrações [skip ci]"
+          git diff --staged --quiet || git commit -m "chore: atualiza narrações"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
