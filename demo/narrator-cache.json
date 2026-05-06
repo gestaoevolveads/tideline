@@ -1,14 +1,338 @@
 {
-  "generated_at": "2026-05-05T22:57:58.092Z",
+  "generated_at": "2026-05-06T12:29:12.279Z",
   "beaches": {
     "Fernando de Noronha": {
-      "erro": true
+      "dias": {
+        "2026-05-06": {
+          "manha": {
+            "score": 2,
+            "titulo": "Lateral irregular, período curto",
+            "analise": "1.82m com 8.5 segundos — tá fraco demais pra valer. Vento lateral a 25 km/h destrói a forma, deixa choppy. Energia só 13.9 kW/m, aquela ondinha que passa rápido sem convidar.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Melhora, offshore segura a face",
+            "analise": "Vento offshore aparece, 1.88m de altura e 9.7s — já tá diferente. Energia sobe pra 16.8 kW/m. O pico recebe ondas mais apresentáveis, lateral leve dá pra surfar bem até as 18h.",
+            "janela": "14h-18h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Período cresce, energia chega 21.7",
+            "analise": "Swell virando pra sudeste, 2m com 10.9s — agora sim tem corpo na onda. Vento segue lateral mas o período tá abrindo espaço, permite manobra. Não é épico mas tá bombando pro padrão local.",
+            "janela": "19h-23h",
+            "aviso": null
+          }
+        },
+        "2026-05-07": {
+          "manha": {
+            "score": 4,
+            "titulo": "Pico, 12s, 30 kW/m — tá bom",
+            "analise": "Acordou legal. 2.23m com 12.2 segundos — período que deixa a onda oca, aquele que Noronha pede. Energia 29.6 kW/m, vento lateral leve não atrapalha. Remada pesada mas estruturada, set chega organizado.",
+            "janela": "5h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Mantém força, 11.8s, energia 29.9",
+            "analise": "Melhor horário da semana. 2.27m com período que não cai, vento lateral E a energia mantém em 29.9 kW/m. Pico abre bem, dá tempo de manobra, tubo possível nas seções certas.",
+            "janela": "12h-16h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Período cai mas energia 27.8 segura",
+            "analise": "Série ainda bombando — 2.23m com 11.4s é swell de verdade. Vento lateral a 23 kmh, mas o período mantém a onda em pé. 27.8 kW/m segura até o final da noite, noitada de qualidade.",
+            "janela": "18h-22h",
+            "aviso": null
+          }
+        },
+        "2026-05-08": {
+          "manha": {
+            "score": 3,
+            "titulo": "Cai de tamanho, período segue ok",
+            "analise": "Swell recua pra 2.03m mas 10.6 segundos segura a forma. Energia desce pra 21.4 kW/m, vento fraco. Ondas mais comportadas, menos remada pesada — dia bom pra técnica, ruim pra quem quer volume.",
+            "janela": "6h-10h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Fraco, 1.9m, período cai",
+            "analise": "Tarde morna. 1.9m com 10.2s, energia só 18 kW/m — aquela sessão que você pega umas ondinhas boas mas sente falta de swell. Vento segue lateral, nada de especial.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Encosta próximo do flat",
+            "analise": "Vai caindo. 1.82m com 9.4s, vento lateral forte a 22 kmh — a onda fica confusa, perde potência. Energia 15.4 kW/m. Dia que termina morno, melhor pensar em amanhã.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-09": {
+          "manha": {
+            "score": 1,
+            "titulo": "Fraco demais, período curto",
+            "analise": "Swell desaba. 1.67m com 8.8s — tá ondinha mesmo. Vento lateral confuso, 20 kmh. Energia só 12 kW/m. Dia pra ficar na praia, beber água de coco, pensar em quando volta o swell.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Flat praticamente, 1.71m",
+            "analise": "Piorou. 1.71m com 8.3s — ondas que não convidam. Vento lateral, energia 11.8 kW/m. Dia morto, literalmente aquele \"ondinha\" que o local ignora.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Flat, não rola, período 8.4s",
+            "analise": "Continua morto. 1.7m com 8.4s, vento lateral a 20 kmh — tá impossível montar lineup interessante. Energia mantém em 12 kW/m. Não vale a pena.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-10": {
+          "manha": {
+            "score": 2,
+            "titulo": "Leve recuperação, 1.79m, 8.8s",
+            "analise": "Swell bate um recuo mas começa a virar. 1.79m com 8.8s — período tá curto ainda mas tem mais corpo. Vento lateral fraco, 16 kmh. Energia 13.7 kW/m, começa a desenhar melhor.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Período sobe pra 8.9, energia 14.7",
+            "analise": "Pequena melhora. 1.83m com 8.9s, vento lateral leve ainda. Energia sobe pra 14.7 kW/m — ainda fraco demais pra chamar de bom, mas mostra sinal que o swell tá virando.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "1.87m, 9.1s, vento lateral leve",
+            "analise": "Noite mais interessante — 1.87m com 9.1s, período abrindo. Vento lateral suave a 11 kmh, energia 15.6 kW/m. Começa a aparecer estrutura, mas ainda tá longe de bom.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-11": {
+          "manha": {
+            "score": 3,
+            "titulo": "Vento mínimo, 1.81m, 9.4s",
+            "analise": "Manhã glassy — vento só 4.6 kmh, praticamente calmo. 1.81m com 9.4s, energia 15.1 kW/m. Superfície espelhada, aquela condição rara que o local sonha. Período tá bom, ondas têm forma limpa.",
+            "janela": "5h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Calmo, glassy, 1.78m, 9.4s",
+            "analise": "Condições perfeitas de vento — continua calmo a 5.7 kmh. 1.78m com 9.4s, energia 14.7 kW/m. Dia que pede presença cedo pra pegar a melhor janela, mas tá consistente e limpo.",
+            "janela": "12h-15h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Vento volta, lateral 15.9 kmh",
+            "analise": "Noite perde qualidade — vento lateral volta a 15.9 kmh. 1.77m com 9.5s mantém o período mas perde o brilho. Energia 14.6 kW/m, ondas virando choppy no final do dia.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-12": {
+          "manha": {
+            "score": 2,
+            "titulo": "Vento sobe, lateral 23 kmh",
+            "analise": "Vento lateral forte retorna — 23.3 kmh destrói a forma. 1.78m com 9.2s, energia 14.3 kW/m. Ondas voltam a ficar confusas, meio choppy. Melhor sair cedo ou esperar passar.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Lateral persiste, 1.81m, 8.9s",
+            "analise": "Vento segue lateral a 21.5 kmh — tá choppy demais. 1.81m com período caindo (8.9s), energia 14.4 kW/m. Dia que começa a semana nova melhor, esse final tá gasto.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Vento pior, lateral 24.8 kmh",
+            "analise": "Vento chega em 24.8 kmh — é chopp brutal. 1.82m com 8.9s, lateral destrói tudo. Energia 14.4 kW/m mas a forma tá perdida. Fecha geral, dia acabado.",
+            "janela": null,
+            "aviso": null
+          }
+        }
+      }
     },
     "Cacimba do Padre": {
       "erro": true
     },
     "Jericoacoara": {
-      "erro": true
+      "dias": {
+        "2026-05-06": {
+          "manha": {
+            "score": 1,
+            "titulo": "Ondinha de período curto",
+            "analise": "0.77m com 6.6 segundos — é tecnicamente onda, mas o período curto tira força. Vento lateral mantém a cara choppy. Energia de 1.9 kW/m: mais pra observar o pico do que entrar.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Continua fraco no lateral",
+            "analise": "Altura cai pra 0.76m, período segue curto em 6.5s. Vento virou de outra direção mas continua lateral — a onda não fecha geral, simplesmente não tem energia. 1.8 kW/m é dia de treino em casa.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Melhor horário do dia",
+            "analise": "Cresce um pouco: 0.85m com período melhorando pra 5.8s — ainda curto, mas a energia sobe pra 2.1 kW/m. Vento continua lateral, nada demais, mas é o menos pior de 6 de maio.",
+            "janela": "19h-21h",
+            "aviso": null
+          }
+        },
+        "2026-05-07": {
+          "manha": {
+            "score": 2,
+            "titulo": "Offshore fraco demais",
+            "analise": "Tem vento offshore finalmente — direção 136, ideal pra cá — mas o swell não coopera: 0.68m, período 6.7s, energia 1.5 kW/m. A face fica limpa mas não tem volume. Dia pra remar e observar.",
+            "janela": "6h-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Desaba na tarde",
+            "analise": "0.65m, 6.4s, 1.3 kW/m — é praticamente flat funcional. Vento volta pro lateral de novo. Melhor deixar pra amanhã.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Bora esquecer maio",
+            "analise": "0.69m, período 6s, energia 1.4 kW/m. Vento lateral mantém a onda achatada. Nada que justifique pegar a prancha.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-08": {
+          "manha": {
+            "score": 1,
+            "titulo": "Direção vira mas onda cai",
+            "analise": "Swell gira pro norte — 37 graus — pode ser sinal de mudança, mas altura desce pra 0.69m com período curto em 5.9s. Energia 1.4 kW/m. Vento lateral segue. Promete pouco.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Continua travado",
+            "analise": "0.74m, mas o período cai mais ainda: 5.4s. Swell virou quase leste (45 graus) — passando ao largo de Jeri. Vento lateral forte em 12.8 kmh, energia ainda 1.4 kW/m. Dia perdido.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Swell de leste não funciona",
+            "analise": "0.74m, 5.3s, 1.4 kW/m — mantém o padrão fraco. Direção do swell em 44 graus significa a onda vem quase perpendicular à costa de Jeri. Não gera pico aproveitável.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-09": {
+          "manha": {
+            "score": 1,
+            "titulo": "Vento forte destrói tudo",
+            "analise": "Pior dia da semana. Altura cai pra 0.65m, período 5.3s, e vento lateral sobe pra 15.4 kmh — coloca choppy pesado. Energia só 1.1 kW/m. A onda fica feia mesmo antes de quebrar.",
+            "janela": null,
+            "aviso": "Vento forte, evite"
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Vento ameniza pouco",
+            "analise": "0.66m, 5.3s, vento cai pra 13 kmh — melhora marginalmente mas a onda mantém 1.2 kW/m de energia. Período continua curto demais pra gerar face.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Melhor que a manhã",
+            "analise": "Vento cai bastante — 9.2 kmh, quase offshore. Altura 0.6m, período 5.8s, energia 1.0 kW/m. Fica mais limpo mas continua fraco demais.",
+            "janela": "20h-22h",
+            "aviso": null
+          }
+        },
+        "2026-05-10": {
+          "manha": {
+            "score": 2,
+            "titulo": "Offshore devolveu limpeza",
+            "analise": "Vento offshore de novo em 11.3 kmh — face fica muito limpa. Mas altura segue pequena em 0.58m, período 5.9s, energia 1.0 kW/m. A onda não dá remada, só serve pra ver a agua clara.",
+            "janela": "6h-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Volta o lateral pesado",
+            "analise": "0.63m, 5.8s, vento lateral de 13.9 kmh — onda perde a forma. Energia 1.1 kW/m. Não tá bom.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Noite salva o dia",
+            "analise": "Cresce pra 0.68m, período melhora em 5.5s, vento cai pra 9.4 kmh — fica lateral leve. Energia 1.2 kW/m. Melhor jeito de explorar 10 de maio é ao anoitecer.",
+            "janela": "19h-21h",
+            "aviso": null
+          }
+        },
+        "2026-05-11": {
+          "manha": {
+            "score": 2,
+            "titulo": "Período longo salva",
+            "analise": "Finalmente aparece um período decente — 6.8s. Altura 0.54m, mas a energia sobe pra 1.0 kW/m pela forma do swell. Vento offshore fraco em 7.2 kmh — face limpa. Nem é grande mas é qualidade.",
+            "janela": "6h-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Período continua bom",
+            "analise": "0.55m, 7.0s — pico de período fino pra essa semana. Vento lateral de 12.3 kmh vai chicotear um pouco mas o período salva. Energia 1.0 kW/m, coisa rara nesses dias.",
+            "janela": "14h-16h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Melhor noite da semana",
+            "analise": "0.63m com período 6.7s — a combinação mais equilibrada de 6 a 12. Vento lateral leve em 8.3 kmh, energia sobe pra 1.3 kW/m. Dá pra pegar uma série boa sem frustração.",
+            "janela": "19h-21h30",
+            "aviso": null
+          }
+        },
+        "2026-05-12": {
+          "manha": {
+            "score": 2,
+            "titulo": "Cresce e vira mais forte",
+            "analise": "0.7m com 6.8s — tá amanhecendo com cara melhor. Vento lateral 15 kmh tira limpeza mas a energia sobe pra 1.6 kW/m, maior da semana. Swell vira pro norte de novo (25 graus). Vale entrar.",
+            "janela": "6h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Melhor tarde da semana",
+            "analise": "0.85m — é a maior altura dos sete dias. Período 5.9s, energia 2.1 kW/m. Vento lateral mantém em 16.2 kmh mas a altura compensa. Swell gira pro nordeste (37 graus). Finalmente vale a remada.",
+            "janela": "14h-17h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Pico inesperado na noite",
+            "analise": "Cresce mais: 0.87m, período 6.2s, energia pula pra 2.3 kW/m — maior da semana inteira. Vento cai pra 10.5 kmh lateral. É o melhor janela de Jericoacoara nesses sete dias — swell de norte, onda um pouco mais cheia, pico limpo.",
+            "janela": "19h-22h",
+            "aviso": null
+          }
+        }
+      }
     },
     "Praia de Pipa": {
       "erro": true
@@ -20,13 +344,499 @@
       "erro": true
     },
     "Tiririca": {
-      "erro": true
+      "dias": {
+        "2026-05-06": {
+          "manha": {
+            "score": 2,
+            "titulo": "Ondinha fraca, vento ok",
+            "analise": "1.24m com 7 segundos — energia de 5.3 kW/m não deixa ninguém feliz. Offshore segura a face, mas falta potência pra fazer qualquer coisa. Dia de desistir ou pegar um longboard pra brincar.",
+            "janela": "5h30-7h30",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Mesma historia, vento piora",
+            "analise": "Swell não mudou — continua 1.24m e 7.1 segundos (5.3 kW/m). O vento virou mais onshore que offshore, desfizendo o pouco que tinha. Se surfou cedo, parou.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Cresce um pouco, período bom",
+            "analise": "Subiu pra 1.38m com 6.9 segundos — 6.4 kW/m já respira melhor. Vento offshore volta e a noite fica mais glassy. Vale entrar se não deu conta cedo, mas não é o swell que promete.",
+            "janela": "17h-19h",
+            "aviso": null
+          }
+        },
+        "2026-05-07": {
+          "manha": {
+            "score": 3,
+            "titulo": "Grow leve, vento segura bem",
+            "analise": "Chegou em 1.41m, 7.3 segundos — 7.1 kW/m é já bom. Vento offshore de madrugada deixa o pico limpo. Série pequena mas surfável, perfeito pra pegar ritmo antes de ficar maior.",
+            "janela": "5h-8h30",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Onda ganha corpo, período cresce",
+            "analise": "Agora tá bombando: 1.51m com 7.4 segundos e 8.3 kW/m. Offshore bom deixa a onda oca. Pico abre bem pra manobrar, set chegando regularizado. Melhor do que cedo.",
+            "janela": "12h-17h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Cresce mais, vento lateral leve",
+            "analise": "1.55m, 7.4 segundos, 8.7 kW/m — a série tá bacana. Vento lateral não destrói nada porque é leve (11.5 km/h). Fecho do dia com pico consistente e energia real. Boa hora pra surfar.",
+            "janela": "18h-20h30",
+            "aviso": null
+          }
+        },
+        "2026-05-08": {
+          "manha": {
+            "score": 3,
+            "titulo": "Mantém nivel, offshore perfeito",
+            "analise": "Continua em 1.51m, 7.5 segundos — 8.4 kW/m não cai. Vento offshore leve (9.6 km/h) bate de madrugada e deixa tudo espelhado. Direção do swell muda pra 101° (mais leste) — Tiririca segue recebendo bem.",
+            "janela": "5h-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Periodo alonga, vento lateral",
+            "analise": "Período sobe pra 7.7 segundos com 1.49m — energia se mantém em 8.4 kW/m. Vento lateral de 12.6 km/h começa a mexer na superficie, mas sem estragar. Pico fica um pouco mais corpudo.",
+            "janela": "13h-16h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Set regulado, vento acalma",
+            "analise": "Mantém 1.51m com 7.7 segundos — 8.7 kW/m agora. Vento lateral cai pra 8.4 km/h e fica quase nada. Pico fica glassy, série previsível. Melhor período da noite pra surfar com calma.",
+            "janela": "18h-21h",
+            "aviso": null
+          }
+        },
+        "2026-05-09": {
+          "manha": {
+            "score": 4,
+            "titulo": "Bomba de verdade, período alonga",
+            "analise": "1.56m com 7.8 segundos — energia bateu em 9.3 kW/m. Vento lateral leve não estraga nada. Swell tá ordenado, série tá marcada. Madrugada limpa pra quem acordar cedo.",
+            "janela": "5h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Cresce geral, pico oco agora",
+            "analise": "Pulou pra 1.74m com 8 segundos — 11.9 kW/m é coisa séria. Vento lateral segue leve. Pico tá tubado, série é corpuda. Hora de pegar as melhores da semana.",
+            "janela": "11h-16h30",
+            "aviso": null
+          },
+          "noite": {
+            "score": 5,
+            "titulo": "Épico do período, vai bombar",
+            "analise": "Chegou em 1.97m com 8 segundos — 15.3 kW/m é o swell que tá bombando desde ontem. Vento lateral de 13.5 km/h mexe um pouco mas não fecha. Pico oco, série marcada, remada pesada mas vale cada drop.",
+            "janela": "17h-20h",
+            "aviso": "Ondão pesado — pica grandes conhecem o pico, iniciantes com cuidado"
+          }
+        },
+        "2026-05-10": {
+          "manha": {
+            "score": 4,
+            "titulo": "Pico em ápice, vento offshore",
+            "analise": "1.88m com 8.1 segundos — 14.1 kW/m. Vento offshore leve (7.9 km/h) segura tudo perfeito. Madrugada é a janela ouro — série oca, glassy total, o melhor momento dos 7 dias.",
+            "janela": "5h-8h30",
+            "aviso": "Tamanho exigente — experiência recomendada"
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Cai um pouco, vento muda",
+            "analise": "Desceu pra 1.73m mas período subiu pra 8.3 segundos — ainda 12.1 kW/m. Vento lateral volta e onda perde um pouco a forma. Melhor do que ontem à tarde, mas cedo é superior.",
+            "janela": "13h-15h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Esfria gradual, lateral persiste",
+            "analise": "Continua 1.67m, 8.4 segundos — 11.5 kW/m segue bom. Vento lateral de 10.3 km/h é suave. Série organizada mas menor que no pico. Onda tá envelhecendo.",
+            "janela": "18h-20h",
+            "aviso": null
+          }
+        },
+        "2026-05-11": {
+          "manha": {
+            "score": 4,
+            "titulo": "Período cresce, offshore volta",
+            "analise": "1.64m com 8.8 segundos — 11.6 kW/m agora vem de período longo. Vento offshore perfeito (4.7 km/h). Swell tá desproporcional em energia — parece maior que a altura real. Glassy e oco.",
+            "janela": "5h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Período alonga ainda mais",
+            "analise": "Mantém 1.61m mas período vai pra 9 segundos — 11.4 kW/m. Vento lateral fraco. Onda tá longa agora, cara lentamente perde energia conforme viaja mas a estrutura fica boa.",
+            "janela": "13h-16h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Período estira, tamanho cai",
+            "analise": "Baixou pra 1.58m com 9.2 segundos — 11.2 kW/m. Vento lateral de lado nordeste não atrapalha. Onda longa, swell tá envelhecido mas estrutura preservada. Série passa com ritmo.",
+            "janela": "18h-21h",
+            "aviso": null
+          }
+        },
+        "2026-05-12": {
+          "manha": {
+            "score": 3,
+            "titulo": "Swell esgota, periodo resiste",
+            "analise": "Caiu pra 1.51m mas 9.3 segundos — ainda 10.3 kW/m. Vento offshore leve bate. Swell tá no fim, série pequena mas com ritmo longo. Quem acordar vê uma despedida glassy.",
+            "janela": "5h-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Esfria geral, vento aumenta",
+            "analise": "Desceu pra 1.46m com 9.2 segundos — 9.6 kW/m. Vento offshore cresce pra 13.1 km/h, segura mas já sente o dia esgotando. Onda pequena, série dispersa.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Fecha o periodo, swell encerra",
+            "analise": "Última noite do swell: 1.44m com 8.8 segundos — 9 kW/m. Vento offshore persiste (14.9 km/h) mas altura tá embora. Série irregular, tamanho fraco. Próximo swell vem depois.",
+            "janela": null,
+            "aviso": null
+          }
+        }
+      }
     },
     "Engenhoca": {
-      "erro": true
+      "dias": {
+        "2026-05-06": {
+          "manha": {
+            "score": 2,
+            "titulo": "Ondinha de vento",
+            "analise": "1.24m com período curto de 7s — energia de apenas 5.3 kW/m. Offshore segura a forma mas falta gás. Pra quem quer treinar manobras, rola, mas não tá bombando.",
+            "janela": "6h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Vento apertou mas fraco",
+            "analise": "Altura mantém, período cresce pra 7.1s e energia chega a 5.3 kW/m — pouca coisa mesmo. Offshore de manhã dá forma, mas o mar tá morno. Melhor deixar pra amanhã.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Altura cresceu, período caiu",
+            "analise": "1.38m com 6.9s não compensa — 6.4 kW/m de energia. Vento offshore leve, forma boa, mas continua ondinha pra quem quer sessão de verdade.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-07": {
+          "manha": {
+            "score": 3,
+            "titulo": "Primeira janela legal",
+            "analise": "Madrugada acordou. 1.41m com 7.3s, 7.1 kW/m — energia começando a subir, vento offshore limpo em 12 km/h. Remada tranquila, pico dá espaço, dá pra surfar sem pressa.",
+            "janela": "5h-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Bombando de verdade",
+            "analise": "Agora sim. 1.51m, período subiu pra 7.4s, energia em 8.3 kW/m — o swell tá chegando com gás. Vento offshore segura tudo, pico tá vivo, dá pra mandar manobra sem tanta luta.",
+            "janela": "7h-12h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Swell crescendo firme",
+            "analise": "1.55m, 7.4s, 8.7 kW/m — energia batendo mais forte. Vento virou lateral mas leve em 11.5 km/h, não atrapalha. Pico aberto, série chegando com ritmo, melhor período da semana até agora.",
+            "janela": "18h-21h",
+            "aviso": null
+          }
+        },
+        "2026-05-08": {
+          "manha": {
+            "score": 4,
+            "titulo": "Glassy e consistente",
+            "analise": "Madrugada entregou. 1.51m, período cresceu pra 7.5s, energia em 8.4 kW/m — pico tá previsível, ondas vêm em série boa. Vento offshore de madrugada deixa superfície espelhada antes da virada.",
+            "janela": "5h-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Vento virou lateral",
+            "analise": "1.49m com 7.7s, energia mantém em 8.4 kW/m mas vento lateral começou. Ainda dá, pico tá bom, mas a forma fica um pouco mais aberta que de manhã.",
+            "janela": "10h-14h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Noite silenciosa e constante",
+            "analise": "Vento caiu pra 8.4 km/h, superfície tá limpa de novo. 1.51m, 7.7s, 8.7 kW/m — swell mantém consistência, pico dá confiança, é noite de boa remada.",
+            "janela": "19h-22h",
+            "aviso": null
+          }
+        },
+        "2026-05-09": {
+          "manha": {
+            "score": 4,
+            "titulo": "Crescimento no ar",
+            "analise": "Madrugada prometeu e entregou. 1.56m, 7.8s, 9.3 kW/m — swell subindo de verdade. Vento lateral suave em 8.7 km/h, forma boa, pico tá vivo e remada leve.",
+            "janela": "5h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 5,
+            "titulo": "Auge do swell chegou",
+            "analise": "Bom demais. 1.74m, período em 8s, energia explodiu pra 11.9 kW/m — swell tá potente, manobra sai com força, pico responde rápido. Vento lateral em 10.5 km/h não tira a onda da forma.",
+            "janela": "10h-16h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 5,
+            "titulo": "Pico máximo da semana",
+            "analise": "Noite de ouro. 1.97m, mesmo período de 8s mas energia em 15.3 kW/m — swell chegou no auge, pico exigente e recompensador, remada pesada mas manobra sai precisa e com gás.",
+            "janela": "18h-21h",
+            "aviso": "Tamanho real: volume extra de água, remada intensa, escolher banco com atenção"
+          }
+        }
+      },
+      "2026-05-10": {
+        "manha": {
+          "score": 5,
+          "titulo": "Pico em perfeição",
+          "analise": "Madrugada offshore devolveu tudo. 1.88m, 8.1s, 14.1 kW/m — swell tá maduro, pico forma legal, vento só 7.9 km/h seguindo de terras. Melhor janela da semana pra quem sabe ler.",
+          "janela": "5h-9h",
+          "aviso": null
+        },
+        "tarde": {
+          "score": 4,
+          "titulo": "Força diminuindo lentamente",
+          "analise": "1.73m, período cresceu pra 8.3s mas energia baixou pra 12.1 kW/m — swell começou seu declínio. Vento lateral em 11.9 km/h, pico ainda funciona bem, mantém qualidade.",
+          "janela": "11h-15h",
+          "aviso": null
+        },
+        "noite": {
+          "score": 4,
+          "titulo": "Consistência no fim do dia",
+          "analise": "1.67m, 8.4s, 11.5 kW/m — swell tá saindo mas deixando boas ondas. Vento lateral leve, pico aberto, dá pra surfar com tranquilidade em vez de tensão.",
+          "janela": "19h-22h",
+          "aviso": null
+        }
+      },
+      "2026-05-11": {
+        "manha": {
+          "score": 4,
+          "titulo": "Período longo, energia firme",
+          "analise": "Madrugada offshore impecável em 4.7 km/h. 1.64m com 8.8s — período tá comprido agora, 11.6 kW/m ainda respeitável. Pico reconstrói forma, series demoram mais, melhor pra manobra longa.",
+          "janela": "5h-9h",
+          "aviso": null
+        },
+        "tarde": {
+          "score": 3,
+          "titulo": "Vento lateral apertou",
+          "analise": "1.61m, 9s, 11.4 kW/m — swell tá morrendo de verdade. Vento lateral em 7.4 km/h, pico ainda funciona mas a onda abre mais. Sessão tranquila, sem tensão.",
+          "janela": "12h-16h",
+          "aviso": null
+        },
+        "noite": {
+          "score": 3,
+          "titulo": "Encosta suave no fim",
+          "analise": "1.58m, período subiu pra 9.2s, energia em 11.2 kW/m — swell tá mole mas aí o período comprido deixa a onda com ritmo. Vento lateral 9.6 km/h, forma aceitável, dia tá fechando morno.",
+          "janela": null,
+          "aviso": null
+        }
+      },
+      "2026-05-12": {
+        "manha": {
+          "score": 3,
+          "titulo": "Último dia morno",
+          "analise": "1.51m, 9.3s, 10.3 kW/m — swell despedindo lentamente. Madrugada offshore de 5.4 km/h segura forma, pico tá aberto demais. Rola surfar mas sem adrenalina, melhor pra longboard.",
+          "janela": "6h-10h",
+          "aviso": null
+        },
+        "tarde": {
+          "score": 2,
+          "titulo": "Offshore volta, energia cai",
+          "analise": "1.46m, 9.2s, 9.6 kW/m — swell tá indo embora. Vento offshore em 13.1 km/h traz forma de volta mas altura e energia baixaram demais. Ondinha de encerramento.",
+          "janela": null,
+          "aviso": null
+        },
+        "noite": {
+          "score": 2,
+          "titulo": "Semana fecha morna",
+          "analise": "1.44m, 8.8s, 9 kW/m — swell saiu de cena. Vento offshore forte em 14.9 km/h segura a ondinha, mas não tem mais gás nem altura. Fechar a prancha, pensar na próxima semana.",
+          "janela": null,
+          "aviso": null
+        }
+      }
     },
     "Barra de Ilhéus": {
-      "erro": true
+      "dias": {
+        "2026-05-06": {
+          "manha": {
+            "score": 1,
+            "titulo": "Ondinha de período curto",
+            "analise": "0.71m com 6.4 segundos — a energia aqui é 1.6 kW/m, praticamente nada. Vento offshore ajuda na forma, mas falta força no mar. Dia pra longboard ou iniciante sem pressa.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Vento cresce, energia não",
+            "analise": "Altura praticamente igual (0.72m) e período caindo pra 6.3 segundos — pior ainda. O vento sobe pra 16.5 km/h mas mantém offshore, só que abre a onda demais. Segue fraco.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Ligeira melhora, período ainda curto",
+            "analise": "0.82m com 6.2 segundos sobe pra 2.1 kW/m — é o melhor do dia, mas continua longe de bom. Offshore segura limpo à noite, dá pra rascunhar algumas se tiver paciência.",
+            "janela": "18h-20h",
+            "aviso": null
+          }
+        },
+        "2026-05-07": {
+          "manha": {
+            "score": 2,
+            "titulo": "Período melhorando, tamanho ainda tímido",
+            "analise": "Pulou pra 6.9 segundos com 0.85m — energia sobe pra 2.5 kW/m, primeira respirada depois de dois dias chatos. Vento offshore de madrugada deixa limpo, mas a onda segue fraca demais pra ficar satisfeito.",
+            "janela": "6h-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Entra de verdade, entra leve",
+            "analise": "0.93m / 7.1 segundos — 3 kW/m, agora tá bom. Pico aberto pra surfar, período respeitável, vento lateral não bate tanto. Set chega com cadência, dá pra entrar no ritmo.",
+            "janela": "13h-17h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Noite de swell confirmado",
+            "analise": "0.98m com 7.1 segundos e 3.3 kW/m — a noite oferece o melhor dia até agora. Vento lateral leve (10.9 km/h), série vem com presença, dá pra pegar algumas boas sem remada pesada.",
+            "janela": "19h-22h",
+            "aviso": null
+          }
+        },
+        "2026-05-08": {
+          "manha": {
+            "score": 3,
+            "titulo": "Pico offshore e período ampliando",
+            "analise": "0.96m com 7.4 segundos — energia 3.3 kW/m mantém o nível. Vento offshore fraco (7.6 km/h) deixa a forma perfeita, lip definido, remada fluida. Melhor horário pra entrar.",
+            "janela": "6h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Mesma onda, vento lateral atrapalha",
+            "analise": "Altura e período iguais (0.96m / 7.5s), energia sobe pra 3.4 kW/m, mas vento lateral de 11.2 km/h abre a crista. Surfável, mas perde a nitidez que tinha de madrugada.",
+            "janela": "14h-16h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Noite glassy com melhor energia",
+            "analise": "0.98m com 7.6 segundos — 3.6 kW/m é o melhor até agora. Vento cai pra 5.2 km/h offshore, superfície espelhada, pico oco e bem formado. Essa é a sessão que você não quer perder.",
+            "janela": "19h-23h",
+            "aviso": null
+          }
+        },
+        "2026-05-09": {
+          "manha": {
+            "score": 3,
+            "titulo": "Cresce mais, vento lateral atrapalha",
+            "analise": "1.01m com 7.6 segundos — 3.8 kW/m segue crescendo. Vento lateral de 8.6 km/h não destrói mas afeta a forma, pico fica meio aberto. Rola bom, mas espera a noite.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Ampliação e energia disparando",
+            "analise": "1.12m com 7.8 segundos — pulou pra 4.8 kW/m. Esse é o swell chegando de verdade. Vento lateral mantém, série chega com presença, dá pra entrar em várias e ficar na água sem cansaço.",
+            "janela": "13h-17h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Bombando, mas vento lateral forte",
+            "analise": "1.25m com 8 segundos — 6.1 kW/m é força de verdade agora. Pico bem formado, série chega com autoridade, mas vento lateral de 14.2 km/h abre a crista. Surfável sim, mas perde a limpeza.",
+            "janela": "19h-22h",
+            "aviso": null
+          }
+        },
+        "2026-05-10": {
+          "manha": {
+            "score": 4,
+            "titulo": "Auge do swell, offshore perfeito",
+            "analise": "1.2m com 8.1 segundos — 5.7 kW/m é o pico da semana. Vento offshore de madrugada deixa tudo glassy, lip bem definido, remada chega até pra pegação mais insegura. Cedo na areia.",
+            "janela": "6h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Ainda bom, vento lateral volta",
+            "analise": "Caiu pra 1.12m mas período subiu pra 8.2 segundos — 5 kW/m mantém respeitável. Vento lateral de 9.6 km/h tira a limpeza, pico fica aberto demais. Entra mas sem a forma da manhã.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Noite de encerramento do auge",
+            "analise": "1.09m com 8.3 segundos — energia em 4.8 kW/m. Vento offshore retorna (8.8 km/h) e salva a forma. Série chega com menos autoridade que o pico, mas rola bom pra quem quer sessão tranquila.",
+            "janela": "19h-22h",
+            "aviso": null
+          }
+        },
+        "2026-05-11": {
+          "manha": {
+            "score": 3,
+            "titulo": "Período ampliando, tamanho caindo",
+            "analise": "1.05m com 8.7 segundos — 4.7 kW/m. O swell está em queda mas o período cresce, o que prolonga a remada até o pico. Vento offshore leve (4.4 km/h) deixa glassy total, é pra curtir mais do que atacar.",
+            "janela": "6h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Vento lateral estranho, período cresce",
+            "analise": "1.04m com 8.9 segundos mantém 4.7 kW/m mas vento lateral agora de 73° (quase E) abre tudo. Período longo é bom mas a onda perde potência na manobra. Dia pra observar mais do que entrar.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Período máximo, energia em queda",
+            "analise": "1.02m com 9 segundos — energia cai pra 4.6 kW/m. Vento lateral lateral de 78° continua aberto demais. Onda fica longa mas fraca, rascunha bem mas não tem pegação clara.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-12": {
+          "manha": {
+            "score": 2,
+            "titulo": "Swell em queda clara",
+            "analise": "0.97m com 9.1 segundos — 4.2 kW/m segue caindo. Vento offshore de madrugada (6.9 km/h) salva a forma, mas o tamanho tá indo embora. Sessão calma pra quem quer tranquilidade.",
+            "janela": "6h-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Vento onshore fecha a sessão",
+            "analise": "0.93m com 9 segundos e 3.8 kW/m — a queda continua. Vento lateral-onshore de 127° já abre demais, crista fica aberta e sem forma. Não compensa molhar prancha.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Última chance com offshore",
+            "analise": "0.91m com 8.7 segundos — 3.5 kW/m é o mínimo aceitável. Vento offshore retorna (12.6 km/h) e limpa tudo, mas o swell já tá sumindo. Rola final de semana pra longueiro ou quem tá treinando.",
+            "janela": "19h-21h",
+            "aviso": null
+          }
+        }
+      }
     },
     "Itaúnas": {
       "erro": true
@@ -38,13 +848,499 @@
       "erro": true
     },
     "Praia do Peró": {
-      "erro": true
+      "dias": {
+        "2026-05-06": {
+          "manha": {
+            "score": 3,
+            "titulo": "Swell de sul, período decente",
+            "analise": "1.34m com 11 segundos chegando do sul — aquele período que deixa a onda um pouco mais oca. Vento lateral de nordeste não ajuda, mas a energia tá em 10 kW/m, o suficiente pra uma sessão gostosa antes de tudo piorar.",
+            "janela": "6h-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Piora gradual, vento lateral",
+            "analise": "Cai pra 1.23m e o período encurta — 10 segundos só, energia em 7.8 kW/m. Vento virou mais pro leste, começa a abrir a onda. Não vale a remada.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Fim do swell, período curto",
+            "analise": "Tomba pra 1.2m, período cai pra 9.5 segundos — aquela ondinha murcha que não entrega. Só 6.8 kW/m. Fica em casa.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-07": {
+          "manha": {
+            "score": 0,
+            "titulo": "Onshore pesado destrói tudo",
+            "analise": "Vento onshore de 18.5 km/h desde cedo mata qualquer esperança. 1.02m com período curto, energia mínima em 4.3 kW/m — mar fica choppy e feio. Espera a maré mudar.",
+            "janela": null,
+            "aviso": "Vento onshore desfavorável"
+          },
+          "tarde": {
+            "score": -1,
+            "titulo": "Flat, vento e energia nenhuma",
+            "analise": "Tomba pra 1.01m, período desaba — 6.8 segundos. Vento lateral mas ainda prejudicial, energia em míseros 3.4 kW/m. Dia perdido.",
+            "janela": null,
+            "aviso": "Flat funcional apenas"
+          },
+          "noite": {
+            "score": -1,
+            "titulo": "Morrendo de vez",
+            "analise": "Segue flat, quase 1m de altura, 6.5 segundos — aquele mar que ninguém lembra no dia seguinte. Só 3 kW/m de energia. Fica pra próxima.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-08": {
+          "manha": {
+            "score": 0,
+            "titulo": "Onshore de novo, período curto",
+            "analise": "Onshore de 21.4 km/h destrói a forma desde o amanhecer. Só 1.01m com 6.4 segundos — tá vindo de leste, completamente desfavorável. 3.2 kW/m: não rola.",
+            "janela": null,
+            "aviso": "Vento onshore"
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Leve melhora, ainda ruim",
+            "analise": "Vento vira pro lateral, sobe um pouco pra 1.09m mas o período continua curto — 6.5 segundos, energia em 3.8 kW/m. Marginalmente melhor, não recomendável.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Onshore volta, período sobe levemente",
+            "analise": "Volta o onshore de 22.6 km/h, sobe pra 1.15m e período melhora um pouco — 6.9 segundos. Mas o vento destrói a face. 4.4 kW/m: baixo demais.",
+            "janela": null,
+            "aviso": "Vento onshore prejudicial"
+          }
+        },
+        "2026-05-09": {
+          "manha": {
+            "score": 1,
+            "titulo": "Onshore segue, período cresce",
+            "analise": "1.14m com 7.6 segundos — período tá crescendo, bom sinal. Mas vento onshore de 18 km/h ainda desfavorável. 4.9 kW/m: energia tímida pra um swell de 7 segundos.",
+            "janela": null,
+            "aviso": "Vento onshore"
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Sinal de melhora, vento prejudica",
+            "analise": "Sobe pra 1.18m, período em 7.1 segundos — estabilizando. Onshore continua em 21 km/h, abrindo a onda. Energia em 4.9 kW/m: tá lá, mas o vento come meia função.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Noite melhor, vento lateral",
+            "analise": "Sobe pra 1.27m, vento vira pro lateral — já melhora a vibe. Período cai um pouco pra 6.6 segundos mas energia segue em 5.2 kW/m. Pra quem não quer desistir, madrugada pode pintar.",
+            "janela": "22h-6h",
+            "aviso": null
+          }
+        },
+        "2026-05-10": {
+          "manha": {
+            "score": 1,
+            "titulo": "Desaparece, vento onshore",
+            "analise": "Cai pra 1.03m, onshore de 17 km/h volta com tudo. 7.1 segundos de período tá bom, mas só 3.7 kW/m de energia — swell tá morrendo. Vento destrói oq sobrou.",
+            "janela": null,
+            "aviso": "Vento onshore"
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Fraco, vento lateral leve",
+            "analise": "Desce pra 0.95m — praticamente flat. Período sobe pra 7.7 segundos, vento lateral fraco de 9.6 km/h. Mas 3.4 kW/m é nada. Dia queimado.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Virada, offshore aparece",
+            "analise": "Vira offshore de repente — 12 km/h do SW. Sube pra 1.02m, período em 8 segundos, 4.1 kW/m. Tá fraco, mas é a primeira vez em dias que vento segura a face. Madrugada promete.",
+            "janela": "23h-5h",
+            "aviso": null
+          }
+        },
+        "2026-05-11": {
+          "manha": {
+            "score": 4,
+            "titulo": "Chega o swell, offshore impecável",
+            "analise": "Swell de sul em 1.76m com 10.7 segundos — período longo que deixa a onda cheia de energia. Offshore de 18.6 km/h do SO: que presente. 16.2 kW/m: esse é o swell que todo mundo esperava. Madrugada é ouro puro.",
+            "janela": "5h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 5,
+            "titulo": "Bombando, período longo, offshore",
+            "analise": "Sobe pra 2.3m — não é altura insana, mas com 10.7 segundos de período e offshore limpo do SO em 19.7 km/h, explode pra 27.8 kW/m de energia pura. Set forma direito, lip limpo, seções compridas. É o dia.",
+            "janela": "11h-15h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 5,
+            "titulo": "Pico do swell, glassy, épico",
+            "analise": "Chega ao auge: 2.49m com 11.1 segundos, offshore de 16.1 km/m do SW segurando tudo perfeito. 33.7 kW/m: essa é a energia de um swell de respeito. Onda fica oca, previsível, o lineup pede para ser surfado.",
+            "janela": "18h-23h",
+            "aviso": "Tamanho exige técnica e experiência"
+          }
+        },
+        "2026-05-12": {
+          "manha": {
+            "score": 5,
+            "titulo": "Swell no auge, vento off minado",
+            "analise": "Mantém 2.38m com período subindo pra 11.8 segundos — série longa, muita energia. Offshore de 7.4 km/h do W segura tudo glassy, nenhuma resistência. 32.6 kW/m: se você tá acordado agora, sai correndo.",
+            "janela": "6h-10h",
+            "aviso": "Tamanho considerável, apenas experientes"
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Swell recua, ainda muito bom",
+            "analise": "Desce levemente pra 2.27m mas período sobe mais — 11.9 segundos, aquele período que deixa tudo longo e tubado. Offshore de 6.5 km/h: sessão de afternoon pra fechar em glassy. 30.1 kW/m segue forte.",
+            "janela": "12h-16h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Cai um pouco, vento lateral",
+            "analise": "Desce pra 2.09m, período mantém em 11.8 segundos — ainda períodão. Vento vira pro lateral (leste) em 7.1 km/h. 25.4 kW/m: menos que antes, mas ainda respeitável. Final de um swell de ouro.",
+            "janela": "18h-22h",
+            "aviso": "Swell recuando, aproveitar enquanto há"
+          }
+        }
+      }
     },
     "Ipanema": {
-      "erro": true
+      "dias": {
+        "2026-05-06": {
+          "manha": {
+            "score": 3,
+            "titulo": "Ondinha regular com vento contre",
+            "analise": "1.63m, 11.5 segundos — tem energia (14.9 kW/m) mas o onshore de 3 km/h já tá fechando a forma. Pico aberto, ondinha consistente pra quem quer treinar manobra. Multidão em casa ainda, aproveita.",
+            "janela": "6h-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Semanal padrão, vento lateral",
+            "analise": "Caiu pra 1.49m, período diminuiu pro 10.9s — energia despencou (11.8 kW/m). Vento lateral de 9.8 km/h deixa choppy. Ondinha pra principiante, nada de mais.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Feição piora, vento bate",
+            "analise": "1.52m com 9.4s — o período curto mata a energia (10.7 kW/m). Vento lateral se intensificou, mar fica desorganizado. Noite pra ficar no bar, não na água.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-07": {
+          "manha": {
+            "score": 1,
+            "titulo": "Maré baixa, swell caindo",
+            "analise": "1.2m, 8.8s, energia de apenas 6.3 kW/m — swell enfraqueceu bastante. Onshore de 5.6 km/h destrói a forma. Dia de não ir, ou ir muito cedo antes do vento pegar.",
+            "janela": "5h-6h30",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Swell morrendo, offshore fraco",
+            "analise": "1.14m com período de 8s — energia ridícula (5.1 kW/m), praticamente flat. Offshore de 7.6 km/h é pouco pra salvar. Dia pra deixar a prancha em casa.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Encerrado, período caindo",
+            "analise": "O período desabou pro 6.8s, altura 1.28m — energia mortinha (5.5 kW/m). Vento lateral não ajuda. Noite morta mesmo, sem graça.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-08": {
+          "manha": {
+            "score": 1,
+            "titulo": "Flat com onshore",
+            "analise": "1.08m, 8s, energia de 4.6 kW/m — dia fraco demais. Vento onshore de 8.4 km/h deixa a superfície áspera. Sem condição real de surf.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Cresce pouco, permanece morno",
+            "analise": "1.05m subiu pra 8.9s — melhora mínima (4.8 kW/m). Vento lateral leve, mas o swell tá morrendo mesmo. Não vale a remada.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Noitada segura alguma energia",
+            "analise": "1.26m com 8.5s — energia cresce um pouco (6.7 kW/m). Vento lateral de 11 km/h tira a limpeza, mas pra quem tá na desesperada dá pra surfar algo. Sessão de contenção.",
+            "janela": "18h-20h",
+            "aviso": null
+          }
+        },
+        "2026-05-09": {
+          "manha": {
+            "score": 2,
+            "titulo": "Mantém altura, onshore cresce",
+            "analise": "1.26m, 9.2s, energia 7.2 kW/m — melhor que anteontem, mas o onshore virou violento (10.9 km/h). Ondas abertas, forma boa desaparece. Janela curta antes do vento pegar.",
+            "janela": "5h30-6h30",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Onshore + energia baixa",
+            "analise": "1.2m, 9.3s — mantém altura mas energia cai (6.5 kW/m). Onshore de 11.6 km/h destrói tudo, superfície mushy, sem grip. Tarde morta.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Lateral segura a onda",
+            "analise": "1.27m com 8.5s — vento lateral de 8.5 km/h permite melhor forma que a tarde. Energia 6.7 kW/m não é muito, mas é suficiente pra uma sessão com paciência. Noitada possível.",
+            "janela": "17h-19h30",
+            "aviso": null
+          }
+        },
+        "2026-05-10": {
+          "manha": {
+            "score": 2,
+            "titulo": "Offshore aparece, swell baixo",
+            "analise": "1.15m, 8.5s — swell ainda fraco (5.5 kW/m) mas o offshore de 12.3 km/h segura a face. Onda mais limpa que os últimos dias, forma frontal boa. Madrugada vale a pena pra pegar o vento perfeito.",
+            "janela": "5h-7h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Offshore mantém, energia sobe",
+            "analise": "Cresce pra 1.17m com 8.9s — energia sobe discretamente (5.9 kW/m). Offshore mais forte (14.8 km/h) deixa a onda viva, pico definido. Melhor que a manhã, mas swell ainda contido.",
+            "janela": "12h-15h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Primeira noitada decente chega",
+            "analise": "1.38m sobe pro 9.5s, energia bate 8.9 kW/m — sinal de que algo maior vem. Offshore perfeito (12.3 km/h), pico seguro, forma cilíndrica. Noite promissora, vale ficar de olho.",
+            "janela": "17h-20h",
+            "aviso": null
+          }
+        },
+        "2026-05-11": {
+          "manha": {
+            "score": 5,
+            "titulo": "Bombando! Grande chega do sul",
+            "analise": "2.77m, 10.7s — energia explode (40.2 kW/m). Offshore de 19.7 km/h segura o lip de forma agressiva, tubo possível. Direção 203° vindo de sudoeste puro — o swell que a costa todo estava esperando. Manhã épica, saia de madrugada.",
+            "janela": "5h-10h",
+            "aviso": "Tamanho real na face — surfista experiente só"
+          },
+          "tarde": {
+            "score": 5,
+            "titulo": "Pico do swell, tubo garantido",
+            "analise": "3.13m com período 11.5s — energia atinge 55.4 kW/m, segundo melhor do período. Offshore ainda generoso (16.3 km/h), pico fechado, lip oca. Remada pesada, mas recompensa tubo de verdade. Tarde monstro.",
+            "janela": "12h-16h",
+            "aviso": "Corrente lateral pode ser forte — posicione-se no pico"
+          },
+          "noite": {
+            "score": 5,
+            "titulo": "Pico noturno, energia máxima",
+            "analise": "3.27m, período 11.7s — pico da energia em 61.3 kW/m. Offshore reduz mas ainda relevante (11.7 km/h), forma mantém o delineamento, tubo robusto. Noite épica se entrar. Flashes, câmera, galera na praia testemunhando.",
+            "janela": "18h-22h",
+            "aviso": "Tamanho perigoso — apenas experientes e conhecedores do banco"
+          }
+        },
+        "2026-05-12": {
+          "manha": {
+            "score": 5,
+            "titulo": "Mantém épico, vento vira",
+            "analise": "3.2m, 12s — energia still em 60.4 kW/m, mas o onshore de 5.6 km/h começa a abrir a forma. Ainda tem tubo, ainda é grande, mas a hora de ouro foi meia-noite. Corre pra pegar, que vai piorar.",
+            "janela": "5h-8h",
+            "aviso": "Onshore começou — window fecha rápido"
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Ainda monstro, offshore salva",
+            "analise": "3.01m com 12.1s — energia 53.5 kW/m permanece pesada. Offshore volta (7.1 km/h), reanima o pico, tubo possível mas menos definido que manhã. Tarde ainda muito boa, água mais agitada de fim de swell.",
+            "janela": "13h-17h",
+            "aviso": "Swell caindo — depois de amanhã fica fraco"
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Resquício épico, vento lateral",
+            "analise": "2.76m com período 12s — energia 44.8 kW/m, ainda respeitável. Vento lateral (8.2 km/h) deixa choppy, forma abre, mas tamanho continua ali. Última noite de verdade antes do swell se dissipar. Vale aproveitar.",
+            "janela": "17h-20h30",
+            "aviso": null
+          }
+        }
+      }
     },
     "Arpoador": {
-      "erro": true
+      "dias": {
+        "2026-05-06": {
+          "manha": {
+            "score": 3,
+            "titulo": "Madrugada melhor, manhã onshore",
+            "analise": "1.63m com 11.5 segundos e 14.9 kW/m — seria bom se o vento não fosse onshore desde cedo. O pico vai ficar aberto mas mushy, tipo aquele mar que convida mas decepciona. Offshore de madrugada era a janela real.",
+            "janela": "5h-6h30",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Vento lateral, energía caindo",
+            "analise": "1.49m com 10.9 segundos, vento lateral já quebrando a face. Os 11.8 kW/m ainda dão pra rascar alguma coisa, mas a qualidade despencou desde a manhã. Pra quem quer sair sim, pro pico limpo não.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Período encurtando, mar caindo",
+            "analise": "Período caiu pra 9.4 segundos, altura 1.52m mas só 10.7 kW/m — é maré de vento lateral sem muita energia por trás. Marola preguiçosa, pra longboard talvez, pra shortboard cozinha mesmo.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-07": {
+          "manha": {
+            "score": 1,
+            "titulo": "Fraco demais, onshore de novo",
+            "analise": "1.2m com 8.8 segundos e apenas 6.3 kW/m — é praticamente nada. Onshore confirmando a destruição que começou ontem. Dia pro surf ficar em casa e checar a previsão de amanhã.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Pico leve, mas offshore ajuda",
+            "analise": "Swell caiu mais (1.14m, 8s), mas agora tem offshore — 7.6 km/h no 137 graus (lateral/offshore). Os 5.1 kW/m são baixos, porém a face vai ficar limpa e glassy. Marola de diversão, não de sessão.",
+            "janela": "15h-17h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Período murcha, energia no piso",
+            "analise": "Piorou de novo. 1.28m com período muito curto (6.8s) e apenas 5.5 kW/m — a onda chega fraca e sem potência mesmo com lateral. Noite plana disfarçada de ondinha.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-08": {
+          "manha": {
+            "score": 1,
+            "titulo": "Flat com onshore, melhor não",
+            "analise": "1.08m é praticamente plano. Período de 8s com onshore fraco (8.4 km/h) não salva — 4.6 kW/m é marola. Cê quer treinar pra casa ir ao Arpoador com isso.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Período sobe mas altura cai",
+            "analise": "Subiu um pouco na cara (período 8.9s, energia 4.8 kW/m) mas a altura despencou pra 1.05m. Vento lateral sem força. Pior que a manhã, só que diferente — é tipo comparar água morna com água morna de cores diferentes.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Noite anima, lateral moderado",
+            "analise": "Finalmente algo: 1.26m, 8.5 segundos, 6.7 kW/m. Vento lateral a 11 km/h mas dá pra trabalhar na face. É fraco ainda, porém acima de zero. Melhor do dia, que não é dizer muito.",
+            "janela": "18h-20h",
+            "aviso": null
+          }
+        },
+        "2026-05-09": {
+          "manha": {
+            "score": 2,
+            "titulo": "Segue fraco, onshore chato",
+            "analise": "1.26m, 9.2 segundos com 7.2 kW/m — ganhou um pouco de período mas o onshore de 10.9 km/h mata a qualidade. É aquele mar que tá tentando ser bom mas não consegue porque o vento não deixa.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Ondão fofo, sem forma",
+            "analise": "Altura mantém (1.2m) e período sobe pra 9.3s — legal em números, ruim na realidade. Onshore de 11.6 km/h deixa tudo aberto, mushy, sem lip definido. Remada pesada pra ganho zero.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Lateral melhora, energia fraca",
+            "analise": "Vento virou pra lateral (51 graus, 8.5 km/h) — respira. Período 8.5s com 1.27m e 6.7 kW/m não impressiona, mas pelo menos a forma vai estar mais fechada e o pico mais definido que nos períodos anteriores.",
+            "janela": "18h30-20h",
+            "aviso": null
+          }
+        },
+        "2026-05-10": {
+          "manha": {
+            "score": 3,
+            "titulo": "Madrugada offshore, pico fechado",
+            "analise": "Virou! Offshore de 12.3 km/h no 238 (SO) — vento na cara. 1.15m com 8.5s é fraco numericamente (5.5 kW/m), mas a face vai estar *limpa*, glassy, o pico fechado e arrumado. Qualidade vence tamanho.",
+            "janela": "5h30-7h30",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Offshore forte, período curto",
+            "analise": "Offshore intensifica pra 14.8 km/h — swell tá sendo sufocado mas a qualidade da face vai ser impecável. 1.17m, 8.9s, 5.9 kW/m é pequeno e leve, porém tubado e perfeito pro carve. Mano que conhece o pico vai surfar bem.",
+            "janela": "14h-16h30",
+            "aviso": null
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Noite vira, swell cresce",
+            "analise": "Sinal! 1.38m com 9.5 segundos chegando — offshore calmo em 12.3 km/h, rosto da onda inteiro e seguro. 8.9 kW/m de energia já avisa que algo maior vem. Pico vai estar perfeito, séries mais consistentes no escuro.",
+            "janela": "17h30-21h",
+            "aviso": null
+          }
+        },
+        "2026-05-11": {
+          "manha": {
+            "score": 5,
+            "titulo": "Épico, offshore de verão",
+            "analise": "Chegou. 2.77m, 10.7 segundos, offshore forte em 19.7 km/h — 40.2 kW/m é swell de respeito. A madrugada vai ser gloriosa: face limpa, lip definido, tubações previsíveis. Swell de sul venceu o onshore; agora tá domando tudo. Cê sai antes do sol pra não perder.",
+            "janela": "5h-8h",
+            "aviso": "Tamanho exige experiência; corrente de retorno ativa"
+          },
+          "tarde": {
+            "score": 5,
+            "titulo": "Auge, período longo, bomba geral",
+            "analise": "Acelerou tudo. 3.13m com 11.5 segundos agora — 55.4 kW/m é força bruta. Offshore em 16.3 km/h mantém a face impecável, lip explodindo, sets profundos. Tá bombando. Não tá pra fraco: só quem treina pesado entra nesse.",
+            "janela": "12h-15h",
+            "aviso": "Recife e pedras podem estar expostas; tamanho real exige cuidado extremo"
+          },
+          "noite": {
+            "score": 5,
+            "titulo": "Pico de energia, noite lendária",
+            "analise": "O máximo: 3.27m, período 11.7 segundos, 61.3 kW/m — é a noite que vira história. Offshore cai pra 11.7 km/h mas ainda segura a face com perfeição. Sets enormes, intervalos curtos, pressão no peito. Quem entra aqui e sai inteiro surfou o auge da semana.",
+            "janela": "17h-20h",
+            "aviso": "Perigo real: tamanho, força de corrente, impacto físico severo"
+          }
+        },
+        "2026-05-12": {
+          "manha": {
+            "score": 4,
+            "titulo": "Swell mantém, onshore amanhece",
+            "analise": "3.2m com 12 segundos é praticamente igual ao ápice de ontem (60.4 kW/m), porém o vento virou onshore às 6h (5.6 km/h) — destrói a silhueta mas não a força total. Madrugada antes das 6h vai ser tubada e pesada; depois disso fica aberta. Mano corre pro pico antes do amanhecer.",
+            "janela": "4h30-6h",
+            "aviso": "Onshore progressivo; swell ainda perigoso para iniciantes"
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Offshore volta, swell decaindo",
+            "analise": "Voltou offshore no 161 graus (7.1 km/h) — rosto da onda volta a limpar. Altura caiu pra 3.01m, período mantém 12.1 segundos (53.5 kW/m). É o swell passando mas *mantendo qualidade* — séries gigantes mas espaçadas, períodos calmos entre sets. Ainda exige respeito.",
+            "janela": "13h-16h",
+            "aviso": "Tamanho ainda superior; maré média ou alta recomendada"
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Declínio com lateral, lindo fim",
+            "analise": "Swell desacelerando: 2.76m, 12 segundos, 44.8 kW/m. Vento lateral leve (8.2 km/h no 88) deixa a onda aberta mas ainda com potência. É a cauda do evento épico — ondas ainda grandes porém mais maneáveis, picos abertos. Despedida digna do swell de verão.",
+            "janela": "17h-19h",
+            "aviso": null
+          }
+        }
+      }
     },
     "Prainha": {
       "erro": true
@@ -56,10 +1352,334 @@
       "erro": true
     },
     "Barra da Tijuca": {
-      "erro": true
+      "dias": {
+        "2026-05-06": {
+          "manha": {
+            "score": 4,
+            "titulo": "Set limpo, offshore perfeito",
+            "analise": "1.58m com 11.5 segundos — 14 kW/m de pura energia. Vento de 170° segurando a face, offshore certinho. Aquele período carrega força, não é tamanho bobo não.",
+            "janela": "5h30-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Período cai, vento lateral atrapalha",
+            "analise": "Onda caiu pra 1.44m e o período encolheu pra 11 segundos — 11.2 kW/m, nada demais. Vento de 129° lateral deixa choppy, onda abre demais. Sessão fraca.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Enfraqueceu bastante, período curto",
+            "analise": "Mesma altura mas período caiu pra 9.6 segundos — 9.8 kW/m. Vento lateral de 72° não ajuda. Onda fica mushy, sem potência de verdade.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-07": {
+          "manha": {
+            "score": 1,
+            "titulo": "Flat com onshore matando",
+            "analise": "Caiu pra 1.15m com período curto de 8.9 segundos — apenas 5.8 kW/m. Vento onshore de 23° destrói o que sobrou. Dia pra esquecer.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 0,
+            "titulo": "Praticamente sem onda",
+            "analise": "1.07m com 8.1 segundos — 4.6 kW/m. Vento lateral de 100° ainda piora tudo. Tá chato mesmo.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Levanta pouco, período fraco",
+            "analise": "Subiu um pouco pra 1.22m mas período de 7 segundos é curto demais — 5.1 kW/m. Vento lateral de 64° não ajuda nada. Sessão morna.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-08": {
+          "manha": {
+            "score": 0,
+            "titulo": "Onshore cedo destrói tudo",
+            "analise": "1.03m fraco com período curto de 8 segundos — 4.2 kW/m. Vento onshore de 11° desde cedo. A onda chega mushy, sem forma. Dia perdido.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Período melhora, vento lateral atrapalha",
+            "analise": "Período subiu pra 8.9 segundos com 1.02m — 4.5 kW/m, ainda fraco. Vento de 50° lateral deixa a face aberta demais. Não vale a remada.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Levanta pouco, onshore mata",
+            "analise": "1.16m com 8.8 segundos — 5.9 kW/m, sobe um pouco. Mas vento onshore de 37° destrói a forma. Onda chega sem lábio limpo.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-09": {
+          "manha": {
+            "score": 1,
+            "titulo": "Onshore forte cedo, mushy",
+            "analise": "1.21m com 9.1 segundos — 6.6 kW/m. Vento onshore pesado de 11.4 km/h, direção 7° — tá soprando direto do mar pra terra. Onda chega aberta, sem tubação.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Onshore continua, período bom mas inútil",
+            "analise": "Período sobe pra 9.2 segundos com 1.15m — 6 kW/m, a energia tá aí. Vento onshore de 11.6 km/h não deixa aproveitar. Onda abre geral.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Vento cai mas onshore não sai",
+            "analise": "Vento enfraquece pra 6.3 km/h mas segue onshore de 33°. 1.17m com período 8.7 segundos — 5.9 kW/m. Onda não fecha como deve.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-10": {
+          "manha": {
+            "score": 1,
+            "titulo": "Onshore de novo, lull fraco",
+            "analise": "1.1m com 8.5 segundos — 5.1 kW/m, nada de especial. Vento onshore forte de 10.3 km/h, direção 352°. Ondinha que não convida.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Vira offshore, período decente",
+            "analise": "Vento virou offshore de 12 km/h — 231° te segurando! 1.14m com 8.8 segundos — 5.6 kW/m. Tá fraco mas a forma aparece, pico limpo. Salva a tarde.",
+            "janela": "12h-15h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Swell avança, offshore mantém forma",
+            "analise": "Agora entra swell novo — 1.38m com 9.3 segundos — 8.6 kW/m. Vento offshore de 234° segurando a crista. Noite bomba, pico abre sem fechar geral.",
+            "janela": "17h-21h",
+            "aviso": null
+          }
+        },
+        "2026-05-11": {
+          "manha": {
+            "score": 5,
+            "titulo": "Swell grande chega épico",
+            "analise": "2.74m com 10.5 segundos — 38.6 kW/m, tá começando pra valer. Vento offshore 225° como nos planos, 16.1 km/h segurando tudo. Manhs é aquela, remada pesada mas tubo de verdade.",
+            "janela": "5h-9h",
+            "aviso": "Tamanho exige respeito — não é pra treina não"
+          },
+          "tarde": {
+            "score": 5,
+            "titulo": "Pico de energia, período longo",
+            "analise": "3.03m — 11.4 segundos — 51.4 kW/m. Vento offshore 220° controlando. Essa é a onda que todo mundo sonhou a semana — face ampla, tubo seguro, offshore limpo limpinho.",
+            "janela": "11h-15h",
+            "aviso": "Corrente forte — não esqueça de usar o rip pra sair"
+          },
+          "noite": {
+            "score": 5,
+            "titulo": "Noite colossal, pura energia",
+            "analise": "3.16m — 11.6 segundos — 56.7 kW/m. Vento offshore 210° manso, 9.1 km/h. Série chegando grande, oca, com aquele barrel que a gente espera ano inteiro. Noite épica.",
+            "janela": "17h-22h",
+            "aviso": "Grande demais — apenas quem conhece o banco deve entrar"
+          }
+        },
+        "2026-05-12": {
+          "manha": {
+            "score": 5,
+            "titulo": "Pico mantém força, offshore perfeito",
+            "analise": "3.09m com 12 segundos — 56.1 kW/m, continua colossal. Vento offshore suave de 3.9 km/h, direção 310° — praticamente glassy. Manhã de sonho pra big wave.",
+            "janela": "5h-9h",
+            "aviso": "Tamanho mantém risco — corrente de retorno muda conforme o pico"
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Swell recua pouco, vento cai",
+            "analise": "2.9m ainda gigante — 12 segundos mantém energia em 49.4 kW/m. Vento de 4.9 km/h offshore 163°. Onda fica grande, exigente, mas surfável pra experiente.",
+            "janela": "10h-14h",
+            "aviso": "Ainda pesado — respeite o tamanho e a corrente"
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Enxuga mas segue épico",
+            "analise": "2.67m com 11.9 segundos — 41.8 kW/m. Vento lateral de 77° começa a entrar mas ainda offshore suficiente. Noite segue bombando, série grande, forma respeitável.",
+            "janela": "17h-21h",
+            "aviso": "Ondas fecham mais que na manhã — posicione bem no peak"
+          }
+        }
+      }
     },
     "Macumba": {
-      "erro": true
+      "dias": {
+        "2026-05-06": {
+          "manha": {
+            "score": 3,
+            "titulo": "Lateralzinho limpo, 1.5m",
+            "analise": "Vento lateral leve, 12.8 kW/m de energia — o swell de 11 segundos vem direitinho em 174°. Período bom, cara, dá pra fechar uns turns soltos antes o vento apertar de verdade à tarde.",
+            "janela": "5h30-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "titulo": "Vento vira, onda piora",
+            "analise": "Agora o vento lateral aumenta pra 13.6 kW/m, período cai pra 10.8 — a onda emagreceu e tá ficando choppy. Altura 1.38m mas sem potência. Dá pra pegar onda, mas nada de especial.",
+            "score": 2,
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Empalação, sem ritmo",
+            "analise": "Período desce pra 9.6, energia cai pra 9.1 kW/m — é ondinha mole de noite. Vento lateral ainda tá ali, 12.9 km/h. Se cê tá sem nada pra fazer, entra, mas não espera milagre.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-07": {
+          "manha": {
+            "score": 1,
+            "titulo": "Flat com pipoquinha",
+            "analise": "Swell muda de direção (153°) e despenca — 1.11m com apenas 5.3 kW/m. Pior que tudo: vento onshore desde cedo, 5.7 km/h. Onda mushy, sem forma, sem energia. Dia pra procurar outro spot.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 0,
+            "titulo": "Desastre onshore, date um jeito",
+            "analise": "Cai mais ainda — 1.04m, 4.3 kW/m, período 8.1. Vento vira pra lateral (99°) mas a onda já tá destruída. Tá floppy, tá chato, tá vazio de energia. Procura uma piscina.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Migalhas do swell inicial",
+            "analise": "Noite fraca — 1.16m mas período cai pra 7 segundos, só 4.6 kW/m. Vento lateral de 63° não segura nada. Onda tá morrendo, cansada. Se tiver maré baixa e conhecer bem o banco, dá pra rascar uns turns, nada mais.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-08": {
+          "manha": {
+            "score": 0,
+            "titulo": "Vazio total, vento onshore",
+            "analise": "1m bem redondo, período 8, apenas 3.9 kW/m — e vento onshore de 6.5 km/h vindo do norte. Swell trocou de novo (129°), tá fraco demais. Madrugada é pra dormir mais, não pra surfar isso.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Levanta um pouquinho à noite",
+            "analise": "Tarde continua rasa — 0.99m, 4.2 kW/m. Vento lateral de 62° pelo menos não estraga. Pode valer a pena pra quem quer rascar, mas não promete nada. Noite muda a conversa: 1.12m, 5.4 kW/m, período melhora pra 8.8.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Meia-noite bota o pé",
+            "analise": "Noite melhorinha — 1.12m, 5.4 kW/m, período sobe pra 8.8. Vento lateral leve (46°). Cê consegue achar uns sets com forma, mas a energia segue tímida. Vale a remada se cê aguenta madrugada.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-09": {
+          "manha": {
+            "score": 1,
+            "titulo": "Onshore pesado destrói tudo",
+            "analise": "Manhã chega com 1.18m, 6 kW/m, período 8.7 — ia ser razoável se não fosse o vento onshore arrasa de 19.6 km/h vindo do norte (357°). Onda chega aberta, destelhada, sem lábio. Não dá.",
+            "janela": null,
+            "aviso": "Vento onshore forte destrói forma"
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Vira offshore, abre a brecha",
+            "analise": "Flipou — vento offshore de 14.3 km/h (221°) segura a face; altura 1.12m, período 9, energia 5.5 kW/m. Não é grande coisa, mas é LIMPO. Pico fica oco, dá pra fechar uns ares, remada tranquila. Essa é a janela.",
+            "janela": "12h-15h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Esfria mas segue lateral",
+            "analise": "Esfria um pouco — período 8.7, energia 5.3 kW/m. Vento vira pra lateral (48°), menos agressivo que onshore de manhã. Onda tá mais puxada, período curto, mas pelo menos tem forma. Pra quem pega noturna, vale.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-10": {
+          "manha": {
+            "score": 0,
+            "titulo": "Onshore volta com tudo",
+            "analise": "Volta o vento onshore agressivo — 16.7 km/h de norte (349°). Altura 1.08m, apenas 4.7 kW/m, período 8.2. Onda tá feita em pólvora antes chegar na areia. Manhã pro cafezinho em terra mesmo.",
+            "janela": null,
+            "aviso": "Vento onshore forte"
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Offshore salva a tarde",
+            "analise": "Aqui vira — vento offshore de 273° (oeste, de terra) a 16.5 km/h. Altura 1.11m, 5.1 kW/m, período 8.5. Não é onda pra botar prêmio, mas tá limpa, tá com forma. Pelo menos cê consegue ler o pico sem o vento abrir tudo.",
+            "janela": "14h-17h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Swell cresce, vento offshore",
+            "analise": "Noite muda a mesa — swell chega mais forte: 1.36m, 8.1 kW/m, período 9. Vento offshore de 244° (SO) a 14.2 km/h. Pico tá com cara de ter set bom, onda mais consistente. Tá afinando pro que vem amanhã.",
+            "janela": "18h-21h",
+            "aviso": null
+          }
+        },
+        "2026-05-11": {
+          "manha": {
+            "score": 5,
+            "titulo": "Épico. 2.67m, offshore, energia",
+            "analise": "Acorda cedo — swell explode em 2.67m com 10.3 segundos de período e 35.9 kW/m. Vento offshore puro de 224° (SO) a 20 km/h, segurando tudo. Pico fica oco, remada forte, drop certeiro, tubo garantido se cê ler o banco. Dia que cê era pra estar lá.",
+            "janela": "5h-10h",
+            "aviso": "Altura grande exige experiência"
+          },
+          "tarde": {
+            "score": 5,
+            "titulo": "Pico de energia — 47.1 kW/m",
+            "analise": "Cresce mais: 2.93m, 11.2 segundos, 47.1 kW/m — energia pesada. Vento offshore mantém de 219°, 17.8 km/h. Pico apertado, série bombando, set inteiro surfável. Essa é a melhor tarde da semana, não vale bobeira. Pega logo.",
+            "janela": "11h-16h",
+            "aviso": "Swell forte, posicione bem no banco"
+          },
+          "noite": {
+            "score": 5,
+            "titulo": "Noite de ouro — 3.04m puro",
+            "analise": "Climax: 3.04m, 11.3 segundos, período robusto. Energia 51.4 kW/m — swell no pico absoluto. Vento offshore suave de 211° a apenas 13.7 km/h, deixa tudo perfeito. Onda tubular, potência, tubo garantido em cada set. Noite pra lembrar pro resto da vida.",
+            "janela": "17h-22h",
+            "aviso": "Tamanho e energia exigem respeito total"
+          }
+        },
+        "2026-05-12": {
+          "manha": {
+            "score": 5,
+            "titulo": "Mantém força, período sobe",
+            "analise": "Swell desceu um dedo (2.97m) mas período SOBE pra 11.8 segundos — 51 kW/m ainda. Vento offshore de 297° (O) tranquilo, 6.7 km/h. Onda chega mais longa, mais grossa, mais energia comprimida. Drop profundo, tubo pá longe, manobra esperta. Manhã perfeita pra quem aguenta o ritmo.",
+            "janela": "5h-11h",
+            "aviso": "Swell ainda grande, posição crítica"
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Mantém padrão épico, cai leve",
+            "analise": "2.78m, 11.8 segundos, 44.7 kW/m — desce um pouco comparado à noite de ontem, mas tá longe de fraco. Vento offshore de 161° (sul) ainda segura. Set tem ritmo, onda tem potência. Qualidade mantida, experiência completa. Cê que decide se pega mais ou se poupa pro amanhã.",
+            "janela": "12h-17h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Encosta mole, vento muda",
+            "analise": "Noite chega com 2.57m, 11.7 segundos, 38 kW/m — swell caindo mas ainda com corpo. Vento vira pra lateral (71°) a 10.3 km/h, perde o toque offshore. Onda segue bonita, segue potente, mas o pico tá perdendo aquela limpeza perfeita. Dia cansado? Vale descansar. Dia fresco? Ainda tem tubo aí.",
+            "janela": "18h-21h",
+            "aviso": null
+          }
+        }
+      }
     },
     "Itacoatiara": {
       "erro": true
@@ -67,8 +1687,359 @@
     "Geribá": {
       "erro": true
     },
-    "Praia Rasa": {
+    "Tucuns": {
       "erro": true
+    },
+    "Monte Alto": {
+      "erro": true
+    },
+    "Figueira": {
+      "erro": true
+    },
+    "Praia Rasa": {
+      "dias": {
+        "2026-05-06": {
+          "manha": {
+            "score": 2,
+            "titulo": "Onshore matinal, ondinha e vento",
+            "analise": "1.3m com 10.6 segundos já soa bom, mas o onshore de 14.6 km/h vai abrir toda onda — 8.8 kW/m é fraco mesmo. Jeito é entrar cedo antes do vento piorar, surfar na base sem esperar muito.",
+            "janela": "6h-7h30",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Lateral destrói o pouco que sobrou",
+            "analise": "Período caiu pra 9.8s, energia despencou pra 7 kW/m, vento lateral de 19 km/h tá torpedando a forma. Aquilo que tinha de potencial de manhã virrou mushy.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Mar fechado, vento lateral ainda",
+            "analise": "Onda minguando (1.2m), período curto (8.8s), vento lateral persistindo — 6.2 kW/m. Se foi de manhã, à noite é só desculpa pra não entrar.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-07": {
+          "manha": {
+            "score": 1,
+            "titulo": "Período murcho, onshore forte",
+            "analise": "1.07m com 7.5 segundos — tá tudo pequeno e desorganizado. Onshore de 19.4 km/h ainda fazendo dano, apenas 4.2 kW/m. Dia de esperar o mar acordar.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 0,
+            "titulo": "Flat praticamente, vento no jeito",
+            "analise": "Altura caiu pra 1.07m, período enrugou pra 6.5 segundos, vento lateral de 24.9 km/h criando choppy — só 3.7 kW/m. Dia perdido, sem discussão.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 0,
+            "titulo": "Noite morna, período rente ao chão",
+            "analise": "1.1m e 6.1 segundos é basicamente piscina. Vento lateral de 24.8 km/h ainda colando — 3.7 kW/m de novo. Se sobrou algo, o vento cobriu.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-08": {
+          "manha": {
+            "score": 1,
+            "titulo": "Swell leste, onshore bloqueando",
+            "analise": "Direção mudou pra leste (76°), altura subiu de novo (1.19m), mas período tá ridículo em 6 segundos — 4.2 kW/m. Onshore de 26.2 km/h vai destruir qualquer lábio que tentar se formar.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Altura cresce mas período não segue",
+            "analise": "1.32m com 6.1 segundos ainda tá curto — 5.2 kW/m. Vento virou lateral (27 km/h) e até muda pra melhor, mas a energia não tá em lugar nenhum. Ondinha agitada.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Noite cresce um pouco, ainda onshore",
+            "analise": "1.43m chegando, período subindo pra 6.5 segundos — 6.5 kW/m finalmente passa de 5. Pura pena o onshore de 27 km/h estar ainda ativo, senão teria potencial. Vale tentar se gostar de água batida.",
+            "janela": "19h-20h30",
+            "aviso": null
+          }
+        },
+        "2026-05-09": {
+          "manha": {
+            "score": 2,
+            "titulo": "Cresce mas vento segue onshore",
+            "analise": "1.5m com 6.9 segundos — tá crescendo, 7.6 kW/m já é mais coisa. Problema: onshore de 26 km/h colando firme. Onda tem volume mas a forma tá aberta, jeito é surfar sem esperar muito.",
+            "janela": "6h-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Pico cresce, vento lateral muda nada",
+            "analise": "1.53m com 6.8 segundos — 7.8 kW/m. Vento foi pro lateral (28 km/h), que é melhor que onshore, mas ainda tá abrindo a onda. Remada pesada pra compensar o choppy.",
+            "janela": "14h-16h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Maior onda do período, vento piora",
+            "analise": "1.62m com 6.7 segundos — tá realmente maior, 8.7 kW/m. Onshore sobe pra 31 km/h e tá bagunçando tudo. Se entrar, entra agora antes de virar impossível.",
+            "janela": "18h-19h",
+            "aviso": null
+          }
+        },
+        "2026-05-10": {
+          "manha": {
+            "score": 2,
+            "titulo": "Pico segura, onshore ainda molesta",
+            "analise": "1.47m com 6.8 segundos — 7.2 kW/m tá mantendo força. Onshore de 22 km/h continua no jeito, mas vento tá ligeiramente menos pesado que ontem. Melhor chance de manhã antes de piorar.",
+            "janela": "6h-8h30",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Segura energia, vento segue onshore",
+            "analise": "Onda se comporta (1.32m, 7.2 segundos, 6.2 kW/m), período tá subindo — boa notícia. Onshore de 16.9 km/h ficou menos violento, deixa a onda mais respirável. Remada tranquila comparado aos dias antes.",
+            "janela": "14h-17h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Offshore chega, período longo confirma",
+            "analise": "1.28m com 7.4 segundos, offshore finalmente aparece (175°, 14 km/h) — 6 kW/m não tá alto mas a forma limpa compensa muito. Onda vai estar glassy, lip definido, tempo pra manobra.",
+            "janela": "19h-21h",
+            "aviso": null
+          }
+        },
+        "2026-05-11": {
+          "manha": {
+            "score": 4,
+            "titulo": "Swell novo, offshore, tubo à vista",
+            "analise": "Novo swell chegou (147°), 1.53m com 9.2 segundos — período longo entra de vez. Offshore de 19.9 km/h (230°) segurando tudo limpo, 10.6 kW/m. Pico vai estar oco, lábio definido, remada rápida.",
+            "janela": "6h-11h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 5,
+            "titulo": "Épico. Muita onda, offshore limpo.",
+            "analise": "1.89m com 9.5 segundos — tá ficando sereno. Direção mudou direto pro sul (177°), offshore segue em 217° com 19 km/h, tudo glassy. 16.5 kW/m é onda de verdade agora, tubo consistente, série depois de série.",
+            "janela": "12h-18h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 5,
+            "titulo": "Swell confirmado, offshore perfeito.",
+            "analise": "Tudo monta: 1.99m com 10 segundos, direção sul confirmada (183°), offshore leve e consistente (225°, 15 km/h) — 19.4 kW/m. Onda oca, tubeira, período que segura a forma. É aquele tipo de noite que marca.",
+            "janela": "19h-23h",
+            "aviso": null
+          }
+        },
+        "2026-05-12": {
+          "manha": {
+            "score": 5,
+            "titulo": "Melhor do período, offshore perfeito.",
+            "analise": "1.92m com 10.9 segundos — pico máximo, período longo demais. Offshore quase nulo (254°, 7.8 km/h), tá calmíssimo. 19.6 kW/m de energia concentrada, tubo profundo, face rápida, condição irrepetível.",
+            "janela": "5h-10h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 5,
+            "titulo": "Ainda épico, período crescendo.",
+            "analise": "1.83m com 11.2 segundos — período subiu mais ainda, onda tá longa. Offshore leve (138°, 8 km/h, ainda segurando limpo), 18.4 kW/m. Manobra tem tempo, tubo tem respiro, sessão de qualidade pura.",
+            "janela": "11h-17h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Swell cai, período segura tudo.",
+            "analise": "1.7m com 11.2 segundos — altura encolheu um pouco mas período tá no auge. Vento virou lateral (88°, 10 km/h) mas ainda tá respeitável, 15.9 kW/m garante qualidade. Últimas ondas do melhor momento.",
+            "janela": "18h-21h",
+            "aviso": null
+          }
+        }
+      }
+    },
+    "Foguete": {
+      "erro": true
+    },
+    "Unamar": {
+      "erro": true
+    },
+    "Praia Grande": {
+      "erro": true
+    },
+    "Praia Brava (Arraial)": {
+      "erro": true
+    },
+    "Praia Brava (Cabo Frio)": {
+      "erro": true
+    },
+    "Praia Brava (Búzios)": {
+      "dias": {
+        "2026-05-06": {
+          "manha": {
+            "score": 2,
+            "titulo": "Ondinha com vento chato",
+            "analise": "1.3m e 10 segundos — tem energia ali (8.8 kW/m), mas o vento onshore já tá destruindo a forma. Lip aberto, superfície choppy. Só pra quem quer treinar na bagunça.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Lateral cansado, flat chegando",
+            "analise": "Vento lateral forte (19 km/h) tira a definição do pico. 1.2m com 9.8 segundos cai pra 7 kW/m — energia fraca mesmo. Melhor ficar na areia.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Mar desorganizado",
+            "analise": "Período caindo pra 8.8 segundos, energia em 6.2 kW/m. Vento lateral continue apagando tudo. Onda curta, sem corpo — não vale remo.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-07": {
+          "manha": {
+            "score": 0,
+            "titulo": "Flat com onshore",
+            "analise": "Período despencou pra 7.5 segundos, altura 1.07m, onshore matando. Só 4.2 kW/m — é flatness, não onda.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": -1,
+            "titulo": "Praticamente nada",
+            "analise": "6.5 segundos, 1.07m, 3.7 kW/m com vento lateral forte. Onda não tem corpo, não tem cara. Dia ruim mesmo.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": -1,
+            "titulo": "Segue fraco",
+            "analise": "Swell morreu, período em 6.1 segundos. 3.7 kW/m — força de ondinha de primavera. Vento lateral (24.8 km/h) tá só piorando.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-08": {
+          "manha": {
+            "score": 1,
+            "titulo": "Fraco, mas crescendo",
+            "analise": "1.19m, 6 segundos ainda curto demais. Onshore pesado (26 km/h) destrói o que tem. 4.2 kW/m — espera a tarde crescer.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Melhora leve na tarde",
+            "analise": "Swell tá acordando: 1.32m, 6.1 segundos, energia subindo pra 5.2 kW/m. Vento lateral (27 km/h) segura um pouco melhor, mas ainda meio aberto.",
+            "janela": "14h-16h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Noite come a altura",
+            "analise": "1.43m com 6.5 segundos — 6.5 kW/m, tá bom em tamanho mas período muito curto. Onshore noturno (27 km/h) apaga tudo de novo. Nem vale.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-09": {
+          "manha": {
+            "score": 2,
+            "titulo": "Cresce mais, vento mata",
+            "analise": "1.5m com 6.9 segundos, 7.6 kW/m — é o maior da semana até agora. Mas onshore (26 km/h) tá bravo, superfície chunky. Forma fechada, sem limpeza.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Maior e mais choppy",
+            "analise": "Altura pico em 1.53m, energia em 7.8 kW/m — promete, mas vento lateral em 28.5 km/h transforma em ziguezague. Pega set quando a série alinha.",
+            "janela": "15h-17h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Pior quando aumenta mais",
+            "analise": "1.62m, 6.7 segundos, 8.7 kW/m — é o auge da energia essa semana aqui. Só que onshore forte (31 km/h) transforma tudo em carnê. Onda oca mas feio.",
+            "janela": null,
+            "aviso": "Vento onshore forte destrói forma"
+          }
+        },
+        "2026-05-10": {
+          "manha": {
+            "score": 2,
+            "titulo": "Altura cai, vento segue",
+            "analise": "1.47m com 6.8 segundos, 7.2 kW/m ainda tem um pouco de força. Onshore matinal em 22 km/h tira o brilho, mas melhor que ontem à noite — onda tem um corpo.",
+            "janela": "6h-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Período cresce, altura cai",
+            "analise": "1.32m mas período pulou pra 7.2 segundos, energia em 6.2 kW/m. Vento onshore freia (16.9 km/h), onda fica mais roliça, mais fácil de pegar.",
+            "janela": "14h-16h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Vira pra offshore",
+            "analise": "Momento da transição: 1.28m, 7.4 segundos, 6 kW/m — nada demais, mas offshore fraco (175°) aparece. Superfície limpa pela primeira vez. Onda ganha forma.",
+            "janela": "19h-21h",
+            "aviso": null
+          }
+        },
+        "2026-05-11": {
+          "manha": {
+            "score": 4,
+            "titulo": "Swell novo chega forte",
+            "analise": "Aí, novo swell do sul: 1.53m, 9.2 segundos, 10.6 kW/m. Direção muda pra 147° — de sul mesmo. Offshore limpo (230°, 19.9 km/h), pico define bem, onda fecha lisa.",
+            "janela": "5h-10h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 5,
+            "titulo": "Épico, melhor período da semana",
+            "analise": "Bingo. 1.89m, 9.5 segundos de período lindo, 16.5 kW/m — essa é a energia que importa. Offshore de 230° tá vindo de terra, lip impecável, sets organizados. Praia Brava tá bombando.",
+            "janela": "13h-18h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 5,
+            "titulo": "Noite manda o tubo",
+            "analise": "Cresce mais ainda: 1.99m com 10 segundos, 19.4 kW/m — energia de swell de verdade. Offshore 225° segura a forma, lábio compacto, o mar tá ofertando tubão. Melhor da semana.",
+            "janela": "19h-21h",
+            "aviso": null
+          }
+        },
+        "2026-05-12": {
+          "manha": {
+            "score": 5,
+            "titulo": "Pico: 1.92m período longo",
+            "analise": "Altura máxima 1.92m com 10.9 segundos — aquele período que você espera semanas. 19.6 kW/m puro. Offshore leve (7.8 km/h, 254°), mar como vidro. Pico aberto, remada fácil, set inteira pra viajar.",
+            "janela": "5h-10h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Segue épico mas cai altura",
+            "analise": "1.83m agora, período firme em 11.2 segundos — 18.4 kW/m. Offshore mantém (138°, 8 km/h), superfície impecável. Perde um ponto em tamanho, mas onda tá redonda, fácil, divertida.",
+            "janela": "12h-17h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Lateral fecha mas segue bom",
+            "analise": "1.7m, 11.2 segundos, 15.9 kW/m — swell não morre. Vento lateral (88°, 10 km/h) chega mas não destrói. Onda fica facetada, manobras fluem, ganho de momentum à noite.",
+            "janela": "19h-22h",
+            "aviso": null
+          }
+        }
+      }
     },
     "Tombo": {
       "erro": true
@@ -86,7 +2057,169 @@
       "erro": true
     },
     "Itamambuca": {
-      "erro": true
+      "dias": {
+        "2026-05-06": {
+          "manha": {
+            "score": 3,
+            "titulo": "Ondinha offshore, período curto",
+            "analise": "1m com 9.5 segundos, vento limpo de terra — dá pra pegar set sem ninguém pedindo passagem. Energia de 4.8 kW/m é o suficiente pra uma manhã tranquila de carve, sem grande potência mas sem frustração.",
+            "janela": "5h30-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Caindo, vento virou estranho",
+            "analise": "Altura cai pra 0.93m, período segue curto em 9.3 segundos. Vento começou a girar pro leste — não é mais aquele offshore puro. Energia em 4 kW/m: fraco demais pra dedicar a tarde inteira.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Fechou, vento onshore derrotou",
+            "analise": "0.9m, período 9 segundos, vento onshore de norte — não tem nem o quê salvar aqui. Energia de 3.6 kW/m é praticamente flat com chop. Fica em casa.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-07": {
+          "manha": {
+            "score": 2,
+            "titulo": "Período caiu, offshore ainda segura",
+            "analise": "0.9m mas agora com período de 7.3 segundos — ondinha rápida e sem força. Vento offshore de oeste tenta salvar a forma, mas energia em 2.9 kW/m não dá corpo. Pra quem acorda cedo e quer ficar na água, passa.",
+            "janela": "6h-7h30",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Mushy demais, período fraco",
+            "analise": "Despenca pra 0.86m, período em 6.9 segundos — onda curta, lenta, sem seção. Vento offshore não consegue sustentar essa ondinha desgostosa. Energia de 2.5 kW/m: é praticamente caldo.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Ondinha, dessa vez lateral",
+            "analise": "Tá em 0.92m, período 6.5 segundos, vento offshore de noroeste — ainda mushy, onda não tem graça. Energia em 2.7 kW/m: a noite oferece o mesmo que a tarde rejeitou.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-08": {
+          "manha": {
+            "score": 2,
+            "titulo": "Continua fraco, vento salva forma",
+            "analise": "0.93m com período de 6.8 segundos, vento offshore de oeste segura a face. Não é nada de especial mas dá pra rascunhar sem choppy. Energia em 2.9 kW/m: o suficiente pra aquecimento matinal.",
+            "janela": "6h-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Idem manhã, vento muda direção",
+            "analise": "Mantém 0.91m, período 6.9 segundos, mas vento gira pra leste — ainda offshore, ainda plano. Energia em 2.8 kW/m não muda o jogo. É mais do mesmo.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Período sobe um pouco, vento onshore",
+            "analise": "Sobe pra 0.9m, período chega em 7.2 segundos — parece melhora, mas vento onshore de norte destroi qualquer pretensão de forma. Energia em 2.9 kW/m com vento ruim é fracasso garantido.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-09": {
+          "manha": {
+            "score": 3,
+            "titulo": "Acordou! Período sobe, energia volta",
+            "analise": "Agora sim: 1.01m com período de 7.7 segundos, vento offshore de noroeste limpo. Energia em 3.8 kW/m — o mar acorda pra uma manhã que vale a pena. Set chega com mais corpo, dá pra fazer manobra decente.",
+            "janela": "5h30-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Período sobe mais, vento estável",
+            "analise": "0.95m mas o período agora tá em 7.9 segundos — onda começa a ganhar seção. Vento offshore de leste mantém a forma limpa. Energia em 3.5 kW/m: sessão regular, dá pra divertir.",
+            "janela": "11h-14h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Período 8 segundos, offshore segura",
+            "analise": "0.87m com 8 segundos é mais qualidade do que tamanho — onda longa, vento offshore de noroeste firme. Energia em 3 kW/m mantém a sessão viva. Quem ficar até o escurecer pega o melhor do dia.",
+            "janela": "17h-20h",
+            "aviso": null
+          }
+        },
+        "2026-05-10": {
+          "manha": {
+            "score": 3,
+            "titulo": "Período bom, vento offshore forte",
+            "analise": "0.94m com 7.8 segundos, vento offshore de oeste em 7.1 km/h — firme na face, onda ganha forma. Energia em 3.4 kW/m: é um bom dia, período longo dá seção, dá pra carve direito.",
+            "janela": "5h30-9h30",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Altura sobe, vento lateral mas limpo",
+            "analise": "Chega em 1.01m com período de 7.2 segundos, vento virou leste mas ainda offshore. Energia em 3.6 kW/m — maior que a manhã. Onda fica mais oca, mais possibilidade de barrel.",
+            "janela": "11h-15h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Swell sobe, período bom, offshore",
+            "analise": "Agora chega em 1.12m com 7.2 segundos, vento offshore de sudoeste firme em 8 km/h. Energia em 4.4 kW/m — o swell começa a chegar de verdade. Onda ganha corpo, fechada em 153° — set limpo no pico.",
+            "janela": "17h-20h",
+            "aviso": null
+          }
+        },
+        "2026-05-11": {
+          "manha": {
+            "score": 5,
+            "titulo": "Bombando! Swell chegou de verdade",
+            "analise": "1.54m com período de 8.6 segundos, vento offshore de sudoeste em 5.5 km/h — swell sul confirmado. Energia em 9.9 kW/m é o que todo surista esperou semana inteira. Pico de 179° — frontal, limpo, oca. Madrugada é a hora.",
+            "janela": "4h-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 5,
+            "titulo": "Pico! Período sobe, energia máxima",
+            "analise": "1.6m agora com 9.4 segundos, vento offshore leve de sudoeste. Energia em 11.8 kW/m — esse é o dia. Swell cheio, período longo, tubão com rabo. Pico em 181° — praticamente frontal, a praia toda funciona.",
+            "janela": "9h-15h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 5,
+            "titulo": "Ápice, quase sem vento, perfeito",
+            "analise": "Sobe pra 1.64m com período de 9.8 segundos, vento cai pra 1.7 km/h — glassy puro. Energia em 13 kW/m: maior sessão da semana. Pico em 183° — swell sul de verdade, face lisa, set inteira surfável. Vai ficar cheio.",
+            "janela": "18h-21h",
+            "aviso": "Crowd pesado. Chegar 1h antes do pico ou ir antes do amanhecer."
+          }
+        },
+        "2026-05-12": {
+          "manha": {
+            "score": 4,
+            "titulo": "Swell mantém, período máximo, vento lateral",
+            "analise": "1.61m com período de 10.6 segundos — o período mais longo da semana. Energia em 13.5 kW/m ainda no ápice. Vento lateral de leste em 2.6 km/h não estraga, mas já não é aquele offshore puro. Pico frontal em 183°.",
+            "janela": "5h-9h",
+            "aviso": "Swell pesado, período longo — remada pesada. Só pra quem tem condicionamento."
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Mantém força, período alto, offshore volta",
+            "analise": "1.5m com 10.7 segundos, vento offshore de leste — forma volta perfeita. Energia em 11.8 kW/m: praticamente igual ao pico de ontem. Swell não caiu ainda, pico em 184° ainda entrega tubão.",
+            "janela": "10h-14h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Swell desce lentamente, período firme",
+            "analise": "1.39m agora mas período mantém 10.8 segundos — período longo segura a sessão. Vento offshore de noroeste firme em 4.1 km/h. Energia em 10.3 kW/m ainda é muito bom. Segunda melhor sessão da semana.",
+            "janela": "17h-20h",
+            "aviso": null
+          }
+        }
+      }
     },
     "Vermelha do Norte": {
       "erro": true
@@ -104,10 +2237,334 @@
       "erro": true
     },
     "Ponta da Praia": {
-      "erro": true
+      "dias": {
+        "2026-05-06": {
+          "manha": {
+            "score": 3,
+            "titulo": "Ondinha com energia moderada",
+            "analise": "1.22m de altura, 10.9 segundos — swell decente que chega com 8 kW/m. Vento lateral de nordeste vira um pouco a forma, mas nada que destrua. Rola pra surfar antes das 8h.",
+            "janela": "6h-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Caindo de energia",
+            "analise": "Já começa a achatar, 1.15m de período curto (10.2s) com energia caindo pra 6.7 kW/m. Vento offshore segura a forma mas a onda já tá perdendo vapor. Mais pra aproveitar se tiver em casa.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Flat se aproximando",
+            "analise": "Desce pra 1.08m e 5.5 kW/m — ondinha de pouca energia. Vento segue offshore mas não tem onda pra segurar. Amanhã muda o quadro.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-07": {
+          "manha": {
+            "score": 1,
+            "titulo": "Swell morrendo, período cai",
+            "analise": "Continua caindo: 1.04m e período cairia pra 7.7s, energia só 4.1 kW/m. Vento lateral não salva esse swell. É dia de descanso ou treino na espuma.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Praticamente flat",
+            "analise": "Desce mais ainda, 1.05m com período de apenas 7.2s e 3.9 kW/m de energia. Vento offshore tá lindo mas não tem nada pra trabalhar. Procura outra praia ou aguarda.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Swell exaurido",
+            "analise": "1.08m, período de 7s, só 4 kW/m — essa série morreu no caminho. Vento segue bom mas a onda tá no chão. Dia quebrado.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-08": {
+          "manha": {
+            "score": 1,
+            "titulo": "Continua fraco e lateral",
+            "analise": "Ainda na base: 1.05m, 7.5s, apenas 4.1 kW/m. Vento lateral começa a incomodar a forma. Nada que justifique acordar cedo.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Leve aumento, mantém fraqueza",
+            "analise": "Sobe um pouco: 1.18m com 7.4s, mas energia segue em 5 kW/m. Vento lateral deixa a superfície um pouco choppy. Melhor do dia, mas ainda não bombando.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Offshore salva fraco swell",
+            "analise": "1.21m de altura com período ainda curto (7.5s), 5.3 kW/m — mas vento offshore finalmente chega de verdade (W/NW). Lip fica mais limpo, rola uma sessão funcional antes de dormir.",
+            "janela": "18h-20h",
+            "aviso": null
+          }
+        },
+        "2026-05-09": {
+          "manha": {
+            "score": 2,
+            "titulo": "Período melhora, energia segue fraca",
+            "analise": "Período sobe pra 8.7s — já é diferente. 1.07m com 4.9 kW/m, vento offshore suave (SW). Forma melhor que dias anteriores, peca em tamanho e energia.",
+            "janela": "6h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Swell reorganiza, vento segura",
+            "analise": "Mesma altura (1.13m) mas período mantém 8.7s, energia sobe ligeiramente pra 5.4 kW/m. Vento offshore continua guardando a forma. Pega um ou outro set interessante no meio do fraco.",
+            "janela": "12h-15h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Onshore chega, forma piora",
+            "analise": "Vento vira onshore (N) — mesmo com apenas 2 km/h desorganiza a pouca onda que tem. 1.11m e 5.2 kW/m não salvam ninguém. Encerra a janela.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-10": {
+          "manha": {
+            "score": 3,
+            "titulo": "Swell chega, período ainda curto",
+            "analise": "Série nova aparecendo: 1.31m com período de 7.1s — curto mas energizado (5.9 kW/m). Vento offshore de 12 km/h segura a forma. Direção sai do sul puro (162°) — mudança relevante.",
+            "janela": "6h-10h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Bombando, offshore limpa",
+            "analise": "Agora sim: 1.88m com período ainda curto (6.9s) mas energia explode pra 12 kW/m. Vento offshore robusto de 17.8 km/h deixa o pico oco e limpo. Swell chegando de sul-sudeste (188°) — ótima incidência. Manda brava.",
+            "janela": "13h-17h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Cresce e período melhora",
+            "analise": "2.22m agora, período sobe pra 7.8s — mudança que multiplica a energia pra 18.9 kW/m. Vento offshore mantém força (12.6 km/h). Onda ganha corpo, séries mais regulares. Sessão pesada mas surfável.",
+            "janela": "18h-21h",
+            "aviso": "Tamanho crescente, respeita a corrente no inside"
+          }
+        },
+        "2026-05-11": {
+          "manha": {
+            "score": 5,
+            "titulo": "Épico: swell pleno com período longo",
+            "analise": "Finalmente o swell full chegou — 2.37m com 10.3 segundos, energia em 28.2 kW/m. Vento offshore perfeito de W/NW (264°). Pico forma com seções ólicas, período longo deixa cada onda diferente e exigente. Acordar 5h pra isso.",
+            "janela": "5h-9h",
+            "aviso": "Tamanho e energia perigosos para iniciantes; responda a correntes com atenção"
+          },
+          "tarde": {
+            "score": 5,
+            "titulo": "Pico do swell, energia máxima",
+            "analise": "Peak do período: 2.46m de altura, 10.9 segundos — a energia sobe pra 32.4 kW/m, o maior da semana até agora. Vento offshore segue robusto (10.9 km/h de SW). Onda tá oca, dropa exigente, manobras em série. Dia lendário.",
+            "janela": "12h-16h",
+            "aviso": "Energia extrema (32.4 kW/m), apenas experientes; corrente forte"
+          },
+          "noite": {
+            "score": 5,
+            "titulo": "Mantém pico, vento desanda",
+            "analise": "2.49m, período sobe pro máximo de 11.2s — energia máxima absoluta de 34 kW/m. Vento cai pra quase calmo (3.4 km/h), superfície fica glassy e espelhada. Tubo profundo, série perfeitamente surfável. Melhor sessão possível.",
+            "janela": "19h-22h",
+            "aviso": "Energia acima de 30 kW/m — apenas big wave riders; praia pode ter rescaldo"
+          }
+        },
+        "2026-05-12": {
+          "manha": {
+            "score": 4,
+            "titulo": "Swell mantém força, período máximo",
+            "analise": "2.43m com 11.7 segundos — período longo sustentado, energia em 33.9 kW/m praticamente não caiu. Vento virou lateral (NE) mas mantém força. Onda segue pesada, exigente, com muito bolsão de energia.",
+            "janela": "6h-10h",
+            "aviso": "Energias acima de 30 kW/m persistem; conhecer o banco é obrigatório"
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Cai, mas segue épico",
+            "analise": "Desce lentamente: 2.25m, 11.5s, energia caindo pra 28.5 kW/m. Vento lateral (E) começa a incomodar mas o período longo sustenta a qualidade. Ondas ainda tubulares, ainda pesadas, fenômeno de múltiplos dias.",
+            "janela": "13h-17h",
+            "aviso": "Continua grande e energético; avaliar conditions reais na praia"
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Onda cai, mantém respeito",
+            "analise": "Encosta em 2.1m com 11.4s, energia em 24.6 kW/m — ainda é muita força. Vento lateral de E segue incomodando a forma. Swell morrendo mas dia ainda merecedor de respeito.",
+            "janela": "18h-20h",
+            "aviso": "Decaimento progressivo; vento aumentando pode fechar"
+          }
+        }
+      }
     },
     "Jureia": {
-      "erro": true
+      "dias": {
+        "2026-05-06": {
+          "manha": {
+            "score": 3,
+            "titulo": "Ondinha organizada e limpa",
+            "analise": "1.13m com 10.8s — swell de sul chegando organizado, offshore segurando bem a face. Nada de espetacular, mas dá pra pegar série boa sem muito crowd, vento ainda dormindo.",
+            "janela": "6h-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Vento lateral estraga a festa",
+            "analise": "Altura caiu pra 1.05m, período encurtou — swell enfraqueceu. Vento lateral de 5.7 km/h começa a choppar a superfície, onda fica feia. Pra quem tem vontade de água, tá aí.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Mushy, mas glassy",
+            "analise": "Mar mole, 1m com 9.3s — energia caiu pra 4.5 kW/m. Vento fica offshore de novo, pelo menos a forma fica limpa. Tá mais pra espiar do que surfar.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-07": {
+          "manha": {
+            "score": 1,
+            "titulo": "Período curto, mar morto",
+            "analise": "Swell mudou de direção (124°), período despencou pra 7.3s — era a onda morrendo. 1.01m de altura, 3.7 kW/m. Offshore ajuda a forma, mas não tem material mesmo.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Praticamente nada acontecendo",
+            "analise": "Mesma altura, mesmo período curto de 7s. Vento lateral tirou o gloss. Se você acordou esperando esse dia, já sabe: amanhã melhora.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Flat com esperança de mudança",
+            "analise": "Swell ainda fraco, 7s de período, mas vento virou offshore de novo (308°). Tá preparando o terreno pro swell de sul que vem chegando — paciência.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-08": {
+          "manha": {
+            "score": 2,
+            "titulo": "Swell novo chegando, ainda tmido",
+            "analise": "Swell mudou pra 108° (sul direto), 1.07m com 7.3s. Vento offshore limpo de 7.7 km/h. Onda ainda tá curta mas a direção promete — tamanho tá chegando.",
+            "janela": "6h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Vento lateral atura demais",
+            "analise": "Subiu pra 1.11m, período ficou em 7.7s — melhor energia, 4.7 kW/m. Mas vento lateral de 9.7 km/h abriu a onda, deformou a crista. Fica feia de tarde.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Swell cresce, noite abre oportunidade",
+            "analise": "Chegou a 1.2m, período mantém 7.7s. Vento virou offshore de novo (200°), glassy perfeito. Energia subiu pra 5.4 kW/m — noite promete série melhor do que parecia de manhã.",
+            "janela": "19h-21h",
+            "aviso": null
+          }
+        },
+        "2026-05-09": {
+          "manha": {
+            "score": 3,
+            "titulo": "Período cresce, onda melhora",
+            "analise": "1.09m com 8.3s — swell ganhando altura e se alongando. Offshore limpo, 4.8 kW/m. Pico tá ficando mais cheio, dá pra picar série com ritmo melhor que ontem.",
+            "janela": "6h-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Aperta mais, segue bombo",
+            "analise": "Altura mantém 1.11m, período sobe pra 8.6s — onda fica mais oca. Vento lateral fraco (3.7 km/h), quase nada. Energia 5.2 kW/m: tá entrando no bom mesmo.",
+            "janela": "12h-15h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Onshore estraga a noite",
+            "analise": "Mesma altura e período (1.13m, 8.6s), vento onshore de 4.7 km/h — não é forçado, mas choppa a superfície. Tarde era a janela; noite fica comprometida.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-10": {
+          "manha": {
+            "score": 4,
+            "titulo": "Swell dispara, offshore guardando",
+            "analise": "Acordou bombando — 1.47m com 6.7s, mas vento offshore forte (13.3 km/h) segurando tudo. Energia 7.1 kW/m. Onda tá fechada demais de manhã, mas o swell tá ali, pronto.",
+            "janela": "7h-10h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 5,
+            "titulo": "Dia épico deslancha de vdd",
+            "analise": "Explodiu — 1.96m, período ainda curto em 7s mas com offshore massudo (15.1 km/h) segurando. 13.2 kW/m: onda tá oca, potente, arrancando série com tudo. Corre pra água.",
+            "janela": "13h-17h",
+            "aviso": "Tamanho exige domínio; offshore forte cria shore break pesado"
+          },
+          "noite": {
+            "score": 5,
+            "titulo": "Noite monumental com período crescendo",
+            "analise": "Chegou em 2.06m, período finalmente sobe pra 7.6s — onda fica mais consistente. Offshore de 11 km/h mantém forma limpa. 16 kW/m: surfe sério, remada pesada, manobra exigente.",
+            "janela": "18h-20h",
+            "aviso": "Energia pesada; correntes reforçadas; apenas surfistas experientes"
+          }
+        },
+        "2026-05-11": {
+          "manha": {
+            "score": 5,
+            "titulo": "Apoteose — período finalmente longo",
+            "analise": "Explodiu mesmo — 2.12m com 9.9s! Período longo transforma a onda: fica oca, previsível, poderosa. Offshore 8.7 km/h limpo. 21.8 kW/m: esse é o swell que a galera esperou a semana inteira.",
+            "janela": "5h-9h",
+            "aviso": "Tamanho real; apenas para experientes; cuida corrente de retorno"
+          },
+          "tarde": {
+            "score": 5,
+            "titulo": "Pico do swell — bombando geral",
+            "analise": "Máxima altura, 2.23m com 10.4s — onda aberta, setões bombo seguidos. Vento offshore 11.9 km/h sustentando. 25.3 kW/m: surfe de verdade, aquele que cansa fisicamente e alimenta a alma.",
+            "janela": "12h-16h",
+            "aviso": "Swell forte demanda expertise; saídas da água podem ser complicadas"
+          },
+          "noite": {
+            "score": 5,
+            "titulo": "Glassy perfeito, energia máxima",
+            "analise": "Mantém 2.21m, período sobe pra 10.9s — condição ideal. Vento praticamente parado (2.7 km/h offshore). 26.1 kW/m: superfície espelhada, onda inteira visível, sem chapéu. Melhor noite da semana.",
+            "janela": "19h-22h",
+            "aviso": "Tamanho exige respeito; profundidade de água reduzida à noite"
+          }
+        },
+        "2026-05-12": {
+          "manha": {
+            "score": 5,
+            "titulo": "Persiste na qualidade, glassy mantém",
+            "analise": "2.14m com 11.5s — período agora longo mesmo, onda consistente e oca. Vento offshore discreto (4.7 km/h). 26 kW/m: persiste no apogeu. Manhã é o último lance de qualidade máxima.",
+            "janela": "5h-8h",
+            "aviso": "Tamanho continua demandando experiência"
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Ainda muito bom, vento muda",
+            "analise": "Caiu um pouco pra 1.98m, período mantém 11.4s. Vento vira lateral (7.9 km/h) — começa a choppar. 21.9 kW/m: ainda forte, mas o pico da qualidade passou. Tarde é o começo do fim.",
+            "janela": "12h-14h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Swell cai, vento atura mais",
+            "analise": "Caiu pra 1.85m, período mantém 11.4s — swell enfraquecendo. Vento lateral de 8.3 km/h choppa demais. 19.1 kW/m: ainda tem ondulação, mas a magia acabou. Semana de grandes termina aqui.",
+            "janela": null,
+            "aviso": null
+          }
+        }
+      }
     },
     "Costão do Santinho": {
       "erro": true
@@ -119,13 +2576,499 @@
       "erro": true
     },
     "Campeche": {
-      "erro": true
+      "dias": {
+        "2026-05-06": {
+          "manha": {
+            "score": 1,
+            "titulo": "Ondinha onshore, período curto",
+            "analise": "0.66m com 8.5s e onshore — a areia tá fechada de cara. Vento vindo do mar destrói qualquer forma. Pra iniciante numa flat, dá pra rascunhar, mas não espera set limpo.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Lateral fraco, energia mirim",
+            "analise": "Vento lateral, altura caindo pra 0.66m e período de 7s — tá mushy demais. 1.5 kW/m é o que bate no shore break. Cê não sente progressão na onda.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Offshore leve salva a noite",
+            "analise": "Vento virou pro lado certo (offshore), mas a altura despencou pra 0.64m — tá magro demais. O período segue curto (6.3s), então ainda fraco. Se tiver crowd em outro lugar, aqui fica mais tranquilo mas sem brilho.",
+            "janela": "19h-21h",
+            "aviso": null
+          }
+        },
+        "2026-05-07": {
+          "manha": {
+            "score": 1,
+            "titulo": "Swell virando, vento faz estrago",
+            "analise": "Altura cresceu pra 0.76m mas o período despencou — 5.6s é ondinha. Vento onshore brutal desde cedo (17.4 km/h) destrói qualquer possibilidade de forma. Tá tudo aberto, tudo mushy.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Energia ligeiramente melhor, vento pior",
+            "analise": "Altura subiu pra 0.95m e energia pulou pra 2.5 kW/m — tá crescendo, mas o vento onshore ficou mais forte (22.1 km/h). Pico vai estar aberto, seções curtas, tudo derramando. Não compensa.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Offshore salva — série decente chega",
+            "analise": "Vento offshore (14 km/h) finalmente aparece e a onda ganha forma. 0.93m com 6.2s e 2.6 kW/m — tá melhorando. Pico abre bem, dá pra pegar seção boa se tiver paciência. Offshore fraco mas presente.",
+            "janela": "20h-23h",
+            "aviso": null
+          }
+        },
+        "2026-05-08": {
+          "manha": {
+            "score": 3,
+            "titulo": "Crescimento forte mas onshore ruim",
+            "analise": "Altura pulou pra 1.19m, energia tá 4.6 kW/m — tá bombando! Mas vento onshore (19.1 km/h) chega de novo e estraga o que poderia ser bom. Onda fica aberta, sem tubo, mushy na face. Potencial desperdiçado.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Agora vai — offshore salva a tarde",
+            "analise": "Vento virou offshore de repente (21.2 km/h, sul) e a onda ganha toda a forma. 1.18m com 7s, 4.8 kW/m — pico fico limpo, lip segura, dá pra carregar manobra. Melhor período do dia, remada pesada mas recompensa.",
+            "janela": "14h-18h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Onshore volta, mas energia mantém",
+            "analise": "Vento onshore retorna (14.1 km/h) e a forma piora de novo. Altura tá 1.11m e energia em 4.4 kW/m — o mar ainda tem potência, mas a superfície fica choppy. Pra quem quer pegar bastante onda sem pedir demais, rola.",
+            "janela": "19h-22h",
+            "aviso": null
+          }
+        },
+        "2026-05-09": {
+          "manha": {
+            "score": 4,
+            "titulo": "Swell novo, offshore forte e lindo",
+            "analise": "Swell virou de direção (132°) e vento offshore pegou (23.6 km/h) — tá perfeito. 1.13m com 6s período curto mas 3.8 kW/m offshore faz milagre. Pico abre bem, lip segura, tá pra ser sessão gostosa com poucas pessoas.",
+            "janela": "6h-10h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Offshore mantém, mar organizado",
+            "analise": "Vento offshore segura firme (20 km/h) e a altura tá 1.06m com período 6.2s. Energia em 3.4 kW/m — menos que de manhã, mas a forma tá impecável. Pico limpo, tubo curto quando fecha certo, dá pra fazer manobra sem pressa.",
+            "janela": "13h-17h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Altura cresce, offshore domina noite",
+            "analise": "Altura volta a crescer pra 1.23m, offshore ainda forte (25.6 km/h) e energia sobe pra 4.3 kW/m — essa é a melhor noite da semana. Pico fecha bem, seções longas, dá pra surfar com ritmo. Cê sente potência na onda.",
+            "janela": "20h-23h",
+            "aviso": null
+          }
+        },
+        "2026-05-10": {
+          "manha": {
+            "score": 4,
+            "titulo": "Swell mudando, offshore mantém domínio",
+            "analise": "Swell tá virando mais pro leste (140°), offshore segue (19.2 km/h), altura em 1.13m e 6.1s. Energia 3.9 kW/m — pico tá mais fechado agora, seções mais compactas, onda tá cozinhada. Sessão consistente pra quem conhece o banco.",
+            "janela": "6h-10h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Pico fecha, período cresce, épico chega",
+            "analise": "Swell continuando a virar (159°), período pulou pra 6.6s, altura 1.2m e energia 4.7 kW/m — a onda tá mais inteira, pico cerrando bem. Offshore mantém, tá tudo no ponto. Melhor da tarde, remada de qualidade.",
+            "janela": "14h-18h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 5,
+            "titulo": "Épico — pico perfeito, offshore brutal",
+            "analise": "Tudo alinha: 1.33m, 7.1s de período, offshore 18.7 km/h, energia em 6.1 kW/m. Pico tá cravado, onda inteira, dá pra fazer o trajeto todo da série. Tubo quando fecha, carve comprido quando abre — é pra isso que a gente acorda cedo, e a noite tá entregando.",
+            "janela": "19h-23h",
+            "aviso": null
+          }
+        },
+        "2026-05-11": {
+          "manha": {
+            "score": 5,
+            "titulo": "Auge — período longo, offshore perfeito",
+            "analise": "Período subiu pra 8.5s (esse é o swell que a galera espera), altura 1.22m, offshore suave 7.5 km/h — 6.3 kW/m de energia limpa. Pico segura, tá tudo glassy, madrugada ainda é sagrada. Melhor manhã da semana, janela de ouro.",
+            "janela": "6h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 5,
+            "titulo": "Pico perfeito, período atingiu ápice",
+            "analise": "Período ficou ainda maior: 9.3s — onda tá viajando longe e com grana. 1.17m, energia 6.3 kW/m, vento lateral suave. Pico inteiro, seções longas, tá bom demais. Última janela boa antes do vento mudar pro final do dia.",
+            "janela": "13h-17h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 5,
+            "titulo": "Noite mantém o nível — épico continua",
+            "analise": "Período segue em 9.2s, altura 1.18m, offshore volta (8.6 km/h) e 6.3 kW/m — a onda tá no auge. Pico fechado, lip seguro, tubo quando quer, carve quando deixa. É o melhor dia da semana inteira, noite não decepciona.",
+            "janela": "19h-23h",
+            "aviso": null
+          }
+        },
+        "2026-05-12": {
+          "manha": {
+            "score": 4,
+            "titulo": "Herança épica, período ainda forte",
+            "analise": "Período tá em 9.3s (ainda bom demais), altura descendo pra 1.01m, offshore suave 10.6 km/h e 4.6 kW/m. Onda tá perdendo tamanho mas mantém a qualidade. Última sessão brava, janela final do epic run.",
+            "janela": "6h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Colapso — vento mata e altura cai",
+            "analise": "Onshore volta brutalmente (17.8 km/h), altura despencou pra 0.94m, período tá 9.2s (que não salva mais). Energia 4 kW/m — a forma piora, pico abre, tá mushy de novo. Semana encerra mal.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Onshore final, semana fecha fraca",
+            "analise": "Vento onshore segue (16.6 km/h), altura em 0.89m, período 8.8s — tá tudo perdido. Energia caiu pra 3.4 kW/m. O swell desaparece e o vento contro fecha geral. Fim de semana vai pedir paciência.",
+            "janela": null,
+            "aviso": null
+          }
+        }
+      }
     },
     "Barra da Lagoa": {
-      "erro": true
+      "dias": {
+        "2026-05-06": {
+          "manha": {
+            "score": 1,
+            "titulo": "Ondinha morna de madrugada",
+            "analise": "0.5m com período de 8.7 — tá aí pra dizer que tem mar. Vento offshore leve segura a forma, mas a energia é 1.1 kW/m, basicamente nada. Dia pra alongar em casa.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 0,
+            "titulo": "Vento onshore fecha tudo",
+            "analise": "Tarde é perda. Onshore a 16.7 km/h, 0.48m de altura — onda abre, fica mushy, período de 7.5 é curto mesmo. Energia de 0.8 kW/m. Esquece esse período.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 0,
+            "titulo": "Choppy e sem potência",
+            "analise": "Lateral fraco de 13.5 km/h não limpa a superfície. 0.46m é praticamente nada, período de 6.8, energia de 0.7 kW/m — o mar tá dormindo fundo. Fica em casa.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-07": {
+          "manha": {
+            "score": 1,
+            "titulo": "Onshore matineiro estraga tudo",
+            "analise": "Vento de terra voltado pro mar já de madrugada, 16.5 km/h onshore. 0.55m com período curto de 5.9 — nem vira tubo, nem tem rolo. Energia 0.9 kW/m. Pode acordar mais tarde.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Swell de nordeste fraco",
+            "analise": "0.74m chegando de nordeste, período encurtou pra 5.6 segundos — onda gorda e mole. Onshore forte de 21.1 km/h estraga qualquer chance. Energia 1.5 kW/m, mas o vento mata.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Virada na madrugada, offshore aparece",
+            "analise": "Aqui muda. Vento vira offshore a 14.1 km/h, 0.72m com período subindo pra 6.3. Energia salta pra 1.6 kW/m. Se tiver madrugada acordada, 23h até umas 3h pode pintar algo.",
+            "janela": "23h-3h",
+            "aviso": null
+          }
+        },
+        "2026-05-08": {
+          "manha": {
+            "score": 4,
+            "titulo": "Pico limpo, offshore perfeito",
+            "analise": "Isso aí. 0.98m com período subindo pra 6.7, vento offshore de 19.4 km/h segura a face. Energia 3.1 kW/m — já tá bombando. Madrugada pra ir cedo, antes de virar, aproveita a série limpa.",
+            "janela": "5h30-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Swell segue consistente e oco",
+            "analise": "Mantém 0.98m, período cresceu pra 7.1, offshore em 18 km/h segue firme. Energia 3.3 kW/m — período tá bom agora, onda fica oca na base. Set ainda limpão pra surfar até umas 15h.",
+            "janela": "13h-15h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Vento vira onshore à noite",
+            "analise": "0.94m, período 7.3, energia 3.2 kW/m — os números seguem bons. Mas vento onshore de 15.7 km/h fecha a festa. Onda fica aberta, choppy. Se entrou cedo já pegou o melhor.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-09": {
+          "manha": {
+            "score": 3,
+            "titulo": "Swell sul volta, offshore manso",
+            "analise": "Swell muda pra sudeste (124°), 0.91m com período 6.1. Offshore de 20.9 km/h limpa bem, energia 2.5 kW/m. Não é tubão, mas pega série boa, forma respeitável. Madrugada até 9h tá limpo.",
+            "janela": "5h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Energia mantém, offshore leve",
+            "analise": "Segue 0.89m, período 6.3, offshore de 18.5 km/m, energia 2.4 kW/m. Continua boa, forma aberta mas surfável. Se pegou a madrugada, agora é mais de cruising e manobra.",
+            "janela": "13h-16h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Offshore forte volta, onda cresce",
+            "analise": "1m exato, período mantém 6.1, mas vento sobe pra 22.3 km/h offshore — lábio fica travado, muito limpo. Energia 3 kW/m. Madrugada vai ser linda, 20h até 3h a sessão de ouro.",
+            "janela": "20h-3h",
+            "aviso": null
+          }
+        },
+        "2026-05-10": {
+          "manha": {
+            "score": 4,
+            "titulo": "Offshore leve, swell mantem",
+            "analise": "0.94m, período subindo pra 6.4, offshore moderado de 14.7 km/h, energia 2.8 kW/m. Forma clara, set limpo. Madrugada até 9h é janela de ouro pra pegar série consistente.",
+            "janela": "5h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Período longo, offshore firme",
+            "analise": "0.94m, período agora 6.6, vento offshore de 11.9 km/h — quase glassy. Energia 2.9 kW/m. Swell vira mais pra leste (149°) mas a energia segue ali, pico bomba. Sessão boa até umas 17h.",
+            "janela": "13h-17h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Pico oco, melhor do dia",
+            "analise": "1m, período 6.8 — onda fica oca na base, energia 3.3 kW/m. Offshore de 16.1 km/h mantém forma. Swell mais leste agora (159°) mas tá bom. Madrugada vai ser o pico, 21h-4h.",
+            "janela": "21h-4h",
+            "aviso": null
+          }
+        },
+        "2026-05-11": {
+          "manha": {
+            "score": 4,
+            "titulo": "Período longo chega, glassy",
+            "analise": "Aqui muda de verdade. 0.93m, período sobe pra 8 segundos — swell tá se abrindo, energia 3.3 kW/m mas com mais espaçamento. Offshore manso de 6.7 km/h, quase glassy. Forma boa, madrugada até 8h é perfeita.",
+            "janela": "5h-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Período longo mantém, lateral fraco",
+            "analise": "0.86m, período agora 8.8 segundos — ondão espaçado, energia 3.2 kW/m. Lateral leve de 6.5 km/h, não atrapalha. Forma aberta, pega série com intervalo. Qualidade boa pra manobra.",
+            "janela": "13h-16h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Período 8.8, offshore volta claro",
+            "analise": "0.84m mantém, período 8.8 segundos, energia 3 kW/m. Offshore de 7.9 km/h limpa. Swell agora vem leste (157°), espaçado mas cheio. Madrugada vai ser session tranquila, 22h-4h.",
+            "janela": "22h-4h",
+            "aviso": null
+          }
+        },
+        "2026-05-12": {
+          "manha": {
+            "score": 3,
+            "titulo": "Período bom, swell decai devagar",
+            "analise": "0.74m, período 8.8 segundos, offshore leve de 5.5 km/h, energia 2.4 kW/m. Swell espaçado agora (156°), onda com intervalo entre as séries. Forma boa, madrugada até 9h rola, mas tá no fim.",
+            "janela": "5h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Onshore virado, swell murcha",
+            "analise": "0.66m, período ainda 9.2 segundos, mas onshore de 15.5 km/h estraga. Energia cai pra 2 kW/m. Onda abre, forma fica ruim. Tarde é pra esquecer.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Onshore fecha, ciclo acaba",
+            "analise": "0.64m, período 8.9 segundos, onshore de 16.3 km/h — mar tá choppy, onda mushy. Energia 1.8 kW/m. Swell se despede. Ciclo inteiro passou, próximo promete.",
+            "janela": null,
+            "aviso": null
+          }
+        }
+      }
     },
     "Moçambique": {
-      "erro": true
+      "dias": {
+        "2026-05-06": {
+          "manha": {
+            "score": 2,
+            "titulo": "Ondinha fraca, offshore calmo",
+            "analise": "0.84m com 9.5 segundos — aquele tipo de onda que você vê de longe e pensa duas vezes. Offshore suave de madrugada, mas energia de 3.3 kW/m não anima. Pega uma ou outra só pra não perder o ritmo.",
+            "janela": "5h-7h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Vira onshore, morre tudo",
+            "analise": "Aquilo que tinha desaparece quando o vento vira onshore de 16 km/h. A onda fica choppy, 0.79m com período de 8 segundos — saquê morno. Faz conta de outras coisas até amanhã.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Lateral fraco, segue flat",
+            "analise": "Vento lateral de 13.5 km/h não salva — 0.74m com 7.6 segundos é o que sobra. Energia caindo para 2 kW/m. Piscina aquecida é melhor aposta.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-07": {
+          "manha": {
+            "score": 1,
+            "titulo": "Onshore logo cedo, pico murcho",
+            "analise": "Swell muda de direção (78 graus) mas vento onshore já apareça de madrugada, 16.5 km/h. Onda fica aberta, sem forma — 0.88m com 6 segundos é mais promessa que realidade. Espera a noite.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Cresce mas vento destrói tudo",
+            "analise": "Energia salta pra 3.5 kW/m, altura em 1.09m — parece bom no papel. Na real, vento onshore em 21 km/h estraga a forma inteira. Onda fica mushy, pesada de remar. Rola em falta de melhor.",
+            "janela": "11h-13h",
+            "aviso": "Vento forte onshore, cuidado com a remada."
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Virada! Offshore limpo à noite",
+            "analise": "Aqui a coisa muda — vento vira pra offshore de 14 km/h, 1.1m com 6.5 segundos. Energia de 3.8 kW/m. Pico fica limpo, onda com mais forma. Nem grande nem bonito, mas dá pra surfar com vontade.",
+            "janela": "20h-22h30",
+            "aviso": null
+          }
+        },
+        "2026-05-08": {
+          "manha": {
+            "score": 4,
+            "titulo": "Bomba! Offshore forte de manhã",
+            "analise": "Swell cresce pra 1.47m, período 6.8 segundos, vento offshore robusto de 19.4 km/h. Energia em 7.2 kW/m — aqui rola. Onda fica oca, com lábio limpo, pico bem marcado. Madrugada é ouro.",
+            "janela": "5h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Sustenta bem, offshore firme",
+            "analise": "Mesma altura, período cresce pra 7.3 segundos, energia sobe pra 7.7 kW/m — tá bombando. Offshore de 18 km/h segura a forma. Onda fica tubular, dá pra fazer manobra. Meio-dia é pico.",
+            "janela": "10h-14h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Racha: vento vira onshore",
+            "analise": "Entrada noturna pega vento onshore de 15.7 km/h — aquilo que era limpo fica choppy. Altura mantém 1.42m, período sobe pra 7.5 segundos (7.4 kW/m), mas forma piora. Rola se não tiver opção.",
+            "janela": "18h-20h",
+            "aviso": "Vento piora ao anoitecer, entre mais cedo."
+          }
+        },
+        "2026-05-09": {
+          "manha": {
+            "score": 3,
+            "titulo": "Swell muda, offshore bem vindo",
+            "analise": "Direção muda pra sudeste (127 graus), altura em 1.34m com período 6.6 segundos. Vento offshore de 20.9 km/h — bom demais. Energia de 5.8 kW/m. Onda fica bem formada, pega sets limpos toda hora.",
+            "janela": "6h-10h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Mantém qualidade, offshore persiste",
+            "analise": "Mesma condição, energia ligeiramente menor (5.6 kW/m), período continua 6.6 segundos em 1.32m. Vento offshore mantém a forma — pico segue acessível, não exigente demais. Dia de aproveitar.",
+            "janela": "11h-15h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Noite de ouro, cresce e fica offshore",
+            "analise": "Altura bate 1.48m, período cai pra 6.3 segundos mas energia sobe pra 6.8 kW/m — confuso na modelagem, mas o que importa: vento offshore forte de 22.3 km/h segura tudo limpo. Pico fica oco, muita onda pra surfar.",
+            "janela": "19h-23h",
+            "aviso": null
+          }
+        },
+        "2026-05-10": {
+          "manha": {
+            "score": 4,
+            "titulo": "Cresce firme, manhã perfeita",
+            "analise": "Swell sobe, 1.4m com 6.7 segundos, energia 6.5 kW/m. Vento offshore tranquilo de 14.7 km/h. Pico abre bem, dá pra escolher linha. Onda não é grande mas tem forma, tem potência — madrugada é ouro puro.",
+            "janela": "5h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Pico! Período longo, muita energia",
+            "analise": "Altura em 1.46m, período salta pra 7.3 segundos — aí sim o swell mostra força. Energia em 7.7 kW/m. Vento offshore leve (11.9 km/h). Onda fica tubular, com mais tempo na face. Sessão de verdade.",
+            "janela": "11h-14h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 5,
+            "titulo": "ÉPICO! Swell de verdade chega",
+            "analise": "1.62m, 7.9 segundos, vento offshore de 16.1 km/h, energia em 10.2 kW/m — essa é a noite que você esperou. Onda oca, tubos reais, remada pesada mas recompensada. Pega tudo que conseguir, a noite inteira é válida.",
+            "janela": "20h-23h59",
+            "aviso": "Swell pesado, apenas experientes. Corrente de retorno ativa — não lute contra."
+          }
+        },
+        "2026-05-11": {
+          "manha": {
+            "score": 5,
+            "titulo": "MÁQUINA! Período LONGO chegou",
+            "analise": "1.64m com 9.5 segundos — o swell finalmente mostra o que é de verdade. Energia em 12.6 kW/m. Vento offshore mínimo de 6.7 km/h. Pico abre devagar, onda fica longa e tubular, dá tempo pra fazer manobra. Madrugada é lenda.",
+            "janela": "5h-9h",
+            "aviso": "Swell forte com período longo — cuidado ao dropar, onda cresce rápido."
+          },
+          "tarde": {
+            "score": 5,
+            "titulo": "Sustenta no pico! Período cresce mais",
+            "analise": "1.59m, período agora em 10.3 segundos — vento lateral não mata porque período longo compensa. Energia em 12.8 kW/m. Onda longa, com barrel previsível, dá pra respirar na manobra. Tarde épica.",
+            "janela": "12h-16h",
+            "aviso": "Período muito longo, onda decepciona na primeira olhada mas explode na profundidade."
+          },
+          "noite": {
+            "score": 5,
+            "titulo": "GLASSY! Tudo perfeito na noite",
+            "analise": "1.59m, 10.4 segundos, vento offshore de 7.9 km/h — essa é a condição que sonho. Energia máxima de 12.9 kW/m. Superfície glassy, pico marcado, tubo garantido. Entra e aproveita até virar madrugada.",
+            "janela": "19h-23h59",
+            "aviso": null
+          }
+        },
+        "2026-05-12": {
+          "manha": {
+            "score": 4,
+            "titulo": "Ainda bomba, mas cai altura",
+            "analise": "1.38m com 10.4 segundos mantém o período longo — energia ainda em 9.7 kW/m. Vento offshore suave de 5.5 km/h. Onda fica glassy, forma excelente, período longo compensa a altura menor. Madrugada segue ouro.",
+            "janela": "5h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Vira onshore, cacos pela frente",
+            "analise": "Vento muda onshore de 15.5 km/h — pronto, era bom enquanto durou. 1.27m com 10.5 segundos não aguenta o vento. Pico fica aberto, superfície choppy, energia cai pra 8.3 kW/m. Rola se acordar cedo demais.",
+            "janela": "6h-10h",
+            "aviso": "Melhor entrar na madrugada antes do vento piore."
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Onshore mata, swell acaba",
+            "analise": "Vento onshore forte de 16.3 km/h, 1.18m com 10.2 segundos — aquela energia boa desaparece. Forma ruim, período longo agora é mais desvantagem que vantagem com vento contra. Espera virada do sistema.",
+            "janela": null,
+            "aviso": "Vento onshore consolidado, não vale arriscar."
+          }
+        }
+      }
     },
     "Pântano do Sul": {
       "erro": true
@@ -140,7 +3083,169 @@
       "erro": true
     },
     "Ibiraquera": {
-      "erro": true
+      "dias": {
+        "2026-05-06": {
+          "manha": {
+            "score": 2,
+            "titulo": "Ondinha de 9 segundos",
+            "analise": "Pega 0.92m com 9 segundos — é mais mosquitinho que onda, mas o offshore limpo da madrugada segura a crista. Energia de 3.8 kW/m: serve pra soltar o corpo, nada de transcendental. Vento bom pelo menos, glassy.",
+            "janela": "6h-8h",
+            "aviso": null
+          },
+          "tarde": {
+            "manha": null,
+            "titulo": "Vento lateral mata a vibe",
+            "analise": "Caiu pro 7 segundos de período, altura subiu pra 0.97m mas o vento virou cross — 46° de NE. Isso aqui vai estar mushy, sem potência mesmo. Energia só 3.3 kW/m. Melhor esperar.",
+            "janela": null,
+            "aviso": "Vento cross prejudica forma"
+          },
+          "noite": {
+            "score": -1,
+            "titulo": "Onshore fecha geral",
+            "analise": "Virou 19° de onshore — o pior cenário. Período caiu pra 6 segundos, altura ainda 0.99m mas aquilo ali vai ser barro, sem face. Nem tenta.",
+            "janela": null,
+            "aviso": "Vento onshore, não compensa"
+          }
+        },
+        "2026-05-07": {
+          "manha": {
+            "score": 1,
+            "titulo": "Onshore pesado de madrugada",
+            "analise": "Acordou com 16 km/h de onshore — vento do mar quer destruir tudo. 1.03m, 5.7 segundos, energia só 3 kW/m. A onda vai estar choppy, aberta, sem corpo. Não dá.",
+            "janela": null,
+            "aviso": "Vento onshore intenso"
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Cresceu mas vento ruim",
+            "analise": "Subiu pra 1.26m, período mantém 5.7 segundos — energia cresceu pra 4.5 kW/m. Mas o onshore pirou: 22 km/h de NE. Vai estar uma sopa. Só pra quem tá desesperado.",
+            "janela": null,
+            "aviso": "Onshore forte destrói forma"
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Altura sim, qualidade não",
+            "analise": "Pega 1.25m com 6 segundos, energia 4.7 kW/m — tá bombando em tamanho mas vento onshore continua atirando pra cara. Período curto + onshore = onda aberta demais. Fraco.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-05-08": {
+          "manha": {
+            "score": 3,
+            "titulo": "Swell cresce, vento ainda onshore",
+            "analise": "Agora sim pulou pra 1.58m com 6.8 segundos — energia 8.3 kW/m, isso já é energia de verdade. Onshore matou a diversão, mas tamanho tá aí. Consegue aproveitar fundo de areia, manda o bottom turn firme.",
+            "janela": "6h-10h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Pico sólido mas face aberta",
+            "analise": "Swell confirmou: 1.61m, período subiu pro 7.2, energia 9.3 kW/m — tá aí sim. Onshore ainda tá trabalhando (17 km/h) então a face vai ficar aberta, sem aquele barrel, mas dá pra carvear bem e puxar manobra.",
+            "janela": "14h-18h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Virou offshore, agora é jogo",
+            "analise": "Mágica aconteceu: offshore veio 275° (que é oeste na boca, segurando de verdade). 1.46m, período pulou pra 7.8 segundos, energia 8.2 kW/m. Onda fica oca, lip limpo, dá tempo de manobra. Esse é o horário.",
+            "janela": "18h-22h",
+            "aviso": null
+          }
+        },
+        "2026-05-09": {
+          "manha": {
+            "score": 4,
+            "titulo": "Offshore limpo, swell confirmado",
+            "analise": "Entrou swell novo de 119° com 1.36m e 6.9 segundos. Offshore 209° (sul) mantém a onda limpa, 12.5 km/h — glassy de verdade. Energia 6.2 kW/m: suficiente pra tu sair remando tranquilo e pegar set com forma boa.",
+            "janela": "6h-10h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Mantém vibe, perdeu altura",
+            "analise": "Caiu pra 1.22m mas offshore segura — 183° (sul suave), 10.9 km/h. Período 7.2 segundos, energia 5.2 kW/m. É mais pra freestyle, menos pra força, mas tá limpo. Onda aberta pro carve.",
+            "janela": "13h-17h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Volta a subir, offshore firme",
+            "analise": "Recuperou: 1.3m, 7 segundos, offshore 201° (sul virado pro sudoeste) com 14.6 km/h segurando tudo. Energia 5.8 kW/m. Pico fica oco no topo, dá pra mandar snap, aerial, tudo limpo.",
+            "janela": "19h-23h",
+            "aviso": null
+          }
+        },
+        "2026-05-10": {
+          "manha": {
+            "score": 4,
+            "titulo": "Offshore, período sobe, cresce",
+            "analise": "Swell evoluindo: 1.31m, 7.6 segundos agora — energia 6.4 kW/m. Offshore 215° (sul de verdade), 11.5 km/h mantém a crista limpa e oca. Período crescendo significa mais energia vindo, tá só no começo.",
+            "janela": "6h-10h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 5,
+            "titulo": "Bombando, swell chega forte",
+            "analise": "Pulou pra 1.58m, período 7.8 segundos, energia 9.5 kW/m — agora sim tá aquilo que vale a pena. Swell novo entrando com direção 161° (sudeste puro), offshore 202° segurando tudo certo. Onda redonda, potência de verdade.",
+            "janela": "14h-18h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 5,
+            "titulo": "Clímax: 1.84m, 10 segundos",
+            "analise": "Tá aqui o swell ground. 1.84m, 8.3 segundos, energia 13.6 kW/m — essa energia faz diferença, o barrel abre, o pico fica consistente. Offshore 260° (oeste-sudoeste) leve mas o suficiente (10.9 km/h). Terceira a quinta série do dia são as que vão virar história.",
+            "janela": "19h-23h",
+            "aviso": "Tamanho exige experiência"
+          }
+        },
+        "2026-05-11": {
+          "manha": {
+            "score": 5,
+            "titulo": "Pico perfeito, offshore ideal",
+            "analise": "Auge: 1.75m, 10.1 segundos, energia 15.2 kW/m — período longo traz potência distribuída. Offshore mínimo (4.2 km/h, 222°) segura tudo aquilo limpo, sem trabalho. Face fica oval, tubo previsível, manobras saem fluidas. Melhor da semana.",
+            "janela": "5h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 5,
+            "titulo": "Mantém força, período pico",
+            "analise": "Estabilizou em 1.77m, período subiu pro 10.6 segundos — energia 16.4 kW/m, o pico da semana em energia. Offshore 144° (sudeste leve) ainda segura. Onda redonda, limpão, power distribuído, dá tempo de pensar cada manobra.",
+            "janela": "13h-18h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 5,
+            "titulo": "Fecha perfeito, swell consistente",
+            "analise": "1.78m mantém, período 10.4 segundos — energia 16.3 kW/m, praticamente idêntico à tarde. Offshore 280° (oeste) aumentou um pouco (8.2 km/h) e segura igual. Lineup lotado mas as séries vêm feias, onda enche de potência a cada batida.",
+            "janela": "19h-22h",
+            "aviso": "Expect crowd"
+          }
+        },
+        "2026-05-12": {
+          "manha": {
+            "score": 4,
+            "titulo": "Caindo mas período salva",
+            "analise": "Recuou pra 1.5m mas período mantém 10.6 segundos — energia 11.7 kW/m, ainda dignidade. Offshore 175° (sul puro) mínimo mas limpo (4.5 km/h). Onda mais acessível que ontem, menos potência no inside mas ainda redonda.",
+            "janela": "6h-10h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Onshore volta, período cai",
+            "analise": "Virou 37° de onshore (NE), 13.4 km/h — onda já era pra estar feia. 1.43m, período caiu pro 10 segundos, energia 10 kW/m. Cara dura: a forma abre, lip fica chapado. Melhor pula esse.",
+            "janela": null,
+            "aviso": "Vento onshore prejudica forma"
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Offshore salva a noite",
+            "analise": "Offshore 198° (sul virado pro sudeste) voltou com 5.6 km/h — salvou o dia. 1.33m, 9.8 segundos, energia 8.5 kW/m. Onda mais compacta mas limpa, glassy. Sessão tranquila pra soltar o corpo antes do swell cair geral.",
+            "janela": "18h-21h",
+            "aviso": null
+          }
+        }
+      }
     },
     "Guarda do Embaú": {
       "erro": true
@@ -170,6 +3275,33 @@
       "erro": true
     },
     "Capão da Canoa": {
+      "erro": true
+    },
+    "Snapper Rocks": {
+      "erro": true
+    },
+    "Bells Beach": {
+      "erro": true
+    },
+    "Jeffreys Bay": {
+      "erro": true
+    },
+    "Hossegor": {
+      "erro": true
+    },
+    "Teahupoo": {
+      "erro": true
+    },
+    "Pipeline": {
+      "erro": true
+    },
+    "Cloudbreak": {
+      "erro": true
+    },
+    "Mundaka": {
+      "erro": true
+    },
+    "Peniche": {
       "erro": true
     }
   }
