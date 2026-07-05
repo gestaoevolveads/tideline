@@ -1,0 +1,32 @@
+name: Atualizar Ranking WSL
+
+on:
+  workflow_dispatch:        # disparo manual ao fim de cada etapa
+  schedule:
+    - cron: '0 12 * * 1'    # segurança: toda segunda 12h UTC
+
+jobs:
+  ranking:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Instalar dependências
+        run: npm install
+        working-directory: scripts
+      - name: Gerar ranking
+        run: node generate-ranking.js
+        working-directory: scripts
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - name: Commit e push
+        run: |
+          git config --global user.name 'Tideline Bot'
+          git config --global user.email 'bot@tideline.app'
+          git add demo/ranking-men.json demo/ranking-women.json
+          git diff --staged --quiet || git commit -m "chore: atualiza ranking WSL"
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main

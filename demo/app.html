@@ -2186,9 +2186,9 @@ const SNIPER_KEY='tl_sniper';
 function getSniperPref(){ return localStorage.getItem(SNIPER_KEY)==='1'; }
 function toggleSniper(el){ localStorage.setItem(SNIPER_KEY,el.checked?'1':'0'); renderEuTab(); }
 
-/* ── PIPEDREAM URLS — cole aqui as URLs depois de criar os workflows ── */
-const PIPEDREAM_FEED    = 'https://eoki6jh345pqzcu.m.pipedream.net';
-const PIPEDREAM_RANKING = 'https://eoygcrs3b875wbl.m.pipedream.net';
+/* ── DADOS ESTÁTICOS — gerados por GitHub Action, servidos sem servidor ── */
+const FEED_URL    = './feed.json';
+const RANKING_URL = './ranking-{gender}.json'; // {gender} = men | women
 /* ──────────────────────────────────────────────────────────────────── */
 
 const BEST_SESSION_KEY='tl_best_session';
@@ -3385,7 +3385,7 @@ async function loadSurfNews() {
   if (!el) return;
   el.innerHTML = '<div class="news-loading">Buscando notícias...</div>';
   try {
-    const res = await fetch(PIPEDREAM_FEED, {signal: AbortSignal.timeout(25000)});
+    const res = await fetch(FEED_URL + '?v=' + Date.now(), {signal: AbortSignal.timeout(25000)});
     if (!res.ok) throw new Error('feed error');
     const articles = await res.json();
     if (!Array.isArray(articles) || !articles.length) throw new Error('empty');
@@ -3622,7 +3622,7 @@ async function fetchWSLLive(gender) {
     }
   } catch {}
   try {
-    const res = await fetch(`${PIPEDREAM_RANKING}?gender=${gender}`, {signal: AbortSignal.timeout(15000)});
+    const res = await fetch(RANKING_URL.replace('{gender}', gender) + '?v=' + Date.now(), {signal: AbortSignal.timeout(15000)});
     if (!res.ok) throw new Error('error');
     const data = await res.json();
     if (Array.isArray(data) && data.length) {
