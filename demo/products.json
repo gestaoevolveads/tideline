@@ -1,0 +1,638 @@
+[
+  {
+    "id": "p1",
+    "cat": "leash",
+    "marca": "Maori",
+    "nome": "Leash 6'×5mm Duplo Girador",
+    "preco": "R$65",
+    "url": "https://amzn.to/48lIEqo",
+    "ativo": true
+  },
+  {
+    "id": "p2",
+    "cat": "leash",
+    "marca": "Maori",
+    "nome": "Leash Competição 6' 6mm Inox",
+    "preco": "R$89",
+    "url": "https://amzn.to/4cMhavk",
+    "ativo": true
+  },
+  {
+    "id": "p3",
+    "cat": "leash",
+    "marca": "Maori",
+    "nome": "Leash Competição 6' 6mm Neoprene",
+    "preco": "R$89",
+    "url": "https://amzn.to/4trOAXi",
+    "ativo": true
+  },
+  {
+    "id": "p4",
+    "cat": "leash",
+    "marca": "Banana Wax",
+    "nome": "Leash Economy 6'×6mm",
+    "preco": "R$55",
+    "url": "https://amzn.to/3QmuMpQ",
+    "ativo": true
+  },
+  {
+    "id": "p5",
+    "cat": "leash",
+    "marca": "Soul Fins",
+    "nome": "Leash Funboard 8' 7mm Safe Pró",
+    "preco": "R$79",
+    "url": "https://amzn.to/3OsgnrA",
+    "ativo": true
+  },
+  {
+    "id": "p6",
+    "cat": "leash",
+    "marca": "Wet Dreams",
+    "nome": "Leash Force One 6'6'' 7mm Premium",
+    "preco": "R$99",
+    "url": "https://amzn.to/4eH611p",
+    "img": "https://m.media-amazon.com/images/I/51M+wpoNDML._AC_SX679_.jpg",
+    "ativo": true
+  },
+  {
+    "id": "p7",
+    "cat": "leash",
+    "marca": "Soul Fins",
+    "nome": "Leash Regular 6' 6mm Safe Pró",
+    "preco": "R$69",
+    "url": "https://amzn.to/4d4J72T",
+    "ativo": true
+  },
+  {
+    "id": "p8",
+    "cat": "leash",
+    "marca": "Soul Fins",
+    "nome": "Leash Bigwave 7' 7mm Reforçado",
+    "preco": "R$89",
+    "url": "https://amzn.to/4tsyWed",
+    "ativo": true
+  },
+  {
+    "id": "p9",
+    "cat": "quilha",
+    "marca": "OEM",
+    "nome": "Quilhas FCS1 Performance M3/M5",
+    "preco": "R$129",
+    "url": "https://amzn.to/4t0hGfx",
+    "ativo": true
+  },
+  {
+    "id": "p10",
+    "cat": "quilha",
+    "marca": "Expans",
+    "nome": "Quilha Flex Médium FCS2",
+    "preco": "R$89",
+    "url": "https://amzn.to/4mN3jcO",
+    "ativo": true
+  },
+  {
+    "id": "p11",
+    "cat": "quilha",
+    "marca": "Soul Fins",
+    "nome": "Quilhas SM2 Large Triquilha FCS",
+    "preco": "R$149",
+    "url": "https://amzn.to/4cQobLL",
+    "img": "https://m.media-amazon.com/images/I/61zPdxOoc3L._AC_SX679_.jpg",
+    "ativo": true
+  },
+  {
+    "id": "p12",
+    "cat": "quilha",
+    "marca": "Expans",
+    "nome": "Quilhas Small H203 FCS2",
+    "preco": "R$79",
+    "url": "https://amzn.to/4sQTyMl",
+    "ativo": true
+  },
+  {
+    "id": "p13",
+    "cat": "quilha",
+    "marca": "Soul Fins",
+    "nome": "Quilhas SM1 Média FCS1",
+    "preco": "R$129",
+    "url": "https://amzn.to/4u0qnak",
+    "ativo": true
+  },
+  {
+    "id": "p14",
+    "cat": "quilha",
+    "marca": "Nomar Surf",
+    "nome": "Quilhas SUP Central + Estabilizadora",
+    "preco": "R$99",
+    "url": "https://amzn.to/3QZuQMg",
+    "ativo": true
+  },
+  {
+    "id": "p15",
+    "cat": "deck",
+    "marca": "Wet Dreams",
+    "nome": "Deck Mavericks Preto Fresado",
+    "preco": "R$89",
+    "url": "https://amzn.to/4e7Xvsj",
+    "ativo": true
+  },
+  {
+    "id": "p16",
+    "cat": "deck",
+    "marca": "Soul Fins",
+    "nome": "Deck Longboard Pro 35cm 3 Peças",
+    "preco": "R$119",
+    "url": "https://amzn.to/4sVevpk",
+    "ativo": true
+  },
+  {
+    "id": "p17",
+    "cat": "deck",
+    "marca": "Soul Fins",
+    "nome": "Deck Camo Steps II Perfurado",
+    "preco": "R$109",
+    "url": "https://amzn.to/49bdYbF",
+    "ativo": true
+  },
+  {
+    "id": "p18",
+    "cat": "deck",
+    "marca": "OEM",
+    "nome": "Deck Atleta 3 Peças Kick 27mm",
+    "preco": "R$79",
+    "url": "https://amzn.to/4tDUdC2",
+    "ativo": true
+  },
+  {
+    "id": "p19",
+    "cat": "deck",
+    "marca": "Dakine",
+    "nome": "Tração ELIMA Surf Team",
+    "preco": "R$199",
+    "url": "https://amzn.to/4vPxUKP",
+    "img": "https://m.media-amazon.com/images/I/51Ql0w848oL._AC_SX679_.jpg",
+    "ativo": true
+  },
+  {
+    "id": "p20",
+    "cat": "parafina",
+    "marca": "Maré",
+    "nome": "Parafina Maré + Raspador Kit 2und",
+    "preco": "R$35",
+    "url": "https://amzn.to/4e9sa8E",
+    "ativo": true
+  },
+  {
+    "id": "p21",
+    "cat": "parafina",
+    "marca": "Fu Wax",
+    "nome": "Parafina Fu Wax Kit 2und + Raspador",
+    "preco": "R$39",
+    "url": "https://amzn.to/4sTNvq4",
+    "img": "https://m.media-amazon.com/images/I/61Jla9Pvy+L._AC_SX679_.jpg",
+    "ativo": true
+  },
+  {
+    "id": "p22",
+    "cat": "parafina",
+    "marca": "Maori",
+    "nome": "Estojo Térmico Para Parafina",
+    "preco": "R$49",
+    "url": "https://amzn.to/4sR5TQn",
+    "ativo": true
+  },
+  {
+    "id": "p23",
+    "cat": "roupa",
+    "marca": "Soulfins",
+    "nome": "Lycra Surf UV50+ Manga Longa",
+    "preco": "R$109",
+    "url": "https://amzn.to/3QLCiKV",
+    "ativo": true
+  },
+  {
+    "id": "p24",
+    "cat": "roupa",
+    "marca": "Mauricinho",
+    "nome": "Shorts Surf Liso Tactel",
+    "preco": "R$69",
+    "url": "https://amzn.to/48o5Sfx",
+    "ativo": true
+  },
+  {
+    "id": "p25",
+    "cat": "roupa",
+    "marca": "Mauricinho",
+    "nome": "Shorts Surf Liso Tactel (var.)",
+    "preco": "R$69",
+    "url": "https://amzn.to/4cyv1Xy",
+    "ativo": true
+  },
+  {
+    "id": "p26",
+    "cat": "roupa",
+    "marca": "Mauricinho",
+    "nome": "Shorts Surf Liso Tactel (var.)",
+    "preco": "R$69",
+    "url": "https://amzn.to/4eF12yj",
+    "ativo": true
+  },
+  {
+    "id": "p27",
+    "cat": "roupa",
+    "marca": "Mauricinho",
+    "nome": "Kit 2 Shorts Surf Liso",
+    "preco": "R$109",
+    "url": "https://amzn.to/3OGgTSQ",
+    "ativo": true
+  },
+  {
+    "id": "p28",
+    "cat": "roupa",
+    "marca": "Mauricinho",
+    "nome": "Kit 3 Shorts Surf Liso",
+    "preco": "R$139",
+    "url": "https://amzn.to/4mSLbP1",
+    "ativo": true
+  },
+  {
+    "id": "p29",
+    "cat": "roupa",
+    "marca": "OEM",
+    "nome": "Maiô Surfista Macaquinho Zíper Bojo",
+    "preco": "R$99",
+    "url": "https://amzn.to/4sZeAIy",
+    "ativo": true
+  },
+  {
+    "id": "p30",
+    "cat": "roupa",
+    "marca": "Rip Curl",
+    "nome": "Maiô Manga Comprida FPS 50+",
+    "preco": "R$249",
+    "url": "https://amzn.to/4sXI5uu",
+    "ativo": true
+  },
+  {
+    "id": "p31",
+    "cat": "roupa",
+    "marca": "OEM",
+    "nome": "Poncho Microfibra Capuz Secagem Rápida",
+    "preco": "R$149",
+    "url": "https://amzn.to/498Nibv",
+    "ativo": true
+  },
+  {
+    "id": "p32",
+    "cat": "roupa",
+    "marca": "Redushaper",
+    "nome": "Poncho Algodão Atoalhado com Capuz",
+    "preco": "R$189",
+    "url": "https://amzn.to/42pgHum",
+    "ativo": true
+  },
+  {
+    "id": "p33",
+    "cat": "roupa",
+    "marca": "OEM",
+    "nome": "Chapéu De Palha",
+    "preco": "R$49",
+    "url": "https://amzn.to/4cxhnE0",
+    "ativo": true
+  },
+  {
+    "id": "p34",
+    "cat": "roupa",
+    "marca": "OEM",
+    "nome": "Chapéu California Beer Bucket Preto",
+    "preco": "R$69",
+    "url": "https://amzn.to/4cMhrOS",
+    "ativo": true
+  },
+  {
+    "id": "p35",
+    "cat": "roupa",
+    "marca": "Soulfins",
+    "nome": "Boné UV50+ Secagem Rápida",
+    "preco": "R$59",
+    "url": "https://amzn.to/4vRyNmb",
+    "ativo": true
+  },
+  {
+    "id": "p36",
+    "cat": "roupa",
+    "marca": "Alive",
+    "nome": "Boné Trucker California Republic",
+    "preco": "R$49",
+    "url": "https://amzn.to/4cIqeBw",
+    "ativo": true
+  },
+  {
+    "id": "p37",
+    "cat": "capa",
+    "marca": "Maori",
+    "nome": "Capa Refletiva Acolchoada 6'4–6'7",
+    "preco": "R$199",
+    "url": "https://amzn.to/4vPxnZl",
+    "ativo": true
+  },
+  {
+    "id": "p38",
+    "cat": "capa",
+    "marca": "Maori",
+    "nome": "Capa Sarcófago Dupla 6'4 Refletiva",
+    "preco": "R$229",
+    "url": "https://amzn.to/3QmuXS2",
+    "img": "https://m.media-amazon.com/images/I/61qVkkVOuYL._AC_SX679_.jpg",
+    "ativo": true
+  },
+  {
+    "id": "p39",
+    "cat": "capa",
+    "marca": "OEM",
+    "nome": "Capa Sarcófago 6'3'' Tripla Premium",
+    "preco": "R$269",
+    "url": "https://amzn.to/4n09Zo7",
+    "ativo": true
+  },
+  {
+    "id": "p40",
+    "cat": "capa",
+    "marca": "OEM",
+    "nome": "Capa Toalha Universal 6'5",
+    "preco": "R$129",
+    "url": "https://amzn.to/4sQTzj9",
+    "ativo": true
+  },
+  {
+    "id": "p41",
+    "cat": "rack",
+    "marca": "Eqmax",
+    "nome": "Suporte Parede Prancha/Skate/Wakeboard",
+    "preco": "R$89",
+    "url": "https://amzn.to/4sR5xJx",
+    "ativo": true
+  },
+  {
+    "id": "p42",
+    "cat": "rack",
+    "marca": "OEM",
+    "nome": "Rack 2 Pranchas Horizontal 45º",
+    "preco": "R$149",
+    "url": "https://amzn.to/4tqraBE",
+    "ativo": true
+  },
+  {
+    "id": "p43",
+    "cat": "rack",
+    "marca": "OEM",
+    "nome": "Rack 7 Pranchas Vertical",
+    "preco": "R$389",
+    "url": "https://amzn.to/42xCvnu",
+    "ativo": true
+  },
+  {
+    "id": "p44",
+    "cat": "rack",
+    "marca": "OEM",
+    "nome": "Rack 3 Pranchas Vertical",
+    "preco": "R$229",
+    "url": "https://amzn.to/4u8Ym0u",
+    "ativo": true
+  },
+  {
+    "id": "p45",
+    "cat": "rack",
+    "marca": "OEM",
+    "nome": "Rack 2 Pranchas Vertical",
+    "preco": "R$149",
+    "url": "https://amzn.to/3OE5gMg",
+    "ativo": true
+  },
+  {
+    "id": "p46",
+    "cat": "rack",
+    "marca": "Wet Dreams",
+    "nome": "Rack de Fita Extensora",
+    "preco": "R$79",
+    "url": "https://amzn.to/4mLiAe8",
+    "ativo": true
+  },
+  {
+    "id": "p47",
+    "cat": "rack",
+    "marca": "Nomar Surf",
+    "nome": "Par Fita Rack Catraca",
+    "preco": "R$59",
+    "url": "https://amzn.to/4vKq7xX",
+    "ativo": true
+  },
+  {
+    "id": "p48",
+    "cat": "camera",
+    "marca": "GoPro",
+    "nome": "HERO13 Black Ed. Floresta Verde",
+    "preco": "R$2.799",
+    "url": "https://amzn.to/3OGh00I",
+    "img": "https://m.media-amazon.com/images/I/71zN1b2C95L._AC_SX679_.jpg",
+    "ativo": true
+  },
+  {
+    "id": "p49",
+    "cat": "camera",
+    "marca": "GoPro",
+    "nome": "HERO13 Black",
+    "preco": "R$2.499",
+    "url": "https://amzn.to/4u7DiHC",
+    "img": "https://m.media-amazon.com/images/I/615eTO83jLL._AC_SX679_.jpg",
+    "ativo": true
+  },
+  {
+    "id": "p50",
+    "cat": "camera",
+    "marca": "GoPro",
+    "nome": "HERO13 Black Creator Edition",
+    "preco": "R$3.999",
+    "url": "https://amzn.to/4cQaxs7",
+    "img": "https://m.media-amazon.com/images/I/61M3F1IV4PL._AC_SX679_.jpg",
+    "ativo": true
+  },
+  {
+    "id": "p51",
+    "cat": "camera",
+    "marca": "GoPro",
+    "nome": "HERO13 Black Power Bundle",
+    "preco": "R$3.299",
+    "url": "https://amzn.to/4sOeQKh",
+    "img": "https://m.media-amazon.com/images/I/61XiCl8AM2L._AC_SX679_.jpg",
+    "ativo": true
+  },
+  {
+    "id": "p52",
+    "cat": "camera",
+    "marca": "GoPro",
+    "nome": "HERO11 Black Mini",
+    "preco": "R$1.499",
+    "url": "https://amzn.to/4u9fumQ",
+    "img": "https://m.media-amazon.com/images/I/61x-hCi4V1L._AC_SX679_.jpg",
+    "ativo": true
+  },
+  {
+    "id": "p53",
+    "cat": "camera",
+    "marca": "GoPro",
+    "nome": "LIT HERO 4K com Luz Integrada",
+    "preco": "R$1.299",
+    "url": "https://amzn.to/4tEW2Pa",
+    "img": "https://m.media-amazon.com/images/I/612bn+1zfJL._AC_SX679_.jpg",
+    "ativo": true
+  },
+  {
+    "id": "p54",
+    "cat": "camera",
+    "marca": "GoPro",
+    "nome": "HERO12 Black 5.3K HDR",
+    "preco": "R$1.999",
+    "url": "https://amzn.to/4tzFtnD",
+    "img": "https://m.media-amazon.com/images/I/615eTO83jLL._AC_SX679_.jpg",
+    "ativo": true
+  },
+  {
+    "id": "p55",
+    "cat": "camera",
+    "marca": "GoPro",
+    "nome": "Max 360 5.6K",
+    "preco": "R$3.299",
+    "url": "https://amzn.to/41QstOe",
+    "img": "https://m.media-amazon.com/images/I/61M3F1IV4PL._AC_SX679_.jpg",
+    "ativo": true
+  },
+  {
+    "id": "p56",
+    "cat": "camera",
+    "marca": "OEM",
+    "nome": "Câmera Action Pro 1080P WiFi",
+    "preco": "R$249",
+    "url": "https://amzn.to/3OLNruH",
+    "ativo": true
+  },
+  {
+    "id": "p57",
+    "cat": "camera",
+    "marca": "OEM",
+    "nome": "Bastão Selfie Invisível 3m Carbono",
+    "preco": "R$99",
+    "url": "https://amzn.to/3QHAW3O",
+    "ativo": true
+  },
+  {
+    "id": "p58",
+    "cat": "camera",
+    "marca": "OEM",
+    "nome": "Kit Fixação GoPro Para Prancha",
+    "preco": "R$79",
+    "url": "https://amzn.to/3QrNfRS",
+    "ativo": true
+  },
+  {
+    "id": "p59",
+    "cat": "outros",
+    "marca": "OEM",
+    "nome": "Kit Surf: Caixa Parafina + Chave + Protetor",
+    "preco": "R$59",
+    "url": "https://amzn.to/4cFSZyM",
+    "ativo": true
+  },
+  {
+    "id": "p60",
+    "cat": "outros",
+    "marca": "OEM",
+    "nome": "Kit Chave Quilha + 12 Parafusos FCS",
+    "preco": "R$35",
+    "url": "https://amzn.to/42sQ0F7",
+    "ativo": true
+  },
+  {
+    "id": "p61",
+    "cat": "outros",
+    "marca": "OEM",
+    "nome": "SUP Inflável 335×86×15cm até 260kg",
+    "preco": "R$899",
+    "url": "https://amzn.to/4cGxvBL",
+    "img": "https://m.media-amazon.com/images/I/61bA9SZU0vL._AC_SX679_.jpg",
+    "ativo": true
+  },
+  {
+    "id": "p62",
+    "cat": "outros",
+    "marca": "OEM",
+    "nome": "SUP Inflável 320×76×15cm",
+    "preco": "R$799",
+    "url": "https://amzn.to/4mQieTL",
+    "ativo": true
+  },
+  {
+    "id": "p63",
+    "cat": "outros",
+    "marca": "OEM",
+    "nome": "Handplane Bodysurf / Jacaré",
+    "preco": "R$99",
+    "url": "https://amzn.to/3R0tmkR",
+    "ativo": true
+  },
+  {
+    "id": "p64",
+    "cat": "outros",
+    "marca": "Nomar Surf",
+    "nome": "Bodyboard Semi-Pro 41'' com Leash",
+    "preco": "R$299",
+    "url": "https://amzn.to/4vRzwDQ",
+    "ativo": true
+  },
+  {
+    "id": "p65",
+    "cat": "outros",
+    "marca": "Nomar Surf",
+    "nome": "Skimboard Profissional 1,32m Tricolor",
+    "preco": "R$349",
+    "url": "https://amzn.to/4n9qe2t",
+    "ativo": true
+  },
+  {
+    "id": "p66",
+    "cat": "outros",
+    "marca": "OWL Sports",
+    "nome": "Skate Simulador Surf Retrowave",
+    "preco": "R$499",
+    "url": "https://amzn.to/4u19P2a",
+    "ativo": true
+  },
+  {
+    "id": "p67",
+    "cat": "outros",
+    "marca": "OWL Sports",
+    "nome": "Skate Simulador Surf Sunset",
+    "preco": "R$469",
+    "url": "https://amzn.to/3OoqSfx",
+    "ativo": true
+  },
+  {
+    "id": "p68",
+    "cat": "outros",
+    "marca": "OWL Sports",
+    "nome": "Skate Simulador Surf Tide",
+    "preco": "R$449",
+    "url": "https://amzn.to/3OsgvY6",
+    "ativo": true
+  },
+  {
+    "id": "p69",
+    "cat": "outros",
+    "marca": "DJI",
+    "nome": "Drone Mini 5 Pro Fly More Combo",
+    "preco": "R$4.999",
+    "url": "https://amzn.to/41U4cH2",
+    "img": "https://m.media-amazon.com/images/I/51Wj3Yvcv1L._AC_SX679_.jpg",
+    "ativo": true
+  }
+]

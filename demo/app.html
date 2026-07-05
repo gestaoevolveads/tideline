@@ -2023,7 +2023,7 @@ const LOJA_CAT_DEF = {
   rack:{l:'Rack',pt:'pt-rack'},camera:{l:'Câmera',pt:'pt-camera'},
   outros:{l:'Outros',pt:'pt-outros'},
 };
-const LOJA_ITEMS = [
+let LOJA_ITEMS = [
   /* LEASH */
   {cat:'leash',marca:'Maori',nome:"Leash 6'×5mm Duplo Girador",preco:'R$65',url:'https://amzn.to/48lIEqo'},
   {cat:'leash',marca:'Maori',nome:"Leash Competição 6' 6mm Inox",preco:'R$89',url:'https://amzn.to/4cMhavk'},
@@ -3716,7 +3716,12 @@ async function setWSLGender(g) {
 setStar(3);
 loadNarratorCache().then(() => loadData());
 setInterval(() => loadNarratorCache().then(() => loadData()), 30*60*1000);
-renderLoja();
+// carrega produtos do JSON editável (painel admin); mantém os embutidos como fallback
+fetch('./products.json?v=' + Date.now())
+  .then(r => r.ok ? r.json() : null)
+  .then(list => { if (Array.isArray(list) && list.length) { LOJA_ITEMS = list.filter(p => p.ativo !== false); } })
+  .catch(() => {})
+  .finally(() => renderLoja());
 </script>
 </body>
 </html>

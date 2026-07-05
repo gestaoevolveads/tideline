@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tideline · Painel</title>
+<style>
+  :root{
+    --deep:#172726; --mid:#243F3D; --muted:#476664; --surface:#D3E2DE; --accent:#F95831;
+    --paper:#F5F0E8; --line:#e2ddd2; --ok:#2f9e6f; --r:12px;
+    --sh:0 1px 3px rgba(23,39,38,.08),0 4px 16px rgba(23,39,38,.06);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,'Helvetica Neue',Inter,Arial,sans-serif;background:var(--paper);color:var(--deep);-webkit-font-smoothing:antialiased}
+  a{color:var(--accent)}
+  .hidden{display:none!important}
+
+  /* LOGIN */
+  #gate{position:fixed;inset:0;background:var(--deep);display:flex;align-items:center;justify-content:center;z-index:100}
+  .gate-box{background:var(--paper);border-radius:16px;padding:36px 32px;width:min(92vw,360px);text-align:center;box-shadow:var(--sh)}
+  .gate-box h1{font-size:22px;letter-spacing:3px;margin-bottom:6px}
+  .gate-box p{font-size:13px;color:var(--muted);margin-bottom:22px}
+  .gate-box input{width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:10px;font-size:15px;margin-bottom:12px}
+  .gate-box button{width:100%;padding:13px;border:none;border-radius:10px;background:var(--accent);color:#fff;font-size:15px;font-weight:700;cursor:pointer}
+  .gate-err{color:var(--accent);font-size:12px;height:16px;margin-top:8px}
+
+  /* SHELL */
+  header{background:var(--deep);color:var(--surface);padding:16px 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10}
+  header .brand{font-weight:800;letter-spacing:3px;font-size:16px}
+  header .brand span{color:var(--accent)}
+  header .mode{font-size:11px;color:var(--muted);background:rgba(255,255,255,.06);padding:5px 10px;border-radius:20px}
+  .wrap{max-width:1000px;margin:0 auto;padding:20px}
+  .tabs{display:flex;gap:6px;overflow-x:auto;padding:16px 20px 0;max-width:1000px;margin:0 auto}
+  .tab{flex:0 0 auto;padding:9px 16px;border-radius:20px;border:1.5px solid var(--line);background:#fff;font-size:13px;font-weight:700;color:var(--mid);cursor:pointer;white-space:nowrap}
+  .tab.active{background:var(--deep);color:#fff;border-color:var(--deep)}
+  .panel{display:none}
+  .panel.active{display:block}
+
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px;margin-bottom:16px;box-shadow:var(--sh)}
+  .card h2{font-size:16px;margin-bottom:4px}
+  .card .sub{font-size:13px;color:var(--muted);margin-bottom:16px;line-height:1.5}
+  .toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+  .btn{padding:10px 16px;border-radius:9px;border:1.5px solid var(--line);background:#fff;font-size:13px;font-weight:700;cursor:pointer;color:var(--mid)}
+  .btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .btn.dark{background:var(--deep);color:#fff;border-color:var(--deep)}
+  .btn:active{transform:translateY(1px)}
+  input,select,textarea{font-family:inherit;padding:9px 11px;border:1.5px solid var(--line);border-radius:8px;font-size:13px;width:100%;background:#fff}
+  label{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:4px}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
+  th{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+  tr:hover td{background:#faf8f3}
+  .row-actions{display:flex;gap:6px}
+  .icon-btn{padding:5px 9px;border-radius:7px;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:12px}
+  .icon-btn.del{color:var(--accent);border-color:rgba(249,88,49,.3)}
+  .count{font-size:12px;color:var(--muted)}
+  .search{max-width:260px}
+
+  /* MODAL */
+  .modal-bg{position:fixed;inset:0;background:rgba(23,39,38,.5);display:flex;align-items:center;justify-content:center;z-index:50;padding:20px}
+  .modal{background:#fff;border-radius:14px;padding:24px;width:min(94vw,560px);max-height:90vh;overflow:auto}
+  .modal h3{font-size:17px;margin-bottom:16px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .field{margin-bottom:12px}
+  .modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}
+  .pill{display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;background:var(--surface);color:var(--mid)}
+  .pill.off{background:#eee;color:var(--muted);opacity:.6}
+  .banner{background:rgba(249,88,49,.08);border:1px solid rgba(249,88,49,.3);border-radius:10px;padding:12px 14px;font-size:12.5px;color:var(--mid);line-height:1.5;margin-bottom:16px}
+  .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--deep);color:#fff;padding:12px 20px;border-radius:10px;font-size:13px;box-shadow:var(--sh);z-index:80;opacity:0;transition:.3s;pointer-events:none}
+  .toast.show{opacity:1}
+  .soon{text-align:center;padding:40px 20px;color:var(--muted)}
+  .soon .big{font-size:32px;margin-bottom:12px}
+</style>
+</head>
+<body>
+
+<!-- LOGIN GATE (client-side, provisório — vira Supabase na fase 2) -->
+<div id="gate">
+  <div class="gate-box">
+    <h1>TIDE<span style="color:var(--accent)">LINE</span></h1>
+    <p>Painel de controle</p>
+    <input id="gate-pass" type="password" placeholder="Senha do painel" onkeydown="if(event.key==='Enter')tryLogin()">
+    <button onclick="tryLogin()">Entrar</button>
+    <div class="gate-err" id="gate-err"></div>
+  </div>
+</div>
+
+<!-- SHELL -->
+<div id="app" class="hidden">
+  <header>
+    <div class="brand">TIDE<span>LINE</span> · Painel</div>
+    <div class="mode">modo local · exporta e commita</div>
+  </header>
+
+  <div class="tabs">
+    <div class="tab active" data-panel="loja" onclick="showPanel('loja')">🛒 Loja</div>
+    <div class="tab" data-panel="cupons" onclick="showPanel('cupons')">🎟️ Cupons</div>
+    <div class="tab" data-panel="praias" onclick="showPanel('praias')">🌊 Praias</div>
+    <div class="tab" data-panel="templates" onclick="showPanel('templates')">🎨 Templates</div>
+    <div class="tab" data-panel="assinantes" onclick="showPanel('assinantes')">👥 Assinantes</div>
+  </div>
+
+  <div class="wrap">
+
+    <!-- LOJA -->
+    <div class="panel active" id="panel-loja">
+      <div class="card">
+        <h2>Loja / Produtos</h2>
+        <div class="sub">Editar aqui muda o app de verdade: os produtos vêm do <code>products.json</code>. Edite, clique em <strong>Exportar</strong>, substitua o arquivo no projeto e faça commit.</div>
+        <div class="toolbar">
+          <button class="btn primary" onclick="openProd()">+ Novo produto</button>
+          <input class="search" placeholder="Buscar produto…" oninput="renderProds(this.value)">
+          <span style="flex:1"></span>
+          <span class="count" id="prod-count"></span>
+          <button class="btn dark" onclick="exportProds()">⬇ Exportar products.json</button>
+        </div>
+        <div style="overflow-x:auto"><table id="prod-table"></table></div>
+      </div>
+    </div>
+
+    <!-- CUPONS -->
+    <div class="panel" id="panel-cupons">
+      <div class="card">
+        <h2>Cupons de parceiros</h2>
+        <div class="sub">Cupons exclusivos de premium (lojas, cursos, escolas de surf). Salvos em <code>coupons.json</code> para quando o premium entrar.</div>
+        <div class="toolbar">
+          <button class="btn primary" onclick="openCup()">+ Novo cupom</button>
+          <span style="flex:1"></span>
+          <span class="count" id="cup-count"></span>
+          <button class="btn dark" onclick="exportCups()">⬇ Exportar coupons.json</button>
+        </div>
+        <div style="overflow-x:auto"><table id="cup-table"></table></div>
+      </div>
+    </div>
+
+    <!-- PRAIAS -->
+    <div class="panel" id="panel-praias">
+      <div class="card">
+        <h2>Praias</h2>
+        <div class="sub">As 87 praias que o narrador analisa. Carregue o <code>data/beaches.json</code>, edite ou adicione, exporte e substitua no projeto. O narrador passa a analisar a praia nova na próxima geração.</div>
+        <div class="banner">Como este arquivo fica na pasta <code>data/</code> (fora do site publicado), carregue-o pelo botão abaixo. Depois exporte e substitua.</div>
+        <div class="toolbar">
+          <label style="margin:0"><input type="file" accept=".json" onchange="loadBeachesFile(this.files[0])" style="width:auto;padding:6px;border:none"></label>
+          <button class="btn primary" onclick="openBeach()" id="beach-add" disabled>+ Nova praia</button>
+          <input class="search" placeholder="Buscar praia…" oninput="renderBeaches(this.value)">
+          <span style="flex:1"></span>
+          <span class="count" id="beach-count">carregue o arquivo</span>
+          <button class="btn dark" onclick="exportBeaches()" id="beach-export" disabled>⬇ Exportar beaches.json</button>
+        </div>
+        <div style="overflow-x:auto"><table id="beach-table"></table></div>
+      </div>
+    </div>
+
+    <!-- TEMPLATES -->
+    <div class="panel" id="panel-templates">
+      <div class="card">
+        <h2>Templates de compartilhamento</h2>
+        <div class="sub">Os modelos que o usuário usa para postar a sessão nas redes. Ative/desative e marque quais são premium.</div>
+        <div style="overflow-x:auto"><table id="tpl-table"></table></div>
+        <button class="btn dark" onclick="exportTpls()" style="margin-top:14px">⬇ Exportar templates.json</button>
+      </div>
+    </div>
+
+    <!-- ASSINANTES -->
+    <div class="panel" id="panel-assinantes">
+      <div class="card">
+        <div class="soon">
+          <div class="big">👥</div>
+          <h2 style="margin-bottom:8px">Assinantes e usuários</h2>
+          <p style="max-width:440px;margin:0 auto;line-height:1.6">Esta parte precisa do login real ligado (Supabase). Quando conectarmos as contas na fase 2, aqui aparecem: usuários cadastrados, assinantes ativos, receita do mês e churn, com busca e filtro.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ── ACESSO (provisório) ──────────────────────────────
+   Client-side, só pra manter acesso casual fora. Segurança real vem com Supabase. */
+const PANEL_PASS = 'tideline2026';
+function tryLogin(){
+  const v = document.getElementById('gate-pass').value;
+  if(v === PANEL_PASS){
+    sessionStorage.setItem('tl_admin','1');
+    showApp();
+  } else {
+    document.getElementById('gate-err').textContent = 'Senha incorreta';
+  }
+}
+function showApp(){
+  document.getElementById('gate').classList.add('hidden');
+  document.getElementById('app').classList.remove('hidden');
+  initData();
+}
+if(sessionStorage.getItem('tl_admin')==='1') showApp();
+
+function showPanel(id){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.panel===id));
+  document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id==='panel-'+id));
+}
+function toast(msg){
+  const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),2200);
+}
+function download(name,obj){
+  const blob=new Blob([JSON.stringify(obj,null,2)],{type:'application/json'});
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=name; a.click();
+  toast('Arquivo '+name+' baixado. Substitua no projeto e faça commit.');
+}
+const esc=s=>String(s??'').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+
+/* ── DADOS ─────────────────────────────────────────── */
+let PRODS=[], CUPS=[], BEACHES=[], TPLS=[];
+
+async function initData(){
+  // produtos: auto-carrega do site
+  try{ const r=await fetch('./products.json?v='+Date.now()); if(r.ok) PRODS=await r.json(); }catch{}
+  renderProds();
+  // cupons: auto-carrega se existir
+  try{ const r=await fetch('./coupons.json?v='+Date.now()); if(r.ok) CUPS=await r.json(); }catch{}
+  renderCups();
+  // templates: default do brand guide
+  try{ const r=await fetch('./templates.json?v='+Date.now()); if(r.ok) TPLS=await r.json(); }catch{}
+  if(!TPLS.length) TPLS=[
+    {id:'noite',nome:'Noite no Mar',formato:'Stories 1080x1920',ativo:true,premium:false},
+    {id:'espuma',nome:'Espuma',formato:'Stories 1080x1920',ativo:true,premium:false},
+    {id:'profundidade',nome:'Profundidade',formato:'Stories 1080x1920',ativo:true,premium:true},
+    {id:'feed',nome:'Feed Quadrado',formato:'Feed 1080x1080',ativo:true,premium:true},
+  ];
+  renderTpls();
+}
+
+/* ── PRODUTOS ──────────────────────────────────────── */
+const CATS=['leash','quilha','deck','parafina','roupa','capa','rack','camera','outros'];
+function renderProds(filter=''){
+  const f=filter.toLowerCase();
+  const rows=PRODS.filter(p=>!f||(p.nome+p.marca+p.cat).toLowerCase().includes(f));
+  document.getElementById('prod-count').textContent=PRODS.length+' produtos';
+  document.getElementById('prod-table').innerHTML=
+    '<tr><th>Produto</th><th>Marca</th><th>Categoria</th><th>Preço</th><th>Status</th><th></th></tr>'+
+    rows.map(p=>{const i=PRODS.indexOf(p);return `<tr>
+      <td>${esc(p.nome)}</td><td>${esc(p.marca)}</td><td><span class="pill">${esc(p.cat)}</span></td>
+      <td>${esc(p.preco)}</td>
+      <td>${p.ativo!==false?'<span class="pill" style="background:rgba(47,158,111,.15);color:var(--ok)">ativo</span>':'<span class="pill">oculto</span>'}</td>
+      <td class="row-actions"><button class="icon-btn" onclick="openProd(${i})">editar</button><button class="icon-btn del" onclick="delProd(${i})">excluir</button></td>
+    </tr>`}).join('');
+}
+function openProd(i){
+  const p=i!=null?PRODS[i]:{cat:'leash',marca:'',nome:'',preco:'',url:'',ativo:true};
+  modal(`${i!=null?'Editar':'Novo'} produto`,`
+    <div class="field"><label>Nome</label><input id="m-nome" value="${esc(p.nome)}"></div>
+    <div class="grid2">
+      <div class="field"><label>Marca</label><input id="m-marca" value="${esc(p.marca)}"></div>
+      <div class="field"><label>Categoria</label><select id="m-cat">${CATS.map(c=>`<option ${c===p.cat?'selected':''}>${c}</option>`).join('')}</select></div>
+      <div class="field"><label>Preço</label><input id="m-preco" value="${esc(p.preco)}" placeholder="R$65"></div>
+      <div class="field"><label>Ativo</label><select id="m-ativo"><option value="1" ${p.ativo!==false?'selected':''}>Sim</option><option value="0" ${p.ativo===false?'selected':''}>Não (oculto)</option></select></div>
+    </div>
+    <div class="field"><label>Link (parceiro/afiliado)</label><input id="m-url" value="${esc(p.url)}" placeholder="https://..."></div>
+  `,()=>{
+    const o={cat:val('m-cat'),marca:val('m-marca'),nome:val('m-nome'),preco:val('m-preco'),url:val('m-url'),ativo:val('m-ativo')==='1'};
+    if(!o.nome){toast('Nome é obrigatório');return false;}
+    if(i!=null){o.id=PRODS[i].id;PRODS[i]=o;} else {o.id='p'+(Date.now());PRODS.push(o);}
+    renderProds(); toast('Produto salvo (lembre de exportar)');
+  });
+}
+function delProd(i){ if(confirm('Excluir "'+PRODS[i].nome+'"?')){PRODS.splice(i,1);renderProds();} }
+function exportProds(){ download('products.json',PRODS); }
+
+/* ── CUPONS ────────────────────────────────────────── */
+function renderCups(){
+  document.getElementById('cup-count').textContent=CUPS.length+' cupons';
+  document.getElementById('cup-table').innerHTML=
+    '<tr><th>Código</th><th>Parceiro</th><th>Desconto</th><th>Validade</th><th>Premium</th><th></th></tr>'+
+    (CUPS.length?CUPS.map((c,i)=>`<tr>
+      <td><strong>${esc(c.codigo)}</strong></td><td>${esc(c.parceiro)}</td><td>${esc(c.desconto)}</td>
+      <td>${esc(c.validade||'—')}</td><td>${c.premium?'<span class="pill" style="background:rgba(249,88,49,.15);color:var(--accent)">só premium</span>':'todos'}</td>
+      <td class="row-actions"><button class="icon-btn" onclick="openCup(${i})">editar</button><button class="icon-btn del" onclick="delCup(${i})">excluir</button></td>
+    </tr>`).join('')
+    :'<tr><td colspan="6" style="color:var(--muted);padding:20px;text-align:center">Nenhum cupom ainda. Crie o primeiro.</td></tr>');
+}
+function openCup(i){
+  const c=i!=null?CUPS[i]:{codigo:'',parceiro:'',desconto:'',validade:'',premium:true};
+  modal(`${i!=null?'Editar':'Novo'} cupom`,`
+    <div class="grid2">
+      <div class="field"><label>Código</label><input id="c-cod" value="${esc(c.codigo)}" placeholder="SURF10"></div>
+      <div class="field"><label>Parceiro</label><input id="c-par" value="${esc(c.parceiro)}" placeholder="Loja X"></div>
+      <div class="field"><label>Desconto</label><input id="c-desc" value="${esc(c.desconto)}" placeholder="10% off"></div>
+      <div class="field"><label>Validade</label><input id="c-val" value="${esc(c.validade)}" placeholder="31/12/2026"></div>
+    </div>
+    <div class="field"><label>Exclusivo premium?</label><select id="c-prem"><option value="1" ${c.premium?'selected':''}>Sim</option><option value="0" ${!c.premium?'selected':''}>Não</option></select></div>
+  `,()=>{
+    const o={codigo:val('c-cod'),parceiro:val('c-par'),desconto:val('c-desc'),validade:val('c-val'),premium:val('c-prem')==='1'};
+    if(!o.codigo){toast('Código é obrigatório');return false;}
+    if(i!=null)CUPS[i]=o; else CUPS.push(o);
+    renderCups(); toast('Cupom salvo (lembre de exportar)');
+  });
+}
+function delCup(i){ if(confirm('Excluir cupom '+CUPS[i].codigo+'?')){CUPS.splice(i,1);renderCups();} }
+function exportCups(){ download('coupons.json',CUPS); }
+
+/* ── PRAIAS ────────────────────────────────────────── */
+let beachesMeta=null;
+function loadBeachesFile(file){
+  if(!file)return;
+  const rd=new FileReader();
+  rd.onload=e=>{
+    try{
+      const j=JSON.parse(e.target.result);
+      beachesMeta=j._meta||null;
+      BEACHES=j.beaches||j;
+      document.getElementById('beach-add').disabled=false;
+      document.getElementById('beach-export').disabled=false;
+      renderBeaches();
+      toast(BEACHES.length+' praias carregadas');
+    }catch{ toast('Arquivo inválido'); }
+  };
+  rd.readAsText(file);
+}
+function renderBeaches(filter=''){
+  const f=filter.toLowerCase();
+  const rows=BEACHES.filter(b=>!f||(b.name+b.state+(b.region||'')).toLowerCase().includes(f));
+  document.getElementById('beach-count').textContent=BEACHES.length+' praias';
+  document.getElementById('beach-table').innerHTML=
+    '<tr><th>Praia</th><th>UF</th><th>Região</th><th>Fundo</th><th>Nível</th><th></th></tr>'+
+    rows.map(b=>{const i=BEACHES.indexOf(b);return `<tr>
+      <td>${esc(b.name)}</td><td>${esc(b.state)}</td><td>${esc(b.region)}</td><td><span class="pill">${esc(b.break)}</span></td><td>${esc(b.level)}</td>
+      <td class="row-actions"><button class="icon-btn" onclick="openBeach(${i})">editar</button><button class="icon-btn del" onclick="delBeach(${i})">excluir</button></td>
+    </tr>`}).join('');
+}
+function openBeach(i){
+  const b=i!=null?BEACHES[i]:{id:'',name:'',state:'',region:'sudeste',lat:'',lon:'',break:'beach',orientation:'',swellWindow:[],terral:'',tide:'media',level:'todos',character:'',active:true};
+  const sw=Array.isArray(b.swellWindow)?b.swellWindow.join(', '):(b.swellWindow||'');
+  modal(`${i!=null?'Editar':'Nova'} praia`,`
+    <div class="grid2">
+      <div class="field"><label>Nome</label><input id="b-name" value="${esc(b.name)}"></div>
+      <div class="field"><label>ID (slug)</label><input id="b-id" value="${esc(b.id)}" placeholder="praia-nova"></div>
+      <div class="field"><label>UF / País</label><input id="b-state" value="${esc(b.state)}"></div>
+      <div class="field"><label>Região</label><select id="b-region">${['norte','nordeste','leste','sudeste','sul','mundial'].map(r=>`<option ${r===b.region?'selected':''}>${r}</option>`).join('')}</select></div>
+      <div class="field"><label>Latitude</label><input id="b-lat" value="${esc(b.lat)}" placeholder="-22.88"></div>
+      <div class="field"><label>Longitude</label><input id="b-lon" value="${esc(b.lon)}" placeholder="-42.01"></div>
+      <div class="field"><label>Fundo</label><select id="b-break">${['beach','point','reef','rivermouth','misto'].map(x=>`<option ${x===b.break?'selected':''}>${x}</option>`).join('')}</select></div>
+      <div class="field"><label>Nível</label><select id="b-level">${['iniciante','intermediario','avancado','todos'].map(x=>`<option ${x===b.level?'selected':''}>${x}</option>`).join('')}</select></div>
+      <div class="field"><label>Orientação (olha p/)</label><input id="b-or" value="${esc(b.orientation)}" placeholder="S/SE"></div>
+      <div class="field"><label>Terral (offshore)</label><input id="b-terral" value="${esc(b.terral)}" placeholder="N/NO"></div>
+      <div class="field"><label>Janela de swell</label><input id="b-sw" value="${esc(sw)}" placeholder="S, SE, L"></div>
+      <div class="field"><label>Maré ideal</label><input id="b-tide" value="${esc(b.tide)}" placeholder="media"></div>
+    </div>
+    <div class="field"><label>Caráter / observações</label><textarea id="b-char" rows="3">${esc(b.character)}</textarea></div>
+  `,()=>{
+    const o={id:val('b-id')||val('b-name').toLowerCase().replace(/[^a-z0-9]+/g,'-'),name:val('b-name'),state:val('b-state'),region:val('b-region'),
+      lat:parseFloat(val('b-lat')),lon:parseFloat(val('b-lon')),break:val('b-break'),orientation:val('b-or'),
+      swellWindow:val('b-sw').split(',').map(s=>s.trim()).filter(Boolean),terral:val('b-terral'),tide:val('b-tide'),level:val('b-level'),
+      character:val('b-char'),active:true};
+    if(!o.name||isNaN(o.lat)||isNaN(o.lon)){toast('Nome e coordenadas são obrigatórios');return false;}
+    if(i!=null)BEACHES[i]=o; else BEACHES.push(o);
+    renderBeaches(); toast('Praia salva (lembre de exportar)');
+  });
+}
+function delBeach(i){ if(confirm('Excluir "'+BEACHES[i].name+'"?')){BEACHES.splice(i,1);renderBeaches();} }
+function exportBeaches(){ download('beaches.json',beachesMeta?{_meta:beachesMeta,beaches:BEACHES}:{beaches:BEACHES}); }
+
+/* ── TEMPLATES ─────────────────────────────────────── */
+function renderTpls(){
+  document.getElementById('tpl-table').innerHTML=
+    '<tr><th>Template</th><th>Formato</th><th>Ativo</th><th>Premium</th></tr>'+
+    TPLS.map((t,i)=>`<tr>
+      <td><strong>${esc(t.nome)}</strong></td><td>${esc(t.formato)}</td>
+      <td><input type="checkbox" style="width:auto" ${t.ativo?'checked':''} onchange="TPLS[${i}].ativo=this.checked"></td>
+      <td><input type="checkbox" style="width:auto" ${t.premium?'checked':''} onchange="TPLS[${i}].premium=this.checked"></td>
+    </tr>`).join('');
+}
+function exportTpls(){ download('templates.json',TPLS); }
+
+/* ── MODAL HELPERS ─────────────────────────────────── */
+function val(id){return document.getElementById(id).value.trim();}
+function modal(title,body,onSave){
+  const bg=document.createElement('div'); bg.className='modal-bg';
+  bg.innerHTML=`<div class="modal"><h3>${title}</h3>${body}
+    <div class="modal-actions"><button class="btn" id="m-cancel">Cancelar</button><button class="btn primary" id="m-save">Salvar</button></div></div>`;
+  document.body.appendChild(bg);
+  bg.querySelector('#m-cancel').onclick=()=>bg.remove();
+  bg.querySelector('#m-save').onclick=()=>{ if(onSave()!==false) bg.remove(); };
+  bg.onclick=e=>{ if(e.target===bg) bg.remove(); };
+}
+</script>
+</body>
+</html>
