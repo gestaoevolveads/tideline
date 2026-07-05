@@ -70,6 +70,42 @@
   .toast.show{opacity:1}
   .soon{text-align:center;padding:40px 20px;color:var(--muted)}
   .soon .big{font-size:32px;margin-bottom:12px}
+
+  /* view toggle */
+  .view-toggle{display:flex;gap:4px;background:var(--surface);border-radius:8px;padding:3px}
+  .view-toggle button{border:none;background:none;padding:6px 12px;border-radius:6px;font-size:12px;font-weight:700;color:var(--mid);cursor:pointer}
+  .view-toggle button.on{background:#fff;box-shadow:var(--sh)}
+
+  /* product cards */
+  .prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+  .prod-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;position:relative;transition:.15s}
+  .prod-card:hover{box-shadow:var(--sh);border-color:var(--muted)}
+  .prod-card.off{opacity:.5}
+  .prod-card .ico{width:44px;height:44px;color:var(--mid);margin-bottom:10px}
+  .prod-card .ico svg{width:100%;height:100%}
+  .prod-card .pc-marca{font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--accent)}
+  .prod-card .pc-nome{font-size:12.5px;font-weight:600;line-height:1.35;margin:3px 0 8px;min-height:34px}
+  .prod-card .pc-preco{font-size:15px;font-weight:800;color:var(--deep)}
+  .prod-card .pc-acts{display:flex;gap:6px;margin-top:10px;border-top:1px solid var(--line);padding-top:10px}
+  .prod-card .pc-cat{position:absolute;top:12px;right:12px;font-size:9px}
+
+  /* template previews */
+  .tpl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:18px}
+  .tpl-card{text-align:center}
+  .tpl-thumb{aspect-ratio:9/16;border-radius:14px;overflow:hidden;position:relative;box-shadow:var(--sh);display:flex;flex-direction:column;padding:16px 14px;color:#fff}
+  .tpl-thumb.feed{aspect-ratio:1/1}
+  .tpl-logo{font-size:11px;font-weight:800;letter-spacing:2px}
+  .tpl-photo{flex:1;border-radius:8px;margin:12px 0;display:flex;align-items:center;justify-content:center;font-size:22px;opacity:.5}
+  .tpl-stats{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:8px}
+  .tpl-stat{background:rgba(255,255,255,.12);border-radius:5px;padding:5px}
+  .tpl-stat b{font-size:13px;color:var(--accent);display:block}
+  .tpl-foot{font-size:8px;margin-top:8px;opacity:.7}
+  .tpl-meta{margin-top:10px}
+  .tpl-meta .nome{font-size:13px;font-weight:700}
+  .tpl-meta .fmt{font-size:11px;color:var(--muted)}
+  .tpl-flags{display:flex;gap:8px;justify-content:center;margin-top:8px;font-size:11px}
+  .tpl-flags label{display:flex;align-items:center;gap:4px;text-transform:none;letter-spacing:0;font-weight:600;color:var(--mid);margin:0}
+  .tpl-flags input{width:auto}
 </style>
 </head>
 <body>
@@ -109,12 +145,17 @@
         <div class="sub">Editar aqui muda o app de verdade: os produtos vêm do <code>products.json</code>. Edite, clique em <strong>Exportar</strong>, substitua o arquivo no projeto e faça commit.</div>
         <div class="toolbar">
           <button class="btn primary" onclick="openProd()">+ Novo produto</button>
-          <input class="search" placeholder="Buscar produto…" oninput="renderProds(this.value)">
+          <input class="search" placeholder="Buscar produto…" oninput="prodFilter=this.value;renderProds()">
+          <div class="view-toggle">
+            <button id="pv-cards" class="on" onclick="setProdView('cards')">Cards</button>
+            <button id="pv-table" onclick="setProdView('table')">Lista</button>
+          </div>
           <span style="flex:1"></span>
           <span class="count" id="prod-count"></span>
           <button class="btn dark" onclick="exportProds()">⬇ Exportar products.json</button>
         </div>
-        <div style="overflow-x:auto"><table id="prod-table"></table></div>
+        <div id="prod-cards" class="prod-grid"></div>
+        <div id="prod-table-wrap" class="hidden" style="overflow-x:auto"><table id="prod-table"></table></div>
       </div>
     </div>
 
@@ -155,9 +196,9 @@
     <div class="panel" id="panel-templates">
       <div class="card">
         <h2>Templates de compartilhamento</h2>
-        <div class="sub">Os modelos que o usuário usa para postar a sessão nas redes. Ative/desative e marque quais são premium.</div>
-        <div style="overflow-x:auto"><table id="tpl-table"></table></div>
-        <button class="btn dark" onclick="exportTpls()" style="margin-top:14px">⬇ Exportar templates.json</button>
+        <div class="sub">Os modelos que o usuário usa para postar a sessão nas redes. Veja o preview de cada um, ative/desative e marque quais são premium.</div>
+        <div class="tpl-grid" id="tpl-grid"></div>
+        <button class="btn dark" onclick="exportTpls()" style="margin-top:18px">⬇ Exportar templates.json</button>
       </div>
     </div>
 
@@ -212,8 +253,22 @@ function download(name,obj){
 }
 const esc=s=>String(s??'').replace(/</g,'&lt;').replace(/"/g,'&quot;');
 
+/* ── ÍCONES DA LOJA (iguais ao app) ─────────────────── */
+const LOJA_ICONS = {
+  leash:`<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 32Q14 14 24 24Q34 34 42 18"/><circle cx="42" cy="18" r="4" fill="currentColor" stroke="none"/></svg>`,
+  quilha:`<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M24 6L38 38H10Z"/><line x1="10" y1="38" x2="38" y2="38" stroke-linecap="round"/></svg>`,
+  deck:`<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="8" y="16" width="32" height="16" rx="4"/><line x1="16" y1="16" x2="16" y2="32"/><line x1="24" y1="16" x2="24" y2="32"/><line x1="32" y1="16" x2="32" y2="32"/></svg>`,
+  parafina:`<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="10" y="12" width="28" height="24" rx="5"/><path d="M16 24L32 24"/><path d="M16 30L26 30"/></svg>`,
+  roupa:`<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8L8 18L16 22V40H32V22L40 18L30 8Q27 14 24 14Q21 14 18 8Z"/></svg>`,
+  capa:`<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 16L12 40H36L34 16Z"/><path d="M19 16Q19 10 24 10Q29 10 29 16"/></svg>`,
+  rack:`<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="8" y1="14" x2="40" y2="14"/><line x1="8" y1="24" x2="40" y2="24"/><line x1="8" y1="34" x2="40" y2="34"/></svg>`,
+  camera:`<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="16" width="40" height="26" rx="4"/><circle cx="24" cy="29" r="7"/><circle cx="24" cy="29" r="3" fill="currentColor" stroke="none"/><path d="M18 16L20 11H28L30 16"/><circle cx="38" cy="22" r="2" fill="currentColor" stroke="none"/></svg>`,
+  outros:`<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="24" cy="24" r="16"/><line x1="16" y1="24" x2="32" y2="24"/><line x1="24" y1="16" x2="24" y2="32"/></svg>`,
+};
+
 /* ── DADOS ─────────────────────────────────────────── */
 let PRODS=[], CUPS=[], BEACHES=[], TPLS=[];
+let prodView='cards', prodFilter='';
 
 async function initData(){
   // produtos: auto-carrega do site
@@ -235,10 +290,29 @@ async function initData(){
 
 /* ── PRODUTOS ──────────────────────────────────────── */
 const CATS=['leash','quilha','deck','parafina','roupa','capa','rack','camera','outros'];
-function renderProds(filter=''){
-  const f=filter.toLowerCase();
+function setProdView(v){
+  prodView=v;
+  document.getElementById('pv-cards').classList.toggle('on',v==='cards');
+  document.getElementById('pv-table').classList.toggle('on',v==='table');
+  document.getElementById('prod-cards').classList.toggle('hidden',v!=='cards');
+  document.getElementById('prod-table-wrap').classList.toggle('hidden',v!=='table');
+  renderProds();
+}
+function renderProds(){
+  const f=prodFilter.toLowerCase();
   const rows=PRODS.filter(p=>!f||(p.nome+p.marca+p.cat).toLowerCase().includes(f));
   document.getElementById('prod-count').textContent=PRODS.length+' produtos';
+  // CARDS (visual, igual ao app)
+  document.getElementById('prod-cards').innerHTML=rows.map(p=>{const i=PRODS.indexOf(p);return `
+    <div class="prod-card${p.ativo===false?' off':''}">
+      <span class="pill pc-cat">${esc(p.cat)}</span>
+      <div class="ico">${LOJA_ICONS[p.cat]||LOJA_ICONS.outros}</div>
+      <div class="pc-marca">${esc(p.marca)||'&nbsp;'}</div>
+      <div class="pc-nome">${esc(p.nome)}</div>
+      <div class="pc-preco">${esc(p.preco)}</div>
+      <div class="pc-acts"><button class="icon-btn" style="flex:1" onclick="openProd(${i})">editar</button><button class="icon-btn del" onclick="delProd(${i})">✕</button></div>
+    </div>`}).join('') || '<div style="color:var(--muted);padding:20px">Nenhum produto.</div>';
+  // TABELA
   document.getElementById('prod-table').innerHTML=
     '<tr><th>Produto</th><th>Marca</th><th>Categoria</th><th>Preço</th><th>Status</th><th></th></tr>'+
     rows.map(p=>{const i=PRODS.indexOf(p);return `<tr>
@@ -363,14 +437,39 @@ function delBeach(i){ if(confirm('Excluir "'+BEACHES[i].name+'"?')){BEACHES.spli
 function exportBeaches(){ download('beaches.json',beachesMeta?{_meta:beachesMeta,beaches:BEACHES}:{beaches:BEACHES}); }
 
 /* ── TEMPLATES ─────────────────────────────────────── */
+// estilo visual de cada template (cores do brand guide)
+const TPL_STYLE = {
+  noite:        {bg:'#172726', card:'rgba(255,255,255,.06)', photo:'#243F3D', logo:'#D3E2DE', foot:'#D3E2DE'},
+  espuma:       {bg:'#D3E2DE', card:'rgba(23,39,38,.06)',   photo:'#476664', logo:'#172726', foot:'#172726'},
+  profundidade: {bg:'#476664', card:'rgba(23,39,38,.25)',   photo:'#172726', logo:'#D3E2DE', foot:'#D3E2DE'},
+  feed:         {bg:'#172726', card:'rgba(255,255,255,.06)', photo:'#243F3D', logo:'#D3E2DE', foot:'#D3E2DE'},
+};
 function renderTpls(){
-  document.getElementById('tpl-table').innerHTML=
-    '<tr><th>Template</th><th>Formato</th><th>Ativo</th><th>Premium</th></tr>'+
-    TPLS.map((t,i)=>`<tr>
-      <td><strong>${esc(t.nome)}</strong></td><td>${esc(t.formato)}</td>
-      <td><input type="checkbox" style="width:auto" ${t.ativo?'checked':''} onchange="TPLS[${i}].ativo=this.checked"></td>
-      <td><input type="checkbox" style="width:auto" ${t.premium?'checked':''} onchange="TPLS[${i}].premium=this.checked"></td>
-    </tr>`).join('');
+  document.getElementById('tpl-grid').innerHTML=TPLS.map((t,i)=>{
+    const s=TPL_STYLE[t.id]||TPL_STYLE.noite;
+    const isFeed=t.id==='feed';
+    return `<div class="tpl-card">
+      <div class="tpl-thumb${isFeed?' feed':''}" style="background:${s.bg}">
+        <div class="tpl-logo" style="color:${s.logo}">TIDELINE</div>
+        <div class="tpl-photo" style="background:${s.photo};color:${s.logo}">📷</div>
+        <div class="tpl-stats">
+          <div class="tpl-stat" style="background:${s.card};color:${s.logo}"><b>42</b>SESSÕES</div>
+          <div class="tpl-stat" style="background:${s.card};color:${s.logo}"><b>7</b>STREAK</div>
+          <div class="tpl-stat" style="background:${s.card};color:${s.logo}"><b>128</b>KM</div>
+          <div class="tpl-stat" style="background:${s.card};color:${s.logo}"><b>4.8</b>MELHOR</div>
+        </div>
+        <div class="tpl-foot" style="color:${s.foot}">Minha Temporada 2026</div>
+      </div>
+      <div class="tpl-meta">
+        <div class="nome">${esc(t.nome)}</div>
+        <div class="fmt">${esc(t.formato)}</div>
+        <div class="tpl-flags">
+          <label><input type="checkbox" ${t.ativo?'checked':''} onchange="TPLS[${i}].ativo=this.checked;renderTpls()"> Ativo</label>
+          <label><input type="checkbox" ${t.premium?'checked':''} onchange="TPLS[${i}].premium=this.checked;renderTpls()"> Premium</label>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
 }
 function exportTpls(){ download('templates.json',TPLS); }
 
