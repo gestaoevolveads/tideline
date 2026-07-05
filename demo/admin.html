@@ -114,8 +114,9 @@
 <div id="gate">
   <div class="gate-box">
     <h1>TIDE<span style="color:var(--accent)">LINE</span></h1>
-    <p>Painel de controle</p>
-    <input id="gate-pass" type="password" placeholder="Senha do painel" onkeydown="if(event.key==='Enter')tryLogin()">
+    <p id="gate-sub">Painel de controle</p>
+    <input id="gate-email" type="email" placeholder="Email do admin" class="hidden" onkeydown="if(event.key==='Enter')tryLogin()">
+    <input id="gate-pass" type="password" placeholder="Senha" onkeydown="if(event.key==='Enter')tryLogin()">
     <button onclick="tryLogin()">Entrar</button>
     <div class="gate-err" id="gate-err"></div>
   </div>
@@ -153,6 +154,7 @@
           <span style="flex:1"></span>
           <span class="count" id="prod-count"></span>
           <button class="btn dark" onclick="exportProds()">⬇ Exportar products.json</button>
+          <button class="btn" onclick="seedProds()" title="Envia todos os produtos atuais pro Supabase (use uma vez ao ativar o modo ao vivo)">☁ Publicar no Supabase</button>
         </div>
         <div id="prod-cards" class="prod-grid"></div>
         <div id="prod-table-wrap" class="hidden" style="overflow-x:auto"><table id="prod-table"></table></div>
@@ -218,17 +220,33 @@
 
 <div class="toast" id="toast"></div>
 
+<script src="./tideline-config.js"></script>
+<script src="./tideline-data.js"></script>
 <script>
 /* ── ACESSO (provisório) ──────────────────────────────
    Client-side, só pra manter acesso casual fora. Segurança real vem com Supabase. */
 const PANEL_PASS = 'tideline2026';
-function tryLogin(){
-  const v = document.getElementById('gate-pass').value;
-  if(v === PANEL_PASS){
-    sessionStorage.setItem('tl_admin','1');
-    showApp();
+const LIVE_MODE = !!(window.TIDELINE_CONFIG && window.TIDELINE_CONFIG.SUPABASE_URL && window.TIDELINE_CONFIG.SUPABASE_ANON_KEY);
+// no modo ao vivo, login é via Supabase Auth (seguro); senão, senha local (provisório)
+if(LIVE_MODE){
+  document.getElementById('gate-email').classList.remove('hidden');
+  document.getElementById('gate-sub').textContent = 'Login de administrador';
+}
+async function tryLogin(){
+  const err = document.getElementById('gate-err');
+  if(LIVE_MODE){
+    const email = document.getElementById('gate-email').value.trim();
+    const pass = document.getElementById('gate-pass').value;
+    try{
+      const sb = await window.TLData.client();
+      const { error } = await sb.auth.signInWithPassword({ email, password: pass });
+      if(error){ err.textContent = 'Login inválido'; return; }
+      showApp();
+    }catch(e){ err.textContent = 'Erro ao conectar no Supabase'; }
   } else {
-    document.getElementById('gate-err').textContent = 'Senha incorreta';
+    if(document.getElementById('gate-pass').value === PANEL_PASS){
+      sessionStorage.setItem('tl_admin','1'); showApp();
+    } else { err.textContent = 'Senha incorreta'; }
   }
 }
 function showApp(){
@@ -236,7 +254,8 @@ function showApp(){
   document.getElementById('app').classList.remove('hidden');
   initData();
 }
-if(sessionStorage.getItem('tl_admin')==='1') showApp();
+// atalho de sessão só no modo local; no ao vivo, sempre valida via Supabase Auth
+if(!LIVE_MODE && sessionStorage.getItem('tl_admin')==='1') showApp();
 
 function showPanel(id){
   document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.panel===id));
@@ -270,15 +289,21 @@ const LOJA_ICONS = {
 let PRODS=[], CUPS=[], BEACHES=[], TPLS=[];
 let prodView='cards', prodFilter='';
 
+const LIVE = !!(window.TLData && window.TLData.enabled);
 async function initData(){
-  // produtos: auto-carrega do site
-  try{ const r=await fetch('./products.json?v='+Date.now()); if(r.ok) PRODS=await r.json(); }catch{}
+  // indicador de modo no topo
+  const modeEl=document.querySelector('header .mode');
+  if(modeEl) modeEl.innerHTML = LIVE
+    ? '🟢 ao vivo · Supabase (edições atualizam o app na hora)'
+    : 'modo local · exporta e commita';
+  // produtos
+  try{ PRODS = window.TLData ? await window.TLData.loadProducts() : []; }catch{ PRODS=[]; }
   renderProds();
-  // cupons: auto-carrega se existir
-  try{ const r=await fetch('./coupons.json?v='+Date.now()); if(r.ok) CUPS=await r.json(); }catch{}
+  // cupons
+  try{ CUPS = window.TLData ? await window.TLData.loadCoupons() : []; }catch{ CUPS=[]; }
   renderCups();
-  // templates: default do brand guide
-  try{ const r=await fetch('./templates.json?v='+Date.now()); if(r.ok) TPLS=await r.json(); }catch{}
+  // templates
+  try{ TPLS = window.TLData ? await window.TLData.loadTemplates() : []; }catch{ TPLS=[]; }
   if(!TPLS.length) TPLS=[
     {id:'noite',nome:'Noite no Mar',formato:'Stories 1080x1920',ativo:true,premium:false},
     {id:'espuma',nome:'Espuma',formato:'Stories 1080x1920',ativo:true,premium:false},
@@ -341,16 +366,24 @@ function openProd(i){
     const o={cat:val('m-cat'),marca:val('m-marca'),nome:val('m-nome'),preco:val('m-preco'),url:val('m-url'),img:val('m-img'),ativo:val('m-ativo')==='1'};
     if(!o.nome){toast('Nome é obrigatório');return false;}
     if(!o.img) o.img=''; // sem imagem: fica no cadastro mas não exibe no app
-    if(i!=null){o.id=PRODS[i].id;PRODS[i]=o;} else {o.id='p'+(Date.now());PRODS.push(o);}
-    renderProds(); toast(o.img?'Produto salvo (lembre de exportar)':'Salvo, mas sem imagem não aparece na loja');
+    if(i!=null){o.id=PRODS[i].id;PRODS[i]=o;} else {o.id='p'+String(Date.now());PRODS.push(o);}
+    renderProds();
+    if(LIVE){ window.TLData.upsert('products',o).then(ok=>toast(ok?'✓ Atualizado no app ao vivo':'Erro ao salvar no Supabase')); }
+    else toast(o.img?'Produto salvo (lembre de exportar)':'Salvo, mas sem imagem não aparece na loja');
   });
   // preview ao vivo da imagem
   const imgIn=document.getElementById('m-img'), prev=document.getElementById('m-img-prev');
   const upd=()=>{ prev.innerHTML = imgIn.value.trim()?`<img src="${esc(imgIn.value.trim())}" style="max-width:120px;max-height:120px;border-radius:8px;border:1px solid var(--line)" onerror="this.style.opacity=.3">`:''; };
   imgIn.addEventListener('input',upd); upd();
 }
-function delProd(i){ if(confirm('Excluir "'+PRODS[i].nome+'"?')){PRODS.splice(i,1);renderProds();} }
+function delProd(i){ if(confirm('Excluir "'+PRODS[i].nome+'"?')){const id=PRODS[i].id;PRODS.splice(i,1);renderProds(); if(LIVE) window.TLData.remove('products','id',id).then(ok=>toast(ok?'✓ Removido do app':'Erro ao remover'));} }
 function exportProds(){ download('products.json',PRODS); }
+async function seedProds(){
+  if(!LIVE){ toast('Configure o Supabase primeiro (tideline-config.js)'); return; }
+  if(!confirm('Enviar os '+PRODS.length+' produtos atuais pro Supabase? Isso substitui os que estiverem lá.')) return;
+  const ok=await window.TLData.replaceAll('products',PRODS);
+  toast(ok?('✓ '+PRODS.length+' produtos publicados no Supabase'):'Erro ao publicar');
+}
 
 /* ── CUPONS ────────────────────────────────────────── */
 function renderCups(){
