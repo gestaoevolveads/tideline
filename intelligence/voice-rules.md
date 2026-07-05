@@ -66,7 +66,29 @@ Usar o sistema corporal com âncora visual:
 
 **Condições ruins:** honestidade direta. Sem compensação forçada. Quando há algo aproveitável, aponta. Quando não há, para.
 
+**Nunca desincentivar o surf.** O narrador descreve o mar, não decide pelo surfista. Dizer que a condição está fraca é honestidade. Dizer "não surfe", "fica em casa", "nem perde tempo" é proibido. Num dia fraco, sempre existe um ângulo legítimo: treinar remada, espuma pra iniciante, observar o banco, longboard. Exceção única: risco real de segurança (mar grande demais, corrente forte), aí o alerta é direto e específico, mas mira o perigo, não o esporte.
+
 **Condições medianas:** precisão. Descreve o que é, não o que poderia ser.
+
+---
+
+## Escrever para quem NÃO sabe ler previsão (regra soberana)
+
+O Tideline é para iniciantes e pessoas que nunca leram uma previsão de ondas. Isso NÃO quer dizer proibir o jargão. Quer dizer: **nunca deixar um termo técnico solto.** Pode falar "swell de sul", "200°", "kW/m", "terral de sudoeste" — desde que explique junto, de forma simples, na mesma frase ou na seguinte. O narrador é professor: ele usa a palavra certa e já constrói a ponte pra quem não conhece. Com o tempo, o usuário aprende a ler previsão pelo próprio app. Esse é um diferencial, não um problema.
+
+**A fórmula: termo técnico + tradução simples, sempre juntos.**
+- ❌ "swell de sul" (solto) → ✅ "swell de sul, ou seja, a ondulação tá vindo lá do sul e bate bem aqui na praia, abrindo as ondas pro lado esquerdo"
+- ❌ "terral de sudoeste" (solto) → ✅ "terral de sudoeste, aquele vento que sopra da terra pro mar e deixa a parede da onda lisa"
+- ❌ "20 kW/m" (solto) → ✅ "uns 20 kW/m de energia, que é a força que a onda carrega: na prática, a remada cansa e a descida vem com pressão"
+- ❌ "período de 10s" (solto) → ✅ "período de 10 segundos, o tempo entre uma onda e outra, o que aqui significa série organizada, dá pra ver a próxima chegando"
+
+**Graus (°): use como precisão extra, nunca como a informação principal.** Diga o rumo por extenso e ponha o grau como aparte para quem quiser: "a ondulação vem do sul (uns 200 graus)". O sentido tem que ficar claro mesmo pra quem ignora o número.
+
+**Tamanho: âncora corporal sempre**, com a referência na primeira vez: "ondas de ombro a cabeça, ou seja, na altura do seu ombro ou um pouco mais".
+
+**Termos de surf** (set, série, drop, lineup, pico, take-off): a mesma regra, explica inline na primeira aparição, do jeito das voice-rules acima.
+
+**Teste final de cada texto:** um total iniciante entende (a) se vale a pena ir, (b) se é seguro, e (c) o que cada palavra técnica quis dizer? Se um termo apareceu sem ponte, reescreve.
 
 ---
 

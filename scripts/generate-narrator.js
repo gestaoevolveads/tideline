@@ -2,84 +2,32 @@ const Anthropic = require('@anthropic-ai/sdk');
 const fs = require('fs');
 const path = require('path');
 
-const BEACHES = [
-  {name:'Fernando de Noronha',state:'PE',lat:-3.85,lon:-32.43},
-  {name:'Cacimba do Padre',state:'PE',lat:-3.86,lon:-32.43},
-  {name:'Jericoacoara',state:'CE',lat:-2.79,lon:-40.51},
-  {name:'Praia de Pipa',state:'RN',lat:-6.23,lon:-35.05},
-  {name:'Maracaípe',state:'PE',lat:-8.55,lon:-35.02},
-  {name:'Praia do Cupe',state:'PE',lat:-8.48,lon:-35.01},
-  {name:'Tiririca',state:'BA',lat:-14.28,lon:-38.99},
-  {name:'Engenhoca',state:'BA',lat:-14.26,lon:-38.99},
-  {name:'Barra de Ilhéus',state:'BA',lat:-14.78,lon:-39.04},
-  {name:'Itaúnas',state:'ES',lat:-18.42,lon:-39.67},
-  {name:'Saquarema',state:'RJ',lat:-22.93,lon:-42.51},
-  {name:'Praia do Forte',state:'RJ',lat:-22.88,lon:-42.01},
-  {name:'Praia do Peró',state:'RJ',lat:-22.84,lon:-42.07},
-  {name:'Ipanema',state:'RJ',lat:-22.98,lon:-43.20},
-  {name:'Arpoador',state:'RJ',lat:-22.99,lon:-43.19},
-  {name:'Prainha',state:'RJ',lat:-23.04,lon:-43.51},
-  {name:'Grumari',state:'RJ',lat:-23.04,lon:-43.54},
-  {name:'Recreio dos Bandeirantes',state:'RJ',lat:-23.02,lon:-43.47},
-  {name:'Barra da Tijuca',state:'RJ',lat:-23.01,lon:-43.36},
-  {name:'Macumba',state:'RJ',lat:-23.02,lon:-43.49},
-  {name:'Itacoatiara',state:'RJ',lat:-22.97,lon:-43.04},
-  {name:'Geribá',state:'RJ',lat:-22.77,lon:-41.90},
-  {name:'Tucuns',state:'RJ',lat:-22.77,lon:-41.88},
-  {name:'Monte Alto',state:'RJ',lat:-22.75,lon:-41.89},
-  {name:'Figueira',state:'RJ',lat:-22.77,lon:-41.87},
-  {name:'Praia Rasa',state:'RJ',lat:-22.73,lon:-41.93},
-  {name:'Foguete',state:'RJ',lat:-22.92,lon:-42.06},
-  {name:'Unamar',state:'RJ',lat:-22.94,lon:-42.22},
-  {name:'Praia Grande',state:'RJ',lat:-22.97,lon:-42.00},
-  {name:'Praia Brava (Arraial)',state:'RJ',lat:-22.97,lon:-42.02},
-  {name:'Praia Brava (Cabo Frio)',state:'RJ',lat:-22.89,lon:-42.00},
-  {name:'Praia Brava (Búzios)',state:'RJ',lat:-22.73,lon:-41.89},
-  {name:'Tombo',state:'SP',lat:-23.99,lon:-46.26},
-  {name:'Pitangueiras',state:'SP',lat:-23.98,lon:-46.25},
-  {name:'Barra do Sahy',state:'SP',lat:-23.74,lon:-45.53},
-  {name:'Maresias',state:'SP',lat:-23.80,lon:-45.57},
-  {name:'Camburi',state:'SP',lat:-23.66,lon:-45.43},
-  {name:'Itamambuca',state:'SP',lat:-23.37,lon:-44.98},
-  {name:'Vermelha do Norte',state:'SP',lat:-23.30,lon:-44.87},
-  {name:'Domingas Dias',state:'SP',lat:-23.49,lon:-45.11},
-  {name:'Praia do Bonete',state:'SP',lat:-23.83,lon:-45.35},
-  {name:'Castelhanos',state:'SP',lat:-23.79,lon:-45.26},
-  {name:'Massaguaçu',state:'SP',lat:-23.59,lon:-45.36},
-  {name:'Ponta da Praia',state:'SP',lat:-23.98,lon:-46.30},
-  {name:'Jureia',state:'SP',lat:-24.39,lon:-47.01},
-  {name:'Costão do Santinho',state:'SC',lat:-27.49,lon:-48.39},
-  {name:'Joaquina',state:'SC',lat:-27.63,lon:-48.44},
-  {name:'Praia Mole',state:'SC',lat:-27.60,lon:-48.43},
-  {name:'Campeche',state:'SC',lat:-27.67,lon:-48.49},
-  {name:'Barra da Lagoa',state:'SC',lat:-27.57,lon:-48.42},
-  {name:'Moçambique',state:'SC',lat:-27.55,lon:-48.41},
-  {name:'Pântano do Sul',state:'SC',lat:-27.78,lon:-48.51},
-  {name:'Praia da Silveira',state:'SC',lat:-28.05,lon:-48.64},
-  {name:'Praia do Ferrugem',state:'SC',lat:-28.07,lon:-48.62},
-  {name:'Praia do Rosa',state:'SC',lat:-28.12,lon:-48.65},
-  {name:'Ibiraquera',state:'SC',lat:-28.08,lon:-48.62},
-  {name:'Guarda do Embaú',state:'SC',lat:-27.82,lon:-48.60},
-  {name:'Atalaia',state:'SC',lat:-26.86,lon:-48.66},
-  {name:'Penha',state:'SC',lat:-26.76,lon:-48.64},
-  {name:'Caiobá',state:'PR',lat:-25.83,lon:-48.54},
-  {name:'Matinhos',state:'PR',lat:-25.82,lon:-48.54},
-  {name:'Torres',state:'RS',lat:-29.33,lon:-49.72},
-  {name:'Tramandaí',state:'RS',lat:-29.99,lon:-50.13},
-  {name:'Cidreira',state:'RS',lat:-30.17,lon:-50.22},
-  {name:'Arroio do Sal',state:'RS',lat:-29.56,lon:-49.89},
-  {name:'Capão da Canoa',state:'RS',lat:-29.77,lon:-50.01},
-  // Mundial WT
-  {name:'Snapper Rocks',state:'AUS',lat:-28.164,lon:153.543},
-  {name:'Bells Beach',state:'AUS',lat:-38.367,lon:144.282},
-  {name:'Jeffreys Bay',state:'ZAF',lat:-34.050,lon:24.912},
-  {name:'Hossegor',state:'FRA',lat:43.670,lon:-1.427},
-  {name:'Teahupoo',state:'PYF',lat:-17.848,lon:-149.250},
-  {name:'Pipeline',state:'HAW',lat:21.665,lon:-158.053},
-  {name:'Cloudbreak',state:'FJI',lat:-17.923,lon:177.217},
-  {name:'Mundaka',state:'ESP',lat:43.408,lon:-2.699},
-  {name:'Peniche',state:'PRT',lat:39.355,lon:-9.379},
-];
+const ROOT = path.join(__dirname, '..');
+const MODEL = 'claude-haiku-4-5-20251001';
+
+// ── Praias: fonte única em data/beaches.json (editável pelo painel admin) ──
+const ALL_BEACHES = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/beaches.json'), 'utf8')).beaches;
+const BEACHES = ALL_BEACHES.filter(b => b.active !== false);
+
+// ── Conhecimento destilado dos livros → system prompt (com prompt caching) ──
+function loadKnowledge() {
+  const files = [
+    'intelligence/persona.md',
+    'intelligence/voice-rules.md',
+    'intelligence/knowledge/01-ondas-e-previsao.md',
+    'intelligence/knowledge/02-geomorfologia-e-praias.md',
+    'intelligence/knowledge/03-seguranca-no-mar.md',
+    'intelligence/knowledge/04-etiqueta-e-tecnica.md',
+    'intelligence/knowledge/05-lingua-e-giria.md',
+  ];
+  return files
+    .map(f => {
+      try { return fs.readFileSync(path.join(ROOT, f), 'utf8'); }
+      catch { return ''; }
+    })
+    .filter(Boolean)
+    .join('\n\n============================\n\n');
+}
 
 const PERIODOS = [
   { nome: 'manha', inicio: 5, fim: 11 },
@@ -87,49 +35,97 @@ const PERIODOS = [
   { nome: 'noite', inicio: 18, fim: 23 },
 ];
 
-function avg(arr) {
-  if (!arr.length) return 0;
-  return arr.reduce((a, b) => a + b, 0) / arr.length;
+// ── Bússola: tokens PT (L=leste, O=oeste) → azimute ──
+const COMPASS = {
+  N: 0, NNE: 22.5, NE: 45, ENE: 67.5, E: 90, L: 90, ESE: 112.5, LSE: 112.5,
+  SE: 135, SSE: 157.5, S: 180, SSO: 202.5, SO: 225, OSO: 247.5, O: 270, W: 270,
+  ONO: 292.5, NO: 315, NNO: 337.5,
+};
+
+function azimuthOf(str) {
+  if (!str) return null;
+  const toks = String(str).toUpperCase().split(/[\/\s-]+/).map(t => COMPASS[t]).filter(v => v != null);
+  if (!toks.length) return null;
+  // média circular
+  let x = 0, y = 0;
+  for (const a of toks) { const r = a * Math.PI / 180; x += Math.cos(r); y += Math.sin(r); }
+  return ((Math.atan2(y, x) * 180 / Math.PI) + 360) % 360;
 }
 
-function classifyWindDir(graus, lat) {
-  // costa leste-oeste: offshore = vento de W/NW/SW
-  // simplificado: offshore se vento vem de terra (entre 180-360 pra praias que olham pro leste)
-  // usamos heuristica basica por lat
-  const d = ((graus % 360) + 360) % 360;
-  if (d >= 135 && d <= 315) return 'offshore';
-  if (d >= 315 || d <= 45) return 'onshore';
+function angDist(a, b) { const d = Math.abs(a - b) % 360; return d > 180 ? 360 - d : d; }
+
+// vento_from em graus (de onde o vento vem) + perfil da praia → offshore/onshore/lateral
+function classifyWind(windFromDeg, beach) {
+  let terralAz = azimuthOf(beach.terral);
+  if (terralAz == null) {
+    const faceAz = azimuthOf(beach.orientation);
+    if (faceAz == null) return 'lateral';
+    terralAz = (faceAz + 180) % 360; // offshore = oposto de onde a praia olha
+  }
+  const d = angDist(windFromDeg, terralAz);
+  if (d <= 55) return 'offshore';   // terral
+  if (d >= 125) return 'onshore';   // maral
   return 'lateral';
 }
 
-function wavePower(h, t) {
-  return (1025 * 9.81 * 9.81 * h * h * t) / (64 * Math.PI);
+function wavePower(h, t) { return (1025 * 9.81 * 9.81 * h * h * t) / (64 * Math.PI); }
+function avg(arr) { return arr.length ? arr.reduce((a, b) => a + b, 0) / arr.length : 0; }
+
+// ── Buckets: transformam números em faixas → texto reusável entre dias parecidos ──
+function heightBucket(m) {
+  if (m < 0.4) return 'flat';
+  if (m < 0.8) return 'joelho-cintura';
+  if (m < 1.2) return 'cintura-peito';
+  if (m < 1.7) return 'peito-ombro';
+  if (m < 2.3) return 'ombro-cabeca';
+  if (m < 3.0) return 'cabeca-1.5x';
+  return 'grande-2x+';
+}
+function periodBucket(s) {
+  if (s < 7) return 'curto-vaga';
+  if (s < 9) return 'medio-7a9';
+  if (s < 11) return 'bom-9a11';
+  if (s < 13) return 'longo-11a13';
+  if (s < 15) return 'muitolongo-13a15';
+  return 'epico-15+';
+}
+function windBucket(kmh, tipo) {
+  if (kmh < 6) return 'glassy';
+  const intens = kmh < 14 ? 'fraco' : kmh < 24 ? 'moderado' : 'forte';
+  return `${tipo}-${intens}`;
+}
+function turnKey(p) { return p; }
+
+function conditionKey(beach, b) {
+  return [
+    beach.id,
+    heightBucket(b.altura_m),
+    periodBucket(b.periodo_s),
+    windBucket(b.vento_kmh, b.vento_tipo),
+    b.periodo,
+  ].join('|');
 }
 
 async function fetchBeachData(beach) {
   const base = `&timezone=America%2FSao_Paulo&forecast_days=7`;
   const marineUrl = `https://marine-api.open-meteo.com/v1/marine?latitude=${beach.lat}&longitude=${beach.lon}&hourly=wave_height,wave_period,wave_direction${base}`;
   const forecastUrl = `https://api.open-meteo.com/v1/forecast?latitude=${beach.lat}&longitude=${beach.lon}&hourly=wind_speed_10m,wind_direction_10m${base}`;
-
   const [mRes, fRes] = await Promise.all([fetch(marineUrl), fetch(forecastUrl)]);
   if (!mRes.ok || !fRes.ok) throw new Error(`HTTP error for ${beach.name}`);
   const [marine, forecast] = await Promise.all([mRes.json(), fRes.json()]);
   return { marine, forecast };
 }
 
-function aggregateBlocos(marine, forecast) {
+function aggregateBlocos(beach, marine, forecast) {
   const times = marine.hourly.time;
   const blocos = [];
-
   for (const p of PERIODOS) {
-    // group by date
     const byDate = {};
     for (let i = 0; i < times.length; i++) {
-      const t = new Date(times[i]);
-      const h = t.getHours();
+      const h = new Date(times[i]).getHours();
       if (h < p.inicio || h >= p.fim) continue;
       const dateKey = times[i].split('T')[0];
-      if (!byDate[dateKey]) byDate[dateKey] = { wh: [], wp: [], wd: [], ws: [], wdir: [] };
+      (byDate[dateKey] ||= { wh: [], wp: [], wd: [], ws: [], wdir: [] });
       const d = byDate[dateKey];
       d.wh.push(parseFloat(marine.hourly.wave_height[i] || 0));
       d.wp.push(parseFloat(marine.hourly.wave_period[i] || 0));
@@ -137,141 +133,220 @@ function aggregateBlocos(marine, forecast) {
       d.ws.push(parseFloat(forecast.hourly.wind_speed_10m[i] || 0));
       d.wdir.push(parseFloat(forecast.hourly.wind_direction_10m[i] || 0));
     }
-
     for (const [data, d] of Object.entries(byDate)) {
-      const wh = avg(d.wh);
-      const wp = avg(d.wp);
-      const ws = avg(d.ws);
-      const wdirAvg = avg(d.wdir);
-      const kw = wavePower(wh, wp) / 1000;
+      const wh = avg(d.wh), wp = avg(d.wp), ws = avg(d.ws), wdirAvg = avg(d.wdir);
       blocos.push({
-        data,
-        periodo: p.nome,
+        data, periodo: p.nome,
         altura_m: +wh.toFixed(2),
         periodo_s: +wp.toFixed(1),
         direcao_swell: +avg(d.wd).toFixed(0),
         vento_kmh: +ws.toFixed(1),
         vento_direcao: +wdirAvg.toFixed(0),
-        vento_tipo: classifyWindDir(wdirAvg),
-        energia_kw: +kw.toFixed(1),
+        vento_tipo: classifyWind(wdirAvg, beach),
+        energia_kw: +(wavePower(wh, wp) / 1000).toFixed(1),
       });
     }
   }
-
-  return blocos.sort((a, b) => {
-    if (a.data !== b.data) return a.data.localeCompare(b.data);
-    const ordem = { manha: 0, tarde: 1, noite: 2 };
-    return ordem[a.periodo] - ordem[b.periodo];
-  });
+  const ordem = { manha: 0, tarde: 1, noite: 2 };
+  return blocos.sort((a, b) => a.data !== b.data ? a.data.localeCompare(b.data) : ordem[a.periodo] - ordem[b.periodo]);
 }
 
-async function analyzeBeach(client, beach, blocos, narratorKnowledge) {
-  const datas = [...new Set(blocos.map(b => b.data))].sort();
-  const prompt = `Analise as condições de surf para ${beach.name}, ${beach.state}.
+// ── Structured output: tool que garante JSON válido (fim dos erros de parsing) ──
+const TOOL = {
+  name: 'salvar_narracoes',
+  description: 'Salva as narrações geradas, uma entrada por condição, cada uma com exatamente 2 variações de texto.',
+  input_schema: {
+    type: 'object',
+    properties: {
+      narracoes: {
+        type: 'array',
+        description: 'Uma entrada por condição solicitada (mesmo id).',
+        items: {
+          type: 'object',
+          properties: {
+            id: { type: 'integer', description: 'o id da condição, exatamente como fornecido' },
+            variacoes: {
+              type: 'array',
+              description: 'exatamente 2 variações do texto, com aberturas e ênfases diferentes',
+              items: {
+                type: 'object',
+                properties: {
+                  score: { type: 'integer', description: '5=épico 4=muito bom 3=bom 2=razoável 1=fraco 0=não vale; -1 a -5=ruim/perigoso' },
+                  titulo: { type: 'string', description: 'máximo 5 palavras' },
+                  analise: { type: 'string', description: '2-3 frases, português coloquial de surf, sem travessão' },
+                  janela: { type: ['string', 'null'], description: 'horário ex "6h-9h" ou null' },
+                  aviso: { type: ['string', 'null'], description: 'alerta de segurança real ou null' },
+                },
+                required: ['score', 'titulo', 'analise', 'janela', 'aviso'],
+              },
+            },
+          },
+          required: ['id', 'variacoes'],
+        },
+      },
+    },
+    required: ['narracoes'],
+  },
+};
 
-DADOS por período (use EXATAMENTE estas datas: ${datas.join(', ')}):
-${JSON.stringify(blocos, null, 2)}
+function beachProfileText(b) {
+  return [
+    `Praia: ${b.name} (${b.state})`,
+    `Tipo de fundo: ${b.break}`,
+    `Orientação: olha para ${b.orientation}`,
+    `Janela de swell: ${(b.swellWindow || []).join(', ')}`,
+    `Terral (vento offshore): ${b.terral}`,
+    `Maré ideal: ${b.tide}`,
+    `Nível: ${b.level}`,
+    `Caráter: ${b.character}`,
+  ].join('\n');
+}
 
-INSTRUÇÃO: Retorne SOMENTE JSON válido. Sem markdown. Sem texto antes ou depois. Comece com { e termine com }.
+async function generateForBeach(client, system, beach, conditions) {
+  const lista = conditions.map(c => (
+    `#${c.id} | turno: ${c.turno} | altura: ~${c.altura_m}m (${c.faixa_altura}) | ` +
+    `período: ~${c.periodo_s}s (${c.faixa_periodo}) | energia: ~${c.energia_kw} kW/m | ` +
+    `vento: ${c.vento_tipo} ~${c.vento_kmh} km/h`
+  )).join('\n');
 
-O JSON deve ter EXATAMENTE esta estrutura, substituindo as datas pelos valores reais acima (${datas[0]}, ${datas[1]}, etc):
-{"dias":{"${datas[0]}":{"manha":{"score":0,"titulo":"","analise":"","janela":null,"aviso":null},"tarde":{"score":0,"titulo":"","analise":"","janela":null,"aviso":null},"noite":{"score":0,"titulo":"","analise":"","janela":null,"aviso":null}},"${datas[1]}":{"manha":{"score":0,"titulo":"","analise":"","janela":null,"aviso":null},"tarde":{"score":0,"titulo":"","analise":"","janela":null,"aviso":null},"noite":{"score":0,"titulo":"","analise":"","janela":null,"aviso":null}}}}
+  const prompt = `Escreva as narrações de surf para as condições abaixo, na praia:
 
-Preencha para TODAS as ${datas.length} datas listadas acima.
+${beachProfileText(beach)}
 
-SCORES: 5=épico 4=muito bom 3=bom 2=razoável 1=fraco 0=não vale -1 a -5=ruim/perigoso
-TÍTULO: máximo 5 palavras
-ANALISE: 2-3 frases em português coloquial de surf
-- Escreva o que o surfista VAI SENTIR na água, não de onde veio o swell
-- PROIBIDO: "tempestade no Atlântico", "swell veio de longe", "energia por dias", "mandou energia"
-- Varie a abertura de cada período — nunca comece duas com a mesma palavra
-- Mencione dados concretos: altura, período em segundos, energia em kW/m
-- Gírias naturais: pico, tubão, bombando, set limpo, remada pesada, fechar geral, etc
-- Dias ruins: seja breve e honesto
-JANELA: horário ex "6h-9h" ou null
-AVISO: alerta real (corrente, recife, tamanho perigoso) ou null`;
+CONDIÇÕES (uma narração por id, cada uma com 2 variações):
+${lista}
 
-  const response = await client.messages.create({
-    model: 'claude-haiku-4-5-20251001',
+REGRAS:
+- PÚBLICO INICIANTE (regra central): escreva para quem NUNCA leu uma previsão. Não é proibido usar termo técnico; é proibido deixar termo técnico SOLTO. Sempre que usar "swell de sul", "terral de sudoeste", "kW/m", "período de Xs" ou graus, explique junto, simples, na mesma frase. Ex: "swell de sul, ou seja, a ondulação vem do sul e abre as ondas pro lado esquerdo"; "uns 20 kW/m de energia, que é a força da onda: a remada cansa e a descida vem com pressão"; "terral de sudoeste, o vento que vem da terra e deixa a onda lisa". Graus entram como aparte ("do sul, uns 200 graus"), nunca como a informação principal. Tamanho sempre com âncora corporal explicada ("ombro a cabeça, na altura do seu ombro"). Teste: um iniciante entende cada palavra e sabe se vale a pena ir?
+- Escreva o que o surfista VAI SENTIR na água. Não descreva de onde veio o swell.
+- IMPORTANTE: escreva para a FAIXA da condição, não para o número decimal exato. O texto será reusado em dias com condição parecida, e o app mostra os números precisos por conta própria. Use âncora corporal (joelho, cintura, peito, ombro, cabeça) e descrição qualitativa. Pode citar o período em segundos de forma aproximada ("na casa dos 13s") e a energia de forma qualitativa. Evite decimais cravados como "1,82m".
+- Use o perfil da praia (fundo, orientação, janela, maré, caráter) para contextualizar.
+- 2 variações por condição: aberturas e ênfases diferentes, nunca comece as duas com a mesma palavra.
+- NUNCA desincentive o surf. Se a condição está fraca, seja honesto, mas sempre aponte um ângulo legítimo (treinar remada, espuma pra iniciante, longboard, observar o banco). "Não surfe" é proibido. Exceção: risco real de segurança, aí o aviso é direto e mira o perigo.
+- Sem travessão. Português coloquial brasileiro. Uma gíria técnica por frase no máximo.
+- janela: horário aproveitável ("6h-9h") ou null. aviso: alerta de segurança real ou null.
+
+Chame a ferramenta salvar_narracoes com uma entrada por id.`;
+
+  const resp = await client.messages.create({
+    model: MODEL,
     max_tokens: 8000,
-    system: [{ type: 'text', text: narratorKnowledge, cache_control: { type: 'ephemeral' } }],
+    system,
+    tools: [TOOL],
+    tool_choice: { type: 'tool', name: 'salvar_narracoes' },
     messages: [{ role: 'user', content: prompt }],
   });
 
-  let text = response.content[0].text.trim();
-  text = text.replace(/^```(?:json)?\s*/i, '').replace(/\s*```\s*$/, '');
-  const start = text.indexOf('{');
-  const end = text.lastIndexOf('}');
-  if (start !== -1 && end !== -1) text = text.slice(start, end + 1);
-  return JSON.parse(text);
+  const toolUse = resp.content.find(c => c.type === 'tool_use');
+  if (!toolUse) throw new Error('sem tool_use na resposta');
+  return toolUse.input.narracoes || [];
 }
 
-async function sleep(ms) {
-  return new Promise(r => setTimeout(r, ms));
-}
+const sleep = ms => new Promise(r => setTimeout(r, ms));
 
-async function processBeach(client, beach, narratorKnowledge, index, total, retry = 0) {
-  console.log(`[${index}/${total}] ${beach.name}${retry ? ` (tentativa ${retry + 1})` : ''}...`);
+async function generateForBeachRetry(client, system, beach, conditions, retry = 0) {
   try {
-    const { marine, forecast } = await fetchBeachData(beach);
-    const blocos = aggregateBlocos(marine, forecast);
-    const analysis = await analyzeBeach(client, beach, blocos, narratorKnowledge);
-    console.log(`  OK: ${beach.name}`);
-    return { name: beach.name, data: analysis };
+    return await generateForBeach(client, system, beach, conditions);
   } catch (err) {
-    console.error(`  Erro em ${beach.name}:`, err.message);
-    if (retry < 2) {
-      await sleep(8000);
-      return processBeach(client, beach, narratorKnowledge, index, total, retry + 1);
-    }
-    return { name: beach.name, data: { erro: true } };
+    console.error(`  Erro em ${beach.name}: ${err.message}`);
+    if (retry < 3) { await sleep(4000 * (retry + 1)); return generateForBeachRetry(client, system, beach, conditions, retry + 1); }
+    return [];
   }
 }
 
 async function main() {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) throw new Error('ANTHROPIC_API_KEY não definida');
-
   const client = new Anthropic({ apiKey });
-  const narratorKnowledge = fs.readFileSync(
-    path.join(__dirname, '../narrator-knowledge.md'),
-    'utf8'
-  );
 
-  const cache = {
-    generated_at: new Date().toISOString(),
-    beaches: {},
-  };
+  const knowledge = loadKnowledge();
+  const system = [{
+    type: 'text',
+    text: `Você é o Narrador do Tideline. Escreva análises de surf a partir do conhecimento abaixo. Nunca cite as fontes; use o conhecimento na escolha do detalhe certo.\n\n${knowledge}`,
+    cache_control: { type: 'ephemeral' },
+  }];
 
-  const BATCH_SIZE = 2;
-  const SLEEP_MS = 5000;
-  const total = BEACHES.length;
-  console.log(`Gerando narrações para ${total} praias em lotes de ${BATCH_SIZE} (com prompt caching)...`);
+  // Biblioteca acumulativa: conditionKey → { variacoes: [...] }. Cresce pra sempre; texto pago uma vez.
+  const libPath = path.join(ROOT, 'intelligence/narrator-library.json');
+  const library = fs.existsSync(libPath) ? JSON.parse(fs.readFileSync(libPath, 'utf8')) : { keys: {} };
+  library.keys ||= {};
 
-  for (let i = 0; i < total; i += BATCH_SIZE) {
-    const batch = BEACHES.slice(i, i + BATCH_SIZE);
-    const batchNum = Math.floor(i / BATCH_SIZE) + 1;
-    const totalBatches = Math.ceil(total / BATCH_SIZE);
-    console.log(`\nLote ${batchNum}/${totalBatches}: ${batch.map(b => b.name).join(', ')}`);
+  const dayOfMonth = new Date().getDate();
+  const cache = { generated_at: new Date().toISOString(), beaches: {} };
 
-    const results = await Promise.all(
-      batch.map((beach, j) => processBeach(client, beach, narratorKnowledge, i + j + 1, total))
-    );
+  let hits = 0, misses = 0, apiCalls = 0;
 
-    for (const r of results) {
-      cache.beaches[r.name] = r.data;
+  for (let bi = 0; bi < BEACHES.length; bi++) {
+    const beach = BEACHES[bi];
+    console.log(`[${bi + 1}/${BEACHES.length}] ${beach.name}...`);
+    let blocos;
+    try {
+      const { marine, forecast } = await fetchBeachData(beach);
+      blocos = aggregateBlocos(beach, marine, forecast);
+    } catch (err) {
+      console.error(`  Falha ao buscar dados: ${err.message}`);
+      continue;
     }
 
-    if (i + BATCH_SIZE < total) await sleep(SLEEP_MS);
+    // mapeia cada bloco → conditionKey; junta os que faltam na biblioteca
+    const blocoKeys = blocos.map(b => ({ b, key: conditionKey(beach, b) }));
+    const missing = [];
+    const seen = new Set();
+    for (const { b, key } of blocoKeys) {
+      if (library.keys[key] || seen.has(key)) continue;
+      seen.add(key);
+      missing.push({ b, key, id: missing.length + 1 });
+    }
+
+    if (missing.length) {
+      misses += missing.length;
+      const conditions = missing.map(m => ({
+        id: m.id, turno: m.b.periodo,
+        altura_m: m.b.altura_m, faixa_altura: heightBucket(m.b.altura_m),
+        periodo_s: m.b.periodo_s, faixa_periodo: periodBucket(m.b.periodo_s),
+        energia_kw: m.b.energia_kw, vento_tipo: m.b.vento_tipo, vento_kmh: m.b.vento_kmh,
+      }));
+      apiCalls++;
+      const narracoes = await generateForBeachRetry(client, system, beach, conditions);
+      for (const n of narracoes) {
+        const m = missing.find(x => x.id === n.id);
+        if (m && Array.isArray(n.variacoes) && n.variacoes.length) {
+          library.keys[m.key] = { variacoes: n.variacoes };
+        }
+      }
+      await sleep(1500);
+    }
+
+    // monta o cache no formato que o app já consome
+    const dias = {};
+    for (const { b, key } of blocoKeys) {
+      const entry = library.keys[key];
+      if (!entry) continue;
+      hits++;
+      const vars = entry.variacoes;
+      const v = vars[dayOfMonth % vars.length] || vars[0];
+      (dias[b.data] ||= {})[b.periodo] = {
+        score: v.score, titulo: v.titulo, analise: v.analise, janela: v.janela, aviso: v.aviso,
+      };
+    }
+    cache.beaches[beach.name] = { dias };
   }
 
-  const outPath = path.join(__dirname, '../demo/narrator-cache.json');
-  fs.writeFileSync(outPath, JSON.stringify(cache, null, 2));
-  console.log(`\nConcluído. narrator-cache.json salvo em ${outPath}`);
-  console.log(`Total: ${Object.keys(cache.beaches).length} praias geradas`);
+  // persiste biblioteca (acumula entre execuções) e cache (lido pelo app)
+  library.generated_at = new Date().toISOString();
+  fs.writeFileSync(libPath, JSON.stringify(library, null, 2));
+  fs.writeFileSync(path.join(ROOT, 'demo/narrator-cache.json'), JSON.stringify(cache, null, 2));
+
+  console.log(`\nConcluído. Praias: ${Object.keys(cache.beaches).length}`);
+  console.log(`Chamadas à API: ${apiCalls} | condições novas geradas: ${misses} | reusos do cache: ${hits}`);
+  console.log(`Biblioteca acumulada: ${Object.keys(library.keys).length} condições únicas`);
 }
 
-main().catch(err => {
-  console.error('Erro fatal:', err);
-  process.exit(1);
-});
+if (require.main === module) {
+  main().catch(err => { console.error('Erro fatal:', err); process.exit(1); });
+}
+
+module.exports = {
+  azimuthOf, classifyWind, heightBucket, periodBucket, windBucket,
+  conditionKey, aggregateBlocos, fetchBeachData, BEACHES,
+};

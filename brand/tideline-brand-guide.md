@@ -61,7 +61,7 @@ Tom: autêntico, técnico mas acessível, apaixonado pelo mar.
 - Não usar Accent em textos longos (só numbers e ícones)
 - Não usar fontes decorativas ou cursivas
 - Não usar verde ou azul vibrante que destoe da paleta
-- Não usar ilustrações com estilo cartoon ou infantil
+- Não usar ilustrações com estilo cartoon infantil/fofo (o cartum retrô oficial da marca é regido por `tideline-illustration-style.md`)
 - Não usar emojis como elementos de design
 - Não usar fundos brancos puros (o branco do Tideline é Surface #D3E2DE)
 
