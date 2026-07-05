@@ -324,7 +324,10 @@ async function main() {
       if (!entry) continue;
       hits++;
       const vars = entry.variacoes;
-      const v = vars[dayOfMonth % vars.length] || vars[0];
+      // rotaciona pela data PREVISTA (não pela data da rodada): mesma condição em
+      // dias diferentes mostra variações diferentes, matando a sensação de repetição
+      const dayIdx = parseInt(String(b.data).slice(-2), 10) || dayOfMonth;
+      const v = vars[dayIdx % vars.length] || vars[0];
       (dias[b.data] ||= {})[b.periodo] = {
         score: v.score, titulo: v.titulo, analise: v.analise, janela: v.janela, aviso: v.aviso,
       };

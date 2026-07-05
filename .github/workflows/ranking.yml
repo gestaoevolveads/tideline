@@ -3,7 +3,11 @@ name: Atualizar Ranking WSL
 on:
   workflow_dispatch:        # disparo manual ao fim de cada etapa
   schedule:
-    - cron: '0 12 * * 1'    # segurança: toda segunda 12h UTC
+    - cron: '30 15 * * 1'   # segurança: toda segunda 15h30 UTC (fora dos horários do narrador)
+
+concurrency:
+  group: tideline-data-push
+  cancel-in-progress: false
 
 jobs:
   ranking:

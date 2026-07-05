@@ -306,7 +306,8 @@ function renderProds(){
   document.getElementById('prod-cards').innerHTML=rows.map(p=>{const i=PRODS.indexOf(p);return `
     <div class="prod-card${p.ativo===false?' off':''}">
       <span class="pill pc-cat">${esc(p.cat)}</span>
-      <div class="ico">${LOJA_ICONS[p.cat]||LOJA_ICONS.outros}</div>
+      <div class="ico" style="position:relative">${LOJA_ICONS[p.cat]||LOJA_ICONS.outros}${p.img?`<img src="${esc(p.img)}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff" onerror="this.remove()">`:''}</div>
+      ${!p.img?'<span style="position:absolute;top:12px;left:12px;font-size:9px;color:var(--accent);font-weight:700">sem foto</span>':''}
       <div class="pc-marca">${esc(p.marca)||'&nbsp;'}</div>
       <div class="pc-nome">${esc(p.nome)}</div>
       <div class="pc-preco">${esc(p.preco)}</div>
@@ -323,7 +324,7 @@ function renderProds(){
     </tr>`}).join('');
 }
 function openProd(i){
-  const p=i!=null?PRODS[i]:{cat:'leash',marca:'',nome:'',preco:'',url:'',ativo:true};
+  const p=i!=null?PRODS[i]:{cat:'leash',marca:'',nome:'',preco:'',url:'',img:'',ativo:true};
   modal(`${i!=null?'Editar':'Novo'} produto`,`
     <div class="field"><label>Nome</label><input id="m-nome" value="${esc(p.nome)}"></div>
     <div class="grid2">
@@ -332,13 +333,21 @@ function openProd(i){
       <div class="field"><label>Preço</label><input id="m-preco" value="${esc(p.preco)}" placeholder="R$65"></div>
       <div class="field"><label>Ativo</label><select id="m-ativo"><option value="1" ${p.ativo!==false?'selected':''}>Sim</option><option value="0" ${p.ativo===false?'selected':''}>Não (oculto)</option></select></div>
     </div>
-    <div class="field"><label>Link (parceiro/afiliado)</label><input id="m-url" value="${esc(p.url)}" placeholder="https://..."></div>
+    <div class="field"><label>Link (parceiro/afiliado)</label><input id="m-url" value="${esc(p.url)}" placeholder="https://amzn.to/..."></div>
+    <div class="field"><label>Imagem (URL) — cole da Amazon via SiteStripe</label><input id="m-img" value="${esc(p.img)}" placeholder="https://m.media-amazon.com/images/..."></div>
+    <div style="font-size:11px;color:var(--muted);line-height:1.5;margin-top:-4px">⚠️ Sem imagem, o produto <strong>não aparece</strong> na loja do app (só produtos com foto são exibidos). Na barra de Afiliados da Amazon, botão "Imagem" → copiar link.</div>
+    <div id="m-img-prev" style="margin-top:10px"></div>
   `,()=>{
-    const o={cat:val('m-cat'),marca:val('m-marca'),nome:val('m-nome'),preco:val('m-preco'),url:val('m-url'),ativo:val('m-ativo')==='1'};
+    const o={cat:val('m-cat'),marca:val('m-marca'),nome:val('m-nome'),preco:val('m-preco'),url:val('m-url'),img:val('m-img'),ativo:val('m-ativo')==='1'};
     if(!o.nome){toast('Nome é obrigatório');return false;}
+    if(!o.img) o.img=''; // sem imagem: fica no cadastro mas não exibe no app
     if(i!=null){o.id=PRODS[i].id;PRODS[i]=o;} else {o.id='p'+(Date.now());PRODS.push(o);}
-    renderProds(); toast('Produto salvo (lembre de exportar)');
+    renderProds(); toast(o.img?'Produto salvo (lembre de exportar)':'Salvo, mas sem imagem não aparece na loja');
   });
+  // preview ao vivo da imagem
+  const imgIn=document.getElementById('m-img'), prev=document.getElementById('m-img-prev');
+  const upd=()=>{ prev.innerHTML = imgIn.value.trim()?`<img src="${esc(imgIn.value.trim())}" style="max-width:120px;max-height:120px;border-radius:8px;border:1px solid var(--line)" onerror="this.style.opacity=.3">`:''; };
+  imgIn.addEventListener('input',upd); upd();
 }
 function delProd(i){ if(confirm('Excluir "'+PRODS[i].nome+'"?')){PRODS.splice(i,1);renderProds();} }
 function exportProds(){ download('products.json',PRODS); }

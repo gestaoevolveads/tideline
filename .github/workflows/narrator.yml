@@ -5,6 +5,11 @@ on:
     - cron: '0 */6 * * *'
   workflow_dispatch:
 
+# serializa com ranking e feed pra evitar push simultâneo na main
+concurrency:
+  group: tideline-data-push
+  cancel-in-progress: false
+
 jobs:
   generate:
     runs-on: ubuntu-latest

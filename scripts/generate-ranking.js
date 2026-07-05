@@ -66,7 +66,8 @@ async function main() {
     const out = path.join(ROOT, `demo/ranking-${gender}.json`);
     try {
       const ranking = await fetchRanking(client, gender);
-      // preserva foto se já existir no JSON anterior (fotos locais em demo/athletes/)
+      // fotos vêm de arquivos locais em demo/athletes/{nome}.jpg (o app resolve),
+      // por isso o JSON não carrega URL de foto.
       fs.writeFileSync(out, JSON.stringify(ranking, null, 2));
       console.log(`OK ${gender}: ${ranking.length} atletas → ${path.basename(out)}`);
     } catch (err) {

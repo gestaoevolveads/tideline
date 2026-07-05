@@ -3,7 +3,11 @@ name: Atualizar Feed de Notícias
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 9 */2 * *'   # a cada 48h, 9h UTC
+    - cron: '0 9 */2 * *'   # a cada 48h, 9h UTC (fora dos horários do narrador)
+
+concurrency:
+  group: tideline-data-push
+  cancel-in-progress: false
 
 jobs:
   feed:
