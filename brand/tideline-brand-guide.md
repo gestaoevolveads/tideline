@@ -80,7 +80,10 @@ Tom: autêntico, técnico mas acessível, apaixonado pelo mar.
 Cada template exibe:
 - Logo Tideline (topo)
 - Espaço para foto do usuário (grande, centralizado)
-- Grid de stats: SESSÕES / STREAK / KM EXPLORADOS / MELHOR ONDA
+- Grid de stats (2x2): SESSÕES / PRAIA FAVORITA / MAIOR MAR / CONQUISTAS
+  (nada de "streak" ou "km" — não fazem sentido pro surf. Usar só o que o diário
+  registra: contagem de sessões, pico mais frequentado, maior onda pega, e a
+  conquista/badge da temporada)
 - Texto: "Minha Temporada 2026" (rodapé)
 - Tamanho: 1080x1920px (formato Stories Instagram)
 
