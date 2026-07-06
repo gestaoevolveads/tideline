@@ -118,7 +118,8 @@
     ctx.restore();
     ctx.fillStyle=C.paper;ctx.beginPath();ctx.arc(cx,cy,54,0,7);ctx.fill();
     logo(ctx,cx,cy+7,22,C.deep,true);
-    ctx.fillStyle=C.paper;ctx.font=`800 40px ${FF}`;ctx.fillText('MINHA TEMPORADA',cx,300);
+    ctx.textAlign='center';
+    ctx.fillStyle=C.paper;const mt=fit(ctx,'MINHA TEMPORADA',W-80,40,24,'800');ctx.font=`800 ${mt}px ${FF}`;ctx.fillText('MINHA TEMPORADA',cx,300);
     ctx.font=`600 16px ${FF}`;ctx.fillStyle='rgba(245,239,232,.85)';ctx.fillText(d.period,cx,330);
     const bx=40,by=380,bw=W-80,bh=460;ctx.fillStyle='rgba(23,39,38,.35)';rrect(ctx,bx,by,bw,bh,20);ctx.fill();
     [['SESSÕES',d.sessions],['PRAIA FAVORITA',d.praia],['MAIOR MAR',d.maiorMar],['CONQUISTA',d.conquista]].forEach((r,i)=>{const y=by+70+i*108;
