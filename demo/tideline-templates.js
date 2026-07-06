@@ -10,6 +10,17 @@
 
   function rrect(ctx,x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath();}
   function fit(ctx,t,maxW,base,min,weight){let fs=base;ctx.font=`${weight} ${fs}px ${FF}`;while(ctx.measureText(t).width>maxW&&fs>min){fs--;ctx.font=`${weight} ${fs}px ${FF}`;}return fs;}
+  // logotipo oficial: "tide"(fino) + "line"(negrito) + "."(laranja). Retorna a largura total.
+  function logo(ctx,x,y,size,col,center){
+    ctx.textAlign='left';
+    ctx.font=`300 ${size}px ${FF}`;const wt=ctx.measureText('tide').width;
+    ctx.font=`700 ${size}px ${FF}`;const wl=ctx.measureText('line').width;const wd=ctx.measureText('.').width;
+    const total=wt+wl+wd;const sx=center?x-total/2:x;
+    ctx.fillStyle=col;ctx.font=`300 ${size}px ${FF}`;ctx.fillText('tide',sx,y);
+    ctx.font=`700 ${size}px ${FF}`;ctx.fillText('line',sx+wt,y);
+    ctx.fillStyle=CB.accent;ctx.fillText('.',sx+wt+wl,y);
+    return total;
+  }
 
   /* ── GRADE (free) — grade 2x2 clássica, com foto, 3 esquemas de cor ── */
   function grade(ctx,W,H,d,opts){
@@ -64,8 +75,9 @@
     const cutY=ty+th*0.66;ctx.fillStyle=C.mid;
     ctx.beginPath();ctx.arc(tx,cutY,15,0,7);ctx.fill();ctx.beginPath();ctx.arc(tx+tw,cutY,15,0,7);ctx.fill();
     ctx.strokeStyle='rgba(23,39,38,.22)';ctx.lineWidth=2;ctx.setLineDash([2,6]);ctx.beginPath();ctx.moveTo(tx+24,cutY);ctx.lineTo(tx+tw-24,cutY);ctx.stroke();ctx.setLineDash([]);
-    ctx.textAlign='left';ctx.fillStyle=C.accent;ctx.font=`700 13px ${FF}`;ctx.fillText('TIDELINE · PASSE DE TEMPORADA',tx+32,ty+50);
-    ctx.fillStyle='rgba(23,39,38,.45)';ctx.font=`600 12px ${FF}`;ctx.textAlign='right';ctx.fillText(d.period,tx+tw-32,ty+50);ctx.textAlign='left';
+    const lw=logo(ctx,tx+32,ty+52,22,C.deep,false);
+    ctx.textAlign='left';ctx.fillStyle=C.accent;ctx.font=`700 11px ${FF}`;ctx.fillText('· PASSE DE TEMPORADA',tx+32+lw+8,ty+49);
+    ctx.fillStyle='rgba(23,39,38,.45)';ctx.font=`600 12px ${FF}`;ctx.textAlign='right';ctx.fillText(d.period,tx+tw-32,ty+49);ctx.textAlign='left';
     ctx.strokeStyle='rgba(23,39,38,.12)';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(tx+32,ty+68);ctx.lineTo(tx+tw-32,ty+68);ctx.stroke();
     ctx.fillStyle='rgba(23,39,38,.4)';ctx.font=`700 12px ${FF}`;ctx.fillText('PICO DA TEMPORADA',tx+32,ty+112);
     ctx.fillStyle=C.deep;const fs=fit(ctx,d.praia,tw-64,56,26,'800');ctx.font=`800 ${fs}px ${FF}`;ctx.fillText(d.praia,tx+32,ty+168);
@@ -105,7 +117,7 @@
     for(let i=0;i<40;i++){const a=(i/40)*Math.PI*2;ctx.fillStyle=i%2?'rgba(255,255,255,.06)':'rgba(255,255,255,.11)';ctx.beginPath();ctx.moveTo(cx,cy);ctx.arc(cx,cy,900,a,a+Math.PI*2/40);ctx.closePath();ctx.fill();}
     ctx.restore();
     ctx.fillStyle=C.paper;ctx.beginPath();ctx.arc(cx,cy,54,0,7);ctx.fill();
-    ctx.textAlign='center';ctx.fillStyle=C.deep;ctx.font=`800 22px ${FF}`;ctx.fillText('TIDELINE',cx,cy+8);
+    logo(ctx,cx,cy+7,22,C.deep,true);
     ctx.fillStyle=C.paper;ctx.font=`800 40px ${FF}`;ctx.fillText('MINHA TEMPORADA',cx,300);
     ctx.font=`600 16px ${FF}`;ctx.fillStyle='rgba(245,239,232,.85)';ctx.fillText(d.period,cx,330);
     const bx=40,by=380,bw=W-80,bh=460;ctx.fillStyle='rgba(23,39,38,.35)';rrect(ctx,bx,by,bw,bh,20);ctx.fill();
