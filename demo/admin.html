@@ -305,10 +305,10 @@ async function initData(){
   // templates
   try{ TPLS = window.TLData ? await window.TLData.loadTemplates() : []; }catch{ TPLS=[]; }
   if(!TPLS.length) TPLS=[
-    {id:'noite',nome:'Noite no Mar',formato:'Stories 1080x1920',ativo:true,premium:false},
-    {id:'espuma',nome:'Espuma',formato:'Stories 1080x1920',ativo:true,premium:false},
-    {id:'profundidade',nome:'Profundidade',formato:'Stories 1080x1920',ativo:true,premium:true},
-    {id:'feed',nome:'Feed Quadrado',formato:'Feed 1080x1080',ativo:true,premium:true},
+    {id:'manchete',nome:'Manchete',formato:'Stories 1080x1920',ativo:true,premium:false},
+    {id:'bilhete',nome:'Bilhete',formato:'Stories 1080x1920',ativo:true,premium:false},
+    {id:'onda',nome:'Onda',formato:'Stories 1080x1920',ativo:true,premium:true},
+    {id:'sol',nome:'Sol Retrô',formato:'Stories 1080x1920',ativo:true,premium:true},
   ];
   renderTpls();
 }
@@ -481,10 +481,10 @@ function exportBeaches(){ download('beaches.json',beachesMeta?{_meta:beachesMeta
 /* ── TEMPLATES ─────────────────────────────────────── */
 // estilo visual de cada template (cores do brand guide)
 const TPL_STYLE = {
-  noite:        {bg:'#172726', card:'rgba(255,255,255,.06)', photo:'#243F3D', logo:'#D3E2DE', foot:'#D3E2DE'},
-  espuma:       {bg:'#D3E2DE', card:'rgba(23,39,38,.06)',   photo:'#476664', logo:'#172726', foot:'#172726'},
-  profundidade: {bg:'#476664', card:'rgba(23,39,38,.25)',   photo:'#172726', logo:'#D3E2DE', foot:'#D3E2DE'},
-  feed:         {bg:'#172726', card:'rgba(255,255,255,.06)', photo:'#243F3D', logo:'#D3E2DE', foot:'#D3E2DE'},
+  manchete: {bg:'#172726', card:'rgba(255,255,255,.06)', photo:'#243F3D', logo:'#D3E2DE', foot:'#D3E2DE'},
+  bilhete:  {bg:'#243F3D', card:'rgba(242,239,232,.9)',  photo:'#F2EFE9', logo:'#F2EFE9', foot:'#D3E2DE'},
+  onda:     {bg:'#172726', card:'rgba(249,88,49,.9)',    photo:'#243F3D', logo:'#D3E2DE', foot:'#D3E2DE'},
+  sol:      {bg:'#F95831', card:'rgba(23,39,38,.35)',    photo:'#F2EFE9', logo:'#F2EFE9', foot:'#F2EFE9'},
 };
 function renderTpls(){
   document.getElementById('tpl-grid').innerHTML=TPLS.map((t,i)=>{
