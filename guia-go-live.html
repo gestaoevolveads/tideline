@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tideline · Guia de Go-Live</title>
+<style>
+  :root{
+    --deep:#172726; --mid:#243F3D; --muted:#476664; --surface:#D3E2DE; --accent:#F95831;
+    --paper:#F5F0E8; --line:#e2ddd2; --ok:#2f9e6f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,'Helvetica Neue',Inter,Arial,sans-serif;background:var(--paper);color:var(--deep);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:32px 20px 80px}
+  header{text-align:center;margin-bottom:12px}
+  .logo{font-size:26px;letter-spacing:4px;font-weight:300}
+  .logo b{font-weight:800}.logo .dot{color:var(--accent)}
+  .sub{font-size:13px;color:var(--muted);margin-top:6px;letter-spacing:.5px;text-transform:uppercase}
+
+  .progress{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:22px 0;display:flex;align-items:center;gap:14px;box-shadow:0 1px 3px rgba(23,39,38,.06)}
+  .bar{flex:1;height:8px;background:var(--line);border-radius:4px;overflow:hidden}
+  .bar span{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+  .pct{font-size:13px;font-weight:800;color:var(--accent);white-space:nowrap}
+
+  .blocker{background:#2a1a14;color:#fff;border-radius:14px;padding:20px 22px;margin:22px 0;border:1px solid rgba(249,88,49,.4)}
+  .blocker h2{font-size:16px;margin-bottom:8px;color:var(--accent)}
+  .blocker p{font-size:14px;color:rgba(255,255,255,.82);margin-bottom:10px}
+  .blocker code{background:rgba(255,255,255,.1);padding:2px 7px;border-radius:5px;font-size:13px;color:#fff;font-family:ui-monospace,Menlo,monospace}
+  .blocker pre{background:rgba(0,0,0,.35);border-radius:8px;padding:12px 14px;font-size:13px;overflow-x:auto;margin:8px 0;font-family:ui-monospace,Menlo,monospace;color:#eee}
+
+  .phase{margin:34px 0 10px}
+  .phase h2{font-size:14px;text-transform:uppercase;letter-spacing:2px;color:var(--muted);display:flex;align-items:center;gap:10px}
+  .phase h2::after{content:'';flex:1;height:1px;background:var(--line)}
+  .phase .tag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;letter-spacing:.5px}
+  .tag.now{background:rgba(249,88,49,.15);color:var(--accent)}
+  .tag.next{background:var(--surface);color:var(--mid)}
+  .tag.later{background:#eee;color:var(--muted)}
+
+  .step{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:12px 0;display:flex;gap:14px;box-shadow:0 1px 3px rgba(23,39,38,.05);transition:.15s}
+  .step.done{opacity:.55}
+  .step.done .st-title{text-decoration:line-through}
+  .check{flex-shrink:0;width:26px;height:26px;border:2px solid var(--line);border-radius:8px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:15px;color:#fff;transition:.15s;background:#fff}
+  .check.on{background:var(--ok);border-color:var(--ok)}
+  .st-body{flex:1}
+  .st-num{font-size:11px;font-weight:800;color:var(--accent);letter-spacing:1px}
+  .st-title{font-size:16px;font-weight:700;margin:2px 0 5px}
+  .st-desc{font-size:14px;color:var(--mid)}
+  .st-desc code{background:var(--surface);padding:1px 6px;border-radius:5px;font-size:13px;font-family:ui-monospace,Menlo,monospace}
+  .st-links{margin-top:11px;display:flex;flex-wrap:wrap;gap:8px}
+  a.btn{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;text-decoration:none;padding:8px 14px;border-radius:8px;background:var(--deep);color:#fff;transition:.15s}
+  a.btn:hover{background:var(--accent)}
+  a.btn.ghost{background:#fff;color:var(--mid);border:1.5px solid var(--line)}
+  a.btn.ghost:hover{border-color:var(--accent);color:var(--accent);background:#fff}
+
+  .note{font-size:13px;color:var(--muted);background:#fff;border:1px dashed var(--line);border-radius:10px;padding:12px 15px;margin:14px 0}
+  .ref{margin-top:40px;background:var(--deep);color:var(--surface);border-radius:14px;padding:22px}
+  .ref h3{font-size:14px;text-transform:uppercase;letter-spacing:2px;color:rgba(211,226,222,.6);margin-bottom:12px}
+  .ref a{color:var(--surface);text-decoration:none;font-size:14px;display:block;padding:7px 0;border-bottom:1px solid rgba(211,226,222,.1)}
+  .ref a:hover{color:var(--accent)}
+  .ref a span{color:rgba(211,226,222,.4);font-size:12px}
+  footer{text-align:center;margin-top:40px;font-size:12px;color:var(--muted)}
+  .reset{background:none;border:none;color:var(--muted);font-size:12px;text-decoration:underline;cursor:pointer;margin-top:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">tide<b>line</b><span class="dot">.</span></div>
+    <div class="sub">Guia de Go-Live · passo a passo</div>
+  </header>
+
+  <div class="progress">
+    <div class="bar"><span id="bar"></span></div>
+    <div class="pct" id="pct">0%</div>
+  </div>
+
+  <div class="blocker">
+    <h2>⚠️ Primeiro: destravar o envio do código</h2>
+    <p>O código está pronto (12 commits), mas o push travou porque o Mac está logado no GitHub como <code>gestaoevolveads</code>, e o repositório é <code>hcmsffc-sys/tideline</code>. Contas diferentes.</p>
+    <p><strong>A forma mais fácil</strong> — abra o Terminal (Aplicativos → Utilitários → Terminal) e cole:</p>
+    <pre>cd ~/Desktop/Tideline
+git push origin main</pre>
+    <p>Se pedir login, entre com a conta <strong>hcmsffc-sys</strong> (a dona do repositório). Depois disso o Mac guarda e não pede mais.</p>
+  </div>
+
+  <!-- FASE 1 -->
+  <div class="phase"><h2><span class="tag now">Fase 1 · hoje</span> Colocar no ar (grátis)</h2></div>
+
+  <div class="step" data-id="s1">
+    <div class="check">✓</div>
+    <div class="st-body">
+      <div class="st-num">PASSO 1</div>
+      <div class="st-title">Enviar o código pro GitHub</div>
+      <div class="st-desc">Rodar os dois comandos do quadro laranja acima, no Terminal.</div>
+      <div class="st-links"><a class="btn ghost" href="https://github.com/hcmsffc-sys/tideline" target="_blank">Abrir o repositório ↗</a></div>
+    </div>
+  </div>
+
+  <div class="step" data-id="s2">
+    <div class="check">✓</div>
+    <div class="st-body">
+      <div class="st-num">PASSO 2</div>
+      <div class="st-title">Conferir a chave da IA (ANTHROPIC_API_KEY)</div>
+      <div class="st-desc">Em Settings → Secrets, veja se existe <code>ANTHROPIC_API_KEY</code>. Se não existir, pegue a chave no console da Anthropic e cadastre com esse nome exato.</div>
+      <div class="st-links">
+        <a class="btn" href="https://github.com/hcmsffc-sys/tideline/settings/secrets/actions" target="_blank">Secrets do GitHub ↗</a>
+        <a class="btn ghost" href="https://console.anthropic.com/settings/keys" target="_blank">Pegar chave na Anthropic ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="step" data-id="s3">
+    <div class="check">✓</div>
+    <div class="st-body">
+      <div class="st-num">PASSO 3</div>
+      <div class="st-title">Gerar os dados (rodar os 3 workflows)</div>
+      <div class="st-desc">Na aba Actions, rode uma vez cada um em "Run workflow": <strong>Gerar Narrações</strong>, <strong>Atualizar Ranking WSL</strong> e <strong>Atualizar Feed de Notícias</strong>. Isso preenche as análises das 87 praias, o ranking e as notícias.</div>
+      <div class="st-links"><a class="btn" href="https://github.com/hcmsffc-sys/tideline/actions" target="_blank">Abrir o Actions ↗</a></div>
+    </div>
+  </div>
+
+  <div class="step" data-id="s4">
+    <div class="check">✓</div>
+    <div class="st-body">
+      <div class="st-num">PASSO 4</div>
+      <div class="st-title">Publicar o site (GitHub Pages)</div>
+      <div class="st-desc">Em Settings → Pages, no campo "Source", escolha <strong>GitHub Actions</strong>. O site sobe sozinho num endereço tipo <code>hcmsffc-sys.github.io/tideline</code>.</div>
+      <div class="st-links"><a class="btn" href="https://github.com/hcmsffc-sys/tideline/settings/pages" target="_blank">Settings → Pages ↗</a></div>
+    </div>
+  </div>
+
+  <div class="step" data-id="s5">
+    <div class="check">✓</div>
+    <div class="st-body">
+      <div class="st-num">PASSO 5</div>
+      <div class="st-title">Conferir o site no ar 🎉</div>
+      <div class="st-desc">Abra o endereço do Pages e navegue. Opcional: apontar um domínio próprio (Settings → Pages → Custom domain).</div>
+    </div>
+  </div>
+
+  <div class="note">✅ Terminou a Fase 1? O Tideline está no ar, de graça, com a inteligência dos livros rodando. Custo só da API (centavos com o cache). Pode parar aqui e validar com usuários antes da Fase 2.</div>
+
+  <!-- FASE 2 -->
+  <div class="phase"><h2><span class="tag next">Fase 2 · depois</span> Login + painel ao vivo + premium</h2></div>
+
+  <div class="step" data-id="s6">
+    <div class="check">✓</div>
+    <div class="st-body">
+      <div class="st-num">PASSO 6</div>
+      <div class="st-title">Criar o projeto no Supabase</div>
+      <div class="st-desc">Conta grátis, novo projeto (região São Paulo). Depois: rodar o SQL do arquivo <code>SUPABASE.md</code> no SQL Editor, criar seu usuário admin em Authentication, e copiar as chaves em Settings → API.</div>
+      <div class="st-links"><a class="btn" href="https://supabase.com/dashboard" target="_blank">Abrir o Supabase ↗</a></div>
+    </div>
+  </div>
+
+  <div class="step" data-id="s7">
+    <div class="check">✓</div>
+    <div class="st-body">
+      <div class="st-num">PASSO 7</div>
+      <div class="st-title">Conectar e publicar os dados</div>
+      <div class="st-desc">Colar as 2 chaves em <code>demo/tideline-config.js</code>, commit uma vez (único deploy). Abrir o painel e clicar em "☁ Publicar no Supabase". A partir daí: editar no painel muda o app <strong>na hora</strong>, sem deploy.</div>
+    </div>
+  </div>
+
+  <div class="step" data-id="s8">
+    <div class="check">✓</div>
+    <div class="st-body">
+      <div class="st-num">PASSO 8</div>
+      <div class="st-title">Pagamento e paywall do premium</div>
+      <div class="st-desc">Mercado Pago (Pix/cartão) ou Stripe, cobrando pelo site (nunca dentro da loja de apps). Depois ligar o gate nos templates premium e nos dias 4-7 da previsão.</div>
+      <div class="st-links">
+        <a class="btn ghost" href="https://www.mercadopago.com.br/developers/pt" target="_blank">Mercado Pago Devs ↗</a>
+        <a class="btn ghost" href="https://dashboard.stripe.com/register" target="_blank">Stripe ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FASE 3 -->
+  <div class="phase"><h2><span class="tag later">Fase 3 · crescer</span> Diferenciais vs Surfguru</h2></div>
+
+  <div class="step" data-id="s9">
+    <div class="check">✓</div>
+    <div class="st-body">
+      <div class="st-num">PASSO 9</div>
+      <div class="st-title">Recursos que viram fosso</div>
+      <div class="st-desc">Botão "por quê?" em cada análise (vira escola), ritual matinal de alerta no app, "o que rolou" pós-sessão (compara previsão × realidade). Depois: alerta por WhatsApp (premium) e virar app de loja (PWA → Capacitor).</div>
+    </div>
+  </div>
+
+  <!-- REFERÊNCIA -->
+  <div class="ref">
+    <h3>Links de referência</h3>
+    <a href="https://github.com/hcmsffc-sys/tideline" target="_blank">Repositório GitHub <span>· hcmsffc-sys/tideline</span></a>
+    <a href="https://github.com/hcmsffc-sys/tideline/actions" target="_blank">GitHub Actions <span>· rodar os workflows</span></a>
+    <a href="https://github.com/hcmsffc-sys/tideline/settings/pages" target="_blank">GitHub Pages <span>· publicar o site</span></a>
+    <a href="https://github.com/hcmsffc-sys/tideline/settings/secrets/actions" target="_blank">GitHub Secrets <span>· a chave da API</span></a>
+    <a href="https://github.com/settings/tokens" target="_blank">Gerar token GitHub <span>· se precisar pro push</span></a>
+    <a href="https://console.anthropic.com/settings/keys" target="_blank">Anthropic API Keys <span>· a chave da IA</span></a>
+    <a href="https://supabase.com/dashboard" target="_blank">Supabase <span>· login + painel ao vivo (fase 2)</span></a>
+    <a href="https://dash.cloudflare.com" target="_blank">Cloudflare Pages <span>· alternativa de hospedagem</span></a>
+  </div>
+
+  <footer>
+    Guia gerado pra você · os detalhes técnicos completos estão em <strong>PROXIMOS-PASSOS.md</strong>, <strong>DEPLOY.md</strong> e <strong>SUPABASE.md</strong> na pasta do projeto.
+    <br><button class="reset" onclick="localStorage.removeItem('tl_golive');location.reload()">Desmarcar tudo</button>
+  </footer>
+</div>
+
+<script>
+  const KEY='tl_golive';
+  const done=JSON.parse(localStorage.getItem(KEY)||'{}');
+  const steps=document.querySelectorAll('.step');
+  function update(){
+    let n=0;
+    steps.forEach(s=>{ if(done[s.dataset.id]){n++;s.classList.add('done');s.querySelector('.check').classList.add('on');}else{s.classList.remove('done');s.querySelector('.check').classList.remove('on');} });
+    const pct=Math.round(n/steps.length*100);
+    document.getElementById('bar').style.width=pct+'%';
+    document.getElementById('pct').textContent=pct+'%';
+  }
+  steps.forEach(s=>{
+    s.querySelector('.check').addEventListener('click',()=>{ done[s.dataset.id]=!done[s.dataset.id]; localStorage.setItem(KEY,JSON.stringify(done)); update(); });
+  });
+  update();
+</script>
+</body>
+</html>
