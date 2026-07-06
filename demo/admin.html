@@ -92,6 +92,7 @@
   /* template previews */
   .tpl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:18px}
   .tpl-card{text-align:center}
+  .tpl-real{width:100%;aspect-ratio:9/16;border-radius:12px;box-shadow:var(--sh);display:block}
   .tpl-thumb{aspect-ratio:9/16;border-radius:14px;overflow:hidden;position:relative;box-shadow:var(--sh);display:flex;flex-direction:column;padding:16px 14px;color:#fff}
   .tpl-thumb.feed{aspect-ratio:1/1}
   .tpl-logo{font-size:11px;font-weight:800;letter-spacing:2px}
@@ -222,6 +223,7 @@
 
 <script src="./tideline-config.js"></script>
 <script src="./tideline-data.js"></script>
+<script src="./tideline-templates.js"></script>
 <script>
 /* ── ACESSO (provisório) ──────────────────────────────
    Client-side, só pra manter acesso casual fora. Segurança real vem com Supabase. */
@@ -304,12 +306,7 @@ async function initData(){
   renderCups();
   // templates
   try{ TPLS = window.TLData ? await window.TLData.loadTemplates() : []; }catch{ TPLS=[]; }
-  if(!TPLS.length) TPLS=[
-    {id:'manchete',nome:'Manchete',formato:'Stories 1080x1920',ativo:true,premium:false},
-    {id:'bilhete',nome:'Bilhete',formato:'Stories 1080x1920',ativo:true,premium:false},
-    {id:'onda',nome:'Onda',formato:'Stories 1080x1920',ativo:true,premium:true},
-    {id:'sol',nome:'Sol Retrô',formato:'Stories 1080x1920',ativo:true,premium:true},
-  ];
+  if(!TPLS.length && window.TLTemplates) TPLS = window.TLTemplates.LIST.map(t=>({id:t.id,nome:t.nome,formato:'Stories 1080x1920',ativo:true,premium:t.premium}));
   renderTpls();
 }
 
@@ -479,39 +476,25 @@ function delBeach(i){ if(confirm('Excluir "'+BEACHES[i].name+'"?')){BEACHES.spli
 function exportBeaches(){ download('beaches.json',beachesMeta?{_meta:beachesMeta,beaches:BEACHES}:{beaches:BEACHES}); }
 
 /* ── TEMPLATES ─────────────────────────────────────── */
-// estilo visual de cada template (cores do brand guide)
-const TPL_STYLE = {
-  manchete: {bg:'#172726', card:'rgba(255,255,255,.06)', photo:'#243F3D', logo:'#D3E2DE', foot:'#D3E2DE'},
-  bilhete:  {bg:'#243F3D', card:'rgba(242,239,232,.9)',  photo:'#F2EFE9', logo:'#F2EFE9', foot:'#D3E2DE'},
-  onda:     {bg:'#172726', card:'rgba(249,88,49,.9)',    photo:'#243F3D', logo:'#D3E2DE', foot:'#D3E2DE'},
-  sol:      {bg:'#F95831', card:'rgba(23,39,38,.35)',    photo:'#F2EFE9', logo:'#F2EFE9', foot:'#F2EFE9'},
-};
+const TPL_SAMPLE = {sessions:'42',praia:'Maresias',maiorMar:'2,4m',conquista:'Explorador',period:'JULHO 2026',range:'1 JUL — 31 JUL'};
 function renderTpls(){
-  document.getElementById('tpl-grid').innerHTML=TPLS.map((t,i)=>{
-    const s=TPL_STYLE[t.id]||TPL_STYLE.noite;
-    const isFeed=t.id==='feed';
-    return `<div class="tpl-card">
-      <div class="tpl-thumb${isFeed?' feed':''}" style="background:${s.bg}">
-        <div class="tpl-logo" style="color:${s.logo}">TIDELINE</div>
-        <div class="tpl-photo" style="background:${s.photo};color:${s.logo}">📷</div>
-        <div class="tpl-stats">
-          <div class="tpl-stat" style="background:${s.card};color:${s.logo}"><b>42</b>SESSÕES</div>
-          <div class="tpl-stat" style="background:${s.card};color:${s.logo}"><b style="font-size:9px">Maresias</b>PRAIA FAVORITA</div>
-          <div class="tpl-stat" style="background:${s.card};color:${s.logo}"><b>2.4m</b>MAIOR MAR</div>
-          <div class="tpl-stat" style="background:${s.card};color:${s.logo}"><b style="font-size:9px">Explorador</b>CONQUISTA</div>
-        </div>
-        <div class="tpl-foot" style="color:${s.foot}">Minha Temporada 2026</div>
-      </div>
+  const grid=document.getElementById('tpl-grid');
+  grid.innerHTML=TPLS.map((t,i)=>`<div class="tpl-card">
+      <canvas class="tpl-real" id="tplcv-${i}" width="540" height="960"></canvas>
       <div class="tpl-meta">
-        <div class="nome">${esc(t.nome)}</div>
+        <div class="nome">${esc(t.nome)}${t.premium?' <span style="font-size:9px;background:var(--accent);color:#fff;padding:1px 5px;border-radius:4px;font-weight:800">PRO</span>':' <span style="font-size:9px;color:var(--ok);font-weight:800">FREE</span>'}</div>
         <div class="fmt">${esc(t.formato)}</div>
         <div class="tpl-flags">
-          <label><input type="checkbox" ${t.ativo?'checked':''} onchange="TPLS[${i}].ativo=this.checked;renderTpls()"> Ativo</label>
-          <label><input type="checkbox" ${t.premium?'checked':''} onchange="TPLS[${i}].premium=this.checked;renderTpls()"> Premium</label>
+          <label><input type="checkbox" ${t.ativo?'checked':''} onchange="TPLS[${i}].ativo=this.checked"> Ativo</label>
+          <label><input type="checkbox" ${t.premium?'checked':''} onchange="TPLS[${i}].premium=this.checked"> Premium</label>
         </div>
       </div>
-    </div>`;
-  }).join('');
+    </div>`).join('');
+  // desenha os cards reais
+  if(window.TLTemplates) TPLS.forEach((t,i)=>{
+    const cv=document.getElementById('tplcv-'+i);
+    if(cv) window.TLTemplates.render(cv.getContext('2d'),540,960,TPL_SAMPLE,t.id,null);
+  });
 }
 function exportTpls(){ download('templates.json',TPLS); }
 

@@ -1011,6 +1011,10 @@
     </div>
     <div class="temp-tabs" id="temp-tabs"></div>
     <div class="temp-tpl-row" id="temp-tpl-row"></div>
+    <div id="temp-photo-wrap" style="padding:2px 24px 6px;display:none">
+      <label class="temp-photo-btn" for="temp-photo-input" style="margin:0">+ Sua foto</label>
+      <input type="file" id="temp-photo-input" accept="image/*" onchange="handleTemporadaPhoto(this)" style="display:none">
+    </div>
     <div class="card-canvas-wrap"><canvas id="surf-canvas" width="540" height="960"></canvas></div>
     <div class="card-actions">
       <button class="card-act-btn card-act-dl" onclick="downloadSurfCard()">⬇ Salvar</button>
@@ -1099,6 +1103,7 @@
 
 <script src="./tideline-config.js"></script>
 <script src="./tideline-data.js"></script>
+<script src="./tideline-templates.js"></script>
 <script>
 /* ── AUTH GATE ─────────────────────────────────────── */
 if (!localStorage.getItem('tl_demo_auth')) {
@@ -3057,7 +3062,7 @@ function renderCompare(b1, b2, d1, d2) {
 }
 
 /* ── SURF CARD ───────────────────────────────────────── */
-let gTemporadaPeriod = '30', gTemporadaTemplate = 'manchete', gTemporadaPhoto = null;
+let gTemporadaPeriod = '30', gTemporadaTemplate = 'grade-noite', gTemporadaPhoto = null;
 
 function buildTemporadaTabs(period) {
   const checkins = getCheckins();
@@ -3223,103 +3228,24 @@ function handleTemporadaPhoto(input) {
   reader.readAsDataURL(input.files[0]);
 }
 
-/* ── TEMPLATES DE TEMPORADA ──────────────────────────── */
-const _CB = {deep:'#172726',mid:'#243F3D',muted:'#476664',surface:'#D3E2DE',accent:'#F95831',paper:'#F2EFE9'};
-const _FF = '"Helvetica Neue",Helvetica,Arial,sans-serif';
-const TEMPORADA_TEMPLATES = [
-  {id:'manchete', nome:'Manchete', premium:false},
-  {id:'bilhete',  nome:'Bilhete',  premium:false},
-  {id:'onda',     nome:'Onda',     premium:true},
-  {id:'sol',      nome:'Sol Retrô',premium:true},
-];
-function _cfit(ctx,t,maxW,base,min,weight){let fs=base;ctx.font=`${weight} ${fs}px ${_FF}`;while(ctx.measureText(t).width>maxW&&fs>min){fs--;ctx.font=`${weight} ${fs}px ${_FF}`;}return fs;}
-
-function _tplManchete(ctx,W,H,d){
-  const C=_CB;
-  ctx.fillStyle=C.deep;ctx.fillRect(0,0,W,H);ctx.fillStyle=C.accent;ctx.fillRect(0,0,W,6);
-  ctx.textAlign='left';ctx.fillStyle=C.surface;ctx.font=`300 26px ${_FF}`;const tw=ctx.measureText('tide').width;
-  ctx.fillText('tide',40,64);ctx.font=`700 26px ${_FF}`;ctx.fillText('line',40+tw,64);
-  ctx.fillStyle=C.accent;ctx.fillText('.',40+tw+ctx.measureText('line').width,64);
-  ctx.fillStyle='rgba(211,226,222,.5)';ctx.font=`600 13px ${_FF}`;ctx.textAlign='right';ctx.fillText(d.period,W-40,60);ctx.textAlign='left';
-  ctx.fillStyle='rgba(211,226,222,.5)';ctx.font=`700 15px ${_FF}`;ctx.fillText('SESSÕES NO MAR',40,340);
-  ctx.fillStyle=C.accent;ctx.font=`800 260px ${_FF}`;ctx.fillText(d.sessions,32,530);
-  ctx.strokeStyle='rgba(211,226,222,.15)';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(40,600);ctx.lineTo(W-40,600);ctx.stroke();
-  [['PRAIA FAVORITA',d.praia],['MAIOR MAR',d.maiorMar],['CONQUISTA',d.conquista]].forEach((r,i)=>{
-    const y=660+i*66;ctx.fillStyle='rgba(211,226,222,.45)';ctx.font=`700 12px ${_FF}`;ctx.textAlign='left';ctx.fillText(r[0],40,y);
-    ctx.fillStyle=C.surface;const fs=_cfit(ctx,r[1],W-260,34,20,'700');ctx.font=`700 ${fs}px ${_FF}`;ctx.textAlign='right';ctx.fillText(r[1],W-40,y+2);ctx.textAlign='left';});
-  ctx.fillStyle='rgba(211,226,222,.35)';ctx.font=`500 12px ${_FF}`;ctx.fillText('MINHA TEMPORADA · tideline.app',40,H-34);
-  ctx.fillStyle=C.accent;ctx.fillRect(0,H-6,W,6);
-}
-function _tplBilhete(ctx,W,H,d){
-  const C=_CB;ctx.fillStyle=C.mid;ctx.fillRect(0,0,W,H);
-  const m=34,tw=W-2*m,tx=m,ty=104,th=580;ctx.fillStyle=C.paper;_rrect(ctx,tx,ty,tw,th,20);ctx.fill();
-  const cutY=ty+th*0.66;ctx.fillStyle=C.mid;
-  ctx.beginPath();ctx.arc(tx,cutY,15,0,7);ctx.fill();ctx.beginPath();ctx.arc(tx+tw,cutY,15,0,7);ctx.fill();
-  ctx.strokeStyle='rgba(23,39,38,.22)';ctx.lineWidth=2;ctx.setLineDash([2,6]);ctx.beginPath();ctx.moveTo(tx+24,cutY);ctx.lineTo(tx+tw-24,cutY);ctx.stroke();ctx.setLineDash([]);
-  ctx.textAlign='left';ctx.fillStyle=C.accent;ctx.font=`700 13px ${_FF}`;ctx.fillText('TIDELINE · PASSE DE TEMPORADA',tx+32,ty+50);
-  ctx.fillStyle='rgba(23,39,38,.45)';ctx.font=`600 12px ${_FF}`;ctx.textAlign='right';ctx.fillText(d.period,tx+tw-32,ty+50);ctx.textAlign='left';
-  ctx.strokeStyle='rgba(23,39,38,.12)';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(tx+32,ty+68);ctx.lineTo(tx+tw-32,ty+68);ctx.stroke();
-  ctx.fillStyle='rgba(23,39,38,.4)';ctx.font=`700 12px ${_FF}`;ctx.fillText('PICO DA TEMPORADA',tx+32,ty+112);
-  ctx.fillStyle=C.deep;const fs=_cfit(ctx,d.praia,tw-64,56,26,'800');ctx.font=`800 ${fs}px ${_FF}`;ctx.fillText(d.praia,tx+32,ty+168);
-  [['SESSÕES',d.sessions],['MAIOR MAR',d.maiorMar]].forEach((f,i)=>{const fx=tx+32+i*(tw/2-16);
-    ctx.fillStyle='rgba(23,39,38,.4)';ctx.font=`700 11px ${_FF}`;ctx.fillText(f[0],fx,ty+232);
-    ctx.fillStyle=C.accent;ctx.font=`800 48px ${_FF}`;ctx.fillText(f[1],fx,ty+284);});
-  ctx.fillStyle='rgba(23,39,38,.4)';ctx.font=`700 11px ${_FF}`;ctx.fillText('CONQUISTA',tx+32,ty+338);
-  ctx.fillStyle=C.deep;ctx.font=`800 30px ${_FF}`;ctx.fillText(d.conquista,tx+32,ty+372);
-  ctx.fillStyle='rgba(23,39,38,.5)';ctx.font=`600 12px ${_FF}`;ctx.fillText('PERÍODO',tx+32,cutY+40);
-  ctx.fillStyle=C.deep;ctx.font=`700 16px ${_FF}`;ctx.fillText(d.range,tx+32,cutY+64);
-  let bx=tx+32;const by=cutY+92;for(let i=0;i<70;i++){const bw=1+((i*7)%3);ctx.fillStyle=C.deep;ctx.fillRect(bx,by,bw,40);bx+=bw+2;if(bx>tx+tw-40)break;}
-  ctx.fillStyle='rgba(211,226,222,.6)';ctx.font=`500 12px ${_FF}`;ctx.textAlign='center';ctx.fillText('MINHA TEMPORADA · tideline.app',W/2,ty+th+52);ctx.textAlign='left';
-}
-function _tplOnda(ctx,W,H,d){
-  const C=_CB;ctx.fillStyle=C.deep;ctx.fillRect(0,0,W,H);ctx.fillStyle=C.accent;ctx.fillRect(0,0,W,6);
-  ctx.textAlign='left';ctx.fillStyle=C.surface;ctx.font=`300 26px ${_FF}`;const tw=ctx.measureText('tide').width;
-  ctx.fillText('tide',40,66);ctx.font=`700 26px ${_FF}`;ctx.fillText('line',40+tw,66);
-  ctx.fillStyle=C.accent;ctx.fillText('.',40+tw+ctx.measureText('line').width,66);
-  ctx.fillStyle='rgba(211,226,222,.5)';ctx.font=`600 13px ${_FF}`;ctx.textAlign='right';ctx.fillText(d.period,W-40,62);ctx.textAlign='left';
-  ctx.fillStyle=C.surface;ctx.font=`800 210px ${_FF}`;ctx.fillText(d.sessions,32,330);
-  ctx.fillStyle=C.accent;ctx.font=`700 24px ${_FF}`;ctx.fillText('SESSÕES NO MAR',44,380);
-  function wave(yB,amp,col){ctx.fillStyle=col;ctx.beginPath();ctx.moveTo(0,yB);for(let x=0;x<=W;x+=8){ctx.lineTo(x,yB+Math.sin(x/95+yB)*amp);}ctx.lineTo(W,H);ctx.lineTo(0,H);ctx.closePath();ctx.fill();}
-  wave(470,24,C.muted);wave(545,28,C.mid);wave(660,24,C.accent);
-  ctx.fillStyle='rgba(234,242,239,.55)';for(let i=0;i<44;i++){ctx.beginPath();ctx.arc((i*73)%W,452+((i*29)%36),1.6+((i*13)%2),0,7);ctx.fill();}
-  [['PICO',d.praia],['MAIOR MAR',d.maiorMar],['CONQUISTA',d.conquista]].forEach((s,i)=>{const y=752+i*52;
-    ctx.fillStyle='rgba(23,39,38,.55)';ctx.font=`700 11px ${_FF}`;ctx.textAlign='left';ctx.fillText(s[0],44,y);
-    ctx.fillStyle=C.deep;const fs=_cfit(ctx,s[1],W-230,28,16,'800');ctx.font=`800 ${fs}px ${_FF}`;ctx.textAlign='right';ctx.fillText(s[1],W-44,y+2);ctx.textAlign='left';});
-  ctx.fillStyle='rgba(23,39,38,.5)';ctx.font=`500 11px ${_FF}`;ctx.fillText('MINHA TEMPORADA · tideline.app',44,H-28);
-}
-function _tplSol(ctx,W,H,d){
-  const C=_CB;const g=ctx.createLinearGradient(0,0,0,H);g.addColorStop(0,'#F9A03F');g.addColorStop(.5,C.accent);g.addColorStop(1,C.deep);
-  ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
-  const cx=W/2,cy=150;ctx.save();ctx.beginPath();ctx.rect(0,0,W,H);ctx.clip();
-  for(let i=0;i<40;i++){const a=(i/40)*Math.PI*2;ctx.fillStyle=i%2?'rgba(255,255,255,.06)':'rgba(255,255,255,.11)';ctx.beginPath();ctx.moveTo(cx,cy);ctx.arc(cx,cy,900,a,a+Math.PI*2/40);ctx.closePath();ctx.fill();}
-  ctx.restore();
-  ctx.fillStyle=C.paper;ctx.beginPath();ctx.arc(cx,cy,54,0,7);ctx.fill();
-  ctx.textAlign='center';ctx.fillStyle=C.deep;ctx.font=`800 22px ${_FF}`;ctx.fillText('TIDELINE',cx,cy+8);
-  ctx.fillStyle=C.paper;ctx.font=`800 40px ${_FF}`;ctx.fillText('MINHA TEMPORADA',cx,300);
-  ctx.font=`600 16px ${_FF}`;ctx.fillStyle='rgba(245,239,232,.85)';ctx.fillText(d.period,cx,330);
-  const bx=40,by=380,bw=W-80,bh=460;ctx.fillStyle='rgba(23,39,38,.35)';_rrect(ctx,bx,by,bw,bh,20);ctx.fill();
-  [['SESSÕES',d.sessions],['PRAIA FAVORITA',d.praia],['MAIOR MAR',d.maiorMar],['CONQUISTA',d.conquista]].forEach((r,i)=>{const y=by+70+i*108;
-    ctx.textAlign='left';ctx.fillStyle='rgba(245,239,232,.6)';ctx.font=`700 12px ${_FF}`;ctx.fillText(r[0],bx+30,y);
-    ctx.textAlign='right';ctx.fillStyle=C.paper;const fs=_cfit(ctx,r[1],bw-180,40,22,'800');ctx.font=`800 ${fs}px ${_FF}`;ctx.fillText(r[1],bx+bw-30,y+4);
-    if(i<3){ctx.strokeStyle='rgba(245,239,232,.15)';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(bx+30,y+32);ctx.lineTo(bx+bw-30,y+32);ctx.stroke();}});
-  ctx.textAlign='center';ctx.fillStyle='rgba(245,239,232,.7)';ctx.font=`500 12px ${_FF}`;ctx.fillText('tideline.app',cx,H-34);ctx.textAlign='left';
-}
-const _TPL_FN = {manchete:_tplManchete, bilhete:_tplBilhete, onda:_tplOnda, sol:_tplSol};
-
+/* ── TEMPLATES DE TEMPORADA (usa demo/tideline-templates.js) ── */
 function renderTemporadaTabs2() {
   const row = document.getElementById('temp-tpl-row');
-  if (!row) return;
-  row.innerHTML = TEMPORADA_TEMPLATES.map(t =>
+  if (!row || !window.TLTemplates) return;
+  row.innerHTML = window.TLTemplates.LIST.map(t =>
     `<button class="temp-tpl-name${t.id===gTemporadaTemplate?' active':''}" onclick="setTemporadaTemplate('${t.id}')">${t.nome}${t.premium?' <span class="tpl-pro">PRO</span>':''}</button>`
   ).join('');
+  // botão de foto só nos templates que usam foto (grade free)
+  const cur = window.TLTemplates.get(gTemporadaTemplate);
+  const pw = document.getElementById('temp-photo-wrap');
+  if (pw) pw.style.display = (cur && cur.usaFoto) ? 'block' : 'none';
 }
 
 function renderSurfCard() {
   const canvas = document.getElementById('surf-canvas');
-  if (!canvas) return;
+  if (!canvas || !window.TLTemplates) return;
   const ctx = canvas.getContext('2d');
   const W = canvas.width, H = canvas.height;
-  ctx.clearRect(0,0,W,H);
 
   const checkins = getCheckins();
   const period = filterCheckinsByPeriod(checkins, gTemporadaPeriod);
@@ -3332,7 +3258,7 @@ function renderSurfCard() {
     period: getTemporadaData(checkins, gTemporadaPeriod).label,
     range: periodDateRange(gTemporadaPeriod).toUpperCase(),
   };
-  (_TPL_FN[gTemporadaTemplate] || _tplManchete)(ctx, W, H, d);
+  window.TLTemplates.render(ctx, W, H, d, gTemporadaTemplate, gTemporadaPhoto);
 }
 
 function downloadSurfCard() {
