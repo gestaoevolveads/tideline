@@ -20,13 +20,17 @@ Depois disso eles rodam sozinhos:
 - Ranking: manual por etapa (+ segurança semanal)
 - Feed: a cada 48h
 
-### 3. Ativar o site
-Repo → Settings → Pages → Source: **GitHub Actions**.
-O workflow "Deploy do site" publica a pasta `demo/` automaticamente a cada push.
-URL final: `https://<usuario>.github.io/tideline/` (ou domínio próprio em Pages → Custom domain).
+### 3. Ativar o site (Cloudflare Pages — repo privado)
+Como o repositório é privado, hospedamos no **Cloudflare Pages** (grátis, funciona com
+repo privado; o GitHub Pages gratuito exigiria repo público).
 
-**Alternativa (Cloudflare Pages):** conectar o repo no Cloudflare Pages, build output
-directory = `demo`, sem comando de build. Dá domínio próprio grátis e CDN melhor.
+1. https://dash.cloudflare.com → **Workers & Pages** → **Create** → aba **Pages** →
+   **Connect to Git** → autorizar acesso ao repo `gestaoevolveads/tideline`.
+2. Build settings: **Framework preset = None**, **Build command = (vazio)**,
+   **Build output directory = `demo`**. → **Save and Deploy**.
+3. Sai uma URL tipo `tideline.pages.dev`. Domínio próprio depois em Custom domains.
+
+O Cloudflare republica sozinho a cada push (inclusive os commits dos geradores).
 
 ## Estrutura do deploy (pasta demo/)
 - `index.html` — landing (preços, avaliações) → CTA vai para `login.html`

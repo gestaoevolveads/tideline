@@ -75,12 +75,8 @@
   </div>
 
   <div class="blocker">
-    <h2>⚠️ Primeiro: destravar o envio do código</h2>
-    <p>O código está pronto (12 commits), mas o push travou porque o Mac está logado no GitHub como <code>gestaoevolveads</code>, e o repositório é <code>hcmsffc-sys/tideline</code>. Contas diferentes.</p>
-    <p><strong>A forma mais fácil</strong> — abra o Terminal (Aplicativos → Utilitários → Terminal) e cole:</p>
-    <pre>cd ~/Desktop/Tideline
-git push origin main</pre>
-    <p>Se pedir login, entre com a conta <strong>hcmsffc-sys</strong> (a dona do repositório). Depois disso o Mac guarda e não pede mais.</p>
+    <h2>✅ O código já está no repositório</h2>
+    <p>O Tideline foi enviado pra <code>gestaoevolveads/tideline</code> (repo privado). Agora é seguir os 4 passos abaixo pra colocar no ar. Nenhum comando de Terminal necessário — é tudo no navegador.</p>
   </div>
 
   <!-- FASE 1 -->
@@ -89,10 +85,10 @@ git push origin main</pre>
   <div class="step" data-id="s1">
     <div class="check">✓</div>
     <div class="st-body">
-      <div class="st-num">PASSO 1</div>
-      <div class="st-title">Enviar o código pro GitHub</div>
-      <div class="st-desc">Rodar os dois comandos do quadro laranja acima, no Terminal.</div>
-      <div class="st-links"><a class="btn ghost" href="https://github.com/hcmsffc-sys/tideline" target="_blank">Abrir o repositório ↗</a></div>
+      <div class="st-num">PASSO 1 · ✅ feito</div>
+      <div class="st-title">Código enviado pro GitHub</div>
+      <div class="st-desc">Já está no repositório. Confira que as pastas (demo/, scripts/, data/, intelligence/) aparecem lá.</div>
+      <div class="st-links"><a class="btn ghost" href="https://github.com/gestaoevolveads/tideline" target="_blank">Abrir o repositório ↗</a></div>
     </div>
   </div>
 
@@ -103,7 +99,7 @@ git push origin main</pre>
       <div class="st-title">Conferir a chave da IA (ANTHROPIC_API_KEY)</div>
       <div class="st-desc">Em Settings → Secrets, veja se existe <code>ANTHROPIC_API_KEY</code>. Se não existir, pegue a chave no console da Anthropic e cadastre com esse nome exato.</div>
       <div class="st-links">
-        <a class="btn" href="https://github.com/hcmsffc-sys/tideline/settings/secrets/actions" target="_blank">Secrets do GitHub ↗</a>
+        <a class="btn" href="https://github.com/gestaoevolveads/tideline/settings/secrets/actions" target="_blank">Secrets do GitHub ↗</a>
         <a class="btn ghost" href="https://console.anthropic.com/settings/keys" target="_blank">Pegar chave na Anthropic ↗</a>
       </div>
     </div>
@@ -115,7 +111,7 @@ git push origin main</pre>
       <div class="st-num">PASSO 3</div>
       <div class="st-title">Gerar os dados (rodar os 3 workflows)</div>
       <div class="st-desc">Na aba Actions, rode uma vez cada um em "Run workflow": <strong>Gerar Narrações</strong>, <strong>Atualizar Ranking WSL</strong> e <strong>Atualizar Feed de Notícias</strong>. Isso preenche as análises das 87 praias, o ranking e as notícias.</div>
-      <div class="st-links"><a class="btn" href="https://github.com/hcmsffc-sys/tideline/actions" target="_blank">Abrir o Actions ↗</a></div>
+      <div class="st-links"><a class="btn" href="https://github.com/gestaoevolveads/tideline/actions" target="_blank">Abrir o Actions ↗</a></div>
     </div>
   </div>
 
@@ -123,9 +119,9 @@ git push origin main</pre>
     <div class="check">✓</div>
     <div class="st-body">
       <div class="st-num">PASSO 4</div>
-      <div class="st-title">Publicar o site (GitHub Pages)</div>
-      <div class="st-desc">Em Settings → Pages, no campo "Source", escolha <strong>GitHub Actions</strong>. O site sobe sozinho num endereço tipo <code>hcmsffc-sys.github.io/tideline</code>.</div>
-      <div class="st-links"><a class="btn" href="https://github.com/hcmsffc-sys/tideline/settings/pages" target="_blank">Settings → Pages ↗</a></div>
+      <div class="st-title">Publicar o site (Cloudflare Pages)</div>
+      <div class="st-desc">Como o repo é privado, hospedamos no Cloudflare (grátis). Em Workers &amp; Pages → Create → Pages → Connect to Git → escolher <code>gestaoevolveads/tideline</code>. Nas build settings: <strong>Framework = None</strong>, Build command vazio, <strong>Build output directory = <code>demo</code></strong> → Save and Deploy. Sai uma URL tipo <code>tideline.pages.dev</code>.</div>
+      <div class="st-links"><a class="btn" href="https://dash.cloudflare.com" target="_blank">Abrir o Cloudflare ↗</a></div>
     </div>
   </div>
 
@@ -134,7 +130,7 @@ git push origin main</pre>
     <div class="st-body">
       <div class="st-num">PASSO 5</div>
       <div class="st-title">Conferir o site no ar 🎉</div>
-      <div class="st-desc">Abra o endereço do Pages e navegue. Opcional: apontar um domínio próprio (Settings → Pages → Custom domain).</div>
+      <div class="st-desc">Abra o endereço do Cloudflare (<code>tideline.pages.dev</code>) e navegue. Opcional: apontar um domínio próprio em Custom domains.</div>
     </div>
   </div>
 
@@ -190,10 +186,10 @@ git push origin main</pre>
   <!-- REFERÊNCIA -->
   <div class="ref">
     <h3>Links de referência</h3>
-    <a href="https://github.com/hcmsffc-sys/tideline" target="_blank">Repositório GitHub <span>· hcmsffc-sys/tideline</span></a>
-    <a href="https://github.com/hcmsffc-sys/tideline/actions" target="_blank">GitHub Actions <span>· rodar os workflows</span></a>
-    <a href="https://github.com/hcmsffc-sys/tideline/settings/pages" target="_blank">GitHub Pages <span>· publicar o site</span></a>
-    <a href="https://github.com/hcmsffc-sys/tideline/settings/secrets/actions" target="_blank">GitHub Secrets <span>· a chave da API</span></a>
+    <a href="https://github.com/gestaoevolveads/tideline" target="_blank">Repositório GitHub <span>· gestaoevolveads/tideline</span></a>
+    <a href="https://github.com/gestaoevolveads/tideline/actions" target="_blank">GitHub Actions <span>· rodar os workflows</span></a>
+    <a href="https://dash.cloudflare.com" target="_blank">Cloudflare Pages <span>· publicar o site (output = demo)</span></a>
+    <a href="https://github.com/gestaoevolveads/tideline/settings/secrets/actions" target="_blank">GitHub Secrets <span>· a chave da API</span></a>
     <a href="https://github.com/settings/tokens" target="_blank">Gerar token GitHub <span>· se precisar pro push</span></a>
     <a href="https://console.anthropic.com/settings/keys" target="_blank">Anthropic API Keys <span>· a chave da IA</span></a>
     <a href="https://supabase.com/dashboard" target="_blank">Supabase <span>· login + painel ao vivo (fase 2)</span></a>

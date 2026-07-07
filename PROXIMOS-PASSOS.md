@@ -2,46 +2,34 @@
 
 > Documento-mestre. Serve pra retomar o trabalho a qualquer momento sem perder contexto.
 > Última atualização: 05/07/2026.
-> Projeto local: `/Users/Hudson/Desktop/Tideline` · Repo: https://github.com/hcmsffc-sys/tideline
+> Projeto local: `/Users/Hudson/Desktop/Tideline` · Repo: https://github.com/gestaoevolveads/tideline
 
 ---
 
 ## ⚡ TL;DR — o que fazer pra colocar no ar
 
-1. **Enviar o código** (11 commits prontos na main local, ainda NÃO no GitHub — ver bloqueio abaixo).
+1. **Código já enviado** pro repo privado `gestaoevolveads/tideline`.
 2. **Rodar 3 workflows** no GitHub Actions (gera narrações, ranking, feed).
-3. **Ativar GitHub Pages** (Settings → Pages → Source: GitHub Actions).
+3. **Ativar Cloudflare Pages** (Connect to Git, Build output = `demo`).
 4. **(Depois) Ativar Supabase** pra login + painel ao vivo (ver SUPABASE.md).
 
 ---
 
-## 🚧 BLOQUEIO ATUAL: o push não passou
+## ✅ CÓDIGO JÁ ENVIADO
 
-**Motivo:** o Mac está logado no GitHub como a conta **`gestaoevolveads`**, mas o
-repositório é **`hcmsffc-sys/tideline`**. Contas diferentes → o GitHub recusa com
-"Repository not found". Tudo está commitado localmente e seguro; só falta enviar.
-
-**Como resolver (escolha uma):**
-- **Opção A (recomendada):** abrir o Terminal e rodar:
-  ```
-  cd ~/Desktop/Tideline
-  git push origin main
-  ```
-  Se pedir login, entrar com a conta **hcmsffc-sys** (dona do repo).
-- **Opção B:** gerar um token na conta hcmsffc-sys (link abaixo) e usar no push.
-- **Opção C:** mover o repo pra conta gestaoevolveads (a que já está logada) e ajustar o remote.
-
-Depois que resolver o login uma vez, o macOS guarda e não pede mais.
+O projeto está no repositório privado **`gestaoevolveads/tideline`** (conta da Evolve).
+Hospedagem: **Cloudflare Pages** (grátis, funciona com repo privado). Daqui é só seguir
+os passos da Fase 1 — tudo no navegador.
 
 ---
 
 ## 🔗 LINKS — onde ir pra continuar
 
-### GitHub (repo hcmsffc-sys/tideline)
-- Repositório: https://github.com/hcmsffc-sys/tideline
-- **Actions** (rodar os workflows): https://github.com/hcmsffc-sys/tideline/actions
-- **Settings → Pages** (publicar o site): https://github.com/hcmsffc-sys/tideline/settings/pages
-- **Settings → Secrets** (a chave da API): https://github.com/hcmsffc-sys/tideline/settings/secrets/actions
+### GitHub (repo gestaoevolveads/tideline)
+- Repositório: https://github.com/gestaoevolveads/tideline
+- **Actions** (rodar os workflows): https://github.com/gestaoevolveads/tideline/actions
+- **Cloudflare Pages** (publicar o site, repo privado): https://dash.cloudflare.com
+- **Settings → Secrets** (a chave da API): https://github.com/gestaoevolveads/tideline/settings/secrets/actions
 - Gerar token pessoal (se precisar): https://github.com/settings/tokens (escopo `repo`)
 
 ### Anthropic (a chave da IA)
@@ -54,8 +42,8 @@ Depois que resolver o login uma vez, o macOS guarda e não pede mais.
   (criar o admin), **Settings → API** (copiar Project URL + chave anon).
 - Guia passo a passo completo: arquivo **`SUPABASE.md`** na raiz do projeto.
 
-### Cloudflare Pages (alternativa ao GitHub Pages, opcional)
-- https://dash.cloudflare.com → Workers & Pages → conectar o repo → build output = `demo`
+### Cloudflare Pages (hospedagem principal — repo privado)
+- https://dash.cloudflare.com → Workers & Pages → Create → Pages → Connect to Git → repo `gestaoevolveads/tideline` → Build output directory = `demo`
 
 ---
 
@@ -115,7 +103,7 @@ Depois que resolver o login uma vez, o macOS guarda e não pede mais.
 1. [ ] Resolver o login e `git push origin main` (ver bloqueio acima).
 2. [ ] Conferir/criar o Secret `ANTHROPIC_API_KEY` no GitHub.
 3. [ ] Rodar em Actions: **Gerar Narrações**, **Atualizar Ranking WSL**, **Atualizar Feed**.
-4. [ ] Ativar GitHub Pages (Settings → Pages → GitHub Actions).
+4. [ ] Ativar Cloudflare Pages (Connect to Git → repo privado → Build output = `demo`).
 5. [ ] Conferir o site no ar. (Opcional: domínio próprio em Pages → Custom domain.)
 
 ### Fase 2 — Login + painel ao vivo + premium
