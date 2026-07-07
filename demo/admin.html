@@ -150,6 +150,7 @@
     <div class="tab" data-panel="ranking" onclick="showPanel('ranking')">🏆 Ranking</div>
     <div class="tab" data-panel="templates" onclick="showPanel('templates')">🎨 Templates</div>
     <div class="tab" data-panel="narrador" onclick="showPanel('narrador')">🌀 Narrador</div>
+    <div class="tab" data-panel="inteligencia" onclick="showPanel('inteligencia')">🧠 Inteligência</div>
     <div class="tab" data-panel="assinantes" onclick="showPanel('assinantes')">👥 Assinantes</div>
   </div>
 
@@ -281,6 +282,50 @@
       </div>
     </div>
 
+    <div class="panel" id="panel-inteligencia">
+      <div class="card">
+        <h2 style="margin:0 0 4px">🧠 Inteligência do Narrador</h2>
+        <div class="sub">O que o narrador "sabe" vem daqui: um corpus destilado de livros de surf e oceanografia, injetado em toda geração. Adicione livros novos pra deixar as análises mais profundas — a qualidade melhora com o tempo, sem limite.</div>
+        <h3 style="margin:18px 0 8px;font-size:14px">Corpus atual</h3>
+        <div id="intel-corpus" style="font-size:13px;color:var(--muted)">Carregando…</div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <h2 style="margin:0 0 4px">📚 Adicionar conhecimento de um livro</h2>
+        <div class="sub">Envie um PDF (livro, apostila, artigo). A IA lê e destila só o que é útil pra narração. Você revisa, baixa o bloco de conhecimento e ele passa a alimentar o narrador na próxima geração.</div>
+        <div style="margin:14px 0">
+          <input id="intel-aikey" type="password" placeholder="Chave da Anthropic (sk-ant-...)" style="max-width:340px"
+            oninput="sessionStorage.setItem('tl_aikey',this.value.trim())">
+          <div style="font-size:11px;color:var(--muted);margin-top:4px">A chave fica só no seu navegador (usada pra chamar a IA). A destilação usa crédito do console.</div>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+          <label class="btn primary" style="margin:0;cursor:pointer">📄 Escolher PDF<input id="intel-file" type="file" accept="application/pdf" onchange="intelPickPdf(this.files[0])" style="display:none"></label>
+          <span id="intel-file-info" style="font-size:12px;color:var(--muted)"></span>
+        </div>
+        <div id="intel-extract" style="font-size:12px;color:var(--muted);margin-top:10px"></div>
+
+        <div id="intel-step2" style="display:none;margin-top:16px">
+          <div class="field"><label>Tema deste bloco (ajuda a IA a focar)</label>
+            <input id="intel-tema" placeholder="ex: correntes de retorno e resgate; escolha de prancha; marés de sizígia">
+          </div>
+          <button class="btn primary" onclick="intelDistill()" id="intel-distill-btn" style="margin-top:6px">✨ Destilar conhecimento com IA</button>
+          <span id="intel-ai-status" style="font-size:12px;color:var(--muted);margin-left:10px"></span>
+        </div>
+
+        <div id="intel-step3" style="display:none;margin-top:16px">
+          <div class="field"><label>Conhecimento destilado (revise e edite à vontade)</label>
+            <textarea id="intel-md" rows="16" style="width:100%;font-family:ui-monospace,Menlo,monospace;font-size:12px;line-height:1.5"></textarea>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+            <button class="btn dark" onclick="intelDownload()">⬇ Baixar bloco (.md)</button>
+          </div>
+          <div class="banner" style="margin-top:12px">
+            <strong>Como aplicar:</strong> salve o arquivo baixado em <code>intelligence/knowledge/</code> no projeto, faça commit, e rode o workflow <strong>"Gerar Narrações"</strong> (aba Actions do GitHub) com a meta desejada. A nova inteligência entra em toda a geração seguinte, elevando a qualidade das análises.
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="panel" id="panel-assinantes">
       <div class="card">
         <div class="soon">
@@ -338,6 +383,7 @@ function showPanel(id){
   document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.panel===id));
   document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id==='panel-'+id));
   if(id==='narrador') loadNarrador();
+  if(id==='inteligencia') loadInteligencia();
 }
 
 /* ── NARRADOR (progresso do banco de narrações) ───────── */
@@ -703,6 +749,89 @@ async function readRankImage(file){
     status.textContent='✓ '+rk.length+' atletas lidos. Revise, ajuste as fotos e exporte.';
     toast(rk.length+' atletas lidos do print');
   }catch(e){ status.textContent='Erro: '+e.message; }
+}
+
+/* ── INTELIGÊNCIA (corpus + destilar livro) ─────────── */
+let intelText = '';
+async function loadInteligencia(){
+  const el=document.getElementById('intel-corpus');
+  const k=sessionStorage.getItem('tl_aikey'); if(k){const i=document.getElementById('intel-aikey'); if(i&&!i.value)i.value=k;}
+  try{
+    const r=await fetch('./intelligence-stats.json?v='+Date.now());
+    const s=await r.json();
+    el.innerHTML=`<div style="margin-bottom:10px"><strong style="color:var(--deep);font-size:18px">${s.totalPalavras.toLocaleString('pt-BR')}</strong> palavras destiladas em ${s.blocos.length} blocos</div>`+
+      s.blocos.map(b=>`<div style="display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-top:1px solid var(--line)">
+        <div><strong style="color:var(--deep)">${esc(b.titulo)}</strong>${b.fonte?`<div style="font-size:11px;color:var(--muted);margin-top:2px">${esc(b.fonte)}</div>`:''}</div>
+        <div style="white-space:nowrap;color:var(--muted)">${b.palavras.toLocaleString('pt-BR')} pal.</div></div>`).join('');
+  }catch(e){ el.textContent='Não consegui carregar o corpus (intelligence-stats.json).'; }
+}
+
+// carrega pdf.js sob demanda
+function loadPdfJs(){
+  if(window.pdfjsLib) return Promise.resolve(window.pdfjsLib);
+  return new Promise((res,rej)=>{
+    const s=document.createElement('script');
+    s.src='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js';
+    s.onload=()=>{ window.pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js'; res(window.pdfjsLib); };
+    s.onerror=()=>rej(new Error('falha ao carregar pdf.js')); document.head.appendChild(s);
+  });
+}
+
+async function intelPickPdf(file){
+  if(!file) return;
+  document.getElementById('intel-file-info').textContent=file.name+' ('+(file.size/1048576).toFixed(1)+' MB)';
+  const ex=document.getElementById('intel-extract'); ex.textContent='Extraindo texto do PDF…';
+  try{
+    const pdfjs=await loadPdfJs();
+    const buf=await file.arrayBuffer();
+    const pdf=await pdfjs.getDocument({data:buf}).promise;
+    const maxP=Math.min(pdf.numPages,300); let out=[];
+    for(let i=1;i<=maxP;i++){ const pg=await pdf.getPage(i); const tc=await pg.getTextContent(); out.push(tc.items.map(t=>t.str).join(' ')); if(i%25===0)ex.textContent=`Extraindo… ${i}/${maxP} páginas`; }
+    intelText=out.join('\n');
+    ex.textContent=`✓ ${intelText.split(/\s+/).length.toLocaleString('pt-BR')} palavras extraídas de ${maxP} páginas.`+(pdf.numPages>maxP?` (livro grande: só as primeiras ${maxP}; rode em partes se quiser o resto)`:'');
+    document.getElementById('intel-step2').style.display='block';
+  }catch(e){ ex.textContent='Erro ao ler o PDF: '+e.message; }
+}
+
+async function intelDistill(){
+  const key=(document.getElementById('intel-aikey').value.trim())||sessionStorage.getItem('tl_aikey')||'';
+  const st=document.getElementById('intel-ai-status');
+  if(!key){ toast('Cole sua chave da Anthropic primeiro'); return; }
+  if(!intelText){ toast('Envie um PDF primeiro'); return; }
+  const tema=document.getElementById('intel-tema').value.trim();
+  st.textContent='Destilando com IA… (pode levar ~1 min)';
+  document.getElementById('intel-distill-btn').disabled=true;
+  // corta pra caber no contexto (~120k chars)
+  const corte=intelText.slice(0,120000);
+  const prompt=`Você está destilando um livro de surf/oceanografia no CONHECIMENTO ÚTIL para o Narrador do Tideline (app de previsão de ondas). O narrador escreve análises curtas do mar pra surfistas, explicando termos técnicos de forma simples.
+
+Extraia SÓ o que ajuda a escrever melhores análises: física de ondas, vento, maré, tipos de fundo/arrebentação, geomorfologia, segurança, técnica, gíria. Ignore história, biografia, burocracia, referências.
+
+${tema?`Foque especialmente em: ${tema}.\n\n`:''}Escreva em MARKDOWN em português, com títulos (##/###) e bullets, no mesmo estilo de um bloco de conhecimento destilado: fatos concretos, aplicáveis, com o "porquê" físico, sem encher linguiça. Comece com uma linha "> Fonte: <nome/tema do material>". Máximo ~1200 palavras.
+
+TEXTO DO LIVRO:
+"""${corte}"""`;
+  try{
+    const res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',
+      headers:{'content-type':'application/json','x-api-key':key,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+      body:JSON.stringify({model:'claude-sonnet-5',max_tokens:4000,messages:[{role:'user',content:prompt}]})});
+    const data=await res.json();
+    if(data.error){ st.textContent='Erro: '+(data.error.message||'falha na IA'); document.getElementById('intel-distill-btn').disabled=false; return; }
+    const txt=(data.content||[]).filter(c=>c.type==='text').map(c=>c.text).join('\n').trim();
+    if(!txt){ st.textContent='A IA não retornou texto. Tente de novo.'; document.getElementById('intel-distill-btn').disabled=false; return; }
+    document.getElementById('intel-md').value=txt;
+    document.getElementById('intel-step3').style.display='block';
+    st.textContent='✓ Destilado. Revise abaixo e baixe.';
+  }catch(e){ st.textContent='Erro: '+e.message; }
+  document.getElementById('intel-distill-btn').disabled=false;
+}
+
+function intelDownload(){
+  const md=document.getElementById('intel-md').value;
+  const tema=(document.getElementById('intel-tema').value.trim()||'novo-conhecimento').toLowerCase().replace(/[^a-z0-9]+/g,'-').slice(0,40);
+  const blob=new Blob([md],{type:'text/markdown'});
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='06-'+tema+'.md'; a.click();
+  toast('Bloco baixado. Salve em intelligence/knowledge/ e rode o workflow.');
 }
 
 /* ── MODAL HELPERS ─────────────────────────────────── */

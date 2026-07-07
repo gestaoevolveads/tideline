@@ -6,7 +6,7 @@ const ROOT = path.join(__dirname, '..');
 const MODEL = 'claude-sonnet-5';
 // Meta de variações por condição no banco (o app roda entre elas pela data).
 // Geração é incremental: nunca descarta as existentes, só completa até a meta.
-const TARGET_VARIACOES = Number(process.env.TARGET_VARIACOES) || 4;
+const TARGET_VARIACOES = Number(process.env.TARGET_VARIACOES) || 7;
 
 // ── Praias: fonte única em data/beaches.json (editável pelo painel admin) ──
 const ALL_BEACHES = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/beaches.json'), 'utf8')).beaches;
