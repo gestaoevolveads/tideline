@@ -39,28 +39,43 @@ async function main() {
   if (!apiKey) throw new Error('ANTHROPIC_API_KEY não definida');
   const client = new Anthropic({ apiKey });
 
-  const resp = await client.messages.create({
+  // PASSO 1 — pesquisa (web search), resposta em texto
+  const research = await client.messages.create({
     model: MODEL,
     max_tokens: 2500,
-    tools: [
-      { type: 'web_search_20250305', name: 'web_search', max_uses: 5 },
-      TOOL,
-    ],
+    tools: [{ type: 'web_search_20250305', name: 'web_search', max_uses: 6 }],
     messages: [{
       role: 'user',
-      content: `Pesquise as notícias mais recentes de surf publicadas nos últimos 7 dias, priorizando conteúdo brasileiro. Depois selecione as 8 melhores e chame a ferramenta salvar_feed.
+      content: `Pesquise as notícias mais recentes de surf publicadas nos últimos 7 dias, priorizando conteúdo brasileiro. Fontes confiáveis: waves.com.br, redbull.com/br-pt, ge.globo.com/surfe, hardcoresurf.com.br, surfguru.com.br, surftime.com.br, terra.com.br/esportes/surfe.
 
-REGRAS — siga à risca ao selecionar:
+REGRAS — só traga notícias que passem em TODAS:
 - Apenas português.
 - Apenas surf: ondas, competições, atletas (feitos esportivos), cultura, segurança no mar, novas praias/picos.
-- PROIBIDO: fofoca, vida pessoal/amorosa de atletas, polêmica, brigas, conteúdo adulto, violento ou negativo sobre pessoas. O app é para todas as idades, inclusive crianças.
-- Prefira fontes brasileiras confiáveis: waves.com.br, redbull.com/br-pt, ge.globo.com/surfe, hardcoresurf.com.br, surfguru.com.br, surftime.com.br, terra.com.br/esportes/surfe. Cruze mais de uma fonte.
-- Cada notícia precisa de URL real e verificável. Não invente links.`,
+- PROIBIDO: fofoca, vida pessoal/amorosa, polêmica, brigas, conteúdo adulto/violento/negativo sobre pessoas. O app é para todas as idades.
+- Cada notícia precisa de URL real e verificável. Não invente links.
+
+Liste em texto até 8 notícias, cada uma com: título, fonte, URL, data (DD/MM/AAAA) e um resumo de 1 frase.`,
     }],
   });
-
-  const toolUse = resp.content.find(c => c.type === 'tool_use' && c.name === 'salvar_feed');
+  const text = research.content.filter(b => b.type === 'text').map(b => b.text).join('\n').trim();
   const out = path.join(ROOT, 'demo/feed.json');
+  if (!text) { console.error('Pesquisa vazia. Mantendo JSON anterior.'); return; }
+
+  // PASSO 2 — estrutura em JSON (ferramenta forçada)
+  const structured = await client.messages.create({
+    model: MODEL,
+    max_tokens: 2500,
+    tools: [TOOL],
+    tool_choice: { type: 'tool', name: 'salvar_feed' },
+    messages: [{
+      role: 'user',
+      content: `Extraia as notícias do texto abaixo e chame a ferramenta salvar_feed (title, source, url, date DD/MM/AAAA, summary de 1 frase). Mantenha só as que têm URL real.
+
+TEXTO:
+${text}`,
+    }],
+  });
+  const toolUse = structured.content.find(c => c.type === 'tool_use' && c.name === 'salvar_feed');
   if (!toolUse || !Array.isArray(toolUse.input.noticias) || !toolUse.input.noticias.length) {
     console.error('Feed vazio. Mantendo JSON anterior se existir.');
     return;
