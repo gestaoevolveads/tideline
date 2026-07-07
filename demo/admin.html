@@ -212,8 +212,15 @@
           <button class="btn dark" onclick="exportRank()">⬇ Exportar ranking</button>
         </div>
         <div class="banner">💡 <strong>Colar do ge.globo:</strong> copie o ranking (nome e pontos), cole na caixa abaixo e clique em "Montar" — o painel preenche a tabela sozinho. Depois é só ajustar país/foto.</div>
-        <textarea id="rk-paste" rows="4" placeholder="Cole aqui o ranking copiado (uma linha por atleta, ex: '1  Leonardo Fioravanti  33.930')" style="margin-bottom:8px"></textarea>
+        <textarea id="rk-paste" rows="3" placeholder="Cole aqui o ranking copiado (uma linha por atleta, ex: '1  Leonardo Fioravanti  33.930')" style="margin-bottom:8px"></textarea>
         <button class="btn" onclick="parseRankPaste()" style="margin-bottom:16px">⚙ Montar tabela do texto colado</button>
+
+        <div class="banner" style="background:rgba(47,158,111,.08);border-color:rgba(47,158,111,.35)">🤖 <strong>Ler print com IA:</strong> tire uma captura do ranking no ge.globo e envie aqui — a IA lê e preenche a tabela sozinha (posição, nome, país, pontos). Cole sua chave da Anthropic uma vez (fica só no seu navegador).</div>
+        <div class="toolbar">
+          <input id="rk-aikey" type="password" placeholder="Chave da Anthropic (sk-ant-...)" style="max-width:300px" oninput="sessionStorage.setItem('tl_aikey',this.value.trim())">
+          <label class="btn primary" style="margin:0;cursor:pointer">📷 Enviar print<input type="file" accept="image/*" onchange="readRankImage(this.files[0])" style="display:none"></label>
+          <span id="rk-ai-status" style="font-size:12.5px;color:var(--muted)"></span>
+        </div>
         <div style="overflow-x:auto"><table id="rk-table"></table></div>
       </div>
     </div>
@@ -579,6 +586,34 @@ function parseRankPaste(){
 function exportRank(){
   const clean=RANK[rkGender].map(a=>{const o={rank:a.rank,name:a.name,country:a.country,points:a.points}; if(a.photo) o.photo=a.photo; return o;});
   download('ranking-'+rkGender+'.json',clean);
+}
+// lê um print do ranking com IA (chave da Anthropic no navegador, sem servidor)
+async function readRankImage(file){
+  if(!file) return;
+  const key=(document.getElementById('rk-aikey').value.trim())||sessionStorage.getItem('tl_aikey')||'';
+  const status=document.getElementById('rk-ai-status');
+  if(!key){ toast('Cole sua chave da Anthropic primeiro'); return; }
+  status.textContent='Lendo a imagem com IA...';
+  const b64=await new Promise(r=>{const fr=new FileReader();fr.onload=()=>r(fr.result.split(',')[1]);fr.readAsDataURL(file);});
+  const TOOL={name:'salvar_ranking',description:'Salva o ranking lido da imagem.',input_schema:{type:'object',properties:{ranking:{type:'array',items:{type:'object',properties:{rank:{type:'integer'},name:{type:'string'},country:{type:'string'},points:{type:'integer'}},required:['rank','name','country','points']}}},required:['ranking']}};
+  try{
+    const res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',
+      headers:{'content-type':'application/json','x-api-key':key,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+      body:JSON.stringify({model:'claude-haiku-4-5-20251001',max_tokens:2500,tools:[TOOL],tool_choice:{type:'tool',name:'salvar_ranking'},
+        messages:[{role:'user',content:[
+          {type:'image',source:{type:'base64',media_type:file.type||'image/png',data:b64}},
+          {type:'text',text:'Esta é uma captura de tela do ranking da WSL (surf). Extraia TODOS os atletas visíveis, na ordem: posição (rank), nome completo, país (código de 3 letras: BRA, USA, AUS, HAW, ITA, JPN, FRA, ESP, ZAF, PYF, CRI etc) e pontos (número inteiro, sem separador de milhar). Chame a ferramenta salvar_ranking.'}
+        ]}]})});
+    const data=await res.json();
+    if(data.error){ status.textContent='Erro: '+(data.error.message||'falha na IA'); return; }
+    const tu=(data.content||[]).find(c=>c.type==='tool_use');
+    const rk=(tu&&tu.input&&tu.input.ranking)||[];
+    if(!rk.length){ status.textContent='Não consegui ler o ranking da imagem. Tente um print mais nítido.'; return; }
+    RANK[rkGender]=rk.map(a=>({rank:a.rank,name:a.name,country:a.country,points:a.points,photo:''}));
+    renderRank();
+    status.textContent='✓ '+rk.length+' atletas lidos. Revise, ajuste as fotos e exporte.';
+    toast(rk.length+' atletas lidos do print');
+  }catch(e){ status.textContent='Erro: '+e.message; }
 }
 
 /* ── MODAL HELPERS ─────────────────────────────────── */
