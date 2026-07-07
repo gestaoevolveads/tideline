@@ -1,9 +1,12 @@
 name: Gerar Narrações
 
 on:
-  schedule:
-    - cron: '0 */6 * * *'
   workflow_dispatch:
+  # Agendamento automático DESLIGADO: a geração usa crédito do console da Anthropic,
+  # então roda só sob controle manual (workflow_dispatch) até o banco estar completo
+  # e o custo diário baixo. Para religar o modo diário: descomentar abaixo.
+  # schedule:
+  #   - cron: '0 */6 * * *'
 
 # serializa com ranking e feed pra evitar push simultâneo na main
 concurrency:
