@@ -128,6 +128,25 @@ Bloqueiam e dissipam energia (**dispersão**). Ex: as ilhas na frente de Ipanema
 ### e) Interferência entre swells
 Vários trens se somando (padrão de interferência) criam as **séries**: grupos de ondas maiores que aparecem de tempos em tempos entre ondas menores. Explicam por que o mar "respira" em ciclos.
 
+### f) Refração e difração (por que a onda enrola, concentra e some atrás do obstáculo)
+Ao entrar em águas rasas de forma oblíqua, cada parte da frente de onda encontra profundidade diferente e anda em velocidade diferente: a parte em água mais funda corre mais, e a frente inteira **gira** até chegar quase paralela às curvas do fundo. É a **refração** (Lei de Snell aplicada à onda). Consequências que o narrador usa:
+- Sobre uma **elevação/ponta/cabo** submerso, a refração **concentra** energia (o fundo funciona como uma lente convexa): por isso as pontas e pontais recebem onda maior e mais potente que a média — o point "puxa" o swell.
+- Dentro de **enseadas e baías** a energia se **espalha** (desconcentra): onda menor, mais mansa, mais protegida.
+- Se a onda ainda chega angulada com a praia, a refração gera a **deriva litorânea** (corrente paralela à costa) — a mesma que arrasta e remodela os bancos de areia (ver doc. de geomorfologia).
+
+A **difração** é a onda contornando um obstáculo do tamanho do seu comprimento (ilha, molhe, ponta), vazando pra dentro da **zona de sombra** atrás dele em arcos que vão perdendo força. É o que cria o **canto protegido**: atrás da ilha/molhe/ponta o mar é sempre menor e mais organizado — o refúgio pra achar onda surfável em dia grande demais, ou o "cantinho" de iniciante.
+
+## 6b. Como a onda quebra — os quatro tipos de arrebentação
+
+A onda quebra quando a base sente o fundo e o topo a ultrapassa: acontece quando a profundidade chega a ~**1,3 × a altura** da onda (a esbeltez atinge o limite de 1/7). *Como* ela quebra depende da declividade do fundo e do tipo de swell — e isso muda tudo pra descrição:
+
+- **Progressiva / deslizante (spilling):** fundo suave. A espuma nasce na crista e escorre pela frente, a onda desmancha aos poucos mantendo a forma. Molhada, "farofenta", mole. Típica de **vaga de vento** (onda esbelta, período curto) e de banco raso e comprido. Boa pra aprender, ruim pra manobra de pressão.
+- **Mergulhante / tubular (plunging):** fundo de declividade baixa a intermediária **com swell longo**. A frente encurta e verticaliza, o lábio galga o corpo e despenca em voluta — nasce o **tubo (caixote)**, dissipando energia rápido e com força. É a onda dos sonhos, e a que pede respeito. Detalhe de ouro dos livros: **tubo em praia de fundo suave quase sempre vem de groundswell de período longo** — vaga de vento local raramente forma tubo em fundo suave. Ou seja: período alto + fundo certo = parede oca.
+- **Colapsante (collapsing):** fundo mais íngreme. Parecida com a mergulhante mas sem formar o tubo limpo: a frente colapsa no meio. Onda curta, difícil, de fechar na cara.
+- **Frontal / ascendente (surging):** fundo muito íngreme (costão, praia de tombo forte) com onda baixa de **período longo**. A onda quase não quebra: empola e **sobe rampa acima** como uma língua d'água. Pouco surfável, perigosa perto de pedra.
+
+Uso na voz: em vez de só "vai quebrar", o narrador diz *como* — "abre farofenta e mole" (spilling), "empina e caixota" (plunging), "fecha na cara" (colapsante) — sempre ligando ao fundo e ao período daquele dia.
+
 ## 7. Energia da onda (o dado técnico do Tideline)
 
 O app calcula a energia/potência da onda: `P = (ρ g² H² T) / (64π)` em watts por metro de crista (ρ = 1025 kg/m³ água salgada, g = 9,81). Na prática, cresce com o **quadrado da altura** e **linear com o período**. Reportada em kW/m.

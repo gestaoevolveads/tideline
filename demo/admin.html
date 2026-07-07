@@ -107,6 +107,19 @@
   .tpl-flags{display:flex;gap:8px;justify-content:center;margin-top:8px;font-size:11px}
   .tpl-flags label{display:flex;align-items:center;gap:4px;text-transform:none;letter-spacing:0;font-weight:600;color:var(--mid);margin:0}
   .tpl-flags input{width:auto}
+  .nrd-kpi{flex:1;min-width:130px;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+  .nrd-num{font-size:26px;font-weight:800;color:var(--deep);line-height:1.1}
+  .nrd-lbl{font-size:11px;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:.03em}
+  .nrd-barwrap{height:14px;background:var(--line);border-radius:8px;overflow:hidden}
+  .nrd-bar{height:100%;background:var(--accent);width:0;transition:width .6s ease}
+  .nrd-distrow{display:flex;align-items:center;gap:10px;font-size:12px}
+  .nrd-distrow .k{width:96px;color:var(--muted)}
+  .nrd-distrow .track{flex:1;height:10px;background:var(--line);border-radius:6px;overflow:hidden}
+  .nrd-distrow .fill{height:100%;background:var(--mid)}
+  .nrd-distrow .v{width:52px;text-align:right;font-variant-numeric:tabular-nums}
+  #nrd-praias td{padding:7px 8px;border-top:1px solid var(--line)}
+  .nrd-mini{height:7px;background:var(--line);border-radius:4px;overflow:hidden}
+  .nrd-mini>span{display:block;height:100%;background:var(--ok)}
 </style>
 </head>
 <body>
@@ -136,6 +149,7 @@
     <div class="tab" data-panel="praias" onclick="showPanel('praias')">🌊 Praias</div>
     <div class="tab" data-panel="ranking" onclick="showPanel('ranking')">🏆 Ranking</div>
     <div class="tab" data-panel="templates" onclick="showPanel('templates')">🎨 Templates</div>
+    <div class="tab" data-panel="narrador" onclick="showPanel('narrador')">🌀 Narrador</div>
     <div class="tab" data-panel="assinantes" onclick="showPanel('assinantes')">👥 Assinantes</div>
   </div>
 
@@ -239,6 +253,34 @@
     </div>
 
     <!-- ASSINANTES -->
+    <div class="panel" id="panel-narrador">
+      <div class="card">
+        <h2 style="margin:0 0 4px">🌀 Banco do Narrador</h2>
+        <div class="sub">Quanto do banco de narrações de IA já está preenchido. Cada condição de mar (altura+período+vento+turno de cada praia) tem um texto reusável. O banco enche sozinho a cada geração; aqui você acompanha o progresso.</div>
+        <div id="nrd-loading" style="padding:24px 0;color:var(--muted)">Carregando estatísticas…</div>
+        <div id="nrd-body" style="display:none">
+          <div style="display:flex;gap:14px;flex-wrap:wrap;margin:16px 0">
+            <div class="nrd-kpi"><div class="nrd-num" id="nrd-cob">–</div><div class="nrd-lbl">cobertura da previsão</div></div>
+            <div class="nrd-kpi"><div class="nrd-num" id="nrd-alvo">–</div><div class="nrd-lbl">no alvo (<span id="nrd-target">5</span> variações)</div></div>
+            <div class="nrd-kpi"><div class="nrd-num" id="nrd-cond">–</div><div class="nrd-lbl">condições no banco</div></div>
+            <div class="nrd-kpi"><div class="nrd-num" id="nrd-var">–</div><div class="nrd-lbl">textos no total</div></div>
+          </div>
+          <div class="nrd-barwrap"><div class="nrd-bar" id="nrd-bar-cob"></div></div>
+          <div style="font-size:12px;color:var(--muted);margin:4px 0 18px" id="nrd-cob-txt"></div>
+          <h3 style="margin:18px 0 8px;font-size:14px">Distribuição por variações</h3>
+          <div id="nrd-dist" style="display:flex;flex-direction:column;gap:6px"></div>
+          <h3 style="margin:22px 0 8px;font-size:14px">Por praia <span style="font-weight:400;color:var(--muted)">(menos completas primeiro)</span></h3>
+          <div style="max-height:340px;overflow:auto;border:1px solid var(--line);border-radius:8px">
+            <table style="width:100%;border-collapse:collapse;font-size:13px">
+              <thead><tr style="text-align:left;color:var(--muted)"><th style="padding:8px">Praia</th><th>UF</th><th>Cobertas</th><th>No alvo</th><th style="width:120px">Completude</th></tr></thead>
+              <tbody id="nrd-praias"></tbody>
+            </table>
+          </div>
+          <div style="font-size:11px;color:var(--muted);margin-top:12px" id="nrd-updated"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="panel" id="panel-assinantes">
       <div class="card">
         <div class="soon">
@@ -295,6 +337,39 @@ if(!LIVE_MODE && sessionStorage.getItem('tl_admin')==='1') showApp();
 function showPanel(id){
   document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.panel===id));
   document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id==='panel-'+id));
+  if(id==='narrador') loadNarrador();
+}
+
+/* ── NARRADOR (progresso do banco de narrações) ───────── */
+let nrdLoaded=false;
+async function loadNarrador(){
+  if(nrdLoaded) return; nrdLoaded=true;
+  try{
+    const r=await fetch('./narrator-stats.json?v='+Date.now());
+    if(!r.ok) throw new Error('sem stats');
+    const s=await r.json();
+    const pct=s.previsao.total? Math.round(100*s.previsao.cobertas/s.previsao.total):0;
+    const pctAlvo=s.previsao.total? Math.round(100*s.previsao.noAlvo/s.previsao.total):0;
+    document.getElementById('nrd-target').textContent=s.target;
+    document.getElementById('nrd-cob').textContent=pct+'%';
+    document.getElementById('nrd-alvo').textContent=pctAlvo+'%';
+    document.getElementById('nrd-cond').textContent=s.condicoesUnicas;
+    document.getElementById('nrd-var').textContent=s.totalVariacoes;
+    document.getElementById('nrd-bar-cob').style.width=pct+'%';
+    document.getElementById('nrd-cob-txt').textContent=s.previsao.cobertas+' de '+s.previsao.total+' condições da previsão dos próximos dias já têm narração ('+s.previsao.noAlvo+' já no alvo de '+s.target+' variações).';
+    const d=s.distribuicao, maxd=Math.max(1,...Object.values(d));
+    document.getElementById('nrd-dist').innerHTML=Object.entries(d).map(([k,v])=>
+      `<div class="nrd-distrow"><div class="k">${k} ${k==='1'?'variação':'variações'}</div><div class="track"><div class="fill" style="width:${Math.round(100*v/maxd)}%"></div></div><div class="v">${v}</div></div>`).join('');
+    document.getElementById('nrd-praias').innerHTML=s.praias.map(p=>{
+      const c=p.condicoes?Math.round(100*p.cobertas/p.condicoes):0;
+      return `<tr><td>${esc(p.nome)}</td><td>${esc(p.uf||'')}</td><td>${p.cobertas}/${p.condicoes}</td><td>${p.noAlvo}</td><td><div class="nrd-mini"><span style="width:${c}%"></span></div></td></tr>`;
+    }).join('');
+    document.getElementById('nrd-updated').textContent='Atualizado em '+new Date(s.generated_at).toLocaleString('pt-BR');
+    document.getElementById('nrd-loading').style.display='none';
+    document.getElementById('nrd-body').style.display='block';
+  }catch(e){
+    document.getElementById('nrd-loading').textContent='Ainda não há estatísticas. Elas aparecem após a primeira geração do narrador (arquivo narrator-stats.json).';
+  }
 }
 function toast(msg){
   const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show');

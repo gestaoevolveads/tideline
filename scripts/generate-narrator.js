@@ -4,6 +4,9 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const MODEL = 'claude-sonnet-5';
+// Meta de variações por condição no banco (o app roda entre elas pela data).
+// Geração é incremental: nunca descarta as existentes, só completa até a meta.
+const TARGET_VARIACOES = Number(process.env.TARGET_VARIACOES) || 4;
 
 // ── Praias: fonte única em data/beaches.json (editável pelo painel admin) ──
 const ALL_BEACHES = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/beaches.json'), 'utf8')).beaches;
@@ -159,7 +162,7 @@ function aggregateBlocos(beach, marine, forecast) {
 // ── Structured output: tool que garante JSON válido (fim dos erros de parsing) ──
 const TOOL = {
   name: 'salvar_narracoes',
-  description: 'Salva as narrações geradas, uma entrada por condição, cada uma com exatamente 2 variações de texto.',
+  description: 'Salva as narrações geradas, uma entrada por condição, com a quantidade de variações de texto solicitada para cada id.',
   input_schema: {
     type: 'object',
     properties: {
@@ -172,7 +175,7 @@ const TOOL = {
             id: { type: 'integer', description: 'o id da condição, exatamente como fornecido' },
             variacoes: {
               type: 'array',
-              description: 'exatamente 2 variações do texto, com aberturas e ênfases diferentes',
+              description: 'a quantidade de variações NOVAS pedida para este id (campo "gerar N variações"), todas com aberturas e ênfases diferentes entre si e diferentes das já existentes listadas',
               items: {
                 type: 'object',
                 properties: {
@@ -194,6 +197,28 @@ const TOOL = {
   },
 };
 
+// Remove glitches raros do modelo: ideogramas CJK, kana/hangul, caracteres de
+// controle e invisíveis (zero-width) que ocasionalmente vazam no meio da prosa.
+function cleanText(s) {
+  if (typeof s !== 'string') return s;
+  return s
+    .replace(/[\u3000-\u303F\u3040-\u30FF\u3400-\u4DBF\u4E00-\u9FFF\uAC00-\uD7AF\uF900-\uFAFF\uFE30-\uFE4F]/g, '')
+    .replace(/[\u0000-\u0009\u000B-\u001F\u007F-\u009F]/g, '')
+    .replace(/[\u200B-\u200F\u202A-\u202E\u2060\uFEFF]/g, '')
+    .replace(/ {2,}/g, ' ')
+    .replace(/ ([,.;:!?])/g, '$1')
+    .trim();
+}
+function sanitizeVar(v) {
+  return {
+    ...v,
+    titulo: cleanText(v.titulo),
+    analise: cleanText(v.analise),
+    janela: v.janela == null ? v.janela : cleanText(v.janela),
+    aviso: v.aviso == null ? v.aviso : cleanText(v.aviso),
+  };
+}
+
 function beachProfileText(b) {
   return [
     `Praia: ${b.name} (${b.state})`,
@@ -208,17 +233,21 @@ function beachProfileText(b) {
 }
 
 async function generateForBeach(client, system, beach, conditions) {
-  const lista = conditions.map(c => (
-    `#${c.id} | turno: ${c.turno} | altura: ~${c.altura_m}m (${c.faixa_altura}) | ` +
-    `período: ~${c.periodo_s}s (${c.faixa_periodo}) | energia: ~${c.energia_kw} kW/m | ` +
-    `vento: ${c.vento_tipo} ~${c.vento_kmh} km/h`
-  )).join('\n');
+  const lista = conditions.map(c => {
+    let linha = `#${c.id} | turno: ${c.turno} | altura: ~${c.altura_m}m (${c.faixa_altura}) | ` +
+      `período: ~${c.periodo_s}s (${c.faixa_periodo}) | energia: ~${c.energia_kw} kW/m | ` +
+      `vento: ${c.vento_tipo} ~${c.vento_kmh} km/h | GERAR ${c.quantas || 2} variações NOVAS`;
+    if (c.evitar && c.evitar.length) {
+      linha += ` (DIFERENTES destas que já existem, não repita abertura nem ideia: ${c.evitar.map(t => `"${t}"`).join(', ')})`;
+    }
+    return linha;
+  }).join('\n');
 
   const prompt = `Escreva as narrações de surf para as condições abaixo, na praia:
 
 ${beachProfileText(beach)}
 
-CONDIÇÕES (uma narração por id, cada uma com 2 variações):
+CONDIÇÕES (uma entrada por id; gere a quantidade de variações NOVAS indicada em cada linha):
 ${lista}
 
 REGRAS:
@@ -228,7 +257,7 @@ REGRAS:
 - Detalhe com propriedade: use o conhecimento dos livros pra escolher o detalhe CERTO (por que a parede abre, por que o vento estraga, por que a maré muda tudo), sem virar aula nem encher linguiça. Cada frase carrega informação real.
 - IMPORTANTE: escreva para a FAIXA da condição, não para o número decimal exato. O texto será reusado em dias com condição parecida, e o app mostra os números precisos por conta própria. Use âncora corporal (joelho, cintura, peito, ombro, cabeça) e descrição qualitativa. Pode citar o período em segundos de forma aproximada ("na casa dos 13s") e a energia de forma qualitativa. Evite decimais cravados como "1,82m".
 - Use o perfil da praia (fundo, orientação, janela, maré, caráter) para contextualizar.
-- 2 variações por condição: aberturas e ênfases diferentes, nunca comece as duas com a mesma palavra.
+- Gere a QUANTIDADE de variações NOVAS pedida em cada linha (pode ser mais de 2). Todas com aberturas e ênfases diferentes entre si; nunca comece duas com a mesma palavra. Se a linha listar variações já existentes, as novas têm que ser claramente distintas delas (outra abertura, outro ângulo de leitura).
 - NUNCA desincentive o surf. Se a condição está fraca, seja honesto, mas sempre aponte um ângulo legítimo (treinar remada, espuma pra iniciante, longboard, observar o banco). "Não surfe" é proibido. Exceção: risco real de segurança, aí o aviso é direto e mira o perigo.
 - Sem travessão. Português coloquial brasileiro. Uma gíria técnica por frase no máximo.
 - janela: horário aproveitável ("6h-9h") ou null. aviso: alerta de segurança real ou null.
@@ -282,6 +311,7 @@ async function main() {
   const cache = { generated_at: new Date().toISOString(), beaches: {} };
 
   let hits = 0, misses = 0, apiCalls = 0;
+  const stats = { target: TARGET_VARIACOES, beaches: [], forecastKeysSeen: new Set() };
 
   for (let bi = 0; bi < BEACHES.length; bi++) {
     const beach = BEACHES[bi];
@@ -295,20 +325,23 @@ async function main() {
       continue;
     }
 
-    // mapeia cada bloco → conditionKey; junta os que faltam na biblioteca
+    // mapeia cada bloco → conditionKey; junta o que está ABAIXO da meta de variações
     const blocoKeys = blocos.map(b => ({ b, key: conditionKey(beach, b) }));
     const missing = [];
     const seen = new Set();
     for (const { b, key } of blocoKeys) {
-      if (library.keys[key] || seen.has(key)) continue;
+      if (seen.has(key)) continue;
+      const have = library.keys[key]?.variacoes?.length || 0;
+      if (have >= TARGET_VARIACOES) continue;
       seen.add(key);
-      missing.push({ b, key, id: missing.length + 1 });
+      const evitar = (library.keys[key]?.variacoes || []).map(v => v.titulo).filter(Boolean);
+      missing.push({ b, key, id: missing.length + 1, quantas: TARGET_VARIACOES - have, evitar });
     }
 
     if (missing.length) {
-      misses += missing.length;
+      misses += missing.reduce((s, m) => s + m.quantas, 0);
       const conditions = missing.map(m => ({
-        id: m.id, turno: m.b.periodo,
+        id: m.id, turno: m.b.periodo, quantas: m.quantas, evitar: m.evitar,
         altura_m: m.b.altura_m, faixa_altura: heightBucket(m.b.altura_m),
         periodo_s: m.b.periodo_s, faixa_periodo: periodBucket(m.b.periodo_s),
         energia_kw: m.b.energia_kw, vento_tipo: m.b.vento_tipo, vento_kmh: m.b.vento_kmh,
@@ -318,7 +351,9 @@ async function main() {
       for (const n of narracoes) {
         const m = missing.find(x => x.id === n.id);
         if (m && Array.isArray(n.variacoes) && n.variacoes.length) {
-          library.keys[m.key] = { variacoes: n.variacoes };
+          const novas = n.variacoes.map(sanitizeVar);
+          const antigas = library.keys[m.key]?.variacoes || [];
+          library.keys[m.key] = { variacoes: antigas.concat(novas) }; // APPEND, nunca descarta
         }
       }
       await sleep(1500);
@@ -340,12 +375,45 @@ async function main() {
       };
     }
     cache.beaches[beach.name] = { dias };
+
+    // estatísticas de cobertura desta praia (para o painel do admin)
+    const distinct = new Set(blocoKeys.map(x => x.key));
+    let cobertas = 0, noAlvo = 0;
+    for (const key of distinct) {
+      const have = library.keys[key]?.variacoes?.length || 0;
+      if (have >= 1) cobertas++;
+      if (have >= TARGET_VARIACOES) noAlvo++;
+      stats.forecastKeysSeen.add(key);
+    }
+    stats.beaches.push({ nome: beach.name, uf: beach.state, condicoes: distinct.size, cobertas, noAlvo });
   }
 
   // persiste biblioteca (acumula entre execuções) e cache (lido pelo app)
   library.generated_at = new Date().toISOString();
   fs.writeFileSync(libPath, JSON.stringify(library, null, 2));
   fs.writeFileSync(path.join(ROOT, 'demo/narrator-cache.json'), JSON.stringify(cache, null, 2));
+
+  // estatísticas para o painel: distribuição por nº de variações + cobertura da previsão
+  const dist = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, '6+': 0 };
+  let totalVariacoes = 0;
+  for (const k of Object.keys(library.keys)) {
+    const n = library.keys[k].variacoes?.length || 0;
+    totalVariacoes += n;
+    if (n >= 6) dist['6+']++; else if (n >= 1) dist[n]++;
+  }
+  const forecastTotal = stats.forecastKeysSeen.size;
+  const forecastCobertas = [...stats.forecastKeysSeen].filter(k => (library.keys[k]?.variacoes?.length || 0) >= 1).length;
+  const forecastNoAlvo = [...stats.forecastKeysSeen].filter(k => (library.keys[k]?.variacoes?.length || 0) >= TARGET_VARIACOES).length;
+  const statsOut = {
+    generated_at: new Date().toISOString(),
+    target: TARGET_VARIACOES,
+    condicoesUnicas: Object.keys(library.keys).length,
+    totalVariacoes,
+    distribuicao: dist,
+    previsao: { total: forecastTotal, cobertas: forecastCobertas, noAlvo: forecastNoAlvo },
+    praias: stats.beaches.sort((a, b) => (a.cobertas / a.condicoes) - (b.cobertas / b.condicoes)),
+  };
+  fs.writeFileSync(path.join(ROOT, 'demo/narrator-stats.json'), JSON.stringify(statsOut, null, 2));
 
   console.log(`\nConcluído. Praias: ${Object.keys(cache.beaches).length}`);
   console.log(`Chamadas à API: ${apiCalls} | condições novas geradas: ${misses} | reusos do cache: ${hits}`);
