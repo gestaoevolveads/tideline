@@ -532,6 +532,9 @@
     #checkin-modal .modal-sheet{padding-bottom:32px}
     .ci-form-row{display:flex;flex-direction:column;gap:5px;margin:0 24px 16px}
     .ci-form-label{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+    .share-tipo-toggle{display:flex;gap:6px;margin:10px 24px 4px;background:var(--surface);border-radius:22px;padding:4px}
+    .share-tipo-btn{flex:1;border:none;background:transparent;font-family:var(--ff);font-size:13px;font-weight:700;color:var(--muted);padding:9px;border-radius:18px;cursor:pointer;transition:.15s}
+    .share-tipo-btn.active{background:var(--white);color:var(--deep);box-shadow:0 1px 4px rgba(0,0,0,.08)}
     .temp-tpl-row{display:flex;align-items:center;gap:10px;padding:6px 16px 2px}
     .temp-tpl-btn{width:26px;height:26px;border-radius:50%;border:3px solid transparent;cursor:pointer;transition:.15s;flex-shrink:0;outline:none}
     .temp-tpl-btn.active{border-color:#F95831;transform:scale(1.18)}
@@ -1006,10 +1009,18 @@
   <div class="modal-sheet">
     <div class="modal-handle"></div>
     <div class="modal-header">
-      <div class="modal-title">Minha temporada</div>
+      <div class="modal-title">Compartilhar</div>
       <button class="modal-close" onclick="closeCardModal()">×</button>
     </div>
+    <div class="share-tipo-toggle" id="share-tipo-toggle">
+      <button class="share-tipo-btn active" data-tipo="temporada" onclick="setShareTipo('temporada')">Temporada</button>
+      <button class="share-tipo-btn" data-tipo="sessao" onclick="setShareTipo('sessao')">Sessão</button>
+    </div>
     <div class="temp-tabs" id="temp-tabs"></div>
+    <div id="sessao-picker" style="display:none;padding:2px 24px 8px">
+      <label style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);display:block;margin-bottom:6px">Qual sessão?</label>
+      <select id="sessao-select" class="form-input" onchange="gSessaoIdx=+this.value;renderShareCard()" style="width:100%"></select>
+    </div>
     <div class="temp-tpl-row" id="temp-tpl-row"></div>
     <div id="temp-photo-wrap" style="padding:2px 24px 6px;display:none">
       <label class="temp-photo-btn" for="temp-photo-input" style="margin:0">+ Sua foto</label>
@@ -3063,6 +3074,8 @@ function renderCompare(b1, b2, d1, d2) {
 
 /* ── SURF CARD ───────────────────────────────────────── */
 let gTemporadaPeriod = '30', gTemporadaTemplate = 'grade-noite', gTemporadaPhoto = null;
+let gShareTipo = 'temporada', gSessaoTemplate = 'sessao', gSessaoIdx = 0;
+function esc(s){return String(s==null?'':s).replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));}
 
 function buildTemporadaTabs(period) {
   const checkins = getCheckins();
@@ -3098,11 +3111,67 @@ function setTemporadaPeriod(p) {
 
 function openCardModal(period) {
   gTemporadaPeriod = period || '30';
+  gShareTipo = 'temporada';
   document.getElementById('card-modal').classList.add('open');
   const tabs = document.getElementById('temp-tabs');
   if (tabs) tabs.innerHTML = buildTemporadaTabs(gTemporadaPeriod);
+  syncShareTipoUI();
   renderTemporadaTabs2();
-  renderSurfCard();
+  renderShareCard();
+}
+
+// alterna entre card de Temporada e de Sessão
+function setShareTipo(tipo) {
+  gShareTipo = tipo;
+  if (tipo === 'sessao') buildSessaoOptions();
+  syncShareTipoUI();
+  renderTemporadaTabs2();
+  renderShareCard();
+}
+function syncShareTipoUI() {
+  document.querySelectorAll('.share-tipo-btn').forEach(b => b.classList.toggle('active', b.dataset.tipo === gShareTipo));
+  const isSes = gShareTipo === 'sessao';
+  const tabs = document.getElementById('temp-tabs'); if (tabs) tabs.style.display = isSes ? 'none' : 'flex';
+  const pick = document.getElementById('sessao-picker'); if (pick) pick.style.display = isSes ? 'block' : 'none';
+}
+function renderShareCard() {
+  if (gShareTipo === 'sessao') renderSessaoCard(); else renderSurfCard();
+}
+
+// monta a lista de sessões (check-ins), mais recente primeiro
+function buildSessaoOptions() {
+  const sel = document.getElementById('sessao-select'); if (!sel) return;
+  const cks = getCheckins().slice().sort((a,b)=>(b.ts||0)-(a.ts||0));
+  gSessaoList = cks;
+  if (!cks.length) { sel.innerHTML = '<option>Nenhuma sessão registrada ainda</option>'; return; }
+  sel.innerHTML = cks.map((c,i)=>`<option value="${i}">${fmtSessaoData(c.date)} · ${esc(c.beach||'—')}</option>`).join('');
+  if (gSessaoIdx >= cks.length) gSessaoIdx = 0;
+  sel.value = String(gSessaoIdx);
+}
+let gSessaoList = [];
+function fmtSessaoData(iso){ try{ const d=new Date(iso+'T12:00:00'); const M=['JAN','FEV','MAR','ABR','MAI','JUN','JUL','AGO','SET','OUT','NOV','DEZ']; return String(d.getDate()).padStart(2,'0')+' '+M[d.getMonth()]; }catch{ return iso||''; } }
+
+function buildSessaoData(c){
+  if (!c) return {praia:'Sem sessão',data:'—',ondaMax:'—',nota:'—',prancha:'—',condicao:'',frase:''};
+  const wh = parseFloat(c.waveH)||0;
+  const r = parseInt(c.rating)||0;
+  return {
+    praia: c.beach || 'Praia',
+    data: fmtSessaoData(c.date),
+    ondaMax: wh>0 ? (wh.toFixed(1).replace('.',',')+'m') : '—',
+    nota: r>0 ? ('★'.repeat(r)+'☆'.repeat(5-r)) : '—',
+    prancha: c.board ? c.board : '—',
+    condicao: wh>0 ? bodyScale(wh) : 'Sessão no mar',
+    frase: c.notes || '',
+  };
+}
+function renderSessaoCard() {
+  const canvas = document.getElementById('surf-canvas');
+  if (!canvas || !window.TLTemplates) return;
+  const ctx = canvas.getContext('2d');
+  const c = gSessaoList[gSessaoIdx];
+  const d = buildSessaoData(c);
+  window.TLTemplates.render(ctx, canvas.width, canvas.height, d, gSessaoTemplate, null);
 }
 function closeCardModal() {
   document.getElementById('card-modal').classList.remove('open');
@@ -3232,13 +3301,19 @@ function handleTemporadaPhoto(input) {
 function renderTemporadaTabs2() {
   const row = document.getElementById('temp-tpl-row');
   if (!row || !window.TLTemplates) return;
-  row.innerHTML = window.TLTemplates.LIST.map(t =>
-    `<button class="temp-tpl-name${t.id===gTemporadaTemplate?' active':''}" onclick="setTemporadaTemplate('${t.id}')">${t.nome}${t.premium?' <span class="tpl-pro">PRO</span>':''}</button>`
+  const curId = gShareTipo==='sessao' ? gSessaoTemplate : gTemporadaTemplate;
+  row.innerHTML = window.TLTemplates.LIST.filter(t => (t.tipo||'temporada')===gShareTipo).map(t =>
+    `<button class="temp-tpl-name${t.id===curId?' active':''}" onclick="setShareTemplate('${t.id}')">${t.nome}${t.premium?' <span class="tpl-pro">PRO</span>':''}</button>`
   ).join('');
-  // botão de foto só nos templates que usam foto (grade free)
-  const cur = window.TLTemplates.get(gTemporadaTemplate);
+  // botão de foto só nos templates de temporada que usam foto (grade free)
+  const cur = window.TLTemplates.get(curId);
   const pw = document.getElementById('temp-photo-wrap');
-  if (pw) pw.style.display = (cur && cur.usaFoto) ? 'block' : 'none';
+  if (pw) pw.style.display = (gShareTipo==='temporada' && cur && cur.usaFoto) ? 'block' : 'none';
+}
+function setShareTemplate(id) {
+  if (gShareTipo === 'sessao') gSessaoTemplate = id; else gTemporadaTemplate = id;
+  renderTemporadaTabs2();
+  renderShareCard();
 }
 
 function renderSurfCard() {
@@ -3264,17 +3339,19 @@ function renderSurfCard() {
 function downloadSurfCard() {
   const canvas = document.getElementById('surf-canvas');
   const a = document.createElement('a');
-  a.download = 'tideline-temporada.png';
+  a.download = gShareTipo === 'sessao' ? 'tideline-sessao.png' : 'tideline-temporada.png';
   a.href = canvas.toDataURL('image/png');
   a.click();
 }
 
 async function shareToInstagram() {
   const canvas = document.getElementById('surf-canvas');
+  const fname = gShareTipo === 'sessao' ? 'tideline-sessao.png' : 'tideline-temporada.png';
+  const title = gShareTipo === 'sessao' ? 'Minha sessão no Tideline' : 'Minha temporada no Tideline';
   canvas.toBlob(async function(blob) {
-    const file = new File([blob], 'tideline-temporada.png', {type:'image/png'});
+    const file = new File([blob], fname, {type:'image/png'});
     if (navigator.share && navigator.canShare && navigator.canShare({files:[file]})) {
-      try { await navigator.share({files:[file], title:'Minha temporada no Tideline'}); }
+      try { await navigator.share({files:[file], title}); }
       catch(e) { downloadSurfCard(); }
     } else {
       downloadSurfCard();

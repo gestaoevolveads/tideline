@@ -129,22 +129,98 @@
     ctx.textAlign='center';ctx.fillStyle='rgba(245,239,232,.7)';ctx.font=`500 12px ${FF}`;ctx.fillText('tideline.app',cx,H-34);ctx.textAlign='left';
   }
 
-  const FNS = { grade, manchete, bilhete, onda, sol };
+  // quebra texto em linhas que cabem em maxW; retorna array de linhas
+  function wrapLines(ctx,text,maxW,font){ctx.font=font;const words=String(text||'').split(' ');const lines=[];let cur='';
+    for(const w of words){const t=cur?cur+' '+w:w;if(ctx.measureText(t).width>maxW&&cur){lines.push(cur);cur=w;}else cur=t;}
+    if(cur)lines.push(cur);return lines;}
+
+  /* ══════════ SESSION SHARE (uma sessão só) ══════════
+     d = {praia, data, ondaMax, nota, prancha, condicao, frase}
+     (dados reais do check-in: waveH, rating, board, notes) */
+
+  /* ── SESSÃO (premium) — recap escuro, maior onda em destaque ── */
+  function sessao(ctx,W,H,d){
+    const C=CB;ctx.fillStyle=C.deep;ctx.fillRect(0,0,W,H);ctx.fillStyle=C.accent;ctx.fillRect(0,0,W,6);
+    const lw=logo(ctx,40,62,24,C.surface,false);
+    ctx.fillStyle=C.accent;ctx.font=`700 11px ${FF}`;ctx.textAlign='left';ctx.fillText('· SESSÃO',40+lw+8,59);
+    ctx.fillStyle='rgba(211,226,222,.5)';ctx.font=`600 13px ${FF}`;ctx.textAlign='right';ctx.fillText(d.data,W-40,59);ctx.textAlign='left';
+    ctx.fillStyle='rgba(211,226,222,.45)';ctx.font=`700 13px ${FF}`;ctx.fillText('FUI PRO MAR EM',40,150);
+    ctx.fillStyle=C.surface;const fs=fit(ctx,d.praia,W-80,60,28,'800');ctx.font=`800 ${fs}px ${FF}`;ctx.fillText(d.praia,40,212);
+    ctx.fillStyle=C.accent;ctx.font=`600 16px ${FF}`;ctx.fillText(d.condicao,40,246);
+    ctx.fillStyle=C.accent;ctx.font=`800 200px ${FF}`;ctx.fillText(d.ondaMax,28,500);
+    ctx.fillStyle='rgba(211,226,222,.5)';ctx.font=`700 15px ${FF}`;ctx.fillText('MAIOR ONDA',44,548);
+    ctx.strokeStyle='rgba(211,226,222,.14)';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(40,596);ctx.lineTo(W-40,596);ctx.stroke();
+    [['NOTA',d.nota],['PRANCHA',d.prancha]].forEach((s,i)=>{const x=40+i*(W/2-20);
+      ctx.fillStyle='rgba(211,226,222,.45)';ctx.font=`700 12px ${FF}`;ctx.fillText(s[0],x,646);
+      ctx.fillStyle=C.surface;const fz=fit(ctx,s[1],W/2-60,40,18,'800');ctx.font=`800 ${fz}px ${FF}`;ctx.fillText(s[1],x,694);});
+    if(d.frase){ctx.fillStyle='rgba(211,226,222,.85)';const ls=wrapLines(ctx,'"'+d.frase+'"',W-80,`italic 500 18px ${FF}`);
+      ls.slice(0,3).forEach((l,i)=>ctx.fillText(l,40,760+i*26));}
+    ctx.fillStyle='rgba(211,226,222,.35)';ctx.font=`500 12px ${FF}`;ctx.fillText('tideline.app',40,H-34);
+    ctx.fillStyle=C.accent;ctx.fillRect(0,H-6,W,6);
+  }
+
+  /* ── DIÁRIO (premium) — entrada de diário, claro/editorial ── */
+  function diario(ctx,W,H,d){
+    const C=CB;ctx.fillStyle=C.paper;ctx.fillRect(0,0,W,H);
+    ctx.fillStyle=C.deep;ctx.fillRect(0,0,W,7);
+    const lw=logo(ctx,40,66,24,C.deep,false);
+    ctx.fillStyle='rgba(23,39,38,.45)';ctx.font=`600 13px ${FF}`;ctx.textAlign='right';ctx.fillText(d.data,W-40,63);ctx.textAlign='left';
+    ctx.strokeStyle='rgba(23,39,38,.12)';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(40,92);ctx.lineTo(W-40,92);ctx.stroke();
+    ctx.fillStyle='rgba(23,39,38,.4)';ctx.font=`700 12px ${FF}`;ctx.fillText('DIÁRIO DE BORDO',40,150);
+    ctx.fillStyle=C.deep;const fs=fit(ctx,d.praia,W-80,58,26,'800');ctx.font=`800 ${fs}px ${FF}`;ctx.fillText(d.praia,40,208);
+    ctx.fillStyle=C.accent;ctx.font=`600 17px ${FF}`;ctx.fillText(d.condicao,40,242);
+    // 3 stats em coluna com régua
+    [['MAIOR ONDA',d.ondaMax],['NOTA',d.nota],['PRANCHA',d.prancha]].forEach((s,i)=>{const y=320+i*96;
+      ctx.fillStyle='rgba(23,39,38,.4)';ctx.font=`700 12px ${FF}`;ctx.textAlign='left';ctx.fillText(s[0],40,y);
+      ctx.fillStyle=C.deep;const fz=fit(ctx,s[1],W-260,52,22,'800');ctx.font=`800 ${fz}px ${FF}`;ctx.textAlign='right';ctx.fillText(s[1],W-40,y+10);ctx.textAlign='left';
+      ctx.strokeStyle='rgba(23,39,38,.1)';ctx.beginPath();ctx.moveTo(40,y+34);ctx.lineTo(W-40,y+34);ctx.stroke();});
+    if(d.frase){ctx.fillStyle=C.mid;const ls=wrapLines(ctx,d.frase,W-96,`italic 500 20px ${FF}`);
+      ls.slice(0,4).forEach((l,i)=>ctx.fillText(l,40,660+i*30));}
+    ctx.fillStyle=C.accent;ctx.font=`700 40px ${FF}`;ctx.fillText('"',40,640);
+    ctx.fillStyle='rgba(23,39,38,.5)';ctx.font=`500 12px ${FF}`;ctx.fillText('SESSÃO · tideline.app',40,H-34);
+    ctx.fillStyle=C.accent;ctx.fillRect(0,H-7,W,7);
+  }
+
+  /* ── PICO (premium) — destaque da maior onda, com gráfico de onda ── */
+  function pico(ctx,W,H,d){
+    const C=CB;ctx.fillStyle=C.mid;ctx.fillRect(0,0,W,H);
+    const lw=logo(ctx,40,64,24,C.surface,false);
+    ctx.fillStyle='rgba(211,226,222,.5)';ctx.font=`600 13px ${FF}`;ctx.textAlign='right';ctx.fillText(d.data,W-40,60);ctx.textAlign='left';
+    ctx.fillStyle='rgba(211,226,222,.5)';ctx.font=`700 14px ${FF}`;ctx.fillText('MAIOR ONDA DA SESSÃO',40,150);
+    ctx.fillStyle=C.surface;ctx.font=`800 200px ${FF}`;ctx.fillText(d.ondaMax,32,320);
+    ctx.fillStyle=C.accent;const fp=fit(ctx,d.praia,W-80,40,20,'700');ctx.font=`700 ${fp}px ${FF}`;ctx.fillText(d.praia,40,368);
+    ctx.fillStyle='rgba(211,226,222,.6)';ctx.font=`600 15px ${FF}`;ctx.fillText(d.condicao,40,398);
+    // ondas gráficas
+    function wv(yB,amp,col){ctx.fillStyle=col;ctx.beginPath();ctx.moveTo(0,yB);for(let x=0;x<=W;x+=8){ctx.lineTo(x,yB+Math.sin(x/95+yB)*amp);}ctx.lineTo(W,H);ctx.lineTo(0,H);ctx.closePath();ctx.fill();}
+    wv(470,22,C.muted);wv(540,26,C.deep);wv(650,22,C.accent);
+    ctx.fillStyle='rgba(234,242,239,.5)';for(let i=0;i<40;i++){ctx.beginPath();ctx.arc((i*79)%W,452+((i*31)%34),1.5+((i*11)%2),0,7);ctx.fill();}
+    [['NOTA',d.nota],['PRANCHA',d.prancha]].forEach((s,i)=>{const y=756+i*54;
+      ctx.fillStyle='rgba(23,39,38,.55)';ctx.font=`700 11px ${FF}`;ctx.textAlign='left';ctx.fillText(s[0],44,y);
+      ctx.fillStyle=C.deep;const fz=fit(ctx,s[1],W-240,30,14,'800');ctx.font=`800 ${fz}px ${FF}`;ctx.textAlign='right';ctx.fillText(s[1],W-44,y+4);ctx.textAlign='left';});
+    ctx.fillStyle='rgba(23,39,38,.5)';ctx.font=`500 11px ${FF}`;ctx.fillText('SESSÃO · tideline.app',44,H-28);
+  }
+
+  const FNS = { grade, manchete, bilhete, onda, sol, sessao, diario, pico };
 
   // Esquemas de cor da grade (free)
   const S1={bg:'#172726',card:'#243F3D',num:'#F95831',text:'#D3E2DE',sub:'rgba(211,226,222,0.45)'};
   const S2={bg:'#D3E2DE',card:'#FFFFFF',num:'#F95831',text:'#172726',sub:'rgba(23,39,38,0.45)'};
   const S3={bg:'#476664',card:'#172726',num:'#F95831',text:'#D3E2DE',sub:'rgba(211,226,222,0.45)'};
 
-  // Registro: 3 grades free + 4 novos premium
+  // Registro. tipo: 'temporada' (agrega o ano) ou 'sessao' (uma sessão só).
   const LIST = [
-    {id:'grade-noite',  nome:'Noite no Mar',  premium:false, fn:'grade', colors:S1, usaFoto:true},
-    {id:'grade-espuma', nome:'Espuma',        premium:false, fn:'grade', colors:S2, usaFoto:true},
-    {id:'grade-fundo',  nome:'Profundidade',  premium:false, fn:'grade', colors:S3, usaFoto:true},
-    {id:'manchete',     nome:'Manchete',      premium:true,  fn:'manchete'},
-    {id:'bilhete',      nome:'Bilhete',       premium:true,  fn:'bilhete'},
-    {id:'onda',         nome:'Onda',          premium:true,  fn:'onda'},
-    {id:'sol',          nome:'Sol Retrô',     premium:true,  fn:'sol'},
+    // ── Temporada ──
+    {id:'grade-noite',  nome:'Noite no Mar',  premium:false, fn:'grade', colors:S1, usaFoto:true, tipo:'temporada'},
+    {id:'grade-espuma', nome:'Espuma',        premium:false, fn:'grade', colors:S2, usaFoto:true, tipo:'temporada'},
+    {id:'grade-fundo',  nome:'Profundidade',  premium:false, fn:'grade', colors:S3, usaFoto:true, tipo:'temporada'},
+    {id:'manchete',     nome:'Manchete',      premium:true,  fn:'manchete', tipo:'temporada'},
+    {id:'bilhete',      nome:'Bilhete',       premium:true,  fn:'bilhete',  tipo:'temporada'},
+    {id:'onda',         nome:'Onda',          premium:true,  fn:'onda',     tipo:'temporada'},
+    {id:'sol',          nome:'Sol Retrô',     premium:true,  fn:'sol',      tipo:'temporada'},
+    // ── Session Share (uma sessão) ──
+    {id:'sessao',       nome:'Sessão',        premium:true,  fn:'sessao',   tipo:'sessao'},
+    {id:'diario',       nome:'Diário',        premium:true,  fn:'diario',   tipo:'sessao'},
+    {id:'pico',         nome:'Pico',          premium:true,  fn:'pico',     tipo:'sessao'},
   ];
 
   function render(ctx, W, H, d, templateId, photo){
