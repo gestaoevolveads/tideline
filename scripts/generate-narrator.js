@@ -10,7 +10,14 @@ const TARGET_VARIACOES = Number(process.env.TARGET_VARIACOES) || 7;
 
 // ── Praias: fonte única em data/beaches.json (editável pelo painel admin) ──
 const ALL_BEACHES = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/beaches.json'), 'utf8')).beaches;
-const BEACHES = ALL_BEACHES.filter(b => b.active !== false);
+// Prioridade de geração: RJ primeiro, depois resto do Brasil, gringas por último.
+// Assim, com orçamento limitado por lote, o dinheiro vai pras praias que importam.
+const BR_STATES = new Set(['RJ','SP','SC','PR','RS','ES','BA','CE','RN','PE','PB','AL','SE','MA','PA','AP','GO','MG','DF']);
+function beachPriority(b){ if (b.state==='RJ') return 0; if (BR_STATES.has(b.state)) return 1; return 2; }
+const BEACHES = ALL_BEACHES.filter(b => b.active !== false)
+  .map((b,i)=>({b,i})).sort((x,y)=> beachPriority(x.b)-beachPriority(y.b) || x.i-y.i).map(o=>o.b);
+// Teto de variações NOVAS por execução (proxy de orçamento). 0 = sem teto.
+const MAX_NEW = Number(process.env.MAX_NEW_VARIACOES) || 0;
 
 // ── Conhecimento destilado dos livros → system prompt (com prompt caching) ──
 function loadKnowledge() {
@@ -310,8 +317,9 @@ async function main() {
   const dayOfMonth = new Date().getDate();
   const cache = { generated_at: new Date().toISOString(), beaches: {} };
 
-  let hits = 0, misses = 0, apiCalls = 0;
+  let hits = 0, misses = 0, apiCalls = 0, novasGeradas = 0;
   const stats = { target: TARGET_VARIACOES, beaches: [], forecastKeysSeen: new Set() };
+  if (MAX_NEW) console.log(`Teto deste lote: ${MAX_NEW} variações novas. Prioridade: RJ → resto BR → gringas.`);
 
   for (let bi = 0; bi < BEACHES.length; bi++) {
     const beach = BEACHES[bi];
@@ -338,6 +346,19 @@ async function main() {
       missing.push({ b, key, id: missing.length + 1, quantas: TARGET_VARIACOES - have, evitar });
     }
 
+    // teto de orçamento: apara o que exceder o restante do lote
+    if (MAX_NEW && missing.length) {
+      let restante = MAX_NEW - novasGeradas;
+      const apara = [];
+      for (const m of missing) {
+        if (restante <= 0) break;
+        m.quantas = Math.min(m.quantas, restante);
+        restante -= m.quantas;
+        apara.push(m);
+      }
+      missing.length = 0; missing.push(...apara);
+    }
+
     if (missing.length) {
       misses += missing.reduce((s, m) => s + m.quantas, 0);
       const conditions = missing.map(m => ({
@@ -354,6 +375,7 @@ async function main() {
           const novas = n.variacoes.map(sanitizeVar);
           const antigas = library.keys[m.key]?.variacoes || [];
           library.keys[m.key] = { variacoes: antigas.concat(novas) }; // APPEND, nunca descarta
+          novasGeradas += novas.length;
         }
       }
       await sleep(1500);
