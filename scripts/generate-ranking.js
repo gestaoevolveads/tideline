@@ -44,9 +44,11 @@ async function fetchRanking(client, gender) {
     ],
     messages: [{
       role: 'user',
-      content: `Pesquise o ranking atual do Championship Tour ${genderPT} da WSL (World Surf League) da temporada em andamento. Priorize a página do ge.globo (ge.globo/surfe), que mantém o ranking atualizado, ou o site oficial worldsurfleague.com.
+      content: `Pesquise o ranking MAIS RECENTE do Championship Tour ${genderPT} da WSL (World Surf League) da temporada em andamento (2026), atualizado após a última etapa disputada.
 
-Depois de encontrar, chame a ferramenta salvar_ranking com o TOP 10 na ordem correta, com nome completo, país (código de 3 letras) e pontos de cada atleta.`,
+Cruze várias fontes brasileiras confiáveis para ter o dado certo e atual (não use um ranking antigo). Boas fontes: waves.com.br, olimpiadatododia.com.br, redbull.com/br-pt, ge.globo.com/surfe, terra.com.br/esportes/surfe, e o site oficial worldsurfleague.com. Prefira a notícia com a data mais recente ("ranking atualizado após [etapa]").
+
+Depois de confirmar, chame a ferramenta salvar_ranking com o TOP 10 na ordem correta, com nome completo, país (código de 3 letras: BRA, USA, AUS, HAW, ZAF, FRA, PYF, JPN, CRI, etc) e pontos de cada atleta.`,
     }],
   });
 

@@ -54,7 +54,7 @@ REGRAS — siga à risca ao selecionar:
 - Apenas português.
 - Apenas surf: ondas, competições, atletas (feitos esportivos), cultura, segurança no mar, novas praias/picos.
 - PROIBIDO: fofoca, vida pessoal/amorosa de atletas, polêmica, brigas, conteúdo adulto, violento ou negativo sobre pessoas. O app é para todas as idades, inclusive crianças.
-- Prefira fontes: ge.globo/surfe, waves.com.br, hardcoresurf.com.br, surfguru.com.br, surftime.com.br.
+- Prefira fontes brasileiras confiáveis: waves.com.br, redbull.com/br-pt, ge.globo.com/surfe, hardcoresurf.com.br, surfguru.com.br, surftime.com.br, terra.com.br/esportes/surfe. Cruze mais de uma fonte.
 - Cada notícia precisa de URL real e verificável. Não invente links.`,
     }],
   });
