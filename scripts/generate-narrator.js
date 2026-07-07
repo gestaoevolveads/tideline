@@ -359,4 +359,5 @@ if (require.main === module) {
 module.exports = {
   azimuthOf, classifyWind, heightBucket, periodBucket, windBucket,
   conditionKey, aggregateBlocos, fetchBeachData, BEACHES,
+  loadKnowledge, generateForBeachRetry, MODEL,
 };
