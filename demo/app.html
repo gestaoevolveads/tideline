@@ -3454,13 +3454,13 @@ const WSL_CALENDAR = [
   {day:'17',mon:'Abr',name:'Western Australia Margaret River Pro',loc:'Margaret River, Austrália 🇦🇺',status:'done',
    desc:'O sul da Austrália gera seus próprios swells. Margaret River é robusta, pesada, imprevisível. Às vezes um paredão de 3 metros, às vezes flat total. Testa fundo e compostura em igual medida.<br><span style="font-size:11px;color:#476664;display:block;margin-top:8px">🏆 <b>Masculino:</b> 🥇 George Pittar · 🥈 Gabriel Medina · 🥉 Samuel Pupo<br>🏆 <b>Feminino:</b> 🥇 Lakey Peterson · 🥈 Luana Silva · 🥉 Caitlin Simmers</span>'},
   {day:'02',mon:'Mai',name:'Boost Mobile Gold Coast Pro',loc:'Snapper Rocks, Austrália 🇦🇺',status:'next',
-   desc:'A direita mais famosa do Coolangatta. Snapper Rocks entrega ondas longas, rápidas e com seções abertas que viram palco para surfe criativo e radical. Quem domina a parte de dentro controla a bateria.'},
+   desc:'A direita mais famosa do Coolangatta. Snapper Rocks entrega ondas longas, rápidas e com seções abertas que viram palco para surfe criativo e radical. Quem domina a parte de dentro controla a bateria.<br><span style="font-size:11px;color:#476664;display:block;margin-top:8px">🏆 <b>Campeões:</b> 🥇 Ethan Ewing (masc.) · 🥇 Stephanie Gilmore (fem., 34ª vitória no CT)</span>'},
   {day:'15',mon:'Mai',name:'Corona Cero New Zealand',loc:'Raglan, Nova Zelândia 🇳🇿',status:'',
-   desc:'A esquerda mais famosa do hemisfério sul, estreia no CT em 2026. Raglan entrega ondas longas, mecânicas e perfeitas para manobras em sequência. Uma adição histórica ao calendário do circuito.'},
+   desc:'A esquerda mais famosa do hemisfério sul, estreia no CT em 2026. Raglan entrega ondas longas, mecânicas e perfeitas para manobras em sequência. Uma adição histórica ao calendário do circuito.<br><span style="font-size:11px;color:#476664;display:block;margin-top:8px">🏆 <b>Campeões:</b> 🥇 Italo Ferreira (masc.) · 🥇 Carissa Moore (fem.)</span>'},
   {day:'28',mon:'Mai',name:'Punta Roca Pro',loc:'Punta Roca, El Salvador 🇸🇻',status:'',
    desc:'El Salvador tem uma das melhores direitas da América Central. Punta Roca é forte, oca e previsível quando a maré acerta. Uma etapa surpreendente no coração do continente americano.'},
   {day:'12',mon:'Jun',name:'Oi Rio Pro',loc:'Saquarema, Brasil 🇧🇷',status:'',
-   desc:'O templo do surf brasileiro. A Praia de Itaúna, com seu banco de areia em frente à lagoa, gera ondas tubulares e rápidas que favorecem o surf radical. A galera da praia faz a trilha sonora. A etapa mais barulhenta do circuito.'},
+   desc:'O templo do surf brasileiro. A Praia de Itaúna, com seu banco de areia em frente à lagoa, gera ondas tubulares e rápidas que favorecem o surf radical. A galera da praia faz a trilha sonora. A etapa mais barulhenta do circuito.<br><span style="font-size:11px;color:#476664;display:block;margin-top:8px">🏆 <b>Campeões:</b> 🥇 Yago Dora (masc.) · 🥇 Sawyer Lindblad (fem.)</span>'},
   {day:'08',mon:'Ago',name:'Outerknown Tahiti Pro',loc:'Teahupoo, Tahiti 🇵🇫',status:'',
    desc:'Não é uma onda. É uma força da natureza. Teahupoo quebra sobre recife raso com uma hidráulica que não existe em outro lugar no mundo. A etapa mais perigosa, mais bonita e mais assistida do ano. Cada wipeout aqui é notícia.'},
   {day:'25',mon:'Ago',name:'Fiji Pro',loc:'Cloudbreak, Fiji 🇫🇯',status:'',
@@ -3596,10 +3596,28 @@ function toggleWSLEvent(idx) {
   if (el) el.classList.toggle('open');
 }
 
+// Status calculado pela data de hoje (auto-atualiza a cada etapa que passa).
+// Ano da temporada = 2026. Etapa no passado = Encerrado; a próxima futura = Próximo.
+const WSL_MESES = {Jan:0,Fev:1,Mar:2,Abr:3,Mai:4,Jun:5,Jul:6,Ago:7,Set:8,Out:9,Nov:10,Dez:11};
+function computeWSLStatuses(){
+  const hoje = new Date(); hoje.setHours(0,0,0,0);
+  const datas = WSL_CALENDAR.map(ev => new Date(2026, WSL_MESES[ev.mon]??0, parseInt(ev.day,10)));
+  let proximaMarcada = false;
+  return datas.map((d, i) => {
+    const fim = new Date(d); fim.setDate(fim.getDate()+11); // janela típica de ~11 dias por etapa
+    if (hoje > fim) return 'done';
+    if (hoje >= d && hoje <= fim) return 'live';
+    if (!proximaMarcada){ proximaMarcada = true; return 'next'; }
+    return '';
+  });
+}
+
 function renderWSLCalendar() {
+  const status = computeWSLStatuses();
   return WSL_CALENDAR.map((ev, idx) => {
-    const pillCls = ev.status==='done'?'wsl-ev-done':ev.status==='next'?'wsl-ev-next':ev.status==='live'?'wsl-ev-live':'';
-    const pillTxt = ev.status==='done'?'Encerrado':ev.status==='next'?'Próximo':ev.status==='live'?'Ao vivo':'';
+    const st = status[idx];
+    const pillCls = st==='done'?'wsl-ev-done':st==='next'?'wsl-ev-next':st==='live'?'wsl-ev-live':'';
+    const pillTxt = st==='done'?'Encerrado':st==='next'?'Próximo':st==='live'?'Ao vivo':'';
     const pill = pillTxt ? `<span class="wsl-ev-pill ${pillCls}">${pillTxt}</span>` : '<span style="width:8px"></span>';
     return `<div class="wsl-event" onclick="toggleWSLEvent(${idx})">
       <div class="wsl-ev-badge"><div class="wsl-ev-day">${ev.day}</div><div class="wsl-ev-mon">${ev.mon}</div></div>
