@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-const MODEL = 'claude-haiku-4-5-20251001';
+const MODEL = 'claude-sonnet-5';
 
 // ── Praias: fonte única em data/beaches.json (editável pelo painel admin) ──
 const ALL_BEACHES = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/beaches.json'), 'utf8')).beaches;
@@ -177,8 +177,8 @@ const TOOL = {
                 type: 'object',
                 properties: {
                   score: { type: 'integer', description: '5=épico 4=muito bom 3=bom 2=razoável 1=fraco 0=não vale; -1 a -5=ruim/perigoso' },
-                  titulo: { type: 'string', description: 'máximo 5 palavras' },
-                  analise: { type: 'string', description: '2-3 frases, português coloquial de surf, sem travessão' },
+                  titulo: { type: 'string', description: 'máximo 6 palavras, evocativo, sem clichê' },
+                  analise: { type: 'string', description: '3 a 5 frases em camadas (traduzir o que rola, o que se sente na água, a chamada honesta com uma dica). Português coloquial de surf, sem travessão.' },
                   janela: { type: ['string', 'null'], description: 'horário ex "6h-9h" ou null' },
                   aviso: { type: ['string', 'null'], description: 'alerta de segurança real ou null' },
                 },
@@ -223,7 +223,9 @@ ${lista}
 
 REGRAS:
 - PÚBLICO INICIANTE (regra central): escreva para quem NUNCA leu uma previsão. Não é proibido usar termo técnico; é proibido deixar termo técnico SOLTO. Sempre que usar "swell de sul", "terral de sudoeste", "kW/m", "período de Xs" ou graus, explique junto, simples, na mesma frase. Ex: "swell de sul, ou seja, a ondulação vem do sul e abre as ondas pro lado esquerdo"; "uns 20 kW/m de energia, que é a força da onda: a remada cansa e a descida vem com pressão"; "terral de sudoeste, o vento que vem da terra e deixa a onda lisa". Graus entram como aparte ("do sul, uns 200 graus"), nunca como a informação principal. Tamanho sempre com âncora corporal explicada ("ombro a cabeça, na altura do seu ombro"). Teste: um iniciante entende cada palavra e sabe se vale a pena ir?
+- ESTRUTURA EM CAMADAS (3 a 5 frases): (1) traduza em linguagem simples o que está rolando no mar agora; (2) descreva o que o surfista VAI SENTIR na água (a parede, a força, a lisura, a entrada); (3) feche com a chamada honesta e UMA dica concreta (prancha, horário, canto, postura). Não é um relatório de dados; é um amigo experiente lendo o mar pra você.
 - Escreva o que o surfista VAI SENTIR na água. Não descreva de onde veio o swell.
+- Detalhe com propriedade: use o conhecimento dos livros pra escolher o detalhe CERTO (por que a parede abre, por que o vento estraga, por que a maré muda tudo), sem virar aula nem encher linguiça. Cada frase carrega informação real.
 - IMPORTANTE: escreva para a FAIXA da condição, não para o número decimal exato. O texto será reusado em dias com condição parecida, e o app mostra os números precisos por conta própria. Use âncora corporal (joelho, cintura, peito, ombro, cabeça) e descrição qualitativa. Pode citar o período em segundos de forma aproximada ("na casa dos 13s") e a energia de forma qualitativa. Evite decimais cravados como "1,82m".
 - Use o perfil da praia (fundo, orientação, janela, maré, caráter) para contextualizar.
 - 2 variações por condição: aberturas e ênfases diferentes, nunca comece as duas com a mesma palavra.
@@ -235,7 +237,7 @@ Chame a ferramenta salvar_narracoes com uma entrada por id.`;
 
   const resp = await client.messages.create({
     model: MODEL,
-    max_tokens: 8000,
+    max_tokens: 16000,
     system,
     tools: [TOOL],
     tool_choice: { type: 'tool', name: 'salvar_narracoes' },
