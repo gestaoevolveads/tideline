@@ -39,7 +39,7 @@ async function fetchRanking(client, gender) {
   // PASSO 1 — pesquisa (web search), resposta em texto
   const research = await client.messages.create({
     model: MODEL,
-    max_tokens: 1500,
+    max_tokens: 2500,
     tools: [{ type: 'web_search_20250305', name: 'web_search', max_uses: 5 }],
     messages: [{
       role: 'user',
@@ -56,7 +56,7 @@ Escreva em texto o TOP 10 atual, uma linha por atleta: posição, nome completo,
   // PASSO 2 — estrutura o texto em JSON (ferramenta forçada, garante saída válida)
   const structured = await client.messages.create({
     model: MODEL,
-    max_tokens: 1500,
+    max_tokens: 2500,
     tools: [TOOL],
     tool_choice: { type: 'tool', name: 'salvar_ranking' },
     messages: [{

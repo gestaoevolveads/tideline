@@ -42,19 +42,19 @@ async function main() {
   // PASSO 1 — pesquisa (web search), resposta em texto
   const research = await client.messages.create({
     model: MODEL,
-    max_tokens: 2500,
+    max_tokens: 4000,
     tools: [{ type: 'web_search_20250305', name: 'web_search', max_uses: 6 }],
     messages: [{
       role: 'user',
-      content: `Pesquise as notícias mais recentes de surf publicadas nos últimos 7 dias, priorizando conteúdo brasileiro. Fontes confiáveis: waves.com.br, redbull.com/br-pt, ge.globo.com/surfe, hardcoresurf.com.br, surfguru.com.br, surftime.com.br, terra.com.br/esportes/surfe.
+      content: `Pesquise as notícias de surf MAIS RECENTES que encontrar (das últimas semanas), priorizando conteúdo brasileiro. Não exija que sejam dos últimos 7 dias: traga as mais atuais disponíveis, mesmo que sejam de algumas semanas atrás. Fontes confiáveis: waves.com.br, redbull.com/br-pt, ge.globo.com/surfe, hardcoresurf.com.br, surfguru.com.br, surftime.com.br, terra.com.br/esportes/surfe.
 
-REGRAS — só traga notícias que passem em TODAS:
+REGRAS de seleção:
 - Apenas português.
-- Apenas surf: ondas, competições, atletas (feitos esportivos), cultura, segurança no mar, novas praias/picos.
+- Apenas surf: ondas, competições, atletas (feitos esportivos), cultura, segurança no mar, novas praias/picos, agenda de etapas.
 - PROIBIDO: fofoca, vida pessoal/amorosa, polêmica, brigas, conteúdo adulto/violento/negativo sobre pessoas. O app é para todas as idades.
 - Cada notícia precisa de URL real e verificável. Não invente links.
 
-Liste em texto até 8 notícias, cada uma com: título, fonte, URL, data (DD/MM/AAAA) e um resumo de 1 frase.`,
+Liste em texto de 6 a 8 notícias reais, cada uma com: título, fonte, URL, data (DD/MM/AAAA) e um resumo de 1 frase. Traga pelo menos 6 se existirem.`,
     }],
   });
   const text = research.content.filter(b => b.type === 'text').map(b => b.text).join('\n').trim();
@@ -64,7 +64,7 @@ Liste em texto até 8 notícias, cada uma com: título, fonte, URL, data (DD/MM/
   // PASSO 2 — estrutura em JSON (ferramenta forçada)
   const structured = await client.messages.create({
     model: MODEL,
-    max_tokens: 2500,
+    max_tokens: 4000,
     tools: [TOOL],
     tool_choice: { type: 'tool', name: 'salvar_feed' },
     messages: [{
