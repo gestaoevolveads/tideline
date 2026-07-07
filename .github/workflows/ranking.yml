@@ -32,5 +32,7 @@ jobs:
           git config --global user.name 'Tideline Bot'
           git config --global user.email 'bot@tideline.app'
           git add demo/ranking-men.json demo/ranking-women.json
-          git diff --staged --quiet || git commit -m "chore: atualiza ranking WSL"
+          git diff --staged --quiet && { echo "nada novo"; exit 0; }
+          git commit -m "chore: atualiza ranking WSL"
+          git pull --rebase origin main
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main

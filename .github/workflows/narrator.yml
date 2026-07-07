@@ -37,5 +37,7 @@ jobs:
           git config --global user.name 'Tideline Bot'
           git config --global user.email 'bot@tideline.app'
           git add demo/narrator-cache.json intelligence/narrator-library.json
-          git diff --staged --quiet || git commit -m "chore: atualiza narrações"
+          git diff --staged --quiet && { echo "nada novo"; exit 0; }
+          git commit -m "chore: atualiza narrações"
+          git pull --rebase origin main
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
