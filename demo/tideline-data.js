@@ -38,6 +38,23 @@ window.TLData = (function () {
     loadProducts: () => load('products', 'products.json', 'id'),
     loadCoupons:  () => load('coupons', 'coupons.json'),
     loadTemplates:() => load('templates', 'templates.json'),
+    // ranking: tabela 'rankings' filtrada por gênero, senão ranking-{gender}.json
+    async loadRanking(gender) {
+      const c = await client();
+      if (c) {
+        const { data, error } = await c.from('rankings').select('*').eq('gender', gender).order('rank');
+        if (!error && Array.isArray(data)) return data;
+      }
+      try { const r = await fetch('./ranking-' + gender + '.json?v=' + Date.now()); if (r.ok) return await r.json(); } catch (e) {}
+      return [];
+    },
+    async replaceRanking(gender, rows) {
+      const c = await client(); if (!c) return false;
+      await c.from('rankings').delete().eq('gender', gender);
+      const withGender = rows.map((a, i) => ({ gender, rank: a.rank || i + 1, name: a.name, country: a.country, points: a.points, photo: a.photo || null }));
+      const { error } = await c.from('rankings').insert(withGender);
+      return !error;
+    },
     // escrita (só quando Supabase ativo)
     async upsert(table, row) {
       const c = await client(); if (!c) return false;

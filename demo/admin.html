@@ -209,7 +209,8 @@
           <button class="btn primary" onclick="addRankRow()">+ Atleta</button>
           <span style="flex:1"></span>
           <span class="count" id="rk-count"></span>
-          <button class="btn dark" onclick="exportRank()">⬇ Exportar ranking</button>
+          <button class="btn dark" onclick="exportRank()">⬇ Exportar</button>
+          <button class="btn" onclick="publishRank()" title="Publica este ranking no Supabase (atualiza o app na hora)">☁ Publicar ao vivo</button>
         </div>
         <div class="banner" style="background:rgba(47,158,111,.08);border-color:rgba(47,158,111,.35)">🤖 <strong>Ler print com IA (recomendado):</strong> tire uma captura do ranking (ge.globo, WSL, onde for) e envie aqui — a IA lê a imagem e preenche a tabela sozinha (posição, nome, país, pontos). Cole sua chave da Anthropic uma vez (fica só no seu navegador).</div>
         <div class="toolbar">
@@ -537,8 +538,13 @@ function exportTpls(){ download('templates.json',TPLS); }
 let RANK={men:[],women:[]}, rkGender='men';
 async function loadRank(){
   for(const g of ['men','women']){
-    try{ const r=await fetch('./ranking-'+g+'.json?v='+Date.now()); if(r.ok){const d=await r.json(); if(Array.isArray(d)) RANK[g]=d;} }catch{}
+    try{ RANK[g] = window.TLData ? await window.TLData.loadRanking(g) : []; }catch{ RANK[g]=[]; }
   }
+}
+async function publishRank(){
+  if(!LIVE){ toast('Configure o Supabase primeiro'); return; }
+  const ok=await window.TLData.replaceRanking(rkGender, RANK[rkGender]);
+  toast(ok?('✓ Ranking '+(rkGender==='men'?'masculino':'feminino')+' publicado ao vivo'):'Erro ao publicar');
 }
 function setRankGender(g){
   rkGender=g;
