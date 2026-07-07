@@ -1,9 +1,10 @@
 name: Atualizar Ranking WSL
 
+# DESATIVADO no automático: o ranking é mantido manualmente pelo painel admin
+# (o web search trazia dados furados). Fica só o disparo manual, caso um dia
+# a gente melhore o gerador. A fonte da verdade é demo/ranking-*.json.
 on:
-  workflow_dispatch:        # disparo manual ao fim de cada etapa
-  schedule:
-    - cron: '30 15 * * 1'   # segurança: toda segunda 15h30 UTC (fora dos horários do narrador)
+  workflow_dispatch:
 
 concurrency:
   group: tideline-data-push
