@@ -23,7 +23,9 @@ window.TLData = (function () {
       let q = c.from(table).select('*');
       if (orderCol) q = q.order(orderCol);
       const { data, error } = await q;
-      if (!error && Array.isArray(data)) return data;
+      // só usa o Supabase se ele REALMENTE tem dados; vazio = ainda não semeado,
+      // então cai no JSON (evita loja/ranking vazios antes do 1º "Publicar").
+      if (!error && Array.isArray(data) && data.length) return data;
     }
     try {
       const r = await fetch('./' + jsonFile + '?v=' + Date.now());
@@ -43,7 +45,7 @@ window.TLData = (function () {
       const c = await client();
       if (c) {
         const { data, error } = await c.from('rankings').select('*').eq('gender', gender).order('rank');
-        if (!error && Array.isArray(data)) return data;
+        if (!error && Array.isArray(data) && data.length) return data;
       }
       try { const r = await fetch('./ranking-' + gender + '.json?v=' + Date.now()); if (r.ok) return await r.json(); } catch (e) {}
       return [];

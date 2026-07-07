@@ -254,9 +254,9 @@
 
 <div class="toast" id="toast"></div>
 
-<script src="./tideline-config.js"></script>
-<script src="./tideline-data.js"></script>
-<script src="./tideline-templates.js"></script>
+<script src="./tideline-config.js?v=7"></script>
+<script src="./tideline-data.js?v=7"></script>
+<script src="./tideline-templates.js?v=7"></script>
 <script>
 /* ── ACESSO (provisório) ──────────────────────────────
    Client-side, só pra manter acesso casual fora. Segurança real vem com Supabase. */
@@ -413,6 +413,7 @@ function delProd(i){ if(confirm('Excluir "'+PRODS[i].nome+'"?')){const id=PRODS[
 function exportProds(){ download('products.json',PRODS); }
 async function seedProds(){
   if(!LIVE){ toast('Configure o Supabase primeiro (tideline-config.js)'); return; }
+  if(!PRODS.length){ toast('⚠ Lista vazia — nada pra publicar. Recarregue a página.'); return; }
   if(!confirm('Enviar os '+PRODS.length+' produtos atuais pro Supabase? Isso substitui os que estiverem lá.')) return;
   const ok=await window.TLData.replaceAll('products',PRODS);
   toast(ok?('✓ '+PRODS.length+' produtos publicados no Supabase'):'Erro ao publicar');
@@ -543,6 +544,7 @@ async function loadRank(){
 }
 async function publishRank(){
   if(!LIVE){ toast('Configure o Supabase primeiro'); return; }
+  if(!RANK[rkGender] || !RANK[rkGender].length){ toast('⚠ Ranking vazio — nada pra publicar.'); return; }
   const ok=await window.TLData.replaceRanking(rkGender, RANK[rkGender]);
   toast(ok?('✓ Ranking '+(rkGender==='men'?'masculino':'feminino')+' publicado ao vivo'):'Erro ao publicar');
 }
