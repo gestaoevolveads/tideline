@@ -211,16 +211,18 @@
           <span class="count" id="rk-count"></span>
           <button class="btn dark" onclick="exportRank()">⬇ Exportar ranking</button>
         </div>
-        <div class="banner">💡 <strong>Colar do ge.globo:</strong> copie o ranking (nome e pontos), cole na caixa abaixo e clique em "Montar" — o painel preenche a tabela sozinho. Depois é só ajustar país/foto.</div>
-        <textarea id="rk-paste" rows="3" placeholder="Cole aqui o ranking copiado (uma linha por atleta, ex: '1  Leonardo Fioravanti  33.930')" style="margin-bottom:8px"></textarea>
-        <button class="btn" onclick="parseRankPaste()" style="margin-bottom:16px">⚙ Montar tabela do texto colado</button>
-
-        <div class="banner" style="background:rgba(47,158,111,.08);border-color:rgba(47,158,111,.35)">🤖 <strong>Ler print com IA:</strong> tire uma captura do ranking no ge.globo e envie aqui — a IA lê e preenche a tabela sozinha (posição, nome, país, pontos). Cole sua chave da Anthropic uma vez (fica só no seu navegador).</div>
+        <div class="banner" style="background:rgba(47,158,111,.08);border-color:rgba(47,158,111,.35)">🤖 <strong>Ler print com IA (recomendado):</strong> tire uma captura do ranking (ge.globo, WSL, onde for) e envie aqui — a IA lê a imagem e preenche a tabela sozinha (posição, nome, país, pontos). Cole sua chave da Anthropic uma vez (fica só no seu navegador).</div>
         <div class="toolbar">
           <input id="rk-aikey" type="password" placeholder="Chave da Anthropic (sk-ant-...)" style="max-width:300px" oninput="sessionStorage.setItem('tl_aikey',this.value.trim())">
-          <label class="btn primary" style="margin:0;cursor:pointer">📷 Enviar print<input type="file" accept="image/*" onchange="readRankImage(this.files[0])" style="display:none"></label>
+          <label class="btn primary" style="margin:0;cursor:pointer">📷 Enviar print do ranking<input type="file" accept="image/*" onchange="readRankImage(this.files[0])" style="display:none"></label>
           <span id="rk-ai-status" style="font-size:12.5px;color:var(--muted)"></span>
         </div>
+        <details style="margin:6px 0 16px">
+          <summary style="cursor:pointer;font-size:13px;color:var(--muted);font-weight:600">Ou colar como texto (alternativa)</summary>
+          <textarea id="rk-paste" rows="3" placeholder="Cole o ranking em texto (uma linha por atleta, ex: '1  Leonardo Fioravanti  33.930')" style="margin:8px 0"></textarea>
+          <button class="btn" onclick="parseRankPaste()">⚙ Montar tabela do texto</button>
+        </details>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:8px">Arraste ⠿ pra reordenar os atletas.</div>
         <div style="overflow-x:auto"><table id="rk-table"></table></div>
       </div>
     </div>
@@ -544,15 +546,19 @@ function setRankGender(g){
   document.getElementById('rk-women-btn').classList.toggle('on',g==='women');
   renderRank();
 }
+let rkDragIdx=null;
+function rkDragStart(e,i){ rkDragIdx=i; e.dataTransfer.effectAllowed='move'; }
+function rkDrop(e,i){ e.preventDefault(); if(rkDragIdx==null||rkDragIdx===i) return; const arr=RANK[rkGender]; const [m]=arr.splice(rkDragIdx,1); arr.splice(i,0,m); arr.forEach((a,idx)=>a.rank=idx+1); rkDragIdx=null; renderRank(); }
 function renderRank(){
   const rows=RANK[rkGender];
   document.getElementById('rk-count').textContent=rows.length+' atletas';
   document.getElementById('rk-table').innerHTML=
-    '<tr><th style="width:40px">#</th><th>Atleta</th><th style="width:70px">País</th><th style="width:90px">Pontos</th><th>Foto (URL)</th><th></th></tr>'+
-    rows.map((a,i)=>`<tr>
-      <td><input value="${esc(a.rank||i+1)}" style="width:44px;text-align:center" onchange="RANK['${rkGender}'][${i}].rank=parseInt(this.value)||${i+1}"></td>
+    '<tr><th style="width:26px"></th><th style="width:36px">#</th><th>Atleta</th><th style="width:64px">País</th><th style="width:90px">Pontos</th><th>Foto (URL)</th><th></th></tr>'+
+    rows.map((a,i)=>`<tr draggable="true" ondragstart="rkDragStart(event,${i})" ondragover="event.preventDefault()" ondrop="rkDrop(event,${i})">
+      <td style="cursor:grab;color:var(--muted);text-align:center;font-size:15px" title="Arraste para reordenar">⠿</td>
+      <td style="text-align:center;font-weight:800;color:var(--accent)">${a.rank||i+1}</td>
       <td><input value="${esc(a.name)}" placeholder="Nome do atleta" onchange="RANK['${rkGender}'][${i}].name=this.value"></td>
-      <td><input value="${esc(a.country)}" placeholder="BRA" maxlength="3" style="width:56px;text-transform:uppercase" onchange="RANK['${rkGender}'][${i}].country=this.value.toUpperCase()"></td>
+      <td><input value="${esc(a.country)}" placeholder="BRA" maxlength="3" style="width:52px;text-transform:uppercase" onchange="RANK['${rkGender}'][${i}].country=this.value.toUpperCase()"></td>
       <td><input value="${esc(a.points)}" type="number" style="width:82px" onchange="RANK['${rkGender}'][${i}].points=parseInt(this.value)||0"></td>
       <td><input value="${esc(a.photo||'')}" placeholder="https://... (opcional)" onchange="RANK['${rkGender}'][${i}].photo=this.value"></td>
       <td><button class="icon-btn del" onclick="delRankRow(${i})">✕</button></td>
