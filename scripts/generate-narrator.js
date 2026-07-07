@@ -106,14 +106,19 @@ function conditionKey(beach, b) {
   ].join('|');
 }
 
-async function fetchBeachData(beach) {
+async function fetchBeachData(beach, retry = 0) {
   const base = `&timezone=America%2FSao_Paulo&forecast_days=7`;
   const marineUrl = `https://marine-api.open-meteo.com/v1/marine?latitude=${beach.lat}&longitude=${beach.lon}&hourly=wave_height,wave_period,wave_direction${base}`;
   const forecastUrl = `https://api.open-meteo.com/v1/forecast?latitude=${beach.lat}&longitude=${beach.lon}&hourly=wind_speed_10m,wind_direction_10m${base}`;
-  const [mRes, fRes] = await Promise.all([fetch(marineUrl), fetch(forecastUrl)]);
-  if (!mRes.ok || !fRes.ok) throw new Error(`HTTP error for ${beach.name}`);
-  const [marine, forecast] = await Promise.all([mRes.json(), fRes.json()]);
-  return { marine, forecast };
+  try {
+    const [mRes, fRes] = await Promise.all([fetch(marineUrl), fetch(forecastUrl)]);
+    if (!mRes.ok || !fRes.ok) throw new Error(`HTTP ${mRes.status}/${fRes.status}`);
+    const [marine, forecast] = await Promise.all([mRes.json(), fRes.json()]);
+    return { marine, forecast };
+  } catch (err) {
+    if (retry < 3) { await new Promise(r => setTimeout(r, 3000 * (retry + 1))); return fetchBeachData(beach, retry + 1); }
+    throw err;
+  }
 }
 
 function aggregateBlocos(beach, marine, forecast) {
