@@ -2663,7 +2663,7 @@ function shareSession(spot,date,time,rating,notes,waveH) {
     stars,
     waveH>0?`🌊 Ondas: ${parseFloat(waveH).toFixed(1)}m`:'',
     notes?`📝 ${notes}`:'',
-    'tideline.app',
+    'tideline.com.br',
   ].filter(Boolean);
   const text=lines.join('\n');
   if(navigator.share){navigator.share({text}).catch(()=>{});}
@@ -2972,19 +2972,19 @@ function shareWhatsApp() {
   const pick = arr => arr[Math.floor(Math.random() * arr.length)];
 
   const great = [
-    `🏄 *${praia}* tá impecável agora!\n\nOndas: ${wH}m · ${wP}s de período\nVento: ${wind}\nTideline: ${score}/10\n\n_Vai que não tem erro. Hoje é dia!_ 🤙\n\ntideline.app`,
-    `🔥 *${praia}* — alerta máximo!\n\n${wH}m com ${wP}s de período\nVento: ${wind} · ${score}/10 ⭐\n\nLarga o que tiver fazendo e vai. Sério.\n\ntideline.app`,
-    `📡 *Tideline:* ${praia} funcionando demais.\n\nOndas ${wH}m · período ${wP}s\n${wind} · placar ${score}/10\n\nDia raro. Não desperdiça.\n\ntideline.app`,
+    `🏄 *${praia}* tá impecável agora!\n\nOndas: ${wH}m · ${wP}s de período\nVento: ${wind}\nTideline: ${score}/10\n\n_Vai que não tem erro. Hoje é dia!_ 🤙\n\ntideline.com.br`,
+    `🔥 *${praia}* — alerta máximo!\n\n${wH}m com ${wP}s de período\nVento: ${wind} · ${score}/10 ⭐\n\nLarga o que tiver fazendo e vai. Sério.\n\ntideline.com.br`,
+    `📡 *Tideline:* ${praia} funcionando demais.\n\nOndas ${wH}m · período ${wP}s\n${wind} · placar ${score}/10\n\nDia raro. Não desperdiça.\n\ntideline.com.br`,
   ];
   const ok = [
-    `🌊 *${praia}*: como tá o mar hoje\n\nOndas: ${wH}m · ${wP}s de período\nVento: ${wind}\nTideline: ${score}/10\n\nVale conferir antes de ir. 👀\n\ntideline.app`,
-    `🤔 *${praia}* hoje — vai ou não vai?\n\n${wH}m · ${wP}s · ${wind}\nNota: ${score}/10\n\nCondição razoável. Não é o dia mais especial, mas mar é mar.\n\ntideline.app`,
-    `📊 Relatório *${praia}*:\n\n${wH}m de onda, ${wP}s de período\nVento: ${wind} · ${score}/10\n\nQuem tiver afim, tá surfável. Não vai decepcionar demais.\n\ntideline.app`,
+    `🌊 *${praia}*: como tá o mar hoje\n\nOndas: ${wH}m · ${wP}s de período\nVento: ${wind}\nTideline: ${score}/10\n\nVale conferir antes de ir. 👀\n\ntideline.com.br`,
+    `🤔 *${praia}* hoje — vai ou não vai?\n\n${wH}m · ${wP}s · ${wind}\nNota: ${score}/10\n\nCondição razoável. Não é o dia mais especial, mas mar é mar.\n\ntideline.com.br`,
+    `📊 Relatório *${praia}*:\n\n${wH}m de onda, ${wP}s de período\nVento: ${wind} · ${score}/10\n\nQuem tiver afim, tá surfável. Não vai decepcionar demais.\n\ntideline.com.br`,
   ];
   const bad = [
-    `😅 *${praia}* hoje não tá pra ninguém não...\n\nOndas: ${wH}m · ${wP}s\nVento: ${wind} · Tideline: ${score}/10\n\nSalva a remada pra amanhã. 🛋️\n\ntideline.app`,
-    `🏠 *${praia}*: fica em casa.\n\n${wH}m · ${wP}s · ${wind}\nTideline: ${score}/10\n\nO mar tá de mau humor hoje. Respeita.\n\ntideline.app`,
-    `😶 *${praia}* — situação:\n\n${wH}m · ${wP}s · ${wind}\nNota: ${score}/10\n\nAté o Medina pensaria duas vezes. Deixa pra lá.\n\ntideline.app`,
+    `😅 *${praia}* hoje não tá pra ninguém não...\n\nOndas: ${wH}m · ${wP}s\nVento: ${wind} · Tideline: ${score}/10\n\nSalva a remada pra amanhã. 🛋️\n\ntideline.com.br`,
+    `🏠 *${praia}*: fica em casa.\n\n${wH}m · ${wP}s · ${wind}\nTideline: ${score}/10\n\nO mar tá de mau humor hoje. Respeita.\n\ntideline.com.br`,
+    `😶 *${praia}* — situação:\n\n${wH}m · ${wP}s · ${wind}\nNota: ${score}/10\n\nAté o Medina pensaria duas vezes. Deixa pra lá.\n\ntideline.com.br`,
   ];
 
   const msg = pick(score >= 4 ? great : score >= 2 ? ok : bad);
