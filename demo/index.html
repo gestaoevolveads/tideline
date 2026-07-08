@@ -573,7 +573,7 @@ footer{background:var(--deep)}
         <a href="login.html" class="btn btn-primary">Testar grátis por 14 dias</a>
         <a href="#mecanismo" class="btn btn-ghost">Como funciona</a>
       </div>
-      <div class="hero-proof"><strong>+500 surfistas</strong> já leram o mar com o Tideline</div>
+      <div class="hero-proof" id="hero-proof" style="display:none"><strong id="hero-proof-n"></strong> já leram o mar com o Tideline</div>
       <div class="hero-login-hint">Já tem acesso? <a href="login.html">Entrar →</a></div>
     </div>
     <div class="hero-card">
@@ -632,7 +632,7 @@ footer{background:var(--deep)}
         <div class="section-label">O problema</div>
         <h2>Todo app te mostra o número. Nenhum te explica o que fazer com ele.</h2>
         <div class="dor-quote">"Altura 1,2 m · Período 9 s · Vento 15 km/h NE." Isso significa alguma coisa pra você?</div>
-        <p>Surfline, Windy, Magic Seaweed: todos mostram tabelas impecáveis. Números precisos de modelos globais. Mas nenhum lê o seu pico sabendo que o terral chega mais tarde na sua praia, que a maré baixa abre o banco, que o swell de SSE quebra diferente ali do que no pico do vizinho.</p>
+        <p>Os grandes apps de previsão mostram tabelas impecáveis. Números precisos de modelos globais. Mas nenhum lê o seu pico sabendo que o terral chega mais tarde na sua praia, que a maré baixa abre o banco, que o swell de SSE quebra diferente ali do que no pico do vizinho.</p>
         <p>O Tideline pega esse dado e entrega uma análise interpretativa, em português, com o contexto da sua praia, considerando o localismo e a cultura do pico. Você lê em 30 segundos e já sabe se vale a pena acordar cedo.</p>
         <p style="font-weight:600;color:var(--deep)">Para iniciante aprendendo a ler o mar. Para intermediário que quer parar de errar o dia. Para quem prefere entender a adivinhar.</p>
       </div>
@@ -659,7 +659,7 @@ footer{background:var(--deep)}
       <div class="mec-step">
         <div class="mec-num">01 · Dados</div>
         <h3>Modelos globais em tempo real</h3>
-        <p>Mesmo dado que Surfline usa. GFS, ECMWF, Wavewatch III. Swell, vento, maré, temperatura de água. Atualizado a cada 6 horas.</p>
+        <p>O mesmo dado que os grandes apps usam. GFS, ECMWF, Wavewatch III. Swell, vento, maré, temperatura de água. Atualizado a cada 6 horas.</p>
       </div>
       <div class="mec-step">
         <div class="mec-num">02 · Contexto</div>
@@ -1079,8 +1079,8 @@ footer{background:var(--deep)}
           <p class="faq-answer">Funciona principalmente pra quem tá começando. O que diferencia o iniciante do intermediário é leitura de mar, não condicionamento. A partir do momento que você aprende a entender o que vai encontrar antes de chegar na água, sua curva de evolução encurta. O Tideline foi desenhado pensando em quem ainda não sabe, justamente pra que você não precise passar por dez anos de tentativa e erro.</p>
         </details>
         <details>
-          <summary>Já uso Windy e Surfline. Por que trocar?<svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6,9 12,15 18,9"/></svg></summary>
-          <p class="faq-answer">A gente não pede pra você trocar. Pode usar os dois por um mês e comparar. Windy e Surfline te mostram a tabela, e fazem isso bem. O Tideline te mostra a tabela e te explica o que ela significa pra cada praia brasileira, em português. São ferramentas diferentes. A maioria dos nossos clientes manteve o outro app os primeiros meses e depois cancelou porque não usava mais.</p>
+          <summary>Já uso outro app de previsão. Por que trocar?<svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6,9 12,15 18,9"/></svg></summary>
+          <p class="faq-answer">A gente não pede pra você trocar. Pode usar os dois por um mês e comparar. Os outros apps te mostram a tabela, e fazem isso bem. O Tideline te mostra a tabela e te explica o que ela significa pra cada praia brasileira, em português. São ferramentas diferentes. A maioria dos nossos clientes manteve o outro app os primeiros meses e depois cancelou porque não usava mais.</p>
         </details>
         <details>
           <summary>Os Alertas Sniper vão me encher de notificação?<svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6,9 12,15 18,9"/></svg></summary>
@@ -1124,7 +1124,7 @@ footer{background:var(--deep)}
   <div class="urgencia-content">
     <div class="section-label" style="color:rgba(255,255,255,.45)">Lançamento</div>
     <h2>Condições exclusivas de lançamento.</h2>
-    <p>O Tideline tá em lançamento. Quem entra agora trava o preço de fundador pra sempre, mesmo quando o valor subir lá na frente.</p>
+    <p>O Tideline tá em lançamento. Quem entra agora trava o preço de fundador pra sempre.</p>
     <p>Os bônus de fundador também saem do pacote quando as vagas fecharem. Quem já é assinante não perde nada.</p>
     <p>Não tem data marcada de reabertura. Quando as vagas acabarem, acabaram.</p>
     <a href="login.html" class="btn btn-primary" style="font-size:16px;padding:18px 40px;margin-top:12px">Quero testar o Tideline grátis por 14 dias</a>
@@ -1169,6 +1169,22 @@ const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 60);
 }, { passive: true });
+
+/* prova social dinâmica: mostra "+N surfistas" só a partir de 500 (conta real do Supabase) */
+(async()=>{
+  try{
+    const SB_URL='https://efgqgfnijhkuvincxfst.supabase.co';
+    const SB_KEY='sb_publishable_dlDItMsVmfNLo1jhADYv3A_k2dV4m6i';
+    const r=await fetch(SB_URL+'/rest/v1/rpc/surfista_count',{method:'POST',headers:{apikey:SB_KEY,'content-type':'application/json'},body:'{}'});
+    if(!r.ok) return;
+    const n=Number(await r.json());
+    if(n>=500){
+      const arred=Math.floor(n/50)*50; // arredonda pra baixo em 50 (+500, +550, +600...)
+      document.getElementById('hero-proof-n').textContent='+'+arred.toLocaleString('pt-BR')+' surfistas';
+      document.getElementById('hero-proof').style.display='';
+    }
+  }catch(e){}
+})();
 </script>
 </body>
 </html>

@@ -2556,13 +2556,13 @@ function euAssinBlock(sinceFmt, demoUser){
     return `<div class="eu-assin"><div class="eu-assin-hd"><div class="eu-assin-title">Assinatura</div><span class="eu-assin-badge" style="background:rgba(249,88,49,.14);color:var(--accent)">Teste</span></div>
       <div class="eu-assin-plan">Premium · teste</div>
       <div class="eu-assin-meta">${d!=null?('Faltam <strong>'+d+(d===1?' dia':' dias')+'</strong> de teste grátis'):'Teste grátis ativo'}<br>${desde}</div>
-      <button class="eu-assin-btn" style="background:var(--accent);color:#fff" onclick="goAssinar()">Assinar agora</button></div>`;
+      <button class="eu-assin-btn" style="background:#2F9E6F;color:#fff" onclick="goAssinar()">Assinar agora</button></div>`;
   }
   if(kind==='free'){
     return `<div class="eu-assin"><div class="eu-assin-hd"><div class="eu-assin-title">Assinatura</div><span class="eu-assin-badge" style="background:var(--surface);color:var(--muted)">Grátis</span></div>
       <div class="eu-assin-plan">Plano grátis</div>
       <div class="eu-assin-meta">Seu teste terminou — o Premium está trancado.<br>${desde}</div>
-      <button class="eu-assin-btn" style="background:var(--accent);color:#fff" onclick="goAssinar()">Assinar Premium</button></div>`;
+      <button class="eu-assin-btn" style="background:#2F9E6F;color:#fff" onclick="goAssinar()">Assinar Premium</button></div>`;
   }
   if(kind==='premium'){
     return `<div class="eu-assin"><div class="eu-assin-hd"><div class="eu-assin-title">Assinatura</div><span class="eu-assin-badge">Ativa</span></div>
@@ -3209,7 +3209,7 @@ function showUpgradePopup(mode){
     +'<div style="font-size:34px;margin-bottom:4px">🌊</div>'
     +'<div style="font-size:19px;font-weight:800;color:#172726">'+m.t+'</div>'
     +'<div style="font-size:14px;color:#476664;line-height:1.5;margin:8px 0 20px">'+m.p+'</div>'
-    +'<button id="up-go" style="width:100%;padding:15px;background:#F95831;color:#fff;border:none;border-radius:13px;font-size:15px;font-weight:800;font-family:inherit;cursor:pointer">Assinar agora</button>'
+    +'<button id="up-go" style="width:100%;padding:15px;background:#2F9E6F;color:#fff;border:none;border-radius:13px;font-size:15px;font-weight:800;font-family:inherit;cursor:pointer">Assinar agora</button>'
     +'<button id="up-no" style="width:100%;padding:12px;background:none;border:none;color:#476664;font-size:13px;font-weight:600;font-family:inherit;cursor:pointer;margin-top:4px">Agora não</button>'
     +'</div>';
   document.body.appendChild(bg);
