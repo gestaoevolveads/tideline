@@ -346,11 +346,25 @@
 
     <div class="panel" id="panel-assinantes">
       <div class="card">
-        <div class="soon">
-          <div class="big">👥</div>
-          <h2 style="margin-bottom:8px">Assinantes e usuários</h2>
-          <p style="max-width:440px;margin:0 auto;line-height:1.6">Esta parte precisa do login real ligado (Supabase). Quando conectarmos as contas na fase 2, aqui aparecem: usuários cadastrados, assinantes ativos, receita do mês e churn, com busca e filtro.</p>
+        <h2 style="margin:0 0 4px">👥 Assinantes e usuários</h2>
+        <div class="sub">Contas criadas, trials e assinantes — direto do Supabase, em tempo real.</div>
+        <div id="assin-loading" style="padding:24px 0;color:var(--muted)">Carregando…</div>
+        <div id="assin-body" style="display:none">
+          <div style="display:flex;gap:14px;flex-wrap:wrap;margin:16px 0 18px">
+            <div class="nrd-kpi"><div class="nrd-num" id="ka-total">–</div><div class="nrd-lbl">contas</div></div>
+            <div class="nrd-kpi"><div class="nrd-num" id="ka-trial">–</div><div class="nrd-lbl">em trial</div></div>
+            <div class="nrd-kpi"><div class="nrd-num" id="ka-prem" style="color:var(--ok)">–</div><div class="nrd-lbl">premium (pagantes)</div></div>
+            <div class="nrd-kpi"><div class="nrd-num" id="ka-free">–</div><div class="nrd-lbl">trial vencido</div></div>
+          </div>
+          <div style="font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:8px">Contas (mais recentes primeiro)</div>
+          <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13px">
+            <thead><tr style="text-align:left;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.04em">
+              <th style="padding:6px 8px">Conta</th><th style="padding:6px 8px">Status</th><th style="padding:6px 8px">Desde</th><th style="padding:6px 8px">Expira</th>
+            </tr></thead>
+            <tbody id="assin-rows"></tbody>
+          </table></div>
         </div>
+        <div id="assin-erro" style="display:none;padding:20px 0;color:var(--muted);line-height:1.6"></div>
       </div>
     </div>
 
@@ -402,7 +416,45 @@ function showPanel(id){
   document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id==='panel-'+id));
   if(id==='narrador') loadNarrador();
   if(id==='inteligencia') loadInteligencia();
+  if(id==='assinantes') loadAssinantes();
 }
+
+/* ── ASSINANTES (lê profiles do Supabase) ───────────── */
+async function loadAssinantes(){
+  const load=document.getElementById('assin-loading'), body=document.getElementById('assin-body'), erro=document.getElementById('assin-erro');
+  load.style.display='block'; body.style.display='none'; erro.style.display='none';
+  try{
+    const c = window.TLData && await window.TLData.client();
+    if(!c){ throw new Error('Login do painel (Supabase) não está ativo.'); }
+    const { data, error } = await c.from('profiles')
+      .select('email,nome,plano,trial_ends,premium_until,created_at')
+      .order('created_at',{ascending:false});
+    if(error) throw error;
+    const now=Date.now();
+    let trial=0, prem=0, free=0;
+    const rows=(data||[]).map(u=>{
+      const premOk = u.premium_until && new Date(u.premium_until).getTime()>now;
+      const trialOk = !premOk && u.trial_ends && new Date(u.trial_ends).getTime()>now;
+      let badge, expira='—';
+      if(premOk){ prem++; badge='<span class="pill" style="background:rgba(47,158,111,.15);color:var(--ok)">premium</span>'; expira=fmtD(u.premium_until); }
+      else if(trialOk){ trial++; const d=Math.ceil((new Date(u.trial_ends).getTime()-now)/86400000); badge='<span class="pill" style="background:rgba(249,88,49,.14);color:var(--accent)">trial · '+d+'d</span>'; expira=fmtD(u.trial_ends); }
+      else { free++; badge='<span class="pill">vencido</span>'; expira=u.trial_ends?fmtD(u.trial_ends):'—'; }
+      const quem = esc(u.nome||'') ? (esc(u.nome)+' · '+esc(u.email||'')) : esc(u.email||'—');
+      return '<tr style="border-top:1px solid var(--line)"><td style="padding:8px">'+quem+'</td><td style="padding:8px">'+badge+'</td><td style="padding:8px;color:var(--muted)">'+fmtD(u.created_at)+'</td><td style="padding:8px;color:var(--muted)">'+expira+'</td></tr>';
+    }).join('');
+    document.getElementById('ka-total').textContent=(data||[]).length;
+    document.getElementById('ka-trial').textContent=trial;
+    document.getElementById('ka-prem').textContent=prem;
+    document.getElementById('ka-free').textContent=free;
+    document.getElementById('assin-rows').innerHTML=rows||'<tr><td style="padding:12px;color:var(--muted)" colspan="4">Nenhuma conta ainda. Aparecem aqui assim que alguém se cadastrar.</td></tr>';
+    load.style.display='none'; body.style.display='block';
+  }catch(e){
+    load.style.display='none'; erro.style.display='block';
+    erro.innerHTML='Não consegui carregar os assinantes: <strong>'+esc(e.message||'erro')+'</strong><br><br>'
+      +'Se for erro de permissão, rode no SQL Editor do Supabase a policy que libera o admin a ler todos os perfis (te passei no chat).';
+  }
+}
+function fmtD(v){ try{ return new Date(v).toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit',year:'2-digit'}); }catch{ return '—'; } }
 
 /* ── NARRADOR (progresso do banco de narrações) ───────── */
 let nrdLoaded=false;

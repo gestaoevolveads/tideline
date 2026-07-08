@@ -2545,15 +2545,35 @@ function renderLoggedIn(user, logs) {
       <div class="sniper-desc">Avisa quando as condições baterem o seu critério: terral previsto, swell acima de 1m, período acima de 10s. Disponível na versão oficial.</div>
       ${sniperOn?`<div class="sniper-active"><span class="sniper-dot"></span>Monitorando ${gBeach?gBeach.name:'Praia do Forte'}</div>`:''}
     </div>
-    <div class="eu-assin">
-      <div class="eu-assin-hd">
-        <div class="eu-assin-title">Assinatura</div>
-        <span class="eu-assin-badge">Ativa</span>
-      </div>
-      <div class="eu-assin-plan">Tideline Beta</div>
-      <div class="eu-assin-meta">Acesso beta fechado<br>Membro desde ${sinceFmt} · @${demoUser}</div>
-      <button class="eu-assin-btn" onclick="alert('Disponível na versão oficial do Tideline.')">Gerenciar assinatura</button>
-    </div>`;
+    ${euAssinBlock(sinceFmt, demoUser)}`;
+}
+
+function euAssinBlock(sinceFmt, demoUser){
+  const kind = (typeof gPlanKind!=='undefined') ? gPlanKind : 'premium';
+  const desde = 'Membro desde '+sinceFmt;
+  if(kind==='trial'){
+    const d = (typeof trialDaysLeft==='function' && trialDaysLeft()!=null) ? trialDaysLeft() : null;
+    return `<div class="eu-assin"><div class="eu-assin-hd"><div class="eu-assin-title">Assinatura</div><span class="eu-assin-badge" style="background:rgba(249,88,49,.14);color:var(--accent)">Teste</span></div>
+      <div class="eu-assin-plan">Premium · teste</div>
+      <div class="eu-assin-meta">${d!=null?('Faltam <strong>'+d+(d===1?' dia':' dias')+'</strong> de teste grátis'):'Teste grátis ativo'}<br>${desde}</div>
+      <button class="eu-assin-btn" style="background:var(--accent);color:#fff" onclick="goAssinar()">Assinar agora</button></div>`;
+  }
+  if(kind==='free'){
+    return `<div class="eu-assin"><div class="eu-assin-hd"><div class="eu-assin-title">Assinatura</div><span class="eu-assin-badge" style="background:var(--surface);color:var(--muted)">Grátis</span></div>
+      <div class="eu-assin-plan">Plano grátis</div>
+      <div class="eu-assin-meta">Seu teste terminou — o Premium está trancado.<br>${desde}</div>
+      <button class="eu-assin-btn" style="background:var(--accent);color:#fff" onclick="goAssinar()">Assinar Premium</button></div>`;
+  }
+  if(kind==='premium'){
+    return `<div class="eu-assin"><div class="eu-assin-hd"><div class="eu-assin-title">Assinatura</div><span class="eu-assin-badge">Ativa</span></div>
+      <div class="eu-assin-plan">Premium</div>
+      <div class="eu-assin-meta">Assinatura ativa<br>${desde}</div>
+      <button class="eu-assin-btn" onclick="alert('Pra gerenciar ou cancelar, use o link do Mercado Pago que veio no seu e-mail.')">Gerenciar assinatura</button></div>`;
+  }
+  return `<div class="eu-assin"><div class="eu-assin-hd"><div class="eu-assin-title">Assinatura</div><span class="eu-assin-badge">Ativa</span></div>
+    <div class="eu-assin-plan">Tideline Beta</div>
+    <div class="eu-assin-meta">Acesso beta fechado<br>${desde} · @${demoUser}</div>
+    <button class="eu-assin-btn" onclick="alert('Disponível na versão oficial do Tideline.')">Gerenciar assinatura</button></div>`;
 }
 
 function createUser(e) {
