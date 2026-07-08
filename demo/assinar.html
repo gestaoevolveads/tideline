@@ -137,27 +137,14 @@ body{font-family:var(--ff);background:var(--paper);color:var(--deep);line-height
 
   <!-- PAGAMENTO -->
   <div class="pay">
-    <div class="pay-tabs">
-      <button class="pay-tab on" id="tab-pix" onclick="selPay('pix')">⚡ Pix</button>
-      <button class="pay-tab" id="tab-card" onclick="selPay('card')">💳 Cartão</button>
+    <div style="display:flex;gap:10px;margin-bottom:12px" id="pay-methods">
+      <div style="flex:1;display:flex;align-items:center;justify-content:center;gap:7px;background:var(--surface2);border-radius:11px;padding:13px;font-size:14px;font-weight:700"><span style="font-size:17px">⚡</span> Pix</div>
+      <div style="flex:1;display:flex;align-items:center;justify-content:center;gap:7px;background:var(--surface2);border-radius:11px;padding:13px;font-size:14px;font-weight:700"><span style="font-size:17px">💳</span> Cartão</div>
     </div>
-    <div class="pay-body" id="pay-pix">
-      <div class="pix-box">
-        <div class="pix-qr"></div>
-        <p id="pix-txt">Pague <strong>R$149</strong> uma vez, na hora, pelo Pix.</p>
-      </div>
-    </div>
-    <div class="pay-body" id="pay-card" style="display:none">
-      <div class="card-fields">
-        <div class="card-inp">Número do cartão</div>
-        <div class="card-row"><div class="card-inp">Validade</div><div class="card-inp">CVV</div></div>
-        <div class="card-inp">Nome no cartão</div>
-      </div>
-    </div>
-    <div class="mp-note">🔒 Pagamento processado com segurança pelo Mercado Pago</div>
+    <div class="mp-note">🔒 Você finaliza com segurança no Mercado Pago — na hora.</div>
   </div>
 
-  <button class="cta" id="cta">Pagar R$149 no Pix</button>
+  <button class="cta" id="cta" onclick="assinar()">Assinar</button>
   <div class="cta-sub" id="cta-sub">Cobrança única · acesso por 12 meses</div>
 
   <!-- GARANTIA -->
@@ -172,32 +159,47 @@ body{font-family:var(--ff);background:var(--paper);color:var(--deep);line-height
   <div class="foot">🔒 Seguro via Mercado Pago<span class="sep">·</span>Cancela quando quiser<span class="sep">·</span>Sem fidelidade</div>
 </div>
 
+<script src="tideline-config.js"></script>
 <script>
-let plan='anual', pay='pix';
+let plan='anual';
 function selPlan(p){ plan=p;
   document.getElementById('plan-anual').classList.toggle('sel',p==='anual');
   document.getElementById('plan-mensal').classList.toggle('sel',p==='mensal');
-  // mensal recorrente = cartão; anual = pix ou cartão
-  if(p==='mensal') selPay('card');
-  render();
-}
-function selPay(m){ pay=m;
-  document.getElementById('tab-pix').classList.toggle('on',m==='pix');
-  document.getElementById('tab-card').classList.toggle('on',m==='card');
-  document.getElementById('pay-pix').style.display=m==='pix'?'block':'none';
-  document.getElementById('pay-card').style.display=m==='card'?'block':'none';
   render();
 }
 function render(){
   const anual=plan==='anual';
-  const valor=anual?'R$149':'R$19,90';
-  document.getElementById('pix-txt').innerHTML='Pague <strong>'+valor+'</strong> uma vez, na hora, pelo Pix.';
-  document.getElementById('cta').textContent = pay==='pix' ? ('Pagar '+valor+' no Pix') : (anual?'Assinar por R$149/ano':'Assinar por R$19,90/mês');
+  document.getElementById('cta').textContent = anual ? 'Assinar por R$149 (Pix ou cartão)' : 'Assinar por R$19,90/mês';
   document.getElementById('cta-sub').textContent = anual ? 'Cobrança única · acesso por 12 meses' : 'Renova todo mês · cancela quando quiser';
-  // Pix não é recorrente → no mensal, esconde a aba Pix
-  document.getElementById('tab-pix').style.display = anual ? '' : 'none';
 }
 render();
+
+/* sessão do usuário — precisa de conta pra assinar */
+let gUser=null;
+(async()=>{
+  const cfg=window.TIDELINE_CONFIG||{};
+  if(!cfg.SUPABASE_URL) return;
+  try{
+    const { createClient }=await import('https://esm.sh/@supabase/supabase-js@2');
+    const c=createClient(cfg.SUPABASE_URL,cfg.SUPABASE_ANON_KEY);
+    const { data }=await c.auth.getSession();
+    if(data && data.session){ gUser={ id:data.session.user.id, email:data.session.user.email }; }
+  }catch(e){}
+})();
+
+async function assinar(){
+  const cta=document.getElementById('cta');
+  if(!gUser){ location.href='login.html'; return; } // sem conta → cadastra/loga
+  cta.disabled=true; const orig=cta.textContent; cta.textContent='Abrindo pagamento...';
+  try{
+    const r=await fetch('/api/checkout',{method:'POST',headers:{'content-type':'application/json'},
+      body:JSON.stringify({ plan, userId:gUser.id, email:gUser.email })});
+    const d=await r.json();
+    if(d.init_point){ location.href=d.init_point; return; }
+    alert('Não consegui abrir o pagamento: '+(d.error||'tente de novo'));
+  }catch(e){ alert('Erro ao abrir o pagamento: '+e.message); }
+  cta.disabled=false; cta.textContent=orig;
+}
 </script>
 </body>
 </html>
