@@ -152,6 +152,7 @@
     <div class="tab" data-panel="narrador" onclick="showPanel('narrador')">🌀 Narrador</div>
     <div class="tab" data-panel="inteligencia" onclick="showPanel('inteligencia')">🧠 Inteligência</div>
     <div class="tab" data-panel="assinantes" onclick="showPanel('assinantes')">👥 Assinantes</div>
+    <div class="tab" data-panel="afiliados" onclick="showPanel('afiliados')">🤝 Afiliados</div>
   </div>
 
   <div class="wrap">
@@ -368,6 +369,31 @@
       </div>
     </div>
 
+    <div class="panel" id="panel-afiliados">
+      <div class="card">
+        <h2 style="margin:0 0 4px">🤝 Afiliados</h2>
+        <div class="sub">Crie afiliados, gere o link e acompanhe comissões. <strong>60%</strong> na 1ª mensal · <strong>25%</strong> recorrente · <strong>40%</strong> no anual · libera <strong>30 dias</strong> após o pagamento.</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;align-items:flex-end">
+          <div class="field" style="flex:1;min-width:120px"><label>Nome</label><input id="af-nome" placeholder="João Surf"></div>
+          <div class="field" style="flex:1;min-width:160px"><label>Contato / Pix (pra pagar)</label><input id="af-contato" placeholder="e-mail, WhatsApp ou chave Pix"></div>
+          <div class="field" style="min-width:110px"><label>Código</label><input id="af-codigo" placeholder="JOAO" style="text-transform:uppercase"></div>
+          <button class="btn primary" onclick="criarAfiliado()" style="margin:0">Criar</button>
+        </div>
+        <div id="af-msg" style="font-size:12.5px;margin-top:10px"></div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <h2 style="margin:0 0 4px">💰 A pagar agora</h2>
+        <div class="sub">Comissões que já passaram os 30 dias de carência. Pague ao afiliado e marque como pago.</div>
+        <div id="af-pagar" style="margin-top:14px;color:var(--muted)">Carregando…</div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <h2 style="margin:0 0 10px">Painel de afiliados</h2>
+        <div id="af-lista" style="color:var(--muted)">Carregando…</div>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -417,6 +443,66 @@ function showPanel(id){
   if(id==='narrador') loadNarrador();
   if(id==='inteligencia') loadInteligencia();
   if(id==='assinantes') loadAssinantes();
+  if(id==='afiliados') loadAfiliados();
+}
+
+/* ── AFILIADOS ──────────────────────────────────────── */
+async function loadAfiliados(){
+  const pagarEl=document.getElementById('af-pagar'), listaEl=document.getElementById('af-lista');
+  try{
+    const c=window.TLData&&await window.TLData.client();
+    if(!c) throw new Error('Login do painel (Supabase) não ativo.');
+    const [afR,coR]=await Promise.all([
+      c.from('afiliados').select('*').order('created_at',{ascending:false}),
+      c.from('comissoes').select('*'),
+    ]);
+    if(afR.error) throw afR.error;
+    const afs=afR.data||[], coms=coR.data||[], now=Date.now();
+    const byAf={}; coms.forEach(k=>{ (byAf[k.afiliado_codigo]=byAf[k.afiliado_codigo]||[]).push(k); });
+    const brl=v=>'R$ '+(Number(v)||0).toFixed(2).replace('.',',');
+    // A PAGAR (liberável = pendente e passou 30d)
+    const pagar=[];
+    afs.forEach(a=>{
+      const lib=(byAf[a.codigo]||[]).filter(k=>k.status==='pendente'&&new Date(k.libera_em).getTime()<=now);
+      if(lib.length){ const t=lib.reduce((s,k)=>s+ +k.comissao,0);
+        pagar.push('<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 0;border-top:1px solid var(--line)"><div><strong style="color:var(--deep)">'+esc(a.nome||a.codigo)+'</strong> · <span style="color:var(--muted)">'+esc(a.contato||'')+'</span><br><span style="font-size:12px;color:var(--muted)">'+lib.length+' comissão(ões) liberada(s)</span></div><div style="text-align:right;white-space:nowrap"><div style="font-weight:800;color:var(--ok);font-size:17px">'+brl(t)+'</div><button class="btn" style="margin-top:4px;font-size:12px;padding:6px 10px" onclick="marcarPago(\''+a.codigo+'\')">Marcar pago</button></div></div>');
+      }
+    });
+    pagarEl.innerHTML = pagar.length ? pagar.join('') : '<span style="color:var(--muted)">Nada liberado pra pagar agora. 🤙</span>';
+    // LISTA
+    if(!afs.length){ listaEl.innerHTML='<span style="color:var(--muted)">Nenhum afiliado ainda. Crie o primeiro acima.</span>'; return; }
+    listaEl.innerHTML='<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13px"><thead><tr style="text-align:left;color:var(--muted);font-size:11px;text-transform:uppercase"><th style="padding:6px 8px">Afiliado</th><th style="padding:6px 8px">Link</th><th style="padding:6px 8px">Vendas</th><th style="padding:6px 8px">Pendente</th><th style="padding:6px 8px">Liberável</th><th style="padding:6px 8px">Pago</th></tr></thead><tbody>'+
+      afs.map(a=>{ const l=byAf[a.codigo]||[];
+        const pend=l.filter(k=>k.status==='pendente'&&new Date(k.libera_em).getTime()>now).reduce((s,k)=>s+ +k.comissao,0);
+        const libr=l.filter(k=>k.status==='pendente'&&new Date(k.libera_em).getTime()<=now).reduce((s,k)=>s+ +k.comissao,0);
+        const pago=l.filter(k=>k.status==='pago').reduce((s,k)=>s+ +k.comissao,0);
+        return '<tr style="border-top:1px solid var(--line)"><td style="padding:8px"><strong>'+esc(a.nome||a.codigo)+'</strong><br><span style="font-size:11px;color:var(--muted)">'+esc(a.codigo)+'</span></td><td style="padding:8px"><button class="btn" style="font-size:11px;padding:5px 8px" onclick="copiarLink(\''+a.codigo+'\')">Copiar link</button></td><td style="padding:8px">'+l.length+'</td><td style="padding:8px;color:var(--muted)">'+brl(pend)+'</td><td style="padding:8px;color:var(--ok);font-weight:700">'+brl(libr)+'</td><td style="padding:8px;color:var(--muted)">'+brl(pago)+'</td></tr>';
+      }).join('')+'</tbody></table></div>';
+  }catch(e){ pagarEl.textContent='Erro: '+(e.message||e); listaEl.textContent=''; }
+}
+async function criarAfiliado(){
+  const nome=val('af-nome'), contato=val('af-contato');
+  const codigo=(val('af-codigo')||'').toUpperCase().replace(/[^A-Z0-9_-]/g,'');
+  const m=document.getElementById('af-msg');
+  if(!nome){ m.style.color='var(--accent)'; m.textContent='Digite o nome.'; return; }
+  if(codigo.length<2){ m.style.color='var(--accent)'; m.textContent='Código precisa de ao menos 2 caracteres (letras/números).'; return; }
+  const c=await window.TLData.client();
+  const { error }=await c.from('afiliados').insert({ codigo, nome, contato });
+  if(error){ m.style.color='var(--accent)'; m.textContent=/duplicate|unique/i.test(error.message)?'Esse código já existe — escolha outro.':('Erro: '+error.message); return; }
+  m.style.color='var(--ok)'; m.innerHTML='✓ Criado! Link do '+esc(nome)+': <strong>'+location.origin+'/?ref='+codigo+'</strong>';
+  document.getElementById('af-nome').value=''; document.getElementById('af-contato').value=''; document.getElementById('af-codigo').value='';
+  loadAfiliados();
+}
+async function marcarPago(codigo){
+  if(!confirm('Confirmar que você PAGOU as comissões liberadas de '+codigo+'? Fica registrado como pago.')) return;
+  const c=await window.TLData.client(); const nowISO=new Date().toISOString();
+  const { error }=await c.from('comissoes').update({ status:'pago', comissao_paga_em:nowISO }).eq('afiliado_codigo',codigo).eq('status','pendente').lte('libera_em',nowISO);
+  if(error){ toast('Erro: '+error.message); return; }
+  toast('Registrado como pago ✓'); loadAfiliados();
+}
+function copiarLink(codigo){
+  const link=location.origin+'/?ref='+codigo;
+  (navigator.clipboard&&navigator.clipboard.writeText(link).then(()=>toast('Link copiado 🤙'))) || toast(link);
 }
 
 /* ── ASSINANTES (lê profiles do Supabase) ───────────── */
