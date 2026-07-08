@@ -1125,10 +1125,12 @@ if (!localStorage.getItem('tl_demo_auth') && !_hasSbToken) {
 }
 let gUserPlan = 'premium'; // resolvido em initAuth (beta=premium; Supabase=trial/premium/free)
 let gTrialEnds = null, gPremiumUntil = null, gPlanKind = 'premium'; // 'beta'|'trial'|'premium'|'free'
+let gSb = null, gUid = null, gNeedsOnboarding = false;
 async function resolvePlanFromProfile(c, uid){
   try{
-    const { data } = await c.from('profiles').select('plano,trial_ends,premium_until').eq('id',uid).maybeSingle();
+    const { data } = await c.from('profiles').select('plano,trial_ends,premium_until,praia_principal,nivel').eq('id',uid).maybeSingle();
     if(!data){ gPlanKind='free'; return 'free'; }
+    gNeedsOnboarding = !data.praia_principal;
     const now=Date.now();
     gTrialEnds = data.trial_ends ? new Date(data.trial_ends).getTime() : null;
     gPremiumUntil = data.premium_until ? new Date(data.premium_until).getTime() : null;
@@ -1144,7 +1146,7 @@ async function initAuth(){
     const c = window.TLData && await window.TLData.client();
     if(c){
       const { data } = await c.auth.getSession();
-      if(data && data.session){ gUserPlan = await resolvePlanFromProfile(c, data.session.user.id); renderTrialUI(); if(gMarine&&gForecast&&typeof renderMar==='function'){ try{renderMar(gMarine,gForecast,gSelectedIdx);}catch(e){} } return; }
+      if(data && data.session){ gSb=c; gUid=data.session.user.id; gUserPlan = await resolvePlanFromProfile(c, gUid); renderTrialUI(); if(gNeedsOnboarding) showOnboarding(); if(gMarine&&gForecast&&typeof renderMar==='function'){ try{renderMar(gMarine,gForecast,gSelectedIdx);}catch(e){} } return; }
     }
   }catch(e){}
   window.location.replace('login.html');
@@ -3219,6 +3221,40 @@ function showUpgradePopup(mode){
 }
 
 function upsellPro(){ showUpgradePopup('pro'); }
+
+// onboarding pós-cadastro: pico principal + nível (salva no profile)
+function showOnboarding(){
+  if(document.getElementById('onb')) return;
+  let nivel='';
+  const bg=document.createElement('div'); bg.id='onb';
+  bg.style.cssText='position:fixed;inset:0;z-index:1100;background:#F2EFE9;overflow:auto;display:flex;flex-direction:column;align-items:center;padding:40px 24px';
+  bg.innerHTML='<div style="max-width:420px;width:100%;text-align:center">'
+    +'<div style="font-size:24px;font-weight:300;color:#172726">tide<strong style="font-weight:700">line</strong><span style="color:#F95831">.</span></div>'
+    +'<div style="font-size:40px;margin:14px 0 2px">🏄</div>'
+    +'<h1 style="font-size:23px;font-weight:800;color:#172726;letter-spacing:-.02em">Bora ajustar pro seu mar</h1>'
+    +'<p style="font-size:14px;color:#476664;margin:8px 0 24px">Duas perguntas rápidas pra deixar o Tideline com a sua cara.</p>'
+    +'<div style="text-align:left">'
+    +'<label style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#476664;display:block;margin-bottom:7px">Qual seu pico principal?</label>'
+    +'<input id="onb-praia" placeholder="Ex: Praia do Forte, Cabo Frio" style="width:100%;padding:13px 14px;background:#E8F0ED;border:1.5px solid transparent;border-radius:10px;font-size:15px;font-family:inherit;color:#172726;outline:none;margin-bottom:20px">'
+    +'<label style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#476664;display:block;margin-bottom:9px">Seu nível no surf</label>'
+    +'<div style="display:flex;gap:8px;margin-bottom:26px">'
+    +['Iniciante','Intermediário','Avançado'].map(n=>'<button class="onb-niv" data-n="'+n+'" style="flex:1;padding:12px 6px;background:#E8F0ED;border:1.5px solid transparent;border-radius:10px;font-size:13px;font-weight:700;color:#476664;font-family:inherit;cursor:pointer">'+n+'</button>').join('')
+    +'</div></div>'
+    +'<button id="onb-go" style="width:100%;padding:15px;background:#2F9E6F;color:#fff;border:none;border-radius:13px;font-size:15px;font-weight:800;font-family:inherit;cursor:pointer">Começar a usar</button>'
+    +'<button id="onb-skip" style="width:100%;padding:10px;background:none;border:none;color:#476664;font-size:12px;margin-top:6px;cursor:pointer;font-family:inherit">Pular por agora</button>'
+    +'</div>';
+  document.body.appendChild(bg);
+  bg.querySelectorAll('.onb-niv').forEach(b=>b.onclick=()=>{ nivel=b.dataset.n;
+    bg.querySelectorAll('.onb-niv').forEach(x=>{x.style.background='#E8F0ED';x.style.color='#476664';x.style.borderColor='transparent';});
+    b.style.background='#fff'; b.style.color='#172726'; b.style.borderColor='#2F9E6F'; });
+  bg.querySelector('#onb-skip').onclick=()=>{ gNeedsOnboarding=false; bg.remove(); };
+  bg.querySelector('#onb-go').onclick=async()=>{
+    const praia=bg.querySelector('#onb-praia').value.trim();
+    const go=bg.querySelector('#onb-go'); go.disabled=true; go.textContent='Salvando...';
+    try{ if(gSb&&gUid) await gSb.from('profiles').update({ praia_principal: praia||'—', nivel: nivel||'' }).eq('id',gUid); }catch(e){}
+    gNeedsOnboarding=false; bg.remove();
+  };
+}
 function isTemplatePremium(id){ const t=window.TLTemplates&&window.TLTemplates.get(id); return !!(t&&t.premium); }
 function drawUpsellCanvas(){
   const canvas=document.getElementById('surf-canvas'); if(!canvas) return; const ctx=canvas.getContext('2d'),W=canvas.width,H=canvas.height;

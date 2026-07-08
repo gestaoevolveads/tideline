@@ -73,6 +73,10 @@ body{font-family:var(--ff);background:var(--bg);color:var(--deep);min-height:100
         <input class="form-input" type="email" id="su-email" placeholder="voce@email.com" autocomplete="email" autocapitalize="none" autocorrect="off" spellcheck="false">
       </div>
       <div class="form-group">
+        <label>Celular (com DDD)</label>
+        <input class="form-input" type="tel" id="su-fone" placeholder="(11) 91234-5678" inputmode="numeric" autocomplete="tel" maxlength="16" oninput="maskFone(this)">
+      </div>
+      <div class="form-group">
         <label>Senha</label>
         <input class="form-input" type="password" id="su-pass" placeholder="mínimo 6 caracteres" autocomplete="new-password">
       </div>
@@ -162,17 +166,31 @@ async function entrar(){
   }
 }
 
+// máscara de celular BR: (XX) XXXXX-XXXX
+function maskFone(el){
+  let v=el.value.replace(/\D/g,'').slice(0,11);
+  if(v.length>=7) el.value='('+v.slice(0,2)+') '+v.slice(2,7)+'-'+v.slice(7);
+  else if(v.length>=3) el.value='('+v.slice(0,2)+') '+v.slice(2);
+  else if(v.length>=1) el.value='('+v;
+  else el.value=v;
+}
+// valida celular BR: 11 dígitos, DDD 11-99, 9º dígito começa com 9
+function foneValido(f){ return f.length===11 && +f.slice(0,2)>=11 && f[2]==='9'; }
+
 async function criarConta(){
   const nome=document.getElementById('su-nome').value.trim();
   const email=document.getElementById('su-email').value.trim().toLowerCase();
+  const fone=document.getElementById('su-fone').value.replace(/\D/g,'');
   const pass=document.getElementById('su-pass').value;
   clearMsg();
+  if(!nome){ msg('Digite seu nome.'); return; }
   if(!email.includes('@')){ msg('Digite um e-mail válido.'); return; }
+  if(!foneValido(fone)){ msg('Digite um celular válido com DDD — ex: (11) 91234-5678.'); return; }
   if(pass.length<6){ msg('A senha precisa de pelo menos 6 caracteres.'); return; }
   const c=await sb();
   if(!c){ msg('Cadastro indisponível no momento.'); return; }
   const btn=document.getElementById('btn-criar'); btn.disabled=true; btn.textContent='Criando conta...';
-  const { data, error } = await c.auth.signUp({ email, password:pass, options:{ data:{ nome } } });
+  const { data, error } = await c.auth.signUp({ email, password:pass, options:{ data:{ nome, telefone:fone } } });
   btn.disabled=false; btn.textContent='Começar meus 14 dias grátis';
   if(error){
     msg(/registered|already/i.test(error.message)?'Esse e-mail já tem conta. Faça login.':('Erro: '+error.message));
