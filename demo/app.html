@@ -1124,23 +1124,27 @@ if (!localStorage.getItem('tl_demo_auth') && !_hasSbToken) {
   window.location.replace('login.html');
 }
 let gUserPlan = 'premium'; // resolvido em initAuth (beta=premium; Supabase=trial/premium/free)
+let gTrialEnds = null, gPremiumUntil = null, gPlanKind = 'premium'; // 'beta'|'trial'|'premium'|'free'
 async function resolvePlanFromProfile(c, uid){
   try{
     const { data } = await c.from('profiles').select('plano,trial_ends,premium_until').eq('id',uid).maybeSingle();
-    if(!data) return 'free';
+    if(!data){ gPlanKind='free'; return 'free'; }
     const now=Date.now();
-    const trialOk = data.trial_ends && new Date(data.trial_ends).getTime()>now;
-    const premOk  = data.premium_until && new Date(data.premium_until).getTime()>now;
+    gTrialEnds = data.trial_ends ? new Date(data.trial_ends).getTime() : null;
+    gPremiumUntil = data.premium_until ? new Date(data.premium_until).getTime() : null;
+    const trialOk = gTrialEnds && gTrialEnds>now;
+    const premOk  = gPremiumUntil && gPremiumUntil>now;
+    gPlanKind = premOk ? 'premium' : trialOk ? 'trial' : 'free';
     return (trialOk||premOk) ? 'premium' : 'free';
-  }catch(e){ return 'free'; }
+  }catch(e){ gPlanKind='free'; return 'free'; }
 }
 async function initAuth(){
-  if(localStorage.getItem('tl_demo_auth')){ gUserPlan='premium'; return; } // beta
+  if(localStorage.getItem('tl_demo_auth')){ gUserPlan='premium'; gPlanKind='beta'; return; } // beta
   try{
     const c = window.TLData && await window.TLData.client();
     if(c){
       const { data } = await c.auth.getSession();
-      if(data && data.session){ gUserPlan = await resolvePlanFromProfile(c, data.session.user.id); return; }
+      if(data && data.session){ gUserPlan = await resolvePlanFromProfile(c, data.session.user.id); renderTrialUI(); return; }
     }
   }catch(e){}
   window.location.replace('login.html');
@@ -3137,7 +3141,61 @@ function appToast(msg){
   if(!t){ t=document.createElement('div'); t.id='app-toast'; t.style.cssText='position:fixed;left:50%;bottom:92px;transform:translateX(-50%);background:#172726;color:#F2EFE9;padding:12px 18px;border-radius:12px;font-size:13px;font-weight:600;z-index:9999;box-shadow:0 6px 24px rgba(0,0,0,.28);max-width:82%;text-align:center;opacity:0;transition:opacity .2s'; document.body.appendChild(t); }
   t.textContent=msg; t.style.opacity='1'; clearTimeout(t._h); t._h=setTimeout(()=>t.style.opacity='0',2800);
 }
-function upsellPro(){ appToast('🔒 Template PRO — libere na versão premium do Tideline'); }
+function goAssinar(){ location.href='assinar.html'; }
+function trialDaysLeft(){ return gTrialEnds!=null ? Math.max(0, Math.ceil((gTrialEnds-Date.now())/86400000)) : null; }
+
+// mostra o countdown do trial + dispara popup em 3/2/1/0 dias (1x por dia)
+function renderTrialUI(){
+  if(gPlanKind==='trial'){
+    const d=trialDaysLeft();
+    showTrialBar(d);
+    if(d<=3){ const k='tl_trialnotif_'+d; if(!localStorage.getItem(k)){ localStorage.setItem(k,'1'); showUpgradePopup(String(d)); } }
+  } else if(gPlanKind==='free'){
+    showTrialBar(-1);
+    if(!localStorage.getItem('tl_trialover')){ localStorage.setItem('tl_trialover','1'); showUpgradePopup('over'); }
+  }
+}
+
+// contador humilde, flutuante, acima da barra de navegação
+function showTrialBar(d){
+  let b=document.getElementById('trial-bar');
+  if(!b){ b=document.createElement('div'); b.id='trial-bar'; b.onclick=goAssinar;
+    b.style.cssText='position:fixed;left:50%;transform:translateX(-50%);bottom:78px;z-index:900;background:#172726;color:#F2EFE9;border-radius:999px;padding:9px 16px;font-size:12.5px;font-weight:700;box-shadow:0 6px 20px rgba(0,0,0,.22);cursor:pointer;white-space:nowrap;max-width:92%';
+    document.body.appendChild(b);
+  }
+  if(d===-1) b.innerHTML='🔒 Teste encerrado · <span style="color:#F95831">Assinar</span>';
+  else if(d<=0) b.innerHTML='🏄 Teste acaba hoje · <span style="color:#F95831">Assinar</span>';
+  else b.innerHTML='🏄 Teste · <strong>'+d+(d===1?' dia':' dias')+'</strong> · <span style="color:#F95831">Assinar</span>';
+}
+
+// popup humilde de upgrade (trial acabando, acabou, ou tentou usar recurso PRO)
+function showUpgradePopup(mode){
+  const M={
+    '3':{t:'Faltam 3 dias do seu teste',p:'Curtindo ler o mar de verdade? Garanta o Premium e não perde nada quando o teste acabar.'},
+    '2':{t:'2 dias de teste',p:'Os alertas de swell e a semana inteira analisada seguem com você se assinar agora.'},
+    '1':{t:'Último dia de teste',p:'Amanhã o Premium tranca. Assine e siga com tudo — a partir de R$12,40/mês no anual.'},
+    '0':{t:'Seu teste acaba hoje',p:'Assine pra não perder os alertas, a semana inteira e os cupons que se pagam.'},
+    'over':{t:'Seu teste acabou',p:'O Premium está trancado. Assine pra reabrir a semana inteira, os alertas e os cupons.'},
+    'pro':{t:'Recurso Premium',p:'Isso faz parte do Premium. Assine pra liberar — 14 dias de garantia, cancela quando quiser.'},
+  };
+  const m=M[mode]||M['pro'];
+  const old=document.getElementById('up-pop'); if(old) old.remove();
+  const bg=document.createElement('div'); bg.id='up-pop';
+  bg.style.cssText='position:fixed;inset:0;z-index:1000;background:rgba(23,39,38,.55);display:flex;align-items:flex-end;justify-content:center';
+  bg.innerHTML='<div style="background:#F2EFE9;width:100%;max-width:460px;border-radius:22px 22px 0 0;padding:26px 24px 30px;text-align:center">'
+    +'<div style="font-size:34px;margin-bottom:4px">🌊</div>'
+    +'<div style="font-size:19px;font-weight:800;color:#172726">'+m.t+'</div>'
+    +'<div style="font-size:14px;color:#476664;line-height:1.5;margin:8px 0 20px">'+m.p+'</div>'
+    +'<button id="up-go" style="width:100%;padding:15px;background:#F95831;color:#fff;border:none;border-radius:13px;font-size:15px;font-weight:800;font-family:inherit;cursor:pointer">Assinar agora</button>'
+    +'<button id="up-no" style="width:100%;padding:12px;background:none;border:none;color:#476664;font-size:13px;font-weight:600;font-family:inherit;cursor:pointer;margin-top:4px">Agora não</button>'
+    +'</div>';
+  document.body.appendChild(bg);
+  bg.querySelector('#up-go').onclick=goAssinar;
+  bg.querySelector('#up-no').onclick=()=>bg.remove();
+  bg.onclick=e=>{ if(e.target===bg) bg.remove(); };
+}
+
+function upsellPro(){ showUpgradePopup('pro'); }
 function isTemplatePremium(id){ const t=window.TLTemplates&&window.TLTemplates.get(id); return !!(t&&t.premium); }
 function drawUpsellCanvas(){
   const canvas=document.getElementById('surf-canvas'); if(!canvas) return; const ctx=canvas.getContext('2d'),W=canvas.width,H=canvas.height;
