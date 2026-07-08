@@ -1015,6 +1015,7 @@
     <div class="share-tipo-toggle" id="share-tipo-toggle">
       <button class="share-tipo-btn active" data-tipo="temporada" onclick="setShareTipo('temporada')">Temporada</button>
       <button class="share-tipo-btn" data-tipo="sessao" onclick="setShareTipo('sessao')">Sessão</button>
+      <button class="share-tipo-btn" data-tipo="previsao" onclick="setShareTipo('previsao')">Previsão</button>
     </div>
     <div class="temp-tabs" id="temp-tabs"></div>
     <div id="sessao-picker" style="display:none;padding:2px 24px 8px">
@@ -1885,6 +1886,20 @@ function renderMar(marine, forecast, idx) {
   const narratorJanelaHtml = narrator?.janela ? `<span class="sh-dot">·</span><span>Janela: <strong>${narrator.janela}</strong></span>` : '';
   const narratorAvisoHtml = narrator?.aviso ? `<div class="localism-note"><div class="localism-icon">⚠️</div><div class="localism-text">${narrator.aviso}</div></div>` : '';
 
+  // captura a previsão atual pra compartilhar em card
+  gCurrentForecast = {
+    praia: gBeach?.name || 'Praia',
+    data: dayNavLabel,
+    condicao: vibe.tag,
+    titulo: headline,
+    analise: String(narrator?.analise || buildTranslation(wind,waveP,waveH,windD,gBeach)).replace(/<[^>]+>/g,'').replace(/&nbsp;/g,' ').trim(),
+    onda: waveH.toFixed(1).replace('.',',')+'m · '+bodyScale(waveH),
+    periodo: waveP+'s',
+    vento: wind.label+' '+Math.round(windSpd)+'km/h',
+    energia: (()=>{const kw=wavePower(waveH,waveP);return kw>=1000?(kw/1000).toFixed(1)+' MW/m':Math.round(kw)+' kW/m';})(),
+    janela: narrator?.janela || null,
+  };
+
   const html=`
     ${swellAlert ? `<div class="swell-alert"><span class="swell-icon">🌊</span>${swellAlert}</div>` : ''}
     <div id="vibe-section">
@@ -1965,11 +1980,16 @@ function renderMar(marine, forecast, idx) {
       ${buildCrowdHtml(score,hour,dow)}
     </div>
 
-    <div style="display:flex;gap:10px;margin:0 24px 16px">
+    <div style="display:flex;gap:10px;margin:0 24px 10px">
       <button class="whats-btn" style="flex:1;margin:0;width:auto" onclick="shareWhatsApp()">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 2C6.477 2 2 6.477 2 12c0 1.89.525 3.658 1.438 5.168L2 22l4.878-1.427A9.956 9.956 0 0011.999 22c5.523 0 10-4.477 10-10S17.522 2 11.999 2z"/></svg>
-        Compartilhar
+        WhatsApp
       </button>
+      <button class="whats-btn" style="flex:1;margin:0;width:auto;background:var(--accent)" onclick="openCardModal(null,'previsao')">
+        📸 Card pras redes
+      </button>
+    </div>
+    <div style="display:flex;gap:10px;margin:0 24px 16px">
       <button class="whats-btn" style="flex:1;margin:0;width:auto;background:var(--deep)" onclick="openOndeSurfar()">
         🌍 Onde surfar?
       </button>
@@ -3075,6 +3095,7 @@ function renderCompare(b1, b2, d1, d2) {
 /* ── SURF CARD ───────────────────────────────────────── */
 let gTemporadaPeriod = '30', gTemporadaTemplate = 'grade-noite', gTemporadaPhoto = null;
 let gShareTipo = 'temporada', gSessaoTemplate = 'sessao', gSessaoIdx = 0;
+let gPrevisaoTemplate = 'boletim', gCurrentForecast = null;
 function esc(s){return String(s==null?'':s).replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));}
 
 /* ── PLANO (premium/free) e trava de templates PRO ──── */
@@ -3132,12 +3153,13 @@ function setTemporadaPeriod(p) {
   renderSurfCard();
 }
 
-function openCardModal(period) {
+function openCardModal(period, tipo) {
   gTemporadaPeriod = period || '30';
-  gShareTipo = 'temporada';
+  gShareTipo = tipo || 'temporada';
   document.getElementById('card-modal').classList.add('open');
   const tabs = document.getElementById('temp-tabs');
   if (tabs) tabs.innerHTML = buildTemporadaTabs(gTemporadaPeriod);
+  if (gShareTipo === 'sessao') buildSessaoOptions();
   syncShareTipoUI();
   renderTemporadaTabs2();
   renderShareCard();
@@ -3153,14 +3175,21 @@ function setShareTipo(tipo) {
 }
 function syncShareTipoUI() {
   document.querySelectorAll('.share-tipo-btn').forEach(b => b.classList.toggle('active', b.dataset.tipo === gShareTipo));
-  const isSes = gShareTipo === 'sessao';
-  const tabs = document.getElementById('temp-tabs'); if (tabs) tabs.style.display = isSes ? 'none' : 'flex';
-  const pick = document.getElementById('sessao-picker'); if (pick) pick.style.display = isSes ? 'block' : 'none';
+  const tabs = document.getElementById('temp-tabs'); if (tabs) tabs.style.display = (gShareTipo==='temporada') ? 'flex' : 'none';
+  const pick = document.getElementById('sessao-picker'); if (pick) pick.style.display = (gShareTipo==='sessao') ? 'block' : 'none';
 }
+function shareCurTemplateId(){ return gShareTipo==='sessao' ? gSessaoTemplate : gShareTipo==='previsao' ? gPrevisaoTemplate : gTemporadaTemplate; }
 function renderShareCard() {
-  const curId = gShareTipo==='sessao' ? gSessaoTemplate : gTemporadaTemplate;
-  if (isTemplatePremium(curId) && isFreeUser()) { drawUpsellCanvas(); return; }
-  if (gShareTipo === 'sessao') renderSessaoCard(); else renderSurfCard();
+  if (isTemplatePremium(shareCurTemplateId()) && isFreeUser()) { drawUpsellCanvas(); return; }
+  if (gShareTipo === 'sessao') renderSessaoCard();
+  else if (gShareTipo === 'previsao') renderPrevisaoCard();
+  else renderSurfCard();
+}
+function renderPrevisaoCard() {
+  const canvas = document.getElementById('surf-canvas');
+  if (!canvas || !window.TLTemplates) return;
+  const d = gCurrentForecast || {praia:(gBeach&&gBeach.name)||'Praia',data:'Hoje',condicao:'—',titulo:'Previsão',analise:'',onda:'—',periodo:'—',vento:'—',energia:'—',janela:null};
+  window.TLTemplates.render(canvas.getContext('2d'), canvas.width, canvas.height, d, gPrevisaoTemplate, null);
 }
 
 // monta a lista de sessões (check-ins), mais recente primeiro
@@ -3330,7 +3359,7 @@ function handleTemporadaPhoto(input) {
 function renderTemporadaTabs2() {
   const row = document.getElementById('temp-tpl-row');
   if (!row || !window.TLTemplates) return;
-  const curId = gShareTipo==='sessao' ? gSessaoTemplate : gTemporadaTemplate;
+  const curId = shareCurTemplateId();
   row.innerHTML = window.TLTemplates.LIST.filter(t => (t.tipo||'temporada')===gShareTipo).map(t =>
     (t=>{ const locked=t.premium&&isFreeUser();
       const badge=t.premium?(locked?' 🔒':' <span class="tpl-pro">PRO</span>'):'';
@@ -3342,7 +3371,9 @@ function renderTemporadaTabs2() {
   if (pw) pw.style.display = (gShareTipo==='temporada' && cur && cur.usaFoto) ? 'block' : 'none';
 }
 function setShareTemplate(id) {
-  if (gShareTipo === 'sessao') gSessaoTemplate = id; else gTemporadaTemplate = id;
+  if (gShareTipo === 'sessao') gSessaoTemplate = id;
+  else if (gShareTipo === 'previsao') gPrevisaoTemplate = id;
+  else gTemporadaTemplate = id;
   renderTemporadaTabs2();
   renderShareCard();
 }
@@ -3368,8 +3399,7 @@ function renderSurfCard() {
 }
 
 function shareGateBlocked() {
-  const curId = gShareTipo==='sessao' ? gSessaoTemplate : gTemporadaTemplate;
-  if (isTemplatePremium(curId) && isFreeUser()) { upsellPro(); return true; }
+  if (isTemplatePremium(shareCurTemplateId()) && isFreeUser()) { upsellPro(); return true; }
   return false;
 }
 function downloadSurfCard() {
