@@ -17,7 +17,22 @@ function beachPriority(b){ if (b.state==='RJ') return 0; if (BR_STATES.has(b.sta
 const BEACHES = ALL_BEACHES.filter(b => b.active !== false)
   .map((b,i)=>({b,i})).sort((x,y)=> beachPriority(x.b)-beachPriority(y.b) || x.i-y.i).map(o=>o.b);
 // Teto de variações NOVAS por execução (proxy de orçamento). 0 = sem teto.
-const MAX_NEW = Number(process.env.MAX_NEW_VARIACOES) || 0;
+// Vem do env (override manual) OU do painel via Supabase (slider de ritmo).
+let MAX_NEW = Number(process.env.MAX_NEW_VARIACOES) || 0;
+
+// Config de ritmo controlada pelo painel (tabela config, chave narrator_pace).
+// Chave publishable é pública por design. Leitura sem custo.
+const SB_URL = 'https://efgqgfnijhkuvincxfst.supabase.co';
+const SB_KEY = 'sb_publishable_dlDItMsVmfNLo1jhADYv3A_k2dV4m6i';
+async function readPaceConfig() {
+  try {
+    const r = await fetch(`${SB_URL}/rest/v1/config?key=eq.narrator_pace&select=value`, { headers: { apikey: SB_KEY } });
+    if (!r.ok) return 0;
+    const rows = await r.json();
+    const v = rows && rows[0] && rows[0].value;
+    return v && Number(v.max_new_per_run) > 0 ? Math.round(Number(v.max_new_per_run)) : 0;
+  } catch { return 0; }
+}
 
 // ── Conhecimento destilado dos livros → system prompt (com prompt caching) ──
 function loadKnowledge() {
@@ -319,7 +334,11 @@ async function main() {
 
   let hits = 0, misses = 0, apiCalls = 0, novasGeradas = 0;
   const stats = { target: TARGET_VARIACOES, beaches: [], forecastKeysSeen: new Set() };
-  if (MAX_NEW) console.log(`Teto deste lote: ${MAX_NEW} variações novas. Prioridade: RJ → resto BR → gringas.`);
+  // ritmo do painel (só se não houver override por env). Sem config = teto seguro
+  // de 30/rodada (nunca gera tudo de uma vez num run automático).
+  if (!process.env.MAX_NEW_VARIACOES) { MAX_NEW = (await readPaceConfig()) || 30; }
+  if (MAX_NEW) console.log(`Teto deste lote: ${MAX_NEW} variações novas (ritmo do painel). Prioridade: RJ → resto BR → gringas.`);
+  else console.log('Sem teto: gera tudo que faltar até a meta.');
 
   for (let bi = 0; bi < BEACHES.length; bi++) {
     const beach = BEACHES[bi];

@@ -2,11 +2,12 @@ name: Gerar Narrações
 
 on:
   workflow_dispatch:
-  # Agendamento automático DESLIGADO: a geração usa crédito do console da Anthropic,
-  # então roda só sob controle manual (workflow_dispatch) até o banco estar completo
-  # e o custo diário baixo. Para religar o modo diário: descomentar abaixo.
-  # schedule:
-  #   - cron: '0 */6 * * *'
+  # Religado: roda de 6/6h. O RITMO de gasto vem do painel (slider → Supabase
+  # config narrator_pace) com teto seguro de 30 variações/rodada se não configurado.
+  # O TETO DURO de gasto é o limite mensal do console da Anthropic (defina lá).
+  # Cada rodada também mantém o cache fresco (refresh é grátis).
+  schedule:
+    - cron: '0 */6 * * *'
 
 # serializa com ranking e feed pra evitar push simultâneo na main
 concurrency:

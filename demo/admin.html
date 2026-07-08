@@ -256,6 +256,24 @@
     <!-- ASSINANTES -->
     <div class="panel" id="panel-narrador">
       <div class="card">
+        <h2 style="margin:0 0 4px">⚙️ Ritmo de atualização</h2>
+        <div class="sub">Quanto a IA gasta por dia enchendo o banco (rodando de 6/6h). Aumente pra ir mais rápido, diminua pra economizar. O teto duro de gasto fica no <b>limite mensal do console da Anthropic</b> — isto aqui só define a velocidade dentro dele.</div>
+        <div style="margin:18px 0 6px;display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+          <div style="font-size:34px;font-weight:800;color:var(--accent);min-width:120px" id="pace-usd">US$ 0,33</div>
+          <input type="range" id="pace-slider" min="0" max="2" step="0.05" value="0.33" style="flex:1;min-width:220px" oninput="paceOnInput(this.value)">
+          <span style="font-size:12px;color:var(--muted);white-space:nowrap">por dia</span>
+        </div>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;margin:10px 0 14px">
+          <div class="nrd-kpi"><div class="nrd-num" id="pace-var">–</div><div class="nrd-lbl">variações/dia</div></div>
+          <div class="nrd-kpi"><div class="nrd-num" id="pace-mes">–</div><div class="nrd-lbl">≈ por mês</div></div>
+          <div class="nrd-kpi"><div class="nrd-num" id="pace-dias">–</div><div class="nrd-lbl">dias p/ encher (meta 7)</div></div>
+        </div>
+        <button class="btn primary" onclick="savePace()">Salvar ritmo</button>
+        <span id="pace-status" style="font-size:12px;color:var(--muted);margin-left:10px"></span>
+        <div style="font-size:11px;color:var(--muted);margin-top:10px">💡 Deixe em <b>US$ 0/dia</b> pra só manter fresco (sem gastar) depois que o banco encher. O job continua rodando de 6/6h de qualquer jeito.</div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
         <h2 style="margin:0 0 4px">🌀 Banco do Narrador</h2>
         <div class="sub">Quanto do banco de narrações de IA já está preenchido. Cada condição de mar (altura+período+vento+turno de cada praia) tem um texto reusável. O banco enche sozinho a cada geração; aqui você acompanha o progresso.</div>
         <div id="nrd-loading" style="padding:24px 0;color:var(--muted)">Carregando estatísticas…</div>
@@ -413,9 +431,44 @@ async function loadNarrador(){
     document.getElementById('nrd-updated').textContent='Atualizado em '+new Date(s.generated_at).toLocaleString('pt-BR');
     document.getElementById('nrd-loading').style.display='none';
     document.getElementById('nrd-body').style.display='block';
+    gNrdRemaining = Math.max(0, s.condicoesUnicas*7 - s.totalVariacoes);
   }catch(e){
     document.getElementById('nrd-loading').textContent='Ainda não há estatísticas. Elas aparecem após a primeira geração do narrador (arquivo narrator-stats.json).';
   }
+  loadPace();
+}
+
+/* ── RITMO (slider → Supabase config narrator_pace) ──── */
+const PACE_COST_VAR = 0.0035, PACE_RUNS_DIA = 4; // $/variação e rodadas/dia (6/6h)
+let gNrdRemaining = 8500;
+function paceOnInput(v){
+  v = parseFloat(v)||0;
+  document.getElementById('pace-usd').textContent = 'US$ '+v.toFixed(2).replace('.',',');
+  const varDia = Math.round(v/PACE_COST_VAR);
+  document.getElementById('pace-var').textContent = varDia;
+  document.getElementById('pace-mes').textContent = 'US$ '+(v*30).toFixed(0);
+  document.getElementById('pace-dias').textContent = varDia>0 ? Math.ceil(gNrdRemaining/varDia)+'d' : '∞';
+}
+async function loadPace(){
+  try{
+    const c = await window.TLData.client(); if(!c) return;
+    const { data } = await c.from('config').select('value').eq('key','narrator_pace').maybeSingle();
+    const usd = data && data.value && Number(data.value.daily_usd);
+    const v = usd>0 ? usd : 0.33;
+    document.getElementById('pace-slider').value = v;
+    paceOnInput(v);
+  }catch(e){ paceOnInput(0.33); }
+}
+async function savePace(){
+  const v = parseFloat(document.getElementById('pace-slider').value)||0;
+  const st = document.getElementById('pace-status');
+  const c = await window.TLData.client();
+  if(!c){ st.textContent='Precisa do Supabase ligado (modo ao vivo).'; return; }
+  const max_new_per_run = Math.round((v/PACE_COST_VAR)/PACE_RUNS_DIA);
+  const { error } = await c.from('config').upsert({ key:'narrator_pace', value:{ daily_usd:v, max_new_per_run }, updated_at:new Date().toISOString() });
+  if(error){ st.textContent='Erro: '+error.message+' (a tabela config existe?)'; return; }
+  st.textContent='✓ Ritmo salvo. O job de 6/6h passa a usar ~'+max_new_per_run+' variações por rodada.';
+  toast('Ritmo salvo: US$ '+v.toFixed(2)+'/dia');
 }
 function toast(msg){
   const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show');
