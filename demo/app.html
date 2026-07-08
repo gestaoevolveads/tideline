@@ -3077,6 +3077,29 @@ let gTemporadaPeriod = '30', gTemporadaTemplate = 'grade-noite', gTemporadaPhoto
 let gShareTipo = 'temporada', gSessaoTemplate = 'sessao', gSessaoIdx = 0;
 function esc(s){return String(s==null?'':s).replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));}
 
+/* ── PLANO (premium/free) e trava de templates PRO ──── */
+// PLANOS: usuário → 'free'. Vazio = todos premium (beta atual). Fase 2: vem do Supabase/pagamento.
+const PLANOS = {};
+function getUserPlan(){ return localStorage.getItem('tl_plan') || PLANOS[localStorage.getItem('tl_demo_auth')] || 'premium'; }
+function isFreeUser(){ return getUserPlan()==='free'; }
+function appToast(msg){
+  let t=document.getElementById('app-toast');
+  if(!t){ t=document.createElement('div'); t.id='app-toast'; t.style.cssText='position:fixed;left:50%;bottom:92px;transform:translateX(-50%);background:#172726;color:#F2EFE9;padding:12px 18px;border-radius:12px;font-size:13px;font-weight:600;z-index:9999;box-shadow:0 6px 24px rgba(0,0,0,.28);max-width:82%;text-align:center;opacity:0;transition:opacity .2s'; document.body.appendChild(t); }
+  t.textContent=msg; t.style.opacity='1'; clearTimeout(t._h); t._h=setTimeout(()=>t.style.opacity='0',2800);
+}
+function upsellPro(){ appToast('🔒 Template PRO — libere na versão premium do Tideline'); }
+function isTemplatePremium(id){ const t=window.TLTemplates&&window.TLTemplates.get(id); return !!(t&&t.premium); }
+function drawUpsellCanvas(){
+  const canvas=document.getElementById('surf-canvas'); if(!canvas) return; const ctx=canvas.getContext('2d'),W=canvas.width,H=canvas.height;
+  ctx.clearRect(0,0,W,H); ctx.fillStyle='#172726'; ctx.fillRect(0,0,W,H);
+  ctx.fillStyle='#F95831'; ctx.fillRect(0,0,W,6); ctx.fillRect(0,H-6,W,6);
+  ctx.textAlign='center';
+  ctx.font='800 150px sans-serif'; ctx.fillText('🔒',W/2,H/2-30);
+  ctx.fillStyle='#D3E2DE'; ctx.font='800 40px "Helvetica Neue",Arial'; ctx.fillText('Template PRO',W/2,H/2+70);
+  ctx.fillStyle='rgba(211,226,222,.7)'; ctx.font='500 24px "Helvetica Neue",Arial'; ctx.fillText('Disponível na versão premium',W/2,H/2+118);
+  ctx.textAlign='left';
+}
+
 function buildTemporadaTabs(period) {
   const checkins = getCheckins();
   const now = new Date();
@@ -3135,6 +3158,8 @@ function syncShareTipoUI() {
   const pick = document.getElementById('sessao-picker'); if (pick) pick.style.display = isSes ? 'block' : 'none';
 }
 function renderShareCard() {
+  const curId = gShareTipo==='sessao' ? gSessaoTemplate : gTemporadaTemplate;
+  if (isTemplatePremium(curId) && isFreeUser()) { drawUpsellCanvas(); return; }
   if (gShareTipo === 'sessao') renderSessaoCard(); else renderSurfCard();
 }
 
@@ -3151,17 +3176,21 @@ function buildSessaoOptions() {
 let gSessaoList = [];
 function fmtSessaoData(iso){ try{ const d=new Date(iso+'T12:00:00'); const M=['JAN','FEV','MAR','ABR','MAI','JUN','JUL','AGO','SET','OUT','NOV','DEZ']; return String(d.getDate()).padStart(2,'0')+' '+M[d.getMonth()]; }catch{ return iso||''; } }
 
+function vibeFromRating(r){
+  return r>=5?'ÉPICA':r===4?'SESSÃO BOA':r===3?'DEU ONDA':r===2?'TREINO NO MAR':r===1?'VALEU O MERGULHO':'FUI PRO MAR';
+}
+function capFirst(s){ s=String(s||''); return s.charAt(0).toUpperCase()+s.slice(1); }
 function buildSessaoData(c){
-  if (!c) return {praia:'Sem sessão',data:'—',ondaMax:'—',nota:'—',prancha:'—',condicao:'',frase:''};
+  if (!c) return {praia:'Sem sessão',data:'—',nota:'—',vibe:'FUI PRO MAR',mar:'—',prancha:'—',frase:''};
   const wh = parseFloat(c.waveH)||0;
   const r = parseInt(c.rating)||0;
   return {
     praia: c.beach || 'Praia',
     data: fmtSessaoData(c.date),
-    ondaMax: wh>0 ? (wh.toFixed(1).replace('.',',')+'m') : '—',
     nota: r>0 ? ('★'.repeat(r)+'☆'.repeat(5-r)) : '—',
+    vibe: vibeFromRating(r),
+    mar: wh>0 ? capFirst(bodyScale(wh)) : 'Sem registro',
     prancha: c.board ? c.board : '—',
-    condicao: wh>0 ? bodyScale(wh) : 'Sessão no mar',
     frase: c.notes || '',
   };
 }
@@ -3303,7 +3332,9 @@ function renderTemporadaTabs2() {
   if (!row || !window.TLTemplates) return;
   const curId = gShareTipo==='sessao' ? gSessaoTemplate : gTemporadaTemplate;
   row.innerHTML = window.TLTemplates.LIST.filter(t => (t.tipo||'temporada')===gShareTipo).map(t =>
-    `<button class="temp-tpl-name${t.id===curId?' active':''}" onclick="setShareTemplate('${t.id}')">${t.nome}${t.premium?' <span class="tpl-pro">PRO</span>':''}</button>`
+    (t=>{ const locked=t.premium&&isFreeUser();
+      const badge=t.premium?(locked?' 🔒':' <span class="tpl-pro">PRO</span>'):'';
+      return `<button class="temp-tpl-name${t.id===curId?' active':''}" style="${locked?'opacity:.6':''}" onclick="${locked?'upsellPro()':`setShareTemplate('${t.id}')`}">${t.nome}${badge}</button>`; })(t)
   ).join('');
   // botão de foto só nos templates de temporada que usam foto (grade free)
   const cur = window.TLTemplates.get(curId);
@@ -3336,7 +3367,13 @@ function renderSurfCard() {
   window.TLTemplates.render(ctx, W, H, d, gTemporadaTemplate, gTemporadaPhoto);
 }
 
+function shareGateBlocked() {
+  const curId = gShareTipo==='sessao' ? gSessaoTemplate : gTemporadaTemplate;
+  if (isTemplatePremium(curId) && isFreeUser()) { upsellPro(); return true; }
+  return false;
+}
 function downloadSurfCard() {
+  if (shareGateBlocked()) return;
   const canvas = document.getElementById('surf-canvas');
   const a = document.createElement('a');
   a.download = gShareTipo === 'sessao' ? 'tideline-sessao.png' : 'tideline-temporada.png';
@@ -3345,6 +3382,7 @@ function downloadSurfCard() {
 }
 
 async function shareToInstagram() {
+  if (shareGateBlocked()) return;
   const canvas = document.getElementById('surf-canvas');
   const fname = gShareTipo === 'sessao' ? 'tideline-sessao.png' : 'tideline-temporada.png';
   const title = gShareTipo === 'sessao' ? 'Minha sessão no Tideline' : 'Minha temporada no Tideline';
