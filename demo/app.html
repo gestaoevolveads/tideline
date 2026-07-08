@@ -1118,9 +1118,34 @@
 <script src="./tideline-templates.js"></script>
 <script>
 /* ── AUTH GATE ─────────────────────────────────────── */
-if (!localStorage.getItem('tl_demo_auth')) {
+// redirect rápido só se claramente não logado (nem beta, nem token Supabase)
+const _hasSbToken = (()=>{ try{ return Object.keys(localStorage).some(k=>k.startsWith('sb-')&&k.includes('-auth-token')); }catch{ return false; } })();
+if (!localStorage.getItem('tl_demo_auth') && !_hasSbToken) {
   window.location.replace('login.html');
 }
+let gUserPlan = 'premium'; // resolvido em initAuth (beta=premium; Supabase=trial/premium/free)
+async function resolvePlanFromProfile(c, uid){
+  try{
+    const { data } = await c.from('profiles').select('plano,trial_ends,premium_until').eq('id',uid).maybeSingle();
+    if(!data) return 'free';
+    const now=Date.now();
+    const trialOk = data.trial_ends && new Date(data.trial_ends).getTime()>now;
+    const premOk  = data.premium_until && new Date(data.premium_until).getTime()>now;
+    return (trialOk||premOk) ? 'premium' : 'free';
+  }catch(e){ return 'free'; }
+}
+async function initAuth(){
+  if(localStorage.getItem('tl_demo_auth')){ gUserPlan='premium'; return; } // beta
+  try{
+    const c = window.TLData && await window.TLData.client();
+    if(c){
+      const { data } = await c.auth.getSession();
+      if(data && data.session){ gUserPlan = await resolvePlanFromProfile(c, data.session.user.id); return; }
+    }
+  }catch(e){}
+  window.location.replace('login.html');
+}
+initAuth();
 
 /* ── STATE ─────────────────────────────────────────── */
 let gMarine = null, gForecast = null, gSelectedIdx = 0, gSelectedDay = 0;
@@ -2534,7 +2559,12 @@ function createUser(e) {
   renderEuTab();
 }
 
-function logout() { try{localStorage.removeItem(USER_KEY);}catch{} localStorage.removeItem('tl_demo_auth'); window.location.replace('login.html'); }
+function logout() {
+  try{localStorage.removeItem(USER_KEY);}catch{}
+  localStorage.removeItem('tl_demo_auth'); localStorage.removeItem('tl_plan');
+  try{ if(window.TLData) window.TLData.client().then(c=>{ if(c) c.auth.signOut(); }); }catch(e){}
+  window.location.replace('login.html');
+}
 
 function deleteLog(idx) {
   const logs=getLogs();
@@ -3099,9 +3129,8 @@ let gPrevisaoTemplate = 'boletim', gCurrentForecast = null;
 function esc(s){return String(s==null?'':s).replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));}
 
 /* ── PLANO (premium/free) e trava de templates PRO ──── */
-// PLANOS: usuário → 'free'. Vazio = todos premium (beta atual). Fase 2: vem do Supabase/pagamento.
-const PLANOS = {};
-function getUserPlan(){ return localStorage.getItem('tl_plan') || PLANOS[localStorage.getItem('tl_demo_auth')] || 'premium'; }
+// Plano vem de: override de teste (tl_plan) → gUserPlan resolvido (Supabase/beta) → premium.
+function getUserPlan(){ return localStorage.getItem('tl_plan') || gUserPlan || 'premium'; }
 function isFreeUser(){ return getUserPlan()==='free'; }
 function appToast(msg){
   let t=document.getElementById('app-toast');

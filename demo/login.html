@@ -15,65 +15,38 @@
 html{font-size:16px;-webkit-font-smoothing:antialiased}
 body{font-family:var(--ff);background:var(--bg);color:var(--deep);min-height:100dvh;display:flex;flex-direction:column;align-items:center}
 
-.login-wrap{
-  width:100%;max-width:420px;
-  display:flex;flex-direction:column;align-items:center;
-  padding-bottom:48px;
-}
-
-.login-mascot{
-  width:90%;max-width:340px;
-  display:block;margin-top:24px;
-}
-
-.login-wordmark{
-  font-size:26px;font-weight:300;color:var(--deep);
-  letter-spacing:-.01em;margin:8px 0 32px;text-align:center;
-}
+.login-wrap{width:100%;max-width:420px;display:flex;flex-direction:column;align-items:center;padding-bottom:48px}
+.login-mascot{width:80%;max-width:300px;display:block;margin-top:24px}
+.login-wordmark{font-size:26px;font-weight:300;color:var(--deep);letter-spacing:-.01em;margin:6px 0 22px;text-align:center}
 .login-wordmark strong{font-weight:700}
 .login-wordmark .dot{color:var(--accent)}
-
 .login-form{width:100%;padding:0 24px}
 
-.form-group{margin-bottom:16px}
-.form-group label{
-  display:block;font-size:12px;font-weight:700;
-  letter-spacing:.04em;text-transform:uppercase;
-  color:var(--muted);margin-bottom:7px;
-}
-.form-input{
-  width:100%;padding:13px 14px;
-  background:var(--surface2);border:1.5px solid transparent;
-  border-radius:10px;font-family:var(--ff);font-size:15px;
-  color:var(--deep);outline:none;transition:border-color .15s,background .15s;
-  -webkit-appearance:none;
-}
+/* toggle Entrar / Criar conta */
+.auth-toggle{display:flex;gap:6px;margin-bottom:20px;background:var(--surface);border-radius:22px;padding:4px}
+.auth-tab{flex:1;border:none;background:transparent;font-family:var(--ff);font-size:14px;font-weight:700;color:var(--muted);padding:10px;border-radius:18px;cursor:pointer;transition:.15s}
+.auth-tab.active{background:var(--white);color:var(--deep);box-shadow:0 1px 4px rgba(0,0,0,.08)}
+
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+.form-input{width:100%;padding:13px 14px;background:var(--surface2);border:1.5px solid transparent;border-radius:10px;font-family:var(--ff);font-size:15px;color:var(--deep);outline:none;transition:border-color .15s,background .15s;-webkit-appearance:none}
 .form-input:focus{border-color:var(--muted);background:var(--white)}
 .form-input::placeholder{color:var(--muted)}
 
-.btn-entrar{
-  display:block;width:100%;padding:14px;
-  background:var(--accent);color:#fff;border:none;
-  border-radius:12px;font-family:var(--ff);font-size:15px;
-  font-weight:700;letter-spacing:-.01em;cursor:pointer;
-  transition:opacity .15s;margin-top:8px;
-  -webkit-tap-highlight-color:transparent;
-}
+.btn-entrar{display:block;width:100%;padding:14px;background:var(--accent);color:#fff;border:none;border-radius:12px;font-family:var(--ff);font-size:15px;font-weight:700;letter-spacing:-.01em;cursor:pointer;transition:opacity .15s;margin-top:8px;-webkit-tap-highlight-color:transparent}
 .btn-entrar:hover{opacity:.88}
 .btn-entrar:active{opacity:.75}
+.btn-entrar:disabled{opacity:.55;cursor:default}
 
-.login-err{
-  display:none;
-  margin-top:14px;padding:10px 14px;
-  background:rgba(249,88,49,.08);border-radius:8px;
-  font-size:13.5px;color:#C04020;text-align:center;line-height:1.5;
-}
-.login-err.show{display:block}
+.login-msg{display:none;margin-top:14px;padding:10px 14px;border-radius:8px;font-size:13.5px;text-align:center;line-height:1.5}
+.login-msg.show{display:block}
+.login-msg.err{background:rgba(249,88,49,.08);color:#C04020}
+.login-msg.ok{background:rgba(47,158,111,.12);color:#1F7A50}
 
-.login-beta{
-  margin-top:24px;font-size:12px;color:var(--muted);
-  text-align:center;line-height:1.6;padding:0 24px;
-}
+.trial-badge{margin:0 0 16px;text-align:center;font-size:13px;color:var(--muted);line-height:1.5}
+.trial-badge strong{color:var(--accent)}
+.login-beta{margin-top:22px;font-size:12px;color:var(--muted);text-align:center;line-height:1.6;padding:0 24px}
+.login-beta a{color:var(--mid)}
 </style>
 </head>
 <body>
@@ -83,60 +56,140 @@ body{font-family:var(--ff);background:var(--bg);color:var(--deep);min-height:100
   <div class="login-wordmark">tide<strong>line</strong><span class="dot">.</span></div>
 
   <div class="login-form">
-    <div class="form-group">
-      <label>Usuário</label>
-      <input class="form-input" type="text" id="inp-user"
-        placeholder="seu usuário" autocomplete="username"
-        autocapitalize="none" autocorrect="off" spellcheck="false">
+    <div class="auth-toggle">
+      <button class="auth-tab active" id="tab-entrar" onclick="setMode('entrar')">Entrar</button>
+      <button class="auth-tab" id="tab-criar" onclick="setMode('criar')">Criar conta</button>
     </div>
-    <div class="form-group">
-      <label>Senha</label>
-      <input class="form-input" type="password" id="inp-pass"
-        placeholder="••••••" autocomplete="current-password">
+
+    <!-- CRIAR CONTA -->
+    <div id="form-criar" style="display:none">
+      <div class="trial-badge"><strong>14 dias grátis</strong> · sem cartão, sem compromisso</div>
+      <div class="form-group">
+        <label>Nome</label>
+        <input class="form-input" type="text" id="su-nome" placeholder="seu nome" autocomplete="name">
+      </div>
+      <div class="form-group">
+        <label>E-mail</label>
+        <input class="form-input" type="email" id="su-email" placeholder="voce@email.com" autocomplete="email" autocapitalize="none" autocorrect="off" spellcheck="false">
+      </div>
+      <div class="form-group">
+        <label>Senha</label>
+        <input class="form-input" type="password" id="su-pass" placeholder="mínimo 6 caracteres" autocomplete="new-password">
+      </div>
+      <button class="btn-entrar" id="btn-criar" onclick="criarConta()">Começar meus 14 dias grátis</button>
     </div>
-    <button class="btn-entrar" onclick="entrar()">Entrar</button>
-    <div class="login-err" id="login-err">Usuário ou senha incorretos.</div>
-    <div class="login-beta">Acesso beta fechado. Use as credenciais recebidas.</div>
+
+    <!-- ENTRAR -->
+    <div id="form-entrar">
+      <div class="form-group">
+        <label>E-mail ou usuário</label>
+        <input class="form-input" type="text" id="inp-user" placeholder="seu e-mail" autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false">
+      </div>
+      <div class="form-group">
+        <label>Senha</label>
+        <input class="form-input" type="password" id="inp-pass" placeholder="••••••" autocomplete="current-password">
+      </div>
+      <button class="btn-entrar" id="btn-entrar" onclick="entrar()">Entrar</button>
+    </div>
+
+    <div class="login-msg" id="login-msg"></div>
+    <div class="login-beta">Ao criar conta você aceita testar o Premium por 14 dias. Depois, R$19,90/mês (cancela quando quiser).</div>
   </div>
 </div>
 
+<script src="tideline-config.js"></script>
 <script>
-/* ── credenciais ─────────────────────────────────────────
-   Para adicionar um usuário: 'nome': 'senha',
-   Para remover: apague a linha.
-──────────────────────────────────────────────────────── */
+/* credenciais beta (login por usuário coexiste com o cadastro real por e-mail) */
 const USUARIOS = {
-  'hudson':    '852456',
-  'anna':      '852456',
-  'diego':     '852456',
-  'batata':    '852456tibia',
-  'vitor olv': 'fluzao2026',
-  'pedro olv': 'fluzao2026',
+  'hudson':'852456','anna':'852456','diego':'852456',
+  'batata':'852456tibia','vitor olv':'fluzao2026','pedro olv':'fluzao2026',
 };
 
-/* verifica se já está logado */
-if (localStorage.getItem('tl_demo_auth')) {
-  window.location.replace('app.html');
+let _sb = null;
+async function sb(){
+  if(_sb) return _sb;
+  const cfg = window.TIDELINE_CONFIG || {};
+  if(!cfg.SUPABASE_URL) return null;
+  const { createClient } = await import('https://esm.sh/@supabase/supabase-js@2');
+  _sb = createClient(cfg.SUPABASE_URL, cfg.SUPABASE_ANON_KEY);
+  return _sb;
 }
 
-function entrar() {
-  const user = document.getElementById('inp-user').value.trim().toLowerCase();
-  const pass = document.getElementById('inp-pass').value;
-  const err  = document.getElementById('login-err');
+function msg(text, kind){
+  const el=document.getElementById('login-msg');
+  el.textContent=text; el.className='login-msg show '+(kind||'err');
+}
+function clearMsg(){ document.getElementById('login-msg').classList.remove('show'); }
 
-  if (USUARIOS[user] && USUARIOS[user] === pass) {
-    localStorage.setItem('tl_demo_auth', user);
+function setMode(m){
+  const criar=m==='criar';
+  document.getElementById('form-criar').style.display=criar?'block':'none';
+  document.getElementById('form-entrar').style.display=criar?'none':'block';
+  document.getElementById('tab-criar').classList.toggle('active',criar);
+  document.getElementById('tab-entrar').classList.toggle('active',!criar);
+  clearMsg();
+}
+
+/* já logado? (demo OU sessão Supabase) → app */
+(async ()=>{
+  if(localStorage.getItem('tl_demo_auth')){ window.location.replace('app.html'); return; }
+  const c=await sb(); if(!c) return;
+  const { data } = await c.auth.getSession();
+  if(data && data.session){ window.location.replace('app.html'); }
+})();
+
+async function entrar(){
+  const raw=document.getElementById('inp-user').value.trim();
+  const pass=document.getElementById('inp-pass').value;
+  clearMsg();
+  // e-mail → Supabase Auth; usuário → lista beta
+  if(raw.includes('@')){
+    const c=await sb();
+    if(!c){ msg('Configuração de login indisponível.'); return; }
+    const btn=document.getElementById('btn-entrar'); btn.disabled=true;
+    const { error } = await c.auth.signInWithPassword({ email:raw.toLowerCase(), password:pass });
+    btn.disabled=false;
+    if(error){ msg('E-mail ou senha incorretos.'); document.getElementById('inp-pass').value=''; return; }
     window.location.replace('app.html');
   } else {
-    err.classList.add('show');
-    document.getElementById('inp-pass').value = '';
-    document.getElementById('inp-pass').focus();
+    const user=raw.toLowerCase();
+    if(USUARIOS[user] && USUARIOS[user]===pass){
+      localStorage.setItem('tl_demo_auth', user);
+      window.location.replace('app.html');
+    } else {
+      msg('E-mail ou senha incorretos.'); document.getElementById('inp-pass').value='';
+    }
   }
 }
 
-/* Enter para submeter */
-document.addEventListener('keydown', e => {
-  if (e.key === 'Enter') entrar();
+async function criarConta(){
+  const nome=document.getElementById('su-nome').value.trim();
+  const email=document.getElementById('su-email').value.trim().toLowerCase();
+  const pass=document.getElementById('su-pass').value;
+  clearMsg();
+  if(!email.includes('@')){ msg('Digite um e-mail válido.'); return; }
+  if(pass.length<6){ msg('A senha precisa de pelo menos 6 caracteres.'); return; }
+  const c=await sb();
+  if(!c){ msg('Cadastro indisponível no momento.'); return; }
+  const btn=document.getElementById('btn-criar'); btn.disabled=true; btn.textContent='Criando conta...';
+  const { data, error } = await c.auth.signUp({ email, password:pass, options:{ data:{ nome } } });
+  btn.disabled=false; btn.textContent='Começar meus 14 dias grátis';
+  if(error){
+    msg(/registered|already/i.test(error.message)?'Esse e-mail já tem conta. Faça login.':('Erro: '+error.message));
+    return;
+  }
+  // profile é criado por trigger no banco (com trial de 14 dias)
+  if(data && data.session){
+    window.location.replace('app.html'); // confirmação de e-mail desligada → entra direto
+  } else {
+    msg('Conta criada! Confirme pelo link que enviamos no seu e-mail para entrar.','ok');
+    setMode('entrar');
+  }
+}
+
+document.addEventListener('keydown', e=>{
+  if(e.key!=='Enter') return;
+  if(document.getElementById('form-criar').style.display!=='none') criarConta(); else entrar();
 });
 </script>
 </body>
