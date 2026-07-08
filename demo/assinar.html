@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Tideline · Assinar</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --paper:#F2EFE9;--bg:#F8FAF9;--surface:#D3E2DE;--surface2:#E8F0ED;
+  --deep:#172726;--mid:#243F3D;--muted:#476664;--accent:#F95831;--white:#fff;--ok:#2F9E6F;
+  --ff:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif;
+}
+html{font-size:16px;-webkit-font-smoothing:antialiased}
+body{font-family:var(--ff);background:var(--paper);color:var(--deep);line-height:1.5;min-height:100dvh}
+.wrap{max-width:460px;margin:0 auto;padding:28px 22px 40px}
+
+/* header */
+.wm{font-size:24px;font-weight:300;letter-spacing:-.01em;text-align:center;color:var(--deep)}
+.wm strong{font-weight:700}.wm .dot{color:var(--accent)}
+.head{margin:26px 0 22px;text-align:center}
+.head h1{font-size:27px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
+.head h1 em{font-style:normal;color:var(--accent)}
+.head p{margin-top:9px;font-size:14px;color:var(--muted)}
+
+/* plans */
+.plans{display:flex;flex-direction:column;gap:12px;margin-bottom:20px}
+.plan{position:relative;background:var(--white);border:1.5px solid var(--surface);border-radius:16px;padding:18px 18px 16px;cursor:pointer;transition:border-color .15s,box-shadow .15s}
+.plan.sel{border-color:var(--accent);box-shadow:0 4px 18px rgba(249,88,49,.12)}
+.plan-badge{position:absolute;top:-10px;left:18px;background:var(--accent);color:#fff;font-size:10.5px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;padding:4px 9px;border-radius:6px}
+.plan-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.plan-name{font-size:15px;font-weight:800}
+.plan-price{font-size:24px;font-weight:800;letter-spacing:-.02em}
+.plan-price small{font-size:13px;font-weight:600;color:var(--muted)}
+.plan-sub{margin-top:5px;font-size:12.5px;color:var(--muted)}
+.plan-sel-dot{width:20px;height:20px;border-radius:50%;border:2px solid var(--surface);flex-shrink:0;display:grid;place-items:center;transition:.15s}
+.plan.sel .plan-sel-dot{border-color:var(--accent)}
+.plan.sel .plan-sel-dot::after{content:'';width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.plan-head{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+
+/* se paga */
+.paga{background:var(--surface2);border-radius:14px;padding:16px 17px;margin-bottom:20px;border-left:3px solid var(--accent)}
+.paga h3{font-size:14.5px;font-weight:800}
+.paga p{margin-top:4px;font-size:13px;color:var(--mid);line-height:1.55}
+
+/* benefits */
+.leva{margin-bottom:22px}
+.leva-lbl{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:11px}
+.leva-item{display:flex;gap:11px;align-items:flex-start;padding:7px 0;font-size:14px}
+.leva-item svg{flex-shrink:0;width:20px;height:20px;margin-top:1px}
+.leva-item svg circle{fill:rgba(47,158,111,.14)}
+.leva-item svg polyline{fill:none;stroke:var(--ok);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* payment */
+.pay{background:var(--white);border:1.5px solid var(--surface);border-radius:16px;padding:16px;margin-bottom:14px}
+.pay-tabs{display:flex;gap:6px;background:var(--surface2);border-radius:12px;padding:4px;margin-bottom:15px}
+.pay-tab{flex:1;border:none;background:transparent;font-family:var(--ff);font-size:13px;font-weight:700;color:var(--muted);padding:9px;border-radius:9px;cursor:pointer;transition:.15s;display:flex;align-items:center;justify-content:center;gap:6px}
+.pay-tab.on{background:var(--white);color:var(--deep);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.pay-body{min-height:150px}
+.pix-box{text-align:center;padding:8px 0}
+.pix-qr{width:132px;height:132px;margin:0 auto 12px;border-radius:12px;background:
+  linear-gradient(45deg,var(--deep) 25%,transparent 25%,transparent 75%,var(--deep) 75%),
+  linear-gradient(45deg,var(--deep) 25%,var(--surface2) 25%,var(--surface2) 75%,var(--deep) 75%);
+  background-size:22px 22px;background-position:0 0,11px 11px;opacity:.9;border:6px solid var(--white);box-shadow:0 0 0 1.5px var(--surface)}
+.pix-box p{font-size:13px;color:var(--muted)}
+.card-fields{display:flex;flex-direction:column;gap:10px}
+.card-inp{background:var(--surface2);border:1.5px solid transparent;border-radius:10px;padding:12px 13px;font-size:14px;font-family:var(--ff);color:var(--muted)}
+.card-row{display:flex;gap:10px}.card-row .card-inp{flex:1}
+.mp-note{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:13px;font-size:11px;color:var(--muted)}
+
+/* CTA */
+.cta{display:block;width:100%;padding:16px;background:var(--accent);color:#fff;border:none;border-radius:14px;font-family:var(--ff);font-size:16px;font-weight:800;letter-spacing:-.01em;cursor:pointer;transition:opacity .15s}
+.cta:hover{opacity:.9}
+.cta-sub{text-align:center;font-size:12px;color:var(--muted);margin-top:9px}
+
+/* guarantee */
+.guar{display:flex;gap:12px;align-items:flex-start;background:rgba(47,158,111,.08);border-radius:14px;padding:15px 16px;margin:22px 0 16px}
+.guar-ico{font-size:22px;line-height:1}
+.guar h4{font-size:14px;font-weight:800}
+.guar p{font-size:12.5px;color:var(--mid);margin-top:2px}
+
+.foot{text-align:center;font-size:11.5px;color:var(--muted);line-height:1.6}
+.foot .sep{opacity:.5;margin:0 5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="wm">tide<strong>line</strong><span class="dot">.</span></div>
+
+  <div class="head">
+    <h1>Continua lendo o mar <em>com a gente.</em></h1>
+    <p>Sem fidelidade. Cancela quando quiser.</p>
+  </div>
+
+  <!-- PLANOS -->
+  <div class="plans">
+    <div class="plan sel" id="plan-anual" onclick="selPlan('anual')">
+      <div class="plan-badge">2 meses grátis</div>
+      <div class="plan-head">
+        <div class="plan-sel-dot"></div>
+        <div class="plan-name">Anual</div>
+      </div>
+      <div class="plan-top">
+        <div class="plan-price">R$149<small>/ano</small></div>
+        <div class="plan-sub" style="text-align:right">sai a <strong>R$12,40</strong>/mês</div>
+      </div>
+      <div class="plan-sub">Pague uma vez no Pix e esqueça — 12 meses de mar lido pra você.</div>
+    </div>
+
+    <div class="plan" id="plan-mensal" onclick="selPlan('mensal')">
+      <div class="plan-head">
+        <div class="plan-sel-dot"></div>
+        <div class="plan-name">Mensal</div>
+      </div>
+      <div class="plan-top">
+        <div class="plan-price">R$19,90<small>/mês</small></div>
+      </div>
+      <div class="plan-sub">No cartão, renova sozinho. Cancela quando quiser.</div>
+    </div>
+  </div>
+
+  <!-- SE PAGA -->
+  <div class="paga">
+    <h3>A assinatura se paga.</h3>
+    <p>1 ou 2 compras pelos cupons de parceiros no mês e ela já se pagou. É a lógica do Prime: você assina e a economia volta pra você.</p>
+  </div>
+
+  <!-- O QUE LEVA -->
+  <div class="leva">
+    <div class="leva-lbl">No Premium você leva</div>
+    <div class="leva-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/><polyline points="7,12.5 10.5,16 17,8.5"/></svg><span>Previsão <strong>analisada</strong> dos próximos 7 dias, praia por praia</span></div>
+    <div class="leva-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/><polyline points="7,12.5 10.5,16 17,8.5"/></svg><span>Alertas de <strong>swell</strong> quando o mar do seu pico entrar</span></div>
+    <div class="leva-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/><polyline points="7,12.5 10.5,16 17,8.5"/></svg><span>A <strong>semana inteira</strong> lida, não só o dia de hoje</span></div>
+    <div class="leva-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/><polyline points="7,12.5 10.5,16 17,8.5"/></svg><span><strong>Cupons de parceiros</strong> — pranchas, roupa, acessórios</span></div>
+    <div class="leva-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/><polyline points="7,12.5 10.5,16 17,8.5"/></svg><span>Cards <strong>premium</strong> pra compartilhar sessão e previsão</span></div>
+  </div>
+
+  <!-- PAGAMENTO -->
+  <div class="pay">
+    <div class="pay-tabs">
+      <button class="pay-tab on" id="tab-pix" onclick="selPay('pix')">⚡ Pix</button>
+      <button class="pay-tab" id="tab-card" onclick="selPay('card')">💳 Cartão</button>
+    </div>
+    <div class="pay-body" id="pay-pix">
+      <div class="pix-box">
+        <div class="pix-qr"></div>
+        <p id="pix-txt">Pague <strong>R$149</strong> uma vez, na hora, pelo Pix.</p>
+      </div>
+    </div>
+    <div class="pay-body" id="pay-card" style="display:none">
+      <div class="card-fields">
+        <div class="card-inp">Número do cartão</div>
+        <div class="card-row"><div class="card-inp">Validade</div><div class="card-inp">CVV</div></div>
+        <div class="card-inp">Nome no cartão</div>
+      </div>
+    </div>
+    <div class="mp-note">🔒 Pagamento processado com segurança pelo Mercado Pago</div>
+  </div>
+
+  <button class="cta" id="cta">Pagar R$149 no Pix</button>
+  <div class="cta-sub" id="cta-sub">Cobrança única · acesso por 12 meses</div>
+
+  <!-- GARANTIA -->
+  <div class="guar">
+    <div class="guar-ico">🛡️</div>
+    <div>
+      <h4>Garantia de 14 dias</h4>
+      <p>Não sentiu que te ajudou a entender o mar? Devolvemos 100%. Sem pergunta, sem fricção.</p>
+    </div>
+  </div>
+
+  <div class="foot">🔒 Seguro via Mercado Pago<span class="sep">·</span>Cancela quando quiser<span class="sep">·</span>Sem fidelidade</div>
+</div>
+
+<script>
+let plan='anual', pay='pix';
+function selPlan(p){ plan=p;
+  document.getElementById('plan-anual').classList.toggle('sel',p==='anual');
+  document.getElementById('plan-mensal').classList.toggle('sel',p==='mensal');
+  // mensal recorrente = cartão; anual = pix ou cartão
+  if(p==='mensal') selPay('card');
+  render();
+}
+function selPay(m){ pay=m;
+  document.getElementById('tab-pix').classList.toggle('on',m==='pix');
+  document.getElementById('tab-card').classList.toggle('on',m==='card');
+  document.getElementById('pay-pix').style.display=m==='pix'?'block':'none';
+  document.getElementById('pay-card').style.display=m==='card'?'block':'none';
+  render();
+}
+function render(){
+  const anual=plan==='anual';
+  const valor=anual?'R$149':'R$19,90';
+  document.getElementById('pix-txt').innerHTML='Pague <strong>'+valor+'</strong> uma vez, na hora, pelo Pix.';
+  document.getElementById('cta').textContent = pay==='pix' ? ('Pagar '+valor+' no Pix') : (anual?'Assinar por R$149/ano':'Assinar por R$19,90/mês');
+  document.getElementById('cta-sub').textContent = anual ? 'Cobrança única · acesso por 12 meses' : 'Renova todo mês · cancela quando quiser';
+  // Pix não é recorrente → no mensal, esconde a aba Pix
+  document.getElementById('tab-pix').style.display = anual ? '' : 'none';
+}
+render();
+</script>
+</body>
+</html>
