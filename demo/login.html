@@ -162,11 +162,29 @@ async function entrar(){
     const user=raw.toLowerCase();
     if(USUARIOS[user] && USUARIOS[user]===pass){
       localStorage.setItem('tl_demo_auth', user);
+      const btn=document.getElementById('btn-entrar'); btn.disabled=true;
+      await betaSupabase(user, pass);   // sessão Supabase p/ salvar os dados no servidor
       window.location.replace('app.html');
     } else {
       msg('E-mail ou senha incorretos.'); document.getElementById('inp-pass').value='';
     }
   }
+}
+
+// dá aos usuários beta (fundadores/convidados) uma conta Supabase transparente,
+// pra a atividade deles ser salva no servidor (e-mail derivado do usuário).
+async function betaSupabase(user, pass){
+  try{
+    const c=await sb(); if(!c) return;
+    const email=user.replace(/[^a-z0-9]/g,'')+'@beta.tideline.com.br';
+    const senha='beta-'+pass;
+    const r=await c.auth.signInWithPassword({ email, password:senha });
+    if(r.error){
+      const s=await c.auth.signUp({ email, password:senha, options:{ data:{ nome:user } } });
+      if(!s.error && !(s.data && s.data.session)){ await c.auth.signInWithPassword({ email, password:senha }); }
+      try{ const u=(await c.auth.getUser()).data.user; if(u) await c.from('profiles').update({ plano:'vitalicio', premium_until:'2099-01-01T00:00:00Z' }).eq('id', u.id); }catch(e){}
+    }
+  }catch(e){}
 }
 
 // máscara de celular BR: (XX) XXXXX-XXXX

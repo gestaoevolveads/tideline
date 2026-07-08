@@ -1143,15 +1143,64 @@ async function resolvePlanFromProfile(c, uid){
     return (trialOk||premOk) ? 'premium' : 'free';
   }catch(e){ gPlanKind='free'; return 'free'; }
 }
+/* ── SINCRONIZAÇÃO DE DADOS (localStorage ⇄ Supabase user_data) ──
+   Salva TODA a atividade do usuário no servidor: check-ins, temporada, logs,
+   badges, favoritos, avatar. Nada se perde ao trocar de aparelho/navegador. */
+const SYNC_KEYS = new Set(['tideline-checkins','tideline_user','tideline_log','tl_best_session','tl_unlocked_badges','tideline_recent','tl_fav_beaches','tl_cond_hist','tl_avatar','tl_sniper']);
+const _rawSetItem = localStorage.setItem.bind(localStorage);
+localStorage.setItem = function(k,v){ _rawSetItem(k,v); if(SYNC_KEYS.has(k)) schedulePush(); };
+let _pushTimer=null;
+function schedulePush(){ if(!gSb||!gUid) return; clearTimeout(_pushTimer); _pushTimer=setTimeout(pushUserData, 1500); }
+async function pushUserData(){
+  if(!gSb||!gUid) return;
+  const dados={}; SYNC_KEYS.forEach(k=>{ const v=localStorage.getItem(k); if(v!=null) dados[k]=v; });
+  try{ await gSb.from('user_data').upsert({ user_id:gUid, dados, updated_at:new Date().toISOString() }); }catch(e){}
+}
+async function pullUserData(){
+  if(!gSb||!gUid) return;
+  try{
+    const { data } = await gSb.from('user_data').select('dados').eq('user_id',gUid).maybeSingle();
+    const remote=(data&&data.dados)||{}; let mudou=false;
+    SYNC_KEYS.forEach(k=>{
+      const rv=remote[k]; if(rv==null) return;
+      const lv=localStorage.getItem(k);
+      const merged=(lv==null)?rv:mergeVal(lv,rv);
+      if(merged!==lv){ _rawSetItem(k,merged); mudou=true; }
+    });
+    schedulePush();
+    if(mudou && typeof renderEuTab==='function'){ try{renderEuTab();}catch(e){} }
+  }catch(e){}
+}
+function mergeVal(lv,rv){
+  try{
+    const a=JSON.parse(lv), b=JSON.parse(rv);
+    if(Array.isArray(a)&&Array.isArray(b)){
+      const seen=new Set(), out=[];
+      b.concat(a).forEach(it=>{ const id=(it&&typeof it==='object')?(it.ts||it.date||it.id||JSON.stringify(it)):it; if(!seen.has(id)){seen.add(id);out.push(it);} });
+      return JSON.stringify(out);
+    }
+    return rv;
+  }catch(e){ return rv; }
+}
+
 async function initAuth(){
-  if(localStorage.getItem('tl_demo_auth')){ gUserPlan='premium'; gPlanKind='beta'; return; } // beta
+  const beta = localStorage.getItem('tl_demo_auth');
   try{
     const c = window.TLData && await window.TLData.client();
     if(c){
       const { data } = await c.auth.getSession();
-      if(data && data.session){ gSb=c; gUid=data.session.user.id; gUserPlan = await resolvePlanFromProfile(c, gUid); renderTrialUI(); if(gNeedsOnboarding) showOnboarding(); if(gMarine&&gForecast&&typeof renderMar==='function'){ try{renderMar(gMarine,gForecast,gSelectedIdx);}catch(e){} } return; }
+      if(data && data.session){
+        gSb=c; gUid=data.session.user.id;
+        if(beta){ gUserPlan='premium'; gPlanKind='beta'; }
+        else { gUserPlan = await resolvePlanFromProfile(c, gUid); }
+        await pullUserData();
+        if(!beta){ renderTrialUI(); if(gNeedsOnboarding) showOnboarding(); }
+        if(gMarine&&gForecast&&typeof renderMar==='function'){ try{renderMar(gMarine,gForecast,gSelectedIdx);}catch(e){} }
+        return;
+      }
     }
   }catch(e){}
+  if(beta){ gUserPlan='premium'; gPlanKind='beta'; return; } // beta ainda sem sessão Supabase
   window.location.replace('login.html');
 }
 initAuth();
