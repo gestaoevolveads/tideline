@@ -1165,6 +1165,12 @@ footer{background:var(--deep)}
 </footer>
 
 <script>
+// captura o código do afiliado do link (?ref=CODIGO) — guarda 60 dias
+(function(){ try{
+  const m=location.search.match(/[?&]ref=([A-Za-z0-9_-]{2,20})/);
+  if(m) localStorage.setItem('tl_ref', JSON.stringify({c:m[1].toUpperCase(), t:Date.now()}));
+}catch(e){} })();
+
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 60);

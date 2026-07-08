@@ -161,6 +161,13 @@ body{font-family:var(--ff);background:var(--paper);color:var(--deep);line-height
 
 <script src="tideline-config.js"></script>
 <script>
+// captura o código do afiliado do link (?ref=CODIGO) e guarda por 60 dias
+(function(){ try{
+  const m=location.search.match(/[?&]ref=([A-Za-z0-9_-]{2,20})/);
+  if(m) localStorage.setItem('tl_ref', JSON.stringify({c:m[1].toUpperCase(), t:Date.now()}));
+}catch(e){} })();
+function getRef(){ try{ const r=JSON.parse(localStorage.getItem('tl_ref')||'null'); if(r && Date.now()-r.t < 60*86400000) return r.c; }catch(e){} return ''; }
+
 let plan='anual';
 function selPlan(p){ plan=p;
   document.getElementById('plan-anual').classList.toggle('sel',p==='anual');
@@ -193,7 +200,7 @@ async function assinar(){
   cta.disabled=true; const orig=cta.textContent; cta.textContent='Abrindo pagamento...';
   try{
     const r=await fetch('/api/checkout',{method:'POST',headers:{'content-type':'application/json'},
-      body:JSON.stringify({ plan, userId:gUser.id, email:gUser.email })});
+      body:JSON.stringify({ plan, userId:gUser.id, email:gUser.email, ref:getRef() })});
     const d=await r.json();
     if(d.init_point){ location.href=d.init_point; return; }
     alert('Não consegui abrir o pagamento: '+(d.error||'tente de novo'));

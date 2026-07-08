@@ -12,12 +12,14 @@ export async function onRequestPost(context) {
   const { request, env } = context;
   const origin = new URL(request.url).origin;
   try {
-    const { plan, userId, email } = await request.json();
+    const { plan, userId, email, ref } = await request.json();
     const p = PLANOS[plan];
     if (!p) return json({ error: 'plano inválido' }, 400);
     if (!env.MP_ACCESS_TOKEN) return json({ error: 'MP não configurado' }, 500);
 
     const back = `${origin}/app.html?assinatura=ok`;
+    // external_reference carrega userId + código do afiliado: "userId|REF"
+    const extRef = `${userId || ''}|${(ref || '').toUpperCase()}`;
     let url, body;
 
     if (p.tipo === 'recurring') {
@@ -25,7 +27,7 @@ export async function onRequestPost(context) {
       url = 'https://api.mercadopago.com/preapproval';
       body = {
         reason: p.titulo,
-        external_reference: userId || '',
+        external_reference: extRef,
         payer_email: email || undefined,
         back_url: back,
         auto_recurring: {
@@ -40,11 +42,11 @@ export async function onRequestPost(context) {
       body = {
         items: [{ title: p.titulo, quantity: 1, unit_price: p.valor, currency_id: 'BRL' }],
         payer: email ? { email } : undefined,
-        external_reference: userId || '',
+        external_reference: extRef,
         back_urls: { success: back, pending: back, failure: `${origin}/assinar.html` },
         auto_return: 'approved',
         notification_url: `${origin}/api/mp-webhook`,
-        metadata: { user_id: userId || '', plan },
+        metadata: { user_id: userId || '', plan, ref: (ref || '').toUpperCase() },
       };
     }
 
