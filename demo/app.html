@@ -1144,7 +1144,7 @@ async function initAuth(){
     const c = window.TLData && await window.TLData.client();
     if(c){
       const { data } = await c.auth.getSession();
-      if(data && data.session){ gUserPlan = await resolvePlanFromProfile(c, data.session.user.id); renderTrialUI(); return; }
+      if(data && data.session){ gUserPlan = await resolvePlanFromProfile(c, data.session.user.id); renderTrialUI(); if(gMarine&&gForecast&&typeof renderMar==='function'){ try{renderMar(gMarine,gForecast,gSelectedIdx);}catch(e){} } return; }
     }
   }catch(e){}
   window.location.replace('login.html');
@@ -1762,6 +1762,8 @@ function buildDaySelector(mTimes, marine, forecast) {
 
 function selectDay(offset) {
   if(!gMarine||!gForecast)return;
+  // paywall: free/trial-vencido vê só hoje(0) + amanhã(1); a semana inteira é Premium
+  if(offset>1 && isFreeUser()){ showUpgradePopup('semana'); return; }
   gSelectedDay=offset;
   const target=new Date(); target.setDate(target.getDate()+offset);
   const targetDate=target.toDateString();
@@ -1930,7 +1932,7 @@ function renderMar(marine, forecast, idx) {
   };
 
   const html=`
-    ${swellAlert ? `<div class="swell-alert"><span class="swell-icon">🌊</span>${swellAlert}</div>` : ''}
+    ${(swellAlert && !isFreeUser()) ? `<div class="swell-alert"><span class="swell-icon">🌊</span>${swellAlert}</div>` : ''}
     <div id="vibe-section">
       <div class="condition-tag"><span class="c-dot ${vibe.dot}"></span>${vibe.tag}</div>
       <h1 class="vibe-headline">${headline}</h1>
@@ -3176,6 +3178,7 @@ function showUpgradePopup(mode){
     '1':{t:'Último dia de teste',p:'Amanhã o Premium tranca. Assine e siga com tudo — a partir de R$12,40/mês no anual.'},
     '0':{t:'Seu teste acaba hoje',p:'Assine pra não perder os alertas, a semana inteira e os cupons que se pagam.'},
     'over':{t:'Seu teste acabou',p:'O Premium está trancado. Assine pra reabrir a semana inteira, os alertas e os cupons.'},
+    'semana':{t:'A semana inteira é Premium',p:'No grátis você vê hoje e amanhã. Os 7 dias analisados — pra planejar a semana toda — são do Premium.'},
     'pro':{t:'Recurso Premium',p:'Isso faz parte do Premium. Assine pra liberar — 14 dias de garantia, cancela quando quiser.'},
   };
   const m=M[mode]||M['pro'];
