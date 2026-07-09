@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<script src="tideline-analytics.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Tideline · Assinar</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -201,6 +202,7 @@ async function assinar(){
   const cta=document.getElementById('cta');
   if(!gUser){ location.href='login.html'; return; } // sem conta → cadastra/loga
   cta.disabled=true; const orig=cta.textContent; cta.textContent='Abrindo pagamento...';
+  if(window.tlTrack){ const _v = plan==='anual'?149:19.90; tlTrack('InitiateCheckout','begin_checkout',{ value:_v, currency:'BRL', content_name:('plano '+plan) }); }
   try{
     const r=await fetch('/api/checkout',{method:'POST',headers:{'content-type':'application/json'},
       body:JSON.stringify({ plan, userId:gUser.id, email:gUser.email, ref:getRef() })});

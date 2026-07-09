@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<script src="tideline-analytics.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Tideline · Entrar</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -221,6 +222,10 @@ async function criarConta(){
     return;
   }
   // profile é criado por trigger no banco (com trial de 14 dias)
+  if(window.tlTrack){
+    tlTrack('CompleteRegistration','sign_up',{ content_name:'cadastro' });
+    tlTrack('StartTrial','begin_trial',{ value:0, currency:'BRL', content_name:'trial 14 dias' });
+  }
   if(data && data.session){
     window.location.replace('app.html'); // confirmação de e-mail desligada → entra direto
   } else {

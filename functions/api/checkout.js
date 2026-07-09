@@ -17,7 +17,7 @@ export async function onRequestPost(context) {
     if (!p) return json({ error: 'plano inválido' }, 400);
     if (!env.MP_ACCESS_TOKEN) return json({ error: 'MP não configurado' }, 500);
 
-    const back = `${origin}/app.html?assinatura=ok`;
+    const back = `${origin}/app.html?assinatura=ok&v=${p.valor}&plan=${encodeURIComponent(plan)}`;
     // external_reference carrega userId + código do afiliado: "userId|REF"
     const extRef = `${userId || ''}|${(ref || '').toUpperCase()}`;
     let url, body;
