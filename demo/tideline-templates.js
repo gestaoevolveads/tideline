@@ -209,17 +209,22 @@
     const C=CB;ctx.fillStyle=C.deep;ctx.fillRect(0,0,W,H);ctx.fillStyle=C.accent;ctx.fillRect(0,0,W,6);
     logo(ctx,40,60,24,C.surface,false);
     ctx.fillStyle='rgba(211,226,222,.5)';ctx.font=`600 13px ${FF}`;ctx.textAlign='right';ctx.fillText(d.data,W-40,57);ctx.textAlign='left';
-    ctx.fillStyle=C.accent;ctx.font=`700 13px ${FF}`;ctx.fillText('● '+String(d.condicao||'').toUpperCase(),40,118);
-    ctx.fillStyle=C.surface;const tl=wrapLines(ctx,d.titulo,W-80,`800 40px ${FF}`);let ty=166;tl.slice(0,2).forEach(l=>{ctx.font=`800 40px ${FF}`;ctx.fillText(l,40,ty);ty+=46;});
-    ctx.fillStyle='rgba(211,226,222,.55)';ctx.font=`600 17px ${FF}`;ctx.fillText(d.praia,40,ty+4);
-    ctx.fillStyle='rgba(211,226,222,.45)';ctx.font=`700 12px ${FF}`;ctx.fillText('TRADUÇÃO DO MAR',40,320);
-    ctx.fillStyle='rgba(211,226,222,.85)';const al=wrapLines(ctx,d.analise,W-80,`500 18px ${FF}`);al.slice(0,5).forEach((l,i)=>{ctx.font=`500 18px ${FF}`;ctx.fillText(l,40,350+i*26);});
-    ctx.strokeStyle='rgba(211,226,222,.14)';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(40,510);ctx.lineTo(W-40,510);ctx.stroke();
-    [['ONDA',d.onda],['PERÍODO',d.periodo],['VENTO',d.vento],['ENERGIA',d.energia]].forEach((s,i)=>{const col=i%2,row=(i/2)|0;const x=40+col*(W/2-20),y=560+row*96;
-      ctx.fillStyle='rgba(211,226,222,.45)';ctx.font=`700 11px ${FF}`;ctx.fillText(s[0],x,y);
-      ctx.fillStyle=C.surface;const fz=fit(ctx,s[1],W/2-70,32,15,'800');ctx.font=`800 ${fz}px ${FF}`;ctx.fillText(s[1],x,y+36);});
-    if(d.janela){ctx.fillStyle=C.accent;ctx.font=`700 15px ${FF}`;ctx.fillText('Melhor janela: '+d.janela,40,H-70);}
-    ctx.fillStyle='rgba(211,226,222,.35)';ctx.font=`500 12px ${FF}`;ctx.fillText('tideline.com.br',40,H-34);
+    /* veredito + gancho — desperta desejo, sem entregar a leitura */
+    ctx.fillStyle=C.accent;ctx.font=`700 14px ${FF}`;ctx.fillText('● '+String(d.condicao||'').toUpperCase(),40,150);
+    ctx.fillStyle=C.surface;const tl=wrapLines(ctx,d.titulo,W-80,`800 44px ${FF}`);let ty=214;tl.slice(0,3).forEach(l=>{ctx.font=`800 44px ${FF}`;ctx.fillText(l,40,ty);ty+=50;});
+    ctx.fillStyle='rgba(211,226,222,.55)';ctx.font=`600 18px ${FF}`;ctx.fillText(d.praia,40,ty+10);
+    /* dados de contexto (commodity) — dão credibilidade, mas não são o produto */
+    const my=ty+78;
+    [['ONDA',d.onda],['PERÍODO',d.periodo],['VENTO',d.vento]].forEach((s,i)=>{const x=40+i*((W-80)/3);
+      ctx.fillStyle='rgba(211,226,222,.4)';ctx.font=`700 11px ${FF}`;ctx.fillText(s[0],x,my);
+      ctx.fillStyle=C.surface;const fz=fit(ctx,s[1],(W-80)/3-14,26,15,'800');ctx.font=`800 ${fz}px ${FF}`;ctx.fillText(s[1],x,my+30);});
+    if(d.janela){ctx.fillStyle=C.accent;ctx.font=`700 16px ${FF}`;ctx.fillText('Melhor janela hoje · '+d.janela,40,my+92);}
+    /* ÍMÃ — a leitura completa (o produto) fica no app: curiosidade + CTA */
+    const px=40,pw=W-80,ph=156,py=H-ph-64;
+    ctx.fillStyle='rgba(249,88,49,.13)';rrect(ctx,px,py,pw,ph,22);ctx.fill();
+    ctx.strokeStyle='rgba(249,88,49,.55)';ctx.lineWidth=1.5;rrect(ctx,px,py,pw,ph,22);ctx.stroke();
+    ctx.fillStyle=C.surface;const ct=wrapLines(ctx,'A leitura completa da sua praia está no app',pw-56,`800 25px ${FF}`);let cy2=py+50;ct.slice(0,2).forEach(l=>{ctx.font=`800 25px ${FF}`;ctx.fillText(l,px+28,cy2);cy2+=32;});
+    ctx.fillStyle=C.accent;ctx.font=`800 21px ${FF}`;ctx.fillText('tideline.com.br  →',px+28,py+ph-30);
     ctx.fillStyle=C.accent;ctx.fillRect(0,H-6,W,6);
   }
 
@@ -238,7 +243,7 @@
     [['ONDA',d.onda],['PERÍODO',d.periodo],['VENTO',d.vento]].forEach((s,i)=>{const y=766+i*52;
       ctx.fillStyle='rgba(23,39,38,.55)';ctx.font=`700 11px ${FF}`;ctx.textAlign='left';ctx.fillText(s[0],44,y);
       ctx.fillStyle=C.deep;const fz=fit(ctx,s[1],W-230,28,14,'800');ctx.font=`800 ${fz}px ${FF}`;ctx.textAlign='right';ctx.fillText(s[1],W-44,y+2);ctx.textAlign='left';});
-    ctx.fillStyle='rgba(23,39,38,.5)';ctx.font=`500 11px ${FF}`;ctx.fillText('tideline.com.br',44,H-28);
+    ctx.fillStyle='rgba(23,39,38,.6)';ctx.font=`700 12px ${FF}`;ctx.fillText('Veja a sua praia · tideline.com.br  →',44,H-28);
   }
 
   /* ── CARTAZ (previsão) — pôster sol retrô ── */
@@ -257,7 +262,7 @@
       ctx.textAlign='left';ctx.fillStyle='rgba(245,239,232,.6)';ctx.font=`700 12px ${FF}`;ctx.fillText(r[0],bx+30,y);
       ctx.textAlign='right';ctx.fillStyle=C.paper;const fz=fit(ctx,r[1],bw-190,38,20,'800');ctx.font=`800 ${fz}px ${FF}`;ctx.fillText(r[1],bx+bw-30,y+4);
       if(i<3){ctx.strokeStyle='rgba(245,239,232,.15)';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(bx+30,y+30);ctx.lineTo(bx+bw-30,y+30);ctx.stroke();}});
-    ctx.textAlign='center';ctx.fillStyle='rgba(245,239,232,.7)';ctx.font=`500 12px ${FF}`;ctx.fillText('tideline.com.br',cx,H-30);ctx.textAlign='left';
+    ctx.textAlign='center';ctx.fillStyle='rgba(245,239,232,.85)';ctx.font=`700 12px ${FF}`;ctx.fillText('Veja a sua praia · tideline.com.br',cx,H-30);ctx.textAlign='left';
   }
 
   const FNS = { grade, manchete, bilhete, onda, sol, sessao, diario, pico, boletim, placar, cartaz };
