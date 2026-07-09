@@ -2562,6 +2562,7 @@ function renderLoggedIn(user, logs) {
       <div><div class="eu-name">${user.name}</div><div class="eu-sessions-ct">${lv.label}</div></div>
       <button class="btn-logout" onclick="logout()">Sair</button>
     </div>
+    <div style="text-align:center;font-size:11px;margin:0 0 6px;color:${(gSb&&gUid)?'var(--muted)':'#c0491f'}">${(gSb&&gUid)?('☁️ Sincronização ativa · conta '+String(gUid).slice(-6)):'⚠️ Sincronização inativa neste aparelho — saia e entre de novo'}</div>
     ${seasonBanner}
     ${renderStreakHero(streak, checkins)}
     <div class="eu-stats-row">
