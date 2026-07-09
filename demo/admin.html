@@ -380,6 +380,7 @@
             <div class="nrd-kpi"><div class="nrd-num" id="ka-free">–</div><div class="nrd-lbl">trial vencido</div></div>
             <div class="nrd-kpi"><div class="nrd-num" id="ka-founder" style="color:var(--accent)">–</div><div class="nrd-lbl">fundadores / 300</div></div>
           </div>
+          <div id="ka-note" style="font-size:11px;color:var(--muted);margin:-8px 0 16px"></div>
           <div style="font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:8px">Contas (mais recentes primeiro)</div>
           <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13px">
             <thead><tr style="text-align:left;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.04em">
@@ -540,21 +541,29 @@ async function loadAssinantes(){
       .order('created_at',{ascending:false});
     if(error) throw error;
     const now=Date.now();
-    let trial=0, prem=0, free=0;
+    let trial=0, prem=0, free=0, real=0, conv=0, teste=0;
     const rows=(data||[]).map(u=>{
+      const cls=classAcc(u.email,u.nome);
       const premOk = u.premium_until && new Date(u.premium_until).getTime()>now;
       const trialOk = !premOk && u.trial_ends && new Date(u.trial_ends).getTime()>now;
       let badge, expira='—';
-      if(premOk){ prem++; badge='<span class="pill" style="background:rgba(47,158,111,.15);color:var(--ok)">premium</span>'; expira=fmtD(u.premium_until); }
-      else if(trialOk){ trial++; const d=Math.ceil((new Date(u.trial_ends).getTime()-now)/86400000); badge='<span class="pill" style="background:rgba(249,88,49,.14);color:var(--accent)">trial · '+d+'d</span>'; expira=fmtD(u.trial_ends); }
-      else { free++; badge='<span class="pill">vencido</span>'; expira=u.trial_ends?fmtD(u.trial_ends):'—'; }
+      if(premOk){ badge='<span class="pill" style="background:rgba(47,158,111,.15);color:var(--ok)">premium</span>'; expira=fmtD(u.premium_until); }
+      else if(trialOk){ const d=Math.ceil((new Date(u.trial_ends).getTime()-now)/86400000); badge='<span class="pill" style="background:rgba(249,88,49,.14);color:var(--accent)">trial · '+d+'d</span>'; expira=fmtD(u.trial_ends); }
+      else { badge='<span class="pill">vencido</span>'; expira=u.trial_ends?fmtD(u.trial_ends):'—'; }
+      // só usuários REAIS entram nos números (convidados e testes aparecem, mas não contam)
+      if(cls==='real'){ real++; if(premOk) prem++; else if(trialOk) trial++; else free++; }
+      else if(cls==='convidado') conv++; else teste++;
+      const tag = cls==='convidado' ? ' <span class="pill" style="background:rgba(71,102,100,.14);color:var(--muted)">convidado</span>'
+                : cls==='teste' ? ' <span class="pill" style="background:rgba(120,120,120,.14);color:var(--muted)">teste</span>' : '';
       const quem = esc(u.nome||'') ? (esc(u.nome)+' · '+esc(u.email||'')) : esc(u.email||'—');
-      return '<tr style="border-top:1px solid var(--line)"><td style="padding:8px">'+quem+'</td><td style="padding:8px">'+badge+'</td><td style="padding:8px;color:var(--muted)">'+fmtD(u.created_at)+'</td><td style="padding:8px;color:var(--muted)">'+expira+'</td></tr>';
+      const dim = cls==='real' ? '' : 'opacity:.55;';
+      return '<tr style="border-top:1px solid var(--line);'+dim+'"><td style="padding:8px">'+quem+tag+'</td><td style="padding:8px">'+badge+'</td><td style="padding:8px;color:var(--muted)">'+fmtD(u.created_at)+'</td><td style="padding:8px;color:var(--muted)">'+expira+'</td></tr>';
     }).join('');
-    document.getElementById('ka-total').textContent=(data||[]).length;
+    document.getElementById('ka-total').textContent=real;
     document.getElementById('ka-trial').textContent=trial;
     document.getElementById('ka-prem').textContent=prem;
     document.getElementById('ka-free').textContent=free;
+    document.getElementById('ka-note').textContent='Números contam só usuários reais. Não entram: '+conv+' convidado(s) + '+teste+' teste(s) — aparecem na lista abaixo, marcados.';
     // vagas de fundador (contagem separada — não quebra se a coluna ainda não existir)
     try{
       const { count } = await c.from('profiles').select('id',{count:'exact',head:true}).eq('founder',true);
@@ -569,6 +578,13 @@ async function loadAssinantes(){
   }
 }
 function fmtD(v){ try{ return new Date(v).toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit',year:'2-digit'}); }catch{ return '—'; } }
+/* classifica a conta: teste (não conta), convidado/fundador @beta (não conta) ou real (conta nos KPIs) */
+function classAcc(email,nome){
+  const e=(email||'').toLowerCase(), n=(nome||'').toLowerCase();
+  if(/synctest|sync\.test|qa\.trial|qa\.test|\.test\.|test\d|dummy|@example\./.test(e) || /\bqa\b|teste/.test(n)) return 'teste';
+  if(e.endsWith('@beta.tideline.com.br')) return 'convidado';
+  return 'real';
+}
 
 /* ── NARRADOR (progresso do banco de narrações) ───────── */
 let nrdLoaded=false;
