@@ -215,7 +215,10 @@ async function criarConta(){
   const c=await sb();
   if(!c){ msg('Cadastro indisponível no momento.'); return; }
   const btn=document.getElementById('btn-criar'); btn.disabled=true; btn.textContent='Criando conta...';
-  const { data, error } = await c.auth.signUp({ email, password:pass, options:{ data:{ nome, telefone:fone } } });
+  const _at = (window.tlAttrib ? tlAttrib() : {}) || {};
+  const { data, error } = await c.auth.signUp({ email, password:pass, options:{ data:{ nome, telefone:fone,
+    utm_source:_at.utm_source||null, utm_medium:_at.utm_medium||null, utm_campaign:_at.utm_campaign||null,
+    utm_content:_at.utm_content||null, utm_term:_at.utm_term||null, fbclid:_at.fbclid||null, landing_ref:_at.referrer||null } } });
   btn.disabled=false; btn.textContent='Começar meus 14 dias grátis';
   if(error){
     msg(/registered|already/i.test(error.message)?'Esse e-mail já tem conta. Faça login.':('Erro: '+error.message));
@@ -226,6 +229,11 @@ async function criarConta(){
     tlTrack('CompleteRegistration','sign_up',{ content_name:'cadastro' });
     tlTrack('StartTrial','begin_trial',{ value:0, currency:'BRL', content_name:'trial 14 dias' });
   }
+  // grava a origem (atribuição) no perfil — liga o assinante à campanha que o trouxe
+  try{ if(data && data.user){ await c.from('profiles').update({
+    utm_source:_at.utm_source||null, utm_medium:_at.utm_medium||null, utm_campaign:_at.utm_campaign||null,
+    utm_content:_at.utm_content||null, utm_term:_at.utm_term||null, fbclid:_at.fbclid||null, landing_ref:_at.referrer||null
+  }).eq('id', data.user.id); } }catch(e){}
   if(data && data.session){
     window.location.replace('app.html'); // confirmação de e-mail desligada → entra direto
   } else {
