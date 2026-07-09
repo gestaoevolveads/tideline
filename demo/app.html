@@ -1162,6 +1162,9 @@ async function pushUserData(){
   const dados={}; SYNC_KEYS.forEach(k=>{ const v=localStorage.getItem(k); if(v!=null) dados[k]=v; });
   try{ await gSb.from('user_data').upsert({ user_id:gUid, dados, updated_at:new Date().toISOString() }); }catch(e){}
 }
+/* flush garantido: ao minimizar/fechar o app, sobe o que estiver pendente (não espera o debounce) */
+document.addEventListener('visibilitychange', ()=>{ if(document.visibilityState==='hidden' && gSb && gUid){ clearTimeout(_pushTimer); pushUserData(); } });
+window.addEventListener('pagehide', ()=>{ if(gSb && gUid){ clearTimeout(_pushTimer); pushUserData(); } });
 async function pullUserData(){
   if(!gSb||!gUid) return;
   try{
@@ -3070,6 +3073,7 @@ function uploadAvatar(input) {
       const sx = (img.width - s) / 2, sy = (img.height - s) / 2;
       ctx.drawImage(img, sx, sy, s, s, 0, 0, size, size);
       localStorage.setItem('tl_avatar', canvas.toDataURL('image/jpeg', 0.7));
+      try{ clearTimeout(_pushTimer); pushUserData(); }catch(e){} // sobe a foto na hora, sem esperar o debounce
       renderEuTab();
     };
     img.src = e.target.result;
