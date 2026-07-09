@@ -7,6 +7,8 @@ const PLANOS = {
   anual:  { titulo: 'Tideline Premium — Anual',  valor: 149.00, tipo: 'once'      },
   mensal: { titulo: 'Tideline Premium — Mensal', valor: 19.90,  tipo: 'recurring' },
 };
+const FOUNDER_PRICE = 99.00; // preço de fundador (1º ano) pros primeiros
+const FOUNDER_LIMIT = 300;   // até 300 vagas de fundador
 
 export async function onRequestPost(context) {
   const { request, env } = context;
@@ -17,7 +19,17 @@ export async function onRequestPost(context) {
     if (!p) return json({ error: 'plano inválido' }, 400);
     if (!env.MP_ACCESS_TOKEN) return json({ error: 'MP não configurado' }, 500);
 
-    const back = `${origin}/app.html?assinatura=ok&v=${p.valor}&plan=${encodeURIComponent(plan)}`;
+    // Preço de fundador: R$99 no 1º ano pros primeiros 300 (só anual).
+    // Degradação segura: se não der pra confirmar as vagas, cobra o valor cheio.
+    let precoAnual = p.valor;   // 149
+    let founderBuy = false;
+    if (plan === 'anual') {
+      const st = await founderStatus(env, userId);
+      if (st.open && !st.youAreFounder) { precoAnual = FOUNDER_PRICE; founderBuy = true; }
+    }
+    const precoFinal = (plan === 'anual') ? precoAnual : p.valor;
+
+    const back = `${origin}/app.html?assinatura=ok&v=${precoFinal}&plan=${encodeURIComponent(plan)}`;
     // external_reference carrega userId + código do afiliado: "userId|REF"
     const extRef = `${userId || ''}|${(ref || '').toUpperCase()}`;
     let url, body;
@@ -40,13 +52,13 @@ export async function onRequestPost(context) {
       // Pagamento único (anual) → preference (Pix + cartão)
       url = 'https://api.mercadopago.com/checkout/preferences';
       body = {
-        items: [{ title: p.titulo, quantity: 1, unit_price: p.valor, currency_id: 'BRL' }],
+        items: [{ title: founderBuy ? `${p.titulo} · Fundador` : p.titulo, quantity: 1, unit_price: precoFinal, currency_id: 'BRL' }],
         payer: email ? { email } : undefined,
         external_reference: extRef,
         back_urls: { success: back, pending: back, failure: `${origin}/assinar.html` },
         auto_return: 'approved',
         notification_url: `${origin}/api/mp-webhook`,
-        metadata: { user_id: userId || '', plan, ref: (ref || '').toUpperCase() },
+        metadata: { user_id: userId || '', plan, ref: (ref || '').toUpperCase(), founder: founderBuy },
       };
     }
 
@@ -73,6 +85,36 @@ function json(obj, status = 200) {
   return new Response(JSON.stringify(obj), {
     status, headers: { 'content-type': 'application/json', 'access-control-allow-origin': '*' },
   });
+}
+
+// Situação de fundador: { open: há vaga (<300), youAreFounder: esse user já é fundador }.
+// Qualquer falha (sem env, coluna ausente, erro de rede) → open:false (cobra o valor cheio).
+export async function founderStatus(env, userId) {
+  if (!env.SUPABASE_URL || !env.SUPABASE_SERVICE_ROLE_KEY) return { open: false, youAreFounder: false };
+  try {
+    let youAreFounder = false;
+    if (userId) {
+      const prof = await sbGet(env, `profiles?id=eq.${encodeURIComponent(userId)}&select=founder`);
+      if (prof === null) return { open: false, youAreFounder: false }; // erro/coluna ausente
+      youAreFounder = !!(prof[0] && prof[0].founder === true);
+    }
+    const count = await sbCount(env, 'profiles?founder=eq.true');
+    if (count < 0) return { open: false, youAreFounder }; // erro ao contar
+    return { open: count < FOUNDER_LIMIT, youAreFounder };
+  } catch (e) { return { open: false, youAreFounder: false }; }
+}
+async function sbGet(env, q) {
+  const r = await fetch(`${env.SUPABASE_URL}/rest/v1/${q}`, { headers: { apikey: env.SUPABASE_SERVICE_ROLE_KEY, authorization: `Bearer ${env.SUPABASE_SERVICE_ROLE_KEY}` } });
+  return r.ok ? r.json() : null;
+}
+async function sbCount(env, q) {
+  try {
+    const r = await fetch(`${env.SUPABASE_URL}/rest/v1/${q}&select=id`, { headers: { apikey: env.SUPABASE_SERVICE_ROLE_KEY, authorization: `Bearer ${env.SUPABASE_SERVICE_ROLE_KEY}`, Prefer: 'count=exact', Range: '0-0' } });
+    if (!r.ok) return -1;
+    const cr = r.headers.get('content-range');
+    if (cr && cr.includes('/')) { const n = parseInt(cr.split('/')[1], 10); return isNaN(n) ? -1 : n; }
+    return -1;
+  } catch (e) { return -1; }
 }
 
 // deploy bump 1783537421

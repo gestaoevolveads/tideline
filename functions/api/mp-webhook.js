@@ -17,12 +17,17 @@ export async function onRequestPost(context) {
       // pagamento (anual único OU cobrança da assinatura mensal)
       const pay = await mpGet(env, `/v1/payments/${id}`);
       if (pay && pay.status === 'approved') {
-        const { userId, ref } = parseRef(pay.external_reference, pay.metadata);
+        const md = pay.metadata || {};
+        const { userId, ref } = parseRef(pay.external_reference, md);
         const valor = Number(pay.transaction_amount) || 0;
-        const plano = valor >= 100 ? 'anual' : 'mensal';
+        // plano vem do metadata (confiável); só cai no valor se faltar (fundador anual = R$99 < 100)
+        const plano = (md.plan === 'anual' || md.plan === 'mensal') ? md.plan : (valor >= 100 ? 'anual' : 'mensal');
         if (userId) {
           const dias = plano === 'anual' ? 372 : 33;
           await sbUpdateProfile(env, userId, { plano: 'premium', premium_until: new Date(Date.now() + dias * 86400000).toISOString() });
+          // marca fundador (compra anual de fundador) — PATCH isolado: se a coluna não existir, o premium acima já foi gravado
+          const isFounder = md.founder === true || md.founder === 'true' || (plano === 'anual' && valor > 0 && valor < 120);
+          if (isFounder) { try { await sbUpdateProfile(env, userId, { founder: true }); } catch (e) {} }
         }
         if (ref) await registrarComissao(env, { ref, userId, plano, valor, mpId: String(id) });
       }

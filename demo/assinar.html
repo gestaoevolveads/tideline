@@ -100,13 +100,14 @@ body{font-family:var(--ff);background:var(--paper);color:var(--deep);line-height
   <div class="plans">
     <div class="plan sel" id="plan-anual" onclick="selPlan('anual')">
       <div class="plan-badge">2 meses grátis</div>
+      <div id="founder-flag" style="display:none;margin:2px 0 8px;font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#F95831">◆ Últimas vagas de fundador</div>
       <div class="plan-head">
         <div class="plan-sel-dot"></div>
         <div class="plan-name">Anual</div>
       </div>
       <div class="plan-top">
-        <div class="plan-price">R$149<small>/ano</small></div>
-        <div class="plan-sub" style="text-align:right">sai a <strong>R$12,40</strong>/mês</div>
+        <div class="plan-price" id="anual-price">R$149<small>/ano</small></div>
+        <div class="plan-sub" style="text-align:right" id="anual-permes">sai a <strong>R$12,40</strong>/mês</div>
       </div>
       <div class="plan-sub">Pague uma vez no Pix e não se preocupe mais! 12 meses de swell garantido para você.</div>
     </div>
@@ -178,12 +179,32 @@ function selPlan(p){ plan=p;
   document.getElementById('plan-mensal').classList.toggle('sel',p==='mensal');
   render();
 }
+let founderInfo = { open:false, price:149 };
 function render(){
   const anual=plan==='anual';
-  document.getElementById('cta').textContent = anual ? 'Assinar por R$149 (Pix ou cartão)' : 'Assinar por R$19,90/mês';
-  document.getElementById('cta-sub').textContent = anual ? 'Cobrança única · acesso por 12 meses' : 'Renova todo mês · cancela quando quiser';
+  const preco = founderInfo.open ? 'R$99' : 'R$149';
+  document.getElementById('cta').textContent = anual ? ('Assinar por '+preco+' (Pix ou cartão)') : 'Assinar por R$19,90/mês';
+  document.getElementById('cta-sub').textContent = anual
+    ? (founderInfo.open ? 'Preço de fundador · 1º ano · cobrança única' : 'Cobrança única · acesso por 12 meses')
+    : 'Renova todo mês · cancela quando quiser';
+}
+function applyFounder(){
+  const open = !!founderInfo.open;
+  document.getElementById('founder-flag').style.display = open ? 'block' : 'none';
+  document.getElementById('anual-price').innerHTML = open
+    ? '<s style="opacity:.45;font-weight:600">R$149</s> R$99<small>/1º ano</small>'
+    : 'R$149<small>/ano</small>';
+  document.getElementById('anual-permes').innerHTML = open ? 'sai a <strong>R$8,25</strong>/mês' : 'sai a <strong>R$12,40</strong>/mês';
+  render();
+}
+async function loadFounder(){
+  try{ const u = (window.gUser && gUser.id) ? ('?u='+encodeURIComponent(gUser.id)) : '';
+    const r = await fetch('/api/founder-status'+u); founderInfo = await r.json();
+  }catch(e){}
+  applyFounder();
 }
 render();
+loadFounder();
 
 /* sessão do usuário — precisa de conta pra assinar */
 let gUser=null;
@@ -202,7 +223,7 @@ async function assinar(){
   const cta=document.getElementById('cta');
   if(!gUser){ location.href='login.html'; return; } // sem conta → cadastra/loga
   cta.disabled=true; const orig=cta.textContent; cta.textContent='Abrindo pagamento...';
-  if(window.tlTrack){ const _v = plan==='anual'?149:19.90; tlTrack('InitiateCheckout','begin_checkout',{ value:_v, currency:'BRL', content_name:('plano '+plan) }); }
+  if(window.tlTrack){ const _v = plan==='anual'?(founderInfo.open?99:149):19.90; tlTrack('InitiateCheckout','begin_checkout',{ value:_v, currency:'BRL', content_name:('plano '+plan) }); }
   try{
     const r=await fetch('/api/checkout',{method:'POST',headers:{'content-type':'application/json'},
       body:JSON.stringify({ plan, userId:gUser.id, email:gUser.email, ref:getRef() })});
