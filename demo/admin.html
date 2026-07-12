@@ -191,6 +191,7 @@
     <div class="tab" data-panel="cupons" onclick="showPanel('cupons')">🎟️ Cupons</div>
 
     <div class="side-group">Configurações</div>
+    <div class="tab" data-panel="precos" onclick="showPanel('precos')">💰 Preços & Landing</div>
     <div class="tab" data-panel="ebook" onclick="showPanel('ebook')">📘 E-book</div>
   </nav>
 
@@ -240,6 +241,30 @@
           <div class="sub">Assinantes que seguem ativos depois de assinar.</div>
           <div id="dash-ret" style="margin-top:12px;color:var(--muted)">—</div>
         </div>
+      </div>
+    </div>
+
+    <!-- PREÇOS & LANDING -->
+    <div class="panel" id="panel-precos">
+      <div class="card">
+        <h2 style="margin:0 0 4px">💰 Preços</h2>
+        <div class="sub">Fonte única de verdade: o que você salvar aqui é <strong>exibido na landing e no checkout</strong> E é <strong>o valor que o Mercado Pago cobra</strong>. Nunca divergem.</div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end;margin-top:16px">
+          <div class="field" style="min-width:150px"><label>Mensal (R$)</label><input id="pr-mensal" type="number" step="0.01" min="1" placeholder="19.90"></div>
+          <div class="field" style="min-width:150px"><label>Anual (R$)</label><input id="pr-anual" type="number" step="0.01" min="1" placeholder="149.00"></div>
+          <button class="btn primary" onclick="salvarPrecos()" style="margin:0">Salvar preços</button>
+        </div>
+        <div id="pr-msg" style="font-size:12.5px;margin-top:12px;color:var(--muted)"></div>
+        <div style="font-size:11.5px;color:var(--muted);margin-top:10px">⚠️ Mudança de preço vale para <strong>novas</strong> assinaturas. Quem já assinou mantém o que contratou.</div>
+      </div>
+
+      <div class="card">
+        <h2 style="margin:0 0 4px">✍️ Textos da landing</h2>
+        <div class="sub">Título e subtítulo do topo da página. Deixe em branco para usar o texto original do código.</div>
+        <div class="field" style="margin-top:14px"><label>Título (hero)</label><input id="lp-titulo" placeholder="ex: A diferença entre olhar números e entender o mar"></div>
+        <div class="field"><label>Subtítulo (hero)</label><textarea id="lp-sub" rows="2" placeholder="ex: Previsão de ondas com a leitura que você entende. 87 praias do Brasil."></textarea></div>
+        <button class="btn primary" onclick="salvarLanding()" style="margin:0">Salvar textos</button>
+        <div id="lp-msg" style="font-size:12.5px;margin-top:12px;color:var(--muted)"></div>
       </div>
     </div>
 
@@ -604,6 +629,7 @@ function showPanel(id){
   if(id==='aquisicao') loadAquisicao();
   if(id==='dashboard') loadDashboard();
   if(id==='ebook') loadEbook();
+  if(id==='precos') loadPrecos();
 }
 
 /* ── AFILIADOS ──────────────────────────────────────── */
@@ -829,6 +855,47 @@ function aqSetSpend(el){
   const roasEl=tds[n-1];                                                                      // ROAS
   roasEl.textContent=(spn>0)?((rec/spn).toFixed(2)+'x'):'—';
   roasEl.style.color=(spn>0 && rec/spn>=1)?'var(--ok)':(spn>0?'var(--accent)':'var(--muted)');
+}
+
+/* ── PREÇOS & LANDING (config = fonte única) ─────────── */
+async function loadPrecos(){
+  try{
+    const c=window.TLData && await window.TLData.client(); if(!c) return;
+    const p=await c.from('config').select('value').eq('key','precos').maybeSingle();
+    const v=(p.data&&p.data.value)||{};
+    document.getElementById('pr-mensal').value = v.mensal!=null ? v.mensal : 19.90;
+    document.getElementById('pr-anual').value  = v.anual!=null  ? v.anual  : 149.00;
+    const l=await c.from('config').select('value').eq('key','landing').maybeSingle();
+    const lv=(l.data&&l.data.value)||{};
+    document.getElementById('lp-titulo').value = lv.titulo||'';
+    document.getElementById('lp-sub').value    = lv.sub||'';
+  }catch(e){}
+}
+async function salvarPrecos(){
+  const msg=document.getElementById('pr-msg');
+  const mensal=parseFloat(document.getElementById('pr-mensal').value);
+  const anual=parseFloat(document.getElementById('pr-anual').value);
+  if(!(mensal>0)||!(anual>0)){ msg.style.color='var(--accent)'; msg.textContent='Preços precisam ser maiores que zero.'; return; }
+  if(!confirm('Confirmar novos preços?\n\nMensal: R$'+mensal.toFixed(2)+'\nAnual: R$'+anual.toFixed(2)+'\n\nIsso muda o que é exibido E o que o Mercado Pago vai cobrar nas novas assinaturas.')) return;
+  msg.style.color='var(--muted)'; msg.textContent='Salvando…';
+  try{
+    const c=window.TLData && await window.TLData.client(); if(!c) throw new Error('Login do painel não está ativo.');
+    const { error }=await c.from('config').upsert({ key:'precos', value:{ mensal, anual }, updated_at:new Date().toISOString() });
+    if(error) throw error;
+    msg.style.color='var(--ok)'; msg.textContent='✅ Preços salvos. Já valem na landing, no checkout e na cobrança.';
+  }catch(e){ msg.style.color='var(--accent)'; msg.textContent='Erro: '+(e.message||'falhou'); }
+}
+async function salvarLanding(){
+  const msg=document.getElementById('lp-msg');
+  const titulo=document.getElementById('lp-titulo').value.trim();
+  const sub=document.getElementById('lp-sub').value.trim();
+  msg.style.color='var(--muted)'; msg.textContent='Salvando…';
+  try{
+    const c=window.TLData && await window.TLData.client(); if(!c) throw new Error('Login do painel não está ativo.');
+    const { error }=await c.from('config').upsert({ key:'landing', value:{ titulo, sub }, updated_at:new Date().toISOString() });
+    if(error) throw error;
+    msg.style.color='var(--ok)'; msg.textContent='✅ Textos salvos. A landing já mostra os novos.';
+  }catch(e){ msg.style.color='var(--accent)'; msg.textContent='Erro: '+(e.message||'falhou'); }
 }
 
 /* ── E-BOOK (upload protegido → bucket privado) ──────── */

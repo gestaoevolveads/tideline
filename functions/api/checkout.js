@@ -3,6 +3,8 @@
 // Env (Cloudflare Pages): MP_ACCESS_TOKEN
 // Retorna { init_point } — a URL do checkout MP (Pix/cartão) pra redirecionar.
 
+import { lerPrecos } from './precos.js';
+
 const PLANOS = {
   anual:  { titulo: 'Tideline Premium — Anual',  valor: 149.00, tipo: 'once'      },
   mensal: { titulo: 'Tideline Premium — Mensal', valor: 19.90,  tipo: 'recurring' },
@@ -17,8 +19,10 @@ export async function onRequestPost(context) {
     if (!p) return json({ error: 'plano inválido' }, 400);
     if (!env.MP_ACCESS_TOKEN) return json({ error: 'MP não configurado' }, 500);
 
-    // Preço único e limpo: anual R$149 · mensal R$19,90 (sem oferta de fundador).
-    const precoFinal = p.valor;
+    // Preço vem do config (fonte única de verdade). Se falhar, cai no padrão.
+    // É o MESMO valor que a landing e o /assinar exibem, entao nunca diverge.
+    const precos = await lerPrecos(env);
+    const precoFinal = (plan === 'anual') ? precos.anual : precos.mensal;
 
     const back = `${origin}/app.html?assinatura=ok&v=${precoFinal}&plan=${encodeURIComponent(plan)}`;
     // external_reference carrega userId + código do afiliado: "userId|REF"
@@ -35,7 +39,7 @@ export async function onRequestPost(context) {
         back_url: back,
         auto_recurring: {
           frequency: 1, frequency_type: 'months',
-          transaction_amount: p.valor, currency_id: 'BRL',
+          transaction_amount: precoFinal, currency_id: 'BRL',
         },
         status: 'pending',
       };

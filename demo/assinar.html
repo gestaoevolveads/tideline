@@ -117,7 +117,7 @@ body{font-family:var(--ff);background:var(--paper);color:var(--deep);line-height
         <div class="plan-name">Mensal</div>
       </div>
       <div class="plan-top">
-        <div class="plan-price">R$19,90<small>/mês</small></div>
+        <div class="plan-price" id="mensal-price">R$19,90<small>/mês</small></div>
       </div>
       <div class="plan-sub">No cartão, renova sozinho. Cancela quando quiser.</div>
     </div>
@@ -178,11 +178,26 @@ function selPlan(p){ plan=p;
   document.getElementById('plan-mensal').classList.toggle('sel',p==='mensal');
   render();
 }
+/* preços vêm do config (mesma fonte que o checkout cobra) */
+let PRECOS = { mensal:19.90, anual:149.00 };
+const brl = n => 'R$'+Number(n).toFixed(2).replace('.',',').replace(/,00$/,'');
 function render(){
   const anual=plan==='anual';
-  document.getElementById('cta').textContent = anual ? 'Assinar por R$149 (Pix ou cartão)' : 'Assinar por R$19,90/mês';
+  document.getElementById('cta').textContent = anual
+    ? ('Assinar por '+brl(PRECOS.anual)+' (Pix ou cartão)')
+    : ('Assinar por '+brl(PRECOS.mensal)+'/mês');
   document.getElementById('cta-sub').textContent = anual ? 'Cobrança única · acesso por 12 meses' : 'Renova todo mês · cancela quando quiser';
 }
+function pintaPrecos(){
+  document.getElementById('anual-price').innerHTML  = brl(PRECOS.anual)+'<small>/ano</small>';
+  document.getElementById('mensal-price').innerHTML = brl(PRECOS.mensal)+'<small>/mês</small>';
+  const pm = PRECOS.anual/12;
+  document.getElementById('anual-permes').innerHTML = 'sai a <strong>'+brl(pm.toFixed(2))+'</strong>/mês';
+  render();
+}
+(async()=>{ try{ const r=await fetch('/api/precos'); const d=await r.json();
+  if(d && d.mensal>0 && d.anual>0){ PRECOS={mensal:d.mensal, anual:d.anual}; }
+}catch(e){} pintaPrecos(); })();
 render();
 
 /* sessão do usuário — precisa de conta pra assinar */
@@ -202,7 +217,7 @@ async function assinar(){
   const cta=document.getElementById('cta');
   if(!gUser){ location.href='login.html'; return; } // sem conta → cadastra/loga
   cta.disabled=true; const orig=cta.textContent; cta.textContent='Abrindo pagamento...';
-  if(window.tlTrack){ const _v = plan==='anual'?149:19.90; tlTrack('InitiateCheckout','begin_checkout',{ value:_v, currency:'BRL', content_name:('plano '+plan) }); }
+  if(window.tlTrack){ const _v = plan==='anual'?PRECOS.anual:PRECOS.mensal; tlTrack('InitiateCheckout','begin_checkout',{ value:_v, currency:'BRL', content_name:('plano '+plan) }); }
   try{
     const r=await fetch('/api/checkout',{method:'POST',headers:{'content-type':'application/json'},
       body:JSON.stringify({ plan, userId:gUser.id, email:gUser.email, ref:getRef() })});

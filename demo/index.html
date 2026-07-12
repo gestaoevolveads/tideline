@@ -574,8 +574,8 @@ footer{background:var(--deep)}
   <div class="hero-content">
     <div class="hero-copy">
       <div class="hero-tag">Previsão de surf para iniciantes e intermediários</div>
-      <h1 class="hero-title">A diferença entre <em>olhar números</em> e entender o mar.</h1>
-      <p class="hero-sub">O Tideline traduz dados oceanográficos em leitura de mar para mais de 85 praias brasileiras, de um jeito que todo mundo entende. Você vai para o surf preparado e faz a sessão da sua vida!</p>
+      <h1 class="hero-title" id="lp-titulo">A diferença entre <em>olhar números</em> e entender o mar.</h1>
+      <p class="hero-sub" id="lp-sub">O Tideline traduz dados oceanográficos em leitura de mar para mais de 85 praias brasileiras, de um jeito que todo mundo entende. Você vai para o surf preparado e faz a sessão da sua vida!</p>
       <div class="hero-cta-row">
         <a href="login.html" class="btn btn-primary">Testar grátis por 14 dias</a>
         <a href="#mecanismo" class="btn btn-ghost">Como funciona</a>
@@ -1027,8 +1027,8 @@ footer{background:var(--deep)}
         <div class="pricing-box">
           <div class="pricing-label">Tideline Premium</div>
           <div>
-            <div class="pricing-price"><span class="pp-cur">R$</span><span class="pp-int">19</span><span class="pp-dec">,90</span></div>
-            <div class="pricing-period">por mês · ou <strong>R$149 no ano</strong> (2 meses grátis)</div>
+            <div class="pricing-price" id="lp-preco"><span class="pp-cur">R$</span><span class="pp-int">19</span><span class="pp-dec">,90</span></div>
+            <div class="pricing-period" id="lp-periodo">por mês · ou <strong>R$149 no ano</strong> (2 meses grátis)</div>
           </div>
           <div class="pricing-features">
             <div class="pf-item"><svg viewBox="0 0 14 14"><polyline points="2,7 5,10 12,3"/></svg><span>85+ praias com Leitura Traduzida</span></div>
@@ -1195,6 +1195,23 @@ window.addEventListener('scroll', () => {
       document.getElementById('hero-proof-n').textContent='+'+arred.toLocaleString('pt-BR')+' surfistas';
       document.getElementById('hero-proof').style.display='';
     }
+  }catch(e){}
+})();
+
+/* preços e textos vindos do painel (mesma fonte que o checkout cobra) */
+(async()=>{
+  try{
+    const r=await fetch('/api/precos'); const d=await r.json();
+    if(d && d.mensal>0 && d.anual>0){
+      const m=Number(d.mensal).toFixed(2).split('.');
+      document.getElementById('lp-preco').innerHTML='<span class="pp-cur">R$</span><span class="pp-int">'+m[0]+'</span><span class="pp-dec">,'+m[1]+'</span>';
+      const anual='R$'+Number(d.anual).toFixed(2).replace('.',',').replace(/,00$/,'');
+      const gratis=Math.max(0, Math.round(12 - (Number(d.anual)/Number(d.mensal))));
+      document.getElementById('lp-periodo').innerHTML='por mês · ou <strong>'+anual+' no ano</strong>'+(gratis>0?(' ('+gratis+' meses grátis)'):'');
+    }
+    const L=(d&&d.landing)||{};
+    if(L.titulo) document.getElementById('lp-titulo').textContent=L.titulo;
+    if(L.sub)    document.getElementById('lp-sub').textContent=L.sub;
   }catch(e){}
 })();
 
