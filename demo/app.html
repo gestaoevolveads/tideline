@@ -2563,6 +2563,14 @@ function renderLoggedIn(user, logs) {
       <button class="btn-logout" onclick="logout()">Sair</button>
     </div>
     <div style="text-align:center;font-size:11px;margin:0 0 6px;color:${(gSb&&gUid)?'var(--muted)':'#c0491f'}">${(gSb&&gUid)?('☁️ Sincronização ativa · conta '+String(gUid).slice(-6)):'⚠️ Sincronização inativa neste aparelho — saia e entre de novo'}</div>
+    ${ gUserPlan==='premium' ? `<div style="margin:10px 24px;padding:15px 18px;background:var(--white);border-radius:var(--r);box-shadow:var(--sh);display:flex;align-items:center;gap:14px">
+      <div style="font-size:26px;flex-shrink:0">📘</div>
+      <div style="flex:1;min-width:0">
+        <div style="font-size:13px;font-weight:700;color:var(--deep)">Guia Ler o Mar</div>
+        <div style="font-size:11px;color:var(--muted);margin-top:2px">Seu bônus de assinante. O guia completo em PDF.</div>
+      </div>
+      <button onclick="baixarEbook(this)" style="background:var(--deep);color:#fff;border:none;border-radius:10px;padding:10px 15px;font-family:var(--ff);font-size:12px;font-weight:700;cursor:pointer;flex-shrink:0">Baixar</button>
+    </div>` : '' }
     ${seasonBanner}
     ${renderStreakHero(streak, checkins)}
     <div class="eu-stats-row">
@@ -3057,6 +3065,27 @@ function renderBeachList(q) {
   });
   document.getElementById('beach-list').innerHTML = html ||
     '<div class="bl-empty">Nenhuma praia encontrada.</div>';
+}
+
+/* ── E-BOOK (só premium; o servidor confere e devolve link que expira) ── */
+async function baixarEbook(btn){
+  const orig=btn.textContent; btn.disabled=true; btn.textContent='Gerando link…';
+  try{
+    const c = window.TLData && await window.TLData.client();
+    if(!c) throw new Error('Faça login de novo.');
+    const { data:sess } = await c.auth.getSession();
+    const token = sess && sess.session && sess.session.access_token;
+    if(!token) throw new Error('Sessão expirada. Entre de novo.');
+    const r = await fetch('/api/ebook-link', { method:'POST', headers:{ authorization:'Bearer '+token } });
+    const d = await r.json();
+    if(!r.ok) throw new Error(d.error || 'não consegui liberar o download');
+    window.open(d.url, '_blank');
+    btn.textContent='Pronto ✓';
+    setTimeout(()=>{ btn.disabled=false; btn.textContent=orig; }, 2500);
+  }catch(e){
+    alert(e.message || 'Não consegui liberar o download.');
+    btn.disabled=false; btn.textContent=orig;
+  }
 }
 
 /* ── AVATAR UPLOAD ───────────────────────────────────── */

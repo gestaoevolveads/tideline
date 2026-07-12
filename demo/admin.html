@@ -189,6 +189,9 @@
     <div class="side-group">Comercial</div>
     <div class="tab" data-panel="loja" onclick="showPanel('loja')">🛒 Loja</div>
     <div class="tab" data-panel="cupons" onclick="showPanel('cupons')">🎟️ Cupons</div>
+
+    <div class="side-group">Configurações</div>
+    <div class="tab" data-panel="ebook" onclick="showPanel('ebook')">📘 E-book</div>
   </nav>
 
   <div class="wrap">
@@ -237,6 +240,21 @@
           <div class="sub">Assinantes que seguem ativos depois de assinar.</div>
           <div id="dash-ret" style="margin-top:12px;color:var(--muted)">—</div>
         </div>
+      </div>
+    </div>
+
+    <!-- E-BOOK -->
+    <div class="panel" id="panel-ebook">
+      <div class="card">
+        <h2 style="margin:0 0 4px">📘 Guia "Ler o Mar" (e-book)</h2>
+        <div class="sub">Suba o PDF. Ele fica num bucket <strong>privado</strong>: só assinante premium consegue baixar, e o link <strong>expira em 5 minutos</strong> (ninguém repassa).</div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end;margin-top:16px">
+          <div class="field" style="flex:1;min-width:200px"><label>Título mostrado no app</label><input id="eb-titulo" placeholder="Guia Ler o Mar"></div>
+          <div class="field" style="flex:1;min-width:220px"><label>Arquivo PDF</label><input type="file" id="eb-file" accept="application/pdf"></div>
+          <button class="btn primary" onclick="uploadEbook()" style="margin:0">Subir e publicar</button>
+        </div>
+        <div id="eb-msg" style="font-size:12.5px;margin-top:12px;color:var(--muted)"></div>
+        <div id="eb-atual" style="margin-top:14px;padding:12px 14px;background:var(--paper);border:1px solid var(--line);border-radius:10px;color:var(--muted);font-size:13px">Carregando…</div>
       </div>
     </div>
 
@@ -585,6 +603,7 @@ function showPanel(id){
   if(id==='afiliados') loadAfiliados();
   if(id==='aquisicao') loadAquisicao();
   if(id==='dashboard') loadDashboard();
+  if(id==='ebook') loadEbook();
 }
 
 /* ── AFILIADOS ──────────────────────────────────────── */
@@ -810,6 +829,41 @@ function aqSetSpend(el){
   const roasEl=tds[n-1];                                                                      // ROAS
   roasEl.textContent=(spn>0)?((rec/spn).toFixed(2)+'x'):'—';
   roasEl.style.color=(spn>0 && rec/spn>=1)?'var(--ok)':(spn>0?'var(--accent)':'var(--muted)');
+}
+
+/* ── E-BOOK (upload protegido → bucket privado) ──────── */
+async function loadEbook(){
+  const el=document.getElementById('eb-atual');
+  try{
+    const c=window.TLData && await window.TLData.client(); if(!c) throw new Error('Login do painel não está ativo.');
+    const { data }=await c.from('config').select('value').eq('key','ebook').maybeSingle();
+    const v=data&&data.value;
+    if(v&&v.path){
+      el.innerHTML='📗 <strong>Publicado:</strong> '+esc(v.titulo||'Guia')+' · arquivo <code>'+esc(v.path)+'</code>'+(v.updated?(' · '+fmtD(v.updated)):'')
+        +'<br><span style="font-size:11.5px">Assinantes premium já veem o botão de download no app.</span>';
+      const t=document.getElementById('eb-titulo'); if(!t.value) t.value=v.titulo||'';
+    } else el.textContent='Nenhum e-book publicado ainda.';
+  }catch(e){ el.textContent='Não consegui ler: '+(e.message||'erro'); }
+}
+async function uploadEbook(){
+  const msg=document.getElementById('eb-msg');
+  const f=document.getElementById('eb-file').files[0];
+  const titulo=(document.getElementById('eb-titulo').value||'Guia Ler o Mar').trim();
+  if(!f){ msg.style.color='var(--accent)'; msg.textContent='Escolha um arquivo PDF.'; return; }
+  msg.style.color='var(--muted)'; msg.textContent='Subindo o arquivo…';
+  try{
+    const c=window.TLData && await window.TLData.client(); if(!c) throw new Error('Login do painel não está ativo.');
+    const path='ler-o-mar-'+Date.now()+'.pdf';
+    const up=await c.storage.from('ebooks').upload(path, f, { upsert:true, contentType:'application/pdf' });
+    if(up.error) throw up.error;
+    const cf=await c.from('config').upsert({ key:'ebook', value:{ path, titulo, updated:new Date().toISOString() }, updated_at:new Date().toISOString() });
+    if(cf.error) throw cf.error;
+    msg.style.color='var(--ok)'; msg.textContent='✅ Publicado. Assinantes premium já podem baixar no app.';
+    loadEbook();
+  }catch(e){
+    msg.style.color='var(--accent)';
+    msg.textContent='Erro: '+(e.message||'falhou')+' — o bucket "ebooks" existe? (rode o SQL do e-book)';
+  }
 }
 
 /* ── LIMPAR CONTAS DE TESTE (Auth + profiles) ────────── */
