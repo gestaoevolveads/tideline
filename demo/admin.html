@@ -32,9 +32,32 @@
   header .brand{font-weight:800;letter-spacing:3px;font-size:16px}
   header .brand span{color:var(--accent)}
   header .mode{font-size:11px;color:var(--muted);background:rgba(255,255,255,.06);padding:5px 10px;border-radius:20px}
-  .wrap{max-width:1000px;margin:0 auto;padding:20px}
-  .tabs{display:flex;gap:6px;overflow-x:auto;padding:16px 20px 0;max-width:1000px;margin:0 auto}
-  .tab{flex:0 0 auto;padding:9px 16px;border-radius:20px;border:1.5px solid var(--line);background:#fff;font-size:13px;font-weight:700;color:var(--mid);cursor:pointer;white-space:nowrap}
+  /* layout: sidebar agrupada + conteúdo (sem rolagem lateral de abas) */
+  .shell{display:flex;align-items:flex-start;gap:0;max-width:1240px;margin:0 auto}
+  .side{width:212px;flex:0 0 212px;padding:18px 12px 40px;position:sticky;top:60px}
+  .side-group{font-size:10px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);padding:16px 10px 6px}
+  .side-group:first-child{padding-top:4px}
+  .wrap{flex:1;min-width:0;max-width:none;margin:0;padding:20px}
+  .tab{display:block;width:100%;text-align:left;padding:9px 12px;border-radius:9px;border:1.5px solid transparent;background:transparent;font-size:13px;font-weight:700;color:var(--mid);cursor:pointer;white-space:nowrap;margin-bottom:2px}
+  .tab:hover{background:#fff;border-color:var(--line)}
+  @media(max-width:860px){
+    .shell{flex-direction:column}
+    .side{width:100%;flex:none;position:static;display:flex;flex-wrap:wrap;gap:6px;padding:12px 16px 0}
+    .side-group{width:100%;padding:8px 4px 2px}
+    .tab{display:inline-block;width:auto;border-radius:20px;border-color:var(--line);background:#fff;margin:0}
+  }
+  /* dashboard */
+  .live-pill{font-size:12px;font-weight:800;color:var(--ok);background:rgba(47,158,111,.12);border:1px solid rgba(47,158,111,.3);border-radius:20px;padding:6px 12px;white-space:nowrap}
+  .range{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:16px}
+  .rg{padding:7px 13px;border-radius:20px;border:1.5px solid var(--line);background:#fff;font-size:12.5px;font-weight:700;color:var(--mid);cursor:pointer}
+  .rg.active{background:var(--deep);color:#fff;border-color:var(--deep)}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+  .kpi{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .kpi .n{font-size:26px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+  .kpi .l{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-top:5px}
+  .kpi .d{font-size:11px;font-weight:700;margin-top:4px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:760px){.grid2{grid-template-columns:1fr}}
   .tab.active{background:var(--deep);color:#fff;border-color:var(--deep)}
   .panel{display:none}
   .panel.active{display:block}
@@ -146,23 +169,79 @@
     <div class="mode">modo local · exporta e commita</div>
   </header>
 
-  <div class="tabs">
-    <div class="tab active" data-panel="loja" onclick="showPanel('loja')">🛒 Loja</div>
-    <div class="tab" data-panel="cupons" onclick="showPanel('cupons')">🎟️ Cupons</div>
-    <div class="tab" data-panel="praias" onclick="showPanel('praias')">🌊 Praias</div>
-    <div class="tab" data-panel="ranking" onclick="showPanel('ranking')">🏆 Ranking</div>
-    <div class="tab" data-panel="templates" onclick="showPanel('templates')">🎨 Templates</div>
-    <div class="tab" data-panel="narrador" onclick="showPanel('narrador')">🌀 Narrador</div>
-    <div class="tab" data-panel="inteligencia" onclick="showPanel('inteligencia')">🧠 Inteligência</div>
+  <div class="shell">
+  <nav class="side">
+    <div class="side-group">Visão geral</div>
+    <div class="tab active" data-panel="dashboard" onclick="showPanel('dashboard')">📈 Dashboard</div>
+
+    <div class="side-group">Crescimento</div>
+    <div class="tab" data-panel="aquisicao" onclick="showPanel('aquisicao')">📊 Aquisição</div>
     <div class="tab" data-panel="assinantes" onclick="showPanel('assinantes')">👥 Assinantes</div>
     <div class="tab" data-panel="afiliados" onclick="showPanel('afiliados')">🤝 Afiliados</div>
-    <div class="tab" data-panel="aquisicao" onclick="showPanel('aquisicao')">📊 Aquisição</div>
-  </div>
+
+    <div class="side-group">Conteúdo</div>
+    <div class="tab" data-panel="narrador" onclick="showPanel('narrador')">🌀 Narrador</div>
+    <div class="tab" data-panel="inteligencia" onclick="showPanel('inteligencia')">🧠 Inteligência</div>
+    <div class="tab" data-panel="templates" onclick="showPanel('templates')">🎨 Templates</div>
+    <div class="tab" data-panel="praias" onclick="showPanel('praias')">🌊 Praias</div>
+    <div class="tab" data-panel="ranking" onclick="showPanel('ranking')">🏆 Ranking</div>
+
+    <div class="side-group">Comercial</div>
+    <div class="tab" data-panel="loja" onclick="showPanel('loja')">🛒 Loja</div>
+    <div class="tab" data-panel="cupons" onclick="showPanel('cupons')">🎟️ Cupons</div>
+  </nav>
 
   <div class="wrap">
 
+    <!-- DASHBOARD -->
+    <div class="panel active" id="panel-dashboard">
+      <div class="card">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:14px;flex-wrap:wrap">
+          <div>
+            <h2 style="margin:0 0 4px">📈 Visão geral</h2>
+            <div class="sub" style="margin:0">Tráfego, cadastros e receita do Tideline. Escolha o período.</div>
+          </div>
+          <div id="dash-live" class="live-pill">— ao vivo</div>
+        </div>
+        <div class="range" id="dash-range">
+          <button class="rg" data-r="hoje">Hoje</button>
+          <button class="rg active" data-r="7">7 dias</button>
+          <button class="rg" data-r="15">15 dias</button>
+          <button class="rg" data-r="30">30 dias</button>
+          <button class="rg" data-r="semana">Esta semana</button>
+          <button class="rg" data-r="mes">Este mês</button>
+          <button class="rg" data-r="custom">Personalizado</button>
+          <span id="dash-custom" style="display:none;gap:6px;align-items:center">
+            <input type="date" id="dash-de" style="width:auto"> <span style="color:var(--muted)">até</span>
+            <input type="date" id="dash-ate" style="width:auto">
+            <button class="btn" onclick="loadDashboard()" style="margin:0">Aplicar</button>
+          </span>
+        </div>
+        <div id="dash-erro" style="display:none;color:var(--accent);font-size:13px;margin-top:12px"></div>
+        <div id="dash-kpis" class="kpis" style="margin-top:16px"></div>
+      </div>
+
+      <div class="card">
+        <h2 style="margin:0 0 4px">Visitas por dia</h2>
+        <div class="sub">Quantas pessoas passaram pelo site no período.</div>
+        <div id="dash-chart" style="margin-top:16px"></div>
+      </div>
+
+      <div class="grid2">
+        <div class="card" style="margin:0">
+          <h2 style="margin:0 0 4px">Páginas mais vistas</h2>
+          <div id="dash-pages" style="margin-top:12px;color:var(--muted)">—</div>
+        </div>
+        <div class="card" style="margin:0">
+          <h2 style="margin:0 0 4px">Retenção</h2>
+          <div class="sub">Assinantes que seguem ativos depois de assinar.</div>
+          <div id="dash-ret" style="margin-top:12px;color:var(--muted)">—</div>
+        </div>
+      </div>
+    </div>
+
     <!-- LOJA -->
-    <div class="panel active" id="panel-loja">
+    <div class="panel" id="panel-loja">
       <div class="card">
         <h2>Loja / Produtos</h2>
         <div class="sub">Editar aqui muda o app de verdade: os produtos vêm do <code>products.json</code>. Edite, clique em <strong>Exportar</strong>, substitua o arquivo no projeto e faça commit.</div>
@@ -449,6 +528,7 @@
     </div>
 
   </div>
+  </div>
 </div>
 
 <div class="toast" id="toast"></div>
@@ -487,6 +567,7 @@ function showApp(){
   document.getElementById('gate').classList.add('hidden');
   document.getElementById('app').classList.remove('hidden');
   initData();
+  try{ loadDashboard(); }catch(e){} // Dashboard é a aba padrão
 }
 // atalho de sessão só no modo local; no ao vivo, sempre valida via Supabase Auth
 if(!LIVE_MODE && sessionStorage.getItem('tl_admin')==='1') showApp();
@@ -499,6 +580,7 @@ function showPanel(id){
   if(id==='assinantes') loadAssinantes();
   if(id==='afiliados') loadAfiliados();
   if(id==='aquisicao') loadAquisicao();
+  if(id==='dashboard') loadDashboard();
 }
 
 /* ── AFILIADOS ──────────────────────────────────────── */
@@ -711,6 +793,112 @@ function aqSetSpend(el){
   tds[tds.length-2].textContent=(spn>0&&cad>0)?('R$'+(spn/cad).toFixed(2)):'—';
   tds[tds.length-1].textContent=(spn>0&&pagv>0)?('R$'+(spn/pagv).toFixed(2)):(spn>0?'∞':'—');
 }
+
+/* ── DASHBOARD (visão geral) ─────────────────────────── */
+let dashR='7', dashLiveTimer=null;
+function dashPeriodo(){
+  const now=new Date(); let from=new Date(now), to=new Date(now);
+  if(dashR==='hoje'){ from.setHours(0,0,0,0); }
+  else if(dashR==='semana'){ const d=(now.getDay()+6)%7; from.setDate(now.getDate()-d); from.setHours(0,0,0,0); }
+  else if(dashR==='mes'){ from=new Date(now.getFullYear(),now.getMonth(),1); }
+  else if(dashR==='custom'){
+    const de=document.getElementById('dash-de').value, ate=document.getElementById('dash-ate').value;
+    if(de) from=new Date(de+'T00:00:00');
+    if(ate) to=new Date(ate+'T23:59:59');
+  } else { const n=parseInt(dashR,10)||7; from=new Date(now.getTime()-n*86400000); }
+  return {from,to};
+}
+async function loadDashboard(){
+  const erro=document.getElementById('dash-erro'); erro.style.display='none';
+  try{
+    const c=window.TLData && await window.TLData.client();
+    if(!c) throw new Error('Login do painel não está ativo.');
+    const {from,to}=dashPeriodo();
+    // visitas (se a tabela não existir, degrada)
+    let vis=[], visOk=true;
+    const rv=await c.from('visits').select('ts,sid,path').gte('ts',from.toISOString()).lte('ts',to.toISOString()).order('ts',{ascending:true}).limit(20000);
+    if(rv.error) visOk=false; else vis=rv.data||[];
+    // perfis (com receita, se as colunas existirem)
+    let hasRev=true;
+    let rp=await c.from('profiles').select('email,nome,created_at,premium_until,trial_ends,plano_tipo,valor_pago');
+    if(rp.error){ hasRev=false; rp=await c.from('profiles').select('email,nome,created_at,premium_until,trial_ends'); }
+    if(rp.error) throw rp.error;
+    const profs=(rp.data||[]).filter(u=>classAcc(u.email,u.nome)==='real');
+    renderDashboard(vis, visOk, profs, hasRev, from, to);
+    dashLive(c);
+  }catch(e){
+    erro.style.display='block';
+    erro.innerHTML='Não consegui carregar: <strong>'+esc(e.message||'erro')+'</strong>';
+  }
+}
+function renderDashboard(vis, visOk, profs, hasRev, from, to){
+  const now=Date.now();
+  const uniq=new Set(vis.map(v=>v.sid)).size, pv=vis.length;
+  const novos=profs.filter(u=>{const t=new Date(u.created_at).getTime(); return t>=from.getTime()&&t<=to.getTime();}).length;
+  const pag=profs.filter(u=>u.premium_until && new Date(u.premium_until).getTime()>now);
+  const exp=profs.filter(u=>u.premium_until && new Date(u.premium_until).getTime()<=now);
+  const receita=hasRev? pag.reduce((s,u)=>s+(Number(u.valor_pago)||0),0) : null;
+  const conv=uniq? Math.round(1000*novos/uniq)/10 : 0;
+  const kpis=[
+    [visOk?uniq.toLocaleString('pt-BR'):'—','visitantes únicos',''],
+    [visOk?pv.toLocaleString('pt-BR'):'—','visitas (páginas)',''],
+    [novos,'cadastros no período','var(--accent)'],
+    [pag.length,'assinantes ativos','var(--ok)'],
+    [conv+'%','visitante → cadastro',''],
+    [receita!=null?('R$'+receita.toFixed(2).replace('.',',')):'—','receita registrada','var(--ok)'],
+  ];
+  document.getElementById('dash-kpis').innerHTML=kpis.map(k=>'<div class="kpi"><div class="n"'+(k[2]?(' style="color:'+k[2]+'"'):'')+'>'+k[0]+'</div><div class="l">'+k[1]+'</div></div>').join('');
+  // gráfico visitas/dia
+  const el=document.getElementById('dash-chart');
+  if(!visOk){
+    el.innerHTML='<div class="soon">A tabela <strong>visits</strong> ainda não existe no banco. Rode o SQL das visitas que te passei e recarregue esta página.</div>';
+  } else {
+    const days={}; const d0=new Date(from); d0.setHours(0,0,0,0);
+    for(let d=new Date(d0); d<=to; d.setDate(d.getDate()+1)) days[d.toISOString().slice(0,10)]=0;
+    vis.forEach(v=>{ const k=String(v.ts).slice(0,10); if(k in days) days[k]++; });
+    const ks=Object.keys(days), max=Math.max(1,...ks.map(k=>days[k]));
+    el.innerHTML='<div style="display:flex;align-items:flex-end;gap:4px;height:150px">'+ks.map(k=>{
+      const n=days[k], h=Math.round(100*n/max), lbl=k.slice(8,10)+'/'+k.slice(5,7);
+      return '<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px;justify-content:flex-end;min-width:0" title="'+lbl+': '+n+'"><div style="font-size:10px;font-weight:700;color:var(--muted)">'+(n||'')+'</div><div style="width:100%;background:var(--accent);border-radius:4px 4px 0 0;height:'+h+'%;min-height:'+(n?3:1)+'px;opacity:'+(n?1:.25)+'"></div><div style="font-size:9px;color:var(--muted)">'+lbl+'</div></div>';
+    }).join('')+'</div>';
+  }
+  // páginas mais vistas
+  const pgs={}; vis.forEach(v=>{ const p=v.path||'/'; pgs[p]=(pgs[p]||0)+1; });
+  const top=Object.entries(pgs).sort((a,b)=>b[1]-a[1]).slice(0,6);
+  document.getElementById('dash-pages').innerHTML = top.length
+    ? '<table style="width:100%;border-collapse:collapse;font-size:13px"><tbody>'+top.map(([p,n])=>'<tr style="border-top:1px solid var(--line)"><td style="padding:7px 8px">'+esc(p)+'</td><td style="padding:7px 8px;text-align:right;font-weight:700">'+n+'</td></tr>').join('')+'</tbody></table>'
+    : '<div style="color:var(--muted);font-size:13px">Sem visitas no período.</div>';
+  // retenção
+  const tot=pag.length+exp.length, tx=tot?Math.round(100*pag.length/tot):0;
+  document.getElementById('dash-ret').innerHTML=
+    '<div style="display:flex;gap:22px;flex-wrap:wrap">'
+    +'<div><div style="font-size:24px;font-weight:800;color:var(--ok)">'+pag.length+'</div><div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em">ativos</div></div>'
+    +'<div><div style="font-size:24px;font-weight:800;color:var(--accent)">'+exp.length+'</div><div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em">não renovaram</div></div>'
+    +'<div><div style="font-size:24px;font-weight:800">'+tx+'%</div><div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em">retenção</div></div></div>'
+    +'<div style="font-size:11px;color:var(--muted);margin-top:10px">Coortes de 30/60 dias aparecem assim que houver histórico de renovação.</div>';
+}
+async function dashLive(c){
+  try{
+    const since=new Date(Date.now()-5*60000).toISOString();
+    const r=await c.from('visits').select('sid').gte('ts',since).limit(500);
+    const n=r.error?null:new Set((r.data||[]).map(v=>v.sid)).size;
+    const el=document.getElementById('dash-live');
+    if(el) el.textContent = (n==null?'— ao vivo':('● '+n+' online agora'));
+  }catch(e){}
+  clearTimeout(dashLiveTimer);
+  dashLiveTimer=setTimeout(()=>{ const p=document.getElementById('panel-dashboard'); if(p&&p.classList.contains('active')) dashLive(c); }, 30000);
+}
+/* botões de período */
+(function(){
+  const rg=document.getElementById('dash-range'); if(!rg) return;
+  rg.addEventListener('click', e=>{
+    const b=e.target.closest('.rg'); if(!b) return;
+    rg.querySelectorAll('.rg').forEach(x=>x.classList.remove('active'));
+    b.classList.add('active'); dashR=b.dataset.r;
+    document.getElementById('dash-custom').style.display=(dashR==='custom')?'inline-flex':'none';
+    if(dashR!=='custom') loadDashboard();
+  });
+})();
 
 /* ── NARRADOR (progresso do banco de narrações) ───────── */
 let nrdLoaded=false;

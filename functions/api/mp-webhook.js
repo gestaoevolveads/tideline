@@ -24,7 +24,10 @@ export async function onRequestPost(context) {
         const plano = (md.plan === 'anual' || md.plan === 'mensal') ? md.plan : (valor >= 100 ? 'anual' : 'mensal');
         if (userId) {
           const dias = plano === 'anual' ? 372 : 33;
+          // 1) premium PRIMEIRO e sozinho: nunca pode falhar por causa de coluna nova
           await sbUpdateProfile(env, userId, { plano: 'premium', premium_until: new Date(Date.now() + dias * 86400000).toISOString() });
+          // 2) extras (plano + valor) em PATCH isolado -> receita exata no painel. Se a coluna nao existir, so isso falha.
+          try { await sbUpdateProfile(env, userId, { plano_tipo: plano, valor_pago: valor }); } catch (e) {}
         }
         if (ref) await registrarComissao(env, { ref, userId, plano, valor, mpId: String(id) });
       }
