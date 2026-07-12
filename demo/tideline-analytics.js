@@ -57,6 +57,28 @@
     });
   } catch(e){}
 
+  // ---------- VISITAS (contagem própria, anônima — alimenta o painel) ----------
+  // Grava só: quando, qual página, de onde veio (referrer/UTM) e um id anônimo de sessão.
+  // Nenhum dado pessoal. Não roda no /admin (já filtrado acima).
+  try {
+    var SB_URL = 'https://efgqgfnijhkuvincxfst.supabase.co';
+    var SB_KEY = 'sb_publishable_dlDItMsVmfNLo1jhADYv3A_k2dV4m6i';
+    var sid = localStorage.getItem('tl_sid');
+    if (!sid) { sid = Date.now().toString(36) + Math.random().toString(36).slice(2, 10); localStorage.setItem('tl_sid', sid); }
+    fetch(SB_URL + '/rest/v1/visits', {
+      method: 'POST', keepalive: true,
+      headers: { 'content-type': 'application/json', apikey: SB_KEY, Prefer: 'return=minimal' },
+      body: JSON.stringify({
+        path: location.pathname,
+        ref: document.referrer || null,
+        sid: sid,
+        utm_source: _cur.utm_source || null,
+        utm_medium: _cur.utm_medium || null,
+        utm_campaign: _cur.utm_campaign || null
+      })
+    }).catch(function(){});
+  } catch(e){}
+
   // ---------- helper unificado (enriquece TODO evento com a origem) ----------
   window.tlTrack = function(metaEvent, ga4Event, params){
     params = params || {};
