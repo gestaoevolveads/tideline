@@ -1017,7 +1017,7 @@ footer{background:var(--deep)}
             <div class="bonus-num">2</div>
             <div class="bonus-item-body">
               <strong>Acesso antecipado a novas praias</strong>
-              <p>Praias novas sendo adicionadas ao longo do ano. Fundadores são avisados primeiro e têm acesso antes do lançamento público.</p>
+              <p>Praias novas sendo adicionadas ao longo do ano. Assinantes são avisados primeiro e têm acesso antes do lançamento público.</p>
             </div>
           </div>
         </div>
@@ -1040,7 +1040,7 @@ footer{background:var(--deep)}
           <a href="login.html" class="btn btn-primary">Testar 14 dias grátis</a>
           <a href="assinar.html" style="display:block;text-align:center;margin-top:12px;font-size:13px;color:#476664;text-decoration:none">Já tem conta? <strong style="color:#F95831">Assinar</strong></a>
           <div class="pricing-note">Sem cartão no teste · cancela quando quiser</div>
-          <div class="pricing-founder" id="founder-offer">🏄 <strong>Oferta de fundador:</strong> quem entra agora paga <strong>R$99 no primeiro ano</strong> (em vez de R$149). <strong>Últimas vagas de fundador.</strong></div>
+          <div class="pricing-founder">🏄 <strong>Teste 14 dias grátis</strong>, sem cartão. Se não fizer diferença nas suas sessões, é só não continuar.</div>
         </div>
       </div>
     </div>
@@ -1130,10 +1130,9 @@ footer{background:var(--deep)}
   <div class="urgencia-bg"></div>
   <div class="urgencia-content">
     <div class="section-label" style="color:rgba(255,255,255,.45)">Lançamento</div>
-    <h2>Condições exclusivas de lançamento.</h2>
-    <p>O Tideline tá em lançamento. Quem entra agora garante o <strong>preço de fundador no primeiro ano</strong> — enquanto durarem as vagas.</p>
-    <p>Os bônus de fundador também saem do pacote quando as vagas fecharem. Quem já é assinante não perde nada.</p>
-    <p>Não tem data marcada de reabertura. Quando as vagas acabarem, acabaram.</p>
+    <h2>Comece pelo mar, não pelo cartão.</h2>
+    <p>O Tideline está no começo. Você testa <strong>14 dias de graça, sem cartão</strong>. Se não fizer diferença nas suas sessões, é só não continuar.</p>
+    <p>Quem assina agora leva os bônus de lançamento: o guia <strong>Ler o Mar</strong> e acesso antecipado às praias novas.</p>
     <a href="login.html" class="btn btn-primary" style="font-size:16px;padding:18px 40px;margin-top:12px">Quero testar o Tideline grátis por 14 dias</a>
     <p class="urgencia-note">Sem cartão. Cancela quando quiser.</p>
   </div>
@@ -1199,14 +1198,6 @@ window.addEventListener('scroll', () => {
   }catch(e){}
 })();
 
-/* oferta de fundador: some sozinha quando as 300 vagas fecham (sem expor número) */
-(async()=>{
-  try{
-    const r=await fetch('/api/founder-status');
-    const s=await r.json();
-    if(!s.open){ const el=document.getElementById('founder-offer'); if(el) el.style.display='none'; }
-  }catch(e){}
-})();
 </script>
 </body>
 </html>

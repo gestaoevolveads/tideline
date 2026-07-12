@@ -25,9 +25,6 @@ export async function onRequestPost(context) {
         if (userId) {
           const dias = plano === 'anual' ? 372 : 33;
           await sbUpdateProfile(env, userId, { plano: 'premium', premium_until: new Date(Date.now() + dias * 86400000).toISOString() });
-          // marca fundador (compra anual de fundador) — PATCH isolado: se a coluna não existir, o premium acima já foi gravado
-          const isFounder = md.founder === true || md.founder === 'true' || (plano === 'anual' && valor > 0 && valor < 120);
-          if (isFounder) { try { await sbUpdateProfile(env, userId, { founder: true }); } catch (e) {} }
         }
         if (ref) await registrarComissao(env, { ref, userId, plano, valor, mpId: String(id) });
       }

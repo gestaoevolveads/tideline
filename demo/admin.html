@@ -379,7 +379,6 @@
             <div class="nrd-kpi"><div class="nrd-num" id="ka-trial">–</div><div class="nrd-lbl">em trial</div></div>
             <div class="nrd-kpi"><div class="nrd-num" id="ka-prem" style="color:var(--ok)">–</div><div class="nrd-lbl">premium (pagantes)</div></div>
             <div class="nrd-kpi"><div class="nrd-num" id="ka-free">–</div><div class="nrd-lbl">trial vencido</div></div>
-            <div class="nrd-kpi"><div class="nrd-num" id="ka-founder" style="color:var(--accent)">–</div><div class="nrd-lbl">fundadores / 300</div></div>
           </div>
           <div id="ka-note" style="font-size:11px;color:var(--muted);margin:-8px 0 16px"></div>
           <div style="font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:8px">Contas (mais recentes primeiro)</div>
@@ -596,11 +595,6 @@ async function loadAssinantes(){
     document.getElementById('ka-prem').textContent=prem;
     document.getElementById('ka-free').textContent=free;
     document.getElementById('ka-note').textContent='Números contam só usuários reais. Não entram: '+conv+' convidado(s) + '+teste+' teste(s) — aparecem na lista abaixo, marcados.';
-    // vagas de fundador (contagem separada — não quebra se a coluna ainda não existir)
-    try{
-      const { count } = await c.from('profiles').select('id',{count:'exact',head:true}).eq('founder',true);
-      document.getElementById('ka-founder').textContent = (count!=null?count:'–')+' / 300';
-    }catch(_){ document.getElementById('ka-founder').textContent='– / 300'; }
     document.getElementById('assin-rows').innerHTML=rows||'<tr><td style="padding:12px;color:var(--muted)" colspan="4">Nenhuma conta ainda. Aparecem aqui assim que alguém se cadastrar.</td></tr>';
     load.style.display='none'; body.style.display='block';
   }catch(e){
