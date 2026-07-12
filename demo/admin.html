@@ -459,7 +459,11 @@
             <div class="nrd-kpi"><div class="nrd-num" id="ka-prem" style="color:var(--ok)">–</div><div class="nrd-lbl">premium (pagantes)</div></div>
             <div class="nrd-kpi"><div class="nrd-num" id="ka-free">–</div><div class="nrd-lbl">trial vencido</div></div>
           </div>
-          <div id="ka-note" style="font-size:11px;color:var(--muted);margin:-8px 0 16px"></div>
+          <div id="ka-note" style="font-size:11px;color:var(--muted);margin:-8px 0 12px"></div>
+          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 16px">
+            <button class="btn" onclick="limparTestes(true)" style="margin:0">🧹 Ver contas de teste</button>
+            <span id="clean-msg" style="font-size:12.5px;color:var(--muted)"></span>
+          </div>
           <div style="font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:8px">Contas (mais recentes primeiro)</div>
           <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13px">
             <thead><tr style="text-align:left;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.04em">
@@ -709,9 +713,13 @@ async function loadAquisicao(){
   try{
     const c=window.TLData && await window.TLData.client();
     if(!c) throw new Error('Login do painel (Supabase) não está ativo.');
-    const { data, error }=await c.from('profiles')
-      .select('email,nome,plano,trial_ends,premium_until,created_at,utm_source,utm_medium,utm_campaign,utm_content')
+    let { data, error }=await c.from('profiles')
+      .select('email,nome,plano,trial_ends,premium_until,created_at,utm_source,utm_medium,utm_campaign,utm_content,plano_tipo,valor_pago')
       .order('created_at',{ascending:true});
+    if(error){ // fallback se as colunas de receita ainda não existirem
+      const r2=await c.from('profiles').select('email,nome,plano,trial_ends,premium_until,created_at,utm_source,utm_medium,utm_campaign,utm_content').order('created_at',{ascending:true});
+      data=r2.data; error=r2.error;
+    }
     if(error) throw error;
     aqData=(data||[]).filter(u=>classAcc(u.email,u.nome)==='real');
     renderAquisicao(aqData, Date.now());
@@ -731,10 +739,11 @@ function renderAquisicao(reais, now){
   // KPIs
   const kpis=[[''+total, 'cadastros reais',''],[pag,'assinantes pagantes','var(--ok)'],[conv+'%','conversão',''],[tri,'em trial agora','var(--accent)']];
   document.getElementById('aq-kpis').innerHTML=kpis.map(k=>'<div class="nrd-kpi"><div class="nrd-num"'+(k[2]?(' style="color:'+k[2]+'"'):'')+'>'+k[0]+'</div><div class="nrd-lbl">'+k[1]+'</div></div>').join('');
-  // agrega por origem
+  // agrega por origem (com receita real: soma do valor_pago dos pagantes daquela origem)
   const byS={};
-  reais.forEach(u=>{ const s=aqSrc(u); (byS[s]=byS[s]||{cad:0,pag:0}); byS[s].cad++; if(aqPay(u,now))byS[s].pag++; });
-  const sources=Object.entries(byS).sort((a,b)=>b[1].cad-a[1].cad);
+  reais.forEach(u=>{ const s=aqSrc(u); (byS[s]=byS[s]||{cad:0,pag:0,rec:0}); byS[s].cad++;
+    if(aqPay(u,now)){ byS[s].pag++; byS[s].rec += Number(u.valor_pago)||0; } });
+  const sources=Object.entries(byS).sort((a,b)=>(b[1].rec-a[1].rec)||(b[1].cad-a[1].cad));
   // melhor origem + alertas
   let best=null; sources.forEach(([s,v])=>{ if(v.pag>0){ const cv=v.pag/v.cad; if(!best||cv>best.cv) best={s,cv,cad:v.cad,pag:v.pag}; } });
   const burning=sources.filter(([,v])=>v.cad>=3 && v.pag===0).map(([s])=>s);
@@ -747,21 +756,25 @@ function renderAquisicao(reais, now){
   const maxCad=Math.max(1,...sources.map(([,v])=>v.cad));
   document.getElementById('aq-origem').innerHTML = sources.length ? (
     '<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13px"><thead><tr>'
-    +'<th>Origem</th><th>Cadastros</th><th>Pagantes</th><th>Conv.</th><th>Gasto R$</th><th>CPL</th><th>CAC</th></tr></thead><tbody>'
+    +'<th>Origem</th><th>Cadastros</th><th>Pagantes</th><th>Conv.</th><th>Receita</th><th>Gasto R$</th><th>CPL</th><th>CAC</th><th>ROAS</th></tr></thead><tbody>'
     +sources.map(([s,v])=>{
       const cv=v.cad?Math.round(100*v.pag/v.cad):0;
       const sp=(aqSpend[s]!=null?aqSpend[s]:''); const spn=parseFloat(sp)||0;
       const cpl=(spn>0&&v.cad>0)?('R$'+(spn/v.cad).toFixed(2)):'—';
       const cac=(spn>0&&v.pag>0)?('R$'+(spn/v.pag).toFixed(2)):(spn>0?'∞':'—');
+      const roas=(spn>0)?((v.rec/spn).toFixed(2)+'x'):'—';
+      const roasCor=(spn>0 && v.rec/spn>=1)?'var(--ok)':(spn>0?'var(--accent)':'var(--muted)');
       const bar=Math.round(100*v.cad/maxCad);
-      return '<tr data-cad="'+v.cad+'" data-pag="'+v.pag+'" style="border-top:1px solid var(--line)">'
+      return '<tr data-cad="'+v.cad+'" data-pag="'+v.pag+'" data-rec="'+v.rec+'" style="border-top:1px solid var(--line)">'
         +'<td style="padding:8px"><div style="font-weight:700">'+esc(s)+'</div><div style="height:5px;background:var(--surface);border-radius:3px;margin-top:5px;max-width:150px"><div style="height:100%;width:'+bar+'%;background:var(--accent);border-radius:3px"></div></div></td>'
         +'<td style="padding:8px">'+v.cad+'</td>'
         +'<td style="padding:8px;color:var(--ok);font-weight:700">'+v.pag+'</td>'
         +'<td style="padding:8px">'+cv+'%</td>'
+        +'<td style="padding:8px;font-weight:800;color:var(--ok)">R$'+v.rec.toFixed(2).replace('.',',')+'</td>'
         +'<td style="padding:8px"><input value="'+sp+'" data-src="'+esc(s).replace(/"/g,'&quot;')+'" oninput="aqSetSpend(this)" placeholder="0" style="width:78px;padding:5px 8px"></td>'
         +'<td style="padding:8px;color:var(--muted)">'+cpl+'</td>'
-        +'<td style="padding:8px;font-weight:700">'+cac+'</td></tr>';
+        +'<td style="padding:8px;font-weight:700">'+cac+'</td>'
+        +'<td style="padding:8px;font-weight:800;color:'+roasCor+'">'+roas+'</td></tr>';
     }).join('')+'</tbody></table></div>'
   ) : '<div class="soon">Nenhum cadastro real ainda. Quando alguém entrar por um link com UTM, aparece aqui.</div>';
   // campanhas + conteúdo
@@ -788,10 +801,52 @@ function aqCresc(reais){
 function aqSetSpend(el){
   const s=el.getAttribute('data-src'); aqSpend[s]=el.value;
   try{ localStorage.setItem('aq_spend', JSON.stringify(aqSpend)); }catch(_){}
-  const tr=el.closest('tr'); const cad=+tr.getAttribute('data-cad')||0, pagv=+tr.getAttribute('data-pag')||0, spn=parseFloat(el.value)||0;
-  const tds=tr.querySelectorAll('td');
-  tds[tds.length-2].textContent=(spn>0&&cad>0)?('R$'+(spn/cad).toFixed(2)):'—';
-  tds[tds.length-1].textContent=(spn>0&&pagv>0)?('R$'+(spn/pagv).toFixed(2)):(spn>0?'∞':'—');
+  const tr=el.closest('tr');
+  const cad=+tr.getAttribute('data-cad')||0, pagv=+tr.getAttribute('data-pag')||0, rec=+tr.getAttribute('data-rec')||0;
+  const spn=parseFloat(el.value)||0;
+  const tds=tr.querySelectorAll('td'), n=tds.length;
+  tds[n-3].textContent=(spn>0&&cad>0)?('R$'+(spn/cad).toFixed(2)):'—';                       // CPL
+  tds[n-2].textContent=(spn>0&&pagv>0)?('R$'+(spn/pagv).toFixed(2)):(spn>0?'∞':'—');         // CAC
+  const roasEl=tds[n-1];                                                                      // ROAS
+  roasEl.textContent=(spn>0)?((rec/spn).toFixed(2)+'x'):'—';
+  roasEl.style.color=(spn>0 && rec/spn>=1)?'var(--ok)':(spn>0?'var(--accent)':'var(--muted)');
+}
+
+/* ── LIMPAR CONTAS DE TESTE (Auth + profiles) ────────── */
+async function limparTestes(apenasListar){
+  const msg=document.getElementById('clean-msg');
+  msg.style.color='var(--muted)'; msg.textContent='Consultando…';
+  try{
+    const c=window.TLData && await window.TLData.client();
+    if(!c) throw new Error('Login do painel não está ativo.');
+    const { data:sess } = await c.auth.getSession();
+    const token = sess && sess.session && sess.session.access_token;
+    if(!token) throw new Error('Sessão expirada. Entre de novo.');
+
+    const r=await fetch('/api/admin-cleanup',{
+      method:'POST',
+      headers:{ 'content-type':'application/json', authorization:'Bearer '+token },
+      body: JSON.stringify({ dryRun: !!apenasListar })
+    });
+    const d=await r.json();
+    if(!r.ok) throw new Error(d.error||('erro '+r.status));
+
+    if(apenasListar){
+      if(!d.total){ msg.textContent='Nenhuma conta de teste encontrada. Base limpa. ✅'; return; }
+      const lista=(d.contas||[]).join('\n');
+      msg.innerHTML='<strong>'+d.total+'</strong> conta(s) de teste encontradas.';
+      if(confirm('Apagar DEFINITIVAMENTE estas '+d.total+' conta(s) de teste?\n\n'+lista+'\n\nIsso remove do Auth e dos perfis. Não dá pra desfazer.')){
+        await limparTestes(false);
+      }
+    } else {
+      msg.style.color='var(--ok)';
+      msg.innerHTML='✅ <strong>'+d.apagados+'</strong> conta(s) de teste apagadas.'+((d.erros&&d.erros.length)?(' Falharam: '+d.erros.join(', ')):'');
+      loadAssinantes();
+    }
+  }catch(e){
+    msg.style.color='var(--accent)';
+    msg.textContent='Não consegui: '+(e.message||'erro');
+  }
 }
 
 /* ── DASHBOARD (visão geral) ─────────────────────────── */
