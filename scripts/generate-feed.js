@@ -77,4 +77,32 @@ TEXTO:
 ${text}`,
     }],
   });
-  const toolUse = structured.content.fin
+  const toolUse = structured.content.find(c => c.type === 'tool_use' && c.name === 'salvar_feed');
+  if (!toolUse || !Array.isArray(toolUse.input.noticias) || !toolUse.input.noticias.length) {
+    console.error('Feed vazio. Mantendo JSON anterior se existir.');
+    return;
+  }
+  // Higiene antes de publicar. Já saiu feed com notícia datada no FUTURO (o modelo pegava
+  // a data do evento anunciado, não a da publicação) e com a ordem embaralhada. Um feed
+  // que mostra o amanhã como se fosse ontem não é feed, é ficção.
+  const hoje = new Date(); hoje.setHours(23, 59, 59, 999);
+  const paraData = (d) => { const [dd, mm, aa] = String(d).split('/'); return new Date(+aa, +mm - 1, +dd); };
+
+  const cru = toolUse.input.noticias;
+  const noticias = cru
+    .filter(n => {
+      const d = paraData(n.date);
+      if (isNaN(d))  { console.log('  descartada (data ilegível):', n.date, '|', n.title); return false; }
+      if (d > hoje)  { console.log('  descartada (data no futuro):', n.date, '|', n.title); return false; }
+      return true;
+    })
+    .sort((a, b) => paraData(b.date) - paraData(a.date))    // a mais nova primeiro
+    .slice(0, 8);
+
+  if (!noticias.length) { console.error('Nada sobrou depois da filtragem. Mantendo o feed anterior.'); return; }
+
+  fs.writeFileSync(out, JSON.stringify(noticias, null, 2));
+  console.log(`OK: ${noticias.length} notícias (de ${cru.length} pesquisadas) → demo/feed.json`);
+}
+
+main().catch(err => { console.error('Erro fatal:', err); process.exit(1); });

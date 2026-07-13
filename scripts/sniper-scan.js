@@ -50,8 +50,12 @@ async function sb(caminho, opts = {}) {
       ...(opts.headers || {}),
     },
   });
-  if (!r.ok) throw new Error(`supabase ${r.status}: ${(await r.text()).slice(0, 200)}`);
-  return r.status === 204 ? null : r.json();
+  const corpo = await r.text();
+  if (!r.ok) throw new Error(`supabase ${r.status}: ${corpo.slice(0, 200)}`);
+  // O Supabase responde a um INSERT com 201 e corpo VAZIO (a linha só volta se você pedir
+  // com Prefer: return=representation). Chamar .json() nisso explode com "Unexpected end
+  // of JSON input", e o robô morre bem na hora de gravar o primeiro alerta.
+  return corpo ? JSON.parse(corpo) : null;
 }
 
 /* ---------- previsão ---------- */
