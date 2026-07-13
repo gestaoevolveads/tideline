@@ -93,3 +93,19 @@ create policy "dono marca como lido" on sniper_alerts
 -- Repare que ninguém tem policy de INSERT em sniper_alerts, e é de propósito:
 -- quem escreve alerta é só o robô, usando a service role, que ignora RLS.
 -- Assim ninguém consegue forjar um alerta pra si mesmo ou pros outros.
+
+-- ─────────────────────────────────────────────────────────────
+-- 4) Notícia por push (opt-in separado do alerta de swell)
+--    Ficam na mesma tabela porque são a mesma decisão do usuário:
+--    "quero ou não quero que o Tideline me chame no celular".
+-- ─────────────────────────────────────────────────────────────
+alter table sniper_config add column if not exists noticias boolean not null default false;
+
+-- O que já foi avisado. Sem isso, toda rodada do feed reavisaria as mesmas notícias.
+create table if not exists feed_sent (
+  hash    text primary key,
+  titulo  text,
+  sent_at timestamptz not null default now()
+);
+alter table feed_sent enable row level security;
+-- ninguém além do robô (service role) lê ou escreve aqui. Sem policy, sem acesso.
