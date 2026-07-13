@@ -173,6 +173,25 @@ table{ width:100%; display:block; overflow-x:auto }   /* tabela larga rola sozin
 /* progresso da leitura: uma linha fina, sem alarde */
 .tl-prog{ position:fixed; top:0; left:0; height:3px; width:0; background:var(--accent); z-index:60; transition:width .1s linear }
 
+/* ---------- aviso do download ---------- */
+.tl-modal{ position:fixed; inset:0; z-index:100; display:none; align-items:flex-end; justify-content:center;
+  background:rgba(23,39,38,.55); backdrop-filter:blur(3px) }
+.tl-modal.abre{ display:flex }
+.tl-folha{ width:100%; max-width:440px; background:var(--paper); border-radius:20px 20px 0 0;
+  padding:26px 22px calc(26px + env(safe-area-inset-bottom)); text-align:left;
+  animation:sobe .22s cubic-bezier(.2,.8,.2,1) }
+@media (min-width:560px){ .tl-modal{ align-items:center } .tl-folha{ border-radius:20px } }
+@keyframes sobe{ from{ transform:translateY(18px); opacity:0 } to{ transform:none; opacity:1 } }
+.tl-folha h4{ font-size:19px; font-weight:700; margin:0 0 8px }
+.tl-folha p{ font-size:14.5px !important; color:var(--muted); line-height:1.6 !important; margin:0 0 16px }
+.tl-folha ol{ margin:0 0 20px; padding-left:20px }
+.tl-folha li{ font-size:14.5px !important; color:var(--deep); line-height:1.7 !important; margin-bottom:4px }
+.tl-folha .bts{ display:flex; gap:10px }
+.tl-folha button{ flex:1; font:inherit; font-size:15px; font-weight:600; min-height:52px; padding:14px;
+  border-radius:12px; cursor:pointer; border:1px solid rgba(23,39,38,.18); background:transparent; color:var(--muted) }
+.tl-folha button.ok{ background:var(--deep); color:#fff; border-color:var(--deep) }
+@media (prefers-reduced-motion:reduce){ .tl-folha{ animation:none } }
+
 .tl-fim{ max-width:660px; margin:0 auto; padding:44px 22px 70px; text-align:center }
 .tl-fim p{ color:var(--muted); margin:0 0 18px }
 .tl-fim a{ display:inline-block; background:var(--accent); color:#fff; text-decoration:none;
@@ -682,60 +701,4 @@ table{ width:100%; display:block; overflow-x:auto }   /* tabela larga rola sozin
       <tr><td class="n">Marinha</td><td><strong>Manual do Observador Meteorológico</strong>, Diretoria de Hidrografia e Navegação (DHN), Marinha do Brasil. Base para a terminologia de vaga e marulho, escalas de vento e observação de superfície.</td></tr>
       <tr><td class="n">Oceanografia</td><td><strong>Fundamentos de Oceanografia</strong>, Tom Garrison. Base para a física de geração e propagação de ondas, refração, difração e tipos de arrebentação.</td></tr>
       <tr><td class="n">Ondas</td><td><strong>Previsão das Ondas</strong> e <strong>Introdução às Ciências do Mar</strong>. Base para as faixas práticas de período, a relação entre período e tamanho na praia, e a leitura de previsão aplicada ao surf.</td></tr>
-      <tr><td class="n">Atmosfera</td><td>Meteorologia dinâmica (gradiente de pressão, Coriolis, atrito de superfície). Base para o vento, o terral e a inversão térmica costeira.</td></tr>
-    </table>
-
-  </div>
-  </div>
-
-
-<div class="tl-fim">
-  <p>Chegou ao fim. Agora abre o app e olha a previsão de hoje com esses olhos novos.</p>
-  <a href="./app.html">Ver a previsão</a>
-</div>
-
-<script src="./tideline-config.js"></script>
-<script src="./tideline-data.js"></script>
-<script>
-// barra de progresso
-const prog = document.getElementById('prog');
-addEventListener('scroll', () => {
-  const t = document.body.scrollHeight - innerHeight;
-  prog.style.width = (t > 0 ? (scrollY / t) * 100 : 0) + '%';
-}, { passive: true });
-
-// leitura contada uma vez por sessão
-if (window.tlTrack && !sessionStorage.getItem('tl_guia_lido')) {
-  sessionStorage.setItem('tl_guia_lido', '1');
-  tlTrack('ViewContent', 'guia_abriu', { content_name: 'Guia Ler o Mar', content_category: 'ebook' });
-}
-
-// o PDF continua disponível pra quem quiser o arquivo. Só que agora é escolha, não caminho.
-document.getElementById('btn-pdf').onclick = async (e) => {
-  const b = e.currentTarget, orig = b.textContent;
-  b.disabled = true; b.textContent = 'Preparando…';
-  try {
-    const c = window.TLData && await window.TLData.client();
-    const { data: sess } = await c.auth.getSession();
-    const token = sess && sess.session && sess.session.access_token;
-    if (!token) throw new Error('Entre na sua conta para baixar o PDF.');
-    const r = await fetch('/api/ebook-link', { method: 'POST', headers: { authorization: 'Bearer ' + token } });
-    const d = await r.json();
-    if (!r.ok) throw new Error(d.error || 'não consegui liberar o arquivo');
-    const blob = await (await fetch(d.url)).blob();
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = 'Guia Ler o Mar - Tideline.pdf';
-    document.body.appendChild(a); a.click(); a.remove();
-    setTimeout(() => URL.revokeObjectURL(a.href), 5000);
-    if (window.tlTrack) tlTrack('Lead', 'ebook_download', { content_name: 'Guia Ler o Mar' });
-    b.textContent = 'Baixado ✓';
-    setTimeout(() => { b.disabled = false; b.textContent = orig; }, 2500);
-  } catch (err) {
-    alert(err.message || 'Não consegui baixar agora.');
-    b.disabled = false; b.textContent = orig;
-  }
-};
-</script>
-</body>
-</html>
+      <tr><td class="n">Atmosfera</td><td>Meteorologia dinâmica (gradiente de pressão, Coriolis, atrito de superfície). Base para o vento, o terral e a invers
