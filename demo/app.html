@@ -379,6 +379,36 @@
     .sniper-desc{font-size:13px;color:rgba(255,255,255,.58);line-height:1.55}
     .sniper-active{display:flex;align-items:center;gap:7px;margin-top:10px;font-size:12.5px;font-weight:600;color:rgba(255,255,255,.85)}
     .sniper-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex-shrink:0;animation:snipulse 2s ease infinite}
+    /* ── Alerta Sniper ────────────────────────────────────────── */
+    .snip-praias{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+    .snip-chip{background:rgba(255,255,255,.10);color:#fff;border:1px solid rgba(255,255,255,.16);
+      border-radius:999px;padding:7px 12px;font-size:12px;font-weight:600;display:flex;align-items:center;gap:6px;min-height:34px}
+    .snip-chip button{background:none;border:0;color:rgba(255,255,255,.55);font-size:15px;line-height:1;cursor:pointer;padding:0 2px}
+    .snip-chip button:hover{color:var(--accent)}
+    .snip-add{background:transparent;color:rgba(255,255,255,.75);border:1px dashed rgba(255,255,255,.3);
+      border-radius:999px;padding:7px 12px;font-family:var(--ff);font-size:12px;font-weight:600;cursor:pointer;min-height:34px}
+    .snip-add:hover{border-color:var(--accent);color:#fff}
+    .snip-add:disabled{opacity:.35;cursor:not-allowed}
+    .snip-push{margin-top:14px;width:100%;background:var(--accent);color:#fff;border:0;border-radius:11px;
+      padding:12px;font-family:var(--ff);font-size:13px;font-weight:700;cursor:pointer;min-height:44px}
+    .snip-push.ok{background:rgba(46,204,138,.16);color:#2ECC8A;cursor:default}
+    .snip-lock{margin-top:12px;background:rgba(255,255,255,.06);border-radius:12px;padding:14px;
+      font-size:12.5px;color:rgba(255,255,255,.7);line-height:1.55}
+    .snip-lock a{color:var(--accent);font-weight:700;text-decoration:none}
+
+    /* a caixa de alertas */
+    .alertas{margin:0 24px 12px}
+    .alerta{background:var(--white);border-radius:var(--r);box-shadow:var(--sh);padding:14px 16px;margin-bottom:8px;
+      display:flex;gap:12px;align-items:flex-start;border-left:3px solid var(--muted)}
+    .alerta.confirmado{border-left-color:var(--accent)}
+    .alerta.provavel{border-left-color:#2ECC8A}
+    .alerta.radar{border-left-color:rgba(71,102,100,.45)}
+    .alerta .ico{font-size:18px;flex-shrink:0;line-height:1.3}
+    .alerta .t{font-size:13.5px;font-weight:700;color:var(--deep)}
+    .alerta .c{font-size:12.5px;color:var(--muted);margin-top:3px;line-height:1.5}
+    .alerta .selo{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+      color:var(--muted);margin-top:6px;display:block}
+
     @keyframes snipulse{0%,100%{opacity:1}50%{opacity:.35}}
 
     .eu-assin{background:var(--white);border-radius:var(--r);margin:0 24px 28px;padding:20px 20px 18px;box-shadow:var(--sh)}
@@ -1122,6 +1152,7 @@
   </div>
 </nav>
 
+<script src="./tideline-core.js"></script>
 <script src="./tideline-config.js"></script>
 <script src="./tideline-data.js"></script>
 <script src="./tideline-templates.js"></script>
@@ -1203,6 +1234,7 @@ async function initAuth(){
         if(beta){ gUserPlan='premium'; gPlanKind='beta'; }
         else { gUserPlan = await resolvePlanFromProfile(c, gUid); }
         await pullUserData();
+        await carregarSniper();          // config e alertas do Sniper, que vivem no banco
         if(!beta){ renderTrialUI(); if(gNeedsOnboarding) showOnboarding(); }
         if(gMarine&&gForecast&&typeof renderMar==='function'){ try{renderMar(gMarine,gForecast,gSelectedIdx);}catch(e){} }
         return;
@@ -1278,12 +1310,6 @@ function currentIdx(times) {
   return best;
 }
 
-function classifyWind(deg) {
-  const d = ((deg % 360) + 360) % 360;
-  if (d >= 45  && d <= 135) return { label:'Maral',   cls:'pill-maral',   quality:-2, sub:'do mar pra terra', tip:'Vento do mar pra terra. Pega a onda por trás, joga água pra cima e desfaz a parede. Mar picado e sem forma.' };
-  if (d >= 225 && d <= 315) return { label:'Terral',  cls:'pill-terral',  quality: 1, sub:'da terra pro mar', tip:'Vento da terra pro mar. Sopra contra a face da onda, segura o lip e deixa a parede lisa. O melhor que pode ter.' };
-  return                          { label:'Lateral', cls:'pill-lateral', quality: 0, sub:'paralelo à praia',   tip:'Vento de lado, paralelo à praia. Efeito misturado. Pode ter canto com ondas mais limpas que outro.' };
-}
 
 function isLocalism(waveDir) { const d = ((waveDir % 360)+360)%360; return d >= 180 && d <= 200; }
 
@@ -1293,9 +1319,6 @@ function isLocalism(waveDir) { const d = ((waveDir % 360)+360)%360; return d >= 
    Simplificado: P ≈ 0.491 × Hs² × Te
    Fonte: Wikipedia "Wave power", PLOS ONE PMC5560692 (Brasil)
 ─────────────────────────────────────────────────────── */
-function wavePower(h, t) {
-  return (1025 * 9.81 * 9.81 * h * h * t) / (64 * Math.PI * 1000);
-}
 
 function waveClassify(kw) {
   if (kw < 1)   return {skill:'Espuma (flat)',          risk:1, board:'Foamie 8-10\'',          label:'Quase sem força'};
@@ -1306,27 +1329,6 @@ function waveClassify(kw) {
   if (kw < 50)  return {skill:'Avançado',               risk:3, board:'Shortboard ou step-up', label:'Swell potente'};
   if (kw < 100) return {skill:'Expert',                 risk:4, board:'Step-up ou gun',        label:'Mar pesado'};
   return              {skill:'Big wave specialist',    risk:5, board:'Gun / tow board',       label:'Força bruta'};
-}
-
-function calcScore(wind, period, height) {
-  let s = wind.quality;
-  s += period >= 12 ? 2 : period >= 10 ? 1 : period >= 8 ? 0 : period >= 6 ? -1 : -2;
-  s += height >= 1.5 ? 2 : height >= 1.0 ? 1 : height >= 0.6 ? 0 : height >= 0.3 ? -1 : -2;
-  const kw = wavePower(height, period);
-  // Energia como teto: onda fraca trava o score independente do vento ou período
-  if (kw < 2)  return Math.min(s, -2); // mar quasi-flat, condição ruim de qualquer jeito
-  if (kw < 5)  return Math.min(s,  0); // energia muito baixa, no máximo razoável
-  if (kw < 10) s = Math.min(s, 1);     // energia fraca, trava o score em "bom" pra não inflar
-  // Bônus: groundswell potente com período longo é genuinamente superior
-  if (kw >= 40 && period >= 10) s += 1;
-  return s;
-}
-
-function scoreToVibe(s) {
-  if (s >= 4) return { dot:'cg', bar:'bfg', tag:'Pumping'          };
-  if (s >= 2) return { dot:'cb', bar:'bfb', tag:'Condição boa'     };
-  if (s >= 0) return { dot:'cf', bar:'bff', tag:'Condição razoável' };
-  return             { dot:'cd', bar:'bfd', tag:'Condição ruim'    };
 }
 
 function scoreToHeadline(s, beach) {
@@ -2311,10 +2313,158 @@ function topBeach(checkins) {
   const f={}; checkins.forEach(c=>{f[c.beach]=(f[c.beach]||0)+1;});
   return Object.entries(f).sort((a,b)=>b[1]-a[1])[0][0];
 }
-const SNIPER_KEY='tl_sniper';
-function getSniperPref(){ return localStorage.getItem(SNIPER_KEY)==='1'; }
-function toggleSniper(el){ localStorage.setItem(SNIPER_KEY,el.checked?'1':'0'); renderEuTab(); }
+/* ══════════════════════════════════════════════════════════════════════════
+   ALERTA SNIPER
+   Ele monitora até 10 praias, olhando 15 dias à frente, e avisa quando aparece
+   condição boa. O robô (scripts/sniper-scan.js) faz a varredura de 3 em 3 horas
+   e usa o MESMO cálculo de nota que esta tela usa, então o alerta nunca discorda
+   do que o app mostra.
+   ══════════════════════════════════════════════════════════════════════════ */
+const VAPID_PUB = 'BBCnKZ9hFl5YZxudBqOoeCRdGDj264tDPom9dfdC7MEqROZjEVhBikww6ncysrTeBpbILhRIx8gVVpD7tMdfpj0';
+const MAX_PRAIAS = 10;
+let gSniper = { praias: [], ativo: true, nota_minima: 2 };
+let gAlertas = [];
 
+function ehPremium(){ return gUserPlan === 'premium' || gUserPlan === 'vitalicio'; }
+
+async function carregarSniper(){
+  if (!gSb || !gUid) return;
+  try{
+    const { data } = await gSb.from('sniper_config').select('praias,ativo,nota_minima').eq('user_id', gUid).maybeSingle();
+    if (data) gSniper = { praias: data.praias || [], ativo: data.ativo !== false, nota_minima: data.nota_minima ?? 2 };
+    const { data: al } = await gSb.from('sniper_alerts').select('*').eq('user_id', gUid)
+      .order('created_at', { ascending:false }).limit(12);
+    gAlertas = al || [];
+  }catch(e){ /* offline: segue com o que tem */ }
+}
+
+async function salvarSniper(){
+  if (!gSb || !gUid) return;
+  gSniper.praias = gSniper.praias.slice(0, MAX_PRAIAS);
+  try{
+    await gSb.from('sniper_config').upsert({
+      user_id: gUid, praias: gSniper.praias, ativo: gSniper.ativo,
+      nota_minima: gSniper.nota_minima, updated_at: new Date().toISOString()
+    });
+  }catch(e){ alert('Não consegui salvar o alerta agora. Tenta de novo.'); }
+}
+
+function toggleSniper(el){
+  gSniper.ativo = el.checked;
+  // a primeira praia entra sozinha: ninguém liga um alerta pra monitorar nada
+  if (gSniper.ativo && !gSniper.praias.length && gBeach) gSniper.praias = [gBeach.name];
+  salvarSniper(); renderEuTab();
+}
+
+function tirarPraiaSniper(nome){
+  gSniper.praias = gSniper.praias.filter(p => p !== nome);
+  salvarSniper(); renderEuTab();
+}
+
+/* Reaproveita a busca de praia que já existe. Em "modo seletor" ela não troca a praia
+   da tela: só devolve a escolha pro Sniper. */
+let gSeletorSniper = false;
+function addPraiaSniper(){
+  if (gSniper.praias.length >= MAX_PRAIAS) return;
+  gSeletorSniper = true;
+  openBeachSearch();
+}
+
+/* ---------- push: a permissão e o cadastro do aparelho ---------- */
+async function ligarPush(btn){
+  if (!('serviceWorker' in navigator) || !('PushManager' in window)) {
+    return alert('Seu navegador não aceita notificação. No iPhone, adicione o Tideline à tela de início primeiro.');
+  }
+  btn.disabled = true; btn.textContent = 'Pedindo permissão…';
+  try{
+    const perm = await Notification.requestPermission();
+    if (perm !== 'granted') { alert('Sem permissão, não consigo te avisar. Você pode liberar depois nos ajustes do navegador.'); throw 0; }
+
+    const reg = await navigator.serviceWorker.ready;
+    const sub = await reg.pushManager.subscribe({
+      userVisibleOnly: true,
+      applicationServerKey: b64ParaBytes(VAPID_PUB),
+    });
+    const j = sub.toJSON();
+    await gSb.from('push_subs').upsert({
+      user_id: gUid, endpoint: j.endpoint, p256dh: j.keys.p256dh, auth: j.keys.auth
+    }, { onConflict: 'endpoint' });
+
+    if (window.tlTrack) tlTrack('Subscribe', 'sniper_push_on', {});
+    renderEuTab();
+  }catch(e){ btn.disabled = false; btn.textContent = 'Ativar notificações'; }
+}
+
+/* a chave VAPID vem em base64url e o navegador exige bytes crus */
+function b64ParaBytes(b64){
+  const pad = '='.repeat((4 - b64.length % 4) % 4);
+  const s = (b64 + pad).replace(/-/g, '+').replace(/_/g, '/');
+  const bin = atob(s);
+  return Uint8Array.from([...bin].map(c => c.charCodeAt(0)));
+}
+
+function pushLigado(){
+  return typeof Notification !== 'undefined' && Notification.permission === 'granted';
+}
+
+/* ---------- o card ---------- */
+function renderSniperCard(){
+  const premium = ehPremium();
+  const on = gSniper.ativo && gSniper.praias.length > 0;
+
+  if (!premium) {
+    return `<div class="sniper-card">
+      <div class="sniper-hd"><div class="sniper-title">🎯 Alerta Sniper</div></div>
+      <div class="sniper-desc">Ele olha 15 dias à frente, em até 10 praias suas, e te avisa no celular quando o mar for valer a pena. Também avisa quando um swell ainda está longe, pra você organizar a vida antes.</div>
+      <div class="snip-lock">Faz parte do <b>Tideline Premium</b>. <a href="assinar.html">Ver planos</a></div>
+    </div>`;
+  }
+
+  const chips = gSniper.praias.map(n => `<span class="snip-chip">${n}<button onclick="tirarPraiaSniper('${n.replace(/'/g,"\\'")}')" aria-label="Parar de monitorar ${n}">✕</button></span>`).join('');
+  const podeAdd = gSniper.praias.length < MAX_PRAIAS;
+
+  return `<div class="sniper-card">
+    <div class="sniper-hd">
+      <div class="sniper-title">🎯 Alerta Sniper</div>
+      <label class="sniper-toggle">
+        <input type="checkbox" ${gSniper.ativo?'checked':''} onchange="toggleSniper(this)">
+        <span class="sniper-slider"></span>
+      </label>
+    </div>
+    <div class="sniper-desc">Olho 15 dias à frente nas suas praias. Aviso quando aparece condição boa, e aviso de novo quando ela se confirma.</div>
+    ${gSniper.ativo ? `
+      <div class="snip-praias">
+        ${chips}
+        <button class="snip-add" onclick="addPraiaSniper()" ${podeAdd?'':'disabled'}>
+          ${podeAdd ? '+ praia' : 'máximo de 10'}
+        </button>
+      </div>
+      ${on ? `<div class="sniper-active"><span class="sniper-dot"></span>Monitorando ${gSniper.praias.length} ${gSniper.praias.length===1?'praia':'praias'}</div>` : ''}
+      ${pushLigado()
+        ? `<button class="snip-push ok" disabled>✓ Notificações ligadas neste aparelho</button>`
+        : `<button class="snip-push" onclick="ligarPush(this)">Ativar notificações</button>`}
+    ` : ''}
+  </div>`;
+}
+
+/* ---------- a caixa de alertas ---------- */
+const SELO = { confirmado:'Confirmado', provavel:'Provável', radar:'No radar' };
+const ICO  = { confirmado:'🔥', provavel:'🌊', radar:'📡' };
+
+function renderAlertas(){
+  if (!ehPremium() || !gAlertas.length) return '';
+  return `<div class="alertas">
+    ${gAlertas.map(a => `
+      <div class="alerta ${a.confianca}">
+        <span class="ico">${ICO[a.confianca] || '🌊'}</span>
+        <div style="flex:1;min-width:0">
+          <div class="t">${a.titulo}</div>
+          <div class="c">${a.corpo}</div>
+          <span class="selo">${SELO[a.confianca] || ''}</span>
+        </div>
+      </div>`).join('')}
+  </div>`;
+}
 /* ── DADOS ESTÁTICOS — gerados por GitHub Action, servidos sem servidor ── */
 const FEED_URL    = './feed.json';
 const RANKING_URL = './ranking-{gender}.json'; // {gender} = men | women
@@ -2481,7 +2631,6 @@ function renderLoggedIn(user, logs) {
   const checked=alreadyCheckedIn();
   const streak=calcStreak(checkins);
   const fave=topBeach(checkins);
-  const sniperOn=getSniperPref();
   const demoUser=localStorage.getItem('tl_demo_auth')||'beta';
   const since=user.createdAt||todayStr();
   const [sy,sm,sd]=since.split('-');
@@ -2606,17 +2755,8 @@ function renderLoggedIn(user, logs) {
       <button class="btn-add-entry" onclick="openCheckinModal()">+ Nova sessão</button>
     </div>
     ${entries}
-    <div class="sniper-card">
-      <div class="sniper-hd">
-        <div class="sniper-title">🎯 Alerta Sniper</div>
-        <label class="sniper-toggle">
-          <input type="checkbox" ${sniperOn?'checked':''} onchange="toggleSniper(this)">
-          <span class="sniper-slider"></span>
-        </label>
-      </div>
-      <div class="sniper-desc">Avisa quando as condições baterem o seu critério: terral previsto, swell acima de 1m, período acima de 10s. Disponível na versão oficial.</div>
-      ${sniperOn?`<div class="sniper-active"><span class="sniper-dot"></span>Monitorando ${gBeach?gBeach.name:'Praia do Forte'}</div>`:''}
-    </div>
+    ${renderAlertas()}
+    ${renderSniperCard()}
     ${euAssinBlock(sinceFmt, demoUser)}`;
 }
 
@@ -2821,101 +2961,8 @@ async function loadData() {
 }
 
 /* ── BEACHES ────────────────────────────────────────── */
-const BEACHES = [
-  // NORDESTE
-  {name:'Fernando de Noronha',city:'Noronha',state:'PE',lat:-3.85,lon:-32.43,region:'nordeste'},
-  {name:'Cacimba do Padre',city:'Noronha',state:'PE',lat:-3.86,lon:-32.43,region:'nordeste'},
-  {name:'Jericoacoara',city:'Jijoca de Jericoacoara',state:'CE',lat:-2.79,lon:-40.51,region:'nordeste'},
-  {name:'Praia de Pipa',city:'Tibau do Sul',state:'RN',lat:-6.23,lon:-35.05,region:'nordeste'},
-  {name:'Maracaípe',city:'Ipojuca',state:'PE',lat:-8.55,lon:-35.02,region:'nordeste'},
-  {name:'Praia do Cupe',city:'Ipojuca',state:'PE',lat:-8.48,lon:-35.01,region:'nordeste'},
-  {name:'Tiririca',city:'Itacaré',state:'BA',lat:-14.28,lon:-38.99,region:'nordeste'},
-  {name:'Engenhoca',city:'Itacaré',state:'BA',lat:-14.26,lon:-38.99,region:'nordeste'},
-  {name:'Barra de Ilhéus',city:'Ilhéus',state:'BA',lat:-14.78,lon:-39.04,region:'nordeste'},
-  {name:'Itaúnas',city:'Conceição da Barra',state:'ES',lat:-18.42,lon:-39.67,region:'nordeste'},
-  // SUDESTE
-  {name:'Saquarema',city:'Saquarema',state:'RJ',lat:-22.93,lon:-42.51,region:'sudeste'},
-  {name:'Praia do Forte',city:'Cabo Frio',state:'RJ',lat:-22.88,lon:-42.01,region:'sudeste'},
-  {name:'Praia do Peró',city:'Cabo Frio',state:'RJ',lat:-22.84,lon:-42.07,region:'sudeste'},
-  {name:'Ipanema',city:'Rio de Janeiro',state:'RJ',lat:-22.98,lon:-43.20,region:'sudeste',art:'em'},
-  {name:'Arpoador',city:'Rio de Janeiro',state:'RJ',lat:-22.99,lon:-43.19,region:'sudeste',art:'no'},
-  {name:'Prainha',city:'Rio de Janeiro',state:'RJ',lat:-23.04,lon:-43.51,region:'sudeste'},
-  {name:'Grumari',city:'Rio de Janeiro',state:'RJ',lat:-23.04,lon:-43.54,region:'sudeste'},
-  {name:'Recreio dos Bandeirantes',city:'Rio de Janeiro',state:'RJ',lat:-23.02,lon:-43.47,region:'sudeste',art:'no'},
-  {name:'Barra da Tijuca',city:'Rio de Janeiro',state:'RJ',lat:-23.01,lon:-43.36,region:'sudeste'},
-  {name:'Macumba',city:'Rio de Janeiro',state:'RJ',lat:-23.02,lon:-43.49,region:'sudeste'},
-  {name:'Itacoatiara',city:'Niterói',state:'RJ',lat:-22.97,lon:-43.04,region:'sudeste'},
-  {name:'Geribá',city:'Búzios',state:'RJ',lat:-22.77,lon:-41.90,region:'sudeste',art:'em'},
-  {name:'Tucuns',city:'Búzios',state:'RJ',lat:-22.77,lon:-41.88,region:'sudeste',art:'em'},
-  {name:'Monte Alto',city:'Búzios',state:'RJ',lat:-22.75,lon:-41.89,region:'sudeste'},
-  {name:'Figueira',city:'Búzios',state:'RJ',lat:-22.77,lon:-41.87,region:'sudeste'},
-  {name:'Praia Rasa',city:'Búzios',state:'RJ',lat:-22.73,lon:-41.93,region:'sudeste'},
-  {name:'Foguete',city:'Cabo Frio',state:'RJ',lat:-22.92,lon:-42.06,region:'sudeste'},
-  {name:'Unamar',city:'Cabo Frio',state:'RJ',lat:-22.94,lon:-42.22,region:'sudeste'},
-  {name:'Praia Grande',city:'Arraial do Cabo',state:'RJ',lat:-22.97,lon:-42.00,region:'sudeste'},
-  {name:'Praia Brava (Arraial)',city:'Arraial do Cabo',state:'RJ',lat:-22.97,lon:-42.02,region:'sudeste'},
-  {name:'Praia Brava (Cabo Frio)',city:'Cabo Frio',state:'RJ',lat:-22.89,lon:-42.00,region:'sudeste'},
-  {name:'Praia Brava (Búzios)',city:'Búzios',state:'RJ',lat:-22.73,lon:-41.89,region:'sudeste'},
-  {name:'Tombo',city:'Guarujá',state:'SP',lat:-23.99,lon:-46.26,region:'sudeste'},
-  {name:'Pitangueiras',city:'Guarujá',state:'SP',lat:-23.98,lon:-46.25,region:'sudeste',art:'em'},
-  {name:'Barra do Sahy',city:'São Sebastião',state:'SP',lat:-23.74,lon:-45.53,region:'sudeste'},
-  {name:'Maresias',city:'São Sebastião',state:'SP',lat:-23.80,lon:-45.57,region:'sudeste',art:'em'},
-  {name:'Camburi',city:'São Sebastião',state:'SP',lat:-23.66,lon:-45.43,region:'sudeste'},
-  {name:'Itamambuca',city:'Ubatuba',state:'SP',lat:-23.37,lon:-44.98,region:'sudeste'},
-  {name:'Vermelha do Norte',city:'Ubatuba',state:'SP',lat:-23.30,lon:-44.87,region:'sudeste'},
-  {name:'Domingas Dias',city:'Ubatuba',state:'SP',lat:-23.49,lon:-45.11,region:'sudeste'},
-  {name:'Praia do Bonete',city:'Ilhabela',state:'SP',lat:-23.83,lon:-45.35,region:'sudeste'},
-  {name:'Castelhanos',city:'Ilhabela',state:'SP',lat:-23.79,lon:-45.26,region:'sudeste'},
-  {name:'Massaguaçu',city:'Caraguatatuba',state:'SP',lat:-23.59,lon:-45.36,region:'sudeste'},
-  {name:'Ponta da Praia',city:'Santos',state:'SP',lat:-23.98,lon:-46.30,region:'sudeste'},
-  {name:'Jureia',city:'Peruíbe',state:'SP',lat:-24.39,lon:-47.01,region:'sudeste'},
-  // SUL
-  {name:'Costão do Santinho',city:'Florianópolis',state:'SC',lat:-27.49,lon:-48.39,region:'sul'},
-  {name:'Joaquina',city:'Florianópolis',state:'SC',lat:-27.63,lon:-48.44,region:'sul',art:'na'},
-  {name:'Praia Mole',city:'Florianópolis',state:'SC',lat:-27.60,lon:-48.43,region:'sul'},
-  {name:'Campeche',city:'Florianópolis',state:'SC',lat:-27.67,lon:-48.49,region:'sul'},
-  {name:'Barra da Lagoa',city:'Florianópolis',state:'SC',lat:-27.57,lon:-48.42,region:'sul'},
-  {name:'Moçambique',city:'Florianópolis',state:'SC',lat:-27.55,lon:-48.41,region:'sul'},
-  {name:'Pântano do Sul',city:'Florianópolis',state:'SC',lat:-27.78,lon:-48.51,region:'sul'},
-  {name:'Praia da Silveira',city:'Garopaba',state:'SC',lat:-28.05,lon:-48.64,region:'sul'},
-  {name:'Praia do Ferrugem',city:'Garopaba',state:'SC',lat:-28.07,lon:-48.62,region:'sul'},
-  {name:'Praia do Rosa',city:'Imbituba',state:'SC',lat:-28.12,lon:-48.65,region:'sul'},
-  {name:'Ibiraquera',city:'Imbituba',state:'SC',lat:-28.08,lon:-48.62,region:'sul'},
-  {name:'Guarda do Embaú',city:'Palhoça',state:'SC',lat:-27.82,lon:-48.60,region:'sul'},
-  {name:'Atalaia',city:'Itajaí',state:'SC',lat:-26.86,lon:-48.66,region:'sul'},
-  {name:'Penha',city:'Penha',state:'SC',lat:-26.76,lon:-48.64,region:'sul'},
-  {name:'Caiobá',city:'Matinhos',state:'PR',lat:-25.83,lon:-48.54,region:'sul'},
-  {name:'Matinhos',city:'Matinhos',state:'PR',lat:-25.82,lon:-48.54,region:'sul'},
-  {name:'Torres',city:'Torres',state:'RS',lat:-29.33,lon:-49.72,region:'sul'},
-  {name:'Tramandaí',city:'Tramandaí',state:'RS',lat:-29.99,lon:-50.13,region:'sul'},
-  {name:'Cidreira',city:'Cidreira',state:'RS',lat:-30.17,lon:-50.22,region:'sul'},
-  {name:'Arroio do Sal',city:'Arroio do Sal',state:'RS',lat:-29.56,lon:-49.89,region:'sul'},
-  {name:'Capão da Canoa',city:'Capão da Canoa',state:'RS',lat:-29.77,lon:-50.01,region:'sul'},
-  {name:'Cassino',city:'Rio Grande',state:'RS',lat:-32.20,lon:-52.17,region:'sul'},
-  // NOVAS — expansão 2026
-  {name:'Titanzinho',city:'Fortaleza',state:'CE',lat:-3.71,lon:-38.47,region:'nordeste'},
-  {name:'Praia do Futuro',city:'Fortaleza',state:'CE',lat:-3.74,lon:-38.45,region:'nordeste'},
-  {name:'Baía Formosa',city:'Baía Formosa',state:'RN',lat:-6.37,lon:-35.01,region:'nordeste'},
-  {name:'Ponta Negra',city:'Natal',state:'RN',lat:-5.88,lon:-35.17,region:'nordeste'},
-  {name:'Itacarezinho',city:'Itacaré',state:'BA',lat:-14.35,lon:-38.98,region:'nordeste'},
-  {name:'Regência',city:'Linhares',state:'ES',lat:-19.65,lon:-39.83,region:'sudeste'},
-  {name:'Setiba',city:'Guarapari',state:'ES',lat:-20.60,lon:-40.42,region:'sudeste'},
-  {name:'Praia da Vila',city:'Saquarema',state:'RJ',lat:-22.92,lon:-42.50,region:'sudeste'},
-  {name:'Praia Brava (Floripa)',city:'Florianópolis',state:'SC',lat:-27.40,lon:-48.41,region:'sul'},
-  {name:'Praia do Porto (Imbituba)',city:'Imbituba',state:'SC',lat:-28.24,lon:-48.65,region:'sul'},
-  {name:'Farol de Santa Marta',city:'Laguna',state:'SC',lat:-28.60,lon:-48.81,region:'sul'},
-  // MUNDIAL — WT spots
-  {name:'Snapper Rocks',city:'Gold Coast',state:'AUS',lat:-28.164,lon:153.543,region:'world'},
-  {name:'Bells Beach',city:'Torquay',state:'AUS',lat:-38.367,lon:144.282,region:'world'},
-  {name:'Jeffreys Bay',city:'Eastern Cape',state:'ZAF',lat:-34.050,lon:24.912,region:'world'},
-  {name:'Hossegor',city:'Hossegor',state:'FRA',lat:43.670,lon:-1.427,region:'world'},
-  {name:'Teahupoo',city:'Tahiti',state:'PYF',lat:-17.848,lon:-149.250,region:'world'},
-  {name:'Pipeline',city:'North Shore',state:'HAW',lat:21.665,lon:-158.053,region:'world'},
-  {name:'Cloudbreak',city:'Tavarua',state:'FJI',lat:-17.923,lon:177.217,region:'world'},
-  {name:'Lemoore',city:'California',state:'USA',lat:36.300,lon:-119.770,region:'world'},
-  {name:'Mundaka',city:'Mundaka',state:'ESP',lat:43.408,lon:-2.699,region:'world'},
-  {name:'Peniche',city:'Peniche',state:'PRT',lat:39.355,lon:-9.379,region:'world'},
-];
+/* as praias agora moram no tideline-core.js, junto do julgamento da condição */
+
 
 const RECENT_KEY = 'tideline_recent';
 function getRecentBeaches() {
@@ -2940,12 +2987,24 @@ function openBeachSearch() {
 }
 
 function closeBeachSearch() {
+  gSeletorSniper = false;
   document.getElementById('beach-modal').classList.remove('open');
 }
 
 function filterBeaches(q) { renderBeachList(q.toLowerCase()); }
 
 function selectBeach(idx) {
+  if (gSeletorSniper) {                       // veio do Alerta Sniper: só adiciona e sai
+    gSeletorSniper = false;
+    const nome = BEACHES[idx].name;
+    if (!gSniper.praias.includes(nome) && gSniper.praias.length < MAX_PRAIAS) {
+      gSniper.praias.push(nome);
+      salvarSniper();
+    }
+    closeBeachSearch();
+    renderEuTab();
+    return;
+  }
   gBeach = BEACHES[idx];
   saveRecentBeach(gBeach);
   document.getElementById('loc-name').textContent = gBeach.name;

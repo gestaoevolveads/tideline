@@ -1,0 +1,34 @@
+name: Alerta Sniper
+
+on:
+  workflow_dispatch:
+  # De 3 em 3 horas. O modelo do Open-Meteo atualiza algumas vezes por dia; rodar mais
+  # que isso só gastaria API sem trazer notícia nova.
+  schedule:
+    - cron: '15 */3 * * *'
+
+concurrency:
+  group: tideline-sniper
+  cancel-in-progress: false
+
+jobs:
+  varrer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Instalar dependências
+        run: npm install
+        working-directory: scripts
+
+      - name: Varrer 15 dias e avisar quem precisa saber
+        run: node sniper-scan.js
+        working-directory: scripts
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          VAPID_PUBLIC: ${{ secrets.VAPID_PUBLIC }}
+          VAPID_PRIVATE: ${{ secrets.VAPID_PRIVATE }}

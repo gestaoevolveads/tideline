@@ -28,3 +28,35 @@ self.addEventListener('fetch', e => {
       .catch(() => caches.match(req))
   );
 });
+
+/* ── Alerta Sniper: a notificação chegando ────────────────────────────────
+   O push chega aqui mesmo com o app fechado. É isso que faz o Sniper existir:
+   não adianta avisar dentro do app se a pessoa só abre o app quando já perdeu
+   a maré. */
+self.addEventListener('push', e => {
+  let d = {};
+  try { d = e.data ? e.data.json() : {}; } catch (_) {}
+  e.waitUntil(self.registration.showNotification(d.titulo || 'Tideline', {
+    body: d.corpo || '',
+    icon: '/icon-192.png',
+    badge: '/icon-192.png',
+    tag: d.praia || 'tideline',       // um aviso por praia, o novo substitui o velho
+    renotify: true,
+    data: { url: d.url || '/app.html' },
+  }));
+});
+
+/* Tocar na notificação leva pro app. Se ele já estiver aberto numa aba, foca
+   nela em vez de abrir outra. */
+self.addEventListener('notificationclick', e => {
+  e.notification.close();
+  const destino = (e.notification.data && e.notification.data.url) || '/app.html';
+  e.waitUntil(
+    self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then(list => {
+      for (const c of list) {
+        if (c.url.includes('/app') && 'focus' in c) return c.focus();
+      }
+      return self.clients.openWindow(destino);
+    })
+  );
+});
