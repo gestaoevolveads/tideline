@@ -135,57 +135,70 @@ body{ margin:0; background:#0F1B1A }
 .tl-prog{ position:fixed; top:0; left:0; height:3px; width:0; background:var(--accent);
   z-index:60; transition:width .08s linear }
 
-.tl-corpo{ padding-top:60px }
+/* a capa vai de ponta a ponta, por baixo da barra (que é translúcida). As demais
+   páginas têm o próprio respiro de topo, então ninguém fica escondido atrás dela. */
+.tl-corpo{ padding-top:0 }
+.tl-corpo > .page:not(.capa):first-child{ padding-top:60px !important }
 
-/* ================= MODO PÁGINA: o PDF na tela ================= */
-/* A folha continua A4 de verdade (210mm), com a diagramação intacta. O que muda é só a
-   ESCALA: encaixamos a folha na largura da tela. Mexer em margem ou corpo de texto aqui
-   seria jogar fora a diagramação inteira. */
-body.modo-pagina .tl-corpo{ padding-bottom:36px }
-body.modo-pagina .page{
-  zoom: var(--z, 1);
-  margin:0 auto 4mm !important;
-  box-shadow:0 4px 24px rgba(0,0,0,.45) !important;
-}
-
-/* ================= MODO TEXTO: leitura corrida ================= */
-body.modo-texto{ background:var(--paper) }
-body.modo-texto .page{
+/* ================= A LEITURA ================= */
+body{ background:var(--paper) }
+.page{
   width:auto !important; height:auto !important; min-height:0 !important;
   margin:0 !important; padding:0 !important; box-shadow:none !important;
-  position:static !important; overflow:visible !important; zoom:1 !important;
+  /* relative, e não static: a folha precisa continuar sendo âncora. Sem isso, tudo que
+     é absoluto dentro dela (a foto da capa, o rodapé da contracapa) se solta e vai
+     parar em cima de outra página. */
+  position:relative !important; overflow:visible !important; zoom:1 !important;
   border-bottom:1px solid rgba(23,39,38,.10);
 }
-body.modo-texto .page .pad{
+/* blocos que o e-book posicionou à mão, com style inline, voltam pro fluxo normal */
+.page .pad div[style*="absolute"]{
+  position:static !important; left:auto !important; right:auto !important;
+  bottom:auto !important; top:auto !important; margin-top:32px !important;
+}
+.page .pad{
   position:static !important; inset:auto !important;
   max-width:640px; margin:0 auto; padding:44px 22px 52px !important;
 }
-body.modo-texto .page.capa{ position:relative !important; overflow:hidden !important; background:var(--deep) }
-body.modo-texto .page.capa .pad{
-  position:relative !important; z-index:2; min-height:70vh;
-  display:flex; flex-direction:column; justify-content:flex-end; padding:70px 22px 56px !important;
+/* ---------- a capa: fiel ao PDF ----------
+   Tela inteira, a foto mandando, e o texto ancorado embaixo. No PDF o título vive no
+   terço de baixo da folha, e é isso que reproduzimos: espaço, respiro e a onda enorme. */
+.page.capa{
+  position:relative !important; overflow:hidden !important; background:var(--deep);
+  height:100dvh !important; min-height:560px !important; border-bottom:0;
 }
-body.modo-texto .capa h1{ font-size:44px !important }
-body.modo-texto .capa .sub{ font-size:16px !important; max-width:none !important }
-body.modo-texto h2{ font-size:27px !important; line-height:1.24; margin:0 0 18px !important }
-body.modo-texto h3{ font-size:18px !important; margin:30px 0 10px !important }
-body.modo-texto p, body.modo-texto li, body.modo-texto td{ font-size:17px !important; line-height:1.72 !important }
-body.modo-texto .cap-num{ font-size:40px !important }
-body.modo-texto table{ width:100%; display:block; overflow-x:auto }
-body.modo-texto .foto .art{ height:auto !important; aspect-ratio:16/9 }
-body.modo-texto .foto .brief{ font-size:14px !important }
-body.modo-texto .foot{ display:none }       /* número de página não quer dizer nada aqui */
-body.modo-texto .toc-i .p{ display:none }
+.page.capa .pad{
+  position:absolute !important; inset:0 !important; z-index:2;
+  max-width:none !important; margin:0 !important;
+  display:flex !important; flex-direction:column; justify-content:space-between;
+  padding:calc(70px + env(safe-area-inset-top)) 26px calc(30px + env(safe-area-inset-bottom)) !important;
+}
+.capa h1{ font-size:clamp(40px, 13vw, 64px) !important; line-height:1.02 !important; margin:0 !important }
+.capa .sub{ font-size:clamp(14px, 4vw, 17px) !important; max-width:34ch !important; margin-top:16px !important }
+.capa .selo, .capa .kicker{ align-self:flex-start }
+/* Nada de encolher: sem isso o flex comprime o bloco de baixo, o subtítulo transborda
+   da caixa dele e vai parar em cima da assinatura. */
+.capa .pad > *{ flex:0 0 auto }
+.capa .assina{ margin-top:22px !important; padding-top:16px !important }
+h2{ font-size:27px !important; line-height:1.24; margin:0 0 18px !important }
+h3{ font-size:18px !important; margin:30px 0 10px !important }
+p, li, td{ font-size:17px !important; line-height:1.72 !important }
+.cap-num{ font-size:40px !important }
+table{ width:100%; display:block; overflow-x:auto }
+.foto .art{ height:auto !important; aspect-ratio:16/9 }
+.foto .brief{ font-size:14px !important }
+.foot{ display:none }       /* número de página não quer dizer nada aqui */
+.toc-i .p{ display:none }
 
 .toc-i{ display:flex; text-decoration:none; color:inherit; cursor:pointer }
-body.modo-texto .toc-i{ border-radius:8px; margin:0 -8px; padding:9px 8px !important; transition:background .15s }
-body.modo-texto .toc-i:hover{ background:var(--surface2) }
+.toc-i{ border-radius:8px; margin:0 -8px; padding:9px 8px !important; transition:background .15s }
+.toc-i:hover{ background:var(--surface2) }
 .page[id]{ scroll-margin-top:70px }
 
 /* ---------- fim ---------- */
 .tl-fim{ max-width:640px; margin:0 auto; padding:50px 22px 80px; text-align:center }
 .tl-fim p{ color:#9DB3AF; margin:0 0 18px; font-size:15px }
-body.modo-texto .tl-fim p{ color:var(--muted) }
+.tl-fim p{ color:var(--muted) }
 .tl-fim a{ display:inline-block; background:var(--accent); color:#fff; text-decoration:none;
   font-weight:600; padding:15px 26px; border-radius:12px; min-height:52px; box-sizing:border-box }
 
@@ -212,14 +225,13 @@ body.modo-texto .tl-fim p{ color:var(--muted) }
 
 </style>
 </head>
-<body class="modo-pagina">
+<body>
 
 <div class="tl-prog" id="prog"></div>
 
 <header class="tl-topo" id="topo">
   <span class="wm"><span class="t">tide</span><span class="l">line</span><span class="d">.</span></span>
   <a href="./app.html">Voltar</a>
-  <button id="btn-modo" type="button">Aa</button>
   <button class="pdf" id="btn-pdf" type="button">PDF</button>
 </header>
 
@@ -758,37 +770,6 @@ body.modo-texto .tl-fim p{ color:var(--muted) }
 <script src="./tideline-data.js"></script>
 <script>
 const $ = s => document.querySelector(s);
-
-/* ---------- modo de leitura ---------- */
-// A folha A4 tem 210mm, que dão 793.7px na régua do CSS. Encaixá-la na largura da tela é
-// só uma conta. Nada de mexer em margem ou corpo de texto: a diagramação é do designer.
-const A4 = 793.7;
-function encaixar(){
-  if (!document.body.classList.contains('modo-pagina')) return;
-  const larg = document.documentElement.clientWidth;
-  const z = larg < 900 ? larg / A4 : Math.min(1, (larg - 80) / A4);
-  document.documentElement.style.setProperty('--z', z);
-}
-function aplicarModo(m){
-  document.body.className = 'modo-' + m;
-  const b = $('#btn-modo');
-  b.textContent = (m === 'pagina') ? 'Aa' : '\u2637';
-  b.setAttribute('aria-label', m === 'pagina' ? 'Ler como texto corrido' : 'Ver a página do e-book');
-  b.title = b.getAttribute('aria-label');
-  localStorage.setItem('tl_guia_modo', m);
-  encaixar();
-}
-aplicarModo(localStorage.getItem('tl_guia_modo') || 'pagina');
-
-$('#btn-modo').onclick = () => {
-  const atual = document.body.classList.contains('modo-pagina') ? 'pagina' : 'texto';
-  const alt = document.body.scrollHeight - innerHeight || 1;
-  const onde = scrollY / alt;                       // guarda o ponto da leitura
-  aplicarModo(atual === 'pagina' ? 'texto' : 'pagina');
-  requestAnimationFrame(() => scrollTo(0, onde * (document.body.scrollHeight - innerHeight)));
-};
-addEventListener('resize', encaixar);
-addEventListener('orientationchange', () => setTimeout(encaixar, 150));
 
 /* ---------- progresso, e a barra que se recolhe ---------- */
 const prog = $('#prog'), topo = $('#topo');
