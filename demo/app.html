@@ -3079,8 +3079,19 @@ async function baixarEbook(btn){
     const r = await fetch('/api/ebook-link', { method:'POST', headers:{ authorization:'Bearer '+token } });
     const d = await r.json();
     if(!r.ok) throw new Error(d.error || 'não consegui liberar o download');
-    window.open(d.url, '_blank');
-    btn.textContent='Pronto ✓';
+    // Nada de window.open: o navegador reconhece o PDF, baixa, e deixa uma aba vazia
+    // (preta, no modo escuro) na cara do usuário. Aqui a gente traz o arquivo e salva
+    // direto, com nome decente. Se o navegador não deixar, cai no plano B.
+    btn.textContent='Baixando…';
+    try{
+      const blob = await (await fetch(d.url)).blob();
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'Guia Ler o Mar - Tideline.pdf';
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(()=>URL.revokeObjectURL(a.href), 4000);
+    }catch(_){ window.open(d.url, '_blank'); }
+    btn.textContent='Baixado ✓';
     setTimeout(()=>{ btn.disabled=false; btn.textContent=orig; }, 2500);
   }catch(e){
     alert(e.message || 'Não consegui liberar o download.');

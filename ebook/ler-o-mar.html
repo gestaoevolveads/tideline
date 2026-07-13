@@ -70,8 +70,10 @@ td.n{width:26mm; font-weight:700; color:var(--accent); white-space:nowrap}
 }
 /* pad continua absoluto (inset:0) para ocupar a página toda; só sobe de camada */
 .capa .pad{display:flex; flex-direction:column; justify-content:space-between; z-index:2}
-.capa h1{font-size:60pt; color:var(--paper); text-shadow:0 2mm 10mm rgba(11,20,19,.55)}
-.capa .sub{font-size:12.5pt; color:rgba(234,242,239,.86); line-height:1.55; max-width:112mm; margin-top:7mm; text-shadow:0 1mm 5mm rgba(11,20,19,.65)}
+/* sem text-shadow: o degradê da .bg já garante contraste, e o Chrome rasteriza
+   sombra de texto borrada como BLOCOS retangulares ao imprimir em PDF. */
+.capa h1{font-size:60pt; color:var(--paper)}
+.capa .sub{font-size:12.5pt; color:rgba(234,242,239,.90); line-height:1.55; max-width:112mm; margin-top:7mm}
 .capa .selo{font-size:8.5pt; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:var(--accent)}
 /* assinatura: separada do bloco de título por uma linha e um respiro */
 .capa .assina{display:flex; justify-content:space-between; align-items:flex-end;
