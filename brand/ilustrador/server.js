@@ -41,9 +41,13 @@ const MOTORES = {
 };
 
 function lerChave(env, arquivo) {
-  if (process.env[env]) return process.env[env].trim();
+  // Não basta dar trim: colar a chave no Terminal costuma grudar caracteres invisíveis
+  // (o ESC do bracketed paste, por exemplo). O header HTTP não aceita isso e a API
+  // devolve "invalid x-api-key header", que não diz nada sobre a causa real.
+  const limpar = (s) => s.replace(/[^\x21-\x7e]/g, '');
+  if (process.env[env]) return limpar(process.env[env]) || null;
   const p = path.join(os.homedir(), arquivo);
-  try { return fs.readFileSync(p, 'utf8').trim(); } catch { return null; }
+  try { return limpar(fs.readFileSync(p, 'utf8')) || null; } catch { return null; }
 }
 const FAL_KEY = lerChave('FAL_KEY', '.fal_key');
 const CLAUDE_KEY = lerChave('ANTHROPIC_API_KEY', '.anthropic_key');
