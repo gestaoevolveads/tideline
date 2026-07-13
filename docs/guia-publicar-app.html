@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guia: colocar o Tideline nas lojas de apps</title>
+<style>
+  :root{
+    --deep:#172726; --mid:#243F3D; --muted:#476664;
+    --surface:#D3E2DE; --surface2:#E8F0ED; --paper:#F2EFE9;
+    --accent:#F95831; --verde:#1E9E68;
+    --ff:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif;
+    --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--deep);font-family:var(--ff);line-height:1.7;
+    -webkit-font-smoothing:antialiased}
+
+  header{background:var(--deep);color:var(--paper);padding:56px 22px 48px;text-align:center}
+  header .wm{font-size:20px;letter-spacing:-.02em;margin-bottom:28px}
+  header .wm .t{font-weight:300}.header .wm .l{font-weight:700}
+  header .wm .l{font-weight:700}header .wm .d{color:var(--accent)}
+  header h1{font-size:clamp(30px,7vw,44px);font-weight:700;line-height:1.14;letter-spacing:-.02em;
+    max-width:640px;margin:0 auto 16px}
+  header p{font-size:17px;color:rgba(234,242,239,.75);max-width:520px;margin:0 auto}
+
+  main{max-width:760px;margin:0 auto;padding:0 22px 100px}
+
+  .aviso{background:var(--surface2);border-radius:16px;padding:24px 26px;margin:40px 0}
+  .aviso .t{font-weight:700;font-size:17px;margin-bottom:8px}
+  .aviso p{font-size:16px;color:var(--mid)}
+  .aviso.laranja{background:#FDECE7}
+  .aviso.verde{background:#E4F7EE}
+
+  .parte{margin-top:64px;padding-top:32px;border-top:2px solid rgba(23,39,38,.12)}
+  .parte .num{font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--accent);margin-bottom:10px}
+  .parte h2{font-size:30px;font-weight:700;letter-spacing:-.02em;line-height:1.2;margin-bottom:10px}
+  .parte .sub{font-size:16px;color:var(--muted);margin-bottom:8px}
+
+  .passo{background:#fff;border-radius:16px;padding:24px 26px;margin:18px 0;
+    box-shadow:0 1px 2px rgba(23,39,38,.05),0 10px 26px -18px rgba(23,39,38,.3)}
+  .passo .cab{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+  .passo .bola{width:34px;height:34px;border-radius:50%;background:var(--deep);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;flex-shrink:0}
+  .passo h3{font-size:19px;font-weight:700;letter-spacing:-.01em}
+  .passo p{font-size:16.5px;color:var(--mid);margin-bottom:12px}
+  .passo p:last-child{margin-bottom:0}
+  .passo strong{color:var(--deep);font-weight:600}
+  .passo ul{margin:0 0 12px 22px}
+  .passo li{font-size:16.5px;color:var(--mid);margin-bottom:7px}
+
+  .tela{background:var(--surface2);border-radius:10px;padding:12px 16px;margin:12px 0;
+    font-size:15px;color:var(--mid)}
+  .tela b{color:var(--deep)}
+
+  code, .cmd{font-family:var(--mono);font-size:14.5px}
+  .cmd{display:block;background:var(--deep);color:#EAF2EF;border-radius:10px;padding:14px 16px;
+    margin:12px 0;overflow-x:auto;white-space:pre;line-height:1.6}
+  .cmd .c{color:#7FA9A3}
+
+  .checar{background:#E4F7EE;border-radius:10px;padding:12px 16px;margin-top:12px;font-size:15.5px;color:#12603F}
+  .checar b{color:#0C4A31}
+
+  .deu-ruim{background:#FDECE7;border-radius:10px;padding:12px 16px;margin-top:12px;font-size:15.5px;color:#8A2B12}
+  .deu-ruim b{color:#6E1F0C}
+
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:16px;display:block;overflow-x:auto}
+  th,td{text-align:left;padding:12px 14px;border-bottom:1px solid rgba(23,39,38,.1);vertical-align:top}
+  th{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700}
+  td{color:var(--mid)}
+  td:first-child{font-weight:600;color:var(--deep)}
+
+  .fim{margin-top:70px;padding:32px;background:var(--deep);color:var(--paper);border-radius:20px;text-align:center}
+  .fim h2{font-size:26px;margin-bottom:12px}
+  .fim p{color:rgba(234,242,239,.75);font-size:16px}
+
+  .fontes{margin-top:50px;font-size:14px;color:var(--muted)}
+  .fontes a{color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wm"><span class="t">tide</span><span class="l">line</span><span class="d">.</span></div>
+  <h1>Como colocar o Tideline<br>na App Store e no Google Play</h1>
+  <p>Um passo de cada vez. Se você fizer exatamente o que está escrito aqui, na ordem, vai dar certo.</p>
+</header>
+
+<main>
+
+  <div class="aviso">
+    <div class="t">Leia isto antes de começar</div>
+    <p>Este guia tem <strong>4 partes</strong>. Cada parte tem passos numerados. <strong>Faça um passo por
+    vez e não pule nenhum.</strong> Depois de cada passo tem uma caixa verde dizendo como saber se deu
+    certo. Se não deu, tem uma caixa vermelha explicando o que fazer.</p>
+    <p style="margin-top:12px">Você não precisa entender programação. Onde tiver um comando pra
+    digitar, é só copiar e colar. O tempo total é de mais ou menos <strong>3 semanas</strong>, mas a maior
+    parte é esperando a Apple e o Google responderem. O seu trabalho de verdade dá umas 6 horas.</p>
+  </div>
+
+  <div class="aviso laranja">
+    <div class="t">Quanto vai custar</div>
+    <table>
+      <tr><th>O quê</th><th>Quanto</th><th>Quando</th></tr>
+      <tr><td>Conta de desenvolvedor da Apple</td><td>US$ 99 por ano</td><td>Todo ano</td></tr>
+      <tr><td>Conta de desenvolvedor do Google</td><td>US$ 25</td><td>Uma vez só, nunca mais</td></tr>
+      <tr><td>Comissão da Apple sobre assinaturas</td><td>15%</td><td>Só quando alguém assinar pelo app</td></tr>
+      <tr><td>Comissão do Google sobre assinaturas</td><td>15%</td><td>Só quando alguém assinar pelo app</td></tr>
+    </table>
+    <p>A comissão é de 15% e não de 30% porque você vai entrar nos programas de pequenas empresas das
+    duas lojas. Isso vale para quem fatura até US$ 1 milhão por ano, então vale para você.
+    <strong>Não é automático: você precisa se inscrever.</strong> Isso está no Passo 4 e no Passo 8.</p>
+  </div>
+
+  <!-- ══════════════ PARTE 1 ══════════════ -->
+  <section class="parte">
+    <div class="num">Parte 1 de 4</div>
+    <h2>Abrir as contas</h2>
+    <p class="sub">Comece por aqui. A Apple demora dias para aprovar, então quanto antes você pedir,
+    antes o resto anda.</p>
+
+    <div class="passo">
+      <div class="cab"><div class="bola">1</div><h3>Junte estes documentos</h3></div>
+      <p>Antes de abrir qualquer conta, deixe estas coisas do lado:</p>
+      <ul>
+        <li>O <strong>CNPJ da Evolvê Anúncios</strong>.</li>
+        <li>A <strong>razão social</strong> exata, do jeito que está no cartão CNPJ.</li>
+        <li>O <strong>endereço</strong> e o <strong>telefone</strong> da empresa.</li>
+        <li>Um <strong>cartão de crédito internacional</strong> que aceite compra em dólar.</li>
+      </ul>
+      <div class="deu-ruim"><b>Cuidado:</b> o Google não aceita cartão pré-pago nem cartão virtual
+      temporário. Tem que ser um cartão de crédito de verdade.</div>
+    </div>
+
+    <div class="passo">
+      <div class="cab"><div class="bola">2</div><h3>Peça o número D-U-N-S (é de graça)</h3></div>
+      <p>É um número de identificação de empresa, usado no mundo inteiro. A Apple exige ele, e o Google
+      também exige se você abrir a conta como empresa (e você vai, por um motivo importante que explico
+      no Passo 5).</p>
+      <p>Entre em <code>developer.apple.com/enroll/duns-lookup</code> e preencha os dados da Evolvê.
+      Se a empresa já tiver um número, ele aparece na hora. Se não tiver, eles criam.</p>
+      <div class="checar"><b>Deu certo se:</b> você recebeu um número de 9 dígitos por e-mail.</div>
+      <div class="deu-ruim"><b>Deu ruim se:</b> não chegou nada em 5 dias úteis. Aí escreva para o suporte
+      da Dun &amp; Bradstreet. Sem esse número você não avança, então não deixe pra depois.</div>
+    </div>
+
+    <div class="passo">
+      <div class="cab"><div class="bola">3</div><h3>Abra a conta de desenvolvedor da Apple</h3></div>
+      <p>Entre em <code>developer.apple.com/programs/enroll</code>.</p>
+      <ul>
+        <li>Escolha <strong>Organization</strong> (empresa), não Individual.</li>
+        <li>Preencha com o D-U-N-S e os dados da Evolvê.</li>
+        <li>Pague os <strong>US$ 99</strong>.</li>
+      </ul>
+      <p>A Apple vai verificar se você tem autoridade para representar a empresa. Ela pode <strong>te
+      ligar</strong>. Atenda.</p>
+      <div class="checar"><b>Deu certo se:</b> você recebeu o e-mail "Welcome to the Apple Developer
+      Program" e consegue entrar em <code>appstoreconnect.apple.com</code>.</div>
+      <div class="deu-ruim"><b>Demora:</b> normalmente de 2 a 7 dias. Pode passar de duas semanas.
+      Enquanto espera, siga para o Passo 5, que não depende disso.</div>
+    </div>
+
+    <div class="passo">
+      <div class="cab"><div class="bola">4</div><h3>Entre no programa de 15% da Apple</h3></div>
+      <p>Só faça isso depois que a conta for aprovada.</p>
+      <p>Entre em <code>developer.apple.com/app-store/small-business-program</code> e clique em
+      <strong>Enroll</strong>. Isso derruba a comissão de 30% para <strong>15%</strong>.</p>
+      <div class="aviso verde" style="margin:12px 0 0">
+        <p><strong>Isso é dinheiro no seu bolso.</strong> Numa assinatura de R$ 19,90, a diferença entre
+        30% e 15% é de R$ 3 por assinante, por mês. Com 100 assinantes, são R$ 300 por mês que você
+        deixa de perder. E leva 2 minutos para se inscrever.</p>
+      </div>
+      <div class="checar"><b>Deu certo se:</b> aparece "Enrolled" na página do programa.</div>
+    </div>
+
+    <div class="passo">
+      <div class="cab"><div class="bola">5</div><h3>Abra a conta do Google Play como EMPRESA</h3></div>
+      <p>Entre em <code>play.google.com/console/signup</code> e pague os <strong>US$ 25</strong>.</p>
+      <div class="aviso laranja" style="margin:12px 0">
+        <p><strong>Preste muita atenção nesta escolha, porque ela não dá pra desfazer depois.</strong></p>
+        <p style="margin-top:10px">Quando o Google perguntar o tipo de conta, escolha
+        <strong>Organização</strong> (empresa), e nunca "Pessoal".</p>
+        <p style="margin-top:10px">O motivo: contas <strong>pessoais</strong> são obrigadas a fazer um teste
+        fechado com <strong>12 pessoas usando o app por 14 dias seguidos</strong> antes de poder publicar.
+        Isso trava o lançamento por semanas e é um inferno de organizar. Contas de
+        <strong>empresa não precisam disso</strong>. Você tem CNPJ, então use.</p>
+      </div>
+      <p>Ele vai pedir o D-U-N-S (o mesmo do Passo 2) e verificar o CNPJ.</p>
+      <div class="checar"><b>Deu certo se:</b> você entra no Play Console e ele mostra o nome da Evolvê
+      como desenvolvedor.</div>
+    </div>
+
+    <div class="passo">
+      <div class="cab"><div class="bola">6</div><h3>Instale os programas no seu Mac</h3></div>
+      <p>Você já tem o Mac, que é obrigatório para publicar na Apple. Faltam duas coisas:</p>
+      <p><strong>Xcode:</strong> abra a App Store no seu Mac, procure por "Xcode" e instale. É grande, uns
+      15 GB, então deixe baixando enquanto faz outra coisa. Depois abra ele uma vez e aceite os termos.</p>
+      <p><strong>Android Studio:</strong> baixe em <code>developer.android.com/studio</code> e instale
+      normal, clicando em "Next" até o fim.</p>
+      <div class="checar"><b>Deu certo se:</b> os dois abrem sem erro.</div>
+    </div>
+  </section>
+
+  <!-- ══════════════ PARTE 2 ══════════════ -->
+  <section class="parte">
+    <div class="num">Parte 2 de 4</div>
+    <h2>Transformar o site em app</h2>
+    <p class="sub">Aqui o Tideline, que hoje é um site, vira um aplicativo de verdade. Você não vai
+    reescrever nada: o mesmo código vira app.</p>
+
+    <div class="aviso">
+      <div class="t">Se preferir, eu faço esta parte inteira</div>
+      <p>A Parte 2 é a única que é técnica. Se você me pedir, eu executo todos estes comandos e deixo o
+      app pronto para você só abrir e enviar. Ela está aqui para você entender o que está acontecendo, e
+      para conseguir refazer sozinho se precisar.</p>
+    </div>
+
+    <div class="passo">
+      <div class="cab"><div class="bola">7</div><h3>Instalar o Capacitor</h3></div>
+      <p>O Capacitor é a ferramenta que embrulha um site e o transforma em app. Abra o <strong>Terminal</strong>
+      e cole isto, uma linha por vez, apertando Enter em cada:</p>
+      <div class="cmd"><span class="c"># entra na pasta do projeto</span>
+cd ~/Desktop/Tideline
+
+<span class="c"># instala o Capacitor (versão 8, a atual)</span>
+npm install @capacitor/core@8 @capacitor/cli@8 @capacitor/ios@8 @capacitor/android@8
+
+<span class="c"># cria a configuração do app</span>
+npx cap init "Tideline" "br.com.tideline.app" --web-dir=demo
+
+<span class="c"># cria os projetos de iPhone e Android</span>
+npx cap add ios
+npx cap add android</div>
+      <div class="checar"><b>Deu certo se:</b> apareceram duas pastas novas dentro de
+      <code>~/Desktop/Tideline</code>: uma chamada <code>ios</code> e outra <code>android</code>.</div>
+      <div class="deu-ruim"><b>Se der erro de versão do Node:</b> o Capacitor 8 exige o Node 22 ou mais
+      novo. Rode <code>node -v</code>. Se aparecer um número menor que 22, instale o Node novo em
+      <code>nodejs.org</code>.</div>
+    </div>
+
+    <div class="passo">
+      <div class="cab"><div class="bola">8</div><h3>Colocar as compras dentro do app</h3></div>
+      <p>Este passo é obrigatório. A Apple <strong>rejeita</strong> qualquer app que venda assinatura sem
+      passar pela caixinha dela.</p>
+      <p>Você vai precisar cadastrar a assinatura nos dois lugares:</p>
+      <ul>
+        <li><strong>Na Apple:</strong> App Store Connect, seção "Subscriptions". Crie um grupo e dois
+        produtos: mensal e anual.</li>
+        <li><strong>No Google:</strong> Play Console, seção "Produtos", "Assinaturas". Os mesmos dois.</li>
+      </ul>
+      <div class="aviso" style="margin:12px 0 0">
+        <p><strong>Sobre o preço:</strong> a loja fica com 15%. Se você cobrar os mesmos R$ 19,90 no app,
+        você recebe R$ 16,91. Você pode aceitar isso, ou cobrar um pouco mais dentro do app para
+        compensar. As duas coisas são permitidas e comuns. O que <strong>não</strong> é permitido é colocar
+        um link dentro do app mandando a pessoa assinar no site pra fugir da comissão. Isso faz a Apple
+        rejeitar o app.</p>
+      </div>
+    </div>
+
+    <div class="passo">
+      <div class="cab"><div class="bola">9</div><h3>Ligar as notificações do celular</h3></div>
+      <p>O Alerta Sniper já funciona no site. No app, ele precisa usar o sistema de notificação nativo,
+      que é mais confiável e não depende do navegador.</p>
+      <div class="cmd">npm install @capacitor/push-notifications@8
+npx cap sync</div>
+      <p>Depois disso é preciso criar um projeto no <strong>Firebase</strong> (é de graça) para o Android, e
+      ativar o <strong>Push Notifications</strong> no painel da Apple. São dois arquivos de configuração que
+      entram nas pastas <code>ios</code> e <code>android</code>.</p>
+    </div>
+
+    <div class="passo">
+      <div class="cab"><div class="bola">10</div><h3>Ver o app rodando no seu celular</h3></div>
+      <div class="cmd"><span class="c"># manda o site pra dentro dos apps</span>
+npx cap sync
+
+<span class="c"># abre o projeto do iPhone no Xcode</span>
+npx cap open ios
+
+<span class="c"># abre o projeto do Android no Android Studio</span>
+npx cap open android</div>
+      <p>No Xcode, ligue seu iPhone no Mac por cabo, escolha ele na lista lá em cima e aperte o botão de
+      <strong>play</strong>. O Tideline vai abrir no seu telefone.</p>
+      <div class="checar"><b>Deu certo se:</b> o app abriu no seu celular e você conseguiu navegar.</div>
+      <div class="deu-ruim"><b>Se o Xcode reclamar de "Signing":</b> clique no projeto, aba "Signing &amp;
+      Capabilities", e escolha a Evolvê na lista de "Team". Isso só funciona depois que a conta da Apple
+      estiver aprovada (Passo 3).</div>
+    </div>
+  </section>
+
+  <!-- ══════════════ PARTE 3 ══════════════ -->
+  <section class="parte">
+    <div class="num">Parte 3 de 4</div>
+    <h2>Preparar o material das lojas</h2>
+    <p class="sub">As duas lojas pedem as mesmas coisas. Prepare tudo antes, num lugar só, e depois é
+    só copiar e colar.</p>
+
+    <div class="passo">
+      <div class="cab"><div class="bola">11</div><h3>Junte tudo isto numa pasta</h3></div>
+      <table>
+        <tr><th>O que é</th><th>Detalhe</th></tr>
+        <tr><td>Ícone do app</td><td>1024 × 1024 pixels, sem cantos arredondados, sem transparência</td></tr>
+        <tr><td>Capturas de tela</td><td>Pelo menos 3 de iPhone e 3 de Android. É só abrir o app e tirar print</td></tr>
+        <tr><td>Nome</td><td>Tideline</td></tr>
+        <tr><td>Subtítulo</td><td>Até 30 letras. Ex: "Previsão de surf que se entende"</td></tr>
+        <tr><td>Descrição</td><td>Até 4000 letras. Conte o que o app faz, sem promessa exagerada</td></tr>
+        <tr><td>Política de privacidade</td><td><strong>tideline.com.br/privacidade</strong> (já está no ar)</td></tr>
+        <tr><td>Termos de uso</td><td><strong>tideline.com.br/termos</strong> (já está no ar)</td></tr>
+        <tr><td>Conta de teste</td><td>Um e-mail e senha do Tideline para o revisor entrar e testar</td></tr>
+      </table>
+      <div class="aviso laranja" style="margin-top:14px">
+        <p><strong>A conta de teste é o que mais reprova gente.</strong> O revisor da Apple precisa
+        conseguir entrar e ver TUDO, inclusive a parte premium. Crie uma conta, marque ela como premium
+        no seu painel, e mande o e-mail e a senha no campo "Notas para o revisor".</p>
+      </div>
+    </div>
+
+    <div class="passo">
+      <div class="cab"><div class="bola">12</div><h3>Responda o questionário de privacidade</h3></div>
+      <p>As duas lojas vão perguntar quais dados o app coleta. <strong>Responda com a verdade</strong>, e
+      use a nossa política de privacidade como base. Mentir aqui é o caminho mais rápido para tomar um
+      banimento.</p>
+      <p>Para o Tideline, as respostas são: coletamos <strong>e-mail</strong> (para a conta),
+      <strong>dados de uso</strong> (praias favoritas, sessões), <strong>identificadores</strong> (para
+      medição e anúncios) e <strong>dados de compra</strong>. Não coletamos localização, contatos, fotos
+      nem áudio.</p>
+    </div>
+  </section>
+
+  <!-- ══════════════ PARTE 4 ══════════════ -->
+  <section class="parte">
+    <div class="num">Parte 4 de 4</div>
+    <h2>Enviar e publicar</h2>
+
+    <div class="passo">
+      <div class="cab"><div class="bola">13</div><h3>Enviar para a Apple</h3></div>
+      <ul>
+        <li>No Xcode: menu <strong>Product</strong>, depois <strong>Archive</strong>. Espere.</li>
+        <li>Na janela que abrir, clique em <strong>Distribute App</strong> e depois em
+        <strong>App Store Connect</strong>.</li>
+        <li>Vá em <code>appstoreconnect.apple.com</code>, crie o app, preencha tudo da Parte 3 e escolha
+        a versão que você acabou de enviar.</li>
+        <li>Clique em <strong>Submit for Review</strong>.</li>
+      </ul>
+      <div class="checar"><b>A resposta chega em 24 a 48 horas.</b> Se for aprovado, o app entra no ar.</div>
+      <div class="deu-ruim"><b>Se for rejeitado, não entre em pânico.</b> É normal, acontece com quase
+      todo mundo na primeira vez. Eles escrevem exatamente o que está errado. Você conserta e reenvia,
+      e o reenvio costuma sair no mesmo dia. Me manda o texto da rejeição que eu resolvo.</div>
+    </div>
+
+    <div class="passo">
+      <div class="cab"><div class="bola">14</div><h3>Enviar para o Google</h3></div>
+      <ul>
+        <li>No Android Studio: menu <strong>Build</strong>, depois <strong>Generate Signed Bundle</strong>.
+        Escolha <strong>Android App Bundle</strong>.</li>
+        <li>Ele vai pedir para criar uma <strong>chave de assinatura</strong>.
+        <strong>Guarde essa chave e a senha dela em lugar seguro.</strong> Se você perder, nunca mais
+        consegue atualizar o app. Sério.</li>
+        <li>No Play Console, crie o app, preencha tudo e suba o arquivo <code>.aab</code>.</li>
+        <li>Envie para revisão.</li>
+      </ul>
+      <div class="checar"><b>A resposta costuma chegar em alguns dias.</b> O Google é mais lento que a
+      Apple na primeira publicação.</div>
+    </div>
+
+    <div class="passo">
+      <div class="cab"><div class="bola">15</div><h3>Entre no programa de 15% do Google</h3></div>
+      <p>No Play Console, procure por <strong>Programa para pequenas empresas</strong> e se inscreva.
+      Mesma lógica da Apple: 15% em vez de 30% até US$ 1 milhão de faturamento.</p>
+    </div>
+  </section>
+
+  <div class="fim">
+    <h2>Ordem de importância, se o tempo apertar</h2>
+    <p style="margin-bottom:14px">Se você só puder fazer uma coisa por semana, faça nesta ordem:
+    <strong>1)</strong> pedir o D-U-N-S, <strong>2)</strong> abrir a conta da Apple (é a que demora),
+    <strong>3)</strong> abrir a conta do Google como empresa, <strong>4)</strong> o resto.</p>
+    <p>As duas primeiras não dependem de mais nada e são as que travam tudo. Comece por elas hoje.</p>
+  </div>
+
+  <div class="fontes">
+    <p>Informações verificadas em julho de 2026 nas fontes oficiais:
+    <a href="https://developer.apple.com/support/compare-memberships/">Apple Developer (taxa anual)</a>,
+    <a href="https://developer.apple.com/app-store/small-business-program/">App Store Small Business Program</a>,
+    <a href="https://support.google.com/googleplay/android-developer/answer/6112435">Google Play Console</a>.
+    Capacitor 8.4.1, que exige Node 22 ou superior.</p>
+  </div>
+
+</main>
+</body>
+</html>

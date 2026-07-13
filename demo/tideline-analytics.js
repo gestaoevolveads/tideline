@@ -1,31 +1,59 @@
 /* Tideline — Analytics (Meta Pixel + Google Analytics 4)
-   Carrega os dois, dispara PageView, e expõe tlTrack(metaEvent, ga4Event, params)
-   pros eventos do funil. NÃO roda no /admin (pra não sujar os dados). */
+   Dispara PageView e expõe tlTrack(metaEvent, ga4Event, params) pros eventos do funil.
+   NÃO roda no /admin (pra não sujar os dados).
+
+   CONSENTIMENTO (LGPD): o Pixel e o GA só carregam DEPOIS que a pessoa aceita. Antes
+   disso, nenhum script de terceiro entra na página. Rastrear sem consentimento é
+   irregular no Brasil e é exatamente o tipo de coisa que derruba conta de anúncio.
+   Quem pergunta é o tideline-consent.js; aqui a gente só espera a resposta.
+
+   A atribuição de campanha (UTM) continua funcionando sempre, porque ela mora no
+   próprio navegador da pessoa e não sai pra lugar nenhum sem o aceite. */
 (function(){
   var PIXEL = '824809153918985';   // Meta Pixel
   var GA    = 'G-PJSTC4ZCXT';      // Google Analytics 4
 
   if (/\/admin/.test(location.pathname)) return; // painel interno não é rastreado
 
-  // ---------- Google Analytics 4 (gtag) ----------
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){ dataLayer.push(arguments); }
-  window.gtag = gtag;
-  gtag('js', new Date());
-  gtag('config', GA);
-  var gs = document.createElement('script');
-  gs.async = true;
-  gs.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA;
-  document.head.appendChild(gs);
+  var medicaoLigada = false;
 
-  // ---------- Meta Pixel ----------
-  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
-    (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', PIXEL);
-  fbq('track', 'PageView');
+  window.tlAtivarMedicao = function(){
+    if (medicaoLigada) return;
+    medicaoLigada = true;
+
+    // ---------- Google Analytics 4 (gtag) ----------
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', GA);
+    var gs = document.createElement('script');
+    gs.async = true;
+    gs.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA;
+    document.head.appendChild(gs);
+
+    // ---------- Meta Pixel ----------
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+      (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', PIXEL);
+    fbq('track', 'PageView');
+
+    // eventos que aconteceram antes do aceite não se perdem: saem agora
+    while (filaEventos.length) {
+      var e = filaEventos.shift();
+      try { if (window.fbq && e[0]) fbq('track', e[0], e[2]); } catch(_){}
+      try { if (window.gtag && e[1]) gtag('event', e[1], e[2]); } catch(_){}
+    }
+  };
+
+  var filaEventos = [];
+  var consentiu = function(){
+    try { return localStorage.getItem('tl_consent') === 'aceito'; } catch(e){ return false; }
+  };
+  if (consentiu()) window.tlAtivarMedicao();
 
   // ---------- ATRIBUIÇÃO (UTMs + click IDs) — 1st-touch e last-touch ----------
   var _q = new URLSearchParams(location.search);
@@ -85,6 +113,7 @@
     var a = (window.tlAttrib && window.tlAttrib()) || {};
     var enr = Object.assign({}, params);
     ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(function(k){ if (a[k]) enr[k] = a[k]; });
+    if (!medicaoLigada) { filaEventos.push([metaEvent, ga4Event, enr]); return; }
     try { if (window.fbq && metaEvent) fbq('track', metaEvent, enr); } catch(e){}
     try { if (window.gtag && ga4Event) gtag('event', ga4Event, enr); } catch(e){}
   };
