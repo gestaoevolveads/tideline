@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Seu guia está baixando · Tideline</title>
+<script src="./tideline-analytics.js"></script>
+<style>
+  :root{
+    --deep:#172726; --mid:#243F3D; --muted:#476664;
+    --surface:#D3E2DE; --surface2:#E8F0ED; --paper:#F2EFE9;
+    --accent:#F95831; --white:#fff;
+    --ff:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100dvh;background:var(--paper);color:var(--deep);font-family:var(--ff);
+    line-height:1.55;display:flex;flex-direction:column;align-items:center;
+    justify-content:center;padding:32px 20px;-webkit-font-smoothing:antialiased}
+
+  .wm{font-size:19px;letter-spacing:-.02em;margin-bottom:36px}
+  .wm .t{font-weight:300}.wm .l{font-weight:700}.wm .d{color:var(--accent)}
+
+  .cartao{width:100%;max-width:440px;background:var(--white);border-radius:18px;padding:30px 26px 26px;
+    box-shadow:0 1px 2px rgba(23,39,38,.05),0 18px 40px -20px rgba(23,39,38,.28);text-align:center}
+
+  .selo{width:52px;height:52px;margin:0 auto 18px;border-radius:50%;background:var(--surface2);
+    display:flex;align-items:center;justify-content:center}
+  .selo svg{width:26px;height:26px;stroke:var(--mid);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .selo.ok{background:#E4F7EE}.selo.ok svg{stroke:#1E9E68}
+  .selo.ops{background:#FDECE7}.selo.ops svg{stroke:var(--accent)}
+
+  h1{font-size:23px;font-weight:700;letter-spacing:-.02em;margin:0 0 8px}
+  p{font-size:14.5px;color:var(--muted);margin:0 0 22px}
+  p strong{color:var(--deep);font-weight:600}
+
+  .btn{display:block;width:100%;padding:15px;border:0;border-radius:12px;background:var(--deep);color:#fff;
+    font-family:var(--ff);font-size:15px;font-weight:600;cursor:pointer;min-height:52px;
+    transition:filter .15s,transform .15s;text-decoration:none;text-align:center}
+  .btn:hover{filter:brightness(1.12);transform:translateY(-1px)}
+  .btn:disabled{opacity:.5;cursor:wait;transform:none}
+  .btn.fantasma{background:transparent;color:var(--muted);font-weight:500;font-size:14px;min-height:44px;padding:11px}
+  .btn.fantasma:hover{color:var(--accent);transform:none;filter:none}
+
+  .dica{margin-top:26px;padding-top:20px;border-top:1px solid rgba(23,39,38,.09);
+    font-size:13px;color:var(--muted);text-align:left;line-height:1.6}
+  .dica b{color:var(--deep);font-weight:600}
+
+  @media (prefers-reduced-motion:reduce){.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="wm"><span class="t">tide</span><span class="l">line</span><span class="d">.</span></div>
+
+<main class="cartao">
+  <div class="selo" id="selo" aria-hidden="true">
+    <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>
+  </div>
+
+  <h1 id="titulo">Preparando seu guia</h1>
+  <p id="texto">Só um instante, estamos liberando o arquivo.</p>
+
+  <button class="btn" id="acao" disabled>Aguarde…</button>
+  <a class="btn fantasma" href="./app.html">Voltar para o app</a>
+
+  <div class="dica">
+    <b>Uma sugestão de leitura.</b> Não leia de uma vez. Leia o capítulo do período, vá até a praia
+    e olhe. Depois volte para o do vento. O guia foi escrito pra ser conferido com os pés na areia,
+    e é assim que ele gruda.
+  </div>
+</main>
+
+<script src="./tideline-config.js"></script>
+<script src="./tideline-data.js"></script>
+<script>
+const $ = s => document.querySelector(s);
+let urlArquivo = null;
+
+function estado(icone, titulo, texto, rotulo, acao){
+  $('#selo').className = 'selo ' + icone;
+  $('#titulo').textContent = titulo;
+  $('#texto').innerHTML = texto;
+  const b = $('#acao');
+  b.textContent = rotulo;
+  b.disabled = !acao;
+  b.onclick = acao || null;
+}
+
+async function salvar(url){
+  // Buscar e salvar como blob evita a aba vazia que o navegador deixa pra trás
+  // quando ele mesmo resolve baixar o PDF.
+  const blob = await (await fetch(url)).blob();
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'Guia Ler o Mar - Tideline.pdf';
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+}
+
+async function liberar(){
+  try{
+    const c = window.TLData && await window.TLData.client();
+    if(!c) throw new Error('sem-login');
+    const { data:sess } = await c.auth.getSession();
+    const token = sess && sess.session && sess.session.access_token;
+    if(!token) throw new Error('sem-login');
+
+    const r = await fetch('/api/ebook-link', { method:'POST', headers:{ authorization:'Bearer '+token } });
+    const d = await r.json();
+    if(!r.ok) throw new Error(d.error || 'falhou');
+
+    urlArquivo = d.url;
+    await salvar(urlArquivo);
+
+    // o evento que interessa: aconteceu o download, e a origem da campanha vai junto
+    if (window.tlTrack) tlTrack('Lead', 'ebook_download', {
+      content_name: 'Guia Ler o Mar',
+      content_category: 'ebook',
+      value: 0, currency: 'BRL'
+    });
+
+    estado('ok', 'Pronto, o guia é seu.',
+      'O arquivo foi salvo na sua pasta de downloads. São <strong>21 páginas</strong> sobre como ler o mar sem depender de ninguém.',
+      'Baixar de novo', () => salvar(urlArquivo));
+  }catch(e){
+    if (e.message === 'sem-login'){
+      estado('ops', 'Entre na sua conta',
+        'O guia é seu, mas preciso saber quem você é para liberar o arquivo.',
+        'Fazer login', () => location.href = './login.html');
+    } else {
+      estado('ops', 'Não consegui liberar agora',
+        'Deu ruim aqui do nosso lado: <strong>' + (e.message || 'erro desconhecido') + '</strong>. Tente de novo em um instante.',
+        'Tentar de novo', () => { estado('', 'Preparando seu guia', 'Só um instante.', 'Aguarde…', null); liberar(); });
+    }
+  }
+}
+
+liberar();
+</script>
+</body>
+</html>
