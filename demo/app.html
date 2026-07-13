@@ -2567,9 +2567,9 @@ function renderLoggedIn(user, logs) {
       <div style="font-size:26px;flex-shrink:0">📘</div>
       <div style="flex:1;min-width:0">
         <div style="font-size:13px;font-weight:700;color:var(--deep)">Guia Ler o Mar</div>
-        <div style="font-size:11px;color:var(--muted);margin-top:2px">Seu presente de boas-vindas. O guia completo em PDF.</div>
+        <div style="font-size:11px;color:var(--muted);margin-top:2px">Seu presente de boas-vindas. 21 páginas, direto aqui no app.</div>
       </div>
-      <button onclick="baixarEbook(this)" style="background:var(--deep);color:#fff;border:none;border-radius:10px;padding:10px 15px;font-family:var(--ff);font-size:12px;font-weight:700;cursor:pointer;flex-shrink:0;min-height:44px">Baixar</button>
+      <button onclick="baixarEbook(this)" style="background:var(--deep);color:#fff;border:none;border-radius:10px;padding:10px 15px;font-family:var(--ff);font-size:12px;font-weight:700;cursor:pointer;flex-shrink:0;min-height:44px">Ler</button>
     </div>` : '' }
     ${seasonBanner}
     ${renderStreakHero(streak, checkins)}
@@ -3069,10 +3069,10 @@ function renderBeachList(q) {
 
 /* ── E-BOOK (só premium; o servidor confere e devolve link que expira) ── */
 function baixarEbook(btn){
-  // A entrega acontece na obrigado.html: lá o download dispara sozinho e o Pixel/GA
-  // registram o evento com a origem da campanha junto. Aqui é só o caminho até ela.
-  btn.disabled = true; btn.textContent = 'Abrindo…';
-  location.href = 'obrigado.html?de=app';
+  // Ler, não baixar. PDF no celular abre uma aba, salva num canto e some: o usuário
+  // não entende o que aconteceu. O guia agora é uma página que ele simplesmente lê.
+  // Quem quiser o arquivo baixa lá dentro, por escolha.
+  location.href = 'guia.html';
 }
 
 /* ── AVATAR UPLOAD ───────────────────────────────────── */
