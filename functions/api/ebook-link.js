@@ -1,7 +1,10 @@
-// Cloudflare Pages Function — libera o e-book só para assinante premium.
+// Cloudflare Pages Function — libera o e-book para quem tem conta.
 // POST /api/ebook-link   Header: Authorization: Bearer <access_token do usuário>
-// Confere no servidor se a pessoa é premium/vitalício e devolve um LINK ASSINADO
-// (expira em 5 min). O arquivo fica num bucket PRIVADO — não dá pra repassar o link.
+// O guia é um presente de boas-vindas, não um prêmio de assinatura: reciprocidade só
+// funciona ANTES do pedido. Quem está no teste de 14 dias baixa igual. O que ele protege
+// é a criação de conta, que é a conversão que interessa.
+// O arquivo continua num bucket PRIVADO e o link assinado expira em 5 minutos, então
+// ninguém repassa por fora.
 // Env: SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY
 
 export async function onRequestPost(context) {
@@ -19,11 +22,7 @@ export async function onRequestPost(context) {
     if (!who.ok) return json({ error: 'sessão inválida, entre de novo' }, 401);
     const user = await who.json();
 
-    // 2) é premium? (checagem no SERVIDOR — não dá pra burlar pelo navegador)
-    const pr = await sb(env, `profiles?id=eq.${encodeURIComponent(user.id)}&select=plano,premium_until`);
-    const p = (pr && pr[0]) || {};
-    const ativo = (p.premium_until && new Date(p.premium_until).getTime() > Date.now()) || p.plano === 'vitalicio';
-    if (!ativo) return json({ error: 'o guia é um bônus de assinante. Assine para baixar.' }, 403);
+    // 2) basta ter conta. A validação de sessão acima já garante que é gente de verdade.
 
     // 3) qual é o e-book publicado?
     const cf = await sb(env, 'config?key=eq.ebook&select=value');

@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estúdio de Ilustração — Tideline</title>
+<style>
+  :root{
+    --deep:#172726; --mid:#243F3D; --muted:#476664;
+    --surface:#D3E2DE; --surface2:#E8F0ED; --paper:#F2EFE9;
+    --accent:#F95831; --green:#2ECC8A;
+    --r:14px; --sombra:0 1px 2px rgba(23,39,38,.06), 0 8px 24px -12px rgba(23,39,38,.18);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--deep);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;line-height:1.5}
+
+  header{display:flex;align-items:baseline;gap:14px;padding:22px 28px;border-bottom:1px solid rgba(23,39,38,.09)}
+  .wm{font-size:22px;letter-spacing:-.02em}
+  .wm .t{font-weight:300}.wm .l{font-weight:700}.wm .d{color:var(--accent)}
+  header .sub{font-size:13px;color:var(--muted)}
+
+  .wrap{display:grid;grid-template-columns:380px 1fr;gap:0;min-height:calc(100vh - 67px)}
+  @media(max-width:900px){.wrap{grid-template-columns:1fr}}
+
+  /* ---------- painel ---------- */
+  .painel{padding:24px 28px 40px;border-right:1px solid rgba(23,39,38,.09);overflow-y:auto}
+  .campo{margin-bottom:22px}
+  label{display:block;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+  .dica{font-size:12.5px;color:var(--muted);margin-top:6px;line-height:1.45}
+  textarea,input[type=text]{width:100%;border:1px solid rgba(23,39,38,.16);background:#fff;border-radius:var(--r);
+    padding:12px 14px;font:inherit;font-size:15px;color:var(--deep);resize:vertical;transition:border-color .15s, box-shadow .15s}
+  textarea{min-height:96px}
+  textarea:focus,input:focus{outline:none;border-color:var(--mid);box-shadow:0 0 0 3px rgba(36,63,61,.1)}
+
+  .opcoes{display:grid;gap:8px}
+  .opcoes.duo{grid-template-columns:1fr 1fr}
+  .op{position:relative}
+  .op input{position:absolute;opacity:0;pointer-events:none}
+  .op span{display:block;padding:11px 13px;border:1px solid rgba(23,39,38,.16);border-radius:12px;background:#fff;
+    cursor:pointer;font-size:14px;font-weight:500;transition:.15s}
+  .op span small{display:block;font-weight:400;font-size:12px;color:var(--muted);margin-top:2px}
+  .op input:checked + span{border-color:var(--deep);background:var(--surface2);box-shadow:inset 0 0 0 1px var(--deep)}
+  .op input:focus-visible + span{box-shadow:0 0 0 3px rgba(249,88,49,.35)}
+  .op span:hover{border-color:var(--muted)}
+
+  .refs{display:grid;grid-template-columns:repeat(auto-fill,minmax(72px,1fr));gap:8px}
+  .ref{position:relative;aspect-ratio:1;border-radius:10px;overflow:hidden;cursor:pointer;
+    border:2px solid transparent;background:var(--surface);transition:.15s}
+  .ref img{width:100%;height:100%;object-fit:cover;display:block}
+  .ref.on{border-color:var(--accent)}
+  .ref.on::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 2px #fff}
+  .ref:not(.on) img{opacity:.45;filter:saturate(.4)}
+
+  .croqui{border:1.5px dashed rgba(23,39,38,.25);border-radius:var(--r);padding:16px;text-align:center;
+    font-size:13px;color:var(--muted);cursor:pointer;transition:.15s;background:#fff}
+  .croqui:hover,.croqui.drag{border-color:var(--accent);color:var(--deep);background:var(--surface2)}
+  .croqui img{max-height:88px;border-radius:8px;display:block;margin:0 auto 8px}
+
+  .gerar{width:100%;padding:16px;border:0;border-radius:var(--r);background:var(--accent);color:#fff;
+    font:inherit;font-size:16px;font-weight:600;cursor:pointer;transition:.15s;box-shadow:var(--sombra);min-height:52px}
+  .gerar:hover:not(:disabled){filter:brightness(1.06);transform:translateY(-1px)}
+  .gerar:active:not(:disabled){transform:translateY(0)}
+  .gerar:disabled{opacity:.55;cursor:wait}
+  .link{background:none;border:0;color:var(--muted);font:inherit;font-size:13px;cursor:pointer;
+    text-decoration:underline;text-underline-offset:3px;padding:4px 0}
+  .link:hover{color:var(--accent)}
+
+  /* ---------- galeria ---------- */
+  .tela{padding:24px 28px 60px;overflow-y:auto}
+  .barra{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px;flex-wrap:wrap}
+  h2{font-size:17px;font-weight:600;margin:0}
+  .status{font-size:13px;color:var(--muted)}
+  .grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+  .card{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--sombra);
+    transition:transform .18s ease-out, box-shadow .18s}
+  .card:hover{transform:translateY(-2px);box-shadow:0 2px 4px rgba(23,39,38,.08),0 16px 32px -14px rgba(23,39,38,.28)}
+  .card .img{display:block;width:100%;background:var(--surface);cursor:zoom-in}
+  .card .img img{width:100%;display:block}
+  .card .acoes{display:flex;gap:6px;padding:9px 10px;border-top:1px solid rgba(23,39,38,.07)}
+  .card .acoes button,.card .acoes a{flex:1;text-align:center;padding:8px 6px;border:1px solid rgba(23,39,38,.14);
+    border-radius:9px;background:#fff;font:inherit;font-size:12.5px;font-weight:500;color:var(--deep);
+    text-decoration:none;cursor:pointer;transition:.15s;min-height:36px;display:flex;align-items:center;justify-content:center}
+  .card .acoes button:hover,.card .acoes a:hover{background:var(--surface2);border-color:var(--muted)}
+
+  .esqueleto{border-radius:var(--r);background:linear-gradient(100deg,var(--surface2) 30%,#fff 50%,var(--surface2) 70%);
+    background-size:220% 100%;animation:brilho 1.3s infinite linear}
+  @keyframes brilho{to{background-position:-220% 0}}
+  @media (prefers-reduced-motion:reduce){.esqueleto{animation:none}.card{transition:none}}
+
+  .vazio{text-align:center;padding:70px 20px;color:var(--muted);font-size:14px;line-height:1.6}
+  .erro{background:#FDECE7;border:1px solid rgba(249,88,49,.35);color:#8A2B12;padding:12px 14px;
+    border-radius:12px;font-size:13.5px;margin-bottom:16px}
+
+  dialog{border:0;padding:0;background:transparent;max-width:94vw;max-height:94vh}
+  dialog::backdrop{background:rgba(23,39,38,.82);backdrop-filter:blur(3px)}
+  dialog img{max-width:94vw;max-height:88vh;display:block;border-radius:12px}
+  dialog .fechar{position:absolute;top:-38px;right:0;background:none;border:0;color:#fff;font-size:15px;cursor:pointer}
+</style>
+</head>
+<body>
+
+<header>
+  <span class="wm"><span class="t">tide</span><span class="l">line</span><span class="d">.</span></span>
+  <span class="sub">Estúdio de Ilustração</span>
+</header>
+
+<div class="wrap">
+  <!-- ============ PAINEL ============ -->
+  <form class="painel" id="form">
+    <div class="campo">
+      <label for="cena">A cena</label>
+      <textarea id="cena" placeholder="Um surfista magrelo de óculos escuros sentado na areia ao amanhecer, prancha fincada ao lado, olhando o mar e sorrindo largo."></textarea>
+      <div class="dica">Escreva como se contasse pra um amigo. Uma ação só. <button type="button" class="link" id="btn-diretor" hidden>Pedir ajuda ao Diretor de Arte</button></div>
+    </div>
+
+    <div class="campo">
+      <label>Variante</label>
+      <div class="opcoes duo" id="variantes"></div>
+    </div>
+
+    <div class="campo">
+      <label>Formato</label>
+      <div class="opcoes" id="formatos"></div>
+    </div>
+
+    <div class="campo">
+      <label>Referências de traço</label>
+      <div class="refs" id="refs"></div>
+      <div class="dica">A IA copia a mão destas imagens. Menos e mais parecidas é melhor que muitas e diferentes.</div>
+    </div>
+
+    <div class="campo">
+      <label for="croqui-in">Croqui de composição <span style="text-transform:none;font-weight:400">(opcional)</span></label>
+      <div class="croqui" id="croqui" tabindex="0" role="button">
+        <div id="croqui-txt">Arraste um rabisco aqui, ou clique.<br>Serve pra travar a geometria de um desenho didático.</div>
+      </div>
+      <input type="file" id="croqui-in" accept="image/*" hidden>
+    </div>
+
+    <div class="campo">
+      <label>Motor</label>
+      <div class="opcoes" id="motores"></div>
+    </div>
+
+    <div class="campo">
+      <label for="n">Quantas versões</label>
+      <div class="opcoes duo" id="quantidades"></div>
+    </div>
+
+    <button type="submit" class="gerar" id="btn">Desenhar</button>
+  </form>
+
+  <!-- ============ GALERIA ============ -->
+  <main class="tela">
+    <div class="barra">
+      <h2 id="titulo">Galeria</h2>
+      <span class="status" id="status"></span>
+    </div>
+    <div id="erro"></div>
+    <div class="grade" id="grade"></div>
+    <div class="vazio" id="vazio">Nenhum desenho ainda.<br>Descreva uma cena ao lado e mande desenhar.</div>
+  </main>
+</div>
+
+<dialog id="lupa"><button class="fechar" onclick="lupa.close()">fechar ✕</button><img id="lupa-img" alt=""></dialog>
+
+<script>
+const $ = s => document.querySelector(s);
+function erro(msg){ $('#erro').innerHTML = msg ? `<div class="erro">${msg}</div>` : ''; }
+let CFG = null, croquiData = null;
+
+function opcao(grupo, id, rotulo, sub, marcado) {
+  return `<label class="op"><input type="radio" name="${grupo}" value="${id}" ${marcado?'checked':''}>
+    <span>${rotulo}${sub?`<small>${sub}</small>`:''}</span></label>`;
+}
+
+async function iniciar() {
+  CFG = await (await fetch('/api/config')).json();
+
+  $('#variantes').innerHTML = CFG.variantes.map((v,i)=>opcao('variante', v.id, v.nome, '', i===0)).join('');
+  $('#formatos').innerHTML  = CFG.formatos.map((f,i)=>opcao('formato', f.id, f.nome, `${f.w} × ${f.h}`, i===0)).join('');
+  $('#motores').innerHTML   = CFG.motores.map((m,i)=>opcao('motor', m.id, m.nome, m.desc, i===0)).join('');
+  $('#quantidades').innerHTML = [2,4].map((n,i)=>opcao('n', n, n+' versões', '', i===1)).join('');
+  $('#refs').innerHTML = CFG.refs.map(f=>`<div class="ref" data-f="${f}"><img src="/refs/${f}" alt="${f}" loading="lazy"></div>`).join('');
+
+  document.querySelectorAll('.ref').forEach(r => r.onclick = () => r.classList.toggle('on'));
+  document.querySelectorAll('input[name=variante]').forEach(i => i.onchange = marcarRefsDaVariante);
+  marcarRefsDaVariante();
+
+  if (CFG.diretor) $('#btn-diretor').hidden = false;
+  carregarGaleria();
+}
+
+function marcarRefsDaVariante() {
+  const v = CFG.variantes.find(x => x.id === valor('variante'));
+  document.querySelectorAll('.ref').forEach(r => r.classList.toggle('on', v.refs.includes(r.dataset.f)));
+}
+const valor = g => document.querySelector(`input[name=${g}]:checked`).value;
+
+// ---------- croqui ----------
+const cq = $('#croqui');
+cq.onclick = () => $('#croqui-in').click();
+cq.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); $('#croqui-in').click(); } };
+cq.ondragover = e => { e.preventDefault(); cq.classList.add('drag'); };
+cq.ondragleave = () => cq.classList.remove('drag');
+cq.ondrop = e => { e.preventDefault(); cq.classList.remove('drag'); lerCroqui(e.dataTransfer.files[0]); };
+$('#croqui-in').onchange = e => lerCroqui(e.target.files[0]);
+function lerCroqui(f) {
+  if (!f) return;
+  const r = new FileReader();
+  r.onload = () => {
+    croquiData = r.result;
+    $('#croqui-txt').innerHTML = `<img src="${croquiData}" alt="croqui"><button type="button" class="link" onclick="tirarCroqui(event)">tirar o croqui</button>`;
+  };
+  r.readAsDataURL(f);
+}
+function tirarCroqui(e) {
+  e.stopPropagation(); croquiData = null; $('#croqui-in').value = '';
+  $('#croqui-txt').innerHTML = 'Arraste um rabisco aqui, ou clique.<br>Serve pra travar a geometria de um desenho didático.';
+}
+
+// ---------- diretor de arte ----------
+$('#btn-diretor').onclick = async () => {
+  const b = $('#btn-diretor'), ideia = $('#cena').value.trim();
+  if (!ideia) return $('#cena').focus();
+  b.textContent = 'pensando…'; b.disabled = true;
+  try {
+    const r = await (await fetch('/api/diretor', {method:'POST', headers:{'content-type':'application/json'}, body:JSON.stringify({ideia})})).json();
+    if (r.cena) $('#cena').value = r.cena;
+    else erro(r.erro);
+  } catch (e) { erro(e.message); }
+  b.textContent = 'Pedir ajuda ao Diretor de Arte'; b.disabled = false;
+};
+
+// ---------- gerar ----------
+$('#form').onsubmit = async e => {
+  e.preventDefault();
+  const cena = $('#cena').value.trim();
+  if (!cena) return $('#cena').focus();
+  const n = +valor('n');
+  const refs = [...document.querySelectorAll('.ref.on')].map(r => r.dataset.f);
+
+  erro('');
+  $('#btn').disabled = true; $('#btn').textContent = 'Desenhando…';
+  $('#vazio').hidden = true;
+  $('#titulo').textContent = 'Desenhando';
+  const f = CFG.formatos.find(x => x.id === valor('formato'));
+  $('#status').textContent = `${n} versões em ${f.w} × ${f.h}, costuma levar de 20 a 60 segundos`;
+  $('#grade').innerHTML = Array.from({length:n}, () =>
+    `<div class="esqueleto" style="aspect-ratio:${f.w}/${f.h}"></div>`).join('');
+
+  try {
+    const r = await (await fetch('/api/gerar', {method:'POST', headers:{'content-type':'application/json'},
+      body: JSON.stringify({ cena, variante: valor('variante'), formato: valor('formato'), motor: valor('motor'), n, refs, croqui: croquiData })})).json();
+    if (r.erro) throw new Error(r.erro);
+    $('#status').textContent = `${r.imagens.length} desenhos em ${r.tamanho}`;
+    carregarGaleria();
+  } catch (ex) {
+    erro(ex.message); $('#grade').innerHTML = ''; $('#status').textContent = '';
+    $('#vazio').hidden = false;
+  }
+  $('#btn').disabled = false; $('#btn').textContent = 'Desenhar';
+  $('#titulo').textContent = 'Galeria';
+};
+
+async function carregarGaleria() {
+  const { fotos } = await (await fetch('/api/galeria')).json();
+  $('#vazio').hidden = fotos.length > 0;
+  $('#grade').innerHTML = fotos.map(f => `
+    <div class="card">
+      <div class="img" onclick="ampliar('${f}')"><img src="/saidas/${f}" alt="" loading="lazy"></div>
+      <div class="acoes">
+        <a href="/saidas/${f}" download>Baixar</a>
+        <button type="button" onclick="virarRef('${f}')" title="Usa este desenho como referência de traço da próxima geração">Usar de base</button>
+      </div>
+    </div>`).join('');
+}
+
+function ampliar(f) { $('#lupa-img').src = '/saidas/' + f; $('#lupa').showModal(); }
+
+// Fecha o ciclo: gostou de um resultado, ele vira a referência da próxima rodada.
+function virarRef(f) {
+  if (document.querySelector(`.ref[data-f="${f}"]`)) return;
+  const d = document.createElement('div');
+  d.className = 'ref on'; d.dataset.f = f;
+  d.innerHTML = `<img src="/saidas/${f}" alt="">`;
+  d.onclick = () => d.classList.toggle('on');
+  $('#refs').prepend(d);
+  $('#status').textContent = 'Esse desenho virou referência de traço. Ajuste a cena e desenhe de novo.';
+  $('#cena').scrollIntoView({behavior:'smooth', block:'center'}); $('#cena').focus();
+}
+
+iniciar();
+</script>
+</body>
+</html>
