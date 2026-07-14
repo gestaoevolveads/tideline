@@ -3823,6 +3823,27 @@
           "analise": "Ainda dá pra sentir um mar com corpo, período em torno de 9 a 10 segundos, o que segura uma organização decente nas séries. O tamanho de ombro a cabeça chega com uns 19 kW/m de energia, só que o vento lateral mais forte deixa a água picada, tirando aquele acabamento vitrificado. Quem entra sente a força ainda presente na remada, mas a parede menos previsível, pede reação rápida. É condição honesta pra noite, sem ser o auge do dia, mas com onda pra quem gosta de emoção.",
           "janela": null,
           "aviso": null
+        },
+        {
+          "score": 3,
+          "titulo": "Fim de dia com ombro firme",
+          "analise": "O vento de través segue soprando, uns 14 km/h, o que pica a superfície mas não chega a destruir a estrutura da onda. A altura fica entre ombro e cabeça, com período na casa dos 9 segundos, ainda dentro da faixa boa, série ainda dá pra contar mesmo com o vento de lado. A energia gira por volta de 17 kW/m, força que entrega remada de peso e descida com pressão razoável. Fechar o dia aqui ainda compensa, principalmente escolhendo o canto onde o vento bate menos de frente na parede.",
+          "janela": null,
+          "aviso": "Visibilidade reduzida à noite pede atenção redobrada na leitura do pico."
+        },
+        {
+          "score": 3,
+          "titulo": "Última sessão com água mexida",
+          "analise": "Com o través batendo uns 14 km/h, a superfície fica irregular, tipo picada, mas a onda ainda mantém tamanho de ombro a cabeça e período na casa dos 9 segundos, série ainda organizada na maior parte do tempo. A força fica em torno de 17 kW/m de energia, suficiente pra sentir peso na descida mesmo com o vento incomodando. É uma noite honesta pra fechar com uma sessão de nível técnico, só ajusta o olho pra pouca luz e pro vento de lado.",
+          "janela": null,
+          "aviso": "Cuidado redobrado com a visibilidade noturna, principalmente pra enxergar bancos e correntes."
+        },
+        {
+          "score": 3,
+          "titulo": "Noite ainda com corpo na onda",
+          "analise": "O vento lateral segue firme, na casa dos 14 km/h, deixando a água com bastante textura mas sem tirar de vez a forma da parede. O tamanho continua de ombro a cabeça, com período na casa dos 9 segundos, o que ainda garante série previsível apesar do vento. A energia por volta de 17 kW/m entrega uma boa descida pra quem já manja de ajustar a posição no pico. Vale fechar o dia aqui, com atenção a mais pela pouca luz e pelo vento incomodando de lado.",
+          "janela": null,
+          "aviso": "Pouca luz natural exige mais cuidado na leitura do mar e possíveis correntes."
         }
       ]
     },
@@ -4182,6 +4203,41 @@
           "janela": "17h-20h",
           "analise": "Terral de 5,9 km/h recuperou, parede tá muda de novo, e a série chega cabeça-uma-e-meia com período de 10,9 segundos, energia de 34,1 kW/m: onda rápida, potente, organizada, praticamente vidro. É o final de dia perfeito: tamanho que respeita, forma que abre, vento que segura. Pra quem quer fechar a sessão em alta.",
           "aviso": null
+        },
+        {
+          "score": 5,
+          "titulo": "Céu escuro, mar generoso",
+          "analise": "O vento praticamente sumiu, só uns 2 km/h de onshore, o que na prática é quase nada e deixa a água bem perto do vidro. A ondulação continua grande, batendo cabeça, com período na casa dos 10 segundos, tempo que organiza a série e faz cada onda chegar separada da outra, dá pra escolher a sua com calma. A energia segue forte, por volta de 27 kW/m, força que exige remada boa e recompensa com descida rápida e parede que segura. Pouca luz natural pede prudência extra na leitura do pico, mas condição de mar tá tão boa quanto de dia.",
+          "janela": null,
+          "aviso": "Visibilidade reduzida à noite exige atenção redobrada, principalmente na leitura de correntes e do pico."
+        },
+        {
+          "score": 5,
+          "titulo": "Itaúna quieta por fora, forte por dentro",
+          "analise": "Com o vento quase zerado, uns 2 km/h só, a superfície fica limpa mesmo sem terral direto ajudando. A onda segue grande, na faixa de cabeça, com período rodando os 10 segundos, o que garante série espaçada e legível, sem aquela bagunça de ondas em cima uma da outra. A força tá em torno de 27 kW/m de energia, então a remada cansa e a descida vem com peso de verdade. Sessão noturna pede prancha conhecida e leitura redobrada do pico, já que a luz ajuda menos que de manhã.",
+          "janela": null,
+          "aviso": "Surfar à noite exige cautela extra por causa da visibilidade reduzida."
+        },
+        {
+          "score": 4,
+          "titulo": "Vento quase nulo fecha o dia",
+          "analise": "Vento de uns 2 km/h é quase inexistente, então a superfície fica limpa mesmo sendo onshore fraco, aquele vento que sopra do mar pra terra mas sem força pra estragar nada. O tamanho segue no patamar de cabeça, com período na casa dos 10 segundos, o que quer dizer série organizada, dá pra prever a próxima onda antes dela chegar. A energia gira perto de 27 kW/m, potência que se sente na remada e na força da descida. Se o pico permite, essa é a sessão que fecha o dia com chave de ouro, mesmo sem terral clássico.",
+          "janela": null,
+          "aviso": "Atenção redobrada com a visibilidade noturna na leitura do pico e de eventuais correntes."
+        },
+        {
+          "score": 4,
+          "titulo": "Última luz, mar ainda de peso",
+          "analise": "O vento tá tão fraco, na casa dos 2 km/h, que quase não interfere na parede, mesmo vindo do lado errado. A ondulação mantém o tamanho de cabeça e o período na casa dos 10 segundos, ritmo que organiza a série e deixa espaço pra respirar entre uma onda e outra. Com energia em torno de 27 kW/m, a força ainda cobra remada forte e entrega descida com pressão real nas pernas. Fechar o dia em Itaúna com essa condição é premio pra quem aguentou a sessão inteira, só ajusta o olho pra pouca luz.",
+          "janela": null,
+          "aviso": "Pouca luz natural pede mais atenção na hora de identificar bancos e correntes."
+        },
+        {
+          "score": 5,
+          "titulo": "Noite que quase não pede terral",
+          "analise": "Tem noite que o mar não precisa de vento nenhum a favor pra ficar bom, e essa é uma delas: só uns 2 km/h de onshore, praticamente irrelevante. A onda segue grande, de cabeça, com período de uns 10 segundos, o que na prática significa série limpa e espaçada, fácil de ler mesmo com menos luz. A força continua alta, perto de 27 kW/m de energia, e isso quer dizer remada puxada só pra chegar no outside, mas recompensa boa quando a onda solta. Vale fechar a sessão aqui, com prancha de confiança e atenção redobrada ao redor.",
+          "janela": null,
+          "aviso": "Sessão noturna exige cuidado extra, visibilidade reduzida dificulta enxergar o pico e possíveis correntes."
         }
       ]
     },
@@ -30582,6 +30638,13 @@
           "analise": "O maral chegou fraco em Itaúna essa tarde, uns 8 km/h vindos do mar, deixando a parede menos vitrificada que num dia de terral. Mesmo assim o período na casa dos 10 segundos mantém a série bem organizada, com ondas na altura da cabeça entrando com regularidade. A energia moderada, em torno de 28 kW/m, segue entregando queda com pressão real pra quem tem nível. É tarde de trocar a busca por tubo perfeito por foco em rasgada e velocidade na parede. Avançado aproveita bem, só sem aquele brilho de dia de terral forte.",
           "janela": null,
           "aviso": null
+        },
+        {
+          "score": 3,
+          "titulo": "Tarde que ainda vale o esforço",
+          "analise": "O vento virou pro mar, onshore fraco de uns 9 km/h, aquele maral que costuma bagunçar a tarde depois que o sol esquenta a areia. Ele não é forte o bastante pra destruir tudo, mas já tira o vidro e deixa a parede com umas bolhinhas na superfície. A ondulação segue de cabeça, com período na casa dos 10s, o que mantém a força e a energia por volta de 29 kW/m, então a onda ainda empurra com pressão real. Se curte prancha mais robusta e não se importa com um pouco de textura na água, a sessão da tarde ainda compensa.",
+          "janela": null,
+          "aviso": "Mar grande e com bastante força, indicado para surfistas avançados."
         }
       ]
     },
@@ -30842,7 +30905,166 @@
           "score": 3
         }
       ]
+    },
+    "saquarema|cabeca-1.5x|bom-9a11|offshore-fraco|manha": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Itaúna de cabeça, manhã perfeita",
+          "analise": "A ondulação chega de cabeça e um pouco mais, na casa dos 2,4m, tamanho que só quem já surfou grande consegue calcular de olho. O período tá na casa dos 10 segundos, o que aqui significa série organizada e espaçada, dá pra ver a próxima chegando com tempo de se posicionar. O terral de N/NO, vento que sopra da terra pro mar com uns 11 km/h, segura o lábio e deixa a parede vitrificada, lisa que nem vidro. Com uns 29 kW/m de energia na água, que é a força que a onda carrega, a remada exige e o caldo pesa, então esquenta o ombro antes de entrar. É dia de prancha mais fina e cabeça fria, Itaúna cobrando o que cobra.",
+          "janela": "6h-9h",
+          "aviso": "Ondas grandes e potentes, indicadas só pra quem já surfa nível avançado. Caldo pode prender embaixo por mais tempo."
+        },
+        {
+          "score": 5,
+          "titulo": "Parede que separa quem sabe",
+          "analise": "Manhã de terral firme em Itaúna, vento de N/NO que vem da terra e passa a mão na superfície da água, deixando ela lisa mesmo com tamanho grande. A ondulação bate na faixa de cabeça e mais um pouco, com período na casa dos 10s, ou seja, tempo suficiente entre uma onda e outra pra ler o pico com calma. A força tá em torno de 29 kW/m, energia que se traduz em descida rápida e pressão real na hora do bottom turn. Esse é o dia que separa quem tem experiência de quem tá começando, então se você é avançado, vale muito a pena entrar cedo antes do sol virar o vento.",
+          "janela": "6h-9h",
+          "aviso": "Energia alta na água, indicado pra surfistas experientes. Fundo de areia mas caldo forte pode desorientar."
+        },
+        {
+          "score": 5,
+          "titulo": "Vidro de manhã com força de série",
+          "analise": "O vento tá soprando de N/NO, direção que aqui em Saquarema é terral, ou seja, vem da areia pro mar e alisa a face da onda, segurando o lábio antes dele despencar. A altura tá batendo cabeça, um pouco mais até, com período na casa dos 10 segundos, tempo suficiente pra série chegar organizada e não em cima uma da outra. Na água isso vira parede rápida, oca, com uns 29 kW/m de energia empurrando a descida com pressão de verdade. Pega a prancha de ponta mais fina, entra pelo canal e respeita quem já tá no pico, porque hoje o mar não perdoa erro de leitura.",
+          "janela": "6h-9h",
+          "aviso": "Mar grande e forte, recomendado só pra quem surfa em nível avançado."
+        },
+        {
+          "score": 5,
+          "titulo": "Manhã de Maracanã lotado",
+          "analise": "Tem dia que Itaúna decide mostrar por que é sede de etapa de CT, e hoje é um desses. Ondas de cabeça e mais um tanto, período andando na casa dos 10 segundos, o que garante séries limpas e bem espaçadas, dá pra estudar o banco antes de remar. O terral de N/NO segura a parede lisa e faz o tubo abrir com aquela força de quase 29 kW/m de energia, pressão que se sente na remada e na queda. Se você manja, essa é a manhã pra provar, mas leva prancha com volume calculado porque o caldo aqui castiga.",
+          "janela": "6h-9h",
+          "aviso": "Energia alta, indicado apenas para surfistas avançados. Correntes podem se formar nos canais entre bancos."
+        },
+        {
+          "score": 5,
+          "titulo": "Quando o vento faz o trabalho sujo",
+          "analise": "O terral de N/NO tá soprando quase 11 km/h, o suficiente pra segurar o lábio da onda sem empurrar demais o bico da prancha na entrada. A ondulação chega grande, na faixa de cabeça e mais um pouco, com período na casa dos 10s, que é o tempo entre uma crista e outra: aqui isso quer dizer série organizada, previsível, dá pra escolher a sua. A energia gira perto de 29 kW/m, força que vai cobrar remada forte e pop-up rápido, sem meio termo. Manhã clássica de Itaúna, pra quem já tem repertório: vai cedo, antes do vento virar.",
+          "janela": "6h-9h",
+          "aviso": "Ondas grandes e potentes. Indicado apenas para nível avançado."
+        },
+        {
+          "score": 5,
+          "titulo": "A onda que exige tudo de você",
+          "analise": "Cabeça e mais um pouco de tamanho, período na casa dos 10 segundos: isso significa que a onda chega com espaço entre as séries, tempo de sobra pra ler o pico antes de remar. O vento é terral de N/NO, vindo da terra pro mar, e isso trava a crista, faz a parede ficar lisa e o tubo fechar redondo. É muita energia junto, quase 29 kW/m, força que se sente já na remada, e mais ainda na hora que a onda solta. Não é dia de testar limite, é dia de usar o que você já sabe: prancha certa, canal certo, respeito ao pico.",
+          "janela": "6h-9h",
+          "aviso": "Mar grande e forte, indicado só para quem tem experiência avançada."
+        },
+        {
+          "score": 5,
+          "titulo": "Itaúna cobrando seu ingresso",
+          "analise": "De manhã, o vento de N/NO trabalha a favor: é terral, sopra da praia pro mar, e trava o lábio da onda no momento exato antes dela despencar. A ondulação tá na casa da cabeça e mais um pouco, com período de uns 10 segundos, tempo que organiza a série e deixa ela previsível pra quem sabe ler. A força chega perto de 29 kW/m de energia, o que na prática quer dizer remada puxada e descida com peso real nas pernas. Se o seu nível é avançado, essa é a manhã que Itaúna guarda pros que aguentam, então escolhe bem o pico e entra com calma.",
+          "janela": "6h-9h",
+          "aviso": "Energia elevada na água, condição para surfistas experientes."
+        }
+      ]
+    },
+    "saquarema|ombro-cabeca|bom-9a11|lateral-fraco|manha": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã sólida com vento de través",
+          "analise": "O vento vem de lado, um lateral de uns 7 km/h, que aqui não é terral nem maral, é aquele que bate de banda e pica um pouco a superfície sem destruir a parede. A ondulação tá entre ombro e cabeça, ou seja, na altura do seu ombro podendo chegar até um pouco acima da sua cabeça, com período na casa dos 10 segundos, tempo que organiza bem a série. A energia gira por volta de 22 kW/m, força que já pede remada boa e entrega descida com pressão. É manhã pra quem já manja, prancha de sempre e atenção no canto onde o vento bate menos.",
+          "janela": "6h-9h",
+          "aviso": null
+        },
+        {
+          "score": 4,
+          "titulo": "Itaúna com uma pitada de bagunça",
+          "analise": "Vento lateral fraco, na casa dos 7 km/h, bate de lado na parede e deixa a superfície levemente picada, sem tirar a força da onda. O tamanho segue de ombro a cabeça, com período rodando os 10 segundos, o que garante série espaçada e legível mesmo com o vento incomodando um pouco. A energia por volta de 22 kW/m ainda entrega remada puxada e descida com peso real. Escolhe o pico onde o vento bate de costas pra você, isso ajuda bastante na hora do drop.",
+          "janela": "6h-9h",
+          "aviso": null
+        },
+        {
+          "score": 4,
+          "titulo": "Bom tamanho, vento incomodando de leve",
+          "analise": "O vento de través, aquele que sopra mais ou menos de lado em relação à onda, tá soprando fraco, uns 7 km/h, o suficiente pra deixar a água com uma textura mas sem destruir a parede. A altura fica entre ombro e cabeça, com período na casa dos 10 segundos, tempo que mantém a série organizada e previsível. Com uns 22 kW/m de energia na água, a remada cansa e a descida vem com pressão de verdade. Ainda é manhã pra surfar sério, só ajusta a posição no pico pra sentir menos o vento de lado.",
+          "janela": "6h-9h",
+          "aviso": null
+        },
+        {
+          "score": 4,
+          "titulo": "Força mantida apesar do través",
+          "analise": "Lateral fraco, em torno de 7 km/h, é o tipo de vento que não segura o lábio como o terral, mas também não estraga tudo como o maral. A ondulação chega de ombro a cabeça, altura boa, com período na casa dos 10 segundos, o que deixa a série espaçada e fácil de contar. A energia na água gira perto de 22 kW/m, força suficiente pra cobrar do corpo já na remada. Manhã sólida pra quem tem nível avançado, com um detalhe: observa de qual lado o vento bate mais antes de escolher o pico.",
+          "janela": "6h-9h",
+          "aviso": null
+        },
+        {
+          "score": 4,
+          "titulo": "Sessão de manhã com onda cheia de forma",
+          "analise": "O vento sopra de lado, fraco, uns 7 km/h, picando a superfície sem tirar a estrutura da parede. Ombro a cabeça de tamanho, período na casa dos 10 segundos, série organizada o suficiente pra você planejar a remada com antecedência. A força ronda os 22 kW/m de energia, o que já pede preparo físico pra aguentar a sessão inteira sem cansar demais. Vale muito entrar, principalmente se você conhece o banco e sabe onde a onda fecha melhor com esse vento de través.",
+          "janela": "6h-9h",
+          "aviso": null
+        },
+        {
+          "score": 4,
+          "titulo": "De ombro a cabeça, com aquele torzinho de vento",
+          "analise": "O lateral tá soprando fraco, na casa dos 7 km/h, vindo mais ou menos de lado em relação à direção da onda, então ele não trava o lábio mas também não desmancha a parede. A altura fica entre ombro e cabeça, com período de uns 10 segundos, tempo que garante série contável, dá pra ver a próxima chegando de longe. A energia em torno de 22 kW/m já entrega descida com pressão e remada que exige fôlego. Boa manhã pra treinar leitura de banco e ajustar posição, já que o vento muda um pouco a forma da quebrada.",
+          "janela": "6h-9h",
+          "aviso": null
+        },
+        {
+          "score": 4,
+          "titulo": "Manhã pra quem já sabe ler o pico",
+          "analise": "Vento de través fraco, uns 7 km/h, é aquele que bate de lado e mexe pouco na superfície, sem destruir a parede como o vento do mar costuma fazer à tarde. A ondulação tá de ombro a cabeça, com período na casa dos 10 segundos, o que dá série organizada e tempo de sobra pra se posicionar. A energia gira por volta de 22 kW/m, força que cobra remada forte mas entrega onda com corpo. Se você já surfa nível avançado, essa manhã em Itaúna compensa bem, só presta atenção em qual banco o vento incomoda menos.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|ombro-cabeca|bom-9a11|lateral-moderado|tarde": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde de ombro com vento mexendo",
+          "analise": "O lateral cresceu um pouco, na casa dos 15 km/h, forte o suficiente pra picar bem a superfície e tirar um pouco da limpeza da parede. A ondulação segue de ombro a cabeça, com período na casa dos 10 segundos, o que ainda mantém a série organizada mesmo com o vento incomodando. A energia gira perto de 20 kW/m, força que ainda entrega remada com peso e descida decente. Ainda vale a sessão, principalmente se você acha um canto onde o vento bate de through e não de frente na parede.",
+          "janela": null,
+          "aviso": null
+        },
+        {
+          "score": 3,
+          "titulo": "Vento de lado ganhando força à tarde",
+          "analise": "O vento lateral apertou, uns 15 km/h, e isso já deixa a água com bastante textura, tipo pele de jacaré na superfície. Mesmo assim a ondulação mantém tamanho de ombro a cabeça e período na casa dos 10 segundos, o que segura uma série ainda legível. A energia por volta de 20 kW/m garante que a onda não perdeu força, só ficou menos organizada visualmente. Se topa surfar com um pouco de bagunça na parede, a tarde ainda rende boas ondas em Itaúna.",
+          "janela": null,
+          "aviso": null
+        },
+        {
+          "score": 3,
+          "titulo": "Tarde honesta, vento incomodando mais",
+          "analise": "Com o lateral batendo forte, quase 15 km/h, a superfície fica cheia de marolinha e a parede perde um pouco daquela limpeza de manhã. A altura segue de ombro a cabeça, período na casa dos 10 segundos, o que mantém a série ainda contável apesar do vento. A força ronda os 20 kW/m de energia, suficiente pra sentir a descida com peso mesmo com a água mexida. Dá pra surfar bem, só ajusta a expectativa pra uma parede menos vitrificada que a manhã.",
+          "janela": null,
+          "aviso": null
+        },
+        {
+          "score": 3,
+          "titulo": "Ombro a cabeça segurando a tarde",
+          "analise": "O vento de través subiu de intensidade, uns 15 km/h, o suficiente pra deixar a água irregular e a parede menos definida. Mas o tamanho continua de ombro a cabeça e o período na casa dos 10 segundos, o que dá uma série ainda organizada, dá pra escolher a onda certa. A energia gira em torno de 20 kW/m, força que entrega remada exigente e descida com pressão mesmo com o vento atrapalhando um pouco. É tarde pra surfista com repertório, que sabe aproveitar mesmo com a água mais mexida.",
+          "janela": null,
+          "aviso": null
+        },
+        {
+          "score": 3,
+          "titulo": "Quando o través aperta mas a onda segura",
+          "analise": "O lateral tá soprando com mais força agora, na casa dos 15 km/h, picando a superfície e tirando aquele brilho de vidro que a manhã tinha. Ainda assim a ondulação mantém ombro a cabeça de tamanho, com período de uns 10 segundos, tempo que segura a série organizada mesmo com o vento atrapalhando. A força continua relevante, por volta de 20 kW/m de energia, então a remada ainda cansa e a descida ainda tem peso. Bora ajustar a expectativa: parede menos lisa, mas onda ainda com corpo pra trabalhar.",
+          "janela": null,
+          "aviso": null
+        },
+        {
+          "score": 3,
+          "titulo": "Tarde exige mais leitura de banco",
+          "analise": "Com o vento lateral mais forte, quase 15 km/h, a parede fica irregular em partes, e isso pede leitura mais fina de onde o banco tá formando melhor. O tamanho segue de ombro a cabeça, com período na casa dos 10 segundos, mantendo a série ainda previsível na maior parte do tempo. A energia gira perto de 20 kW/m, força que ainda entrega uma boa descida pra quem acerta o pico certo. Vale a sessão, principalmente pra quem já manja de escolher o canto onde o vento incomoda menos.",
+          "janela": null,
+          "aviso": null
+        },
+        {
+          "score": 3,
+          "titulo": "Água mexida, onda ainda de peso",
+          "analise": "O través forte, uns 15 km/h, deixa a superfície bem irregular, tipo enrugada, mas isso não tira o tamanho da onda que segue de ombro a cabeça. O período continua na casa dos 10 segundos, o que mantém a série organizada mesmo com a água mais bagunçada visualmente. A energia por volta de 20 kW/m garante que a força ainda tá lá, só a estética que perde um pouco pro vento. Ainda é tarde surfável pra quem tem nível avançado e não se importa com um pouco de bagunça na parede.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
     }
   },
-  "generated_at": "2026-07-13T23:03:51.733Z"
+  "generated_at": "2026-07-14T01:12:37.400Z"
 }
