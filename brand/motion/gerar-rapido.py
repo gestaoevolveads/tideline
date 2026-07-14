@@ -118,7 +118,15 @@ feitos = sorted(frames.glob("*.png"))
 print(f"{len(feitos)} quadros em {time.time()-t0:.0f}s. Montando o vídeo...")
 
 SAIDA.mkdir(parents=True, exist_ok=True)
-nome = "tideline-encerramento-story" if "off" in ARQ else "tideline-abertura-story"
+NOMES = {
+    'tv.html': 'abertura-tv-ligando',
+    'tv-off.html': 'encerramento-tv-desligando',
+    'vhs.html': 'abertura-vhs',
+    'filme.html': 'abertura-rolo-de-filme',
+    'fisheye.html': 'abertura-olho-de-peixe',
+    'sticker.html': 'abertura-adesivo',
+}
+nome = 'tideline-' + NOMES.get(ARQ, ARQ.replace('.html',''))
 mp4 = SAIDA / f"{nome}.mp4"
 
 subprocess.run(["ffmpeg", "-y", "-framerate", str(FPS), "-i", str(frames / "f%04d.png"),

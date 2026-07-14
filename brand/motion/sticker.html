@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><title>Tideline · Adesivo</title>
+<style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block}</style></head>
+<body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<script>
+/* ═══════════════════════════════════════════════════════════════════════════
+   ADESIVO BATIDO — abertura (story 1080x1920)
+
+   O sticker de surf shop colado no rack, na prancha, no poste. É o que mais combina com o
+   traço das nossas ilustrações. Aqui ele é CARIMBADO na tela, em stop-motion:
+
+     STOP-MOTION    a animação anda aos trancos, em 12 quadros por segundo (não 30). É o
+                    ritmo do desenho feito à mão, e é o que faz parecer artesanal.
+     SERIGRAFIA     as camadas de cor saem mal registradas (o laranja desalinhado do verde)
+     BATIDA         o adesivo vem torto, gira e assenta com um tranco
+     PAPEL          fundo de papel com textura, não um fundo digital liso
+     CARIMBO        no impacto a tela balança inteira, como se alguém batesse a mão
+   ═══════════════════════════════════════════════════════════════════════════ */
+const W = 1080, H = 1920, DUR = 1.7;
+const c = document.getElementById('c'), ctx = c.getContext('2d');
+
+const DEEP = '#172726', PAPER = '#EFEADF', ACCENT = '#F95831', SAGE = '#D3E2DE';
+const rnd = s => { let x = s >>> 0; return () => (x = (x * 1664525 + 1013904223) >>> 0) / 4294967296; };
+const faixa = (t, a, z) => Math.max(0, Math.min(1, (t - a) / (z - a)));
+const bater = p => 1 - Math.pow(1 - p, 4);          // chega rápido e trava
+
+/* O TRUQUE DO STOP-MOTION: o tempo é quantizado em 12 passos por segundo. O desenho não
+   desliza, ele PULA de posição em posição, e é isso que dá a sensação de feito à mão. */
+const PASSOS = 12;
+const quantizar = t => Math.floor(t * PASSOS) / PASSOS;
+
+function selo(g, cor, dx, dy) {
+  g.save();
+  g.translate(dx, dy);
+  g.textBaseline = 'middle'; g.textAlign = 'left';
+  const tam = 172;
+  const f = w => `${w} ${tam}px -apple-system, "SF Pro Display", Arial`;
+  g.font = f(200); const wT = g.measureText('tide').width;
+  g.font = f(800); const wL = g.measureText('line').width, wD = g.measureText('.').width;
+  let x = -(wT + wL + wD) / 2;
+  g.fillStyle = cor; g.font = f(200); g.fillText('tide', x, 0); x += wT;
+  g.font = f(800); g.fillText('line', x, 0); x += wL;
+  g.fillText('.', x, 0);
+  g.restore();
+}
+
+function render(tReal) {
+  const t = quantizar(tReal);
+  const random = rnd(Math.floor(t * 1000) + 17);
+  const cx = W / 2, cy = H / 2;
+
+  // ── papel: fundo com textura, nunca liso ──
+  ctx.fillStyle = PAPER; ctx.fillRect(0, 0, W, H);
+  for (let i = 0; i < 5000; i++) {
+    const x = random() * W, y = random() * H;
+    ctx.fillStyle = random() > 0.5 ? 'rgba(23,39,38,.035)' : 'rgba(255,255,255,.5)';
+    ctx.fillRect(x, y, 2, 2);
+  }
+
+  const p = bater(faixa(t, 0.08, 0.42));
+  if (p <= 0) return;
+
+  // a batida: o adesivo vem torto e grande, gira e assenta
+  const escala = 1.9 - p * 0.9;
+  const giro = (1 - p) * -0.35;
+  // o impacto sacode a tela inteira por 2 quadros
+  const impacto = faixa(t, 0.42, 0.5) * (1 - faixa(t, 0.5, 0.66));
+  const sacode = impacto * 22;
+  const sx = (random() - 0.5) * sacode;
+  const sy = (random() - 0.5) * sacode;
+
+  ctx.save();
+  ctx.translate(cx + sx, cy + sy);
+  ctx.rotate(giro - 0.03);            // fica levemente torto pra sempre: adesivo é assim
+  ctx.scale(escala, escala);
+
+  // a pastilha do adesivo (o "papel" dele)
+  ctx.fillStyle = DEEP;
+  const pw = 760, ph = 300, r = 30;
+  ctx.beginPath();
+  ctx.moveTo(-pw / 2 + r, -ph / 2);
+  ctx.arcTo(pw / 2, -ph / 2, pw / 2, ph / 2, r);
+  ctx.arcTo(pw / 2, ph / 2, -pw / 2, ph / 2, r);
+  ctx.arcTo(-pw / 2, ph / 2, -pw / 2, -ph / 2, r);
+  ctx.arcTo(-pw / 2, -ph / 2, pw / 2, -ph / 2, r);
+  ctx.closePath();
+  ctx.fill();
+
+  // SERIGRAFIA MAL REGISTRADA: a camada laranja sai deslocada da verde. Esse "erro" é o
+  // que faz parecer impresso de verdade, e não gerado no computador.
+  const desloca = 7 * (1 - faixa(t, 0.5, 0.9)) + 2.5;
+  ctx.globalAlpha = 0.85;
+  selo(ctx, ACCENT, desloca, -desloca * 0.6);
+  ctx.globalAlpha = 1;
+  selo(ctx, SAGE, 0, 0);
+
+  // o ponto laranja da marca, por cima, alinhado
+  ctx.restore();
+
+  // ── o carimbo deixa a tinta "esmagada": um brilho no impacto ──
+  if (impacto > 0.02) {
+    ctx.fillStyle = `rgba(255,255,255,${impacto * 0.25})`;
+    ctx.fillRect(0, 0, W, H);
+  }
+
+  // ── grão de papel por cima de tudo ──
+  const img = ctx.getImageData(0, 0, W, H);
+  const d = img.data;
+  for (let i = 0; i < d.length; i += 4) {
+    const n = (random() - 0.5) * 20;
+    d[i] += n; d[i + 1] += n; d[i + 2] += n;
+  }
+  ctx.putImageData(img, 0, 0);
+}
+
+const t = parseFloat(new URLSearchParams(location.search).get('t') || '0');
+render(Math.min(t, DUR));
+document.title = 'pronto';
+</script>
+</body></html>

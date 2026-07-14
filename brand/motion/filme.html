@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><title>Tideline · Contagem de rolo</title>
+<style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block}</style></head>
+<body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<script>
+/* ═══════════════════════════════════════════════════════════════════════════
+   ROLO DE FILME — contagem regressiva (story 1080x1920)
+
+   É o "leader" que vinha antes de todo filme 8mm e 16mm, e que os vídeos de surf e skate
+   copiaram até virar clichê glorioso. Cada elemento é um artefato real da película:
+
+     CONTAGEM       3 · 2 · 1, com a mira girando (o ponteiro que varre o círculo)
+     RISCOS         a película arranha na projeção: linhas verticais que nascem e somem
+     POEIRA         sujeira no negativo: pontos claros piscando
+     TREMOR         a garra do projetor puxa o filme e ele nunca para exatamente igual
+     PISCA          a lâmpada oscila: a imagem pulsa de brilho
+     QUEIMA         a emenda queima e a tela estoura em branco, e daí nasce o logotipo
+   ═══════════════════════════════════════════════════════════════════════════ */
+const W = 1080, H = 1920, DUR = 3.0;
+const c = document.getElementById('c'), ctx = c.getContext('2d');
+
+const DEEP = '#14231F', PAPER = '#F2EFE9', ACCENT = '#F95831';
+const rnd = s => { let x = s >>> 0; return () => (x = (x * 1664525 + 1013904223) >>> 0) / 4294967296; };
+const suave = t => t * t * (3 - 2 * t);
+const faixa = (t, a, z) => Math.max(0, Math.min(1, (t - a) / (z - a)));
+
+function render(t) {
+  const random = rnd(Math.floor(t * 1000) + 11);
+  const cx = W / 2, cy = H / 2;
+
+  // ── tremor da garra do projetor: o quadro nunca cai no mesmo lugar ──
+  const tx = (random() - 0.5) * 7;
+  const ty = (random() - 0.5) * 9;
+
+  ctx.save();
+  ctx.translate(tx, ty);
+
+  const contando = t < 2.15;
+  const queima = faixa(t, 2.05, 2.20) * (1 - faixa(t, 2.20, 2.45));
+
+  if (contando) {
+    // fundo de papel velho, como o leader real (não é preto: é bege sujo)
+    ctx.fillStyle = '#C9C2B4';
+    ctx.fillRect(-20, -20, W + 40, H + 40);
+
+    // vinheta de projeção
+    const g = ctx.createRadialGradient(cx, cy, H * 0.15, cx, cy, H * 0.62);
+    g.addColorStop(0, 'rgba(0,0,0,0)');
+    g.addColorStop(1, 'rgba(20,25,20,.55)');
+    ctx.fillStyle = g; ctx.fillRect(-20, -20, W + 40, H + 40);
+
+    // a mira: dois círculos e a cruz
+    ctx.strokeStyle = 'rgba(30,40,36,.75)';
+    ctx.lineWidth = 5;
+    ctx.beginPath(); ctx.arc(cx, cy, 400, 0, Math.PI * 2); ctx.stroke();
+    ctx.beginPath(); ctx.arc(cx, cy, 300, 0, Math.PI * 2); ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(cx - 470, cy); ctx.lineTo(cx + 470, cy);
+    ctx.moveTo(cx, cy - 470); ctx.lineTo(cx, cy + 470);
+    ctx.stroke();
+
+    // o ponteiro que varre o círculo, uma volta por segundo
+    const ang = (t % 1) * Math.PI * 2 - Math.PI / 2;
+    ctx.save();
+    ctx.globalAlpha = 0.35;
+    ctx.fillStyle = '#1E2822';
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.arc(cx, cy, 400, -Math.PI / 2, ang);
+    ctx.closePath(); ctx.fill();
+    ctx.restore();
+
+    // o número
+    const n = 3 - Math.floor(t / 0.72);
+    if (n >= 1) {
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillStyle = '#1E2822';
+      ctx.font = '800 420px -apple-system, "SF Pro Display", Arial';
+      ctx.fillText(String(n), cx, cy + 12);
+    }
+  } else {
+    // ── depois da queima: a marca ──
+    ctx.fillStyle = DEEP; ctx.fillRect(-20, -20, W + 40, H + 40);
+    const surge = suave(faixa(t, 2.22, 2.45));
+    ctx.save();
+    ctx.globalAlpha = surge;
+    ctx.textBaseline = 'middle';
+    const tam = 196;
+    const f = p => `${p} ${tam}px -apple-system, "SF Pro Display", Arial`;
+    ctx.font = f(200); const wT = ctx.measureText('tide').width;
+    ctx.font = f(800); const wL = ctx.measureText('line').width, wD = ctx.measureText('.').width;
+    let x = cx - (wT + wL + wD) / 2;
+    ctx.textAlign = 'left';
+    ctx.fillStyle = PAPER; ctx.font = f(200); ctx.fillText('tide', x, cy); x += wT;
+    ctx.font = f(800); ctx.fillText('line', x, cy); x += wL;
+    ctx.fillStyle = ACCENT; ctx.fillText('.', x, cy);
+    ctx.restore();
+  }
+  ctx.restore();
+
+  // ── a queima da emenda: a tela estoura em branco ──
+  if (queima > 0.01) {
+    ctx.fillStyle = `rgba(255,252,240,${queima})`;
+    ctx.fillRect(0, 0, W, H);
+  }
+
+  // ── riscos verticais da película ──
+  const nRiscos = 3 + ((random() * 4) | 0);
+  for (let i = 0; i < nRiscos; i++) {
+    const x = random() * W;
+    const alpha = 0.06 + random() * 0.16;
+    ctx.fillStyle = `rgba(255,255,255,${alpha})`;
+    ctx.fillRect(x, 0, 1 + random() * 2, H);
+  }
+
+  // ── poeira no negativo ──
+  for (let i = 0; i < 26; i++) {
+    const x = random() * W, y = random() * H, r = random() * 3 + 1;
+    ctx.fillStyle = random() > 0.35 ? 'rgba(255,255,255,.5)' : 'rgba(0,0,0,.4)';
+    ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fill();
+  }
+
+  // ── grão de película ──
+  const img = ctx.getImageData(0, 0, W, H);
+  const d = img.data;
+  for (let i = 0; i < d.length; i += 4) {
+    const n = (random() - 0.5) * 42;
+    d[i] += n; d[i + 1] += n; d[i + 2] += n;
+  }
+  ctx.putImageData(img, 0, 0);
+
+  // ── pulso da lâmpada ──
+  const pulso = 0.055 * Math.sin(t * 26);
+  if (pulso < 0) {
+    ctx.fillStyle = `rgba(0,0,0,${-pulso})`;
+    ctx.fillRect(0, 0, W, H);
+  }
+}
+
+const t = parseFloat(new URLSearchParams(location.search).get('t') || '0');
+render(Math.min(t, DUR));
+document.title = 'pronto';
+</script>
+</body></html>

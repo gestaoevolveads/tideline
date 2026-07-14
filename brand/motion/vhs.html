@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><title>Tideline · VHS</title>
+<style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block}</style></head>
+<body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<script>
+/* ═══════════════════════════════════════════════════════════════════════════
+   FITA VHS — abertura (story 1080x1920)
+
+   É A cara do vídeo de skate dos anos 2000, e cada elemento aqui existia de verdade:
+
+     TRACKING       a barra de ruído que sobe pela tela quando a cabeça de leitura
+                    perde o alinhamento com a fita. É o efeito mais reconhecível de todos.
+     PLAY ▶         o overlay do videocassete, canto superior esquerdo, piscando
+     CONTADOR       o tempo da fita, em fonte de máquina, canto superior direito
+     SANGRIA DE COR o croma do VHS é péssimo: o vermelho vaza pra direita
+     DROPOUT        riscos brancos horizontais onde o óxido da fita descascou
+     JITTER         a imagem treme na horizontal, linha por linha
+   ═══════════════════════════════════════════════════════════════════════════ */
+const W = 1080, H = 1920, DUR = 2.0;
+const c = document.getElementById('c'), ctx = c.getContext('2d', { willReadFrequently: true });
+const buf = document.createElement('canvas'); buf.width = W; buf.height = H;
+const b = buf.getContext('2d');
+
+const DEEP = '#14231F', PAPER = '#F2EFE9', ACCENT = '#F95831';
+const rnd = s => { let x = s >>> 0; return () => (x = (x * 1664525 + 1013904223) >>> 0) / 4294967296; };
+const suave = t => t * t * (3 - 2 * t);
+const faixa = (t, a, z) => Math.max(0, Math.min(1, (t - a) / (z - a)));
+
+function conteudo(t) {
+  b.fillStyle = DEEP; b.fillRect(0, 0, W, H);
+
+  const surge = suave(faixa(t, 0.35, 0.75));
+  if (surge <= 0) return;
+
+  b.save();
+  b.globalAlpha = surge;
+  b.textBaseline = 'middle';
+  const cx = W / 2, cy = H / 2, tam = 190;
+  const f = p => `${p} ${tam}px -apple-system, "SF Pro Display", Arial`;
+  b.font = f(200); const wT = b.measureText('tide').width;
+  b.font = f(800); const wL = b.measureText('line').width, wD = b.measureText('.').width;
+  let x = cx - (wT + wL + wD) / 2;
+  b.textAlign = 'left';
+  b.fillStyle = PAPER; b.font = f(200); b.fillText('tide', x, cy); x += wT;
+  b.font = f(800); b.fillText('line', x, cy); x += wL;
+  b.fillStyle = ACCENT; b.fillText('.', x, cy);
+  b.restore();
+}
+
+/* os overlays do videocassete, desenhados DEPOIS da distorção (eles são do aparelho,
+   não da fita: por isso ficam nítidos enquanto a imagem treme) */
+function overlays(t) {
+  const pisca = Math.floor(t * 3) % 2 === 0;
+  ctx.save();
+  ctx.font = '700 44px "Courier New", monospace';
+  ctx.fillStyle = '#fff';
+  ctx.shadowColor = 'rgba(0,0,0,.8)'; ctx.shadowBlur = 8;
+
+  // PLAY ▶ piscando
+  if (pisca || t > 0.6) {
+    ctx.textAlign = 'left';
+    ctx.fillText('▶  PLAY', 64, 120);
+  }
+  // contador de fita
+  ctx.textAlign = 'right';
+  const seg = Math.floor(t * 60) % 60;
+  ctx.fillText(`0:${String(seg).padStart(2, '0')}:${String(Math.floor(t * 30) % 30).padStart(2, '0')}`, W - 64, 120);
+
+  // SP (velocidade da fita) e a data, como todo videocassete escrevia
+  ctx.font = '700 34px "Courier New", monospace';
+  ctx.textAlign = 'left';
+  ctx.fillText('SP', 64, 176);
+  ctx.textAlign = 'right';
+  ctx.fillText('BRASIL 2026', W - 64, 176);
+  ctx.restore();
+}
+
+function render(t) {
+  const random = rnd(Math.floor(t * 1000) + 3);
+  conteudo(t);
+
+  const px = b.getImageData(0, 0, W, H).data;
+  const out = ctx.createImageData(W, H);
+  const s = out.data;
+
+  // a barra de tracking: sobe pela tela, e é mais forte no começo
+  const trackY = ((1 - (t * 0.7) % 1) * H) | 0;
+  const trackForca = (1 - faixa(t, 0.9, 1.7)) * 0.9 + 0.12;
+  const trackAlt = 130 + Math.sin(t * 9) * 40;
+
+  const ruidoBase = (1 - suave(faixa(t, 0.25, 1.1))) * 0.5 + 0.045;
+
+  for (let y = 0; y < H; y++) {
+    // jitter: a linha inteira treme na horizontal (a cabeça de leitura oscila)
+    const perto = Math.abs(y - trackY) < trackAlt;
+    const jit = perto
+      ? (random() - 0.5) * 70 * trackForca
+      : (random() - 0.5) * 5 * (1 - faixa(t, 0.8, 1.5));
+
+    // dropout: risco branco onde o óxido descascou
+    const dropout = random() < 0.0012 * (1 - faixa(t, 1.0, 1.8));
+
+    for (let x = 0; x < W; x++) {
+      const i = (y * W + x) * 4;
+      const sx = Math.max(0, Math.min(W - 1, (x + jit) | 0));
+
+      // sangria de croma: o vermelho do VHS vaza pra direita
+      const sangria = 7 * (1 - faixa(t, 0.5, 1.4)) + 2;
+      const jr = (y * W + Math.max(0, Math.min(W - 1, (sx - sangria) | 0))) * 4;
+      const jg = (y * W + sx) * 4;
+      const jb = (y * W + Math.max(0, Math.min(W - 1, (sx + sangria * 0.6) | 0))) * 4;
+
+      let R = px[jr], G = px[jg + 1], B = px[jb + 2];
+
+      if (perto) {                       // dentro da barra de tracking: chuvisco forte
+        const n = (random() - 0.5) * 255 * trackForca;
+        R += n; G += n; B += n;
+        R += 30 * trackForca; G += 34 * trackForca; B += 32 * trackForca;
+      }
+      if (dropout) { R = G = B = 235; }
+
+      const n2 = (random() - 0.5) * 255 * ruidoBase;
+      R += n2; G += n2; B += n2;
+
+      if (y % 4 === 0) { R *= 0.86; G *= 0.86; B *= 0.86; }   // linhas de varredura
+
+      s[i]     = R < 0 ? 0 : R > 255 ? 255 : R;
+      s[i + 1] = G < 0 ? 0 : G > 255 ? 255 : G;
+      s[i + 2] = B < 0 ? 0 : B > 255 ? 255 : B;
+      s[i + 3] = 255;
+    }
+  }
+  ctx.putImageData(out, 0, 0);
+  overlays(t);
+}
+
+const t = parseFloat(new URLSearchParams(location.search).get('t') || '0');
+render(Math.min(t, DUR));
+document.title = 'pronto';
+</script>
+</body></html>
