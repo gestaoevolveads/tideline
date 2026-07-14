@@ -27,7 +27,8 @@ Depth of field is shallow but not artificial.`;
 
 const NEGATIVO = `NOT a 3D render. NOT digital art. NOT AI-looking. No plastic skin, no airbrushing, no symmetrical
 perfect face, no glossy studio lighting, no watermark, no text overlay, no logo other than the one printed on the shirt,
-no extra fingers, no distorted hands, no duplicated garment seams.`;
+no extra fingers, no distorted hands, no duplicated garment seams. The fabric is NEVER wet, transparent,
+see-through or clinging to the body: it is an opaque, dry, heavy cotton tee.`;
 
 /* Uma regra que vale mais que todo o resto.
  *
@@ -72,9 +73,9 @@ const CENAS = {
   pico: {
     nome: 'Costão molhado',
     desc: 'Pedras, spray de mar, roupa molhada de sal.',
-    txt: `A young person on wet dark rocks by the sea, wearing the t-shirt soaked with sea spray, hair wet, salt on the
-    skin, big waves breaking behind out of focus. Overcast diffuse light, cool tones. Photographed from the side, in
-    motion.`,
+    txt: `A young person on wet dark rocks by the sea wearing the t-shirt, hair wet, salt on the skin, big waves
+    breaking behind out of focus. The shirt is dry and opaque. Overcast diffuse light, cool tones. Photographed from
+    the side, in motion.`,
   },
   varal: {
     nome: 'Varal e sol',

@@ -200,7 +200,8 @@ const servidor = http.createServer(async (req, res) => {
       const n = Math.min(Math.max(+b.n || 2, 1), 4);
 
       console.log(`\n  camisas: ${n}x [${b.cena}/${b.enquadramento}]`);
-      const M = MOTORES[b.motor && MOTORES[b.motor] ? b.motor : 'gemini'];
+      const motorId = MOTORES[b.motor] ? b.motor : 'flux';
+      const M = MOTORES[motorId];
       const f = FORMATOS[b.formato] || FORMATOS.retrato;
 
       // O modelo às vezes recusa um prompt (filtro de conteúdo) e devolve 422. Não é erro
@@ -209,16 +210,17 @@ const servidor = http.createServer(async (req, res) => {
       for (let tentativa = 1; tentativa <= 2 && !lista.length; tentativa++) {
         try {
           if (M.lote) {
-            const r = await chamarFal(b.motor || 'gemini', M.corpo(prompt, imagens, f, n));
+            const r = await chamarFal(motorId, M.corpo(prompt, imagens, f, n));
             lista = r.images || (r.image ? [r.image] : []);
           } else {
-            const rs = await Promise.all(Array.from({ length: n }, () => chamarFal(b.motor, M.corpo(prompt, imagens, f, n))));
+            const rs = await Promise.all(Array.from({ length: n }, () => chamarFal(motorId, M.corpo(prompt, imagens, f, n))));
             lista = rs.flatMap(r => r.images || (r.image ? [r.image] : []));
           }
         } catch (e) {
-          if (tentativa === 2) {
-            return json(res, 502, { erro: 'o modelo recusou essa cena duas vezes. Tente outra cena ou mude o texto extra.' });
-          }
+          // Engolir o erro do fal aqui foi um tiro no pé: eu ficava sem saber se era filtro
+          // de conteúdo, tamanho de imagem ou chave. O motivo sempre aparece.
+          console.warn(`  tentativa ${tentativa} falhou: ${e.message}`);
+          if (tentativa === 2) return json(res, 502, { erro: e.message });
           await new Promise(r => setTimeout(r, 1200));
         }
       }

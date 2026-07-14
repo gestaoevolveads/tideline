@@ -31,6 +31,15 @@ async function montink(env, caminho, opts = {}) {
   try { return JSON.parse(txt); } catch { return { success: false, msg: txt.slice(0, 200) }; }
 }
 
+// A Montink às vezes devolve um objeto e às vezes devolve o MESMO objeto como texto JSON
+// ('{"Branco":"Branco"}'). Sem tratar isso, Object.keys corre sobre a string e devolve
+// "0","1","2"..., que é o que a loja mostrava: 43 botões de cor numerados, nenhum deles cor.
+function objeto(v) {
+  if (!v) return {};
+  if (typeof v === 'string') { try { return JSON.parse(v) || {}; } catch { return {}; } }
+  return v;
+}
+
 export async function onRequestGet(context) {
   const { request, env } = context;
   const u = new URL(request.url);
@@ -53,11 +62,11 @@ export async function onRequestGet(context) {
         id: p.id,
         nome: p.nomeShopify,
         preco: Number(p.preco_final),
-        imagens: Object.values(d.variacoesCor || { x: p.image_url }),
-        cores: Object.keys(dp?.cores || {}),
-        tamanhos: Object.keys(dp?.tamanhos || {}),
-        estoque: d.variacoesEstoque || {},        // { "Branco": { "P": 0, "M": 1000, ... } }
-        imgPorCor: d.variacoesCor || {},
+        imagens: Object.values(objeto(d.variacoesCor) || { x: p.image_url }),
+        cores: Object.keys(objeto(dp?.cores)),
+        tamanhos: Object.keys(objeto(dp?.tamanhos)),
+        estoque: objeto(d.variacoesEstoque),      // { "Branco": { "P": 0, "M": 1000, ... } }
+        imgPorCor: objeto(d.variacoesCor),
       };
     }));
 

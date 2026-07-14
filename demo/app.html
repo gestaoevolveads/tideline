@@ -301,6 +301,41 @@
     .cm-sec-h .t{font-size:16px;font-weight:800;letter-spacing:-.01em}
     .cm-sec-h .s{font-size:11.5px;color:var(--muted)}
     .cm-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+    /* A frase que abre a seção. Não é enfeite: é ela que separa a camisa NOSSA dos links
+       de parceiro logo abaixo, e diz por que ela existe. Sem ela, a camisa vira mais um
+       item de catálogo, e ninguém compra identidade de um catálogo. */
+    .cm-intro{font-size:13px;color:var(--mid);line-height:1.6;margin:-4px 0 14px;max-width:34em}
+
+    /* a galeria da ficha: fotos de verdade primeiro, a estampa isolada por último */
+    .cm-gal{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+      scrollbar-width:none}
+    .cm-gal::-webkit-scrollbar{display:none}
+    .cm-gal img{width:100%;flex:0 0 100%;aspect-ratio:1;object-fit:cover;scroll-snap-align:center;
+      display:block;background:var(--surface)}
+    .cm-pts{display:flex;gap:5px;justify-content:center;margin-top:-18px;position:relative;z-index:2}
+    .cm-pt{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.55);transition:background .2s}
+    .cm-pt.on{background:#fff}
+
+    /* cor como amostra visual: ninguém compra "Off White" lendo a palavra */
+    .cm-cores{display:flex;gap:9px}
+    .cm-cor{width:52px;border:0;background:none;padding:0;cursor:pointer;text-align:center}
+    .cm-cor img{width:52px;height:52px;border-radius:12px;object-fit:cover;display:block;
+      border:2px solid transparent;background:var(--surface)}
+    .cm-cor.on img{border-color:var(--deep)}
+    .cm-cor .n{font-size:10px;font-weight:600;color:var(--muted);margin-top:4px;line-height:1.2}
+    .cm-cor.on .n{color:var(--deep);font-weight:700}
+
+    /* os três selos: respondem, sem pedir, as três perguntas que travam a compra */
+    .cm-selos{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:16px}
+    .cm-selo{background:var(--surface2,#E8F0ED);border-radius:12px;padding:10px 8px;text-align:center}
+    .cm-selo .i{font-size:15px;line-height:1}
+    .cm-selo .t{font-size:10.5px;font-weight:700;color:var(--deep);margin-top:5px;line-height:1.3}
+    .cm-selo .d{font-size:9.5px;color:var(--muted);margin-top:2px;line-height:1.3}
+
+    /* o rodapé fixo da ficha: o total e o botão nunca somem de vista enquanto se rola */
+    .cm-rod{position:sticky;bottom:0;background:var(--white);padding:12px 20px calc(12px + env(safe-area-inset-bottom));
+      border-top:1px solid var(--surface);box-shadow:0 -8px 22px -18px rgba(23,39,38,.5)}
     .cm-card{background:var(--white);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);
       cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .16s}
     .cm-card:active{transform:scale(.98)}
@@ -1028,17 +1063,19 @@
   <div id="tab-loja" class="tab-content">
     <div class="page-hero tab-pad">
       <div class="page-title">Loja</div>
-      <div class="page-sub">Tudo que você precisa no surf, curado e com link direto.</div>
+      <div class="page-sub">As nossas peças, e o equipamento em que a gente confia.</div>
     </div>
-    <input class="form-input" id="loja-search" type="text" placeholder="Buscar produto…" oninput="searchLoja(this.value)" style="margin:0 24px 12px;display:block;width:calc(100% - 48px)">
     <div class="cm-sec" id="cm-sec" style="display:none">
       <div class="cm-sec-h">
-        <span class="t">Camisas Tideline</span>
-        <span class="s">feitas sob demanda</span>
+        <span class="t">Feito pela Tideline</span>
+        <span class="s">direto com a gente</span>
       </div>
+      <div class="cm-intro">O mesmo desenho que ilustra o guia, estampado numa oversized de algodão.
+        Não é merch de app. É a roupa que a gente queria ter e não achava.</div>
       <div class="cm-grid" id="cm-grid"></div>
     </div>
     <div class="cm-sec-h" style="margin:0 24px 10px"><span class="t">Equipamento</span><span class="s">parceiros</span></div>
+    <input class="form-input" id="loja-search" type="text" placeholder="Buscar produto…" oninput="searchLoja(this.value)" style="margin:0 24px 12px;display:block;width:calc(100% - 48px)">
     <div class="loja-cats" id="loja-filter"></div>
     <div class="loja-grid" id="loja-grid"></div>
     <div class="loja-disc">Links de parceiros.</div>
@@ -1225,6 +1262,13 @@
     <span class="nav-label">Eu</span>
   </div>
 </nav>
+
+<!-- A ficha do produto. Sobe por cima da loja, e a pessoa nunca sai do app: o fundo continua
+     ali atrás, e fechar é um toque. Tirar alguém do app pra comprar é perder a compra. -->
+<div class="cm-sheet" id="cm-sheet">
+  <div class="cm-ov" onclick="fecharCamisa()"></div>
+  <div class="cm-box" id="cm-box"></div>
+</div>
 
 <script src="./tideline-core.js"></script>
 <script src="./tideline-config.js"></script>
@@ -2324,7 +2368,16 @@ function _parsePreco(p){ return parseFloat((p.preco||'0').replace('R$','').repla
    mais eficiente de perder a venda depois que a pessoa já se comprometeu.
    ══════════════════════════════════════════════════════════════════════════════ */
 let CAMISAS = [];
-let CM = { produto: null, cor: null, tamanho: null, frete: null, opcoes: [], cep: '' };
+let CM = { produto: null, cor: null, tamanho: null, frete: null, opcoes: [], cep: '', foto: 0 };
+
+/* As fotos de campanha. O mockup da Montink é um cabide em fundo preto: ele mostra a
+   estampa, mas não mostra a camisa VESTIDA, e ninguém compra roupa sem ver como ela cai.
+   O cabide continua na galeria, no fim, porque quem já quer comprar quer ver a estampa
+   isolada e limpa. Produto novo que ainda não tem foto cai no mockup e a loja não quebra. */
+const CM_FOTOS = {
+  5800339: ['img/loja/5800339.jpg', 'img/loja/5800339-b.jpg'],
+  5800493: ['img/loja/5800493.jpg'],
+};
 
 async function carregarCamisas(){
   try{
@@ -2334,61 +2387,96 @@ async function carregarCamisas(){
   }catch(e){ /* sem loja, a aba segue com os parceiros */ }
 }
 
+// as fotos da ficha, na ordem: campanha primeiro, cabide por último
+function fotosDe(p){
+  return [...(CM_FOTOS[p.id] || []), ...(p.imgPorCor ? Object.values(p.imgPorCor) : p.imagens)];
+}
+
 function renderCamisas(){
   const el = document.getElementById('cm-sec');
   if(!el || !CAMISAS.length) return;
   el.style.display = '';
   document.getElementById('cm-grid').innerHTML = CAMISAS.map((p,i) => `
     <div class="cm-card" onclick="abrirCamisa(${i})">
-      <img class="im" src="${p.imagens[0]}" alt="${p.nome}" loading="lazy">
+      <img class="im" src="${fotosDe(p)[0]}" alt="${p.nome}" loading="lazy">
       <div class="in">
         <div class="nm">${p.nome.replace('Camiseta Oversized ','')}</div>
         <div class="pr">R$ ${p.preco.toFixed(2).replace('.',',')}
-          <small>em até 12x · frete calculado na hora</small></div>
+          <small>em até 12x sem juros</small></div>
       </div>
     </div>`).join('');
 }
 
 function abrirCamisa(i){
-  CM = { produto: CAMISAS[i], cor: null, tamanho: null, frete: null, opcoes: [], cep: '' };
+  let cep = '';
+  try{ cep = localStorage.getItem('tl_cep') || ''; }catch(e){}
+  CM = { produto: CAMISAS[i], cor: null, tamanho: null, frete: null, opcoes: [], cep, foto: 0 };
   // a primeira cor com algum tamanho em estoque já vem escolhida: menos um clique
   const p = CM.produto;
   CM.cor = p.cores.find(c => Object.values(p.estoque[c]||{}).some(q=>q>0)) || p.cores[0];
   document.getElementById('cm-sheet').classList.add('open');
   pintarFicha();
+  if (cep.length === 8) calcularFrete();   // quem já comprou uma vez não digita CEP de novo
   if (window.tlTrack) tlTrack('ViewContent', 'camisa_abriu', { content_name: p.nome, value: p.preco, currency: 'BRL' });
 }
 function fecharCamisa(){ document.getElementById('cm-sheet').classList.remove('open'); }
 
 function pintarFicha(){
   const p = CM.produto;
-  const img = p.imgPorCor[CM.cor] || p.imagens[0];
-  const temEstoque = t => (p.estoque[CM.cor]||{})[t] > 0;
+  const fotos = fotosDe(p);
+  const temEstoque = (t, cor) => ((p.estoque[cor || CM.cor]||{})[t] || 0) > 0;
   const total = p.preco + (CM.frete ? CM.frete.valor : 0);
 
+  // A ÚNICA escassez que a loja mostra é a que existe de verdade: hoje é o P no branco.
+  // O resto tem mil unidades. Inventar contador de "últimas peças" aqui seria mentira, e
+  // mentira é a única coisa que a marca não pode vender.
+  const esgotados = p.tamanhos.filter(t => !temEstoque(t));
+  const outraCor = esgotados.length
+    ? p.cores.find(c => c !== CM.cor && esgotados.every(t => temEstoque(t, c)))
+    : null;
+
   document.getElementById('cm-box').innerHTML = `
-    <img class="cm-hero" src="${img}" alt="${p.nome}">
+    <div class="cm-gal" id="cm-gal" onscroll="marcarFoto()">
+      ${fotos.map(f => `<img src="${f}" alt="${p.nome}" loading="lazy">`).join('')}
+    </div>
+    ${fotos.length > 1 ? `<div class="cm-pts">${fotos.map((_,i) =>
+      `<div class="cm-pt ${i===0?'on':''}"></div>`).join('')}</div>` : ''}
     <button class="cm-fechar" onclick="fecharCamisa()">✕</button>
     <div class="cm-body">
       <div class="cm-nome">${p.nome}</div>
-      <div class="cm-preco">R$ ${p.preco.toFixed(2).replace('.',',')} <small>ou 12x sem juros</small></div>
+      <div class="cm-preco">R$ ${p.preco.toFixed(2).replace('.',',')} <small>ou 12x sem juros, ou Pix</small></div>
 
-      <div class="cm-lbl">Cor</div>
-      <div class="cm-ops">
-        ${p.cores.map(c => `<button class="cm-op ${c===CM.cor?'on':''}" onclick="escolherCor('${c}')">${c}</button>`).join('')}
+      <div class="cm-selos">
+        <div class="cm-selo"><div class="i">🖨️</div><div class="t">Feita pra você</div>
+          <div class="d">impressa depois da compra</div></div>
+        <div class="cm-selo"><div class="i">↩️</div><div class="t">7 dias</div>
+          <div class="d">pra devolver, sem motivo</div></div>
+        <div class="cm-selo"><div class="i">🔒</div><div class="t">Mercado Pago</div>
+          <div class="d">Pix, cartão ou boleto</div></div>
       </div>
 
-      <div class="cm-lbl">Tamanho</div>
+      <div class="cm-lbl">Cor</div>
+      <div class="cm-cores">
+        ${p.cores.map(c => `
+          <button class="cm-cor ${c===CM.cor?'on':''}" onclick="escolherCor('${c}')">
+            <img src="${p.imgPorCor[c] || fotos[0]}" alt="${c}">
+            <div class="n">${c}</div>
+          </button>`).join('')}
+      </div>
+
+      <div class="cm-lbl" id="cm-lbl-tam">Tamanho</div>
       <div class="cm-ops">
         ${p.tamanhos.map(t => `<button class="cm-op ${t===CM.tamanho?'on':''}" ${temEstoque(t)?'':'disabled'}
             onclick="escolherTam('${t}')">${t}</button>`).join('')}
       </div>
-      ${p.tamanhos.some(t=>!temEstoque(t)) ? '<div class="cm-nota" style="text-align:left;margin-top:6px">Tamanho riscado está esgotado nessa cor.</div>' : ''}
+      ${esgotados.length ? `<div class="cm-nota" style="text-align:left;margin-top:7px">
+        ${esgotados.join(' e ')} ${esgotados.length>1?'estão esgotados':'está esgotado'} no ${CM.cor}.
+        ${outraCor ? `No ${outraCor} ainda tem.` : ''}</div>` : ''}
 
       <div class="cm-lbl">Entrega</div>
       <div class="cm-cep">
-        <input id="cm-cep" inputmode="numeric" placeholder="Seu CEP" value="${CM.cep}" maxlength="9">
-        <button onclick="calcularFrete()">Calcular</button>
+        <input id="cm-cep" inputmode="numeric" placeholder="Digite seu CEP" value="${CM.cep}" maxlength="9"
+          oninput="cepDigitado(this.value)">
       </div>
       <div class="cm-frete" id="cm-frete">
         ${CM.opcoes.map((o,i) => `
@@ -2399,27 +2487,49 @@ function pintarFicha(){
       </div>
       <div id="cm-erro"></div>
 
-      <div class="cm-total">
-        <span class="l">Total${CM.frete?' com frete':''}</span>
+      <div class="cm-nota" style="text-align:left;margin-top:14px">A gente só imprime depois que
+      você compra. Por isso não sobra pilha de camisa encalhada, e por isso a sua sai nova,
+      feita naquela semana.</div>
+    </div>
+
+    <div class="cm-rod">
+      <div class="cm-total" style="margin:0;padding:0;border:0">
+        <span class="l">${CM.frete ? 'Total com frete' : 'Camisa'}</span>
         <span class="v">R$ ${total.toFixed(2).replace('.',',')}</span>
       </div>
-
-      <button class="cm-cta" ${CM.tamanho && CM.frete ? '' : 'disabled'} onclick="irPagar()">
-        ${!CM.tamanho ? 'Escolha o tamanho' : !CM.frete ? 'Calcule o frete' : 'Comprar agora'}
+      <button class="cm-cta" onclick="irPagar()">
+        ${!CM.tamanho ? 'Escolher tamanho' : !CM.frete ? 'Calcular o frete' : 'Comprar agora'}
       </button>
-      <div class="cm-nota">Impressão sob demanda. A gente só produz depois que você compra,
-      por isso não sobra estoque encalhado e a peça sai do jeito que tem que sair.</div>
     </div>`;
+
+  const gal = document.getElementById('cm-gal');
+  if (gal && CM.foto) gal.scrollLeft = gal.clientWidth * CM.foto;
 }
 
-function escolherCor(c){ CM.cor = c; if(!( (CM.produto.estoque[c]||{})[CM.tamanho] > 0)) CM.tamanho = null; pintarFicha(); }
+// os pontinhos da galeria acompanham o dedo
+function marcarFoto(){
+  const gal = document.getElementById('cm-gal');
+  const i = Math.round(gal.scrollLeft / gal.clientWidth);
+  CM.foto = i;
+  document.querySelectorAll('.cm-pt').forEach((p,j) => p.classList.toggle('on', j===i));
+}
+
+function escolherCor(c){ CM.cor = c; if(!( (CM.produto.estoque[c]||{})[CM.tamanho] > 0)) CM.tamanho = null; CM.foto = 0; pintarFicha(); }
 function escolherTam(t){ CM.tamanho = t; pintarFicha(); }
 function escolherFrete(i){ CM.frete = CM.opcoes[i]; pintarFicha(); }
 
-async function calcularFrete(){
-  const cep = (document.getElementById('cm-cep').value || '').replace(/\D/g,'');
-  if(cep.length !== 8){ document.getElementById('cm-erro').innerHTML = '<div class="cm-erro">CEP precisa ter 8 números.</div>'; return; }
+// O botão "Calcular" era um clique a mais para dizer o que o próprio CEP já dizia. Assim que
+// os 8 números estão lá, o frete aparece sozinho.
+function cepDigitado(v){
+  const cep = (v||'').replace(/\D/g,'');
   CM.cep = cep;
+  if (cep.length === 8) calcularFrete();
+}
+
+async function calcularFrete(){
+  const cep = (CM.cep || '').replace(/\D/g,'');
+  if(cep.length !== 8){ document.getElementById('cm-erro').innerHTML = '<div class="cm-erro">CEP precisa ter 8 números.</div>'; return; }
+  try{ localStorage.setItem('tl_cep', cep); }catch(e){}   // na próxima compra ele já vem preenchido
   document.getElementById('cm-frete').innerHTML = '<div class="cm-nota">consultando os Correios…</div>';
   try{
     const r = await (await fetch(`/api/loja?acao=frete&cep=${cep}&qtd=1`)).json();
@@ -2433,6 +2543,19 @@ async function calcularFrete(){
 }
 
 function irPagar(){
+  // Um botão desabilitado é um beco sem saída: ele diz "não" e não diz para onde ir. Aqui
+  // ele sempre responde ao toque e leva ao passo que está faltando.
+  if (!CM.tamanho) {
+    document.getElementById('cm-lbl-tam').scrollIntoView({ behavior:'smooth', block:'center' });
+    return;
+  }
+  if (!CM.frete) {
+    const c = document.getElementById('cm-cep');
+    c.scrollIntoView({ behavior:'smooth', block:'center' });
+    setTimeout(() => c.focus(), 300);
+    return;
+  }
+
   const p = CM.produto;
   const dados = {
     produto_id: p.id, nome: p.nome, preco: p.preco,
@@ -4333,4 +4456,6 @@ setInterval(() => loadNarratorCache().then(() => loadData()), 30*60*1000);
   carregarCamisas();
 })();
 </script>
-<script src="./t
+<script src="./tideline-consent.js"></script>
+</body>
+</html>

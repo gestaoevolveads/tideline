@@ -190,7 +190,7 @@ $('gerar').onclick = async () => {
   try {
     const r = await (await fetch('/api/camisas/gerar', {
       method: 'POST', headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ ...escolha, extra: $('extra').value.trim(), motor: 'gemini' }),
+      body: JSON.stringify({ ...escolha, extra: $('extra').value.trim() }),
     })).json();
     if (r.erro) throw new Error(r.erro);
 
