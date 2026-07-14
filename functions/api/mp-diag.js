@@ -37,7 +37,8 @@ export async function onRequestGet(context) {
     });
     const d = await r.json();
     out.metodos = r.ok
-      ? { ok: true, tem_pix: (d || []).some(m => m.id === 'pix') }
+      ? { ok: true, tem_pix: (d || []).some(m => m.id === 'pix'),
+          aceita: (d || []).map(m => `${m.id} (${m.status})`) }
       : { erro: d.message || 'sem permissão' };
   } catch (e) { out.metodos = { erro: e.message }; }
 
