@@ -8,6 +8,8 @@
 //
 // Env: MP_ACCESS_TOKEN
 
+import { validarCupom } from './cupom.js';
+
 export async function onRequestPost(context) {
   const { request, env } = context;
   try {
@@ -21,14 +23,23 @@ export async function onRequestPost(context) {
       if (!b[c]) return json({ erro: `falta ${c}` }, 400);
     }
 
-    const total = Number(b.preco) + Number(b.frete_valor);
+    // O desconto é recalculado AQUI. O que veio do navegador é palpite: qualquer pessoa
+    // abre o console e manda desconto: 158. Quem define preço é o servidor.
+    let desconto = 0, cupom = '';
+    if (b.cupom) {
+      const c = await validarCupom(env, String(b.cupom).trim().toUpperCase(), Number(b.preco));
+      if (!c.erro) { desconto = c.desconto; cupom = c.codigo; }
+    }
+
+    const precoFinal = Math.max(0.5, Number(b.preco) - desconto);   // o MP não aceita item a R$0
+    const total = precoFinal + Number(b.frete_valor);
     const ref = 'TL-' + Date.now();
 
     const pref = {
       items: [{
         title: `${b.nome} · ${b.cor} · ${b.tamanho}`,
         quantity: 1,
-        unit_price: Number(b.preco),
+        unit_price: Number(precoFinal.toFixed(2)),
         currency_id: 'BRL',
       }],
       // o frete vai separado: o cliente vê exatamente o que está pagando de entrega
@@ -51,6 +62,13 @@ export async function onRequestPost(context) {
         tipo: 'loja',
         ref,
         total,
+        cupom,
+        desconto,
+        produto_nome: b.nome,
+        cor: b.cor,
+        tamanho: b.tamanho,
+        preco: Number(b.preco),
+        frete: Number(b.frete_valor),
         pedido: {
           customer_name: b.cliente_nome,
           customer_email: b.cliente_email,
@@ -88,7 +106,7 @@ export async function onRequestPost(context) {
     const d = await r.json();
     if (!r.ok) return json({ erro: d.message || 'falha ao criar o pagamento' }, 502);
 
-    return json({ url: d.init_point, ref });
+    return json({ url: d.init_point, ref, total, desconto, cupom });
   } catch (e) {
     return json({ erro: e.message }, 500);
   }

@@ -235,6 +235,7 @@
     <div class="tab" data-panel="ranking" onclick="showPanel('ranking')">🏆 Ranking</div>
 
     <div class="side-group">Comercial</div>
+    <div class="tab" data-panel="camisas" onclick="showPanel('camisas')">👕 Camisas</div>
     <div class="tab" data-panel="loja" onclick="showPanel('loja')">🛒 Loja</div>
     <div class="tab" data-panel="cupons" onclick="showPanel('cupons')">🎟️ Cupons</div>
 
@@ -340,6 +341,35 @@
     </div>
 
     <!-- LOJA -->
+    <!-- CAMISAS: os pedidos de verdade, e os cupons que dão desconto neles -->
+    <div class="panel" id="panel-camisas">
+      <div class="card">
+        <h2>Pedidos das camisas</h2>
+        <div class="sub">Todo pedido pago nasce aqui. Se a Montink recusar, a linha fica
+          <strong>vermelha</strong>: é dinheiro que entrou e camisa que não foi produzida, e
+          é a única coisa nessa tela que exige você.</div>
+        <div id="cam-kpis" class="kpis"></div>
+        <div style="overflow-x:auto"><table id="cam-table"></table></div>
+      </div>
+
+      <div class="card">
+        <h2>Cupons de desconto</h2>
+        <div class="sub">Valem na compra da camisa. Quem valida é o servidor, e o uso só é
+          contado depois que o pagamento entra.</div>
+        <div class="toolbar">
+          <input class="search" id="cup-cod" placeholder="CÓDIGO" style="max-width:160px;text-transform:uppercase">
+          <input class="search" id="cup-val" placeholder="desconto" style="max-width:110px" inputmode="decimal">
+          <select class="search" id="cup-tipo" style="max-width:130px">
+            <option value="pct">% off</option>
+            <option value="reais">R$ off</option>
+          </select>
+          <input class="search" id="cup-lim" placeholder="limite de usos" style="max-width:150px" inputmode="numeric">
+          <button class="btn primary" onclick="criarCupomLoja()">+ Criar cupom</button>
+        </div>
+        <div style="overflow-x:auto"><table id="cupl-table"></table></div>
+      </div>
+    </div>
+
     <div class="panel" id="panel-loja">
       <div class="card">
         <h2>Loja / Produtos</h2>
@@ -686,6 +716,92 @@ function showPanel(id){
   if(id==='dashboard') loadDashboard();
   if(id==='ebook') loadEbook();
   if(id==='precos') loadPrecos();
+  if(id==='camisas') loadCamisas();
+}
+
+/* ── CAMISAS: pedidos e cupons ───────────────────────────────────────────────
+   A tabela de pedidos existe por um motivo específico: antes dela, se a Montink recusasse a
+   ordem, o cliente tinha pagado e ninguém no mundo ficava sabendo. Aqui, esse pedido aparece
+   em vermelho e fica esperando. */
+async function loadCamisas(){
+  const c = window.TLData && await window.TLData.client();
+  if(!c){ document.getElementById('cam-table').innerHTML = '<tr><td>Login do painel (Supabase) não ativo.</td></tr>'; return; }
+
+  const [ped, cup] = await Promise.all([
+    c.from('pedidos').select('*').order('criado_em', { ascending: false }).limit(200),
+    c.from('cupons').select('*').order('criado_em', { ascending: false }),
+  ]);
+  const P = ped.data || [], C = cup.data || [];
+
+  const real = v => 'R$ ' + Number(v || 0).toFixed(2).replace('.', ',');
+  const receita = P.reduce((s, p) => s + Number(p.total || 0), 0);
+  const erros = P.filter(p => p.montink_status === 'erro');
+  const mes = P.filter(p => new Date(p.criado_em) > new Date(Date.now() - 30 * 86400000));
+
+  document.getElementById('cam-kpis').innerHTML = `
+    <div class="kpi"><div class="k">Camisas vendidas</div><div class="v">${P.length}</div></div>
+    <div class="kpi"><div class="k">Receita total</div><div class="v">${real(receita)}</div></div>
+    <div class="kpi"><div class="k">Últimos 30 dias</div><div class="v">${mes.length}</div></div>
+    <div class="kpi" ${erros.length ? 'style="border-color:#D9694B;background:#FEF6F3"' : ''}>
+      <div class="k">Precisam de você</div><div class="v">${erros.length}</div></div>`;
+
+  document.getElementById('cam-table').innerHTML = P.length ? `
+    <tr><th>Quando</th><th>Cliente</th><th>Peça</th><th>Cupom</th><th>Total</th><th>Montink</th></tr>
+    ${P.map(p => `
+      <tr ${p.montink_status === 'erro' ? 'style="background:#FEF6F3"' : ''}>
+        <td>${new Date(p.criado_em).toLocaleDateString('pt-BR')}</td>
+        <td>${p.cliente_nome || ''}<br><small style="color:var(--muted)">${p.cliente_email || ''}</small></td>
+        <td>${(p.produto_nome || '').replace('Camiseta Oversized ', '')}<br>
+            <small style="color:var(--muted)">${p.cor || ''} · ${p.tamanho || ''}</small></td>
+        <td>${p.cupom ? `${p.cupom}<br><small style="color:var(--muted)">menos ${real(p.desconto)}</small>` : '—'}</td>
+        <td><strong>${real(p.total)}</strong></td>
+        <td>${p.montink_status === 'ok'
+              ? `✅ ${p.montink_pedido || 'enviado'}`
+              : p.montink_status === 'erro'
+                ? `<strong style="color:#8A2B12">❌ recusado</strong><br>
+                   <small>${escapeHtml(JSON.stringify(p.montink_resposta || {}).slice(0, 90))}</small>`
+                : '⏳ pendente'}</td>
+      </tr>`).join('')}` : '<tr><td>Nenhum pedido ainda.</td></tr>';
+
+  document.getElementById('cupl-table').innerHTML = C.length ? `
+    <tr><th>Código</th><th>Desconto</th><th>Usos</th><th>Status</th><th></th></tr>
+    ${C.map(k => `
+      <tr>
+        <td><strong>${k.codigo}</strong></td>
+        <td>${k.tipo === 'pct' ? Number(k.desconto) + '%' : real(k.desconto)}</td>
+        <td>${k.usos}${k.limite_usos != null ? ' de ' + k.limite_usos : ''}</td>
+        <td>${k.ativo ? 'ativo' : 'desligado'}</td>
+        <td><button class="btn" onclick="virarCupom('${k.codigo}', ${!k.ativo})">
+          ${k.ativo ? 'Desligar' : 'Ligar'}</button></td>
+      </tr>`).join('')}` : '<tr><td>Nenhum cupom criado.</td></tr>';
+}
+
+async function criarCupomLoja(){
+  const c = window.TLData && await window.TLData.client(); if(!c) return;
+  const codigo = (document.getElementById('cup-cod').value || '').trim().toUpperCase();
+  const desconto = Number(document.getElementById('cup-val').value);
+  const tipo = document.getElementById('cup-tipo').value;
+  const lim = document.getElementById('cup-lim').value;
+  if(!codigo || !desconto){ alert('Falta o código ou o desconto.'); return; }
+
+  const { error } = await c.from('cupons').insert({
+    codigo, desconto, tipo, limite_usos: lim ? Number(lim) : null,
+  });
+  if(error){ alert('Não deu: ' + error.message); return; }
+  document.getElementById('cup-cod').value = '';
+  document.getElementById('cup-val').value = '';
+  document.getElementById('cup-lim').value = '';
+  loadCamisas();
+}
+
+async function virarCupom(codigo, ativo){
+  const c = window.TLData && await window.TLData.client(); if(!c) return;
+  await c.from('cupons').update({ ativo }).eq('codigo', codigo);
+  loadCamisas();
+}
+
+function escapeHtml(s){
+  return String(s).replace(/[&<>"]/g, ch => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[ch]));
 }
 
 /* ── AFILIADOS ──────────────────────────────────────── */

@@ -292,101 +292,158 @@
     .prod-preco{font-size:13px;font-weight:800;color:var(--deep);letter-spacing:-.02em;margin-bottom:8px}
     .prod-buy{font-size:12px;font-weight:700;color:var(--white);background:var(--accent);border-radius:8px;padding:7px 12px;text-align:center;letter-spacing:-.01em}
 
-    /* ── CAMISAS TIDELINE ────────────────────────────────────────────────────
-       Roupa vende por IMAGEM, não por lista. Então a foto ocupa o card inteiro, o texto
-       é pouco, e a decisão (cor, tamanho, frete) acontece numa ficha que sobe por cima,
-       sem tirar a pessoa da loja. */
+    /* ── LOJA TIDELINE ───────────────────────────────────────────────────────
+       A arte, e por que ela é assim.
+
+       Aqui não entra foto de gente que não existe. Uma foto gerada que IMITA a realidade
+       promete uma cena que a marca não viveu, e o dia em que alguém percebe é o dia em que
+       tudo o mais que a gente diz vira suspeito. O app inteiro já fala por desenho: o sol,
+       o mascote, o traço. A loja fala a mesma língua.
+
+       Então o produto aparece como ele é (o mockup real, o mesmo arquivo que a gráfica
+       imprime) sobre um fundo DESENHADO: sol, ondas, papel. O truque que faz isso funcionar
+       é o mix-blend-mode:multiply. O fundo do mockup é branco, e branco em multiply some.
+       A camisa fica recortada sozinha, sem máscara, sem Photoshop, sem mentira. */
     .cm-sec{margin:0 24px 22px}
     .cm-sec-h{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:12px}
     .cm-sec-h .t{font-size:16px;font-weight:800;letter-spacing:-.01em}
     .cm-sec-h .s{font-size:11.5px;color:var(--muted)}
     .cm-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-
-    /* A frase que abre a seção. Não é enfeite: é ela que separa a camisa NOSSA dos links
-       de parceiro logo abaixo, e diz por que ela existe. Sem ela, a camisa vira mais um
-       item de catálogo, e ninguém compra identidade de um catálogo. */
     .cm-intro{font-size:13px;color:var(--mid);line-height:1.6;margin:-4px 0 14px;max-width:34em}
 
-    /* a galeria da ficha: fotos de verdade primeiro, a estampa isolada por último */
-    .cm-gal{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
-      scrollbar-width:none}
-    .cm-gal::-webkit-scrollbar{display:none}
-    .cm-gal img{width:100%;flex:0 0 100%;aspect-ratio:1;object-fit:cover;scroll-snap-align:center;
-      display:block;background:var(--surface)}
-    .cm-pts{display:flex;gap:5px;justify-content:center;margin-top:-18px;position:relative;z-index:2}
-    .cm-pt{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.55);transition:background .2s}
-    .cm-pt.on{background:#fff}
-
-    /* cor como amostra visual: ninguém compra "Off White" lendo a palavra */
-    .cm-cores{display:flex;gap:9px}
-    .cm-cor{width:52px;border:0;background:none;padding:0;cursor:pointer;text-align:center}
-    .cm-cor img{width:52px;height:52px;border-radius:12px;object-fit:cover;display:block;
-      border:2px solid transparent;background:var(--surface)}
-    .cm-cor.on img{border-color:var(--deep)}
-    .cm-cor .n{font-size:10px;font-weight:600;color:var(--muted);margin-top:4px;line-height:1.2}
-    .cm-cor.on .n{color:var(--deep);font-weight:700}
-
-    /* os três selos: respondem, sem pedir, as três perguntas que travam a compra */
-    .cm-selos{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:16px}
-    .cm-selo{background:var(--surface2,#E8F0ED);border-radius:12px;padding:10px 8px;text-align:center}
-    .cm-selo .i{font-size:15px;line-height:1}
-    .cm-selo .t{font-size:10.5px;font-weight:700;color:var(--deep);margin-top:5px;line-height:1.3}
-    .cm-selo .d{font-size:9.5px;color:var(--muted);margin-top:2px;line-height:1.3}
-
-    /* o rodapé fixo da ficha: o total e o botão nunca somem de vista enquanto se rola */
-    .cm-rod{position:sticky;bottom:0;background:var(--white);padding:12px 20px calc(12px + env(safe-area-inset-bottom));
-      border-top:1px solid var(--surface);box-shadow:0 -8px 22px -18px rgba(23,39,38,.5)}
     .cm-card{background:var(--white);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);
       cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .16s}
     .cm-card:active{transform:scale(.98)}
-    .cm-card .im{width:100%;aspect-ratio:1;object-fit:cover;display:block;background:var(--surface)}
+
+    /* o palco do produto */
+    .cm-arte{position:relative;width:100%;aspect-ratio:1;overflow:hidden;background:var(--paper,#F2EFE9)}
+    .cm-arte .sol{position:absolute;left:50%;top:44%;width:78%;aspect-ratio:1;transform:translate(-50%,-50%);
+      border-radius:50%;background:radial-gradient(circle at 50% 50%, #F9583122 0%, #F9583111 55%, transparent 70%)}
+    .cm-arte .raios{position:absolute;inset:-20%;background:
+      repeating-conic-gradient(from 0deg at 50% 46%, #F9583114 0deg 3deg, transparent 3deg 11deg);
+      opacity:.55;animation:cmGira 90s linear infinite}
+    .cm-arte .agua{position:absolute;left:0;right:0;bottom:0;height:36%;
+      background:linear-gradient(180deg, transparent, #D3E2DE 62%)}
+    .cm-arte .ondas{position:absolute;left:-6%;right:-6%;bottom:5%;height:22%;opacity:.45;
+      color:var(--mid)}
+    /* A camisa é BRANCA, e multiply come o branco: recortada, ela virava fantasma. Blend
+       nenhum resolve isso, porque branco sempre some no multiply. Então o produto não é
+       recortado: ele fica numa folha branca, apoiada em cima do fundo ilustrado, como uma
+       foto de catálogo pousada sobre um cartaz. O branco do mockup vira o papel, e a camisa
+       aparece inteira, com contraste. */
+    .cm-arte .folha{position:absolute;left:11%;right:11%;top:8%;bottom:8%;border-radius:10px;
+      background:var(--white);box-shadow:0 2px 4px rgba(23,39,38,.10),0 22px 40px -26px rgba(23,39,38,.55);
+      transform:rotate(-1.2deg);overflow:hidden}
+    .cm-card:nth-child(even) .cm-arte .folha{transform:rotate(1.4deg)}
+    .cm-arte .prod{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+    /* o grão. É o mesmo grão do resto da marca: impede que o fundo fique com cara de vetor. */
+    .cm-arte::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.35;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
+    @keyframes cmGira{to{transform:rotate(360deg)}}
+    @media (prefers-reduced-motion:reduce){.cm-arte .raios{animation:none}}
+
+    /* a variação: o segundo produto não pode ser a cópia do primeiro */
+    .cm-card:nth-child(even) .cm-arte{background:#E8F0ED}
+    .cm-card:nth-child(even) .cm-arte .sol{background:radial-gradient(circle at 50% 50%, rgba(36,63,61,.10) 0%, transparent 68%)}
+    .cm-card:nth-child(even) .cm-arte .raios{background:
+      repeating-conic-gradient(from 0deg at 50% 46%, rgba(36,63,61,.07) 0deg 2deg, transparent 2deg 9deg)}
+
     .cm-card .in{padding:10px 12px 12px}
     .cm-card .nm{font-size:12.5px;font-weight:700;line-height:1.3;color:var(--deep)}
     .cm-card .pr{font-size:14px;font-weight:800;color:var(--deep);margin-top:5px}
     .cm-card .pr small{font-size:10.5px;font-weight:600;color:var(--muted);display:block;margin-top:1px}
 
-    /* a ficha do produto */
+    /* ── a ficha ─────────────────────────────────────────────────────────────
+       No celular ela é uma coluna: cabeça (arte), meio que rola, e um rodapé que NÃO rola.
+       Antes o rodapé era sticky dentro da caixa que rolava, e no iOS ele descolava e
+       cavalgava o conteúdo. Agora quem rola é só o miolo. */
     .cm-sheet{position:fixed;inset:0;z-index:900;display:none;align-items:flex-end;justify-content:center}
     .cm-sheet.open{display:flex}
     .cm-ov{position:absolute;inset:0;background:rgba(23,39,38,.55);backdrop-filter:blur(3px)}
-    .cm-box{position:relative;width:100%;max-width:520px;max-height:92vh;overflow-y:auto;background:var(--white);
-      border-radius:20px 20px 0 0;padding:0 0 calc(20px + env(safe-area-inset-bottom));
+    .cm-box{position:relative;width:100%;max-width:520px;height:94dvh;display:flex;flex-direction:column;
+      background:var(--white);border-radius:20px 20px 0 0;overflow:hidden;
       animation:cmUp .26s cubic-bezier(.2,.8,.2,1)}
     @keyframes cmUp{from{transform:translateY(22px);opacity:0}to{transform:none;opacity:1}}
-    .cm-hero{width:100%;aspect-ratio:1;object-fit:cover;display:block;background:var(--surface)}
-    .cm-fechar{position:absolute;top:12px;right:12px;width:34px;height:34px;border-radius:50%;border:0;
+    .cm-rola{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch}
+    .cm-fechar{position:absolute;top:12px;right:12px;z-index:3;width:34px;height:34px;border-radius:50%;border:0;
       background:rgba(255,255,255,.92);font-size:16px;cursor:pointer;box-shadow:var(--sh)}
-    .cm-body{padding:16px 20px 0}
-    .cm-nome{font-size:18px;font-weight:800;letter-spacing:-.01em}
-    .cm-preco{font-size:22px;font-weight:800;margin-top:4px}
+    /* A arte é quadrada por natureza (aspect-ratio:1). Solta dentro da ficha, num celular
+       estreito, ela ficava mais alta que o espaço reservado e passava POR CIMA do nome e do
+       preço, porque os filhos dela são absolutos. Aqui o palco tem altura fixa e recorta. */
+    .cm-hero{position:relative;width:100%;height:40dvh;min-height:240px;overflow:hidden}
+    .cm-hero .cm-arte{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto}
+    .cm-body{padding:16px 20px 20px}
+    .cm-nome{font-size:19px;font-weight:800;letter-spacing:-.01em;line-height:1.25}
+    .cm-preco{font-size:23px;font-weight:800;margin-top:5px}
     .cm-preco small{font-size:12px;font-weight:600;color:var(--muted)}
+    .cm-preco .de{font-size:14px;font-weight:700;color:var(--muted);text-decoration:line-through;margin-right:6px}
     .cm-lbl{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
-      margin:16px 0 7px}
+      margin:18px 0 8px}
     .cm-ops{display:flex;gap:7px;flex-wrap:wrap}
-    .cm-op{padding:9px 14px;border-radius:10px;border:1.5px solid var(--surface);background:var(--white);
-      font-family:var(--ff);font-size:13px;font-weight:700;color:var(--deep);cursor:pointer;min-height:40px}
+    .cm-op{padding:0 16px;height:44px;border-radius:11px;border:1.5px solid var(--surface);background:var(--white);
+      font-family:var(--ff);font-size:13.5px;font-weight:700;color:var(--deep);cursor:pointer}
     .cm-op.on{border-color:var(--deep);background:var(--deep);color:#fff}
-    .cm-op:disabled{opacity:.32;cursor:not-allowed;text-decoration:line-through}
-    .cm-cep{display:flex;gap:8px;margin-top:4px}
-    .cm-cep input{flex:1;border:1.5px solid var(--surface);border-radius:10px;padding:11px 13px;
-      font-family:var(--ff);font-size:14px;color:var(--deep);min-height:44px}
-    .cm-cep button{padding:0 16px;border:0;border-radius:10px;background:var(--surface);color:var(--deep);
-      font-family:var(--ff);font-size:13px;font-weight:700;cursor:pointer;min-height:44px}
+    .cm-op:disabled{opacity:.3;cursor:not-allowed;text-decoration:line-through}
+
+    .cm-cores{display:flex;gap:10px}
+    .cm-cor{width:56px;border:0;background:none;padding:0;cursor:pointer;text-align:center}
+    .cm-cor img{width:56px;height:56px;border-radius:13px;object-fit:cover;display:block;
+      border:2px solid transparent;background:var(--surface)}
+    .cm-cor.on img{border-color:var(--deep)}
+    .cm-cor .n{font-size:10px;font-weight:600;color:var(--muted);margin-top:5px;line-height:1.2}
+    .cm-cor.on .n{color:var(--deep);font-weight:700}
+
+    .cm-cep{display:flex;gap:8px}
+    .cm-cep input{flex:1;border:1.5px solid var(--surface);border-radius:11px;padding:0 14px;height:48px;
+      font-family:var(--ff);font-size:16px;color:var(--deep);background:var(--white)}
+    .cm-cep input:focus{outline:none;border-color:var(--mid)}
     .cm-frete{margin-top:9px}
-    .cm-fr{display:flex;align-items:center;gap:10px;padding:11px 13px;border:1.5px solid var(--surface);
-      border-radius:10px;margin-bottom:7px;cursor:pointer}
+    .cm-fr{display:flex;align-items:center;gap:10px;padding:12px 13px;border:1.5px solid var(--surface);
+      border-radius:11px;margin-bottom:7px;cursor:pointer}
     .cm-fr.on{border-color:var(--deep);background:var(--surface2,#E8F0ED)}
     .cm-fr .n{flex:1;font-size:13px;font-weight:700}
     .cm-fr .d{font-size:11px;color:var(--muted);font-weight:600}
     .cm-fr .v{font-size:13.5px;font-weight:800}
-    .cm-total{display:flex;justify-content:space-between;align-items:baseline;margin-top:16px;
-      padding-top:14px;border-top:1px solid var(--surface)}
-    .cm-total .l{font-size:13px;color:var(--muted);font-weight:600}
-    .cm-total .v{font-size:24px;font-weight:800}
-    .cm-cta{width:100%;margin-top:14px;padding:16px;border:0;border-radius:14px;background:var(--accent);
-      color:#fff;font-family:var(--ff);font-size:15px;font-weight:800;cursor:pointer;min-height:54px}
-    .cm-cta:disabled{opacity:.5;cursor:not-allowed}
-    .cm-nota{font-size:11px;color:var(--muted);text-align:center;margin-top:10px;line-height:1.5}
+
+    /* cupom: fica fechado. Um campo de cupom aberto e vazio faz quem não tem cupom sentir
+       que está pagando caro, e mandar a pessoa procurar cupom no Google é mandar ela embora. */
+    .cm-cupom-abre{background:none;border:0;padding:0;margin-top:14px;font-family:var(--ff);
+      font-size:12.5px;font-weight:700;color:var(--muted);text-decoration:underline;cursor:pointer}
+    .cm-cupom{display:flex;gap:8px;margin-top:10px}
+    .cm-cupom input{flex:1;border:1.5px solid var(--surface);border-radius:11px;padding:0 14px;height:48px;
+      font-family:var(--ff);font-size:16px;font-weight:700;color:var(--deep);text-transform:uppercase;background:var(--white)}
+    .cm-cupom input:focus{outline:none;border-color:var(--mid)}
+    .cm-cupom button{padding:0 18px;height:48px;border:0;border-radius:11px;background:var(--deep);color:#fff;
+      font-family:var(--ff);font-size:13.5px;font-weight:800;cursor:pointer}
+    .cm-cupom-ok{display:flex;align-items:center;gap:8px;margin-top:10px;padding:11px 13px;border-radius:11px;
+      background:#E6F2E9;color:#1D5B33;font-size:13px;font-weight:700}
+    .cm-cupom-ok button{margin-left:auto;background:none;border:0;color:#1D5B33;font-family:var(--ff);
+      font-size:11.5px;font-weight:700;text-decoration:underline;cursor:pointer}
+
+    /* ── o selo de segurança ─────────────────────────────────────────────────
+       Não é badge de e-commerce apelativo. É um bloco calmo, com o escudo desenhado, que
+       responde as três perguntas que travam a compra: quem cobra, o que acontece se não
+       servir, e quando chega. */
+    .cm-selo{margin-top:20px;border:1.5px solid var(--surface);border-radius:16px;padding:14px 16px;
+      background:linear-gradient(180deg, var(--surface2,#E8F0ED), var(--white))}
+    .cm-selo-h{display:flex;align-items:center;gap:9px;padding-bottom:11px;border-bottom:1px solid var(--surface)}
+    .cm-selo-h svg{width:20px;height:20px;flex:0 0 20px;color:var(--mid)}
+    .cm-selo-h .t{font-size:13px;font-weight:800;color:var(--deep)}
+    .cm-selo-l{display:flex;gap:9px;padding-top:10px;font-size:12px;color:var(--mid);line-height:1.45}
+    .cm-selo-l b{color:var(--deep);font-weight:700}
+    .cm-selo-l .p{color:var(--accent);font-weight:800;flex:0 0 auto}
+
+    .cm-nota{font-size:11.5px;color:var(--muted);margin-top:10px;line-height:1.55}
+
+    /* o rodapé, fora do que rola */
+    .cm-rod{flex:0 0 auto;background:var(--white);border-top:1px solid var(--surface);
+      padding:12px 20px calc(12px + env(safe-area-inset-bottom));box-shadow:0 -10px 26px -20px rgba(23,39,38,.6)}
+    .cm-total{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:9px}
+    .cm-total .l{font-size:12.5px;color:var(--muted);font-weight:600}
+    .cm-total .v{font-size:23px;font-weight:800}
+    .cm-cta{width:100%;padding:16px;border:0;border-radius:14px;background:var(--accent);
+      color:#fff;font-family:var(--ff);font-size:15.5px;font-weight:800;cursor:pointer;min-height:54px}
+    .cm-cta:active{transform:scale(.99)}
     .cm-erro{background:#FDECE7;color:#8A2B12;border-radius:10px;padding:10px 12px;font-size:12.5px;margin-top:10px}
     .loja-disc{font-size:11px;color:var(--muted);text-align:center;padding:20px 24px 8px;line-height:1.6}
     .pv-leash{background:linear-gradient(145deg,#0D2440,#1A3D60)}.pv-leash svg,.pv-leash .prod-vis-lbl{color:#6aaee8}
@@ -2368,16 +2425,8 @@ function _parsePreco(p){ return parseFloat((p.preco||'0').replace('R$','').repla
    mais eficiente de perder a venda depois que a pessoa já se comprometeu.
    ══════════════════════════════════════════════════════════════════════════════ */
 let CAMISAS = [];
-let CM = { produto: null, cor: null, tamanho: null, frete: null, opcoes: [], cep: '', foto: 0 };
-
-/* As fotos de campanha. O mockup da Montink é um cabide em fundo preto: ele mostra a
-   estampa, mas não mostra a camisa VESTIDA, e ninguém compra roupa sem ver como ela cai.
-   O cabide continua na galeria, no fim, porque quem já quer comprar quer ver a estampa
-   isolada e limpa. Produto novo que ainda não tem foto cai no mockup e a loja não quebra. */
-const CM_FOTOS = {
-  5800339: ['img/loja/5800339.jpg', 'img/loja/5800339-b.jpg'],
-  5800493: ['img/loja/5800493.jpg'],
-};
+let CM = { produto: null, cor: null, tamanho: null, frete: null, opcoes: [], cep: '',
+           cupom: null, cupomAberto: false };
 
 async function carregarCamisas(){
   try{
@@ -2387,9 +2436,26 @@ async function carregarCamisas(){
   }catch(e){ /* sem loja, a aba segue com os parceiros */ }
 }
 
-// as fotos da ficha, na ordem: campanha primeiro, cabide por último
-function fotosDe(p){
-  return [...(CM_FOTOS[p.id] || []), ...(p.imgPorCor ? Object.values(p.imgPorCor) : p.imagens)];
+/* As fotos de campanha. O mockup da Montink é um cabide em fundo preto: ele mostra a
+   estampa, mas não mostra a camisa VESTIDA, e ninguém compra roupa sem ver como ela cai.
+   O cabide continua na galeria, no fim, porque quem já quer comprar quer ver a estampa
+   isolada e limpa. Produto novo que ainda não tem foto cai no mockup e a loja não quebra. */
+/* A arte do produto. Nenhuma foto de gente aqui: o produto real, sobre um fundo desenhado.
+   O mix-blend-mode:multiply do CSS come o branco do mockup e recorta a camisa sozinho. */
+function arteDe(p, cor){
+  const img = (p.imgPorCor && p.imgPorCor[cor]) || p.imagens[0];
+  return `
+    <div class="cm-arte">
+      <div class="raios"></div>
+      <div class="sol"></div>
+      <div class="agua"></div>
+      <svg class="ondas" viewBox="0 0 400 90" fill="none" stroke="currentColor" stroke-width="2.4"
+           stroke-linecap="round" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 30 q25 -14 50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0"/>
+        <path d="M0 58 q25 -14 50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0" opacity=".6"/>
+      </svg>
+      <div class="folha"><img class="prod" src="${img}" alt="${p.nome}" loading="lazy"></div>
+    </div>`;
 }
 
 function renderCamisas(){
@@ -2398,7 +2464,7 @@ function renderCamisas(){
   el.style.display = '';
   document.getElementById('cm-grid').innerHTML = CAMISAS.map((p,i) => `
     <div class="cm-card" onclick="abrirCamisa(${i})">
-      <img class="im" src="${fotosDe(p)[0]}" alt="${p.nome}" loading="lazy">
+      ${arteDe(p, p.cores[0])}
       <div class="in">
         <div class="nm">${p.nome.replace('Camiseta Oversized ','')}</div>
         <div class="pr">R$ ${p.preco.toFixed(2).replace('.',',')}
@@ -2410,116 +2476,149 @@ function renderCamisas(){
 function abrirCamisa(i){
   let cep = '';
   try{ cep = localStorage.getItem('tl_cep') || ''; }catch(e){}
-  CM = { produto: CAMISAS[i], cor: null, tamanho: null, frete: null, opcoes: [], cep, foto: 0 };
-  // a primeira cor com algum tamanho em estoque já vem escolhida: menos um clique
+  CM = { produto: CAMISAS[i], cor: null, tamanho: null, frete: null, opcoes: [], cep,
+         cupom: null, cupomAberto: false };
   const p = CM.produto;
+  // a primeira cor com algum tamanho em estoque já vem escolhida: menos um clique
   CM.cor = p.cores.find(c => Object.values(p.estoque[c]||{}).some(q=>q>0)) || p.cores[0];
   document.getElementById('cm-sheet').classList.add('open');
+  document.body.style.overflow = 'hidden';      // o fundo não rola junto com a ficha
   pintarFicha();
-  if (cep.length === 8) calcularFrete();   // quem já comprou uma vez não digita CEP de novo
-  if (window.tlTrack) tlTrack('ViewContent', 'camisa_abriu', { content_name: p.nome, value: p.preco, currency: 'BRL' });
+  if (cep.length === 8) calcularFrete();        // quem já comprou uma vez não digita CEP de novo
+  tlLoja('ViewContent', 'camisa_abriu', { content_name: p.nome, content_ids: [String(p.id)], value: p.preco });
 }
-function fecharCamisa(){ document.getElementById('cm-sheet').classList.remove('open'); }
+function fecharCamisa(){
+  document.getElementById('cm-sheet').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+/* Um só lugar pra medir. Tudo que acontece na loja passa por aqui, então nada fica de fora
+   do Pixel nem do GA, e o nome do evento é o mesmo nos dois. */
+function tlLoja(evento, nome, dados){
+  if (window.tlTrack) tlTrack(evento, nome, Object.assign({ currency: 'BRL', content_type: 'product' }, dados));
+}
 
 function pintarFicha(){
   const p = CM.produto;
-  const fotos = fotosDe(p);
   const temEstoque = (t, cor) => ((p.estoque[cor || CM.cor]||{})[t] || 0) > 0;
-  const total = p.preco + (CM.frete ? CM.frete.valor : 0);
+  const desconto = CM.cupom ? CM.cupom.desconto : 0;
+  const preco = Math.max(0, p.preco - desconto);
+  const total = preco + (CM.frete ? CM.frete.valor : 0);
+  const real = v => 'R$ ' + v.toFixed(2).replace('.',',');
 
-  // A ÚNICA escassez que a loja mostra é a que existe de verdade: hoje é o P no branco.
-  // O resto tem mil unidades. Inventar contador de "últimas peças" aqui seria mentira, e
-  // mentira é a única coisa que a marca não pode vender.
+  // A ÚNICA escassez que a loja mostra é a que existe de verdade: hoje é o P no branco. O
+  // resto tem mil unidades. Inventar "últimas peças" aqui seria mentira, e mentira é a única
+  // coisa que essa marca não pode vender.
   const esgotados = p.tamanhos.filter(t => !temEstoque(t));
   const outraCor = esgotados.length
     ? p.cores.find(c => c !== CM.cor && esgotados.every(t => temEstoque(t, c)))
     : null;
 
   document.getElementById('cm-box').innerHTML = `
-    <div class="cm-gal" id="cm-gal" onscroll="marcarFoto()">
-      ${fotos.map(f => `<img src="${f}" alt="${p.nome}" loading="lazy">`).join('')}
-    </div>
-    ${fotos.length > 1 ? `<div class="cm-pts">${fotos.map((_,i) =>
-      `<div class="cm-pt ${i===0?'on':''}"></div>`).join('')}</div>` : ''}
-    <button class="cm-fechar" onclick="fecharCamisa()">✕</button>
-    <div class="cm-body">
-      <div class="cm-nome">${p.nome}</div>
-      <div class="cm-preco">R$ ${p.preco.toFixed(2).replace('.',',')} <small>ou 12x sem juros, ou Pix</small></div>
+    <button class="cm-fechar" onclick="fecharCamisa()" aria-label="Fechar">✕</button>
+    <div class="cm-rola">
+      <div class="cm-hero">${arteDe(p, CM.cor)}</div>
+      <div class="cm-body">
+        <div class="cm-nome">${p.nome}</div>
+        <div class="cm-preco">
+          ${desconto ? `<span class="de">${real(p.preco)}</span>` : ''}${real(preco)}
+          <small>ou 12x sem juros, ou Pix</small>
+        </div>
 
-      <div class="cm-selos">
-        <div class="cm-selo"><div class="i">🖨️</div><div class="t">Feita pra você</div>
-          <div class="d">impressa depois da compra</div></div>
-        <div class="cm-selo"><div class="i">↩️</div><div class="t">7 dias</div>
-          <div class="d">pra devolver, sem motivo</div></div>
-        <div class="cm-selo"><div class="i">🔒</div><div class="t">Mercado Pago</div>
-          <div class="d">Pix, cartão ou boleto</div></div>
-      </div>
+        <div class="cm-lbl">Cor</div>
+        <div class="cm-cores">
+          ${p.cores.map(c => `
+            <button class="cm-cor ${c===CM.cor?'on':''}" onclick="escolherCor('${c}')">
+              <img src="${p.imgPorCor[c] || p.imagens[0]}" alt="${c}">
+              <div class="n">${c}</div>
+            </button>`).join('')}
+        </div>
 
-      <div class="cm-lbl">Cor</div>
-      <div class="cm-cores">
-        ${p.cores.map(c => `
-          <button class="cm-cor ${c===CM.cor?'on':''}" onclick="escolherCor('${c}')">
-            <img src="${p.imgPorCor[c] || fotos[0]}" alt="${c}">
-            <div class="n">${c}</div>
-          </button>`).join('')}
-      </div>
+        <div class="cm-lbl" id="cm-lbl-tam">Tamanho</div>
+        <div class="cm-ops">
+          ${p.tamanhos.map(t => `<button class="cm-op ${t===CM.tamanho?'on':''}" ${temEstoque(t)?'':'disabled'}
+              onclick="escolherTam('${t}')">${t}</button>`).join('')}
+        </div>
+        ${esgotados.length ? `<div class="cm-nota">
+          ${esgotados.join(' e ')} ${esgotados.length>1?'estão esgotados':'está esgotado'} no ${CM.cor}.
+          ${outraCor ? `No ${outraCor} ainda tem.` : ''}</div>` : ''}
 
-      <div class="cm-lbl" id="cm-lbl-tam">Tamanho</div>
-      <div class="cm-ops">
-        ${p.tamanhos.map(t => `<button class="cm-op ${t===CM.tamanho?'on':''}" ${temEstoque(t)?'':'disabled'}
-            onclick="escolherTam('${t}')">${t}</button>`).join('')}
-      </div>
-      ${esgotados.length ? `<div class="cm-nota" style="text-align:left;margin-top:7px">
-        ${esgotados.join(' e ')} ${esgotados.length>1?'estão esgotados':'está esgotado'} no ${CM.cor}.
-        ${outraCor ? `No ${outraCor} ainda tem.` : ''}</div>` : ''}
+        <div class="cm-lbl">Entrega</div>
+        <div class="cm-cep">
+          <input id="cm-cep" inputmode="numeric" placeholder="Digite seu CEP" value="${CM.cep}"
+            maxlength="9" oninput="cepDigitado(this.value)">
+        </div>
+        <div class="cm-frete" id="cm-frete">
+          ${CM.opcoes.map((o,i) => `
+            <div class="cm-fr ${CM.frete && CM.frete.id===o.id ? 'on':''}" onclick="escolherFrete(${i})">
+              <div class="n">${o.nome}<div class="d">chega em até ${o.dias} dias úteis</div></div>
+              <div class="v">${real(o.valor)}</div>
+            </div>`).join('')}
+        </div>
 
-      <div class="cm-lbl">Entrega</div>
-      <div class="cm-cep">
-        <input id="cm-cep" inputmode="numeric" placeholder="Digite seu CEP" value="${CM.cep}" maxlength="9"
-          oninput="cepDigitado(this.value)">
-      </div>
-      <div class="cm-frete" id="cm-frete">
-        ${CM.opcoes.map((o,i) => `
-          <div class="cm-fr ${CM.frete && CM.frete.id===o.id ? 'on':''}" onclick="escolherFrete(${i})">
-            <div class="n">${o.nome}<div class="d">chega em até ${o.dias} dias úteis</div></div>
-            <div class="v">R$ ${o.valor.toFixed(2).replace('.',',')}</div>
-          </div>`).join('')}
-      </div>
-      <div id="cm-erro"></div>
+        ${CM.cupom ? `
+          <div class="cm-cupom-ok">
+            <span>✓</span> <span>${CM.cupom.codigo} aplicado, menos ${real(CM.cupom.desconto)}</span>
+            <button onclick="tirarCupom()">tirar</button>
+          </div>`
+        : CM.cupomAberto ? `
+          <div class="cm-cupom">
+            <input id="cm-cupom" placeholder="Código do cupom" autocapitalize="characters"
+              onkeydown="if(event.key==='Enter')aplicarCupom()">
+            <button onclick="aplicarCupom()">Aplicar</button>
+          </div>`
+        : `<button class="cm-cupom-abre" onclick="abrirCupom()">Tenho um cupom</button>`}
 
-      <div class="cm-nota" style="text-align:left;margin-top:14px">A gente só imprime depois que
-      você compra. Por isso não sobra pilha de camisa encalhada, e por isso a sua sai nova,
-      feita naquela semana.</div>
+        <div id="cm-erro"></div>
+
+        <div class="cm-selo">
+          <div class="cm-selo-h">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2.6l7 3v5.6c0 4.3-2.9 8.3-7 9.2-4.1-.9-7-4.9-7-9.2V5.6z"/>
+              <path d="M9 12.2l2.1 2.1L15.4 10"/>
+            </svg>
+            <span class="t">Compra segura</span>
+          </div>
+          <div class="cm-selo-l"><span class="p">1</span><span><b>Quem cobra é o Mercado Pago.</b>
+            O pagamento acontece lá dentro, com Pix, cartão em até 12x ou boleto. Seus dados de
+            cartão não passam pela gente em momento nenhum.</span></div>
+          <div class="cm-selo-l"><span class="p">2</span><span><b>Sete dias pra desistir.</b>
+            Não serviu, não gostou, mudou de ideia: você devolve e recebe o dinheiro de volta.
+            É o seu direito de arrependimento, e a gente não vai dificultar.</span></div>
+          <div class="cm-selo-l"><span class="p">3</span><span><b>Você acompanha até a porta.</b>
+            O código de rastreio chega no seu e-mail assim que a peça sai pra transportadora.</span></div>
+        </div>
+
+        <div class="cm-nota">A gente só imprime depois que você compra. Por isso não sobra pilha
+        de camisa encalhada, e por isso a sua sai nova, feita naquela semana.</div>
+      </div>
     </div>
 
     <div class="cm-rod">
-      <div class="cm-total" style="margin:0;padding:0;border:0">
+      <div class="cm-total">
         <span class="l">${CM.frete ? 'Total com frete' : 'Camisa'}</span>
-        <span class="v">R$ ${total.toFixed(2).replace('.',',')}</span>
+        <span class="v">${real(total)}</span>
       </div>
       <button class="cm-cta" onclick="irPagar()">
         ${!CM.tamanho ? 'Escolher tamanho' : !CM.frete ? 'Calcular o frete' : 'Comprar agora'}
       </button>
     </div>`;
-
-  const gal = document.getElementById('cm-gal');
-  if (gal && CM.foto) gal.scrollLeft = gal.clientWidth * CM.foto;
 }
 
-// os pontinhos da galeria acompanham o dedo
-function marcarFoto(){
-  const gal = document.getElementById('cm-gal');
-  const i = Math.round(gal.scrollLeft / gal.clientWidth);
-  CM.foto = i;
-  document.querySelectorAll('.cm-pt').forEach((p,j) => p.classList.toggle('on', j===i));
+function escolherCor(c){
+  CM.cor = c;
+  if(!((CM.produto.estoque[c]||{})[CM.tamanho] > 0)) CM.tamanho = null;
+  pintarFicha();
 }
-
-function escolherCor(c){ CM.cor = c; if(!( (CM.produto.estoque[c]||{})[CM.tamanho] > 0)) CM.tamanho = null; CM.foto = 0; pintarFicha(); }
-function escolherTam(t){ CM.tamanho = t; pintarFicha(); }
+function escolherTam(t){
+  CM.tamanho = t;
+  pintarFicha();
+  tlLoja('AddToCart', 'camisa_tamanho', { content_name: CM.produto.nome, value: CM.produto.preco });
+}
 function escolherFrete(i){ CM.frete = CM.opcoes[i]; pintarFicha(); }
 
-// O botão "Calcular" era um clique a mais para dizer o que o próprio CEP já dizia. Assim que
-// os 8 números estão lá, o frete aparece sozinho.
+// O botão "Calcular" era um clique a mais pra dizer o que o próprio CEP já dizia.
 function cepDigitado(v){
   const cep = (v||'').replace(/\D/g,'');
   CM.cep = cep;
@@ -2528,23 +2627,82 @@ function cepDigitado(v){
 
 async function calcularFrete(){
   const cep = (CM.cep || '').replace(/\D/g,'');
-  if(cep.length !== 8){ document.getElementById('cm-erro').innerHTML = '<div class="cm-erro">CEP precisa ter 8 números.</div>'; return; }
+  if(cep.length !== 8) return;
   try{ localStorage.setItem('tl_cep', cep); }catch(e){}   // na próxima compra ele já vem preenchido
-  document.getElementById('cm-frete').innerHTML = '<div class="cm-nota">consultando os Correios…</div>';
+  const box = document.getElementById('cm-frete');
+  if (box) box.innerHTML = '<div class="cm-nota">consultando a transportadora…</div>';
   try{
     const r = await (await fetch(`/api/loja?acao=frete&cep=${cep}&qtd=1`)).json();
     if(r.erro) throw new Error(r.erro);
     CM.opcoes = r.opcoes || [];
     CM.frete = CM.opcoes[0] || null;      // o mais barato já vem marcado
     pintarFicha();
+    tlLoja('Lead', 'camisa_frete', { content_name: CM.produto.nome, value: CM.frete ? CM.frete.valor : 0 });
   }catch(e){
-    document.getElementById('cm-erro').innerHTML = `<div class="cm-erro">Não consegui calcular o frete: ${e.message}</div>`;
+    CM.opcoes = []; CM.frete = null;
+    pintarFicha();
+    document.getElementById('cm-erro').innerHTML =
+      `<div class="cm-erro">Não consegui calcular o frete agora. Confira o CEP e tente de novo.</div>`;
   }
 }
 
+/* ── cupom ────────────────────────────────────────────────────────────────────
+   Quem valida é o servidor. A lista de cupons nunca chega no navegador: se chegasse,
+   bastaria abrir o código-fonte da página pra ler todos eles. */
+function abrirCupom(){ CM.cupomAberto = true; pintarFicha(); setTimeout(()=>document.getElementById('cm-cupom').focus(), 60); }
+function tirarCupom(){ CM.cupom = null; CM.cupomAberto = false; pintarFicha(); }
+
+async function aplicarCupom(){
+  const el = document.getElementById('cm-cupom');
+  const codigo = (el.value || '').trim().toUpperCase();
+  if (!codigo) return;
+  document.getElementById('cm-erro').innerHTML = '';
+  try{
+    const r = await (await fetch(`/api/cupom?codigo=${encodeURIComponent(codigo)}&valor=${CM.produto.preco}`)).json();
+    if (r.erro){
+      document.getElementById('cm-erro').innerHTML = `<div class="cm-erro">${r.erro}</div>`;
+      tlLoja('CustomEvent', 'cupom_recusado', { content_name: codigo, value: 0 });
+      return;
+    }
+    CM.cupom = r;
+    pintarFicha();
+    // Cupom aplicado é evento de verdade: é ele que diz qual campanha trouxe qual venda.
+    tlLoja('CustomEvent', 'cupom_aplicado', {
+      content_name: r.codigo, coupon: r.codigo, value: r.desconto,
+    });
+  }catch(e){
+    document.getElementById('cm-erro').innerHTML = `<div class="cm-erro">Não consegui checar o cupom agora.</div>`;
+  }
+}
+
+/* O Mercado Pago devolve a pessoa pra cá com ?compra=ok depois de aprovar. É AQUI que o
+   Purchase é disparado, e não no clique de comprar: no clique ninguém pagou nada ainda, e
+   um Purchase disparado no clique ensina o Pixel a otimizar pra quem desiste no meio.
+
+   O ?compra=ok é do navegador, então ele serve pra MEDIR, não pra liberar nada. Quem manda
+   a camisa pra produção é o webhook do Mercado Pago, no servidor, que ninguém falsifica. */
+function conferirCompra(){
+  const q = new URLSearchParams(location.search);
+  if (q.get('compra') !== 'ok') return;
+
+  let pend = null;
+  try{ pend = JSON.parse(localStorage.getItem('tl_compra_pend') || 'null'); }catch(e){}
+  if (pend && window.tlTrack) {
+    tlTrack('Purchase', 'purchase', {
+      content_name: pend.nome, content_ids: [String(pend.produto_id)], content_type: 'product',
+      value: Number(pend.total) || 0, currency: 'BRL',
+      coupon: pend.cupom || undefined, transaction_id: pend.ref,
+    });
+  }
+  try{ localStorage.removeItem('tl_compra_pend'); sessionStorage.removeItem('tl_compra'); }catch(e){}
+  history.replaceState({}, '', location.pathname);     // recarregar não conta a venda de novo
+
+  if (typeof toast === 'function') toast('Compra confirmada. O rastreio chega no seu e-mail.');
+}
+
 function irPagar(){
-  // Um botão desabilitado é um beco sem saída: ele diz "não" e não diz para onde ir. Aqui
-  // ele sempre responde ao toque e leva ao passo que está faltando.
+  // Um botão desabilitado é um beco sem saída: diz "não" e não diz pra onde ir. Aqui ele
+  // sempre responde ao toque e leva ao passo que está faltando.
   if (!CM.tamanho) {
     document.getElementById('cm-lbl-tam').scrollIntoView({ behavior:'smooth', block:'center' });
     return;
@@ -2557,16 +2715,20 @@ function irPagar(){
   }
 
   const p = CM.produto;
+  const desconto = CM.cupom ? CM.cupom.desconto : 0;
+  const preco = Math.max(0, p.preco - desconto);
   const dados = {
     produto_id: p.id, nome: p.nome, preco: p.preco,
     cor: CM.cor, tamanho: CM.tamanho,
     frete_id: CM.frete.id, frete_nome: CM.frete.nome, frete_valor: CM.frete.valor,
-    cep: CM.cep, total: p.preco + CM.frete.valor,
+    cep: CM.cep, cupom: CM.cupom ? CM.cupom.codigo : '', desconto,
+    total: preco + CM.frete.valor,
     img: p.imgPorCor[CM.cor] || p.imagens[0],
   };
   try{ sessionStorage.setItem('tl_compra', JSON.stringify(dados)); }catch(e){}
-  if (window.tlTrack) tlTrack('AddToCart', 'camisa_checkout', {
-    content_name: p.nome, value: dados.total, currency: 'BRL'
+  tlLoja('AddToCart', 'camisa_checkout', {
+    content_name: p.nome, content_ids: [String(p.id)], value: dados.total,
+    coupon: dados.cupom || undefined,
   });
   location.href = 'comprar.html';
 }
@@ -4454,6 +4616,7 @@ setInterval(() => loadNarratorCache().then(() => loadData()), 30*60*1000);
   } catch (e) {}
   renderLoja();
   carregarCamisas();
+  conferirCompra();
 })();
 </script>
 <script src="./tideline-consent.js"></script>

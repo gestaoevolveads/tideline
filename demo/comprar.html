@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
 <title>Finalizar compra · Tideline</title>
 <script src="./tideline-analytics.js"></script>
@@ -14,44 +14,87 @@
   }
   *{box-sizing:border-box;margin:0;padding:0}
   body{background:var(--paper);color:var(--deep);font-family:var(--ff);line-height:1.5;
-    -webkit-font-smoothing:antialiased}
-  header{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid rgba(23,39,38,.09)}
-  .wm{font-size:19px;letter-spacing:-.02em;margin-right:auto}
+    -webkit-font-smoothing:antialiased;padding-bottom:140px}
+  header{display:flex;align-items:center;gap:12px;padding:14px 20px;border-bottom:1px solid rgba(23,39,38,.09);
+    background:var(--white);position:sticky;top:0;z-index:5}
+  .wm{font-size:18px;letter-spacing:-.02em;margin-right:auto}
   .wm .t{font-weight:300}.wm .l{font-weight:700}.wm .d{color:var(--accent)}
   header a{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none}
 
-  main{max-width:520px;margin:0 auto;padding:20px 20px 60px}
+  /* Os três passos. Não é enfeite: é a resposta muda pra "quanto falta?". Sem ela, um
+     formulário no celular parece infinito, e quem não vê o fim desiste no meio. */
+  .passos{display:flex;align-items:center;gap:6px;padding:14px 20px 0;max-width:560px;margin:0 auto}
+  .passo{flex:1;display:flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:var(--muted)}
+  .passo .b{width:20px;height:20px;border-radius:50%;background:var(--surface);color:var(--mid);
+    display:flex;align-items:center;justify-content:center;font-size:10.5px;font-weight:800;flex:0 0 20px}
+  .passo.ok .b{background:var(--mid);color:#fff}
+  .passo.ok{color:var(--deep)}
+  .passo .traco{flex:1;height:2px;background:var(--surface);border-radius:2px}
 
-  .resumo{background:var(--white);border-radius:16px;padding:14px;display:flex;gap:14px;align-items:center;
-    box-shadow:0 1px 2px rgba(23,39,38,.05),0 8px 24px -18px rgba(23,39,38,.3);margin-bottom:20px}
-  .resumo img{width:76px;height:76px;border-radius:12px;object-fit:cover;background:var(--surface)}
+  main{max-width:560px;margin:0 auto;padding:16px 20px 40px}
+
+  /* o resumo: o produto sobre o mesmo fundo desenhado da loja, sem foto de gente */
+  .resumo{background:var(--white);border-radius:18px;padding:12px;display:flex;gap:13px;align-items:center;
+    box-shadow:0 1px 2px rgba(23,39,38,.05),0 10px 28px -22px rgba(23,39,38,.45)}
+  .arte{position:relative;width:84px;height:84px;flex:0 0 84px;border-radius:13px;overflow:hidden;
+    background:var(--paper)}
+  .arte .sol{position:absolute;left:50%;top:44%;width:80%;aspect-ratio:1;transform:translate(-50%,-50%);
+    border-radius:50%;background:radial-gradient(circle,#F9583122 0%,transparent 70%)}
+  .arte .agua{position:absolute;left:0;right:0;bottom:0;height:36%;
+    background:linear-gradient(180deg,transparent,#D3E2DE 62%)}
+  /* a mesma folha branca da loja: a camisa é branca, e multiply comeria ela inteira */
+  .arte .folha{position:absolute;left:9%;right:9%;top:7%;bottom:7%;border-radius:7px;background:var(--white);
+    box-shadow:0 1px 3px rgba(23,39,38,.12),0 10px 18px -14px rgba(23,39,38,.5);transform:rotate(-1.5deg);
+    overflow:hidden}
+  .arte .folha img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
   .resumo .n{font-size:14px;font-weight:800;line-height:1.3}
   .resumo .v{font-size:12px;color:var(--muted);margin-top:3px}
-  .resumo .p{font-size:17px;font-weight:800;margin-top:5px}
+  .resumo .p{font-size:16px;font-weight:800;margin-top:5px}
+  .resumo .p .de{font-size:12px;color:var(--muted);text-decoration:line-through;margin-right:5px;font-weight:700}
 
-  h2{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
-    margin:22px 0 10px}
+  h2{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
+    margin:24px 0 10px}
   .campo{margin-bottom:11px}
   label{display:block;font-size:12.5px;font-weight:600;color:var(--muted);margin-bottom:5px}
-  input{width:100%;border:1.5px solid rgba(23,39,38,.14);background:var(--white);border-radius:11px;
-    padding:12px 14px;font:inherit;font-size:15px;color:var(--deep);min-height:48px}
+  input{width:100%;border:1.5px solid rgba(23,39,38,.14);background:var(--white);border-radius:12px;
+    padding:0 14px;height:52px;font:inherit;font-size:16px;color:var(--deep)}
   input:focus{outline:none;border-color:var(--mid);box-shadow:0 0 0 3px rgba(36,63,61,.09)}
+  input.ruim{border-color:#D9694B;background:#FEF6F3}
   .linha{display:grid;grid-template-columns:1fr 1fr;gap:11px}
-  .linha.tres{grid-template-columns:2fr 1fr 1fr}
+  .dica{font-size:11px;color:var(--muted);margin-top:5px}
 
-  .total{background:var(--white);border-radius:16px;padding:16px 18px;margin-top:22px;
-    box-shadow:0 1px 2px rgba(23,39,38,.05),0 8px 24px -18px rgba(23,39,38,.3)}
+  /* o selo. Calmo, sem carimbo de "100% SEGURO", que é justamente o que dá desconfiança. */
+  .selo{margin-top:22px;border:1.5px solid var(--surface);border-radius:16px;padding:14px 16px;
+    background:linear-gradient(180deg,var(--surface2),var(--white))}
+  .selo-h{display:flex;align-items:center;gap:9px;padding-bottom:11px;border-bottom:1px solid var(--surface)}
+  .selo-h svg{width:20px;height:20px;flex:0 0 20px;color:var(--mid)}
+  .selo-h .t{font-size:13px;font-weight:800}
+  .selo-l{display:flex;gap:9px;padding-top:10px;font-size:12px;color:var(--mid);line-height:1.45}
+  .selo-l b{color:var(--deep);font-weight:700}
+  .selo-l .p{color:var(--accent);font-weight:800}
+
+  .total{background:var(--white);border-radius:16px;padding:14px 16px;margin-top:22px;
+    box-shadow:0 1px 2px rgba(23,39,38,.05)}
   .total .l{display:flex;justify-content:space-between;font-size:13.5px;color:var(--mid);margin-bottom:7px}
+  .total .l.desc{color:#1D5B33;font-weight:700}
   .total .f{display:flex;justify-content:space-between;align-items:baseline;padding-top:11px;
     border-top:1px solid var(--surface);margin-top:4px}
   .total .f .k{font-size:13px;font-weight:700}
   .total .f .v{font-size:24px;font-weight:800}
 
-  .cta{width:100%;margin-top:16px;padding:17px;border:0;border-radius:14px;background:var(--accent);
-    color:#fff;font:inherit;font-size:16px;font-weight:800;cursor:pointer;min-height:56px}
+  /* o rodapé fixo: o preço e o botão nunca somem, e é ele que segura a decisão */
+  .rod{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--white);
+    border-top:1px solid var(--surface);padding:11px 20px calc(11px + env(safe-area-inset-bottom));
+    box-shadow:0 -10px 26px -20px rgba(23,39,38,.6)}
+  .rod .in{max-width:560px;margin:0 auto;display:flex;align-items:center;gap:12px}
+  .rod .pr{flex:0 0 auto}
+  .rod .pr .k{font-size:10.5px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+  .rod .pr .v{font-size:20px;font-weight:800;line-height:1.15}
+  .cta{flex:1;padding:15px;border:0;border-radius:13px;background:var(--accent);
+    color:#fff;font:inherit;font-size:15.5px;font-weight:800;cursor:pointer;min-height:54px}
   .cta:disabled{opacity:.55;cursor:wait}
-  .nota{font-size:11.5px;color:var(--muted);text-align:center;margin-top:12px;line-height:1.6}
-  .erro{background:#FDECE7;color:#8A2B12;border-radius:11px;padding:11px 13px;font-size:13px;margin-top:12px}
+  .rod .nota{max-width:560px;margin:7px auto 0;font-size:10.5px;color:var(--muted);text-align:center}
+  .erro{background:#FDECE7;color:#8A2B12;border-radius:12px;padding:11px 13px;font-size:13px;margin-top:12px}
 </style>
 </head>
 <body>
@@ -61,62 +104,121 @@
   <a href="./app.html">Voltar</a>
 </header>
 
+<div class="passos">
+  <div class="passo ok"><span class="b">✓</span> Camisa</div>
+  <span class="traco"></span>
+  <div class="passo ok" id="passo2"><span class="b">2</span> Entrega</div>
+  <span class="traco"></span>
+  <div class="passo" id="passo3"><span class="b">3</span> Pagamento</div>
+</div>
+
 <main>
   <div id="resumo"></div>
 
-  <h2>Seus dados</h2>
-  <div class="campo"><label>Nome completo</label><input id="cliente_nome" autocomplete="name"></div>
+  <h2>Pra quem é</h2>
+  <div class="campo"><label>Nome completo</label>
+    <input id="cliente_nome" autocomplete="name" placeholder="Como está no documento"></div>
+  <div class="campo"><label>E-mail</label>
+    <input id="cliente_email" type="email" inputmode="email" autocomplete="email" placeholder="seu@email.com">
+    <div class="dica">É pra cá que vai o código de rastreio.</div></div>
   <div class="linha">
-    <div class="campo"><label>E-mail</label><input id="cliente_email" type="email" autocomplete="email"></div>
-    <div class="campo"><label>Telefone</label><input id="cliente_fone" inputmode="tel" placeholder="(21) 99999-9999"></div>
+    <div class="campo"><label>Telefone</label>
+      <input id="cliente_fone" inputmode="tel" autocomplete="tel" placeholder="(21) 99999-9999"></div>
+    <div class="campo"><label>CPF</label>
+      <input id="cliente_doc" inputmode="numeric" placeholder="000.000.000-00"></div>
   </div>
-  <div class="campo"><label>CPF</label><input id="cliente_doc" inputmode="numeric" placeholder="000.000.000-00"></div>
 
-  <h2>Entrega</h2>
+  <h2>Onde entregar</h2>
   <div class="linha">
-    <div class="campo"><label>CEP</label><input id="cep" inputmode="numeric" maxlength="9"></div>
-    <div class="campo"><label>Número</label><input id="numero" inputmode="numeric"></div>
+    <div class="campo"><label>CEP</label>
+      <input id="cep" inputmode="numeric" maxlength="9" autocomplete="postal-code"></div>
+    <div class="campo"><label>Número</label>
+      <input id="numero" inputmode="numeric" autocomplete="address-line2"></div>
   </div>
   <div class="campo"><label>Rua</label><input id="rua" autocomplete="address-line1"></div>
   <div class="linha">
     <div class="campo"><label>Bairro</label><input id="bairro"></div>
-    <div class="campo"><label>Complemento <span style="font-weight:400">(opcional)</span></label><input id="complemento"></div>
+    <div class="campo"><label>Complemento <span style="font-weight:400">(opcional)</span></label>
+      <input id="complemento" placeholder="apto, bloco"></div>
   </div>
   <div class="linha">
-    <div class="campo"><label>Cidade</label><input id="cidade"></div>
-    <div class="campo"><label>Estado</label><input id="uf" maxlength="2" placeholder="RJ"></div>
+    <div class="campo"><label>Cidade</label><input id="cidade" autocomplete="address-level2"></div>
+    <div class="campo"><label>Estado</label><input id="uf" maxlength="2" placeholder="RJ" autocomplete="address-level1"></div>
+  </div>
+
+  <div class="selo">
+    <div class="selo-h">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 2.6l7 3v5.6c0 4.3-2.9 8.3-7 9.2-4.1-.9-7-4.9-7-9.2V5.6z"/>
+        <path d="M9 12.2l2.1 2.1L15.4 10"/>
+      </svg>
+      <span class="t">Compra segura</span>
+    </div>
+    <div class="selo-l"><span class="p">1</span><span><b>Quem cobra é o Mercado Pago.</b>
+      Você paga lá dentro, com Pix, cartão em até 12x ou boleto. Os dados do seu cartão não
+      passam pela gente em momento nenhum.</span></div>
+    <div class="selo-l"><span class="p">2</span><span><b>Sete dias pra desistir.</b>
+      Não serviu, não gostou, mudou de ideia: devolve e recebe o dinheiro de volta.</span></div>
+    <div class="selo-l"><span class="p">3</span><span><b>Rastreio no e-mail.</b>
+      Assim que a peça sai pra transportadora, o código chega pra você.</span></div>
   </div>
 
   <div class="total" id="total"></div>
   <div id="erro"></div>
-  <button class="cta" id="pagar">Ir para o pagamento</button>
-  <div class="nota">Pagamento pelo Mercado Pago: Pix, cartão em até 12x ou boleto.<br>
-    A camisa é impressa depois da compra e enviada direto pra você.</div>
 </main>
+
+<div class="rod">
+  <div class="in">
+    <div class="pr"><div class="k">Total</div><div class="v" id="rod-total">—</div></div>
+    <button class="cta" id="pagar">Ir para o pagamento</button>
+  </div>
+  <div class="nota">Você será levado ao ambiente do Mercado Pago pra concluir.</div>
+</div>
 
 <script>
 const $ = i => document.getElementById(i);
+const real = v => 'R$ ' + Number(v).toFixed(2).replace('.', ',');
+
 let C = null;
 try { C = JSON.parse(sessionStorage.getItem('tl_compra') || 'null'); } catch(e) {}
-
 if (!C) { location.replace('./app.html'); }
-else {
+else { pintar(); }
+
+function pintar(){
+  const desconto = Number(C.desconto) || 0;
+  const preco = C.preco - desconto;
+
   $('resumo').innerHTML = `
-    <img src="${C.img || ''}" alt="">
-    <div>
-      <div class="n">${C.nome}</div>
-      <div class="v">${C.cor} · tamanho ${C.tamanho}</div>
-      <div class="p">R$ ${C.preco.toFixed(2).replace('.',',')}</div>
+    <div class="resumo">
+      <div class="arte">
+        <div class="sol"></div><div class="agua"></div>
+        <div class="folha"><img src="${C.img || ''}" alt=""></div>
+      </div>
+      <div>
+        <div class="n">${C.nome}</div>
+        <div class="v">${C.cor} · tamanho ${C.tamanho}</div>
+        <div class="p">${desconto ? `<span class="de">${real(C.preco)}</span>` : ''}${real(preco)}</div>
+      </div>
     </div>`;
+
   $('total').innerHTML = `
-    <div class="l"><span>Camisa</span><span>R$ ${C.preco.toFixed(2).replace('.',',')}</span></div>
-    <div class="l"><span>${C.frete_nome}</span><span>R$ ${C.frete_valor.toFixed(2).replace('.',',')}</span></div>
-    <div class="f"><span class="k">Total</span><span class="v">R$ ${C.total.toFixed(2).replace('.',',')}</span></div>`;
+    <div class="l"><span>Camisa</span><span>${real(C.preco)}</span></div>
+    ${desconto ? `<div class="l desc"><span>Cupom ${C.cupom}</span><span>menos ${real(desconto)}</span></div>` : ''}
+    <div class="l"><span>${C.frete_nome}</span><span>${real(C.frete_valor)}</span></div>
+    <div class="f"><span class="k">Total</span><span class="v">${real(C.total)}</span></div>`;
+
+  $('rod-total').textContent = real(C.total);
   $('cep').value = (C.cep || '').replace(/(\d{5})(\d{3})/, '$1-$2');
 
   // O CEP já foi digitado na ficha do produto. Preencher o endereço sozinho a partir dele
-  // corta cinco campos de digitação, e é onde a maioria das compras morre no celular.
+  // corta cinco campos de digitação, e é aí que a maioria das compras morre no celular.
   buscarCep(C.cep);
+
+  if (window.tlTrack) tlTrack('InitiateCheckout', 'camisa_checkout_abriu', {
+    content_name: C.nome, content_ids: [String(C.produto_id)], content_type: 'product',
+    value: C.total, currency: 'BRL', coupon: C.cupom || undefined,
+  });
 }
 
 async function buscarCep(cep){
@@ -129,35 +231,75 @@ async function buscarCep(cep){
     if (!$('bairro').value) $('bairro').value = d.bairro || '';
     if (!$('cidade').value) $('cidade').value = d.localidade || '';
     if (!$('uf').value) $('uf').value = d.uf || '';
-    if (d.logradouro) $('numero').focus();
+    if (d.logradouro && !$('numero').value) $('numero').focus();
   }catch(e){}
 }
 $('cep').oninput = e => { if (e.target.value.replace(/\D/g,'').length === 8) buscarCep(e.target.value); };
 
+// máscaras leves: teclado numérico já ajuda, mas o formato dá a sensação de "campo certo"
+$('cliente_doc').oninput = e => {
+  const v = e.target.value.replace(/\D/g,'').slice(0,11);
+  e.target.value = v.replace(/(\d{3})(\d)/,'$1.$2').replace(/(\d{3})\.(\d{3})(\d)/,'$1.$2.$3')
+                    .replace(/\.(\d{3})(\d{1,2})$/,'.$1-$2');
+};
+$('cliente_fone').oninput = e => {
+  const v = e.target.value.replace(/\D/g,'').slice(0,11);
+  e.target.value = v.replace(/^(\d{2})(\d)/,'($1) $2').replace(/(\d{5})(\d)/,'$1-$2');
+};
+
+const CAMPOS = ['cliente_nome','cliente_email','cliente_fone','cliente_doc',
+                'cep','rua','numero','bairro','cidade','uf'];
+
 $('pagar').onclick = async () => {
   const b = $('pagar');
-  const campos = ['cliente_nome','cliente_email','cliente_fone','cliente_doc','cep','rua','numero','bairro','cidade','uf'];
   const dados = {};
-  for (const c of campos) {
-    const v = ($(c).value || '').trim();
-    if (!v) { $('erro').innerHTML = `<div class="erro">Falta preencher: ${$(c).previousElementSibling.textContent.replace(' (opcional)','')}.</div>`; $(c).focus(); return; }
+  $('erro').innerHTML = '';
+
+  for (const c of CAMPOS) {
+    const el = $(c);
+    const v = (el.value || '').trim();
+    el.classList.toggle('ruim', !v);
+    if (!v) {
+      $('erro').innerHTML = `<div class="erro">Falta preencher: ${el.previousElementSibling.textContent.replace(' (opcional)','')}.</div>`;
+      el.scrollIntoView({ behavior:'smooth', block:'center' });
+      setTimeout(()=>el.focus(), 320);
+      return;
+    }
     dados[c] = v;
   }
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(dados.cliente_email)) {
+    const el = $('cliente_email'); el.classList.add('ruim');
+    $('erro').innerHTML = '<div class="erro">Esse e-mail parece incompleto. É por ele que o rastreio chega.</div>';
+    el.scrollIntoView({ behavior:'smooth', block:'center' });
+    return;
+  }
+
   dados.complemento = $('complemento').value.trim();
   Object.assign(dados, {
     produto_id: C.produto_id, nome: C.nome, preco: C.preco, cor: C.cor, tamanho: C.tamanho,
-    frete_id: C.frete_id, frete_valor: C.frete_valor,
+    frete_id: C.frete_id, frete_valor: C.frete_valor, cupom: C.cupom || '',
   });
 
-  $('erro').innerHTML = '';
   b.disabled = true; b.textContent = 'Abrindo o pagamento…';
+  $('passo3').classList.add('ok');
   try{
     const r = await (await fetch('/api/loja-checkout', {
       method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(dados),
     })).json();
     if (r.erro) throw new Error(r.erro);
-    if (window.tlTrack) tlTrack('InitiateCheckout', 'camisa_pagamento', {
-      content_name: C.nome, value: C.total, currency: 'BRL'
+
+    // O Purchase não pode ser disparado aqui: aqui a pessoa ainda não pagou. Guardo o pedido
+    // e quem dispara é o app, quando o Mercado Pago devolver a pessoa com a compra aprovada.
+    try{
+      localStorage.setItem('tl_compra_pend', JSON.stringify({
+        ref: r.ref, total: r.total != null ? r.total : C.total,
+        nome: C.nome, produto_id: C.produto_id, cupom: r.cupom || C.cupom || '',
+      }));
+    }catch(e){}
+
+    if (window.tlTrack) tlTrack('AddPaymentInfo', 'camisa_pagamento', {
+      content_name: C.nome, content_ids: [String(C.produto_id)], content_type: 'product',
+      value: r.total != null ? r.total : C.total, currency: 'BRL', coupon: C.cupom || undefined,
     });
     location.href = r.url;
   }catch(e){

@@ -24,13 +24,7 @@ export async function onRequestPost(context) {
         // o pedido no clique de comprar, toda desistência de carrinho viraria uma peça
         // impressa e não paga.
         if (md.tipo === 'loja' && md.pedido) {
-          try {
-            await fetch('https://tideline.com.br/api/loja', {
-              method: 'POST',
-              headers: { 'content-type': 'application/json' },
-              body: JSON.stringify({ segredo: env.SUPABASE_SERVICE_ROLE_KEY, pedido: md.pedido }),
-            });
-          } catch (e) { /* o pagamento já entrou; um erro aqui não pode derrubar o webhook */ }
+          await pedidoDaLoja(env, md, String(id));
           return new Response('ok', { status: 200 });   // pedido de loja não mexe em assinatura
         }
 
@@ -60,6 +54,72 @@ export async function onRequestPost(context) {
 }
 
 export async function onRequestGet() { return ok(); }
+
+// ── pedido da loja ───────────────────────────────────────────────────────────
+// Antes, um erro aqui era engolido em silêncio: o cliente pagava, a Montink nunca recebia,
+// e não sobrava registro de nada. Ninguém ficava sabendo, nem ele, nem você.
+//
+// Agora a linha do pedido nasce ANTES de falar com a Montink. Se a Montink responder bem,
+// a linha vira 'ok' com o número do pedido lá. Se recusar, a linha fica 'erro' com a
+// resposta inteira guardada, e o pedido aparece vermelho no painel esperando você.
+async function pedidoDaLoja(env, md, mpId) {
+  const p = md.pedido;
+  const end = p.address || {};
+
+  // idempotência: o Mercado Pago reenvia o mesmo webhook mais de uma vez. Sem isso, a
+  // mesma camisa seria produzida duas vezes, e você pagaria a produção duas vezes.
+  const jaTem = await sbGet(env, `pedidos?ref=eq.${encodeURIComponent(md.ref)}&select=id,montink_status`);
+  if (jaTem && jaTem.length && jaTem[0].montink_status === 'ok') return;
+
+  if (!jaTem || !jaTem.length) {
+    await sbInsert(env, 'pedidos', {
+      ref: md.ref, mp_id: mpId,
+      cliente_nome: p.customer_name, cliente_email: p.customer_email,
+      cliente_fone: p.customer_phone, cliente_doc: p.customer_document,
+      produto_id: String((p.products && p.products[0] && p.products[0].product_id) || ''),
+      produto_nome: md.produto_nome || '', cor: md.cor || '', tamanho: md.tamanho || '',
+      preco: Number(md.preco) || 0, frete: Number(md.frete) || 0,
+      desconto: Number(md.desconto) || 0, cupom: md.cupom || null,
+      total: Number(md.total) || 0,
+      endereco: end,
+      montink_status: 'pendente',
+    });
+  }
+
+  let resposta = null, status = 'erro';
+  try {
+    const r = await fetch('https://tideline.com.br/api/loja', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ segredo: env.SUPABASE_SERVICE_ROLE_KEY, pedido: p }),
+    });
+    resposta = await r.json();
+    if (r.ok && resposta && resposta.success !== false) status = 'ok';
+  } catch (e) {
+    resposta = { erro: String(e && e.message) };
+  }
+
+  await sbPatch(env, `pedidos?ref=eq.${encodeURIComponent(md.ref)}`, {
+    montink_status: status,
+    montink_pedido: (resposta && (resposta.order_id || resposta.id || resposta.pedido)) || null,
+    montink_resposta: resposta,
+  });
+
+  // O cupom só conta uso depois que o pagamento entrou. Contar no clique deixaria o cupom
+  // "gasto" por gente que nem chegou a pagar.
+  if (status === 'ok' && md.cupom) {
+    const c = await sbGet(env, `cupons?codigo=eq.${encodeURIComponent(md.cupom)}&select=usos`);
+    if (c && c.length) await sbPatch(env, `cupons?codigo=eq.${encodeURIComponent(md.cupom)}`, { usos: (c[0].usos || 0) + 1 });
+  }
+}
+
+async function sbPatch(env, q, patch) {
+  await fetch(`${env.SUPABASE_URL}/rest/v1/${q}`, {
+    method: 'PATCH',
+    headers: { 'content-type': 'application/json', apikey: env.SUPABASE_SERVICE_ROLE_KEY, authorization: `Bearer ${env.SUPABASE_SERVICE_ROLE_KEY}`, prefer: 'return=minimal' },
+    body: JSON.stringify(patch),
+  });
+}
 
 // "userId|REF" → { userId, ref }; cai pro metadata se precisar
 function parseRef(extRef, metadata) {
