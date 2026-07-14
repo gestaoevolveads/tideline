@@ -441,8 +441,16 @@
     .cm-total{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:9px}
     .cm-total .l{font-size:12.5px;color:var(--muted);font-weight:600}
     .cm-total .v{font-size:23px;font-weight:800}
-    .cm-cta{width:100%;padding:16px;border:0;border-radius:14px;background:var(--accent);
-      color:#fff;font-family:var(--ff);font-size:15.5px;font-weight:800;cursor:pointer;min-height:54px}
+    /* A cor do botão diz o que ele é. Enquanto falta escolher tamanho ou frete, ele é um
+       passo, e é escuro. Quando vira compra de verdade, ele fica verde. Esse verde não existe
+       em nenhum outro lugar do app: quando ele aparece, ele só quer dizer uma coisa.
+       (O laranja da marca está em tudo, e um botão de comprar da mesma cor de um link deixa
+       de ser especial.) */
+    .cm-cta{width:100%;padding:16px;border:0;border-radius:14px;background:var(--mid);
+      color:#fff;font-family:var(--ff);font-size:15.5px;font-weight:800;cursor:pointer;min-height:54px;
+      transition:background .18s}
+    .cm-cta.pronto{background:#1B7A4B}
+    .cm-cta.pronto:active{background:#166540}
     .cm-cta:active{transform:scale(.99)}
     .cm-erro{background:#FDECE7;color:#8A2B12;border-radius:10px;padding:10px 12px;font-size:12.5px;margin-top:10px}
     .loja-disc{font-size:11px;color:var(--muted);text-align:center;padding:20px 24px 8px;line-height:1.6}
@@ -2600,7 +2608,7 @@ function pintarFicha(){
         <span class="l">${CM.frete ? 'Total com frete' : 'Camisa'}</span>
         <span class="v">${real(total)}</span>
       </div>
-      <button class="cm-cta" onclick="irPagar()">
+      <button class="cm-cta ${CM.tamanho && CM.frete ? 'pronto' : ''}" onclick="irPagar()">
         ${!CM.tamanho ? 'Escolher tamanho' : !CM.frete ? 'Calcular o frete' : 'Comprar agora'}
       </button>
     </div>`;
