@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Corte no ritmo: junta um vídeo de surf a uma música e corta nos tempos dela.
 
-    python3 corte.py surf.mp4 musica.mp3 [--dur 30] [--saida reel.mp4] [--vertical]
+    python3 corte.py surf.mp4 musica.mp3 [--dur 30] [--batidas 8] [--vertical] [--saida reel.mp4]
+
+O --batidas é o tamanho de cada corte, em batidas da música. 4 = cortes rápidos (MTV);
+8 = cada onda respira (melhor pra POV de surf, que tem poucas manobras por minuto).
 
 O que ele faz, e por quê:
 
@@ -10,9 +13,10 @@ O que ele faz, e por quê:
      acha o andamento por autocorrelação. Depois encaixa a fase, pra saber não só a QUE
      velocidade a música bate, mas EM QUE MOMENTO.
 
-  2. OLHA O VÍDEO. Decodifica ele minúsculo (64x36, cinza) e mede o movimento quadro a
-     quadro. Onda quebrando, manobra, spray: movimento. Alguém remando parado: quase nada.
-     É esse número que separa "melhor momento" de "tempo morto".
+  2. CAÇA MANOBRA, não movimento. Num POV de surf a câmera balança e a água passa o tempo
+     todo, então "movimento" acha ação em tudo. Manobra tem assinatura própria: SPRAY (foam
+     branco, que remada não tem), com CENA visível (horizonte, parede, prancha — não a lente
+     enterrada no caldo) e o IMPACTO (a aceleração do movimento, não o movimento constante).
 
   3. CORTA NA BATIDA. Cada trecho escolhido dura um número INTEIRO de batidas, e começa
      numa batida. É isso que faz o corte "casar" com a música em vez de só acontecer junto.
@@ -121,30 +125,58 @@ def pico_da_musica(env, fps_env, dur):
 
 
 # ── 2. o vídeo ───────────────────────────────────────────────────────────────
-def energia_do_video(video, fps=8, larg=64, alt=36):
-    """Quanto MOVIMENTO tem em cada instante do vídeo.
+def energia_do_video(video, fps=10, larg=128, alt=72):
+    """Onde estão as MANOBRAS, não onde tem movimento.
 
-    Decodifica em 64x36, cinza. Nesse tamanho não dá pra ver nada, e é de propósito: o que
-    interessa não é o que aparece, é o quanto MUDA. Onda quebrando muda tudo; alguém
-    boiando não muda quase nada.
+    A diferença importa num vídeo POV de surf. A câmera balança, a água passa, o horizonte
+    gira: isso é movimento o tempo todo, e um detector ingênuo acha 'ação' em tudo. Manobra
+    de verdade tem uma assinatura específica, e é ela que a gente caça aqui:
+
+      SPRAY. Quando o surfista crava a prancha, bate o lip ou faz o bottom, JORRA água
+        branca. Foam é o que separa 'surfando uma manobra' de 'remando pro outside'. É o
+        sinal mais forte e mais específico que existe, e é quase de graça de medir: é a
+        quantidade de branco na imagem.
+
+      O IMPACTO. Uma manobra é uma MUDANÇA brusca, não movimento contínuo. Remar rápido é
+        movimento alto e constante; um cutback é uma explosão curta. Por isso a gente pesa a
+        ACELERAÇÃO do movimento (o quanto ele saltou), não só o movimento.
+
+      LUZ DO DIA. O vídeo começa com um carro à noite. Cena escura não é surf: a gente zera
+        a nota dela antes de tudo. Remada parada (mar calmo, sem spray) tira nota baixa
+        sozinha, então não precisa de filtro: o piso lá de baixo já descarta.
     """
     bruto = rodar(['ffmpeg', '-v', 'quiet', '-i', str(video),
-                   '-vf', f'fps={fps},scale={larg}:{alt},format=gray',
+                   '-vf', f'fps={fps},scale={larg}:{alt}', '-pix_fmt', 'rgb24',
                    '-f', 'rawvideo', '-']).stdout
     q = np.frombuffer(bruto, dtype=np.uint8)
-    n = len(q) // (larg * alt)
-    q = q[:n * larg * alt].reshape(n, alt, larg).astype(np.float32)
+    n = len(q) // (larg * alt * 3)
+    q = q[:n * larg * alt * 3].reshape(n, alt, larg, 3).astype(np.float32)
 
-    mov = np.abs(np.diff(q, axis=0)).mean(axis=(1, 2))
-    mov = np.concatenate([[mov[0]], mov]) if len(mov) else np.zeros(1)
+    luma = 0.3 * q[..., 0] + 0.6 * q[..., 1] + 0.1 * q[..., 2]
+    brilho = luma.mean(axis=(1, 2))
+    norm = lambda v: v / v.max() if v.max() > 0 else v
 
-    # Corte inútil demais: quadro preto (transição, fade) tem movimento alto e imagem zero.
-    brilho = q.mean(axis=(1, 2))
-    mov[brilho < 12] = 0
+    # SPRAY, mas com juízo. A primeira versão premiava o branco puro, e o branco puro é a
+    # LENTE ENTERRADA no caldo: tela toda branca, que é wipeout, não manobra. A manobra boa
+    # tem spray E mostra a cena. Então:
+    branco = ((q[..., 0] > 175) & (q[..., 1] > 175) & (q[..., 2] > 170)).mean(axis=(1, 2))
+    spray = np.clip(branco, 0, 0.40) / 0.40           # spray ajuda... até certo ponto
+    enterrada = np.clip(branco - 0.62, 0, 1) / 0.38   # daí pra cima é a câmera afogada
 
-    if mov.max() > 0:
-        mov = mov / mov.max()
-    return mov, fps
+    # DETALHE: o desvio espacial da imagem. Quadro enterrado (ou desfocado) é LISO, tem
+    # desvio baixo. Manobra de verdade tem textura: foam, parede, horizonte, prancha. É isso
+    # que separa "spray com cena" de "tela branca".
+    detalhe = norm(luma.std(axis=(1, 2)))
+
+    # MOVIMENTO e sua ACELERAÇÃO (o "impacto" da manobra)
+    mov = np.abs(np.diff(luma, axis=0)).mean(axis=(1, 2))
+    mov = np.concatenate([[0], mov])
+
+    # a nota: spray e movimento, mas só valem se HOUVER cena (detalhe). E desconta o afogado.
+    acao = (0.7 * spray + 0.3 * norm(mov)) * (0.35 + 0.65 * detalhe) - 0.8 * enterrada
+    acao = np.clip(acao, 0, None)
+    acao[brilho < 45] = 0            # o carro à noite, e qualquer cena escura, sai de cena
+    return norm(acao), fps
 
 
 # ── 3. a montagem ────────────────────────────────────────────────────────────
@@ -178,7 +210,7 @@ def escolher_trechos(mov, fps_mov, batidas, dur_alvo, batidas_por_corte, pico_mu
     # cortes, achava 3 momentos bons e completava com imagem morta. Um reel de 30s com 10s
     # parados é pior que um reel de 20s inteiro, porque a pessoa desiste no trecho morto e
     # nunca chega no bom. Agora ele prefere entregar MENOS a entregar enchimento.
-    piso = candidatos[0][0] * 0.30 if candidatos else 0
+    piso = candidatos[0][0] * 0.45 if candidatos else 0
 
     escolhidos = []
     for nota, t in candidatos:
@@ -212,7 +244,13 @@ def montar(video, musica, trechos, dur_corte, dur_total, saida, vertical):
     tmp = pathlib.Path(tempfile.mkdtemp())
     pedacos = []
 
-    escala = ('scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920'
+    # Vertical com FUNDO DESFOCADO, não corte seco. Um POV de surf é 16:9 deitado; cortar o
+    # centro pra 9:16 amputa a parede da onda, que quase sempre está do lado. O fundo borrado
+    # preenche o story mantendo a imagem inteira, e é o padrão de reel que não parece amador.
+    escala = ('split[a][b];[b]scale=1080:1920:force_original_aspect_ratio=increase,'
+              'crop=1080:1920,gblur=sigma=28[bg];'
+              '[a]scale=1080:1920:force_original_aspect_ratio=decrease[fg];'
+              '[bg][fg]overlay=(W-w)/2:(H-h)/2'
               if vertical else
               'scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080')
 
