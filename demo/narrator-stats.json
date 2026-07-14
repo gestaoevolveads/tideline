@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-07-13T19:23:24.574Z",
+  "generated_at": "2026-07-13T23:04:01.898Z",
   "target": 7,
-  "condicoesUnicas": 1700,
-  "totalVariacoes": 3446,
+  "condicoesUnicas": 1701,
+  "totalVariacoes": 3452,
   "distribuicao": {
     "1": 0,
     "2": 1690,
     "3": 0,
     "4": 1,
     "5": 0,
-    "6+": 9
+    "6+": 10
   },
   "previsao": {
-    "total": 1390,
-    "cobertas": 350,
+    "total": 1430,
+    "cobertas": 364,
     "noAlvo": 8
   },
   "praias": [
@@ -34,7 +34,7 @@
     {
       "nome": "Peniche",
       "uf": "PRT",
-      "condicoes": 15,
+      "condicoes": 17,
       "cobertas": 0,
       "noAlvo": 0
     },
@@ -431,6 +431,20 @@
       "noAlvo": 0
     },
     {
+      "nome": "Praia Brava (Arraial)",
+      "uf": "RJ",
+      "condicoes": 19,
+      "cobertas": 6,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Praia Brava (Búzios)",
+      "uf": "RJ",
+      "condicoes": 18,
+      "cobertas": 6,
+      "noAlvo": 0
+    },
+    {
       "nome": "Geribá",
       "uf": "RJ",
       "condicoes": 18,
@@ -508,13 +522,6 @@
       "noAlvo": 0
     },
     {
-      "nome": "Praia da Vila",
-      "uf": "RJ",
-      "condicoes": 18,
-      "cobertas": 7,
-      "noAlvo": 0
-    },
-    {
       "nome": "Hossegor",
       "uf": "FRA",
       "condicoes": 15,
@@ -557,6 +564,13 @@
       "noAlvo": 0
     },
     {
+      "nome": "Praia da Vila",
+      "uf": "RJ",
+      "condicoes": 18,
+      "cobertas": 8,
+      "noAlvo": 0
+    },
+    {
       "nome": "Titanzinho",
       "uf": "CE",
       "condicoes": 11,
@@ -592,17 +606,17 @@
       "noAlvo": 0
     },
     {
-      "nome": "Mundaka",
-      "uf": "ESP",
-      "condicoes": 13,
-      "cobertas": 7,
-      "noAlvo": 0
-    },
-    {
       "nome": "Jericoacoara",
       "uf": "CE",
       "condicoes": 7,
       "cobertas": 4,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Mundaka",
+      "uf": "ESP",
+      "condicoes": 14,
+      "cobertas": 8,
       "noAlvo": 0
     },
     {

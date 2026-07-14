@@ -19,7 +19,11 @@
   header{display:flex;align-items:baseline;gap:14px;padding:22px 28px;border-bottom:1px solid rgba(23,39,38,.09)}
   .wm{font-size:22px;letter-spacing:-.02em}
   .wm .t{font-weight:300}.wm .l{font-weight:700}.wm .d{color:var(--accent)}
-  header .sub{font-size:13px;color:var(--muted)}
+  header .sub{font-size:13px;color:var(--muted);margin-right:auto}
+  header .ir-revista{font-size:13.5px;font-weight:700;color:#fff;background:var(--deep);
+    text-decoration:none;border-radius:10px;padding:10px 16px;transition:.15s;min-height:42px;
+    display:flex;align-items:center}
+  header .ir-revista:hover{background:var(--accent)}
 
   .wrap{display:grid;grid-template-columns:380px 1fr;gap:0;min-height:calc(100vh - 67px)}
   @media(max-width:900px){.wrap{grid-template-columns:1fr}}
@@ -73,6 +77,23 @@
   h2{font-size:17px;font-weight:600;margin:0}
   .status{font-size:13px;color:var(--muted)}
   .grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+
+  /* A galeria vira uma linha do tempo com etiquetas. Nada de parede de imagens sem nome:
+     saber O QUE é cada coisa e QUANDO ela nasceu é o que impede a bagunça. */
+  .filtros{display:flex;gap:8px;margin-bottom:6px;flex-wrap:wrap}
+  .filtros button{font:inherit;font-size:13px;font-weight:600;padding:8px 14px;border-radius:999px;
+    border:1px solid rgba(23,39,38,.16);background:#fff;color:var(--muted);cursor:pointer;min-height:38px}
+  .filtros button:hover{border-color:var(--muted)}
+  .filtros button.on{background:var(--deep);border-color:var(--deep);color:#fff}
+  .dia{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+    margin:26px 0 12px;padding-bottom:8px;border-bottom:1px solid rgba(23,39,38,.1)}
+  .dia:first-of-type{margin-top:8px}
+  .card .rot{padding:9px 11px 0;font-size:12px;line-height:1.35}
+  .card .rot .t{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+    padding:2px 6px;border-radius:4px;margin-bottom:4px}
+  .card .rot .t.capa{background:#FDECE7;color:#8A2B12}
+  .card .rot .t.ilustracao{background:var(--surface);color:var(--mid)}
+  .card .rot .n{color:var(--deep);font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .card{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--sombra);
     transition:transform .18s ease-out, box-shadow .18s}
   .card:hover{transform:translateY(-2px);box-shadow:0 2px 4px rgba(23,39,38,.08),0 16px 32px -14px rgba(23,39,38,.28)}
@@ -104,6 +125,7 @@
 <header>
   <span class="wm"><span class="t">tide</span><span class="l">line</span><span class="d">.</span></span>
   <span class="sub">Estúdio de Ilustração</span>
+  <a class="ir-revista" href="/revista">📰 Capas de revista</a>
 </header>
 
 <div class="wrap">
@@ -159,7 +181,12 @@
       <span class="status" id="status"></span>
     </div>
     <div id="erro"></div>
-    <div class="grade" id="grade"></div>
+    <div class="filtros" id="filtros">
+      <button data-f="tudo" class="on">Tudo</button>
+      <button data-f="ilustracao">Ilustrações</button>
+      <button data-f="capa">Capas de revista</button>
+    </div>
+    <div id="grade"></div>
     <div class="vazio" id="vazio">Nenhum desenho ainda.<br>Descreva uma cena ao lado e mande desenhar.</div>
   </main>
 </div>
@@ -265,18 +292,48 @@ $('#form').onsubmit = async e => {
   $('#titulo').textContent = 'Galeria';
 };
 
+let GALERIA = [], FILTRO = 'tudo';
+
 async function carregarGaleria() {
-  const { fotos } = await (await fetch('/api/galeria')).json();
-  $('#vazio').hidden = fotos.length > 0;
-  $('#grade').innerHTML = fotos.map(f => `
-    <div class="card">
-      <div class="img" onclick="ampliar('${f}')"><img src="/saidas/${f}" alt="" loading="lazy"></div>
-      <div class="acoes">
-        <a href="/saidas/${f}" download>Baixar</a>
-        <button type="button" onclick="virarRef('${f}')" title="Usa este desenho como referência de traço da próxima geração">Usar de base</button>
-      </div>
+  const r = await (await fetch('/api/galeria')).json();
+  GALERIA = r.fotos || [];
+  pintarGaleria();
+}
+
+function pintarGaleria() {
+  const lista = GALERIA.filter(x => FILTRO === 'tudo' || x.tipo === FILTRO);
+  $('#vazio').hidden = lista.length > 0;
+
+  // agrupa por dia, na ordem em que apareceram
+  const dias = [];
+  for (const x of lista) {
+    let d = dias.find(y => y.quando === x.quando);
+    if (!d) { d = { quando: x.quando, itens: [] }; dias.push(d); }
+    d.itens.push(x);
+  }
+
+  $('#grade').innerHTML = dias.map(d => `
+    <div class="dia">${d.quando} · ${d.itens.length} ${d.itens.length === 1 ? 'imagem' : 'imagens'}</div>
+    <div class="grade">
+      ${d.itens.map(x => `
+        <div class="card">
+          <div class="img" onclick="ampliar('${x.f}')"><img src="/saidas/${x.f}" alt="" loading="lazy"></div>
+          <div class="rot">
+            <span class="t ${x.tipo}">${x.tipo === 'capa' ? 'Capa' : 'Ilustração'}</span>
+            <div class="n" title="${x.rotulo}">${x.rotulo || 'sem título'}</div>
+          </div>
+          <div class="acoes">
+            <a href="/saidas/${x.f}" download>Baixar</a>
+            <button type="button" onclick="virarRef('${x.f}')" title="Usa este desenho como referência de traço da próxima geração">Usar de base</button>
+          </div>
+        </div>`).join('')}
     </div>`).join('');
 }
+
+document.querySelectorAll('#filtros button').forEach(b => b.onclick = () => {
+  document.querySelectorAll('#filtros button').forEach(x => x.classList.remove('on'));
+  b.classList.add('on'); FILTRO = b.dataset.f; pintarGaleria();
+});
 
 function ampliar(f) { $('#lupa-img').src = '/saidas/' + f; $('#lupa').showModal(); }
 

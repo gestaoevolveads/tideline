@@ -13,11 +13,13 @@ const os = require('os');
 const path = require('path');
 const { execFileSync } = require('child_process');
 const { montarPrompt, VARIANTES, FORMATOS } = require('./estilo');
+const { TEMPLATES, paginaCompleta } = require('./revista');
 
 const DIR = __dirname;
 const REFS = path.join(DIR, 'refs');
 const SAIDAS = path.join(DIR, 'saidas');
 const PORTA = 4270;
+const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 
 // Cada motor fala um dialeto diferente: o Gemini pede proporção e gera lote;
 // o FLUX.2 pede pixels e gera uma imagem por chamada (mandamos em paralelo).
@@ -147,6 +149,59 @@ const servidor = http.createServer(async (req, res) => {
   const rota = u.pathname;
 
   try {
+    // ---------- Capas de revista ----------
+    if (rota === '/revista' || rota === '/revista.html') {
+      res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
+      return res.end(fs.readFileSync(path.join(DIR, 'ui-revista.html')));
+    }
+
+    // a foto padrão: a mesma do banner da landing. A capa nunca nasce vazia.
+    if (rota === '/fundo-padrao') {
+      const ebook = fs.readFileSync(path.join(DIR, '..', '..', 'ebook', 'ler-o-mar.html'), 'utf8');
+      const m = ebook.match(/\.capa \.bg\{[\s\S]*?url\(data:image\/jpeg;base64,([^)]+)\)/);
+      if (!m) { res.writeHead(404); return res.end(); }
+      res.writeHead(200, { 'content-type': 'image/jpeg' });
+      return res.end(Buffer.from(m[1], 'base64'));
+    }
+
+    if (rota === '/api/revista/templates') {
+      return json(res, 200, {
+        templates: Object.entries(TEMPLATES).map(([id, t]) => ({
+          id, nome: t.nome, desc: t.desc, ref: t.ref,
+          campos: t.campos, chamadas: t.chamadas, padrao: t.padrao,
+        })),
+        fundos: fs.readdirSync(SAIDAS).filter(f => /\.png$/i.test(f)).slice(-24).reverse(),
+      });
+    }
+
+    // a mesma função desenha a prévia e o PNG final: o que você vê é o que sai
+    if (rota === '/api/revista/preview' && req.method === 'POST') {
+      const b = await corpo(req);
+      res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
+      return res.end(paginaCompleta(b.template, b.dados || {}));
+    }
+
+    if (rota === '/api/revista/exportar' && req.method === 'POST') {
+      const b = await corpo(req);
+      const html = paginaCompleta(b.template, b.dados || {});
+      const tmpHtml = path.join(os.tmpdir(), 'tl-capa-' + Date.now() + '.html');
+      fs.writeFileSync(tmpHtml, html);
+
+      const stamp = new Date().toISOString().replace(/[-:T]/g, '').slice(0, 14);
+      const slug = (b.nome || 'capa').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 30) || 'capa';
+      const nome = `revista_${stamp}_${slug}.png`;
+      const destino = path.join(SAIDAS, nome);
+
+      execFileSync(CHROME, ['--headless', '--disable-gpu', '--hide-scrollbars',
+        '--window-size=1080,1350', `--screenshot=${destino}`,
+        '--virtual-time-budget=9000', 'file://' + tmpHtml], { stdio: 'ignore' });
+      fs.unlinkSync(tmpHtml);
+
+      if (!fs.existsSync(destino)) return json(res, 500, { erro: 'não consegui renderizar a capa' });
+      return json(res, 200, { arquivo: nome });
+    }
+
     if (rota === '/' || rota === '/index.html') {
       res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
       return res.end(fs.readFileSync(path.join(DIR, 'ui.html')));
@@ -171,9 +226,26 @@ const servidor = http.createServer(async (req, res) => {
     }
 
     if (rota === '/api/galeria') {
+      // A galeria só LÊ arquivos que já existem no disco. Abrir, rolar e baixar não custa
+      // nada: crédito só sai quando você manda desenhar.
+      const hoje = new Date(); hoje.setHours(0, 0, 0, 0);
+      const ontem = new Date(hoje); ontem.setDate(ontem.getDate() - 1);
+
       const fotos = fs.readdirSync(SAIDAS).filter(f => /\.png$/i.test(f))
-        .map(f => ({ f, t: fs.statSync(path.join(SAIDAS, f)).mtimeMs }))
-        .sort((a, b) => b.t - a.t).slice(0, 60).map(x => x.f);
+        .map(f => {
+          const t = fs.statSync(path.join(SAIDAS, f)).mtimeMs;
+          const d = new Date(t);
+          const quando = d >= hoje ? 'Hoje' : d >= ontem ? 'Ontem'
+            : d.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long' });
+          // o nome do arquivo já diz o que a imagem é: revista_data_titulo ou data_cena
+          const tipo = f.startsWith('revista_') ? 'capa' : 'ilustracao';
+          const partes = f.replace(/\.png$/, '').split('_');
+          const rotulo = (partes.slice(2).join(' ') || partes.slice(-1)[0] || '')
+            .replace(/-/g, ' ').replace(/\s+\d+$/, '').trim();
+          return { f, t, tipo, quando, rotulo };
+        })
+        .sort((a, b) => b.t - a.t)
+        .slice(0, 120);
       return json(res, 200, { fotos });
     }
 

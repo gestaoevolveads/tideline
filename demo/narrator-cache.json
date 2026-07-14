@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T19:07:46.088Z",
+  "generated_at": "2026-07-13T21:45:46.247Z",
   "beaches": {
     "Saquarema": {
       "dias": {
@@ -88,6 +88,13 @@
     "Praia da Vila": {
       "dias": {
         "2026-07-13": {
+          "manha": {
+            "score": 3,
+            "titulo": "Canto abrigado segurando forte",
+            "analise": "Esse é o canto que Saquarema usa quando Itaúna fecha o farol de tão grande, e hoje ele tá recebendo uma carga pesada mesmo protegido. Onda de cabeça pra mais, com séries bem espaçadas na casa dos 9-10 segundos, que é tempo suficiente pra você estudar o banco antes de remar. Na água a força é real: uns 31 kW/m de energia, isso é a potência que a onda carrega, então o caldo pesa e a remada até o pico cansa. Vento de lado mexe um pouco a parede, então quem for, que vá com humildade e observe duas ou três séries antes de se comprometer.",
+            "janela": null,
+            "aviso": "Energia alta na água: caldo pesado, mantenha a prancha sempre por perto se cair."
+          },
           "tarde": {
             "score": 3,
             "titulo": "Vila com volume grande e vento crescendo",
@@ -334,6 +341,62 @@
         }
       }
     },
+    "Praia Brava (Arraial)": {
+      "dias": {
+        "2026-07-13": {
+          "tarde": {
+            "score": 5,
+            "titulo": "Força máxima na tarde grande",
+            "analise": "A Praia Brava entrega hoje seu tamanho mais pesado, cabeça a uma vez e meia essa altura, com período longo, mais de 11 segundos, que organiza as séries mesmo com tanta energia envolvida. O vento lateral forte, perto de 29 km/h, pica a água mas não desmonta a parede, que segue com força bruta. A energia bate mais de 41 kW/m, o topo da escala, remada que exige tudo e descida que cobra postura perfeita. Dia de mar grande de verdade, só pra quem já tem experiência séria e sabe ler o canal certo pra sair rápido do impacto.",
+            "janela": null,
+            "aviso": "Energia muito alta, mar grande e pesado, risco real de caldo forte e corrente. Recomendado só para surfistas experientes, com atenção redobrada à segurança."
+          }
+        },
+        "2026-07-14": {
+          "manha": {
+            "score": 4,
+            "titulo": "Manhã grande e pesada",
+            "analise": "Cabeça a uma vez e meia essa altura é o tamanho de hoje, com período bom, na casa dos 10 segundos, que organiza bem as séries mesmo grandes. O vento lateral moderado, uns 22 km/h, mexe a superfície mas não destrói a parede, que segue com força e alguma forma. A energia é grande, passando dos 39 kW/m, ou seja, remada pesada e descida com muita pressão, dia sério de verdade. É condição pra quem já tem calo, prancha com volume e atenção total ao canal de saída.",
+            "janela": "6h-9h",
+            "aviso": "Onda grande com energia alta, atenção redobrada ao caldo e à corrente de retorno na entrada e na saída."
+          }
+        },
+        "2026-07-15": {
+          "tarde": {
+            "score": 4,
+            "titulo": "Vento lateral não destrói",
+            "analise": "O lateral vem suave comparado aos dias maiores, deixando a série ombro-cabeça surfável e com forma. Período de 9,1 segundos traz organização; energia em torno de 23 quilowatts por metro garante peso pra quem quer trabalhar manobra. Vale a tarde.",
+            "janela": "14h-17h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Vento de lado mexe o pico",
+            "analise": "A Brava entrega tamanho considerável, ombro a cabeça, com período de uns 10 segundos, o que ainda organiza a chegada das séries. O que atrapalha é o vento lateral soprando forte, mais de 31 km/h, que pica a água e tira um pouco da lisura da parede. Mesmo assim a energia tá presente, casa dos 20 kW/m, e isso significa remada que exige e descida com força de verdade. Pra quem já conhece o pico, dá pra achar pedaços bons entre as rajadas, só exige ficar mais atento à direção do vento antes de escolher onde remar.",
+            "janela": null,
+            "aviso": "Vento lateral forte pode desorganizar a leitura das séries, entre com atenção."
+          }
+        },
+        "2026-07-16": {
+          "noite": {
+            "score": 2,
+            "titulo": "Noite brava: tamanho e vento duro",
+            "analise": "Ombro-cabeça que de manhã seria legal vira pesado quando lateral de 36 quilômetros por hora pica tudo. Período médio (8,7s) não consegue organizar nada com esse vento. Energia perto de 20 quilowatts por metro traz força, mas vento tira toda a forma. Noite brava demais.",
+            "janela": null,
+            "aviso": "Lateral muito forte (36 km/h) em noite com ombro-cabeça. Superfície muito comprometida. Energia 20,1 kW/m: caldo pesado."
+          }
+        },
+        "2026-07-17": {
+          "tarde": {
+            "score": 1,
+            "titulo": "Vento come a sessão inteira",
+            "analise": "36 quilômetros por hora de lateral é daqueles que faz você lembrar por que o mar tem respeito. Onda peito-ombro já pequena, vento duro picando tudo. Energia fraca pra compensar. Dia descartável.",
+            "janela": null,
+            "aviso": null
+          }
+        }
+      }
+    },
     "Praia Brava (Cabo Frio)": {
       "dias": {
         "2026-07-13": {
@@ -370,6 +433,62 @@
             "analise": "Lateral brutal de 28 km/h em cima de peito a ombro com período de 7 segundos, série rápida. Energia fica em 5 kW/m, insuficiente pra segurar parede contra esse ventarrão. Superfície fica destroçada, bumps em cada canto, impossível ler. Não entra com esse vento lateral tão forte.",
             "janela": null,
             "aviso": null
+          }
+        }
+      }
+    },
+    "Praia Brava (Búzios)": {
+      "dias": {
+        "2026-07-13": {
+          "noite": {
+            "score": 4,
+            "titulo": "Offshore forte, série rápida",
+            "analise": "O terral que vem do lado de lá segura firme, deixa parede oca e com forma. Período curto agora (7 segundos) traz onda que sai rápida do fundo, energia de 8 kW/m traz pegada. Noite épica pra quem domina onda seca.",
+            "janela": "18h-20h",
+            "aviso": null
+          }
+        },
+        "2026-07-14": {
+          "tarde": {
+            "score": 4,
+            "titulo": "Tarde de tamanho e força real",
+            "analise": "O período firme, na casa dos 10 a 11s, garante série organizada mesmo com o tamanho já crescendo, de ombro a cabeça, na altura do seu ombro passando um pouco a cabeça. A energia na água já é considerável, então a remada exige mais e a descida vem com pressão de verdade. O vento lateral de quase 18 km/h mexe a superfície mas não desmonta a estrutura da onda. Tarde boa pra quem já tem experiência e quer sentir o peso maior da água, bom momento pra reforçar o duck dive na entrada.",
+            "janela": null,
+            "aviso": "Com esse tamanho e energia, dê preferência ao pico mais movimentado e fique atento à corrente de retorno que costuma se formar entre os bancos."
+          }
+        },
+        "2026-07-15": {
+          "manha": {
+            "score": 4,
+            "titulo": "Terral matinal na Praia Brava",
+            "analise": "Com período na casa dos 9s, a onda chega organizada, em série fácil de ler, e o tamanho de peito a ombro é o suficiente pra trabalhar bem a manobra. O que faz a diferença é o vento offshore fraco, de oeste noroeste, vindo da terra pro mar e deixando a parede lisa e limpa. A remada rende mais porque não tem bagunça na superfície atrapalhando. Essa é a janela pra buscar qualidade, melhor aproveitar logo cedo antes do vento virar e o sol esquentar a areia.",
+            "janela": "6h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Brava aguenta o onshore da tarde",
+            "analise": "Chegando com período de 10s e tamanho de peito a ombro, o swell de leste ainda entrega onda com corpo mesmo na virada da tarde. O vento de mar pra terra, por volta de 14 km/h, tira um pouco do polimento e traz uns solavancos na superfície. Dá pra sentir a força da onda na remada, ela ainda empurra bem, só que a descida vem com menos precisão. Bom momento pra treinar leitura de banco e adaptar a manobra à água mais viva.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-07-16": {
+          "manha": {
+            "score": 4,
+            "titulo": "Peito a ombro com parede espaçada",
+            "analise": "Rolando período na casa dos 10s, o que quer dizer série organizada, com tempo de sobra pra ver a próxima onda chegando antes de remar. O tamanho tá de peito a ombro, na altura do seu peito ou até o ombro, e a parede vem com uma força boa sem exagerar. O vento tá de lado, batendo quase 23 km/h, então pica um pouco a superfície mas não destrói a forma da onda. Vale entrar de manhã cedo, antes do vento lateral ganhar mais força, e buscar o pico central onde o banco costuma segurar melhor.",
+            "janela": "6h-9h",
+            "aviso": null
+          }
+        },
+        "2026-07-17": {
+          "tarde": {
+            "score": 0,
+            "titulo": "Choppy demais pra qualidade",
+            "analise": "Período de 7 segundos já é curto, e com vento lateral de 30 tá impossível ficar lisa. Peito a ombro não salva do caos que o vento faz. Esperar pela noite ou amanhã.",
+            "janela": null,
+            "aviso": "Vento lateral pesado destrói a forma"
           }
         }
       }
@@ -3905,14 +4024,14 @@
             "aviso": null
           },
           "tarde": {
-            "titulo": "Tarde mais tranquila de vento",
-            "analise": "O onshore hoje sopra mais fraco, pouco mais de 11 km/h, então a superfície não fica tão destruída quanto em outros dias. Período curto ainda, na casa dos 6s, mar de vaga e não de swell organizado, mas com uma energia razoável que dá uma leve pressão na remada. Onda de joelho a cintura. É uma tarde ok pra treinar leitura de série e trabalhar entradas, mesmo sem parede de verdade.",
+            "titulo": "Tarde mole na França",
+            "analise": "A tarde chega com o vento onshore mais forte ainda, quase 16 km/h, e isso pica a superfície e faz a onda perder a parede rápido. Período curto, vaga de vento, então as séries vêm em cima uma da outra sem espaço. Onda de joelho a cintura, o tamanho mais simples que existe, boa pra treinar posicionamento sem susto. Se puder escolher, prefira remar num canto mais protegido do banco pra fugir do pior do vento.",
             "janela": null,
             "aviso": null
           },
           "noite": {
-            "titulo": "Noite de vento forte e mar curto",
-            "analise": "O onshore tá soprando forte, quase 19 km/h, batendo de frente na praia e isso é o que mais atrapalha aqui, porque destrói a parede antes dela se formar direito. Período curto, cerca de 6s, então além do vento ruim a onda já nasce sem organização. Tamanho de joelho a cintura, com uma energia moderada que ainda dá uma leve pressão na remada. Se decidir entrar, prancha mais estável ajuda a lidar com a bagunça na superfície.",
+            "titulo": "Noite pequena e mansa",
+            "analise": "O mar segue pequeno, ondas de joelho a cintura, e o vento onshore moderado ajuda a deixar tudo ainda mais mole. Período curto, na casa dos 6s, sinal de vaga de vento e não de swell de verdade vindo de longe. Pouquíssima energia na água, quase nada de pressão na remada. É sessão pra descontrair, testar prancha nova ou levar quem tá começando pra sentir a água sem exigência.",
             "janela": null,
             "aviso": null
           }
@@ -3925,8 +4044,8 @@
             "aviso": null
           },
           "tarde": {
-            "titulo": "Vento mais ameno na água",
-            "analise": "Com o vento onshore mais fraco essa tarde, dá pra surfar sem a superfície toda picada, mesmo que o período curto não deixe a onda se organizar direito. A energia na água é moderada, então a remada exige um pouco mas não cansa demais. Ondas de joelho a cintura, curtas mas surfáveis. Bom momento pra treinar cutback nas ondas de espuma antes que o vento aumente mais tarde.",
+            "titulo": "Vento leva a força embora",
+            "analise": "Com o mar puxando ar da terra pra dentro, o onshore da tarde bagunça tudo e a onda que já era pequena fica ainda mais sem corpo. Pouca energia na água, quase 1 kW/m, então a remada não cansa muito mas também não empurra. As ondas de joelho a cintura seguem curtas e sem organização, típico de vaga de vento e não de swell de verdade. É tarde de prancha maior, de treinar equilíbrio na espuma sem cobrar performance.",
             "janela": null,
             "aviso": null
           }
@@ -4055,10 +4174,10 @@
         },
         "2026-07-14": {
           "manha": {
-            "score": 1,
-            "titulo": "Vaga curta sem força pra Mundaka",
-            "analise": "O mar aqui hoje tá pequeno, joelho a cintura, e a ondulação vem numa cadência curta, uns 6s entre uma onda e outra, o que quer dizer pouca organização, série que chega meio em cima da outra. É a energia baixa mesmo, na casa de 1 kW/m, então a força que empurra a parede é fraca. Na água você vai sentir a onda subindo devagar e fechando sem muita pressão, longe do tubo que faz Mundaka ser Mundaka. O vento tá de lado, o que pica um pouco a superfície mas não é o vilão do dia. Bom momento pra treinar remada e leitura do banco da foz, guardando energia pra quando a maré média baixa e o swell certo se alinharem.",
-            "janela": "7h-10h",
+            "score": 0,
+            "titulo": "Manhã fraca e mar picado",
+            "analise": "O mar amanhece pequeno, joelho a cintura, com período curto de quase 6s e pouca energia, menos de 1 kW/m, sinal de que não tem swell organizado chegando. Pra piorar a leitura, o vento tá de frente pro mar, onshore de mais de 8 km/h, que é o vento que bate na onda por trás e faz ela perder forma antes da hora. Na água a sensação é de bagunça, ondas quebrando cedo e sem parede. Não é o dia clássico de Mundaka, mas serve pra treinar remada e ficar de olho em como o banco da foz reage à maré subindo.",
+            "janela": null,
             "aviso": null
           },
           "tarde": {
@@ -4077,13 +4196,6 @@
           }
         },
         "2026-07-15": {
-          "manha": {
-            "score": 0,
-            "titulo": "Onshore atrapalhando o pico",
-            "analise": "Hoje de manhã o vento vem do mar pra terra, aquele que bagunça a água e tira a força da onda, soprando uns 8 km/h. Somado a isso o mar tá pequeno, joelho a cintura, período curto, pouca energia na água. O resultado é onda sem parede, quebrando em pedaços, longe do padrão de tubo que faz Mundaka famosa. Ainda assim dá pra usar o momento pra soltar o braço na espuma perto da foz e estudar o comportamento do rio. Guarda a expectativa pro terral de sul que costuma abrir o pico de verdade.",
-            "janela": null,
-            "aviso": null
-          },
           "tarde": {
             "score": 1,
             "titulo": "Pouco recheio no pico basco",
@@ -4101,16 +4213,23 @@
         },
         "2026-07-16": {
           "manha": {
-            "score": 0,
-            "titulo": "Manhã fraca e mar picado",
-            "analise": "O mar amanhece pequeno, joelho a cintura, com período curto de quase 6s e pouca energia, menos de 1 kW/m, sinal de que não tem swell organizado chegando. Pra piorar a leitura, o vento tá de frente pro mar, onshore de mais de 8 km/h, que é o vento que bate na onda por trás e faz ela perder forma antes da hora. Na água a sensação é de bagunça, ondas quebrando cedo e sem parede. Não é o dia clássico de Mundaka, mas serve pra treinar remada e ficar de olho em como o banco da foz reage à maré subindo.",
-            "janela": null,
+            "score": 1,
+            "titulo": "Vaga curta sem força pra Mundaka",
+            "analise": "O mar aqui hoje tá pequeno, joelho a cintura, e a ondulação vem numa cadência curta, uns 6s entre uma onda e outra, o que quer dizer pouca organização, série que chega meio em cima da outra. É a energia baixa mesmo, na casa de 1 kW/m, então a força que empurra a parede é fraca. Na água você vai sentir a onda subindo devagar e fechando sem muita pressão, longe do tubo que faz Mundaka ser Mundaka. O vento tá de lado, o que pica um pouco a superfície mas não é o vilão do dia. Bom momento pra treinar remada e leitura do banco da foz, guardando energia pra quando a maré média baixa e o swell certo se alinharem.",
+            "janela": "7h-10h",
             "aviso": null
           },
           "tarde": {
             "score": 1,
             "titulo": "Tarde com onshore leve",
             "analise": "O mar segue pequeno, joelho a cintura, período curto na casa dos 6s, então não tem muita organização por trás da onda. O vento vem do mar pra terra, onshore de quase 10 km/h, que é o vento que empurra a onda por trás e faz ela quebrar antes da hora, tirando parede. Na água a sensação é de onda mole e levemente bagunçada, sem aquela força que Mundaka entrega nos dias bons. Serve pra treinar leitura de banco e remada, ficando de olho em quando o vento gira pro terral de sul.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Noite pequena e mexida",
+            "analise": "O mar de noite segue pequeno, joelho a cintura, com período curto de pouco mais de 6s, o que indica vaga de vento e não aquele swell organizado que faz Mundaka virar point de tubo. O vento lateral de uns 11 km/h pica a superfície, sem ser o vilão principal mas deixando tudo um pouco irregular. Na água a sensação é de onda rápida e sem muita parede pra trabalhar. Dá pra aproveitar pra soltar o braço e sentir a correnteza da foz, de olho na condição melhorando nos próximos dias.",
             "janela": null,
             "aviso": null
           }

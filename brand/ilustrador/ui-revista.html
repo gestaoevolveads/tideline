@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capas de Revista · Tideline</title>
+<style>
+  :root{
+    --deep:#172726; --mid:#243F3D; --muted:#476664;
+    --surface:#D3E2DE; --surface2:#E8F0ED; --paper:#F2EFE9; --accent:#F95831;
+    --r:13px;
+    --ff:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--deep);font-family:var(--ff);
+    -webkit-font-smoothing:antialiased;line-height:1.5}
+
+  header{display:flex;align-items:baseline;gap:14px;padding:18px 26px;border-bottom:1px solid rgba(23,39,38,.09)}
+  .wm{font-size:21px;letter-spacing:-.02em}
+  .wm .t{font-weight:300}.wm .l{font-weight:700}.wm .d{color:var(--accent)}
+  header .sub{font-size:13px;color:var(--muted);margin-right:auto}
+  header a{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;
+    border:1px solid rgba(23,39,38,.16);border-radius:9px;padding:8px 12px}
+  header a:hover{border-color:var(--accent);color:var(--accent)}
+
+  .wrap{display:grid;grid-template-columns:390px 1fr;min-height:calc(100vh - 60px)}
+  @media(max-width:980px){.wrap{grid-template-columns:1fr}}
+
+  .painel{padding:20px 24px 70px;border-right:1px solid rgba(23,39,38,.09);overflow-y:auto}
+  .bloco{margin-bottom:22px}
+  .bloco > label{display:block;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--muted);margin-bottom:8px}
+
+  .tpls{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+  .tpl{border:1px solid rgba(23,39,38,.16);background:#fff;border-radius:11px;padding:10px 11px;cursor:pointer;transition:.15s}
+  .tpl:hover{border-color:var(--muted)}
+  .tpl.on{border-color:var(--deep);background:var(--surface2);box-shadow:inset 0 0 0 1px var(--deep)}
+  .tpl .n{font-size:13.5px;font-weight:700}
+  .tpl .r{font-size:11px;color:var(--accent);font-weight:600;margin-top:1px}
+  .tpl .d{font-size:11px;color:var(--muted);margin-top:3px;line-height:1.35}
+
+  .campo{margin-bottom:13px}
+  .campo label{display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:5px}
+  input[type=text], textarea{width:100%;border:1px solid rgba(23,39,38,.16);background:#fff;border-radius:10px;
+    padding:9px 12px;font:inherit;font-size:14px;color:var(--deep);resize:vertical}
+  textarea{min-height:62px;line-height:1.45}
+  input:focus, textarea:focus{outline:none;border-color:var(--mid);box-shadow:0 0 0 3px rgba(36,63,61,.1)}
+
+  .ch-item{background:#fff;border:1px solid rgba(23,39,38,.14);border-radius:11px;padding:10px;margin-bottom:8px}
+  .ch-item .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:7px}
+  .ch-item .top span{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+  .ch-item .top button{background:none;border:0;color:var(--muted);cursor:pointer;font-size:15px;padding:0 4px}
+  .ch-item .top button:hover{color:var(--accent)}
+  .ch-item input{margin-bottom:6px}
+  .ch-item input:last-child{margin-bottom:0}
+  .add{width:100%;background:transparent;border:1px dashed rgba(23,39,38,.3);border-radius:11px;padding:9px;
+    font:inherit;font-size:13px;font-weight:600;color:var(--muted);cursor:pointer;min-height:40px}
+  .add:hover{border-color:var(--accent);color:var(--accent)}
+
+  .fundo{display:flex;gap:7px}
+  .fundo button{flex:1;font:inherit;font-size:13px;font-weight:600;padding:10px;border:1px solid rgba(23,39,38,.16);
+    background:#fff;border-radius:10px;cursor:pointer;min-height:42px}
+  .fundo button:hover{border-color:var(--accent);color:var(--accent)}
+  .fundo button:disabled{opacity:.5;cursor:wait}
+  .minis{display:grid;grid-template-columns:repeat(auto-fill,minmax(58px,1fr));gap:6px;margin-top:8px}
+  .mini{aspect-ratio:1;border-radius:8px;overflow:hidden;cursor:pointer;border:2px solid transparent}
+  .mini img{width:100%;height:100%;object-fit:cover;display:block}
+  .mini:hover{border-color:var(--accent)}
+  .filtros{display:flex;gap:14px;margin-top:10px;flex-wrap:wrap}
+  .filtros label{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--mid);cursor:pointer;
+    text-transform:none;letter-spacing:0;font-weight:500}
+  .filtros input{width:16px;height:16px;accent-color:var(--accent);cursor:pointer}
+
+  .baixar{position:sticky;bottom:0;width:100%;padding:14px;border:0;border-radius:var(--r);background:var(--accent);
+    color:#fff;font:inherit;font-size:15px;font-weight:700;cursor:pointer;min-height:50px;
+    box-shadow:0 -6px 20px rgba(242,239,233,.9)}
+  .baixar:hover{filter:brightness(1.07)}
+  .baixar:disabled{opacity:.55;cursor:wait}
+
+  .tela{padding:22px;display:flex;flex-direction:column;align-items:center;gap:12px;background:#DCE4E1}
+  .moldura{width:540px;height:675px;box-shadow:0 20px 50px -20px rgba(23,39,38,.5);border-radius:3px;
+    overflow:hidden;background:#fff;flex-shrink:0}
+  iframe{width:1080px;height:1350px;border:0;transform:scale(.5);transform-origin:top left;display:block}
+  .status{font-size:12.5px;color:var(--muted);min-height:18px;text-align:center}
+  .erro{background:#FDECE7;border:1px solid rgba(249,88,49,.35);color:#8A2B12;padding:10px 13px;
+    border-radius:10px;font-size:13px;margin-bottom:14px}
+</style>
+</head>
+<body>
+
+<header>
+  <span class="wm"><span class="t">tide</span><span class="l">line</span><span class="d">.</span></span>
+  <span class="sub">Capas de Revista · 1080 × 1350</span>
+  <a href="/">Voltar ao Estúdio</a>
+</header>
+
+<div class="wrap">
+  <div class="painel">
+    <div id="erro"></div>
+
+    <div class="bloco">
+      <label>Template</label>
+      <div class="tpls" id="tpls"></div>
+    </div>
+
+    <div class="bloco">
+      <label>Foto de fundo</label>
+      <div class="fundo">
+        <button type="button" id="btn-arquivo">Enviar foto</button>
+        <button type="button" id="btn-ia">Gerar com IA</button>
+      </div>
+      <input type="file" id="arquivo" accept="image/*" hidden>
+      <div class="filtros">
+        <label><input type="checkbox" id="f-pb"> Preto e branco</label>
+        <label><input type="checkbox" id="f-grao"> Grão de filme</label>
+        <label><input type="checkbox" id="f-quente"> Luz quente</label>
+      </div>
+      <div class="minis" id="minis"></div>
+    </div>
+
+    <div class="bloco">
+      <label>Textos</label>
+      <div id="campos"></div>
+    </div>
+
+    <div class="bloco" id="bloco-chamadas">
+      <label>Chamadas</label>
+      <div id="chamadas"></div>
+      <button type="button" class="add" id="add-ch">+ chamada</button>
+    </div>
+
+    <button class="baixar" id="baixar">Baixar em 1080 × 1350</button>
+  </div>
+
+  <div class="tela">
+    <div class="moldura"><iframe id="preview"></iframe></div>
+    <div class="status" id="status">A prévia é o arquivo final, em metade do tamanho.</div>
+  </div>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+let CFG = null, TPL = null, DADOS = {}, CHAMADAS = [], FOTO = '';
+
+const erro = m => $('#erro').innerHTML = m ? `<div class="erro">${m}</div>` : '';
+
+/* A prévia sai do MESMO código que exporta o PNG. Se ela mentir, o arquivo mente junto,
+   e a gente descobre na hora em vez de depois de publicar. */
+let t;
+function desenhar(){
+  clearTimeout(t);
+  t = setTimeout(async () => {
+    const dados = Object.assign({}, DADOS, {
+      foto: FOTO,
+      chamadas: CHAMADAS,
+      pb: $('#f-pb').checked, grao: $('#f-grao').checked, quente: $('#f-quente').checked,
+    });
+    const r = await fetch('/api/revista/preview', {
+      method: 'POST', headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ template: TPL.id, dados }),
+    });
+    $('#preview').srcdoc = await r.text();
+  }, 160);
+}
+
+/* O formulário nasce do que o TEMPLATE declara. Template novo não exige mexer aqui. */
+function montarFormulario(){
+  $('#campos').innerHTML = TPL.campos.map(c => {
+    const v = (DADOS[c.id] ?? '').toString().replace(/"/g, '&quot;');
+    return `<div class="campo"><label>${c.label}</label>` + (c.tipo === 'multi'
+      ? `<textarea data-campo="${c.id}">${DADOS[c.id] ?? ''}</textarea>`
+      : `<input type="text" data-campo="${c.id}" value="${v}">`) + `</div>`;
+  }).join('');
+  document.querySelectorAll('[data-campo]').forEach(el => el.oninput = () => {
+    DADOS[el.dataset.campo] = el.value; desenhar();
+  });
+
+  const temCh = !!TPL.chamadas;
+  $('#bloco-chamadas').style.display = temCh ? '' : 'none';
+  if (temCh) montarChamadas();
+}
+
+function montarChamadas(){
+  const spec = TPL.chamadas;
+  $('#chamadas').innerHTML = CHAMADAS.map((c, i) => `
+    <div class="ch-item">
+      <div class="top"><span>Chamada ${i + 1}</span><button type="button" data-del="${i}" title="remover">✕</button></div>
+      ${spec.campos.map((k, j) =>
+        `<input type="text" data-ch="${i}" data-k="${k}" placeholder="${spec.rotulos[j]}" value="${(c[k] ?? '').replace(/"/g, '&quot;')}">`
+      ).join('')}
+    </div>`).join('');
+  document.querySelectorAll('[data-ch]').forEach(el => el.oninput = () => {
+    CHAMADAS[+el.dataset.ch][el.dataset.k] = el.value; desenhar();
+  });
+  document.querySelectorAll('[data-del]').forEach(el => el.onclick = () => {
+    CHAMADAS.splice(+el.dataset.del, 1); montarChamadas(); desenhar();
+  });
+}
+
+$('#add-ch').onclick = () => {
+  const vazio = {};
+  TPL.chamadas.campos.forEach(k => vazio[k] = '');
+  CHAMADAS.push(vazio); montarChamadas(); desenhar();
+};
+
+function trocarTemplate(id){
+  TPL = CFG.templates.find(x => x.id === id);
+  document.querySelectorAll('.tpl').forEach(x => x.classList.toggle('on', x.dataset.id === id));
+
+  // o texto que já existe é preservado; o que o template novo pede e ainda não existe
+  // vem do padrão dele. Assim trocar de template não apaga o seu trabalho.
+  const novo = {};
+  TPL.campos.forEach(c => novo[c.id] = DADOS[c.id] ?? TPL.padrao[c.id] ?? '');
+  DADOS = novo;
+
+  if (TPL.chamadas) {
+    const cs = TPL.chamadas.campos;
+    const base = (CHAMADAS.length ? CHAMADAS : (TPL.padrao.chamadas || []));
+    CHAMADAS = base.map(c => { const o = {}; cs.forEach(k => o[k] = c[k] ?? ''); return o; });
+    if (!CHAMADAS.length) CHAMADAS = (TPL.padrao.chamadas || []).slice();
+  }
+  if (TPL.padrao.pb) $('#f-pb').checked = true;
+  if (TPL.padrao.grao) $('#f-grao').checked = true;
+
+  montarFormulario(); desenhar();
+}
+
+async function iniciar(){
+  CFG = await (await fetch('/api/revista/templates')).json();
+
+  $('#tpls').innerHTML = CFG.templates.map(t =>
+    `<div class="tpl" data-id="${t.id}">
+       <div class="n">${t.nome}</div><div class="r">como a ${t.ref}</div><div class="d">${t.desc}</div>
+     </div>`).join('');
+  document.querySelectorAll('.tpl').forEach(el => el.onclick = () => trocarTemplate(el.dataset.id));
+
+  $('#minis').innerHTML = (CFG.fundos || []).map(f =>
+    `<div class="mini" data-f="${f}"><img src="/saidas/${f}" loading="lazy" alt=""></div>`).join('');
+  document.querySelectorAll('.mini').forEach(el => el.onclick = async () => {
+    FOTO = await paraDataUri('/saidas/' + el.dataset.f); desenhar();
+  });
+
+  ['f-pb','f-grao','f-quente'].forEach(id => $('#' + id).onchange = desenhar);
+
+  FOTO = await paraDataUri('/fundo-padrao').catch(() => '');
+  trocarTemplate(CFG.templates[0].id);
+}
+
+async function paraDataUri(url){
+  const blob = await (await fetch(url)).blob();
+  return new Promise(ok => { const r = new FileReader(); r.onload = () => ok(r.result); r.readAsDataURL(blob); });
+}
+
+$('#btn-arquivo').onclick = () => $('#arquivo').click();
+$('#arquivo').onchange = e => {
+  const f = e.target.files[0]; if (!f) return;
+  const r = new FileReader();
+  r.onload = () => { FOTO = r.result; desenhar(); };
+  r.readAsDataURL(f);
+};
+
+$('#btn-ia').onclick = async (e) => {
+  const b = e.currentTarget;
+  const cena = prompt('O que deve aparecer na foto de capa?',
+    'Uma onda tubular perfeita quebrando ao amanhecer, vista de perto, com um surfista dentro do tubo.');
+  if (!cena) return;
+  b.disabled = true; b.textContent = 'Gerando…'; erro('');
+  try{
+    const r = await (await fetch('/api/gerar', {
+      method: 'POST', headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ cena, variante: 'clara', formato: 'retrato', motor: 'gemini', n: 1, nome: 'capa-fundo' }),
+    })).json();
+    if (r.erro) throw new Error(r.erro);
+    FOTO = await paraDataUri('/saidas/' + r.imagens[0]);   // já sai sem a marca do Gemini
+    $('#minis').insertAdjacentHTML('afterbegin',
+      `<div class="mini" data-f="${r.imagens[0]}"><img src="/saidas/${r.imagens[0]}"></div>`);
+    desenhar();
+  }catch(ex){ erro(ex.message); }
+  b.disabled = false; b.textContent = 'Gerar com IA';
+};
+
+$('#baixar').onclick = async (e) => {
+  const b = e.currentTarget;
+  b.disabled = true; b.textContent = 'Renderizando…';
+  try{
+    const dados = Object.assign({}, DADOS, {
+      foto: FOTO, chamadas: CHAMADAS,
+      pb: $('#f-pb').checked, grao: $('#f-grao').checked, quente: $('#f-quente').checked,
+    });
+    const r = await (await fetch('/api/revista/exportar', {
+      method: 'POST', headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ template: TPL.id, dados, nome: (DADOS.titulo || 'capa').replace(/<br>/g, ' ') }),
+    })).json();
+    if (r.erro) throw new Error(r.erro);
+    const a = document.createElement('a');
+    a.href = '/saidas/' + r.arquivo; a.download = r.arquivo;
+    document.body.appendChild(a); a.click(); a.remove();
+    $('#status').textContent = 'Salvo: ' + r.arquivo;
+  }catch(ex){ erro(ex.message); }
+  b.disabled = false; b.textContent = 'Baixar em 1080 × 1350';
+};
+
+iniciar();
+</script>
+</body>
+</html>
