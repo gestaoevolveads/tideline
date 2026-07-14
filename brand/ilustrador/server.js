@@ -14,6 +14,7 @@ const path = require('path');
 const { execFileSync } = require('child_process');
 const { montarPrompt, VARIANTES, FORMATOS } = require('./estilo');
 const { TEMPLATES, paginaCompleta } = require('./revista');
+const POSTS = require('./posts');
 
 const DIR = __dirname;
 const REFS = path.join(DIR, 'refs');
@@ -149,6 +150,79 @@ const servidor = http.createServer(async (req, res) => {
   const rota = u.pathname;
 
   try {
+    // ---------- Filme analógico ----------
+    // Recebe uma foto e devolve a MESMA foto com a cara de filme. Nada de IA: a imagem
+    // continua sendo a sua, com as pessoas e o lugar reais. Quem trabalha aqui é o
+    // filme.py, que faz o que um colorista faz na mesa (curva, grão, halação, vinheta).
+    if (rota === '/api/filme' && req.method === 'POST') {
+      const b = await corpo(req);
+      if (!b.foto) return json(res, 400, { erro: 'sem foto' });
+      const bin = Buffer.from(String(b.foto).split(',')[1] || '', 'base64');
+      if (!bin.length) return json(res, 400, { erro: 'foto ilegível' });
+
+      const entrada = path.join(os.tmpdir(), 'tl-film-in-' + Date.now() + '.jpg');
+      const nome = `filme_${new Date().toISOString().replace(/[-:T]/g, '').slice(0, 14)}_${b.preset || 'somos'}.jpg`;
+      const saida = path.join(SAIDAS, nome);
+      fs.writeFileSync(entrada, bin);
+      try {
+        execFileSync('python3', [path.join(DIR, 'filme.py'), entrada, saida, b.preset || 'somos'], { stdio: 'pipe' });
+      } catch (e) {
+        return json(res, 500, { erro: 'o filtro falhou: ' + String(e.stderr || e.message).slice(0, 160) });
+      } finally { try { fs.unlinkSync(entrada); } catch (_) {} }
+
+      return json(res, 200, {
+        arquivo: nome,
+        foto: 'data:image/jpeg;base64,' + fs.readFileSync(saida).toString('base64'),
+      });
+    }
+
+    if (rota === '/api/filme/presets') {
+      const py = fs.readFileSync(path.join(DIR, 'filme.py'), 'utf8');
+      const presets = [...py.matchAll(/'(\w+)': \{\s*\n\s*'nome': '([^']+)'/g)]
+        .map(m => ({ id: m[1], nome: m[2] }));
+      return json(res, 200, { presets });
+    }
+
+    // ---------- Posts e capas de carrossel ----------
+    if (rota === '/posts' || rota === '/posts.html') {
+      res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
+      return res.end(fs.readFileSync(path.join(DIR, 'ui-posts.html')));
+    }
+
+    if (rota === '/api/posts/templates') {
+      return json(res, 200, {
+        templates: Object.entries(POSTS.TEMPLATES).map(([id, t]) => ({
+          id, nome: t.nome, desc: t.desc, ref: t.ref,
+          campos: t.campos, chamadas: t.chamadas, padrao: t.padrao,
+        })),
+        fundos: fs.readdirSync(SAIDAS).filter(f => /\.(png|jpe?g)$/i.test(f)).slice(-24).reverse(),
+      });
+    }
+
+    if (rota === '/api/posts/preview' && req.method === 'POST') {
+      const b = await corpo(req);
+      res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
+      return res.end(POSTS.paginaCompleta(b.template, b.dados || {}));
+    }
+
+    if (rota === '/api/posts/exportar' && req.method === 'POST') {
+      const b = await corpo(req);
+      const html = POSTS.paginaCompleta(b.template, b.dados || {});
+      const tmpHtml = path.join(os.tmpdir(), 'tl-post-' + Date.now() + '.html');
+      fs.writeFileSync(tmpHtml, html);
+      const stamp = new Date().toISOString().replace(/[-:T]/g, '').slice(0, 14);
+      const slug = (b.nome || 'post').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 30) || 'post';
+      const nome = `post_${stamp}_${slug}.png`;
+      const destino = path.join(SAIDAS, nome);
+      execFileSync(CHROME, ['--headless', '--disable-gpu', '--hide-scrollbars',
+        '--window-size=1080,1350', `--screenshot=${destino}`,
+        '--virtual-time-budget=9000', 'file://' + tmpHtml], { stdio: 'ignore' });
+      fs.unlinkSync(tmpHtml);
+      if (!fs.existsSync(destino)) return json(res, 500, { erro: 'não consegui renderizar o post' });
+      return json(res, 200, { arquivo: nome });
+    }
+
     // ---------- Capas de revista ----------
     if (rota === '/revista' || rota === '/revista.html') {
       res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });

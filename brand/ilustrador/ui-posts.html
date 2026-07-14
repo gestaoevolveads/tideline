@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Capas de Revista · Tideline</title>
+<title>Posts e Carrosséis · Tideline</title>
 <style>
   :root{
     --deep:#172726; --mid:#243F3D; --muted:#476664;
@@ -15,15 +15,15 @@
   body{margin:0;background:var(--paper);color:var(--deep);font-family:var(--ff);
     -webkit-font-smoothing:antialiased;line-height:1.5}
 
-  header{display:flex;align-items:baseline;gap:14px;padding:18px 26px;border-bottom:1px solid rgba(23,39,38,.09)}
+  header{display:flex;align-items:center;gap:12px;padding:16px 26px;border-bottom:1px solid rgba(23,39,38,.09)}
   .wm{font-size:21px;letter-spacing:-.02em}
   .wm .t{font-weight:300}.wm .l{font-weight:700}.wm .d{color:var(--accent)}
   header .sub{font-size:13px;color:var(--muted);margin-right:auto}
   header a{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;
-    border:1px solid rgba(23,39,38,.16);border-radius:9px;padding:8px 12px}
+    border:1px solid rgba(23,39,38,.16);border-radius:9px;padding:9px 13px}
   header a:hover{border-color:var(--accent);color:var(--accent)}
 
-  .wrap{display:grid;grid-template-columns:390px 1fr;min-height:calc(100vh - 60px)}
+  .wrap{display:grid;grid-template-columns:390px 1fr;min-height:calc(100vh - 58px)}
   @media(max-width:980px){.wrap{grid-template-columns:1fr}}
 
   .painel{padding:20px 24px 70px;border-right:1px solid rgba(23,39,38,.09);overflow-y:auto}
@@ -43,33 +43,40 @@
   .campo label{display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:5px}
   input[type=text], textarea{width:100%;border:1px solid rgba(23,39,38,.16);background:#fff;border-radius:10px;
     padding:9px 12px;font:inherit;font-size:14px;color:var(--deep);resize:vertical}
-  textarea{min-height:62px;line-height:1.45}
+  textarea{min-height:60px}
   input:focus, textarea:focus{outline:none;border-color:var(--mid);box-shadow:0 0 0 3px rgba(36,63,61,.1)}
 
   .ch-item{background:#fff;border:1px solid rgba(23,39,38,.14);border-radius:11px;padding:10px;margin-bottom:8px}
   .ch-item .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:7px}
   .ch-item .top span{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
-  .ch-item .top button{background:none;border:0;color:var(--muted);cursor:pointer;font-size:15px;padding:0 4px}
-  .ch-item .top button:hover{color:var(--accent)}
+  .ch-item .top button{background:none;border:0;color:var(--muted);cursor:pointer;font-size:15px}
   .ch-item input{margin-bottom:6px}
-  .ch-item input:last-child{margin-bottom:0}
   .add{width:100%;background:transparent;border:1px dashed rgba(23,39,38,.3);border-radius:11px;padding:9px;
     font:inherit;font-size:13px;font-weight:600;color:var(--muted);cursor:pointer;min-height:40px}
-  .add:hover{border-color:var(--accent);color:var(--accent)}
 
-  .fundo{display:flex;gap:7px}
-  .fundo button{flex:1;font:inherit;font-size:13px;font-weight:600;padding:10px;border:1px solid rgba(23,39,38,.16);
-    background:#fff;border-radius:10px;cursor:pointer;min-height:42px}
-  .fundo button:hover{border-color:var(--accent);color:var(--accent)}
-  .fundo button:disabled{opacity:.5;cursor:wait}
+  .foto-bts{display:flex;gap:7px}
+  .foto-bts button{flex:1;font:inherit;font-size:13px;font-weight:600;padding:10px;
+    border:1px solid rgba(23,39,38,.16);background:#fff;border-radius:10px;cursor:pointer;min-height:42px}
+  .foto-bts button:hover{border-color:var(--accent);color:var(--accent)}
+  .foto-bts button:disabled{opacity:.5;cursor:wait}
+
+  /* o filtro de filme */
+  .filme{background:#fff;border:1px solid rgba(23,39,38,.14);border-radius:12px;padding:12px;margin-top:10px}
+  .filme .t{font-size:12.5px;font-weight:700;margin-bottom:3px}
+  .filme .s{font-size:11.5px;color:var(--muted);line-height:1.45;margin-bottom:10px}
+  .presets{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+  .presets button{font:inherit;font-size:12.5px;font-weight:600;padding:9px;border-radius:9px;
+    border:1px solid rgba(23,39,38,.16);background:transparent;color:var(--mid);cursor:pointer;min-height:40px}
+  .presets button:hover{border-color:var(--accent);color:var(--accent)}
+  .presets button.on{background:var(--deep);border-color:var(--deep);color:#fff}
+  .presets button:disabled{opacity:.45;cursor:wait}
+  .filme .voltar{width:100%;margin-top:7px;background:transparent;border:0;color:var(--muted);
+    font:inherit;font-size:12px;text-decoration:underline;cursor:pointer;padding:6px}
+
   .minis{display:grid;grid-template-columns:repeat(auto-fill,minmax(58px,1fr));gap:6px;margin-top:8px}
   .mini{aspect-ratio:1;border-radius:8px;overflow:hidden;cursor:pointer;border:2px solid transparent}
   .mini img{width:100%;height:100%;object-fit:cover;display:block}
   .mini:hover{border-color:var(--accent)}
-  .filtros{display:flex;gap:14px;margin-top:10px;flex-wrap:wrap}
-  .filtros label{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--mid);cursor:pointer;
-    text-transform:none;letter-spacing:0;font-weight:500}
-  .filtros input{width:16px;height:16px;accent-color:var(--accent);cursor:pointer}
 
   .baixar{position:sticky;bottom:0;width:100%;padding:14px;border:0;border-radius:var(--r);background:var(--accent);
     color:#fff;font:inherit;font-size:15px;font-weight:700;cursor:pointer;min-height:50px;
@@ -78,8 +85,8 @@
   .baixar:disabled{opacity:.55;cursor:wait}
 
   .tela{padding:22px;display:flex;flex-direction:column;align-items:center;gap:12px;background:#DCE4E1}
-  .moldura{width:540px;height:675px;box-shadow:0 20px 50px -20px rgba(23,39,38,.5);border-radius:3px;
-    overflow:hidden;background:#fff;flex-shrink:0}
+  .moldura{width:540px;height:675px;box-shadow:0 20px 50px -20px rgba(23,39,38,.5);overflow:hidden;
+    background:#fff;flex-shrink:0}
   iframe{width:1080px;height:1350px;border:0;transform:scale(.5);transform-origin:top left;display:block}
   .status{font-size:12.5px;color:var(--muted);min-height:18px;text-align:center}
   .erro{background:#FDECE7;border:1px solid rgba(249,88,49,.35);color:#8A2B12;padding:10px 13px;
@@ -90,8 +97,8 @@
 
 <header>
   <span class="wm"><span class="t">tide</span><span class="l">line</span><span class="d">.</span></span>
-  <span class="sub">Capas de Revista · 1080 × 1350</span>
-  <a href="/posts">Posts e carrosséis</a>
+  <span class="sub">Posts e Carrosséis · 1080 × 1350</span>
+  <a href="/revista">Capas de revista</a>
   <a href="/">Estúdio</a>
 </header>
 
@@ -105,17 +112,21 @@
     </div>
 
     <div class="bloco">
-      <label>Foto de fundo</label>
-      <div class="fundo">
+      <label>Foto</label>
+      <div class="foto-bts">
         <button type="button" id="btn-arquivo">Enviar foto</button>
         <button type="button" id="btn-ia">Gerar com IA</button>
       </div>
       <input type="file" id="arquivo" accept="image/*" hidden>
-      <div class="filtros">
-        <label><input type="checkbox" id="f-pb"> Preto e branco</label>
-        <label><input type="checkbox" id="f-grao"> Grão de filme</label>
-        <label><input type="checkbox" id="f-quente"> Luz quente</label>
+
+      <div class="filme">
+        <div class="t">🎞 Filme analógico</div>
+        <div class="s">Deixa a sua foto com cara de filme: grão, pretos levantados, luz quente.
+          <b>Não é IA</b>: a foto continua sendo a sua, com as pessoas e o lugar reais.</div>
+        <div class="presets" id="presets"></div>
+        <button type="button" class="voltar" id="btn-sem-filtro" hidden>voltar à foto original</button>
       </div>
+
       <div class="minis" id="minis"></div>
     </div>
 
@@ -125,9 +136,9 @@
     </div>
 
     <div class="bloco" id="bloco-chamadas">
-      <label>Chamadas</label>
+      <label>Linhas</label>
       <div id="chamadas"></div>
-      <button type="button" class="add" id="add-ch">+ chamada</button>
+      <button type="button" class="add" id="add-ch">+ linha</button>
     </div>
 
     <button class="baixar" id="baixar">Baixar em 1080 × 1350</button>
@@ -141,22 +152,16 @@
 
 <script>
 const $ = s => document.querySelector(s);
-let CFG = null, TPL = null, DADOS = {}, CHAMADAS = [], FOTO = '';
+let CFG = null, TPL = null, DADOS = {}, CHAMADAS = [], FOTO = '', FOTO_ORIGINAL = '', PRESET = null;
 
 const erro = m => $('#erro').innerHTML = m ? `<div class="erro">${m}</div>` : '';
 
-/* A prévia sai do MESMO código que exporta o PNG. Se ela mentir, o arquivo mente junto,
-   e a gente descobre na hora em vez de depois de publicar. */
 let t;
 function desenhar(){
   clearTimeout(t);
   t = setTimeout(async () => {
-    const dados = Object.assign({}, DADOS, {
-      foto: FOTO,
-      chamadas: CHAMADAS,
-      pb: $('#f-pb').checked, grao: $('#f-grao').checked, quente: $('#f-quente').checked,
-    });
-    const r = await fetch('/api/revista/preview', {
+    const dados = Object.assign({}, DADOS, { foto: FOTO, chamadas: CHAMADAS });
+    const r = await fetch('/api/posts/preview', {
       method: 'POST', headers: { 'content-type': 'application/json' },
       body: JSON.stringify({ template: TPL.id, dados }),
     });
@@ -164,7 +169,6 @@ function desenhar(){
   }, 160);
 }
 
-/* O formulário nasce do que o TEMPLATE declara. Template novo não exige mexer aqui. */
 function montarFormulario(){
   $('#campos').innerHTML = TPL.campos.map(c => {
     const v = (DADOS[c.id] ?? '').toString().replace(/"/g, '&quot;');
@@ -175,20 +179,18 @@ function montarFormulario(){
   document.querySelectorAll('[data-campo]').forEach(el => el.oninput = () => {
     DADOS[el.dataset.campo] = el.value; desenhar();
   });
-
-  const temCh = !!TPL.chamadas;
-  $('#bloco-chamadas').style.display = temCh ? '' : 'none';
-  if (temCh) montarChamadas();
+  const tem = !!TPL.chamadas;
+  $('#bloco-chamadas').style.display = tem ? '' : 'none';
+  if (tem) montarChamadas();
 }
 
 function montarChamadas(){
   const spec = TPL.chamadas;
   $('#chamadas').innerHTML = CHAMADAS.map((c, i) => `
     <div class="ch-item">
-      <div class="top"><span>Chamada ${i + 1}</span><button type="button" data-del="${i}" title="remover">✕</button></div>
+      <div class="top"><span>Linha ${i + 1}</span><button type="button" data-del="${i}">✕</button></div>
       ${spec.campos.map((k, j) =>
-        `<input type="text" data-ch="${i}" data-k="${k}" placeholder="${spec.rotulos[j]}" value="${(c[k] ?? '').replace(/"/g, '&quot;')}">`
-      ).join('')}
+        `<input type="text" data-ch="${i}" data-k="${k}" placeholder="${spec.rotulos[j]}" value="${(c[k] ?? '').replace(/"/g, '&quot;')}">`).join('')}
     </div>`).join('');
   document.querySelectorAll('[data-ch]').forEach(el => el.oninput = () => {
     CHAMADAS[+el.dataset.ch][el.dataset.k] = el.value; desenhar();
@@ -199,51 +201,76 @@ function montarChamadas(){
 }
 
 $('#add-ch').onclick = () => {
-  const vazio = {};
-  TPL.chamadas.campos.forEach(k => vazio[k] = '');
-  CHAMADAS.push(vazio); montarChamadas(); desenhar();
+  const o = {}; TPL.chamadas.campos.forEach(k => o[k] = '');
+  CHAMADAS.push(o); montarChamadas(); desenhar();
 };
 
 function trocarTemplate(id){
   TPL = CFG.templates.find(x => x.id === id);
   document.querySelectorAll('.tpl').forEach(x => x.classList.toggle('on', x.dataset.id === id));
-
-  // o texto que já existe é preservado; o que o template novo pede e ainda não existe
-  // vem do padrão dele. Assim trocar de template não apaga o seu trabalho.
   const novo = {};
   TPL.campos.forEach(c => novo[c.id] = DADOS[c.id] ?? TPL.padrao[c.id] ?? '');
   DADOS = novo;
-
   if (TPL.chamadas) {
     const cs = TPL.chamadas.campos;
-    const base = (CHAMADAS.length ? CHAMADAS : (TPL.padrao.chamadas || []));
+    const base = CHAMADAS.length ? CHAMADAS : (TPL.padrao.chamadas || []);
     CHAMADAS = base.map(c => { const o = {}; cs.forEach(k => o[k] = c[k] ?? ''); return o; });
     if (!CHAMADAS.length) CHAMADAS = (TPL.padrao.chamadas || []).slice();
   }
-  if (TPL.padrao.pb) $('#f-pb').checked = true;
-  if (TPL.padrao.grao) $('#f-grao').checked = true;
-
   montarFormulario(); desenhar();
 }
 
+/* ---------- o filtro de filme ---------- */
+async function aplicarFilme(preset, btn){
+  if (!FOTO_ORIGINAL) return erro('Envie uma foto primeiro.');
+  document.querySelectorAll('#presets button').forEach(b => b.disabled = true);
+  const rot = btn.textContent; btn.textContent = 'revelando…';
+  erro('');
+  try{
+    const r = await (await fetch('/api/filme', {
+      method: 'POST', headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ foto: FOTO_ORIGINAL, preset }),
+    })).json();
+    if (r.erro) throw new Error(r.erro);
+    FOTO = r.foto; PRESET = preset;
+    document.querySelectorAll('#presets button').forEach(b => b.classList.toggle('on', b.dataset.p === preset));
+    $('#btn-sem-filtro').hidden = false;
+    desenhar();
+  }catch(ex){ erro(ex.message); }
+  btn.textContent = rot;
+  document.querySelectorAll('#presets button').forEach(b => b.disabled = false);
+}
+
+$('#btn-sem-filtro').onclick = () => {
+  FOTO = FOTO_ORIGINAL; PRESET = null;
+  document.querySelectorAll('#presets button').forEach(b => b.classList.remove('on'));
+  $('#btn-sem-filtro').hidden = true;
+  desenhar();
+};
+
 async function iniciar(){
-  CFG = await (await fetch('/api/revista/templates')).json();
+  CFG = await (await fetch('/api/posts/templates')).json();
 
   $('#tpls').innerHTML = CFG.templates.map(t =>
-    `<div class="tpl" data-id="${t.id}">
-       <div class="n">${t.nome}</div><div class="r">como a ${t.ref}</div><div class="d">${t.desc}</div>
-     </div>`).join('');
+    `<div class="tpl" data-id="${t.id}"><div class="n">${t.nome}</div><div class="r">como ${t.ref}</div><div class="d">${t.desc}</div></div>`).join('');
   document.querySelectorAll('.tpl').forEach(el => el.onclick = () => trocarTemplate(el.dataset.id));
+
+  const { presets } = await (await fetch('/api/filme/presets')).json();
+  $('#presets').innerHTML = presets.map(p =>
+    `<button type="button" data-p="${p.id}">${p.nome}</button>`).join('');
+  document.querySelectorAll('#presets button').forEach(b =>
+    b.onclick = () => aplicarFilme(b.dataset.p, b));
 
   $('#minis').innerHTML = (CFG.fundos || []).map(f =>
     `<div class="mini" data-f="${f}"><img src="/saidas/${f}" loading="lazy" alt=""></div>`).join('');
   document.querySelectorAll('.mini').forEach(el => el.onclick = async () => {
-    FOTO = await paraDataUri('/saidas/' + el.dataset.f); desenhar();
+    FOTO = FOTO_ORIGINAL = await paraDataUri('/saidas/' + el.dataset.f);
+    $('#btn-sem-filtro').hidden = true;
+    document.querySelectorAll('#presets button').forEach(b => b.classList.remove('on'));
+    desenhar();
   });
 
-  ['f-pb','f-grao','f-quente'].forEach(id => $('#' + id).onchange = desenhar);
-
-  FOTO = await paraDataUri('/fundo-padrao').catch(() => '');
+  FOTO = FOTO_ORIGINAL = await paraDataUri('/fundo-padrao').catch(() => '');
   trocarTemplate(CFG.templates[0].id);
 }
 
@@ -256,25 +283,27 @@ $('#btn-arquivo').onclick = () => $('#arquivo').click();
 $('#arquivo').onchange = e => {
   const f = e.target.files[0]; if (!f) return;
   const r = new FileReader();
-  r.onload = () => { FOTO = r.result; desenhar(); };
+  r.onload = () => {
+    FOTO = FOTO_ORIGINAL = r.result;
+    $('#btn-sem-filtro').hidden = true;
+    document.querySelectorAll('#presets button').forEach(b => b.classList.remove('on'));
+    desenhar();
+  };
   r.readAsDataURL(f);
 };
 
 $('#btn-ia').onclick = async (e) => {
   const b = e.currentTarget;
-  const cena = prompt('O que deve aparecer na foto de capa?',
-    'Uma onda tubular perfeita quebrando ao amanhecer, vista de perto, com um surfista dentro do tubo.');
+  const cena = prompt('O que deve aparecer na foto?', 'Uma onda tubular perfeita quebrando ao amanhecer.');
   if (!cena) return;
   b.disabled = true; b.textContent = 'Gerando…'; erro('');
   try{
     const r = await (await fetch('/api/gerar', {
       method: 'POST', headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ cena, variante: 'clara', formato: 'retrato', motor: 'gemini', n: 1, nome: 'capa-fundo' }),
+      body: JSON.stringify({ cena, variante: 'clara', formato: 'retrato', motor: 'gemini', n: 1, nome: 'post-fundo' }),
     })).json();
     if (r.erro) throw new Error(r.erro);
-    FOTO = await paraDataUri('/saidas/' + r.imagens[0]);   // já sai sem a marca do Gemini
-    $('#minis').insertAdjacentHTML('afterbegin',
-      `<div class="mini" data-f="${r.imagens[0]}"><img src="/saidas/${r.imagens[0]}"></div>`);
+    FOTO = FOTO_ORIGINAL = await paraDataUri('/saidas/' + r.imagens[0]);
     desenhar();
   }catch(ex){ erro(ex.message); }
   b.disabled = false; b.textContent = 'Gerar com IA';
@@ -284,13 +313,10 @@ $('#baixar').onclick = async (e) => {
   const b = e.currentTarget;
   b.disabled = true; b.textContent = 'Renderizando…';
   try{
-    const dados = Object.assign({}, DADOS, {
-      foto: FOTO, chamadas: CHAMADAS,
-      pb: $('#f-pb').checked, grao: $('#f-grao').checked, quente: $('#f-quente').checked,
-    });
-    const r = await (await fetch('/api/revista/exportar', {
+    const dados = Object.assign({}, DADOS, { foto: FOTO, chamadas: CHAMADAS });
+    const r = await (await fetch('/api/posts/exportar', {
       method: 'POST', headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ template: TPL.id, dados, nome: (DADOS.titulo || 'capa').replace(/<br>/g, ' ') }),
+      body: JSON.stringify({ template: TPL.id, dados, nome: TPL.nome }),
     })).json();
     if (r.erro) throw new Error(r.erro);
     const a = document.createElement('a');
