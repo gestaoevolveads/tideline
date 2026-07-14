@@ -35,6 +35,14 @@ jobs:
         working-directory: scripts
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # RITMO FORTE, COM TETO DE GASTO.
+          # Antes: 30 variações por rodada, sem teto de dinheiro (o cap era só de itens).
+          # Agora: até 250 variações por rodada, e o script PARA sozinho ao chegar em US$ 0,75.
+          # São 4 rodadas por dia: no máximo US$ 3/dia, e cerca de 700 variações novas.
+          # A meta é 7 variações por condição; com 1.700 condições, isso enche o banco em
+          # poucas semanas. Pra frear, é só baixar estes dois números.
+          MAX_NEW_VARIACOES: '250'
+          BUDGET_USD: '0.75'
 
       - name: Commit e push
         run: |

@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-14T01:34:35.419Z",
+  "generated_at": "2026-07-14T02:21:42.458Z",
   "target": 7,
-  "condicoesUnicas": 1712,
-  "totalVariacoes": 3574,
+  "condicoesUnicas": 1775,
+  "totalVariacoes": 4093,
   "distribuicao": {
     "1": 0,
-    "2": 1687,
+    "2": 1672,
     "3": 0,
     "4": 1,
     "5": 0,
-    "6+": 24
+    "6+": 102
   },
   "previsao": {
     "total": 1388,
-    "cobertas": 336,
-    "noAlvo": 20
+    "cobertas": 399,
+    "noAlvo": 100
   },
   "praias": [
     {
@@ -151,13 +151,6 @@
       "noAlvo": 0
     },
     {
-      "nome": "Praia do Peró",
-      "uf": "RJ",
-      "condicoes": 16,
-      "cobertas": 2,
-      "noAlvo": 0
-    },
-    {
       "nome": "Monte Alto",
       "uf": "RJ",
       "condicoes": 16,
@@ -277,13 +270,6 @@
       "noAlvo": 0
     },
     {
-      "nome": "Praia do Forte",
-      "uf": "RJ",
-      "condicoes": 16,
-      "cobertas": 3,
-      "noAlvo": 0
-    },
-    {
       "nome": "Barra de Ilhéus",
       "uf": "BA",
       "condicoes": 16,
@@ -298,13 +284,6 @@
       "noAlvo": 0
     },
     {
-      "nome": "Foguete",
-      "uf": "RJ",
-      "condicoes": 19,
-      "cobertas": 4,
-      "noAlvo": 0
-    },
-    {
       "nome": "Joaquina",
       "uf": "SC",
       "condicoes": 14,
@@ -316,13 +295,6 @@
       "uf": "SC",
       "condicoes": 14,
       "cobertas": 3,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Praia da Vila",
-      "uf": "RJ",
-      "condicoes": 20,
-      "cobertas": 5,
       "noAlvo": 0
     },
     {
@@ -372,13 +344,6 @@
       "uf": "SC",
       "condicoes": 16,
       "cobertas": 4,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Praia Grande",
-      "uf": "RJ",
-      "condicoes": 19,
-      "cobertas": 5,
       "noAlvo": 0
     },
     {
@@ -557,6 +522,13 @@
       "noAlvo": 3
     },
     {
+      "nome": "Praia Grande",
+      "uf": "RJ",
+      "condicoes": 19,
+      "cobertas": 9,
+      "noAlvo": 6
+    },
+    {
       "nome": "Caiobá",
       "uf": "PR",
       "condicoes": 10,
@@ -623,8 +595,36 @@
       "nome": "Saquarema",
       "uf": "RJ",
       "condicoes": 20,
-      "cobertas": 18,
-      "noAlvo": 17
+      "cobertas": 20,
+      "noAlvo": 20
+    },
+    {
+      "nome": "Praia da Vila",
+      "uf": "RJ",
+      "condicoes": 20,
+      "cobertas": 20,
+      "noAlvo": 20
+    },
+    {
+      "nome": "Praia do Forte",
+      "uf": "RJ",
+      "condicoes": 16,
+      "cobertas": 16,
+      "noAlvo": 16
+    },
+    {
+      "nome": "Praia do Peró",
+      "uf": "RJ",
+      "condicoes": 16,
+      "cobertas": 16,
+      "noAlvo": 16
+    },
+    {
+      "nome": "Foguete",
+      "uf": "RJ",
+      "condicoes": 19,
+      "cobertas": 19,
+      "noAlvo": 19
     }
   ]
 }
