@@ -278,6 +278,8 @@ $('pagar').onclick = async () => {
   Object.assign(dados, {
     produto_id: C.produto_id, nome: C.nome, preco: C.preco, cor: C.cor, tamanho: C.tamanho,
     frete_id: C.frete_id, frete_valor: C.frete_valor, cupom: C.cupom || '',
+    // os cookies do Pixel: sem eles, a venda contada pelo servidor não sabe de qual anúncio veio
+    ...((window.tlFb && window.tlFb()) || {}),
   });
 
   b.disabled = true; b.textContent = 'Abrindo o pagamento…';

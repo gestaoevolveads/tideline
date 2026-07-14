@@ -69,6 +69,10 @@ export async function onRequestPost(context) {
         tamanho: b.tamanho,
         preco: Number(b.preco),
         frete: Number(b.frete_valor),
+        // os cookies do Pixel, guardados aqui pra chegarem no webhook: é lá, quando o
+        // dinheiro entra, que a venda é contada pelo servidor
+        fbp: b.fbp || '',
+        fbc: b.fbc || '',
         pedido: {
           customer_name: b.cliente_nome,
           customer_email: b.cliente_email,

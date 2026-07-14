@@ -2692,6 +2692,8 @@ function conferirCompra(){
       content_name: pend.nome, content_ids: [String(pend.produto_id)], content_type: 'product',
       value: Number(pend.total) || 0, currency: 'BRL',
       coupon: pend.cupom || undefined, transaction_id: pend.ref,
+      // o mesmo id que o servidor vai usar na Conversions API: o Meta junta os dois
+      event_id: pend.ref,
     });
   }
   try{ localStorage.removeItem('tl_compra_pend'); sessionStorage.removeItem('tl_compra'); }catch(e){}

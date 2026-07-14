@@ -3,6 +3,8 @@
 // Env: MP_ACCESS_TOKEN, SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY
 // Segurança: só confiamos no ID; valor/status vêm re-buscados do MP. external_reference = "userId|REF".
 
+import { purchaseCapi } from './_meta-capi.js';
+
 export async function onRequestPost(context) {
   const { request, env } = context;
   try {
@@ -40,6 +42,26 @@ export async function onRequestPost(context) {
           try { await sbUpdateProfile(env, userId, { plano_tipo: plano, valor_pago: valor }); } catch (e) {}
         }
         if (ref) await registrarComissao(env, { ref, userId, plano, valor, mpId: String(id) });
+
+        // A assinatura anual sofre do mesmo mal da camisa: quem paga no Pix não volta pro
+        // site, e o Pixel do navegador nunca vê a venda. Aqui ela é contada do servidor.
+        //
+        // Só mando quando existe o md.eid, que é o id combinado entre o navegador e o
+        // servidor. Sem ele eu não teria como dedupar, e a mensalidade no cartão (que sempre
+        // traz a pessoa de volta pro site) seria contada duas vezes.
+        try {
+          const pagador = pay.payer || {};
+          if (md.eid) await purchaseCapi(env, {
+            ref: md.eid,
+            valor,
+            email: pagador.email || md.email || '',
+            telefone: (pagador.phone && (pagador.phone.area_code || '') + (pagador.phone.number || '')) || '',
+            nome: (pagador.first_name || '') + ' ' + (pagador.last_name || ''),
+            produtoId: 'assinatura-' + plano,
+            produtoNome: 'Assinatura ' + plano,
+            fbp: md.fbp || '', fbc: md.fbc || '',
+          });
+        } catch (e) { /* medição nunca pode derrubar o webhook */ }
       }
     } else if (type.includes('preapproval') || type.includes('subscription')) {
       // assinatura autorizada → garante premium (a comissão vem no evento de pagamento)
@@ -104,6 +126,22 @@ async function pedidoDaLoja(env, md, mpId) {
     montink_pedido: (resposta && (resposta.order_id || resposta.id || resposta.pedido)) || null,
     montink_resposta: resposta,
   });
+
+  // A venda contada pelo servidor. Repare que ela é enviada mesmo se a Montink recusar: o
+  // dinheiro entrou, a venda existe, e o Meta precisa saber. O problema da Montink é seu,
+  // não do anúncio.
+  try {
+    await purchaseCapi(env, {
+      ref: md.ref,
+      valor: Number(md.total) || 0,
+      email: p.customer_email, telefone: p.customer_phone, nome: p.customer_name,
+      cidade: end.city, uf: end.state, cep: end.zipcode,
+      produtoId: (p.products && p.products[0] && p.products[0].product_id) || '',
+      produtoNome: md.produto_nome || '',
+      cupom: md.cupom || '',
+      fbp: md.fbp || '', fbc: md.fbc || '',
+    });
+  } catch (e) { /* o pedido já está salvo; medição não pode derrubar a venda */ }
 
   // O cupom só conta uso depois que o pagamento entrou. Contar no clique deixaria o cupom
   // "gasto" por gente que nem chegou a pagar.

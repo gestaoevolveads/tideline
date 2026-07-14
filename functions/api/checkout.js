@@ -14,7 +14,7 @@ export async function onRequestPost(context) {
   const { request, env } = context;
   const origin = new URL(request.url).origin;
   try {
-    const { plan, userId, email, ref } = await request.json();
+    const { plan, userId, email, ref, fbp, fbc } = await request.json();
     const p = PLANOS[plan];
     if (!p) return json({ error: 'plano inválido' }, 400);
     if (!env.MP_ACCESS_TOKEN) return json({ error: 'MP não configurado' }, 500);
@@ -24,7 +24,11 @@ export async function onRequestPost(context) {
     const precos = await lerPrecos(env);
     const precoFinal = (plan === 'anual') ? precos.anual : precos.mensal;
 
-    const back = `${origin}/app.html?assinatura=ok&v=${precoFinal}&plan=${encodeURIComponent(plan)}`;
+    // O id do evento nasce AQUI, e vai pros dois lados: pro navegador (na URL de volta) e
+    // pro servidor (na metadata). É esse id igual dos dois lados que faz o Meta entender que
+    // a compra do Pixel e a compra da Conversions API são a MESMA, e contar uma vez só.
+    const eid = 'TL-A-' + Date.now();
+    const back = `${origin}/app.html?assinatura=ok&v=${precoFinal}&plan=${encodeURIComponent(plan)}&eid=${eid}`;
     // external_reference carrega userId + código do afiliado: "userId|REF"
     const extRef = `${userId || ''}|${(ref || '').toUpperCase()}`;
     let url, body;
@@ -53,7 +57,10 @@ export async function onRequestPost(context) {
         back_urls: { success: back, pending: back, failure: `${origin}/assinar.html` },
         auto_return: 'approved',
         notification_url: `${origin}/api/mp-webhook`,
-        metadata: { user_id: userId || '', plan, ref: (ref || '').toUpperCase() },
+        // fbp e fbc são os cookies do Pixel. Sem eles, a Conversions API tem muito mais
+        // dificuldade de casar a venda com o clique no anúncio que a trouxe.
+        metadata: { user_id: userId || '', plan, ref: (ref || '').toUpperCase(), eid,
+                    email: email || '', fbp: fbp || '', fbc: fbc || '' },
       };
     }
 

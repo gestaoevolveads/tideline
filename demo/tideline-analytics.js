@@ -44,7 +44,7 @@
     // eventos que aconteceram antes do aceite não se perdem: saem agora
     while (filaEventos.length) {
       var e = filaEventos.shift();
-      try { if (window.fbq && e[0]) fbq('track', e[0], e[2]); } catch(_){}
+      try { if (window.fbq && e[0]) fbq('track', e[0], e[2], e[3] ? { eventID: e[3] } : undefined); } catch(_){}
       try { if (window.gtag && e[1]) gtag('event', e[1], e[2]); } catch(_){}
     }
   };
@@ -110,14 +110,34 @@
     }).catch(function(){});
   } catch(e){}
 
+  // ---------- os cookies do Pixel ----------
+  // O _fbp identifica o navegador, e o _fbc guarda o clique que veio do anúncio. Eles são o
+  // que mais ajuda o Meta a casar uma venda feita no servidor com o anúncio que a trouxe.
+  // Sem eles, a Conversions API acerta bem menos.
+  window.tlFb = function(){
+    function cookie(n){
+      var m = document.cookie.match('(^|;)\\s*' + n + '\\s*=\\s*([^;]+)');
+      return m ? m.pop() : '';
+    }
+    return { fbp: cookie('_fbp'), fbc: cookie('_fbc') };
+  };
+
   // ---------- helper unificado (enriquece TODO evento com a origem) ----------
   window.tlTrack = function(metaEvent, ga4Event, params){
     params = params || {};
     var a = (window.tlAttrib && window.tlAttrib()) || {};
     var enr = Object.assign({}, params);
     ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(function(k){ if (a[k]) enr[k] = a[k]; });
-    if (!medicaoLigada) { filaEventos.push([metaEvent, ga4Event, enr]); return; }
-    try { if (window.fbq && metaEvent) fbq('track', metaEvent, enr); } catch(e){}
+
+    // O event_id é o que impede a MESMA venda de ser contada duas vezes. O servidor manda a
+    // compra pela Conversions API e o navegador manda pelo Pixel; se os dois usarem o mesmo
+    // event_id, o Meta entende que é o mesmo acontecimento e junta. Sem ele, um pedido de
+    // R$158 vira R$316 no relatório, e você otimiza campanha em cima de um número inventado.
+    var idEvento = enr.event_id;
+    delete enr.event_id;
+
+    if (!medicaoLigada) { filaEventos.push([metaEvent, ga4Event, enr, idEvento]); return; }
+    try { if (window.fbq && metaEvent) fbq('track', metaEvent, enr, idEvento ? { eventID: idEvento } : undefined); } catch(e){}
     try { if (window.gtag && ga4Event) gtag('event', ga4Event, enr); } catch(e){}
   };
 
@@ -130,7 +150,9 @@
       var plano = q.get('plan') || '';
       window.tlTrack('Purchase', 'purchase', {
         value: val, currency: 'BRL',
-        content_name: ('assinatura ' + plano).trim()
+        content_name: ('assinatura ' + plano).trim(),
+        // o mesmo id que o servidor manda pela Conversions API: o Meta conta uma vez só
+        event_id: q.get('eid') || undefined
       });
       // limpa a URL pra não recontar num refresh
       q.delete('assinatura'); q.delete('v'); q.delete('plan');

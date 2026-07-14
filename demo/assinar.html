@@ -220,7 +220,10 @@ async function assinar(){
   if(window.tlTrack){ const _v = plan==='anual'?PRECOS.anual:PRECOS.mensal; tlTrack('InitiateCheckout','begin_checkout',{ value:_v, currency:'BRL', content_name:('plano '+plan) }); }
   try{
     const r=await fetch('/api/checkout',{method:'POST',headers:{'content-type':'application/json'},
-      body:JSON.stringify({ plan, userId:gUser.id, email:gUser.email, ref:getRef() })});
+      // os cookies do Pixel viajam junto: é com eles que a venda contada pelo servidor
+      // consegue ser ligada ao anúncio que trouxe a pessoa
+      body:JSON.stringify({ plan, userId:gUser.id, email:gUser.email, ref:getRef(),
+                            ...((window.tlFb && window.tlFb()) || {}) })});
     const d=await r.json();
     if(d.init_point){ location.href=d.init_point; return; }
     alert('Não consegui abrir o pagamento: '+(d.error||'tente de novo'));
