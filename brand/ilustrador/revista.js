@@ -82,7 +82,7 @@ function banca(d) {
     .col .p{font-size:12px;letter-spacing:.2em;color:rgba(255,255,255,.62);margin-top:6px;text-shadow:0 1px 8px rgba(23,39,38,.8)}
     .fim{position:absolute;z-index:5;left:44px;right:44px;bottom:46px;max-height:52%}
     .selo{font-size:15px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
-    .tit{font-size:104px;font-weight:800;line-height:.9;letter-spacing:-.04em;color:#fff}
+    .tit{font-size:104px;font-weight:800;line-height:.9;letter-spacing:-.04em;color:#fff;text-wrap:balance}
     .sub{font-size:25px;color:rgba(255,255,255,.9);margin-top:16px;font-weight:500;max-width:74%;line-height:1.35}
   </style>
   <div class="capa">
@@ -173,7 +173,7 @@ function poster(d) {
     .veu{position:absolute;inset:0;z-index:2;
       background:linear-gradient(180deg,rgba(0,0,0,.10) 0%,rgba(0,0,0,0) 35%,rgba(0,0,0,.55) 100%)}
     .frase{position:absolute;z-index:4;left:70px;right:70px;bottom:64px;text-align:center;color:#fff}
-    .frase .t{font-size:30px;font-weight:600;line-height:1.4;letter-spacing:.02em}
+    .frase .t{font-size:30px;font-weight:600;line-height:1.4;letter-spacing:.02em;text-wrap:balance;max-width:28ch;margin:0 auto}
     .frase .a{font-size:15px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;
       color:rgba(255,255,255,.6);margin-top:16px}
   </style>
@@ -205,8 +205,14 @@ function nostalgia(d) {
     .top{position:absolute;z-index:4;top:34px;left:44px;right:44px;display:flex;justify-content:space-between;
       font-size:14px;font-weight:600;letter-spacing:.03em;color:rgba(255,255,255,.9)}
     .name{position:absolute;z-index:4;top:190px;left:52px;
+      display:inline-block;width:fit-content;
       filter:drop-shadow(0 4px 24px rgba(23,39,38,.55))}
-    .kick{font-size:22px;font-weight:600;color:#fff;margin-top:6px;letter-spacing:.01em;text-shadow:0 2px 14px rgba(23,39,38,.8)}
+    /* o texto tem largura ZERO e mínimo de 100%: não empurra o container (que fica do
+       tamanho exato do logotipo) mas ocupa essa largura e quebra sozinho quando passa.
+       Resultado: nada nunca ultrapassa a marca, e tudo fica no mesmo eixo à esquerda. */
+    .kick{display:block;width:0;min-width:100%;text-align:left;
+      font-size:22px;font-weight:600;color:#fff;margin-top:10px;letter-spacing:.01em;
+      line-height:1.35;text-shadow:0 2px 14px rgba(23,39,38,.8)}
     .kick b{font-weight:800}
         .col{position:absolute;z-index:4;right:44px;top:330px;width:250px;
       font-size:13.5px;line-height:1.6;letter-spacing:.06em;text-transform:uppercase;
@@ -260,13 +266,15 @@ function central(d) {
       padding:52px 60px 46px;text-align:center}
     .kick{font-size:17px;font-weight:700;letter-spacing:.46em;text-transform:uppercase;
       color:rgba(255,255,255,.85);margin-top:6px}
-    .ch{margin-top:34px;font-size:22px;line-height:2;letter-spacing:.12em;text-transform:uppercase;
-      color:#fff;font-weight:600;text-shadow:0 2px 16px rgba(23,39,38,.85), 0 0 40px rgba(23,39,38,.5)}
+    .ch{margin-top:34px;font-size:22px;letter-spacing:.12em;text-transform:uppercase;
+      color:#fff;font-weight:600;text-shadow:0 2px 16px rgba(23,39,38,.85), 0 0 40px rgba(23,39,38,.5);
+      display:flex;flex-direction:column;gap:16px}
+    .ch > div{line-height:1.35;text-wrap:balance;max-width:30ch;margin:0 auto}
     .rule{width:190px;height:1px;background:rgba(255,255,255,.55);margin:22px auto 0}
     .fim{margin-top:auto}
     .selo{display:inline-block;background:var(--accent);color:#fff;font-size:16px;font-weight:800;
       letter-spacing:.18em;text-transform:uppercase;padding:7px 13px;border-radius:5px;margin-bottom:14px}
-    .tit{font-size:82px;font-weight:800;line-height:.95;letter-spacing:-.035em;color:#fff}
+    .tit{font-size:82px;font-weight:800;line-height:.95;letter-spacing:-.035em;color:#fff;text-wrap:balance;max-width:16ch;margin:0 auto}
     .pe{margin-top:18px;font-size:16px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
       color:rgba(255,255,255,.8)}
   </style>
@@ -320,7 +328,7 @@ function francesa(d) {
       background:radial-gradient(ellipse 70% 60% at 50% 50%, rgba(23,39,38,.58) 0%, rgba(23,39,38,.28) 55%, transparent 78%)}
     .selo{display:inline-block;background:var(--accent);color:#fff;font-size:15px;font-weight:800;
       letter-spacing:.2em;text-transform:uppercase;padding:7px 14px;border-radius:5px;margin-bottom:16px}
-    .tit{font-size:88px;font-weight:800;line-height:.94;letter-spacing:-.035em;text-shadow:0 2px 30px rgba(23,39,38,.45)}
+    .tit{font-size:88px;font-weight:800;line-height:.94;letter-spacing:-.035em;text-shadow:0 2px 30px rgba(23,39,38,.45);text-wrap:balance;max-width:15ch;margin:0 auto}
     .sub{font-size:26px;letter-spacing:.34em;text-transform:uppercase;margin-top:12px;color:#fff;font-weight:600;text-shadow:0 2px 18px rgba(23,39,38,.7)}
     .pe{position:absolute;left:40px;right:40px;bottom:30px;display:flex;justify-content:space-between;align-items:center;
       color:#fff;font-size:15px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
