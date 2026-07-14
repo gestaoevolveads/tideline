@@ -221,7 +221,12 @@
             <button class="btn" onclick="loadDashboard()" style="margin:0">Aplicar</button>
           </span>
         </div>
-        <div id="dash-erro" style="display:none;color:var(--accent);font-size:13px;margin-top:12px"></div>
+        <div class="geo-card" id="geo-card">
+  <h3>De onde vem a sua gente</h3>
+  <div class="sub">Visitantes únicos no período escolhido, por estado e por cidade. Quem carimba a origem é o Cloudflare, sem GPS e sem identificar ninguém.</div>
+  <div id="geo-box"><div class="soon">carregando…</div></div>
+</div>
+<div id="dash-erro" style="display:none;color:var(--accent);font-size:13px;margin-top:12px"></div>
         <div id="dash-kpis" class="kpis" style="margin-top:16px"></div>
       </div>
 
@@ -984,6 +989,53 @@ function dashPeriodo(){
   } else { const n=parseInt(dashR,10)||7; from=new Date(now.getTime()-n*86400000); }
   return {from,to};
 }
+
+/* ── DE ONDE VEM A GENTE ────────────────────────────────────────────────
+   Estado e cidade vêm carimbados pelo Cloudflare na /api/visita: ele já sabe de onde
+   partiu o acesso e entrega de graça. Nada de GPS, nada de serviço pago, e nada que
+   identifique uma pessoa: cidade é grossa demais pra isso.
+   Contamos VISITANTES (sid único), não pageviews: 10 páginas de uma pessoa é 1. ────── */
+function renderGeo(vis){
+  const porEstado = {}, porCidade = {};
+  const vistos = new Set();
+  for(const v of vis){
+    if(!v.sid) continue;
+    const chaveE = (v.estado||'?') + '|' + v.sid;
+    if(!vistos.has(chaveE)){ vistos.add(chaveE); porEstado[v.estado||'Desconhecido'] = (porEstado[v.estado||'Desconhecido']||0)+1; }
+    const cidade = v.cidade ? (v.cidade + (v.estado ? ' · '+v.estado : '')) : null;
+    if(cidade){
+      const chaveC = cidade + '|' + v.sid;
+      if(!vistos.has(chaveC)){ vistos.add(chaveC); porCidade[cidade] = (porCidade[cidade]||0)+1; }
+    }
+  }
+  const ordena = o => Object.entries(o).sort((a,b)=>b[1]-a[1]);
+  const estados = ordena(porEstado), cidades = ordena(porCidade).slice(0,12);
+  const total = estados.reduce((s,[,n])=>s+n,0) || 1;
+
+  const barra = (nome,n)=>{
+    const pct = Math.round(n/total*100);
+    return `<div class="geo-l">
+      <div class="geo-n">${nome}</div>
+      <div class="geo-b"><div class="geo-f" style="width:${Math.max(pct,2)}%"></div></div>
+      <div class="geo-v">${n} <span>${pct}%</span></div>
+    </div>`;
+  };
+
+  const semDados = !estados.length || (estados.length===1 && estados[0][0]==='Desconhecido');
+  document.getElementById('geo-box').innerHTML = semDados
+    ? `<div class="soon">Ainda não há visitas com localização. Elas passam a ser carimbadas a partir do próximo deploy (o Cloudflare informa cidade e estado). Rode também o SQL <strong>visitas-geo.sql</strong>.</div>`
+    : `<div class="geo-cols">
+         <div>
+           <div class="geo-t">Por estado</div>
+           ${estados.slice(0,12).map(([n,v])=>barra(n,v)).join('')}
+         </div>
+         <div>
+           <div class="geo-t">Por cidade</div>
+           ${cidades.length ? cidades.map(([n,v])=>barra(n,v)).join('') : '<div class="soon">sem cidades ainda</div>'}
+         </div>
+       </div>`;
+}
+
 async function loadDashboard(){
   const erro=document.getElementById('dash-erro'); erro.style.display='none';
   try{
@@ -992,8 +1044,9 @@ async function loadDashboard(){
     const {from,to}=dashPeriodo();
     // visitas (se a tabela não existir, degrada)
     let vis=[], visOk=true;
-    const rv=await c.from('visits').select('ts,sid,path').gte('ts',from.toISOString()).lte('ts',to.toISOString()).order('ts',{ascending:true}).limit(20000);
+    const rv=await c.from('visits').select('ts,sid,path,cidade,estado').gte('ts',from.toISOString()).lte('ts',to.toISOString()).order('ts',{ascending:true}).limit(20000);
     if(rv.error) visOk=false; else vis=rv.data||[];
+    if(visOk) try{ renderGeo(vis); }catch(e){}
     // perfis (com receita, se as colunas existirem)
     let hasRev=true;
     let rp=await c.from('profiles').select('email,nome,created_at,premium_until,trial_ends,plano_tipo,valor_pago');

@@ -93,9 +93,12 @@
     var SB_KEY = 'sb_publishable_dlDItMsVmfNLo1jhADYv3A_k2dV4m6i';
     var sid = localStorage.getItem('tl_sid');
     if (!sid) { sid = Date.now().toString(36) + Math.random().toString(36).slice(2, 10); localStorage.setItem('tl_sid', sid); }
-    fetch(SB_URL + '/rest/v1/visits', {
+    // A visita passa pelo nosso servidor (Cloudflare) em vez de ir direto ao Supabase.
+    // Motivo: lá ele carimba cidade e estado de graça, coisa que o navegador não sabe e que
+    // a gente não vai pedir por GPS (invasivo) nem comprar de terceiro (desnecessário).
+    fetch('/api/visita', {
       method: 'POST', keepalive: true,
-      headers: { 'content-type': 'application/json', apikey: SB_KEY, Prefer: 'return=minimal' },
+      headers: { 'content-type': 'application/json' },
       body: JSON.stringify({
         path: location.pathname,
         ref: document.referrer || null,

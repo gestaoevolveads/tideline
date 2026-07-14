@@ -4,6 +4,15 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const MODEL = 'claude-sonnet-5';
+
+/* Freio de dinheiro. O script para de gerar quando chega no teto.
+   Preço do Sonnet: US$ 3 por milhão de tokens de entrada, US$ 15 por milhão de saída.
+   Sem isto, "rodar mais forte" vira cheque em branco: numa rodada sem freio o script
+   fez 87 chamadas e ninguém sabia quanto tinha custado. */
+const BUDGET_USD = Number(process.env.BUDGET_USD) || 0;
+const PRECO_IN = 3 / 1e6, PRECO_OUT = 15 / 1e6;
+let gastoUSD = 0, tokensIn = 0, tokensOut = 0;
+const estourouOrcamento = () => BUDGET_USD > 0 && gastoUSD >= BUDGET_USD;
 // Meta de variações por condição no banco (o app roda entre elas pela data).
 // Geração é incremental: nunca descarta as existentes, só completa até a meta.
 const TARGET_VARIACOES = Number(process.env.TARGET_VARIACOES) || 7;
@@ -295,6 +304,11 @@ Chame a ferramenta salvar_narracoes com uma entrada por id.`;
     messages: [{ role: 'user', content: prompt }],
   });
 
+  const u = resp.usage || {};
+  tokensIn += (u.input_tokens || 0);
+  tokensOut += (u.output_tokens || 0);
+  gastoUSD = tokensIn * PRECO_IN + tokensOut * PRECO_OUT;
+
   const toolUse = resp.content.find(c => c.type === 'tool_use');
   if (!toolUse) throw new Error('sem tool_use na resposta');
   return toolUse.input.narracoes || [];
@@ -365,6 +379,10 @@ async function main() {
       missing.push({ b, key, id: missing.length + 1, quantas: TARGET_VARIACOES - have, evitar });
     }
 
+    // chegou no teto de dinheiro: para de gerar, mas continua montando o cache com o que
+    // já existe (senão a rodada não publica nada e o gasto vira prejuízo puro)
+    if (estourouOrcamento()) missing.length = 0;
+
     // teto de orçamento: apara o que exceder o restante do lote
     if (MAX_NEW && missing.length) {
       let restante = MAX_NEW - novasGeradas;
@@ -431,7 +449,23 @@ async function main() {
 
   // persiste biblioteca (acumula entre execuções) e cache (lido pelo app)
   library.generated_at = new Date().toISOString();
-  fs.writeFileSync(libPath, JSON.stringify(library, null, 2));
+  // Escrita verificada. O iCloud já reverteu este arquivo depois de uma rodada inteira,
+  // jogando fora 1.909 variações e US$ 4. Agora: grava num temporário, valida o JSON,
+  // troca de uma vez só (rename é atômico), RELÊ do disco e confere se o número bate.
+  const escreverSeguro = (destino, dados) => {
+    const tmp = destino + '.tmp';
+    fs.writeFileSync(tmp, JSON.stringify(dados, null, 2));
+    JSON.parse(fs.readFileSync(tmp, 'utf8'));
+    fs.renameSync(tmp, destino);
+    return JSON.parse(fs.readFileSync(destino, 'utf8'));
+  };
+  const salvo = escreverSeguro(libPath, library);
+  const noDisco = Object.values(salvo.keys).reduce((s, v) => s + (v.variacoes?.length || 0), 0);
+  const naMemoria = Object.values(library.keys).reduce((s, v) => s + (v.variacoes?.length || 0), 0);
+  if (noDisco !== naMemoria) {
+    throw new Error(`ESCRITA NAO CONFIRMADA: memoria ${naMemoria} variacoes, disco ${noDisco}`);
+  }
+  console.log(`Biblioteca salva e CONFERIDA: ${noDisco} variações no disco.`);
   fs.writeFileSync(path.join(ROOT, 'demo/narrator-cache.json'), JSON.stringify(cache, null, 2));
 
   // estatísticas para o painel: distribuição por nº de variações + cobertura da previsão
@@ -459,6 +493,8 @@ async function main() {
   console.log(`\nConcluído. Praias: ${Object.keys(cache.beaches).length}`);
   console.log(`Chamadas à API: ${apiCalls} | condições novas geradas: ${misses} | reusos do cache: ${hits}`);
   console.log(`Biblioteca acumulada: ${Object.keys(library.keys).length} condições únicas`);
+  console.log(`GASTO: US$ ${gastoUSD.toFixed(2)} (entrada ${(tokensIn/1000).toFixed(0)}k, saída ${(tokensOut/1000).toFixed(0)}k tokens)`);
+  if (BUDGET_USD) console.log(`Orçamento: US$ ${BUDGET_USD.toFixed(2)} → ${estourouOrcamento() ? 'ATINGIDO, parei de gerar' : 'não estourou'}`);
 }
 
 if (require.main === module) {
