@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Finalizar compra · Tideline</title>
+<script src="./tideline-analytics.js"></script>
+<style>
+  :root{
+    --deep:#172726; --mid:#243F3D; --muted:#476664;
+    --surface:#D3E2DE; --surface2:#E8F0ED; --paper:#F2EFE9; --accent:#F95831; --white:#fff;
+    --ff:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--deep);font-family:var(--ff);line-height:1.5;
+    -webkit-font-smoothing:antialiased}
+  header{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid rgba(23,39,38,.09)}
+  .wm{font-size:19px;letter-spacing:-.02em;margin-right:auto}
+  .wm .t{font-weight:300}.wm .l{font-weight:700}.wm .d{color:var(--accent)}
+  header a{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none}
+
+  main{max-width:520px;margin:0 auto;padding:20px 20px 60px}
+
+  .resumo{background:var(--white);border-radius:16px;padding:14px;display:flex;gap:14px;align-items:center;
+    box-shadow:0 1px 2px rgba(23,39,38,.05),0 8px 24px -18px rgba(23,39,38,.3);margin-bottom:20px}
+  .resumo img{width:76px;height:76px;border-radius:12px;object-fit:cover;background:var(--surface)}
+  .resumo .n{font-size:14px;font-weight:800;line-height:1.3}
+  .resumo .v{font-size:12px;color:var(--muted);margin-top:3px}
+  .resumo .p{font-size:17px;font-weight:800;margin-top:5px}
+
+  h2{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
+    margin:22px 0 10px}
+  .campo{margin-bottom:11px}
+  label{display:block;font-size:12.5px;font-weight:600;color:var(--muted);margin-bottom:5px}
+  input{width:100%;border:1.5px solid rgba(23,39,38,.14);background:var(--white);border-radius:11px;
+    padding:12px 14px;font:inherit;font-size:15px;color:var(--deep);min-height:48px}
+  input:focus{outline:none;border-color:var(--mid);box-shadow:0 0 0 3px rgba(36,63,61,.09)}
+  .linha{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+  .linha.tres{grid-template-columns:2fr 1fr 1fr}
+
+  .total{background:var(--white);border-radius:16px;padding:16px 18px;margin-top:22px;
+    box-shadow:0 1px 2px rgba(23,39,38,.05),0 8px 24px -18px rgba(23,39,38,.3)}
+  .total .l{display:flex;justify-content:space-between;font-size:13.5px;color:var(--mid);margin-bottom:7px}
+  .total .f{display:flex;justify-content:space-between;align-items:baseline;padding-top:11px;
+    border-top:1px solid var(--surface);margin-top:4px}
+  .total .f .k{font-size:13px;font-weight:700}
+  .total .f .v{font-size:24px;font-weight:800}
+
+  .cta{width:100%;margin-top:16px;padding:17px;border:0;border-radius:14px;background:var(--accent);
+    color:#fff;font:inherit;font-size:16px;font-weight:800;cursor:pointer;min-height:56px}
+  .cta:disabled{opacity:.55;cursor:wait}
+  .nota{font-size:11.5px;color:var(--muted);text-align:center;margin-top:12px;line-height:1.6}
+  .erro{background:#FDECE7;color:#8A2B12;border-radius:11px;padding:11px 13px;font-size:13px;margin-top:12px}
+</style>
+</head>
+<body>
+
+<header>
+  <span class="wm"><span class="t">tide</span><span class="l">line</span><span class="d">.</span></span>
+  <a href="./app.html">Voltar</a>
+</header>
+
+<main>
+  <div id="resumo"></div>
+
+  <h2>Seus dados</h2>
+  <div class="campo"><label>Nome completo</label><input id="cliente_nome" autocomplete="name"></div>
+  <div class="linha">
+    <div class="campo"><label>E-mail</label><input id="cliente_email" type="email" autocomplete="email"></div>
+    <div class="campo"><label>Telefone</label><input id="cliente_fone" inputmode="tel" placeholder="(21) 99999-9999"></div>
+  </div>
+  <div class="campo"><label>CPF</label><input id="cliente_doc" inputmode="numeric" placeholder="000.000.000-00"></div>
+
+  <h2>Entrega</h2>
+  <div class="linha">
+    <div class="campo"><label>CEP</label><input id="cep" inputmode="numeric" maxlength="9"></div>
+    <div class="campo"><label>Número</label><input id="numero" inputmode="numeric"></div>
+  </div>
+  <div class="campo"><label>Rua</label><input id="rua" autocomplete="address-line1"></div>
+  <div class="linha">
+    <div class="campo"><label>Bairro</label><input id="bairro"></div>
+    <div class="campo"><label>Complemento <span style="font-weight:400">(opcional)</span></label><input id="complemento"></div>
+  </div>
+  <div class="linha">
+    <div class="campo"><label>Cidade</label><input id="cidade"></div>
+    <div class="campo"><label>Estado</label><input id="uf" maxlength="2" placeholder="RJ"></div>
+  </div>
+
+  <div class="total" id="total"></div>
+  <div id="erro"></div>
+  <button class="cta" id="pagar">Ir para o pagamento</button>
+  <div class="nota">Pagamento pelo Mercado Pago: Pix, cartão em até 12x ou boleto.<br>
+    A camisa é impressa depois da compra e enviada direto pra você.</div>
+</main>
+
+<script>
+const $ = i => document.getElementById(i);
+let C = null;
+try { C = JSON.parse(sessionStorage.getItem('tl_compra') || 'null'); } catch(e) {}
+
+if (!C) { location.replace('./app.html'); }
+else {
+  $('resumo').innerHTML = `
+    <img src="${C.img || ''}" alt="">
+    <div>
+      <div class="n">${C.nome}</div>
+      <div class="v">${C.cor} · tamanho ${C.tamanho}</div>
+      <div class="p">R$ ${C.preco.toFixed(2).replace('.',',')}</div>
+    </div>`;
+  $('total').innerHTML = `
+    <div class="l"><span>Camisa</span><span>R$ ${C.preco.toFixed(2).replace('.',',')}</span></div>
+    <div class="l"><span>${C.frete_nome}</span><span>R$ ${C.frete_valor.toFixed(2).replace('.',',')}</span></div>
+    <div class="f"><span class="k">Total</span><span class="v">R$ ${C.total.toFixed(2).replace('.',',')}</span></div>`;
+  $('cep').value = (C.cep || '').replace(/(\d{5})(\d{3})/, '$1-$2');
+
+  // O CEP já foi digitado na ficha do produto. Preencher o endereço sozinho a partir dele
+  // corta cinco campos de digitação, e é onde a maioria das compras morre no celular.
+  buscarCep(C.cep);
+}
+
+async function buscarCep(cep){
+  cep = String(cep||'').replace(/\D/g,'');
+  if (cep.length !== 8) return;
+  try{
+    const d = await (await fetch(`https://viacep.com.br/ws/${cep}/json/`)).json();
+    if (d.erro) return;
+    if (!$('rua').value) $('rua').value = d.logradouro || '';
+    if (!$('bairro').value) $('bairro').value = d.bairro || '';
+    if (!$('cidade').value) $('cidade').value = d.localidade || '';
+    if (!$('uf').value) $('uf').value = d.uf || '';
+    if (d.logradouro) $('numero').focus();
+  }catch(e){}
+}
+$('cep').oninput = e => { if (e.target.value.replace(/\D/g,'').length === 8) buscarCep(e.target.value); };
+
+$('pagar').onclick = async () => {
+  const b = $('pagar');
+  const campos = ['cliente_nome','cliente_email','cliente_fone','cliente_doc','cep','rua','numero','bairro','cidade','uf'];
+  const dados = {};
+  for (const c of campos) {
+    const v = ($(c).value || '').trim();
+    if (!v) { $('erro').innerHTML = `<div class="erro">Falta preencher: ${$(c).previousElementSibling.textContent.replace(' (opcional)','')}.</div>`; $(c).focus(); return; }
+    dados[c] = v;
+  }
+  dados.complemento = $('complemento').value.trim();
+  Object.assign(dados, {
+    produto_id: C.produto_id, nome: C.nome, preco: C.preco, cor: C.cor, tamanho: C.tamanho,
+    frete_id: C.frete_id, frete_valor: C.frete_valor,
+  });
+
+  $('erro').innerHTML = '';
+  b.disabled = true; b.textContent = 'Abrindo o pagamento…';
+  try{
+    const r = await (await fetch('/api/loja-checkout', {
+      method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(dados),
+    })).json();
+    if (r.erro) throw new Error(r.erro);
+    if (window.tlTrack) tlTrack('InitiateCheckout', 'camisa_pagamento', {
+      content_name: C.nome, value: C.total, currency: 'BRL'
+    });
+    location.href = r.url;
+  }catch(e){
+    $('erro').innerHTML = `<div class="erro">${e.message}</div>`;
+    b.disabled = false; b.textContent = 'Ir para o pagamento';
+  }
+};
+</script>
+<script src="./tideline-consent.js"></script>
+</body>
+</html>

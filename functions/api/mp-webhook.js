@@ -18,6 +18,22 @@ export async function onRequestPost(context) {
       const pay = await mpGet(env, `/v1/payments/${id}`);
       if (pay && pay.status === 'approved') {
         const md = pay.metadata || {};
+
+        // ── PEDIDO DA LOJA ────────────────────────────────────────────────────
+        // Só agora, com o pagamento APROVADO, a camisa vai pra produção. Se a gente criasse
+        // o pedido no clique de comprar, toda desistência de carrinho viraria uma peça
+        // impressa e não paga.
+        if (md.tipo === 'loja' && md.pedido) {
+          try {
+            await fetch('https://tideline.com.br/api/loja', {
+              method: 'POST',
+              headers: { 'content-type': 'application/json' },
+              body: JSON.stringify({ segredo: env.SUPABASE_SERVICE_ROLE_KEY, pedido: md.pedido }),
+            });
+          } catch (e) { /* o pagamento já entrou; um erro aqui não pode derrubar o webhook */ }
+          return new Response('ok', { status: 200 });   // pedido de loja não mexe em assinatura
+        }
+
         const { userId, ref } = parseRef(pay.external_reference, md);
         const valor = Number(pay.transaction_amount) || 0;
         // plano vem do metadata (confiável); só cai no valor se faltar (fundador anual = R$99 < 100)
