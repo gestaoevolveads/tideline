@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Tideline · TV ligando</title>
+<style>
+  html,body{margin:0;padding:0;background:#000;overflow:hidden}
+  canvas{display:block}
+</style>
+</head>
+<body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   TV DE TUBO LIGANDO — abertura do Tideline (story 1080x1920)
+
+   Nada de IA aqui: uma abertura de marca precisa sair IDÊNTICA toda vez, com a letra
+   exata e a cor exata. Modelo generativo varia a cada rodada e derrete o logotipo.
+   Então é animação de verdade, e cada efeito reproduz um fenômeno físico real da TV
+   de tubo do início dos anos 2000:
+
+     ESTALO         a bobina descarrega e um clarão branco cruza a tela
+     ABERTURA       a imagem nasce como uma LINHA horizontal e se abre na vertical
+     CHUVISCO       sinal fraco: ruído de alta frequência
+     SANGRIA RGB    o canhão de cor desalinhado: vermelho e azul saem do lugar
+     BARRA ROLANTE  a varredura fora de sincronia sobe pela tela
+     SCANLINES      as linhas horizontais do próprio tubo
+     CURVATURA      o vidro do tubo é convexo: a imagem entorta nos cantos (o "olho de peixe")
+     VINHETA        o tubo escurece nas bordas
+
+   O QUADRO é função pura do tempo: render(t) desenha o instante t. Isso permite capturar
+   frame a frame com o navegador e montar o vídeo sem depender de tempo real.
+   ───────────────────────────────────────────────────────────────────────────── */
+
+const W = 1080, H = 1920;
+const DUR = 2.2;                              // segundos
+const c = document.getElementById('c');
+const ctx = c.getContext('2d', { willReadFrequently: true });
+
+/* buffer onde a "imagem da TV" é desenhada antes de passar pelo vidro do tubo */
+const buf = document.createElement('canvas');
+buf.width = W; buf.height = H;
+const b = buf.getContext('2d');
+
+const CORES = { deep: '#14231F', paper: '#F2EFE9', accent: '#F95831', sage: '#D3E2DE' };
+
+/* ruído reprodutível: a mesma semente dá sempre o mesmo grão, então o vídeo é idêntico
+   a cada renderização. Sem isso o "grão" mudaria de execução pra execução. */
+function rnd(seed) {
+  let s = seed >>> 0;
+  return () => {
+    s = (s * 1664525 + 1013904223) >>> 0;
+    return s / 4294967296;
+  };
+}
+
+const suave = t => t * t * (3 - 2 * t);                       // ease in-out
+const clamp01 = v => Math.max(0, Math.min(1, v));
+const faixa = (t, a, z) => clamp01((t - a) / (z - a));        // 0→1 entre a e z
+
+/* ---------- 1. o conteúdo da tela (o logotipo) ---------- */
+function desenharLogo(g, alpha, jitterX) {
+  g.save();
+  g.globalAlpha = alpha;
+  g.translate(jitterX, 0);
+  g.textAlign = 'center';
+  g.textBaseline = 'middle';
+
+  const cx = W / 2, cy = H / 2;
+  const tam = 196;
+  const fonte = p => `${p} ${tam}px -apple-system, "SF Pro Display", "Helvetica Neue", Arial`;
+
+  // mede pra centralizar "tide" + "line" + "." como uma coisa só
+  g.font = fonte(200); const wTide = g.measureText('tide').width;
+  g.font = fonte(800); const wLine = g.measureText('line').width;
+  g.font = fonte(800); const wDot = g.measureText('.').width;
+  const total = wTide + wLine + wDot;
+  let x = cx - total / 2;
+
+  g.textAlign = 'left';
+  g.fillStyle = CORES.paper;
+  g.font = fonte(200); g.fillText('tide', x, cy); x += wTide;
+  g.font = fonte(800); g.fillText('line', x, cy); x += wLine;
+  g.fillStyle = CORES.accent;
+  g.font = fonte(800); g.fillText('.', x, cy);
+
+  // sem subtítulo: numa abertura de 2 segundos, quem lê linha pequena? Ninguém.
+  // O logotipo sozinho bate mais forte e sobra tela pro efeito respirar.
+  g.restore();
+}
+
+/* ---------- 2. a imagem que o tubo vai exibir, no instante t ---------- */
+function conteudo(t) {
+  b.fillStyle = CORES.deep;
+  b.fillRect(0, 0, W, H);
+
+  // o logotipo aparece depois que o sinal "pega"
+  const surge = faixa(t, 0.68, 1.05);
+  if (surge > 0) {
+    // sangria RGB: os canhões de cor desalinhados vão se alinhando conforme o sinal firma
+    const desalinho = (1 - suave(faixa(t, 0.68, 1.35))) * 26 + (Math.sin(t * 60) * 1.5 * (1 - faixa(t, 1.1, 1.6)));
+    const jitter = (1 - faixa(t, 0.9, 1.4)) * (Math.sin(t * 90) * 4);
+
+    if (Math.abs(desalinho) > 0.6) {
+      b.globalCompositeOperation = 'screen';
+      b.save(); b.filter = 'url(#none)';
+      // vermelho pra um lado
+      b.globalAlpha = 1;
+      const tmp = document.createElement('canvas'); tmp.width = W; tmp.height = H;
+      const tg = tmp.getContext('2d');
+      desenharLogo(tg, suave(surge), 0);
+
+      b.globalCompositeOperation = 'lighter';
+      b.drawImage(tmp, -desalinho + jitter, 0);
+      b.restore();
+      b.globalCompositeOperation = 'source-over';
+    }
+    desenharLogo(b, suave(surge), jitter);
+  }
+}
+
+/* ---------- 3. o vidro do tubo: curvatura, chuvisco, varredura ---------- */
+function render(t) {
+  const random = rnd(Math.floor(t * 1000) + 7);
+
+  conteudo(t);
+
+  // ── a abertura: a imagem nasce como uma linha e se abre ──
+  const abre = suave(faixa(t, 0.18, 0.52));           // altura da imagem: 0 → 1
+  const clarao = faixa(t, 0.12, 0.20) * (1 - faixa(t, 0.20, 0.34));
+
+  ctx.fillStyle = '#000';
+  ctx.fillRect(0, 0, W, H);
+
+  const alturaVisivel = Math.max(2, H * abre);
+  const topo = (H - alturaVisivel) / 2;
+
+  // desenha a imagem esmagada verticalmente (é assim que a TV de tubo abre)
+  ctx.save();
+  ctx.drawImage(buf, 0, 0, W, H, 0, topo, W, alturaVisivel);
+  ctx.restore();
+
+  // ── clarão do estalo ──
+  if (clarao > 0.01) {
+    ctx.fillStyle = `rgba(255,255,255,${clarao * 0.9})`;
+    ctx.fillRect(0, Math.max(0, topo - 4), W, alturaVisivel + 8);
+  }
+
+  const px = ctx.getImageData(0, 0, W, H);
+  const d = px.data;
+
+  // ── curvatura do tubo (o "olho de peixe") + vinheta + scanlines + chuvisco ──
+  const saida = ctx.createImageData(W, H);
+  const s = saida.data;
+  const cx = W / 2, cy = H / 2;
+  const raioMax = Math.sqrt(cx * cx + cy * cy);
+
+  // o sinal chia no começo e vai firmando
+  const ruido = (1 - suave(faixa(t, 0.5, 1.5))) * 0.85 + 0.06;
+
+  // barra de varredura fora de sincronia, subindo
+  const barraY = ((1 - (t * 0.55) % 1) * H) | 0;
+  const forcaBarra = (1 - faixa(t, 1.2, 1.9)) * 0.5;
+
+  for (let y = 0; y < H; y++) {
+    for (let x = 0; x < W; x++) {
+      const i = (y * W + x) * 4;
+
+      // curvatura: puxa o pixel de uma posição mais central quanto mais longe da borda
+      const dx = (x - cx) / cx, dy = (y - cy) / cy;
+      const r2 = dx * dx + dy * dy;
+      const k = 0.085;                                   // quanto o vidro é convexo
+      const fx = cx + (x - cx) * (1 + k * r2);
+      const fy = cy + (y - cy) * (1 + k * r2);
+      const sx = fx | 0, sy = fy | 0;
+
+      let R = 0, G = 0, B = 0;
+      if (sx >= 0 && sx < W && sy >= 0 && sy < H) {
+        const j = (sy * W + sx) * 4;
+        R = d[j]; G = d[j + 1]; B = d[j + 2];
+      }
+
+      // scanline: o tubo desenha linha sim, linha não
+      if (y % 3 === 0) { R *= 0.72; G *= 0.72; B *= 0.72; }
+
+      // vinheta
+      const rr = Math.sqrt((x - cx) ** 2 + (y - cy) ** 2) / raioMax;
+      const vig = 1 - Math.pow(rr, 2.6) * 0.55;
+      R *= vig; G *= vig; B *= vig;
+
+      // barra rolante
+      const distBarra = Math.abs(y - barraY);
+      if (distBarra < 90) {
+        const f = (1 - distBarra / 90) * forcaBarra;
+        R += 40 * f; G += 46 * f; B += 44 * f;
+      }
+
+      // chuvisco
+      const n = (random() - 0.5) * 255 * ruido;
+      R += n; G += n; B += n;
+
+      s[i]     = R < 0 ? 0 : R > 255 ? 255 : R;
+      s[i + 1] = G < 0 ? 0 : G > 255 ? 255 : G;
+      s[i + 2] = B < 0 ? 0 : B > 255 ? 255 : B;
+      s[i + 3] = 255;
+    }
+  }
+  ctx.putImageData(saida, 0, 0);
+}
+
+/* o quadro pedido pela URL: ?t=0.42 */
+const t = parseFloat(new URLSearchParams(location.search).get('t') || '0');
+render(Math.min(t, DUR));
+document.title = 'pronto';
+</script>
+</body>
+</html>

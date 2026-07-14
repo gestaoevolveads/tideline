@@ -311,7 +311,18 @@ Chame a ferramenta salvar_narracoes com uma entrada por id.`;
 
   const toolUse = resp.content.find(c => c.type === 'tool_use');
   if (!toolUse) throw new Error('sem tool_use na resposta');
-  return toolUse.input.narracoes || [];
+
+  // O modelo às vezes devolve as narrações como TEXTO JSON em vez de lista de verdade.
+  // O código antigo percorria essa string letra por letra ("for (const n of narracoes)"),
+  // não achava id nenhum e salvava nada, sem reclamar. Foi assim que dois terços de uma
+  // rodada viraram fumaça: o log dizia "a API respondeu 16605 itens", que eram caracteres.
+  let out = toolUse.input.narracoes;
+  if (typeof out === 'string') {
+    try { out = JSON.parse(out); }
+    catch (e) { console.log('  narrações vieram como texto e não deu pra ler:', String(out).slice(0, 80)); return []; }
+  }
+  if (!Array.isArray(out)) return [];
+  return out;
 }
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -397,25 +408,49 @@ async function main() {
     }
 
     if (missing.length) {
-      misses += missing.reduce((s, m) => s + m.quantas, 0);
-      const conditions = missing.map(m => ({
-        id: m.id, turno: m.b.periodo, quantas: m.quantas, evitar: m.evitar,
-        altura_m: m.b.altura_m, faixa_altura: heightBucket(m.b.altura_m),
-        periodo_s: m.b.periodo_s, faixa_periodo: periodBucket(m.b.periodo_s),
-        energia_kw: m.b.energia_kw, vento_tipo: m.b.vento_tipo, vento_kmh: m.b.vento_kmh,
-      }));
-      apiCalls++;
-      const narracoes = await generateForBeachRetry(client, system, beach, conditions);
-      for (const n of narracoes) {
-        const m = missing.find(x => x.id === n.id);
-        if (m && Array.isArray(n.variacoes) && n.variacoes.length) {
-          const novas = n.variacoes.map(sanitizeVar);
-          const antigas = library.keys[m.key]?.variacoes || [];
-          library.keys[m.key] = { variacoes: antigas.concat(novas) }; // APPEND, nunca descarta
-          novasGeradas += novas.length;
+      // LOTE PEQUENO, E ISSO NÃO É DETALHE.
+      // A resposta do modelo tem teto de 16 mil tokens. Uma rodada pediu 116 condições numa
+      // chamada só (mais de 900 variações): ele não tem como caber isso na resposta, então
+      // devolveu incompleto, e o código descartava em SILÊNCIO o que não vinha. Resultado:
+      // US$ 2 gastos, 8 chamadas feitas, ZERO variação salva, e nenhum erro no log.
+      // Cada chamada agora pede no máximo LOTE condições, e reclama alto se voltar vazia.
+      const LOTE = 6;
+      for (let i = 0; i < missing.length; i += LOTE) {
+        if (estourouOrcamento()) break;
+
+        const grupo = missing.slice(i, i + LOTE);
+        misses += grupo.reduce((s, m) => s + m.quantas, 0);
+
+        const conditions = grupo.map(m => ({
+          id: m.id, turno: m.b.periodo, quantas: m.quantas, evitar: m.evitar,
+          altura_m: m.b.altura_m, faixa_altura: heightBucket(m.b.altura_m),
+          periodo_s: m.b.periodo_s, faixa_periodo: periodBucket(m.b.periodo_s),
+          energia_kw: m.b.energia_kw, vento_tipo: m.b.vento_tipo, vento_kmh: m.b.vento_kmh,
+        }));
+
+        apiCalls++;
+        const narracoes = await generateForBeachRetry(client, system, beach, conditions);
+
+        let salvasNesteLote = 0;
+        for (const n of narracoes) {
+          const m = grupo.find(x => x.id === n.id);
+          if (m && Array.isArray(n.variacoes) && n.variacoes.length) {
+            const novas = n.variacoes.map(sanitizeVar);
+            const antigas = library.keys[m.key]?.variacoes || [];
+            library.keys[m.key] = { variacoes: antigas.concat(novas) }; // APPEND, nunca descarta
+            novasGeradas += novas.length;
+            salvasNesteLote += novas.length;
+          }
         }
+
+        // Falhar calado é o pior tipo de falha: gasta dinheiro e ninguém percebe.
+        if (salvasNesteLote === 0) {
+          console.log(`  ATENÇÃO: lote de ${grupo.length} condições em ${beach.name} voltou VAZIO ` +
+                      `(a API respondeu ${narracoes.length} itens). Dinheiro gasto sem resultado.`);
+        }
+
+        await sleep(1200);
       }
-      await sleep(1500);
     }
 
     // monta o cache no formato que o app já consome
