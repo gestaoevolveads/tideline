@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-14T07:54:17.015Z",
+  "generated_at": "2026-07-14T13:11:21.250Z",
   "target": 7,
-  "condicoesUnicas": 1798,
-  "totalVariacoes": 4304,
+  "condicoesUnicas": 1821,
+  "totalVariacoes": 4500,
   "distribuicao": {
     "1": 0,
-    "2": 1662,
+    "2": 1655,
     "3": 0,
     "4": 1,
     "5": 0,
-    "6+": 135
+    "6+": 165
   },
   "previsao": {
-    "total": 1299,
-    "cobertas": 351,
-    "noAlvo": 101
+    "total": 1285,
+    "cobertas": 342,
+    "noAlvo": 119
   },
   "praias": [
     {
@@ -32,22 +32,15 @@
       "noAlvo": 0
     },
     {
-      "nome": "Barra de Ilhéus",
+      "nome": "Itacarezinho",
       "uf": "BA",
-      "condicoes": 15,
+      "condicoes": 14,
       "cobertas": 0,
       "noAlvo": 0
     },
     {
       "nome": "Ponta da Praia",
       "uf": "SP",
-      "condicoes": 15,
-      "cobertas": 0,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Peniche",
-      "uf": "PRT",
       "condicoes": 14,
       "cobertas": 0,
       "noAlvo": 0
@@ -55,14 +48,28 @@
     {
       "nome": "Cassino",
       "uf": "RS",
-      "condicoes": 19,
-      "cobertas": 1,
+      "condicoes": 18,
+      "cobertas": 0,
       "noAlvo": 0
     },
     {
-      "nome": "Snapper Rocks",
-      "uf": "AUS",
-      "condicoes": 19,
+      "nome": "Cloudbreak",
+      "uf": "FJI",
+      "condicoes": 17,
+      "cobertas": 0,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Peniche",
+      "uf": "PRT",
+      "condicoes": 15,
+      "cobertas": 0,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Moçambique",
+      "uf": "SC",
+      "condicoes": 18,
       "cobertas": 1,
       "noAlvo": 0
     },
@@ -74,35 +81,49 @@
       "noAlvo": 0
     },
     {
-      "nome": "Teahupoo",
-      "uf": "PYF",
+      "nome": "Tramandaí",
+      "uf": "RS",
+      "condicoes": 17,
+      "cobertas": 1,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Snapper Rocks",
+      "uf": "AUS",
+      "condicoes": 17,
+      "cobertas": 1,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Costão do Santinho",
+      "uf": "SC",
       "condicoes": 16,
       "cobertas": 1,
       "noAlvo": 0
     },
     {
-      "nome": "Cloudbreak",
-      "uf": "FJI",
+      "nome": "Barra da Lagoa",
+      "uf": "SC",
       "condicoes": 16,
       "cobertas": 1,
       "noAlvo": 0
     },
     {
-      "nome": "Itacarezinho",
-      "uf": "BA",
-      "condicoes": 15,
-      "cobertas": 1,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Moçambique",
+      "nome": "Praia da Silveira",
       "uf": "SC",
       "condicoes": 15,
       "cobertas": 1,
       "noAlvo": 0
     },
     {
-      "nome": "Praia do Rosa",
+      "nome": "Praia do Ferrugem",
+      "uf": "SC",
+      "condicoes": 15,
+      "cobertas": 1,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Ibiraquera",
       "uf": "SC",
       "condicoes": 15,
       "cobertas": 1,
@@ -116,43 +137,43 @@
       "noAlvo": 0
     },
     {
-      "nome": "Capão da Canoa",
-      "uf": "RS",
+      "nome": "Monte Alto",
+      "uf": "RJ",
       "condicoes": 14,
+      "cobertas": 1,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Barra de Ilhéus",
+      "uf": "BA",
+      "condicoes": 12,
       "cobertas": 1,
       "noAlvo": 0
     },
     {
       "nome": "Pipeline",
       "uf": "HAW",
-      "condicoes": 11,
+      "condicoes": 12,
       "cobertas": 1,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Maresias",
-      "uf": "SP",
-      "condicoes": 19,
-      "cobertas": 2,
       "noAlvo": 0
     },
     {
       "nome": "Massaguaçu",
       "uf": "SP",
-      "condicoes": 9,
+      "condicoes": 11,
       "cobertas": 1,
       "noAlvo": 0
     },
     {
-      "nome": "Joaquina",
-      "uf": "SC",
-      "condicoes": 18,
+      "nome": "Bells Beach",
+      "uf": "AUS",
+      "condicoes": 20,
       "cobertas": 2,
       "noAlvo": 0
     },
     {
-      "nome": "Praia Mole",
-      "uf": "SC",
+      "nome": "Jeffreys Bay",
+      "uf": "ZAF",
       "condicoes": 18,
       "cobertas": 2,
       "noAlvo": 0
@@ -165,85 +186,120 @@
       "noAlvo": 0
     },
     {
-      "nome": "Jureia",
-      "uf": "SP",
+      "nome": "Cidreira",
+      "uf": "RS",
       "condicoes": 17,
       "cobertas": 2,
       "noAlvo": 0
     },
     {
-      "nome": "Atalaia",
-      "uf": "SC",
-      "condicoes": 16,
-      "cobertas": 2,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Tramandaí",
+      "nome": "Arroio do Sal",
       "uf": "RS",
-      "condicoes": 16,
+      "condicoes": 17,
       "cobertas": 2,
       "noAlvo": 0
     },
     {
-      "nome": "Jeffreys Bay",
-      "uf": "ZAF",
-      "condicoes": 16,
+      "nome": "Capão da Canoa",
+      "uf": "RS",
+      "condicoes": 17,
       "cobertas": 2,
       "noAlvo": 0
     },
     {
-      "nome": "Barra da Lagoa",
+      "nome": "Teahupoo",
+      "uf": "PYF",
+      "condicoes": 17,
+      "cobertas": 2,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Praia Brava (Floripa)",
       "uf": "SC",
       "condicoes": 15,
+      "cobertas": 2,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Joaquina",
+      "uf": "SC",
+      "condicoes": 15,
+      "cobertas": 2,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Praia Mole",
+      "uf": "SC",
+      "condicoes": 15,
+      "cobertas": 2,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Torres",
+      "uf": "RS",
+      "condicoes": 15,
+      "cobertas": 2,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Praia Brava (Búzios)",
+      "uf": "RJ",
+      "condicoes": 14,
+      "cobertas": 2,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Geribá",
+      "uf": "RJ",
+      "condicoes": 14,
+      "cobertas": 2,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Tucuns",
+      "uf": "RJ",
+      "condicoes": 14,
+      "cobertas": 2,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Figueira",
+      "uf": "RJ",
+      "condicoes": 14,
+      "cobertas": 2,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Praia Rasa",
+      "uf": "RJ",
+      "condicoes": 14,
+      "cobertas": 2,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Praia do Rosa",
+      "uf": "SC",
+      "condicoes": 14,
       "cobertas": 2,
       "noAlvo": 0
     },
     {
       "nome": "Penha",
       "uf": "SC",
-      "condicoes": 15,
-      "cobertas": 2,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Praia da Silveira",
-      "uf": "SC",
       "condicoes": 14,
       "cobertas": 2,
       "noAlvo": 0
     },
     {
-      "nome": "Praia do Ferrugem",
-      "uf": "SC",
-      "condicoes": 14,
-      "cobertas": 2,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Ibiraquera",
-      "uf": "SC",
-      "condicoes": 14,
-      "cobertas": 2,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Campeche",
-      "uf": "SC",
-      "condicoes": 20,
-      "cobertas": 3,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Cidreira",
-      "uf": "RS",
+      "nome": "Maresias",
+      "uf": "SP",
       "condicoes": 19,
       "cobertas": 3,
       "noAlvo": 0
     },
     {
-      "nome": "Bells Beach",
-      "uf": "AUS",
+      "nome": "Atalaia",
+      "uf": "SC",
       "condicoes": 19,
       "cobertas": 3,
       "noAlvo": 0
@@ -256,71 +312,64 @@
       "noAlvo": 0
     },
     {
-      "nome": "Praia Brava (Cabo Frio)",
-      "uf": "RJ",
-      "condicoes": 15,
-      "cobertas": 3,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Praia Brava (Floripa)",
+      "nome": "Campeche",
       "uf": "SC",
-      "condicoes": 20,
-      "cobertas": 4,
+      "condicoes": 17,
+      "cobertas": 3,
       "noAlvo": 0
     },
     {
-      "nome": "Torres",
-      "uf": "RS",
+      "nome": "Domingas Dias",
+      "uf": "SP",
+      "condicoes": 11,
+      "cobertas": 2,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Prainha",
+      "uf": "RJ",
+      "condicoes": 16,
+      "cobertas": 3,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Macumba",
+      "uf": "RJ",
+      "condicoes": 16,
+      "cobertas": 3,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Jureia",
+      "uf": "SP",
       "condicoes": 15,
       "cobertas": 3,
       "noAlvo": 0
     },
     {
-      "nome": "Arroio do Sal",
-      "uf": "RS",
-      "condicoes": 15,
+      "nome": "Itaúnas",
+      "uf": "ES",
+      "condicoes": 14,
+      "cobertas": 3,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Tombo",
+      "uf": "SP",
+      "condicoes": 14,
+      "cobertas": 3,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Pitangueiras",
+      "uf": "SP",
+      "condicoes": 14,
       "cobertas": 3,
       "noAlvo": 0
     },
     {
       "nome": "Itacoatiara",
       "uf": "RJ",
-      "condicoes": 19,
-      "cobertas": 4,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Monte Alto",
-      "uf": "RJ",
-      "condicoes": 14,
-      "cobertas": 3,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Ipanema",
-      "uf": "RJ",
-      "condicoes": 14,
-      "cobertas": 3,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Arpoador",
-      "uf": "RJ",
-      "condicoes": 14,
-      "cobertas": 3,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Pântano do Sul",
-      "uf": "SC",
-      "condicoes": 14,
-      "cobertas": 3,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Costão do Santinho",
-      "uf": "SC",
       "condicoes": 18,
       "cobertas": 4,
       "noAlvo": 0
@@ -333,107 +382,16 @@
       "noAlvo": 0
     },
     {
-      "nome": "Prainha",
+      "nome": "Ipanema",
       "uf": "RJ",
       "condicoes": 16,
       "cobertas": 4,
       "noAlvo": 0
     },
     {
-      "nome": "Fernando de Noronha",
-      "uf": "PE",
+      "nome": "Arpoador",
+      "uf": "RJ",
       "condicoes": 16,
-      "cobertas": 4,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Cacimba do Padre",
-      "uf": "PE",
-      "condicoes": 16,
-      "cobertas": 4,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Itaúnas",
-      "uf": "ES",
-      "condicoes": 12,
-      "cobertas": 3,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Macumba",
-      "uf": "RJ",
-      "condicoes": 15,
-      "cobertas": 4,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Tombo",
-      "uf": "SP",
-      "condicoes": 15,
-      "cobertas": 4,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Pitangueiras",
-      "uf": "SP",
-      "condicoes": 15,
-      "cobertas": 4,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Praia Brava (Búzios)",
-      "uf": "RJ",
-      "condicoes": 14,
-      "cobertas": 4,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Geribá",
-      "uf": "RJ",
-      "condicoes": 14,
-      "cobertas": 4,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Tucuns",
-      "uf": "RJ",
-      "condicoes": 14,
-      "cobertas": 4,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Figueira",
-      "uf": "RJ",
-      "condicoes": 14,
-      "cobertas": 4,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Praia Rasa",
-      "uf": "RJ",
-      "condicoes": 14,
-      "cobertas": 4,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Unamar",
-      "uf": "RJ",
-      "condicoes": 17,
-      "cobertas": 5,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Recreio dos Bandeirantes",
-      "uf": "RJ",
-      "condicoes": 17,
-      "cobertas": 5,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Maracaípe",
-      "uf": "PE",
-      "condicoes": 13,
       "cobertas": 4,
       "noAlvo": 0
     },
@@ -441,27 +399,55 @@
       "nome": "Grumari",
       "uf": "RJ",
       "condicoes": 16,
-      "cobertas": 5,
+      "cobertas": 4,
       "noAlvo": 1
     },
     {
-      "nome": "Barra da Tijuca",
+      "nome": "Recreio dos Bandeirantes",
+      "uf": "RJ",
+      "condicoes": 16,
+      "cobertas": 4,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Pântano do Sul",
+      "uf": "SC",
+      "condicoes": 14,
+      "cobertas": 4,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Guarda do Embaú",
+      "uf": "SC",
+      "condicoes": 17,
+      "cobertas": 5,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Castelhanos",
+      "uf": "SP",
+      "condicoes": 13,
+      "cobertas": 4,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Unamar",
       "uf": "RJ",
       "condicoes": 16,
       "cobertas": 5,
       "noAlvo": 0
     },
     {
-      "nome": "Camburi",
-      "uf": "SP",
-      "condicoes": 16,
+      "nome": "Fernando de Noronha",
+      "uf": "PE",
+      "condicoes": 15,
       "cobertas": 5,
       "noAlvo": 0
     },
     {
-      "nome": "Barra do Sahy",
-      "uf": "SP",
-      "condicoes": 16,
+      "nome": "Cacimba do Padre",
+      "uf": "PE",
+      "condicoes": 15,
       "cobertas": 5,
       "noAlvo": 0
     },
@@ -473,79 +459,65 @@
       "noAlvo": 0
     },
     {
-      "nome": "Domingas Dias",
-      "uf": "SP",
-      "condicoes": 12,
-      "cobertas": 4,
+      "nome": "Setiba",
+      "uf": "ES",
+      "condicoes": 18,
+      "cobertas": 6,
       "noAlvo": 0
     },
     {
-      "nome": "Guarda do Embaú",
-      "uf": "SC",
+      "nome": "Camburi",
+      "uf": "SP",
       "condicoes": 15,
       "cobertas": 5,
       "noAlvo": 0
     },
     {
-      "nome": "Castelhanos",
-      "uf": "SP",
-      "condicoes": 11,
-      "cobertas": 4,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Setiba",
-      "uf": "ES",
-      "condicoes": 19,
-      "cobertas": 7,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Jericoacoara",
-      "uf": "CE",
-      "condicoes": 8,
-      "cobertas": 3,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Mundaka",
-      "uf": "ESP",
-      "condicoes": 16,
-      "cobertas": 6,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Praia Brava (Arraial)",
+      "nome": "Barra da Tijuca",
       "uf": "RJ",
-      "condicoes": 16,
-      "cobertas": 7,
-      "noAlvo": 6
+      "condicoes": 14,
+      "cobertas": 5,
+      "noAlvo": 0
     },
     {
       "nome": "Caiobá",
       "uf": "PR",
       "condicoes": 11,
-      "cobertas": 5,
+      "cobertas": 4,
       "noAlvo": 0
     },
     {
       "nome": "Matinhos",
       "uf": "PR",
       "condicoes": 11,
+      "cobertas": 4,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Barra do Sahy",
+      "uf": "SP",
+      "condicoes": 16,
+      "cobertas": 6,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Maracaípe",
+      "uf": "PE",
+      "condicoes": 13,
       "cobertas": 5,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Mundaka",
+      "uf": "ESP",
+      "condicoes": 17,
+      "cobertas": 7,
       "noAlvo": 0
     },
     {
       "nome": "Baía Formosa",
       "uf": "RN",
-      "condicoes": 13,
-      "cobertas": 6,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Vermelha do Norte",
-      "uf": "SP",
-      "condicoes": 13,
+      "condicoes": 14,
       "cobertas": 6,
       "noAlvo": 0
     },
@@ -557,10 +529,10 @@
       "noAlvo": 0
     },
     {
-      "nome": "Praia de Pipa",
-      "uf": "RN",
-      "condicoes": 12,
-      "cobertas": 6,
+      "nome": "Jericoacoara",
+      "uf": "CE",
+      "condicoes": 6,
+      "cobertas": 3,
       "noAlvo": 0
     },
     {
@@ -578,53 +550,81 @@
       "noAlvo": 0
     },
     {
+      "nome": "Vermelha do Norte",
+      "uf": "SP",
+      "condicoes": 13,
+      "cobertas": 7,
+      "noAlvo": 0
+    },
+    {
       "nome": "Itamambuca",
       "uf": "SP",
-      "condicoes": 12,
+      "condicoes": 11,
       "cobertas": 6,
       "noAlvo": 0
     },
     {
+      "nome": "Praia de Pipa",
+      "uf": "RN",
+      "condicoes": 9,
+      "cobertas": 7,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Praia Brava (Cabo Frio)",
+      "uf": "RJ",
+      "condicoes": 15,
+      "cobertas": 12,
+      "noAlvo": 12
+    },
+    {
       "nome": "Saquarema",
       "uf": "RJ",
-      "condicoes": 17,
-      "cobertas": 17,
-      "noAlvo": 17
+      "condicoes": 15,
+      "cobertas": 15,
+      "noAlvo": 15
     },
     {
       "nome": "Praia da Vila",
       "uf": "RJ",
-      "condicoes": 17,
-      "cobertas": 17,
-      "noAlvo": 17
+      "condicoes": 15,
+      "cobertas": 15,
+      "noAlvo": 15
     },
     {
       "nome": "Praia do Forte",
       "uf": "RJ",
-      "condicoes": 14,
-      "cobertas": 14,
-      "noAlvo": 14
+      "condicoes": 16,
+      "cobertas": 16,
+      "noAlvo": 16
     },
     {
       "nome": "Praia do Peró",
       "uf": "RJ",
-      "condicoes": 14,
-      "cobertas": 14,
-      "noAlvo": 14
+      "condicoes": 15,
+      "cobertas": 15,
+      "noAlvo": 15
     },
     {
       "nome": "Foguete",
       "uf": "RJ",
-      "condicoes": 16,
-      "cobertas": 16,
-      "noAlvo": 16
+      "condicoes": 15,
+      "cobertas": 15,
+      "noAlvo": 15
     },
     {
       "nome": "Praia Grande",
       "uf": "RJ",
-      "condicoes": 16,
-      "cobertas": 16,
-      "noAlvo": 16
+      "condicoes": 15,
+      "cobertas": 15,
+      "noAlvo": 15
+    },
+    {
+      "nome": "Praia Brava (Arraial)",
+      "uf": "RJ",
+      "condicoes": 15,
+      "cobertas": 15,
+      "noAlvo": 15
     }
   ]
 }
