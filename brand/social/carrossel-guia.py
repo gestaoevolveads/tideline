@@ -147,7 +147,7 @@ CARDS.append(f'''
   <div class="centro">
     <div class="kicker">O que é</div>
     <h2>21 páginas<br>que traduzem<br>o oceano.</h2>
-    <p>Os números da previsão são públicos. Ninguém nunca se deu ao trabalho de traduzir eles pra você.</p>
+    <p>Nasceu de anos de conversa com quem vive do mar, e da leitura teimosa de quem quis entender por quê.</p>
     <p>Você vai <b>entender</b> a previsão, não decorar tabela.</p>
   </div>
   {assina(3)}
