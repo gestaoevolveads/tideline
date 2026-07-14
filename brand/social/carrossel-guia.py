@@ -109,7 +109,7 @@ b{ font-weight:700; color:var(--deep) }
 """
 
 def assina(n):
-    return f'<div class="assina"><span><span class="t">tide</span><span class="l">line</span><span class="d">.</span></span><span class="n">{n}/9</span></div>'
+    return f'<div class="assina"><span><span class="t">tide</span><span class="l">line</span><span class="d">.</span></span><span class="n">{n}/8</span></div>'
 
 CARDS = []
 
@@ -147,7 +147,7 @@ CARDS.append(f'''
   <div class="centro">
     <div class="kicker">O que é</div>
     <h2>21 páginas<br>que traduzem<br>o oceano.</h2>
-    <p>Escrito por quem estuda o mar e surfa desde criança, no português que se fala na areia.</p>
+    <p>Os números da previsão são públicos. Ninguém nunca se deu ao trabalho de traduzir eles pra você.</p>
     <p>Você vai <b>entender</b> a previsão, não decorar tabela.</p>
   </div>
   {assina(3)}
@@ -199,23 +199,10 @@ CARDS.append(f'''
   {assina(6)}
 </div>''')
 
-# 7. Prova. A objeção real hoje é "isso é texto de robô?".
-CARDS.append(f'''
-<div class="card verde">
-  <div class="centro">
-    <div class="kicker">Por que confiar</div>
-    <h2 class="pequeno">Nada aqui<br>é chute.</h2>
-    <p>Cada número saiu de literatura técnica, de publicação da <b>Marinha do Brasil</b> ou de estudo revisado. As fontes estão listadas na última página, com nome e sobrenome.</p>
-    <p>Se você achar algo que não bate com o que vê no mar, a gente corrige.</p>
-  </div>
-  {assina(7)}
-</div>''')
-
-# 8. Objeções, ditas com as palavras da própria pessoa.
+# 7. Objeções, ditas com as palavras da própria pessoa.
 CARDS.append(f'''
 <div class="card">
   <div class="centro">
-    <div class="kicker">Antes que você pergunte</div>
     <h2 class="pequeno" style="margin-bottom:40px">Três dúvidas<br>honestas.</h2>
     <div class="blocos">
       <div class="bloco">
@@ -232,10 +219,10 @@ CARDS.append(f'''
       </div>
     </div>
   </div>
-  {assina(8)}
+  {assina(7)}
 </div>''')
 
-# 9. O pedido. Um só, e fácil.
+# 8. O pedido. Um só, e fácil.
 CARDS.append(f'''
 <div class="card escuro">
   <div class="centro">
@@ -244,7 +231,7 @@ CARDS.append(f'''
     <p>Teste grátis de 14 dias, sem cartão. O guia é seu no primeiro dia, e continua seu depois.</p>
     <div class="cta">tideline.com.br</div>
   </div>
-  {assina(9)}
+  {assina(8)}
 </div>''')
 
 HTML = f"""<!doctype html>
