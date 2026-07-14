@@ -356,6 +356,10 @@
     .cm-slide{flex:0 0 100%;height:100%;scroll-snap-align:center;position:relative}
     .cm-zoom{position:absolute;inset:0;background-repeat:no-repeat;background-size:300%;
       background-position:50% 41%;background-color:var(--white)}
+    /* a peça crua: fundo branco, sem sombra, sem degradê. Nenhum tratamento. */
+    .cm-cru{position:absolute;inset:0;background:#fff;display:flex;align-items:center;justify-content:center}
+    .cm-cru img{width:100%;height:100%;object-fit:contain;padding:3%}
+
     /* as duas cores, uma ao lado da outra */
     .cm-lado{display:flex;height:100%;background:radial-gradient(120% 85% at 50% 22%, #fff 0%, var(--paper,#F2EFE9) 78%)}
     .cm-meia{flex:1;position:relative;display:flex;align-items:center;justify-content:center}
@@ -1137,7 +1141,7 @@
     <div class="cm-sec" id="cm-sec" style="display:none">
       <div class="cm-sec-h">
         <span class="t">Camisas</span>
-        <span class="s">direto com a gente</span>
+        
       </div>
       <div class="cm-grid" id="cm-grid"></div>
     </div>
@@ -2479,12 +2483,17 @@ function extras(p, cor){
   const outras = (p.imagens || []).filter(u => u !== img && !Object.values(p.imgPorCor || {}).includes(u));
   return { img, outras };
 }
-function nSlides(p){ return 2 + (p.cores.length > 1 ? 1 : 0) + extras(p, CM.cor).outras.length; }
+function nSlides(p){ return 3 + (p.cores.length > 1 ? 1 : 0) + extras(p, CM.cor).outras.length; }
 
 function slidesDe(p, cor){
   const { img, outras } = extras(p, cor);
   return [
     `<div class="cm-slide">${arteDe(p, cor)}</div>`,
+    // A peça crua, do jeito que ela é: o arquivo da gráfica, em fundo branco, sem sombra,
+    // sem degradê, sem nada. Quem desconfia de foto tratada tem onde olhar.
+    `<div class="cm-slide">
+       <div class="cm-cru"><img src="${img}" alt="${p.nome}" loading="lazy"></div>
+     </div>`,
     `<div class="cm-slide">
        <div class="cm-zoom" style="background-image:url('${img}');background-position:50% 41%;background-size:300%"></div>
        <span class="cm-zoom-tag">A ESTAMPA DE PERTO</span>
