@@ -15,6 +15,7 @@ const { execFileSync } = require('child_process');
 const { montarPrompt, VARIANTES, FORMATOS } = require('./estilo');
 const { TEMPLATES, paginaCompleta } = require('./revista');
 const POSTS = require('./posts');
+const CAMISAS = require('./camisas');
 
 const DIR = __dirname;
 const REFS = path.join(DIR, 'refs');
@@ -53,6 +54,7 @@ function lerChave(env, arquivo) {
   try { return limpar(fs.readFileSync(p, 'utf8')) || null; } catch { return null; }
 }
 const FAL_KEY = lerChave('FAL_KEY', '.fal_key');
+const MONTINK = lerChave('MONTINK_TOKEN', '.montink_key');
 const CLAUDE_KEY = lerChave('ANTHROPIC_API_KEY', '.anthropic_key');
 
 if (!FAL_KEY) {
@@ -150,6 +152,104 @@ const servidor = http.createServer(async (req, res) => {
   const rota = u.pathname;
 
   try {
+    // ---------- Fotos de campanha das camisas ----------
+    if (rota === '/camisas' || rota === '/camisas.html') {
+      res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
+      return res.end(fs.readFileSync(path.join(DIR, 'ui-camisas.html')));
+    }
+
+    if (rota === '/api/camisas/config') {
+      const REFS_CAMISA = path.join(DIR, 'refs-camisa');
+      // O arquivo se chama 5800339-branco.png. O número sozinho não diz nada pra quem está
+      // escolhendo: as duas camisas apareciam como "branco" e "off white", repetidas, sem
+      // jeito de saber qual era qual. O nome tem que dizer QUAL ESTAMPA é.
+      const ESTAMPAS = { 5800339: 'Mascote', 5800493: 'Wordmark' };
+      return json(res, 200, {
+        produtos: fs.existsSync(REFS_CAMISA)
+          ? fs.readdirSync(REFS_CAMISA).filter(f => /\.png$/i.test(f)).map(f => {
+              const [, id, cor] = f.match(/^(\d+)-(.+)\.png$/i) || [];
+              return {
+                arquivo: f,
+                nome: `${ESTAMPAS[id] || id} · ${(cor || '').replace(/-/g, ' ')}`,
+              };
+            })
+          : [],
+        cenas: Object.entries(CAMISAS.CENAS).map(([id, c]) => ({ id, nome: c.nome, desc: c.desc })),
+        enquadramentos: Object.entries(CAMISAS.ENQUADRAMENTOS).map(([id, e]) => ({ id, nome: e.nome })),
+      });
+    }
+
+    if (rota.startsWith('/refs-camisa/')) {
+      const f = path.join(DIR, 'refs-camisa', path.basename(decodeURIComponent(rota)));
+      if (!fs.existsSync(f)) { res.writeHead(404); return res.end(); }
+      res.writeHead(200, { 'content-type': 'image/png' });
+      return res.end(fs.readFileSync(f));
+    }
+
+    if (rota === '/api/camisas/gerar' && req.method === 'POST') {
+      const b = await corpo(req);
+      const mockup = path.join(DIR, 'refs-camisa', path.basename(b.produto || ''));
+      if (!fs.existsSync(mockup)) return json(res, 400, { erro: 'produto não encontrado' });
+
+      const prompt = CAMISAS.montarPrompt({
+        cena: b.cena, enquadramento: b.enquadramento, extra: b.extra,
+      });
+
+      // o mockup vai como PRIMEIRA imagem: é dele que a estampa tem que sair, idêntica
+      const imagens = [refDataUri(mockup)];
+      const n = Math.min(Math.max(+b.n || 2, 1), 4);
+
+      console.log(`\n  camisas: ${n}x [${b.cena}/${b.enquadramento}]`);
+      const M = MOTORES[b.motor && MOTORES[b.motor] ? b.motor : 'gemini'];
+      const f = FORMATOS[b.formato] || FORMATOS.retrato;
+
+      // O modelo às vezes recusa um prompt (filtro de conteúdo) e devolve 422. Não é erro
+      // nosso e quase sempre passa na segunda tentativa. Falhar de cara seria desistir cedo.
+      let lista = [];
+      for (let tentativa = 1; tentativa <= 2 && !lista.length; tentativa++) {
+        try {
+          if (M.lote) {
+            const r = await chamarFal(b.motor || 'gemini', M.corpo(prompt, imagens, f, n));
+            lista = r.images || (r.image ? [r.image] : []);
+          } else {
+            const rs = await Promise.all(Array.from({ length: n }, () => chamarFal(b.motor, M.corpo(prompt, imagens, f, n))));
+            lista = rs.flatMap(r => r.images || (r.image ? [r.image] : []));
+          }
+        } catch (e) {
+          if (tentativa === 2) {
+            return json(res, 502, { erro: 'o modelo recusou essa cena duas vezes. Tente outra cena ou mude o texto extra.' });
+          }
+          await new Promise(r => setTimeout(r, 1200));
+        }
+      }
+      if (!lista.length) return json(res, 502, { erro: 'o modelo não devolveu imagem' });
+
+      const stamp = new Date().toISOString().replace(/[-:T]/g, '').slice(0, 14);
+      const saidas = [];
+      for (let i = 0; i < lista.length; i++) {
+        const bin = Buffer.from(await (await fetch(lista[i].url)).arrayBuffer());
+        const nome = `camisa_${stamp}_${b.cena}_${i + 1}.png`;
+        const dest = path.join(SAIDAS, nome);
+        fs.writeFileSync(dest, bin);
+        if (M.marca) limparMarca(dest);
+        enquadrar(dest, f.w, f.h);
+
+        // O GRÃO E A COR VÊM DAQUI, não do modelo. Assim ficam idênticos em todas as fotos
+        // e a marca fala uma língua só. Pedir "grão" pro modelo dá um grão diferente a cada
+        // imagem, e o feed fica desalinhado.
+        if (b.filme) {
+          const jpg = dest.replace(/\.png$/, '.jpg');
+          try {
+            execFileSync('python3', [path.join(DIR, 'filme.py'), dest, jpg, b.filme], { stdio: 'pipe' });
+            saidas.push(path.basename(jpg));
+            continue;
+          } catch (e) { /* se o filtro falhar, entrega a foto crua */ }
+        }
+        saidas.push(nome);
+      }
+      return json(res, 200, { imagens: saidas });
+    }
+
     // ---------- Filme analógico ----------
     // Recebe uma foto e devolve a MESMA foto com a cara de filme. Nada de IA: a imagem
     // continua sendo a sua, com as pessoas e o lugar reais. Quem trabalha aqui é o

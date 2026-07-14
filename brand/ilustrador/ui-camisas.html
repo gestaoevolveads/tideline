@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tideline · Fotos de camisa</title>
+<style>
+  :root{
+    --deep:#172726; --mid:#243F3D; --muted:#476664;
+    --surface:#D3E2DE; --surface2:#E8F0ED; --paper:#F2EFE9; --accent:#F95831; --white:#fff;
+    --ff:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--deep);font-family:var(--ff);line-height:1.5;
+    -webkit-font-smoothing:antialiased}
+  header{display:flex;align-items:center;gap:12px;padding:16px 26px;border-bottom:1px solid rgba(23,39,38,.09)}
+  .wm{font-size:19px;letter-spacing:-.02em}
+  .wm .t{font-weight:300}.wm .l{font-weight:700}.wm .d{color:var(--accent)}
+  header .sub{font-size:13px;color:var(--muted);margin-right:auto}
+  header a{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;
+    border:1px solid rgba(23,39,38,.14);border-radius:999px;padding:7px 13px}
+  header a:hover{border-color:var(--accent);color:var(--accent)}
+
+  main{display:grid;grid-template-columns:352px 1fr;gap:0;min-height:calc(100vh - 61px)}
+  aside{border-right:1px solid rgba(23,39,38,.09);padding:22px;overflow-y:auto;
+    max-height:calc(100vh - 61px)}
+  section{padding:22px 26px;overflow-y:auto;max-height:calc(100vh - 61px)}
+
+  h2{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+    color:var(--muted);margin:22px 0 10px}
+  h2:first-child{margin-top:0}
+
+  /* o produto: cabides em fundo preto, então o card precisa de fundo escuro pra não sumir */
+  .produtos{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+  .prod{border:2px solid transparent;border-radius:12px;overflow:hidden;cursor:pointer;
+    background:#101817;position:relative;transition:border-color .15s}
+  .prod img{width:100%;aspect-ratio:1;object-fit:contain;display:block}
+  .prod .n{font-size:10.5px;color:#cfd8d6;padding:5px 7px 7px;text-align:center;
+    line-height:1.3;text-transform:capitalize}
+  .prod.on{border-color:var(--accent)}
+
+  .opcao{display:block;border:1.5px solid rgba(23,39,38,.13);background:var(--white);
+    border-radius:12px;padding:11px 13px;margin-bottom:7px;cursor:pointer;transition:.15s}
+  .opcao:hover{border-color:var(--muted)}
+  .opcao.on{border-color:var(--accent);box-shadow:0 0 0 3px rgba(249,88,49,.1)}
+  .opcao .t{font-size:13.5px;font-weight:700}
+  .opcao .d{font-size:11.5px;color:var(--muted);margin-top:2px;line-height:1.4}
+
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{border:1.5px solid rgba(23,39,38,.13);background:var(--white);border-radius:999px;
+    padding:7px 13px;font-size:12.5px;font-weight:600;cursor:pointer;transition:.15s}
+  .chip.on{border-color:var(--accent);background:var(--accent);color:#fff}
+
+  textarea{width:100%;border:1.5px solid rgba(23,39,38,.13);background:var(--white);
+    border-radius:12px;padding:11px 13px;font:inherit;font-size:13.5px;resize:vertical;min-height:64px}
+  textarea:focus{outline:none;border-color:var(--mid)}
+
+  .cta{width:100%;margin-top:20px;padding:15px;border:0;border-radius:13px;background:var(--deep);
+    color:#fff;font:inherit;font-size:15px;font-weight:800;cursor:pointer}
+  .cta:hover{background:var(--mid)}
+  .cta:disabled{opacity:.5;cursor:wait}
+  .aviso{font-size:11.5px;color:var(--muted);text-align:center;margin-top:9px;line-height:1.5}
+  .erro{background:#FDECE7;color:#8A2B12;border-radius:11px;padding:11px 13px;font-size:13px;margin-top:12px}
+
+  .grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+  .foto{background:var(--white);border-radius:14px;overflow:hidden;
+    box-shadow:0 1px 2px rgba(23,39,38,.05),0 10px 30px -22px rgba(23,39,38,.4)}
+  .foto img{width:100%;display:block}
+  .foto .b{display:flex;align-items:center;gap:8px;padding:9px 11px}
+  .foto .b .l{font-size:11px;color:var(--muted);margin-right:auto}
+  .foto .b a{font-size:11.5px;font-weight:700;color:var(--deep);text-decoration:none;
+    border:1px solid rgba(23,39,38,.14);border-radius:999px;padding:4px 10px}
+  .foto .b a:hover{border-color:var(--accent);color:var(--accent)}
+
+  .vazio{text-align:center;color:var(--muted);padding:80px 20px;font-size:14px;line-height:1.7}
+  .vazio b{display:block;color:var(--deep);font-size:17px;margin-bottom:6px}
+</style>
+</head>
+<body>
+
+<header>
+  <span class="wm"><span class="t">tide</span><span class="l">line</span><span class="d">.</span></span>
+  <span class="sub">Fotos de camisa · campanha</span>
+  <a href="/posts">Posts</a>
+  <a href="/revista">Capas de revista</a>
+  <a href="/">Estúdio</a>
+</header>
+
+<main>
+<aside>
+  <h2>Produto</h2>
+  <div class="produtos" id="produtos"></div>
+
+  <h2>Cena</h2>
+  <div id="cenas"></div>
+
+  <h2>Enquadramento</h2>
+  <div class="chips" id="enquadramentos"></div>
+
+  <h2>Formato</h2>
+  <div class="chips" id="formatos"></div>
+
+  <h2>Filme</h2>
+  <div class="chips" id="filmes"></div>
+
+  <h2>Quantas fotos</h2>
+  <div class="chips" id="quantidades"></div>
+
+  <h2>Detalhe extra <span style="font-weight:400;text-transform:none;letter-spacing:0">(opcional)</span></h2>
+  <textarea id="extra" placeholder="ex: mulher de cabelo curto, começo da manhã, sem prancha"></textarea>
+
+  <button class="cta" id="gerar">Gerar fotos</button>
+  <div class="aviso">O mockup real vai junto com o pedido: a estampa da foto é a mesma que a gráfica imprime.</div>
+  <div id="erro"></div>
+</aside>
+
+<section>
+  <div class="grade" id="grade"></div>
+  <div class="vazio" id="vazio">
+    <b>Nenhuma foto ainda</b>
+    Escolha o produto e a cena à esquerda.<br>
+    Cada foto leva de 20 a 40 segundos.
+  </div>
+</section>
+</main>
+
+<script>
+const $ = i => document.getElementById(i);
+const escolha = { produto:null, cena:null, enquadramento:'meio', formato:'retrato', filme:'somos', n:2 };
+
+// pinta um grupo de chips e devolve o clique já ligado ao estado
+function chips(el, itens, chave) {
+  el.innerHTML = '';
+  for (const it of itens) {
+    const b = document.createElement('button');
+    b.className = 'chip' + (escolha[chave] === it.id ? ' on' : '');
+    b.textContent = it.nome;
+    b.onclick = () => {
+      escolha[chave] = it.id;
+      [...el.children].forEach(c => c.classList.remove('on'));
+      b.classList.add('on');
+    };
+    el.appendChild(b);
+  }
+}
+
+(async () => {
+  const c = await (await fetch('/api/camisas/config')).json();
+
+  $('produtos').innerHTML = c.produtos.map((p, i) => `
+    <div class="prod ${i === 0 ? 'on' : ''}" data-f="${p.arquivo}">
+      <img src="/refs-camisa/${encodeURIComponent(p.arquivo)}" alt="">
+      <div class="n">${p.nome}</div>
+    </div>`).join('');
+  escolha.produto = c.produtos[0]?.arquivo || null;
+  $('produtos').onclick = e => {
+    const d = e.target.closest('.prod'); if (!d) return;
+    [...$('produtos').children].forEach(x => x.classList.remove('on'));
+    d.classList.add('on');
+    escolha.produto = d.dataset.f;
+  };
+
+  $('cenas').innerHTML = c.cenas.map((s, i) => `
+    <div class="opcao ${i === 0 ? 'on' : ''}" data-id="${s.id}">
+      <div class="t">${s.nome}</div><div class="d">${s.desc}</div>
+    </div>`).join('');
+  escolha.cena = c.cenas[0]?.id;
+  $('cenas').onclick = e => {
+    const d = e.target.closest('.opcao'); if (!d) return;
+    [...$('cenas').children].forEach(x => x.classList.remove('on'));
+    d.classList.add('on');
+    escolha.cena = d.dataset.id;
+  };
+
+  chips($('enquadramentos'), c.enquadramentos, 'enquadramento');
+  chips($('formatos'), [
+    { id:'retrato', nome:'Feed 4:5' }, { id:'quadrado', nome:'Quadrado' },
+    { id:'story', nome:'Story' }, { id:'paisagem', nome:'Paisagem' },
+  ], 'formato');
+  chips($('quantidades'), [1,2,3,4].map(n => ({ id:n, nome:String(n) })), 'n');
+
+  const presets = await (await fetch('/api/filme/presets')).json();
+  chips($('filmes'), [{ id:'', nome:'Sem filtro' }, ...(presets.presets || presets)], 'filme');
+})();
+
+$('gerar').onclick = async () => {
+  const b = $('gerar');
+  $('erro').innerHTML = '';
+  b.disabled = true; b.textContent = 'Fotografando…';
+  try {
+    const r = await (await fetch('/api/camisas/gerar', {
+      method: 'POST', headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ ...escolha, extra: $('extra').value.trim(), motor: 'gemini' }),
+    })).json();
+    if (r.erro) throw new Error(r.erro);
+
+    $('vazio').style.display = 'none';
+    for (const nome of r.arquivos || r.imagens || []) {
+      const d = document.createElement('div');
+      d.className = 'foto';
+      d.innerHTML = `<img src="/saidas/${nome}?t=${Date.now()}" alt="">
+        <div class="b"><span class="l">${escolha.cena} · ${escolha.enquadramento}</span>
+        <a href="/saidas/${nome}" download>Baixar</a></div>`;
+      $('grade').prepend(d);
+    }
+  } catch (e) {
+    $('erro').innerHTML = `<div class="erro">${e.message}</div>`;
+  }
+  b.disabled = false; b.textContent = 'Gerar fotos';
+};
+</script>
+</body>
+</html>
