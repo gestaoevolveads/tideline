@@ -670,9 +670,14 @@
 <script src="./tideline-data.js?v=7"></script>
 <script src="./tideline-templates.js?v=7"></script>
 <script>
-/* ── ACESSO (provisório) ──────────────────────────────
-   Client-side, só pra manter acesso casual fora. Segurança real vem com Supabase. */
-const PANEL_PASS = 'tideline2026';
+/* ── ACESSO ───────────────────────────────────────────────────────────────────
+   Havia uma senha fixa escrita aqui ('tideline2026'), como plano B pra quando o Supabase
+   não carregasse. Duas coisas erradas nisso: ela estava no código-fonte, que qualquer um
+   lê com dois cliques; e um plano B que abre a porta não é plano B, é a porta.
+
+   Agora o painel FALHA FECHADO: sem Supabase, ninguém entra. E mesmo que alguém burle
+   esta tela mexendo no JavaScript (dá, é o navegador dele), não vê nada: quem protege os
+   dados é a RLS do banco, que só responde pro e-mail do admin logado de verdade. */
 const LIVE_MODE = !!(window.TIDELINE_CONFIG && window.TIDELINE_CONFIG.SUPABASE_URL && window.TIDELINE_CONFIG.SUPABASE_ANON_KEY);
 // no modo ao vivo, login é via Supabase Auth (seguro); senão, senha local (provisório)
 if(LIVE_MODE){
@@ -691,9 +696,7 @@ async function tryLogin(){
       showApp();
     }catch(e){ err.textContent = 'Erro ao conectar no Supabase'; }
   } else {
-    if(document.getElementById('gate-pass').value === PANEL_PASS){
-      sessionStorage.setItem('tl_admin','1'); showApp();
-    } else { err.textContent = 'Senha incorreta'; }
+    err.textContent = 'Painel indisponível: o Supabase não carregou. Recarregue a página.';
   }
 }
 function showApp(){
@@ -702,8 +705,7 @@ function showApp(){
   initData();
   try{ loadDashboard(); }catch(e){} // Dashboard é a aba padrão
 }
-// atalho de sessão só no modo local; no ao vivo, sempre valida via Supabase Auth
-if(!LIVE_MODE && sessionStorage.getItem('tl_admin')==='1') showApp();
+// O acesso é sempre validado pelo Supabase Auth. Não existe mais atalho de sessão local.
 
 function showPanel(id){
   document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.panel===id));

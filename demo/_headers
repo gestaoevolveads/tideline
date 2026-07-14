@@ -1,0 +1,39 @@
+# Cabeçalhos de segurança do Tideline (Cloudflare Pages lê este arquivo).
+#
+# O site ia sem nenhum deles. Nenhum é paranoia: cada um fecha um ataque que acontece
+# todo dia com sites pequenos, e que custa caro justamente porque ninguém está olhando.
+
+/*
+  # CLICKJACKING. Sem isto, qualquer pessoa pode colocar o Tideline dentro de um iframe
+  # invisível num site dela e induzir seu usuário a clicar em coisas achando que está em
+  # outro lugar (inclusive em "comprar"). Ninguém precisa embutir o Tideline em lugar nenhum.
+  X-Frame-Options: DENY
+
+  # O navegador para de "adivinhar" o tipo de um arquivo. Sem isto, um arquivo enviado como
+  # imagem pode acabar sendo executado como script.
+  X-Content-Type-Options: nosniff
+
+  # HTTPS obrigatório por um ano, inclusive nos subdomínios. Fecha o ataque de quem está na
+  # mesma rede Wi-Fi e tenta rebaixar a conexão pra http pra ler o que passa.
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+  # A URL da sua página não vaza pra sites de terceiros quando alguém sai daqui.
+  Referrer-Policy: strict-origin-when-cross-origin
+
+  # Ninguém pede sua câmera, seu microfone nem sua localização. Se um script invasor tentar,
+  # o navegador nega antes mesmo de perguntar pra pessoa.
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+
+  # CSP: a lista de onde o navegador PODE buscar código. É o cabeçalho mais poderoso daqui.
+  # Se alguém conseguir injetar um <script src="site-do-mal.com"> numa página nossa, o
+  # navegador simplesmente se recusa a carregar, porque o domínio não está nesta lista.
+  #
+  # 'unsafe-inline' está aqui porque o app inteiro tem CSS e JS escritos dentro do HTML.
+  # Tirar isso exigiria reescrever tudo em arquivos separados. Fica anotado como dívida:
+  # é o que separa esta CSP de uma CSP realmente rígida.
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://sdk.mercadopago.com https://*.mercadopago.com https://connect.facebook.net https://www.googletagmanager.com https://esm.sh; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data:; connect-src 'self' https://*.supabase.co https://*.mercadopago.com https://*.mercadolibre.com https://viacep.com.br https://*.open-meteo.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://connect.facebook.net https://*.facebook.com; frame-src https://*.mercadopago.com https://*.mercadolibre.com; object-src 'none'; base-uri 'self'; form-action 'self'
+
+# O painel não deve ser indexado nem guardado em cache de proxy nenhum.
+/admin.html
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store
