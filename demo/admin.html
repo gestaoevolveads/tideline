@@ -907,27 +907,34 @@ async function loadAssinantes(){
   try{
     const c = window.TLData && await window.TLData.client();
     if(!c){ throw new Error('Login do painel (Supabase) não está ativo.'); }
-    const { data, error } = await c.from('profiles')
-      .select('email,nome,plano,trial_ends,premium_until,created_at')
+    let { data, error } = await c.from('profiles')
+      .select('email,nome,plano,trial_ends,premium_until,created_at,cortesia')
       .order('created_at',{ascending:false});
+    if(error){ // fallback se a coluna cortesia ainda não existir
+      const r2=await c.from('profiles').select('email,nome,plano,trial_ends,premium_until,created_at').order('created_at',{ascending:false});
+      data=r2.data; error=r2.error;
+    }
     if(error) throw error;
     const now=Date.now();
-    let trial=0, prem=0, free=0, real=0, conv=0, teste=0;
+    let trial=0, prem=0, free=0, real=0, conv=0, teste=0, cort=0;
     const rows=(data||[]).map(u=>{
       const cls=classAcc(u.email,u.nome);
       const premOk = u.premium_until && new Date(u.premium_until).getTime()>now;
+      const comp = cls==='real' && ehCortesia(u);
       const trialOk = !premOk && u.trial_ends && new Date(u.trial_ends).getTime()>now;
       let badge, expira='—';
       if(premOk){ badge='<span class="pill" style="background:rgba(47,158,111,.15);color:var(--ok)">premium</span>'; expira=fmtD(u.premium_until); }
       else if(trialOk){ const d=Math.ceil((new Date(u.trial_ends).getTime()-now)/86400000); badge='<span class="pill" style="background:rgba(249,88,49,.14);color:var(--accent)">trial · '+d+'d</span>'; expira=fmtD(u.trial_ends); }
       else { badge='<span class="pill">vencido</span>'; expira=u.trial_ends?fmtD(u.trial_ends):'—'; }
-      // só usuários REAIS entram nos números (convidados e testes aparecem, mas não contam)
-      if(cls==='real'){ real++; if(premOk) prem++; else if(trialOk) trial++; else free++; }
+      // só PAGANTES entram nos números. cortesia/convidado/teste aparecem, mas não contam.
+      if(comp){ cort++; }
+      else if(cls==='real'){ real++; if(premOk) prem++; else if(trialOk) trial++; else free++; }
       else if(cls==='convidado') conv++; else teste++;
-      const tag = cls==='convidado' ? ' <span class="pill" style="background:rgba(71,102,100,.14);color:var(--muted)">convidado</span>'
+      const tag = comp ? ' <span class="pill" style="background:rgba(71,102,100,.14);color:var(--muted)">cortesia</span>'
+                : cls==='convidado' ? ' <span class="pill" style="background:rgba(71,102,100,.14);color:var(--muted)">convidado</span>'
                 : cls==='teste' ? ' <span class="pill" style="background:rgba(120,120,120,.14);color:var(--muted)">teste</span>' : '';
       const quem = esc(u.nome||'') ? (esc(u.nome)+' · '+esc(u.email||'')) : esc(u.email||'—');
-      const dim = cls==='real' ? '' : 'opacity:.55;';
+      const dim = (cls==='real' && !comp) ? '' : 'opacity:.55;';
       const acoes='<button class="btn" style="padding:3px 9px;margin:0;font-size:11px" onclick="usarEmailPremium(\''+jsstr(u.email)+'\')">premium</button>'+(cls==='teste'?' <button class="btn" style="padding:3px 9px;margin:0;font-size:11px;color:var(--accent)" onclick="excluirConta(\''+jsstr(u.email)+'\')">excluir</button>':'');
       return '<tr style="border-top:1px solid var(--line);'+dim+'"><td style="padding:8px">'+quem+tag+'</td><td style="padding:8px">'+badge+'</td><td style="padding:8px;color:var(--muted)">'+fmtD(u.created_at)+'</td><td style="padding:8px;color:var(--muted)">'+expira+'</td><td style="padding:8px">'+acoes+'</td></tr>';
     }).join('');
@@ -935,7 +942,7 @@ async function loadAssinantes(){
     document.getElementById('ka-trial').textContent=trial;
     document.getElementById('ka-prem').textContent=prem;
     document.getElementById('ka-free').textContent=free;
-    document.getElementById('ka-note').textContent='Números contam só usuários reais. Não entram: '+conv+' convidado(s) + '+teste+' teste(s) — aparecem na lista abaixo, marcados.';
+    document.getElementById('ka-note').textContent='Números contam só usuários pagantes. Não entram: '+conv+' convidado(s) + '+cort+' cortesia(s) + '+teste+' teste(s) — aparecem na lista, marcados.';
     document.getElementById('assin-rows').innerHTML=rows||'<tr><td style="padding:12px;color:var(--muted)" colspan="5">Nenhuma conta ainda. Aparecem aqui assim que alguém se cadastrar.</td></tr>';
     load.style.display='none'; body.style.display='block';
   }catch(e){
@@ -952,6 +959,8 @@ function classAcc(email,nome){
   if(e.endsWith('@beta.tideline.com.br')) return 'convidado';
   return 'real';
 }
+/* cortesia = premium dado na mão (não pagante): marca cortesia OU plano vitalício. */
+function ehCortesia(u){ return !!(u.premium_until && new Date(u.premium_until).getTime()>Date.now() && (u.cortesia===true || u.plano==='vitalicio')); }
 
 /* ── PREMIUM MANUAL / USUÁRIOS DE TESTE (chama /api/admin-premium) ───── */
 function jsstr(s){ return String(s||'').replace(/\\/g,'\\\\').replace(/'/g,"\\'"); }
@@ -1016,14 +1025,14 @@ async function loadAquisicao(){
     const c=window.TLData && await window.TLData.client();
     if(!c) throw new Error('Login do painel (Supabase) não está ativo.');
     let { data, error }=await c.from('profiles')
-      .select('email,nome,plano,trial_ends,premium_until,created_at,utm_source,utm_medium,utm_campaign,utm_content,plano_tipo,valor_pago')
+      .select('email,nome,plano,trial_ends,premium_until,created_at,utm_source,utm_medium,utm_campaign,utm_content,plano_tipo,valor_pago,cortesia')
       .order('created_at',{ascending:true});
     if(error){ // fallback se as colunas de receita ainda não existirem
       const r2=await c.from('profiles').select('email,nome,plano,trial_ends,premium_until,created_at,utm_source,utm_medium,utm_campaign,utm_content').order('created_at',{ascending:true});
       data=r2.data; error=r2.error;
     }
     if(error) throw error;
-    aqData=(data||[]).filter(u=>classAcc(u.email,u.nome)==='real');
+    aqData=(data||[]).filter(u=>classAcc(u.email,u.nome)==='real' && !ehCortesia(u));
     renderAquisicao(aqData, Date.now());
     load.style.display='none'; body.style.display='block';
     aqCards.forEach(id=>{const e=document.getElementById(id); if(e)e.style.display='';});
