@@ -44,8 +44,7 @@
     // eventos que aconteceram antes do aceite não se perdem: saem agora
     while (filaEventos.length) {
       var e = filaEventos.shift();
-      try { if (window.fbq && e[0]) fbq('track', e[0], e[2], e[3] ? { eventID: e[3] } : undefined); } catch(_){}
-      try { if (window.gtag && e[1]) gtag('event', e[1], e[2]); } catch(_){}
+      disparar(e[0], e[1], e[2], e[3]);
     }
   };
 
@@ -137,9 +136,28 @@
     delete enr.event_id;
 
     if (!medicaoLigada) { filaEventos.push([metaEvent, ga4Event, enr, idEvento]); return; }
-    try { if (window.fbq && metaEvent) fbq('track', metaEvent, enr, idEvento ? { eventID: idEvento } : undefined); } catch(e){}
-    try { if (window.gtag && ga4Event) gtag('event', ga4Event, enr); } catch(e){}
+    disparar(metaEvent, ga4Event, enr, idEvento);
   };
+
+  /* O Meta só conhece uma lista fechada de eventos (Purchase, AddToCart, ViewContent...).
+     Qualquer outro nome tem que ir por 'trackCustom'. A gente estava mandando 'CustomEvent'
+     por 'track', e o Meta registrava TRÊS eventos diferentes (cupom aplicado, cupom recusado,
+     método de pagamento) todos com o mesmo nome inútil: "CustomEvent". Não dava pra saber
+     qual cupom converteu. */
+  var PADRAO_META = ['PageView','ViewContent','Search','AddToCart','AddToWishlist',
+    'InitiateCheckout','AddPaymentInfo','Purchase','Lead','CompleteRegistration','Contact',
+    'Subscribe','StartTrial','Schedule','SubmitApplication','CustomizeProduct','Donate','FindLocation'];
+
+  function disparar(metaEvent, ga4Event, params, idEvento) {
+    var opt = idEvento ? { eventID: idEvento } : undefined;
+    try {
+      if (window.fbq && metaEvent) {
+        if (PADRAO_META.indexOf(metaEvent) >= 0) fbq('track', metaEvent, params, opt);
+        else fbq('trackCustom', ga4Event || metaEvent, params, opt);
+      }
+    } catch(e){}
+    try { if (window.gtag && ga4Event) gtag('event', ga4Event, params); } catch(e){}
+  }
 
   // ---------- Purchase automático no retorno do Mercado Pago ----------
   // O checkout redireciona pra app.html?assinatura=ok&v=VALOR&plan=PLANO

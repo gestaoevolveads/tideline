@@ -51,12 +51,23 @@ export async function onRequestPost(context) {
     const doc = String(b.cliente_doc).replace(/\D/g, '');
     const nome = String(b.cliente_nome).trim();
 
+    // O pedido, no formato que a Montink documenta.
+    //
+    // Três coisas que eu estava mandando errado, e que só apareceram lendo a coleção deles:
+    //   payment_method: eu mandava "mercadopago", que não é um valor que eles conhecem.
+    //                   Agora vai o meio real ("pix" ou "credit_card").
+    //   price:          eles documentam o preço em CADA linha do pedido, e eu não mandava.
+    //                   Se eles conferirem o valor por aí, o pedido seria recusado.
+    //   sku:            eles documentam, mas a API deles não devolve SKU em lugar nenhum
+    //                   (não está no catálogo nem no detalhe do produto). Então é opcional,
+    //                   e a gente omite em vez de inventar um.
+    const precoPeca = Math.round(Math.max(0.5, produto.preco - desconto) * 100) / 100;
     const pedidoMontink = {
       customer_name: nome,
       customer_email: b.cliente_email,
       customer_document: doc,
       customer_phone: b.cliente_fone,
-      payment_method: 'mercadopago',
+      payment_method: b.metodo === 'pix' ? 'pix' : 'credit_card',
       value_total: total,
       external_order_id: ref,
       shipping_id: Number(b.frete_id),
@@ -65,8 +76,14 @@ export async function onRequestPost(context) {
         street: b.rua, number: String(b.numero), neighborhood: b.bairro,
         city: b.cidade, state: b.uf, complement: b.complemento || '',
       },
-      products: [{ product_id: Number(b.produto_id), quantity: 1,
-                   var1: b.tamanho, var2: b.cor, var3: null }],
+      products: [{
+        product_id: Number(b.produto_id),
+        quantity: 1,
+        var1: b.tamanho,          // a Montink espera o tamanho em var1
+        var2: b.cor,              // e a cor em var2
+        var3: null,
+        price: precoPeca,
+      }],
     };
 
     // ── o pedido nasce aqui, ANTES do dinheiro ──────────────────────────────

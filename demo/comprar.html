@@ -312,7 +312,7 @@ if (C) {
   $('cep').value = (C.cep || '').replace(/(\d{5})(\d{3})/, '$1-$2');
   buscarCep(C.cep);
 
-  if (window.tlTrack) tlTrack('InitiateCheckout', 'camisa_checkout_abriu', {
+  if (window.tlTrack) tlTrack('InitiateCheckout', 'begin_checkout', {
     content_name: C.nome, content_ids: [String(C.produto_id)], content_type: 'product',
     value: C.total, currency: 'BRL', coupon: C.cupom || undefined,
   });
@@ -480,7 +480,7 @@ $('pagar').onclick = async () => {
       dados.metodo = 'pix';
     }
 
-    if (window.tlTrack) tlTrack('AddPaymentInfo', 'camisa_pagamento', {
+    if (window.tlTrack) tlTrack('AddPaymentInfo', 'add_payment_info', {
       content_name: C.nome, content_ids: [String(C.produto_id)], content_type: 'product',
       value: C.total, currency: 'BRL', coupon: C.cupom || undefined,
     });
