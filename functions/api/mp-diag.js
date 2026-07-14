@@ -42,6 +42,29 @@ export async function onRequestGet(context) {
       : { erro: d.message || 'sem permissão' };
   } catch (e) { out.metodos = { erro: e.message }; }
 
+  // ?cobrar=1 → tenta uma cobrança REAL de R$1 em boleto. Ninguém paga, ele vence sozinho.
+  // Serve pra provar que a conta pode cobrar direto pela API (que é o que o checkout
+  // transparente faz). Se isto passar, o problema do Pix é só o Pix.
+  const u = new URL(context.request.url);
+  if (u.searchParams.get('cobrar')) {
+    const r = await fetch('https://api.mercadopago.com/v1/payments', {
+      method: 'POST',
+      headers: { authorization: `Bearer ${env.MP_ACCESS_TOKEN}`, 'content-type': 'application/json',
+                 'X-Idempotency-Key': 'diag-' + Date.now() },
+      body: JSON.stringify({
+        transaction_amount: 1,
+        description: 'Teste de credencial (nao pagar)',
+        payment_method_id: 'bolbradesco',
+        payer: { email: 'teste@tideline.com.br', first_name: 'Teste', last_name: 'Tideline',
+                 identification: { type: 'CPF', number: '19119119100' },
+                 address: { zip_code: '28905000', street_name: 'Av Teste', street_number: '1',
+                            neighborhood: 'Centro', city: 'Cabo Frio', federal_unit: 'RJ' } },
+      }),
+    });
+    const d = await r.json();
+    out.cobranca_direta = r.ok ? { ok: true, status: d.status } : { erro: d.message, causa: d.cause };
+  }
+
   return new Response(JSON.stringify(out, null, 2), {
     headers: { 'content-type': 'application/json' },
   });
