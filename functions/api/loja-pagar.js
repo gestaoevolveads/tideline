@@ -118,6 +118,17 @@ export async function onRequestPost(context) {
     const d = await r.json();
 
     if (!r.ok) {
+      // "Unauthorized use of live credentials" quer dizer que a conta ainda não pode cobrar
+      // direto pela API (o Checkout Transparente não foi liberado no painel do Mercado Pago).
+      // Isso não é erro do cliente e ele não tem nada a ver com isso: em vez de mostrar uma
+      // tela de erro e perder a venda, a gente cai no caminho antigo (a preferência do
+      // Mercado Pago) sem ele perceber. A hora que a conta for liberada, isto aqui para de
+      // acontecer sozinho e o cliente passa a pagar dentro do Tideline.
+      if (String(d.message || '').includes('Unauthorized use of live credentials')) {
+        const pref = await criarPreferencia(env, { b, produto, desconto, cupom, frete, total, ref,
+                                                   pedidoMontink, metadata });
+        if (pref) return json({ status: 'redirecionar', url: pref, ref, total, desconto, cupom });
+      }
       return json({ erro: humanizar(d), detalhe: d.message || '' }, 400);
     }
 
@@ -144,6 +155,42 @@ export async function onRequestPost(context) {
   } catch (e) {
     return json({ erro: e.message }, 500);
   }
+}
+
+// ── a rede de segurança ──────────────────────────────────────────────────────
+// A preferência é o caminho antigo: o Mercado Pago hospeda a tela de pagamento. É pior de
+// experiência (tira a pessoa do app), mas é melhor do que não vender. Ela só é usada quando
+// a conta recusa a cobrança direta.
+async function criarPreferencia(env, { b, produto, desconto, frete, total, ref, metadata }) {
+  const r = await fetch('https://api.mercadopago.com/checkout/preferences', {
+    method: 'POST',
+    headers: { authorization: `Bearer ${env.MP_ACCESS_TOKEN}`, 'content-type': 'application/json' },
+    body: JSON.stringify({
+      items: [{
+        title: `${produto.nome} · ${b.cor} · ${b.tamanho}`,
+        quantity: 1,
+        unit_price: Number(Math.max(0.5, produto.preco - desconto).toFixed(2)),
+        currency_id: 'BRL',
+      }],
+      shipments: { cost: frete, mode: 'not_specified' },
+      payer: {
+        name: b.cliente_nome, email: b.cliente_email,
+        identification: { type: 'CPF', number: String(b.cliente_doc).replace(/\D/g, '') },
+      },
+      external_reference: ref,
+      back_urls: {
+        success: 'https://tideline.com.br/app.html?compra=ok',
+        failure: 'https://tideline.com.br/comprar.html?erro=1',
+        pending: 'https://tideline.com.br/app.html?compra=pendente',
+      },
+      auto_return: 'approved',
+      notification_url: 'https://tideline.com.br/api/mp-webhook',
+      statement_descriptor: 'TIDELINE',
+      metadata,                          // o webhook precisa dela pra criar o pedido na Montink
+    }),
+  });
+  const d = await r.json();
+  return r.ok ? d.init_point : null;
 }
 
 // ── "o Pix já caiu?" ─────────────────────────────────────────────────────────
