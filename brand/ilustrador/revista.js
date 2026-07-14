@@ -55,7 +55,7 @@ function banca(d) {
     :root{${PALETA}} ${BASE}
     .capa{background:var(--deep)}
     .topo{position:absolute;top:0;left:0;right:0;z-index:4;display:flex;justify-content:space-between;
-      padding:22px 40px;color:#fff}
+      padding:24px 44px;color:#fff}
     .topo .a{font-size:22px;font-weight:800;letter-spacing:-.01em;line-height:1.25;max-width:52%}
     .topo .a i{font-style:italic;color:var(--accent)}
     .topo .b{text-align:right;font-size:16px;line-height:1.35}
@@ -65,22 +65,25 @@ function banca(d) {
        Então: foto sangrando por baixo, nome POR CIMA dela, e a base das letras dissolvida
        num degradê. O nome afunda na água em vez de ser decapitado. */
     .name{position:absolute;top:96px;left:0;right:0;z-index:3;text-align:center;
-      -webkit-mask-image:linear-gradient(180deg,#000 0%,#000 58%,rgba(0,0,0,.35) 82%,transparent 100%);
-      mask-image:linear-gradient(180deg,#000 0%,#000 58%,rgba(0,0,0,.35) 82%,transparent 100%)}
+      filter:drop-shadow(0 6px 30px rgba(23,39,38,.45));
+      -webkit-mask-image:linear-gradient(180deg,#000 0%,#000 66%,rgba(0,0,0,.45) 88%,transparent 100%);
+      mask-image:linear-gradient(180deg,#000 0%,#000 66%,rgba(0,0,0,.45) 88%,transparent 100%)}
     .img{z-index:1;top:0;bottom:0}
     .veu{position:absolute;inset:0;z-index:2;
       background:linear-gradient(180deg,rgba(23,39,38,.92) 0%,rgba(23,39,38,.55) 14%,rgba(23,39,38,.05) 34%,
         rgba(23,39,38,.35) 62%,rgba(23,39,38,.92) 100%)}
-    .col{position:absolute;z-index:5;left:44px;top:470px;width:300px;display:flex;flex-direction:column;gap:26px;
-      padding:22px 22px 22px 0;
-      background:linear-gradient(90deg, rgba(23,39,38,.55) 0%, rgba(23,39,38,.30) 60%, transparent 100%)}
+    .col{position:absolute;z-index:5;left:0;top:460px;width:344px;display:flex;flex-direction:column;gap:26px;
+      padding:30px 30px 30px 44px;
+      background:linear-gradient(100deg, rgba(23,39,38,.62) 0%, rgba(23,39,38,.30) 62%, transparent 100%);
+      -webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 14%,#000 86%,transparent 100%);
+      mask-image:linear-gradient(180deg,transparent 0%,#000 14%,#000 86%,transparent 100%)}
     .col .k{font-size:19px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:5px}
     .col .v{font-size:14.5px;line-height:1.5;letter-spacing:.06em;text-transform:uppercase;color:#fff;text-shadow:0 1px 10px rgba(23,39,38,.9)}
     .col .p{font-size:12px;letter-spacing:.2em;color:rgba(255,255,255,.62);margin-top:6px;text-shadow:0 1px 8px rgba(23,39,38,.8)}
     .fim{position:absolute;z-index:5;left:44px;right:44px;bottom:46px;max-height:52%}
     .selo{font-size:15px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
     .tit{font-size:104px;font-weight:800;line-height:.9;letter-spacing:-.04em;color:#fff}
-    .sub{font-size:22px;color:rgba(255,255,255,.78);margin-top:14px;font-weight:500}
+    .sub{font-size:25px;color:rgba(255,255,255,.9);margin-top:16px;font-weight:500;max-width:74%;line-height:1.35}
   </style>
   <div class="capa">
     <div class="topo">
@@ -315,7 +318,8 @@ function francesa(d) {
     .tit-box{position:absolute;left:40px;right:40px;top:50%;transform:translateY(-50%);
       text-align:center;color:#fff;padding:46px 30px;
       background:radial-gradient(ellipse 70% 60% at 50% 50%, rgba(23,39,38,.58) 0%, rgba(23,39,38,.28) 55%, transparent 78%)}
-    .selo{font-size:16px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+    .selo{display:inline-block;background:var(--accent);color:#fff;font-size:15px;font-weight:800;
+      letter-spacing:.2em;text-transform:uppercase;padding:7px 14px;border-radius:5px;margin-bottom:16px}
     .tit{font-size:88px;font-weight:800;line-height:.94;letter-spacing:-.035em;text-shadow:0 2px 30px rgba(23,39,38,.45)}
     .sub{font-size:26px;letter-spacing:.34em;text-transform:uppercase;margin-top:12px;color:#fff;font-weight:600;text-shadow:0 2px 18px rgba(23,39,38,.7)}
     .pe{position:absolute;left:40px;right:40px;bottom:30px;display:flex;justify-content:space-between;align-items:center;
