@@ -168,6 +168,10 @@ def energia_do_video(video, fps=10, larg=128, alt=72):
     # que separa "spray com cena" de "tela branca".
     detalhe = norm(luma.std(axis=(1, 2)))
 
+    # (Tentei detectar "surfista falando pra câmera" pela cor da pele. Não funciona: uma onda
+    #  ao pôr do sol tem MAIS cor de pele que um rosto molhado contra o sol. Detectar rosto
+    #  por cor aqui é chute. Quem tira esses trechos é a lista --pular, que é exata.)
+
     # MOVIMENTO e sua ACELERAÇÃO (o "impacto" da manobra)
     mov = np.abs(np.diff(luma, axis=0)).mean(axis=(1, 2))
     mov = np.concatenate([[0], mov])
@@ -180,12 +184,16 @@ def energia_do_video(video, fps=10, larg=128, alt=72):
 
 
 # ── 3. a montagem ────────────────────────────────────────────────────────────
-def escolher_trechos(mov, fps_mov, batidas, dur_alvo, batidas_por_corte, pico_musica):
+def escolher_trechos(mov, fps_mov, batidas, dur_alvo, batidas_por_corte, pico_musica, pular=()):
     """Escolhe os trechos e os coloca onde eles rendem mais.
 
     Cada trecho tem um número inteiro de batidas, e começa numa batida do VÍDEO alinhada à
     grade da música. A escolha é gulosa: pego o de maior movimento, jogo fora tudo que
     encosta nele, pego o próximo. Simples e difícil de enganar.
+
+    `pular` é uma lista de faixas (início, fim) em segundos pra NÃO usar: o surfista falando
+    pra câmera, o selo queimado, o carro. Detectar isso por imagem é chute; uma lista que a
+    pessoa aponta olhando o vídeo é exata.
     """
     if len(batidas) < 2:
         raise SystemExit('não consegui achar batidas nessa música')
@@ -198,12 +206,19 @@ def escolher_trechos(mov, fps_mov, batidas, dur_alvo, batidas_por_corte, pico_mu
     if dur_video < dur_corte * 2:
         raise SystemExit('o vídeo é curto demais pra render um corte')
 
+    def proibido(t):
+        # o clipe começa em t e dura dur_corte: barra se ele TOCAR qualquer faixa pulada
+        return any(t < fim and t + dur_corte > ini for ini, fim in pular)
+
     # a nota de cada começo possível: o movimento MÉDIO daquele pedaço
     candidatos = []
     passo_busca = max(1, int(fps_mov * 0.25))      # varre de 0,25 em 0,25 s
     janela = int(dur_corte * fps_mov)
     for i in range(0, len(mov) - janela, passo_busca):
-        candidatos.append((float(mov[i:i + janela].mean()), i / fps_mov))
+        t = i / fps_mov
+        if proibido(t):
+            continue
+        candidatos.append((float(mov[i:i + janela].mean()), t))
     candidatos.sort(reverse=True)
 
     # O PISO. Sem ele, o script preenchia o tempo que faltava com o que tivesse: pedia 6
@@ -244,13 +259,10 @@ def montar(video, musica, trechos, dur_corte, dur_total, saida, vertical):
     tmp = pathlib.Path(tempfile.mkdtemp())
     pedacos = []
 
-    # Vertical com FUNDO DESFOCADO, não corte seco. Um POV de surf é 16:9 deitado; cortar o
-    # centro pra 9:16 amputa a parede da onda, que quase sempre está do lado. O fundo borrado
-    # preenche o story mantendo a imagem inteira, e é o padrão de reel que não parece amador.
-    escala = ('split[a][b];[b]scale=1080:1920:force_original_aspect_ratio=increase,'
-              'crop=1080:1920,gblur=sigma=28[bg];'
-              '[a]scale=1080:1920:force_original_aspect_ratio=decrease[fg];'
-              '[bg][fg]overlay=(W-w)/2:(H-h)/2'
+    # Vertical CROPADO: a imagem preenche o story inteiro. Escala a footage 16:9 até a altura
+    # do story e corta a faixa central. Perde as laterais, mas a tela fica cheia de onda, sem
+    # tarja nem borrão. É o que dá cara de reel, não de vídeo enfiado num quadro.
+    escala = ('scale=-2:1920,crop=1080:1920'
               if vertical else
               'scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080')
 
@@ -286,7 +298,15 @@ def main():
     ap.add_argument('--batidas', type=int, default=4, help='batidas por corte (4 = um compasso)')
     ap.add_argument('--saida', default='reel.mp4')
     ap.add_argument('--vertical', action='store_true', help='1080x1920 (story/reels)')
+    ap.add_argument('--pular', default='', help='faixas a NÃO usar, ex: "45-70,450-470"')
+    ap.add_argument('--intro', default='', help='vídeo pra emendar na frente (a abertura de TV)')
     a = ap.parse_args()
+
+    pular = []
+    for faixa in a.pular.split(','):
+        if '-' in faixa:
+            ini, fim = faixa.split('-')
+            pular.append((float(ini), float(fim)))
 
     print('  ouvindo a música…')
     x = ler_audio(a.musica)
@@ -300,7 +320,7 @@ def main():
     mov, fps_mov = energia_do_video(a.video)
     print(f'    {len(mov)/fps_mov:.0f}s de imagem, movimento medido a cada {1/fps_mov:.2f}s')
 
-    trechos, dur_corte = escolher_trechos(mov, fps_mov, batidas, a.dur, a.batidas, pico)
+    trechos, dur_corte = escolher_trechos(mov, fps_mov, batidas, a.dur, a.batidas, pico, pular)
     print(f'  cortando: {len(trechos)} trechos de {dur_corte:.2f}s (= {a.batidas} batidas cada)')
     for i, t in enumerate(trechos):
         print(f'    {i+1:2d}. {t:6.2f}s')

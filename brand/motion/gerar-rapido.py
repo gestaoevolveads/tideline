@@ -20,7 +20,8 @@ SAIDA = pathlib.Path.home() / "Downloads" / "Tideline-Motion"
 ARQ = sys.argv[1] if len(sys.argv) > 1 else "tv.html"
 DUR = float(sys.argv[2]) if len(sys.argv) > 2 else 1.8
 FPS = int(sys.argv[3]) if len(sys.argv) > 3 else 30
-W, H = 1080, 1920
+W = int(sys.argv[4]) if len(sys.argv) > 4 else 1080
+H = int(sys.argv[5]) if len(sys.argv) > 5 else 1920
 TOTAL = int(DUR * FPS)
 
 frames = pathlib.Path(tempfile.mkdtemp())
@@ -52,7 +53,7 @@ class Coletor(http.server.SimpleHTTPRequestHandler):
         if self.path.startswith('/roda'):
             html = f"""<!doctype html><meta charset=utf-8>
 <body style="margin:0;background:#111">
-<iframe id="f" src="/{ARQ}?t=0" width="{W}" height="{H}"
+<iframe id="f" src="/{ARQ}?w={W}&h={H}&t=0" width="{W}" height="{H}"
         style="border:0;transform:scale(.25);transform-origin:top left"></iframe>
 <script>
 // Um Chrome só, desenhando todos os quadros em sequência. A janela do iframe recarrega o
@@ -63,7 +64,7 @@ const f = document.getElementById('f');
 function esperarQuadro(t){{
   return new Promise(ok => {{
     f.onload = () => setTimeout(ok, 30);   // um respiro pro canvas terminar de pintar
-    f.src = '/{ARQ}?t=' + t.toFixed(4);
+    f.src = '/{ARQ}?w={W}&h={H}&t=' + t.toFixed(4);
   }});
 }}
 
