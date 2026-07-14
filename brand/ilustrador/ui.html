@@ -155,9 +155,9 @@
     </div>
 
     <div class="campo">
-      <label for="croqui-in">Croqui de composição <span style="text-transform:none;font-weight:400">(opcional)</span></label>
+      <label for="croqui-in">Referência de cena <span style="text-transform:none;font-weight:400">(opcional)</span></label>
       <div class="croqui" id="croqui" tabindex="0" role="button">
-        <div id="croqui-txt">Arraste um rabisco aqui, ou clique.<br>Serve pra travar a geometria de um desenho didático.</div>
+        <div id="croqui-txt">Arraste uma FOTO ou um rabisco aqui.<br>Ela ensina só a pose, o ângulo e o enquadramento. O traço continua vindo das referências acima.</div>
       </div>
       <input type="file" id="croqui-in" accept="image/*" hidden>
     </div>
@@ -246,7 +246,7 @@ function lerCroqui(f) {
 }
 function tirarCroqui(e) {
   e.stopPropagation(); croquiData = null; $('#croqui-in').value = '';
-  $('#croqui-txt').innerHTML = 'Arraste um rabisco aqui, ou clique.<br>Serve pra travar a geometria de um desenho didático.';
+  $('#croqui-txt').innerHTML = 'Arraste uma FOTO ou um rabisco aqui.<br>Ela ensina só a pose, o ângulo e o enquadramento. O traço continua vindo das referências acima.';
 }
 
 // ---------- diretor de arte ----------

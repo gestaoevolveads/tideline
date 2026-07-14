@@ -177,10 +177,17 @@ const servidor = http.createServer(async (req, res) => {
     }
 
     if (rota === '/api/filme/presets') {
-      const py = fs.readFileSync(path.join(DIR, 'filme.py'), 'utf8');
-      const presets = [...py.matchAll(/'(\w+)': \{\s*\n\s*'nome': '([^']+)'/g)]
-        .map(m => ({ id: m[1], nome: m[2] }));
-      return json(res, 200, { presets });
+      // Pergunta ao proprio Python. Ler o arquivo com regex era fragil e voltou lista
+      // vazia: quem sabe quais receitas existem e o filme.py, nao um padrao de texto.
+      try {
+        const saida = execFileSync('python3', ['-c',
+          'import sys,json; sys.path.insert(0,"' + DIR + '"); import filme; ' +
+          'print(json.dumps([{"id":k,"nome":v["nome"]} for k,v in filme.PRESETS.items()]))',
+        ], { encoding: 'utf8' });
+        return json(res, 200, { presets: JSON.parse(saida) });
+      } catch (e) {
+        return json(res, 500, { erro: 'nao consegui ler as receitas: ' + String(e.message).slice(0, 120) });
+      }
     }
 
     // ---------- Posts e capas de carrossel ----------
@@ -343,7 +350,7 @@ const servidor = http.createServer(async (req, res) => {
       const imagens = escolhidas.map(refDataUri);
       if (b.croqui) imagens.push(b.croqui); // croqui SEMPRE por último: o prompt diz "a última imagem é o diagrama"
 
-      const prompt = montarPrompt(cena, { variante, comCroqui: !!b.croqui });
+      const prompt = montarPrompt(cena, { variante, comCena: !!b.croqui });
       const f = FORMATOS[formato];
 
       console.log(`\n  gerando ${n}x  [${motor}/${variante}/${f.w}x${f.h}]  refs: ${escolhidas.length}${b.croqui ? ' + croqui' : ''}`);

@@ -48,14 +48,23 @@ function montarPrompt(cena, opts = {}) {
     `STYLE: ${TRACO}`,
     v.fundo,
   ];
-  if (opts.comCroqui) {
-    // Lição cara: descrever geometria didática em texto não funciona, o modelo erra o
-    // arranjo. Só um croqui anexado resolve. E jamais escrever rótulo em CAIXA ALTA no
-    // prompt, porque o modelo desenha a palavra literalmente dentro da imagem.
+  if (opts.comCena) {
+    // A SEPARAÇÃO DE PAPÉIS É TUDO.
+    //
+    // Duas referências ensinam coisas diferentes. As primeiras ensinam a MÃO: a linha, o
+    // preenchimento chapado, a paleta, a anatomia esticada. A última ensina a CENA: a pose,
+    // o ângulo, o enquadramento, a composição. Descrever pose em texto não funciona (o
+    // modelo erra o arranjo). Uma imagem entrega isso de uma vez.
+    //
+    // Mas se você anexa uma FOTO REAL e não diz que ela serve só pra pose, o modelo puxa o
+    // realismo dela: aparece textura de pele, sombra suave, profundidade de campo. Sai um
+    // híbrido feio, nem desenho nem foto. Por isso o prompt GRITA quem manda em quê.
     p.push(
       '',
-      'GEOMETRY: the LAST attached image is a rough diagram of the intended layout. Follow its composition, positions and proportions faithfully, but redraw everything in the hand-drawn style of the other references. The diagram is a guide for placement, never for style.',
-      'The idea must be readable at a glance from shape and color alone, with zero written labels.',
+      'SCENE REFERENCE: the LAST attached image defines ONLY the pose, the camera angle, the framing and the composition. Copy from it the body position, the gesture, the placement of the elements and the point of view.',
+      'Ignore EVERYTHING else about that last image: its style, its lighting, its textures, its colors, its realism, its depth of field, its photographic quality. It is a pose sheet, not a style reference.',
+      'The drawing style comes ONLY from the first reference images: flat colors, hand-drawn ink line, the strict five-color palette. The result must look DRAWN, never photographic.',
+      'Zero written labels anywhere.',
     );
   }
   p.push('', `AVOID: ${NEGATIVOS}`);
