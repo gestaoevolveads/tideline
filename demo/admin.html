@@ -146,6 +146,54 @@
   #nrd-praias td{padding:7px 8px;border-top:1px solid var(--line)}
   .nrd-mini{height:7px;background:var(--line);border-radius:4px;overflow:hidden}
   .nrd-mini>span{display:block;height:100%;background:var(--ok)}
+
+  /* ── DE ONDE VEM A GENTE ─────────────────────────────────────────────────
+     O painel antigo era uma lista solta. Aqui a informação tem hierarquia: primeiro os
+     números que respondem "o quê" (quantos estados, qual manda, o quanto concentra),
+     depois a distribuição visual, e só então a lista longa pra quem quer cavar. Quem bate
+     o olho entende em 2 segundos; quem quer detalhe rola. */
+  .geo{background:#fff;border-radius:16px;padding:22px 24px;margin:16px 0;
+    box-shadow:0 1px 2px rgba(23,39,38,.05),0 10px 30px -20px rgba(23,39,38,.3)}
+  .geo-h{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:4px}
+  .geo-h h3{font-size:16px;font-weight:700;margin:0}
+  .geo-h .tot{font-size:13px;color:var(--muted);font-weight:600}
+  .geo-sub{font-size:12.5px;color:var(--muted);margin-bottom:18px;line-height:1.5}
+
+  .geo-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:20px}
+  .geo-kpi{background:var(--paper);border-radius:12px;padding:13px 15px}
+  .geo-kpi .v{font-size:24px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+  .geo-kpi .l{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+  .geo-kpi.destaque .v{color:var(--accent)}
+
+  .geo-cols{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  @media(max-width:900px){.geo-cols{grid-template-columns:1fr}}
+  .geo-col > .t{display:flex;align-items:center;justify-content:space-between;
+    font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
+    padding-bottom:8px;margin-bottom:10px;border-bottom:1px solid rgba(23,39,38,.1)}
+  .geo-busca{width:100%;border:1px solid rgba(23,39,38,.14);border-radius:9px;padding:7px 10px;
+    font:inherit;font-size:12.5px;margin-bottom:10px;color:var(--deep)}
+  .geo-busca:focus{outline:none;border-color:var(--mid)}
+
+  /* a lista longa rola dentro da própria caixa: cabe TUDO sem estourar a tela */
+  .geo-lista{max-height:300px;overflow-y:auto;padding-right:6px}
+  .geo-lista::-webkit-scrollbar{width:6px}
+  .geo-lista::-webkit-scrollbar-thumb{background:rgba(23,39,38,.18);border-radius:99px}
+
+  .geo-l{display:grid;grid-template-columns:26px 1fr 84px;align-items:center;gap:10px;
+    padding:7px 0;border-radius:8px}
+  .geo-l:hover{background:var(--paper)}
+  .geo-pos{font-size:11px;font-weight:700;color:var(--muted);text-align:right}
+  .geo-nome{min-width:0}
+  .geo-nome .n{font-size:13.5px;font-weight:600;color:var(--deep);
+    overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .geo-barra{height:6px;background:rgba(23,39,38,.07);border-radius:99px;overflow:hidden;margin-top:5px}
+  .geo-fill{height:100%;border-radius:99px;background:var(--accent);transition:width .4s ease-out}
+  .geo-fill.frio{background:var(--mid)}
+  .geo-num{text-align:right;font-size:13px;font-weight:700;color:var(--deep);
+    font-variant-numeric:tabular-nums}
+  .geo-num span{display:block;font-size:11px;font-weight:500;color:var(--muted)}
+  .geo-vazio{font-size:12.5px;color:var(--muted);padding:14px 0}
+
 </style>
 </head>
 <body>
@@ -221,10 +269,14 @@
             <button class="btn" onclick="loadDashboard()" style="margin:0">Aplicar</button>
           </span>
         </div>
-        <div class="geo-card" id="geo-card">
-  <h3>De onde vem a sua gente</h3>
-  <div class="sub">Visitantes únicos no período escolhido, por estado e por cidade. Quem carimba a origem é o Cloudflare, sem GPS e sem identificar ninguém.</div>
-  <div id="geo-box"><div class="soon">carregando…</div></div>
+        <div class="geo" id="geo-card">
+          <div class="geo-h">
+            <h3>De onde vem a sua gente</h3>
+            <span class="tot" id="geo-tot"></span>
+          </div>
+          <div class="geo-sub">Visitantes únicos no período. A origem é carimbada pelo Cloudflare, sem GPS e sem identificar ninguém.</div>
+          <div id="geo-box"><div class="geo-vazio">carregando…</div></div>
+        </div>
 </div>
 <div id="dash-erro" style="display:none;color:var(--accent);font-size:13px;margin-top:12px"></div>
         <div id="dash-kpis" class="kpis" style="margin-top:16px"></div>
@@ -995,45 +1047,104 @@ function dashPeriodo(){
    partiu o acesso e entrega de graça. Nada de GPS, nada de serviço pago, e nada que
    identifique uma pessoa: cidade é grossa demais pra isso.
    Contamos VISITANTES (sid único), não pageviews: 10 páginas de uma pessoa é 1. ────── */
+let GEO = { estados: [], cidades: [], total: 0 };
+
+/* Nomes por extenso: "RJ" diz pouco de relance, "Rio de Janeiro (RJ)" diz tudo. */
+const UF = {AC:'Acre',AL:'Alagoas',AP:'Amapá',AM:'Amazonas',BA:'Bahia',CE:'Ceará',DF:'Distrito Federal',
+  ES:'Espírito Santo',GO:'Goiás',MA:'Maranhão',MT:'Mato Grosso',MS:'Mato Grosso do Sul',MG:'Minas Gerais',
+  PA:'Pará',PB:'Paraíba',PR:'Paraná',PE:'Pernambuco',PI:'Piauí',RJ:'Rio de Janeiro',RN:'Rio Grande do Norte',
+  RS:'Rio Grande do Sul',RO:'Rondônia',RR:'Roraima',SC:'Santa Catarina',SP:'São Paulo',SE:'Sergipe',TO:'Tocantins'};
+
 function renderGeo(vis){
-  const porEstado = {}, porCidade = {};
-  const vistos = new Set();
+  // Contamos VISITANTES (sid único), não pageviews: dez páginas de uma pessoa é uma pessoa.
+  const porEstado = {}, porCidade = {}, vistos = new Set();
   for(const v of vis){
     if(!v.sid) continue;
-    const chaveE = (v.estado||'?') + '|' + v.sid;
-    if(!vistos.has(chaveE)){ vistos.add(chaveE); porEstado[v.estado||'Desconhecido'] = (porEstado[v.estado||'Desconhecido']||0)+1; }
-    const cidade = v.cidade ? (v.cidade + (v.estado ? ' · '+v.estado : '')) : null;
-    if(cidade){
-      const chaveC = cidade + '|' + v.sid;
-      if(!vistos.has(chaveC)){ vistos.add(chaveC); porCidade[cidade] = (porCidade[cidade]||0)+1; }
+    const uf = v.estado || null;
+    if(uf){
+      const k = 'E'+uf+'|'+v.sid;
+      if(!vistos.has(k)){ vistos.add(k); porEstado[uf] = (porEstado[uf]||0)+1; }
+    }
+    if(v.cidade){
+      const nome = v.cidade + (uf ? ' · '+uf : '');
+      const k = 'C'+nome+'|'+v.sid;
+      if(!vistos.has(k)){ vistos.add(k); porCidade[nome] = (porCidade[nome]||0)+1; }
     }
   }
   const ordena = o => Object.entries(o).sort((a,b)=>b[1]-a[1]);
-  const estados = ordena(porEstado), cidades = ordena(porCidade).slice(0,12);
-  const total = estados.reduce((s,[,n])=>s+n,0) || 1;
+  GEO.estados = ordena(porEstado);
+  GEO.cidades = ordena(porCidade);
+  GEO.total = GEO.estados.reduce((s,[,n])=>s+n,0);
 
-  const barra = (nome,n)=>{
-    const pct = Math.round(n/total*100);
-    return `<div class="geo-l">
-      <div class="geo-n">${nome}</div>
-      <div class="geo-b"><div class="geo-f" style="width:${Math.max(pct,2)}%"></div></div>
-      <div class="geo-v">${n} <span>${pct}%</span></div>
+  const semGeo = new Set(vis.filter(v=>v.sid && !v.estado).map(v=>v.sid)).size;
+
+  if(!GEO.total){
+    document.getElementById('geo-tot').textContent = '';
+    document.getElementById('geo-box').innerHTML =
+      `<div class="geo-vazio">Nenhuma visita com localização ainda. As antigas foram registradas antes de a gente carimbar a origem${semGeo?` (são ${semGeo})`:''}. As novas já chegam com estado e cidade.</div>`;
+    return;
+  }
+
+  // A LEITURA que interessa: o quanto o topo concentra. É isso que diz se você tem um
+  // público nacional ou um bolsão. Número solto não conta história; concentração conta.
+  const top3 = GEO.estados.slice(0,3).reduce((s,[,n])=>s+n,0);
+  const conc = Math.round(top3/GEO.total*100);
+  const [ufTop, nTop] = GEO.estados[0];
+
+  document.getElementById('geo-tot').textContent =
+    `${GEO.total} ${GEO.total===1?'visitante':'visitantes'} com origem` + (semGeo?` · ${semGeo} sem`:'');
+
+  document.getElementById('geo-box').innerHTML = `
+    <div class="geo-kpis">
+      <div class="geo-kpi destaque">
+        <div class="v">${UF[ufTop]||ufTop}</div>
+        <div class="l">Estado que mais traz · ${Math.round(nTop/GEO.total*100)}%</div>
+      </div>
+      <div class="geo-kpi"><div class="v">${GEO.estados.length}</div><div class="l">Estados alcançados</div></div>
+      <div class="geo-kpi"><div class="v">${GEO.cidades.length}</div><div class="l">Cidades alcançadas</div></div>
+      <div class="geo-kpi"><div class="v">${conc}%</div><div class="l">Concentrado no top 3</div></div>
+    </div>
+    <div class="geo-cols">
+      <div class="geo-col">
+        <div class="t"><span>Todos os estados</span><span>${GEO.estados.length}</span></div>
+        <div class="geo-lista" id="geo-estados"></div>
+      </div>
+      <div class="geo-col">
+        <div class="t"><span>Todas as cidades</span><span>${GEO.cidades.length}</span></div>
+        <input class="geo-busca" id="geo-q" placeholder="buscar cidade…" autocomplete="off">
+        <div class="geo-lista" id="geo-cidades"></div>
+      </div>
     </div>`;
-  };
 
-  const semDados = !estados.length || (estados.length===1 && estados[0][0]==='Desconhecido');
-  document.getElementById('geo-box').innerHTML = semDados
-    ? `<div class="soon">Ainda não há visitas com localização. Elas passam a ser carimbadas a partir do próximo deploy (o Cloudflare informa cidade e estado). Rode também o SQL <strong>visitas-geo.sql</strong>.</div>`
-    : `<div class="geo-cols">
-         <div>
-           <div class="geo-t">Por estado</div>
-           ${estados.slice(0,12).map(([n,v])=>barra(n,v)).join('')}
-         </div>
-         <div>
-           <div class="geo-t">Por cidade</div>
-           ${cidades.length ? cidades.map(([n,v])=>barra(n,v)).join('') : '<div class="soon">sem cidades ainda</div>'}
-         </div>
-       </div>`;
+  pintarLista('geo-estados', GEO.estados, n => UF[n] ? `${UF[n]} <span style="color:var(--muted);font-weight:500">(${n})</span>` : n);
+  pintarLista('geo-cidades', GEO.cidades);
+
+  const q = document.getElementById('geo-q');
+  if(q) q.oninput = () => {
+    const t = q.value.toLowerCase().trim();
+    pintarLista('geo-cidades', GEO.cidades.filter(([n])=>n.toLowerCase().includes(t)));
+  };
+}
+
+/* Uma linha = posição, nome, barra e número. A barra é relativa ao PRIMEIRO da lista, não
+   ao total: é assim que a diferença entre 2º e 3º lugar fica visível quando o 1º domina. */
+function pintarLista(id, itens, rotulo){
+  const el = document.getElementById(id);
+  if(!el) return;
+  if(!itens.length){ el.innerHTML = '<div class="geo-vazio">nada por aqui</div>'; return; }
+  const maior = itens[0][1] || 1;
+  el.innerHTML = itens.map(([nome, n], i) => {
+    const pct = Math.round(n/GEO.total*100);
+    const largura = Math.max(n/maior*100, 3);
+    return `<div class="geo-l">
+      <div class="geo-pos">${i+1}</div>
+      <div class="geo-nome">
+        <div class="n">${rotulo ? rotulo(nome) : nome}</div>
+        <div class="geo-barra"><div class="geo-fill ${i>2?'frio':''}" style="width:${largura}%"></div></div>
+      </div>
+      <div class="geo-num">${n}<span>${pct}%</span></div>
+    </div>`;
+  }).join('');
 }
 
 async function loadDashboard(){
