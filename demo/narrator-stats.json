@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-14T01:12:37.436Z",
+  "generated_at": "2026-07-14T01:34:35.419Z",
   "target": 7,
-  "condicoesUnicas": 1704,
-  "totalVariacoes": 3482,
+  "condicoesUnicas": 1712,
+  "totalVariacoes": 3574,
   "distribuicao": {
     "1": 0,
-    "2": 1688,
+    "2": 1687,
     "3": 0,
     "4": 1,
-    "5": 1,
-    "6+": 14
+    "5": 0,
+    "6+": 24
   },
   "previsao": {
-    "total": 1389,
-    "cobertas": 328,
-    "noAlvo": 11
+    "total": 1388,
+    "cobertas": 336,
+    "noAlvo": 20
   },
   "praias": [
     {
@@ -557,13 +557,6 @@
       "noAlvo": 3
     },
     {
-      "nome": "Saquarema",
-      "uf": "RJ",
-      "condicoes": 20,
-      "cobertas": 10,
-      "noAlvo": 8
-    },
-    {
       "nome": "Caiobá",
       "uf": "PR",
       "condicoes": 10,
@@ -580,7 +573,7 @@
     {
       "nome": "Mundaka",
       "uf": "ESP",
-      "condicoes": 16,
+      "condicoes": 15,
       "cobertas": 8,
       "noAlvo": 0
     },
@@ -625,6 +618,13 @@
       "condicoes": 10,
       "cobertas": 7,
       "noAlvo": 0
+    },
+    {
+      "nome": "Saquarema",
+      "uf": "RJ",
+      "condicoes": 20,
+      "cobertas": 18,
+      "noAlvo": 17
     }
   ]
 }
