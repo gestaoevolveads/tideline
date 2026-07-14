@@ -596,12 +596,47 @@
           <div style="font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:8px">Contas (mais recentes primeiro)</div>
           <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13px">
             <thead><tr style="text-align:left;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.04em">
-              <th style="padding:6px 8px">Conta</th><th style="padding:6px 8px">Status</th><th style="padding:6px 8px">Desde</th><th style="padding:6px 8px">Expira</th>
+              <th style="padding:6px 8px">Conta</th><th style="padding:6px 8px">Status</th><th style="padding:6px 8px">Desde</th><th style="padding:6px 8px">Expira</th><th style="padding:6px 8px">Ações</th>
             </tr></thead>
             <tbody id="assin-rows"></tbody>
           </table></div>
         </div>
         <div id="assin-erro" style="display:none;padding:20px 0;color:var(--muted);line-height:1.6"></div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <h2 style="margin:0 0 4px">🎁 Premium manual e usuários de teste</h2>
+        <div class="sub">Dê premium (vitalício ou por X dias) a qualquer conta, ou crie uma conta de teste já premium. Sem cobrança.</div>
+
+        <div style="margin-top:16px;padding:14px;border:1px solid var(--line);border-radius:12px">
+          <div style="font-weight:800;margin-bottom:10px">Transformar um cadastro em premium</div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end">
+            <div class="field" style="flex:1;min-width:200px"><label>Email da conta</label><input id="prem-email" type="email" placeholder="pessoa@email.com"></div>
+            <div class="field" style="min-width:160px"><label>Duração</label>
+              <select id="prem-dur">
+                <option value="vitalicio">Vitalício (pra sempre)</option>
+                <option value="7">7 dias</option>
+                <option value="15">15 dias</option>
+                <option value="30">30 dias</option>
+                <option value="90">90 dias</option>
+              </select>
+            </div>
+            <button class="btn primary" onclick="darPremium()" style="margin:0">Dar premium</button>
+            <button class="btn" onclick="removerPremium()" style="margin:0">Remover premium</button>
+          </div>
+          <div id="prem-msg" style="font-size:12.5px;margin-top:10px"></div>
+        </div>
+
+        <div style="margin-top:14px;padding:14px;border:1px solid var(--line);border-radius:12px">
+          <div style="font-weight:800;margin-bottom:10px">Criar usuário de teste (premium vitalício)</div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end">
+            <div class="field" style="flex:1;min-width:180px"><label>Email</label><input id="teste-email" type="email" placeholder="teste1@tideline.com.br"></div>
+            <div class="field" style="min-width:140px"><label>Senha</label><input id="teste-senha" placeholder="senha123"></div>
+            <button class="btn primary" onclick="criarTeste()" style="margin:0">Criar teste</button>
+          </div>
+          <div style="font-size:11px;color:var(--muted);margin-top:8px">Entra marcado como <strong>teste</strong> (não conta receita) e já loga premium. Dá pra excluir na lista acima (botão "excluir").</div>
+          <div id="teste-msg" style="font-size:12.5px;margin-top:8px"></div>
+        </div>
       </div>
     </div>
 
@@ -893,14 +928,15 @@ async function loadAssinantes(){
                 : cls==='teste' ? ' <span class="pill" style="background:rgba(120,120,120,.14);color:var(--muted)">teste</span>' : '';
       const quem = esc(u.nome||'') ? (esc(u.nome)+' · '+esc(u.email||'')) : esc(u.email||'—');
       const dim = cls==='real' ? '' : 'opacity:.55;';
-      return '<tr style="border-top:1px solid var(--line);'+dim+'"><td style="padding:8px">'+quem+tag+'</td><td style="padding:8px">'+badge+'</td><td style="padding:8px;color:var(--muted)">'+fmtD(u.created_at)+'</td><td style="padding:8px;color:var(--muted)">'+expira+'</td></tr>';
+      const acoes='<button class="btn" style="padding:3px 9px;margin:0;font-size:11px" onclick="usarEmailPremium(\''+jsstr(u.email)+'\')">premium</button>'+(cls==='teste'?' <button class="btn" style="padding:3px 9px;margin:0;font-size:11px;color:var(--accent)" onclick="excluirConta(\''+jsstr(u.email)+'\')">excluir</button>':'');
+      return '<tr style="border-top:1px solid var(--line);'+dim+'"><td style="padding:8px">'+quem+tag+'</td><td style="padding:8px">'+badge+'</td><td style="padding:8px;color:var(--muted)">'+fmtD(u.created_at)+'</td><td style="padding:8px;color:var(--muted)">'+expira+'</td><td style="padding:8px">'+acoes+'</td></tr>';
     }).join('');
     document.getElementById('ka-total').textContent=real;
     document.getElementById('ka-trial').textContent=trial;
     document.getElementById('ka-prem').textContent=prem;
     document.getElementById('ka-free').textContent=free;
     document.getElementById('ka-note').textContent='Números contam só usuários reais. Não entram: '+conv+' convidado(s) + '+teste+' teste(s) — aparecem na lista abaixo, marcados.';
-    document.getElementById('assin-rows').innerHTML=rows||'<tr><td style="padding:12px;color:var(--muted)" colspan="4">Nenhuma conta ainda. Aparecem aqui assim que alguém se cadastrar.</td></tr>';
+    document.getElementById('assin-rows').innerHTML=rows||'<tr><td style="padding:12px;color:var(--muted)" colspan="5">Nenhuma conta ainda. Aparecem aqui assim que alguém se cadastrar.</td></tr>';
     load.style.display='none'; body.style.display='block';
   }catch(e){
     load.style.display='none'; erro.style.display='block';
@@ -916,6 +952,53 @@ function classAcc(email,nome){
   if(e.endsWith('@beta.tideline.com.br')) return 'convidado';
   return 'real';
 }
+
+/* ── PREMIUM MANUAL / USUÁRIOS DE TESTE (chama /api/admin-premium) ───── */
+function jsstr(s){ return String(s||'').replace(/\\/g,'\\\\').replace(/'/g,"\\'"); }
+async function apiAdminPremium(payload){
+  const c = window.TLData && await window.TLData.client();
+  if(!c) throw new Error('Login do painel não está ativo.');
+  const { data:sess } = await c.auth.getSession();
+  const token = sess && sess.session && sess.session.access_token;
+  if(!token) throw new Error('Sem sessão de admin ativa.');
+  const r = await fetch('/api/admin-premium',{ method:'POST', headers:{ 'content-type':'application/json', authorization:'Bearer '+token }, body: JSON.stringify(payload) });
+  const out = await r.json().catch(()=>({}));
+  if(!r.ok) throw new Error(out.error || ('erro '+r.status));
+  return out;
+}
+async function darPremium(){
+  const email=(document.getElementById('prem-email').value||'').trim();
+  const dur=document.getElementById('prem-dur').value, msg=document.getElementById('prem-msg');
+  if(!email){ msg.style.color='var(--accent)'; msg.textContent='Digite o email da conta.'; return; }
+  msg.style.color='var(--muted)'; msg.textContent='Aplicando…';
+  try{
+    const payload = dur==='vitalicio' ? { action:'grant', email, vitalicio:true } : { action:'grant', email, dias:Number(dur) };
+    await apiAdminPremium(payload);
+    msg.style.color='var(--ok)'; msg.textContent='✓ '+email+' agora é premium '+(dur==='vitalicio'?'vitalício':(dur+' dias'))+'.';
+    loadAssinantes();
+  }catch(e){ msg.style.color='var(--accent)'; msg.textContent='✕ '+(e.message||'erro'); }
+}
+async function removerPremium(){
+  const email=(document.getElementById('prem-email').value||'').trim(), msg=document.getElementById('prem-msg');
+  if(!email){ msg.style.color='var(--accent)'; msg.textContent='Digite o email da conta.'; return; }
+  if(!confirm('Remover o premium de '+email+'?')) return;
+  msg.style.color='var(--muted)'; msg.textContent='Removendo…';
+  try{ await apiAdminPremium({ action:'revoke', email }); msg.style.color='var(--ok)'; msg.textContent='✓ Premium removido de '+email+'.'; loadAssinantes(); }
+  catch(e){ msg.style.color='var(--accent)'; msg.textContent='✕ '+(e.message||'erro'); }
+}
+async function criarTeste(){
+  const email=(document.getElementById('teste-email').value||'').trim(), senha=(document.getElementById('teste-senha').value||'').trim(), msg=document.getElementById('teste-msg');
+  if(!email||!senha){ msg.style.color='var(--accent)'; msg.textContent='Preencha email e senha.'; return; }
+  msg.style.color='var(--muted)'; msg.textContent='Criando…';
+  try{ await apiAdminPremium({ action:'create', email, senha, nome:'Teste', vitalicio:true }); msg.style.color='var(--ok)'; msg.textContent='✓ Conta de teste criada e já premium: '+email; document.getElementById('teste-email').value=''; document.getElementById('teste-senha').value=''; loadAssinantes(); }
+  catch(e){ msg.style.color='var(--accent)'; msg.textContent='✕ '+(e.message||'erro'); }
+}
+async function excluirConta(email){
+  if(!confirm('Excluir a conta '+email+' de vez? (Auth + dados, sem volta)')) return;
+  try{ await apiAdminPremium({ action:'delete', email }); toast('Conta excluída'); loadAssinantes(); }
+  catch(e){ alert('Erro ao excluir: '+(e.message||'erro')); }
+}
+function usarEmailPremium(email){ const i=document.getElementById('prem-email'); if(!i) return; i.value=email; i.focus(); i.scrollIntoView({behavior:'smooth',block:'center'}); }
 
 /* ── AQUISIÇÃO & RECEITA ─────────────────────────────── */
 let aqData=null, aqSpend={};
