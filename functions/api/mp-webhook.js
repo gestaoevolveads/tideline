@@ -15,6 +15,21 @@ export async function onRequestPost(context) {
     const id = (body.data && body.data.id) || body.id || url.searchParams.get('data.id') || url.searchParams.get('id');
     if (!id) return ok();
 
+    // ── a API nova (Orders) avisa com topic 'order' ──────────────────────────
+    // O pedido da loja não vem mais dentro da metadata do Mercado Pago: ele já está no nosso
+    // banco, criado antes da cobrança. Aqui a gente só confirma que o dinheiro entrou e
+    // manda pra produção. Se o Mercado Pago trocar de API de novo, isto continua de pé.
+    if (type.includes('order')) {
+      const r = await fetch(`https://api.mercadopago.com/v1/orders/${encodeURIComponent(id)}`, {
+        headers: { authorization: `Bearer ${env.MP_ACCESS_TOKEN}` },
+      });
+      if (!r.ok) return ok();
+      const o = await r.json();
+      const pago = o.status === 'processed' && String(o.status_detail || '').includes('accredited');
+      if (pago && o.external_reference) await produzir(env, o.external_reference, String(o.id));
+      return ok();
+    }
+
     if (type.includes('payment')) {
       // pagamento (anual único OU cobrança da assinatura mensal)
       const pay = await mpGet(env, `/v1/payments/${id}`);
@@ -77,7 +92,71 @@ export async function onRequestPost(context) {
 
 export async function onRequestGet() { return ok(); }
 
-// ── pedido da loja ───────────────────────────────────────────────────────────
+// ── manda a camisa pra produção ──────────────────────────────────────────────
+// O pedido já existe no banco desde antes da cobrança. Aqui o dinheiro entrou, então:
+// manda pra Montink, conta a venda pro Meta, e marca o cupom como usado.
+//
+// Antes de tudo, a trava de repetição: o Mercado Pago reenvia o mesmo aviso mais de uma vez.
+// Sem ela, a mesma camisa seria produzida duas vezes, e você pagaria a produção duas vezes.
+async function produzir(env, ref, orderId) {
+  const linhas = await sbGet(env, `pedidos?ref=eq.${encodeURIComponent(ref)}&select=*`);
+  const p = linhas && linhas[0];
+  if (!p) return;                                   // pedido que não é nosso
+  if (p.montink_status === 'ok') return;            // já produzido: não faz de novo
+
+  const payload = (p.payload && p.payload.montink) || null;
+  if (!payload) {
+    await sbPatch(env, `pedidos?ref=eq.${encodeURIComponent(ref)}`, {
+      montink_status: 'erro', montink_resposta: { erro: 'pedido sem payload da Montink' },
+    });
+    return;
+  }
+
+  let resposta = null, status = 'erro';
+  try {
+    const r = await fetch('https://api.montink.com/create_order', {
+      method: 'POST',
+      headers: { Authorizationtoken: env.MONTINK_TOKEN, 'content-type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
+    const txt = await r.text();
+    try { resposta = JSON.parse(txt); } catch { resposta = { bruto: txt.slice(0, 300) }; }
+    if (r.ok && resposta && resposta.success !== false) status = 'ok';
+  } catch (e) {
+    resposta = { erro: String(e && e.message) };
+  }
+
+  await sbPatch(env, `pedidos?ref=eq.${encodeURIComponent(ref)}`, {
+    mp_order: orderId,
+    montink_status: status,
+    montink_pedido: (resposta && (resposta.order_id || resposta.id || resposta.pedido)) || null,
+    montink_resposta: resposta,
+  });
+
+  // A venda contada pelo servidor. Vai mesmo se a Montink recusar: o dinheiro entrou, a
+  // venda existe, e o Meta precisa saber. O problema com a Montink é seu, não do anúncio.
+  try {
+    const end = p.endereco || {};
+    await purchaseCapi(env, {
+      ref: p.ref, valor: Number(p.total) || 0,
+      email: p.cliente_email, telefone: p.cliente_fone, nome: p.cliente_nome,
+      cidade: end.city, uf: end.state, cep: end.zipcode,
+      produtoId: p.produto_id, produtoNome: p.produto_nome, cupom: p.cupom || '',
+      fbp: (p.payload && p.payload.fbp) || '', fbc: (p.payload && p.payload.fbc) || '',
+    });
+  } catch (e) { /* medição nunca pode derrubar a venda */ }
+
+  // O cupom só conta uso depois que o pagamento entra. Contar no clique deixaria o cupom
+  // "gasto" por gente que nem chegou a pagar.
+  if (status === 'ok' && p.cupom) {
+    const c = await sbGet(env, `cupons?codigo=eq.${encodeURIComponent(p.cupom)}&select=usos`);
+    if (c && c.length) {
+      await sbPatch(env, `cupons?codigo=eq.${encodeURIComponent(p.cupom)}`, { usos: (c[0].usos || 0) + 1 });
+    }
+  }
+}
+
+// ── pedido da loja (caminho antigo, da API /v1/payments) ─────────────────────
 // Antes, um erro aqui era engolido em silêncio: o cliente pagava, a Montink nunca recebia,
 // e não sobrava registro de nada. Ninguém ficava sabendo, nem ele, nem você.
 //

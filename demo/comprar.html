@@ -491,10 +491,6 @@ $('pagar').onclick = async () => {
 
     if (r.erro) throw new Error(r.erro);
 
-    // Enquanto a conta do Mercado Pago não libera a cobrança direta, o servidor devolve o
-    // caminho antigo. O cliente não fica sabendo de nada disso: ele só quer pagar.
-    if (r.status === 'redirecionar') { guardarPendente(r); location.href = r.url; return; }
-
     if (r.status === 'pix') return mostrarPix(r);
     if (r.status === 'approved') return concluir(r);
     if (r.status === 'in_process') return concluir(r, true);
