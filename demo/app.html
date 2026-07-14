@@ -360,15 +360,6 @@
     .cm-cru{position:absolute;inset:0;background:#fff;display:flex;align-items:center;justify-content:center}
     .cm-cru img{width:100%;height:100%;object-fit:contain;padding:3%}
 
-    /* as duas cores, uma ao lado da outra */
-    .cm-lado{display:flex;height:100%;background:radial-gradient(120% 85% at 50% 22%, #fff 0%, var(--paper,#F2EFE9) 78%)}
-    .cm-meia{flex:1;position:relative;display:flex;align-items:center;justify-content:center}
-    .cm-meia + .cm-meia{border-left:1px solid rgba(23,39,38,.07)}
-    .cm-meia img{width:100%;height:100%;object-fit:contain;padding:8% 4%;
-      filter:drop-shadow(0 16px 20px rgba(23,39,38,.14))}
-    .cm-meia-n{position:absolute;bottom:10px;font-size:10.5px;font-weight:700;color:var(--muted);
-      letter-spacing:.05em;text-transform:uppercase}
-
     .cm-zoom-tag{position:absolute;left:14px;bottom:12px;background:rgba(23,39,38,.82);color:#fff;
       font-size:10.5px;font-weight:700;letter-spacing:.04em;padding:5px 10px;border-radius:999px}
     .cm-pts{position:absolute;left:0;right:0;bottom:10px;display:flex;gap:5px;justify-content:center;z-index:2}
@@ -2470,11 +2461,11 @@ function arteDe(p, cor){
 }
 
 /* A galeria da ficha. Três jeitos de olhar a MESMA peça, e nenhum deles é invenção:
-     1. a camisa inteira, limpa;
-     2. a estampa ampliada, que é a pergunta que todo mundo faz e que a foto do cabide
-        inteiro nunca responde ("como é o desenho de perto?");
-     3. o tecido ampliado no ombro, onde se vê a trama do algodão e a costura caída.
-   Os itens 2 e 3 são RECORTES do mesmo arquivo, ampliados. Nada gerado.
+     1. a peça no palco da marca (papel, sombra, volume);
+     2. a peça CRUA, exatamente como ela sai da Montink: fundo branco, sem sombra, sem
+        tratamento nenhum. É a única imagem sem escolha nossa no meio;
+     3. a estampa ampliada, que é a pergunta que todo mundo faz e que a foto do cabide
+        inteiro nunca responde ("como é o desenho de perto?"). É recorte do mesmo arquivo.
 
    Se a Montink passar a ter mais mockups desse produto (de costas, por exemplo), eles
    entram aqui sozinhos, sem eu mexer em nada. */
@@ -2483,7 +2474,7 @@ function extras(p, cor){
   const outras = (p.imagens || []).filter(u => u !== img && !Object.values(p.imgPorCor || {}).includes(u));
   return { img, outras };
 }
-function nSlides(p){ return 3 + (p.cores.length > 1 ? 1 : 0) + extras(p, CM.cor).outras.length; }
+function nSlides(p){ return 3 + extras(p, CM.cor).outras.length; }
 
 function slidesDe(p, cor){
   const { img, outras } = extras(p, cor);
@@ -2498,19 +2489,6 @@ function slidesDe(p, cor){
        <div class="cm-zoom" style="background-image:url('${img}');background-position:50% 41%;background-size:300%"></div>
        <span class="cm-zoom-tag">A ESTAMPA DE PERTO</span>
      </div>`,
-    // As duas cores lado a lado. Branco e Off White são parecidos, e ninguém escolhe bem
-    // olhando um de cada vez. (Tentei um slide com o zoom no tecido: o mockup é uma camisa
-    // branca em fundo branco, então ampliar o ombro dava branco. Slide vazio é pior que
-    // slide nenhum.)
-    (p.cores.length > 1 ? `<div class="cm-slide">
-       <div class="cm-lado">
-         ${p.cores.map(c => `<div class="cm-meia">
-           <img src="${p.imgPorCor[c]}" alt="${c}">
-           <span class="cm-meia-n">${c}</span>
-         </div>`).join('')}
-       </div>
-       <span class="cm-zoom-tag">AS DUAS CORES, LADO A LADO</span>
-     </div>` : ''),
     ...outras.map(u => `<div class="cm-slide"><div class="cm-arte"><img class="prod" src="${u}" alt=""></div></div>`),
   ].join('');
 }
