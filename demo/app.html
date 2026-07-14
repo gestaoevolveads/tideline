@@ -293,17 +293,16 @@
     .prod-buy{font-size:12px;font-weight:700;color:var(--white);background:var(--accent);border-radius:8px;padding:7px 12px;text-align:center;letter-spacing:-.01em}
 
     /* ── LOJA TIDELINE ───────────────────────────────────────────────────────
-       A arte, e por que ela é assim.
-
-       Aqui não entra foto de gente que não existe. Uma foto gerada que IMITA a realidade
+       Aqui não entra foto de gente que não existe. Uma imagem gerada que IMITA a realidade
        promete uma cena que a marca não viveu, e o dia em que alguém percebe é o dia em que
-       tudo o mais que a gente diz vira suspeito. O app inteiro já fala por desenho: o sol,
-       o mascote, o traço. A loja fala a mesma língua.
+       tudo o mais que a gente diz vira suspeito.
 
-       Então o produto aparece como ele é (o mockup real, o mesmo arquivo que a gráfica
-       imprime) sobre um fundo DESENHADO: sol, ondas, papel. O truque que faz isso funcionar
-       é o mix-blend-mode:multiply. O fundo do mockup é branco, e branco em multiply some.
-       A camisa fica recortada sozinha, sem máscara, sem Photoshop, sem mentira. */
+       O que se vê é o produto real: o mesmo arquivo que a gráfica imprime. A galeria mostra
+       ele de três jeitos, e nenhum deles é invenção:
+         a peça inteira, limpa;
+         a estampa ampliada (recorte do mesmo arquivo, o desenho de perto);
+         o tecido ampliado (o algodão, a trama, o caimento do ombro).
+       Quando você gerar novos mockups na Montink, eles entram aqui sozinhos. */
     .cm-sec{margin:0 24px 22px}
     .cm-sec-h{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:12px}
     .cm-sec-h .t{font-size:16px;font-weight:800;letter-spacing:-.01em}
@@ -315,38 +314,12 @@
       cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .16s}
     .cm-card:active{transform:scale(.98)}
 
-    /* o palco do produto */
-    .cm-arte{position:relative;width:100%;aspect-ratio:1;overflow:hidden;background:var(--paper,#F2EFE9)}
-    .cm-arte .sol{position:absolute;left:50%;top:44%;width:78%;aspect-ratio:1;transform:translate(-50%,-50%);
-      border-radius:50%;background:radial-gradient(circle at 50% 50%, #F9583122 0%, #F9583111 55%, transparent 70%)}
-    .cm-arte .raios{position:absolute;inset:-20%;background:
-      repeating-conic-gradient(from 0deg at 50% 46%, #F9583114 0deg 3deg, transparent 3deg 11deg);
-      opacity:.55;animation:cmGira 90s linear infinite}
-    .cm-arte .agua{position:absolute;left:0;right:0;bottom:0;height:36%;
-      background:linear-gradient(180deg, transparent, #D3E2DE 62%)}
-    .cm-arte .ondas{position:absolute;left:-6%;right:-6%;bottom:5%;height:22%;opacity:.45;
-      color:var(--mid)}
-    /* A camisa é BRANCA, e multiply come o branco: recortada, ela virava fantasma. Blend
-       nenhum resolve isso, porque branco sempre some no multiply. Então o produto não é
-       recortado: ele fica numa folha branca, apoiada em cima do fundo ilustrado, como uma
-       foto de catálogo pousada sobre um cartaz. O branco do mockup vira o papel, e a camisa
-       aparece inteira, com contraste. */
-    .cm-arte .folha{position:absolute;left:11%;right:11%;top:8%;bottom:8%;border-radius:10px;
-      background:var(--white);box-shadow:0 2px 4px rgba(23,39,38,.10),0 22px 40px -26px rgba(23,39,38,.55);
-      transform:rotate(-1.2deg);overflow:hidden}
-    .cm-card:nth-child(even) .cm-arte .folha{transform:rotate(1.4deg)}
-    .cm-arte .prod{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
-    /* o grão. É o mesmo grão do resto da marca: impede que o fundo fique com cara de vetor. */
-    .cm-arte::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.35;
-      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
-    @keyframes cmGira{to{transform:rotate(360deg)}}
-    @media (prefers-reduced-motion:reduce){.cm-arte .raios{animation:none}}
-
-    /* a variação: o segundo produto não pode ser a cópia do primeiro */
-    .cm-card:nth-child(even) .cm-arte{background:#E8F0ED}
-    .cm-card:nth-child(even) .cm-arte .sol{background:radial-gradient(circle at 50% 50%, rgba(36,63,61,.10) 0%, transparent 68%)}
-    .cm-card:nth-child(even) .cm-arte .raios{background:
-      repeating-conic-gradient(from 0deg at 50% 46%, rgba(36,63,61,.07) 0deg 2deg, transparent 2deg 9deg)}
+    /* O palco do produto. Sem sol, sem raios, sem onda: eles competiam com a camisa.
+       O que sobra é o papel da marca, uma sombra que dá volume, e a peça no centro. */
+    .cm-arte{position:relative;width:100%;aspect-ratio:1;overflow:hidden;
+      background:radial-gradient(120% 85% at 50% 22%, #fff 0%, var(--paper,#F2EFE9) 78%)}
+    .cm-arte .prod{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;
+      padding:5%;filter:drop-shadow(0 22px 26px rgba(23,39,38,.16))}
 
     .cm-card .in{padding:10px 12px 12px}
     .cm-card .nm{font-size:12.5px;font-weight:700;line-height:1.3;color:var(--deep)}
@@ -383,6 +356,15 @@
     .cm-slide{flex:0 0 100%;height:100%;scroll-snap-align:center;position:relative}
     .cm-zoom{position:absolute;inset:0;background-repeat:no-repeat;background-size:300%;
       background-position:50% 41%;background-color:var(--white)}
+    /* as duas cores, uma ao lado da outra */
+    .cm-lado{display:flex;height:100%;background:radial-gradient(120% 85% at 50% 22%, #fff 0%, var(--paper,#F2EFE9) 78%)}
+    .cm-meia{flex:1;position:relative;display:flex;align-items:center;justify-content:center}
+    .cm-meia + .cm-meia{border-left:1px solid rgba(23,39,38,.07)}
+    .cm-meia img{width:100%;height:100%;object-fit:contain;padding:8% 4%;
+      filter:drop-shadow(0 16px 20px rgba(23,39,38,.14))}
+    .cm-meia-n{position:absolute;bottom:10px;font-size:10.5px;font-weight:700;color:var(--muted);
+      letter-spacing:.05em;text-transform:uppercase}
+
     .cm-zoom-tag{position:absolute;left:14px;bottom:12px;background:rgba(23,39,38,.82);color:#fff;
       font-size:10.5px;font-weight:700;letter-spacing:.04em;padding:5px 10px;border-radius:999px}
     .cm-pts{position:absolute;left:0;right:0;bottom:10px;display:flex;gap:5px;justify-content:center;z-index:2}
@@ -1155,7 +1137,7 @@
     <div class="cm-sec" id="cm-sec" style="display:none">
       <div class="cm-sec-h">
         <span class="t">Camisas</span>
-        <span class="s">impressas sob demanda</span>
+        <span class="s">direto com a gente</span>
       </div>
       <div class="cm-grid" id="cm-grid"></div>
     </div>
@@ -2470,20 +2452,58 @@ async function carregarCamisas(){
    isolada e limpa. Produto novo que ainda não tem foto cai no mockup e a loja não quebra. */
 /* A arte do produto. Nenhuma foto de gente aqui: o produto real, sobre um fundo desenhado.
    O mix-blend-mode:multiply do CSS come o branco do mockup e recorta a camisa sozinho. */
+/* O produto, e só ele.
+ *
+ * A versão anterior tinha sol, raios e ondas atrás da camisa. Ficou enfeite: quem abre uma
+ * camisa quer ver A CAMISA, e o fundo desenhado disputava atenção com ela. Aqui o fundo cala
+ * pra roupa falar. Sobra o papel da marca, uma sombra que dá volume, e mais nada. */
 function arteDe(p, cor){
   const img = (p.imgPorCor && p.imgPorCor[cor]) || p.imagens[0];
   return `
     <div class="cm-arte">
-      <div class="raios"></div>
-      <div class="sol"></div>
-      <div class="agua"></div>
-      <svg class="ondas" viewBox="0 0 400 90" fill="none" stroke="currentColor" stroke-width="2.4"
-           stroke-linecap="round" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M0 30 q25 -14 50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0"/>
-        <path d="M0 58 q25 -14 50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0" opacity=".6"/>
-      </svg>
-      <div class="folha"><img class="prod" src="${img}" alt="${p.nome}" loading="lazy"></div>
+      <img class="prod" src="${img}" alt="${p.nome}" loading="lazy">
     </div>`;
+}
+
+/* A galeria da ficha. Três jeitos de olhar a MESMA peça, e nenhum deles é invenção:
+     1. a camisa inteira, limpa;
+     2. a estampa ampliada, que é a pergunta que todo mundo faz e que a foto do cabide
+        inteiro nunca responde ("como é o desenho de perto?");
+     3. o tecido ampliado no ombro, onde se vê a trama do algodão e a costura caída.
+   Os itens 2 e 3 são RECORTES do mesmo arquivo, ampliados. Nada gerado.
+
+   Se a Montink passar a ter mais mockups desse produto (de costas, por exemplo), eles
+   entram aqui sozinhos, sem eu mexer em nada. */
+function extras(p, cor){
+  const img = (p.imgPorCor && p.imgPorCor[cor]) || p.imagens[0];
+  const outras = (p.imagens || []).filter(u => u !== img && !Object.values(p.imgPorCor || {}).includes(u));
+  return { img, outras };
+}
+function nSlides(p){ return 2 + (p.cores.length > 1 ? 1 : 0) + extras(p, CM.cor).outras.length; }
+
+function slidesDe(p, cor){
+  const { img, outras } = extras(p, cor);
+  return [
+    `<div class="cm-slide">${arteDe(p, cor)}</div>`,
+    `<div class="cm-slide">
+       <div class="cm-zoom" style="background-image:url('${img}');background-position:50% 41%;background-size:300%"></div>
+       <span class="cm-zoom-tag">A ESTAMPA DE PERTO</span>
+     </div>`,
+    // As duas cores lado a lado. Branco e Off White são parecidos, e ninguém escolhe bem
+    // olhando um de cada vez. (Tentei um slide com o zoom no tecido: o mockup é uma camisa
+    // branca em fundo branco, então ampliar o ombro dava branco. Slide vazio é pior que
+    // slide nenhum.)
+    (p.cores.length > 1 ? `<div class="cm-slide">
+       <div class="cm-lado">
+         ${p.cores.map(c => `<div class="cm-meia">
+           <img src="${p.imgPorCor[c]}" alt="${c}">
+           <span class="cm-meia-n">${c}</span>
+         </div>`).join('')}
+       </div>
+       <span class="cm-zoom-tag">AS DUAS CORES, LADO A LADO</span>
+     </div>` : ''),
+    ...outras.map(u => `<div class="cm-slide"><div class="cm-arte"><img class="prod" src="${u}" alt=""></div></div>`),
+  ].join('');
 }
 
 function renderCamisas(){
@@ -2547,13 +2567,10 @@ function pintarFicha(){
     <div class="cm-rola">
       <div class="cm-hero">
         <div class="cm-slides" onscroll="marcarSlide()">
-          <div class="cm-slide">${arteDe(p, CM.cor)}</div>
-          <div class="cm-slide">
-            <div class="cm-zoom" style="background-image:url('${p.imgPorCor[CM.cor] || p.imagens[0]}')"></div>
-            <span class="cm-zoom-tag">A ESTAMPA DE PERTO</span>
-          </div>
+          ${slidesDe(p, CM.cor)}
         </div>
-        <div class="cm-pts"><div class="cm-pt on"></div><div class="cm-pt"></div></div>
+        <div class="cm-pts">${slidesDe(p, CM.cor).split('cm-slide').length - 1 > 0
+          ? Array.from({length: nSlides(p)}, (_, i) => `<div class="cm-pt ${i===0?'on':''}"></div>`).join('') : ''}</div>
       </div>
       <div class="cm-body">
         <div class="cm-nome">${p.nome}</div>
@@ -2634,8 +2651,6 @@ function pintarFicha(){
             O código de rastreio chega no seu e-mail assim que a peça sai pra transportadora.</span></div>
         </div>
 
-        <div class="cm-nota">A gente só imprime depois que você compra. Por isso não sobra pilha
-        de camisa encalhada, e por isso a sua sai nova, feita naquela semana.</div>
       </div>
     </div>
 

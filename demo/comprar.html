@@ -26,7 +26,10 @@
     border-bottom:1px solid rgba(23,39,38,.09);position:sticky;top:0;z-index:5}
   .wm{font-size:18px;letter-spacing:-.02em;margin-right:auto}
   .wm .t{font-weight:300}.wm .l{font-weight:700}.wm .d{color:var(--accent)}
-  header a{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none}
+  .voltar{display:flex;align-items:center;justify-content:center;width:38px;height:38px;margin-left:-8px;
+    border-radius:50%;color:var(--deep);text-decoration:none;flex:0 0 38px}
+  .voltar:active{background:var(--surface2)}
+  .voltar svg{width:20px;height:20px}
   header .seg{display:flex;align-items:center;gap:5px;font-size:11px;font-weight:700;color:var(--pagar)}
   header .seg svg{width:14px;height:14px}
 
@@ -143,6 +146,10 @@
 <body>
 
 <header>
+  <a class="voltar" href="./app.html" aria-label="Voltar pra loja">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+         stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+  </a>
   <span class="wm"><span class="t">tide</span><span class="l">line</span><span class="d">.</span></span>
   <span class="seg">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
@@ -187,6 +194,8 @@
   </div>
 
   <h2><span class="n">3</span> Como pagar</h2>
+  <div class="dica" style="margin:-4px 0 10px">Escolha como prefere. As duas formas funcionam aqui
+    mesmo, sem sair do app.</div>
   <div class="metodos">
     <button class="metodo on" id="m-pix" onclick="escolherMetodo('pix')">
       <div class="t">
@@ -194,7 +203,7 @@
           <path d="M12 3l9 9-9 9-9-9z"/>
         </svg>Pix
       </div>
-      <div class="d">Aprovação na hora, sem taxa</div>
+      <div class="d">Cai na hora. Nada de esperar.</div>
     </button>
     <button class="metodo" id="m-cartao" onclick="escolherMetodo('cartao')">
       <div class="t">
@@ -202,7 +211,7 @@
           <rect x="2" y="5" width="20" height="14" rx="2.5"/><path d="M2 10h20"/>
         </svg>Cartão
       </div>
-      <div class="d">Em até 12x sem juros</div>
+      <div class="d">Crédito, em até 12x sem juros</div>
     </button>
   </div>
 
