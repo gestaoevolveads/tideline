@@ -141,9 +141,12 @@ function conditionKey(beach, b) {
 }
 
 // Acha a narração pra um bloco. Tenta a condição EXATA; se não tiver no banco,
-// cai na condição MAIS PRÓXIMA da mesma praia (mesmo tamanho e mesmo tipo de vento
-// pesam mais, porque é o que muda o texto). Assim o app nunca fica com buraco vazio
-// numa praia que já tem alguma narração. Os números exatos o app mostra por conta.
+// cai numa condição vizinha da MESMA praia, mas SÓ do MESMO TIPO DE VENTO
+// (terral/lateral/maral). O vento é o que mais muda o sentido do texto: uma narração
+// de terral ("parede lisa") num dia de maral é simplesmente falsa e briga com o selo
+// de vento que o app mostra ao vivo. Entre as do vento certo, prefere tamanho e turno
+// parecidos. Se não houver NENHUMA do vento certo, devolve null: buraco vazio é melhor
+// que narração de vento errado. Os números exatos o app mostra por conta.
 function acharEntry(beach, b, library) {
   const exato = library.keys[conditionKey(beach, b)];
   if (exato && exato.variacoes && exato.variacoes.length) return exato;
@@ -154,11 +157,11 @@ function acharEntry(beach, b, library) {
     if (!k.startsWith(pref)) continue;
     const e = library.keys[k];
     if (!e.variacoes || !e.variacoes.length) continue;
-    const p = k.split('|');            // id, altura, periodo, vento, turno
+    const p = k.split('|');                          // id, altura, periodo, vento, turno
+    if ((p[3] || '').split('-')[0] !== wtipo) continue; // o VENTO tem que bater, sem exceção
     let nota = 0;
-    if (p[1] === h) nota += 4;                          // mesmo tamanho
-    if ((p[3] || '').split('-')[0] === wtipo) nota += 3; // mesmo tipo de vento
-    if (p[4] === turno) nota += 1;                      // mesmo turno
+    if (p[1] === h) nota += 3;                        // mesmo tamanho
+    if (p[4] === turno) nota += 1;                    // mesmo turno
     if (nota > melhorNota) { melhorNota = nota; melhor = e; }
   }
   return melhor;
