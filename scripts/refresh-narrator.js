@@ -25,6 +25,10 @@ function ehFossil(v) {
   const t = `${v.titulo || ''} ${v.analise || ''} ${v.aviso || ''}`;
   if (t.includes('—')) return true;
   if (/[0-9]+,[0-9]+ ?(segundos?|km\/h|kW|quilowatts?|metros?|graus)/.test(t)) return true;
+  // "ombro" como medida de onda: ninguém fala assim (pedido do Hudson, jul/2026)
+  if (/\bombros?\b/i.test(t)) return true;
+  // vazamento de inglês no meio do português ("Only detalhe: ...")
+  if (/\b(only|the|with)\b/i.test(t)) return true;
   return false;
 }
 

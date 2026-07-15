@@ -116,6 +116,26 @@ function classifyWind(windFromDeg, beach) {
   return 'lateral';
 }
 
+// Direção do swell vs janela da praia. Grosso de propósito (3 faixas): isto entra na
+// chave do cache, e chave fina demais multiplica condições e atrasa o preenchimento.
+function classifySwellFit(swellFromDeg, beach) {
+  let best = null;
+  for (const tok of (beach.swellWindow || [])) {
+    const az = azimuthOf(tok);
+    if (az == null) continue;
+    const d = angDist(swellFromDeg, az);
+    best = best == null ? d : Math.min(best, d);
+  }
+  if (best == null) return 'dentro'; // praia sem janela definida: não fragmenta a chave
+  if (best <= 35) return 'dentro';
+  if (best <= 70) return 'borda';
+  return 'fora';
+}
+function cardeal(deg) {
+  const nomes = ['norte', 'nordeste', 'leste', 'sudeste', 'sul', 'sudoeste', 'oeste', 'noroeste'];
+  return nomes[Math.round((((deg % 360) + 360) % 360) / 45) % 8];
+}
+
 function wavePower(h, t) { return (1025 * 9.81 * 9.81 * h * h * t) / (64 * Math.PI); }
 function avg(arr) { return arr.length ? arr.reduce((a, b) => a + b, 0) / arr.length : 0; }
 
@@ -144,6 +164,27 @@ function windBucket(kmh, tipo) {
 }
 function turnKey(p) { return p; }
 
+// Como o surfista brasileiro fala tamanho. NUNCA "ombro": ninguém fala "onda de
+// ombro" (testado com surfistas de verdade; todos estranharam). Os IDs internos dos
+// buckets não mudam (as chaves do banco dependem deles); só o texto que o modelo lê.
+const FAIXA_TEXTO = {
+  'flat': 'flat, praticamente sem onda',
+  'joelho-cintura': 'joelho a cintura',
+  'cintura-peito': 'cintura a peito',
+  'peito-ombro': 'do peito pra cima',
+  'ombro-cabeca': 'chegando na cabeça',
+  'cabeca-1.5x': 'cabeça e meia',
+  'grande-2x+': 'bem acima da cabeça, 2m ou mais',
+};
+const SWELL_FIT_TEXTO = {
+  dentro: 'direção que entra bem nesta praia',
+  borda: 'pega a praia de raspão',
+  fora: 'direção que não entra direito nesta praia',
+};
+
+// O encaixe do swell entra no FIM da chave: os campos antigos ficam nas mesmas
+// posições e o banco antigo continua legível pelo fallback (chave velha tem 5 partes,
+// nova tem 6; p[3]=vento e p[4]=turno valem para as duas).
 function conditionKey(beach, b) {
   return [
     beach.id,
@@ -151,6 +192,7 @@ function conditionKey(beach, b) {
     periodBucket(b.periodo_s),
     windBucket(b.vento_kmh, b.vento_tipo),
     b.periodo,
+    b.swell_fit || 'dentro',
   ].join('|');
 }
 
@@ -171,10 +213,11 @@ function acharEntry(beach, b, library) {
     if (!k.startsWith(pref)) continue;
     const e = library.keys[k];
     if (!e.variacoes || !e.variacoes.length) continue;
-    const p = k.split('|');                          // id, altura, periodo, vento, turno
+    const p = k.split('|');                          // id, altura, periodo, vento, turno[, swell]
     if ((p[3] || '').split('-')[0] !== wtipo) continue; // o VENTO tem que bater, sem exceção
     let nota = 0;
     if (p[1] === h) nota += 3;                        // mesmo tamanho
+    if (p[5] && p[5] === b.swell_fit) nota += 2;      // mesmo encaixe de swell (chaves novas)
     if (p[4] === turno) nota += 1;                    // mesmo turno
     if (nota > melhorNota) { melhorNota = nota; melhor = e; }
   }
@@ -220,6 +263,7 @@ function aggregateBlocos(beach, marine, forecast) {
         altura_m: +wh.toFixed(2),
         periodo_s: +wp.toFixed(1),
         direcao_swell: +avg(d.wd).toFixed(0),
+        swell_fit: classifySwellFit(avg(d.wd), beach),
         vento_kmh: +ws.toFixed(1),
         vento_direcao: +wdirAvg.toFixed(0),
         vento_tipo: classifyWind(wdirAvg, beach),
@@ -306,9 +350,10 @@ function beachProfileText(b) {
 
 async function generateForBeach(client, system, beach, conditions) {
   const lista = conditions.map(c => {
-    let linha = `#${c.id} | turno: ${c.turno} | altura: ~${c.altura_m}m (${c.faixa_altura}) | ` +
+    let linha = `#${c.id} | turno: ${c.turno} | altura: ~${c.altura_m}m (${FAIXA_TEXTO[c.faixa_altura] || c.faixa_altura}) | ` +
       `período: ~${c.periodo_s}s (${c.faixa_periodo}) | energia: ~${c.energia_kw} kW/m | ` +
-      `vento: ${c.vento_tipo} ~${c.vento_kmh} km/h | GERAR ${c.quantas || 2} variações NOVAS`;
+      `vento: ${c.vento_tipo} ~${c.vento_kmh} km/h | swell: vem de ${c.swell_de} (${SWELL_FIT_TEXTO[c.swell_fit] || c.swell_fit}) | ` +
+      `GERAR ${c.quantas || 2} variações NOVAS`;
     if (c.evitar && c.evitar.length) {
       linha += ` (DIFERENTES destas que já existem, não repita abertura nem ideia: ${c.evitar.map(t => `"${t}"`).join(', ')})`;
     }
@@ -323,9 +368,11 @@ CONDIÇÕES (uma entrada por id; gere a quantidade de variações NOVAS indicada
 ${lista}
 
 REGRAS:
-- PÚBLICO INICIANTE (regra central): escreva para quem NUNCA leu uma previsão. Não é proibido usar termo técnico; é proibido deixar termo técnico SOLTO. Sempre que usar "swell de sul", "terral de sudoeste", "kW/m", "período de Xs" ou graus, explique junto, simples, na mesma frase. Ex: "swell de sul, ou seja, a ondulação vem do sul e abre as ondas pro lado esquerdo"; "uns 20 kW/m de energia, que é a força da onda: a remada cansa e a descida vem com pressão"; "terral de sudoeste, o vento que vem da terra e deixa a onda lisa". Graus entram como aparte ("do sul, uns 200 graus"), nunca como a informação principal. Tamanho sempre com âncora corporal explicada ("ombro a cabeça, na altura do seu ombro"). Teste: um iniciante entende cada palavra e sabe se vale a pena ir?
+- PÚBLICO INICIANTE (regra central): escreva para quem NUNCA leu uma previsão. Não é proibido usar termo técnico; é proibido deixar termo técnico SOLTO. Sempre que usar "swell de sul", "terral de sudoeste", "kW/m", "período de Xs" ou graus, explique junto, simples, na mesma frase. Ex: "swell de sul, ou seja, a ondulação vem do sul e abre as ondas pro lado esquerdo"; "uns 20 kW/m de energia, que é a força da onda: a remada cansa e a descida vem com pressão"; "terral de sudoeste, o vento que vem da terra e deixa a onda lisa". Graus entram como aparte ("do sul, uns 200 graus"), nunca como a informação principal. Tamanho na escala que o surfista brasileiro fala de verdade: joelho, cintura, peito, cabeça, cabeça e meia, dois metros. NUNCA use "ombro" como medida de onda (ninguém fala "onda de ombro"; surfistas reais estranham). Teste: um iniciante entende cada palavra e sabe se vale a pena ir?
 - ESTRUTURA EM CAMADAS (3 a 5 frases): (1) traduza em linguagem simples o que está rolando no mar agora; (2) descreva o que o surfista VAI SENTIR na água (a parede, a força, a lisura, a entrada); (3) feche com a chamada honesta e UMA dica concreta (prancha, horário, canto, postura). Não é um relatório de dados; é um amigo experiente lendo o mar pra você.
-- Escreva o que o surfista VAI SENTIR na água. Não descreva de onde veio o swell.
+- Escreva o que o surfista VAI SENTIR na água, não um relatório de origem do swell.
+- DIREÇÃO DO SWELL: cada condição diz de onde o swell vem e se essa direção funciona nesta praia. Use isso SÓ quando mudar a leitura (swell que entra em cheio na bancada, ou que chega de raspão e desorganizado), integrado natural na frase, como um local comentaria. Se a direção não muda nada no dia, NEM CITE. Proibido citar de forma mecânica ("swell de sul, dentro da janela") ou repetir a palavra "janela" como jargão.
+- TOM: conversa de ser humano, não locutor. Gíria só onde cai natural (no máximo uma por narração); frase que você não falaria em voz alta pra um amigo na areia, reescreva.
 - Detalhe com propriedade: use o conhecimento dos livros pra escolher o detalhe CERTO (por que a parede abre, por que o vento estraga, por que a maré muda tudo), sem virar aula nem encher linguiça. Cada frase carrega informação real.
 - IMPORTANTE: escreva para a FAIXA da condição, não para o número decimal exato. O texto será reusado em dias com condição parecida, e o app mostra os números precisos por conta própria. Use âncora corporal (joelho, cintura, peito, ombro, cabeça) e descrição qualitativa. Pode citar o período em segundos de forma aproximada ("na casa dos 13s") e a energia de forma qualitativa. Evite decimais cravados como "1,82m".
 - Use o perfil da praia (fundo, orientação, janela, maré, caráter) para contextualizar.
@@ -484,6 +531,7 @@ async function main() {
           altura_m: m.b.altura_m, faixa_altura: heightBucket(m.b.altura_m),
           periodo_s: m.b.periodo_s, faixa_periodo: periodBucket(m.b.periodo_s),
           energia_kw: m.b.energia_kw, vento_tipo: m.b.vento_tipo, vento_kmh: m.b.vento_kmh,
+          swell_de: cardeal(m.b.direcao_swell), swell_fit: m.b.swell_fit || 'dentro',
         }));
 
         apiCalls++;
@@ -595,7 +643,7 @@ if (require.main === module) {
 }
 
 module.exports = {
-  azimuthOf, classifyWind, heightBucket, periodBucket, windBucket,
+  azimuthOf, classifyWind, classifySwellFit, cardeal, heightBucket, periodBucket, windBucket,
   conditionKey, acharEntry, aggregateBlocos, fetchBeachData, BEACHES,
   loadKnowledge, generateForBeachRetry, MODEL,
 };
