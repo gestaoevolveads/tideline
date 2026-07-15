@@ -204,6 +204,27 @@ function conditionKey(beach, b) {
 // de vento que o app mostra ao vivo. Entre as do vento certo, prefere tamanho e turno
 // parecidos. Se não houver NENHUMA do vento certo, devolve null: buraco vazio é melhor
 // que narração de vento errado. Os números exatos o app mostra por conta.
+// Texto que cita o horário do dia: não pode cruzar de turno ("essa manhã" caindo
+// na narração da noite denuncia o reuso e quebra a confiança).
+// ATENÇÃO: sem \b DEPOIS de letra acentuada. O \b do JavaScript é ASCII: "manhã"
+// termina em ã (não-letra pra ele) e o \b final falharia silenciosamente.
+const CITA_TURNO = /\b(manh[ãa]|amanhec|tard\w*|noit|noturn|madrugada|entardecer|cedinho)|\bcedo\b/i;
+function citaTurno(v) {
+  return CITA_TURNO.test(`${v.titulo || ''} ${v.analise || ''} ${v.aviso || ''} ${v.janela || ''}`);
+}
+// Contaminação de turno: texto que cita turnos mas NUNCA o seu próprio (ex.: "essa
+// manhã" salvo numa condição de noite). Já aconteceu no banco; barra na gravação.
+const TURNO_RX = [
+  [/\bmanh[ãa]|\bamanhec|\bcedo\b|\bcedinho/i, 'manha'],
+  [/\btard\w+|\bentardecer/i, 'tarde'],
+  [/\bnoit|\bnoturn|\bmadrugada/i, 'noite'],
+];
+function turnoErrado(v, turno) {
+  const t = `${v.titulo || ''} ${v.analise || ''} ${v.aviso || ''} ${v.janela || ''}`;
+  const citados = TURNO_RX.filter(([rx]) => rx.test(t)).map(([, nome]) => nome);
+  return citados.length > 0 && !citados.includes(turno);
+}
+
 function acharEntry(beach, b, library) {
   const exato = library.keys[conditionKey(beach, b)];
   if (exato && exato.variacoes && exato.variacoes.length) return exato;
@@ -216,11 +237,17 @@ function acharEntry(beach, b, library) {
     if (!e.variacoes || !e.variacoes.length) continue;
     const p = k.split('|');                          // id, altura, periodo, vento, turno[, swell]
     if ((p[3] || '').split('-')[0] !== wtipo) continue; // o VENTO tem que bater, sem exceção
+    // cruzar turno só com variações que não citam horário; se nenhuma servir, pula
+    let variacoes = e.variacoes;
+    if (p[4] !== turno) {
+      variacoes = variacoes.filter(v => !citaTurno(v));
+      if (!variacoes.length) continue;
+    }
     let nota = 0;
     if (p[1] === h) nota += 3;                        // mesmo tamanho
     if (p[5] && p[5] === b.swell_fit) nota += 2;      // mesmo encaixe de swell (chaves novas)
     if (p[4] === turno) nota += 1;                    // mesmo turno
-    if (nota > melhorNota) { melhorNota = nota; melhor = e; }
+    if (nota > melhorNota) { melhorNota = nota; melhor = { variacoes }; }
   }
   return melhor;
 }
@@ -542,7 +569,7 @@ async function main() {
         for (const n of narracoes) {
           const m = grupo.find(x => x.id === n.id);
           if (m && Array.isArray(n.variacoes) && n.variacoes.length) {
-            const novas = n.variacoes.map(sanitizeVar);
+            const novas = n.variacoes.map(sanitizeVar).filter(v => !turnoErrado(v, m.b.periodo));
             const antigas = library.keys[m.key]?.variacoes || [];
             library.keys[m.key] = { variacoes: antigas.concat(novas) }; // APPEND, nunca descarta
             novasGeradas += novas.length;

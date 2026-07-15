@@ -28,8 +28,9 @@ function ehFossil(v) {
   // medida de onda por parte do corpo: banida (pedido do Hudson, jul/2026). Pega as
   // FRASES de tamanho, não a palavra solta, pra não purgar uso legítimo em aviso
   // de segurança ("proteja a cabeça").
-  if (/\b(joelho a cintura|cintura a peito|peito a ombro|ombro a cabeça|peito pra cima|quase cabeça|cabeça e meia|meio caixote)\b/i.test(t)) return true;
-  if (/\b(ondas?|tamanho|altura|séries?|mar) de (joelho|cintura|peito|ombro|cabeça)\b/i.test(t)) return true;
+  // (sem \b depois de ç/acento: o \b do JS é ASCII e falharia em "cabeça")
+  if (/\b(joelho a cintura|cintura a peito|peito a ombro|ombro a cabe|peito pra cima|quase cabe|cabe[çc]a e meia|meio caixote)/i.test(t)) return true;
+  if (/\b(ondas?|tamanho|altura|s[ée]ries?|mar) de (joelho|cintura|peito|ombro|cabe[çc]a)/i.test(t)) return true;
   if (/\bombros?\b/i.test(t)) return true;
   // vazamento de inglês no meio do português ("Only detalhe: ...")
   if (/\b(only|the|with)\b/i.test(t)) return true;
