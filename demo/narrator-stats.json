@@ -1,47 +1,26 @@
 {
-  "generated_at": "2026-07-15T13:44:52.668Z",
+  "generated_at": "2026-07-15T13:56:46.072Z",
   "target": 7,
-  "condicoesUnicas": 1652,
-  "totalVariacoes": 3384,
+  "condicoesUnicas": 1656,
+  "totalVariacoes": 3444,
   "distribuicao": {
     "1": 121,
-    "2": 1454,
+    "2": 1447,
     "3": 4,
-    "4": 54,
+    "4": 55,
     "5": 1,
-    "6+": 18
+    "6+": 28
   },
   "previsao": {
-    "total": 1237,
-    "cobertas": 260,
-    "noAlvo": 6
+    "total": 1240,
+    "cobertas": 266,
+    "noAlvo": 16
   },
   "praias": [
     {
       "nome": "Ipanema",
       "uf": "RJ",
       "condicoes": 17,
-      "cobertas": 0,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Tiririca",
-      "uf": "BA",
-      "condicoes": 12,
-      "cobertas": 0,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Engenhoca",
-      "uf": "BA",
-      "condicoes": 12,
-      "cobertas": 0,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Barra de Ilhéus",
-      "uf": "BA",
-      "condicoes": 9,
       "cobertas": 0,
       "noAlvo": 0
     },
@@ -53,16 +32,30 @@
       "noAlvo": 0
     },
     {
-      "nome": "Ponta da Praia",
-      "uf": "SP",
-      "condicoes": 14,
+      "nome": "Tiririca",
+      "uf": "BA",
+      "condicoes": 12,
       "cobertas": 0,
       "noAlvo": 0
     },
     {
-      "nome": "Barra da Lagoa",
-      "uf": "SC",
-      "condicoes": 17,
+      "nome": "Peniche",
+      "uf": "PRT",
+      "condicoes": 16,
+      "cobertas": 0,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Barra de Ilhéus",
+      "uf": "BA",
+      "condicoes": 9,
+      "cobertas": 0,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Engenhoca",
+      "uf": "BA",
+      "condicoes": 12,
       "cobertas": 0,
       "noAlvo": 0
     },
@@ -74,9 +67,16 @@
       "noAlvo": 0
     },
     {
-      "nome": "Peniche",
-      "uf": "PRT",
-      "condicoes": 16,
+      "nome": "Barra da Lagoa",
+      "uf": "SC",
+      "condicoes": 17,
+      "cobertas": 0,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Ponta da Praia",
+      "uf": "SP",
+      "condicoes": 14,
       "cobertas": 0,
       "noAlvo": 0
     },
@@ -95,15 +95,15 @@
       "noAlvo": 0
     },
     {
-      "nome": "Cassino",
-      "uf": "RS",
+      "nome": "Bells Beach",
+      "uf": "AUS",
       "condicoes": 17,
       "cobertas": 1,
       "noAlvo": 0
     },
     {
-      "nome": "Bells Beach",
-      "uf": "AUS",
+      "nome": "Cassino",
+      "uf": "RS",
       "condicoes": 17,
       "cobertas": 1,
       "noAlvo": 0
@@ -118,13 +118,6 @@
     {
       "nome": "Praia do Peró",
       "uf": "RJ",
-      "condicoes": 12,
-      "cobertas": 1,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Praia do Porto (Imbituba)",
-      "uf": "SC",
       "condicoes": 12,
       "cobertas": 1,
       "noAlvo": 0
@@ -179,6 +172,20 @@
       "noAlvo": 0
     },
     {
+      "nome": "Pitangueiras",
+      "uf": "SP",
+      "condicoes": 16,
+      "cobertas": 2,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Campeche",
+      "uf": "SC",
+      "condicoes": 16,
+      "cobertas": 2,
+      "noAlvo": 0
+    },
+    {
       "nome": "Macumba",
       "uf": "RJ",
       "condicoes": 16,
@@ -193,30 +200,9 @@
       "noAlvo": 0
     },
     {
-      "nome": "Pitangueiras",
-      "uf": "SP",
-      "condicoes": 16,
-      "cobertas": 2,
-      "noAlvo": 0
-    },
-    {
       "nome": "Jureia",
       "uf": "SP",
       "condicoes": 16,
-      "cobertas": 2,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Campeche",
-      "uf": "SC",
-      "condicoes": 16,
-      "cobertas": 2,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Penha",
-      "uf": "SC",
-      "condicoes": 15,
       "cobertas": 2,
       "noAlvo": 0
     },
@@ -228,14 +214,14 @@
       "noAlvo": 0
     },
     {
-      "nome": "Praia do Bonete",
-      "uf": "SP",
-      "condicoes": 14,
+      "nome": "Penha",
+      "uf": "SC",
+      "condicoes": 15,
       "cobertas": 2,
       "noAlvo": 0
     },
     {
-      "nome": "Praia da Silveira",
+      "nome": "Ibiraquera",
       "uf": "SC",
       "condicoes": 14,
       "cobertas": 2,
@@ -249,15 +235,15 @@
       "noAlvo": 0
     },
     {
-      "nome": "Ibiraquera",
+      "nome": "Praia da Silveira",
       "uf": "SC",
       "condicoes": 14,
       "cobertas": 2,
       "noAlvo": 0
     },
     {
-      "nome": "Torres",
-      "uf": "RS",
+      "nome": "Praia do Bonete",
+      "uf": "SP",
       "condicoes": 14,
       "cobertas": 2,
       "noAlvo": 0
@@ -265,6 +251,13 @@
     {
       "nome": "Pipeline",
       "uf": "HAW",
+      "condicoes": 14,
+      "cobertas": 2,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Torres",
+      "uf": "RS",
       "condicoes": 14,
       "cobertas": 2,
       "noAlvo": 0
@@ -312,13 +305,6 @@
       "noAlvo": 0
     },
     {
-      "nome": "Unamar",
-      "uf": "RJ",
-      "condicoes": 16,
-      "cobertas": 3,
-      "noAlvo": 0
-    },
-    {
       "nome": "Recreio dos Bandeirantes",
       "uf": "RJ",
       "condicoes": 16,
@@ -333,7 +319,21 @@
       "noAlvo": 0
     },
     {
+      "nome": "Unamar",
+      "uf": "RJ",
+      "condicoes": 16,
+      "cobertas": 3,
+      "noAlvo": 0
+    },
+    {
       "nome": "Fernando de Noronha",
+      "uf": "PE",
+      "condicoes": 15,
+      "cobertas": 3,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Cacimba do Padre",
       "uf": "PE",
       "condicoes": 15,
       "cobertas": 3,
@@ -382,10 +382,10 @@
       "noAlvo": 0
     },
     {
-      "nome": "Praia Brava (Cabo Frio)",
-      "uf": "RJ",
-      "condicoes": 12,
-      "cobertas": 3,
+      "nome": "Guarda do Embaú",
+      "uf": "SC",
+      "condicoes": 16,
+      "cobertas": 4,
       "noAlvo": 0
     },
     {
@@ -396,15 +396,15 @@
       "noAlvo": 0
     },
     {
-      "nome": "Itamambuca",
-      "uf": "SP",
-      "condicoes": 16,
-      "cobertas": 4,
+      "nome": "Praia Brava (Cabo Frio)",
+      "uf": "RJ",
+      "condicoes": 12,
+      "cobertas": 3,
       "noAlvo": 0
     },
     {
-      "nome": "Guarda do Embaú",
-      "uf": "SC",
+      "nome": "Itamambuca",
+      "uf": "SP",
       "condicoes": 16,
       "cobertas": 4,
       "noAlvo": 0
@@ -431,28 +431,7 @@
       "noAlvo": 0
     },
     {
-      "nome": "Praia Brava (Búzios)",
-      "uf": "RJ",
-      "condicoes": 14,
-      "cobertas": 4,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Geribá",
-      "uf": "RJ",
-      "condicoes": 14,
-      "cobertas": 4,
-      "noAlvo": 0
-    },
-    {
       "nome": "Tucuns",
-      "uf": "RJ",
-      "condicoes": 14,
-      "cobertas": 4,
-      "noAlvo": 0
-    },
-    {
-      "nome": "Figueira",
       "uf": "RJ",
       "condicoes": 14,
       "cobertas": 4,
@@ -466,15 +445,29 @@
       "noAlvo": 0
     },
     {
-      "nome": "Prainha",
+      "nome": "Figueira",
       "uf": "RJ",
-      "condicoes": 17,
-      "cobertas": 5,
+      "condicoes": 14,
+      "cobertas": 4,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Praia Brava (Búzios)",
+      "uf": "RJ",
+      "condicoes": 14,
+      "cobertas": 4,
       "noAlvo": 0
     },
     {
       "nome": "Setiba",
       "uf": "ES",
+      "condicoes": 17,
+      "cobertas": 5,
+      "noAlvo": 0
+    },
+    {
+      "nome": "Prainha",
+      "uf": "RJ",
       "condicoes": 17,
       "cobertas": 5,
       "noAlvo": 0
@@ -494,14 +487,14 @@
       "noAlvo": 0
     },
     {
-      "nome": "Barra do Sahy",
+      "nome": "Vermelha do Norte",
       "uf": "SP",
       "condicoes": 15,
       "cobertas": 5,
       "noAlvo": 0
     },
     {
-      "nome": "Vermelha do Norte",
+      "nome": "Barra do Sahy",
       "uf": "SP",
       "condicoes": 15,
       "cobertas": 5,
@@ -541,6 +534,13 @@
       "condicoes": 17,
       "cobertas": 7,
       "noAlvo": 0
+    },
+    {
+      "nome": "Geribá",
+      "uf": "RJ",
+      "condicoes": 14,
+      "cobertas": 6,
+      "noAlvo": 5
     },
     {
       "nome": "Maresias",
@@ -585,13 +585,6 @@
       "noAlvo": 0
     },
     {
-      "nome": "Jericoacoara",
-      "uf": "CE",
-      "condicoes": 5,
-      "cobertas": 3,
-      "noAlvo": 0
-    },
-    {
       "nome": "Saquarema",
       "uf": "RJ",
       "condicoes": 16,
@@ -618,6 +611,13 @@
       "condicoes": 17,
       "cobertas": 15,
       "noAlvo": 0
+    },
+    {
+      "nome": "Jericoacoara",
+      "uf": "CE",
+      "condicoes": 5,
+      "cobertas": 5,
+      "noAlvo": 5
     }
   ]
 }
