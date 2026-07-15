@@ -896,6 +896,13 @@
           "analise": "A tarde na Maracaípe repete o tamanho pequeno, ondas de joelho a cintura, e o período curto de sempre, na casa dos 7 segundos, o que deixa a sequência de ondas meio irregular. O vento lateral de uns 16 km/h mexe um pouco a superfície mas não estraga de vez a parede. Na água você vai sentir pouca força, energia baixa, mais deslize que empurrão. É um dia honesto pra quem quer treinar posicionamento no pico e ler o banco de areia sem pressão de crowd.",
           "janela": null,
           "aviso": null
+        },
+        {
+          "score": 1,
+          "titulo": "Vento de lado cortando a tarde",
+          "analise": "A tarde chega com o vento batendo de lado, quase 20 km por hora, e isso pica a superfície da água em vez de deixar ela lisa. O período continua curto, na casa dos 6 segundos, o que já entrega uma onda mole e sem muita organização, e o vento lateral só piora o acabamento. Na água você vai sentir a parede toda mexida, difícil de ler onde vai quebrar. Ainda dá pra aproveitar pra treinar posicionamento no pico e leitura de banco, mas não é sessão pra esperar qualidade.",
+          "janela": null,
+          "aviso": null
         }
       ]
     },
@@ -30581,7 +30588,212 @@
           "aviso": null
         }
       ]
+    },
+    "pipeline|peito-ombro|medio-7a9|offshore-fraco|manha": {
+      "variacoes": [
+        {
+          "titulo": "Manhã clássica em Pipe, laje pedindo respeito",
+          "analise": "Pipeline de manhã com terral, vento que sopra da terra pro mar e alisa a parede, correndo suave a uns 8 km/h: exatamente a condição que segura o lip e deixa o tubo se formar limpo sobre o coral. Onda de peito a ombro, na altura do seu ombro, com período médio de quase 9 segundos, ou seja, dá pra ver a série chegando organizada antes de decidir se rema. A energia na água gira em torno de 8 kW/m, força o suficiente pra sentir pressão na descida mas sem virar caldo absurdo. Aqui o fundo é laje de coral rasa, então isso é território de avançado: quem tem experiência de tubo vai achar janela boa pra trabalhar a manobra, quem ainda tá evoluindo, essa é praia pra assistir de fora e estudar o pico antes de qualquer coisa.",
+          "janela": "6h-9h",
+          "aviso": "Fundo de coral raso e reef break de alta exposição. Só surfar com experiência real em tubo e conhecimento do pico. Corte em coral é risco concreto."
+        }
+      ]
+    },
+    "pipeline|peito-ombro|medio-7a9|offshore-fraco|tarde": {
+      "variacoes": [
+        {
+          "titulo": "Tarde ainda gostosa antes do maral chegar",
+          "analise": "À tarde o terral segue firme em Pipe, um vento fraco de uns 8 km/h que ainda vem da terra pro mar e mantém a face da onda vitrificada, sem os bumps que o vento do mar costuma trazer. A ondulação tá na faixa de peito a ombro, período por volta de 9 segundos, o que aqui significa parede com tempo de organização, série vindo espaçada e legível. Com quase 8 kW/m de energia na água, a remada exige mas a recompensa é o tubo formando sobre a laje, rápido e oco. É condição de avançado por causa do fundo raso de coral, então quem já manja de reef lê o pico e escolhe a hora certa de entrar, e quem tá evoluindo aproveita pra observar de fora como o banco de coral desenha a quebra.",
+          "janela": null,
+          "aviso": "Reef break sobre coral raso, correnteza e impacto podem ser sérios. Recomendado só para surfistas avançados com experiência local."
+        }
+      ]
+    },
+    "pipeline|peito-ombro|medio-7a9|lateral-fraco|noite": {
+      "variacoes": [
+        {
+          "titulo": "Noite de Pipe com vento cruzando o pico",
+          "analise": "De noite o vento vira lateral em Pipeline, batendo quase de lado a uns 9 km/h, o que pica um pouco a superfície mas ainda deixa a onda surfável, sem destruir a forma como o vento de frente faria. O tamanho segue de peito a ombro e o período continua na casa dos 9 segundos, então a série ainda chega com alguma organização, só perde um pouco da limpeza que o terral puro entrega. A energia de quase 8 kW/m garante potência real na quebra sobre o coral. É pico técnico e perigoso por natureza, então mesmo com vento mais fraco a régua é a mesma: só quem já rodou reef break sabe ler onde o fundo levanta e onde a laje corta.",
+          "janela": null,
+          "aviso": "Fundo de coral raso, sessão noturna reduz visibilidade do banco. Risco real de corte e impacto para quem não conhece o pico."
+        }
+      ]
+    },
+    "pipeline|peito-ombro|medio-7a9|lateral-fraco|tarde": {
+      "variacoes": [
+        {
+          "titulo": "Lateral mexendo a parede à tarde",
+          "analise": "O vento aqui tá batendo de lado, uns 13 km/h, forte o bastante pra picar a superfície e tirar um pouco daquela vitrine que o terral costuma dar em Pipe. Ainda assim a onda mantém tamanho de peito a ombro com período em torno de 8 segundos, série decente mas sem a organização top que os dias de vento calmo entregam. A energia na casa dos 6,6 kW/m já pede remada de verdade e a quebra sobre a laje de coral continua rápida e oca quando pega o ponto certo do banco. Vento assim deixa a sessão mais imprevisível, então quem entra precisa estar afiado: bom dia pra avançado reler o pico de fora antes de remar, sentir onde a série ainda tá fechando limpo apesar do vento.",
+          "janela": null,
+          "aviso": "Reef break raso com vento cruzado deixando o mar mais imprevisível. Só para surfistas avançados com leitura apurada do pico."
+        }
+      ]
+    },
+    "pipeline|peito-ombro|medio-7a9|lateral-moderado|noite": {
+      "variacoes": [
+        {
+          "titulo": "Vento forte de noite, Pipe mais bruto",
+          "analise": "A noite chega com vento lateral soprando forte, quase 20 km/h, o suficiente pra bagunçar bastante a superfície e tirar a limpeza que faz Pipeline ser Pipeline. O tamanho segue de peito a ombro, mas o período caiu pra faixa dos 7 segundos, período mais curto que deixa a série menos organizada, ondas chegando mais em cima uma da outra. A energia de quase 7 kW/m ainda quebra com força sobre o coral raso, só que a leitura fica mais difícil com o vento mexendo tudo. Não é a condição de vitrine que esse pico promete, então a régua sobe ainda mais: só quem já domina o reef e a correnteza local deveria pensar em entrar, e mesmo assim vale dar um tempo estudando o mar da praia antes.",
+          "janela": null,
+          "aviso": "Vento forte e período curto deixam o mar mais bagunçado e imprevisível sobre fundo de coral raso. Risco real de impacto e corte, avaliar antes de entrar."
+        }
+      ]
+    },
+    "pipeline|peito-ombro|medio-7a9|lateral-moderado|manha": {
+      "variacoes": [
+        {
+          "titulo": "Manhã com mais tamanho e vento incomodando",
+          "analise": "De manhã o swell chega um pouco maior em Pipe, beirando ombro, na altura do seu ombro mesmo, mas o vento lateral de uns 14 km/h já tira parte da lisura que a manhã costuma garantir aqui. O período mais curto, na casa dos 7 segundos, faz a série chegar mais rápido e menos espaçada, então a leitura do próximo set exige atenção redobrada. A energia bate uns 8 kW/m, então tem força pra sentir a pressão da queda mesmo com o vento atrapalhando a forma da parede. É dia de mais tamanho sobre laje de coral com vento incomodando, combinação que só faz sentido pra quem já tem repertório grande em reef break, e mesmo assim vale observar o banco de perto antes de decidir remar pro pico.",
+          "janela": null,
+          "aviso": "Tamanho maior somado a vento cruzado e fundo de coral raso aumenta risco de impacto. Recomendado apenas para surfistas avançados com experiência comprovada no pico."
+        }
+      ]
+    },
+    "maracaipe|joelho-cintura|curto-vaga|offshore-fraco|manha": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Manhã pequena em Maracaípe",
+          "analise": "O mar tá bem discreto essa manhã, ondas de joelho a cintura, ou seja, na altura do joelho até a cintura pra quem tá em pé na água. O período de uns 7 segundos é curto, então a onda não vem organizada, chega meio soltinha e sem muita força, com pouca energia pra empurrar. Pelo menos o vento sopra do lado da terra, um terral fraco que ajuda a deixar a superfície lisinha. Não é dia de esperar parede, mas é ótimo pra treinar remada e pop-up, que é o movimento de levantar da prancha de uma vez só, sem ajoelhar, sem crowd atrapalhando.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "maracaipe|cintura-peito|curto-vaga|lateral-moderado|noite": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Sessão noturna sem grandeza",
+          "analise": "De noite o mar segue pequeno, ondas de cintura a peito, o tamanho que a maioria imagina quando pensa em surf, mas com pouco fôlego por trás. Período de uns 6 segundos é típico de vaga de vento local, então as ondas chegam meio em cima uma da outra, sem série bem definida. O vento de lado, mais forte que de dia, ainda enrruga a água na hora da descida. Dá pra pegar umas ondinhas de espuma pra manter o corpo em forma, só não espera pressão na parede.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "maracaipe|peito-ombro|curto-vaga|lateral-moderado|manha": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Manhã com corpo pra trabalhar",
+          "analise": "Já dá pra sentir mais peso na água essa manhã, ondas de peito a ombro, ou seja, bem na altura do seu ombro quando você tá remando. Uns 5 kW/m de energia é uma força média, a remada exige mas não cansa demais, e o período curto de quase 7 segundos ainda deixa a onda com cara de vaga, sem muita organização mas com corpo suficiente pra fazer manobra. O vento de lado atrapalha um pouco o acabamento da parede, então prefira o pico mais protegido do canto. Vale entrar, principalmente quem já manja de bottom turn e cutback.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "maracaipe|peito-ombro|curto-vaga|lateral-moderado|tarde": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde com pegada em Maracaípe",
+          "analise": "A tarde traz um mar de mais corpo, ondas de peito a ombro que já pedem postura firme na descida. Com uns 6 kW/m de energia, a força que a onda carrega, a remada cansa um pouco mais e o take-off, que é o momento de entrar na onda, vem com pressão de verdade. O vento lateral soprando forte, quase 23 km por hora, deixa a parede mexida e menos previsível. Bom momento pra quem curte trabalhar rasgada em condição mais bruta, só ajustar a prancha pro vento não atrapalhar a remada.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "maracaipe|peito-ombro|medio-7a9|lateral-moderado|noite": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Noite com série mais organizada",
+          "analise": "Fechando o dia, o mar segue com corpo, ondas de peito a ombro e um período que já passa dos 7 segundos, entrando na faixa de swell mais organizado, onde dá pra ver a série chegando com mais espaço entre as ondas. A energia na casa dos 6 kW/m entrega uma remada que exige gás mas recompensa com parede pra descer. O vento ainda vem de lado, então a superfície não fica lisa como um terral faria, mas não estraga a forma da onda. Se pintar luz o suficiente, vale aproveitar esse corpo maior com atenção redobrada na leitura do pico.",
+          "janela": null,
+          "aviso": "Sessão noturna pede visibilidade, atenção redobrada com banco e outros surfistas na água"
+        }
+      ]
+    },
+    "ipanema|ombro-cabeca|bom-9a11|offshore-fraco|manha": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã de ombro a cabeça em Ipanema",
+          "analise": "Ipanema acordou com onda de ombro a cabeça, tamanho bom pra maioria imaginar quando pensa em surf de verdade, e período na casa dos 10 segundos, que é o tempo entre uma onda e outra: aqui isso significa série organizada, dá pra ver a próxima chegando de longe. O terral tá soprando fraco, uns 7 km/h, vento que nasce da terra e vai contra a onda, então a parede fica lisa e desenhada, sem aquele bumps de vento forte. Com uns 23 kW/m de energia na água, que é a força que a onda carrega, a remada vai exigir e o drop vem com pressão real. Vale entrar cedo, e lembra que as ilhas Cagarras na frente moldam esse swell, então os cantos costumam entregar mais forma que o meio do Posto 9.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|ombro-cabeca|bom-9a11|glassy|tarde": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde ainda firme, vento de lado",
+          "analise": "A tarde em Ipanema segue com onda de ombro a cabeça e período firme, próximo dos 10 segundos, sinal de que a ondulação ainda tá bem organizada mesmo depois do giro do dia. O vento agora é lateral, vindo mais de lado, fraco ainda, uns 5 km/h, então pica um pouco a superfície mas não destrói a parede. A energia continua alta, por volta de 20 kW/m, força suficiente pra cansar o braço na remada e dar peso na descida. Os cantos perto das Cagarras seguem sendo a aposta certa, porque ali o swell chega mais moldado que no meio do pico social.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|ombro-cabeca|bom-9a11|lateral-fraco|noite": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Noite de mar ainda grande",
+          "analise": "Já de noite o mar em Ipanema segue de ombro a cabeça, com período em torno de 9 segundos, um pouco menor que de manhã, mas ainda dentro da faixa boa de organização. O vento lateral cresceu um pouco, uns 10 km/h, e isso já pica mais a água, tira parte da lisura que a manhã tinha. A energia na casa dos 17 kW/m ainda pede remada forte e atenção na hora de entrar, principalmente sem visibilidade. Se for surfar com pouca luz, escolhe um canto conhecido perto das Cagarras e redobra o cuidado com quem tá no lineup.",
+          "janela": null,
+          "aviso": "Pouca visibilidade à noite exige atenção redobrada com outros surfistas e com a leitura do banco."
+        }
+      ]
+    },
+    "ipanema|peito-ombro|bom-9a11|offshore-fraco|manha": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Peito a ombro com boa pegada",
+          "analise": "De manhã o mar em Ipanema tá de peito a ombro, um tamanho bem trabalhável, com período de quase 10 segundos que garante séries espaçadas e fáceis de ler. O terral leve, por volta de 8 km/h, segura a face da onda e deixa tudo mais liso, o tipo de vento que todo surfista gosta de encontrar cedo. A energia na água gira perto de 13 kW/m, moderada, dá pressão sem exagerar na remada. É um dia bom pra trabalhar manobra e posicionamento, e vale caçar os cantos, onde as Cagarras dão mais forma ao swell do que no meio do Posto 9.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|peito-ombro|bom-9a11|glassy|tarde": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde de peito com vento do mar",
+          "analise": "À tarde a onda em Ipanema desce um pouco, fica de peito a ombro, com período ainda bom, quase 10 segundos, então a organização das séries continua presente. O detalhe que muda o dia é o vento onshore, aquele que sopra do mar pra praia, fraco por enquanto, uns 6 km/h, mas já suficiente pra tirar um pouco da lisura e engordar a parede. A energia moderada, ao redor de 11 kW/m, ainda deixa a sessão gostosa pra quem quer trabalhar remada e leitura de banco. Prefira entrar mais cedo se puder, antes do vento crescer mais.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|peito-ombro|medio-7a9|onshore-fraco|noite": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Noite mais mexida em Ipanema",
+          "analise": "De noite o mar aqui tá de peito a ombro, mas o período caiu pra perto de 8 segundos, faixa mais curta que indica série menos organizada, ondas chegando mais em cima uma da outra. O vento onshore, vindo do mar pra praia, já sopra uns 7 km/h e isso deixa a parede mais bagunçada, tirando parte da força que a energia moderada, de uns 11 kW/m, ainda entrega. Não é o dia mais bonito, mas dá pra aproveitar a espuma pra treinar pop-up, que é o movimento de levantar da prancha de uma vez só, sem ajoelhar. Se for surfar sem luz, escolhe um canto que você já conhece bem e mantém distância seguro de quem tá ao redor.",
+          "janela": null,
+          "aviso": "Baixa visibilidade noturna pede atenção redobrada na leitura do banco e na distância dos outros surfistas."
+        }
+      ]
+    },
+    "grumari|ombro-cabeca|bom-9a11|offshore-fraco|manha": {
+      "variacoes": [
+        {
+          "titulo": "Grumari grande e limpo de manhã",
+          "analise": "Chegando cedo em Grumari você encontra ondas de ombro a cabeça, ou seja, na altura do seu ombro batendo até um pouco acima, e isso já muda o jogo pra quem tá acostumado com praia de cidade. O período tá na casa dos 10 segundos, o que quer dizer série organizada: dá pra ver a onda vindo de longe e escolher a certa, em vez de remar em tudo. Na água a energia é umas 18 kW/m, força que se sente na remada e na descida, a parede empurra com peso de verdade. O vento é terral, ou seja, sopra da terra pro mar e alisa a superfície, deixando a onda vitrificada, sem caroço. Vale entrar cedo aproveitando esse vento fraquinho, com prancha que dê velocidade, porque depois das 9h a coisa costuma virar."
+        }
+      ]
+    },
+    "grumari|ombro-cabeca|bom-9a11|lateral-fraco|tarde": {
+      "variacoes": [
+        {
+          "titulo": "Tarde firme com vento de lado",
+          "analise": "À tarde a ondulação segue forte em Grumari, ombro a cabeça, na altura do ombro e um pouco além, com período em torno de 10 segundos que mantém as séries espaçadas e legíveis. A energia na casa dos 16 kW/m ainda entrega remada exigente e descida com pressão, então quem for precisa estar com o braço quente. O vento agora é lateral, batendo mais ou menos de lado na onda, e isso pica um pouco a superfície sem destruir a forma, então a parede fica menos lisa mas ainda surfável. É um bom teste pra quem já surfa faz um tempo mas ainda tá calibrando leitura de banco, e vale escolher o pico onde a série entra mais alinhada."
+        }
+      ]
+    },
+    "grumari|ombro-cabeca|bom-9a11|offshore-fraco|noite": {
+      "variacoes": [
+        {
+          "titulo": "Fim de dia com terral segurando",
+          "analise": "No fim do dia Grumari ainda entrega tamanho de ombro a cabeça, na altura do ombro batendo até a cabeça em algumas ondas, com um período de uns 9 segundos que já é organização suficiente pra formar parede. A energia na água gira em torno de 14 kW/m, o que significa força presente mas sem exagero, remada cansa só o normal de um dia de porte. O vento volta a soprar da terra pro mar, o terral que segura o lábio da onda e mantém a face limpa mesmo com a luz caindo. É uma sessão pra quem já lê bem o mar e não se importa com pouca claridade, prancha de rendimento funciona bem e o cuidado é redobrar atenção ao banco por causa da visibilidade baixa."
+        }
+      ]
     }
   },
-  "generated_at": "2026-07-15T13:56:46.029Z"
+  "generated_at": "2026-07-15T14:27:30.452Z"
 }
