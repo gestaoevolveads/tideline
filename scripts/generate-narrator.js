@@ -16,6 +16,15 @@ const estourouOrcamento = () => BUDGET_USD > 0 && gastoUSD >= BUDGET_USD;
 // Meta de variações por condição no banco (o app roda entre elas pela data).
 // Geração é incremental: nunca descarta as existentes, só completa até a meta.
 const TARGET_VARIACOES = Number(process.env.TARGET_VARIACOES) || 7;
+// Espalha a verba: pouco por condição e pouco por praia POR RODADA, pra o gasto pousar
+// preciso (lote pequeno = freio de orçamento certeiro) e a cobertura avançar parelha em
+// várias praias por vez, em vez de encher uma praia inteira e estourar o teto.
+// LARGURA PRIMEIRO: 1 variação por condição por rodada, pra dar 1 narração EXATA pra o
+// máximo de condições no menor tempo (mata a aproximação rápido). Depois que tudo tem ao
+// menos 1, as rodadas seguintes aprofundam até a meta (variedade). Sobe pra 2+ quando o
+// banco já estiver largo.
+const POR_CONDICAO = Number(process.env.POR_CONDICAO) || 1; // variações novas por condição, por rodada
+const POR_PRAIA = Number(process.env.POR_PRAIA) || 6;       // variações novas por praia, por rodada (espalha entre praias)
 
 // ── Praias: fonte única em data/beaches.json (editável pelo painel admin) ──
 const ALL_BEACHES = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/beaches.json'), 'utf8')).beaches;
@@ -426,7 +435,17 @@ async function main() {
       if (have >= TARGET_VARIACOES) continue;
       seen.add(key);
       const evitar = (library.keys[key]?.variacoes || []).map(v => v.titulo).filter(Boolean);
-      missing.push({ b, key, id: missing.length + 1, quantas: TARGET_VARIACOES - have, evitar });
+      missing.push({ b, key, id: missing.length + 1, quantas: Math.min(TARGET_VARIACOES - have, POR_CONDICAO), evitar });
+    }
+    // teto por praia nesta rodada: apara as condições que passarem de POR_PRAIA variações,
+    // pra o lote de cada praia ficar pequeno e a verba sobrar pra outras praias.
+    if (POR_PRAIA && missing.length) {
+      let resta = POR_PRAIA; const cabe = [];
+      for (const m of missing) {
+        if (resta <= 0) break;
+        m.quantas = Math.min(m.quantas, resta); resta -= m.quantas; cabe.push(m);
+      }
+      missing.length = 0; missing.push(...cabe);
     }
 
     // chegou no teto de dinheiro: para de gerar, mas continua montando o cache com o que
