@@ -38,7 +38,7 @@ jobs:
           # RITMO ECONÔMICO: alvo de ~US$ 20 no mês (pedido do Hudson, jul/2026).
           # US$ 0,13 por rodada × 4 rodadas/dia = no máximo ~US$ 0,52 a 0,65/dia,
           # o que dá ~US$ 15 a 20/mês. O script PARA sozinho ao bater o BUDGET_USD.
-          # Prioriza RJ primeiro. Depois que o banco satura, as rodadas geram pouco e o
+          # Ordem embaralhada: verba espalhada por todas as praias. Depois que o banco satura, gera pouco e o
           # custo cai sozinho, bem abaixo disso. Pra acelerar (mais gasto), suba os dois.
           MAX_NEW_VARIACOES: '60'
           BUDGET_USD: '0.13'

@@ -19,12 +19,17 @@ const TARGET_VARIACOES = Number(process.env.TARGET_VARIACOES) || 7;
 
 // ── Praias: fonte única em data/beaches.json (editável pelo painel admin) ──
 const ALL_BEACHES = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/beaches.json'), 'utf8')).beaches;
-// Prioridade de geração: RJ primeiro, depois resto do Brasil, gringas por último.
-// Assim, com orçamento limitado por lote, o dinheiro vai pras praias que importam.
-const BR_STATES = new Set(['RJ','SP','SC','PR','RS','ES','BA','CE','RN','PE','PB','AL','SE','MA','PA','AP','GO','MG','DF']);
-function beachPriority(b){ if (b.state==='RJ') return 0; if (BR_STATES.has(b.state)) return 1; return 2; }
-const BEACHES = ALL_BEACHES.filter(b => b.active !== false)
-  .map((b,i)=>({b,i})).sort((x,y)=> beachPriority(x.b)-beachPriority(y.b) || x.i-y.i).map(o=>o.b);
+// Ordem EMBARALHADA a cada rodada (sem prioridade de região). Assim a verba diária se
+// espalha parelho por TODAS as praias ao longo dos dias, sem favorecer o Rio nem nenhuma.
+// Como o banco é incremental (pula o que já está na meta), cada rodada pega praias
+// diferentes e a cobertura avança junto em todo lado. Cada execução é um processo novo,
+// então o embaralho é fresco a cada rodada de 6h.
+function embaralhar(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+  return a;
+}
+const BEACHES = embaralhar(ALL_BEACHES.filter(b => b.active !== false));
 // Teto de variações NOVAS por execução (proxy de orçamento). 0 = sem teto.
 // Vem do env (override manual) OU do painel via Supabase (slider de ritmo).
 let MAX_NEW = Number(process.env.MAX_NEW_VARIACOES) || 0;
@@ -396,7 +401,7 @@ async function main() {
   // ritmo do painel (só se não houver override por env). Sem config = teto seguro
   // de 30/rodada (nunca gera tudo de uma vez num run automático).
   if (!process.env.MAX_NEW_VARIACOES) { MAX_NEW = (await readPaceConfig()) || 30; }
-  if (MAX_NEW) console.log(`Teto deste lote: ${MAX_NEW} variações novas (ritmo do painel). Prioridade: RJ → resto BR → gringas.`);
+  if (MAX_NEW) console.log(`Teto deste lote: ${MAX_NEW} variações novas. Ordem embaralhada (verba espalhada por todas as praias).`);
   else console.log('Sem teto: gera tudo que faltar até a meta.');
 
   for (let bi = 0; bi < BEACHES.length; bi++) {
