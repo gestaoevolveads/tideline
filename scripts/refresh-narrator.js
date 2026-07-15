@@ -25,7 +25,11 @@ function ehFossil(v) {
   const t = `${v.titulo || ''} ${v.analise || ''} ${v.aviso || ''}`;
   if (t.includes('—')) return true;
   if (/[0-9]+,[0-9]+ ?(segundos?|km\/h|kW|quilowatts?|metros?|graus)/.test(t)) return true;
-  // "ombro" como medida de onda: ninguém fala assim (pedido do Hudson, jul/2026)
+  // medida de onda por parte do corpo: banida (pedido do Hudson, jul/2026). Pega as
+  // FRASES de tamanho, não a palavra solta, pra não purgar uso legítimo em aviso
+  // de segurança ("proteja a cabeça").
+  if (/\b(joelho a cintura|cintura a peito|peito a ombro|ombro a cabeça|peito pra cima|quase cabeça|cabeça e meia|meio caixote)\b/i.test(t)) return true;
+  if (/\b(ondas?|tamanho|altura|séries?|mar) de (joelho|cintura|peito|ombro|cabeça)\b/i.test(t)) return true;
   if (/\bombros?\b/i.test(t)) return true;
   // vazamento de inglês no meio do português ("Only detalhe: ...")
   if (/\b(only|the|with)\b/i.test(t)) return true;

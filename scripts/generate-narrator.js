@@ -164,17 +164,18 @@ function windBucket(kmh, tipo) {
 }
 function turnKey(p) { return p; }
 
-// Como o surfista brasileiro fala tamanho. NUNCA "ombro": ninguém fala "onda de
-// ombro" (testado com surfistas de verdade; todos estranharam). Os IDs internos dos
-// buckets não mudam (as chaves do banco dependem deles); só o texto que o modelo lê.
+// Tamanho em METROS aproximados, como se fala na areia. Medida por parte do corpo
+// (joelho/cintura/peito/ombro/cabeça) foi BANIDA: testado com surfistas de verdade
+// e todos estranharam (pedido do Hudson, jul/2026). Os IDs internos dos buckets não
+// mudam (as chaves do banco dependem deles); só o texto que o modelo lê.
 const FAIXA_TEXTO = {
   'flat': 'flat, praticamente sem onda',
-  'joelho-cintura': 'joelho a cintura',
-  'cintura-peito': 'cintura a peito',
-  'peito-ombro': 'do peito pra cima',
-  'ombro-cabeca': 'chegando na cabeça',
-  'cabeca-1.5x': 'cabeça e meia',
-  'grande-2x+': 'bem acima da cabeça, 2m ou mais',
+  'joelho-cintura': 'pequeno, na casa do meio metro',
+  'cintura-peito': 'perto de um metro',
+  'peito-ombro': 'passando do metro, chegando a metro e meio',
+  'ombro-cabeca': 'perto de dois metros',
+  'cabeca-1.5x': 'uns dois metros e meio',
+  'grande-2x+': 'mar bem grande, três metros ou mais',
 };
 const SWELL_FIT_TEXTO = {
   dentro: 'direção que entra bem nesta praia',
@@ -368,13 +369,13 @@ CONDIÇÕES (uma entrada por id; gere a quantidade de variações NOVAS indicada
 ${lista}
 
 REGRAS:
-- PÚBLICO INICIANTE (regra central): escreva para quem NUNCA leu uma previsão. Não é proibido usar termo técnico; é proibido deixar termo técnico SOLTO. Sempre que usar "swell de sul", "terral de sudoeste", "kW/m", "período de Xs" ou graus, explique junto, simples, na mesma frase. Ex: "swell de sul, ou seja, a ondulação vem do sul e abre as ondas pro lado esquerdo"; "uns 20 kW/m de energia, que é a força da onda: a remada cansa e a descida vem com pressão"; "terral de sudoeste, o vento que vem da terra e deixa a onda lisa". Graus entram como aparte ("do sul, uns 200 graus"), nunca como a informação principal. Tamanho na escala que o surfista brasileiro fala de verdade: joelho, cintura, peito, cabeça, cabeça e meia, dois metros. NUNCA use "ombro" como medida de onda (ninguém fala "onda de ombro"; surfistas reais estranham). Teste: um iniciante entende cada palavra e sabe se vale a pena ir?
+- PÚBLICO INICIANTE (regra central): escreva para quem NUNCA leu uma previsão. Não é proibido usar termo técnico; é proibido deixar termo técnico SOLTO. Sempre que usar "swell de sul", "terral de sudoeste", "kW/m", "período de Xs" ou graus, explique junto, simples, na mesma frase. Ex: "swell de sul, ou seja, a ondulação vem do sul e abre as ondas pro lado esquerdo"; "uns 20 kW/m de energia, que é a força da onda: a remada cansa e a descida vem com pressão"; "terral de sudoeste, o vento que vem da terra e deixa a onda lisa". Graus entram como aparte ("do sul, uns 200 graus"), nunca como a informação principal. Tamanho SEMPRE em metros aproximados, como se fala na areia: "meio metro", "perto de um metro", "metro e meio", "uns dois metros". PROIBIDO medir onda por parte do corpo (nada de joelho, cintura, peito, ombro ou cabeça como tamanho; surfistas reais estranham). Teste: um iniciante entende cada palavra e sabe se vale a pena ir?
 - ESTRUTURA EM CAMADAS (3 a 5 frases): (1) traduza em linguagem simples o que está rolando no mar agora; (2) descreva o que o surfista VAI SENTIR na água (a parede, a força, a lisura, a entrada); (3) feche com a chamada honesta e UMA dica concreta (prancha, horário, canto, postura). Não é um relatório de dados; é um amigo experiente lendo o mar pra você.
 - Escreva o que o surfista VAI SENTIR na água, não um relatório de origem do swell.
 - DIREÇÃO DO SWELL: cada condição diz de onde o swell vem e se essa direção funciona nesta praia. Use isso SÓ quando mudar a leitura (swell que entra em cheio na bancada, ou que chega de raspão e desorganizado), integrado natural na frase, como um local comentaria. Se a direção não muda nada no dia, NEM CITE. Proibido citar de forma mecânica ("swell de sul, dentro da janela") ou repetir a palavra "janela" como jargão.
 - TOM: conversa de ser humano, não locutor. Gíria só onde cai natural (no máximo uma por narração); frase que você não falaria em voz alta pra um amigo na areia, reescreva.
 - Detalhe com propriedade: use o conhecimento dos livros pra escolher o detalhe CERTO (por que a parede abre, por que o vento estraga, por que a maré muda tudo), sem virar aula nem encher linguiça. Cada frase carrega informação real.
-- IMPORTANTE: escreva para a FAIXA da condição, não para o número decimal exato. O texto será reusado em dias com condição parecida, e o app mostra os números precisos por conta própria. Use âncora corporal (joelho, cintura, peito, ombro, cabeça) e descrição qualitativa. Pode citar o período em segundos de forma aproximada ("na casa dos 13s") e a energia de forma qualitativa. Evite decimais cravados como "1,82m".
+- IMPORTANTE: escreva para a FAIXA da condição, não para o número decimal exato. O texto será reusado em dias com condição parecida, e o app mostra os números precisos por conta própria. Use metros redondos e aproximados ("na casa do meio metro", "perto de um metro", "uns dois metros") e descrição qualitativa. Pode citar o período em segundos de forma aproximada ("na casa dos 13s") e a energia de forma qualitativa. Evite decimais cravados como "1,82m".
 - Use o perfil da praia (fundo, orientação, janela, maré, caráter) para contextualizar.
 - Gere a QUANTIDADE de variações NOVAS pedida em cada linha (pode ser mais de 2). Todas com aberturas e ênfases diferentes entre si; nunca comece duas com a mesma palavra. Se a linha listar variações já existentes, as novas têm que ser claramente distintas delas (outra abertura, outro ângulo de leitura).
 - NUNCA desincentive o surf. Se a condição está fraca, seja honesto, mas sempre aponte um ângulo legítimo (treinar remada, espuma pra iniciante, longboard, observar o banco). "Não surfe" é proibido. Exceção: risco real de segurança, aí o aviso é direto e mira o perigo.
