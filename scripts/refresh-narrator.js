@@ -11,7 +11,7 @@
 const fs = require('fs');
 const path = require('path');
 const {
-  BEACHES, fetchBeachData, aggregateBlocos, conditionKey,
+  BEACHES, fetchBeachData, aggregateBlocos, conditionKey, acharEntry,
 } = require('./generate-narrator');
 
 const ROOT = path.join(__dirname, '..');
@@ -72,7 +72,7 @@ async function main() {
     }
     const dias = {};
     for (const b of blocos) {
-      const entry = library.keys[conditionKey(beach, b)];
+      const entry = acharEntry(beach, b, library);
       if (!entry || !entry.variacoes.length) { semNarracao++; continue; }
       const vars = entry.variacoes;
       const dayIdx = parseInt(String(b.data).slice(-2), 10) || dayOfMonth;

@@ -140,6 +140,30 @@ function conditionKey(beach, b) {
   ].join('|');
 }
 
+// Acha a narração pra um bloco. Tenta a condição EXATA; se não tiver no banco,
+// cai na condição MAIS PRÓXIMA da mesma praia (mesmo tamanho e mesmo tipo de vento
+// pesam mais, porque é o que muda o texto). Assim o app nunca fica com buraco vazio
+// numa praia que já tem alguma narração. Os números exatos o app mostra por conta.
+function acharEntry(beach, b, library) {
+  const exato = library.keys[conditionKey(beach, b)];
+  if (exato && exato.variacoes && exato.variacoes.length) return exato;
+  const pref = `${beach.id}|`;
+  const h = heightBucket(b.altura_m), turno = b.periodo, wtipo = b.vento_tipo;
+  let melhor = null, melhorNota = -1;
+  for (const k in library.keys) {
+    if (!k.startsWith(pref)) continue;
+    const e = library.keys[k];
+    if (!e.variacoes || !e.variacoes.length) continue;
+    const p = k.split('|');            // id, altura, periodo, vento, turno
+    let nota = 0;
+    if (p[1] === h) nota += 4;                          // mesmo tamanho
+    if ((p[3] || '').split('-')[0] === wtipo) nota += 3; // mesmo tipo de vento
+    if (p[4] === turno) nota += 1;                      // mesmo turno
+    if (nota > melhorNota) { melhorNota = nota; melhor = e; }
+  }
+  return melhor;
+}
+
 async function fetchBeachData(beach, retry = 0) {
   const base = `&timezone=America%2FSao_Paulo&forecast_days=7`;
   const marineUrl = `https://marine-api.open-meteo.com/v1/marine?latitude=${beach.lat}&longitude=${beach.lon}&hourly=wave_height,wave_period,wave_direction${base}`;
@@ -355,7 +379,14 @@ async function main() {
   library.keys ||= {};
 
   const dayOfMonth = new Date().getDate();
-  const cache = { generated_at: new Date().toISOString(), beaches: {} };
+  // Mescla no cache existente: se o download de uma praia falhar nesta rodada, ela
+  // continua no cache com o que já tinha, em vez de sumir (o rebuild do zero derrubava).
+  const cacheOutPath = path.join(ROOT, 'demo/narrator-cache.json');
+  const cache = fs.existsSync(cacheOutPath)
+    ? JSON.parse(fs.readFileSync(cacheOutPath, 'utf8'))
+    : { beaches: {} };
+  cache.generated_at = new Date().toISOString();
+  cache.beaches ||= {};
 
   let hits = 0, misses = 0, apiCalls = 0, novasGeradas = 0;
   const stats = { target: TARGET_VARIACOES, beaches: [], forecastKeysSeen: new Set() };
@@ -456,8 +487,8 @@ async function main() {
     // monta o cache no formato que o app já consome
     const dias = {};
     for (const { b, key } of blocoKeys) {
-      const entry = library.keys[key];
-      if (!entry) continue;
+      const entry = acharEntry(beach, b, library);
+      if (!entry || !entry.variacoes.length) continue;
       hits++;
       const vars = entry.variacoes;
       // rotaciona pela data PREVISTA (não pela data da rodada): mesma condição em
@@ -538,6 +569,6 @@ if (require.main === module) {
 
 module.exports = {
   azimuthOf, classifyWind, heightBucket, periodBucket, windBucket,
-  conditionKey, aggregateBlocos, fetchBeachData, BEACHES,
+  conditionKey, acharEntry, aggregateBlocos, fetchBeachData, BEACHES,
   loadKnowledge, generateForBeachRetry, MODEL,
 };
