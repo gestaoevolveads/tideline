@@ -203,7 +203,7 @@
   <div class="gate-box">
     <h1>TIDE<span style="color:var(--accent)">LINE</span></h1>
     <p id="gate-sub">Painel de controle</p>
-    <input id="gate-email" type="email" placeholder="Email do admin" class="hidden" onkeydown="if(event.key==='Enter')tryLogin()">
+    <input id="gate-email" type="text" placeholder="Email ou usuário" class="hidden" onkeydown="if(event.key==='Enter')tryLogin()">
     <input id="gate-pass" type="password" placeholder="Senha" onkeydown="if(event.key==='Enter')tryLogin()">
     <button onclick="tryLogin()">Entrar</button>
     <div class="gate-err" id="gate-err"></div>
@@ -558,7 +558,7 @@
     </div>
 
     <div class="panel" id="panel-assinantes">
-      <div class="card">
+      <div class="card so-dono">
         <h2 style="margin:0 0 4px">⭐ Fundadores e convidados — acesso vitalício</h2>
         <div class="sub">Fundadores (você e Diego) + convidados próximos com Premium <strong>vitalício</strong>, sem cobrança — <strong>não contam como receita</strong>. Senha à mostra pra consulta rápida.</div>
         <div style="overflow-x:auto;margin-top:14px"><table style="width:100%;border-collapse:collapse;font-size:13px">
@@ -589,7 +589,7 @@
             <div class="nrd-kpi"><div class="nrd-num" id="ka-free">–</div><div class="nrd-lbl">trial vencido</div></div>
           </div>
           <div id="ka-note" style="font-size:11px;color:var(--muted);margin:-8px 0 12px"></div>
-          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 16px">
+          <div class="so-dono" style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 16px">
             <button class="btn" onclick="limparTestes(true)" style="margin:0">🧹 Ver contas de teste</button>
             <span id="clean-msg" style="font-size:12.5px;color:var(--muted)"></span>
           </div>
@@ -604,7 +604,7 @@
         <div id="assin-erro" style="display:none;padding:20px 0;color:var(--muted);line-height:1.6"></div>
       </div>
 
-      <div class="card" style="margin-top:16px">
+      <div class="card so-dono" style="margin-top:16px">
         <h2 style="margin:0 0 4px">🎁 Premium manual e usuários de teste</h2>
         <div class="sub">Dê premium (vitalício ou por X dias) a qualquer conta, ou crie uma conta de teste já premium. Sem cobrança.</div>
 
@@ -714,6 +714,25 @@
    esta tela mexendo no JavaScript (dá, é o navegador dele), não vê nada: quem protege os
    dados é a RLS do banco, que só responde pro e-mail do admin logado de verdade. */
 const LIVE_MODE = !!(window.TIDELINE_CONFIG && window.TIDELINE_CONFIG.SUPABASE_URL && window.TIDELINE_CONFIG.SUPABASE_ANON_KEY);
+
+/* ── PAPÉIS ──────────────────────────────────────────────────────────────────
+   dono  = Hudson: vê tudo.
+   socio = Diego: NÃO vê nem sabe de premium manual, cortesias, testes e
+   convidados. Esconder na tela é cortesia visual; quem garante de verdade é a
+   RLS no banco (sql/acesso-diego.sql), que nunca entrega essas linhas pro
+   login dele. Aqui só tiramos os móveis da sala. */
+const OWNER_EMAIL = 'hcmsffc@gmail.com';
+const LOGINS = { hudson: OWNER_EMAIL, diego: 'diego@tideline.app' }; // usuário → email real
+let PAPEL = 'dono';
+async function aplicarPapel(){
+  try{
+    const sb = await window.TLData.client();
+    const { data:s } = await sb.auth.getSession();
+    const em = ((s && s.session && s.session.user && s.session.user.email) || '').toLowerCase();
+    PAPEL = (em === OWNER_EMAIL) ? 'dono' : 'socio';
+  }catch(e){ PAPEL = 'socio'; } // na dúvida, mostra MENOS
+  if(PAPEL === 'socio') document.querySelectorAll('.so-dono').forEach(el => { el.style.display = 'none'; });
+}
 // no modo ao vivo, login é via Supabase Auth (seguro); senão, senha local (provisório)
 if(LIVE_MODE){
   document.getElementById('gate-email').classList.remove('hidden');
@@ -722,7 +741,8 @@ if(LIVE_MODE){
 async function tryLogin(){
   const err = document.getElementById('gate-err');
   if(LIVE_MODE){
-    const email = document.getElementById('gate-email').value.trim();
+    let email = document.getElementById('gate-email').value.trim();
+    if(email && !email.includes('@')) email = LOGINS[email.toLowerCase()] || email; // aceita usuário
     const pass = document.getElementById('gate-pass').value;
     try{
       const sb = await window.TLData.client();
@@ -734,9 +754,10 @@ async function tryLogin(){
     err.textContent = 'Painel indisponível: o Supabase não carregou. Recarregue a página.';
   }
 }
-function showApp(){
+async function showApp(){
   document.getElementById('gate').classList.add('hidden');
   document.getElementById('app').classList.remove('hidden');
+  await aplicarPapel(); // esconde o que o sócio não vê ANTES de pintar os dados
   initData();
   try{ loadDashboard(); }catch(e){} // Dashboard é a aba padrão
 }
@@ -935,14 +956,17 @@ async function loadAssinantes(){
                 : cls==='teste' ? ' <span class="pill" style="background:rgba(120,120,120,.14);color:var(--muted)">teste</span>' : '';
       const quem = esc(u.nome||'') ? (esc(u.nome)+' · '+esc(u.email||'')) : esc(u.email||'—');
       const dim = (cls==='real' && !comp) ? '' : 'opacity:.55;';
-      const acoes='<button class="btn" style="padding:3px 9px;margin:0;font-size:11px" onclick="usarEmailPremium(\''+jsstr(u.email)+'\')">premium</button>'+(cls==='teste'?' <button class="btn" style="padding:3px 9px;margin:0;font-size:11px;color:var(--accent)" onclick="excluirConta(\''+jsstr(u.email)+'\')">excluir</button>':'');
+      const acoes = PAPEL!=='dono' ? '—'
+        : '<button class="btn" style="padding:3px 9px;margin:0;font-size:11px" onclick="usarEmailPremium(\''+jsstr(u.email)+'\')">premium</button>'+(cls==='teste'?' <button class="btn" style="padding:3px 9px;margin:0;font-size:11px;color:var(--accent)" onclick="excluirConta(\''+jsstr(u.email)+'\')">excluir</button>':'');
       return '<tr style="border-top:1px solid var(--line);'+dim+'"><td style="padding:8px">'+quem+tag+'</td><td style="padding:8px">'+badge+'</td><td style="padding:8px;color:var(--muted)">'+fmtD(u.created_at)+'</td><td style="padding:8px;color:var(--muted)">'+expira+'</td><td style="padding:8px">'+acoes+'</td></tr>';
     }).join('');
     document.getElementById('ka-total').textContent=real;
     document.getElementById('ka-trial').textContent=trial;
     document.getElementById('ka-prem').textContent=prem;
     document.getElementById('ka-free').textContent=free;
-    document.getElementById('ka-note').textContent='Números contam só usuários pagantes. Não entram: '+conv+' convidado(s) + '+cort+' cortesia(s) + '+teste+' teste(s) — aparecem na lista, marcados.';
+    document.getElementById('ka-note').textContent = PAPEL!=='dono'
+      ? 'Números contam só usuários pagantes.'
+      : 'Números contam só usuários pagantes. Não entram: '+conv+' convidado(s) + '+cort+' cortesia(s) + '+teste+' teste(s) — aparecem na lista, marcados.';
     document.getElementById('assin-rows').innerHTML=rows||'<tr><td style="padding:12px;color:var(--muted)" colspan="5">Nenhuma conta ainda. Aparecem aqui assim que alguém se cadastrar.</td></tr>';
     load.style.display='none'; body.style.display='block';
   }catch(e){
