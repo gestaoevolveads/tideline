@@ -23234,6 +23234,13 @@
           "analise": "De tarde o vento lateral cresce pra quase 29 km/h e isso já mexe na água de Monte Alto, deixando a superfície mais picada mesmo com a onda passando de um metro. O período caiu pra casa dos 8 segundos, período médio, então as séries chegam mais próximas uma da outra e a leitura fica um pouco mais apressada. Ainda assim o swell de sudeste entra bem na praia e sustenta um tamanho legal pra treinar remada e pop-up nas bordas do pico. Se puder escolher, prefira o início da tarde antes do vento pegar força total, e busque o canto mais protegido da baía pra achar uma parede mais organizada.",
           "janela": "13h-15h",
           "aviso": null
+        },
+        {
+          "titulo": "Vento atravessado segura a tarde",
+          "score": 2,
+          "analise": "À tarde o swell de leste continua entrando direto na praia, que olha pra esse lado e recebe bem essa direção. O período curto, perto de 7 segundos, faz a onda chegar em cima da outra, sem aquele espaço de série organizada, e a energia baixa, uns 6 kW/m, deixa a remada mais leve mas a descida sem embalo. O vento de lado, forte, na faixa de 27 km/h, atravessa a face e deixa a água irregular, tipo picotada. Dá pra surfar tranquilo numa prancha mais estável, mirando o canto onde o banco costuma segurar melhor a forma.",
+          "janela": null,
+          "aviso": null
         }
       ]
     },
@@ -23256,6 +23263,13 @@
           "analise": "O swell vem de leste essa manhã e ainda consegue entrar em Monte Alto, sustentando as ondas na faixa de um metro a um metro e meio. Mas o período caiu pra 7 segundos, período mais curto, o que é vaga de vento e não swell organizado, então as ondas chegam mais em cima uma da outra, sem tanto espaço pra ler a próxima. O vento lateral de 27 km/h ajuda a bagunçar ainda mais a superfície, tirando um pouco da força que a energia de quase 8 kW/m poderia entregar. É um dia bom pra treinar remada e pop-up na espuma, sem cobrar manobra grande da parede.",
           "janela": "6h-9h",
           "aviso": null
+        },
+        {
+          "titulo": "Leste chegando sem força extra",
+          "score": 2,
+          "analise": "O mar de Monte Alto tá recebendo um swell de leste, direção que entra bem aqui e forma onda na bancada. Só que o período tá curto, na casa dos 7 segundos, então a onda não vem organizada: as séries se atropelam e a força na água é fraca, uns 7 kW/m, dá pra sentir que falta pressão na descida. O vento lateral forte, batendo de lado com uns 26 km/h, ainda pica um pouco a superfície e deixa a parede menos limpa. Pra quem tá afiando bottom turn e cutback vale a manhã, mas sem esperar tubo ou parede raspando: é dia de trabalhar postura e leitura de banco.",
+          "janela": "6h-9h",
+          "aviso": null
         }
       ]
     },
@@ -23265,6 +23279,13 @@
           "score": 1,
           "titulo": "Tarde mole de vaga curta",
           "analise": "De tarde o mar em Monte Alto tá com onda mole, período de quase 7 segundos, que é vaga de vento local e chega mais bagunçada, sem aquela organização de série longa. O tamanho ainda segura perto de um metro e meio, mas com o vento lateral de quase 28 km/h picando a água, a parede perde forma rápido e fecha em vários pontos. Não é dia de procurar tubo ou manobra grande, mas o tamanho ajuda quem tá evoluindo a treinar leitura de banco e entradas mais tranquilas. Prancha mais estável e foco na espuma das laterais, onde o vento castiga menos.",
+          "janela": null,
+          "aviso": null
+        },
+        {
+          "titulo": "Pouca pressão na água da tarde",
+          "score": 1,
+          "analise": "Nessa tarde o mar de Monte Alto recebe swell de leste, que é a direção que costuma funcionar bem aqui, mas chega com período curto, em torno de 6 segundos, o que deixa tudo mais mole e sem sequência clara. A energia baixa, por volta de 5 kW/m, faz a onda quebrar sem muita força, e o vento de lado forte, quase 27 km/h, ainda desalinha a face. Não tem parede pra rasgar, mas sobra espuma tranquila pra quem quer treinar remada ou dar risada de longboard sem pressão de crowd. Vale entrar mais pelo prazer do que pela performance.",
           "janela": null,
           "aviso": null
         }
@@ -23278,6 +23299,13 @@
           "analise": "À noite o swell de leste ainda entra em Monte Alto e mantém o tamanho na casa de um metro a um metro e meio, mas o período curto de pouco mais de 6 segundos entrega vaga de vento, mole e sem grandeza. O vento lateral segue firme, perto de 28 km/h, picando a superfície e deixando a água irregular, sem parede pra encaixar manobra. É um mar mais pra sentir a força da água do que pra performance, então vale aproveitar pra soltar o corpo na espuma e testar posicionamento no pico sem pressão. Se for entrar no escuro, escolha um trecho conhecido da praia e fique perto de outros surfistas.",
           "janela": null,
           "aviso": "Surf noturno pede atenção redobrada: prefira área conhecida e não surfe sozinho."
+        },
+        {
+          "titulo": "Escuro e vaga sem embalo",
+          "score": 1,
+          "analise": "De noite o mar aqui em Monte Alto tá recebendo o mesmo swell de leste, mas com período bem curto, quase 7 segundos, o que é jeito de vaga de vento: onda rápida, mal formada, sem aquela sequência limpa que dá pra prever. A energia na água é baixa, por volta de 7 kW/m, e o vento de lado forte, quase 29 km/h, ainda bagunça a superfície que já não tava lá essas coisas. Sem visibilidade e sem sessão organizada, esse horário serve mais pra quem já conhece o pico de cabeça e quer sentir a água. Se for entrar, luz forte e companhia, e atenção redobrada por conta da visibilidade zero.",
+          "janela": null,
+          "aviso": "Superfície sem luz natural dificulta enxergar o banco e outros surfistas. Evitar entrar sozinho e sem iluminação adequada."
         }
       ]
     },
@@ -25063,7 +25091,147 @@
           "aviso": null
         }
       ]
+    },
+    "praia-brava-floripa|peito-ombro|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Leste entrando, vento de lado atrapalhando",
+          "analise": "De manhã a Brava tá com uma ondulação vindo de leste, direção que entra bem aqui e sobe passando de um metro, quase metro e meio. O período tá na casa dos 8 segundos, que é médio, dá uma organização razoável mas não é aquele swell que forma tubo fácil. O vento tá de lado, uns 15 km/h, picando um pouco a parede em vez de deixar lisa, então a onda ainda empurra mas perde um pouco daquela cara oca que a Brava é famosa por ter. Vale entrar, principalmente se você já rema bem e curte trabalhar bottom turn, mas não espere o tubo dos dias de terral firme.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-floripa|peito-ombro|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Tarde de maral segurando a força",
+          "analise": "O swell continua vindo de leste e mantém o tamanho da manhã, passando de um metro e chegando perto de metro e meio, com período parecido, na casa dos 8 segundos. O problema da tarde é o vento: maral de quase 18 km/h, ou seja, vento vindo do mar pra terra, que pega a onda por trás e faz ela desmoronar antes da hora. Na água isso vira aquela sensação de parede mole, cheia de bumps, difícil de ler o take off com precisão. Ainda dá pra pegar onda, principalmente pra treinar remada e leitura de série, mas quem busca a Brava tubular deve esperar outro horário.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-floripa|peito-ombro|medio-7a9|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite de terral alisando a parede",
+          "analise": "Já de noite o swell de leste segue firme, passando de um metro e beirando metro e meio, com período um pouco mais curto que de dia, uns 7 segundos e meio, ainda assim organizado o suficiente pra formar parede. A grande diferença aqui é o vento: terral de oeste noroeste com quase 19 km/h, que é o vento vindo da terra pro mar, exatamente o que essa praia pede pra segurar o lip e deixar a água lisa igual vidro. Na água a sensação é de onda mais cava, mais rápida, com aquela cara que lembra por que a Brava é point de campeonato. Se tiver luz e condição de encarar o horário, essa é a sessão que compensa buscar, principalmente pra quem já lê bem série.",
+          "janela": "18h-21h",
+          "aviso": "Sessão noturna pede visibilidade e cuidado redobrado com o fundo raso da praia."
+        }
+      ]
+    },
+    "praia-brava-floripa|cintura-peito|curto-vaga|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Vento forte bagunçando onda pequena",
+          "analise": "O swell agora vem de nordeste, direção que ainda entra na Brava mas sem a mesma força do leste, e o tamanho fica mais contido, perto de um metro. O período curto, uns 6 segundos e meio, é sinal de vaga de vento, ou seja, ondulação que nasceu perto e não teve tempo de se organizar, chegando com séries mais bagunçadas. Pra piorar a tarde tem maral forte, quase 27 km/h, vento que bate de frente na onda e transforma tudo em espuma antes da hora de quebrar. Não é dia de buscar parede pra manobra, mas é uma tarde honesta pra treinar remada e pop-up na espuma, sem a cobrança do pico principal.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-floripa|cintura-peito|curto-vaga|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Vento de lado mexendo a superfície da noite",
+          "analise": "A ondulação de nordeste segue perto de um metro à noite, com período curto de uns 6 segundos, o que já avisa que a organização não é grande coisa, ondas mais próximas umas das outras e menos previsíveis. O vento lateral de quase 24 km/h pica a água e tira a limpeza da parede, então o que rola aqui é mais espuma mexida do que aquela parede desenhada da Brava. Dá pra sentir a força pouca na remada, energia mais fraca, mas ainda assim serve pra quem quer só entrar no mar e sentir o pulso da água sem grande exigência técnica. Se for encarar, prancha mais estável ajuda a lidar com a bagunça da superfície.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-floripa|cintura-peito|curto-vaga|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Manhã mole com o mar quase liso",
+          "analise": "Pela manhã a ondulação de nordeste chega perto de um metro, com período curto de uns 6 segundos e meio, típico de vento que soprou pertinho e não deu tempo de organizar a água direito. A energia é baixa, então a remada não pesa muito e a onda quebra sem muita força, mais fácil de ler que o padrão pesado que essa praia costuma entregar. O vento lateral de uns 17 km/h ainda mexe um pouco a superfície mas não estraga tudo, dá pra sentir uma condição tranquila pra treinar drop e leitura de banco. É uma manhã boa pra quem quer sessão mais suave antes de a Brava voltar a cobrar pesado.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "rosa|peito-ombro|medio-7a9|lateral-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Tamanho sobra, direção falta",
+          "analise": "Olha, tem onda na Rosa hoje, passa de um metro e chega perto de metro e meio, mas o vento tá vindo de lado com uns 17 km/h, o que deixa a parede meio irregular, empurrando a água sem organizar direito. O swell tá vindo de leste, meio de raspão nessa enseada que pede mais ondulação de sul ou sudeste, então a força chega mas sem formar aquela parede bonita que Imbituba costuma entregar. Na água você vai sentir um pico inconstante, com trecho bom e trecho fechando rápido. Vale entrar sim, mas escolha as ondas do meio do banco e não se apegue a uma só direção de pico, o dia rende mais pra quem rema variando de posição."
+        }
+      ]
+    },
+    "rosa|peito-ombro|medio-7a9|lateral-forte|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Tarde de vento incomodando",
+          "analise": "A tarde na Rosa vem com onda de bom tamanho, passando de um metro e beirando metro e meio, só que o vento lateral aumentou pra uns 25 km/h e isso já mexe bastante na superfície, deixando ela mais picotada. O swell tá chegando de nordeste, direção que essa praia não abraça tão bem porque a enseada olha mais pro sul e sudeste, então a energia passa meio de raspão e a parede não fecha com aquela qualidade de dia clássico. Na água a sensação é de onda com corpo mas sem lisura, mais para empurrar do que pra desenhar manobra. Se for surfar, prefira o início da tarde antes do vento subir mais, e mire nos picos que ainda mostram alguma organização perto do canal."
+        }
+      ]
+    },
+    "rosa|peito-ombro|medio-7a9|lateral-moderado|noite|fora": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Noite de leitura difícil",
+          "analise": "De noite fica mais complicado enxergar o mar, mas pelos números a Rosa tá com onda em torno de metro e meio, período curto pra médio e vento de lado forte, quase 22 km/h, que já é o suficiente pra bagunçar a face da onda. O swell vem de nordeste, direção que não entra bem nessa enseada voltada pra sul e sudeste, então mesmo com tamanho a onda perde força e fecha sem parede definida. Não é a condição pra buscar performance, é mais dia de onda cheia e sem grande e organização. Se decidir entrar, vá com cautela por causa da visibilidade baixa e prefira ficar perto de onde já conhece o banco."
+        }
+      ]
+    },
+    "rosa|peito-ombro|medio-7a9|lateral-moderado|manha|fora": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Manhã com corpo, sem grandeza",
+          "analise": "Pela manhã a Praia do Rosa tá recebendo onda de bom porte, passando de um metro e quase batendo em metro e meio, com um vento de lado moderado, uns 16 km/h, que ainda deixa surfar sem estragar tudo. O detalhe é que o swell vem de nordeste, lado que essa enseada não pega de frente, já que ela abre mesmo pra sul e sudeste, então a onda chega com menos definição do que o tamanho sugere. Na água você sente empurrão mas pouca parede pra trabalhar, mais onda de passeio do que de manobra. Ainda assim dá pra aproveitar, principalmente treinando remada e pop-up nos picos mais cheios perto do meio da praia."
+        }
+      ]
+    },
+    "rosa|peito-ombro|curto-vaga|lateral-forte|tarde|fora": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Vaga de vento na tarde",
+          "analise": "A tarde chega com período curto, na casa dos 6 segundos, o que já indica vaga de vento, ondulação gerada por vento próximo e não por aquela força organizada que vem de longe. O vento lateral forte, passando de 25 km/h, mais o swell de nordeste que não entra bem nessa enseada, deixam o mar bagunçado, com ondas em cima uma da outra e pouca parede pra pegar. Na água vai parecer mais um caldo mexido do que sessão de qualidade. É um bom dia pra treinar remada e leitura de banco, guardando a prancha maior pra outro dia com mais organização."
+        }
+      ]
+    },
+    "rosa|peito-ombro|curto-vaga|lateral-moderado|noite|fora": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Fim de dia sem forma",
+          "analise": "Já anoitecendo, a Rosa mantém tamanho na casa do metro e meio mas com período curto, perto de 6 segundos, sinal de que é mais vaga de vento do que swell organizado de verdade. O vento de lado ainda sopra forte, uns 20 km/h, e o swell vindo de nordeste passa de raspão nessa enseada que pede ondulação de sul, então a água fica sem aquela parede limpa característica do lugar. Com pouca luz e mar bagunçado, não é o cenário ideal pra buscar manobra. Fica o convite pra quem quer só sentir a água e treinar remada, deixando a sessão de verdade pra um dia com mais organização."
+        }
+      ]
+    },
+    "monte-alto|peito-ombro|curto-vaga|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "titulo": "Manhã curta que ainda entrega algo",
+          "score": 1,
+          "analise": "Pela manhã o swell segue vindo de leste, entrando bem na praia, mas o período tá curto, por volta de 6 segundos, sinal de que é mais vaga de vento do que aquele swell viajado e organizado. A energia é fraca, na casa dos 5 kW/m, então a onda até levanta mas não empurra muito na descida, e o vento de lado com uns 26 km/h ainda deixa a água sem aquele brilho de dia liso. Não é dia de procurar potência, mas o beach break aqui costuma ter uns bancos generosos pra quem quer treinar entrada e pop-up com calma. Bom momento pra observar onde o banco tá formando melhor antes de escolher onde remar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|peito-ombro|curto-vaga|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "titulo": "Maral empurrando a tarde bagunçada",
+          "score": 0,
+          "analise": "O swell de leste segue entrando na praia, mas o período curto, perto de 6 segundos, já entrega pouca organização, e agora o vento vira onshore, ou seja, sopra do mar pra areia, com uns 27 km/h, que é o pior cenário pra parede: ele empurra a onda por trás e faz quebrar antes da hora, cheia de bumps. Na água isso vira uma espuma bagunçada, sem forma definida, com a energia baixa, em torno de 6 kW/m, então nem a força compensa a bagunça. Não é dia de buscar manobra, mas dá pra aproveitar pra treinar remada e leitura de banco numa prancha mais volumosa. Fica pra próxima virada de vento a busca por parede limpa."
+        }
+      ]
     }
   },
-  "generated_at": "2026-07-17T18:52:18.965Z"
+  "generated_at": "2026-07-18T01:16:01.002Z"
 }
