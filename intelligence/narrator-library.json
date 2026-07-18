@@ -24326,6 +24326,13 @@
           "analise": "A tarde em Grumari segurou o suficiente do swell de sudeste pra manter a praia funcionando, com ondas na casa de um metro e período de uns 8 segundos, o que garante séries organizadas mesmo sem ser um dia de tamanho grande. O vento terral de quase 15 km/h ainda ajuda a manter a parede arrumada, então dá pra sentir a onda empurrando com uma força limpa, sem aquele bumpy de vento ruim. A energia é moderada, na casa dos 5 kW/m, então a remada não cansa muito e a descida vem tranquila. É um bom fim de tarde pra treinar leitura de banco e trabalhar manobra na parede sem pressão de tamanho.",
           "janela": "15h-18h",
           "aviso": null
+        },
+        {
+          "score": 3,
+          "titulo": "Leste também abre onda aqui",
+          "analise": "Hoje quem manda é o swell de leste, e mesmo vindo de um ângulo um pouco diferente do sudeste, essa direção também entra bem em Grumari e forma parede decente, com tamanho perto de um metro e período na casa dos 7 segundos. O terral segue firme da terra pro mar, alisando a superfície e dando aquela sensação de descida controlada, sem vento batendo na cara. É um mar honesto pra treinar leitura de banco e pegar onda de trabalhar manobra, sem cobrar demais do surfista intermediário. Se o pico principal estiver cheio de água nas costas, procura os cantos mais ao sul da praia.",
+          "janela": null,
+          "aviso": null
         }
       ]
     },
@@ -24337,6 +24344,13 @@
           "analise": "De noite o mar em Grumari mantém o padrão do dia: swell de sudeste entrando bem na praia, ondas perto de um metro e um período de uns 8 segundos que ainda garante alguma organização nas séries. O vento terral segue soprando, mais fraco que de manhã, uns 12 km/h, o suficiente pra manter a água sem muito estrago na superfície. Com energia baixa, na casa dos 5 kW/m, a força da onda é tranquila, boa pra quem quer sentir a parede sem ser surpreendido por uma pancada forte. Se for surfar de madrugada ou ao anoitecer, vale entrar em dupla e ficar de olho no banco, já que Grumari é praia deserta e sem estrutura por perto.",
           "janela": null,
           "aviso": "Praia isolada e sem posto de guarda-vidas por perto: evite entrar sozinho fora do horário de luz."
+        },
+        {
+          "score": 2,
+          "titulo": "Escuro cai, mar segue educado",
+          "analise": "Com o sol já embaixo da linha do horizonte, o mar de Grumari continua recebendo essa ondulação de sudeste que funciona bem aqui, com tamanho perto de um metro e período em torno de 7 segundos, o suficiente pra dar alguma organização nas séries. O terral ainda ativo, mesmo mais fraco que de manhã, segura a face e mantém a onda com corpo firme, sem aquela desmontada de vento de frente. Sem luz e sem estrutura por perto, essa praia isolada não é lugar pra session noturna, ainda mais numa área de mata fechada e sem posto de salvamento. Fica a leitura de que amanhã cedo deve repetir essa mesma pegada, com o bônus da luz do dia.",
+          "janela": null,
+          "aviso": "Grumari não tem iluminação nem infraestrutura de salvamento à noite, é área de mata isolada. Surfar no escuro aqui não é recomendado, deixa pra amanhã cedo."
         }
       ]
     },
@@ -24346,6 +24360,13 @@
           "score": 3,
           "titulo": "Leste chegando de raspão",
           "analise": "Hoje o swell vem de leste, uma direção que ainda entra em Grumari mas de um jeito mais de lado, então a onda perde um pouco daquela força frontal que o sudeste costuma trazer. Ainda assim o tamanho fica perto de um metro e o período de quase 8 segundos segura uma organização razoável, dá pra contar a série chegando sem virar bagunça. O vento terral forte, quase 20 km/h, deixa a parede seca e vitrificada, só que em rajada mais forte pode empurrar o bico da prancha pra cima na hora da rema. Bom dia pra treinar entrada e leitura de pico, ideal pegar de manhã antes do vento virar e ganhar força demais.",
+          "janela": "6h-9h",
+          "aviso": null
+        },
+        {
+          "score": 3,
+          "titulo": "Sudeste organizando cedo em Grumari",
+          "analise": "Essa ondulação de sudeste chega bem posicionada pra praia, encontrando o beach break de Grumari numa boa configuração, e o resultado é uma parede que fecha com forma na maioria dos picos do banco. O período tá na casa dos 7 a 8 segundos, o que dá uma organização razoável, séries que dá pra contar sem virar bagunça total. O terral de nordeste soprando forte, quase 18 km/h, vem da terra pro mar e segura a face, deixando tudo mais lisinho, embora um vento tão forte assim já comece a incomodar um pouco na entrada da onda. Vale acordar cedo e aproveitar essa janela antes do vento crescer ainda mais ou virar.",
           "janela": "6h-9h",
           "aviso": null
         }
@@ -25530,7 +25551,238 @@
           "aviso": null
         }
       ]
+    },
+    "costao-do-santinho|peito-ombro|medio-7a9|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Leste abrindo no Costão",
+          "analise": "O mar tá passando de metro, batendo perto de metro e meio, com o swell chegando de leste, direção que entra bem aqui e ajuda a onda a formar parede na frente do costão. O período tá na faixa mais curta, uns 7 segundos, então as ondas vêm mais juntas, sem muito espaço entre uma série e outra. O vento lateral de quase 24 km/h atrapalha um pouco a lisura, pica a superfície e deixa a parede menos limpa do que podia ser. Vale entrar de manhã cedo, antes do vento pegar força, e buscar o pico mais protegido perto da pedra, onde a bagunça costuma incomodar menos.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "costao-do-santinho|peito-ombro|curto-vaga|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Tarde de vento contra",
+          "analise": "De tarde o vento vira de frente pro mar, onshore de quase 26 km/h, e isso é o que mais pesa hoje: ele bate na cara da onda e desmancha a parede antes da hora. O swell vem de nordeste, entra na praia mas chega com período curto, quase vaga de vento, o que já deixa tudo mais mexido e menos organizado. Na água a sensação é de onda cheia mas sem força real, empurrando mais do que surfando. Se ainda assim for entrar, prancha mais estável ajuda a segurar o pop-up, que é aquele movimento de levantar de uma vez só, porque o mar tá inconstante e não perdoa hesitação.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "costao-do-santinho|peito-ombro|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Sessão de noite mexida",
+          "analise": "Se tem sessão de noite aqui, é bom saber: o mar tá na casa de metro e metro e meio, mas com período curto, ondas chegando rápido uma atrás da outra sem muito espaçamento. O vento lateral de mais de 22 km/h pica a superfície e tira um pouco da lisura que o Costão costuma entregar. É onda de aproveitar o que dá, sem esperar parede longa, mais pra ir na espuma e treinar remada do que pra buscar manobra. Se decidir entrar com pouca luz, redobra a atenção com quem tá do lado, visibilidade baixa muda tudo no lineup.",
+          "janela": null,
+          "aviso": "Surf noturno reduz visibilidade: cuidado redobrado com outros surfistas e leitura do banco."
+        }
+      ]
+    },
+    "costao-do-santinho|cintura-peito|curto-vaga|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Manhã pequena mas de pé",
+          "analise": "Onda mais na casa de um metro essa manhã, um tamanho gostoso pra quem quer treinar sem pressão. O período curto, perto de 7 segundos, faz as séries chegarem mais compactas, mas nada que atrapalhe quem tá construindo repertório. O vento lateral de quase 18 km/h ainda deixa passar uma janela de manhã cedo antes de bagunçar demais. É um dia bom pra trabalhar o drop com calma e escolher bem a onda, sem remar em tudo que vem.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "costao-do-santinho|cintura-peito|curto-vaga|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Tarde fraca de vento solto",
+          "analise": "A tarde chega com onda mais perto de um metro e pouca força na água, energia baixa que se sente na remada mole e na parede que quase não empurra. O vento onshore de quase 25 km/h ainda dá uma pancada a mais, deixando tudo mexido e sem grande organização. Não é dia de procurar parede pra rasgar, mas sobra espuma decente pra quem tá craft do pop-up ou quer só sentir a água. Prancha mais volumosa ajuda a aproveitar o pouco que tem sem forçar a remada.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "costao-do-santinho|peito-ombro|curto-vaga|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Terral segurando a manhã",
+          "analise": "O vento tá vindo de offshore, ou seja, saindo da terra pro mar, e isso é a melhor notícia do dia: ele segura a onda e deixa a parede mais lisa mesmo com o período curto de quase 7 segundos. A onda tá passando de um metro, chegando perto de metro e meio, com energia moderada que dá pra sentir uma boa descida sem cansar demais a remada. O swell de nordeste entra bem na praia e o Costão do Santinho ainda ganha um empurrão da proteção natural da pedra. Vale acordar cedo pra pegar o vento no ponto certo, antes que ele perca força ou vire.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|cintura-peito|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Vento de lado pica a tarde",
+          "analise": "A ondulação de sudeste continua entrando bem na praia à tarde, com tamanho perto de um metro e período parecido com o da manhã, mas o vento mudou de direção e agora sopra de lado, tipo perpendicular à onda. Isso pica um pouco a superfície e tira aquela lisura de quando o vento vem só da terra, então a parede fica mais irregular, sem aquela vitrine. Ainda dá pra pegar onda com forma, principalmente se você mira os picos mais protegidos do banco. Se notar que um lado do pico tá mais limpo que o outro, é o vento lateral favorecendo aquele canto, vale reposicionar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|cintura-peito|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Manhã redonda pro intermediário",
+          "analise": "De novo o sudeste chegando redondo pra essa praia, tamanho perto de um metro, período por volta de 7 segundos, aquela faixa que dá onda com parede sem virar gigante nem fechar tudo de uma vez. O terral de nordeste, mais ameno que outros dias, ajuda a segurar a face lisa, então a descida vem sem sacolejo e dá pra trabalhar rasgada e leitura de banco com calma. É um daqueles dias de treinar bottom turn e cutback sem pressão de crowd, já que Grumari sempre fica mais vazia que a vizinha Prainha. Bom horário pra aproveitar antes do vento crescer.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|cintura-peito|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Onshore atrapalha, mas dá pra remar",
+          "analise": "O swell segue vindo de leste e ainda entra na praia, mas o vento virou onshore, batendo do mar pra areia, e isso já enche a água de marolinha e tira aquela força da parede. Com tamanho perto de um metro e período mais curto, na casa dos 7 segundos, a onda tende a fechar mais rápido e sem tanta pressão, então não espera aquela descida limpa. Não é o dia de procurar tubo ou rasgada de impacto, mas é ótimo pra focar em remada e pop-up na espuma, sem crowd disputando pico. Se topar com um canto mais abrigado do vento, pode aparecer uma paredinha surfável de vez em quando.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "barra-de-ilheus|cintura-peito|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Mar mediano, vento atrapalhando cedo",
+          "analise": "A ondulação de leste tá entrando direitinho na Barra, mas o vento já nasceu de frente, um onshore de uns 14 km/h vindo do mar pra terra, e isso enche a água de marolinha antes mesmo da onda formar parede. Com perto de um metro e um período mediano, ao redor de 7 segundos, o tempo entre as ondas é curto e a série vem meio apertada, sem muito espaço pra organizar. Na água você vai sentir uma onda mole, que empurra mas não segura, boa pra treinar remada e leitura de banco. Se pegar uma prancha mais volumosa e mirar os cantos onde o rio not muda o fundo toda hora, ainda dá pra aproveitar uma sessão tranquila.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "barra-de-ilheus|cintura-peito|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Tarde mexida na foz do rio",
+          "analise": "De tarde o vento costuma virar pro lado errado aqui, e hoje não é diferente: um onshore de mar pra terra soprando forte, quase 15 km/h, que já chega bagunçando a superfície antes da onda quebrar. O swell vem de leste, que é a direção que costuma abrir bem na Barra, só que com período curto, na casa dos 7 segundos, as séries vêm em cima uma da outra sem dar tempo de organizar. É onda de tamanho perto de um metro, força fraca pra moderada, do tipo que empurra sem cortar. Vale mais pra treinar pop-up na espuma ou levar o longboard, deixando pro fim de tarde quando o vento costuma amansar um pouco.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "barra-de-ilheus|cintura-peito|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Noite fraca, água baixa energia",
+          "analise": "Já é noite e o vento continua incomodando, um onshore constante batendo de frente com uns 14 km/h, o tipo que não dá trégua pra parede se formar direito. A onda de leste até entra bem na Barra, mas com período curto e pouca força na água, fica mais um mar de espuma do que de linha organizada. Sem visibilidade e sem forma real, hoje o mar aqui não convida pra sessão séria. Se ainda assim bater a vontade, é dia de prancha maior e expectativa baixa, tipo aquele soft pra relaxar sem cobrar performance.",
+          "janela": null,
+          "aviso": "Surfar de noite reduz muito a visibilidade de bancos e correntes; se for entrar, fique perto da praia e de olho nos outros na água."
+        }
+      ]
+    },
+    "barra-de-ilheus|peito-ombro|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Um pouco mais de corpo na água",
+          "analise": "Aqui o tamanho já passa do metro, chegando perto de metro e meio, e isso dá mais corpo pra onda trabalhar mesmo com o vento ainda incomodando, um onshore mais fraco hoje, na casa dos 12 km/h. O swell de leste entra bem na Barra e com um pouquinho mais de energia na água a onda ganha uma força extra, ainda que o período seja curto e as séries venham compactas. Você vai sentir uma parede com mais empuxo, dá pra fazer manobra de base, mesmo sem virar tubo. Bom momento pra testar uma prancha um pouco mais curta e buscar os picos onde o banco tá mais definido perto da foz do rio.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "barra-de-ilheus|peito-ombro|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Noite com um pouco mais de tamanho",
+          "analise": "O tamanho aqui já passa do metro, indo até quase metro e meio, o que dá uma sensação diferente na água mesmo com o vento de frente atrapalhando, um onshore de uns 13 km/h típico de fim de dia na Barra. A onda vem de leste, direção que costuma casar bem com essa praia, só que o período curto segura a organização e a parede fica mais cheia do que oca. Dá pra sentir mais força no bottom e algum espaço pra rasgar, ainda que sem grandeza. Se for surfar à noite, escolha um pico iluminado ou já conhecido e leve a prancha que te dá mais confiança no drop.",
+          "janela": null,
+          "aviso": "Sessão noturna pede atenção redobrada: banco pode ter mudado com a última cheia do rio, então entre com cautela até enxergar o fundo."
+        }
+      ]
+    },
+    "barra-de-ilheus|cintura-peito|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Vento de lado ajuda a manhã",
+          "analise": "Hoje o vento não vem de frente: é lateral, bem fraco, na casa dos 7 km/h, e isso já muda a manhã na Barra porque a superfície fica bem mais limpa do que nos dias de onshore forte. O swell de leste entra em cheio nessa praia e o período um pouco mais longo, quase 8 segundos, já organiza as séries, dando espaço entre uma onda e outra. Na água a sensação é de parede mais definida, com tamanho perto de um metro e força moderada, dá pra encaixar bottom turn e uma cutback com folga. É um dia bom pra intermediário evoluir manobra, sobretudo cedo, antes do vento virar e perder essa qualidade.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|cintura-peito|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Manhã lisa no canto da igrejinha",
+          "analise": "O vento tá vindo de terra, offshore fraquinho, o tipo que alisa a parede e deixa tudo mais organizado sem incomodar a remada. O swell chega do leste, direção que entra bem nesse canto abrigado de Saquarema, então mesmo com pouca força a onda ganha uma cara decente pra trabalhar. Na água vai dar perto de um metro, com uma força tranquila, boa pra treinar drop e leitura de parede sem pressão. Vale entrar de manhã cedo, prancha de todo dia funciona bem aqui.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|cintura-peito|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Tarde mansa, onda de trabalho",
+          "analise": "O vento de tarde vem de lado, meio fraco ainda, não é aquele maral forte que baba tudo mas também não deixa a água tão lisa quanto de manhã. A onda mantém perto de um metro, com uma energia baixa que não empurra muito, então a sessão pede mais paciência do que força. É um dia bom pra treinar posicionamento no pico e trabalhar bottom turn sem susto, já que a parede não vem com pressão nenhuma. Se puder escolher, entra ainda cedo antes do vento pegar mais corpo.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|peito-ombro|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Noite mexida, vento levantando",
+          "analise": "De noite o vento lateral já sopra mais forte, uns 16 km/h, e isso pica a superfície da água, tira aquela lisura que a praia tem de manhã. O período caiu, ficou curto, sinal de vaga de vento mais próxima, então as ondas chegam mais em cima uma da outra, sem tanta organização. Na água vai bater perto de metro e meio, mas com uma força meio seca e imprevisível, exige mais atenção no take off. Se for entrar, prefira remar mais pro canto perto da igrejinha, onde o vento bate menos.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|peito-ombro|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Bancada abrindo de leste",
+          "analise": "Terral firme de manhã, quase 10 km/h, segurando bem a face da onda e deixando a água com aquela cara de vidro. O swell entra de leste, direção que a Vila engole numa boa, então mesmo sendo dia de meio a metro e meio a onda ganha corpo e forma no banco. A remada vem tranquila, sem energia excessiva, dá pra sentir a parede formando com calma antes da descida. Bom horário pra chegar cedo e aproveitar o vento enquanto ele segura, antes do sol esquentar a areia e virar a maré do vento.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|peito-ombro|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Tarde de vento de lado",
+          "analise": "À tarde o vento já vira lateral, com uma intensidade que começa a incomodar, bate de banda e pica um pouco a superfície sem destruir de vez a sessão. A onda segue na faixa de metro a metro e meio, com força mediana, dá pra sentir o empurrão mas sem aquela pressão de swell mais longo. É condição pra quem quer treinar leitura de série e ajustar o timing do drop, já que a formação varia um pouco de onda pra onda. Ainda vale a entrada, só ajusta a expectativa pro vento mexer mais a água do que de manhã.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|peito-ombro|curto-vaga|lateral-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Noite de vento forte e swell de raspão",
+          "analise": "O vento lateral já sopra forte à noite, mais de 20 km/h, e isso desorganiza bastante a água, pica a parede e atrapalha até quem já tem experiência. O swell de leste dessa vez pega a praia mais de raspão, sem entrar em cheio como de costume nesse canto, então a força que chega é mais seca e menos aproveitável. O período curto reforça essa cara de vaga de vento, ondas fechando rápido e sem tanta linha pra trabalhar. Não é um dia de procurar performance, mas ainda dá pra usar pra soltar a mão na espuma perto da praia, sem se afastar muito por causa do vento.",
+          "janela": null,
+          "aviso": "vento forte pode dificultar a volta pra praia, fique perto da areia e evite se afastar muito"
+        }
+      ]
     }
   },
-  "generated_at": "2026-07-18T07:35:46.006Z"
+  "generated_at": "2026-07-18T12:46:40.944Z"
 }
