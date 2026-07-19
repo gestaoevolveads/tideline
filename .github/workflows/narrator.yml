@@ -1,13 +1,18 @@
 name: Gerar Narrações
 
+# ── PLANTÃO DE RESERVA (desde jul/2026) ─────────────────────────────────────
+# A fonte PRINCIPAL de narrações agora é a rotina do Claude Code na nuvem
+# (roda no plano do Hudson, custo zero de API), nos horários 00/06/12/18 UTC.
+# Este job roda 1h30 DEPOIS de cada janela e é o SUBSTITUTO: se a rotina
+# commitou narrações nas últimas horas, ele desliga sem gastar um centavo.
+# Se a rotina falhou (cota, erro, o que for), ele assume a janela na hora,
+# com o freio de gasto normal. O git é o detector de falha: simples e à prova
+# de mentira, porque commit ou existe ou não existe.
+
 on:
   workflow_dispatch:
-  # Religado: roda de 6/6h. O RITMO de gasto vem do painel (slider → Supabase
-  # config narrator_pace) com teto seguro de 30 variações/rodada se não configurado.
-  # O TETO DURO de gasto é o limite mensal do console da Anthropic (defina lá).
-  # Cada rodada também mantém o cache fresco (refresh é grátis).
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '30 1,7,13,19 * * *'
 
 # serializa com ranking e feed pra evitar push simultâneo na main
 concurrency:
@@ -21,30 +26,49 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 50   # precisa de histórico pra enxergar os commits da rotina
+
+      - name: A rotina da nuvem já cobriu esta janela?
+        id: plantao
+        run: |
+          # procura a ASSINATURA DA ROTINA nas últimas 7h. De propósito não conta o
+          # próprio commit do plantão: se a rotina ficar fora por um dia, o plantão
+          # cobre TODAS as janelas, não janela sim janela não.
+          RECENTES=$(git log --since="7 hours ago" --grep="rotina nuvem" --oneline | head -5)
+          if [ -n "$RECENTES" ]; then
+            echo "Rotina em dia. Últimos commits de narração:"
+            echo "$RECENTES"
+            echo "cobrir=nao" >> "$GITHUB_OUTPUT"
+          else
+            echo "NENHUM commit de narração nas últimas 7h: a rotina falhou. Assumindo com a API."
+            echo "cobrir=sim" >> "$GITHUB_OUTPUT"
+          fi
 
       - uses: actions/setup-node@v4
+        if: steps.plantao.outputs.cobrir == 'sim'
         with:
           node-version: '22'
 
       - name: Instalar dependências
+        if: steps.plantao.outputs.cobrir == 'sim'
         run: npm install
         working-directory: scripts
 
-      - name: Gerar narrator-cache.json
+      - name: Gerar narrator-cache.json (modo reserva)
+        if: steps.plantao.outputs.cobrir == 'sim'
         run: node generate-narrator.js
         working-directory: scripts
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          # ALVO ~US$ 25 no mês (pedido do Hudson, jul/2026). US$ 0,20 por rodada × 4/dia
-          # = ~US$ 0,80/dia = ~US$ 24/mês. O lote pequeno (POR_CONDICAO=1, POR_PRAIA=6) faz
-          # o freio de orçamento pousar PRECISO (para perto de 0,20, sem estourar o dobro).
-          # Largura primeiro: 1 narração exata pra o máximo de condições, matando a
-          # aproximação em ~1 semana. Depois que satura, gera pouco e o custo cai sozinho.
-          # MAX_NEW alto de propósito: quem manda no gasto é o BUDGET_USD.
+          # No modo reserva o teto por rodada segue baixo: a rotina da nuvem é quem
+          # carrega o volume. US$ 0,20/rodada só quando precisa = custo mensal perto
+          # de zero em operação normal. MAX_NEW alto de propósito: quem manda é o BUDGET.
           MAX_NEW_VARIACOES: '200'
-          BUDGET_USD: '2.60'   # RODADA ÚNICA de reabastecimento (fallback ficou honesto e abriu 882 buracos); volta pra 0.20 depois
+          BUDGET_USD: '0.20'
 
       - name: Commit e push
+        if: steps.plantao.outputs.cobrir == 'sim'
         run: |
           git config --global user.name 'Tideline Bot'
           git config --global user.email 'bot@tideline.app'
@@ -52,6 +76,6 @@ jobs:
           # Deixá-lo de fora fazia o pull --rebase falhar por "unstaged changes" e o push inteiro morria.
           git add demo/narrator-cache.json demo/narrator-stats.json intelligence/narrator-library.json
           git diff --staged --quiet && { echo "nada novo"; exit 0; }
-          git commit -m "chore: atualiza narrações"
+          git commit -m "chore: atualiza narrações (plantão API)"
           git pull --rebase --autostash origin main
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
