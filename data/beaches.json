@@ -594,19 +594,18 @@
       "name": "Monte Alto",
       "state": "RJ",
       "region": "sudeste",
-      "lat": -22.75,
-      "lon": -41.89,
+      "lat": -22.94,
+      "lon": -42.12,
       "break": "beach",
-      "orientation": "L/SE",
+      "orientation": "S/SE",
       "swellWindow": [
-        "SE",
-        "L",
-        "S"
+        "S",
+        "SE"
       ],
-      "terral": "O/NO",
+      "terral": "N/NO",
       "tide": "media",
       "level": "intermediario",
-      "character": "Praia de Búzios/Rasa, beach break tranquilo.",
+      "character": "Beach break tranquilo de Arraial do Cabo, na faixa que segue da Praia Grande. Menos crowd que os picos vizinhos.",
       "active": true,
       "needsReview": true
     },
@@ -615,19 +614,18 @@
       "name": "Figueira",
       "state": "RJ",
       "region": "sudeste",
-      "lat": -22.77,
-      "lon": -41.87,
+      "lat": -22.95,
+      "lon": -42.06,
       "break": "beach",
-      "orientation": "L/SE",
+      "orientation": "S/SE",
       "swellWindow": [
-        "SE",
-        "L",
-        "S"
+        "S",
+        "SE"
       ],
-      "terral": "O/NO",
+      "terral": "N/NO",
       "tide": "media",
       "level": "intermediario",
-      "character": "Praia da região de Búzios, ondas com swell de SE.",
+      "character": "Praia de Arraial do Cabo, continuação da faixa da Praia Grande. Funciona com swell de SE.",
       "active": true,
       "needsReview": true
     },

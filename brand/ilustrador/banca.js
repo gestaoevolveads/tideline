@@ -356,4 +356,13 @@ function iniciarVigilancia(log = console.log) {
   log('  Banca de notícias: vigiando o feed (na subida e a cada 30 min)');
 }
 
-module.exports = { verificar, lista, iniciarVigilancia, SAIDAS_BANCA };
+/* ── dados de uma capa já gerada, pro editor de revista (botão Editar) ── */
+function dadosParaEdicao(slug, tpl) {
+  const pasta = path.join(SAIDAS_BANCA, path.basename(slug));
+  const meta = JSON.parse(fs.readFileSync(path.join(pasta, 'meta.json'), 'utf8'));
+  const n = { title: meta.titulo, source: meta.fonte, url: meta.url, date: meta.data, summary: meta.resumo };
+  const foto = 'data:image/jpeg;base64,' + fs.readFileSync(path.join(pasta, 'foto.jpg')).toString('base64');
+  return { template: tpl, dados: dadosPara(tpl, n, foto) };
+}
+
+module.exports = { verificar, lista, iniciarVigilancia, dadosParaEdicao, SAIDAS_BANCA };

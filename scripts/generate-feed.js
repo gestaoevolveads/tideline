@@ -101,8 +101,50 @@ ${text}`,
 
   if (!noticias.length) { console.error('Nada sobrou depois da filtragem. Mantendo o feed anterior.'); return; }
 
-  fs.writeFileSync(out, JSON.stringify(noticias, null, 2));
-  console.log(`OK: ${noticias.length} notícias (de ${cru.length} pesquisadas) → demo/feed.json`);
+  // PASSO 3 — VERIFICAÇÃO título↔URL. Já saiu feed com o título de uma notícia
+  // apontando pra URL de outra (a extração em dois passos permite esse descolamento,
+  // e ele envenena tudo rio abaixo: app, capas da Banca). Aqui a gente ABRE cada
+  // URL e confere que a página fala do mesmo assunto. Par que não bate, cai.
+  const aprovadas = [];
+  const vistas = new Set();
+  for (const n of noticias) {
+    const urlNorm = String(n.url).replace(/[#?].*$/, '').replace(/\/$/, '');
+    if (vistas.has(urlNorm)) { console.log('  descartada (URL repetida):', n.title); continue; }
+    vistas.add(urlNorm);
+    const ok = await tituloBateComPagina(n);
+    if (ok) aprovadas.push(n);
+    else console.log('  descartada (página não bate com o título):', n.title, '|', n.url);
+  }
+  if (!aprovadas.length) { console.error('Nenhuma notícia passou na verificação. Mantendo o feed anterior.'); return; }
+
+  fs.writeFileSync(out, JSON.stringify(aprovadas, null, 2));
+  console.log(`OK: ${aprovadas.length} notícias (de ${cru.length} pesquisadas, ${noticias.length} filtradas) → demo/feed.json`);
+}
+
+// Abre a URL e compara o título do item com o <title>/og:title da página.
+// Comparação por sobreposição de palavras significativas (sem acento, sem
+// palavrinha curta). Rede falhou = reprova: link que não abre não vai pro app.
+async function tituloBateComPagina(n) {
+  const norm = (s) => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9\s]/g, ' ');
+  try {
+    const ctl = new AbortController();
+    const timer = setTimeout(() => ctl.abort(), 20000);
+    const r = await fetch(n.url, {
+      signal: ctl.signal, redirect: 'follow',
+      headers: { 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126 Safari/537.36' },
+    });
+    clearTimeout(timer);
+    if (!r.ok) return false;
+    const html = (await r.text()).slice(0, 200000);
+    const og = html.match(/<meta[^>]+property=["']og:title["'][^>]+content=["']([^"']+)["']/i);
+    const t = html.match(/<title[^>]*>([^<]+)<\/title>/i);
+    const paginaTexto = norm(((og && og[1]) || '') + ' ' + ((t && t[1]) || '') + ' ' + html.replace(/<[^>]+>/g, ' ').slice(0, 4000));
+    const palavras = norm(n.title).split(/\s+/).filter(w => w.length > 3);
+    if (!palavras.length) return false;
+    const acertos = palavras.filter(w => paginaTexto.includes(w)).length;
+    return acertos / palavras.length >= 0.5; // metade das palavras-chave na página
+  } catch { return false; }
 }
 
 main().catch(err => { console.error('Erro fatal:', err); process.exit(1); });

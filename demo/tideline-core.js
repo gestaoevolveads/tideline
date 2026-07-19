@@ -13,7 +13,6 @@ const BEACHES = [
   // NORDESTE
   {name:'Fernando de Noronha',city:'Noronha',state:'PE',lat:-3.85,lon:-32.43,region:'nordeste'},
   {name:'Cacimba do Padre',city:'Noronha',state:'PE',lat:-3.86,lon:-32.43,region:'nordeste'},
-  {name:'Jericoacoara',city:'Jijoca de Jericoacoara',state:'CE',lat:-2.79,lon:-40.51,region:'nordeste'},
   {name:'Praia de Pipa',city:'Tibau do Sul',state:'RN',lat:-6.23,lon:-35.05,region:'nordeste'},
   {name:'Maracaípe',city:'Ipojuca',state:'PE',lat:-8.55,lon:-35.02,region:'nordeste'},
   {name:'Praia do Cupe',city:'Ipojuca',state:'PE',lat:-8.48,lon:-35.01,region:'nordeste'},
@@ -35,9 +34,8 @@ const BEACHES = [
   {name:'Itacoatiara',city:'Niterói',state:'RJ',lat:-22.97,lon:-43.04,region:'sudeste'},
   {name:'Geribá',city:'Búzios',state:'RJ',lat:-22.77,lon:-41.90,region:'sudeste',art:'em'},
   {name:'Tucuns',city:'Búzios',state:'RJ',lat:-22.77,lon:-41.88,region:'sudeste',art:'em'},
-  {name:'Monte Alto',city:'Búzios',state:'RJ',lat:-22.75,lon:-41.89,region:'sudeste'},
-  {name:'Figueira',city:'Búzios',state:'RJ',lat:-22.77,lon:-41.87,region:'sudeste'},
-  {name:'Praia Rasa',city:'Búzios',state:'RJ',lat:-22.73,lon:-41.93,region:'sudeste'},
+  {name:'Monte Alto',city:'Arraial do Cabo',state:'RJ',lat:-22.94,lon:-42.12,region:'sudeste'},
+  {name:'Figueira',city:'Arraial do Cabo',state:'RJ',lat:-22.95,lon:-42.06,region:'sudeste'},
   {name:'Foguete',city:'Cabo Frio',state:'RJ',lat:-22.92,lon:-42.06,region:'sudeste'},
   {name:'Unamar',city:'Cabo Frio',state:'RJ',lat:-22.94,lon:-42.22,region:'sudeste'},
   {name:'Praia Grande',city:'Arraial do Cabo',state:'RJ',lat:-22.97,lon:-42.00,region:'sudeste'},
@@ -55,7 +53,6 @@ const BEACHES = [
   {name:'Praia do Bonete',city:'Ilhabela',state:'SP',lat:-23.83,lon:-45.35,region:'sudeste'},
   {name:'Castelhanos',city:'Ilhabela',state:'SP',lat:-23.79,lon:-45.26,region:'sudeste'},
   {name:'Massaguaçu',city:'Caraguatatuba',state:'SP',lat:-23.59,lon:-45.36,region:'sudeste'},
-  {name:'Ponta da Praia',city:'Santos',state:'SP',lat:-23.98,lon:-46.30,region:'sudeste'},
   {name:'Jureia',city:'Peruíbe',state:'SP',lat:-24.39,lon:-47.01,region:'sudeste'},
   // SUL
   {name:'Costão do Santinho',city:'Florianópolis',state:'SC',lat:-27.49,lon:-48.39,region:'sul'},
@@ -84,7 +81,6 @@ const BEACHES = [
   {name:'Titanzinho',city:'Fortaleza',state:'CE',lat:-3.71,lon:-38.47,region:'nordeste'},
   {name:'Praia do Futuro',city:'Fortaleza',state:'CE',lat:-3.74,lon:-38.45,region:'nordeste'},
   {name:'Baía Formosa',city:'Baía Formosa',state:'RN',lat:-6.37,lon:-35.01,region:'nordeste'},
-  {name:'Ponta Negra',city:'Natal',state:'RN',lat:-5.88,lon:-35.17,region:'nordeste'},
   {name:'Itacarezinho',city:'Itacaré',state:'BA',lat:-14.35,lon:-38.98,region:'nordeste'},
   {name:'Regência',city:'Linhares',state:'ES',lat:-19.65,lon:-39.83,region:'sudeste'},
   {name:'Setiba',city:'Guarapari',state:'ES',lat:-20.60,lon:-40.42,region:'sudeste'},
@@ -93,16 +89,6 @@ const BEACHES = [
   {name:'Praia do Porto (Imbituba)',city:'Imbituba',state:'SC',lat:-28.24,lon:-48.65,region:'sul'},
   {name:'Farol de Santa Marta',city:'Laguna',state:'SC',lat:-28.60,lon:-48.81,region:'sul'},
   // MUNDIAL — WT spots
-  {name:'Snapper Rocks',city:'Gold Coast',state:'AUS',lat:-28.164,lon:153.543,region:'world'},
-  {name:'Bells Beach',city:'Torquay',state:'AUS',lat:-38.367,lon:144.282,region:'world'},
-  {name:'Jeffreys Bay',city:'Eastern Cape',state:'ZAF',lat:-34.050,lon:24.912,region:'world'},
-  {name:'Hossegor',city:'Hossegor',state:'FRA',lat:43.670,lon:-1.427,region:'world'},
-  {name:'Teahupoo',city:'Tahiti',state:'PYF',lat:-17.848,lon:-149.250,region:'world'},
-  {name:'Pipeline',city:'North Shore',state:'HAW',lat:21.665,lon:-158.053,region:'world'},
-  {name:'Cloudbreak',city:'Tavarua',state:'FJI',lat:-17.923,lon:177.217,region:'world'},
-  {name:'Lemoore',city:'California',state:'USA',lat:36.300,lon:-119.770,region:'world'},
-  {name:'Mundaka',city:'Mundaka',state:'ESP',lat:43.408,lon:-2.699,region:'world'},
-  {name:'Peniche',city:'Peniche',state:'PRT',lat:39.355,lon:-9.379,region:'world'},
 ];
 
 /* Vento: a direção de onde ele SOPRA. Terral limpa a parede, maral desmancha. */

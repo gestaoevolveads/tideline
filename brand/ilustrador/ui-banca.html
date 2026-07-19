@@ -54,6 +54,11 @@
   .capa .nome{position:absolute;left:0;right:0;bottom:0;padding:14px 8px 6px;font-size:10.5px;
     font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#fff;text-align:center;
     background:linear-gradient(transparent,rgba(23,39,38,.75))}
+  .capa .editar{position:absolute;top:8px;right:8px;opacity:0;transition:.15s;border:0;
+    background:#fff;color:var(--deep);border-radius:8px;padding:6px 10px;font:inherit;
+    font-size:11.5px;font-weight:700;cursor:pointer;box-shadow:0 2px 8px rgba(23,39,38,.25)}
+  .capa:hover .editar{opacity:1}
+  .capa .editar:hover{background:var(--accent);color:#fff}
 
   .vazio{text-align:center;padding:70px 20px;color:var(--muted)}
   .vazio .g{font-size:38px;margin-bottom:10px}
@@ -116,10 +121,18 @@ async function carregar(){
         ${(n.capas||[]).map(c => `
           <div class="capa" onclick="ver('/saidas/banca/${esc(n.slug)}/${esc(c)}')">
             <img loading="lazy" src="/saidas/banca/${esc(n.slug)}/${esc(c)}" alt="">
+            <button class="editar" onclick="event.stopPropagation();editar('${esc(n.slug)}','${c.replace('.png','')}')" title="Abrir esta capa no editor, com tudo editável">✎ Editar</button>
             <div class="nome">${NOMES[c.replace('.png','')] || esc(c)}</div>
           </div>`).join('')}
       </div>
     </div>`).join('');
+}
+
+async function editar(slug, tpl){
+  const r = await (await fetch(`/api/banca/editar?slug=${encodeURIComponent(slug)}&tpl=${encodeURIComponent(tpl)}`)).json();
+  if(r.erro){ alert('Não consegui abrir: ' + r.erro); return; }
+  localStorage.setItem('tl_banca_editar', JSON.stringify(r));
+  window.location = '/revista';
 }
 
 function ver(src){

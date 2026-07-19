@@ -93,6 +93,8 @@
     padding:2px 6px;border-radius:4px;margin-bottom:4px}
   .card .rot .t.capa{background:#FDECE7;color:#8A2B12}
   .card .rot .t.ilustracao{background:var(--surface);color:var(--mid)}
+  .card .rot .t.camisa{background:#EDE9F5;color:#4B3D78}
+  .card .rot .t.post{background:#E7F0EA;color:#1F5E3B}
   .card .rot .n{color:var(--deep);font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .card{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--sombra);
     transition:transform .18s ease-out, box-shadow .18s}
@@ -188,6 +190,8 @@
       <button data-f="tudo" class="on">Tudo</button>
       <button data-f="ilustracao">Ilustrações</button>
       <button data-f="capa">Capas de revista</button>
+      <button data-f="camisa">Camisas e filme</button>
+      <button data-f="post">Posts</button>
     </div>
     <div id="grade"></div>
     <div class="vazio" id="vazio">Nenhum desenho ainda.<br>Descreva uma cena ao lado e mande desenhar.</div>
@@ -322,7 +326,7 @@ function pintarGaleria() {
         <div class="card">
           <div class="img" onclick="ampliar('${x.f}')"><img src="/saidas/${x.f}" alt="" loading="lazy"></div>
           <div class="rot">
-            <span class="t ${x.tipo}">${x.tipo === 'capa' ? 'Capa' : 'Ilustração'}</span>
+            <span class="t ${x.tipo}">${({capa:'Capa',camisa:'Camisa/Filme',post:'Post'})[x.tipo] || 'Ilustração'}</span>
             <div class="n" title="${x.rotulo}">${x.rotulo || 'sem título'}</div>
           </div>
           <div class="acoes">

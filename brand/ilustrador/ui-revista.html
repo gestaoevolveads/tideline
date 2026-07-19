@@ -245,6 +245,23 @@ async function iniciar(){
 
   FOTO = await paraDataUri('/fundo-padrao').catch(() => '');
   trocarTemplate(CFG.templates[0].id);
+
+  // veio da Banca com "Editar"? Carrega a capa gerada INTEIRA no editor:
+  // mesmo template, mesmos textos, mesma foto. Daqui em diante é edição normal.
+  try{
+    const ed = JSON.parse(localStorage.getItem('tl_banca_editar') || 'null');
+    if (ed && ed.template) {
+      localStorage.removeItem('tl_banca_editar');
+      trocarTemplate(ed.template);
+      DADOS = Object.assign({}, ed.dados);
+      CHAMADAS = (ed.dados.chamadas || []).map(c => Object.assign({}, c));
+      FOTO = ed.dados.foto || '';
+      $('#f-pb').checked = !!ed.dados.pb;
+      $('#f-grao').checked = !!ed.dados.grao;
+      $('#f-quente').checked = !!ed.dados.quente;
+      montarFormulario(); desenhar();
+    }
+  }catch(e){}
 }
 
 async function paraDataUri(url){

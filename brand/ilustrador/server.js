@@ -427,6 +427,10 @@ const servidor = http.createServer(async (req, res) => {
     if (rota === '/api/banca/lista') {
       return json(res, 200, { noticias: banca.lista() });
     }
+    if (rota === '/api/banca/editar') {
+      try { return json(res, 200, banca.dadosParaEdicao(u.searchParams.get('slug'), u.searchParams.get('tpl'))); }
+      catch (e) { return json(res, 404, { erro: e.message }); }
+    }
     if (rota === '/api/banca/verificar' && req.method === 'POST') {
       return banca.verificar(console.log, (err, r) => {
         if (err) return json(res, 500, { erro: err.message });
@@ -446,8 +450,13 @@ const servidor = http.createServer(async (req, res) => {
           const d = new Date(t);
           const quando = d >= hoje ? 'Hoje' : d >= ontem ? 'Ontem'
             : d.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long' });
-          // o nome do arquivo já diz o que a imagem é: revista_data_titulo ou data_cena
-          const tipo = f.startsWith('revista_') ? 'capa' : 'ilustracao';
+          // o nome do arquivo já diz o que a imagem é: revista_/camisa_/filme_/post_
+          // e o resto (data_cena) é desenho. Sem isto o filtro "Ilustrações"
+          // mostrava camisa e post junto, o que não é filtro, é decoração.
+          const tipo = f.startsWith('revista_') ? 'capa'
+            : f.startsWith('camisa_') || f.startsWith('filme_') ? 'camisa'
+            : f.startsWith('post_') ? 'post'
+            : 'ilustracao';
           const partes = f.replace(/\.png$/, '').split('_');
           const rotulo = (partes.slice(2).join(' ') || partes.slice(-1)[0] || '')
             .replace(/-/g, ' ').replace(/\s+\d+$/, '').trim();

@@ -371,6 +371,33 @@
       background:var(--surface2,#E8F0ED);border-radius:12px;font-size:12px;color:var(--mid);line-height:1.45}
     .cm-fit b{color:var(--deep)}
     .cm-fit svg{width:16px;height:16px;flex:0 0 16px;color:var(--muted);margin-top:1px}
+    /* guia de tamanhos (tabela oficial Montink, na nossa identidade) */
+    .cm-guia{margin-top:8px;border:1px solid rgba(23,39,38,.12);border-radius:12px;overflow:hidden}
+    .cm-guia summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px;
+      padding:11px 13px;font-size:12.5px;font-weight:700;color:var(--deep);min-height:44px;
+      -webkit-tap-highlight-color:transparent}
+    .cm-guia summary::-webkit-details-marker{display:none}
+    .cm-guia summary svg{width:15px;height:15px;color:var(--muted);flex:none}
+    .cm-guia summary .seta{margin-left:auto;transition:transform .18s}
+    .cm-guia[open] summary .seta{transform:rotate(180deg)}
+    .cm-guia-body{padding:0 13px 13px}
+    .cm-guia-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+    .cm-guia table{width:100%;border-collapse:collapse;font-size:12px;min-width:330px}
+    .cm-guia th{font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;
+      color:var(--muted);text-align:center;padding:7px 6px;border-bottom:1px solid rgba(23,39,38,.12)}
+    .cm-guia th:first-child,.cm-guia td:first-child{text-align:left;font-weight:700;color:var(--deep);white-space:nowrap}
+    .cm-guia td{text-align:center;padding:8px 6px;color:var(--mid);border-bottom:1px solid rgba(23,39,38,.06);
+      font-variant-numeric:tabular-nums}
+    .cm-guia tr:last-child td{border-bottom:0}
+    .cm-guia-nota{font-size:11px;color:var(--muted);line-height:1.5;margin-top:9px}
+    /* selos de confiança compactos */
+    .cm-selinhos{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+    .cm-selinho{display:flex;flex-direction:column;align-items:center;gap:5px;text-align:center;
+      padding:11px 6px;background:var(--surface2,#E8F0ED);border-radius:12px}
+    .cm-selinho svg{width:19px;height:19px;color:var(--deep)}
+    .cm-selinho .t{font-size:10.5px;font-weight:800;letter-spacing:.02em;color:var(--deep);line-height:1.25}
+    .cm-selinho .s{font-size:9.5px;color:var(--muted);line-height:1.3}
+    @media(max-width:360px){.cm-selinhos{grid-template-columns:1fr 1fr}.cm-selinho:last-child{grid-column:1/-1}}
     .cm-body{padding:16px 20px 20px}
     .cm-nome{font-size:19px;font-weight:800;letter-spacing:-.01em;line-height:1.25}
     .cm-preco{font-size:23px;font-weight:800;margin-top:5px}
@@ -2589,6 +2616,43 @@ function pintarFicha(){
             <circle cx="12" cy="12" r="9"/><path d="M12 16v-4.5M12 8.2h.01"/></svg>
           <span><b>Ela é oversized, e cai larga mesmo.</b> Ombro caído, corpo reto. Se você
           gosta do caimento mais justo, pegue um tamanho abaixo do que você costuma usar.</span>
+        </div>
+
+        <details class="cm-guia">
+          <summary>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+              <path d="M3 7h18M3 7v10h18V7M7 7v3M12 7v5M17 7v3"/></svg>
+            Guia de tamanhos (em cm)
+            <svg class="seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="cm-guia-body">
+            <div class="cm-guia-scroll"><table>
+              <tr><th>Medida</th><th>P</th><th>M</th><th>G</th><th>GG</th><th>XGG</th></tr>
+              <tr><td>Largura</td><td>58–62</td><td>60–64</td><td>62–66</td><td>64–68</td><td>66–70</td></tr>
+              <tr><td>Comprimento</td><td>68–72</td><td>70–74</td><td>71–75</td><td>73–77</td><td>74–78</td></tr>
+            </table></div>
+            <div class="cm-guia-nota">Medidas oficiais da confecção; podem variar até 3 cm.
+            Na lavagem, encolhe cerca de 4 a 7% no comprimento e 3 a 5% na largura.
+            Meça uma camiseta sua que veste bem e compare com a tabela.</div>
+          </div>
+        </details>
+
+        <div class="cm-selinhos">
+          <div class="cm-selinho">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2.6l7 3v5.6c0 4.3-2.9 8.3-7 9.2-4.1-.9-7-4.9-7-9.2V5.6z"/><path d="M9 12.2l2.1 2.1L15.4 10"/></svg>
+            <span class="t">Compra segura</span><span class="s">pelo Mercado Pago</span>
+          </div>
+          <div class="cm-selinho">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h11v13H4zM15 9h4l2 3v5h-6"/><circle cx="8" cy="19" r="1.6"/><circle cx="17.5" cy="19" r="1.6"/></svg>
+            <span class="t">Rastreio</span><span class="s">até a sua porta</span>
+          </div>
+          <div class="cm-selinho">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
+            <span class="t">7 dias</span><span class="s">pra trocar ou devolver</span>
+          </div>
         </div>
 
         <div class="cm-lbl">Entrega</div>
