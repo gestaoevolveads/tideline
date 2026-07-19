@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T18:43:58.561Z",
+  "generated_at": "2026-07-19T20:13:39.281Z",
   "beaches": {
     "Saquarema": {
       "dias": {
@@ -529,11 +529,11 @@
         },
         "2026-07-23": {
           "manha": {
-            "score": 4,
-            "titulo": "Vento de lado, mar ainda gostoso",
-            "analise": "Manhã com vento lateral fraco, cerca de 8 km/h, que mexe pouco na parede e deixa a onda ainda com cara boa. O período na casa dos 9s garante série organizada, com espaço suficiente pra ler e se posicionar com calma. A onda passando do metro carrega energia moderada, quase 9 kW/m, boa pra sentir a força sem pesar demais na remada. Dá pra aproveitar bem essa manhã, especialmente se você já intermedia leitura de banco e busca constância na parede.",
-            "janela": "6h-10h",
-            "aviso": null
+            "score": 3,
+            "titulo": "Peró grande com parede nervosa",
+            "analise": "Tem onda de tamanho hoje, perto de dois metros, a faixa que já exige postura e leitura rápida do surfista. O período curto, entre 7 e 9s, dá séries menos espaçadas, então a parede sobe rápido e fecha com pressa, ainda mais com o onshore mexendo a superfície. A energia alta, quase 12 kW/m, garante impulso forte na descida mas também caldo pesado se a leitura falhar. Vale escolher bem a onda da série e evitar remar em tudo, esse tamanho pede seletividade.",
+            "janela": null,
+            "aviso": "Ondas maiores com período curto fecham rápido: atenção redobrada na hora do drop."
           },
           "tarde": {
             "score": 1,
@@ -561,25 +561,11 @@
         },
         "2026-07-25": {
           "manha": {
-            "score": 3,
-            "titulo": "Peró grande com parede nervosa",
-            "analise": "Tem onda de tamanho hoje, perto de dois metros, a faixa que já exige postura e leitura rápida do surfista. O período curto, entre 7 e 9s, dá séries menos espaçadas, então a parede sobe rápido e fecha com pressa, ainda mais com o onshore mexendo a superfície. A energia alta, quase 12 kW/m, garante impulso forte na descida mas também caldo pesado se a leitura falhar. Vale escolher bem a onda da série e evitar remar em tudo, esse tamanho pede seletividade.",
-            "janela": null,
-            "aviso": "Ondas maiores com período curto fecham rápido: atenção redobrada na hora do drop."
-          },
-          "tarde": {
-            "score": 1,
-            "titulo": "Maral mata a madrugada",
-            "analise": "Período bom na casa dos 11s, onda de tamanho legal passando do metro, mas o maral de tarde em Peró é decisivo. Ar vindo do mar destrói a parede antes dela se formar, entrega tudo bagunçado. Não é dia pra perfeccionista, mas quem tá aprendendo pop-up ainda tem espuma pra treinar e forma na superfície mesmo com bagunça. Esperaria pelo entardecer, quando o vento costuma afrouxar.",
-            "janela": null,
+            "score": 5,
+            "titulo": "Manhã de série contada certinha",
+            "analise": "Peró funciona assim: quando o swell chega forte do quadrante sul ou sudoeste, o vento de NE vira offshore e a praia fica com a cara mais limpa da região. Hoje é esse cenário, com período longo na casa dos 11-13s, série organizada e espaçada, e altura passando do metro, na faixa que a maioria imagina quando pensa em surf de verdade. A energia gira em torno de 10 kW/m, dá remada com propósito mas sem exaustão. Vale acordar cedo e pegar o horário da manhã, que é quando esse terral costuma segurar mais firme antes do sol esquentar a areia.",
+            "janela": "6h-9h",
             "aviso": null
-          },
-          "noite": {
-            "score": 1,
-            "titulo": "Vento forte esconde a boa série",
-            "analise": "O mar até guarda uma ondulação decente, período na casa dos 9s, mas o onshore de quase 20 km/h é o tipo de vento que desmonta a parede antes da hora de descer. Com a noite chegando junto, fica difícil ler banco e série com clareza. A altura passando do metro tem energia razoável, mas na prática isso vira caldo mais bagunçado que onda de verdade. Vale mais observar o mar hoje e planejar a entrada pro período da manhã, quando o vento tende a acalmar.",
-            "janela": null,
-            "aviso": "Vento forte e pouca luz à noite pedem cautela extra na leitura do mar antes de entrar."
           }
         }
       }
@@ -681,8 +667,8 @@
         "2026-07-23": {
           "manha": {
             "score": 2,
-            "titulo": "Manhã de leste chegando torto",
-            "analise": "O tamanho ainda impressiona, perto de dois metros, mas o período mais curto, na faixa dos 7 segundos, já entrega uma onda menos organizada, mais amontoada. O swell vem de leste e pega essa praia meio de raspão, então em vez de abrir a parede inteira ela tende a fechar rápido em pedaços. O vento lateral com quase 27 km/h ainda pica um pouco a superfície, mas dá pra sentir a força da água empurrando, uns 11 kW/m de energia, o suficiente pra cansar a remada. É um dia mais de pegar o que vier e trabalhar o drop rápido do que de esperar parede longa. Observe o banco antes de escolher o pico, porque o formato pode variar bastante de um trecho pro outro da praia.",
+            "titulo": "Onda grande, mar bagunçado pelo vento",
+            "analise": "Onshore forte é o vento que sopra do mar pra praia, e ele é o que mais atrapalha: pega a onda por trás e faz ela desmontar antes da hora, mesmo com bom tamanho uns dois metros chegando. O período de 9 segundos ainda segura alguma série, mas a energia uns 22 kW/m vem desorganizada, então a sensação na água é de força sem parede definida. Dá pra sentir puxão na remada e pouca superfície lisa pra trabalhar manobra. Se for entrar, prancha mais estável ajuda a aproveitar o volume de água mesmo com a bagunça na superfície.",
             "janela": null,
             "aviso": null
           },
@@ -703,10 +689,10 @@
         },
         "2026-07-24": {
           "manha": {
-            "score": 3,
-            "titulo": "Cedo, mar manso e período generoso",
-            "analise": "O período alto, na casa dos 11 segundos, é o que segura a qualidade mesmo com o tamanho mais moderado: as ondas vêm passando do metro, organizadas, fáceis de escolher. Vento lateral fraco não incomoda a face, então a manhã fica com aquela lisura gostosa de surfar. A energia é suave, uns 8 kW/m, longe de cansar a remada, ideal pra quem quer trabalhar linha e trajetória sem pressa. Chegar cedo aqui compensa: o Foguete costuma ficar mais organizado antes do vento da tarde entrar.",
-            "janela": "6h-9h",
+            "score": 2,
+            "titulo": "Tamanho bom, maral tirando a forma",
+            "analise": "As ondas crescem, uns dois metros, período na casa dos 9 segundos que ainda dá uma organização razoável, mas o vento vem do mar pra terra, o maral, batendo forte com uns 21 km/h. Isso faz a água entrar picada e as partes quebrarem antes da hora, tirando a força e enchendo a parede de bumps. Ainda tem uns 22 kW/m de energia na água, então o tamanho tá lá, só que o visual e a qualidade da onda sofrem bastante com esse vento de frente. Vale mais aproveitar como treino de remada e de leitura de banco do que buscar manobra de precisão hoje.",
+            "janela": null,
             "aviso": null
           },
           "tarde": {
@@ -718,10 +704,10 @@
           },
           "noite": {
             "score": 2,
-            "titulo": "Noite de leste bagunçando a maré",
-            "analise": "Mar ainda grande, perto de dois metros, mas o período encurtou pra faixa dos 7 a 8 segundos, sinal de que a organização caiu e as séries vêm mais em cima uma da outra. Vento lateral forte, quase 27 km/h, deixando a água picada e a parede sem aquela vidraça que o Foguete costuma entregar de manhã. Na água a sensação é de força sem forma: energia de quase 14 kW/m empurrando, mas a onda fecha rápido e não dá tempo de trabalhar. O swell vem de leste e ainda pega essa praia, só que sem o vento ajudando a coisa fica mais crua. Sem visibilidade de noite e com esse vento, melhor ficar de olho e voltar de dia pra ler o banco com calma.",
+            "titulo": "Tamanho bom, maral tirando a forma",
+            "analise": "As ondas crescem, uns dois metros, período na casa dos 9 segundos que ainda dá uma organização razoável, mas o vento vem do mar pra terra, o maral, batendo forte com uns 21 km/h. Isso faz a água entrar picada e as partes quebrarem antes da hora, tirando a força e enchendo a parede de bumps. Ainda tem uns 22 kW/m de energia na água, então o tamanho tá lá, só que o visual e a qualidade da onda sofrem bastante com esse vento de frente. Vale mais aproveitar como treino de remada e de leitura de banco do que buscar manobra de precisão hoje.",
             "janela": null,
-            "aviso": "Surfar de noite reduz muito a visibilidade pra ler série e outros surfistas na água; se for entrar, prefira luz de lua clara e companhia."
+            "aviso": null
           }
         },
         "2026-07-25": {
@@ -741,10 +727,10 @@
           },
           "noite": {
             "score": 2,
-            "titulo": "Noite de leste bagunçando a maré",
-            "analise": "Mar ainda grande, perto de dois metros, mas o período encurtou pra faixa dos 7 a 8 segundos, sinal de que a organização caiu e as séries vêm mais em cima uma da outra. Vento lateral forte, quase 27 km/h, deixando a água picada e a parede sem aquela vidraça que o Foguete costuma entregar de manhã. Na água a sensação é de força sem forma: energia de quase 14 kW/m empurrando, mas a onda fecha rápido e não dá tempo de trabalhar. O swell vem de leste e ainda pega essa praia, só que sem o vento ajudando a coisa fica mais crua. Sem visibilidade de noite e com esse vento, melhor ficar de olho e voltar de dia pra ler o banco com calma.",
+            "titulo": "Onda grande, mar bagunçado pelo vento",
+            "analise": "Onshore forte é o vento que sopra do mar pra praia, e ele é o que mais atrapalha: pega a onda por trás e faz ela desmontar antes da hora, mesmo com bom tamanho uns dois metros chegando. O período de 9 segundos ainda segura alguma série, mas a energia uns 22 kW/m vem desorganizada, então a sensação na água é de força sem parede definida. Dá pra sentir puxão na remada e pouca superfície lisa pra trabalhar manobra. Se for entrar, prancha mais estável ajuda a aproveitar o volume de água mesmo com a bagunça na superfície.",
             "janela": null,
-            "aviso": "Surfar de noite reduz muito a visibilidade pra ler série e outros surfistas na água; se for entrar, prefira luz de lua clara e companhia."
+            "aviso": null
           }
         }
       }
@@ -965,8 +951,8 @@
           },
           "tarde": {
             "score": 2,
-            "titulo": "Tarde mediana sem grandeza",
-            "analise": "O tamanho segue firme à tarde em Geribá, perto de metro e meio, mas a energia caiu um pouco, na casa dos 5 kW/m, sinal de que a força por trás da onda não é grande coisa. O vento lateral de uns 20 km/h ajuda a desorganizar ainda mais um período que já é curto, os 6 segundos que normalmente indicam vaga de vento e não swell de verdade. Mesmo entrando de leste, direção que geralmente favorece o pico, a bagunça na superfície tira a chance de qualquer parede limpa. Serve bem pra quem tá começando: onda de tamanho razoável, sem força pra assustar, ótima pra treinar pop-up e leitura de banco.",
+            "titulo": "Tarde sem parede em Búzios",
+            "analise": "A tarde em Geribá mantém o tamanho, perto de metro e meio, só que a energia é fraca, uns 5 kW/m, o que na prática quer dizer pouca força empurrando a prancha. Vento de lado com quase 25 km/h deixa a água toda picada, então mesmo pegando a onda o surfista sente a parede tremendo em vez de escorregando lisa. O swell vem de leste, direção que geralmente funciona bem aqui, mas com período curto ele não tem tempo de se organizar antes de quebrar. É um dia mais de brincar na espuma, treinar pop-up, que é o momento de levantar da prancha de uma vez só, do que buscar manobra de peso.",
             "janela": null,
             "aviso": null
           },
@@ -1025,8 +1011,8 @@
         "2026-07-24": {
           "manha": {
             "score": 2,
-            "titulo": "Manhã pequena mas com terral",
-            "analise": "Geribá tem um dia mais fraco de tamanho, ondas perto de um metro com energia baixa, então a força na água é discreta. O período de quase 10s ainda garante alguma organização na série. O vento é terral, soprando da terra pro mar, o que deixa a superfície lisa mesmo com pouco volume. Ótima manhã pra treinar remada e pop-up numa água limpa e sem pressão."
+            "titulo": "Manhã perto de um metro com lado batendo",
+            "analise": "Geribá de manhã tem ondas perto de um metro, período bom na casa dos 9s, série ainda organizada. O vento lateral, batendo mais de través, deixa a água levemente riscada, mas não chega a estragar. A energia é moderada baixa, sem grande pressão na descida. Bom momento pra quem quer treinar posicionamento com uma condição de tamanho mais acessível."
           },
           "tarde": {
             "score": 3,
@@ -1040,22 +1026,17 @@
           }
         },
         "2026-07-25": {
-          "manha": {
-            "score": 2,
-            "titulo": "Dia calmo, terral ajudando",
-            "analise": "O tamanho em Geribá tá mais discreto essa manhã, perto de um metro com energia baixa, mas o terral, vento de terra pro mar, mantém a parede lisa e arrumada. O período de quase 10s ainda entrega alguma série organizada. Não é dia de força, mas a qualidade da água compensa. Vale aproveitar pra evoluir manobra com uma parede limpa e sem crowd pesado."
-          },
           "tarde": {
-            "score": 2,
-            "titulo": "Tarde sem parede em Búzios",
-            "analise": "A tarde em Geribá mantém o tamanho, perto de metro e meio, só que a energia é fraca, uns 5 kW/m, o que na prática quer dizer pouca força empurrando a prancha. Vento de lado com quase 25 km/h deixa a água toda picada, então mesmo pegando a onda o surfista sente a parede tremendo em vez de escorregando lisa. O swell vem de leste, direção que geralmente funciona bem aqui, mas com período curto ele não tem tempo de se organizar antes de quebrar. É um dia mais de brincar na espuma, treinar pop-up, que é o momento de levantar da prancha de uma vez só, do que buscar manobra de peso.",
+            "score": 1,
+            "titulo": "Maral fechando a tarde em Búzios",
+            "analise": "O tamanho segue firme, perto de metro e meio, mas o período curto, quase 6 segundos, já entrega vaga de vento, chegando embolada e sem muito espaçamento. Agora o vento virou onshore, forte, quase 27 km/h vindo do mar pra praia, que é o pior cenário: ele empurra a onda por trás, engorda a parede antes da hora e enche tudo de correnteza de vento. Não tem muita forma pra buscar hoje, mas serve pra quem quer treinar remada com resistência ou testar equilíbrio numa água mais brava. Se for entrar, vale ficar de olho na corrente formada nos canais entre os bancos, ela ajuda a chegar rápido no outside mas exige atenção de quem não tá acostumado.",
             "janela": null,
-            "aviso": null
+            "aviso": "Mar bagunçado com onshore forte pode formar correntes mais fortes nos canais. Iniciante deve ficar na espuma perto da areia."
           },
           "noite": {
-            "score": 4,
-            "titulo": "Maré segurada, leitura fácil das ondas",
-            "analise": "Derrapada de noite em Geribá é melhor com terral forte, e tá aqui. Ondas passando do metro saem da água lisas, série organizada, período na casa dos nove segundos deixando as coisas previsíveis. Menos crowd, melhor ritmo. Vale mudar de turno.",
+            "score": 2,
+            "titulo": "Período favorável mesmo com altura pequena",
+            "analise": "Noite em Geribá com perto de um metro ganha quando o período tá longo (10 segundos) porque a série sai das águas espaçada, previsível. Maral de dez km/h é ameno. Dia de treino ou de aproveitar meia água antes de sair da região.",
             "janela": "18h-21h",
             "aviso": null
           }
@@ -1160,13 +1141,6 @@
           }
         },
         "2026-07-23": {
-          "manha": {
-            "score": 2,
-            "titulo": "Série bem espaçada, onda baixa",
-            "analise": "Período de 11 segundos traz ondulação bem contada, passando do metro no tamanho. Vento lateral de 6 km/h é suave. Energia de apenas 11 kW/m torna tudo tranquilo. Dia para quem quer treinar fundamentos sem pressa, sem energia pesada. Não é épico, mas funciona bem como dia de escola.",
-            "janela": "6h-9h",
-            "aviso": null
-          },
           "tarde": {
             "score": 3,
             "titulo": "Parede trabalhável no período bom",
@@ -1218,13 +1192,6 @@
             "titulo": "Parede trabalhável no período bom",
             "analise": "Ondulação chegando perto de dois metros com 9 segundos de período deixa a série organizada e o tempo pra ler a parede. Vento lateral em torno de 15 km/h pica, mas não bagunça tudo. A energia de 22 kW/m é de série que cobra remada, mas quem está pronto aproveita pra manobra séria.",
             "janela": "14h-17h",
-            "aviso": null
-          },
-          "noite": {
-            "score": 2,
-            "titulo": "Vento mexendo a água na virada da noite",
-            "analise": "Unamar fecha o dia ainda com tamanho, ondas uns dois metros e um swell que perdeu um pouco de fôlego: o período caiu pra casa dos 9 a 11 segundos, o que já deixa as séries mais próximas umas das outras. Os quase 20 kW/m de energia garantem que a onda ainda empurra na descida. O detalhe que pesa é o vento, lateral e mais forte, uns 20 km/h, que pica a superfície e atrapalha a leitura da parede. Ainda dá praia pra quem já lê bem esse pico, mas o momento pede prancha mais estável e escolha cuidadosa de onda.",
-            "janela": null,
             "aviso": null
           }
         }
@@ -1281,15 +1248,15 @@
         "2026-07-21": {
           "manha": {
             "score": 5,
-            "titulo": "Manhã com terral e parede limpa",
-            "analise": "O período tá bom, quase 10 segundos, o que já garante série organizada e onda com forma definida. Altura uns dois metros, o tamanho clássico de Itacoa pra quem já manja do pico. O vento vem de terra, terral fraco em torno de 7 km/h, o vento que sopra da praia pro mar e deixa a parede lisa, segurando o lábio e favorecendo o tubo no fundo raso daqui. A energia na casa dos 15 kW/m dá peso sem exagerar. Essa é a janela clássica: manhã, terral e swell organizado, vale entrar assim que amanhecer.",
+            "titulo": "Itacoa organizado na virada do dia",
+            "analise": "O período tá na casa dos 12 segundos, que é o tempo entre uma onda e outra: aqui em Itacoa isso quer dizer série bem espaçada e onda com pressão de verdade. Altura uns dois metros, o tamanho que já exige leitura de banco e remada forte. O vento tá fraco e de lado, então não estraga a parede, mas também não deixa 100% lisa. Energia na casa dos 20 kW/m, força suficiente pra cavar tubo em quem sabe achar o pico certo. Chegou cedo, olhou o banco antes de remar: essa é a diferença hoje.",
             "janela": "6h-9h",
             "aviso": null
           },
           "tarde": {
             "score": 1,
-            "titulo": "Dia manso, pico de folga",
-            "analise": "Não é o padrão pesado da Itacoa: perto de um metro, período médio na faixa dos 7s, vento lateral fraco mexendo pouco na água. Com energia baixa, em torno de 5 kW/m, a força chega bem suave na descida. É uma tarde tranquila, boa pra focar em detalhes técnicos sem o caldo forte de sempre.",
+            "titulo": "Dia manso na casa pesada",
+            "analise": "Não é o tamanho de sempre da Itacoa: perto de um metro, período médio na faixa dos 7 a 8s, energia baixa em torno de 5 kW/m. O vento onshore fraco mantém a água razoavelmente comportada. Na prática, a força chega bem suave na descida. Bom momento pra focar em pop-up e leitura de série sem o peso característico do pico.",
             "janela": null,
             "aviso": null
           },
@@ -1303,10 +1270,10 @@
         },
         "2026-07-22": {
           "manha": {
-            "score": 5,
-            "titulo": "Terral segurando a parede pela manhã",
-            "analise": "De manhã o vento sopra da terra pro mar, terral leve uns 7 km/h, exatamente o que deixa a face da onda lisa e ajuda a formar o tubo no fundo raso de Itacoa. O período de quase 10 segundos garante série espaçada, dá pra ver a próxima onda chegando. Ondas uns dois metros com energia moderada, na casa dos 15 kW/m, força presente mas controlável. É um daqueles dias em que tudo se alinha pra quem manja do pico. Entra cedo, antes do terral perder força com o sol batendo na areia.",
-            "janela": "6h-9h",
+            "score": 1,
+            "titulo": "Dia manso na casa pesada",
+            "analise": "Não é o tamanho de sempre da Itacoa: perto de um metro, período médio na faixa dos 7 a 8s, energia baixa em torno de 5 kW/m. O vento onshore fraco mantém a água razoavelmente comportada. Na prática, a força chega bem suave na descida. Bom momento pra focar em pop-up e leitura de série sem o peso característico do pico.",
+            "janela": null,
             "aviso": null
           },
           "tarde": {
@@ -1317,10 +1284,10 @@
             "aviso": null
           },
           "noite": {
-            "score": 1,
-            "titulo": "Dia manso na casa pesada",
-            "analise": "Não é o tamanho de sempre da Itacoa: perto de um metro, período médio na faixa dos 7 a 8s, energia baixa em torno de 5 kW/m. O vento onshore fraco mantém a água razoavelmente comportada. Na prática, a força chega bem suave na descida. Bom momento pra focar em pop-up e leitura de série sem o peso característico do pico.",
-            "janela": null,
+            "score": 2,
+            "titulo": "Terral excessivo, série pequena",
+            "analise": "Terral forte demais (14 km/h) pra onda tão pequena passando do metro. Período de 10 segundos e energia de 7 kW/m deixam série muito leve. O vento que deveria abrir parede acaba empurrando demais pra uma condição já fraca. Vale treinar remada e observar o bank, mas sessão é de pouca ação.",
+            "janela": "6h-8h",
             "aviso": null
           }
         },
@@ -1350,8 +1317,8 @@
         "2026-07-24": {
           "manha": {
             "score": 2,
-            "titulo": "Manhã menor, vento incomodando",
-            "analise": "O tamanho caiu um pouco essa manhã, passando do metro, em torno de 1,5m, e o período também encolheu pra faixa dos 7 a 9s, sinal de série menos organizada e mais irregular. O vento onshore já sopra com alguma força, empurrando a água por trás da onda e tirando forma da parede. Na água isso vira onda que fecha mais rápido e menos previsível. Ainda dá pra pegar onda de espuma pra treinar remada, ou aproveitar pra observar o banco antes de entrar de vez.",
+            "titulo": "Manhã mais fraca mas organizada",
+            "analise": "O período segue bom, quase 11 segundos, garantindo alguma série organizada mesmo com a onda menor, passando do metro. O vento lateral é moderado, uns 9 km/h, mexendo um pouco a superfície sem destruir totalmente a forma. A energia é baixa, quase 8 kW/m, então a força na água é bem tranquila hoje. É um dia bom pra treinar remada e pop-up, que é o movimento de levantar da prancha de uma vez só, sem ajoelhar. Aproveita pra trabalhar técnica sem o peso grande de Itacoa.",
             "janela": null,
             "aviso": null
           },
@@ -1379,11 +1346,11 @@
             "aviso": null
           },
           "tarde": {
-            "score": 1,
-            "titulo": "Vento lateral demais",
-            "analise": "Vento lateral de 20 km/h à tarde piça tudo. Onda passando do metro com período de 8 segundos já chega apertada, e com tanto vento lateral perde completamente a parede. Energia de 11 kW/m não compensa a destruição que o vento faz. É hora de deixar pra outro dia.",
+            "score": 3,
+            "titulo": "Tarde grande com vento de frente",
+            "analise": "Onda uns dois metros, com período na casa dos 9 segundos, que já entrega uma organização razoável de série. O vento vem do mar pra terra, onshore em torno de 12 km/h, mexendo a superfície e tirando um pouco da lisura da parede. A energia gira em 19 kW/m, força suficiente pra cobrar remada firme e dar peso no drop. Ainda dá onda boa pra quem manja do pico, só não espera tubo redondo hoje. Prioriza a sessão mais cedo se puder, antes do vento crescer mais.",
             "janela": null,
-            "aviso": "Vento lateral forte. Condição ruim."
+            "aviso": null
           },
           "noite": {
             "score": 4,
@@ -1482,19 +1449,19 @@
             "aviso": null
           },
           "noite": {
-            "score": 3,
-            "titulo": "Noite calma com onda média",
-            "analise": "Vento tá quase dormente, uns 6-7 km/h, e a onda desce pra passando do metro com período bom na casa dos 9 a 10 segundos. É dia de superfície quase vidro, daqueles que o app chama de glassy mesmo com tamanho mais discreto. Energia baixa pra o período, aquele dia de sessão tranquila.",
-            "janela": "18h-20h",
+            "score": 2,
+            "titulo": "Noite tranquila com swell de leste",
+            "analise": "À noite o vento segue de lado, batendo uns 9 km/h, o tipo de vento que não estraga tudo mas deixa a superfície com uma leve marolinha na parede. O swell vem de leste agora, e mesmo sendo outra direção do dia anterior ainda entra de forma decente aqui em Ipanema, ajudado pelas Cagarras que seguram parte da força antes de chegar na praia. A onda fica perto de um metro, período um pouco mais curto, na casa dos 7 segundos, então as séries vêm mais próximas umas das outras, sem tanto espaçamento. É um surf de fim de dia sem drama, bom pra quem gosta de pegar as últimas antes de escurecer. Escolha um pico mais vazio pra aproveitar melhor, o crowd de Ipanema costuma render mais briga que onda boa nesse tamanho.",
+            "janela": null,
             "aviso": null
           }
         },
         "2026-07-23": {
           "manha": {
-            "score": 3,
-            "titulo": "Manhã lisa com ondas de sudeste",
-            "analise": "Ipanema acorda com o vento vindo de terra, um terral fraquinho de uns 7 km/h, o suficiente pra deixar a parede lisa sem atrapalhar a remada. O swell chega de sudeste, direção que entra bem aqui e ainda pega o filtro das ilhas Cagarras na frente, então as ondas ficam mais organizadas do que o normal de beach break carioca. Na água vai dar pra sentir uma onda perto de um metro, com um período médio de uns 8 segundos, o suficiente pra formar séries com espaço entre uma e outra ao invés daquela bagunça de vaga curta. Não é dia de força bruta, é dia de pegar ritmo e trabalhar manobra na parede. Vale acordar cedo e ir pro canto, longe do Posto 9, onde o banco costuma abrir melhor.",
-            "janela": "6h-9h",
+            "score": 1,
+            "titulo": "Vento forte de lado esfria o pico",
+            "analise": "O vento aumenta um pouco hoje, um lateral de mais de 11 km/h que já pica a superfície da água e tira aquele brilho de dia liso. O swell continua vindo de leste, entrando bem na praia, mas com energia baixa e período médio curto, em torno de 7 segundos, a onda que sobra é pequena, perto de um metro, sem muita força por trás. Na água a sensação é de remada tranquila mas onda mole, sem pressão nenhuma na descida. É um dia mais pra observar o banco, treinar remada e ficar de olho em como a maré vai mexer com esse pico ao longo da manhã do que pra buscar parede grande. Vale aproveitar pra pegar espuma perto da areia, ótimo terreno pra quem tá começando a treinar o pop-up sem crowd disputando a onda de fora.",
+            "janela": null,
             "aviso": null
           },
           "tarde": {
@@ -1538,10 +1505,10 @@
         "2026-07-25": {
           "manha": {
             "score": 2,
-            "titulo": "Energia caindo, forma segura",
-            "analise": "Swell reduz mas mantém período bom, uns 10 segundos, deixando a parede viavelmente lida. Tamanho passando do metro tá daqueles que o iniciante pega solto. Maral muito fraco quase não atrapalha. Vai encher menos, mas o que tem é acessível.",
-            "janela": "14h-16h",
-            "aviso": null
+            "titulo": "Lateral violenta rouba a qualidade",
+            "analise": "Vento tá na casa dos 20 km/h vindo de lado, aquele que enche a superfície de bumps e tira a leitura limpa. Onda passando do metro com período bom de 9 a 10 segundos, mas o vento tá mandando. Energia na casa dos 12 quilowatts. Vale entrar pra aéreo e manobra, mas parede é complicada.",
+            "janela": null,
+            "aviso": "Vento lateral de 20 km/h bate na parede."
           },
           "tarde": {
             "score": 2,
@@ -2009,6 +1976,13 @@
             "janela": "6h-9h",
             "aviso": null
           },
+          "tarde": {
+            "score": 3,
+            "titulo": "Tarde equilibrada",
+            "analise": "Tamanho passando do metro na Macumba essa tarde, com período de quase 10 segundos garantindo série organizada. O vento tá de lado, batendo meio através da praia, o que mexe um pouco a água mas não desmancha a parede. Dá pra sentir a onda com boa forma e pressão moderada na descida. Bom momento pra longboard, que é a praia certa pra isso, aproveitando o pico mais aberto perto do canal.",
+            "janela": null,
+            "aviso": null
+          },
           "noite": {
             "score": 4,
             "titulo": "Noite lisa na Macumba",
@@ -2019,10 +1993,10 @@
         },
         "2026-07-20": {
           "manha": {
-            "score": 4,
-            "titulo": "Série longa cedo na Macumba",
-            "analise": "O mar aqui na Macumba amanheceu com fôlego. Período na casa dos 12 segundos, que é o tempo entre as ondas, entrega parede espaçada e com pressão, perto de dois metros de tamanho. O vento lateral mexe um pouco a água mas não estraga o desenho da onda, só pede ajuste na hora do drop. Vale entrar cedo, com a maré media a baixa a favor, e testar o pico central onde o banco costuma segurar melhor a força.",
-            "janela": "6h-9h",
+            "score": 2,
+            "titulo": "Tamanho maior, período curto",
+            "analise": "A Macumba amanheceu maior, perto de dois metros passando de dois metros em alguns picos, mas o período tá na faixa média, uns 9 segundos entre as ondas, o que significa menos organização e mais volume batendo junto. O vento onshore ainda moderado ajuda a segurar um pouco, mas não é o terral que deixaria tudo liso. Você vai sentir bastante força na remada e caldo pesado se errar o tempo. Dia pra quem já rema bem escolher a onda certa e não insistir em toda série.",
+            "janela": null,
             "aviso": null
           }
         },
@@ -2056,20 +2030,6 @@
             "analise": "Vento terral hoje de manhã, mesmo que fraco, o que já ajuda a segurar a parede e deixar a água mais limpa. O tamanho é perto de um metro, com período bom, na casa dos 11 segundos, entregando série organizada. Na água a sensação é de onda gentil e formada, ótima pra treinar pop-up e remada sem pressão de tamanho. Manhã ideal pra quem tá começando aproveitar a espuma e a parede pequena com calma.",
             "janela": "6h-9h",
             "aviso": null
-          },
-          "tarde": {
-            "score": 2,
-            "titulo": "Tarde de vento subindo",
-            "analise": "Ainda tem tamanho na água, perto de dois metros e período longo, mas a tarde trouxe maral firme, vento que vem do mar pra terra e bagunça a parede antes da hora. Você vai sentir a onda quebrando mais cedo, com bumps e menos aquela força limpa da manhã. Dá pra surfar, mas escolha a onda mais formada e não force série toda: bom dia pra treinar leitura de banco e remada.",
-            "janela": null,
-            "aviso": null
-          },
-          "noite": {
-            "score": 4,
-            "titulo": "Terral de noite, parede lisa",
-            "analise": "Detalhe raro e bom: vento terral essa noite, ou seja, soprando da terra pro mar, o que deixa a parede lisa e segura o lip por mais tempo. O tamanho é passando do metro com período de quase 10 segundos, série organizada e previsível. Na água você vai sentir a onda mais oca e com mais tempo de parede pra trabalhar manobra. Sessão noturna vale a pena se você já conhece o pico e tem companhia por segurança.",
-            "janela": null,
-            "aviso": null
           }
         },
         "2026-07-23": {
@@ -2097,10 +2057,10 @@
         },
         "2026-07-24": {
           "manha": {
-            "score": 2,
-            "titulo": "Tamanho maior, período curto",
-            "analise": "A Macumba amanheceu maior, perto de dois metros passando de dois metros em alguns picos, mas o período tá na faixa média, uns 9 segundos entre as ondas, o que significa menos organização e mais volume batendo junto. O vento onshore ainda moderado ajuda a segurar um pouco, mas não é o terral que deixaria tudo liso. Você vai sentir bastante força na remada e caldo pesado se errar o tempo. Dia pra quem já rema bem escolher a onda certa e não insistir em toda série.",
-            "janela": null,
+            "score": 4,
+            "titulo": "Série longa cedo na Macumba",
+            "analise": "O mar aqui na Macumba amanheceu com fôlego. Período na casa dos 12 segundos, que é o tempo entre as ondas, entrega parede espaçada e com pressão, perto de dois metros de tamanho. O vento lateral mexe um pouco a água mas não estraga o desenho da onda, só pede ajuste na hora do drop. Vale entrar cedo, com a maré media a baixa a favor, e testar o pico central onde o banco costuma segurar melhor a força.",
+            "janela": "6h-9h",
             "aviso": null
           },
           "tarde": {
@@ -2113,25 +2073,18 @@
         },
         "2026-07-25": {
           "manha": {
-            "score": 2,
-            "titulo": "Volume alto cedo",
-            "analise": "Tem barriga de sobra essa manhã na Macumba, ondas uns dois metros com energia considerável na água. O período mais curto, na casa dos 9 segundos, faz a onda chegar mais em blocos do que em série organizada, então a espera fica mais tensa. O vento onshore moderado já tira um pouco do brilho que o terral daria. Ainda assim, quem gosta de força vai achar onda pra descer com pressão: fique atento ao canal pra não gastar remada à toa.",
-            "janela": null,
+            "score": 3,
+            "titulo": "Manhã limpa e pequena",
+            "analise": "O detalhe bom da manhã é o terral fraco, vento que sopra da praia pro mar e ajuda a alisar a superfície mesmo suave. Com perto de um metro de tamanho e período de quase 11 segundos, a série vem organizada e fácil de ler. Você sente uma onda tranquila, com forma boa pra series de manobra básica. Ótimo dia pra iniciante treinar takeoff na espuma e avançado curtir um longboard sem pressa.",
+            "janela": "6h-9h",
             "aviso": null
           },
           "tarde": {
             "score": 3,
-            "titulo": "Pouca força, boa leitura",
-            "analise": "O tamanho segue modesto, passando do metro, mas o período na casa dos 11 segundos deixa a série organizada e previsível mesmo com pouca energia na água. Vento onshore fraco tira brilho mas não estraga a sessão. Você sente uma onda mais mansa, sem muita pressão na descida, boa pra série longa de manobras. Vale usar a tarde pra estudar o banco da Macumba com calma.",
+            "titulo": "Tarde equilibrada",
+            "analise": "Tamanho passando do metro na Macumba essa tarde, com período de quase 10 segundos garantindo série organizada. O vento tá de lado, batendo meio através da praia, o que mexe um pouco a água mas não desmancha a parede. Dá pra sentir a onda com boa forma e pressão moderada na descida. Bom momento pra longboard, que é a praia certa pra isso, aproveitando o pico mais aberto perto do canal.",
             "janela": null,
             "aviso": null
-          },
-          "noite": {
-            "score": 2,
-            "titulo": "Onda cheia, mar pesado",
-            "analise": "O mar cresceu, perto de dois metros de tamanho, só que o período mais curto, uns 9 segundos, tira aquela organização de série espaçada. Some o vento vindo forte do mar pra terra e o resultado é uma parede que fecha sem muito aviso. Dá pressão na remada e a leitura fica mais difícil no escuro. Se for entrar, fique de olho no banco central da Macumba, que segura melhor, e evite se afastar demais da faixa iluminada.",
-            "janela": null,
-            "aviso": "Combinação de vento forte onshore com período curto deixa a arrebentação imprevisível à noite: mantenha distância segura e não surfe sozinho."
           }
         }
       }
@@ -2146,8 +2099,10 @@
           },
           "tarde": {
             "score": 3,
-            "titulo": "Tarde de vento de lado no Recreio",
-            "analise": "O vento virou de lado, cortando a face da onda meio de través, e isso tira um pouco daquela lisura da manhã sem destruir de vez a forma. Ainda dá pra sentir a parede formada pelo swell de sudeste, que aqui no Recreio entra direto, mas a superfície fica com uns solavancos, principalmente na hora do drop. Onda perto de um metro, período médio, energia tranquila, sem grande pressão na remada. É tarde de trabalhar posicionamento e ler o banco sem se cobrar performance, longboard aproveita bem esse tipo de mar."
+            "titulo": "Energia presente, superfície mexida",
+            "analise": "Onda de bom tamanho na água hoje à tarde, perto de dois metros, com período de 9 segundos que ainda organiza razoavelmente as séries. O onshore, vento que vem do mar e bate de frente na onda, deixa tudo mais bagunçado e acelera a quebra. A força não falta, uns 16 kW/m de energia na água, mas a forma sofre um pouco. Vale entrar cedo na janela da tarde e escolher as ondas que vêm menos afetadas pelo vento.",
+            "janela": null,
+            "aviso": null
           },
           "noite": {
             "score": 2,
@@ -2157,9 +2112,9 @@
         },
         "2026-07-20": {
           "manha": {
-            "score": 3,
-            "titulo": "Terral segurando um mar mais tímido",
-            "analise": "O vento de terra segue firme nessa manhã, quase 20 km/h, alisando a água mesmo com a ondulação mais modesta que ontem. O swell vem de sudeste, direção que sempre acha caminho aqui no Recreio, mas com período mais curto, perto de 8 segundos, as séries chegam mais próximas umas das outras, menos espaço pra respirar entre elas. Onda perto de um metro, sem muita massa por trás, o tipo de mar que exige mais reação rápida que força de remada. Ainda assim a parede vem limpa, boa pra trabalhar viradas na base logo cedo, antes do vento cair e o sol virar o jogo."
+            "score": 2,
+            "titulo": "Manhã sem pressa no beach break",
+            "analise": "O mar amanhece discreto, com swell de leste que ainda encontra a praia mas sem muita força por trás, período curto de uns 7 segundos deixando as ondinhas mais amontoadas. O vento de lado nem ajuda nem atrapalha muito, fica ali no meio termo, dando uma leve textura na água sem destruir a forma. Onda perto de um metro, energia baixa, então quem for de manhã vai sentir mais remada que parede pra trabalhar. É daqueles dias bons pra focar em pop-up e trecho de espuma, sem crowd disputando pico, ideal pra quem quer entrar mais tranquilo."
           },
           "tarde": {
             "score": 2,
@@ -2186,6 +2141,11 @@
             "score": 3,
             "titulo": "Tarde de vento de lado no Recreio",
             "analise": "O vento virou de lado, cortando a face da onda meio de través, e isso tira um pouco daquela lisura da manhã sem destruir de vez a forma. Ainda dá pra sentir a parede formada pelo swell de sudeste, que aqui no Recreio entra direto, mas a superfície fica com uns solavancos, principalmente na hora do drop. Onda perto de um metro, período médio, energia tranquila, sem grande pressão na remada. É tarde de trabalhar posicionamento e ler o banco sem se cobrar performance, longboard aproveita bem esse tipo de mar."
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Escurecendo com onda ainda de pé",
+            "analise": "Já entrando a noite o vento segue de lado, mais fraco que de tarde, e o mar perde um pouco de definição mas continua com onda surfável saindo de sudeste. É um tamanho modesto, perto de um metro, sem muita força por trás, então a sensação na água é de remar mais que surfar de fato. Pra quem já surfa o Recreio e conhece o banco, ainda dá pra pegar uma sessão de fim de dia sem cobrança, ótimo pra soltar o corpo depois do trabalho. Vá com prancha mais volumosa, ajuda a entrar nessas ondas mais mansas com menos esforço."
           }
         },
         "2026-07-22": {
@@ -2194,26 +2154,19 @@
             "titulo": "Terral segurando um mar mais tímido",
             "analise": "O vento de terra segue firme nessa manhã, quase 20 km/h, alisando a água mesmo com a ondulação mais modesta que ontem. O swell vem de sudeste, direção que sempre acha caminho aqui no Recreio, mas com período mais curto, perto de 8 segundos, as séries chegam mais próximas umas das outras, menos espaço pra respirar entre elas. Onda perto de um metro, sem muita massa por trás, o tipo de mar que exige mais reação rápida que força de remada. Ainda assim a parede vem limpa, boa pra trabalhar viradas na base logo cedo, antes do vento cair e o sol virar o jogo."
           },
-          "tarde": {
-            "score": 2,
-            "titulo": "Tarde mais mansa, perto de um metro",
-            "analise": "À tarde o swell de sudeste perde um pouco de força, trazendo ondas perto de um metro com energia mais fraca, bem menos pressão do que pela manhã. O vento lateral de uns 14 km/h já pica a superfície e tira um pouco do brilho da parede, mas não chega a estragar a sessão. É um dia bom pra treinar remada e pop up com calma, a onda dá tempo porque o período fica na faixa dos 8 segundos. Escolha um pico mais abrigado do vento nesse trecho longo de praia e aproveite pra trabalhar posicionamento sem pressa.",
-            "janela": null,
-            "aviso": null
-          },
           "noite": {
             "score": 2,
-            "titulo": "Noite fraca mas com onda surfável",
-            "analise": "De noite o swell de sudeste segue mandando ondas perto de um metro, energia baixa, dessas que não empurram muito na descida. O vento lateral fraco, abaixo de 11 km/h, deixa a água só levemente mexida, sem comprometer de verdade a superfície. Na prancha a sensação é de onda mole e curta, boa pra quem quer treinar manobra simples sem se preocupar com força de mar. Não é sessão de matar a onda, mas dá pra aproveitar o horário mais tranquilo pra ficar mais tempo dentro d'água sem crowd.",
+            "titulo": "Vento de frente numa noite mais mansa",
+            "analise": "O onshore dessa noite bate de frente na onda e tira um pouco de força da parede. Ondas perto de um metro, período acima de 11 segundos, mantendo alguma organização na série. Energia baixa, cerca de 7 kW/m, sessão tranquila sem muita pressão. Vale usar pra treinar pop-up e trabalhar a remada com calma.",
             "janela": null,
-            "aviso": null
+            "aviso": "visibilidade reduzida à noite, redobre atenção"
           }
         },
         "2026-07-23": {
           "manha": {
-            "score": 3,
-            "titulo": "Terral segurando um mar mais tímido",
-            "analise": "O vento de terra segue firme nessa manhã, quase 20 km/h, alisando a água mesmo com a ondulação mais modesta que ontem. O swell vem de sudeste, direção que sempre acha caminho aqui no Recreio, mas com período mais curto, perto de 8 segundos, as séries chegam mais próximas umas das outras, menos espaço pra respirar entre elas. Onda perto de um metro, sem muita massa por trás, o tipo de mar que exige mais reação rápida que força de remada. Ainda assim a parede vem limpa, boa pra trabalhar viradas na base logo cedo, antes do vento cair e o sol virar o jogo."
+            "score": 2,
+            "titulo": "Manhã sem pressa no beach break",
+            "analise": "O mar amanhece discreto, com swell de leste que ainda encontra a praia mas sem muita força por trás, período curto de uns 7 segundos deixando as ondinhas mais amontoadas. O vento de lado nem ajuda nem atrapalha muito, fica ali no meio termo, dando uma leve textura na água sem destruir a forma. Onda perto de um metro, energia baixa, então quem for de manhã vai sentir mais remada que parede pra trabalhar. É daqueles dias bons pra focar em pop-up e trecho de espuma, sem crowd disputando pico, ideal pra quem quer entrar mais tranquilo."
           },
           "tarde": {
             "score": 3,
@@ -2236,8 +2189,8 @@
           },
           "tarde": {
             "score": 3,
-            "titulo": "Tarde de parede cheia e vento de lado",
-            "analise": "O swell segue vindo de sudeste, forte na direção certa pra essa praia, trazendo ondas passando do metro e chegando na casa do metro e meio. O vento de tarde tá de lado, o que os locais chamam de lateral, picando um pouco a superfície mas sem destruir a forma da onda. Na água você sente uma parede ainda com corpo, período de quase 10 segundos dando tempo de ler a série antes de decidir a manobra. Pra intermediário é onda boa de trabalhar bottom turn, só ajustar o pé de apoio pra compensar o vento entrando de lado na descida.",
+            "titulo": "Tarde passando do metro com vento leve",
+            "analise": "O onshore de hoje à tarde vem fraco, então não chega a destruir a onda, só tira um pouco do brilho da parede. Ondas passando do metro, período de quase 10 segundos, organizando bem as séries que chegam. A energia de 12 kW/m dá uma força tranquila, boa pra quem quer trabalhar manobra sem se afogar em caldo pesado. Dá pra aproveitar bem, principalmente no começo da tarde antes do vento crescer.",
             "janela": null,
             "aviso": null
           },
@@ -2259,8 +2212,8 @@
           },
           "tarde": {
             "score": 3,
-            "titulo": "Tarde de parede cheia e vento de lado",
-            "analise": "O swell segue vindo de sudeste, forte na direção certa pra essa praia, trazendo ondas passando do metro e chegando na casa do metro e meio. O vento de tarde tá de lado, o que os locais chamam de lateral, picando um pouco a superfície mas sem destruir a forma da onda. Na água você sente uma parede ainda com corpo, período de quase 10 segundos dando tempo de ler a série antes de decidir a manobra. Pra intermediário é onda boa de trabalhar bottom turn, só ajustar o pé de apoio pra compensar o vento entrando de lado na descida.",
+            "titulo": "Vento fraco não estraga a tarde",
+            "analise": "Mesmo sendo onshore, vento do mar pra terra, hoje ele sopra fraco e a parede segura razoavelmente bem. As ondas passando do metro chegam com período de quase 10 segundos, séries organizadas e previsíveis. Você vai sentir uma força moderada na descida, energia em torno de 12 kW/m, ótima pra treinar posicionamento. Vale entrar logo cedo na tarde, antes do vento apertar mais.",
             "janela": null,
             "aviso": null
           },
@@ -2347,18 +2300,18 @@
         },
         "2026-07-22": {
           "manha": {
-            "score": 4,
-            "titulo": "Manhã grande e mais rápida",
-            "analise": "O período cai um pouco pra 9s, série menos espaçada que os dias anteriores, então as ondas vêm mais em cima uma da outra. O tamanho segue grande, perto de dois metros, com terral firme de 30 km/h alisando a parede mesmo com esse ritmo mais apertado. A energia passa dos 19 kW/m, pressão forte na descida, remada que cansa rápido nesse tamanho. É manhã pra quem já rodou o mar: entre cedo, escolha o pico mais protegido da laje e respeite o intervalo mais curto entre as séries.",
-            "janela": "6h-9h",
-            "aviso": "Onda grande com período mais curto: séries chegam mais próximas, atenção redobrada na remada e no posicionamento."
-          },
-          "tarde": {
             "score": 2,
-            "titulo": "Tarde de vento cruzado na ilha",
-            "analise": "O vento virou lateral essa tarde, batendo mais ou menos de lado na onda, o que pica a superfície e tira um pouco daquela lisura de manhã. O tamanho segue passando do metro, com período médio de 8s, então a organização ainda existe mas a parede fica menos generosa. A energia ronda os 11 kW/m, pressão moderada, dá pra sentir a força na descida sem exagero. Se bater no pico certo, ainda tem onda boa: prefira os cantos mais protegidos do vento pra achar a parede mais limpa.",
+            "titulo": "Últimas ondas do dia, mar mexido",
+            "analise": "O dia fecha com vento de lado batendo firme na água, o que deixa a superfície com aquele bumps que atrapalha a linha limpa da onda. Ainda assim o período quase batendo 9s segura uma organização razoável nas séries, e o tamanho continua passando do metro. Uns 12 kW/m de energia na água, pressão sensível na descida mas nada que assuste quem já surfa nível avançado. Se for pra última luz do dia, procure o canto mais abrigado do vento pra não perder a forma da parede.",
             "janela": null,
             "aviso": null
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Tarde grande, ritmo mais compacto",
+            "analise": "O tamanho segue uns dois metros mas o período cai pra 8s e meio, o que deixa as séries mais próximas umas das outras, comboio mais compacto chegando. O terral segue forte, mais de 30 km/h da terra pro mar, e ainda alisa bem a face apesar do ritmo mais apertado. A energia gira em quase 18 kW/m, pressão considerável na descida, remada que exige do fôlego pelo tamanho grande. É tarde pra experiente: entre atento ao próximo grupo de ondas e escolha o pico mais protegido do vento.",
+            "janela": null,
+            "aviso": "Séries mais próximas com onda grande: fique atento ao posicionamento no lineup e à remada de saída."
           },
           "noite": {
             "score": 4,
@@ -2837,9 +2790,9 @@
             "aviso": null
           },
           "tarde": {
-            "score": 3,
-            "titulo": "Tarde de força no point pernambucano",
-            "analise": "O tamanho segue perto de um metro e o período fica na casa dos 7 segundos, ainda meio curto, mas a energia é a mais alta do ciclo, perto de 3 kW/m, e isso muda tudo na água: a remada cansa mais e a descida vem com pressão de verdade. O vento lateral já mais forte, quase 18 km/h, mexe a superfície e deixa a parede um pouco menos limpa. Na água você sente força boa mas com alguma textura, então vale escolher bem a onda antes de remar. Prefira entrar pelo canal ao lado do banco pra economizar remada e aproveitar a força que tem.",
+            "score": 1,
+            "titulo": "Tarde de vento contra a parede",
+            "analise": "O tamanho volta a diminuir, na casa do meio metro, com período médio na casa dos 7 segundos, sem muita organização especial. O vento agora é maral, ou seja, sopra do mar pra terra, uns 10 km/h: ele bate na onda por trás e tira a forma, deixando a parede com bumps. Na água você sente a onda perdendo qualidade antes da hora, energia moderada mas sem lisura. Ainda dá pra aproveitar treinando remada e pop-up na espuma, só que sem esperar parede limpa pra manobra hoje.",
             "janela": null,
             "aviso": null
           },
@@ -2909,6 +2862,13 @@
             "score": 1,
             "titulo": "Sem grandeza, mas com espaço pra evoluir",
             "analise": "A tarde na Maracaípe repete o tamanho pequeno, ondas na casa do meio metro, e o período curto de sempre, na casa dos 7 segundos, o que deixa a sequência de ondas meio irregular. O vento lateral uns 16 km/h mexe um pouco a superfície mas não estraga de vez a parede. Na água você vai sentir pouca força, energia baixa, mais deslize que empurrão. É um dia honesto pra quem quer treinar posicionamento no pico e ler o banco de areia sem pressão de crowd.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Mar manso sob luz fraca",
+            "analise": "Chega a noite com a Maracaípe pequena, ondas na casa do meio metro, e um período levemente melhor, beirando os 7 segundos, dando uma leve trégua na bagunça. O vento lateral suave, por volta de 8 km/h, deixa a água quase intocada. Você vai sentir pouca força na descida, energia baixa, tudo tranquilo e previsível. Serve bem pra quem quer surfar sem crowd e sem cobrança, um point manso pra fechar o dia.",
             "janela": null,
             "aviso": null
           }
@@ -2996,8 +2956,8 @@
           },
           "tarde": {
             "score": 2,
-            "titulo": "Tarde de vento mais forte",
-            "analise": "A tarde no Cupe chega com o mesmo tamanho da manhã, perto de dois metros, mas o vento lateral já sopra mais forte, quase 23 km/h, e isso pica bem a superfície da onda. O swell continua vindo de sudeste, que é a direção boa pra essa praia, só que o período curto não ajuda a organizar as séries, então esperam ondas fechando rápido uma atrás da outra. A energia na água já passa dos 18 kW/m, então a remada exige e o caldo pesa se pegar a hora errada. Quem for de tarde encara com prancha mais estável e foco em pegar a onda assim que ela levantar, sem forçar contra o vento de lado.",
+            "titulo": "Tarde de maral leve no Cupe",
+            "analise": "O vento virou maral, vindo do mar pra terra, uns 10 km/h, que é o tipo de vento que tende a bagunçar a parede em vez de ajudar. Ainda assim o tamanho segue generoso, passando do metro, com período médio na casa dos 8 segundos. Na água você vai sentir a onda um pouco mais cheia e menos lisa, quebrando com menos precisão que num dia de terral. Ainda dá pra aproveitar bem, especialmente escolhendo o canto da praia mais protegido do vento, onde o banco costuma segurar melhor a forma.",
             "janela": null,
             "aviso": null
           },
@@ -3067,6 +3027,13 @@
             "score": 2,
             "titulo": "Cupe com bumps mas de pé",
             "analise": "Tarde de vento lateral no Cupe, aquele vento que vem de lado e não é o pior nem o melhor cenário. A onda mantém o tamanho perto de um metro e o período médio, o que ainda dá alguma leitura de série antes dela chegar. Você vai notar a água um pouco mais mexida na superfície, mas a força pra descer e fazer uma rasgada básica continua ali. Boa pedida pra quem tá pegando ritmo de leitura de mar, prestando atenção em qual pico do beach break tá menos afetado pelo vento.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Vento quase sumindo, água amigável",
+            "analise": "Com o vento lateral caindo pra menos de 10 km/h, o Cupe fica com a água mais comportada nessa condição noturna. O período de quase 9 segundos entrega ondas perto de um metro com uma organização legal, séries que dá pra ler com antecedência. A sensação na água é de remada tranquila e descida sem muita pressão, boa pra treinar posicionamento no pico. Fique de olho na visibilidade se for surfar tarde, e respeite quem chegou primeiro no pico.",
             "janela": null,
             "aviso": null
           }
@@ -3293,8 +3260,8 @@
           },
           "tarde": {
             "score": 1,
-            "titulo": "Tarde de tamanho bom mas vento contra",
-            "analise": "Baía Formosa tem onda passando do metro essa tarde, o maior tamanho do dia, com energia razoável na água, mas o vento virou onshore, batendo forte, uns 21 km/h, ou seja, vem do mar pra terra e empurra a onda por trás, fazendo ela quebrar antes da hora e encher de irregularidade na parede. Na água a sensação é de força mas também de bagunça, a onda perde a forma limpa que o point é conhecido por entregar. Vale entrar mesmo assim se curtir uma sessão mais física, mas quem busca parede lisa vai se frustrar com esse vento.",
+            "titulo": "Point mexido pelo vento de lado",
+            "analise": "Entrando à tarde, o vento lateral mais forte é o que vai definir sua sessão, mais do que o tamanho da onda. Com período curto a energia fica baixa e a superfície some da lisura que essa direita costuma ter. Você vai sentir a prancha balançando na remada e a parede menos definida pra trabalhar manobra. Vale entrar mesmo assim se topar treinar leitura de banco em condição adversa, mas sem esperar a onda clássica do point.",
             "janela": null,
             "aviso": null
           },
@@ -3780,11 +3747,11 @@
             "aviso": null
           },
           "noite": {
-            "score": 1,
-            "titulo": "Noite fraca, água baixa energia",
-            "analise": "Já é noite e o vento continua incomodando, um onshore constante batendo de frente com uns 14 km/h, o tipo que não dá trégua pra parede se formar direito. A onda de leste até entra bem na Barra, mas com período curto e pouca força na água, fica mais um mar de espuma do que de linha organizada. Sem visibilidade e sem forma real, hoje o mar aqui não convida pra sessão séria. Se ainda assim bater a vontade, é dia de prancha maior e expectativa baixa, tipo aquele soft pra relaxar sem cobrar performance.",
+            "score": 2,
+            "titulo": "Fim de dia com corpo na onda",
+            "analise": "Já dá pra sentir a diferença na remada: período beirando os 9s trazendo série espaçada e energia real por trás da onda. A altura continua na casa do meio metro, mas a força na descida é perceptível, sinal de swell que se organizou bem. O vento lateral fraco não compromete a forma da parede. Vale aproveitar essa janela noturna pra treinar leitura de série no banco central da foz.",
             "janela": null,
-            "aviso": "Surfar de noite reduz muito a visibilidade de bancos e correntes; se for entrar, fique perto da praia e de olho nos outros na água."
+            "aviso": null
           }
         },
         "2026-07-24": {
@@ -3812,10 +3779,10 @@
         },
         "2026-07-25": {
           "manha": {
-            "score": 0,
-            "titulo": "Fim de dia sem organização",
-            "analise": "Com período em torno de 5s e meio, o mar segue na faixa mais fraca, sem série definida. O vento onshore, soprando do mar pra praia, mantém tudo mexido e tira a pouca força que a onda teria. Quem entrar vai sentir ondas rápidas e sem corpo, difíceis de aproveitar em pé. Fica como sessão de treino leve, ideal pra iniciante se acostumar com a água na foz do Cachoeira.",
-            "janela": null,
+            "score": 1,
+            "titulo": "Sessão tranquila na foz",
+            "analise": "De cara já dá pra sentir que não é dia de força: o período curto, uns 6s e meio, indica vaga de vento e não aquele swell organizado que viaja de longe. A onda fica pequena, na casa do meio metro, e o vento lateral fraco só belisca a superfície sem destruir. Na prancha o que se sente é pouca pressão, ondas rápidas e sem parede firme pra manobra. É dia bom pra quem tá pegando o jeito: fica na espuma, trabalha remada e escolha de onda sem crowd disputando.",
+            "janela": "6h-9h",
             "aviso": null
           },
           "tarde": {
@@ -3826,9 +3793,9 @@
             "aviso": null
           },
           "noite": {
-            "score": 2,
-            "titulo": "Fim de dia com corpo na onda",
-            "analise": "Já dá pra sentir a diferença na remada: período beirando os 9s trazendo série espaçada e energia real por trás da onda. A altura continua na casa do meio metro, mas a força na descida é perceptível, sinal de swell que se organizou bem. O vento lateral fraco não compromete a forma da parede. Vale aproveitar essa janela noturna pra treinar leitura de série no banco central da foz.",
+            "score": 0,
+            "titulo": "Água mexida no fim do dia",
+            "analise": "O vento onshore não dá trégua nem à noite, chegando fraco mas o suficiente pra manter a água picada. Com altura na casa do meio metro e período ainda curto, por volta de 7s, o mar não organiza parede de verdade. Quem entrar sente pouca força e ondas fechando cedo. Dá pra aproveitar pra treinar leitura do banco, que aqui muda toda hora com o rio Cachoeira jogando areia.",
             "janela": null,
             "aviso": null
           }
@@ -3946,8 +3913,8 @@
           },
           "noite": {
             "score": 3,
-            "titulo": "Série espaçada, força de verdade",
-            "analise": "Com período acima de 10 segundos a onda chega organizada, dá pra ver a série vindo de longe e escolher com calma qual pegar. O onshore fraco no ar mexe um pouco a superfície mas não compromete a força que essa energia mais alta traz. O tamanho segue perto de um metro, só que agora com pressão real na hora da descida. É sessão pra intermediário sentir a diferença que o período faz, bora testar o bottom turn com mais confiança.",
+            "titulo": "Série longa com pressão real",
+            "analise": "Já é período longo, mais de 11 segundos, o que garante série espaçada e onda com massa d'água de verdade na quebra. O lateral, vento que bate de lado, atrapalha um pouco a textura mas não compromete a força da energia que chega. O tamanho segue perto de um metro, só que com pressão boa na descida. É noite boa pra intermediário sentir a diferença de período alto, mesmo com o vento não sendo perfeito.",
             "janela": null,
             "aviso": null
           }
@@ -3977,10 +3944,10 @@
         },
         "2026-07-25": {
           "manha": {
-            "score": 2,
-            "titulo": "Onda com fundo bom, cara mexida",
-            "analise": "A base tá boa: período perto de 10 segundos, que é energia de verdade e série que dá pra contar. O que atrapalha é o vento do mar pra terra, o onshore, que já pica a parede e tira parte dessa qualidade. Na água você sente ondas perto de um metro com uma força por trás real, mas a superfície vem granulada. Trabalhe as ondas certas da série, geralmente as primeiras chegam menos afetadas pelo vento.",
-            "janela": null,
+            "score": 4,
+            "titulo": "Energia entrega pegada real",
+            "analise": "Quase 11 segundos de período é sinal de energia séria chegando, série espaçada e com corpo. O vento lateral, que bate mais de lado na onda, sopra fraco e não estraga a formação da parede. perto de um metro no tamanho, mas com bastante força por trás, a remada vai exigir e a descida vem com pressão. Bom momento pra explorar a praia toda, já que aqui a onda abre bem e dá espaço pra manobra em vários pontos.",
+            "janela": "6h-9h",
             "aviso": null
           },
           "tarde": {
@@ -4011,9 +3978,9 @@
             "aviso": null
           },
           "tarde": {
-            "score": 2,
-            "titulo": "Tamanho segura apesar do vento de tarde",
-            "analise": "A ondulação de leste continua entrando forte na bancada da foz, então o tamanho tá lá, perto de metro e meio na série mais gorda. O problema é o vento vindo do mar pra praia, meio forte, que já começa a picotar a parede e tirar aquela lisura que faz a direita de Regência ser famosa. Na água a sensação é de onda empurrando mais do que abrindo, com period curto de uns 7 segundos que não dá muita organização pra série. Se for encarar, avançado ganha ao escolher as ondas de fora, onde o vento ainda não bagunçou tanto, e deixar a maré virar antes de forçar a barra.",
+            "score": 3,
+            "titulo": "Tarde com vento de lado",
+            "analise": "O período segue forte, na casa dos 11-12 segundos, e as ondas passando do metro mantêm o tamanho que rendeu de manhã, mas o vento virou lateral, batendo de lado a uns 11 km/h. Isso pica a superfície sem destruir a forma, você vai sentir uma textura na parede em vez daquela lisura de vidro. A energia em torno de 15 kW/m ainda entrega remada com força, então a direita longa continua funcionando, só exige mais leitura pra achar a seção limpa. Ainda vale a sessão, procure o pico mais protegido perto da foz onde o vento incomoda menos.",
             "janela": null,
             "aviso": null
           },
@@ -4050,9 +4017,9 @@
         },
         "2026-07-21": {
           "manha": {
-            "score": 4,
-            "titulo": "Terral segurando a direita de Regência",
-            "analise": "Vento fraco vindo de terra, terral de oeste noroeste, é o cenário que Regência pede pra abrir a direita famosa da foz do Rio Doce. Ele sopra contra a onda, segura o lip e deixa a parede lisa, vitrificada, exatamente o tipo de superfície que aguenta manobra de pressão. O swell de leste entra bem na bancada e entrega tamanho perto de metro e meio, com período médio que já dá uma série mais organizada pra ler antes de remar. É manhã pra aproveitar cedo, antes do sol esquentar a areia e o vento virar, então quem puder entrar logo garante o momento mais lindo do dia.",
+            "score": 3,
+            "titulo": "Leste chegando redondo em Regência",
+            "analise": "O swell tá vindo de leste, direção que entra bem na foz do Rio Doce e faz a direita esticar do jeito que Regência gosta. Na água você vai sentir uma parede de quase metro e meio, com uns 7 segundos entre uma onda e outra, o suficiente pra dar tempo de se posicionar sem correria. O vento tá de lado, batendo fraco, então não é aquele terral perfeito mas também não atrapalha a formação da parede. Vale pegar essa manhã com prancha de ponteira mais longa, que ajuda a segurar velocidade na hora de encaixar a direita.",
             "janela": "6h-9h",
             "aviso": null
           },
@@ -4133,9 +4100,9 @@
             "aviso": null
           },
           "noite": {
-            "score": 1,
-            "titulo": "Fim de dia com onda ainda de pé",
-            "analise": "O vento à noite vem de lado, moderado, uns 9 km/h, então não é o pior cenário mas também não dá aquela lisura de terral firme. O tamanho já cai um pouco, ficando perto de um metro, ainda puxado pelo swell de leste que é o que sustenta essa foz do Rio Doce na maior parte do ano. O período por volta de 7 segundos mantém as ondas vindo em sequência curta, sem grande espaço entre elas. Pra quem pega o último clarão do dia, a água ainda rende alguma coisa, principalmente pra manter o corpo em movimento e sentir o pico antes de escurecer. Se a luz ajudar, vale ficar de olho na entrada da foz, que é onde a direita costuma nascer.",
+            "score": 3,
+            "titulo": "Sessão de noite com tamanho e vento leve",
+            "analise": "De noite o mar segue com tamanho respeitável em Regência, passando de um metro e beirando metro e meio, ainda puxado pela mesma ondulação de sudeste que faz a foz do rio abrir aquela direita comprida e famosa. O período por volta de 9 segundos e meio mantém uma organização decente, e o vento onshore mais moderado, uns 10 km/h, não estraga tanto quanto à tarde, mas ainda tira um pouco da lisura da parede. Pra quem surfa de noite ali, vale ficar de olho no banco perto da foz, que costuma concentrar a força da onda. Onda ainda com pressão real, então remada e postura contam bastante nessa janela.",
             "janela": null,
             "aviso": null
           }
@@ -4149,16 +4116,16 @@
             "aviso": null
           },
           "tarde": {
-            "score": 0,
-            "titulo": "Pouco pra trabalhar hoje",
-            "analise": "Essa tarde a energia é baixa, em torno de 4-5 kW/m, e o vento onshore de 16 km/h ainda ajuda a bagunçar o pouco que sobra das ondas perto de um metro. O período médio, na casa dos 9 segundos, não segura a organização direito. Na água a sensação é de onda fraca, fechando sem força. Bom momento pra focar em fundamento: remada, leitura de banco, sem cobrar performance da sessão.",
+            "score": 2,
+            "titulo": "Vento de lado, tamanho de escola",
+            "analise": "A tarde chega com ondas perto de um metro e período curto, na casa dos 8 segundos, série mais amontoada e sem muita força de empuxo. O vento lateral mexe a superfície e tira um pouco do brilho da parede, mas não estraga o pico por completo. Pouca energia na água, tipo de dia que não cansa a remada. Ótima janela pra quem tá pegando o jeito da direita, treinar entrada e leitura sem pressão de onda grande.",
             "janela": null,
             "aviso": null
           },
           "noite": {
-            "score": 3,
-            "titulo": "Sessão de noite com tamanho e vento leve",
-            "analise": "De noite o mar segue com tamanho respeitável em Regência, passando de um metro e beirando metro e meio, ainda puxado pela mesma ondulação de sudeste que faz a foz do rio abrir aquela direita comprida e famosa. O período por volta de 9 segundos e meio mantém uma organização decente, e o vento onshore mais moderado, uns 10 km/h, não estraga tanto quanto à tarde, mas ainda tira um pouco da lisura da parede. Pra quem surfa de noite ali, vale ficar de olho no banco perto da foz, que costuma concentrar a força da onda. Onda ainda com pressão real, então remada e postura contam bastante nessa janela.",
+            "score": 1,
+            "titulo": "Fim de dia com onda ainda de pé",
+            "analise": "O vento à noite vem de lado, moderado, uns 9 km/h, então não é o pior cenário mas também não dá aquela lisura de terral firme. O tamanho já cai um pouco, ficando perto de um metro, ainda puxado pelo swell de leste que é o que sustenta essa foz do Rio Doce na maior parte do ano. O período por volta de 7 segundos mantém as ondas vindo em sequência curta, sem grande espaço entre elas. Pra quem pega o último clarão do dia, a água ainda rende alguma coisa, principalmente pra manter o corpo em movimento e sentir o pico antes de escurecer. Se a luz ajudar, vale ficar de olho na entrada da foz, que é onde a direita costuma nascer.",
             "janela": null,
             "aviso": null
           }
@@ -4610,10 +4577,10 @@
             "analise": "Hoje a Barra do Sahy recebe um swell de sudeste que casa direitinho com a praia, entrando quase de frente e formando ondas com parede definida, passando do metro. O período de quase 10 segundos é o que garante essa organização toda: dá pra ver a série se formando lá fora antes dela chegar. A energia ainda é moderada, então não assusta, mas já pede atenção no pop-up, que é a hora de levantar da prancha de uma vez. Vento de terra ajuda a manter tudo arrumado, então vale acordar cedo e ir com a maré média, que costuma ser a fase mais gostosa por aqui."
           },
           "tarde": {
-            "score": 3,
-            "titulo": "Tarde com vento de lado",
-            "analise": "O vento entra de lado à tarde, nem ajuda nem atrapalha muito, mas já belisca a superfície da onda deixando ela um pouco picada. O período ficou mais curto, na casa dos 8 segundos, o que quer dizer séries mais próximas uma da outra, menos tempo pra escolher a onda certa. Ainda assim dá passando do metro com uma energia decente pra sentir a força da descida. Pique legal pra treinar remada e pop-up, só não espere aquela parede lisa da manhã. Se quiser mais organização, ainda dá pra achar uma janela boa no fim da tarde antes do vento aumentar.",
-            "janela": null,
+            "score": 2,
+            "titulo": "Dia pequeno, mas com boa leitura",
+            "analise": "Vento vindo da terra ajuda a manter a água arrumada mesmo com pouco tamanho na água. O período quase chega aos 10 segundos, trazendo alguma organização mesmo pro porte pequeno do dia. perto de um metro com energia leve, sem força pra assustar ninguém. É daqueles dias perfeitos pra praticar remada e leitura de banco sem pressa. Iniciante aproveita bem, só ajustar a expectativa pro tamanho reduzido.",
+            "janela": "6h-9h",
             "aviso": null
           },
           "noite": {
@@ -4645,11 +4612,11 @@
         },
         "2026-07-24": {
           "manha": {
-            "score": 3,
-            "titulo": "Força de verdade na água",
-            "analise": "Onshore de manhã já embola um pouco a parede, tirando um pouco da limpeza da onda. Mesmo assim o período de quase 9 segundos e meio segura alguma organização nas séries. O tamanho impressiona, perto de dois metros, com energia forte que empurra com peso na descida. É condição séria, recomendada pra quem já domina bem a remada e a leitura de mar grande. Se estiver começando, o mais sábio é acompanhar da areia essa manhã.",
-            "janela": null,
-            "aviso": "Energia alta e tamanho grande, mar para surfistas experientes"
+            "score": 4,
+            "titulo": "Série generosa logo cedo",
+            "analise": "Pela manhã o vento lateral quase não se faz sentir, então a onda mantém forma limpa. O período na casa dos 9 segundos entrega organização de sobra, dá pra contar a série tranquilo antes de remar. Tamanho passando do metro com energia moderada, ideal pra sentir a parede sem exagero. Ambiente perfeito pra praticar postura e escolha de onda com calma. Melhor horário é ainda cedo, antes do vento crescer ao longo do dia.",
+            "janela": "6h-9h",
+            "aviso": null
           },
           "tarde": {
             "score": 3,
@@ -4661,11 +4628,11 @@
         },
         "2026-07-25": {
           "manha": {
-            "score": 4,
-            "titulo": "Parede espaçada pra começar o dia",
-            "analise": "O mar chega com passando do metro, aquela altura que já dá uma força de verdade pra quem tá começando, e as séries vêm bem espaçadas porque o período tá na casa dos 9 a 10 segundos, o tempo entre uma onda e outra: dá pra ver a próxima chegando antes de decidir remar. O vento tá de lado, bem fraco, então não atrapalha muito a parede, só mexe um pouco a superfície. Na água a sensação é de onda cheia, que empurra sem fechar de repente, boa pra treinar o pop-up, que é levantar da prancha de uma vez só. Vale entrar cedo e escolher as ondas menores da série pra ganhar confiança antes de ir pras maiores.",
-            "janela": "6h-9h",
-            "aviso": null
+            "score": 3,
+            "titulo": "Força de verdade na água",
+            "analise": "Onshore de manhã já embola um pouco a parede, tirando um pouco da limpeza da onda. Mesmo assim o período de quase 9 segundos e meio segura alguma organização nas séries. O tamanho impressiona, perto de dois metros, com energia forte que empurra com peso na descida. É condição séria, recomendada pra quem já domina bem a remada e a leitura de mar grande. Se estiver começando, o mais sábio é acompanhar da areia essa manhã.",
+            "janela": null,
+            "aviso": "Energia alta e tamanho grande, mar para surfistas experientes"
           },
           "tarde": {
             "score": 3,
@@ -4673,13 +4640,6 @@
             "analise": "Onshore fraco chegando, sem destruir de vez a qualidade da tarde. O período por volta de 9 segundos ainda entrega alguma organização, séries dá pra prever com certa folga. O tamanho segue generoso, passando do metro, com uma energia que cansa a remada mas recompensa quem pega a descida certa. Bom momento pra intermediário treinar bottom turn com mais força na parede. Fique de olho na maré, ela ajuda a definir se a onda fecha ou abre mais.",
             "janela": null,
             "aviso": null
-          },
-          "noite": {
-            "score": 2,
-            "titulo": "Barra maior no fim do dia",
-            "analise": "Ondulação sobe de tamanho na virada da noite, chegando perto de dois metros, o tamanho que já exige respeito e leitura. O vento onshore está fraco, então não é ele que atrapalha, e sim o período curto de 8 segundos que deixa a arrebentação mais fechada e menos organizada. A energia na água já é de peso considerável, então a remada cansa e a descida vem com força. Iniciante fica melhor na espuma mais próxima da praia observando o banco. Quem tem mais rodagem pode aproveitar, com calma na entrada.",
-            "janela": null,
-            "aviso": "Tamanho e energia pedem cuidado redobrado, ideal para quem já tem experiência"
           }
         }
       }
@@ -4991,10 +4951,8 @@
             "aviso": null
           },
           "noite": {
-            "titulo": "Noite mais mansa de leste",
-            "analise": "O tamanho já caiu um pouco, ficando perto do metro, e o período de quase 8 segundos ainda segura uma organização razoável vindo de leste. O vento lateral, de intensidade moderada, deixa a água com uma textura levemente mexida, sem destruir a forma mas tirando aquele brilho de parede lisa. Com uns 5 kW/m de energia a força já é mais tranquila, então dá pra sentir a onda empurrando sem exigir tanto da remada. É condição boa pra quem tá pegando ritmo ainda, pico mais tranquilo pra treinar entrada e pop-up, que é aquele movimento de levantar da prancha de uma vez só.",
-            "janela": null,
-            "aviso": null
+            "titulo": "Noite fraca, hora de treinar",
+            "analise": "O mar chega pequeno essa noite, perto do metro, com período mais curto, na casa dos 7 segundos, sinal de que a organização das séries já enfraqueceu um pouco. O vento agora sopra do mar pra terra, o chamado onshore, que amassa a parede e deixa a água mais mole e sem tanta força. Com pouca energia na água, uns 4 kW/m, não é dia de esperar potência: é dia de pegar espuma tranquila e treinar remada e pop-up sem crowd pesando. Se a ideia é aprender ou só entrar pra sentir o mar, esse é o tipo de condição que ajuda mais do que atrapalha."
           }
         },
         "2026-07-20": {
@@ -5013,9 +4971,10 @@
         },
         "2026-07-21": {
           "manha": {
-            "titulo": "Manhã pequena mas de pé",
-            "analise": "Onda perto do metro, vindo de leste, com período médio de quase 8 segundos: ainda dá pra contar as séries chegando com algum espaço entre elas. O vento lateral tá fraco essa manhã, quase não interfere na parede, então a água fica com uma textura razoável, sem ficar toda mexida. A força na água é leve, uns 5 kW/m, o tipo de energia que não cansa e deixa espaço pra treinar manobra ou só pegar muitas ondas seguidas. Pra quem tá começando, é um daqueles dias sem pressão pra ficar na espuma e sentir o pop-up com calma.",
-            "janela": "manha",
+            "score": 2,
+            "titulo": "Mar fraco e fofo",
+            "analise": "Onshore suave de 6 km/h empurra a onda pra frente e tira forma. perto de um metro é o mínimo aproveitável. Energia de 6 kW/m significa pouca força, ondas não têm velocidade. É dia pra longueiro ou iniciante treinar na espuma, não vai vazar série hoje.",
+            "janela": "14h-16h",
             "aviso": null
           },
           "tarde": {
@@ -5037,22 +4996,17 @@
             "aviso": null
           },
           "tarde": {
-            "score": 2,
-            "titulo": "Tarde pequena e mole",
-            "analise": "Altura perto de um metro é sinal que o swell caiu bastante. Maral de 6 km/h não ajuda, a onda fica cheia e mole. Período de 9 segundos mantém série organizada, mas energia de 6 kW/m é baixa demais pra coisa ter graça. Melhor observar o mar e esperar aumento.",
-            "janela": "14h-16h",
+            "titulo": "Tarde mexida mas surfável",
+            "analise": "Segue vindo de leste, perto do metro de altura, período parecido com o da manhã. A diferença que pesa aqui é o vento lateral mais forte da tarde, que já pica a superfície e faz a onda perder um pouco daquela lisura. Na água isso se traduz em uma parede menos previsível, que exige mais leitura antes do drop, o momento de descer a face da onda. Ainda dá onda pra pegar, mas o horário mais cedo tende a compensar melhor: se puder escolher, entra antes do vento aumentar.",
+            "janela": null,
             "aviso": null
-          },
-          "noite": {
-            "titulo": "Noite fraca, hora de treinar",
-            "analise": "O mar chega pequeno essa noite, perto do metro, com período mais curto, na casa dos 7 segundos, sinal de que a organização das séries já enfraqueceu um pouco. O vento agora sopra do mar pra terra, o chamado onshore, que amassa a parede e deixa a água mais mole e sem tanta força. Com pouca energia na água, uns 4 kW/m, não é dia de esperar potência: é dia de pegar espuma tranquila e treinar remada e pop-up sem crowd pesando. Se a ideia é aprender ou só entrar pra sentir o mar, esse é o tipo de condição que ajuda mais do que atrapalha."
           }
         },
         "2026-07-23": {
           "manha": {
-            "titulo": "Manhã cheia na Pitangueiras",
-            "analise": "Chegou uma ondulação boa de sudeste, direção que abre bonito aqui na Pitangueiras porque a praia olha pro mar quase de frente pra ela. Tá passando do metro e beirando o metro e meio, com um período médio de uns 8 segundos, que é o tempo entre uma onda e outra: dá pra ver a série chegando organizada, sem virar bagunça. O vento tá fraco e vindo de terra, um terral suave que segura a parede e deixa ela mais lisa na hora da descida. Com uns 8 kW/m de força na água, a remada pede atenção mas não cansa demais: vale pegar essa janela da manhã antes do vento virar.",
-            "janela": "6h-9h",
+            "titulo": "Manhã pequena mas de pé",
+            "analise": "Onda perto do metro, vindo de leste, com período médio de quase 8 segundos: ainda dá pra contar as séries chegando com algum espaço entre elas. O vento lateral tá fraco essa manhã, quase não interfere na parede, então a água fica com uma textura razoável, sem ficar toda mexida. A força na água é leve, uns 5 kW/m, o tipo de energia que não cansa e deixa espaço pra treinar manobra ou só pegar muitas ondas seguidas. Pra quem tá começando, é um daqueles dias sem pressão pra ficar na espuma e sentir o pop-up com calma.",
+            "janela": "manha",
             "aviso": null
           },
           "tarde": {
@@ -5062,24 +5016,33 @@
             "aviso": null
           },
           "noite": {
-            "titulo": "Noite fraca, hora de treinar",
-            "analise": "O mar chega pequeno essa noite, perto do metro, com período mais curto, na casa dos 7 segundos, sinal de que a organização das séries já enfraqueceu um pouco. O vento agora sopra do mar pra terra, o chamado onshore, que amassa a parede e deixa a água mais mole e sem tanta força. Com pouca energia na água, uns 4 kW/m, não é dia de esperar potência: é dia de pegar espuma tranquila e treinar remada e pop-up sem crowd pesando. Se a ideia é aprender ou só entrar pra sentir o mar, esse é o tipo de condição que ajuda mais do que atrapalha."
+            "titulo": "Noite mais mansa de leste",
+            "analise": "O tamanho já caiu um pouco, ficando perto do metro, e o período de quase 8 segundos ainda segura uma organização razoável vindo de leste. O vento lateral, de intensidade moderada, deixa a água com uma textura levemente mexida, sem destruir a forma mas tirando aquele brilho de parede lisa. Com uns 5 kW/m de energia a força já é mais tranquila, então dá pra sentir a onda empurrando sem exigir tanto da remada. É condição boa pra quem tá pegando ritmo ainda, pico mais tranquilo pra treinar entrada e pop-up, que é aquele movimento de levantar da prancha de uma vez só.",
+            "janela": null,
+            "aviso": null
           }
         },
         "2026-07-24": {
           "manha": {
-            "score": 4,
-            "titulo": "Manhã com série organizada",
-            "analise": "Período de 10 segundos traz swell bem organizado, as ondas chegam em séries que dá pra contar. O lateral de 10 km/h é tranquilo, não mexe muito na parede. Tamanho passando do metro é aquele que tem forma pra trabalhar, bom pra todo nível.",
-            "janela": "6h-9h",
+            "score": 3,
+            "titulo": "Série limpa com vento fraco",
+            "analise": "Onda passando do metro chega em série bem espaçada (9 segundos), dá tempo de respirar entre as ondas. Onshore fraco não picar. Energia moderada (10 kW/m) deixa a coisa leve. Pico central com crowd, mas tem espaço pra todo mundo trabalhar.",
+            "janela": "15h-17h",
             "aviso": null
           },
           "tarde": {
-            "score": 3,
-            "titulo": "Tarde equilibrada",
-            "analise": "Maral de 7 km/h é leve, não destrói a onda mas mexe um pouco na superfície. Período de 9 segundos traz série organizada, tamanho passando do metro é clássico. Energia em volta de 10 kW/m deixa o surf acessível, remada não cansa demais. Dia pra levar iniciante ou curtir tranquilo.",
-            "janela": "15h-17h",
-            "aviso": null
+            "score": 4,
+            "titulo": "Onda grande com série compacta",
+            "analise": "Swell de 9 segundos traz ondas que não deixam pausar, série muito ajustada. Tamanho perto de dois metros é aquele que demanda técnica de remada e timing certo. Lateral suave não piora. Dia de caldo, a piscina tá cheia de gente experiente.",
+            "janela": "16h-19h",
+            "aviso": "Tamanho perto de dois metros, energia 17 kW/m, série rápida. Remada pesada, entrada/saída com cuidado. Experiência obrigatória."
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Onda grande com série compacta",
+            "analise": "Swell de 9 segundos traz ondas que não deixam pausar, série muito ajustada. Tamanho perto de dois metros é aquele que demanda técnica de remada e timing certo. Lateral suave não piora. Dia de caldo, a piscina tá cheia de gente experiente.",
+            "janela": "16h-19h",
+            "aviso": "Tamanho perto de dois metros, energia 17 kW/m, série rápida. Remada pesada, entrada/saída com cuidado. Experiência obrigatória."
           }
         },
         "2026-07-25": {
@@ -5091,9 +5054,10 @@
             "aviso": null
           },
           "tarde": {
-            "titulo": "Tarde de leste na Pitangueiras",
-            "analise": "O swell agora vem de leste, direção que também entra bem nessa praia e mantém o tamanho ali entre o metro e o metro e meio. Período de uns 8 segundos ainda dá uma organizada nas séries, mas o vento de lado, batendo mais forte que de manhã, começa a picar a superfície e tira um pouco da lisura da parede. Na água isso se sente como uma onda com corpo mas menos previsível, que pode fechar sem muito aviso. É um bom dia pra quem já rema bem trabalhar posicionamento, mas fica esperto na leitura do banco antes de escolher onde entrar.",
-            "janela": null,
+            "score": 3,
+            "titulo": "Série limpa com vento fraco",
+            "analise": "Onda passando do metro chega em série bem espaçada (9 segundos), dá tempo de respirar entre as ondas. Onshore fraco não picar. Energia moderada (10 kW/m) deixa a coisa leve. Pico central com crowd, mas tem espaço pra todo mundo trabalhar.",
+            "janela": "15h-17h",
             "aviso": null
           },
           "noite": {
@@ -5412,11 +5376,11 @@
             "analise": "Chegando na tarde a ondulação segue firme, perto de dois metros, e o período continua bom, na casa dos 9 segundos, o que segura a organização mesmo com o dia mais adiantado. O que muda é o vento, que sopra de lado com quase 16 km/h, picando a superfície e deixando a parede menos vidrada do que seria com terral de N/NO. Na prática, a remada até o pico vai cansar, uns 14 kW/m de energia na água, força suficiente pra cobrar preparo de quem entra. Vale a sessão pra surfista avançado que não se importa de trabalhar um pouco mais pela onda. Prancha com mais volume ajuda a furar a série sem gastar tanto fôlego."
           },
           "noite": {
-            "score": 3,
-            "titulo": "Noite mansa com terral leve chegando",
-            "analise": "O tamanho cai bastante à noite no Bonete, perto de um metro, energia baixa, o que deixa a remada mais tranquila e a descida sem tanta pressão. O período ainda tá bom, por volta de 9-10s, então mesmo pequena a onda vem com alguma organização. O detalhe bacana é o vento vindo da terra pro mar, terral fraco, que ajuda a alisar a parede mesmo com menos força na água. Onda simples, boa pra sentir o pico sem crowd e sem exigência física grande.",
+            "score": 4,
+            "titulo": "Força considerável sob o escuro",
+            "analise": "À noite o Bonete ganha corpo, perto de dois metros, com energia alta o suficiente pra cansar a remada rápido e exigir postura firme no drop. O período na casa dos 9s ainda organiza razoavelmente a série, mas o vento lateral mexe a face e pede ajuste constante. É uma condição de bom tamanho e força real, reservada pra quem já manja do pico. Cuidado redobrado por causa da noite, que dificulta enxergar o banco e a corrente.",
             "janela": null,
-            "aviso": null
+            "aviso": "Mar grande à noite exige experiência e atenção total ao canal de entrada e saída."
           }
         },
         "2026-07-21": {
@@ -5435,11 +5399,11 @@
             "aviso": null
           },
           "noite": {
-            "score": 2,
-            "titulo": "Noite de mar cheio e vento de frente",
-            "analise": "À noite o Bonete fica grande, perto de dois metros bem puxado, quase dois metros de força na água, mas o período caiu pra faixa média, uns 8s, o que já avisa: série menos organizada, ondas mais em cima uma da outra. Pra piorar o vento vem do mar pra terra, onshore, e isso desmonta a parede antes da hora, tirando a forma que o fundo de areia daria naturalmente. Com pouca luz e mar mexido, a leitura fica bem mais difícil pra quem não conhece o banco local. Se for entrar, prioridade total pra quem já surfa esse pico de dia e conhece os canais.",
+            "score": 4,
+            "titulo": "Força considerável sob o escuro",
+            "analise": "À noite o Bonete ganha corpo, perto de dois metros, com energia alta o suficiente pra cansar a remada rápido e exigir postura firme no drop. O período na casa dos 9s ainda organiza razoavelmente a série, mas o vento lateral mexe a face e pede ajuste constante. É uma condição de bom tamanho e força real, reservada pra quem já manja do pico. Cuidado redobrado por causa da noite, que dificulta enxergar o banco e a corrente.",
             "janela": null,
-            "aviso": "Visibilidade baixa à noite combinada com mar mexido e onshore aumenta risco de leitura errada de banco e corrente. Cuidado redobrado na entrada e saída."
+            "aviso": "Mar grande à noite exige experiência e atenção total ao canal de entrada e saída."
           }
         },
         "2026-07-22": {
@@ -5451,11 +5415,9 @@
             "aviso": null
           },
           "tarde": {
-            "score": 3,
-            "titulo": "Tarde de tamanho bom e vento incomodando aos poucos",
-            "analise": "O Bonete segue com ondas uns dois metros na parte da tarde, período bom, entre 9 e 10s, o que ainda garante alguma série organizada. O onshore leve começa a atrapalhar a lisura da parede, mas sem destruir de vez a forma que o banco de areia entrega. Dá pra sentir a onda empurrando com força na descida, típico de energia média pra cima. Se puder escolher, entre mais cedo, mas dá pra surfar bem mesmo com esse vento fraco de frente.",
-            "janela": null,
-            "aviso": null
+            "score": 4,
+            "titulo": "Peso na água à tarde no Bonete",
+            "analise": "Chegando na tarde a ondulação segue firme, perto de dois metros, e o período continua bom, na casa dos 9 segundos, o que segura a organização mesmo com o dia mais adiantado. O que muda é o vento, que sopra de lado com quase 16 km/h, picando a superfície e deixando a parede menos vidrada do que seria com terral de N/NO. Na prática, a remada até o pico vai cansar, uns 14 kW/m de energia na água, força suficiente pra cobrar preparo de quem entra. Vale a sessão pra surfista avançado que não se importa de trabalhar um pouco mais pela onda. Prancha com mais volume ajuda a furar a série sem gastar tanto fôlego."
           },
           "noite": {
             "score": 4,
@@ -5479,19 +5441,19 @@
             "analise": "Chegando na tarde a ondulação segue firme, perto de dois metros, e o período continua bom, na casa dos 9 segundos, o que segura a organização mesmo com o dia mais adiantado. O que muda é o vento, que sopra de lado com quase 16 km/h, picando a superfície e deixando a parede menos vidrada do que seria com terral de N/NO. Na prática, a remada até o pico vai cansar, uns 14 kW/m de energia na água, força suficiente pra cobrar preparo de quem entra. Vale a sessão pra surfista avançado que não se importa de trabalhar um pouco mais pela onda. Prancha com mais volume ajuda a furar a série sem gastar tanto fôlego."
           },
           "noite": {
-            "score": 4,
-            "titulo": "Força considerável sob o escuro",
-            "analise": "À noite o Bonete ganha corpo, perto de dois metros, com energia alta o suficiente pra cansar a remada rápido e exigir postura firme no drop. O período na casa dos 9s ainda organiza razoavelmente a série, mas o vento lateral mexe a face e pede ajuste constante. É uma condição de bom tamanho e força real, reservada pra quem já manja do pico. Cuidado redobrado por causa da noite, que dificulta enxergar o banco e a corrente.",
+            "score": 2,
+            "titulo": "Noite de mar cheio e vento de frente",
+            "analise": "À noite o Bonete fica grande, perto de dois metros bem puxado, quase dois metros de força na água, mas o período caiu pra faixa média, uns 8s, o que já avisa: série menos organizada, ondas mais em cima uma da outra. Pra piorar o vento vem do mar pra terra, onshore, e isso desmonta a parede antes da hora, tirando a forma que o fundo de areia daria naturalmente. Com pouca luz e mar mexido, a leitura fica bem mais difícil pra quem não conhece o banco local. Se for entrar, prioridade total pra quem já surfa esse pico de dia e conhece os canais.",
             "janela": null,
-            "aviso": "Mar grande à noite exige experiência e atenção total ao canal de entrada e saída."
+            "aviso": "Visibilidade baixa à noite combinada com mar mexido e onshore aumenta risco de leitura errada de banco e corrente. Cuidado redobrado na entrada e saída."
           }
         },
         "2026-07-24": {
           "manha": {
-            "score": 5,
-            "titulo": "Isolamento que vira sessão de sonho",
-            "analise": "Chegar no Bonete já exige esforço, e o mar hoje paga essa conta com ondas passando do metro e período longo, quase 12s, sinal de energia que veio organizada e não bagunçada. Na água isso se traduz em parede que segura, dá tempo de posicionar e descer com calma antes de bater o pé na base. O vento lateral fraco só belisca a superfície, sem tirar a força da onda. Cara de dia pra explorar o pico com calma e testar linhas mais longas na direita.",
-            "janela": "7h-10h",
+            "score": 4,
+            "titulo": "Manhã com tamanho e ainda algum vento pela frente",
+            "analise": "Pela manhã o Bonete já tá com corpo, perto de dois metros, período médio na casa dos 9s, que entrega série com alguma organização mas sem o espaçamento de um swell mais longo. O onshore ainda tá fraco nesse horário, quase 6 km/h, então ainda não estragou de vez a parede, só tira um pouco da lisura. Dá pra sentir a força da água empurrando na descida, sinal de que a energia tá alta. Vale entrar cedo, antes do vento crescer e virar de vez contra a onda.",
+            "janela": "6h-9h",
             "aviso": null
           },
           "tarde": {
@@ -5511,16 +5473,16 @@
         },
         "2026-07-25": {
           "manha": {
-            "score": 4,
-            "titulo": "Onda grande, janela curta de qualidade",
-            "analise": "Tamanho não falta nessa manhã no Bonete, ondas na faixa uns dois metros com boa energia na água, aquela que já cansa a remada e cobra postura firme no drop. O período médio, por volta de 9s, ainda organiza razoavelmente as séries, mas o onshore fraco do início da manhã já anuncia que vai virar contra ao longo do dia. A dica é aproveitar as primeiras horas, quando o vento ainda não bagunçou a face. Depois disso a tendência é a parede perder forma.",
-            "janela": "6h-9h",
+            "score": 5,
+            "titulo": "Isolamento que vira sessão de sonho",
+            "analise": "Chegar no Bonete já exige esforço, e o mar hoje paga essa conta com ondas passando do metro e período longo, quase 12s, sinal de energia que veio organizada e não bagunçada. Na água isso se traduz em parede que segura, dá tempo de posicionar e descer com calma antes de bater o pé na base. O vento lateral fraco só belisca a superfície, sem tirar a força da onda. Cara de dia pra explorar o pico com calma e testar linhas mais longas na direita.",
+            "janela": "7h-10h",
             "aviso": null
           },
           "tarde": {
             "score": 3,
-            "titulo": "Onda mais mansa, ritmo ainda presente",
-            "analise": "À tarde o mar dá uma suavizada no Bonete, ondas passando do metro com energia mais baixa, sinal de remada mais tranquila e descida sem tanta força. O período continua bom, quase 10s, então a série ainda vem espaçada e legível. O vento de lado já aparece um pouco mais forte, mexendo a face sem estragar de vez. É um momento bom pra quem quer surfar com menos intensidade e aproveitar o visual isolado da praia.",
+            "titulo": "Ainda dá pra pegar parede decente",
+            "analise": "Mesmo com o onshore começando a soprar na tarde, o mar no Bonete mantém tamanho respeitável, perto de dois metros, e período que segura série razoável, por volta de 9s. A onda ainda entrega pressão na descida, prova de que a energia continua firme apesar do vento mexer a superfície. O ideal seria pegar antes do onshore ganhar força, mas quem tá na água agora ainda encontra parede pra trabalhar. Fique de olho no banco: ele ainda favorece bem a entrada pelo canal de sempre.",
             "janela": null,
             "aviso": null
           },
@@ -5680,6 +5642,13 @@
             "analise": "Com energia mais baixa na água, essa tarde não empurra com muita força, mas o período de quase 10 segundos garante série espaçada e fácil de ler. Onda perto de um metro, o vento de lado fraco quase não interfere na formação da parede. É tarde boa pra quem quer aprimorar remada e posicionamento sem a cobrança de onda grande. A Jureia vazia ajuda a repetir a mesma onda várias vezes seguidas.",
             "janela": null,
             "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Noite mais mole, swell de raspão",
+            "analise": "O mar segue perto de um metro, com período em torno de 7 segundos, uma faixa mediana que ainda mantém alguma série, mas sem muita força por trás. O vento onshore, vindo do mar pra terra, uns 6 km/h, já mexe a superfície e tira um pouco do brilho da parede. Como o swell de leste chega meio de raspão na praia essa noite, a onda perde um pouco de definição e fecha mais cedo em alguns pontos do banco. Ainda dá pra pegar espuma e trabalhar posicionamento, principalmente se escolher o canto onde o banco parecer mais fundo.",
+            "janela": null,
+            "aviso": null
           }
         },
         "2026-07-20": {
@@ -5746,13 +5715,6 @@
             "analise": "O tamanho segue forte, perto de dois metros, mas o onshore já sopra com mais força e começa a bagunçar a parede antes da hora. O período, por volta de 9 segundos, ainda dá alguma organização, mas a energia alta, quase 16 kW/m, junto com o vento de frente deixa a sessão mais exigente. Vale entrar preparado pra remada puxada e caldo forte. Melhor buscar o início da tarde, antes do vento ganhar ainda mais força.",
             "janela": null,
             "aviso": "Energia alta com onshore forte: remada cansativa e caldo pesado. Indicado pra quem já surfa ondas grandes."
-          },
-          "noite": {
-            "score": 3,
-            "titulo": "Sessão de fim de dia tranquila",
-            "analise": "Com a luz caindo, o mar reduz um pouco, ondas por volta de um metro, podendo passar um pouco disso, e período de quase 8 segundos que ainda entrega alguma organização nas séries. O vento sopra offshore bem fraco, quase 5 km/h, suave o bastante pra manter a parede arrumada sem empurrar demais o bico da prancha. O swell de leste segue entrando direto na bancada, então mesmo menor a onda ainda abre com forma. Se decidir entrar, é sessão de poucas pessoas, boa pra testar remada e pegar até a última luz sem pressa.",
-            "janela": "17h-19h",
-            "aviso": null
           }
         },
         "2026-07-25": {
@@ -5762,6 +5724,13 @@
             "analise": "Tem energia na água essa tarde, quase 12 kW/m, força suficiente pra sentir a descida com peso, mas o vento de frente vindo do mar atropela a parede antes dela fechar direito. O resultado é onda passando do metro que quebra rápido e sem muita linha pra trabalhar manobra. Ainda assim dá pra pegar volume e trabalhar pop-up, que é a levantada rápida sem ajoelhar, em ondas mais cheias. Melhor mirar o começo da tarde, antes do vento ganhar força total.",
             "janela": null,
             "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Energia forte sob pouca luz",
+            "analise": "Com quase 15 kW/m de energia na água e tamanho uns dois metros, essa noite pede respeito. O vento onshore já tem força suficiente pra atrapalhar a parede, mesmo com o período passando dos 9 segundos ajudando a organizar as séries. A remada vai cansar e o caldo pode pesar. Recomendado só pra quem já é entrosado com ondas grandes e conhece bem esse trecho da Jureia, redobrando o cuidado por causa da noite.",
+            "janela": null,
+            "aviso": "Mar grande à noite: luz reduzida junto com energia alta pede cautela extra. Indicado apenas pra surfista experiente e que conheça o pico."
           }
         }
       }
@@ -5928,18 +5897,64 @@
             "aviso": null
           },
           "noite": {
-            "score": 2,
-            "titulo": "Sessão de noite mexida",
-            "analise": "Se tem sessão de noite aqui, é bom saber: o mar tá na casa de metro e metro e meio, mas com período curto, ondas chegando rápido uma atrás da outra sem muito espaçamento. O vento lateral de mais de 22 km/h pica a superfície e tira um pouco da lisura que o Costão costuma entregar. É onda de aproveitar o que dá, sem esperar parede longa, mais pra ir na espuma e treinar remada do que pra buscar manobra. Se decidir entrar com pouca luz, redobra a atenção com quem tá do lado, visibilidade baixa muda tudo no lineup.",
-            "janela": null,
-            "aviso": "Surf noturno reduz visibilidade: cuidado redobrado com outros surfistas e leitura do banco."
+            "score": 4,
+            "titulo": "Série espaçada, vidro na parede",
+            "analise": "O vento tá quase parado, um terral fraco que só ajuda a alisar a água sem atrapalhar a entrada. Com período beirando 11s a onda vem de forma organizada, dá pra ver a série chegando de longe e escolher a melhor sem correria. Tamanho perto de um metro com essa qualidade de parede é ótimo pra intermediário trabalhar cutback com precisão, aproveitando o costão como referência visual da janela de swell.",
+            "janela": "6h-9h",
+            "aviso": null
           }
         },
         "2026-07-20": {
           "manha": {
+            "score": 3,
+            "titulo": "Manhã lisinha pra treinar remada",
+            "analise": "De manhã cedo o vento sopra de oeste/noroeste, terral que nasce do ar frio da madrugada escorrendo da terra pro mar, e isso deixa a água do Santinho com aquela cara de vidro. O tamanho é modesto, perto de um metro, e o período curto entrega uma vaga sem muita organização, mas a superfície lisa compensa bastante. É um cenário bom pra intermediário focar em pop-up e leitura de banco sem o vento atrapalhando a decisão na hora do drop.",
+            "janela": "6h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Tarde bagunçada, hora de estudar o banco",
+            "analise": "A tarde chega com o vento batendo de frente pro mar, onshore de uns 23 km/h, e isso desorganiza tudo: a onda perde força antes da hora e enche de bumps na parede. Com período curto e perto de um metro de altura, a energia já não era muita, uns 4 kW/m, e o vento forte piora ainda mais a leitura. Vale mais aproveitar pra observar onde o banco tá formando e guardar prancha maior pra flutuar na espuma do que forçar surf de performance agora.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Noite tranquila, vento de lado leve",
+            "analise": "O vento lateral moderado, uns 11 km/h, não é o pior cenário mas também não deixa tudo cristalino como um terral faria. Com período já na faixa boa, passando de 9s, e tamanho perto de um metro, a série chega com espaçamento legal, dá pra ler o próximo grupo vindo de fora. É sessão de fim de dia sem grande drama, onda decente pra trabalhar linha de fundo com calma.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-07-21": {
+          "manha": {
             "score": 2,
-            "titulo": "Manhã pequena mas de pé",
-            "analise": "Onda mais na casa de um metro essa manhã, um tamanho gostoso pra quem quer treinar sem pressão. O período curto, perto de 7 segundos, faz as séries chegarem mais compactas, mas nada que atrapalhe quem tá construindo repertório. O vento lateral de quase 18 km/h ainda deixa passar uma janela de manhã cedo antes de bagunçar demais. É um dia bom pra trabalhar o drop com calma e escolher bem a onda, sem remar em tudo que vem.",
+            "titulo": "Vento de lado atrapalhando o Santinho",
+            "analise": "O mar tá com perto de um metro essa manhã, mas o período curto, uns 7 segundos entre uma onda e outra, entrega uma vaga mais crua, sem muita organização. O vento tá vindo de lado com uns 16 km/h, o que pica a superfície e faz a parede perder um pouco da lisura que o Santinho costuma ter junto do costão. Ainda dá pra pegar, principalmente pra treinar remada e leitura de banco, mas não é o dia de esperar parede limpa pra trabalhar manobra.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Tarde bagunçada, hora de estudar o banco",
+            "analise": "A tarde chega com o vento batendo de frente pro mar, onshore de uns 23 km/h, e isso desorganiza tudo: a onda perde força antes da hora e enche de bumps na parede. Com período curto e perto de um metro de altura, a energia já não era muita, uns 4 kW/m, e o vento forte piora ainda mais a leitura. Vale mais aproveitar pra observar onde o banco tá formando e guardar prancha maior pra flutuar na espuma do que forçar surf de performance agora.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 4,
+            "titulo": "Energia sobe, hora de respeitar o mar",
+            "analise": "Com energia batendo os 11 kW/m a coisa fica séria: é força suficiente pra cansar na remada e dar peso real na queda. O tamanho uns dois metros e o vento onshore ainda fraco deixam a condição boa, mas já exige leitura mais atenta do banco pra não pegar a série errada. Bom momento pra intermediário mais experiente evoluir a manobra, sempre de olho na corrente que costuma se formar nesse tipo de mar maior.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-07-22": {
+          "manha": {
+            "score": 3,
+            "titulo": "Manhã lisinha pra treinar remada",
+            "analise": "De manhã cedo o vento sopra de oeste/noroeste, terral que nasce do ar frio da madrugada escorrendo da terra pro mar, e isso deixa a água do Santinho com aquela cara de vidro. O tamanho é modesto, perto de um metro, e o período curto entrega uma vaga sem muita organização, mas a superfície lisa compensa bastante. É um cenário bom pra intermediário focar em pop-up e leitura de banco sem o vento atrapalhando a decisão na hora do drop.",
             "janela": "6h-9h",
             "aviso": null
           },
@@ -5954,52 +5969,6 @@
             "score": 3,
             "titulo": "Noite tranquila, vento de lado leve",
             "analise": "O vento lateral moderado, uns 11 km/h, não é o pior cenário mas também não deixa tudo cristalino como um terral faria. Com período já na faixa boa, passando de 9s, e tamanho perto de um metro, a série chega com espaçamento legal, dá pra ler o próximo grupo vindo de fora. É sessão de fim de dia sem grande drama, onda decente pra trabalhar linha de fundo com calma.",
-            "janela": null,
-            "aviso": null
-          }
-        },
-        "2026-07-21": {
-          "manha": {
-            "score": 3,
-            "titulo": "Manhã lisinha pra treinar remada",
-            "analise": "De manhã cedo o vento sopra de oeste/noroeste, terral que nasce do ar frio da madrugada escorrendo da terra pro mar, e isso deixa a água do Santinho com aquela cara de vidro. O tamanho é modesto, perto de um metro, e o período curto entrega uma vaga sem muita organização, mas a superfície lisa compensa bastante. É um cenário bom pra intermediário focar em pop-up e leitura de banco sem o vento atrapalhando a decisão na hora do drop.",
-            "janela": "6h-9h",
-            "aviso": null
-          },
-          "tarde": {
-            "score": 2,
-            "titulo": "Leste entrando, tarde ainda mexida",
-            "analise": "O swell vem de leste agora, direção que entra bem na praia por causa da orientação do Santinho voltada pro nascente, mas o vento onshore, mesmo fraco, uns 11 km/h, já tira um pouco do brilho da parede. A altura fica perto de um metro e a energia é baixa, então não espera força na descida, mais uma onda mole e cheia. Dá pra aproveitar em prancha maior ou pra treinar posicionamento no pico, sem cobrar pressão que o dia não tem.",
-            "janela": null,
-            "aviso": null
-          },
-          "noite": {
-            "score": 3,
-            "titulo": "Série espaçada mesmo com vento de lado",
-            "analise": "Mesmo com o vento cruzando de lado, o período mais longo, quase 9s e pouco, segura a organização da série, o que ajuda a compensar a superfície um pouco mexida. perto de um metro de tamanho é suficiente pra fazer manobra com folga e sentir a força moderada da água, energia baixa que não cansa demais. Boa janela pra quem gosta de surfar de noite sem crowd, aproveitando essa condição estável.",
-            "janela": null,
-            "aviso": null
-          }
-        },
-        "2026-07-22": {
-          "manha": {
-            "score": 2,
-            "titulo": "Manhã pequena mas de pé",
-            "analise": "Onda mais na casa de um metro essa manhã, um tamanho gostoso pra quem quer treinar sem pressão. O período curto, perto de 7 segundos, faz as séries chegarem mais compactas, mas nada que atrapalhe quem tá construindo repertório. O vento lateral de quase 18 km/h ainda deixa passar uma janela de manhã cedo antes de bagunçar demais. É um dia bom pra trabalhar o drop com calma e escolher bem a onda, sem remar em tudo que vem.",
-            "janela": "6h-9h",
-            "aviso": null
-          },
-          "tarde": {
-            "score": 4,
-            "titulo": "Série espaçada, vidro na parede",
-            "analise": "O vento tá quase parado, um terral fraco que só ajuda a alisar a água sem atrapalhar a entrada. Com período beirando 11s a onda vem de forma organizada, dá pra ver a série chegando de longe e escolher a melhor sem correria. Tamanho perto de um metro com essa qualidade de parede é ótimo pra intermediário trabalhar cutback com precisão, aproveitando o costão como referência visual da janela de swell.",
-            "janela": "6h-9h",
-            "aviso": null
-          },
-          "noite": {
-            "score": 4,
-            "titulo": "Energia sobe, hora de respeitar o mar",
-            "analise": "Com energia batendo os 11 kW/m a coisa fica séria: é força suficiente pra cansar na remada e dar peso real na queda. O tamanho uns dois metros e o vento onshore ainda fraco deixam a condição boa, mas já exige leitura mais atenta do banco pra não pegar a série errada. Bom momento pra intermediário mais experiente evoluir a manobra, sempre de olho na corrente que costuma se formar nesse tipo de mar maior.",
             "janela": null,
             "aviso": null
           }
@@ -6036,9 +6005,9 @@
             "aviso": null
           },
           "tarde": {
-            "score": 3,
-            "titulo": "Tarde com período longo no Santinho",
-            "analise": "O período já sobe pra faixa boa e passa dos 10s, o que é o tempo entre ondas que garante série organizada e mais força por onda. perto de um metro de tamanho com esse período rende parede que aguenta manobra, mesmo com o vento lateral moderado, uns 14 km/h, mexendo um pouco a superfície. Vale entrar e aproveitar o pico principal, buscando o lado mais protegido do vento pelo costão.",
+            "score": 2,
+            "titulo": "Tarde de vento contra",
+            "analise": "De tarde o vento vira de frente pro mar, onshore de quase 26 km/h, e isso é o que mais pesa hoje: ele bate na cara da onda e desmancha a parede antes da hora. O swell vem de nordeste, entra na praia mas chega com período curto, quase vaga de vento, o que já deixa tudo mais mexido e menos organizado. Na água a sensação é de onda cheia mas sem força real, empurrando mais do que surfando. Se ainda assim for entrar, prancha mais estável ajuda a segurar o pop-up, que é aquele movimento de levantar de uma vez só, porque o mar tá inconstante e não perdoa hesitação.",
             "janela": null,
             "aviso": null
           },
@@ -6059,9 +6028,9 @@
             "aviso": null
           },
           "tarde": {
-            "score": 1,
-            "titulo": "Tarde fraca de vento solto",
-            "analise": "A tarde chega com onda mais perto de um metro e pouca força na água, energia baixa que se sente na remada mole e na parede que quase não empurra. O vento onshore de quase 25 km/h ainda dá uma pancada a mais, deixando tudo mexido e sem grande organização. Não é dia de procurar parede pra rasgar, mas sobra espuma decente pra quem tá craft do pop-up ou quer só sentir a água. Prancha mais volumosa ajuda a aproveitar o pouco que tem sem forçar a remada.",
+            "score": 3,
+            "titulo": "Energia crescendo com o período",
+            "analise": "Com período passando dos 10s a energia sobe naturalmente, quase 4 kW/m, força que já dá uma boa remada e descida com pressão. Tamanho perto de um metro e vento de lado moderado deixam a condição boa mas não perfeita, com alguma textura na água. Intermediário que já lê bottom turn vai sentir a diferença desse período mais longo em relação aos dias de 7s, série mais previsível pra se posicionar.",
             "janela": null,
             "aviso": null
           },
@@ -6093,42 +6062,42 @@
             "aviso": null
           },
           "noite": {
-            "score": 1,
-            "titulo": "Noite pequena com terral pesado",
-            "analise": "Terral forte à noite segura a onda mas também atrapalha a entrada, é vento que vem da praia pro mar com bastante intensidade. Onda pequena, na casa do meio metro, período curto que não ajuda a dar corpo às séries. Na água você sente resistência pra pegar embalo, mas quando pega a parede vem seca e rápida. Ideal pra quem já manja de remada forte e quer treinar entrada em vento de proa.",
+            "score": 3,
+            "titulo": "Tamanho generoso sob o breu",
+            "analise": "Onda perto de um metro com período já entrando na faixa boa, o que dá mais organização de série do que a vaga costuma entregar. O vento lateral de força média enruga um pouco a parede, mas a energia considerável segura a força na quebra. Você sente puxada real na descida, sessão que recompensa quem já manja de ler onda com pouca luz. Vale escolher bem o pico e respeitar a visibilidade reduzida da noite.",
             "janela": null,
             "aviso": null
           }
         },
         "2026-07-20": {
           "manha": {
-            "score": 2,
-            "titulo": "Manhã mexida na Joaca",
-            "analise": "Essa combinação de período curto com vento lateral forte deixa o mar num estado agitado, tipo água fervendo sem organização. Na água você vai sentir a onda chegando rápido, quebrando cheia na altura perto de um metro, mas sem aquela parede lisa que a Joaquina entrega em dia de swell de sul organizado. A energia de 4 kW/m ainda empurra, então não é fraco, só é bagunçado. Vale entrar se a ideia é treinar remada e pop-up em condição adversa, aproveitando os cantos onde o banco quebra mais formado.",
-            "janela": null,
+            "score": 1,
+            "titulo": "Manhã de raspão na Joaca",
+            "analise": "O mar hoje tá com uma ondulação de leste que passa de raspão na Joaquina, porque essa praia olha pra sul e sudeste e não recebe leste em cheio. O tamanho fica perto de um metro, com um período médio, ali na casa dos 7 a 9 segundos, que dá uma organizada mas sem grandeza nenhuma. Na água você vai sentir uma parede curta, que não segura muito e fecha rápido, mais pra treinar remada e leitura de banco do que pra buscar manobra grande. O vento é terral, ou seja, sopra da terra pro mar e ajuda a alisar a superfície, o que é a melhor notícia do dia. Vale aproveitar o vento bom e usar uma prancha mais de volume pra facilitar a entrada nessas ondas mais curtas.",
+            "janela": "6h-9h",
             "aviso": null
           },
           "tarde": {
-            "score": 2,
-            "titulo": "Tamanho ok, organização não tanto",
-            "analise": "perto de um metro de onda com energia razoável, mas o período curto entrega séries próximas e sem muito espaçamento. O vento lateral de intensidade média pica a parede, tirando um pouco da lisura. Ainda assim dá pra sentir força real na descida, típico de vaga com alguma pegada. Melhor tarde pra manobra rápida do que pra linha longa, aproveitando o que o banco oferecer.",
+            "score": 1,
+            "titulo": "Tarde de maral bagunçando tudo",
+            "analise": "O vento virou onshore, aquele que sopra do mar pra praia, e é o pior cenário pra qualquer pico: ele pega a onda por trás e derruba a força antes da hora. perto de um metro de tamanho mas com período curto, então a onda já nasce sem grandeza e o vento ainda destrói o pouco que tinha. Na água a sensação é de bumps, aquelas rugas na superfície, e a parede fecha rápido sem deixar trabalhar manobra. Ainda dá pra aproveitar pra treinar leitura de série e paddle em condição ruim, mas não é o dia pra buscar performance.",
             "janela": null,
             "aviso": null
           },
           "noite": {
-            "score": 0,
-            "titulo": "Noite fria sem grandeza",
-            "analise": "De noite a leitura visual fica mais difícil, mas o boletim mostra vento lateral forte, passando de 18 km/h, que é aquele vento de lado que não ajuda nem atrapalha demais, só deixa a superfície com uma pele meio picada. A ondulação segue vindo de leste, direção que a Joaquina não abraça bem porque a praia tá voltada pra sul e sudeste, então o que chega é fraco e de raspão. Com quase um metro de tamanho e período curto pra médio, a força na água é pouca, dá aquela sensação de onda mole que não empurra muito na descida. Se resolver entrar mesmo com pouca luz, vá com cautela redobrada e prefira ficar perto da praia, testando o banco antes de se soltar mais fundo.",
+            "score": 1,
+            "titulo": "Terral forte bagunçando o pequeno",
+            "analise": "O vento offshore aqui já tá forte, quase 18 km/h, e nessa intensidade ele passa de aliado a estorvo: empurra o bico da prancha pra cima e dificulta a entrada na onda. Junto com período curto e tamanho na casa do meio metro, a sessão fica mais de luta com o vento do que de surf fluido. Ainda assim a parede fica seca por causa do terral, então quem entrar sente uma quebra rápida e seca. Vale ajustar a posição de remada mais à frente na prancha pra vencer esse vento de proa.",
             "janela": null,
-            "aviso": "Visibilidade reduzida à noite: fique perto da praia e evite se afastar do banco conhecido."
+            "aviso": null
           }
         },
         "2026-07-21": {
           "manha": {
-            "score": 2,
-            "titulo": "Manhã mexida na Joaca",
-            "analise": "Essa combinação de período curto com vento lateral forte deixa o mar num estado agitado, tipo água fervendo sem organização. Na água você vai sentir a onda chegando rápido, quebrando cheia na altura perto de um metro, mas sem aquela parede lisa que a Joaquina entrega em dia de swell de sul organizado. A energia de 4 kW/m ainda empurra, então não é fraco, só é bagunçado. Vale entrar se a ideia é treinar remada e pop-up em condição adversa, aproveitando os cantos onde o banco quebra mais formado.",
-            "janela": null,
+            "score": 1,
+            "titulo": "Manhã de raspão na Joaca",
+            "analise": "O mar hoje tá com uma ondulação de leste que passa de raspão na Joaquina, porque essa praia olha pra sul e sudeste e não recebe leste em cheio. O tamanho fica perto de um metro, com um período médio, ali na casa dos 7 a 9 segundos, que dá uma organizada mas sem grandeza nenhuma. Na água você vai sentir uma parede curta, que não segura muito e fecha rápido, mais pra treinar remada e leitura de banco do que pra buscar manobra grande. O vento é terral, ou seja, sopra da terra pro mar e ajuda a alisar a superfície, o que é a melhor notícia do dia. Vale aproveitar o vento bom e usar uma prancha mais de volume pra facilitar a entrada nessas ondas mais curtas.",
+            "janela": "6h-9h",
             "aviso": null
           },
           "tarde": {
@@ -6149,9 +6118,9 @@
         "2026-07-22": {
           "manha": {
             "score": 3,
-            "titulo": "Terral segurando a manhã",
-            "analise": "O vento tá vindo de offshore, ou seja, da terra pro mar, e isso significa parede mais lisa, tipo vitrificada, porque o vento segura o topo da onda. na casa do meio metro de tamanho é pequeno mas o período já tá na casa dos 8s, o que dá uma organização boa pra série, dá pra ver a próxima chegando com calma. Na água você sente pouca força, energia baixa, mas a onda abre limpa e dá tempo de ajustar a manobra. É manhã perfeita pra treinar pop-up com qualidade, o movimento de levantar da prancha de uma vez sem ajoelhar, já que a parede colabora.",
-            "janela": "6h-9h",
+            "titulo": "Boa organização apesar do vento de lado",
+            "analise": "Com período na casa dos 10s a Joaquina entrega série previsível mesmo com tamanho discreto na casa do meio metro. O vento lateral de intensidade média pica um pouco a água, mas a força do período segura a forma da parede. Você sente mais pressão na descida do que o esperado pro tamanho, prova de que período manda mais que altura na qualidade. Ótimo momento pra observar o banco e escolher o pico que menos sofre com esse vento de banda.",
+            "janela": null,
             "aviso": null
           },
           "tarde": {
@@ -6162,9 +6131,9 @@
             "aviso": null
           },
           "noite": {
-            "score": 1,
-            "titulo": "Onda curta e vento forte",
-            "analise": "Período curto, na casa dos 7s, junto com vento onshore de quase 18 km/h é a pior combinação pra qualidade: o mar fica bagunçado e a onda perde força rápido. na casa do meio metro de tamanho, energia baixa, você vai sentir a parede mole e cheia de bumps, aquelas marquinhas que o vento do mar cria na superfície. Não é dia pra buscar manobra, mas dá pra focar em pop-up e remada, treinando o básico numa condição que não cobra tanto.",
+            "score": 2,
+            "titulo": "Noite mansa de vento de lado",
+            "analise": "O vento lateral tá fraco, quase 9 km/h, e não incomoda muito a forma da onda apesar de vir de banda. Tamanho na casa do meio metro com período já beirando os 9s, que é o início da faixa boa, onde as séries ficam mais espaçadas e fáceis de prever. Na água a força é discreta, sem muita pressão, mas dá pra sentir uma parede com alguma intenção antes de fechar. É condição tranquila pra quem quer surfar de leve, sem crowd, trabalhando suavidade nas linhas.",
             "janela": null,
             "aviso": null
           }
@@ -6201,9 +6170,9 @@
             "aviso": null
           },
           "tarde": {
-            "score": 2,
-            "titulo": "Tamanho ok, organização não tanto",
-            "analise": "perto de um metro de onda com energia razoável, mas o período curto entrega séries próximas e sem muito espaçamento. O vento lateral de intensidade média pica a parede, tirando um pouco da lisura. Ainda assim dá pra sentir força real na descida, típico de vaga com alguma pegada. Melhor tarde pra manobra rápida do que pra linha longa, aproveitando o que o banco oferecer.",
+            "score": 1,
+            "titulo": "Tarde de maral bagunçando tudo",
+            "analise": "O vento virou onshore, aquele que sopra do mar pra praia, e é o pior cenário pra qualquer pico: ele pega a onda por trás e derruba a força antes da hora. perto de um metro de tamanho mas com período curto, então a onda já nasce sem grandeza e o vento ainda destrói o pouco que tinha. Na água a sensação é de bumps, aquelas rugas na superfície, e a parede fecha rápido sem deixar trabalhar manobra. Ainda dá pra aproveitar pra treinar leitura de série e paddle em condição ruim, mas não é o dia pra buscar performance.",
             "janela": null,
             "aviso": null
           },
@@ -6224,9 +6193,9 @@
             "aviso": null
           },
           "tarde": {
-            "score": 1,
-            "titulo": "Maral tirando a força da tarde",
-            "analise": "Tarde clássica de vento do mar pra terra bagunçando a Joaquina: a energia é baixa, uns 3 kW/m, e o período curto não ajuda a formar parede. Você vai sentir a onda mole e picada ao mesmo tempo, perto de um metro mas sem pressão nenhuma pra descer com velocidade. Não é o dia da parede oca que a praia é capaz de entregar. Fica o ângulo de treinar remada e observar como o banco se comporta pra sessão seguinte.",
+            "score": 2,
+            "titulo": "Tamanho ok, organização não tanto",
+            "analise": "perto de um metro de onda com energia razoável, mas o período curto entrega séries próximas e sem muito espaçamento. O vento lateral de intensidade média pica a parede, tirando um pouco da lisura. Ainda assim dá pra sentir força real na descida, típico de vaga com alguma pegada. Melhor tarde pra manobra rápida do que pra linha longa, aproveitando o que o banco oferecer.",
             "janela": null,
             "aviso": null
           },
@@ -7176,9 +7145,11 @@
             "analise": "Onda passando do metro na Ferrugem essa manhã, tamanho generoso pra praia. O período tá na faixa média, o que segura alguma organização mas não é aquele swell redondo e espaçado. O vento lateral de 12 km/h deixa a parede levemente riscada, não estraga tudo mas tira um pouco da limpeza. Pra quem já manda bottom turn, ainda dá pra trabalhar bem a força da água. Fica esperto no pico principal porque o beach break aqui muda o banco toda semana."
           },
           "tarde": {
-            "score": 3,
-            "titulo": "Bom corpo de onda, vento atrapalhando",
-            "analise": "O tamanho tá generoso, passando do metro, com energia suficiente pra sentir a força na remada e na descida. O vento lateral forte já deixa a superfície irregular, tira parte da forma que o período médio tentava organizar. Ainda dá pra aproveitar bem se você trabalha rápido no drop, só ajuste a expectativa de parede limpa. Bom dia pra treinar reação em condição mais exigente."
+            "score": 2,
+            "titulo": "Tarde de vento contra",
+            "analise": "A tarde na Ferrugem chega com onda passando do metro e período médio, em torno de 8 segundos, o que ainda segura alguma forma. Mas o vento virou onshore, vindo do mar pra praia, e isso empurra a onda por trás, faz quebrar antes da hora e enche de bumps na superfície. Você vai sentir a parede mais cheia e menos previsível que de manhã. Ainda dá pra surfar, só ajusta a expectativa pra remada e menos manobra de precisão.",
+            "janela": null,
+            "aviso": null
           },
           "noite": {
             "score": 3,
@@ -7191,6 +7162,13 @@
             "score": 3,
             "titulo": "Bom corpo de onda, vento atrapalhando",
             "analise": "O tamanho tá generoso, passando do metro, com energia suficiente pra sentir a força na remada e na descida. O vento lateral forte já deixa a superfície irregular, tira parte da forma que o período médio tentava organizar. Ainda dá pra aproveitar bem se você trabalha rápido no drop, só ajuste a expectativa de parede limpa. Bom dia pra treinar reação em condição mais exigente."
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Noite com energia e vento moderado",
+            "analise": "A Ferrugem chega na noite com passando do metro de tamanho e período já na faixa boa, perto de 9 segundos, dando uma organização decente na série. O vento lateral tá na casa dos 10 km/h, o suficiente pra mexer um pouco a parede sem destruir de vez. Energia considerável, quase 9 e meio kW/m, faz a remada exigir e a descida vir com pressão real. Se tiver luz e disposição, ainda é uma condição que vale a pena, só espere alguma textura na água.",
+            "janela": null,
+            "aviso": null
           }
         },
         "2026-07-21": {
@@ -7198,18 +7176,20 @@
             "score": 2,
             "titulo": "Pouca força, onda educada",
             "analise": "Energia baixa nessa tarde, coisa de 5 kW/m, então a remada não cansa muito e a onda empurra sem exagero. O período bom compensa um pouco o vento de mar pra terra que já mexe na crista. perto de um metro de tamanho, ideal pra quem tá evoluindo o drop e quer previsibilidade. Onda de aprendizado com um toque de parede, aproveita pra repetir manobra."
-          },
-          "noite": {
-            "score": 3,
-            "titulo": "Corpo de onda apesar do vento",
-            "analise": "Tamanho bom essa noite, passando do metro, com energia alta o bastante pra sentir a força na água desde a remada. O vento de lado moderado risca a superfície mas não chega a fechar tudo, ainda dá pra achar parede em partes da onda. O período bom ajuda a manter alguma organização na série. Boa condição pra intermediário que já sabe ler onda mexida e aproveitar o que dá."
           }
         },
         "2026-07-22": {
+          "manha": {
+            "score": 2,
+            "titulo": "Mar médio com vento de lado",
+            "analise": "Chega perto de metro e meio de altura, com um período curto de uns 7 segundos, ou seja, as ondas vêm meio em cima uma da outra, sem muito espaço entre elas. O vento tá batendo de lado, na faixa dos 15 km/h, e isso pica a superfície: a parede não fica lisa, treme um pouco na descida. Como o swell vem mais de leste, ele entra de raspão na Ferrugem, que olha pro sul e sudeste, então perde força antes de chegar. Ainda dá pra pegar onda com forma no pico certo, mas vale ir sem esperar aquela parede telada. Se for de longboard ou tá começando a evoluir, a manhã ainda rende, só ajusta a expectativa."
+          },
           "tarde": {
             "score": 2,
-            "titulo": "Tarde mole com maral leve",
-            "analise": "À tarde a Ferrugem segue com perto de um metro e período bom, perto de 9 e meio segundos, o que ainda dá uma organização decente na série. O detalhe é o vento onshore, vindo do mar pra praia, que mesmo fraco já tira um pouco da força da parede e deixa a superfície mais texturizada. A sensação na água é de onda mansa, boa pra quem quer trabalhar remada e pop-up sem exigir muito. Prefira entrar mais cedo na janela da tarde, antes do vento acumular."
+            "titulo": "Tarde bagunçada de vento",
+            "analise": "A tarde na Ferrugem traz perto de um metro de tamanho mas com período mais curto, na casa dos 7 segundos, o que já indica série menos organizada, ondas mais em cima uma da outra. Some a isso o vento lateral forte, quase 12 e meio km/h, que pica bastante a superfície. Na água você vai sentir bump constante e menos previsibilidade pra ler a próxima onda. Ainda dá pra remar e treinar reação rápida, só não espere parede limpa hoje.",
+            "janela": null,
+            "aviso": null
           },
           "noite": {
             "score": 2,
@@ -7238,9 +7218,11 @@
         },
         "2026-07-24": {
           "tarde": {
-            "score": 3,
-            "titulo": "Bom corpo de onda, vento atrapalhando",
-            "analise": "O tamanho tá generoso, passando do metro, com energia suficiente pra sentir a força na remada e na descida. O vento lateral forte já deixa a superfície irregular, tira parte da forma que o período médio tentava organizar. Ainda dá pra aproveitar bem se você trabalha rápido no drop, só ajuste a expectativa de parede limpa. Bom dia pra treinar reação em condição mais exigente."
+            "score": 2,
+            "titulo": "Tarde de vento contra",
+            "analise": "A tarde na Ferrugem chega com onda passando do metro e período médio, em torno de 8 segundos, o que ainda segura alguma forma. Mas o vento virou onshore, vindo do mar pra praia, e isso empurra a onda por trás, faz quebrar antes da hora e enche de bumps na superfície. Você vai sentir a parede mais cheia e menos previsível que de manhã. Ainda dá pra surfar, só ajusta a expectativa pra remada e menos manobra de precisão.",
+            "janela": null,
+            "aviso": null
           }
         },
         "2026-07-25": {
@@ -7250,11 +7232,14 @@
             "analise": "Onda passando do metro na Ferrugem essa manhã, tamanho generoso pra praia. O período tá na faixa média, o que segura alguma organização mas não é aquele swell redondo e espaçado. O vento lateral de 12 km/h deixa a parede levemente riscada, não estraga tudo mas tira um pouco da limpeza. Pra quem já manda bottom turn, ainda dá pra trabalhar bem a força da água. Fica esperto no pico principal porque o beach break aqui muda o banco toda semana."
           },
           "tarde": {
-            "score": 2,
-            "titulo": "Tarde de vento contra",
-            "analise": "A tarde na Ferrugem chega com onda passando do metro e período médio, em torno de 8 segundos, o que ainda segura alguma forma. Mas o vento virou onshore, vindo do mar pra praia, e isso empurra a onda por trás, faz quebrar antes da hora e enche de bumps na superfície. Você vai sentir a parede mais cheia e menos previsível que de manhã. Ainda dá pra surfar, só ajusta a expectativa pra remada e menos manobra de precisão.",
-            "janela": null,
-            "aviso": null
+            "score": 3,
+            "titulo": "Bom corpo de onda, vento atrapalhando",
+            "analise": "O tamanho tá generoso, passando do metro, com energia suficiente pra sentir a força na remada e na descida. O vento lateral forte já deixa a superfície irregular, tira parte da forma que o período médio tentava organizar. Ainda dá pra aproveitar bem se você trabalha rápido no drop, só ajuste a expectativa de parede limpa. Bom dia pra treinar reação em condição mais exigente."
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Corpo de onda apesar do vento",
+            "analise": "Tamanho bom essa noite, passando do metro, com energia alta o bastante pra sentir a força na água desde a remada. O vento de lado moderado risca a superfície mas não chega a fechar tudo, ainda dá pra achar parede em partes da onda. O período bom ajuda a manter alguma organização na série. Boa condição pra intermediário que já sabe ler onda mexida e aproveitar o que dá."
           }
         }
       }
@@ -7300,29 +7285,31 @@
         "2026-07-21": {
           "manha": {
             "score": 2,
+            "titulo": "Tamanho sobra, direção falta",
+            "analise": "Olha, tem onda na Rosa hoje, passa de um metro e chega perto de metro e meio, mas o vento tá vindo de lado com uns 17 km/h, o que deixa a parede meio irregular, empurrando a água sem organizar direito. O swell tá vindo de leste, meio de raspão nessa enseada que pede mais ondulação de sul ou sudeste, então a força chega mas sem formar aquela parede bonita que Imbituba costuma entregar. Na água você vai sentir um pico inconstante, com trecho bom e trecho fechando rápido. Vale entrar sim, mas escolha as ondas do meio do banco e não se apegue a uma só direção de pico, o dia rende mais pra quem rema variando de posição."
+          },
+          "tarde": {
+            "score": 2,
             "titulo": "Sessão final sem muita organização",
             "analise": "Já anoitecendo, o mar entrega ondas perto de um metro com período curto, por volta de 7s e meio, o que deixa a série mais bagunçada e a espera entre ondas mais curta. O vento onshore fraco, uns 7 km/h, tira um pouco do brilho mas não chega a estragar tudo. É um dia sem grandeza, bom pra manter o ritmo e trabalhar leitura de banco antes que a luz vá embora. Nada de esperar tubo aqui, mas dá pra deslizar numas.",
             "janela": null,
             "aviso": null
           },
-          "tarde": {
-            "score": 3,
-            "titulo": "Onda com corpo, vento tolerável",
-            "analise": "A tarde no Rosa chega com uma condição sólida: período na casa dos 9s, o que dá série organizada e espaçada, e altura perto de um metro. O vento de lado bate uns 9 km/h, o suficiente pra tirar um pouco do brilho mas não pra acabar com a sessão. Na água você vai sentir a onda subir com alguma força e dar tempo de posicionar o drop com calma. Prancha de bom volume ajuda a aproveitar o período bom mesmo com o vento incomodando de leve.",
-            "janela": null,
-            "aviso": null
-          },
           "noite": {
             "score": 2,
-            "titulo": "Tamanho sobra, direção falta",
-            "analise": "Olha, tem onda na Rosa hoje, passa de um metro e chega perto de metro e meio, mas o vento tá vindo de lado com uns 17 km/h, o que deixa a parede meio irregular, empurrando a água sem organizar direito. O swell tá vindo de leste, meio de raspão nessa enseada que pede mais ondulação de sul ou sudeste, então a força chega mas sem formar aquela parede bonita que Imbituba costuma entregar. Na água você vai sentir um pico inconstante, com trecho bom e trecho fechando rápido. Vale entrar sim, mas escolha as ondas do meio do banco e não se apegue a uma só direção de pico, o dia rende mais pra quem rema variando de posição."
+            "titulo": "Sessão final sem muita organização",
+            "analise": "Já anoitecendo, o mar entrega ondas perto de um metro com período curto, por volta de 7s e meio, o que deixa a série mais bagunçada e a espera entre ondas mais curta. O vento onshore fraco, uns 7 km/h, tira um pouco do brilho mas não chega a estragar tudo. É um dia sem grandeza, bom pra manter o ritmo e trabalhar leitura de banco antes que a luz vá embora. Nada de esperar tubo aqui, mas dá pra deslizar numas.",
+            "janela": null,
+            "aviso": null
           }
         },
         "2026-07-22": {
           "manha": {
             "score": 2,
-            "titulo": "Tamanho sobra, direção falta",
-            "analise": "Olha, tem onda na Rosa hoje, passa de um metro e chega perto de metro e meio, mas o vento tá vindo de lado com uns 17 km/h, o que deixa a parede meio irregular, empurrando a água sem organizar direito. O swell tá vindo de leste, meio de raspão nessa enseada que pede mais ondulação de sul ou sudeste, então a força chega mas sem formar aquela parede bonita que Imbituba costuma entregar. Na água você vai sentir um pico inconstante, com trecho bom e trecho fechando rápido. Vale entrar sim, mas escolha as ondas do meio do banco e não se apegue a uma só direção de pico, o dia rende mais pra quem rema variando de posição."
+            "titulo": "Sessão final sem muita organização",
+            "analise": "Já anoitecendo, o mar entrega ondas perto de um metro com período curto, por volta de 7s e meio, o que deixa a série mais bagunçada e a espera entre ondas mais curta. O vento onshore fraco, uns 7 km/h, tira um pouco do brilho mas não chega a estragar tudo. É um dia sem grandeza, bom pra manter o ritmo e trabalhar leitura de banco antes que a luz vá embora. Nada de esperar tubo aqui, mas dá pra deslizar numas.",
+            "janela": null,
+            "aviso": null
           },
           "tarde": {
             "score": 3,
@@ -7366,22 +7353,29 @@
           },
           "tarde": {
             "score": 2,
-            "titulo": "Tarde de vento incomodando",
-            "analise": "A tarde na Rosa vem com onda de bom tamanho, passando de um metro e beirando metro e meio, só que o vento lateral aumentou pra uns 25 km/h e isso já mexe bastante na superfície, deixando ela mais picotada. O swell tá chegando de nordeste, direção que essa praia não abraça tão bem porque a enseada olha mais pro sul e sudeste, então a energia passa meio de raspão e a parede não fecha com aquela qualidade de dia clássico. Na água a sensação é de onda com corpo mas sem lisura, mais para empurrar do que pra desenhar manobra. Se for surfar, prefira o início da tarde antes do vento subir mais, e mire nos picos que ainda mostram alguma organização perto do canal."
+            "titulo": "Tarde com maral mexendo a água",
+            "analise": "De tarde o vento vira maral, ou seja, sopra do mar pra praia, e isso desorganiza a onda mesmo com um tamanho decente passando do metro. O período uns 8s ainda segura alguma forma, mas com 10 km/h de vento de frente a parede fica cheia de bumps, aquelas ondulações que atrapalham o deslize. Você vai sentir a onda empurrar mais do que abrir, energia mais fraca, na casa dos 6 kW/m. Ainda dá pra surfar, só que o barato aqui é entrar achando essa maré média que ainda segura alguma forma antes que o vento pique de vez.",
+            "janela": null,
+            "aviso": null
           },
           "noite": {
-            "score": 4,
-            "titulo": "Vento de lado não atrapalha a força",
-            "analise": "Com período de quase 9s e energia passando de 8 kW/m, a noite entrega onda passando do metro com peso de verdade, série organizada e remada que exige esforço real. O vento lateral, uns 10 km/h, mexe um pouco a superfície mas não desmancha a estrutura da parede. É uma condição sólida, só pedindo cuidado extra pela visibilidade baixa típica da noite. Bom momento pra quem já conhece o pico e sabe se posicionar mesmo com pouca luz.",
+            "score": 2,
+            "titulo": "Noite com maral fraco chegando",
+            "analise": "O vento virou maral, o clássico vento do mar pra terra que costuma bagunçar a tarde e segue incomodando um pouco de noite, mas fraco, uns 7 km/h. O período curto, na casa dos 7s e meio, mantém a onda mais compacta e menos organizada. perto de um metro é o tamanho, dá pra se divertir numa sessão mais recreativa, sem cobrar performance. Boa hora pra treinar pop-up e trabalhar a consistência da remada sem crowd disputando pico.",
             "janela": null,
-            "aviso": "Sessão noturna: visibilidade reduzida pede mais atenção, principalmente com onda de porte médio a grande na água."
+            "aviso": null
           }
         },
         "2026-07-25": {
-          "tarde": {
+          "manha": {
             "score": 2,
-            "titulo": "Sessão final sem muita organização",
-            "analise": "Já anoitecendo, o mar entrega ondas perto de um metro com período curto, por volta de 7s e meio, o que deixa a série mais bagunçada e a espera entre ondas mais curta. O vento onshore fraco, uns 7 km/h, tira um pouco do brilho mas não chega a estragar tudo. É um dia sem grandeza, bom pra manter o ritmo e trabalhar leitura de banco antes que a luz vá embora. Nada de esperar tubo aqui, mas dá pra deslizar numas.",
+            "titulo": "Tamanho sobra, direção falta",
+            "analise": "Olha, tem onda na Rosa hoje, passa de um metro e chega perto de metro e meio, mas o vento tá vindo de lado com uns 17 km/h, o que deixa a parede meio irregular, empurrando a água sem organizar direito. O swell tá vindo de leste, meio de raspão nessa enseada que pede mais ondulação de sul ou sudeste, então a força chega mas sem formar aquela parede bonita que Imbituba costuma entregar. Na água você vai sentir um pico inconstante, com trecho bom e trecho fechando rápido. Vale entrar sim, mas escolha as ondas do meio do banco e não se apegue a uma só direção de pico, o dia rende mais pra quem rema variando de posição."
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Onda com corpo, vento tolerável",
+            "analise": "A tarde no Rosa chega com uma condição sólida: período na casa dos 9s, o que dá série organizada e espaçada, e altura perto de um metro. O vento de lado bate uns 9 km/h, o suficiente pra tirar um pouco do brilho mas não pra acabar com a sessão. Na água você vai sentir a onda subir com alguma força e dar tempo de posicionar o drop com calma. Prancha de bom volume ajuda a aproveitar o período bom mesmo com o vento incomodando de leve.",
             "janela": null,
             "aviso": null
           },
@@ -7665,6 +7659,13 @@
             "janela": "7h-9h",
             "aviso": null
           },
+          "tarde": {
+            "score": 0,
+            "titulo": "Tarde de vento lateral picotando",
+            "analise": "Onda pequena, na casa do meio metro, e período curto de quase 7 segundos, sinal de mar de vento sem muita organização por trás. O vento lateral forte, quase 16 km/h, pica a superfície inteira e atrapalha a leitura de quem tá no line-up. A energia na água é fraca, pouca pressão na descida. Fica valendo pra sessão de longboard tranquila ou pra treinar remada no canal perto da foz.",
+            "janela": null,
+            "aviso": null
+          },
           "noite": {
             "score": 1,
             "titulo": "Sinal bom pra amanhã cedo",
@@ -7674,6 +7675,13 @@
           }
         },
         "2026-07-20": {
+          "manha": {
+            "score": 1,
+            "titulo": "perto de um metro sem organização",
+            "analise": "Onda perto de um metro na água, mas o período curto uns 6 segundos entre uma crista e outra entrega mar mexido, sem aquela série organizada. Você sente a força chegando mas ela se desfaz rápido, sem tempo de formar a parede longa que a Guarda do Embaú é conhecida por entregar. O vento lateral em torno de 20 km/h ainda pica a água. Bom dia pra treinar remada e leitura do canal perto da foz, sem grande expectativa de parede.",
+            "janela": "6h-8h",
+            "aviso": null
+          },
           "tarde": {
             "score": 0,
             "titulo": "Tarde fraca e de raspão",
@@ -7699,8 +7707,8 @@
           },
           "tarde": {
             "score": 0,
-            "titulo": "Tarde fraca e de raspão",
-            "analise": "Tarde com vento onshore, entrando do mar pra praia a quase 20 km/h, já deixa a superfície mexida e sem aquele vidro que a Guarda costuma entregar. Some a isso um swell de leste que pega a praia de raspão, sem embicar direito na foz, e o resultado é uma onda pequena, na casa do meio metro, curta e sem parede pra trabalhar. Não é o dia pra buscar manobra, mas dá pra usar a sessão pra remada longa e pra sentir o comportamento do banco perto do rio da Madre. Levar o longboard ou uma prancha mais volumosa ajuda a aproveitar o pouco que tem.",
+            "titulo": "Tarde de vento lateral picotando",
+            "analise": "Onda pequena, na casa do meio metro, e período curto de quase 7 segundos, sinal de mar de vento sem muita organização por trás. O vento lateral forte, quase 16 km/h, pica a superfície inteira e atrapalha a leitura de quem tá no line-up. A energia na água é fraca, pouca pressão na descida. Fica valendo pra sessão de longboard tranquila ou pra treinar remada no canal perto da foz.",
             "janela": null,
             "aviso": null
           }
@@ -7715,8 +7723,8 @@
           },
           "tarde": {
             "score": 0,
-            "titulo": "Tarde fraca e de raspão",
-            "analise": "Tarde com vento onshore, entrando do mar pra praia a quase 20 km/h, já deixa a superfície mexida e sem aquele vidro que a Guarda costuma entregar. Some a isso um swell de leste que pega a praia de raspão, sem embicar direito na foz, e o resultado é uma onda pequena, na casa do meio metro, curta e sem parede pra trabalhar. Não é o dia pra buscar manobra, mas dá pra usar a sessão pra remada longa e pra sentir o comportamento do banco perto do rio da Madre. Levar o longboard ou uma prancha mais volumosa ajuda a aproveitar o pouco que tem.",
+            "titulo": "Tarde de vento lateral picotando",
+            "analise": "Onda pequena, na casa do meio metro, e período curto de quase 7 segundos, sinal de mar de vento sem muita organização por trás. O vento lateral forte, quase 16 km/h, pica a superfície inteira e atrapalha a leitura de quem tá no line-up. A energia na água é fraca, pouca pressão na descida. Fica valendo pra sessão de longboard tranquila ou pra treinar remada no canal perto da foz.",
             "janela": null,
             "aviso": null
           },
@@ -7791,10 +7799,10 @@
           },
           "noite": {
             "score": 2,
-            "titulo": "Séries espaçadas na virada da noite",
-            "analise": "O período de quase 9 segundos e meio já entrega aquela sensação de série organizada, dá pra contar as ondas chegando com folga entre uma e outra, mesmo com o tamanho ainda na casa do meio metro. O vento lateral tá fraco, quase 7 km/h, o que não estraga muito a superfície. Sem luz não dá pra entrar na água na Guarda, pela travessia do rio e o banco que exige visão clara. Guarda essa leitura como ótimo sinal pra manhã seguinte.",
+            "titulo": "Noite de terral segurando a foz",
+            "analise": "De noite o vento gira pra terral, do quadrante oeste noroeste, quase 19 km/h, e isso alisa a água mesmo sem sol pra guiar o pico visualmente. O swell de leste entra bem na Guarda, então mesmo pequena a onda na casa do meio metro ganha uma parede definida na entrada do rio. Com maré média o banco costuma estar generoso, e a sensação na água é de onda mansa mas com forma, boa pra quem já pega parede e quer trabalhar postura sem crowd disputando. Se for surfar com pouca luz, fica esperto com a travessia do rio e prefira ir acompanhado.",
             "janela": null,
-            "aviso": "Sem visibilidade à noite, deixe a travessia do rio para a luz do dia."
+            "aviso": "Travessia da foz do rio pode ter correnteza; com pouca luz, vá acompanhado e evite atravessar sozinho."
           }
         }
       }
@@ -7841,6 +7849,20 @@
           }
         },
         "2026-07-21": {
+          "manha": {
+            "score": 4,
+            "titulo": "Terral firme deixando tudo liso",
+            "analise": "Bateu um terral com corpo, uns 8 km/h vindo da terra, o suficiente pra vitrificar a parede e segurar o lip sem chegar a atrapalhar a entrada. As ondas passando do metro com período além dos 10s formam série espaçada e previsível, dando tempo de se posicionar certo. A força na água, por volta de 12 kW/m, exige preparo mas recompensa bem quem lê o pico direito. Point funcionando assim é daqueles momentos que vale se organizar pra pegar antes da luz acabar.",
+            "janela": "17h-19h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Point rendendo bem à tarde",
+            "analise": "Com período de 10s a onda chega com aquele espaçamento que separa dia bom de dia mediano, dando tempo real de leitura antes do drop. O tamanho passando do metro e o vento lateral moderado deixam a água levemente texturizada mas sem tirar a força da parede. Sentindo a energia uns 10 kW/m, a remada exige atenção mas recompensa com uma descida com pressão de verdade. Point de pedra funcionando assim vale buscar o pico principal e aproveitar as janelas de vento mais fraco entre as rajadas.",
+            "janela": "14h-17h",
+            "aviso": null
+          },
           "noite": {
             "score": 3,
             "titulo": "Água mais quieta na virada da noite",
@@ -7850,13 +7872,6 @@
           }
         },
         "2026-07-22": {
-          "manha": {
-            "score": 4,
-            "titulo": "Manhã com pegada no point de pedra",
-            "analise": "Rolou um swell de sul chegando com força na janela certa desse point, o que aqui significa parede longa e potente, do jeito que Santa Marta é conhecida. O período médio, por volta de 8s e meio, ainda entrega ondas em cima uma das outras, então esperar a série organizar vale a pena antes de remar. Com vento de lado balançando um pouco a água, a textura fica levemente irregular mas a força continua presente, coisa de 17 kW/m que já pede preparo físico. É dia pra quem manja de point break e sabe ler onde a onda começa a quebrar, e a dica é ficar posicionado mais fundo, perto da pedra, pra pegar o pico logo na abertura.",
-            "janela": "6h-9h",
-            "aviso": null
-          },
           "tarde": {
             "score": 4,
             "titulo": "Tarde com série espaçada no Farol",
@@ -7917,6 +7932,13 @@
             "titulo": "Manhã com pegada no point de pedra",
             "analise": "Rolou um swell de sul chegando com força na janela certa desse point, o que aqui significa parede longa e potente, do jeito que Santa Marta é conhecida. O período médio, por volta de 8s e meio, ainda entrega ondas em cima uma das outras, então esperar a série organizar vale a pena antes de remar. Com vento de lado balançando um pouco a água, a textura fica levemente irregular mas a força continua presente, coisa de 17 kW/m que já pede preparo físico. É dia pra quem manja de point break e sabe ler onde a onda começa a quebrar, e a dica é ficar posicionado mais fundo, perto da pedra, pra pegar o pico logo na abertura.",
             "janela": "6h-9h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 4,
+            "titulo": "Point rendendo bem à tarde",
+            "analise": "Com período de 10s a onda chega com aquele espaçamento que separa dia bom de dia mediano, dando tempo real de leitura antes do drop. O tamanho passando do metro e o vento lateral moderado deixam a água levemente texturizada mas sem tirar a força da parede. Sentindo a energia uns 10 kW/m, a remada exige atenção mas recompensa com uma descida com pressão de verdade. Point de pedra funcionando assim vale buscar o pico principal e aproveitar as janelas de vento mais fraco entre as rajadas.",
+            "janela": "14h-17h",
             "aviso": null
           },
           "noite": {
@@ -8241,10 +8263,10 @@
       "dias": {
         "2026-07-19": {
           "manha": {
-            "score": -1,
-            "titulo": "Manhã curta sem organização",
-            "analise": "De manhã o mar tá pequeno, perto de meio metro, com um período curto que é cara de vaga de vento, ondas em cima uma da outra sem espaço pra série. O vento lateral, de quase 10 km/h, ainda pica a água e atrapalha a leitura de onde o banco vai quebrar certo. O swell de leste passa de raspão numa praia que precisa de sul pra funcionar de verdade. Ainda assim dá pra aproveitar o horário mais cedo pra treinar remada e ficar de olho em como o banco de Caiobá tá formado essa temporada.",
-            "janela": "6h-8h",
+            "score": 2,
+            "titulo": "Onda de tamanho bom, vento no detalhe",
+            "analise": "O tamanho hoje agrada, na casa do meio metro, dando corpo suficiente pra sentir a parede formando. Só que o período curto, na casa dos 6,7s, mistura as séries e tira um pouco da previsibilidade que o surfista mais experiente gosta. O vento onshore fraco da manhã ainda não compromete tanto, mas tende a piorar conforme o sol esquenta a areia. Vale aproveitar logo cedo pra pegar a superfície mais organizada possível.",
+            "janela": "6h-9h",
             "aviso": null
           },
           "noite": {
@@ -8257,17 +8279,10 @@
         },
         "2026-07-20": {
           "manha": {
-            "score": 2,
-            "titulo": "Manhã com tamanho pra trabalhar",
-            "analise": "Caiobá amanhece com onda na casa do meio metro, o tamanho que já dá pra fazer manobra e sentir a força da parede. O período curto, perto de 6,7s, indica que ainda é vaga de vento em vez de swell bem organizado, então as séries chegam mais juntas. O onshore fraco da manhã mexe um pouco a superfície mas não chega a estragar a sessão. Energia moderada ajuda na remada sem cansar demais, bom horário pra quem quer evoluir o drop.",
-            "janela": "6h-9h",
-            "aviso": null
-          },
-          "tarde": {
-            "score": 0,
-            "titulo": "Tarde de vento subindo",
-            "analise": "O vento onshore já sopra mais forte de tarde, perto de 10 km/h, e isso bagunça de vez uma ondulação que já era curta e mexida, com período mais na faixa de vaga do que de swell organizado. A onda fica na casa do meio metro mas sem série definida, quebra em cima da outra e sem parede pra segurar. Vindo de leste, ainda entra torto na praia que pede sul. Fica o convite honesto de ficar na espuma treinando remada ou pop-up, porque hoje o mar não vai entregar aquela parede limpa pra trabalhar.",
-            "janela": null,
+            "score": -1,
+            "titulo": "Manhã curta sem organização",
+            "analise": "De manhã o mar tá pequeno, perto de meio metro, com um período curto que é cara de vaga de vento, ondas em cima uma da outra sem espaço pra série. O vento lateral, de quase 10 km/h, ainda pica a água e atrapalha a leitura de onde o banco vai quebrar certo. O swell de leste passa de raspão numa praia que precisa de sul pra funcionar de verdade. Ainda assim dá pra aproveitar o horário mais cedo pra treinar remada e ficar de olho em como o banco de Caiobá tá formado essa temporada.",
+            "janela": "6h-8h",
             "aviso": null
           },
           "noite": {
@@ -8295,13 +8310,6 @@
           }
         },
         "2026-07-22": {
-          "tarde": {
-            "score": 0,
-            "titulo": "Tarde de vento subindo",
-            "analise": "O vento onshore já sopra mais forte de tarde, perto de 10 km/h, e isso bagunça de vez uma ondulação que já era curta e mexida, com período mais na faixa de vaga do que de swell organizado. A onda fica na casa do meio metro mas sem série definida, quebra em cima da outra e sem parede pra segurar. Vindo de leste, ainda entra torto na praia que pede sul. Fica o convite honesto de ficar na espuma treinando remada ou pop-up, porque hoje o mar não vai entregar aquela parede limpa pra trabalhar.",
-            "janela": null,
-            "aviso": null
-          },
           "noite": {
             "score": -1,
             "titulo": "Vento de lado bagunça a noite",
@@ -8311,6 +8319,13 @@
           }
         },
         "2026-07-23": {
+          "manha": {
+            "score": 1,
+            "titulo": "Dia curto pra quem tá afiando a base",
+            "analise": "Caiobá amanhece com pouca força na água, energia baixinha, menos de 1 kW/m, que é a potência da onda: aqui ela empurra pouco e não cansa a remada. Onda na casa do meio metro, período curto na casa dos 5s, então a série chega bagunçada e fecha rápido perto da praia. O vento de lado deixa a superfície um pouco mexida mas não é o que decide o dia. Pra quem tá afiando o drop, aproveita esse tamanho controlado e trabalha a entrada na parede sem pressão.",
+            "janela": "6h-9h",
+            "aviso": null
+          },
           "noite": {
             "score": 1,
             "titulo": "Tamanho decente pra fechar o dia",
@@ -8321,9 +8336,9 @@
         },
         "2026-07-24": {
           "manha": {
-            "score": 2,
-            "titulo": "Manhã com tamanho pra trabalhar",
-            "analise": "Caiobá amanhece com onda na casa do meio metro, o tamanho que já dá pra fazer manobra e sentir a força da parede. O período curto, perto de 6,7s, indica que ainda é vaga de vento em vez de swell bem organizado, então as séries chegam mais juntas. O onshore fraco da manhã mexe um pouco a superfície mas não chega a estragar a sessão. Energia moderada ajuda na remada sem cansar demais, bom horário pra quem quer evoluir o drop.",
+            "score": 1,
+            "titulo": "Dia curto pra quem tá afiando a base",
+            "analise": "Caiobá amanhece com pouca força na água, energia baixinha, menos de 1 kW/m, que é a potência da onda: aqui ela empurra pouco e não cansa a remada. Onda na casa do meio metro, período curto na casa dos 5s, então a série chega bagunçada e fecha rápido perto da praia. O vento de lado deixa a superfície um pouco mexida mas não é o que decide o dia. Pra quem tá afiando o drop, aproveita esse tamanho controlado e trabalha a entrada na parede sem pressão.",
             "janela": "6h-9h",
             "aviso": null
           },
@@ -8335,9 +8350,9 @@
             "aviso": null
           },
           "noite": {
-            "score": 1,
-            "titulo": "Noite com tamanho e vento de lado",
-            "analise": "As ondas seguem na faixa na casa do meio metro essa noite, tamanho suficiente pra uma sessão de verdade em Caiobá. O período curto, perto de 6,8s, faz a série chegar mais bagunçada, sem muito espaçamento entre as ondas. O vento lateral moderado pica a superfície mas não chega a fechar tudo, então ainda dá pra escolher bem a onda. Boa dica é observar o pico por uns minutos antes de entrar, pra pegar o ritmo da série.",
+            "score": 0,
+            "titulo": "Noite fraca, água mansa",
+            "analise": "À noite a condição segue parecida com o resto do dia, meio metro de onda com um onshore fraco batendo de frente, o vento que vem do mar e enche a superfície de marolinha. O swell de leste não acha o banco direito aqui em Caiobá, que quer ondulação de sul pra abrir de verdade. Não rola pressão nem parede pra trabalhar manobra. Pra quem tá pegando onda à noite mesmo assim, vale mais como sessão de remada e adaptação do que como sessão de performance.",
             "janela": null,
             "aviso": null
           }
@@ -8789,6 +8804,13 @@
             "analise": "Com período acima de 10 segundos e tamanho passando do metro, a energia dessa tarde chega forte, perto de 9 kW/m, ou seja, a remada cansa mais e a descida vem com peso de verdade. O maral fraco mexe pouco na superfície, então a forma da onda ainda se mantém razoável. É tarde pra intermediário se desafiar, testando bottom turn com mais potência do que o normal na região. Bom cuidado na entrada, aproveitando o canal que os locais costumam usar aqui na praia.",
             "janela": null,
             "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Noite calma segura o recado",
+            "analise": "O vento cai bastante à noite, fica na faixa dos 10 km/h, lateral mas fraco, e isso já ajuda a segurar a parede em vez de destruir ela. O swell segue vindo de nordeste, de raspão, então não é a condição perfeita de Arroio do Sal, mas com o vento mais manso a onda ganha uma lisura que faltou o dia inteiro. Perto de metro e meio, período na casa dos 7 segundos, que é um intervalo meio curto entre uma onda e outra: as séries vêm mais amontoadas, sem muito espaço pra ver a próxima chegando. Se pintar luz, vale aproveitar essa janela mais calma pra pegar ondas com mais forma que de manhã.",
+            "janela": null,
+            "aviso": null
           }
         },
         "2026-07-20": {
@@ -8805,20 +8827,34 @@
             "analise": "Chegou o maral, vento fraco vindo do mar, que começa a bagunçar um pouco a face da onda e tirar aquela lisura de quando o vento vem de terra. Mesmo assim o tamanho perto de um metro com período de 10 segundos ainda entrega onda com forma, só que mais irregular. A força na água segue baixa, então cansa pouco e dá pra ficar bastante tempo dentro. Boa tarde pra focar em pegar onda de espuma e ajustar o timing do pop-up sem se cobrar tanto na performance.",
             "janela": null,
             "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Vento de lado mexendo a superfície",
+            "analise": "O vento sopra de lado, o que os surfistas chamam de lateral, e isso deixa a água com uma textura mais irregular, nem lisa nem totalmente destruída. O tamanho é perto de um metro, energia baixa, uns 3 kW/m, então a força na água é bem tranquila pra remar e se posicionar. O período de quase 10 segundos ainda dá uma boa organização nas séries, mesmo com o vento incomodando um pouco a parede. Vale entrar pra treinar leitura de pico, já que o banco aqui em Arroio do Sal costuma responder bem mesmo em dias mais mansos.",
+            "janela": null,
+            "aviso": null
           }
         },
         "2026-07-21": {
           "manha": {
-            "score": 4,
-            "titulo": "Séries espaçadas dando tempo de decisão",
-            "analise": "O destaque da manhã é o período longo, mais de 11 segundos, que deixa as séries bem espaçadas: dá pra ver a próxima onda chegando com calma e escolher a melhor pra pegar. O maral ainda é moderado, mexe um pouco a água mas não estraga a sessão. Com energia perto de 8 kW/m, o tamanho perto de um metro entrega bastante pressão na parede. É janela boa pra intermediário trabalhar timing de takeoff, aproveitando esse espaçamento generoso entre as ondas.",
-            "janela": "6h-9h",
+            "score": 2,
+            "titulo": "Dia manso pra trabalhar remada",
+            "analise": "Onda pequena, perto de um metro, com pouca força na água, ótimo cenário pra quem quer gastar a manhã treinando remada e pop-up sem se preocupar com pressão. O vento lateral pica um pouco a superfície mas não destrói a forma da onda, que segue com período de quase 10 segundos e séries ainda legíveis. A energia baixa faz a sessão render bastante tempo em pé na prancha sem cansar demais. Pra quem tá evoluindo, é o tipo de manhã ideal pra repetir manobra várias vezes seguidas.",
+            "janela": null,
             "aviso": null
           },
           "tarde": {
             "score": 3,
             "titulo": "Tarde com parede e algum vento cruzando",
             "analise": "O vento vem de lado, mais forte que de manhã, uns 11 km/h, e isso já mexe visivelmente na superfície da onda. Ainda assim o tamanho perto de um metro com período acima de 10 segundos segura uma parede razoável pra trabalhar manobra. A energia moderada, uns 5 kW/m, dá aquela pressão na descida que faz a sessão valer a pena. É tarde de ajustar a leitura pro lado que o vento sopra, escolhendo o pico que fica mais protegido da rajada.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Vento de lado mexendo a superfície",
+            "analise": "O vento sopra de lado, o que os surfistas chamam de lateral, e isso deixa a água com uma textura mais irregular, nem lisa nem totalmente destruída. O tamanho é perto de um metro, energia baixa, uns 3 kW/m, então a força na água é bem tranquila pra remar e se posicionar. O período de quase 10 segundos ainda dá uma boa organização nas séries, mesmo com o vento incomodando um pouco a parede. Vale entrar pra treinar leitura de pico, já que o banco aqui em Arroio do Sal costuma responder bem mesmo em dias mais mansos.",
             "janela": null,
             "aviso": null
           }
@@ -8928,25 +8964,25 @@
             "aviso": null
           },
           "tarde": {
-            "score": 1,
-            "titulo": "Tarde mexida, fora da janela certa",
-            "analise": "À tarde o vento lateral fica mais forte, uns 20 km/h, e já pica a superfície da água antes mesmo da onda quebrar. O swell vindo de nordeste é o problema principal aqui: essa direção não entra direito em Capão da Canoa, que olha pro sul e sudeste, então a energia passa meio de lado e a onda perde forma. O período curto, perto de 7 segundos, confirma que é mais vaga bagunçada do que swell organizado, chegando ondas em cima umas das outras. Ainda dá pra pegar espuma perto da praia pra treinar pop-up, mas quem busca parede pra trabalhar manobra vai sair frustrado hoje.",
+            "score": 2,
+            "titulo": "Onda de tamanho médio sofrendo com maral",
+            "analise": "O mar de tarde tá na casa de metro e pouco, um tamanho tranquilo de trabalhar, com período médio de 7 segundos que ainda entrega alguma série organizada. O problema é o vento onshore, que vem do mar pra terra: ele empurra a onda por trás e faz ela quebrar antes da hora, tirando a força que o swell de nordeste já entrega meio de raspão nessa praia. Na água a sensação é de onda mole e cheia de bump, sem muita pressão na descida, energia baixa em torno de 6 kW/m. É um dia bom pra quem tá pegando ritmo de remada e pop-up na espuma, sem pressão de crowd grande.",
             "janela": null,
             "aviso": null
           },
           "noite": {
-            "score": 1,
-            "titulo": "Noite sem parede definida",
-            "analise": "De noite o tamanho sobe um pouco, perto de metro e meio, e o período fica mais curto, na casa dos 7 segundos, que é o tempo entre uma onda e outra: quando é curto assim as séries vêm meio em cima uma da outra, sem muito espaço pra ler a próxima. Vento lateral de uns 16 km/h ainda incomoda a superfície, e o swell de leste continua batendo de raspão nessa praia virada pro sul e sudeste. Na água a sensação é de onda rápida e sem forma, que fecha antes de dar tempo de trabalhar. Pra quem tá pegando o clima da noite, vale mais observar o banco com calma do que forçar uma sessão cheia de expectativa.",
+            "score": 3,
+            "titulo": "Capão ganhando tamanho",
+            "analise": "Bom período rolando, quase 11 segundos, o que entrega série espaçada e onda com mais massa d'água na quebra: por isso o tamanho já bate passando do metro. O vento do mar tá moderado, picando a superfície e tirando um pouco da forma perfeita, mas a onda ainda funciona bem. A energia já é séria, uns 8 kW/m, então prepare o fôlego porque a remada cansa mais e o caldo pesa se errar o timing. Dia bom pra quem já tem experiência de leitura de banco em Capão.",
             "janela": null,
             "aviso": null
           }
         },
         "2026-07-20": {
           "manha": {
-            "score": 1,
-            "titulo": "Mar de raspão pela manhã",
-            "analise": "De manhã em Capão da Canoa o mar tá com uma ondulação na casa de metro e meio, mas vem de leste, ou seja, bate de raspão nessa praia que olha mais pro sul e sudeste, então perde força e organização antes de chegar. O vento onshore, que sopra do mar pra areia, com uns 12 km/h já deixa a superfície com bumps e tira a lisura da parede. Na água você vai sentir onda cheia, sem muita definição, empurrando mais do que descendo com pressão. Não é dia de esperar parede, mas dá pra treinar remada e pegar espuma pra quem tá começando, sem pressa.",
+            "score": 2,
+            "titulo": "Mais tamanho, ainda sem direção",
+            "analise": "Essa manhã o mar cresce um pouco, chegando perto de metro e meio a quase dois metros em alguns picos, com uma energia mediana que já dá uma cutucada na remada. O problema é o vento lateral forte, batendo uns 22 km/h, que pica a água inteira e não deixa a parede assentar. Somando com o swell vindo de leste, que pega essa praia de raspão em vez de entrar reto pelo sul ou sudeste, o resultado é onda com tamanho mas sem organização, fechando rápido. Ainda assim tem volume pra quem gosta de sentir a força da água: procure o canto do banco que estiver mais protegido do vento e encare como treino de remada e leitura.",
             "janela": null,
             "aviso": null
           },
@@ -8958,9 +8994,9 @@
             "aviso": null
           },
           "noite": {
-            "score": 3,
-            "titulo": "Noite com período mais longo",
-            "analise": "O período já sobe pra mais de 11 segundos, o que significa uma energia que viajou bem mais longe e chega mais organizada, com séries espaçadas e fáceis de contar. O vento onshore é fraco, mexe pouco na parede, então a forma ainda se mantém decente mesmo à noite. perto de um metro de tamanho, com uma energia mais séria, quase 7 kW/m, dá pra sentir mais pressão na descida que nos dias anteriores. Vale se posicionar um pouco mais fundo no pico pra pegar a onda com a força certa.",
+            "score": 1,
+            "titulo": "Noite sem parede definida",
+            "analise": "De noite o tamanho sobe um pouco, perto de metro e meio, e o período fica mais curto, na casa dos 7 segundos, que é o tempo entre uma onda e outra: quando é curto assim as séries vêm meio em cima uma da outra, sem muito espaço pra ler a próxima. Vento lateral de uns 16 km/h ainda incomoda a superfície, e o swell de leste continua batendo de raspão nessa praia virada pro sul e sudeste. Na água a sensação é de onda rápida e sem forma, que fecha antes de dar tempo de trabalhar. Pra quem tá pegando o clima da noite, vale mais observar o banco com calma do que forçar uma sessão cheia de expectativa.",
             "janela": null,
             "aviso": null
           }
@@ -8981,9 +9017,9 @@
             "aviso": null
           },
           "noite": {
-            "score": 1,
-            "titulo": "Noite sem parede definida",
-            "analise": "De noite o tamanho sobe um pouco, perto de metro e meio, e o período fica mais curto, na casa dos 7 segundos, que é o tempo entre uma onda e outra: quando é curto assim as séries vêm meio em cima uma da outra, sem muito espaço pra ler a próxima. Vento lateral de uns 16 km/h ainda incomoda a superfície, e o swell de leste continua batendo de raspão nessa praia virada pro sul e sudeste. Na água a sensação é de onda rápida e sem forma, que fecha antes de dar tempo de trabalhar. Pra quem tá pegando o clima da noite, vale mais observar o banco com calma do que forçar uma sessão cheia de expectativa.",
+            "score": 3,
+            "titulo": "Série mais espaçada em Capão",
+            "analise": "Repara na diferença: o período passou dos 11 segundos, e isso quer dizer mais tempo entre uma onda e outra, série organizada, dá pra ver a próxima vindo de longe. O vento fraco do mar não compromete muito a parede, só tira um pouco do brilho que teria com terral. A onda perto de um metro carrega mais energia que o normal do dia, então a remada exige um pouco mais e a descida vem com mais pressão. É um bom momento noturno pra quem já manja de leitura de série.",
             "janela": null,
             "aviso": null
           }
@@ -8997,9 +9033,9 @@
             "aviso": null
           },
           "tarde": {
-            "score": 3,
-            "titulo": "Tarde com terral pesado",
-            "analise": "O vento de terra segue forte à tarde, quase no mesmo nível da manhã, o que mantém a parede em pé mas exige mais força pra entrar na onda. A altura fica passando do metro, com energia moderada, perto de 7 kW/m, força que já se sente na remada. O período de quase 9 segundos entrega série com organização decente, dá pra ler a próxima chegando com certa clareza. Se o vento estiver difícil de furar, vale procurar o canal onde a corrente ajuda a levar pro outside com menos esforço.",
+            "score": 1,
+            "titulo": "Tarde bagunçada de leste",
+            "analise": "A tarde chega com o mesmo tamanho de manhã, passando de um metro e chegando quase em metro e meio, só que agora o vento lateral bate mais forte, uns 18 km/h, picando a superfície inteira. Como o swell vem de leste, ele entra de raspão nessa praia que pede ondulação de sul ou sudeste pra abrir de verdade, então a força que chega na areia já vem meio dispersa. Você vai notar a onda quebrando sem muita direção, fechando rápido em vários pontos do banco. Vale mais pra quem quer só nadar remada e sentir o mar do que pra buscar manobra, e o longboard aguenta bem esse tipo de bagunça.",
             "janela": null,
             "aviso": null
           },
@@ -9021,17 +9057,17 @@
           },
           "tarde": {
             "score": 2,
-            "titulo": "Capão batido pelo vento",
-            "analise": "Vento de través soprando forte, o tipo que deixa a água toda picada e mastigada, mesmo com a onda grande uns dois metros. A energia alta, perto de 12 kW/m, garante força na descida, mas a parede sofre bastante com esse vento todo. Período curto, séries próximas, pouco tempo pra se posicionar entre uma onda e outra. Vale considerar surfar mais protegido, perto de algum ponto que quebre o vento, ou treinar remada em mar mais fechado.",
+            "titulo": "Tarde de Capão com mar ok",
+            "analise": "Maral leve rodando à tarde, aquele vento que vem do mar e tira um pouco a nitidez da parede, mas sem força pra virar bagunça total. O tamanho segue perto de um metro e o período de quase 10 segundos ainda entrega séries com certa distância entre si. A energia baixa deixa a remada de boa, sem exigir muito. É um dia honesto pra treinar leitura de série e trabalhar manobra na parede que ainda sobra.",
             "janela": null,
-            "aviso": "Vento forte mexendo bastante o mar, atenção ao cansaço na remada e ao tamanho da onda."
+            "aviso": null
           },
           "noite": {
-            "score": -1,
-            "titulo": "Dois metros de mar confuso à noite",
-            "analise": "Na virada da noite o mar bate perto de dois metros, só que com período curto, na casa dos 7 segundos, sinal de ondulação gerada por vento próximo, mais bagunçada e sem a organização de um swell que viajou de longe. O swell vindo de nordeste também não ajuda, porque essa é uma direção que não entra bem numa praia como essa, virada pro sul e sudeste. Com o vento lateral forte ainda soprando, uns 20 km/h, a superfície fica agitada e as ondas fecham de forma imprevisível. Pra quem for encarar, o cuidado principal é respeitar o próprio limite e ficar de olho em canais mais escuros na água, que indicam corrente puxando pra fora.",
+            "score": 3,
+            "titulo": "Série mais espaçada em Capão",
+            "analise": "Repara na diferença: o período passou dos 11 segundos, e isso quer dizer mais tempo entre uma onda e outra, série organizada, dá pra ver a próxima vindo de longe. O vento fraco do mar não compromete muito a parede, só tira um pouco do brilho que teria com terral. A onda perto de um metro carrega mais energia que o normal do dia, então a remada exige um pouco mais e a descida vem com mais pressão. É um bom momento noturno pra quem já manja de leitura de série.",
             "janela": null,
-            "aviso": "Mar de tamanho considerável, mexido e fora da direção ideal para esta praia: observe canais de corrente entre os bancos e evite entrar sozinho ou sem experiência em condição de caldo forte."
+            "aviso": null
           }
         },
         "2026-07-24": {
@@ -9781,11 +9817,11 @@
             "aviso": null
           },
           "noite": {
-            "score": 1,
-            "titulo": "Leste de raspão, terral no fim",
-            "analise": "Esse swell de leste tá batendo de raspão na Barra, sem entrar em cheio como quando vem de sul ou sudeste: o resultado é uma onda mais curta e menos organizada, perto de um metro mas com período baixo, na casa dos 6 segundos, típico de vaga de vento e não de swell viajado. O terral aqui tá mais forte, quase 12 km/h, e isso pode empinar o bico da prancha na entrada, dificultando um pouco o drop. Mesmo assim dá pra aproveitar em pranchas mais estáveis ou pra treinar leitura de banco, procurando o pico que ainda segura alguma forma. Fique de olho no canto que estiver funcionando melhor entre os postos antes de escolher onde entrar.",
+            "score": 2,
+            "titulo": "Noite tranquila pra fechar o dia",
+            "analise": "Fechando o dia, a Barra segue com onda pequena, perto de um metro, vinda de sudeste, mas o período caiu um pouco mais, pra casa dos 7 e poucos segundos, sinal de que a energia lá fora não é grande coisa. O vento tá bem fraco e de lado, então pelo menos a superfície fica tranquila, sem estragar o pouco que tem. É uma sessão de noite mais pra relaxar e treinar remada do que pra buscar parede. Se for entrar, escolhe um posto que você já conhece bem o banco, pra não se surpreender no escuro.",
             "janela": null,
-            "aviso": null
+            "aviso": "Surf noturno exige atenção redobrada: prefira local conhecido e com iluminação."
           }
         },
         "2026-07-22": {
@@ -9813,10 +9849,10 @@
         },
         "2026-07-23": {
           "manha": {
-            "score": 3,
-            "titulo": "Sudeste chegando redondo na Barra",
-            "analise": "O swell tá vindo de sudeste, direção que entra bem aqui na Barra e faz a onda fechar com mais forma nos picos dos postos. Perto de um metro, com um período na casa dos 8 segundos, que é o tempo entre uma onda e outra: já dá uma organizada, então dá pra contar as séries chegando. O vento offshore fraco, vindo da terra pro mar, deixa a parede lisinha pra quem quer treinar manobra. Vale pegar essa janela da manhã, principalmente nos picos mais vazios entre postos.",
-            "janela": "6h-9h",
+            "score": 2,
+            "titulo": "Manhã de leste sem muito gás",
+            "analise": "O swell agora vem de leste, e mesmo assim entra numa boa na Barra por causa da orientação da praia virada pra esse lado do mar. Tá perto de um metro, com período em torno de 7 segundos: onda ainda com alguma organização mas já perdendo um pouco daquela força de série longa. O vento de lado é fraco e não atrapalha muito, mas também não deixa a parede tão lisa quanto um terral faria. Bom dia pra treinar remada e pop-up, que é o movimento de levantar da prancha de uma vez, sem crowd disputando cada onda.",
+            "janela": "7h-10h",
             "aviso": null
           },
           "tarde": {
@@ -9836,10 +9872,10 @@
         },
         "2026-07-24": {
           "tarde": {
-            "score": 3,
-            "titulo": "Tarde ainda com corpo",
-            "analise": "O swell de sudeste segue firme na Barra, um pouco menor que de manhã mas ainda passando de um metro. O período continua bom, na casa dos 9 segundos, o que segura a organização da série mesmo com o vento lateral batendo um pouco mais forte agora à tarde. Na água você vai sentir a parede formada, com espaço pra fazer manobra, só com uma leve textura na superfície por causa do vento de lado. É onda boa pra treinar leitura de banco: escolhe o pico que tiver menos gente e trabalha a entrada com calma.",
-            "janela": "13h-16h",
+            "score": 2,
+            "titulo": "Tarde mansa com vento leve",
+            "analise": "O vento onshore já sopra um pouco mais forte essa tarde, mas ainda dentro do tolerável, mexendo pouco na parede. Ondas passando do metro com período longo, quase 12 segundos, dão série espaçada mesmo com energia mais baixa, em torno de 9 kW/m. A força é suave, sem grandes emoções, mas com boa forma pra treinar. Vale aproveitar pra trabalhar remada e leitura de série nos picos mais protegidos.",
+            "janela": null,
             "aviso": null
           },
           "noite": {
@@ -9851,6 +9887,13 @@
           }
         },
         "2026-07-25": {
+          "manha": {
+            "score": 4,
+            "titulo": "Manhã organizada na Barra",
+            "analise": "A Barra amanheceu com uma ondulação que veio lá de sudeste e entra bem nos picos dos postos, formando uma parede que dá pra trabalhar. Tá passando de um metro, chegando perto de metro e meio, com as séries bem espaçadas, umas 9 segundos entre uma onda e outra, o que na prática significa dar tempo de ver a próxima chegando e escolher a sua. O vento tá de lado e fraco, então não atrapalha muito, só belisca um pouco a superfície. Vale entrar cedo: procura o banco que tá mais fechado no seu posto e aproveita enquanto a maré ajuda a manter a forma.",
+            "janela": "7h-10h",
+            "aviso": null
+          },
           "tarde": {
             "score": 2,
             "titulo": "Pouca energia, boa forma",
