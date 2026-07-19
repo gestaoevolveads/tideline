@@ -19,7 +19,10 @@ const libPath = path.join(ROOT, 'intelligence/narrator-library.json');
 const REGRAS = [
   [/—/, 'travessão'],
   [/\b(joelho a cintura|cintura a peito|peito a ombro|ombro a cabe|peito pra cima|quase cabe|cabe[çc]a e meia|ombros?\b)/i, 'medida corporal'],
-  [/[0-9]+,[0-9]+ ?(segundos?|km\/h|kW|metros?|graus)/, 'decimal cravado'],
+  // tamanho é papel da métrica do app, não do texto (pedido do Hudson, jul/2026:
+  // texto citando medida cria sensação de previsão errada quando o número difere)
+  [/\bmetros?\b|metrinho|meio metro|metro e meio|\bcent[íi]metros?\b|\bcm\b|\bpalmos?\b/i, 'cita tamanho de onda (proibido: o app mostra o número)'],
+  [/[0-9]+,[0-9]+ ?(segundos?|km\/h|kW|graus)/, 'decimal cravado'],
   [/\b(only|the|with|and)\b/i, 'inglês vazado'],
 ];
 const TURNO_RX = [

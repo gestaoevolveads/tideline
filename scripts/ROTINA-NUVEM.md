@@ -41,10 +41,10 @@ se o cache mudou, commite com a mesma assinatura. Nunca invente pendência.
   (2) o que o surfista vai SENTIR na água, (3) fechamento honesto + UMA dica
   concreta. Tom de amigo experiente na areia, não de locutor. No máximo 1 gíria.
 - PÚBLICO INICIANTE: termo técnico nunca fica solto; explica junto, simples.
-- Tamanho SEMPRE em metros aproximados ("na casa do meio metro", "perto de um
-  metro", "passando do metro", "uns dois metros"). PROIBIDO medir por corpo
-  (joelho/cintura/peito/ombro/cabeça) e PROIBIDO decimal cravado com unidade
-  ("1,5 metros" não; "metro e meio" sim).
+- TAMANHO DA ONDA: NUNCA cite ("um metro", "meio metro", medidas por corpo,
+  nada). O app mostra o número exato ao lado; texto com medida cria sensação
+  de previsão errada. Use a faixa de altura recebida só pra calibrar o clima
+  do texto: energia, peso da remada, pressão do drop, se o mar perdoa ou cobra.
 - PROIBIDO travessão (—). Use ponto, vírgula, dois pontos.
 - Turno da chave é lei: narração de noite não fala "manhã"/"cedo" e vice-versa.
 - Janela sugerida sempre entre 5h e 17h; à noite, janela null.
