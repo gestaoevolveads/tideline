@@ -45,7 +45,7 @@ jobs:
         run: |
           git config --global user.name 'Tideline Bot'
           git config --global user.email 'bot@tideline.app'
-          git add demo/feed.json
+          git add demo/feed.json demo/feed-arquivo.json
           git diff --staged --quiet && { echo "nada novo"; exit 0; }
           git commit -m "chore: atualiza feed de notícias"
           git pull --rebase --autostash origin main

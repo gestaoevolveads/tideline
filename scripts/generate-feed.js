@@ -111,19 +111,39 @@ ${text}`,
     const urlNorm = String(n.url).replace(/[#?].*$/, '').replace(/\/$/, '');
     if (vistas.has(urlNorm)) { console.log('  descartada (URL repetida):', n.title); continue; }
     vistas.add(urlNorm);
-    const ok = await tituloBateComPagina(n);
-    if (ok) aprovadas.push(n);
-    else console.log('  descartada (página não bate com o título):', n.title, '|', n.url);
+    const v = await tituloBateComPagina(n);
+    if (v.ok) {
+      // a foto vem da MESMA página que acabou de passar na verificação de assunto:
+      // é a imagem que o próprio veículo escolheu como oficial (og:image)
+      if (v.foto) n.image = v.foto;
+      aprovadas.push(n);
+    } else console.log('  descartada (página não bate com o título):', n.title, '|', n.url);
   }
   if (!aprovadas.length) { console.error('Nenhuma notícia passou na verificação. Mantendo o feed anterior.'); return; }
 
+  // ── ARQUIVO: as levas anteriores não somem, viram "notícias anteriores" no app.
+  // O feed atual entra no topo; o que saiu dele desce pro arquivo (sem repetir).
+  const arqPath = path.join(ROOT, 'demo/feed-arquivo.json');
+  let arquivo = [];
+  try { arquivo = JSON.parse(fs.readFileSync(arqPath, 'utf8')); } catch { /* primeiro uso */ }
+  let atualAnterior = [];
+  try { atualAnterior = JSON.parse(fs.readFileSync(out, 'utf8')); } catch { /* sem feed anterior */ }
+  const urlsNovas = new Set(aprovadas.map(n => n.url));
+  const paraArquivo = atualAnterior.filter(n => n && n.url && !urlsNovas.has(n.url));
+  const urlsArq = new Set();
+  arquivo = [...paraArquivo, ...arquivo]
+    .filter(n => { if (!n || !n.url || urlsArq.has(n.url) || urlsNovas.has(n.url)) return false; urlsArq.add(n.url); return true; })
+    .slice(0, 24); // ~3 levas de história; mais que isso é museu, não app
+  fs.writeFileSync(arqPath, JSON.stringify(arquivo, null, 2));
+
   fs.writeFileSync(out, JSON.stringify(aprovadas, null, 2));
-  console.log(`OK: ${aprovadas.length} notícias (de ${cru.length} pesquisadas, ${noticias.length} filtradas) → demo/feed.json`);
+  console.log(`OK: ${aprovadas.length} notícias (${aprovadas.filter(n => n.image).length} com foto) → demo/feed.json | arquivo: ${arquivo.length}`);
 }
 
 // Abre a URL e compara o título do item com o <title>/og:title da página.
 // Comparação por sobreposição de palavras significativas (sem acento, sem
 // palavrinha curta). Rede falhou = reprova: link que não abre não vai pro app.
+// De carona, extrai a og:image (a foto oficial que o veículo escolheu).
 async function tituloBateComPagina(n) {
   const norm = (s) => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
     .replace(/[^a-z0-9\s]/g, ' ');
@@ -135,16 +155,24 @@ async function tituloBateComPagina(n) {
       headers: { 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126 Safari/537.36' },
     });
     clearTimeout(timer);
-    if (!r.ok) return false;
+    if (!r.ok) return { ok: false };
     const html = (await r.text()).slice(0, 200000);
     const og = html.match(/<meta[^>]+property=["']og:title["'][^>]+content=["']([^"']+)["']/i);
     const t = html.match(/<title[^>]*>([^<]+)<\/title>/i);
     const paginaTexto = norm(((og && og[1]) || '') + ' ' + ((t && t[1]) || '') + ' ' + html.replace(/<[^>]+>/g, ' ').slice(0, 4000));
     const palavras = norm(n.title).split(/\s+/).filter(w => w.length > 3);
-    if (!palavras.length) return false;
+    if (!palavras.length) return { ok: false };
     const acertos = palavras.filter(w => paginaTexto.includes(w)).length;
-    return acertos / palavras.length >= 0.5; // metade das palavras-chave na página
-  } catch { return false; }
+    if (acertos / palavras.length < 0.5) return { ok: false }; // metade das palavras-chave na página
+
+    // foto oficial (og:image), rejeitando logo/ícone pelo caminho
+    const img = html.match(/<meta[^>]+property=["']og:image(?::secure_url)?["'][^>]+content=["']([^"']+)["']/i)
+             || html.match(/<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image(?::secure_url)?["']/i);
+    let foto = img ? img[1] : null;
+    if (foto && /logo|icon|favicon|sprite|avatar|\.svg/i.test(foto)) foto = null;
+    if (foto) { try { foto = new URL(foto, n.url).href; } catch { foto = null; } }
+    return { ok: true, foto };
+  } catch { return { ok: false }; }
 }
 
 main().catch(err => { console.error('Erro fatal:', err); process.exit(1); });

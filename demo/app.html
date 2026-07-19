@@ -4383,15 +4383,36 @@ async function loadSurfNews() {
     if (!res.ok) throw new Error('feed error');
     const articles = await res.json();
     if (!Array.isArray(articles) || !articles.length) throw new Error('empty');
-    el.innerHTML = articles.slice(0, 8).map(item => {
+    const cardNoticia = (item) => {
       const title = (item.title || '').replace(/&amp;/g,'&').replace(/&#8217;/g,"'");
       const meta = [item.source, item.date].filter(Boolean).join(' · ');
-      return `<a class="news-item" href="${item.url || '#'}" target="_blank" rel="noopener noreferrer">
-        <div class="news-headline">${title}</div>
-        ${meta ? `<div class="news-meta">${meta}</div>` : ''}
-        ${item.summary ? `<div class="news-summary" style="font-size:11px;color:var(--muted);margin-top:2px;line-height:1.4">${item.summary}</div>` : ''}
+      return `<a class="news-item" href="${item.url || '#'}" target="_blank" rel="noopener noreferrer"
+        style="display:flex;gap:11px;align-items:flex-start">
+        ${item.image ? `<img src="${item.image}" alt="" loading="lazy" referrerpolicy="no-referrer"
+          onerror="this.remove()"
+          style="width:64px;height:64px;flex:none;object-fit:cover;border-radius:9px;background:var(--surface2,#E8F0ED)">` : ''}
+        <span style="min-width:0">
+          <div class="news-headline">${title}</div>
+          ${meta ? `<div class="news-meta">${meta}</div>` : ''}
+          ${item.summary ? `<div class="news-summary" style="font-size:11px;color:var(--muted);margin-top:2px;line-height:1.4">${item.summary}</div>` : ''}
+        </span>
       </a>`;
-    }).join('');
+    };
+    el.innerHTML = articles.slice(0, 8).map(cardNoticia).join('');
+    // as levas anteriores: ficam embaixo, discretas, sem roubar a cena da atual
+    try {
+      const ra = await fetch('./feed-arquivo.json?v=' + Date.now(), {signal: AbortSignal.timeout(15000)});
+      if (ra.ok) {
+        const antigas = await ra.json();
+        if (Array.isArray(antigas) && antigas.length) {
+          el.innerHTML += `
+            <div style="font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+              color:var(--muted);margin:18px 0 8px;padding-top:14px;border-top:1px solid rgba(23,39,38,.08)">
+              Notícias anteriores</div>
+            <div style="opacity:.78">${antigas.slice(0, 8).map(cardNoticia).join('')}</div>`;
+        }
+      }
+    } catch { /* histórico é bônus; sem ele o feed segue normal */ }
   } catch {
     el.innerHTML = '<div class="news-loading">Sem notícias no momento. <a href="https://hardcoresurf.com.br" target="_blank" rel="noopener" style="color:var(--accent)">Hardcore Surf ↗</a></div>';
   }
