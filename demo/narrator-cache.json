@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T21:23:27.086Z",
+  "generated_at": "2026-07-19T22:43:18.296Z",
   "beaches": {
     "Saquarema": {
       "dias": {
@@ -82,10 +82,10 @@
             "aviso": null
           },
           "tarde": {
-            "score": 3,
-            "titulo": "Tarde de leste na Vila",
-            "analise": "A tarde chega com a Vila recebendo swell de leste, que aqui bate bem e ajuda a formar a parede mesmo sem ser a direção mais clássica da casa. O tamanho segue parecido com o da manhã, passando de um metro, mas o vento de lado picota um pouco a superfície e tira aquele acabamento liso. Ainda dá pra pegar onda com forma, só que a descida vem com uma textura a mais, exige leitura rápida no drop. Prefira as ondas mais cheias da série, que fecham menos com esse vento atravessado.",
-            "janela": null,
+            "score": 4,
+            "titulo": "Vila com volume na tarde",
+            "analise": "A Praia da Vila tá com ondas passando do metro à tarde, período curto que junta as séries e um lateral fraco que não incomoda. O canto da igrejinha organiza melhor esse mar apressado: a parede forma, abre rápido e pede decisão no drop. Bom treino de reflexo pra quem já tem leitura. Quem busca onda comprida e mansa vai achar o mar afobado hoje.",
+            "janela": "14h-17h",
             "aviso": null
           },
           "noite": {
@@ -210,6 +210,84 @@
     },
     "Praia do Forte": {
       "dias": {
+        "2026-07-19": {
+          "manha": {
+            "score": 1,
+            "titulo": "Forte tomado pelo onshore",
+            "analise": "O vento forte do mar chega junto com o dia na Praia do Forte, embolando ondas que ficam perto de um metro. Com período curto e onshore nessa intensidade, os 7km de faixa viram um tapete de espuma sem parede definida. Nem o canto da Capela salva a manhã. É dia de olhar pela janela, tomar café sem culpa e deixar o mar gastar essa energia bagunçada.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Tarde de espuma em Cabo Frio",
+            "analise": "Segue o vento forte do mar na Praia do Forte, com ondas perto de um metro quebrando sem ordem nenhuma. O swell de leste até entra direto na praia, mas o período curto e o onshore transformam tudo em espuma rolando. Kitesurf e windsurf agradecem um dia desses; a pranchinha, não. Se o corpo pede água, o papel de hoje é espuma pra treinar base, sem expectativa.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "O Forte no modo máquina de lavar",
+            "analise": "A noite mantém o vento forte do mar na Praia do Forte e o mar perto de um metro segue revirado, sem forma nem intervalo decente entre as séries. Não existe surf pra aproveitar nesse cenário, só água fria e escuridão. O consolo honesto: onshore forte costuma ser sinal de sistema passando, e atrás dele às vezes vem a limpeza. Amanhã o app conta se veio.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-07-20": {
+          "manha": {
+            "score": 1,
+            "titulo": "Forte tomado pelo onshore",
+            "analise": "O vento forte do mar chega junto com o dia na Praia do Forte, embolando ondas que ficam perto de um metro. Com período curto e onshore nessa intensidade, os 7km de faixa viram um tapete de espuma sem parede definida. Nem o canto da Capela salva a manhã. É dia de olhar pela janela, tomar café sem culpa e deixar o mar gastar essa energia bagunçada.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "O Forte no modo máquina de lavar",
+            "analise": "A noite mantém o vento forte do mar na Praia do Forte e o mar perto de um metro segue revirado, sem forma nem intervalo decente entre as séries. Não existe surf pra aproveitar nesse cenário, só água fria e escuridão. O consolo honesto: onshore forte costuma ser sinal de sistema passando, e atrás dele às vezes vem a limpeza. Amanhã o app conta se veio.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-07-21": {
+          "manha": {
+            "score": 1,
+            "titulo": "Forte tomado pelo onshore",
+            "analise": "O vento forte do mar chega junto com o dia na Praia do Forte, embolando ondas que ficam perto de um metro. Com período curto e onshore nessa intensidade, os 7km de faixa viram um tapete de espuma sem parede definida. Nem o canto da Capela salva a manhã. É dia de olhar pela janela, tomar café sem culpa e deixar o mar gastar essa energia bagunçada.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 1,
+            "titulo": "Tarde de espuma em Cabo Frio",
+            "analise": "Segue o vento forte do mar na Praia do Forte, com ondas perto de um metro quebrando sem ordem nenhuma. O swell de leste até entra direto na praia, mas o período curto e o onshore transformam tudo em espuma rolando. Kitesurf e windsurf agradecem um dia desses; a pranchinha, não. Se o corpo pede água, o papel de hoje é espuma pra treinar base, sem expectativa.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "O Forte no modo máquina de lavar",
+            "analise": "A noite mantém o vento forte do mar na Praia do Forte e o mar perto de um metro segue revirado, sem forma nem intervalo decente entre as séries. Não existe surf pra aproveitar nesse cenário, só água fria e escuridão. O consolo honesto: onshore forte costuma ser sinal de sistema passando, e atrás dele às vezes vem a limpeza. Amanhã o app conta se veio.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-07-22": {
+          "manha": {
+            "score": 1,
+            "titulo": "Forte tomado pelo onshore",
+            "analise": "O vento forte do mar chega junto com o dia na Praia do Forte, embolando ondas que ficam perto de um metro. Com período curto e onshore nessa intensidade, os 7km de faixa viram um tapete de espuma sem parede definida. Nem o canto da Capela salva a manhã. É dia de olhar pela janela, tomar café sem culpa e deixar o mar gastar essa energia bagunçada.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "O Forte no modo máquina de lavar",
+            "analise": "A noite mantém o vento forte do mar na Praia do Forte e o mar perto de um metro segue revirado, sem forma nem intervalo decente entre as séries. Não existe surf pra aproveitar nesse cenário, só água fria e escuridão. O consolo honesto: onshore forte costuma ser sinal de sistema passando, e atrás dele às vezes vem a limpeza. Amanhã o app conta se veio.",
+            "janela": null,
+            "aviso": null
+          }
+        },
         "2026-07-25": {
           "tarde": {
             "score": 3,
@@ -415,7 +493,88 @@
       }
     },
     "Figueira": {
-      "dias": {}
+      "dias": {
+        "2026-07-19": {
+          "manha": {
+            "score": 2,
+            "titulo": "Ventania lateral na faixa da Figueira",
+            "analise": "A Figueira amanhece com ondas passando do metro, mas com um vento lateral forte varrendo a faixa de areia aberta de Arraial. O swell curto já chega apressado, e a ventania termina o serviço: superfície toda picotada, parede que não sustenta linha. A praia deserta continua bonita, o mar é que não colabora. Se for pra molhar, encare como treino de remada contra o vento.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Figueira grande e varrida",
+            "analise": "O mar cresceu pra perto de dois metros na Figueira à tarde, mas o vento lateral forte continua mandando na cena. É volume com pressa: séries de período curto quebrando em cima das outras, espuma cruzada e correnteza percorrendo a faixa. Só surfista acostumado com beach break aberto tira proveito, e ainda assim escolhendo muito. O resto assiste da duna.",
+            "janela": null,
+            "aviso": "Correnteza forte ao longo da faixa: use referência fixa na areia."
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Noite de vento na Massambaba",
+            "analise": "A ventania lateral segue firme na Figueira noite adentro, com mar passando do metro e período curto embolando tudo. Praia deserta, escuro total e correnteza é uma combinação que não deixa margem: hoje o pico é só barulho de fundo. O lado bom de swell com vento assim é que ele renova o banco de areia, e a faixa de Arraial costuma agradecer depois.",
+            "janela": null,
+            "aviso": "Não entre: praia deserta, escuro e correnteza forte."
+          }
+        },
+        "2026-07-20": {
+          "manha": {
+            "score": 2,
+            "titulo": "Ventania lateral na faixa da Figueira",
+            "analise": "A Figueira amanhece com ondas passando do metro, mas com um vento lateral forte varrendo a faixa de areia aberta de Arraial. O swell curto já chega apressado, e a ventania termina o serviço: superfície toda picotada, parede que não sustenta linha. A praia deserta continua bonita, o mar é que não colabora. Se for pra molhar, encare como treino de remada contra o vento.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Noite de vento na Massambaba",
+            "analise": "A ventania lateral segue firme na Figueira noite adentro, com mar passando do metro e período curto embolando tudo. Praia deserta, escuro total e correnteza é uma combinação que não deixa margem: hoje o pico é só barulho de fundo. O lado bom de swell com vento assim é que ele renova o banco de areia, e a faixa de Arraial costuma agradecer depois.",
+            "janela": null,
+            "aviso": "Não entre: praia deserta, escuro e correnteza forte."
+          }
+        },
+        "2026-07-21": {
+          "manha": {
+            "score": 2,
+            "titulo": "Ventania lateral na faixa da Figueira",
+            "analise": "A Figueira amanhece com ondas passando do metro, mas com um vento lateral forte varrendo a faixa de areia aberta de Arraial. O swell curto já chega apressado, e a ventania termina o serviço: superfície toda picotada, parede que não sustenta linha. A praia deserta continua bonita, o mar é que não colabora. Se for pra molhar, encare como treino de remada contra o vento.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Noite de vento na Massambaba",
+            "analise": "A ventania lateral segue firme na Figueira noite adentro, com mar passando do metro e período curto embolando tudo. Praia deserta, escuro total e correnteza é uma combinação que não deixa margem: hoje o pico é só barulho de fundo. O lado bom de swell com vento assim é que ele renova o banco de areia, e a faixa de Arraial costuma agradecer depois.",
+            "janela": null,
+            "aviso": "Não entre: praia deserta, escuro e correnteza forte."
+          }
+        },
+        "2026-07-22": {
+          "manha": {
+            "score": 2,
+            "titulo": "Ventania lateral na faixa da Figueira",
+            "analise": "A Figueira amanhece com ondas passando do metro, mas com um vento lateral forte varrendo a faixa de areia aberta de Arraial. O swell curto já chega apressado, e a ventania termina o serviço: superfície toda picotada, parede que não sustenta linha. A praia deserta continua bonita, o mar é que não colabora. Se for pra molhar, encare como treino de remada contra o vento.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Noite de vento na Massambaba",
+            "analise": "A ventania lateral segue firme na Figueira noite adentro, com mar passando do metro e período curto embolando tudo. Praia deserta, escuro total e correnteza é uma combinação que não deixa margem: hoje o pico é só barulho de fundo. O lado bom de swell com vento assim é que ele renova o banco de areia, e a faixa de Arraial costuma agradecer depois.",
+            "janela": null,
+            "aviso": "Não entre: praia deserta, escuro e correnteza forte."
+          }
+        },
+        "2026-07-25": {
+          "manha": {
+            "score": 2,
+            "titulo": "Ventania lateral na faixa da Figueira",
+            "analise": "A Figueira amanhece com ondas passando do metro, mas com um vento lateral forte varrendo a faixa de areia aberta de Arraial. O swell curto já chega apressado, e a ventania termina o serviço: superfície toda picotada, parede que não sustenta linha. A praia deserta continua bonita, o mar é que não colabora. Se for pra molhar, encare como treino de remada contra o vento.",
+            "janela": null,
+            "aviso": null
+          }
+        }
+      }
     },
     "Unamar": {
       "dias": {
@@ -666,16 +825,25 @@
       "dias": {
         "2026-07-19": {
           "manha": {
-            "score": 2,
-            "titulo": "Terral cedo, onda pequena mas limpa",
-            "analise": "Vento da terra pro mar segurando firme, o clássico terral que deixa tudo liso mesmo em dia de pouca energia. Onda perto de um metro, período de 7s e meio, série compacta mas legível. A força é baixa, ótima pra iniciante ganhar confiança na espuma e no drop. Chegue cedo antes do sol esquentar a areia e o vento mudar.",
+            "score": 5,
+            "titulo": "Terral segurando a manhã do Arpo",
+            "analise": "Mar perto de um metro no Arpoador, com o terral fraco alisando a superfície logo cedo. O período é médio, na casa dos 8 segundos, então a série vem organizada o suficiente pra escolher onda sem pressa. Na água, a parede segura bem a linha até a Pedra, e a remada não pesa. Vale ir antes do trabalho: com esse vento a favor, a fila cresce rápido no pico mais democrático do Rio.",
             "janela": "6h-9h",
             "aviso": null
           },
           "tarde": {
-            "score": 1,
-            "titulo": "Mar pequeno, aula tranquila",
-            "analise": "Com energia bem baixa, uns 4 kW/m, a onda perto de um metro não tem muita força, ótimo cenário pra quem tá começando. O período de 8s segura uma organização simples de série. O vento lateral fraco mal se sente na água. Ideal pra levar quem nunca surfou pra sentir a espuma."
+            "score": 4,
+            "titulo": "Tarde honesta na Pedra do Arpo",
+            "analise": "O Arpoador segue com ondas perto de um metro à tarde, período médio de uns 8 segundos e um vento lateral fraco que arrepia a superfície sem desmontar a parede. Dá surf tranquilo: a onda abre curta, boa de treinar cavada e finalização. Com o swell de leste entrando direto, o canto da Pedra concentra as melhores séries. Tarde de pegar muita onda, não de pegar a onda da vida.",
+            "janela": "15h-17h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Mar de vento crescendo na noite carioca",
+            "analise": "O tamanho subiu pra pouco mais de um metro no Arpoador, mas o período curto entrega ondas juntas e desorganizadas, típico mar de vento. O lateral fraco não estraga mais o que o próprio swell já bagunça. Na água, é remada constante e leitura difícil de onde a próxima vem. Sob os postes do Arpo até rola visibilidade, mas o mar pede atenção redobrada com as séries que fecham.",
+            "janela": null,
+            "aviso": "Surf noturno exige experiência e atenção com a correnteza."
           }
         },
         "2026-07-20": {
@@ -687,9 +855,11 @@
             "aviso": null
           },
           "tarde": {
-            "score": 1,
-            "titulo": "Mar pequeno, aula tranquila",
-            "analise": "Com energia bem baixa, uns 4 kW/m, a onda perto de um metro não tem muita força, ótimo cenário pra quem tá começando. O período de 8s segura uma organização simples de série. O vento lateral fraco mal se sente na água. Ideal pra levar quem nunca surfou pra sentir a espuma."
+            "score": 4,
+            "titulo": "Tarde honesta na Pedra do Arpo",
+            "analise": "O Arpoador segue com ondas perto de um metro à tarde, período médio de uns 8 segundos e um vento lateral fraco que arrepia a superfície sem desmontar a parede. Dá surf tranquilo: a onda abre curta, boa de treinar cavada e finalização. Com o swell de leste entrando direto, o canto da Pedra concentra as melhores séries. Tarde de pegar muita onda, não de pegar a onda da vida.",
+            "janela": "15h-17h",
+            "aviso": null
           },
           "noite": {
             "score": 1,
@@ -701,16 +871,18 @@
         },
         "2026-07-21": {
           "manha": {
-            "score": 2,
-            "titulo": "Pouca onda, muita qualidade de superfície",
-            "analise": "O offshore firme faz toda diferença hoje: mesmo com tamanho pequeno, perto de um metro, a parede fica lisa e previsível. Energia baixa, remada tranquila, período em torno de 7s e meio trazendo série sem muito espaçamento. É um daqueles dias sem grandeza mas ótimos pra afinar técnica. Aproveite antes do vento virar depois das 9h.",
+            "score": 5,
+            "titulo": "Terral segurando a manhã do Arpo",
+            "analise": "Mar perto de um metro no Arpoador, com o terral fraco alisando a superfície logo cedo. O período é médio, na casa dos 8 segundos, então a série vem organizada o suficiente pra escolher onda sem pressa. Na água, a parede segura bem a linha até a Pedra, e a remada não pesa. Vale ir antes do trabalho: com esse vento a favor, a fila cresce rápido no pico mais democrático do Rio.",
             "janela": "6h-9h",
             "aviso": null
           },
           "tarde": {
-            "score": 1,
-            "titulo": "Mar pequeno, aula tranquila",
-            "analise": "Com energia bem baixa, uns 4 kW/m, a onda perto de um metro não tem muita força, ótimo cenário pra quem tá começando. O período de 8s segura uma organização simples de série. O vento lateral fraco mal se sente na água. Ideal pra levar quem nunca surfou pra sentir a espuma."
+            "score": 4,
+            "titulo": "Tarde honesta na Pedra do Arpo",
+            "analise": "O Arpoador segue com ondas perto de um metro à tarde, período médio de uns 8 segundos e um vento lateral fraco que arrepia a superfície sem desmontar a parede. Dá surf tranquilo: a onda abre curta, boa de treinar cavada e finalização. Com o swell de leste entrando direto, o canto da Pedra concentra as melhores séries. Tarde de pegar muita onda, não de pegar a onda da vida.",
+            "janela": "15h-17h",
+            "aviso": null
           },
           "noite": {
             "score": 1,
@@ -742,9 +914,11 @@
             "analise": "Com energia bem baixa, uns 4 kW/m, a onda perto de um metro não tem muita força, ótimo cenário pra quem tá começando. O período de 8s segura uma organização simples de série. O vento lateral fraco mal se sente na água. Ideal pra levar quem nunca surfou pra sentir a espuma."
           },
           "tarde": {
-            "score": 1,
-            "titulo": "Mar pequeno, aula tranquila",
-            "analise": "Com energia bem baixa, uns 4 kW/m, a onda perto de um metro não tem muita força, ótimo cenário pra quem tá começando. O período de 8s segura uma organização simples de série. O vento lateral fraco mal se sente na água. Ideal pra levar quem nunca surfou pra sentir a espuma."
+            "score": 4,
+            "titulo": "Tarde honesta na Pedra do Arpo",
+            "analise": "O Arpoador segue com ondas perto de um metro à tarde, período médio de uns 8 segundos e um vento lateral fraco que arrepia a superfície sem desmontar a parede. Dá surf tranquilo: a onda abre curta, boa de treinar cavada e finalização. Com o swell de leste entrando direto, o canto da Pedra concentra as melhores séries. Tarde de pegar muita onda, não de pegar a onda da vida.",
+            "janela": "15h-17h",
+            "aviso": null
           },
           "noite": {
             "score": 1,
@@ -1064,7 +1238,37 @@
     },
     "Cacimba do Padre": {
       "dias": {
+        "2026-07-19": {
+          "manha": {
+            "score": 3,
+            "titulo": "Cacimba grande e indomada",
+            "analise": "Mar na casa dos dois metros e meio na Cacimba, mas vindo de uma direção que não encaixa na bancada da praia, com vento lateral moderado picotando a superfície. O período médio não organiza tamanho todo esse volume: as bombas chegam fora de ordem e fecham sem aviso. Só remada forte e leitura de Noronha resolvem. Pra quem não vive esse pico, o espetáculo é melhor da areia, com o Morro Dois Irmãos de fundo.",
+            "janela": null,
+            "aviso": "Mar pesado e desorganizado: só pra quem conhece bem o pico."
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Tarde de respeito em Noronha",
+            "analise": "A Cacimba segue na casa dos dois metros e meio à tarde, com o swell chegando de raspão e vento lateral moderado. O mar tem volume de sobra mas pouca ordem: as paredes crescem rápido e quebram grossas, sem a linha limpa que faz a fama do pico. Quem entrar vai gastar o braço furando série. O caldo aqui castiga, então prancha com litragem sobrando e humildade na escolha das ondas.",
+            "janela": null,
+            "aviso": "Séries fechando com força na bancada rasa."
+          },
+          "noite": {
+            "score": 1,
+            "titulo": "Noite brava na Cacimba",
+            "analise": "Vento lateral forte varrendo a Cacimba à noite, mar na casa dos dois metros e meio chegando desalinhado da direção que a praia gosta. É volume bruto sem forma: espuma cruzada, série fechando e correnteza puxando ao longo da faixa. Não tem leitura possível no escuro com esse cenário. Deixa o mar trabalhar sozinho e volta pra conferir como ele amanhece.",
+            "janela": null,
+            "aviso": "Condição perigosa: mar grande, vento forte e sem visibilidade."
+          }
+        },
         "2026-07-20": {
+          "manha": {
+            "score": 3,
+            "titulo": "Cacimba grande e indomada",
+            "analise": "Mar na casa dos dois metros e meio na Cacimba, mas vindo de uma direção que não encaixa na bancada da praia, com vento lateral moderado picotando a superfície. O período médio não organiza tamanho todo esse volume: as bombas chegam fora de ordem e fecham sem aviso. Só remada forte e leitura de Noronha resolvem. Pra quem não vive esse pico, o espetáculo é melhor da areia, com o Morro Dois Irmãos de fundo.",
+            "janela": null,
+            "aviso": "Mar pesado e desorganizado: só pra quem conhece bem o pico."
+          },
           "noite": {
             "score": 1,
             "titulo": "Noite grande, vento de lado",
@@ -1432,10 +1636,10 @@
           },
           "noite": {
             "score": 3,
-            "titulo": "Noite mais tranquila no Cupe",
-            "analise": "Fechando o dia, o Cupe dá uma acalmada: mar perto de dois metros mas com energia mais baixa, uns 13 kW/m, o que já suaviza bastante a força da água. O swell segue vindo de sudeste, entrando como sempre entra bem nessa praia, e o período curto ainda deixa as séries um pouco apertadas. O vento lateral tá mais fraco, na casa dos 12 km/h, então a superfície fica mais organizada que nos turnos anteriores. É uma noite mais amigável pra quem quer treinar remada e pop-up com menos caldo pesando, mesmo com pouca luz sendo o fator de atenção.",
+            "titulo": "Cupe com tamanho na noite pernambucana",
+            "analise": "O mar do Cupe tá chegando perto dos dois metros à noite, com o swell de sudeste entrando certo na bancada e vento lateral moderado mexendo na superfície. O período médio segura alguma organização, e dá pra ouvir da areia as séries estourando no raso. Onda com essa força em cima de fundo raso não é programa noturno. A leitura fica armada pra primeira hora de luz.",
             "janela": null,
-            "aviso": "Pouca visibilidade à noite: reforça atenção na leitura do pico mesmo com energia mais tranquila."
+            "aviso": "Fundo raso e mar com força: respeite o pico no escuro."
           }
         },
         "2026-07-20": {
@@ -2294,6 +2498,93 @@
     },
     "Camburi": {
       "dias": {
+        "2026-07-19": {
+          "manha": {
+            "score": 3,
+            "titulo": "Camburi manso pra começar o dia",
+            "analise": "Mar pequeno em Camburi, na casa do meio metro, com uma brisa fraca vinda do mar que quase não marca a superfície. O período de uns 8 segundos organiza as séries direitinho pra esse tamanho. É onda de treino: parede curta, boa pra remada, pra ajustar o drop e pra quem está começando ganhar confiança sem susto. Longboard e pranchão aproveitam melhor o que o dia oferece.",
+            "janela": "6h-10h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Tarde de escola em Camburi",
+            "analise": "Camburi segue na casa do meio metro à tarde, com vento lateral fraco e séries espaçadas de período médio. A superfície continua limpa o bastante pra aproveitar cada onda inteira. O canto do rio costuma juntar as melhores formas nesse tamanho. Dia de volume alto de ondas e cobrança zero: pranchona, sorriso e repetição, que é como se evolui de verdade.",
+            "janela": "14h-17h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Camburi descansando à noite",
+            "analise": "O mar de Camburi fica na casa do meio metro à noite, com brisa fraca do mar e séries pequenas que mal quebram com força. Não há muito o que surfar nesse cenário: pouca parede, pouca luz e água fria de inverno. O movimento certo é usar a noite pra descansar o corpo, deixar a prancha pronta e conferir a leitura da madrugada antes de dormir.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-07-20": {
+          "manha": {
+            "score": 3,
+            "titulo": "Camburi manso pra começar o dia",
+            "analise": "Mar pequeno em Camburi, na casa do meio metro, com uma brisa fraca vinda do mar que quase não marca a superfície. O período de uns 8 segundos organiza as séries direitinho pra esse tamanho. É onda de treino: parede curta, boa pra remada, pra ajustar o drop e pra quem está começando ganhar confiança sem susto. Longboard e pranchão aproveitam melhor o que o dia oferece.",
+            "janela": "6h-10h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Camburi manso pra começar o dia",
+            "analise": "Mar pequeno em Camburi, na casa do meio metro, com uma brisa fraca vinda do mar que quase não marca a superfície. O período de uns 8 segundos organiza as séries direitinho pra esse tamanho. É onda de treino: parede curta, boa pra remada, pra ajustar o drop e pra quem está começando ganhar confiança sem susto. Longboard e pranchão aproveitam melhor o que o dia oferece.",
+            "janela": "6h-10h",
+            "aviso": null
+          }
+        },
+        "2026-07-21": {
+          "manha": {
+            "score": 3,
+            "titulo": "Camburi manso pra começar o dia",
+            "analise": "Mar pequeno em Camburi, na casa do meio metro, com uma brisa fraca vinda do mar que quase não marca a superfície. O período de uns 8 segundos organiza as séries direitinho pra esse tamanho. É onda de treino: parede curta, boa pra remada, pra ajustar o drop e pra quem está começando ganhar confiança sem susto. Longboard e pranchão aproveitam melhor o que o dia oferece.",
+            "janela": "6h-10h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Camburi manso pra começar o dia",
+            "analise": "Mar pequeno em Camburi, na casa do meio metro, com uma brisa fraca vinda do mar que quase não marca a superfície. O período de uns 8 segundos organiza as séries direitinho pra esse tamanho. É onda de treino: parede curta, boa pra remada, pra ajustar o drop e pra quem está começando ganhar confiança sem susto. Longboard e pranchão aproveitam melhor o que o dia oferece.",
+            "janela": "6h-10h",
+            "aviso": null
+          },
+          "noite": {
+            "score": 2,
+            "titulo": "Camburi descansando à noite",
+            "analise": "O mar de Camburi fica na casa do meio metro à noite, com brisa fraca do mar e séries pequenas que mal quebram com força. Não há muito o que surfar nesse cenário: pouca parede, pouca luz e água fria de inverno. O movimento certo é usar a noite pra descansar o corpo, deixar a prancha pronta e conferir a leitura da madrugada antes de dormir.",
+            "janela": null,
+            "aviso": null
+          }
+        },
+        "2026-07-22": {
+          "manha": {
+            "score": 3,
+            "titulo": "Camburi manso pra começar o dia",
+            "analise": "Mar pequeno em Camburi, na casa do meio metro, com uma brisa fraca vinda do mar que quase não marca a superfície. O período de uns 8 segundos organiza as séries direitinho pra esse tamanho. É onda de treino: parede curta, boa pra remada, pra ajustar o drop e pra quem está começando ganhar confiança sem susto. Longboard e pranchão aproveitam melhor o que o dia oferece.",
+            "janela": "6h-10h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 3,
+            "titulo": "Tarde de escola em Camburi",
+            "analise": "Camburi segue na casa do meio metro à tarde, com vento lateral fraco e séries espaçadas de período médio. A superfície continua limpa o bastante pra aproveitar cada onda inteira. O canto do rio costuma juntar as melhores formas nesse tamanho. Dia de volume alto de ondas e cobrança zero: pranchona, sorriso e repetição, que é como se evolui de verdade.",
+            "janela": "14h-17h",
+            "aviso": null
+          }
+        },
+        "2026-07-23": {
+          "tarde": {
+            "score": 3,
+            "titulo": "Tarde de escola em Camburi",
+            "analise": "Camburi segue na casa do meio metro à tarde, com vento lateral fraco e séries espaçadas de período médio. A superfície continua limpa o bastante pra aproveitar cada onda inteira. O canto do rio costuma juntar as melhores formas nesse tamanho. Dia de volume alto de ondas e cobrança zero: pranchona, sorriso e repetição, que é como se evolui de verdade.",
+            "janela": "14h-17h",
+            "aviso": null
+          }
+        },
         "2026-07-24": {
           "tarde": {
             "score": 3,
@@ -2834,19 +3125,40 @@
     "Praia Brava (Floripa)": {
       "dias": {
         "2026-07-19": {
+          "manha": {
+            "score": 4,
+            "titulo": "Terral domando a Brava",
+            "analise": "A Brava acorda com ondas perto de um metro e um terral moderado soprando firme da terra pro mar. O swell é curto e viria bagunçado, mas esse vento segura a parede em pé e limpa a superfície, transformando mar de vento em onda surfável. As direitas do canto norte ficam rápidas e cavadas. É a janela do dia: quando o terral cansar, a Brava mostra o mar desarrumado que ele estava escondendo.",
+            "janela": "6h-10h",
+            "aviso": null
+          },
           "tarde": {
             "score": 1,
-            "titulo": "Vento forte bagunçando onda pequena",
-            "analise": "O swell agora vem de nordeste, direção que ainda entra na Brava mas sem a mesma força do leste, e o tamanho fica mais contido, perto de um metro. O período curto, uns 6 segundos e meio, é sinal de vaga de vento, ou seja, ondulação que nasceu perto e não teve tempo de se organizar, chegando com séries mais bagunçadas. Pra piorar a tarde tem maral forte, quase 27 km/h, vento que bate de frente na onda e transforma tudo em espuma antes da hora de quebrar. Não é dia de buscar parede pra manobra, mas é uma tarde honesta pra treinar remada e pop-up na espuma, sem a cobrança do pico principal.",
+            "titulo": "Onshore desmontou a tarde",
+            "analise": "O vento virou do mar pra terra na Brava e desmanchou o que a manhã tinha construído. Ondas perto de um metro, período curto e onshore moderado é a receita da espuma sem parede: quebra tudo junto, sem linha pra desenhar. A água vai estar mexida e a remada, ingrata. Se a vontade for grande, vale mais como treino físico do que como surf. Senão, espera o vento dar trégua.",
             "janela": null,
             "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "Terral noturno segurando a Brava",
+            "analise": "O terral voltou a soprar moderado na Brava à noite, alisando um mar perto de um metro que chega meio de raspão na praia. As ondas quebram limpas mas rápidas, com o período curto dando pouco tempo entre uma e outra. No escuro, esse ritmo acelerado cobra caro. O recado do mar é outro: se esse vento aguentar até o amanhecer, a primeira luz encontra a praia em ordem.",
+            "janela": null,
+            "aviso": "Evite entrar no escuro: onda rápida e fria demais pra erro."
           }
         },
         "2026-07-20": {
+          "manha": {
+            "score": 4,
+            "titulo": "Terral domando a Brava",
+            "analise": "A Brava acorda com ondas perto de um metro e um terral moderado soprando firme da terra pro mar. O swell é curto e viria bagunçado, mas esse vento segura a parede em pé e limpa a superfície, transformando mar de vento em onda surfável. As direitas do canto norte ficam rápidas e cavadas. É a janela do dia: quando o terral cansar, a Brava mostra o mar desarrumado que ele estava escondendo.",
+            "janela": "6h-10h",
+            "aviso": null
+          },
           "tarde": {
             "score": 1,
-            "titulo": "Vento forte bagunçando onda pequena",
-            "analise": "O swell agora vem de nordeste, direção que ainda entra na Brava mas sem a mesma força do leste, e o tamanho fica mais contido, perto de um metro. O período curto, uns 6 segundos e meio, é sinal de vaga de vento, ou seja, ondulação que nasceu perto e não teve tempo de se organizar, chegando com séries mais bagunçadas. Pra piorar a tarde tem maral forte, quase 27 km/h, vento que bate de frente na onda e transforma tudo em espuma antes da hora de quebrar. Não é dia de buscar parede pra manobra, mas é uma tarde honesta pra treinar remada e pop-up na espuma, sem a cobrança do pico principal.",
+            "titulo": "Onshore desmontou a tarde",
+            "analise": "O vento virou do mar pra terra na Brava e desmanchou o que a manhã tinha construído. Ondas perto de um metro, período curto e onshore moderado é a receita da espuma sem parede: quebra tudo junto, sem linha pra desenhar. A água vai estar mexida e a remada, ingrata. Se a vontade for grande, vale mais como treino físico do que como surf. Senão, espera o vento dar trégua.",
             "janela": null,
             "aviso": null
           },
@@ -2868,13 +3180,20 @@
           },
           "tarde": {
             "score": 1,
-            "titulo": "Vento forte bagunçando onda pequena",
-            "analise": "O swell agora vem de nordeste, direção que ainda entra na Brava mas sem a mesma força do leste, e o tamanho fica mais contido, perto de um metro. O período curto, uns 6 segundos e meio, é sinal de vaga de vento, ou seja, ondulação que nasceu perto e não teve tempo de se organizar, chegando com séries mais bagunçadas. Pra piorar a tarde tem maral forte, quase 27 km/h, vento que bate de frente na onda e transforma tudo em espuma antes da hora de quebrar. Não é dia de buscar parede pra manobra, mas é uma tarde honesta pra treinar remada e pop-up na espuma, sem a cobrança do pico principal.",
+            "titulo": "Onshore desmontou a tarde",
+            "analise": "O vento virou do mar pra terra na Brava e desmanchou o que a manhã tinha construído. Ondas perto de um metro, período curto e onshore moderado é a receita da espuma sem parede: quebra tudo junto, sem linha pra desenhar. A água vai estar mexida e a remada, ingrata. Se a vontade for grande, vale mais como treino físico do que como surf. Senão, espera o vento dar trégua.",
             "janela": null,
             "aviso": null
           }
         },
         "2026-07-22": {
+          "manha": {
+            "score": 4,
+            "titulo": "Terral domando a Brava",
+            "analise": "A Brava acorda com ondas perto de um metro e um terral moderado soprando firme da terra pro mar. O swell é curto e viria bagunçado, mas esse vento segura a parede em pé e limpa a superfície, transformando mar de vento em onda surfável. As direitas do canto norte ficam rápidas e cavadas. É a janela do dia: quando o terral cansar, a Brava mostra o mar desarrumado que ele estava escondendo.",
+            "janela": "6h-10h",
+            "aviso": null
+          },
           "noite": {
             "score": 1,
             "titulo": "Vento de lado mexendo a superfície da noite",
@@ -4679,6 +4998,20 @@
             "analise": "Essa manhã o mar cresce um pouco, chegando perto de metro e meio a quase dois metros em alguns picos, com uma energia mediana que já dá uma cutucada na remada. O problema é o vento lateral forte, batendo uns 22 km/h, que pica a água inteira e não deixa a parede assentar. Somando com o swell vindo de leste, que pega essa praia de raspão em vez de entrar reto pelo sul ou sudeste, o resultado é onda com tamanho mas sem organização, fechando rápido. Ainda assim tem volume pra quem gosta de sentir a força da água: procure o canto do banco que estiver mais protegido do vento e encare como treino de remada e leitura.",
             "janela": null,
             "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "Capão batido pelo vento do mar",
+            "analise": "Ondas passando do metro no Capão à tarde, mas com onshore moderado e um swell que chega de uma direção que a praia não aproveita bem. O resultado é o clássico mar gaúcho de vento: paredes curtas que fecham rápido, espuma por todo lado e correnteza lateral constante. Dá pra pegar umas espumas fortes de treino, com paciência de sobra e sem esperar linha limpa.",
+            "janela": null,
+            "aviso": null
+          },
+          "noite": {
+            "score": 3,
+            "titulo": "O vento aliviou no Capão",
+            "analise": "A brisa do mar perdeu força à noite no Capão e o mar, passando do metro, ficou menos revirado do que passou a tarde. Ainda é swell curto, com séries juntas e pouca parede, mas a superfície acalmou. No escuro isso não vira sessão, e sim promessa: se o vento seguir fraco de madrugada, a primeira luz pode pegar o mar gaúcho no raro modo arrumado.",
+            "janela": null,
+            "aviso": null
           }
         },
         "2026-07-20": {
@@ -5283,6 +5616,20 @@
     "Setiba": {
       "dias": {
         "2026-07-19": {
+          "manha": {
+            "score": 3,
+            "titulo": "Setiba simples e surfável",
+            "analise": "Manhã de mar perto de um metro em Setiba, com vento lateral fraco e swell curto de leste entrando direto na praia. As séries vêm juntas e a parede é curta, mas a superfície está limpa o suficiente pra aproveitar. Onda de repetição: drop, uma batida, próxima. O costão de Guarapari protege pouco aqui, então qualquer aumento de vento muda a história rápido. Cedo é a melhor aposta.",
+            "janela": "6h-10h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "O vento cresceu em Setiba",
+            "analise": "À tarde o lateral engrossou pra moderado em Setiba e o mar perto de um metro, que já era curto e apressado, ficou visivelmente mais picado. A parede quebra torta e a espuma cruza o pico, cobrando remada extra em cada volta. Dá pra surfar, mas é surf de insistência, catando as menos deformadas. Quem foi de manhã pegou a melhor versão desse dia.",
+            "janela": null,
+            "aviso": null
+          },
           "noite": {
             "score": 0,
             "titulo": "Pouca organização no fim do dia",
@@ -5291,7 +5638,30 @@
             "aviso": null
           }
         },
+        "2026-07-20": {
+          "manha": {
+            "score": 3,
+            "titulo": "Setiba simples e surfável",
+            "analise": "Manhã de mar perto de um metro em Setiba, com vento lateral fraco e swell curto de leste entrando direto na praia. As séries vêm juntas e a parede é curta, mas a superfície está limpa o suficiente pra aproveitar. Onda de repetição: drop, uma batida, próxima. O costão de Guarapari protege pouco aqui, então qualquer aumento de vento muda a história rápido. Cedo é a melhor aposta.",
+            "janela": "6h-10h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "O vento cresceu em Setiba",
+            "analise": "À tarde o lateral engrossou pra moderado em Setiba e o mar perto de um metro, que já era curto e apressado, ficou visivelmente mais picado. A parede quebra torta e a espuma cruza o pico, cobrando remada extra em cada volta. Dá pra surfar, mas é surf de insistência, catando as menos deformadas. Quem foi de manhã pegou a melhor versão desse dia.",
+            "janela": null,
+            "aviso": null
+          }
+        },
         "2026-07-21": {
+          "manha": {
+            "score": 3,
+            "titulo": "Setiba simples e surfável",
+            "analise": "Manhã de mar perto de um metro em Setiba, com vento lateral fraco e swell curto de leste entrando direto na praia. As séries vêm juntas e a parede é curta, mas a superfície está limpa o suficiente pra aproveitar. Onda de repetição: drop, uma batida, próxima. O costão de Guarapari protege pouco aqui, então qualquer aumento de vento muda a história rápido. Cedo é a melhor aposta.",
+            "janela": "6h-10h",
+            "aviso": null
+          },
           "noite": {
             "score": 0,
             "titulo": "Pouca organização no fim do dia",
@@ -5301,6 +5671,13 @@
           }
         },
         "2026-07-22": {
+          "tarde": {
+            "score": 2,
+            "titulo": "O vento cresceu em Setiba",
+            "analise": "À tarde o lateral engrossou pra moderado em Setiba e o mar perto de um metro, que já era curto e apressado, ficou visivelmente mais picado. A parede quebra torta e a espuma cruza o pico, cobrando remada extra em cada volta. Dá pra surfar, mas é surf de insistência, catando as menos deformadas. Quem foi de manhã pegou a melhor versão desse dia.",
+            "janela": null,
+            "aviso": null
+          },
           "noite": {
             "score": 0,
             "titulo": "Noite de vaga curta e vento de lado",
@@ -5309,7 +5686,37 @@
             "aviso": null
           }
         },
+        "2026-07-23": {
+          "manha": {
+            "score": 3,
+            "titulo": "Setiba simples e surfável",
+            "analise": "Manhã de mar perto de um metro em Setiba, com vento lateral fraco e swell curto de leste entrando direto na praia. As séries vêm juntas e a parede é curta, mas a superfície está limpa o suficiente pra aproveitar. Onda de repetição: drop, uma batida, próxima. O costão de Guarapari protege pouco aqui, então qualquer aumento de vento muda a história rápido. Cedo é a melhor aposta.",
+            "janela": "6h-10h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "O vento cresceu em Setiba",
+            "analise": "À tarde o lateral engrossou pra moderado em Setiba e o mar perto de um metro, que já era curto e apressado, ficou visivelmente mais picado. A parede quebra torta e a espuma cruza o pico, cobrando remada extra em cada volta. Dá pra surfar, mas é surf de insistência, catando as menos deformadas. Quem foi de manhã pegou a melhor versão desse dia.",
+            "janela": null,
+            "aviso": null
+          }
+        },
         "2026-07-24": {
+          "manha": {
+            "score": 3,
+            "titulo": "Setiba simples e surfável",
+            "analise": "Manhã de mar perto de um metro em Setiba, com vento lateral fraco e swell curto de leste entrando direto na praia. As séries vêm juntas e a parede é curta, mas a superfície está limpa o suficiente pra aproveitar. Onda de repetição: drop, uma batida, próxima. O costão de Guarapari protege pouco aqui, então qualquer aumento de vento muda a história rápido. Cedo é a melhor aposta.",
+            "janela": "6h-10h",
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "O vento cresceu em Setiba",
+            "analise": "À tarde o lateral engrossou pra moderado em Setiba e o mar perto de um metro, que já era curto e apressado, ficou visivelmente mais picado. A parede quebra torta e a espuma cruza o pico, cobrando remada extra em cada volta. Dá pra surfar, mas é surf de insistência, catando as menos deformadas. Quem foi de manhã pegou a melhor versão desse dia.",
+            "janela": null,
+            "aviso": null
+          },
           "noite": {
             "score": 0,
             "titulo": "Noite de vaga curta e vento de lado",
@@ -5323,6 +5730,13 @@
             "score": 1,
             "titulo": "Dia mais para treino que performance",
             "analise": "O período baixo, próximo de 8 segundos, deixa a série em Setiba mais bagunçada nessa manhã, mesmo com ondas perto de um metro. Um vento maral moderado ajuda a tirar ainda mais forma da parede, deixando tudo mais mole. Quem entrar vai sentir pouca força na descida, onda mais fácil mas sem muita pressão. É daqueles dias pra aproveitar de outro jeito: treinar remada, ajustar o pop-up e observar como o banco se comporta.",
+            "janela": null,
+            "aviso": null
+          },
+          "tarde": {
+            "score": 2,
+            "titulo": "O vento cresceu em Setiba",
+            "analise": "À tarde o lateral engrossou pra moderado em Setiba e o mar perto de um metro, que já era curto e apressado, ficou visivelmente mais picado. A parede quebra torta e a espuma cruza o pico, cobrando remada extra em cada volta. Dá pra surfar, mas é surf de insistência, catando as menos deformadas. Quem foi de manhã pegou a melhor versão desse dia.",
             "janela": null,
             "aviso": null
           }
