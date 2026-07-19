@@ -225,11 +225,20 @@ function turnoErrado(v, turno) {
   return citados.length > 0 && !citados.includes(turno);
 }
 
+// Texto que CRAVA um número ou tamanho não pode cruzar de gaveta: narração de
+// "11 segundos" servida num dia de 8s (ou "passando do metro" num mar menor) é
+// mentira com selo de análise — o Hudson pegou exatamente isso na Praia do Forte.
+const CITA_PERIODO = /\b\d+\s*(a\s*\d+\s*)?s(egundos)?\b|casa dos \d+|per[íi]odo/i;
+const CITA_TAMANHO = /\bmetro(s|zinho)?\b|metrinho|meio metro|\bflat\b|pequen\w+|grand\w+|caixote/i;
+function citaPeriodo(v) { return CITA_PERIODO.test(`${v.titulo || ''} ${v.analise || ''} ${v.aviso || ''}`); }
+function citaTamanho(v) { return CITA_TAMANHO.test(`${v.titulo || ''} ${v.analise || ''} ${v.aviso || ''}`); }
+
 function acharEntry(beach, b, library) {
   const exato = library.keys[conditionKey(beach, b)];
   if (exato && exato.variacoes && exato.variacoes.length) return exato;
   const pref = `${beach.id}|`;
-  const h = heightBucket(b.altura_m), turno = b.periodo, wtipo = b.vento_tipo;
+  const h = heightBucket(b.altura_m), pb = periodBucket(b.periodo_s),
+        turno = b.periodo, wtipo = b.vento_tipo;
   let melhor = null, melhorNota = -1;
   for (const k in library.keys) {
     if (!k.startsWith(pref)) continue;
@@ -237,14 +246,15 @@ function acharEntry(beach, b, library) {
     if (!e.variacoes || !e.variacoes.length) continue;
     const p = k.split('|');                          // id, altura, periodo, vento, turno[, swell]
     if ((p[3] || '').split('-')[0] !== wtipo) continue; // o VENTO tem que bater, sem exceção
-    // cruzar turno só com variações que não citam horário; se nenhuma servir, pula
+    // regra geral do fallback: o que mudou de gaveta não pode estar CRAVADO no texto
     let variacoes = e.variacoes;
-    if (p[4] !== turno) {
-      variacoes = variacoes.filter(v => !citaTurno(v));
-      if (!variacoes.length) continue;
-    }
+    if (p[4] !== turno) variacoes = variacoes.filter(v => !citaTurno(v));
+    if (p[1] !== h) variacoes = variacoes.filter(v => !citaTamanho(v));
+    if (p[2] !== pb) variacoes = variacoes.filter(v => !citaPeriodo(v));
+    if (!variacoes.length) continue;
     let nota = 0;
     if (p[1] === h) nota += 3;                        // mesmo tamanho
+    if (p[2] === pb) nota += 2;                       // mesmo período
     if (p[5] && p[5] === b.swell_fit) nota += 2;      // mesmo encaixe de swell (chaves novas)
     if (p[4] === turno) nota += 1;                    // mesmo turno
     if (nota > melhorNota) { melhorNota = nota; melhor = { variacoes }; }
@@ -353,12 +363,26 @@ function cleanText(s) {
     .replace(/ ([,.;:!?])/g, '$1')
     .trim();
 }
+// Janela sugerida SEMPRE entre 5h e 17h (regra do Hudson: o app nunca manda
+// ninguém surfar de noite). Fora disso, apara pro limite; virou nada, vira null.
+function clampJanela(j) {
+  if (j == null) return j;
+  const s = String(j);
+  if (/noite|noturn|madrugada|19h|20h|21h|22h|23h/i.test(s) && !/\d{1,2}\s*h\s*[-–a]+\s*\d{1,2}\s*h/i.test(s)) return null;
+  const m = s.match(/(\d{1,2})\s*h\s*[-–a]+\s*(\d{1,2})\s*h/i);
+  if (!m) return /1[89]h|2\dh/.test(s) ? null : j;
+  let ini = Math.max(5, parseInt(m[1], 10));
+  let fim = Math.min(17, parseInt(m[2], 10));
+  if (fim <= ini) return null;
+  return s.replace(m[0], `${ini}h-${fim}h`);
+}
+
 function sanitizeVar(v) {
   return {
     ...v,
     titulo: cleanText(v.titulo),
     analise: cleanText(v.analise),
-    janela: v.janela == null ? v.janela : cleanText(v.janela),
+    janela: v.janela == null ? v.janela : clampJanela(cleanText(v.janela)),
     aviso: v.aviso == null ? v.aviso : cleanText(v.aviso),
   };
 }
@@ -401,6 +425,7 @@ REGRAS:
 - Escreva o que o surfista VAI SENTIR na água, não um relatório de origem do swell.
 - DIREÇÃO DO SWELL: cada condição diz de onde o swell vem e se essa direção funciona nesta praia. Use isso SÓ quando mudar a leitura (swell que entra em cheio na bancada, ou que chega de raspão e desorganizado), integrado natural na frase, como um local comentaria. Se a direção não muda nada no dia, NEM CITE. Proibido citar de forma mecânica ("swell de sul, dentro da janela") ou repetir a palavra "janela" como jargão.
 - TOM: conversa de ser humano, não locutor. Gíria só onde cai natural (no máximo uma por narração); frase que você não falaria em voz alta pra um amigo na areia, reescreva.
+- JANELA DE HORÁRIO: se sugerir janela, sempre entre 5h e 17h. Nunca sugerir surf depois das 17h nem de madrugada (pra noite, a janela fica vazia ou aponta o melhor horário do dia SEGUINTE de manhã).
 - Detalhe com propriedade: use o conhecimento dos livros pra escolher o detalhe CERTO (por que a parede abre, por que o vento estraga, por que a maré muda tudo), sem virar aula nem encher linguiça. Cada frase carrega informação real.
 - IMPORTANTE: escreva para a FAIXA da condição, não para o número decimal exato. O texto será reusado em dias com condição parecida, e o app mostra os números precisos por conta própria. Use metros redondos e aproximados ("na casa do meio metro", "perto de um metro", "uns dois metros") e descrição qualitativa. Pode citar o período em segundos de forma aproximada ("na casa dos 13s") e a energia de forma qualitativa. Evite decimais cravados como "1,82m".
 - Use o perfil da praia (fundo, orientação, janela, maré, caráter) para contextualizar.
@@ -672,6 +697,6 @@ if (require.main === module) {
 
 module.exports = {
   azimuthOf, classifyWind, classifySwellFit, cardeal, heightBucket, periodBucket, windBucket,
-  conditionKey, acharEntry, aggregateBlocos, fetchBeachData, BEACHES,
+  conditionKey, acharEntry, aggregateBlocos, fetchBeachData, BEACHES, clampJanela,
   loadKnowledge, generateForBeachRetry, MODEL,
 };

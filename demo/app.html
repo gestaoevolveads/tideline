@@ -1645,7 +1645,7 @@ function bestNextHour(mTimes, marine, forecast, mIdx, currentScore) {
   const limit=Math.min(mIdx+25,mTimes.length);
   for(let i=mIdx+1;i<limit;i++){
     const h=new Date(mTimes[i]).getHours();
-    if(h<6||h>20)continue; // skip night hours
+    if(h<5||h>17)continue; // sugestão de horário só entre 5h e 17h (regra do Hudson: ninguém manda o usuário surfar de noite)
     const w=classifyWind(parseFloat(forecast.hourly.wind_direction_10m[i]||0));
     const s=calcScore(w,Math.round(marine.hourly.wave_period[i]||0),parseFloat(marine.hourly.wave_height[i]||0));
     if(s>best.score)best={score:s,idx:i};
@@ -1885,12 +1885,6 @@ function crowdIndex(score, hour, dayOfWeek, beachName) {
   else if (score>=3)  pts += 1;
   else if (score<1)   pts -= 1;
 
-  // Potência da onda influencia o perfil do lineup
-  // Mar muito pesado (>40 kW/m) atrai surfistas experientes e mais agressivos,
-  // mas espanta iniciantes — crowd menor mas mais intenso
-  const kw = wavePower(score >= 3 ? 1.5 : score >= 1 ? 1.0 : 0.5, 10); // estimativa pela nota
-  if (score >= 4 && pts >= 4) pts = Math.min(5, pts); // pesado e lotado = situação real
-
   // — Data —
   if (holiday)        pts += 2;   // feriado: praia cheia
   else if (isWknd)    pts += 1;
@@ -1907,12 +1901,14 @@ function crowdIndex(score, hour, dayOfWeek, beachName) {
   // — Localismo: spots com forte cultura local afugentam turistas —
   if (profile.local>=3 && !isWknd && season==='low') pts -= 1;
 
-  // — Horário —
-  if (hour>=5 && hour<7)               pts -= 1; // dawn patrol: só os ferrenhos
+  // — Horário (com a luz do dia da estação, não relógio fixo) —
+  if (hour>=5 && hour<7)               pts += (score>=4 ? 0 : -1); // dawn patrol: vazio, EXCETO em dia épico (aí os ferrenhos lotam cedo)
   else if (hour>=7 && hour<=10)        pts += 1; // pico da manhã
-  else if (hour>=12 && hour<=14)       pts -= 1; // almoço: vazio
+  else if (hour>=12 && hour<=14)       pts -= 1; // almoço: alivia
   else if (hour>=15 && hour<=17 && score>=2) pts += 1; // tarde: segundo pico
-  else if (hour>=18)                   pts -= 1; // anoitecendo: saindo
+  if (season!=='summer' && hour>=17)   pts -= 1; // fora do verão a luz morre ~17h30: o pico esvazia mais cedo
+  else if (hour>=19)                   pts -= 1; // verão: esvazia perto do anoitecer
+  if (dayOfWeek===0 && hour>=15)       pts -= 1; // domingo à tarde: todo mundo indo embora
 
   return Math.max(1, Math.min(5, pts));
 }
@@ -1933,8 +1929,12 @@ function _crowdContext(c, hour, score, beachName, dayOfWeek) {
 
   const reasons = [];
   if (isNight)       return 'Noite. Lineup vazio. Só você e o mar.';
-  if (isDawn)        return 'Dawn patrol. Os ferrenhos já estão lá, mas ainda tem espaço.';
+  if (isDawn)        return score>=4
+    ? 'Dawn patrol de dia bom: os ferrenhos madrugaram e o pico já tem fila.'
+    : 'Dawn patrol. Os ferrenhos já estão lá, mas ainda tem espaço.';
   if (isLunch)       reasons.push('horário de almoço alivia o pico');
+  if (dayOfWeek===0 && hour>=15) reasons.push('domingo à tarde, galera indo embora');
+  if (season!=='summer' && hour>=17) reasons.push('a luz já vai embora, pico esvaziando');
   if (holiday)       reasons.push('feriado nacional — praia vai estar cheia');
   else if (isWknd)   reasons.push('fim de semana');
   if (season==='summer') reasons.push('alta temporada de verão');

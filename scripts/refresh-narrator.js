@@ -11,7 +11,7 @@
 const fs = require('fs');
 const path = require('path');
 const {
-  BEACHES, fetchBeachData, aggregateBlocos, conditionKey, acharEntry,
+  BEACHES, fetchBeachData, aggregateBlocos, conditionKey, acharEntry, clampJanela,
 } = require('./generate-narrator');
 
 const ROOT = path.join(__dirname, '..');
@@ -49,6 +49,8 @@ async function main() {
     antes += vs.length;
     const boas = vs.filter(v => !ehFossil(v));
     removidas += vs.length - boas.length;
+    // repara janelas fora de 5h-17h (regra do Hudson: nunca sugerir surf à noite)
+    for (const v of boas) if (v.janela != null) v.janela = clampJanela(v.janela);
     e.variacoes = boas;
     if (!boas.length) vazias.push(k);
   }

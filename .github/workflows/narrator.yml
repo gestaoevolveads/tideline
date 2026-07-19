@@ -42,7 +42,7 @@ jobs:
           # aproximação em ~1 semana. Depois que satura, gera pouco e o custo cai sozinho.
           # MAX_NEW alto de propósito: quem manda no gasto é o BUDGET_USD.
           MAX_NEW_VARIACOES: '200'
-          BUDGET_USD: '0.20'
+          BUDGET_USD: '2.60'   # RODADA ÚNICA de reabastecimento (fallback ficou honesto e abriu 882 buracos); volta pra 0.20 depois
 
       - name: Commit e push
         run: |
