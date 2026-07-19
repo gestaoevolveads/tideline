@@ -14,6 +14,7 @@ const path = require('path');
 const { execFileSync } = require('child_process');
 const { montarPrompt, VARIANTES, FORMATOS } = require('./estilo');
 const { TEMPLATES, paginaCompleta } = require('./revista');
+const banca = require('./banca');
 const POSTS = require('./posts');
 const CAMISAS = require('./camisas');
 
@@ -400,12 +401,37 @@ const servidor = http.createServer(async (req, res) => {
       });
     }
 
+    // imagens da Banca vivem em subpastas (uma por notícia): caminho controlado
+    if (rota.startsWith('/saidas/banca/')) {
+      const rel = decodeURIComponent(rota.slice('/saidas/banca/'.length));
+      if (rel.includes('..')) { res.writeHead(400); return res.end(); }
+      const f = path.join(banca.SAIDAS_BANCA, rel);
+      if (!fs.existsSync(f) || !fs.statSync(f).isFile()) { res.writeHead(404); return res.end(); }
+      res.writeHead(200, { 'content-type': f.endsWith('.jpg') ? 'image/jpeg' : 'image/png', 'cache-control': 'no-cache' });
+      return res.end(fs.readFileSync(f));
+    }
+
     if (rota.startsWith('/refs/') || rota.startsWith('/saidas/')) {
       const base = rota.startsWith('/refs/') ? REFS : SAIDAS;
       const f = path.join(base, path.basename(decodeURIComponent(rota)));
       if (!fs.existsSync(f)) { res.writeHead(404); return res.end(); }
       res.writeHead(200, { 'content-type': f.endsWith('.jpg') ? 'image/jpeg' : 'image/png', 'cache-control': 'no-cache' });
       return res.end(fs.readFileSync(f));
+    }
+
+    // ---------- Banca de notícias ----------
+    if (rota === '/banca' || rota === '/banca.html') {
+      res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
+      return res.end(fs.readFileSync(path.join(DIR, 'ui-banca.html')));
+    }
+    if (rota === '/api/banca/lista') {
+      return json(res, 200, { noticias: banca.lista() });
+    }
+    if (rota === '/api/banca/verificar' && req.method === 'POST') {
+      return banca.verificar(console.log, (err, r) => {
+        if (err) return json(res, 500, { erro: err.message });
+        json(res, 200, r);
+      });
     }
 
     if (rota === '/api/galeria') {
@@ -497,5 +523,7 @@ fs.mkdirSync(SAIDAS, { recursive: true });
 servidor.listen(PORTA, () => {
   console.log(`\n  Estúdio Tideline no ar:  http://localhost:${PORTA}`);
   console.log(`  Referências: ${fs.readdirSync(REFS).length}   Diretor de Arte: ${CLAUDE_KEY ? 'ligado' : 'desligado (sem chave da Anthropic)'}`);
-  console.log(`  As imagens caem em brand/ilustrador/saidas/\n`);
+  console.log(`  As imagens caem em brand/ilustrador/saidas/`);
+  banca.iniciarVigilancia(console.log);
+  console.log('');
 });

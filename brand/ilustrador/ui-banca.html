@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Banca de Notícias · Tideline</title>
+<style>
+  :root{
+    --deep:#172726; --mid:#243F3D; --muted:#476664;
+    --surface:#D3E2DE; --surface2:#E8F0ED; --paper:#F2EFE9; --accent:#F95831;
+    --ok:#2F9E6F;
+    --ff:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--deep);font-family:var(--ff);
+    -webkit-font-smoothing:antialiased;line-height:1.5}
+
+  header{display:flex;align-items:baseline;gap:14px;padding:18px 26px;border-bottom:1px solid rgba(23,39,38,.09)}
+  .wm{font-size:21px;letter-spacing:-.02em}
+  .wm .t{font-weight:300}.wm .l{font-weight:700}.wm .d{color:var(--accent)}
+  header .sub{font-size:13px;color:var(--muted);margin-right:auto}
+  header a{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;
+    border:1px solid rgba(23,39,38,.16);border-radius:9px;padding:8px 12px}
+  header a:hover{border-color:var(--accent);color:var(--accent)}
+
+  .wrap{max-width:1180px;margin:0 auto;padding:26px 26px 90px}
+
+  /* barra de status: uma linha, tudo que importa, zero ruído */
+  .status{display:flex;align-items:center;gap:14px;flex-wrap:wrap;background:#fff;
+    border:1px solid rgba(23,39,38,.12);border-radius:14px;padding:14px 18px;margin-bottom:26px}
+  .status .txt{font-size:13.5px;color:var(--muted)}
+  .status .txt strong{color:var(--deep)}
+  .status button{margin-left:auto;background:var(--deep);color:#fff;border:0;border-radius:10px;
+    padding:10px 16px;font:inherit;font-size:13.5px;font-weight:700;cursor:pointer;min-height:44px}
+  .status button:hover{background:var(--mid)}
+  .status button[disabled]{opacity:.55;cursor:default}
+  .pulso{width:9px;height:9px;border-radius:50%;background:var(--ok);flex:none;
+    box-shadow:0 0 0 0 rgba(47,158,111,.5);animation:p 2.4s infinite}
+  @keyframes p{70%{box-shadow:0 0 0 9px rgba(47,158,111,0)}100%{box-shadow:0 0 0 0 rgba(47,158,111,0)}}
+
+  /* uma notícia = um cartão. Título grande, capas dentro. Nada se mistura. */
+  .noticia{background:#fff;border:1px solid rgba(23,39,38,.12);border-radius:16px;
+    padding:20px 22px;margin-bottom:22px}
+  .noticia .quando{font-size:11px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;
+    color:var(--accent);margin-bottom:6px}
+  .noticia h2{margin:0 0 4px;font-size:19px;line-height:1.3;letter-spacing:-.01em}
+  .noticia .meta{font-size:12.5px;color:var(--muted);margin-bottom:14px}
+  .noticia .meta a{color:var(--muted)}
+  .capas{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+  .capa{display:block;border-radius:10px;overflow:hidden;border:1px solid rgba(23,39,38,.1);
+    background:var(--surface2);position:relative;cursor:zoom-in;transition:.15s}
+  .capa:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(23,39,38,.14)}
+  .capa img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+  .capa .nome{position:absolute;left:0;right:0;bottom:0;padding:14px 8px 6px;font-size:10.5px;
+    font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#fff;text-align:center;
+    background:linear-gradient(transparent,rgba(23,39,38,.75))}
+
+  .vazio{text-align:center;padding:70px 20px;color:var(--muted)}
+  .vazio .g{font-size:38px;margin-bottom:10px}
+  .vazio p{max-width:420px;margin:6px auto;font-size:14px}
+
+  /* visualização em tela cheia */
+  .luz{position:fixed;inset:0;background:rgba(23,39,38,.92);display:none;align-items:center;
+    justify-content:center;z-index:50;cursor:zoom-out;padding:30px}
+  .luz.on{display:flex}
+  .luz img{max-width:min(92vw,600px);max-height:92vh;border-radius:10px;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+  .luz .baixar{position:fixed;top:20px;right:24px;background:#fff;color:var(--deep);border-radius:10px;
+    padding:10px 16px;font-size:13.5px;font-weight:700;text-decoration:none}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wm"><span class="t">tide</span><span class="l">line</span><span class="d">.</span></div>
+  <div class="sub">Banca de notícias · capas automáticas do feed do app</div>
+  <a href="/">← Estúdio</a>
+  <a href="/revista">Capas manuais</a>
+</header>
+
+<div class="wrap">
+  <div class="status">
+    <div class="pulso" title="vigilância ligada"></div>
+    <div class="txt" id="st-txt">Vigiando o feed do app. Notícia nova vira capa sozinha, e você recebe a notificação.</div>
+    <button id="bt-ver" onclick="verificar()">Verificar agora</button>
+  </div>
+  <div id="lista"></div>
+</div>
+
+<div class="luz" id="luz" onclick="this.classList.remove('on')">
+  <a class="baixar" id="luz-baixar" href="#" download onclick="event.stopPropagation()">Baixar</a>
+  <img id="luz-img" src="" alt="capa">
+</div>
+
+<script>
+const NOMES = { banca:'Banca', editorial:'Editorial', poster:'Pôster',
+  nostalgia:'Nostalgia', central:'Central', francesa:'Francesa' };
+
+function esc(s){ const d=document.createElement('div'); d.textContent=s??''; return d.innerHTML; }
+
+async function carregar(){
+  const r = await (await fetch('/api/banca/lista')).json();
+  const lista = document.getElementById('lista');
+  if(!r.noticias || !r.noticias.length){
+    lista.innerHTML = `<div class="vazio"><div class="g">📰</div>
+      <p><strong>Nenhuma capa ainda.</strong></p>
+      <p>Quando o feed do app trouxer notícia nova (todo dia de manhã), as capas
+      aparecem aqui sozinhas, separadas por notícia. Ou clique em “Verificar agora”.</p></div>`;
+    return;
+  }
+  lista.innerHTML = r.noticias.map(n => `
+    <div class="noticia">
+      <div class="quando">${esc(n.data)} · ${esc(n.fonte)}</div>
+      <h2>${esc(n.titulo)}</h2>
+      <div class="meta"><a href="${esc(n.url)}" target="_blank" rel="noopener">ler a notícia na íntegra ↗</a></div>
+      <div class="capas">
+        ${(n.capas||[]).map(c => `
+          <div class="capa" onclick="ver('/saidas/banca/${esc(n.slug)}/${esc(c)}')">
+            <img loading="lazy" src="/saidas/banca/${esc(n.slug)}/${esc(c)}" alt="">
+            <div class="nome">${NOMES[c.replace('.png','')] || esc(c)}</div>
+          </div>`).join('')}
+      </div>
+    </div>`).join('');
+}
+
+function ver(src){
+  document.getElementById('luz-img').src = src;
+  document.getElementById('luz-baixar').href = src;
+  document.getElementById('luz').classList.add('on');
+}
+
+async function verificar(){
+  const bt = document.getElementById('bt-ver'), st = document.getElementById('st-txt');
+  bt.disabled = true; bt.textContent = 'Verificando…';
+  st.innerHTML = 'Buscando o feed e as fotos das notícias. Pode levar um ou dois minutos.';
+  try{
+    const r = await (await fetch('/api/banca/verificar', { method:'POST' })).json();
+    if(r.erro) st.innerHTML = 'Deu errado: <strong>' + esc(r.erro) + '</strong>';
+    else if(r.ocupado) st.innerHTML = 'Já tem uma verificação rodando. Aguarde ela terminar.';
+    else if(!r.novas) st.innerHTML = 'Feed conferido: <strong>nenhuma notícia nova</strong>. Tudo em dia.';
+    else st.innerHTML = `<strong>${r.capas} capas novas</strong> de ${r.ok.length} notícia(s)` +
+      (r.falhas && r.falhas.length ? ` · ${r.falhas.length} falharam (tento de novo na próxima)` : '') + '.';
+  }catch(e){ st.innerHTML = 'Deu errado: <strong>' + esc(e.message) + '</strong>'; }
+  bt.disabled = false; bt.textContent = 'Verificar agora';
+  carregar();
+}
+
+carregar();
+setInterval(carregar, 60000);
+</script>
+</body>
+</html>
