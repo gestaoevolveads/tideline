@@ -1901,14 +1901,16 @@ function crowdIndex(score, hour, dayOfWeek, beachName) {
   // — Localismo: spots com forte cultura local afugentam turistas —
   if (profile.local>=3 && !isWknd && season==='low') pts -= 1;
 
-  // — Horário (com a luz do dia da estação, não relógio fixo) —
-  if (hour>=5 && hour<7)               pts += (score>=4 ? 0 : -1); // dawn patrol: vazio, EXCETO em dia épico (aí os ferrenhos lotam cedo)
+  // — Horário —
+  if (hour>=6 && hour<7)               pts += (score>=4 ? 0 : -1); // 6h de dia épico: os ferrenhos já chegaram
   else if (hour>=7 && hour<=10)        pts += 1; // pico da manhã
   else if (hour>=12 && hour<=14)       pts -= 1; // almoço: alivia
-  else if (hour>=15 && hour<=17 && score>=2) pts += 1; // tarde: segundo pico
-  if (season!=='summer' && hour>=17)   pts -= 1; // fora do verão a luz morre ~17h30: o pico esvazia mais cedo
-  else if (hour>=19)                   pts -= 1; // verão: esvazia perto do anoitecer
+  else if (hour>=15 && hour<17 && score>=2) pts += 1; // tarde: segundo pico
+  if (hour>=17)                        pts -= 1; // a partir das 17h o pico SEMPRE esvazia (regra do Hudson)
   if (dayOfWeek===0 && hour>=15)       pts -= 1; // domingo à tarde: todo mundo indo embora
+
+  // antes das 6h não tem como estar cheio, ponto (regra do Hudson)
+  if (hour<6) return Math.min(2, Math.max(1, pts - 1));
 
   return Math.max(1, Math.min(5, pts));
 }
@@ -1929,12 +1931,13 @@ function _crowdContext(c, hour, score, beachName, dayOfWeek) {
 
   const reasons = [];
   if (isNight)       return 'Noite. Lineup vazio. Só você e o mar.';
+  if (hour>=5 && hour<6) return 'Madrugada de dawn patrol. Ainda não tem crowd: é a sua janela.';
   if (isDawn)        return score>=4
-    ? 'Dawn patrol de dia bom: os ferrenhos madrugaram e o pico já tem fila.'
+    ? 'Dawn patrol de dia bom: os ferrenhos já chegaram, mas ainda dá pra escolher onda.'
     : 'Dawn patrol. Os ferrenhos já estão lá, mas ainda tem espaço.';
   if (isLunch)       reasons.push('horário de almoço alivia o pico');
   if (dayOfWeek===0 && hour>=15) reasons.push('domingo à tarde, galera indo embora');
-  if (season!=='summer' && hour>=17) reasons.push('a luz já vai embora, pico esvaziando');
+  if (hour>=17) reasons.push('depois das 17h o pico esvazia');
   if (holiday)       reasons.push('feriado nacional — praia vai estar cheia');
   else if (isWknd)   reasons.push('fim de semana');
   if (season==='summer') reasons.push('alta temporada de verão');
