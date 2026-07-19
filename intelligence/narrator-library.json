@@ -26065,7 +26065,403 @@
           "aviso": null
         }
       ]
+    },
+    "praia-do-futuro|peito-ombro|curto-vaga|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "O alísio jogando a favor no Futuro",
+          "analise": "Manhã com ondas passando do metro na Praia do Futuro e o vento soprando da terra pro mar, o que é meio raro por aqui: o alísio costuma atrapalhar, hoje ele penteia. O swell curto ainda deixa as séries apressadas, mas a parede fica em pé o suficiente pra manobrar. Nas barracas mais conhecidas o pico concentra; andando um pouco pela faixa se acha banco vazio. Aproveita cedo, que vento de Fortaleza muda de ideia rápido.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-futuro|peito-ombro|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde de insistência no Futuro",
+          "analise": "A Praia do Futuro segue com ondas na casa do metro e pouco mais à tarde, mas o vento lateral moderado voltou a arrepiar tudo. Com o swell curto, as paredes ficam tortas e a espuma cruza o pico o tempo todo. Dá surf, do tipo que exige catar onda com paciência e aceitar umas viradas de quilha. Beach break urbano tem isso: sempre tem um banco funcionando melhor que o resto, vale caminhar antes de entrar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-futuro|cintura-peito|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Futuro embalando pra dormir",
+          "analise": "À noite o mar da Praia do Futuro perde um pouco de tamanho, ficando perto de um metro, com o lateral moderado ainda mexendo na superfície. O período curto segue juntando as séries, sem dar respiro nem forma. Não é cenário que pague o risco de água escura em praia urbana. As barracas fecham, o pico esvazia, e o mar fica trabalhando os bancos pra amanhã.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|peito-ombro|curto-vaga|lateral-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Unamar com volume e pressa",
+          "analise": "Ondas quase chegando ao metro e meio em Unamar de manhã, mas com o swell de leste pegando a praia de raspão e período curto embolando a chegada. O lateral moderado espalha a espuma pela faixa de Tamoios. Tem força na água e a remada cansa mais do que parece. Pra quem gosta de beach break bruto sem ninguém por perto, dá sessão; pra quem quer linha desenhada, hoje não é o dia.",
+          "janela": null,
+          "aviso": "Correnteza lateral na faixa: marque referência na areia."
+        }
+      ]
+    },
+    "unamar|peito-ombro|curto-vaga|lateral-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde bruta em Tamoios",
+          "analise": "Unamar segue à tarde com mar passando do metro e meio, swell curto chegando atravessado e vento lateral moderado por cima. As séries quebram fortes e desordenadas, com bastante água se movendo. É aquele mar que serve de academia: fôlego, remada e leitura de banco. Onda pra colecionar, só se sair uma ou outra alinhada no meio da bagunça. Praia vazia, então o critério de segurança é todo seu.",
+          "janela": null,
+          "aviso": "Praia deserta: evite surfar sozinho com o mar nesse volume."
+        }
+      ]
+    },
+    "unamar|peito-ombro|curto-vaga|lateral-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Unamar fechada pro expediente",
+          "analise": "O vento lateral engrossou pra forte à noite em Unamar e o mar, na casa do metro e meio, virou espuma cruzada de ponta a ponta. Swell curto, ventania e escuridão em praia deserta não formam convite, formam armadilha. Nada pra aproveitar agora. O lado útil de um mar revirado assim é que ele mexe os bancos de areia, e às vezes deixa presente pro dia seguinte.",
+          "janela": null,
+          "aviso": "Não entre: deserto, escuro e mar desordenado."
+        }
+      ]
+    },
+    "praia-grande-arraial|ombro-cabeca|curto-vaga|lateral-forte|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Praia Grande no vento sul de respeito",
+          "analise": "O mar cresceu pra perto de dois metros na Praia Grande à tarde, com o vento forte varrendo a faixa mais surfada de Arraial. O swell chega de raspão e curto, então é volume sem ordem: séries em cima das outras e espuma voando. Os locais conhecem os cantos que seguram um mínimo de forma, mas mesmo pra eles hoje é mais treino de casca grossa que sessão. Visitante, melhor esperar essa ventania passar.",
+          "janela": null,
+          "aviso": "Mar forte e vento de 40km/h: só com muita experiência."
+        }
+      ]
+    },
+    "praia-grande-arraial|peito-ombro|curto-vaga|lateral-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Arraial soprado noite adentro",
+          "analise": "A ventania segue firme na Praia Grande à noite, com mar passando do metro e meio, curto e desalinhado. A praia que de dia concentra o surf de Arraial fica entregue ao vento e à correnteza no escuro. Não tem leitura nem segurança pra sessão nesse cenário. Deixa a noite pro mar e confere a leitura da manhã: swell com vento assim às vezes amanhece maior e mais arrumado.",
+          "janela": null,
+          "aviso": "Condição noturna perigosa: correnteza e mar desordenado."
+        }
+      ]
+    },
+    "tombo|cintura-peito|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tombo educado nesta tarde",
+          "analise": "O Tombo tá com ondas perto de um metro à tarde, swell de leste entrando direto e um lateral fraco que mal marca a superfície. O período médio organiza séries decentes pra praia mais competitiva do Guarujá: a onda quebra com a força característica do tombo, rápida e com punch, mesmo nesse tamanho. Bom pra treinar manobra de verdade. Fim de tarde costuma juntar a galera local, então chegue com leitura de fila.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|peito-ombro|curto-vaga|lateral-forte|manha|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Monte Alto varrido de manhã",
+          "analise": "O dia começa ventando forte de lado em Monte Alto, com mar na casa do metro e meio chegando apressado e de raspão na faixa que segue da Praia Grande. Espuma cruzada domina o visual e a parede não sustenta linha. A vantagem de sempre, ninguém por perto, hoje é também o risco. Se a vontade apertar, fica no raso treinando espuma; o mar de verdade está intratável.",
+          "janela": null,
+          "aviso": "Vento de quase 40km/h e praia vazia: cuidado redobrado."
+        }
+      ]
+    },
+    "monte-alto|peito-ombro|curto-vaga|lateral-forte|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Tarde de vento dono do pedaço",
+          "analise": "Monte Alto segue à tarde com o lateral forte mandando e o mar passando do metro e meio sem conseguir se organizar. Swell curto e atravessado nessa faixa aberta de Arraial vira máquina de espuma: série em cima de série, sem canal claro pra entrar nem sair. É dia de deixar o pico em paz. Mar assim costuma estar remodelando os bancos, e essa faixa agradece depois.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|peito-ombro|curto-vaga|lateral-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Monte Alto entregue ao vento",
+          "analise": "A noite mantém a ventania lateral em Monte Alto, mar na casa do metro e meio revirado de ponta a ponta. Faixa deserta, escuridão total e correnteza correndo a praia: não existe sessão possível aqui agora. O que existe é o barulho bonito de um mar trabalhando sozinho. Amanhã o app conta se ele deixou algo aproveitável no lugar.",
+          "janela": null,
+          "aviso": "Não entre no escuro nessa faixa deserta."
+        }
+      ]
+    },
+    "mocambique|cintura-peito|curto-vaga|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Moçambique batida pelo vento do mar",
+          "analise": "Na praia mais longa e selvagem de Floripa, a tarde traz ondas perto de um metro com onshore moderado desmanchando as paredes. O swell de nordeste entra direto, mas curto e embolado do jeito que está, quebra sem convite. Os 12km de areia deserta continuam valendo a caminhada pela natureza do parque, prancha embaixo do braço só por otimismo. Espera o vento cair pra essa praia mostrar o que sabe.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "pantano-do-sul|joelho-cintura|curto-vaga|offshore-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Pântano pequeno e penteado",
+          "analise": "Mar na casa do meio metro no Pântano do Sul de manhã, com o terral moderado segurando e alisando o pouco que chega. O swell curto e de raspão não traz volume, mas o vento a favor deixa as ondinhas limpas na frente da vila de pescadores. Cenário pra longboard deslizar e pra iniciante pegar onda de cara boa. Se o barco dos pescadores cruzar teu caminho, a prioridade é deles: sempre foi.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "pantano-do-sul|joelho-cintura|curto-vaga|onshore-moderado|tarde|fora": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Tarde miúda e mexida no Pântano",
+          "analise": "O vento virou do mar à tarde no Pântano do Sul e desmanchou o pouco que tinha: ondas na casa do meio metro, curtas, vindo de uma direção que a enseada não aproveita. Ficou aquele marzinho picado sem parede, bom só pra molhar o corpo. A vila segue bonita e o peixe fresco na vila resolve a tarde melhor que a prancha. Amanhã se conversa de novo com o mar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "pantano-do-sul|joelho-cintura|curto-vaga|offshore-moderado|noite|fora": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Pântano quieto sob o terral noturno",
+          "analise": "O terral voltou à noite no Pântano do Sul, alisando um mar pequeno, na casa do meio metro, que chega fora da janela da enseada. Fica bonito de ver da areia, com as luzes da vila e o mar penteado, mas não há tamanho nem forma pra justificar borracha molhada no frio. Se o swell virar de madrugada, esse terral de manhã seria outra conversa. Por ora, contemplação.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tucuns|peito-ombro|curto-vaga|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tucuns brava e sozinha",
+          "analise": "Tucuns amanhece com ondas na casa do metro e meio e o swell de leste entrando direto, mas o vento lateral forte picota as paredes antes de elas renderem. O período curto ajuda a bagunçar. Ainda assim, na praia mais deserta de Búzios sempre escapa uma onda alinhada pra quem tem paciência de esperar entre as séries. Mar com força e ninguém em volta: dose a coragem com bom senso.",
+          "janela": null,
+          "aviso": "Sem apoio por perto: não surfe sozinho com esse volume."
+        }
+      ]
+    },
+    "tucuns|peito-ombro|curto-vaga|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "O vento não deu trégua em Tucuns",
+          "analise": "A tarde segue ventando forte de lado em Tucuns, com o mar na casa do metro e meio quebrando desordenado pela praia vazia. O swell entra na direção certa, o que mantém força na água, mas a forma se perde na ventania. Surf de luta: remada pesada, espuma cruzada, recompensa rara. A boa notícia de sempre por aqui é o silêncio; a má é que hoje ele vem com chicote de vento e areia.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tucuns|peito-ombro|curto-vaga|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Tucuns só para o vento e as estrelas",
+          "analise": "À noite, Tucuns fica com o mar na casa do metro e meio rolando bravo e desorganizado sob vento lateral forte. A praia mais isolada de Búzios não tem uma luz sequer apontada pro mar, e isolamento com mar forte é conta que não fecha. Nenhuma sessão vale isso. Deixa o vento gastar a raiva dele e pergunta de novo na primeira luz.",
+          "janela": null,
+          "aviso": "Isolamento total: não entre à noite."
+        }
+      ]
+    },
+    "praia-brava-arraial|ombro-cabeca|curto-vaga|lateral-forte|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "A Brava fazendo jus ao nome",
+          "analise": "Perto de dois metros na Brava de Arraial à tarde, com vento lateral forte e swell curto chegando atravessado. A praia mais pesada da região vira caldeirão nesse cenário: séries grossas desabando sem ordem, muita água descendo a faixa e caldo garantido pra quem errar a conta. Só faz sentido pra surfista muito rodado em mar bruto, e ainda assim escolhendo a dedo. O resto curte o espetáculo do costão.",
+          "janela": null,
+          "aviso": "Mar pesado e desordenado: séries fecham com força."
+        }
+      ]
+    },
+    "barra-da-lagoa|cintura-peito|medio-7a9|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Barra da Lagoa no capricho matinal",
+          "analise": "Manhã caprichada na Barra: ondas perto de um metro, período médio de uns 7 segundos e o terral moderado alisando tudo na frente da vila. O swell de nordeste entra certinho no canto, formando aquelas direitas educadas que fizeram a fama de melhor pico de aprendizado de Floripa. Escola na água cedo, mar amigável, vento a favor. Se você está evoluindo, dia desses vale por três treinos.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-lagoa|joelho-cintura|curto-vaga|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "A Barra depois que o vento virou",
+          "analise": "À tarde o onshore moderado assumiu a Barra da Lagoa e o mar caiu pra casa do meio metro, picado e sem parede firme. O que de manhã era escadinha pra aprender virou espuma embaralhada. Segue sendo o canto mais seguro de Floripa pra treinar base e remada, então aula e treino leve continuam de pé. Quem busca onda de verdade espera a próxima virada de vento.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-lagoa|cintura-peito|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Barra recolhida à noite",
+          "analise": "A noite na Barra da Lagoa traz mar perto de um metro, curto e mexido pelo vento lateral moderado. O canal dos pescadores segue trabalhando, o pico não: sem luz e sem forma, a onda que sobra não paga o frio da água. A vila tem peixe frito e história boa pra encerrar o dia. O mar fica de molho pra ver o que o amanhecer combina com o vento.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tramandai|peito-ombro|medio-7a9|offshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tramandaí com cara de dia bom",
+          "analise": "Manhã acima da média no litoral gaúcho: ondas passando do metro em Tramandaí, período médio dando alguma organização e um terral fraco penteando a superfície. O swell chega meio de raspão, mas o banco perto da barra alinha as melhores séries. Mar com força típica do retão, que cobra remada. Pra quem surfa RS no inverno, isso aqui é convite: borracha boa e pra dentro antes do vento virar.",
+          "janela": "6h-10h",
+          "aviso": "Respeite a zona da barra do rio: correnteza e tráfego de barcos."
+        }
+      ]
+    },
+    "tramandai|peito-ombro|medio-7a9|onshore-fraco|tarde|fora": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde funcional no retão",
+          "analise": "O vento virou fraco do mar à tarde em Tramandaí e o swell passou a chegar de uma direção que a praia aproveita pouco. As ondas seguem passando do metro, com período médio segurando um resto de ordem: paredes curtas, quebra pesada aqui e ali. Dá pra surfar e pegar bastante onda, sem esperar desenho fino. No retão gaúcho, tarde assim conta como dia razoável, e razoável a gente aproveita.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "tramandai|peito-ombro|curto-vaga|onshore-fraco|noite|fora": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Tramandaí apagando as luzes",
+          "analise": "O mar segue com volume à noite em Tramandaí, passando do metro, mas curto e desalinhado da direção que funciona. A brisa fraca do mar não estraga mais nada; a escuridão e a água gelada do inverno gaúcho encerram a discussão. Fica o barulho forte do retão como companhia. Se o swell ganhar período de madrugada, a barra amanhece interessante.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "setiba|cintura-peito|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Setiba em ritmo de vigília",
+          "analise": "A noite capixaba deixa Setiba com mar perto de um metro, swell curto de leste e um lateral fraco que pouco muda a cena. As séries chegam juntas e sem forma definida, quebrando apressadas na praia às escuras. Não é mar que justifique sessão noturna. O reduto do surf de Guarapari descansa agora; a conversa de verdade fica pra primeira luz, quando o vento costuma estar mais educado.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "domingas-dias|cintura-peito|medio-7a9|glassy|noite|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Domingas Dias espelhada à noite",
+          "analise": "Quase sem vento nenhum em Domingas Dias à noite, e o mar perto de um metro chega com período médio numa superfície de espelho. A enseada abrigada de Ubatuba recebe o swell de raspão, então quebra suave, quase educada demais. Seria sessão de manual se houvesse luz. Fica a promessa: se esse glass sobreviver à madrugada, a primeira hora do dia aqui vai ser de postal.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "guarda-do-embau|joelho-cintura|curto-vaga|offshore-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Guarda pequena, mas com as maré certas",
+          "analise": "A Guarda do Embaú amanhece pequena, na casa do meio metro, com o terral moderado alisando a onda da foz do rio. O swell chega curto e de raspão, então a famosa direita da Reserva Mundial não engrena de verdade, só insinua o desenho. Pra remada leve, long e primeira espuma do dia com cenário de cartão postal, resolve. A travessia do rio de prancha continua sendo metade do charme.",
+          "janela": "6h-10h",
+          "aviso": "Atenção à correnteza na travessia do rio."
+        }
+      ]
+    },
+    "guarda-do-embau|joelho-cintura|curto-vaga|lateral-moderado|tarde|fora": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Tarde de folga na Guarda",
+          "analise": "À tarde o vento lateral moderado assumiu a Guarda do Embaú e o pouco mar que tinha, na casa do meio metro e fora da janela da praia, virou textura picada sem onda de verdade. A direita da foz precisa de swell com mais período e direção melhor pra mostrar serviço. Dia de subir o costão, olhar a Reserva do alto e deixar a prancha descansando. O pico devolve em dobro quando o mar chegar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "guarda-do-embau|joelho-cintura|curto-vaga|offshore-moderado|noite|fora": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Guarda sob terral e silêncio",
+          "analise": "O terral moderado segue à noite na Guarda do Embaú, alisando um mar pequeno que chega fora da janela da foz. Meio metro sem direção certa não acende o pico nem de dia, muito menos no escuro com a travessia do rio no caminho. A vila fica quieta e o rio corre frio. Se um swell novo encostar de madrugada, esse mesmo terral faz a manhã valer a travessia.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "barra-do-sahy|joelho-cintura|medio-7a9|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Sahy de manhã é escola de porta aberta",
+          "analise": "Manhã ideal pra quem está começando na Barra do Sahy: ondinhas na casa do meio metro, período de uns 8 segundos organizando séries pacientes e o terral moderado deixando a superfície lisinha. O swell de sudeste entra certo na foz protegida. É onda mansa com forma de verdade, o melhor tipo pra evoluir drop e remada sem susto. Família na areia, long na água, e o dia começa ganho.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-do-sahy|joelho-cintura|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Sahy segue dócil na tarde",
+          "analise": "A brisa fraca do mar arrepia de leve a Barra do Sahy à tarde, mas o período médio segura a organização das ondinhas na casa do meio metro. A foz protegida continua entregando quebra suave e previsível, perfeita pra treino de base e pras crianças pegarem espuma com segurança. Não espere parede pra manobrar: espere repetição tranquila, que é o que constrói surfista.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-do-sahy|joelho-cintura|medio-7a9|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Sahy na paz noturna",
+          "analise": "À noite o Sahy fica com meio metro de onda mansa, terral fraco e período médio mantendo tudo em ordem, quebrando quieto na foz. É o mar mais inofensivo do litoral norte agora, mas escuro é escuro, e onda pequena não paga a visibilidade zero. A leitura que importa: se nada mudar, a primeira luz repete a manhã dócil de hoje. Pra quem ensina alguém a surfar, agenda amanhã cedo.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "itacarezinho|ombro-cabeca|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Itacarezinho com tamanho de respeito",
+          "analise": "O mar chega perto dos dois metros no Itacarezinho de manhã, com swell de leste entrando em cheio na praia mais aberta de Itacaré. A brisa fraca do mar arrepia a superfície sem desmontar as paredes, e o período médio mantém séries fortes e surfáveis. Onda com pressão, drop comprometido, recompensa grande. Pra intermediário pra cima, é a sessão do dia na região; iniciante curte do coqueiral.",
+          "janela": "6h-10h",
+          "aviso": "Mar com força: respeite as séries maiores e a correnteza."
+        }
+      ]
+    },
+    "itacarezinho|ombro-cabeca|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde grande e mais bagunçada em Itacaré",
+          "analise": "O Itacarezinho segue perto dos dois metros à tarde, mas o vento do mar subiu pra moderado e começou a desarrumar as paredes que a manhã tinha. Ainda passa onda boa no meio, com a força de sempre, só que a escolha ficou mais difícil e o caldo mais frequente. Surfista rodado tira sessão daqui; quem está no limite do tamanho, melhor não duvidar do mar da Bahia hoje.",
+          "janela": null,
+          "aviso": "Séries grandes com intervalo curto: avalie antes de entrar."
+        }
+      ]
     }
   },
-  "generated_at": "2026-07-19T22:43:18.253Z"
+  "generated_at": "2026-07-19T23:09:16.692Z"
 }
