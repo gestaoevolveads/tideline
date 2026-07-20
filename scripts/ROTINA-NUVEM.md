@@ -37,6 +37,9 @@ se o cache mudou, commite com a mesma assinatura. Nunca invente pendência.
 
 ## Regras de escrita (o importador reprova quem quebra)
 
+> Fonte CANÔNICA: `intelligence/knowledge/06-voz-do-narrador.md`. Leia ela
+> também; se este resumo divergir dela, ELA vence.
+
 - Português brasileiro, 3 a 5 frases em camadas: (1) o que está rolando no mar,
   (2) o que o surfista vai SENTIR na água, (3) fechamento honesto + UMA dica
   concreta. Tom de amigo experiente na areia, não de locutor. No máximo 1 gíria.

@@ -1680,22 +1680,22 @@ function buildTranslation(wind, period, height, windDir, beach) {
 
   if(period>=12){
     const src=`${conj} ${pTerm} de ${period}s, as séries chegam bem espaçadas e organizadas. Dá pra ver cada grupo vindo lá de trás e escolher a onda com calma.`;
-    if(big) p2=`${src} Ondas de ombro pra cima com potência real. Dia pra surfista experiente.`;
-    else if(good) p2=`${src} Ondas de peito a ombro com parede aberta, tamanho ideal pra manobrar sem pressão.`;
+    if(big) p2=`${src} Mar com potência real: a remada pesa e o drop cobra decisão. Dia pra surfista experiente.`;
+    else if(good) p2=`${src} Parede aberta e energia na medida: dá pra manobrar sem pressão.`;
     else p2=`${src} Ondas ainda pequenas, mas com a qualidade que um período longo traz. Pode crescer ao longo do dia.`;
   } else if(period>=10){
     const src=`${conj} ${pTerm} de ${period}s, o swell chega organizado. Dá pra antecipar cada série e se posicionar.`;
-    if(big) p2=`${src} Ondas de ombro pra cima. Swell com tamanho e ritmo.`;
-    else if(good) p2=`${src} Ondas de peito a ombro com espaço pra manobrar.`;
+    if(big) p2=`${src} Swell com força e ritmo: a onda empurra de verdade.`;
+    else if(good) p2=`${src} Parede com espaço pra manobrar sem sufoco.`;
     else p2=`${src} Ondas pequenas mas com forma real, bom pra trabalhar posicionamento e remada.`;
   } else if(period>=8){
     const src=`${conj} ${pTerm} de ${period}s, as séries chegam com algum ritmo, dá pra antecipar a próxima.`;
-    if(big) p2=`${src} Ondas de ombro pra cima. O tamanho compensa um pouco a condição.`;
-    else if(good) p2=`${src} Ondas de peito a ombro. ${isBad?'Surfável, mas sem esperar parede perfeita.':'Bom tamanho pra maioria.'}`;
+    if(big) p2=`${src} A força do mar compensa um pouco a condição.`;
+    else if(good) p2=`${src} ${isBad?'Surfável, mas sem esperar parede perfeita.':'Energia boa pra maioria dos níveis.'}`;
     else p2=`${src} Ondas menores. ${isBad?'Mar funcional, mas vai exigir paciência.':'Bom dia pra treinar sem pressão de crowd.'}`;
   } else if(period>=6){
     const src=`Com ${pTerm} curto de ${period}s, as séries chegam misturadas, mar de vento local, sem alinhamento entre uma onda e outra.`;
-    p2=`${src} ${(big||good)?'Tem tamanho, mas sem forma pra manobrar.':ok?'Pequenas e bagunçadas.':'Flat na prática.'}`;
+    p2=`${src} ${(big||good)?'Tem força na água, mas sem forma pra manobrar.':ok?'Fraquinho e bagunçado.':'Flat na prática.'}`;
   } else {
     p2=small?`Com ${pTerm} de apenas ${period}s, é mar de vento puro. Mais espuma do que onda. Sem forma pra nada.`:`Flat. ${pTerm} de ${period}s e nada quebrando. Nada que valha a remada.`;
   }

@@ -67,6 +67,7 @@ function loadKnowledge() {
     'intelligence/knowledge/03-seguranca-no-mar.md',
     'intelligence/knowledge/04-etiqueta-e-tecnica.md',
     'intelligence/knowledge/05-lingua-e-giria.md',
+    'intelligence/knowledge/06-voz-do-narrador.md',
   ];
   return files
     .map(f => {
