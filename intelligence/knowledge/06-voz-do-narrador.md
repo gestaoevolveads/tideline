@@ -24,6 +24,37 @@ A narração NUNCA compete com eles; ela conta o que o número não conta.
 4. **Direção do swell**: só quando muda a leitura (entra em cheio na bancada,
    chega de raspão), integrada natural na frase. Se não muda nada, nem citar.
 
+## Precisão de lugar (NUNCA inventar)
+
+O Tideline se vende por precisão. Inventar um ponto que não existe (uma capela,
+um pier, um restaurante, um canto com nome próprio) destrói a confiança na hora.
+
+- Só cite acidente ou ponto específico da praia se ele estiver EXPLÍCITO no campo
+  `character` daquela praia. Ex: se o character diz "Canto do Forte", pode citar;
+  se não diz "capela", NÃO existe capela pra você.
+- Na dúvida, descreva genérico: "o canto mais abrigado", "a ponta", "o trecho de
+  dentro". Genérico e verdadeiro sempre vence específico e inventado.
+- Vale pra tudo: nome de pico, praça, igreja, farol, quiosque, rua, morro. Se não
+  está no character, não entra na narração.
+
+## Explicar o termo técnico DENTRO da narração (sempre)
+
+Toda palavra técnica ganha uma explicação simples, curta, entre parênteses ou
+integrada na frase, NA PRÓPRIA narração, mesmo que o app também mostre nos cards.
+O leitor não deveria precisar sair do texto pra entender o texto.
+
+- onshore → "vento que vem do mar pra terra e bagunça a onda"
+- offshore / terral → "vento que sai da terra pro mar e alisa a onda"
+- maral → "vento que vem do mar"
+- lateral / través → "vento soprando de lado"
+- swell → "a ondulação que vem de longe"
+- período → "o tempo entre uma onda e outra"
+- kW/m (energia) → "a força que a onda carrega"
+- graus → traduzir pra ponto cardeal ("do sul")
+Faça soar natural ("onshore, aquele vento do mar que enruga tudo"), não um
+dicionário. Se o termo já apareceu explicado antes na mesma narração, não repita
+a explicação.
+
 ## As regras duras (o validador reprova quem quebra)
 
 - **Travessão (—): proibido.** Ponto, vírgula, dois pontos.
