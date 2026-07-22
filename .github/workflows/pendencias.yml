@@ -1,0 +1,51 @@
+name: Pendências + cache (grátis, sem IA)
+
+# ── A PONTE PRA NUVEM (desde jul/2026) ──────────────────────────────────────
+# A rotina do Claude na nuvem escreve as narrações de graça (no plano), MAS o
+# ambiente dela não tem internet além do GitHub, então ela não consegue buscar
+# a previsão no Open-Meteo. Este job resolve isso: o runner do GitHub TEM
+# internet, então ele busca a previsão e deixa dois presentes no repositório:
+#   1. data/pendencias-nuvem.json  → a lista de condições SEM narração, pronta
+#      pra nuvem ler e escrever (ela não precisa de internet pra isso).
+#   2. o cache do app reconstruído (refresh) → surface o que a nuvem já escreveu
+#      na biblioteca desde a última vez.
+# Custo ZERO: não usa a API da Anthropic, só roda os scripts Node e busca o
+# Open-Meteo, que é grátis. Roda de 6/6h, meia hora ANTES da rotina da nuvem.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 23,5,11,17 * * *'   # 30 min antes das janelas 00/06/12/18 da nuvem
+
+concurrency:
+  group: tideline-data-push
+  cancel-in-progress: false
+
+jobs:
+  pendencias:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Instalar dependências
+        run: npm install
+        working-directory: scripts
+
+      - name: Exportar pendências (o que falta narrar)
+        run: node scripts/pendencias.js --max 400 > data/pendencias-nuvem.json
+      - name: Reconstruir o cache (surface o que a nuvem já escreveu)
+        run: node scripts/refresh-narrator.js
+
+      - name: Commit e push
+        run: |
+          git config --global user.name 'Tideline Bot'
+          git config --global user.email 'bot@tideline.app'
+          git add data/pendencias-nuvem.json demo/narrator-cache.json demo/narrator-stats.json
+          git diff --staged --quiet && { echo "nada novo"; exit 0; }
+          git commit -m "chore: pendências + cache (grátis, sem IA)"
+          git pull --rebase --autostash origin main
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
