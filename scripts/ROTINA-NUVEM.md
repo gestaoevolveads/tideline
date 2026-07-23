@@ -67,5 +67,5 @@ encerre sem commit. Nunca invente pendência.
   que veio na pendência. Não está lá = não existe. Na dúvida, genérico ("o canto
   mais abrigado", "a ponta").
 - EXPLIQUE O TERMO TÉCNICO na própria narração: onshore, offshore, terral, maral,
-  swell, período, kW, lateral, través, sempre com uma explicação curta e simples
-  junto (entre parênteses ou integrada), mesmo que o app mostre nos cards.
+  swell, período, lateral, través, sempre com uma explicação curta e simples
+  junto (entre parênteses ou integrada), mesmo que o app mostre nos cards. ENERGIA (kW): nunca em número, só qualitativa (força fraca/pesada, remada leve/cansa), igual ao tamanho.

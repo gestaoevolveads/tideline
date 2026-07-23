@@ -22,8 +22,10 @@ const REGRAS = [
   // tamanho é papel da métrica do app, não do texto (pedido do Hudson, jul/2026:
   // texto citando medida cria sensação de previsão errada quando o número difere)
   [/\bmetros?\b|metrinho|meio metro|metro e meio|\bcent[íi]metros?\b|\bcm\b|\bpalmos?\b/i, 'cita tamanho de onda (proibido: o app mostra o número)'],
+  // energia idem: NUNCA em número (kW/quilowatts). Descreva a força qualitativa.
+  [/\d+\s*(kw|quilowatts?)|\b(seis|sete|oito|nove|dez|onze|doze|quinze|vinte|trinta)\s+quilowatts/i, 'cita energia em número (use força qualitativa)'],
   [/[0-9]+,[0-9]+ ?(segundos?|km\/h|kW|graus)/, 'decimal cravado'],
-  [/\b(only|the|with|and)\b/i, 'inglês vazado'],
+  [/\b(only|the|with|and|strong|nice|good|clean|small|big|glassy|wave)\b/i, 'inglês vazado'],
 ];
 const TURNO_RX = [
   [/\bmanh[ãa]|\bamanhec|\bcedo\b|\bcedinho/i, 'manha'],

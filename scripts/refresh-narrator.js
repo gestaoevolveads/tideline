@@ -32,8 +32,11 @@ function ehFossil(v) {
   if (/\b(joelho a cintura|cintura a peito|peito a ombro|ombro a cabe|peito pra cima|quase cabe|cabe[çc]a e meia|meio caixote)/i.test(t)) return true;
   if (/\b(ondas?|tamanho|altura|s[ée]ries?|mar) de (joelho|cintura|peito|ombro|cabe[çc]a)/i.test(t)) return true;
   if (/\bombros?\b/i.test(t)) return true;
-  // vazamento de inglês no meio do português ("Only detalhe: ...")
-  if (/\b(only|the|with)\b/i.test(t)) return true;
+  // metro solto e energia em número: o app mostra os números, o texto não repete
+  if (/\bmetros?\b|\bcasa do\b(?!s)|\bmar e meio\b/i.test(t)) return true;
+  if (/\d+\s*(kw|quilowatts?)|\b(seis|sete|oito|nove|dez|onze|doze|quinze|vinte|trinta)\s+quilowatts/i.test(t)) return true;
+  // vazamento de inglês no meio do português ("Only detalhe: ...", "terral strong")
+  if (/\b(only|the|with|and|strong|nice|good|clean|small|big|glassy|wave)\b/i.test(t)) return true;
   return false;
 }
 

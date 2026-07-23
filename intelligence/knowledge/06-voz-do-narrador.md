@@ -49,7 +49,10 @@ O leitor não deveria precisar sair do texto pra entender o texto.
 - lateral / través → "vento soprando de lado"
 - swell → "a ondulação que vem de longe"
 - período → "o tempo entre uma onda e outra"
-- kW/m (energia) → "a força que a onda carrega"
+- kW/m (energia): NUNCA em número (nem "12 kW", nem "doze quilowatts"). Mesma
+  regra do tamanho: descreva a FORÇA de forma qualitativa (energia fraca, a
+  remada leve; energia pesada, o caldo castiga e o drop cobra). O número não
+  ajuda o iniciante e ninguém tem essa métrica na cabeça.
 - graus → traduzir pra ponto cardeal ("do sul")
 Faça soar natural ("onshore, aquele vento do mar que enruga tudo"), não um
 dicionário. Se o termo já apareceu explicado antes na mesma narração, não repita

@@ -1633,6 +1633,16 @@ function buildSessionBanner(fTimes, windDirs, windSpeeds, fIdx) {
   }
   if(cur&&!win)win=cur;
 
+  // janela de terral só vale de dia (5h-17h). Terral que só sopra à noite não é
+  // convite pra surfar no escuro: recorta pro horário de surf, e some se sobrar nada.
+  if(win){
+    const lo=new Date(win.start);lo.setHours(5,0,0,0);
+    const hi=new Date(win.start);hi.setHours(17,0,0,0);
+    if(win.start<lo)win.start=lo;
+    if(win.end>hi)win.end=hi;
+    if(win.start>=win.end)win=null;
+  }
+
   if(win)return`<span class="sh-pill">🌅 Janela de ${tSpan('terral')}: ${fmtHour(win.start)}–${fmtHour(win.end)}</span>`;
   if(curWind.label==='Maral')return`<span class="sh-pill muted">🌊 ${mSpan('Maral')} ${dayLabel}, mar picado</span>`;
   const latTip='Vento paralelo à praia, vindo de lado. Nem da terra nem do mar. Efeito misturado: sempre tem algum canto com onda mais limpa ao longo da praia.';
