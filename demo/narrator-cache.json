@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T12:37:15.308Z",
+  "generated_at": "2026-07-23T12:59:05.186Z",
   "beaches": {
     "Saquarema": {
       "dias": {
@@ -234,113 +234,7 @@
       }
     },
     "Praia do Forte": {
-      "dias": {
-        "2026-07-23": {
-          "manha": {
-            "score": 3,
-            "titulo": "Vento fraco, parede em pé",
-            "analise": "Com o terral, o vento que sopra da terra pro mar soprando fraquinho, a parede das ondas fica bem comportada mesmo com período médio de quase 9 segundos. A série chega organizada o suficiente pra você escolher a sua sem pressa. Na água dá pra sentir a onda segurando forma até o fim, sem fechar de repente. Boa condição pra quem quer surfar com calma no fim do dia.",
-            "janela": null,
-            "aviso": null
-          },
-          "tarde": {
-            "score": 3,
-            "titulo": "Terral segurando mar com pegada",
-            "analise": "O vento vindo da terra, o terral, tá com uns 19 km/h e deixa a parede lisa mesmo com as ondas vindo mais apertadas, período na casa dos 8 segundos. As ondas trazem energia considerável, a remada exige e a descida vem com pressão de verdade. Na água a sensação é de mar rápido, que não dá muito tempo de pensar. Se curte um desafio na tarde, essa condição entrega, só ajusta a prancha pra algo que rema bem nessa força.",
-            "janela": null,
-            "aviso": null
-          }
-        },
-        "2026-07-24": {
-          "tarde": {
-            "score": 3,
-            "titulo": "Terral segurando mar com pegada",
-            "analise": "O vento vindo da terra, o terral, tá com uns 19 km/h e deixa a parede lisa mesmo com as ondas vindo mais apertadas, período na casa dos 8 segundos. As ondas trazem energia considerável, a remada exige e a descida vem com pressão de verdade. Na água a sensação é de mar rápido, que não dá muito tempo de pensar. Se curte um desafio na tarde, essa condição entrega, só ajusta a prancha pra algo que rema bem nessa força.",
-            "janela": null,
-            "aviso": null
-          }
-        },
-        "2026-07-25": {
-          "manha": {
-            "score": 3,
-            "titulo": "Vento de lado, mar comportado",
-            "analise": "Com vento fraco vindo de lado, o lateral, a superfície não sofre muito e as ondas mantêm boa forma. O período uns 9 segundos já entrega série organizada, dá pra ver a próxima chegando com tempo de se posicionar. Na água você vai sentir uma parede consistente, nem rápida demais nem lenta, boa pra qualquer manobra. Condição sólida pra começar o dia surfando no Forte.",
-            "janela": "6h-9h",
-            "aviso": null
-          },
-          "tarde": {
-            "score": 3,
-            "titulo": "Parede lisa no fim de tarde",
-            "analise": "Com o vento fraco vindo de terra, o terral, a tarde entrega uma superfície bem tratada pras ondas que estão rolando. O período na casa dos 9 segundos e meio organiza bem a série, sem bagunça, sem onda em cima da outra. Na água você sente a parede segurando até o final, espaço de sobra pra manobra. É desses dias que rendem uma boa sessão sem drama nenhum.",
-            "janela": "15h-17h",
-            "aviso": null
-          },
-          "noite": {
-            "score": 3,
-            "titulo": "Vento fraco, parede em pé",
-            "analise": "Com o terral, o vento que sopra da terra pro mar soprando fraquinho, a parede das ondas fica bem comportada mesmo com período médio de quase 9 segundos. A série chega organizada o suficiente pra você escolher a sua sem pressa. Na água dá pra sentir a onda segurando forma até o fim, sem fechar de repente. Boa condição pra quem quer surfar com calma no fim do dia.",
-            "janela": null,
-            "aviso": null
-          }
-        },
-        "2026-07-26": {
-          "manha": {
-            "score": 1,
-            "titulo": "Manhã pequena mas organizada",
-            "analise": "O mar amanheceu pequeno, ondas com vento lateral fraco que não bagunça muito a superfície. O período na casa dos 10 e meio segundos ainda entrega série organizada, mesmo com pouca energia por trás. Na água a sensação é de onda suave, sem muita força, mas com forma legível. Bom dia pra treinar remada, pop-up ou levar quem tá começando pra pegar espuma com tranquilidade.",
-            "janela": null,
-            "aviso": null
-          },
-          "tarde": {
-            "score": 3,
-            "titulo": "Tarde limpa e organizada",
-            "analise": "O terral fraco da tarde, esse vento que sopra da terra pro mar deixa a parede lisa e ajuda a manter as ondas em forma. Período de quase 10 segundos garante série bem espaçada, dá pra escolher a onda com calma. Na água a sensação é de superfície limpa, ideal pra trabalhar linhas mais soltas. Boa janela pra fechar o dia com uma sessão tranquila e produtiva.",
-            "janela": "15h-17h",
-            "aviso": null
-          },
-          "noite": {
-            "score": 2,
-            "titulo": "Noite mansa",
-            "analise": "O vento de lado tá fraco e não atrapalha muito as ondas que estão chegando essa noite. Com período de quase 11 segundos, a série vem bem organizada mesmo com pouca energia por trás. Na água a sensação é leve, sem cobrar força na remada nem na descida. Boa condição pra uma sessão tranquila ou pra treinar leitura de banco sem pressão.",
-            "janela": null,
-            "aviso": null
-          }
-        },
-        "2026-07-27": {
-          "noite": {
-            "score": 1,
-            "titulo": "O Forte no modo máquina de lavar",
-            "analise": "A noite mantém o vento forte do mar na Praia do Forte e o mar segue revirado, sem forma nem intervalo decente entre as séries. Não existe surf pra aproveitar nesse cenário, só água fria e escuridão. O consolo honesto: onshore (vento do mar pra terra que bagunça a onda) forte costuma ser sinal de sistema passando, e atrás dele às vezes vem a limpeza. Amanhã o app conta se veio.",
-            "janela": null,
-            "aviso": null
-          }
-        },
-        "2026-07-28": {
-          "noite": {
-            "score": 1,
-            "titulo": "O Forte no modo máquina de lavar",
-            "analise": "A noite mantém o vento forte do mar na Praia do Forte e o mar segue revirado, sem forma nem intervalo decente entre as séries. Não existe surf pra aproveitar nesse cenário, só água fria e escuridão. O consolo honesto: onshore (vento do mar pra terra que bagunça a onda) forte costuma ser sinal de sistema passando, e atrás dele às vezes vem a limpeza. Amanhã o app conta se veio.",
-            "janela": null,
-            "aviso": null
-          }
-        },
-        "2026-07-29": {
-          "manha": {
-            "score": 1,
-            "titulo": "Forte tomado pelo onshore",
-            "analise": "O vento forte do mar chega junto com o dia na Praia do Forte, embolando as ondas. Com período curto e onshore (vento do mar pra terra que bagunça a onda) nessa intensidade, os 7km de faixa viram um tapete de espuma sem parede definida. Nem o Canto do Forte, o mais abrigado, segura a manhã. É dia de olhar pela janela, tomar café sem culpa e deixar o mar gastar essa energia bagunçada.",
-            "janela": null,
-            "aviso": null
-          },
-          "noite": {
-            "score": 1,
-            "titulo": "O Forte no modo máquina de lavar",
-            "analise": "A noite mantém o vento forte do mar na Praia do Forte e o mar segue revirado, sem forma nem intervalo decente entre as séries. Não existe surf pra aproveitar nesse cenário, só água fria e escuridão. O consolo honesto: onshore (vento do mar pra terra que bagunça a onda) forte costuma ser sinal de sistema passando, e atrás dele às vezes vem a limpeza. Amanhã o app conta se veio.",
-            "janela": null,
-            "aviso": null
-          }
-        }
-      }
+      "dias": {}
     },
     "Praia do Peró": {
       "dias": {

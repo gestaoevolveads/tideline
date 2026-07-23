@@ -1455,7 +1455,8 @@ initAuth();
 
 /* ── STATE ─────────────────────────────────────────── */
 let gMarine = null, gForecast = null, gSelectedIdx = 0, gSelectedDay = 0;
-let gBeach = { name:'Praia do Forte', city:'Cabo Frio', state:'RJ', lat:-22.88, lon:-42.01, region:'sudeste', art:'na' };
+let gBeach = { name:'Praia do Forte', city:'Cabo Frio', state:'RJ', lat:-22.88, lon:-42.01, region:'sudeste', art:'na', terral:'N/NO' };
+try{ setBeachTerral(gBeach.terral); }catch(e){}
 let gLastScore=0, gLastWaveH=0, gLastWaveP=0, gLastWind='';
 let gNarratorCache = null;
 
@@ -3643,6 +3644,7 @@ function selectBeach(idx) {
     return;
   }
   gBeach = BEACHES[idx];
+  try{ setBeachTerral(gBeach.terral); }catch(e){}
   saveRecentBeach(gBeach);
   document.getElementById('loc-name').textContent = gBeach.name;
   document.getElementById('loc-state').textContent = gBeach.state;
@@ -4481,7 +4483,7 @@ function selectBeachByName(name) {
   if (idx >= 0) selectBeach(idx);
   else {
     const b = ONDE_SAMPLE_BEACHES.find(b => b.name === name);
-    if (b) { gBeach = b; saveRecentBeach(b); loadData(); }
+    if (b) { gBeach = b; try{ setBeachTerral(b.terral); }catch(e){} saveRecentBeach(b); loadData(); }
   }
 }
 

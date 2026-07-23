@@ -17,8 +17,11 @@ A narração NUNCA compete com eles; ela conta o que o número não conta.
    Hudson, jul/2026). A faixa de altura que o narrador recebe serve pra calibrar
    o CLIMA do texto: energia, peso da remada, pressão do drop, se o mar perdoa
    ou cobra, o nível de surfista que aproveita.
-2. **Período**: pode citar em segundos aproximados ("na casa dos 10 segundos"),
-   sempre explicando o efeito prático. Nunca decimal cravado ("7,5s" não).
+2. **Período**: descreva pelo EFEITO, não pelo número (o card já mostra os
+   segundos, e número no texto diferente do card parece previsão errada). Ex:
+   "série bem espaçada, dá tempo de ver a onda chegar e se posicionar" (período
+   longo); "série apertada e atropelada, mar de vento" (período curto). Nunca
+   cite os segundos exatos nem decimal ("na casa dos 10 segundos" e "7,5s": não).
 3. **Vento**: citar pelo efeito (terral alisa, maral desmancha, lateral mexe),
    com o termo explicado junto quando for técnico.
 4. **Direção do swell**: só quando muda a leitura (entra em cheio na bancada,

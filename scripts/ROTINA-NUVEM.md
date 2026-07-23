@@ -68,4 +68,4 @@ encerre sem commit. Nunca invente pendência.
   mais abrigado", "a ponta").
 - EXPLIQUE O TERMO TÉCNICO na própria narração: onshore, offshore, terral, maral,
   swell, período, lateral, través, sempre com uma explicação curta e simples
-  junto (entre parênteses ou integrada), mesmo que o app mostre nos cards. ENERGIA (kW): nunca em número, só qualitativa (força fraca/pesada, remada leve/cansa), igual ao tamanho.
+  junto (entre parênteses ou integrada), mesmo que o app mostre nos cards. ENERGIA (kW): nunca em número, só qualitativa (força fraca/pesada, remada leve/cansa), igual ao tamanho. PERÍODO: descreva pelo efeito (série espaçada vs apertada), NUNCA em segundos (o card já mostra).

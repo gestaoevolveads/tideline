@@ -2405,172 +2405,6 @@
         }
       ]
     },
-    "praia-do-forte|peito-ombro|longo-11a13|onshore-moderado|manha": {
-      "variacoes": [
-        {
-          "titulo": "Onda boa, vento atrapalhando",
-          "score": 2,
-          "analise": "O mar do Forte tá com ondas boa parede formada porque o período tá na casa dos 11 segundos, o que significa série organizada, dá pra ver a próxima chegando de longe. O problema é o vento vindo do mar pra praia, o chamado onshore (vento do mar pra terra que bagunça a onda), forte o suficiente pra picotar a superfície e derrubar a parede antes da hora. Na água você vai sentir a força boa embaixo mas a crista toda esfarelada, difícil de ler. Se for entrar, tenta o Canto do Forte que segura mais a marola e sofre menos com esse vento.",
-          "janela": null,
-          "aviso": null
-        }
-      ]
-    },
-    "praia-do-forte|peito-ombro|medio-7a9|offshore-moderado|tarde": {
-      "variacoes": [
-        {
-          "titulo": "Terral segurando mar com pegada",
-          "score": 3,
-          "analise": "O vento vindo da terra, o terral, tá com uns 19 km/h e deixa a parede lisa mesmo com as ondas vindo mais apertadas, período na casa dos 8 segundos. As ondas trazem energia considerável, a remada exige e a descida vem com pressão de verdade. Na água a sensação é de mar rápido, que não dá muito tempo de pensar. Se curte um desafio na tarde, essa condição entrega, só ajusta a prancha pra algo que rema bem nessa força.",
-          "janela": null,
-          "aviso": null
-        }
-      ]
-    },
-    "praia-do-forte|peito-ombro|medio-7a9|offshore-fraco|noite": {
-      "variacoes": [
-        {
-          "titulo": "Noite tranquila e organizada",
-          "score": 3,
-          "analise": "A noite chega com o vento de terra pro mar o terral, mais ameno, e isso deixa a superfície lisa mesmo com o período na casa dos 8 e meio segundos. As ondas formam série razoavelmente espaçada, dá pra ler o que vem antes de remar. Na água a sensação é de onda com corpo mas sem exagero, boa pra trabalhar linha e ritmo. É uma condição sólida pra fechar o dia, sem grandes sustos.",
-          "janela": null,
-          "aviso": null
-        },
-        {
-          "titulo": "Vento fraco, parede em pé",
-          "score": 3,
-          "analise": "Com o terral, o vento que sopra da terra pro mar soprando fraquinho, a parede das ondas fica bem comportada mesmo com período médio de quase 9 segundos. A série chega organizada o suficiente pra você escolher a sua sem pressa. Na água dá pra sentir a onda segurando forma até o fim, sem fechar de repente. Boa condição pra quem quer surfar com calma no fim do dia.",
-          "janela": null,
-          "aviso": null
-        }
-      ]
-    },
-    "praia-do-forte|peito-ombro|bom-9a11|lateral-fraco|manha": {
-      "variacoes": [
-        {
-          "titulo": "Manhã de série organizada",
-          "score": 3,
-          "analise": "O vento tá vindo de lado, o chamado lateral, e fraco, então não atrapalha muito a formação das ondas. Com período uns 9 segundos, já dá pra falar de swell de verdade, série contável e com alguma organização. Na água a sensação é de onda com forma boa, nem mole demais nem oca demais, ideal pra treinar manobra. É uma manhã que vale a entrada, principalmente se você gosta de trabalhar a parede com calma.",
-          "janela": "6h-9h",
-          "aviso": null
-        },
-        {
-          "titulo": "Vento de lado, mar comportado",
-          "score": 3,
-          "analise": "Com vento fraco vindo de lado, o lateral, a superfície não sofre muito e as ondas mantêm boa forma. O período uns 9 segundos já entrega série organizada, dá pra ver a próxima chegando com tempo de se posicionar. Na água você vai sentir uma parede consistente, nem rápida demais nem lenta, boa pra qualquer manobra. Condição sólida pra começar o dia surfando no Forte.",
-          "janela": "6h-9h",
-          "aviso": null
-        }
-      ]
-    },
-    "praia-do-forte|peito-ombro|bom-9a11|offshore-fraco|tarde": {
-      "variacoes": [
-        {
-          "titulo": "Tarde limpa e organizada",
-          "score": 3,
-          "analise": "O terral fraco da tarde, esse vento que sopra da terra pro mar deixa a parede lisa e ajuda a manter as ondas em forma. Período de quase 10 segundos garante série bem espaçada, dá pra escolher a onda com calma. Na água a sensação é de superfície limpa, ideal pra trabalhar linhas mais soltas. Boa janela pra fechar o dia com uma sessão tranquila e produtiva.",
-          "janela": "15h-17h",
-          "aviso": null
-        },
-        {
-          "titulo": "Parede lisa no fim de tarde",
-          "score": 3,
-          "analise": "Com o vento fraco vindo de terra, o terral, a tarde entrega uma superfície bem tratada pras ondas que estão rolando. O período na casa dos 9 segundos e meio organiza bem a série, sem bagunça, sem onda em cima da outra. Na água você sente a parede segurando até o final, espaço de sobra pra manobra. É desses dias que rendem uma boa sessão sem drama nenhum.",
-          "janela": "15h-17h",
-          "aviso": null
-        }
-      ]
-    },
-    "praia-do-forte|peito-ombro|bom-9a11|glassy|noite": {
-      "variacoes": [
-        {
-          "titulo": "Noite de mar manso e limpo",
-          "score": 2,
-          "analise": "O vento tá quase parado, só um lateral bem fraco, e isso deixa a superfície tranquila pras ondas que estão entrando. O período uns 9 segundos e meio ainda organiza a série, mas a energia mais baixa entrega um mar mais suave, sem muita pressão na descida. Na água a sensação é de onda gostosa de surfar, sem cobrar demais do corpo. Boa noite pra treinar posicionamento e aproveitar uma sessão mais de boa.",
-          "janela": null,
-          "aviso": null
-        },
-        {
-          "titulo": "Pouca força, muita organização",
-          "score": 2,
-          "analise": "Com vento fraco de lado, o lateral, o mar fica limpo e as ondas chegam com boa forma mesmo com pouca energia por baixo. O período na casa dos 9 segundos e meio garante série espaçada, fácil de ler quem tá começando a entender previsão. Na água você sente um surf mais suave, sem caldo pesado, ótimo pra soltar a mão em manobras mais técnicas. Vale entrar sem pressa nenhuma.",
-          "janela": null,
-          "aviso": null
-        }
-      ]
-    },
-    "praia-do-forte|cintura-peito|bom-9a11|onshore-moderado|manha": {
-      "variacoes": [
-        {
-          "titulo": "Manhã pequena e mexida",
-          "score": 1,
-          "analise": "O mar tá menor, ondas e o vento vindo do mar pra praia, o onshore (vento do mar pra terra que bagunça a onda), com força suficiente pra bagunçar a superfície. O período uns 9 segundos ainda tenta organizar alguma coisa, mas a energia baixa entrega pouca força na descida. Na água você vai sentir onda mole e picotada, sem muita parede pra trabalhar. Bom dia pra focar na remada e treinar pop-up na espuma, sem cobrar performance.",
-          "janela": null,
-          "aviso": null
-        },
-        {
-          "titulo": "Vento atrapalhando um mar pequeno",
-          "score": 1,
-          "analise": "Com ondas e o vento onshore, esse que vem do mar e bagunça tudo, a manhã não entrega muita qualidade. O período na casa dos 9 segundos até ajuda um pouco, mas a energia baixa já limita o tamanho e a força da onda. Na água a sensação é de mar mexido, difícil de ler série. É um dia bom pra focar em fundamentos, treinar remada e ficar mais tempo na espuma.",
-          "janela": null,
-          "aviso": null
-        }
-      ]
-    },
-    "praia-do-forte|cintura-peito|bom-9a11|lateral-fraco|tarde": {
-      "variacoes": [
-        {
-          "titulo": "Tarde mansa pra soltar a mão",
-          "score": 2,
-          "analise": "O vento de lado, o lateral, tá fraco e deixa o mar relativamente tratável pra essa tarde. Com período de quase 10 segundos, a série vem organizada mesmo sem muita força por trás. Na água você sente uma onda tranquila, sem pressão, ótima pra treinar manobras mais soltas ou levar o longboard. Dá pra aproveitar bem sem cobrar nada demais do corpo.",
-          "janela": null,
-          "aviso": null
-        },
-        {
-          "titulo": "Onda pequena, leitura fácil",
-          "score": 2,
-          "analise": "Com pouco vento de lado, o lateral, a tarde entrega um mar organizado, período rodando perto dos 10 segundos garantindo série espaçada. A energia é baixa, então não espera muita força na descida, mas isso não tira a graça de surfar. Na água a sensação é leve, boa pra trabalhar estilo e fluidez. Ótima condição pra quem tá evoluindo ou quer uma sessão de longboard tranquila.",
-          "janela": null,
-          "aviso": null
-        }
-      ]
-    },
-    "praia-do-forte|cintura-peito|bom-9a11|lateral-fraco|noite": {
-      "variacoes": [
-        {
-          "titulo": "Noite mansa",
-          "score": 2,
-          "analise": "O vento de lado tá fraco e não atrapalha muito as ondas que estão chegando essa noite. Com período de quase 11 segundos, a série vem bem organizada mesmo com pouca energia por trás. Na água a sensação é leve, sem cobrar força na remada nem na descida. Boa condição pra uma sessão tranquila ou pra treinar leitura de banco sem pressão.",
-          "janela": null,
-          "aviso": null
-        },
-        {
-          "titulo": "Pouca energia, boa organização",
-          "score": 2,
-          "analise": "Com vento lateral fraco, a noite entrega um mar organizado, período rondando os 11 segundos e trazendo série espaçada. A energia baixa significa onda mais mansa, sem muita força na descida. Na água você sente um surf tranquilo, ideal pra soltar a mão em manobras mais suaves. Dá pra aproveitar de boa, sem grande exigência física.",
-          "janela": null,
-          "aviso": null
-        }
-      ]
-    },
-    "praia-do-forte|cintura-peito|bom-9a11|glassy|manha": {
-      "variacoes": [
-        {
-          "titulo": "Manhã lisa e generosa",
-          "score": 3,
-          "analise": "O terral tá praticamente calmo, quase sem vento, o que deixa a superfície lisa igual vidro pras ondas. Com período de quase 11 segundos, a série vem espaçada e organizada, sobra tempo pra escolher bem cada onda. Na água você sente a parede limpa e macia, ótima pra trabalhar qualquer manobra com precisão. É uma manhã que recompensa quem chega cedo, mesmo com o tamanho mais modesto.",
-          "janela": "6h-9h",
-          "aviso": null
-        },
-        {
-          "titulo": "Vidro na maré e mar organizado",
-          "score": 3,
-          "analise": "Sem quase nada de vento, a Praia do Forte acorda com a superfície lisa, tratando bem as ondas que estão entrando. O período na casa dos 11 segundos garante série espaçada, dá pra ler tudo com calma antes de remar. Na água a sensação é de onda macia e previsível, mesmo sem muita força na descida. Vale acordar cedo pra essa condição, principalmente se curte trabalhar estilo.",
-          "janela": "6h-9h",
-          "aviso": null
-        }
-      ]
-    },
     "praia-do-pero|peito-ombro|longo-11a13|onshore-fraco|tarde": {
       "variacoes": [
         {
@@ -5573,89 +5407,6 @@
           "score": 3,
           "titulo": "Vila com volume bom na virada de noite",
           "analise": "Tamanho com período médio, por volta de 9 segundos, série chegando mais junta. O vento lateral fraco quase não atrapalha a forma. A força na água é boa, com pressão real na hora de descer. Aproveita essa condição noturna com cuidado extra no lineup, buscando o abrigo perto da igrejinha.",
-          "janela": null,
-          "aviso": null
-        }
-      ]
-    },
-    "praia-do-forte|peito-ombro|longo-11a13|offshore-fraco|tarde": {
-      "variacoes": [
-        {
-          "titulo": "Terral segurando a tarde",
-          "score": 4,
-          "analise": "A tarde chega com o vento virando terral, esse que sopra da terra pro mar e vem alisando a parede da onda deixando tudo mais vidro. As ondas com período uns 11 segundos formam série espaçada e organizada, dá pra remar tranquilo e escolher a sua. Na água a sensação é de parede limpa segurando bem, com energia suficiente pra dar impulso na descida sem ficar pesado. Vale entrar, e o Canto do Forte deve estar ainda mais gostoso com esse terral fraco.",
-          "janela": "14h-17h",
-          "aviso": null
-        },
-        {
-          "titulo": "Tarde limpa no beach break",
-          "score": 4,
-          "analise": "Depois de um dia mais bagunçado, a tarde traz o vento de terra pro mar o terral, que lixa a superfície e deixa tudo liso. Com período rodando na casa dos 11 segundos, as ondas vêm em série bem espaçada, o tipo de swell que já teve tempo de se organizar lá fora. Na água você vai sentir a parede segurando, bom pra trabalhar manobra com calma. É um daqueles fins de tarde que valem a pena, principalmente perto do Canto do Forte.",
-          "janela": "14h-17h",
-          "aviso": null
-        }
-      ]
-    },
-    "praia-do-forte|peito-ombro|bom-9a11|offshore-moderado|noite": {
-      "variacoes": [
-        {
-          "titulo": "Noite de vento a favor",
-          "score": 3,
-          "analise": "Com a noite chegando o vento continua de terra pro mar o terral, só que já mais forte, uns 20 km/h, o que segura a parede mas pode empurrar o bico da prancha na entrada. O período caiu um pouco, na casa dos 9 segundos, ainda assim organiza bem as ondas que estão rolando. Na água a sensação é de onda com corpo, precisa remar com mais força pra entrar por causa do vento de frente. Se for pegar, capricha na remada e mira o Canto do Forte, que segura melhor esse tipo de mar.",
-          "janela": null,
-          "aviso": null
-        }
-      ]
-    },
-    "praia-do-forte|cintura-peito|bom-9a11|glassy|noite": {
-      "variacoes": [
-        {
-          "titulo": "Noite de vento quase parado",
-          "score": 2,
-          "analise": "O vento onshore (vento do mar pra terra que bagunça a onda) tá tão fraco que praticamente não incomoda, deixando o mar surfável mesmo vindo do lado errado. O período na casa dos 10 e meio segundos organiza bem a série, o que compensa a falta de força maior. Na água você sente uma onda tranquila e previsível, boa pra quem gosta de surfar sem pressa. Fecha bem o dia, principalmente pra quem quer aproveitar sem crowd.",
-          "janela": null,
-          "aviso": null
-        },
-        {
-          "titulo": "Mar calmo pra fechar o dia",
-          "score": 2,
-          "analise": "Quase sem vento, mesmo sendo onshore (vento do mar pra terra que bagunça a onda), a superfície fica limpa o suficiente pras ondas que estão rolando essa noite. O período de quase 11 segundos entrega série bem organizada, dá pra ver a próxima chegando com tranquilidade. Na água a sensação é de onda mansa e previsível, sem pressão de energia alta. Boa pedida pra encerrar o dia com uma sessão relaxada.",
-          "janela": null,
-          "aviso": null
-        }
-      ]
-    },
-    "praia-do-forte|cintura-peito|bom-9a11|lateral-fraco|manha": {
-      "variacoes": [
-        {
-          "titulo": "Manhã pequena mas organizada",
-          "score": 1,
-          "analise": "O mar amanheceu pequeno, ondas com vento lateral fraco que não bagunça muito a superfície. O período na casa dos 10 e meio segundos ainda entrega série organizada, mesmo com pouca energia por trás. Na água a sensação é de onda suave, sem muita força, mas com forma legível. Bom dia pra treinar remada, pop-up ou levar quem tá começando pra pegar espuma com tranquilidade.",
-          "janela": null,
-          "aviso": null
-        },
-        {
-          "titulo": "Pouca força, mar tratável",
-          "score": 1,
-          "analise": "Com vento fraco de lado, o mar fica tratável mesmo sem muita energia rolando. O período uns 10 segundos e meio ainda mantém alguma organização na série. Na água você sente uma onda mole mas honesta, sem grandes surpresas. É um dia perfeito pra focar em fundamentos ou aproveitar com o longboard, sem cobrar performance.",
-          "janela": null,
-          "aviso": null
-        }
-      ]
-    },
-    "praia-do-forte|peito-ombro|medio-7a9|glassy|tarde": {
-      "variacoes": [
-        {
-          "titulo": "Tarde de vento quase nulo",
-          "score": 2,
-          "analise": "O vento onshore (vento do mar pra terra que bagunça a onda) tá tão fraco que quase não conta, deixando as ondas relativamente organizadas apesar do período mais curto, na casa dos 7 e meio segundos. Esse período menor faz a série chegar mais em cima uma da outra, então a leitura pede atenção. Na água a sensação é de onda com alguma força mas pouca formação de parede longa. Dá pra aproveitar bem, principalmente treinando entradas rápidas.",
-          "janela": null,
-          "aviso": null
-        },
-        {
-          "titulo": "Mar mexido só na origem",
-          "score": 2,
-          "analise": "Mesmo com período mais curto, por volta de 7 e meio segundos, o vento quase parado ajuda as ondas a manterem alguma organização essa tarde. A série vem mais próxima uma da outra, típico de período menor, então a onda fecha mais rápido. Na água você sente uma condição ágil, boa pra treinar reação e pega-e-desce. Vale a sessão pra quem curte um ritmo mais acelerado.",
           "janela": null,
           "aviso": null
         }
@@ -12806,17 +12557,6 @@
         }
       ]
     },
-    "praia-do-forte|ombro-cabeca|bom-9a11|offshore-fraco|tarde": {
-      "variacoes": [
-        {
-          "score": 4,
-          "titulo": "Tarde redonda no beach break do Forte",
-          "janela": "13h-17h",
-          "aviso": null,
-          "analise": "Deu a virada boa do dia. O mar tá, o período subiu pra casa dos 10 segundos e isso organiza a série, dá tempo de ler antes de remar. A força na água é média, uma descida gostosa sem cobrar demais do corpo. Com o vento leve de terra a superfície fica lisa e a parede segura, condição pra quem tá começando também aproveitar. Uma prancha com um pouco mais de volume ajuda a entrar cedo na onda e se der fica no Canto do Forte, que aqui é onde a marola forma melhor."
-        }
-      ]
-    },
     "maresias|peito-ombro|bom-9a11|lateral-fraco|manha": {
       "variacoes": [
         {
@@ -15722,39 +15462,6 @@
         }
       ]
     },
-    "praia-do-forte|cintura-peito|curto-vaga|onshore-forte|manha|dentro": {
-      "variacoes": [
-        {
-          "score": 1,
-          "titulo": "Forte tomado pelo onshore",
-          "analise": "O vento forte do mar chega junto com o dia na Praia do Forte, embolando as ondas. Com período curto e onshore (vento do mar pra terra que bagunça a onda) nessa intensidade, os 7km de faixa viram um tapete de espuma sem parede definida. Nem o Canto do Forte, o mais abrigado, segura a manhã. É dia de olhar pela janela, tomar café sem culpa e deixar o mar gastar essa energia bagunçada.",
-          "janela": null,
-          "aviso": null
-        }
-      ]
-    },
-    "praia-do-forte|cintura-peito|curto-vaga|onshore-forte|tarde|dentro": {
-      "variacoes": [
-        {
-          "score": 1,
-          "titulo": "Tarde de espuma em Cabo Frio",
-          "analise": "Segue o vento forte do mar na Praia do Forte, com ondas quebrando sem ordem nenhuma. O swell de leste até entra direto na praia, mas o período curto e o onshore (vento do mar pra terra que bagunça a onda) transformam tudo em espuma rolando. Kitesurf e windsurf agradecem um dia desses; a pranchinha, não. Se o corpo pede água, o papel de hoje é espuma pra treinar base, sem expectativa.",
-          "janela": null,
-          "aviso": null
-        }
-      ]
-    },
-    "praia-do-forte|cintura-peito|curto-vaga|onshore-forte|noite|dentro": {
-      "variacoes": [
-        {
-          "score": 1,
-          "titulo": "O Forte no modo máquina de lavar",
-          "analise": "A noite mantém o vento forte do mar na Praia do Forte e o mar segue revirado, sem forma nem intervalo decente entre as séries. Não existe surf pra aproveitar nesse cenário, só água fria e escuridão. O consolo honesto: onshore (vento do mar pra terra que bagunça a onda) forte costuma ser sinal de sistema passando, e atrás dele às vezes vem a limpeza. Amanhã o app conta se veio.",
-          "janela": null,
-          "aviso": null
-        }
-      ]
-    },
     "praia-do-cupe|ombro-cabeca|medio-7a9|lateral-moderado|noite|dentro": {
       "variacoes": [
         {
@@ -18296,39 +18003,6 @@
         }
       ]
     },
-    "praia-do-forte|cintura-peito|curto-vaga|onshore-moderado|manha|dentro": {
-      "variacoes": [
-        {
-          "score": 7,
-          "titulo": "Manhã com maral mexendo em Praia do Forte",
-          "analise": "De manhã, o mar entrega o onshore soprando moderado (vento que vem do mar pra terra e bagunça a onda), enrugando bastante a parede. A condição vem em tamanho equilibrado, nem punitivo nem fraco, a remada exige ritmo, sem virar sacrifício, e a energia embaixo é moderada, dá pra sentir a força sem se assustar. Já o período é curto, na casa dos 6 segundos (o tempo entre uma onda e a próxima), então as ondas vêm mais juntas e menos organizadas. Na prática, nesse trecho conhecido como 7km de beach break exposto em Cabo Frio, dá pra qualquer nível se divertir aqui, cada um no seu ritmo: fique de olho no banco de areia, ele muda e quem lê de dentro d'água acha o pico certo.",
-          "janela": "6h-10h",
-          "aviso": null
-        }
-      ]
-    },
-    "praia-do-forte|cintura-peito|curto-vaga|onshore-moderado|tarde|dentro": {
-      "variacoes": [
-        {
-          "score": 7,
-          "titulo": "Tarde com maral mexendo em Praia do Forte",
-          "analise": "A tarde segue com um onshore de força média, vindo do mar pra terra, que deixa a água picotada e a leitura mais difícil. O mar mostra um tamanho que rende onda de verdade, a remada pede atenção mas não cansa demais, e a onda carrega uma energia mediana, aquele empurrão que dá pra controlar. Já com período curto, por volta de 6 segundos entre uma onda e outra, a série chega mais apertada e a leitura fica mais rápida. Na prática, nesse trecho conhecido como 7km de beach break exposto em Cabo Frio, tanto quem tá começando quanto quem já rodou mar acham onda pra chamar de sua: o fundo de areia muda de posição, vale caminhar a praia antes de escolher onde remar.",
-          "janela": "14h-17h",
-          "aviso": null
-        }
-      ]
-    },
-    "praia-do-forte|cintura-peito|curto-vaga|offshore-fraco|noite|dentro": {
-      "variacoes": [
-        {
-          "score": 10,
-          "titulo": "Noite com terral leve em Praia do Forte",
-          "analise": "A noite por aqui define um vento fraco vindo de terra pro mar (o offshore, que ajuda a alisar a onda), só uma mão leve na organização. A condição vem em tamanho equilibrado, nem punitivo nem fraco, a remada exige ritmo, sem virar sacrifício, e a energia embaixo é moderada, dá pra sentir a força sem se assustar. Já o período é curto, na casa dos 6 segundos (o tempo entre uma onda e a próxima), então as ondas vêm mais juntas e menos organizadas. Na prática, nesse trecho conhecido como 7km de beach break exposto em Cabo Frio, dá pra qualquer nível se divertir aqui, cada um no seu ritmo: fique de olho no banco de areia, ele muda e quem lê de dentro d'água acha o pico certo.",
-          "janela": null,
-          "aviso": null
-        }
-      ]
-    },
     "saquarema|cintura-peito|medio-7a9|offshore-fraco|manha|dentro": {
       "variacoes": [
         {
@@ -18880,5 +18554,5 @@
       ]
     }
   },
-  "generated_at": "2026-07-23T12:37:15.298Z"
+  "generated_at": "2026-07-23T12:59:05.171Z"
 }
