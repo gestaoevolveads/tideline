@@ -27,6 +27,16 @@ A narração NUNCA compete com eles; ela conta o que o número não conta.
 4. **Direção do swell**: só quando muda a leitura (entra em cheio na bancada,
    chega de raspão), integrada natural na frase. Se não muda nada, nem citar.
 
+## Preposição + nome da praia: NÃO usar
+
+Nunca escreva "na/no/em/numa + nome da praia" (ex: "na Praia do Forte", "em
+Itamambuca"). A preposição certa muda de praia pra praia e errar soa péssimo, e
+o app já mostra qual é a praia no topo. Fale da praia como SUJEITO ("O Forte
+acordou grande", "Itamambuca segue entregando"), use "aqui"/"no pico"/"nesse
+canto", ou simplesmente não nomeie ("o mar amanhece manso", "a onda abre limpa").
+O nome pode aparecer como sujeito ou possessivo curto ("o mar do Forte"), nunca
+depois de na/no/em.
+
 ## Precisão de lugar (NUNCA inventar)
 
 O Tideline se vende por precisão. Inventar um ponto que não existe (uma capela,

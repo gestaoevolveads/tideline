@@ -62,6 +62,7 @@ encerre sem commit. Nunca invente pendência.
   entre 5h e 17h; à noite, sem janela. Sem inglês vazado. Direção do swell só
   quando muda a leitura. Score coerente. `aviso` só com risco real. Nunca repita
   a mesma abertura em duas narrações do lote.
+- NUNCA use "na/no/em + nome da praia" (preposição varia por praia; o app já mostra qual é). Praia como sujeito ("O Forte...") ou não nomeie.
 - NUNCA INVENTE LUGAR: só cite ponto/acidente específico (capela, pier, canto
   com nome, farol, restaurante) se estiver EXPLÍCITO no `perfil.carater` da praia
   que veio na pendência. Não está lá = não existe. Na dúvida, genérico ("o canto
