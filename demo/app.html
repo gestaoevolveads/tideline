@@ -1607,15 +1607,17 @@ function buildSessionBanner(fTimes, windDirs, windSpeeds, fIdx) {
 
   const curDir=((parseFloat(windDirs[fIdx]||0)%360)+360)%360;
   const curSpd=parseFloat(windSpeeds[fIdx]||0);
-  const isTerral=curDir>=225&&curDir<=315&&curSpd<25;
   const curWind=classifyWind(parseFloat(windDirs[fIdx]||0));
+  // terral usa a classificação POR PRAIA (mesma do badge principal), nunca o range
+  // fixo 225-315 que só valia pra praia ao sul e contradizia a narração.
+  const isTerral=curWind.label==='Terral'&&curSpd<25;
 
   if(isTerral){
     let end=new Date(fTimes[fIdx]);end.setTime(end.getTime()+3600000);
     for(let i=fIdx+1;i<fTimes.length;i++){
       const t=new Date(fTimes[i]);if(t.toDateString()!==selectedDate)break;
       const d=((parseFloat(windDirs[i]||0)%360)+360)%360;
-      const ok=d>=225&&d<=315&&parseFloat(windSpeeds[i]||0)<25;
+      const ok=classifyWind(parseFloat(windDirs[i]||0)).label==='Terral'&&parseFloat(windSpeeds[i]||0)<25;
       if(ok)end=new Date(t.getTime()+3600000);else break;
     }
     const midnight=new Date(fTimes[fIdx]);midnight.setHours(23,59,59,999);
@@ -1628,7 +1630,7 @@ function buildSessionBanner(fTimes, windDirs, windSpeeds, fIdx) {
     const t=new Date(fTimes[i]);
     if(t.toDateString()!==selectedDate){if(cur)win=cur;break;}
     const d=((parseFloat(windDirs[i]||0)%360)+360)%360;
-    const ok=d>=225&&d<=315&&parseFloat(windSpeeds[i]||0)<25;
+    const ok=classifyWind(parseFloat(windDirs[i]||0)).label==='Terral'&&parseFloat(windSpeeds[i]||0)<25;
     if(ok){if(!cur)cur={start:t,end:new Date(t.getTime()+3600000)};else cur.end=new Date(t.getTime()+3600000);}
     else{if(cur){win=cur;break;}}
   }
