@@ -1540,13 +1540,13 @@ function waveClassify(kw) {
 }
 
 function scoreToHeadline(s, beach) {
-  const art = beachArticle(beach);
   const name = beach ? beach.name : 'o pico';
-  const artName = art + ' ' + name; // "na Praia do Forte", "no Arpoador", "em Maresias"
+  // nome como SUJEITO, sem "na/no/em + nome" (a preposição varia por praia) e em
+  // gênero neutro (serve pra "Praia do Forte" e pra "Arpoador" sem concordância).
   if (s >= 4) return `${name} tá pumping. Vai logo.`;
-  if (s >= 2) return `Tá bom ${artName}. Vale a remada.`;
-  if (s >= 0) return `Mar variado ${artName}. Tem onda, mas não tá fácil.`;
-  return `Hoje não tá ${artName}. Mar feio.`;
+  if (s >= 2) return `${name} tá rendendo. Vale a remada.`;
+  if (s >= 0) return `${name} tá com mar variado. Tem onda, mas não tá fácil.`;
+  return `${name} não tá pra surf hoje. Mar feio.`;
 }
 
 const DIRS = ['N','NNE','NE','ENE','L','ESE','SE','SSE','S','SSO','SO','OSO','O','ONO','NO','NNO'];
@@ -1704,7 +1704,7 @@ function buildTranslation(wind, period, height, windDir, beach) {
   } else if(period>=8){
     const src=`${conj} ${pTerm} de ${period}s, as séries chegam com algum ritmo, dá pra antecipar a próxima.`;
     if(big) p2=`${src} A força do mar compensa um pouco a condição.`;
-    else if(good) p2=`${src} ${isBad?'Surfável, mas sem esperar parede perfeita.':'Energia boa pra maioria dos níveis.'}`;
+    else if(good) p2=`${src} ${isBad?'Surfável, mas sem esperar parede perfeita.':'Acessível pra maioria dos níveis.'}`;
     else p2=`${src} Ondas menores. ${isBad?'Mar funcional, mas vai exigir paciência.':'Bom dia pra treinar sem pressão de crowd.'}`;
   } else if(period>=6){
     const src=`Com ${pTerm} curto de ${period}s, as séries chegam misturadas, mar de vento local, sem alinhamento entre uma onda e outra.`;
@@ -1717,16 +1717,18 @@ function buildTranslation(wind, period, height, windDir, beach) {
   const kw = wavePower(height, period);
   const cl = waveClassify(kw);
   let p3 = '';
+  // energia descrita pela FORÇA, nunca em número (o card mostra os kW). Assim o texto
+  // não contradiz o card (era o caso do '7.2 boa' vs 'ondas suaves').
   if (kw >= 50) {
-    p3 = ` <strong>Potência: ${Math.round(kw)} kW/m.</strong> Mar pesado com consequências reais. ${cl.board} é o equipamento certo. Condição exclusiva para surfistas experientes — saber ler o pico e sair da zona de impacto é tão importante quanto surfar.`;
+    p3 = ` <strong>Mar pesado, com consequências reais.</strong> ${cl.board} é o equipamento certo. Condição exclusiva para surfistas experientes: saber ler o pico e sair da zona de impacto é tão importante quanto surfar.`;
   } else if (kw >= 25) {
-    p3 = ` Com ${Math.round(kw)} kW/m de potência, esse swell tem punch de verdade. A onda vai empurrar forte na descida e punir quem errar o trim. ${cl.skill} em diante.`;
+    p3 = ` Esse swell tem punch de verdade. A onda vai empurrar forte na descida e punir quem errar o trim. ${cl.skill} em diante.`;
   } else if (kw >= 15) {
-    p3 = ` Energia de ${Math.round(kw)} kW/m: suficiente pra fazer manobras verticais e sentir a onda respondendo. Nível ${cl.skill}.`;
+    p3 = ` Energia na medida pra fazer manobras verticais e sentir a onda respondendo. Nível ${cl.skill}.`;
   } else if (kw < 5 && height >= 0.5) {
-    p3 = ` Potência baixa (${kw.toFixed(1)} kW/m): onda mole, pouca aceleração. Ideal pra iniciantes aprenderem posicionamento sem risco.`;
+    p3 = ` Energia baixa: onda mole, pouca aceleração. Ideal pra iniciantes aprenderem posicionamento sem risco.`;
   } else if (kw < 3) {
-    p3 = ` Com apenas ${kw.toFixed(1)} kW/m, praticamente não tem onda surfável. Dia pra foamie ou longboard em flat total.`;
+    p3 = ` Praticamente não tem onda surfável. Dia pra foamie ou longboard em flat total.`;
   }
 
   return p1 + ' ' + p2 + p3;
