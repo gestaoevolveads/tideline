@@ -1883,7 +1883,7 @@ function _season(d) {
   return 'low'; // março-maio, set-nov
 }
 
-function crowdIndex(score, hour, dayOfWeek, beachName) {
+function crowdIndex(score, hour, dayOfWeek, beachName, rain, windSpd) {
   const now = new Date();
   const profile = BEACH_CROWD_PROFILE[beachName] || {base:2, tourism:1, local:1};
   const isWknd   = dayOfWeek===0||dayOfWeek===6;
@@ -1895,10 +1895,24 @@ function crowdIndex(score, hour, dayOfWeek, beachName) {
 
   let pts = profile.base;
 
-  // — Condições (bom mar = mais gente) —
-  if (score>=5)       pts += 2;
-  else if (score>=3)  pts += 1;
-  else if (score<1)   pts -= 1;
+  // — Condições (bom mar = mais gente, mar ruim afasta na mesma proporção) —
+  // Escala gradual: score é "Condição ruim" abaixo de 0 (ver calcScore/scoreToVibe).
+  // Quanto pior, mais gente desiste — não é um -1 fixo que a temporada anula.
+  if (score>=5)        pts += 2;
+  else if (score>=3)   pts += 1;
+  else if (score>=1)   pts += 0;
+  else if (score>=-1)  pts -= 2;
+  else                 pts -= 4; // mar muito ruim: quase ninguém vai, período nenhum salva isso
+
+  // — Clima do dia: chuva e vento forte afastam gente, mesmo com o mar razoável —
+  if (rain!=null) {
+    if (rain>=70)      pts -= 2;
+    else if (rain>=40) pts -= 1;
+  }
+  if (windSpd!=null) {
+    if (windSpd>=35)      pts -= 2; // vento forte de verdade: ninguém fica na praia
+    else if (windSpd>=25) pts -= 1;
+  }
 
   // — Data —
   if (holiday)        pts += 2;   // feriado: praia cheia
@@ -1927,12 +1941,20 @@ function crowdIndex(score, hour, dayOfWeek, beachName) {
   // antes das 6h não tem como estar cheio, ponto (regra do Hudson)
   if (hour<6) return Math.min(2, Math.max(1, pts - 1));
 
-  return Math.max(1, Math.min(5, pts));
+  let result = Math.max(1, Math.min(5, pts));
+
+  // Teto de mar/clima ruim: nenhum bônus de temporada, feriado ou fim de semana
+  // deixa isso passar de "Tranquilo". Feriado com mar horrível não enche praia
+  // (regra do Hudson, jul/2026: tempo ruim tem que pesar mais que a época do ano).
+  const climaFeio = (rain!=null && rain>=60) || (windSpd!=null && windSpd>=30);
+  if (score < -1 || (score < 1 && climaFeio)) result = Math.min(result, 2);
+
+  return result;
 }
 
 const CROWD_LABELS=['','Vazio','Tranquilo','Moderado','Cheio','Lotado'];
 
-function _crowdContext(c, hour, score, beachName, dayOfWeek) {
+function _crowdContext(c, hour, score, beachName, dayOfWeek, rain, windSpd) {
   const now = new Date();
   const profile = BEACH_CROWD_PROFILE[beachName] || {base:2, tourism:1, local:1};
   const isWknd = dayOfWeek===0||dayOfWeek===6;
@@ -1943,6 +1965,8 @@ function _crowdContext(c, hour, score, beachName, dayOfWeek) {
   const isDawn = hour>=5 && hour<7;
   const isLunch = hour>=12 && hour<=14;
   const isNight = hour>=19||hour<5;
+  const chuvaForte = rain!=null && rain>=40;
+  const ventoForte = windSpd!=null && windSpd>=25;
 
   const reasons = [];
   if (isNight)       return 'Noite. Lineup vazio. Só você e o mar.';
@@ -1950,10 +1974,17 @@ function _crowdContext(c, hour, score, beachName, dayOfWeek) {
   if (isDawn)        return score>=4
     ? 'Dawn patrol de dia bom: os ferrenhos já chegaram, mas ainda dá pra escolher onda.'
     : 'Dawn patrol. Os ferrenhos já estão lá, mas ainda tem espaço.';
+  // clima e mar ruins vêm primeiro: são o motivo que mais pesa quando presentes
+  if (score < -1)     reasons.push('mar ruim afasta praticamente todo mundo');
+  else if (score<1)   reasons.push('mar fraco afasta a maioria');
+  if (rain!=null && rain>=70) reasons.push(`chuva forte prevista (${rain}%) — praia esvazia`);
+  else if (chuvaForte) reasons.push(`chance de chuva (${rain}%) segura parte da galera`);
+  if (windSpd!=null && windSpd>=35) reasons.push('vento muito forte — ninguém fica na areia');
+  else if (ventoForte) reasons.push('vento forte incomoda quem fica na areia');
   if (isLunch)       reasons.push('horário de almoço alivia o pico');
   if (dayOfWeek===0 && hour>=15) reasons.push('domingo à tarde, galera indo embora');
   if (hour>=17) reasons.push('depois das 17h o pico esvazia');
-  if (holiday)       reasons.push('feriado nacional — praia vai estar cheia');
+  if (holiday)       reasons.push('feriado nacional — puxa mais gente');
   else if (isWknd)   reasons.push('fim de semana');
   if (season==='summer') reasons.push('alta temporada de verão');
   else if (season==='winter') reasons.push('férias de julho');
@@ -1961,7 +1992,6 @@ function _crowdContext(c, hour, score, beachName, dayOfWeek) {
   if (isLocal && score>=3) reasons.push('condição boa atrai os locals em força');
   const kwEst = wavePower(score>=4?2.0:score>=2?1.2:0.6, score>=3?12:8);
   if (kwEst >= 40) reasons.push(`swell pesado (~${Math.round(kwEst)} kW/m) — lineup de experientes, disputa acirrada`);
-  if (score<1)       reasons.push('mar ruim afasta a maioria');
   if (score>=5)      reasons.push('condição épica — todo mundo sabe');
 
   const base = {
@@ -1975,8 +2005,8 @@ function _crowdContext(c, hour, score, beachName, dayOfWeek) {
   return reasons.length ? `${base} <span style="color:var(--muted);font-size:11px">(${reasons.join(' · ')})</span>` : base;
 }
 
-function buildCrowdHtml(score, hour, dayOfWeek) {
-  const c = crowdIndex(score, hour, dayOfWeek, gBeach?.name);
+function buildCrowdHtml(score, hour, dayOfWeek, rain, windSpd) {
+  const c = crowdIndex(score, hour, dayOfWeek, gBeach?.name, rain, windSpd);
   const dots = Array.from({length:5},(_,i)=>`<div class="crowd-dot${i<c?' filled':''}"></div>`).join('');
   return `
     <div class="section-label">Índice de Crowd</div>
@@ -1984,7 +2014,7 @@ function buildCrowdHtml(score, hour, dayOfWeek) {
       <div class="crowd-dots">${dots}</div>
       <div class="crowd-label">${CROWD_LABELS[c]}</div>
     </div>
-    <div class="crowd-sub">${_crowdContext(c,hour,score,gBeach?.name,dayOfWeek)}</div>`;
+    <div class="crowd-sub">${_crowdContext(c,hour,score,gBeach?.name,dayOfWeek,rain,windSpd)}</div>`;
 }
 
 /* ── TIME SELECTOR ──────────────────────────────────── */
@@ -2298,7 +2328,7 @@ function renderMar(marine, forecast, idx) {
     </div>` : ''}
 
     <div id="crowd-card">
-      ${buildCrowdHtml(score,hour,dow)}
+      ${buildCrowdHtml(score,hour,dow,rain,windSpd)}
     </div>
 
     <div style="display:flex;gap:10px;margin:0 24px 10px">
