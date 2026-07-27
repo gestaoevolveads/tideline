@@ -23832,7 +23832,1327 @@
           "aviso": null
         }
       ]
+    },
+    "praia-brava-buzios|cintura-peito|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia Brava (Búzios): Manhã de vento de través",
+          "analise": "Praia Brava (Búzios) desperta com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Quem já tem noção de remada e leitura de série sai ganhando aqui; vale procurar o canto mais abrigado do vento, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-buzios|cintura-peito|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Praia Brava (Búzios): Tarde de vento do mar",
+          "analise": "Praia Brava (Búzios) fecha a tarde com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento maral, que vem do mar pra areia, enruga a superfície e atrapalha um pouco a leitura. Quem já tem noção de remada e leitura de série sai ganhando aqui; a ponta costuma organizar melhor a série, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-buzios|cintura-peito|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Praia Brava (Búzios): Noite de vento do mar",
+          "analise": "Praia Brava (Búzios) passa a noite com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento maral, que vem do mar pra areia, enruga a superfície e atrapalha um pouco a leitura. Quem já tem noção de remada e leitura de série sai ganhando aqui; o trecho de dentro fica mais fácil pra quem quer só se divertir, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "bonete|cintura-peito|bom-9a11|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Praia do Bonete: Manhã de vento do mar",
+          "analise": "Praia do Bonete recebe essa manhã com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; melhor escolher o pico mais cheio, onde a formação é mais consistente, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "bonete|cintura-peito|bom-9a11|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Praia do Bonete: Tarde de vento do mar",
+          "analise": "Praia do Bonete passa a tarde com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "bonete|cintura-peito|bom-9a11|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Praia do Bonete: Noite terral",
+          "analise": "Praia do Bonete guarda pra depois do sol uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e o vento terral, que sai da terra pro mar, ajuda a alisar bem a face da onda. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; vale procurar o canto mais abrigado do vento, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|cintura-peito|medio-7a9|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Praia do Ferrugem: Tarde de vento do mar",
+          "analise": "Praia do Ferrugem segue firme à tarde, com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Quem já tem noção de remada e leitura de série sai ganhando aqui; melhor escolher o pico mais cheio, onde a formação é mais consistente, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|cintura-peito|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia do Ferrugem: Noite de vento de través",
+          "analise": "Praia do Ferrugem termina o dia com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um vento de través fraco, batendo de lado, quase não incomoda a superfície. Quem já tem noção de remada e leitura de série sai ganhando aqui; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|peito-ombro|bom-9a11|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Foguete: Manhã de vento de través",
+          "analise": "Foguete ganha a manhã com energia puxada, que pesa na remada e cobra presença física na hora de descer. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Quem já tem noção de remada e leitura de série sai ganhando aqui; vale procurar o canto mais abrigado do vento, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|peito-ombro|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Foguete: Tarde de vento de través",
+          "analise": "Foguete segue a tarde com energia puxada, que pesa na remada e cobra presença física na hora de descer. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Quem já tem noção de remada e leitura de série sai ganhando aqui; a ponta costuma organizar melhor a série, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|peito-ombro|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Foguete: Noite de vento de través",
+          "analise": "Foguete entra na noite com energia puxada, que pesa na remada e cobra presença física na hora de descer. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um vento de través forte, batendo de lado, deixa a parede irregular e cobra mais precisão. Quem já tem noção de remada e leitura de série sai ganhando aqui; o trecho de dentro fica mais fácil pra quem quer só se divertir, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "itacoatiara|peito-ombro|bom-9a11|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Itacoatiara: Manhã terral",
+          "analise": "Itacoatiara acorda com energia puxada, que pesa na remada e cobra presença física na hora de descer. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e um terral fraco, o vento que sai da terra pro mar, já dá uma leve alisada na face da onda. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; o trecho de dentro fica mais fácil pra quem quer só se divertir, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "7h-10h",
+          "aviso": "A energia mais pesada combinada com o nível do pico cobra experiência real, não é lugar de aprender."
+        }
+      ]
+    },
+    "itacoatiara|cintura-peito|bom-9a11|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Itacoatiara: Tarde de vento do mar",
+          "analise": "Itacoatiara segue firme à tarde, com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; melhor escolher o pico mais cheio, onde a formação é mais consistente, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "cacimba-do-padre|peito-ombro|curto-vaga|lateral-moderado|manha|fora": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Cacimba do Padre: Manhã de vento de través",
+          "analise": "Cacimba do Padre entra na manhã trazendo energia puxada, que pesa na remada e cobra presença física na hora de descer. As séries chegam apertadas, quase atropeladas, um mar mais de vento do que de ondulação organizada, e um vento de través forte, batendo de lado, deixa a parede irregular e cobra mais precisão. A ondulação de sudeste chega num ângulo que não é bem o ideal daqui, então perde um pouco de força antes de fechar na praia. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-8h",
+          "aviso": "O fundo aqui é misto, com trechos de areia e pedra, então vale entrar com atenção redobrada na entrada e na saída."
+        }
+      ]
+    },
+    "cacimba-do-padre|peito-ombro|curto-vaga|lateral-forte|tarde|fora": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Cacimba do Padre: Tarde de vento de través",
+          "analise": "Cacimba do Padre rende essa tarde com energia puxada, que pesa na remada e cobra presença física na hora de descer. As séries chegam apertadas, quase atropeladas, um mar mais de vento do que de ondulação organizada, e um vento de través forte, batendo de lado, deixa a parede irregular e cobra mais precisão. A ondulação de sudeste chega num ângulo que não é bem o ideal daqui, então perde um pouco de força antes de fechar na praia. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; vale procurar o canto mais abrigado do vento, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-16h",
+          "aviso": "O fundo aqui é misto, com trechos de areia e pedra, então vale entrar com atenção redobrada na entrada e na saída."
+        }
+      ]
+    },
+    "cacimba-do-padre|peito-ombro|curto-vaga|lateral-forte|noite|fora": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Cacimba do Padre: Noite de vento de través",
+          "analise": "Cacimba do Padre fecha em clima noturno, com energia puxada, que pesa na remada e cobra presença física na hora de descer. As séries chegam apertadas, quase atropeladas, um mar mais de vento do que de ondulação organizada, e um vento de través forte, batendo de lado, deixa a parede irregular e cobra mais precisão. A ondulação de sudeste chega num ângulo que não é bem o ideal daqui, então perde um pouco de força antes de fechar na praia. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; a ponta costuma organizar melhor a série, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": "O fundo aqui é misto, com trechos de areia e pedra, então vale entrar com atenção redobrada na entrada e na saída."
+        }
+      ]
+    },
+    "silveira|cintura-peito|medio-7a9|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Praia da Silveira: Tarde de vento do mar",
+          "analise": "Praia da Silveira atravessa a tarde com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; melhor escolher o pico mais cheio, onde a formação é mais consistente, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|cintura-peito|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia da Silveira: Noite de vento de través",
+          "analise": "Praia da Silveira segue de noite com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um vento de través fraco, batendo de lado, quase não incomoda a superfície. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "caioba|flat|curto-vaga|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Caiobá: Manhã de vento de través",
+          "analise": "Caiobá abre a manhã com pouca coisa pra pegar: mar quase liso, ondulação mínima que mal chega a formar parede. As séries chegam apertadas, quase atropeladas, um mar mais de vento do que de ondulação organizada, e um vento de través fraco, batendo de lado, quase não incomoda a superfície. Quem já tem noção de remada e leitura de série sai ganhando aqui; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "caioba|flat|curto-vaga|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Caiobá: Tarde de vento do mar",
+          "analise": "Caiobá atravessa a tarde com pouca coisa pra pegar: mar quase liso, ondulação mínima que mal chega a formar parede. As séries chegam apertadas, quase atropeladas, um mar mais de vento do que de ondulação organizada, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Quem já tem noção de remada e leitura de série sai ganhando aqui; vale procurar o canto mais abrigado do vento, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "guarda-do-embau|joelho-cintura|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Guarda do Embaú: Manhã terral",
+          "analise": "Guarda do Embaú começa o dia com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um terral fraco, o vento que sai da terra pro mar, já dá uma leve alisada na face da onda. Quem já tem noção de remada e leitura de série sai ganhando aqui; vale procurar o canto mais abrigado do vento, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-8h",
+          "aviso": "A foz do rio mexe com o banco de areia o tempo todo, então o pico muda de lugar e merece ser observado antes de entrar."
+        }
+      ]
+    },
+    "guarda-do-embau|joelho-cintura|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Guarda do Embaú: Noite de vento do mar",
+          "analise": "Guarda do Embaú guarda pra depois do sol uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento maral, que vem do mar pra areia, enruga a superfície e atrapalha um pouco a leitura. Quem já tem noção de remada e leitura de série sai ganhando aqui; a ponta costuma organizar melhor a série, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": "A foz do rio mexe com o banco de areia o tempo todo, então o pico muda de lugar e merece ser observado antes de entrar."
+        }
+      ]
+    },
+    "capao-da-canoa|cintura-peito|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Capão da Canoa: Manhã de vento de través",
+          "analise": "Capão da Canoa desperta com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um vento de través fraco, batendo de lado, quase não incomoda a superfície. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; a ponta costuma organizar melhor a série, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "capao-da-canoa|cintura-peito|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Capão da Canoa: Noite de vento de través",
+          "analise": "Capão da Canoa vira a noite com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; o trecho de dentro fica mais fácil pra quem quer só se divertir, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tiririca|cintura-peito|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tiririca: Manhã de vento de través",
+          "analise": "Tiririca abre a manhã com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; o trecho de dentro fica mais fácil pra quem quer só se divertir, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|cintura-peito|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Grumari: Manhã terral",
+          "analise": "Grumari abre a manhã com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e o vento terral, que sai da terra pro mar, ajuda a alisar bem a face da onda. Quem já tem noção de remada e leitura de série sai ganhando aqui; o trecho de dentro fica mais fácil pra quem quer só se divertir, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|cintura-peito|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Grumari: Tarde de vento de través",
+          "analise": "Grumari atravessa a tarde com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Quem já tem noção de remada e leitura de série sai ganhando aqui; melhor escolher o pico mais cheio, onde a formação é mais consistente, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|cintura-peito|bom-9a11|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Grumari: Noite terral",
+          "analise": "Grumari segue de noite com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e o vento terral, que sai da terra pro mar, ajuda a alisar bem a face da onda. Quem já tem noção de remada e leitura de série sai ganhando aqui; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|joelho-cintura|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Cassino: Tarde de vento do mar",
+          "analise": "Cassino passa a tarde com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento maral, que vem do mar pra areia, enruga a superfície e atrapalha um pouco a leitura. Quem já tem noção de remada e leitura de série sai ganhando aqui; vale procurar o canto mais abrigado do vento, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|joelho-cintura|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Cassino: Noite de vento de través",
+          "analise": "Cassino guarda pra depois do sol uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. As séries chegam apertadas, quase atropeladas, um mar mais de vento do que de ondulação organizada, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Quem já tem noção de remada e leitura de série sai ganhando aqui; a ponta costuma organizar melhor a série, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|cintura-peito|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Macumba: Manhã terral",
+          "analise": "Macumba entra na manhã trazendo uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e o vento terral, que sai da terra pro mar, ajuda a alisar bem a face da onda. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; o trecho de dentro fica mais fácil pra quem quer só se divertir, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|cintura-peito|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Macumba: Tarde de vento de través",
+          "analise": "Macumba rende essa tarde com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; melhor escolher o pico mais cheio, onde a formação é mais consistente, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|cintura-peito|bom-9a11|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Macumba: Noite terral",
+          "analise": "Macumba fecha em clima noturno, com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e o vento terral, que sai da terra pro mar, ajuda a alisar bem a face da onda. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "camburi|cintura-peito|bom-9a11|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Camburi: Manhã de vento do mar",
+          "analise": "Camburi abre a manhã com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; vale procurar o canto mais abrigado do vento, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "mocambique|cintura-peito|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Moçambique: Manhã terral",
+          "analise": "Moçambique desperta com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um terral fraco, o vento que sai da terra pro mar, já dá uma leve alisada na face da onda. Quem já tem noção de remada e leitura de série sai ganhando aqui; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "mocambique|joelho-cintura|medio-7a9|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Moçambique: Tarde de vento do mar",
+          "analise": "Moçambique fecha a tarde com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Quem já tem noção de remada e leitura de série sai ganhando aqui; vale procurar o canto mais abrigado do vento, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "mocambique|joelho-cintura|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Moçambique: Noite de vento de través",
+          "analise": "Moçambique passa a noite com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Quem já tem noção de remada e leitura de série sai ganhando aqui; a ponta costuma organizar melhor a série, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-mole|joelho-cintura|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Praia Mole: Manhã terral",
+          "analise": "Praia Mole ganha a manhã com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um terral fraco, o vento que sai da terra pro mar, já dá uma leve alisada na face da onda. Quem já tem noção de remada e leitura de série sai ganhando aqui; o trecho de dentro fica mais fácil pra quem quer só se divertir, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-mole|joelho-cintura|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Praia Mole: Tarde de vento do mar",
+          "analise": "Praia Mole segue a tarde com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Quem já tem noção de remada e leitura de série sai ganhando aqui; melhor escolher o pico mais cheio, onde a formação é mais consistente, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-mole|joelho-cintura|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Praia Mole: Noite de vento de través",
+          "analise": "Praia Mole entra na noite com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Quem já tem noção de remada e leitura de série sai ganhando aqui; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|joelho-cintura|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Praia do Porto (Imbituba): Manhã terral",
+          "analise": "Praia do Porto (Imbituba) amanhece com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um terral fraco, o vento que sai da terra pro mar, já dá uma leve alisada na face da onda. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; vale procurar o canto mais abrigado do vento, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|joelho-cintura|medio-7a9|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Praia do Porto (Imbituba): Tarde de vento do mar",
+          "analise": "Praia do Porto (Imbituba) chega na reta da tarde com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; a ponta costuma organizar melhor a série, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|joelho-cintura|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Praia do Porto (Imbituba): Noite de vento de través",
+          "analise": "Praia do Porto (Imbituba) encerra a sessão possível com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; o trecho de dentro fica mais fácil pra quem quer só se divertir, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "jureia|cintura-peito|medio-7a9|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Jureia: Tarde de vento de través",
+          "analise": "Jureia atravessa a tarde com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um vento de través fraco, batendo de lado, quase não incomoda a superfície. Quem já tem noção de remada e leitura de série sai ganhando aqui; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-tijuca|cintura-peito|bom-9a11|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Barra da Tijuca: Manhã de vento do mar",
+          "analise": "Barra da Tijuca começa o dia com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-tijuca|cintura-peito|bom-9a11|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Barra da Tijuca: Tarde de vento do mar",
+          "analise": "Barra da Tijuca entrega essa tarde com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; vale procurar o canto mais abrigado do vento, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-tijuca|cintura-peito|bom-9a11|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Barra da Tijuca: Noite de vento de través",
+          "analise": "Barra da Tijuca vira a noite com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e um vento de través fraco, batendo de lado, quase não incomoda a superfície. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; a ponta costuma organizar melhor a série, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|cintura-peito|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia Brava (Cabo Frio): Manhã de vento de través",
+          "analise": "Praia Brava (Cabo Frio) acorda com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; vale procurar o canto mais abrigado do vento, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|cintura-peito|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia Brava (Cabo Frio): Tarde de vento de través",
+          "analise": "Praia Brava (Cabo Frio) segue firme à tarde, com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; a ponta costuma organizar melhor a série, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|cintura-peito|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia Brava (Cabo Frio): Noite de vento de través",
+          "analise": "Praia Brava (Cabo Frio) termina o dia com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; o trecho de dentro fica mais fácil pra quem quer só se divertir, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|peito-ombro|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Praia da Vila: Manhã terral",
+          "analise": "Praia da Vila ganha a manhã com energia puxada, que pesa na remada e cobra presença física na hora de descer. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e o vento terral, que sai da terra pro mar, ajuda a alisar bem a face da onda. Quem já tem noção de remada e leitura de série sai ganhando aqui; melhor escolher o pico mais cheio, onde a formação é mais consistente, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|cintura-peito|bom-9a11|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Praia da Vila: Tarde de vento do mar",
+          "analise": "Praia da Vila segue a tarde com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e o vento maral, que vem do mar pra areia, enruga a superfície e atrapalha um pouco a leitura. Quem já tem noção de remada e leitura de série sai ganhando aqui; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|peito-ombro|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Saquarema: Manhã terral",
+          "analise": "Saquarema entra na manhã trazendo energia puxada, que pesa na remada e cobra presença física na hora de descer. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e o vento terral, que sai da terra pro mar, ajuda a alisar bem a face da onda. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; a ponta costuma organizar melhor a série, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "7h-10h",
+          "aviso": "A energia mais pesada combinada com o nível do pico cobra experiência real, não é lugar de aprender."
+        }
+      ]
+    },
+    "saquarema|cintura-peito|bom-9a11|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Saquarema: Tarde de vento do mar",
+          "analise": "Saquarema rende essa tarde com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e o vento maral, que vem do mar pra areia, enruga a superfície e atrapalha um pouco a leitura. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; o trecho de dentro fica mais fácil pra quem quer só se divertir, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "itamambuca|cintura-peito|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Itamambuca: Manhã terral",
+          "analise": "Itamambuca abre a manhã com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um terral fraco, o vento que sai da terra pro mar, já dá uma leve alisada na face da onda. Quem já tem noção de remada e leitura de série sai ganhando aqui; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "maresias|cintura-peito|bom-9a11|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Maresias: Manhã de vento de través",
+          "analise": "Maresias ganha a manhã com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e um vento de través fraco, batendo de lado, quase não incomoda a superfície. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; melhor escolher o pico mais cheio, onde a formação é mais consistente, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "maresias|cintura-peito|bom-9a11|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Maresias: Tarde de vento do mar",
+          "analise": "Maresias segue a tarde com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "costao-do-santinho|joelho-cintura|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Costão do Santinho: Manhã terral",
+          "analise": "Costão do Santinho começa o dia com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento terral, que sai da terra pro mar, ajuda a alisar bem a face da onda. Quem já tem noção de remada e leitura de série sai ganhando aqui; vale procurar o canto mais abrigado do vento, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "costao-do-santinho|joelho-cintura|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Costão do Santinho: Tarde de vento do mar",
+          "analise": "Costão do Santinho entrega essa tarde com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Quem já tem noção de remada e leitura de série sai ganhando aqui; a ponta costuma organizar melhor a série, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "costao-do-santinho|joelho-cintura|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Costão do Santinho: Noite de vento de través",
+          "analise": "Costão do Santinho vira a noite com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Quem já tem noção de remada e leitura de série sai ganhando aqui; o trecho de dentro fica mais fácil pra quem quer só se divertir, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "maracaipe|joelho-cintura|curto-vaga|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Maracaípe: Manhã terral",
+          "analise": "Maracaípe entra na manhã trazendo uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. As séries chegam apertadas, quase atropeladas, um mar mais de vento do que de ondulação organizada, e o vento terral, que sai da terra pro mar, ajuda a alisar bem a face da onda. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|peito-ombro|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Unamar: Noite de vento de través",
+          "analise": "Unamar encerra a sessão possível com energia puxada, que pesa na remada e cobra presença física na hora de descer. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Quem já tem noção de remada e leitura de série sai ganhando aqui; o trecho de dentro fica mais fácil pra quem quer só se divertir, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "castelhanos|joelho-cintura|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Castelhanos: Noite terral",
+          "analise": "Castelhanos entra na noite com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um terral fraco, o vento que sai da terra pro mar, já dá uma leve alisada na face da onda. Quem já tem noção de remada e leitura de série sai ganhando aqui; melhor escolher o pico mais cheio, onde a formação é mais consistente, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-cupe|cintura-peito|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Praia do Cupe: Manhã terral",
+          "analise": "Praia do Cupe desperta com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento terral, que sai da terra pro mar, ajuda a alisar bem a face da onda. Quem já tem noção de remada e leitura de série sai ganhando aqui; a ponta costuma organizar melhor a série, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-cupe|cintura-peito|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia do Cupe: Tarde de vento de través",
+          "analise": "Praia do Cupe fecha a tarde com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Quem já tem noção de remada e leitura de série sai ganhando aqui; o trecho de dentro fica mais fácil pra quem quer só se divertir, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-cupe|cintura-peito|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia do Cupe: Noite de vento de través",
+          "analise": "Praia do Cupe passa a noite com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Quem já tem noção de remada e leitura de série sai ganhando aqui; melhor escolher o pico mais cheio, onde a formação é mais consistente, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "matinhos|flat|curto-vaga|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Matinhos: Manhã de vento de través",
+          "analise": "Matinhos recebe essa manhã com pouca coisa pra pegar: mar quase liso, ondulação mínima que mal chega a formar parede. As séries chegam apertadas, quase atropeladas, um mar mais de vento do que de ondulação organizada, e um vento de través fraco, batendo de lado, quase não incomoda a superfície. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|cintura-peito|medio-7a9|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Ibiraquera: Tarde de vento do mar",
+          "analise": "Ibiraquera fecha a tarde com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Quem já tem noção de remada e leitura de série sai ganhando aqui; o trecho de dentro fica mais fácil pra quem quer só se divertir, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|cintura-peito|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Ibiraquera: Noite de vento de través",
+          "analise": "Ibiraquera passa a noite com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um vento de través fraco, batendo de lado, quase não incomoda a superfície. Quem já tem noção de remada e leitura de série sai ganhando aqui; melhor escolher o pico mais cheio, onde a formação é mais consistente, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "cidreira|cintura-peito|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Cidreira: Manhã de vento do mar",
+          "analise": "Cidreira entra na manhã trazendo uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Quem já tem noção de remada e leitura de série sai ganhando aqui; o trecho de dentro fica mais fácil pra quem quer só se divertir, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "cidreira|joelho-cintura|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Cidreira: Tarde de vento do mar",
+          "analise": "Cidreira rende essa tarde com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento maral, que vem do mar pra areia, enruga a superfície e atrapalha um pouco a leitura. Quem já tem noção de remada e leitura de série sai ganhando aqui; melhor escolher o pico mais cheio, onde a formação é mais consistente, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "cidreira|cintura-peito|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Cidreira: Noite de vento de través",
+          "analise": "Cidreira fecha em clima noturno, com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um vento de través forte, batendo de lado, deixa a parede irregular e cobra mais precisão. Quem já tem noção de remada e leitura de série sai ganhando aqui; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "titanzinho|cintura-peito|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Titanzinho: Noite de vento de través",
+          "analise": "Titanzinho segue de noite com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries chegam apertadas, quase atropeladas, um mar mais de vento do que de ondulação organizada, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; o trecho de dentro fica mais fácil pra quem quer só se divertir, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|peito-ombro|bom-9a11|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia Grande: Manhã de vento de través",
+          "analise": "Praia Grande entra na manhã trazendo energia puxada, que pesa na remada e cobra presença física na hora de descer. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e um vento de través forte, batendo de lado, deixa a parede irregular e cobra mais precisão. Quem já tem noção de remada e leitura de série sai ganhando aqui; vale procurar o canto mais abrigado do vento, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|peito-ombro|medio-7a9|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Praia Grande: Tarde de vento de través",
+          "analise": "Praia Grande rende essa tarde com energia puxada, que pesa na remada e cobra presença física na hora de descer. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um vento de través forte, batendo de lado, deixa a parede irregular e cobra mais precisão. Quem já tem noção de remada e leitura de série sai ganhando aqui; a ponta costuma organizar melhor a série, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|peito-ombro|medio-7a9|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Praia Grande: Noite de vento de través",
+          "analise": "Praia Grande fecha em clima noturno, com energia puxada, que pesa na remada e cobra presença física na hora de descer. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um vento de través forte, batendo de lado, deixa a parede irregular e cobra mais precisão. Quem já tem noção de remada e leitura de série sai ganhando aqui; o trecho de dentro fica mais fácil pra quem quer só se divertir, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "geriba|cintura-peito|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Geribá: Manhã de vento de través",
+          "analise": "Geribá recebe essa manhã com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; o trecho de dentro fica mais fácil pra quem quer só se divertir, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "geriba|cintura-peito|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Geribá: Tarde de vento do mar",
+          "analise": "Geribá passa a tarde com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento maral, que vem do mar pra areia, enruga a superfície e atrapalha um pouco a leitura. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; melhor escolher o pico mais cheio, onde a formação é mais consistente, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "geriba|cintura-peito|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Geribá: Noite de vento do mar",
+          "analise": "Geribá guarda pra depois do sol uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento maral, que vem do mar pra areia, enruga a superfície e atrapalha um pouco a leitura. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|cintura-peito|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Recreio dos Bandeirantes: Manhã terral",
+          "analise": "Recreio dos Bandeirantes ganha a manhã com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e o vento terral, que sai da terra pro mar, ajuda a alisar bem a face da onda. Quem já tem noção de remada e leitura de série sai ganhando aqui; melhor escolher o pico mais cheio, onde a formação é mais consistente, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|cintura-peito|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Recreio dos Bandeirantes: Tarde de vento de través",
+          "analise": "Recreio dos Bandeirantes segue a tarde com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Quem já tem noção de remada e leitura de série sai ganhando aqui; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|cintura-peito|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Recreio dos Bandeirantes: Noite de vento de través",
+          "analise": "Recreio dos Bandeirantes entra na noite com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Quem já tem noção de remada e leitura de série sai ganhando aqui; vale procurar o canto mais abrigado do vento, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|cintura-peito|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia do Forte: Manhã de vento de través",
+          "analise": "Praia do Forte abre a manhã com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; a ponta costuma organizar melhor a série, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|cintura-peito|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia do Forte: Tarde de vento de través",
+          "analise": "Praia do Forte atravessa a tarde com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; o trecho de dentro fica mais fácil pra quem quer só se divertir, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|cintura-peito|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia do Forte: Noite de vento de través",
+          "analise": "Praia do Forte segue de noite com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; melhor escolher o pico mais cheio, onde a formação é mais consistente, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "setiba|cintura-peito|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Setiba: Manhã de vento de través",
+          "analise": "Setiba começa o dia com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um vento de través fraco, batendo de lado, quase não incomoda a superfície. Quem já tem noção de remada e leitura de série sai ganhando aqui; a ponta costuma organizar melhor a série, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "setiba|cintura-peito|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Setiba: Tarde de vento do mar",
+          "analise": "Setiba entrega essa tarde com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento maral, que vem do mar pra areia, enruga a superfície e atrapalha um pouco a leitura. Quem já tem noção de remada e leitura de série sai ganhando aqui; o trecho de dentro fica mais fácil pra quem quer só se divertir, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "setiba|cintura-peito|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Setiba: Noite de vento de través",
+          "analise": "Setiba vira a noite com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Quem já tem noção de remada e leitura de série sai ganhando aqui; melhor escolher o pico mais cheio, onde a formação é mais consistente, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "barra-de-ilheus|joelho-cintura|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Barra de Ilhéus: Manhã de vento de través",
+          "analise": "Barra de Ilhéus ganha a manhã com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Quem já tem noção de remada e leitura de série sai ganhando aqui; melhor escolher o pico mais cheio, onde a formação é mais consistente, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "engenhoca|cintura-peito|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Engenhoca: Manhã de vento de través",
+          "analise": "Engenhoca recebe essa manhã com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Quem já tem noção de remada e leitura de série sai ganhando aqui; melhor escolher o pico mais cheio, onde a formação é mais consistente, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "penha|joelho-cintura|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Penha: Manhã de vento do mar",
+          "analise": "Penha ganha a manhã com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Quem já tem noção de remada e leitura de série sai ganhando aqui; vale procurar o canto mais abrigado do vento, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "penha|joelho-cintura|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Penha: Noite de vento de través",
+          "analise": "Penha termina o dia com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um vento de través fraco, batendo de lado, quase não incomoda a superfície. Quem já tem noção de remada e leitura de série sai ganhando aqui; a ponta costuma organizar melhor a série, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|cintura-peito|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Prainha: Manhã terral",
+          "analise": "Prainha começa o dia com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e o vento terral, que sai da terra pro mar, ajuda a alisar bem a face da onda. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|cintura-peito|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Prainha: Tarde de vento de través",
+          "analise": "Prainha entrega essa tarde com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; vale procurar o canto mais abrigado do vento, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|cintura-peito|bom-9a11|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Prainha: Noite terral",
+          "analise": "Prainha vira a noite com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e o vento terral, que sai da terra pro mar, ajuda a alisar bem a face da onda. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; a ponta costuma organizar melhor a série, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|cintura-peito|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Pitangueiras: Manhã de vento de través",
+          "analise": "Pitangueiras começa o dia com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um vento de través fraco, batendo de lado, quase não incomoda a superfície. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; o trecho de dentro fica mais fácil pra quem quer só se divertir, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|cintura-peito|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Pitangueiras: Noite de vento do mar",
+          "analise": "Pitangueiras guarda pra depois do sol uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; melhor escolher o pico mais cheio, onde a formação é mais consistente, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|cintura-peito|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Praia do Peró: Manhã terral",
+          "analise": "Praia do Peró acorda com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento terral, que sai da terra pro mar, ajuda a alisar bem a face da onda. Quem já tem noção de remada e leitura de série sai ganhando aqui; vale procurar o canto mais abrigado do vento, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|cintura-peito|medio-7a9|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Praia do Peró: Tarde terral",
+          "analise": "Praia do Peró segue firme à tarde, com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento terral, que sai da terra pro mar, ajuda a alisar bem a face da onda. Quem já tem noção de remada e leitura de série sai ganhando aqui; a ponta costuma organizar melhor a série, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|cintura-peito|medio-7a9|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Praia do Peró: Noite terral",
+          "analise": "Praia do Peró termina o dia com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento terral, que sai da terra pro mar, ajuda a alisar bem a face da onda. Quem já tem noção de remada e leitura de série sai ganhando aqui; o trecho de dentro fica mais fácil pra quem quer só se divertir, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "vermelha-do-norte|cintura-peito|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Vermelha do Norte: Manhã terral",
+          "analise": "Vermelha do Norte entra na manhã trazendo uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um terral fraco, o vento que sai da terra pro mar, já dá uma leve alisada na face da onda. Quem já tem noção de remada e leitura de série sai ganhando aqui; o trecho de dentro fica mais fácil pra quem quer só se divertir, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|cintura-peito|bom-9a11|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Arpoador: Manhã de vento do mar",
+          "analise": "Arpoador entra na manhã trazendo uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Quem já tem noção de remada e leitura de série sai ganhando aqui; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|cintura-peito|bom-9a11|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Arpoador: Tarde de vento do mar",
+          "analise": "Arpoador rende essa tarde com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Quem já tem noção de remada e leitura de série sai ganhando aqui; vale procurar o canto mais abrigado do vento, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|cintura-peito|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Arpoador: Noite de vento de través",
+          "analise": "Arpoador fecha em clima noturno, com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e um vento de través fraco, batendo de lado, quase não incomoda a superfície. Quem já tem noção de remada e leitura de série sai ganhando aqui; a ponta costuma organizar melhor a série, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|peito-ombro|bom-9a11|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Figueira: Manhã de vento de través",
+          "analise": "Figueira abre a manhã com energia puxada, que pesa na remada e cobra presença física na hora de descer. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Quem já tem noção de remada e leitura de série sai ganhando aqui; o trecho de dentro fica mais fácil pra quem quer só se divertir, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|peito-ombro|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Figueira: Tarde de vento de través",
+          "analise": "Figueira atravessa a tarde com energia puxada, que pesa na remada e cobra presença física na hora de descer. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um vento de través forte, batendo de lado, deixa a parede irregular e cobra mais precisão. Quem já tem noção de remada e leitura de série sai ganhando aqui; melhor escolher o pico mais cheio, onde a formação é mais consistente, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|peito-ombro|medio-7a9|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Figueira: Noite de vento de través",
+          "analise": "Figueira segue de noite com energia puxada, que pesa na remada e cobra presença física na hora de descer. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um vento de través forte, batendo de lado, deixa a parede irregular e cobra mais precisão. Quem já tem noção de remada e leitura de série sai ganhando aqui; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "campeche|joelho-cintura|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Campeche: Manhã terral",
+          "analise": "Campeche começa o dia com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um terral fraco, o vento que sai da terra pro mar, já dá uma leve alisada na face da onda. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; vale procurar o canto mais abrigado do vento, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "campeche|joelho-cintura|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Campeche: Tarde de vento do mar",
+          "analise": "Campeche entrega essa tarde com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; a ponta costuma organizar melhor a série, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "campeche|joelho-cintura|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Campeche: Noite de vento de través",
+          "analise": "Campeche vira a noite com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; o trecho de dentro fica mais fácil pra quem quer só se divertir, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|peito-ombro|bom-9a11|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia Brava (Arraial): Manhã de vento de través",
+          "analise": "Praia Brava (Arraial) começa o dia com energia puxada, que pesa na remada e cobra presença física na hora de descer. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e um vento de través forte, batendo de lado, deixa a parede irregular e cobra mais precisão. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; a ponta costuma organizar melhor a série, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "6h-8h",
+          "aviso": "A energia mais pesada combinada com o nível do pico cobra experiência real, não é lugar de aprender."
+        }
+      ]
+    },
+    "praia-brava-arraial|peito-ombro|medio-7a9|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Praia Brava (Arraial): Tarde de vento de través",
+          "analise": "Praia Brava (Arraial) entrega essa tarde com energia puxada, que pesa na remada e cobra presença física na hora de descer. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um vento de través forte, batendo de lado, deixa a parede irregular e cobra mais precisão. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; o trecho de dentro fica mais fácil pra quem quer só se divertir, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-16h",
+          "aviso": "A energia mais pesada combinada com o nível do pico cobra experiência real, não é lugar de aprender."
+        }
+      ]
+    },
+    "praia-brava-arraial|peito-ombro|medio-7a9|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Praia Brava (Arraial): Noite de vento de través",
+          "analise": "Praia Brava (Arraial) vira a noite com energia puxada, que pesa na remada e cobra presença física na hora de descer. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um vento de través forte, batendo de lado, deixa a parede irregular e cobra mais precisão. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; melhor escolher o pico mais cheio, onde a formação é mais consistente, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": "A energia mais pesada combinada com o nível do pico cobra experiência real, não é lugar de aprender."
+        }
+      ]
+    },
+    "joaquina|joelho-cintura|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Joaquina: Manhã terral",
+          "analise": "Joaquina amanhece com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um terral fraco, o vento que sai da terra pro mar, já dá uma leve alisada na face da onda. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; a ponta costuma organizar melhor a série, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|joelho-cintura|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Joaquina: Tarde de vento do mar",
+          "analise": "Joaquina chega na reta da tarde com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; o trecho de dentro fica mais fácil pra quem quer só se divertir, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|joelho-cintura|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Joaquina: Noite de vento de través",
+          "analise": "Joaquina encerra a sessão possível com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; melhor escolher o pico mais cheio, onde a formação é mais consistente, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-lagoa|joelho-cintura|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Barra da Lagoa: Manhã terral",
+          "analise": "Barra da Lagoa recebe essa manhã com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um terral fraco, o vento que sai da terra pro mar, já dá uma leve alisada na face da onda. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; vale procurar o canto mais abrigado do vento, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-lagoa|joelho-cintura|medio-7a9|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Barra da Lagoa: Tarde de vento do mar",
+          "analise": "Barra da Lagoa passa a tarde com uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; a ponta costuma organizar melhor a série, e aproveita enquanto a luz da tarde ainda ajuda a enxergar a série de longe.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-lagoa|joelho-cintura|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Barra da Lagoa: Noite de vento de través",
+          "analise": "Barra da Lagoa guarda pra depois do sol uma força suave, remada tranquila e sem sobressalto, boa pra quem ainda tá pegando ritmo. O intervalo entre uma onda e outra é mediano, dá pra se organizar sem correria, e o vento de través, batendo de lado, mexe a superfície sem destruir de vez a parede. Dá pra quem tá começando aproveitar junto de quem já tem estrada, cada um no seu ritmo; o trecho de dentro fica mais fácil pra quem quer só se divertir, e quem for arriscar de noite precisa conhecer bem o pico, porque no escuro a leitura de série fica só de ouvido e intuição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|cintura-peito|bom-9a11|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Farol de Santa Marta: Manhã de vento do mar",
+          "analise": "Farol de Santa Marta começa o dia com uma força mediana, que já empurra a prancha mas não assusta quem tem alguma prática. As séries vêm espaçadas, dá tempo de ver a onda chegando de longe e escolher a posição com calma, e um maral fraco, o vento que vem do mar pra areia, mal se sente e quase não mexe na superfície. Condição que cobra experiência: quem só tá pegando ritmo ainda vai sofrer mais do que curtir; compensa remar um pouco mais pro canto de fora, onde a série bate primeiro, e se der, entra logo que abrir a janela da manhã, antes do vento virar.",
+          "janela": "7h-10h",
+          "aviso": "É ponta de pedra: onda mais consistente, mas exige remada certeira e respeito ao fundo raso."
+        }
+      ]
     }
   },
-  "generated_at": "2026-07-26T18:18:09.305Z"
+  "generated_at": "2026-07-27T00:15:25.343Z"
 }
