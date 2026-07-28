@@ -29112,7 +29112,1327 @@
           "aviso": "Existem trechos com pedras que ficam mais expostos quando o mar aumenta; observe o trecho antes de entrar."
         }
       ]
+    },
+    "figueira|peito-ombro|medio-7a9|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Dá pra surfar",
+          "analise": "Figueira acorda a manhã com energia pesada, remada cansa e o caldo cobra caro. Na água, o vento de través forte (soprando de lado) desorganiza a parede e empurra quem rema, e a série dá um respiro razoável entre as ondas, tempo suficiente pra escolher com calma. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; vale levar uma prancha com mais volume pra facilitar a remada.",
+          "janela": "6h-9h",
+          "aviso": "Vento de través forte pode empurrar quem rema pro lado, fique de olho na sua posição em relação ao pico."
+        }
+      ]
+    },
+    "recreio|cintura-peito|bom-9a11|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Condição mediana",
+          "analise": "Já de noite, Recreio dos Bandeirantes segue com energia consistente, a remada já pesa mais. Na água, um maral fraco (vento que vem do mar pra terra) já tira um pouco do brilho da parede, e o intervalo entre as ondas é generoso, sobra tempo pra remar com calma até o pico. No fim das contas, é um mar que rende bem pra quem já tem base sólida de rema e leitura; prancha mais curta ajuda a girar rápido nessa série.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "geriba|cintura-peito|curto-vaga|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Vale a tentativa",
+          "analise": "A manhã começa com Geribá recebendo energia consistente, a remada já pesa mais. Na água, o vento de través forte (soprando de lado) desorganiza a parede e empurra quem rema, e é série curta, tudo perto, quem hesita perde a janela da onda. No fim das contas, é uma condição democrática, com espaço pra quem começa e pra quem já manda bem; bom cantear pro lado mais abrigado do vento antes de remar pro pico.",
+          "janela": "8h-11h",
+          "aviso": "Vento de través forte pode empurrar quem rema pro lado, fique de olho na sua posição em relação ao pico."
+        }
+      ]
+    },
+    "atalaia|joelho-cintura|curto-vaga|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Melhor esperar",
+          "analise": "Logo cedo, Atalaia já mostra força bem fraca, remada tranquila e sem exigência. Na água, um vento de través fraco (soprando de lado) mexe pouco na superfície, e a série chega apertada e meio atropelada, sem muito tempo entre uma onda e outra. No fim das contas, de boa, é um mar que rende bem pra quem já tem base sólida de rema e leitura; chegue cedo pra pegar o pico menos disputado.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "cacimba-do-padre|peito-ombro|medio-7a9|offshore-moderado|manha|fora": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Nem tudo nem nada",
+          "analise": "Cacimba do Padre entra na manhã com energia pesada, remada cansa e o caldo cobra caro. Na água, o terral (vento que sai da terra pro mar) vem forte, segurando a parede mas dificultando o drop, e o intervalo entre as ondas já ajuda a se posicionar sem correria. O swell vem do sudeste, de fora do ângulo que essa praia realmente gosta, então o que chega é sombra, mais fraco do que o de costume por ali. No fim das contas, é um mar que pede repertório, não é lugar de estreia; observe uns minutos da areia antes de entrar, pra pegar o ritmo da série.",
+          "janela": "7h-9h",
+          "aviso": "Ponto pesado e exposto, só entre se tiver experiência de verdade com esse tipo de onda."
+        }
+      ]
+    },
+    "cacimba-do-padre|peito-ombro|medio-7a9|offshore-moderado|noite|fora": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Janela intermediária",
+          "analise": "A noite encontra Cacimba do Padre com energia pesada, remada cansa e o caldo cobra caro. Na água, o terral (vento que sai da terra pro mar) vem forte, segurando a parede mas dificultando o drop, e as séries vêm espaçadas o bastante pra dar tempo de reagir. Chega do sudeste, fora da janela ideal daqui, então vale calibrar a expectativa: menos força do que em dia de swell certo. No fim das contas, é um mar que exige leitura afiada e respeito com quem já conhece o pico; prefira o horário de vento mais fraco pra aproveitar melhor.",
+          "janela": null,
+          "aviso": "Ponto pesado e exposto, só entre se tiver experiência de verdade com esse tipo de onda."
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|cintura-peito|curto-vaga|onshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Janela curta de valor",
+          "analise": "Ainda de manhã, Praia do Porto (Imbituba) amanhece com energia moderada, pede atenção mas não cansa. Na água, um maral fraco (vento que vem do mar pra terra) já tira um pouco do brilho da parede, e a série chega apertada e meio atropelada, sem muito tempo entre uma onda e outra. O swell chega do leste, meio de banda em relação ao que essa praia prefere, então nem toda hora rende igual. No fim das contas, na régua, é um mar que pede repertório, não é lugar de estreia; vale remar mais pro fundo pra não perder a série no raso.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|cintura-peito|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Dá pra surfar",
+          "analise": "Praia do Porto (Imbituba) segue a tarde com energia moderada, pede atenção mas não cansa. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e as séries vêm curtas e seguidas, pedindo remada rápida pra pegar o pico certo. No fim das contas, é um mar que exige leitura afiada e respeito com quem já conhece o pico; leve uma segunda prancha reserva se a sessão for longa.",
+          "janela": "12h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|cintura-peito|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Condição mediana",
+          "analise": "No período noturno, Praia do Porto (Imbituba) mantém energia moderada, pede atenção mas não cansa. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e é série curta, tudo perto, quem hesita perde a janela da onda. No fim das contas, é um mar que pede repertório, não é lugar de estreia; dê prioridade a quem já está na onda, o respeito no pico rende mais paz.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "campeche|joelho-cintura|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Mar de espera",
+          "analise": "No fim de tarde, Campeche entrega força bem fraca, remada tranquila e sem exigência. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e a série chega apertada e meio atropelada, sem muito tempo entre uma onda e outra. O pico com a ilha do Campeche na frente dá uma textura a mais pra quem conhece o canto. No fim das contas, sem estresse, é um mar que exige leitura afiada e respeito com quem já conhece o pico; fique de olho na maré, ela muda o banco ao longo do dia.",
+          "janela": "14h-16h",
+          "aviso": "Pico com localismo forte, chegue respeitando a fila e quem já está surfando."
+        }
+      ]
+    },
+    "campeche|cintura-peito|curto-vaga|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Meio termo no pico",
+          "analise": "Depois do sol se pôr, Campeche continua com energia moderada, pede atenção mas não cansa. Na água, o vento de través forte (soprando de lado) desorganiza a parede e empurra quem rema, e as séries vêm curtas e seguidas, pedindo remada rápida pra pegar o pico certo. O pico com a ilha do Campeche na frente dá uma textura a mais pra quem conhece o canto. No fim das contas, é um mar que pede repertório, não é lugar de estreia; vale levar uma prancha com mais volume pra facilitar a remada.",
+          "janela": null,
+          "aviso": "Vento de través forte pode empurrar quem rema pro lado, fique de olho na sua posição em relação ao pico."
+        }
+      ]
+    },
+    "joaquina|joelho-cintura|curto-vaga|lateral-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 2.5,
+          "titulo": "Dia fraco no pico",
+          "analise": "A tarde encontra Joaquina com força bem fraca, remada tranquila e sem exigência. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e é série curta, tudo perto, quem hesita perde a janela da onda. Vem do leste, no limite da janela que a praia gosta, então a qualidade oscila de pico pra pico. No fim das contas, é um mar que exige leitura afiada e respeito com quem já conhece o pico; prancha mais curta ajuda a girar rápido nessa série.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|joelho-cintura|curto-vaga|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Sem muita entrega",
+          "analise": "Joaquina entra na noite com força bem fraca, remada tranquila e sem exigência. Na água, o vento de través forte (soprando de lado) desorganiza a parede e empurra quem rema, e a série chega apertada e meio atropelada, sem muito tempo entre uma onda e outra. O pico com as dunas do lado dá uma textura a mais pra quem conhece o canto. No fim das contas, é um mar que pede repertório, não é lugar de estreia; bom cantear pro lado mais abrigado do vento antes de remar pro pico.",
+          "janela": null,
+          "aviso": "Vento de través forte pode empurrar quem rema pro lado, fique de olho na sua posição em relação ao pico."
+        }
+      ]
+    },
+    "regencia|cintura-peito|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Surfável com ajuste",
+          "analise": "Regência mantém a tarde com energia moderada, pede atenção mas não cansa. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e o intervalo entre as ondas já ajuda a se posicionar sem correria. O pico na foz do Rio Doce dá uma textura a mais pra quem conhece o canto. No fim das contas, é um mar que exige leitura afiada e respeito com quem já conhece o pico; chegue cedo pra pegar o pico menos disputado.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|cintura-peito|bom-9a11|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Vale a pena",
+          "analise": "Durante a tarde, Ipanema recebe energia consistente, a remada já pesa mais. Na água, um terral (vento que sai da terra pro mar) suave ajuda a alisar a parede, e as séries vêm bem separadas, quase dá pra escolher a onda com o dedo. O pico perto das Cagarras dá uma textura a mais pra quem conhece o canto. No fim das contas, de boa, é uma condição democrática, com espaço pra quem começa e pra quem já manda bem; observe uns minutos da areia antes de entrar, pra pegar o ritmo da série.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|cintura-peito|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Boa chance no pico",
+          "analise": "No escuro, Ipanema ainda entrega energia consistente, a remada já pesa mais. Na água, um vento de través fraco (soprando de lado) mexe pouco na superfície, e a série chega bem espaçada, dando tempo de ver a onda vindo de longe e se posicionar sem pressa. O pico perto das Cagarras dá uma textura a mais pra quem conhece o canto. No fim das contas, é um mar que cabe surfista de todo nível; prefira o horário de vento mais fraco pra aproveitar melhor.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "costao-do-santinho|joelho-cintura|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Mar de espera",
+          "analise": "Costão do Santinho passa a tarde com força bem fraca, remada tranquila e sem exigência. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e as séries vêm curtas e seguidas, pedindo remada rápida pra pegar o pico certo. O pico junto ao costão dá uma textura a mais pra quem conhece o canto. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; vale remar mais pro fundo pra não perder a série no raso.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "costao-do-santinho|cintura-peito|curto-vaga|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Meio termo no pico",
+          "analise": "Já de noite, Costão do Santinho segue com energia moderada, pede atenção mas não cansa. Na água, o vento de través forte (soprando de lado) desorganiza a parede e empurra quem rema, e é série curta, tudo perto, quem hesita perde a janela da onda. O pico junto ao costão dá uma textura a mais pra quem conhece o canto. No fim das contas, na régua, é um mar que rende bem pra quem já tem base sólida de rema e leitura; leve uma segunda prancha reserva se a sessão for longa.",
+          "janela": null,
+          "aviso": "Vento de través forte pode empurrar quem rema pro lado, fique de olho na sua posição em relação ao pico."
+        }
+      ]
+    },
+    "unamar|cintura-peito|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar que entrega",
+          "analise": "A manhã encontra Unamar com energia consistente, a remada já pesa mais. Na água, um terral (vento que sai da terra pro mar) suave ajuda a alisar a parede, e a série dá um respiro razoável entre as ondas, tempo suficiente pra escolher com calma. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; dê prioridade a quem já está na onda, o respeito no pico rende mais paz.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|cintura-peito|bom-9a11|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Janela intermediária",
+          "analise": "Unamar segue a tarde com energia consistente, a remada já pesa mais. Na água, um maral fraco (vento que vem do mar pra terra) já tira um pouco do brilho da parede, e o intervalo entre as ondas é generoso, sobra tempo pra remar com calma até o pico. No fim das contas, é um mar que rende bem pra quem já tem base sólida de rema e leitura; fique de olho na maré, ela muda o banco ao longo do dia.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|cintura-peito|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Sessão que rende",
+          "analise": "A noite encontra Unamar com energia consistente, a remada já pesa mais. Na água, um vento de través fraco (soprando de lado) mexe pouco na superfície, e as séries vêm bem separadas, quase dá pra escolher a onda com o dedo. No fim das contas, sem estresse, é uma boa janela pra quem já tem uma base e quer evoluir; vale levar uma prancha com mais volume pra facilitar a remada.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "fernando-de-noronha|peito-ombro|medio-7a9|offshore-moderado|manha|fora": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Dá pra surfar",
+          "analise": "Fernando de Noronha acorda a manhã com energia pesada, remada cansa e o caldo cobra caro. Na água, o terral (vento que sai da terra pro mar) vem forte, segurando a parede mas dificultando o drop, e a série dá um respiro razoável entre as ondas, tempo suficiente pra escolher com calma. Chega do sudeste, fora da janela ideal daqui, então vale calibrar a expectativa: menos força do que em dia de swell certo. No fim das contas, é um mar que exige leitura afiada e respeito com quem já conhece o pico; prancha mais curta ajuda a girar rápido nessa série.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "fernando-de-noronha|peito-ombro|medio-7a9|offshore-moderado|noite|fora": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Condição mediana",
+          "analise": "No período noturno, Fernando de Noronha mantém energia pesada, remada cansa e o caldo cobra caro. Na água, o terral (vento que sai da terra pro mar) vem forte, segurando a parede mas dificultando o drop, e o intervalo entre as ondas já ajuda a se posicionar sem correria. O swell vem do sudeste, de fora do ângulo que essa praia realmente gosta, então o que chega é sombra, mais fraco do que o de costume por ali. No fim das contas, é um mar que pede repertório, não é lugar de estreia; bom cantear pro lado mais abrigado do vento antes de remar pro pico.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "rosa|cintura-peito|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Vale a tentativa",
+          "analise": "No fim de tarde, Praia do Rosa entrega energia moderada, pede atenção mas não cansa. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e é série curta, tudo perto, quem hesita perde a janela da onda. No fim das contas, é um mar que rende bem pra quem já tem base sólida de rema e leitura; chegue cedo pra pegar o pico menos disputado.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "rosa|cintura-peito|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Meio termo no pico",
+          "analise": "Depois do sol se pôr, Praia do Rosa continua com energia moderada, pede atenção mas não cansa. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e a série chega apertada e meio atropelada, sem muito tempo entre uma onda e outra. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; observe uns minutos da areia antes de entrar, pra pegar o ritmo da série.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "itamambuca|joelho-cintura|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Nem tudo nem nada",
+          "analise": "A manhã começa com Itamambuca recebendo força bem fraca, remada tranquila e sem exigência. Na água, um terral (vento que sai da terra pro mar) suave ajuda a alisar a parede, e o intervalo entre as ondas já ajuda a se posicionar sem correria. No fim das contas, de boa, é um mar que rende bem pra quem já tem base sólida de rema e leitura; prefira o horário de vento mais fraco pra aproveitar melhor.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-lagoa|joelho-cintura|curto-vaga|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Janela intermediária",
+          "analise": "Logo cedo, Barra da Lagoa já mostra força bem fraca, remada tranquila e sem exigência. Na água, um terral (vento que sai da terra pro mar) suave ajuda a alisar a parede, e é série curta, tudo perto, quem hesita perde a janela da onda. O pico perto do canal e do molhe dá uma textura a mais pra quem conhece o canto. No fim das contas, é uma condição democrática, com espaço pra quem começa e pra quem já manda bem; vale remar mais pro fundo pra não perder a série no raso.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-lagoa|joelho-cintura|curto-vaga|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Janela curta de valor",
+          "analise": "Barra da Lagoa entra na noite com força bem fraca, remada tranquila e sem exigência. Na água, o vento de través forte (soprando de lado) desorganiza a parede e empurra quem rema, e a série chega apertada e meio atropelada, sem muito tempo entre uma onda e outra. O pico perto do canal e do molhe dá uma textura a mais pra quem conhece o canto. No fim das contas, é um mar que cabe surfista de todo nível; leve uma segunda prancha reserva se a sessão for longa.",
+          "janela": null,
+          "aviso": "Vento de través forte pode empurrar quem rema pro lado, fique de olho na sua posição em relação ao pico."
+        }
+      ]
+    },
+    "praia-grande-arraial|peito-ombro|medio-7a9|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Vale a pena",
+          "analise": "Praia Grande entra na manhã com energia consistente, a remada já pesa mais. Na água, o terral (vento que sai da terra pro mar) sopra com vontade e segura bem a parede, e o intervalo entre as ondas já ajuda a se posicionar sem correria. No fim das contas, na régua, é uma boa janela pra quem já tem uma base e quer evoluir; dê prioridade a quem já está na onda, o respeito no pico rende mais paz.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|cintura-peito|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Condição mediana",
+          "analise": "A tarde encontra Praia Grande com energia consistente, a remada já pesa mais. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e as séries vêm espaçadas o bastante pra dar tempo de reagir. No fim das contas, é um mar que rende bem pra quem já tem base sólida de rema e leitura; fique de olho na maré, ela muda o banco ao longo do dia.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|cintura-peito|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Vale a tentativa",
+          "analise": "No escuro, Praia Grande ainda entrega energia consistente, a remada já pesa mais. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e a série dá um respiro razoável entre as ondas, tempo suficiente pra escolher com calma. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; vale levar uma prancha com mais volume pra facilitar a remada.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|peito-ombro|medio-7a9|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Vale aproveitar",
+          "analise": "Ainda de manhã, Figueira amanhece com energia consistente, a remada já pesa mais. Na água, o terral (vento que sai da terra pro mar) sopra com vontade e segura bem a parede, e o intervalo entre as ondas já ajuda a se posicionar sem correria. No fim das contas, sem estresse, é um mar que rende bem pra quem já tem base sólida de rema e leitura; prancha mais curta ajuda a girar rápido nessa série.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|cintura-peito|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Nem tudo nem nada",
+          "analise": "Figueira mantém a tarde com energia consistente, a remada já pesa mais. Na água, um vento de través fraco (soprando de lado) mexe pouco na superfície, e as séries vêm espaçadas o bastante pra dar tempo de reagir. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; bom cantear pro lado mais abrigado do vento antes de remar pro pico.",
+          "janela": "12h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|peito-ombro|medio-7a9|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Vale sair de casa",
+          "analise": "A manhã encontra Praia Brava (Arraial) com energia consistente, a remada já pesa mais. Na água, o terral (vento que sai da terra pro mar) sopra com vontade e segura bem a parede, e a série dá um respiro razoável entre as ondas, tempo suficiente pra escolher com calma. No fim das contas, é um mar que exige leitura afiada e respeito com quem já conhece o pico; chegue cedo pra pegar o pico menos disputado.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|cintura-peito|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Surfável com ajuste",
+          "analise": "Durante a tarde, Praia Brava (Arraial) recebe energia consistente, a remada já pesa mais. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e o intervalo entre as ondas já ajuda a se posicionar sem correria. No fim das contas, é um mar que pede repertório, não é lugar de estreia; observe uns minutos da areia antes de entrar, pra pegar o ritmo da série.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|cintura-peito|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Dá pra surfar",
+          "analise": "Já de noite, Praia Brava (Arraial) segue com energia consistente, a remada já pesa mais. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e as séries vêm espaçadas o bastante pra dar tempo de reagir. No fim das contas, é um mar que exige leitura afiada e respeito com quem já conhece o pico; prefira o horário de vento mais fraco pra aproveitar melhor.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-mole|joelho-cintura|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Pouco pra hoje",
+          "analise": "Praia Mole passa a tarde com força bem fraca, remada tranquila e sem exigência. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e a série chega apertada e meio atropelada, sem muito tempo entre uma onda e outra. No fim das contas, de boa, é uma boa janela pra quem já tem uma base e quer evoluir; vale remar mais pro fundo pra não perder a série no raso.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-mole|joelho-cintura|curto-vaga|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Mar de espera",
+          "analise": "A noite encontra Praia Mole com força bem fraca, remada tranquila e sem exigência. Na água, o vento de través forte (soprando de lado) desorganiza a parede e empurra quem rema, e as séries vêm curtas e seguidas, pedindo remada rápida pra pegar o pico certo. No fim das contas, é um mar que rende bem pra quem já tem base sólida de rema e leitura; leve uma segunda prancha reserva se a sessão for longa.",
+          "janela": null,
+          "aviso": "Vento de través forte pode empurrar quem rema pro lado, fique de olho na sua posição em relação ao pico."
+        }
+      ]
+    },
+    "jureia|cintura-peito|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Meio termo no pico",
+          "analise": "Jureia segue a tarde com energia moderada, pede atenção mas não cansa. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e as séries vêm espaçadas o bastante pra dar tempo de reagir. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; dê prioridade a quem já está na onda, o respeito no pico rende mais paz.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "jureia|joelho-cintura|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Nem tudo nem nada",
+          "analise": "No período noturno, Jureia mantém energia moderada, pede atenção mas não cansa. Na água, um vento de través fraco (soprando de lado) mexe pouco na superfície, e a série dá um respiro razoável entre as ondas, tempo suficiente pra escolher com calma. No fim das contas, na régua, é um mar que rende bem pra quem já tem base sólida de rema e leitura; fique de olho na maré, ela muda o banco ao longo do dia.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "vermelha-do-norte|joelho-cintura|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Janela intermediária",
+          "analise": "Vermelha do Norte acorda a manhã com força bem fraca, remada tranquila e sem exigência. Na água, um terral (vento que sai da terra pro mar) suave ajuda a alisar a parede, e o intervalo entre as ondas já ajuda a se posicionar sem correria. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; vale levar uma prancha com mais volume pra facilitar a remada.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "domingas-dias|joelho-cintura|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Sessão que rende",
+          "analise": "A manhã começa com Domingas Dias recebendo energia moderada, pede atenção mas não cansa. Na água, um terral (vento que sai da terra pro mar) suave ajuda a alisar a parede, e as séries vêm espaçadas o bastante pra dar tempo de reagir. No fim das contas, é uma condição amigável pra quem começa agora; prancha mais curta ajuda a girar rápido nessa série.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "domingas-dias|joelho-cintura|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Vale a pena",
+          "analise": "Depois do sol se pôr, Domingas Dias continua com energia moderada, pede atenção mas não cansa. Na água, um terral (vento que sai da terra pro mar) suave ajuda a alisar a parede, e a série dá um respiro razoável entre as ondas, tempo suficiente pra escolher com calma. No fim das contas, sem estresse, é ideal pra quem ainda tá pegando o jeito, sem susto; bom cantear pro lado mais abrigado do vento antes de remar pro pico.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tucuns|cintura-peito|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Condição mediana",
+          "analise": "Logo cedo, Tucuns já mostra energia moderada, pede atenção mas não cansa. Na água, um vento de través fraco (soprando de lado) mexe pouco na superfície, e as séries vêm curtas e seguidas, pedindo remada rápida pra pegar o pico certo. No fim das contas, é um mar que rende bem pra quem já tem base sólida de rema e leitura; chegue cedo pra pegar o pico menos disputado.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "tucuns|cintura-peito|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Vale a tentativa",
+          "analise": "No fim de tarde, Tucuns entrega energia moderada, pede atenção mas não cansa. Na água, um maral fraco (vento que vem do mar pra terra) já tira um pouco do brilho da parede, e as séries vêm espaçadas o bastante pra dar tempo de reagir. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; observe uns minutos da areia antes de entrar, pra pegar o ritmo da série.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "tucuns|cintura-peito|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Meio termo no pico",
+          "analise": "Tucuns entra na noite com energia moderada, pede atenção mas não cansa. Na água, um maral fraco (vento que vem do mar pra terra) já tira um pouco do brilho da parede, e a série dá um respiro razoável entre as ondas, tempo suficiente pra escolher com calma. No fim das contas, é um mar que rende bem pra quem já tem base sólida de rema e leitura; prefira o horário de vento mais fraco pra aproveitar melhor.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|cintura-peito|bom-9a11|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar que entrega",
+          "analise": "A tarde encontra Recreio dos Bandeirantes com energia consistente, a remada já pesa mais. Na água, o terral (vento que sai da terra pro mar) sopra com vontade e segura bem a parede, e o intervalo entre as ondas é generoso, sobra tempo pra remar com calma até o pico. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; vale remar mais pro fundo pra não perder a série no raso.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|cintura-peito|bom-9a11|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Vale sair de casa",
+          "analise": "Arpoador mantém a tarde com energia consistente, a remada já pesa mais. Na água, um terral (vento que sai da terra pro mar) suave ajuda a alisar a parede, e as séries vêm bem separadas, quase dá pra escolher a onda com o dedo. O pico com o costão na moldura dá uma textura a mais pra quem conhece o canto. No fim das contas, de boa, é um mar que rende bem pra quem já tem base sólida de rema e leitura; leve uma segunda prancha reserva se a sessão for longa.",
+          "janela": "12h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "itacoatiara|cintura-peito|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Sessão que rende",
+          "analise": "Itacoatiara entra na manhã com energia consistente, a remada já pesa mais. Na água, um terral (vento que sai da terra pro mar) suave ajuda a alisar a parede, e a série chega bem espaçada, dando tempo de ver a onda vindo de longe e se posicionar sem pressa. No fim das contas, é um mar que pede repertório, não é lugar de estreia; dê prioridade a quem já está na onda, o respeito no pico rende mais paz.",
+          "janela": "6h-10h",
+          "aviso": "Pico com localismo forte, chegue respeitando a fila e quem já está surfando."
+        }
+      ]
+    },
+    "itacoatiara|cintura-peito|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Vale a pena",
+          "analise": "Durante a tarde, Itacoatiara recebe energia consistente, a remada já pesa mais. Na água, um vento de través fraco (soprando de lado) mexe pouco na superfície, e o intervalo entre as ondas é generoso, sobra tempo pra remar com calma até o pico. No fim das contas, é um mar que exige leitura afiada e respeito com quem já conhece o pico; fique de olho na maré, ela muda o banco ao longo do dia.",
+          "janela": "14h-16h",
+          "aviso": "Pico com localismo forte, chegue respeitando a fila e quem já está surfando."
+        }
+      ]
+    },
+    "itacoatiara|cintura-peito|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Boa chance no pico",
+          "analise": "No escuro, Itacoatiara ainda entrega energia consistente, a remada já pesa mais. Na água, um vento de través fraco (soprando de lado) mexe pouco na superfície, e as séries vêm bem separadas, quase dá pra escolher a onda com o dedo. No fim das contas, na régua, é um mar que pede repertório, não é lugar de estreia; vale levar uma prancha com mais volume pra facilitar a remada.",
+          "janela": null,
+          "aviso": "Pico com localismo forte, chegue respeitando a fila e quem já está surfando."
+        }
+      ]
+    },
+    "monte-alto|cintura-peito|medio-7a9|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Condição que anima",
+          "analise": "Ainda de manhã, Monte Alto amanhece com energia consistente, a remada já pesa mais. Na água, o terral (vento que sai da terra pro mar) sopra com vontade e segura bem a parede, e a série dá um respiro razoável entre as ondas, tempo suficiente pra escolher com calma. No fim das contas, é um mar que rende bem pra quem já tem base sólida de rema e leitura; prancha mais curta ajuda a girar rápido nessa série.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|cintura-peito|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Vale aproveitar",
+          "analise": "Monte Alto passa a tarde com energia consistente, a remada já pesa mais. Na água, um vento de través fraco (soprando de lado) mexe pouco na superfície, e o intervalo entre as ondas é generoso, sobra tempo pra remar com calma até o pico. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; bom cantear pro lado mais abrigado do vento antes de remar pro pico.",
+          "janela": "12h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|cintura-peito|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Mar que entrega",
+          "analise": "Já de noite, Monte Alto segue com energia consistente, a remada já pesa mais. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e as séries vêm bem separadas, quase dá pra escolher a onda com o dedo. No fim das contas, sem estresse, é um mar que rende bem pra quem já tem base sólida de rema e leitura; chegue cedo pra pegar o pico menos disputado.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|cintura-peito|curto-vaga|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Janela intermediária",
+          "analise": "Praia do Ferrugem segue a tarde com energia moderada, pede atenção mas não cansa. Na água, o maral (vento que vem do mar pra terra) enruga a superfície e atrapalha a leitura, e a série chega apertada e meio atropelada, sem muito tempo entre uma onda e outra. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; observe uns minutos da areia antes de entrar, pra pegar o ritmo da série.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|cintura-peito|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Surfável com ajuste",
+          "analise": "A noite encontra Praia do Ferrugem com energia moderada, pede atenção mas não cansa. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e as séries vêm curtas e seguidas, pedindo remada rápida pra pegar o pico certo. No fim das contas, é um mar que rende bem pra quem já tem base sólida de rema e leitura; prefira o horário de vento mais fraco pra aproveitar melhor.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "setiba|cintura-peito|curto-vaga|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Dá pra surfar",
+          "analise": "A manhã encontra Setiba com energia moderada, pede atenção mas não cansa. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e é série curta, tudo perto, quem hesita perde a janela da onda. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; vale remar mais pro fundo pra não perder a série no raso.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-de-ilheus|joelho-cintura|curto-vaga|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Pouco pra hoje",
+          "analise": "Barra de Ilhéus acorda a manhã com força bem fraca, remada tranquila e sem exigência. Na água, um vento de través fraco (soprando de lado) mexe pouco na superfície, e a série chega apertada e meio atropelada, sem muito tempo entre uma onda e outra. No fim das contas, é um mar que rende bem pra quem já tem base sólida de rema e leitura; leve uma segunda prancha reserva se a sessão for longa.",
+          "janela": "8h-11h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|cintura-peito|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Condição que anima",
+          "analise": "A manhã começa com Praia da Vila recebendo energia consistente, a remada já pesa mais. Na água, um terral (vento que sai da terra pro mar) suave ajuda a alisar a parede, e o intervalo entre as ondas é generoso, sobra tempo pra remar com calma até o pico. O pico ao lado da igrejinha dá uma textura a mais pra quem conhece o canto. No fim das contas, de boa, é uma boa janela pra quem já tem uma base e quer evoluir; dê prioridade a quem já está na onda, o respeito no pico rende mais paz.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|cintura-peito|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Vale aproveitar",
+          "analise": "No período noturno, Praia da Vila mantém energia consistente, a remada já pesa mais. Na água, um vento de través fraco (soprando de lado) mexe pouco na superfície, e as séries vêm bem separadas, quase dá pra escolher a onda com o dedo. O pico ao lado da igrejinha dá uma textura a mais pra quem conhece o canto. No fim das contas, é um mar que rende bem pra quem já tem base sólida de rema e leitura; fique de olho na maré, ela muda o banco ao longo do dia.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-buzios|cintura-peito|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Nem tudo nem nada",
+          "analise": "Logo cedo, Praia Brava (Búzios) já mostra energia moderada, pede atenção mas não cansa. Na água, um vento de través fraco (soprando de lado) mexe pouco na superfície, e a série chega apertada e meio atropelada, sem muito tempo entre uma onda e outra. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; vale levar uma prancha com mais volume pra facilitar a remada.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-buzios|cintura-peito|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Janela intermediária",
+          "analise": "No fim de tarde, Praia Brava (Búzios) entrega energia moderada, pede atenção mas não cansa. Na água, um maral fraco (vento que vem do mar pra terra) já tira um pouco do brilho da parede, e o intervalo entre as ondas já ajuda a se posicionar sem correria. No fim das contas, na régua, é um mar que rende bem pra quem já tem base sólida de rema e leitura; prancha mais curta ajuda a girar rápido nessa série.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-buzios|cintura-peito|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Surfável com ajuste",
+          "analise": "Depois do sol se pôr, Praia Brava (Búzios) continua com energia moderada, pede atenção mas não cansa. Na água, um maral fraco (vento que vem do mar pra terra) já tira um pouco do brilho da parede, e as séries vêm espaçadas o bastante pra dar tempo de reagir. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; bom cantear pro lado mais abrigado do vento antes de remar pro pico.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|cintura-peito|medio-7a9|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Dá pra surfar",
+          "analise": "A tarde encontra Praia do Peró com energia moderada, pede atenção mas não cansa. Na água, um maral fraco (vento que vem do mar pra terra) já tira um pouco do brilho da parede, e a série dá um respiro razoável entre as ondas, tempo suficiente pra escolher com calma. No fim das contas, é um mar que rende bem pra quem já tem base sólida de rema e leitura; chegue cedo pra pegar o pico menos disputado.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|joelho-cintura|medio-7a9|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Boa chance no pico",
+          "analise": "Praia do Peró entra na noite com energia moderada, pede atenção mas não cansa. Na água, um terral (vento que sai da terra pro mar) suave ajuda a alisar a parede, e o intervalo entre as ondas já ajuda a se posicionar sem correria. No fim das contas, sem estresse, é uma boa janela pra quem já tem uma base e quer evoluir; observe uns minutos da areia antes de entrar, pra pegar o ritmo da série.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "caioba|flat|curto-vaga|lateral-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 2.5,
+          "titulo": "Mar de espera",
+          "analise": "Caiobá entra na manhã com força bem fraca, remada tranquila e sem exigência. Na água, um vento de través fraco (soprando de lado) mexe pouco na superfície, e é série curta, tudo perto, quem hesita perde a janela da onda. Vem do leste, no limite da janela que a praia gosta, então a qualidade oscila de pico pra pico. No fim das contas, é um mar que rende bem pra quem já tem base sólida de rema e leitura; prefira o horário de vento mais fraco pra aproveitar melhor.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "caioba|flat|curto-vaga|offshore-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Melhor esperar",
+          "analise": "Caiobá mantém a tarde com força bem fraca, remada tranquila e sem exigência. Na água, o terral (vento que sai da terra pro mar) sopra com vontade e segura bem a parede, e a série chega apertada e meio atropelada, sem muito tempo entre uma onda e outra. O swell chega do leste, meio de banda em relação ao que essa praia prefere, então nem toda hora rende igual. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; vale remar mais pro fundo pra não perder a série no raso.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "caioba|flat|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Dia fraco no pico",
+          "analise": "No escuro, Caiobá ainda entrega força bem fraca, remada tranquila e sem exigência. Na água, um vento de través fraco (soprando de lado) mexe pouco na superfície, e as séries vêm curtas e seguidas, pedindo remada rápida pra pegar o pico certo. No fim das contas, é um mar que rende bem pra quem já tem base sólida de rema e leitura; leve uma segunda prancha reserva se a sessão for longa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "matinhos|flat|curto-vaga|lateral-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 2.5,
+          "titulo": "Sem muita entrega",
+          "analise": "Ainda de manhã, Matinhos amanhece com força bem fraca, remada tranquila e sem exigência. Na água, um vento de través fraco (soprando de lado) mexe pouco na superfície, e é série curta, tudo perto, quem hesita perde a janela da onda. O swell chega do leste, meio de banda em relação ao que essa praia prefere, então nem toda hora rende igual. No fim das contas, é uma condição democrática, com espaço pra quem começa e pra quem já manda bem; dê prioridade a quem já está na onda, o respeito no pico rende mais paz.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "matinhos|flat|curto-vaga|offshore-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Janela curta de valor",
+          "analise": "Durante a tarde, Matinhos recebe força bem fraca, remada tranquila e sem exigência. Na água, o terral (vento que sai da terra pro mar) sopra com vontade e segura bem a parede, e a série chega apertada e meio atropelada, sem muito tempo entre uma onda e outra. Vem do leste, no limite da janela que a praia gosta, então a qualidade oscila de pico pra pico. No fim das contas, de boa, é um mar que cabe surfista de todo nível; fique de olho na maré, ela muda o banco ao longo do dia.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "matinhos|flat|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Expectativa baixa",
+          "analise": "Já de noite, Matinhos segue com força bem fraca, remada tranquila e sem exigência. Na água, um vento de través fraco (soprando de lado) mexe pouco na superfície, e as séries vêm curtas e seguidas, pedindo remada rápida pra pegar o pico certo. No fim das contas, é uma condição democrática, com espaço pra quem começa e pra quem já manda bem; vale levar uma prancha com mais volume pra facilitar a remada.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|cintura-peito|curto-vaga|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Condição mediana",
+          "analise": "Praia da Silveira passa a tarde com energia moderada, pede atenção mas não cansa. Na água, o maral (vento que vem do mar pra terra) enruga a superfície e atrapalha a leitura, e é série curta, tudo perto, quem hesita perde a janela da onda. No fim das contas, é um mar que exige leitura afiada e respeito com quem já conhece o pico; prancha mais curta ajuda a girar rápido nessa série.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|cintura-peito|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Vale a tentativa",
+          "analise": "A noite encontra Praia da Silveira com energia moderada, pede atenção mas não cansa. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e a série chega apertada e meio atropelada, sem muito tempo entre uma onda e outra. No fim das contas, na régua, é um mar que pede repertório, não é lugar de estreia; bom cantear pro lado mais abrigado do vento antes de remar pro pico.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|cintura-peito|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Meio termo no pico",
+          "analise": "A manhã encontra Farol de Santa Marta com energia consistente, a remada já pesa mais. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e o intervalo entre as ondas já ajuda a se posicionar sem correria. No fim das contas, é um mar que exige leitura afiada e respeito com quem já conhece o pico; chegue cedo pra pegar o pico menos disputado.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|peito-ombro|medio-7a9|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Nem tudo nem nada",
+          "analise": "Farol de Santa Marta segue a tarde com energia consistente, a remada já pesa mais. Na água, o vento de través forte (soprando de lado) desorganiza a parede e empurra quem rema, e as séries vêm espaçadas o bastante pra dar tempo de reagir. No fim das contas, é um mar que pede repertório, não é lugar de estreia; observe uns minutos da areia antes de entrar, pra pegar o ritmo da série.",
+          "janela": "14h-16h",
+          "aviso": "Vento de través forte pode empurrar quem rema pro lado, fique de olho na sua posição em relação ao pico."
+        }
+      ]
+    },
+    "farol-de-santa-marta|peito-ombro|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Janela intermediária",
+          "analise": "No período noturno, Farol de Santa Marta mantém energia consistente, a remada já pesa mais. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e a série chega apertada e meio atropelada, sem muito tempo entre uma onda e outra. No fim das contas, sem estresse, é um mar que exige leitura afiada e respeito com quem já conhece o pico; prefira o horário de vento mais fraco pra aproveitar melhor.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|cintura-peito|curto-vaga|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Surfável com ajuste",
+          "analise": "No fim de tarde, Ibiraquera entrega energia moderada, pede atenção mas não cansa. Na água, o maral (vento que vem do mar pra terra) enruga a superfície e atrapalha a leitura, e as séries vêm curtas e seguidas, pedindo remada rápida pra pegar o pico certo. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; vale remar mais pro fundo pra não perder a série no raso.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|cintura-peito|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Dá pra surfar",
+          "analise": "Depois do sol se pôr, Ibiraquera continua com energia moderada, pede atenção mas não cansa. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e é série curta, tudo perto, quem hesita perde a janela da onda. No fim das contas, é um mar que rende bem pra quem já tem base sólida de rema e leitura; leve uma segunda prancha reserva se a sessão for longa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "barra-do-sahy|joelho-cintura|bom-9a11|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Boa chance no pico",
+          "analise": "Barra do Sahy acorda a manhã com energia moderada, pede atenção mas não cansa. Na água, o terral (vento que sai da terra pro mar) sopra com vontade e segura bem a parede, e a série chega bem espaçada, dando tempo de ver a onda vindo de longe e se posicionar sem pressa. No fim das contas, é ideal pra quem ainda tá pegando o jeito, sem susto; dê prioridade a quem já está na onda, o respeito no pico rende mais paz.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "bonete|cintura-peito|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Condição que anima",
+          "analise": "A manhã começa com Praia do Bonete recebendo energia moderada, pede atenção mas não cansa. Na água, um terral (vento que sai da terra pro mar) suave ajuda a alisar a parede, e o intervalo entre as ondas é generoso, sobra tempo pra remar com calma até o pico. No fim das contas, é um mar que exige leitura afiada e respeito com quem já conhece o pico; fique de olho na maré, ela muda o banco ao longo do dia.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "bonete|cintura-peito|bom-9a11|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Vale aproveitar",
+          "analise": "A tarde encontra Praia do Bonete com energia moderada, pede atenção mas não cansa. Na água, um terral (vento que sai da terra pro mar) suave ajuda a alisar a parede, e as séries vêm bem separadas, quase dá pra escolher a onda com o dedo. No fim das contas, de boa, é um mar que pede repertório, não é lugar de estreia; vale levar uma prancha com mais volume pra facilitar a remada.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "bonete|cintura-peito|bom-9a11|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Nem tudo nem nada",
+          "analise": "Praia do Bonete entra na noite com energia moderada, pede atenção mas não cansa. Na água, um maral fraco (vento que vem do mar pra terra) já tira um pouco do brilho da parede, e a série chega bem espaçada, dando tempo de ver a onda vindo de longe e se posicionar sem pressa. No fim das contas, é um mar que exige leitura afiada e respeito com quem já conhece o pico; prancha mais curta ajuda a girar rápido nessa série.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "massaguacu|joelho-cintura|curto-vaga|offshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Sem muita entrega",
+          "analise": "Logo cedo, Massaguaçu já mostra força bem fraca, remada tranquila e sem exigência. Na água, um terral (vento que sai da terra pro mar) suave ajuda a alisar a parede, e as séries vêm curtas e seguidas, pedindo remada rápida pra pegar o pico certo. O swell chega do leste, meio de banda em relação ao que essa praia prefere, então nem toda hora rende igual. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; bom cantear pro lado mais abrigado do vento antes de remar pro pico.",
+          "janela": "8h-11h",
+          "aviso": null
+        }
+      ]
+    },
+    "massaguacu|joelho-cintura|curto-vaga|offshore-fraco|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Janela curta de valor",
+          "analise": "Massaguaçu mantém a tarde com força bem fraca, remada tranquila e sem exigência. Na água, um terral (vento que sai da terra pro mar) suave ajuda a alisar a parede, e é série curta, tudo perto, quem hesita perde a janela da onda. Vem do leste, no limite da janela que a praia gosta, então a qualidade oscila de pico pra pico. No fim das contas, na régua, é um mar que rende bem pra quem já tem base sólida de rema e leitura; chegue cedo pra pegar o pico menos disputado.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "massaguacu|joelho-cintura|curto-vaga|glassy|noite|borda": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Expectativa baixa",
+          "analise": "No escuro, Massaguaçu ainda entrega força bem fraca, remada tranquila e sem exigência. Na água, um terral (vento que sai da terra pro mar) suave ajuda a alisar a parede, e a série chega apertada e meio atropelada, sem muito tempo entre uma onda e outra. O swell chega do leste, meio de banda em relação ao que essa praia prefere, então nem toda hora rende igual. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; observe uns minutos da areia antes de entrar, pra pegar o ritmo da série.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|cintura-peito|bom-9a11|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Boa chance no pico",
+          "analise": "Durante a tarde, Prainha recebe energia moderada, pede atenção mas não cansa. Na água, o terral (vento que sai da terra pro mar) sopra com vontade e segura bem a parede, e o intervalo entre as ondas é generoso, sobra tempo pra remar com calma até o pico. O pico na enseada fechada dá uma textura a mais pra quem conhece o canto. No fim das contas, é um mar que exige leitura afiada e respeito com quem já conhece o pico; prefira o horário de vento mais fraco pra aproveitar melhor.",
+          "janela": "13h-16h",
+          "aviso": "Pico com localismo forte, chegue respeitando a fila e quem já está surfando."
+        }
+      ]
+    },
+    "penha|joelho-cintura|curto-vaga|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Vale a tentativa",
+          "analise": "Penha entra na manhã com força bem fraca, remada tranquila e sem exigência. Na água, o terral (vento que sai da terra pro mar) sopra com vontade e segura bem a parede, e é série curta, tudo perto, quem hesita perde a janela da onda. No fim das contas, sem estresse, é uma boa janela pra quem já tem uma base e quer evoluir; vale remar mais pro fundo pra não perder a série no raso.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "penha|joelho-cintura|curto-vaga|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Melhor esperar",
+          "analise": "Penha passa a tarde com força bem fraca, remada tranquila e sem exigência. Na água, um maral fraco (vento que vem do mar pra terra) já tira um pouco do brilho da parede, e a série chega apertada e meio atropelada, sem muito tempo entre uma onda e outra. No fim das contas, é um mar que rende bem pra quem já tem base sólida de rema e leitura; leve uma segunda prancha reserva se a sessão for longa.",
+          "janela": "12h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "penha|cintura-peito|curto-vaga|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Dia fraco no pico",
+          "analise": "Já de noite, Penha segue com força bem fraca, remada tranquila e sem exigência. Na água, o maral (vento que vem do mar pra terra) enruga a superfície e atrapalha a leitura, e as séries vêm curtas e seguidas, pedindo remada rápida pra pegar o pico certo. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; dê prioridade a quem já está na onda, o respeito no pico rende mais paz.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tiririca|cintura-peito|curto-vaga|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Janela intermediária",
+          "analise": "Ainda de manhã, Tiririca amanhece com energia moderada, pede atenção mas não cansa. Na água, um maral fraco (vento que vem do mar pra terra) já tira um pouco do brilho da parede, e é série curta, tudo perto, quem hesita perde a janela da onda. No fim das contas, é um mar que cabe surfista de todo nível; fique de olho na maré, ela muda o banco ao longo do dia.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "tiririca|cintura-peito|curto-vaga|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Surfável com ajuste",
+          "analise": "Tiririca segue a tarde com energia moderada, pede atenção mas não cansa. Na água, o maral (vento que vem do mar pra terra) enruga a superfície e atrapalha a leitura, e a série chega apertada e meio atropelada, sem muito tempo entre uma onda e outra. No fim das contas, é uma condição democrática, com espaço pra quem começa e pra quem já manda bem; vale levar uma prancha com mais volume pra facilitar a remada.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "tiririca|cintura-peito|curto-vaga|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Dá pra surfar",
+          "analise": "A noite encontra Tiririca com energia moderada, pede atenção mas não cansa. Na água, um maral fraco (vento que vem do mar pra terra) já tira um pouco do brilho da parede, e as séries vêm curtas e seguidas, pedindo remada rápida pra pegar o pico certo. No fim das contas, de boa, é um mar que cabe surfista de todo nível; prancha mais curta ajuda a girar rápido nessa série.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tramandai|joelho-cintura|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Condição mediana",
+          "analise": "A manhã encontra Tramandaí com energia moderada, pede atenção mas não cansa. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e as séries vêm espaçadas o bastante pra dar tempo de reagir. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; bom cantear pro lado mais abrigado do vento antes de remar pro pico.",
+          "janela": "8h-11h",
+          "aviso": null
+        }
+      ]
+    },
+    "tramandai|joelho-cintura|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Vale a tentativa",
+          "analise": "No fim de tarde, Tramandaí entrega energia moderada, pede atenção mas não cansa. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e a série chega apertada e meio atropelada, sem muito tempo entre uma onda e outra. No fim das contas, é um mar que rende bem pra quem já tem base sólida de rema e leitura; chegue cedo pra pegar o pico menos disputado.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "tramandai|joelho-cintura|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Melhor esperar",
+          "analise": "No período noturno, Tramandaí mantém força bem fraca, remada tranquila e sem exigência. Na água, um vento de través fraco (soprando de lado) mexe pouco na superfície, e as séries vêm curtas e seguidas, pedindo remada rápida pra pegar o pico certo. No fim das contas, na régua, é uma boa janela pra quem já tem uma base e quer evoluir; observe uns minutos da areia antes de entrar, pra pegar o ritmo da série.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|cintura-peito|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar que entrega",
+          "analise": "Saquarema acorda a manhã com energia consistente, a remada já pesa mais. Na água, um terral (vento que sai da terra pro mar) suave ajuda a alisar a parede, e as séries vêm bem separadas, quase dá pra escolher a onda com o dedo. No fim das contas, é um mar que exige leitura afiada e respeito com quem já conhece o pico; prefira o horário de vento mais fraco pra aproveitar melhor.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|cintura-peito|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Vale sair de casa",
+          "analise": "Depois do sol se pôr, Saquarema continua com energia consistente, a remada já pesa mais. Na água, um vento de través fraco (soprando de lado) mexe pouco na superfície, e a série chega bem espaçada, dando tempo de ver a onda vindo de longe e se posicionar sem pressa. No fim das contas, é um mar que pede repertório, não é lugar de estreia; vale remar mais pro fundo pra não perder a série no raso.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "maresias|joelho-cintura|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Sessão que rende",
+          "analise": "A manhã começa com Maresias recebendo energia moderada, pede atenção mas não cansa. Na água, um terral (vento que sai da terra pro mar) suave ajuda a alisar a parede, e o intervalo entre as ondas é generoso, sobra tempo pra remar com calma até o pico. No fim das contas, sem estresse, é um mar que exige leitura afiada e respeito com quem já conhece o pico; leve uma segunda prancha reserva se a sessão for longa.",
+          "janela": "8h-11h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|peito-ombro|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Vale a pena",
+          "analise": "Logo cedo, Foguete já mostra energia consistente, a remada já pesa mais. Na água, o terral (vento que sai da terra pro mar) sopra com vontade e segura bem a parede, e as séries vêm espaçadas o bastante pra dar tempo de reagir. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; dê prioridade a quem já está na onda, o respeito no pico rende mais paz.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|cintura-peito|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Condição mediana",
+          "analise": "A tarde encontra Foguete com energia consistente, a remada já pesa mais. Na água, um vento de través fraco (soprando de lado) mexe pouco na superfície, e a série dá um respiro razoável entre as ondas, tempo suficiente pra escolher com calma. No fim das contas, é um mar que rende bem pra quem já tem base sólida de rema e leitura; fique de olho na maré, ela muda o banco ao longo do dia.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "torres|cintura-peito|curto-vaga|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Vale a tentativa",
+          "analise": "Torres mantém a tarde com energia moderada, pede atenção mas não cansa. Na água, o vento de través forte (soprando de lado) desorganiza a parede e empurra quem rema, e as séries vêm curtas e seguidas, pedindo remada rápida pra pegar o pico certo. O pico junto aos molhes dá uma textura a mais pra quem conhece o canto. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; vale levar uma prancha com mais volume pra facilitar a remada.",
+          "janela": "13h-16h",
+          "aviso": "Vento de través forte pode empurrar quem rema pro lado, fique de olho na sua posição em relação ao pico."
+        }
+      ]
+    },
+    "torres|joelho-cintura|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Melhor esperar",
+          "analise": "Torres entra na noite com força bem fraca, remada tranquila e sem exigência. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e é série curta, tudo perto, quem hesita perde a janela da onda. O pico junto aos molhes dá uma textura a mais pra quem conhece o canto. No fim das contas, é um mar que rende bem pra quem já tem base sólida de rema e leitura; prancha mais curta ajuda a girar rápido nessa série.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|cintura-peito|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Mar que entrega",
+          "analise": "Tombo entra na manhã com energia moderada, pede atenção mas não cansa. Na água, um terral (vento que sai da terra pro mar) suave ajuda a alisar a parede, e a série dá um respiro razoável entre as ondas, tempo suficiente pra escolher com calma. No fim das contas, de boa, é um mar que pede repertório, não é lugar de estreia; bom cantear pro lado mais abrigado do vento antes de remar pro pico.",
+          "janela": "8h-11h",
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|joelho-cintura|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Janela intermediária",
+          "analise": "Durante a tarde, Tombo recebe energia moderada, pede atenção mas não cansa. Na água, um maral fraco (vento que vem do mar pra terra) já tira um pouco do brilho da parede, e o intervalo entre as ondas já ajuda a se posicionar sem correria. No fim das contas, é um mar que exige leitura afiada e respeito com quem já conhece o pico; chegue cedo pra pegar o pico menos disputado.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "engenhoca|cintura-peito|curto-vaga|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Surfável com ajuste",
+          "analise": "Ainda de manhã, Engenhoca amanhece com energia moderada, pede atenção mas não cansa. Na água, um maral fraco (vento que vem do mar pra terra) já tira um pouco do brilho da parede, e é série curta, tudo perto, quem hesita perde a janela da onda. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; observe uns minutos da areia antes de entrar, pra pegar o ritmo da série.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "engenhoca|cintura-peito|curto-vaga|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Dá pra surfar",
+          "analise": "Engenhoca passa a tarde com energia moderada, pede atenção mas não cansa. Na água, o maral (vento que vem do mar pra terra) enruga a superfície e atrapalha a leitura, e a série chega apertada e meio atropelada, sem muito tempo entre uma onda e outra. No fim das contas, na régua, é um mar que rende bem pra quem já tem base sólida de rema e leitura; prefira o horário de vento mais fraco pra aproveitar melhor.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-floripa|joelho-cintura|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Pouco pra hoje",
+          "analise": "Praia Brava (Floripa) segue a tarde com força bem fraca, remada tranquila e sem exigência. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e as séries vêm curtas e seguidas, pedindo remada rápida pra pegar o pico certo. No fim das contas, é um mar que pede repertório, não é lugar de estreia; vale remar mais pro fundo pra não perder a série no raso.",
+          "janela": "14h-17h",
+          "aviso": "Pico com localismo forte, chegue respeitando a fila e quem já está surfando."
+        }
+      ]
+    },
+    "geriba|cintura-peito|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Vale a tentativa",
+          "analise": "A manhã encontra Geribá com energia moderada, pede atenção mas não cansa. Na água, um vento de través fraco (soprando de lado) mexe pouco na superfície, e é série curta, tudo perto, quem hesita perde a janela da onda. No fim das contas, é um mar que cabe surfista de todo nível; leve uma segunda prancha reserva se a sessão for longa.",
+          "janela": "8h-11h",
+          "aviso": null
+        }
+      ]
+    },
+    "geriba|cintura-peito|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Meio termo no pico",
+          "analise": "No fim de tarde, Geribá entrega energia moderada, pede atenção mas não cansa. Na água, um maral fraco (vento que vem do mar pra terra) já tira um pouco do brilho da parede, e a série dá um respiro razoável entre as ondas, tempo suficiente pra escolher com calma. No fim das contas, sem estresse, é uma condição democrática, com espaço pra quem começa e pra quem já manda bem; dê prioridade a quem já está na onda, o respeito no pico rende mais paz.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "geriba|cintura-peito|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Nem tudo nem nada",
+          "analise": "No escuro, Geribá ainda entrega energia moderada, pede atenção mas não cansa. Na água, um maral fraco (vento que vem do mar pra terra) já tira um pouco do brilho da parede, e o intervalo entre as ondas já ajuda a se posicionar sem correria. No fim das contas, é um mar que cabe surfista de todo nível; fique de olho na maré, ela muda o banco ao longo do dia.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-tijuca|cintura-peito|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Vale sair de casa",
+          "analise": "Barra da Tijuca acorda a manhã com energia consistente, a remada já pesa mais. Na água, um terral (vento que sai da terra pro mar) suave ajuda a alisar a parede, e as séries vêm bem separadas, quase dá pra escolher a onda com o dedo. No fim das contas, é uma condição democrática, com espaço pra quem começa e pra quem já manda bem; vale levar uma prancha com mais volume pra facilitar a remada.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "guarda-do-embau|joelho-cintura|curto-vaga|lateral-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 2.5,
+          "titulo": "Janela curta de valor",
+          "analise": "A tarde encontra Guarda do Embaú com força bem fraca, remada tranquila e sem exigência. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e a série chega apertada e meio atropelada, sem muito tempo entre uma onda e outra. Vem do leste, no limite da janela que a praia gosta, então a qualidade oscila de pico pra pico. No fim das contas, é um mar que rende bem pra quem já tem base sólida de rema e leitura; prancha mais curta ajuda a girar rápido nessa série.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "guarda-do-embau|joelho-cintura|curto-vaga|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Expectativa baixa",
+          "analise": "Já de noite, Guarda do Embaú segue com força bem fraca, remada tranquila e sem exigência. Na água, o vento de través forte (soprando de lado) desorganiza a parede e empurra quem rema, e as séries vêm curtas e seguidas, pedindo remada rápida pra pegar o pico certo. O pico na foz do rio da Madre dá uma textura a mais pra quem conhece o canto. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; bom cantear pro lado mais abrigado do vento antes de remar pro pico.",
+          "janela": null,
+          "aviso": "Vento de través forte pode empurrar quem rema pro lado, fique de olho na sua posição em relação ao pico."
+        }
+      ]
+    },
+    "arroio-do-sal|cintura-peito|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Condição mediana",
+          "analise": "A manhã começa com Arroio do Sal recebendo energia moderada, pede atenção mas não cansa. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e as séries vêm espaçadas o bastante pra dar tempo de reagir. No fim das contas, de boa, é um mar que rende bem pra quem já tem base sólida de rema e leitura; chegue cedo pra pegar o pico menos disputado.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|cintura-peito|curto-vaga|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Vale a tentativa",
+          "analise": "Arroio do Sal mantém a tarde com energia moderada, pede atenção mas não cansa. Na água, o vento de través forte (soprando de lado) desorganiza a parede e empurra quem rema, e a série chega apertada e meio atropelada, sem muito tempo entre uma onda e outra. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; observe uns minutos da areia antes de entrar, pra pegar o ritmo da série.",
+          "janela": "14h-16h",
+          "aviso": "Vento de través forte pode empurrar quem rema pro lado, fique de olho na sua posição em relação ao pico."
+        }
+      ]
+    },
+    "arroio-do-sal|cintura-peito|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Meio termo no pico",
+          "analise": "A noite encontra Arroio do Sal com energia moderada, pede atenção mas não cansa. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e as séries vêm curtas e seguidas, pedindo remada rápida pra pegar o pico certo. No fim das contas, é um mar que rende bem pra quem já tem base sólida de rema e leitura; prefira o horário de vento mais fraco pra aproveitar melhor.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|cintura-peito|bom-9a11|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar que entrega",
+          "analise": "Durante a tarde, Grumari recebe energia moderada, pede atenção mas não cansa. Na água, o terral (vento que sai da terra pro mar) sopra com vontade e segura bem a parede, e as séries vêm bem separadas, quase dá pra escolher a onda com o dedo. No fim das contas, na régua, é uma boa janela pra quem já tem uma base e quer evoluir; vale remar mais pro fundo pra não perder a série no raso.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "castelhanos|joelho-cintura|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Janela intermediária",
+          "analise": "Logo cedo, Castelhanos já mostra força bem fraca, remada tranquila e sem exigência. Na água, um terral (vento que sai da terra pro mar) suave ajuda a alisar a parede, e a série dá um respiro razoável entre as ondas, tempo suficiente pra escolher com calma. No fim das contas, é um mar que rende bem pra quem já tem base sólida de rema e leitura; leve uma segunda prancha reserva se a sessão for longa.",
+          "janela": "8h-11h",
+          "aviso": null
+        }
+      ]
+    },
+    "castelhanos|joelho-cintura|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Surfável com ajuste",
+          "analise": "No período noturno, Castelhanos mantém força bem fraca, remada tranquila e sem exigência. Na água, um vento de través fraco (soprando de lado) mexe pouco na superfície, e o intervalo entre as ondas já ajuda a se posicionar sem correria. No fim das contas, é uma boa janela pra quem já tem uma base e quer evoluir; dê prioridade a quem já está na onda, o respeito no pico rende mais paz.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "cidreira|cintura-peito|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Dá pra surfar",
+          "analise": "Cidreira entra na manhã com energia moderada, pede atenção mas não cansa. Na água, o vento de través (soprando de lado) já mexe na parede e pede ajuste de posição, e as séries vêm espaçadas o bastante pra dar tempo de reagir. No fim das contas, sem estresse, é um mar que rende bem pra quem já tem base sólida de rema e leitura; fique de olho na maré, ela muda o banco ao longo do dia.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
     }
   },
-  "generated_at": "2026-07-27T18:24:38.827Z"
+  "generated_at": "2026-07-28T00:14:27.822Z"
 }
