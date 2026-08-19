@@ -101832,7 +101832,1327 @@
           "aviso": null
         }
       ]
+    },
+    "atalaia|cintura-peito|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã com vento de lado",
+          "analise": "Logo cedo, o vento entra de lado, quase de través (soprando lateral em cima da onda) e tá bem ameno ainda. Na água, a energia já empurra com vontade, mas sem exagero, e o espaçamento entre as ondas é razoável, nem apertado nem generoso, o suficiente pra pegar o ritmo. A descida já tem uma pressão gostosa, sem cobrar demais. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, aproveitar essa janela da manhã compensa quem consegue acordar cedo.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|cintura-peito|medio-7a9|lateral-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde: vento de lado",
+          "analise": "Já na parte da tarde, o vento entra de lado, quase de través (soprando lateral em cima da onda) e sopra moderado. Na água, a força é mediana, exige atenção mas não cansa demais, e a série vem com intervalo mediano, dá um tempinho curto pra se posicionar antes da próxima chegar. O drop pede um pop-up (o movimento de levantar da prancha de uma vez) mais atento, e a ondulação entra na beirada da janela que o pico aproveita, então perde um pouco de qualidade. Só quem já tem bagagem sólida aproveita essa condição com segurança. Pra aproveitar bem, vale entrar logo depois do almoço, antes que o vento suba mais.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|cintura-peito|medio-7a9|lateral-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde: vento de lado",
+          "analise": "No período da tarde, o vento entra de lado, quase de través (soprando lateral em cima da onda) e sopra moderado. Na água, a força é mediana, exige atenção mas não cansa demais, e a série vem com intervalo mediano, dá um tempinho curto pra se posicionar antes da próxima chegar. O drop pede um pop-up (o movimento de levantar da prancha de uma vez) mais atento, e a ondulação entra na beirada da janela que o pico aproveita, então perde um pouco de qualidade. Melhor pra quem já tem alguma experiência lendo o mar. Pra aproveitar bem, quem entrar no início da janela pega o melhor da tarde.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|cintura-peito|medio-7a9|lateral-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde de vento de lado",
+          "analise": "Passado o meio-dia, o vento entra de lado, quase de través (soprando lateral em cima da onda) e já dá pra sentir mexendo a água. Na água, a força é mediana, exige atenção mas não cansa demais, e a série vem com intervalo mediano, dá um tempinho curto pra se posicionar antes da próxima chegar. O drop pede um pop-up (o movimento de levantar da prancha de uma vez) mais atento, e o swell tá no limite do que a praia encaixa, entrando meio de lado. Melhor pra quem já tem alguma experiência lendo o mar. Pra aproveitar bem, quem entrar no início da janela pega o melhor da tarde.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|peito-ombro|curto-vaga|lateral-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Manhã de vento de lado",
+          "analise": "Assim que o dia clareia, o vento entra de lado, quase de través (soprando lateral em cima da onda) e mal se sente na água. Na água, a energia é boa, empurra com força e enche o peito, e o mar tá com série curta e nervosa, típica de vento local, pouco espaço pra respirar entre uma onda e outra. A descida vem com pressão real, exige leitura afiada, e o swell tá no limite do que a praia encaixa, entrando meio de lado. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, aproveitar essa janela da manhã compensa quem consegue acordar cedo.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-mole|joelho-cintura|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã: vento de lado",
+          "analise": "Logo cedo, o vento entra de lado, quase de través (soprando lateral em cima da onda) e sopra moderado. Na água, a energia é leve, a remada é tranquila e não cansa, e o espaçamento entre as ondas é razoável, nem apertado nem generoso, o suficiente pra pegar o ritmo. A descida é mansa, dá pra errar e ainda assim se recuperar. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, a dica é entrar logo, antes do vento mudar o padrão do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-mole|joelho-cintura|curto-vaga|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Tarde de vento do mar forte",
+          "analise": "A tarde chega e o vento onshore (vento que vem do mar pra terra e bagunça a onda) bate firme e cansa mais remar, picando e desmanchando a parede. Na água, a energia é leve, a remada é tranquila e não cansa, e o mar tá com série curta e nervosa, típica de vento local, pouco espaço pra respirar entre uma onda e outra. A descida é mansa, dá pra errar e ainda assim se recuperar. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, melhor não esperar demais, a tarde costuma fechar rápido essa condição.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "pantano-do-sul|joelho-cintura|medio-7a9|onshore-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Manhã de vento do mar",
+          "analise": "Assim que o dia clareia, o vento onshore (vento que vem do mar pra terra e bagunça a onda) já dá pra sentir mexendo a água. Na água, a energia é leve, a remada é tranquila e não cansa, e o espaçamento entre as ondas é razoável, nem apertado nem generoso, o suficiente pra pegar o ritmo. A descida é mansa, dá pra errar e ainda assim se recuperar, e o swell tá no limite do que a praia encaixa, entrando meio de lado. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, aproveitar essa janela da manhã compensa quem consegue acordar cedo.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|cintura-peito|medio-7a9|lateral-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde de vento de lado",
+          "analise": "Mais pra tarde, o vento entra de lado, quase de través (soprando lateral em cima da onda) e já dá pra sentir mexendo a água. Na água, a energia já empurra com vontade, mas sem exagero, e o espaçamento entre as ondas é razoável, nem apertado nem generoso, o suficiente pra pegar o ritmo. A descida já tem uma pressão gostosa, sem cobrar demais, e o swell tá no limite do que a praia encaixa, entrando meio de lado. Pede repertório de quem já surfa mar de força, não é lugar de aprender. Pra aproveitar bem, a dica é não deixar pra última hora, a tarde tende a piorar.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "torres|cintura-peito|medio-7a9|lateral-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã de vento de lado",
+          "analise": "Logo cedo, o vento entra de lado, quase de través (soprando lateral em cima da onda) e já dá pra sentir mexendo a água. Na água, a energia já empurra com vontade, mas sem exagero, e o espaçamento entre as ondas é razoável, nem apertado nem generoso, o suficiente pra pegar o ritmo. A descida já tem uma pressão gostosa, sem cobrar demais, e o swell tá no limite do que a praia encaixa, entrando meio de lado. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, aproveitar essa janela da manhã compensa quem consegue acordar cedo.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|joelho-cintura|medio-7a9|lateral-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã: vento de lado",
+          "analise": "Nas primeiras horas da manhã, o vento entra de lado, quase de través (soprando lateral em cima da onda) e sopra moderado. Na água, a força tá suave, boa pra pegar ritmo sem sofrer, e a série vem com intervalo mediano, dá um tempinho curto pra se posicionar antes da próxima chegar. O drop é gentil, sem pressão nenhuma, e a ondulação entra na beirada da janela que o pico aproveita, então perde um pouco de qualidade. Só quem já tem bagagem sólida aproveita essa condição com segurança. Pra aproveitar bem, vale acordar cedo e aproveitar a manhã antes de esquentar.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|joelho-cintura|curto-vaga|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 0,
+          "titulo": "Tarde de vento do mar forte",
+          "analise": "Já na parte da tarde, o vento onshore (vento que vem do mar pra terra e bagunça a onda) bate firme e cansa mais remar, picando e desmanchando a parede. Na água, a força tá suave, boa pra pegar ritmo sem sofrer, e a série chega apertada e meio atropelada, ondas quase em cima uma da outra, sem muito tempo de descanso entre elas. O drop é gentil, sem pressão nenhuma. Só quem já tem bagagem sólida aproveita essa condição com segurança. Pra aproveitar bem, vale entrar logo depois do almoço, antes que o vento suba mais.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|cintura-peito|medio-7a9|glassy|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde de mar liso",
+          "analise": "Passado o meio-dia, o vento praticamente sumiu e a superfície do mar fica lisa, sem nenhuma marca de vento em cima da onda. Na água, a força é mediana, exige atenção mas não cansa demais, e a série vem com intervalo mediano, dá um tempinho curto pra se posicionar antes da próxima chegar. O drop pede um pop-up (o movimento de levantar da prancha de uma vez) mais atento, e o swell tá no limite do que a praia encaixa, entrando meio de lado. Melhor pra quem já tem alguma experiência lendo o mar. Pra aproveitar bem, vale entrar logo depois do almoço, antes que o vento suba mais.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|cintura-peito|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã de vento do mar",
+          "analise": "Nas primeiras horas da manhã, o vento onshore (vento que vem do mar pra terra e bagunça a onda) já dá pra sentir mexendo a água. Na água, a energia já empurra com vontade, mas sem exagero, e o espaçamento entre as ondas é razoável, nem apertado nem generoso, o suficiente pra pegar o ritmo. A descida já tem uma pressão gostosa, sem cobrar demais. Serve gente de todo nível, cada um encontra seu canto. Pra aproveitar bem, aproveitar essa janela da manhã compensa quem consegue acordar cedo.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-de-ilheus|joelho-cintura|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã de vento do mar",
+          "analise": "Logo cedo, o vento onshore (vento que vem do mar pra terra e bagunça a onda) mal se sente na água. Na água, a força tá suave, boa pra pegar ritmo sem sofrer, e a série vem com intervalo mediano, dá um tempinho curto pra se posicionar antes da próxima chegar. O drop é gentil, sem pressão nenhuma. Melhor pra quem já tem alguma experiência lendo o mar. Pra aproveitar bem, quem madruga sai na frente hoje.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "capao-da-canoa|cintura-peito|curto-vaga|onshore-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 0,
+          "titulo": "Tarde: vento do mar",
+          "analise": "No período da tarde, o vento onshore (vento que vem do mar pra terra e bagunça a onda) sopra moderado. Na água, a força é mediana, exige atenção mas não cansa demais, e a série chega apertada e meio atropelada, ondas quase em cima uma da outra, sem muito tempo de descanso entre elas. O drop pede um pop-up (o movimento de levantar da prancha de uma vez) mais atento, e a ondulação entra na beirada da janela que o pico aproveita, então perde um pouco de qualidade. Dá pra todo mundo aproveitar, cada um no seu ritmo. Pra aproveitar bem, vale entrar logo depois do almoço, antes que o vento suba mais.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "torres|cintura-peito|curto-vaga|lateral-fraco|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde com vento de lado",
+          "analise": "Mais pra tarde, o vento entra de lado, quase de través (soprando lateral em cima da onda) e tá bem ameno ainda. Na água, a energia já empurra com vontade, mas sem exagero, e o mar tá com série curta e nervosa, típica de vento local, pouco espaço pra respirar entre uma onda e outra. A descida já tem uma pressão gostosa, sem cobrar demais, e o swell chega meio de raspão, na borda da janela que a praia pega, o que tira um pouco da força. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, a dica é não deixar pra última hora, a tarde tende a piorar.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "torres|joelho-cintura|curto-vaga|lateral-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Noite: vento de lado",
+          "analise": "Já de noite, sem luz pra surfar, mas o vento entra de lado, quase de través (soprando lateral em cima da onda) e sopra moderado. Na água, a força tá suave, boa pra pegar ritmo sem sofrer, e a série chega apertada e meio atropelada, ondas quase em cima uma da outra, sem muito tempo de descanso entre elas. O drop é gentil, sem pressão nenhuma, e a ondulação entra na beirada da janela que o pico aproveita, então perde um pouco de qualidade. Melhor pra quem já tem alguma experiência lendo o mar. Pra se planejar, sem visibilidade não dá pra entrar agora, mas vale já se programar pro próximo turno.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|cintura-peito|curto-vaga|onshore-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 0,
+          "titulo": "Tarde: vento do mar",
+          "analise": "No período da tarde, o vento onshore (vento que vem do mar pra terra e bagunça a onda) sopra moderado nessa condição de hoje. Na água, a força é mediana, exige atenção mas não cansa demais, e a série chega apertada e meio atropelada, ondas quase em cima uma da outra, sem muito tempo de descanso entre elas. O drop pede um pop-up (o movimento de levantar da prancha de uma vez) mais atento, e a ondulação entra na beirada da janela que o pico aproveita, então perde um pouco de qualidade. Melhor pra quem já tem alguma experiência lendo o mar. Pra aproveitar bem, quem entrar no início da janela pega o melhor da tarde.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "tramandai|cintura-peito|curto-vaga|offshore-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Noite de terral firme",
+          "analise": "Já escuro, vale registrar que o vento é offshore, o terral que sai da terra pro mar e alisa a face da onda, e bate firme e cansa mais remar, empinando o bico da onda na entrada. Na água, a força é mediana, exige atenção mas não cansa demais, e a série chega apertada e meio atropelada, ondas quase em cima uma da outra, sem muito tempo de descanso entre elas. O drop pede um pop-up (o movimento de levantar da prancha de uma vez) mais atento, e o swell tá no limite do que a praia encaixa, entrando meio de lado. Melhor pra quem já tem alguma experiência lendo o mar. Pra se planejar, guarde essa leitura pro próximo turno, quando o padrão costuma se repetir ou melhorar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "guarda-do-embau|joelho-cintura|curto-vaga|glassy|manha|borda": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Manhã: mar liso",
+          "analise": "Logo cedo, a superfície tá parada, sem vento bagunçando, condição rara de mar liso. Na água, a força tá suave, boa pra pegar ritmo sem sofrer, e a série chega apertada e meio atropelada, ondas quase em cima uma da outra, sem muito tempo de descanso entre elas. O drop é gentil, sem pressão nenhuma, e a ondulação entra na beirada da janela que o pico aproveita, então perde um pouco de qualidade. Melhor pra quem já tem alguma experiência lendo o mar. Pra aproveitar bem, quem madruga sai na frente hoje.",
+          "janela": "6h-10h",
+          "aviso": "Acesso por travessia (barco ou a nado): avalie a correnteza da foz antes de entrar."
+        }
+      ]
+    },
+    "maracaipe|cintura-peito|curto-vaga|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Manhã: mar liso",
+          "analise": "Nas primeiras horas da manhã, a superfície tá parada, sem vento bagunçando, condição rara de mar liso. Na água, a força é mediana, exige atenção mas não cansa demais, e a série chega apertada e meio atropelada, ondas quase em cima uma da outra, sem muito tempo de descanso entre elas. O drop pede um pop-up (o movimento de levantar da prancha de uma vez) mais atento. Dá pra todo mundo aproveitar, cada um no seu ritmo. Pra aproveitar bem, quem madruga sai na frente hoje.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|cintura-peito|curto-vaga|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã com terral",
+          "analise": "Já cedo, o vento é offshore, o terral que sai da terra pro mar e alisa a face da onda, e tá bem ameno ainda. Na água, a energia já empurra com vontade, mas sem exagero, e o mar tá com série curta e nervosa, típica de vento local, pouco espaço pra respirar entre uma onda e outra. A descida já tem uma pressão gostosa, sem cobrar demais. Pede repertório de quem já surfa mar de força, não é lugar de aprender. Pra aproveitar bem, aproveitar essa janela da manhã compensa quem consegue acordar cedo.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|cintura-peito|curto-vaga|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã de terral",
+          "analise": "Já cedo, o vento é offshore, o terral que sai da terra pro mar e alisa a face da onda, e mal se sente na água. Na água, a energia já empurra com vontade, mas sem exagero, e o mar tá com série curta e nervosa, típica de vento local, pouco espaço pra respirar entre uma onda e outra. A descida já tem uma pressão gostosa, sem cobrar demais. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, a dica é entrar logo, antes do vento mudar o padrão do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "jureia|peito-ombro|curto-vaga|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Tarde de vento do mar",
+          "analise": "Mais pra tarde, o vento onshore (vento que vem do mar pra terra e bagunça a onda) já dá pra sentir mexendo a água. Na água, a força já é de respeito, a remada pede repertório, e a série chega apertada e meio atropelada, ondas quase em cima uma da outra, sem muito tempo de descanso entre elas. O drop cobra decisão rápida, hesitar custa caro. Melhor pra quem já tem alguma experiência lendo o mar. Pra aproveitar bem, quem entrar no início da janela pega o melhor da tarde.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|cintura-peito|curto-vaga|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã: terral",
+          "analise": "Logo cedo, o vento é offshore, o terral que sai da terra pro mar e alisa a face da onda, e sopra fraco. Na água, a energia já empurra com vontade, mas sem exagero, e o mar tá com série curta e nervosa, típica de vento local, pouco espaço pra respirar entre uma onda e outra. A descida já tem uma pressão gostosa, sem cobrar demais. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, a dica é entrar logo, antes do vento mudar o padrão do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "pantano-do-sul|joelho-cintura|curto-vaga|glassy|manha|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Manhã: mar liso",
+          "analise": "A manhã amanhece e a superfície tá parada, sem vento bagunçando, condição rara de mar liso. Na água, a energia é leve, a remada é tranquila e não cansa, e o mar tá com série curta e nervosa, típica de vento local, pouco espaço pra respirar entre uma onda e outra. A descida é mansa, dá pra errar e ainda assim se recuperar, e a ondulação entra na beirada da janela que o pico aproveita, então perde um pouco de qualidade. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, a dica é entrar logo, antes do vento mudar o padrão do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|cintura-peito|curto-vaga|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã: terral",
+          "analise": "A manhã amanhece e o vento é offshore, o terral que sai da terra pro mar e alisa a face da onda, e sopra moderado. Na água, a força é mediana, exige atenção mas não cansa demais, e a série chega apertada e meio atropelada, ondas quase em cima uma da outra, sem muito tempo de descanso entre elas. O drop pede um pop-up (o movimento de levantar da prancha de uma vez) mais atento. Só quem já tem bagagem sólida aproveita essa condição com segurança. Pra aproveitar bem, vale acordar cedo e aproveitar a manhã antes de esquentar.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|ombro-cabeca|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde: vento de lado",
+          "analise": "Passado o meio-dia, o vento entra de lado, quase de través (soprando lateral em cima da onda) e sopra moderado. Na água, a força já é grande, remada cansa mais rápido, e a série vem com intervalo mediano, dá um tempinho curto pra se posicionar antes da próxima chegar. O drop cobra consistência, não é pra quem tá começando. Melhor pra quem já tem alguma experiência lendo o mar. Pra aproveitar bem, quem entrar no início da janela pega o melhor da tarde.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|ombro-cabeca|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite com vento de lado",
+          "analise": "De noite, o vento entra de lado, quase de través (soprando lateral em cima da onda) e tá bem ameno ainda. Na água, a energia é forte, o caldo pesa pra quem cair, e o espaçamento entre as ondas é razoável, nem apertado nem generoso, o suficiente pra pegar o ritmo. A descida vem com bastante pressão, exige prancha e leitura à altura. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra se planejar, o ideal é usar essa informação pra planejar a entrada assim que clarear.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|peito-ombro|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã com vento de lado",
+          "analise": "Logo cedo, o vento entra de lado, quase de través (soprando lateral em cima da onda) e tá bem ameno ainda nessa condição de hoje. Na água, a energia é boa, empurra com força e enche o peito, e o mar tá com série curta e nervosa, típica de vento local, pouco espaço pra respirar entre uma onda e outra. A descida vem com pressão real, exige leitura afiada. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, a dica é entrar logo, antes do vento mudar o padrão do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|peito-ombro|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã: vento de lado",
+          "analise": "Assim que o dia clareia, o vento entra de lado, quase de través (soprando lateral em cima da onda) e sopra fraco. Na água, a energia é boa, empurra com força e enche o peito, e o mar tá com série curta e nervosa, típica de vento local, pouco espaço pra respirar entre uma onda e outra. A descida vem com pressão real, exige leitura afiada. Serve gente de todo nível, cada um encontra seu canto. Pra aproveitar bem, a dica é entrar logo, antes do vento mudar o padrão do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|ombro-cabeca|medio-7a9|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite: terral",
+          "analise": "Já de noite, sem luz pra surfar, mas o vento é offshore, o terral que sai da terra pro mar e alisa a face da onda, e sopra fraco. Na água, a força já é grande, remada cansa mais rápido, e a série vem com intervalo mediano, dá um tempinho curto pra se posicionar antes da próxima chegar. O drop cobra consistência, não é pra quem tá começando. Só quem já tem bagagem sólida aproveita essa condição com segurança. Pra se planejar, sem visibilidade não dá pra entrar agora, mas vale já se programar pro próximo turno.",
+          "janela": null,
+          "aviso": "Fundo de pedra: pede conhecimento do pico antes de entrar, principalmente na maré errada."
+        }
+      ]
+    },
+    "silveira|peito-ombro|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite: mar liso",
+          "analise": "Já de noite, sem luz pra surfar, mas a superfície tá parada, sem vento bagunçando, condição rara de mar liso. Na água, a força já é de respeito, a remada pede repertório, e a série vem com intervalo mediano, dá um tempinho curto pra se posicionar antes da próxima chegar. O drop cobra decisão rápida, hesitar custa caro. Só quem já tem bagagem sólida aproveita essa condição com segurança. Pra se planejar, sem visibilidade não dá pra entrar agora, mas vale já se programar pro próximo turno.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|peito-ombro|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite de mar liso",
+          "analise": "Já escuro, vale registrar que o vento praticamente sumiu e a superfície do mar fica lisa, sem nenhuma marca de vento em cima da onda. Na água, a força já é de respeito, a remada pede repertório, e a série vem com intervalo mediano, dá um tempinho curto pra se posicionar antes da próxima chegar. O drop cobra decisão rápida, hesitar custa caro. Melhor pra quem já tem alguma experiência lendo o mar. Pra se planejar, guarde essa leitura pro próximo turno, quando o padrão costuma se repetir ou melhorar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-tijuca|peito-ombro|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã de vento de lado",
+          "analise": "Nas primeiras horas da manhã, o vento entra de lado, quase de través (soprando lateral em cima da onda) e mal se sente na água. Na água, a energia é boa, empurra com força e enche o peito, e o mar tá com série curta e nervosa, típica de vento local, pouco espaço pra respirar entre uma onda e outra. A descida vem com pressão real, exige leitura afiada. Serve gente de todo nível, cada um encontra seu canto. Pra aproveitar bem, aproveitar essa janela da manhã compensa quem consegue acordar cedo.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-tijuca|ombro-cabeca|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite: mar liso",
+          "analise": "Já escuro, vale registrar que a superfície tá parada, sem vento bagunçando, condição rara de mar liso. Na água, a força já é grande, remada cansa mais rápido, e a série vem com intervalo mediano, dá um tempinho curto pra se posicionar antes da próxima chegar. O drop cobra consistência, não é pra quem tá começando. Dá pra todo mundo aproveitar, cada um no seu ritmo. Pra se planejar, guarde essa leitura pro próximo turno, quando o padrão costuma se repetir ou melhorar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "itacoatiara|peito-ombro|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Manhã: vento de lado",
+          "analise": "A manhã amanhece e o vento entra de lado, quase de través (soprando lateral em cima da onda) e sopra fraco. Na água, a força já é de respeito, a remada pede repertório, e a série chega apertada e meio atropelada, ondas quase em cima uma da outra, sem muito tempo de descanso entre elas. O drop cobra decisão rápida, hesitar custa caro. Só quem já tem bagagem sólida aproveita essa condição com segurança. Pra aproveitar bem, vale acordar cedo e aproveitar a manhã antes de esquentar.",
+          "janela": "7h-9h",
+          "aviso": "Pico de localismo presente: respeite a fila e o pessoal de casa, principalmente sendo visitante."
+        }
+      ]
+    },
+    "arpoador|peito-ombro|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Manhã de vento de lado",
+          "analise": "Logo cedo, o vento entra de lado, quase de través (soprando lateral em cima da onda) e mal se sente na água. Na água, a força já é de respeito, a remada pede repertório, e a série chega apertada e meio atropelada, ondas quase em cima uma da outra, sem muito tempo de descanso entre elas. O drop cobra decisão rápida, hesitar custa caro. Melhor pra quem já tem alguma experiência lendo o mar. Pra aproveitar bem, quem madruga sai na frente hoje.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "cidreira|peito-ombro|curto-vaga|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã com terral",
+          "analise": "Já cedo, o vento é offshore, o terral que sai da terra pro mar e alisa a face da onda, e tá com uma força mediana. Na água, a força já é de respeito, a remada pede repertório, e a série chega apertada e meio atropelada, ondas quase em cima uma da outra, sem muito tempo de descanso entre elas. O drop cobra decisão rápida, hesitar custa caro. Melhor pra quem já tem alguma experiência lendo o mar. Pra aproveitar bem, quem madruga sai na frente hoje.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "capao-da-canoa|peito-ombro|curto-vaga|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã: terral",
+          "analise": "Logo cedo, o vento é offshore, o terral que sai da terra pro mar e alisa a face da onda, e sopra moderado. Na água, a força já é de respeito, a remada pede repertório, e a série chega apertada e meio atropelada, ondas quase em cima uma da outra, sem muito tempo de descanso entre elas. O drop cobra decisão rápida, hesitar custa caro. Dá pra todo mundo aproveitar, cada um no seu ritmo. Pra aproveitar bem, quem madruga sai na frente hoje.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "tramandai|cintura-peito|curto-vaga|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã de terral",
+          "analise": "Logo cedo, o vento é offshore, o terral que sai da terra pro mar e alisa a face da onda, e já dá pra sentir mexendo a água. Na água, a energia já empurra com vontade, mas sem exagero, e o mar tá com série curta e nervosa, típica de vento local, pouco espaço pra respirar entre uma onda e outra. A descida já tem uma pressão gostosa, sem cobrar demais. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, aproveitar essa janela da manhã compensa quem consegue acordar cedo.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|ombro-cabeca|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde: vento de lado",
+          "analise": "No período da tarde, o vento entra de lado, quase de través (soprando lateral em cima da onda) e sopra moderado nessa condição de hoje. Na água, a força já é grande, remada cansa mais rápido, e a série vem com intervalo mediano, dá um tempinho curto pra se posicionar antes da próxima chegar. O drop cobra consistência, não é pra quem tá começando. Só quem já tem bagagem sólida aproveita essa condição com segurança. Pra aproveitar bem, quem entrar no início da janela pega o melhor da tarde.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|ombro-cabeca|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite com vento de lado",
+          "analise": "De noite, o vento entra de lado, quase de través (soprando lateral em cima da onda) e tá bem ameno ainda nessa condição de hoje. Na água, a energia é forte, o caldo pesa pra quem cair, e o espaçamento entre as ondas é razoável, nem apertado nem generoso, o suficiente pra pegar o ritmo. A descida vem com bastante pressão, exige prancha e leitura à altura. Pede repertório de quem já surfa mar de força, não é lugar de aprender. Pra se planejar, o ideal é usar essa informação pra planejar a entrada assim que clarear.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|cintura-peito|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite com vento de lado",
+          "analise": "De noite, o vento entra de lado, quase de través (soprando lateral em cima da onda) e tá com uma força mediana. Na água, a energia já empurra com vontade, mas sem exagero, e o intervalo entre as ondas é bom, sobra tempo pra escolher a melhor e remar sem afobação. A descida já tem uma pressão gostosa, sem cobrar demais. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra se planejar, o ideal é usar essa informação pra planejar a entrada assim que clarear.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "itaunas|joelho-cintura|curto-vaga|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Manhã: vento do mar",
+          "analise": "Nas primeiras horas da manhã, o vento onshore (vento que vem do mar pra terra e bagunça a onda) sopra moderado. Na água, a energia é leve, a remada é tranquila e não cansa, e o mar tá com série curta e nervosa, típica de vento local, pouco espaço pra respirar entre uma onda e outra. A descida é mansa, dá pra errar e ainda assim se recuperar. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, a dica é entrar logo, antes do vento mudar o padrão do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|ombro-cabeca|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã: mar liso",
+          "analise": "A manhã amanhece e a superfície tá parada, sem vento bagunçando, condição rara de mar liso nessa condição de hoje. Na água, a energia é forte, o caldo pesa pra quem cair, e o espaçamento entre as ondas é razoável, nem apertado nem generoso, o suficiente pra pegar o ritmo. A descida vem com bastante pressão, exige prancha e leitura à altura. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, aproveitar essa janela da manhã compensa quem consegue acordar cedo.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|peito-ombro|bom-9a11|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite: vento do mar",
+          "analise": "De madrugada, pra quem lê a condição pro dia seguinte, o vento onshore (vento que vem do mar pra terra e bagunça a onda) sopra fraco. Na água, a energia é boa, empurra com força e enche o peito, e o intervalo entre as ondas é bom, sobra tempo pra escolher a melhor e remar sem afobação. A descida vem com pressão real, exige leitura afiada. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra se planejar, fica de referência pra decisão do próximo turno de luz.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "cacimba-do-padre|ombro-cabeca|curto-vaga|offshore-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite com terral firme",
+          "analise": "De madrugada, pra quem lê a condição pro dia seguinte, o vento é offshore, o terral que sai da terra pro mar e alisa a face da onda, e tá soprando pesado, empinando o bico da onda na entrada. Na água, a energia é forte, o caldo pesa pra quem cair, e o mar tá com série curta e nervosa, típica de vento local, pouco espaço pra respirar entre uma onda e outra. A descida vem com bastante pressão, exige prancha e leitura à altura, e o swell chega meio de raspão, na borda da janela que a praia pega, o que tira um pouco da força. Pede repertório de quem já surfa mar de força, não é lugar de aprender. Pra se planejar, fica de referência pra decisão do próximo turno de luz.",
+          "janela": null,
+          "aviso": "Fundo de pedra com laje: em mar de força ela fica exposta e o corte é risco real pra quem não conhece o pico."
+        }
+      ]
+    },
+    "grumari|peito-ombro|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite de vento de lado",
+          "analise": "De madrugada, pra quem lê a condição pro dia seguinte, o vento entra de lado, quase de través (soprando lateral em cima da onda) e já dá pra sentir mexendo a água. Na água, a energia é boa, empurra com força e enche o peito, e o intervalo entre as ondas é bom, sobra tempo pra escolher a melhor e remar sem afobação. A descida vem com pressão real, exige leitura afiada. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra se planejar, fica de referência pra decisão do próximo turno de luz.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "maracaipe|joelho-cintura|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Noite de vento de lado",
+          "analise": "Já escuro, vale registrar que o vento entra de lado, quase de través (soprando lateral em cima da onda) e já dá pra sentir mexendo a água. Na água, a força tá suave, boa pra pegar ritmo sem sofrer, e a série chega apertada e meio atropelada, ondas quase em cima uma da outra, sem muito tempo de descanso entre elas. O drop é gentil, sem pressão nenhuma. Dá pra todo mundo aproveitar, cada um no seu ritmo. Pra se planejar, guarde essa leitura pro próximo turno, quando o padrão costuma se repetir ou melhorar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "fernando-de-noronha|ombro-cabeca|curto-vaga|offshore-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite: terral firme",
+          "analise": "De noite, o vento é offshore, o terral que sai da terra pro mar e alisa a face da onda, e sopra com força, empinando o bico da onda na entrada. Na água, a energia é forte, o caldo pesa pra quem cair, e o mar tá com série curta e nervosa, típica de vento local, pouco espaço pra respirar entre uma onda e outra. A descida vem com bastante pressão, exige prancha e leitura à altura, e a ondulação entra na beirada da janela que o pico aproveita, então perde um pouco de qualidade. Pede repertório de quem já surfa mar de força, não é lugar de aprender. Pra se planejar, o ideal é usar essa informação pra planejar a entrada assim que clarear.",
+          "janela": null,
+          "aviso": "Fundo de pedra: pede conhecimento do pico antes de entrar, principalmente na maré errada."
+        }
+      ]
+    },
+    "prainha|peito-ombro|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite de vento de lado",
+          "analise": "De madrugada, pra quem lê a condição pro dia seguinte, o vento entra de lado, quase de través (soprando lateral em cima da onda) e já dá pra sentir mexendo a água nessa condição de hoje. Na água, a energia é boa, empurra com força e enche o peito, e o intervalo entre as ondas é bom, sobra tempo pra escolher a melhor e remar sem afobação. A descida vem com pressão real, exige leitura afiada. Pede repertório de quem já surfa mar de força, não é lugar de aprender. Pra se planejar, fica de referência pra decisão do próximo turno de luz.",
+          "janela": null,
+          "aviso": "Pico de localismo presente: respeite a fila e o pessoal de casa, principalmente sendo visitante."
+        }
+      ]
+    },
+    "macumba|peito-ombro|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite com vento de lado",
+          "analise": "Já de noite, sem luz pra surfar, mas o vento entra de lado, quase de través (soprando lateral em cima da onda) e tá com uma força mediana. Na água, a força já é de respeito, a remada pede repertório, e a série chega mais espaçada, dá tempo de ver a onda vindo de longe e se posicionar com calma. O drop cobra decisão rápida, hesitar custa caro. Dá pra todo mundo aproveitar, cada um no seu ritmo. Pra se planejar, sem visibilidade não dá pra entrar agora, mas vale já se programar pro próximo turno.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|ombro-cabeca|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã de mar liso",
+          "analise": "A manhã amanhece e o vento praticamente sumiu e a superfície do mar fica lisa, sem nenhuma marca de vento em cima da onda. Na água, a energia é forte, o caldo pesa pra quem cair, e o espaçamento entre as ondas é razoável, nem apertado nem generoso, o suficiente pra pegar o ritmo. A descida vem com bastante pressão, exige prancha e leitura à altura. Pede repertório de quem já surfa mar de força, não é lugar de aprender. Pra aproveitar bem, aproveitar essa janela da manhã compensa quem consegue acordar cedo.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|peito-ombro|bom-9a11|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite com vento do mar",
+          "analise": "De madrugada, pra quem lê a condição pro dia seguinte, o vento onshore (vento que vem do mar pra terra e bagunça a onda) tá bem ameno ainda. Na água, a energia é boa, empurra com força e enche o peito, e o intervalo entre as ondas é bom, sobra tempo pra escolher a melhor e remar sem afobação. A descida vem com pressão real, exige leitura afiada. Pede repertório de quem já surfa mar de força, não é lugar de aprender. Pra se planejar, fica de referência pra decisão do próximo turno de luz.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|cintura-peito|bom-9a11|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite de vento do mar",
+          "analise": "Já escuro, vale registrar que o vento onshore (vento que vem do mar pra terra e bagunça a onda) mal se sente na água. Na água, a força é mediana, exige atenção mas não cansa demais, e a série chega mais espaçada, dá tempo de ver a onda vindo de longe e se posicionar com calma. O drop pede um pop-up (o movimento de levantar da prancha de uma vez) mais atento. Melhor pra quem já tem alguma experiência lendo o mar. Pra se planejar, guarde essa leitura pro próximo turno, quando o padrão costuma se repetir ou melhorar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "titanzinho|peito-ombro|curto-vaga|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Noite de vento de lado",
+          "analise": "De madrugada, pra quem lê a condição pro dia seguinte, o vento entra de lado, quase de través (soprando lateral em cima da onda) e bate firme e cansa mais remar. Na água, a energia é boa, empurra com força e enche o peito, e o mar tá com série curta e nervosa, típica de vento local, pouco espaço pra respirar entre uma onda e outra. A descida vem com pressão real, exige leitura afiada. Pede repertório de quem já surfa mar de força, não é lugar de aprender. Pra se planejar, fica de referência pra decisão do próximo turno de luz.",
+          "janela": null,
+          "aviso": "Pico de localismo presente: respeite a fila e o pessoal de casa, principalmente sendo visitante."
+        }
+      ]
+    },
+    "praia-brava-buzios|peito-ombro|longo-11a13|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tarde de vento do mar",
+          "analise": "No período da tarde, o vento onshore (vento que vem do mar pra terra e bagunça a onda) já dá pra sentir mexendo a água. Na água, a energia é boa, empurra com força e enche o peito, e sobra tempo de sobra entre uma onda e outra, dá pra estudar o pico com calma antes de remar. A descida vem com pressão real, exige leitura afiada. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, a dica é não deixar pra última hora, a tarde tende a piorar.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|cabeca-1.5x|longo-11a13|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tarde com vento do mar",
+          "analise": "No período da tarde, o vento onshore (vento que vem do mar pra terra e bagunça a onda) tá com uma força mediana. Na água, a energia é pesada, o caldo castiga quem errar o tempo, e sobra tempo de sobra entre uma onda e outra, dá pra estudar o pico com calma antes de remar. A descida é séria, decisão tem que ser rápida e precisa. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, a dica é não deixar pra última hora, a tarde tende a piorar.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|cabeca-1.5x|longo-11a13|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite: vento do mar",
+          "analise": "Já de noite, sem luz pra surfar, mas o vento onshore (vento que vem do mar pra terra e bagunça a onda) sopra moderado. Na água, a força é grande, remada cansa e a saída também exige jogo de cintura, e a série vem bem espaçada e organizada, sinal de ondulação que viajou de longe e guardou força. O drop cobra caro, só repertório sólido aproveita bem essa força. Melhor pra quem já tem alguma experiência lendo o mar. Pra se planejar, sem visibilidade não dá pra entrar agora, mas vale já se programar pro próximo turno.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-futuro|peito-ombro|curto-vaga|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Noite de vento de lado",
+          "analise": "Já de noite, sem luz pra surfar, mas o vento entra de lado, quase de través (soprando lateral em cima da onda) e bate firme e cansa mais remar. Na água, a força já é de respeito, a remada pede repertório, e a série chega apertada e meio atropelada, ondas quase em cima uma da outra, sem muito tempo de descanso entre elas. O drop cobra decisão rápida, hesitar custa caro. Melhor pra quem já tem alguma experiência lendo o mar. Pra se planejar, sem visibilidade não dá pra entrar agora, mas vale já se programar pro próximo turno.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|cabeca-1.5x|longo-11a13|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite: vento do mar",
+          "analise": "De noite, o vento onshore (vento que vem do mar pra terra e bagunça a onda) sopra moderado. Na água, a energia é pesada, o caldo castiga quem errar o tempo, e sobra tempo de sobra entre uma onda e outra, dá pra estudar o pico com calma antes de remar. A descida é séria, decisão tem que ser rápida e precisa. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra se planejar, o ideal é usar essa informação pra planejar a entrada assim que clarear.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|ombro-cabeca|longo-11a13|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã de vento do mar",
+          "analise": "Nas primeiras horas da manhã, o vento onshore (vento que vem do mar pra terra e bagunça a onda) mal se sente na água. Na água, a energia é forte, o caldo pesa pra quem cair, e sobra tempo de sobra entre uma onda e outra, dá pra estudar o pico com calma antes de remar. A descida vem com bastante pressão, exige prancha e leitura à altura. Serve gente de todo nível, cada um encontra seu canto. Pra aproveitar bem, aproveitar essa janela da manhã compensa quem consegue acordar cedo.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|ombro-cabeca|longo-11a13|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite com vento do mar",
+          "analise": "De madrugada, pra quem lê a condição pro dia seguinte, o vento onshore (vento que vem do mar pra terra e bagunça a onda) tá com uma força mediana. Na água, a energia é forte, o caldo pesa pra quem cair, e sobra tempo de sobra entre uma onda e outra, dá pra estudar o pico com calma antes de remar. A descida vem com bastante pressão, exige prancha e leitura à altura. Serve gente de todo nível, cada um encontra seu canto. Pra se planejar, fica de referência pra decisão do próximo turno de luz.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tucuns|peito-ombro|longo-11a13|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde de vento do mar",
+          "analise": "Mais pra tarde, o vento onshore (vento que vem do mar pra terra e bagunça a onda) já dá pra sentir mexendo a água nessa condição de hoje. Na água, a força já é de respeito, a remada pede repertório, e a série vem bem espaçada e organizada, sinal de ondulação que viajou de longe e guardou força. O drop cobra decisão rápida, hesitar custa caro. Melhor pra quem já tem alguma experiência lendo o mar. Pra aproveitar bem, vale entrar logo depois do almoço, antes que o vento suba mais.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "tucuns|peito-ombro|bom-9a11|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite com vento do mar",
+          "analise": "De madrugada, pra quem lê a condição pro dia seguinte, o vento onshore (vento que vem do mar pra terra e bagunça a onda) tá com uma força mediana nessa condição de hoje. Na água, a energia é boa, empurra com força e enche o peito, e o intervalo entre as ondas é bom, sobra tempo pra escolher a melhor e remar sem afobação. A descida vem com pressão real, exige leitura afiada. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra se planejar, fica de referência pra decisão do próximo turno de luz.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|ombro-cabeca|longo-11a13|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Manhã: vento de lado",
+          "analise": "Nas primeiras horas da manhã, o vento entra de lado, quase de través (soprando lateral em cima da onda) e sopra fraco. Na água, a energia é forte, o caldo pesa pra quem cair, e sobra tempo de sobra entre uma onda e outra, dá pra estudar o pico com calma antes de remar. A descida vem com bastante pressão, exige prancha e leitura à altura. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, a dica é entrar logo, antes do vento mudar o padrão do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|ombro-cabeca|longo-11a13|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite com vento de lado",
+          "analise": "Já escuro, vale registrar que o vento entra de lado, quase de través (soprando lateral em cima da onda) e tá bem ameno ainda. Na água, a força já é grande, remada cansa mais rápido, e a série vem bem espaçada e organizada, sinal de ondulação que viajou de longe e guardou força. O drop cobra consistência, não é pra quem tá começando. Melhor pra quem já tem alguma experiência lendo o mar. Pra se planejar, guarde essa leitura pro próximo turno, quando o padrão costuma se repetir ou melhorar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|cabeca-1.5x|longo-11a13|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite de vento do mar",
+          "analise": "De noite, o vento onshore (vento que vem do mar pra terra e bagunça a onda) já dá pra sentir mexendo a água. Na água, a energia é pesada, o caldo castiga quem errar o tempo, e sobra tempo de sobra entre uma onda e outra, dá pra estudar o pico com calma antes de remar. A descida é séria, decisão tem que ser rápida e precisa. Serve gente de todo nível, cada um encontra seu canto. Pra se planejar, o ideal é usar essa informação pra planejar a entrada assim que clarear.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|cabeca-1.5x|longo-11a13|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Manhã: terral",
+          "analise": "Nas primeiras horas da manhã, o vento é offshore, o terral que sai da terra pro mar e alisa a face da onda, e sopra fraco. Na água, a força é grande, remada cansa e a saída também exige jogo de cintura, e a série vem bem espaçada e organizada, sinal de ondulação que viajou de longe e guardou força. O drop cobra caro, só repertório sólido aproveita bem essa força. Só quem já tem bagagem sólida aproveita essa condição com segurança. Pra aproveitar bem, vale acordar cedo e aproveitar a manhã antes de esquentar.",
+          "janela": "7h-9h",
+          "aviso": "Fundo de pedra: pede conhecimento do pico antes de entrar, principalmente na maré errada."
+        }
+      ]
+    },
+    "farol-de-santa-marta|cabeca-1.5x|longo-11a13|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite com mar liso",
+          "analise": "De madrugada, pra quem lê a condição pro dia seguinte, não tem vento nenhum mexendo a água, a face da onda fica limpa e espelhada. Na água, a energia é pesada, o caldo castiga quem errar o tempo, e sobra tempo de sobra entre uma onda e outra, dá pra estudar o pico com calma antes de remar. A descida é séria, decisão tem que ser rápida e precisa. Pede repertório de quem já surfa mar de força, não é lugar de aprender. Pra se planejar, fica de referência pra decisão do próximo turno de luz.",
+          "janela": null,
+          "aviso": "Fundo de pedra: pede conhecimento do pico antes de entrar, principalmente na maré errada."
+        }
+      ]
+    },
+    "silveira|peito-ombro|longo-11a13|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Noite com mar liso",
+          "analise": "De madrugada, pra quem lê a condição pro dia seguinte, não tem vento nenhum mexendo a água, a face da onda fica limpa e espelhada nessa condição de hoje. Na água, a energia é boa, empurra com força e enche o peito, e sobra tempo de sobra entre uma onda e outra, dá pra estudar o pico com calma antes de remar. A descida vem com pressão real, exige leitura afiada. Pede repertório de quem já surfa mar de força, não é lugar de aprender. Pra se planejar, fica de referência pra decisão do próximo turno de luz.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|peito-ombro|longo-11a13|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Noite de mar liso",
+          "analise": "De noite, o vento praticamente sumiu e a superfície do mar fica lisa, sem nenhuma marca de vento em cima da onda. Na água, a energia é boa, empurra com força e enche o peito, e sobra tempo de sobra entre uma onda e outra, dá pra estudar o pico com calma antes de remar. A descida vem com pressão real, exige leitura afiada. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra se planejar, o ideal é usar essa informação pra planejar a entrada assim que clarear.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|peito-ombro|longo-11a13|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Noite: mar liso",
+          "analise": "De noite, a superfície tá parada, sem vento bagunçando, condição rara de mar liso. Na água, a energia é boa, empurra com força e enche o peito, e sobra tempo de sobra entre uma onda e outra, dá pra estudar o pico com calma antes de remar. A descida vem com pressão real, exige leitura afiada. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra se planejar, o ideal é usar essa informação pra planejar a entrada assim que clarear.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-floripa|joelho-cintura|bom-9a11|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite com vento do mar",
+          "analise": "Já de noite, sem luz pra surfar, mas o vento onshore (vento que vem do mar pra terra e bagunça a onda) tá bem ameno ainda. Na água, a força tá suave, boa pra pegar ritmo sem sofrer, e a série chega mais espaçada, dá tempo de ver a onda vindo de longe e se posicionar com calma. O drop é gentil, sem pressão nenhuma. Só quem já tem bagagem sólida aproveita essa condição com segurança. Pra se planejar, sem visibilidade não dá pra entrar agora, mas vale já se programar pro próximo turno.",
+          "janela": null,
+          "aviso": "Pico de localismo presente: respeite a fila e o pessoal de casa, principalmente sendo visitante."
+        }
+      ]
+    },
+    "foguete|cabeca-1.5x|longo-11a13|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite de vento do mar",
+          "analise": "De madrugada, pra quem lê a condição pro dia seguinte, o vento onshore (vento que vem do mar pra terra e bagunça a onda) já dá pra sentir mexendo a água. Na água, a energia é pesada, o caldo castiga quem errar o tempo, e sobra tempo de sobra entre uma onda e outra, dá pra estudar o pico com calma antes de remar. A descida é séria, decisão tem que ser rápida e precisa. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra se planejar, fica de referência pra decisão do próximo turno de luz.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|cabeca-1.5x|longo-11a13|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde: vento do mar forte",
+          "analise": "Mais pra tarde, o vento onshore (vento que vem do mar pra terra e bagunça a onda) sopra com força, picando e desmanchando a parede. Na água, a energia é pesada, o caldo castiga quem errar o tempo, e sobra tempo de sobra entre uma onda e outra, dá pra estudar o pico com calma antes de remar. A descida é séria, decisão tem que ser rápida e precisa. Pede repertório de quem já surfa mar de força, não é lugar de aprender. Pra aproveitar bem, a dica é não deixar pra última hora, a tarde tende a piorar.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|cabeca-1.5x|longo-11a13|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Noite com vento do mar forte",
+          "analise": "Já de noite, sem luz pra surfar, mas o vento onshore (vento que vem do mar pra terra e bagunça a onda) tá soprando pesado, picando e desmanchando a parede. Na água, a força é grande, remada cansa e a saída também exige jogo de cintura, e a série vem bem espaçada e organizada, sinal de ondulação que viajou de longe e guardou força. O drop cobra caro, só repertório sólido aproveita bem essa força. Só quem já tem bagagem sólida aproveita essa condição com segurança. Pra se planejar, sem visibilidade não dá pra entrar agora, mas vale já se programar pro próximo turno.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "itacoatiara|cabeca-1.5x|longo-11a13|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite de vento do mar",
+          "analise": "Já escuro, vale registrar que o vento onshore (vento que vem do mar pra terra e bagunça a onda) já dá pra sentir mexendo a água. Na água, a força é grande, remada cansa e a saída também exige jogo de cintura, e a série vem bem espaçada e organizada, sinal de ondulação que viajou de longe e guardou força. O drop cobra caro, só repertório sólido aproveita bem essa força. Só quem já tem bagagem sólida aproveita essa condição com segurança. Pra se planejar, guarde essa leitura pro próximo turno, quando o padrão costuma se repetir ou melhorar.",
+          "janela": null,
+          "aviso": "Pico de localismo presente: respeite a fila e o pessoal de casa, principalmente sendo visitante."
+        }
+      ]
+    },
+    "arpoador|cabeca-1.5x|longo-11a13|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite de vento do mar",
+          "analise": "Já de noite, sem luz pra surfar, mas o vento onshore (vento que vem do mar pra terra e bagunça a onda) já dá pra sentir mexendo a água. Na água, a força é grande, remada cansa e a saída também exige jogo de cintura, e a série vem bem espaçada e organizada, sinal de ondulação que viajou de longe e guardou força. O drop cobra caro, só repertório sólido aproveita bem essa força. Melhor pra quem já tem alguma experiência lendo o mar. Pra se planejar, sem visibilidade não dá pra entrar agora, mas vale já se programar pro próximo turno.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "cidreira|peito-ombro|longo-11a13|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Manhã com mar liso",
+          "analise": "Nas primeiras horas da manhã, não tem vento nenhum mexendo a água, a face da onda fica limpa e espelhada. Na água, a energia é boa, empurra com força e enche o peito, e sobra tempo de sobra entre uma onda e outra, dá pra estudar o pico com calma antes de remar. A descida vem com pressão real, exige leitura afiada. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, a dica é entrar logo, antes do vento mudar o padrão do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|ombro-cabeca|longo-11a13|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Manhã: vento de lado",
+          "analise": "Logo cedo, o vento entra de lado, quase de través (soprando lateral em cima da onda) e sopra fraco. Na água, a energia é forte, o caldo pesa pra quem cair, e sobra tempo de sobra entre uma onda e outra, dá pra estudar o pico com calma antes de remar. A descida vem com bastante pressão, exige prancha e leitura à altura. Pede repertório de quem já surfa mar de força, não é lugar de aprender. Pra aproveitar bem, a dica é entrar logo, antes do vento mudar o padrão do dia.",
+          "janela": "6h-9h",
+          "aviso": "Pico de localismo presente: respeite a fila e o pessoal de casa, principalmente sendo visitante."
+        }
+      ]
+    },
+    "praia-grande-arraial|cabeca-1.5x|longo-11a13|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde com vento do mar forte",
+          "analise": "Mais pra tarde, o vento onshore (vento que vem do mar pra terra e bagunça a onda) tá soprando pesado, picando e desmanchando a parede. Na água, a força é grande, remada cansa e a saída também exige jogo de cintura, e a série vem bem espaçada e organizada, sinal de ondulação que viajou de longe e guardou força. O drop cobra caro, só repertório sólido aproveita bem essa força. Melhor pra quem já tem alguma experiência lendo o mar. Pra aproveitar bem, vale entrar logo depois do almoço, antes que o vento suba mais.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|cabeca-1.5x|longo-11a13|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite de vento do mar forte",
+          "analise": "De noite, o vento onshore (vento que vem do mar pra terra e bagunça a onda) bate firme e cansa mais remar, picando e desmanchando a parede. Na água, a energia é pesada, o caldo castiga quem errar o tempo, e sobra tempo de sobra entre uma onda e outra, dá pra estudar o pico com calma antes de remar. A descida é séria, decisão tem que ser rápida e precisa. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra se planejar, o ideal é usar essa informação pra planejar a entrada assim que clarear.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|ombro-cabeca|longo-11a13|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã: vento do mar",
+          "analise": "Nas primeiras horas da manhã, o vento onshore (vento que vem do mar pra terra e bagunça a onda) sopra fraco. Na água, a força já é grande, remada cansa mais rápido, e a série vem bem espaçada e organizada, sinal de ondulação que viajou de longe e guardou força. O drop cobra consistência, não é pra quem tá começando. Só quem já tem bagagem sólida aproveita essa condição com segurança. Pra aproveitar bem, quem madruga sai na frente hoje.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "geriba|peito-ombro|longo-11a13|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde de vento do mar",
+          "analise": "Passado o meio-dia, o vento onshore (vento que vem do mar pra terra e bagunça a onda) já dá pra sentir mexendo a água. Na água, a força já é de respeito, a remada pede repertório, e a série vem bem espaçada e organizada, sinal de ondulação que viajou de longe e guardou força. O drop cobra decisão rápida, hesitar custa caro. Dá pra todo mundo aproveitar, cada um no seu ritmo. Pra aproveitar bem, vale entrar logo depois do almoço, antes que o vento suba mais.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "geriba|peito-ombro|bom-9a11|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite: vento do mar",
+          "analise": "De madrugada, pra quem lê a condição pro dia seguinte, o vento onshore (vento que vem do mar pra terra e bagunça a onda) sopra moderado. Na água, a energia é boa, empurra com força e enche o peito, e o intervalo entre as ondas é bom, sobra tempo pra escolher a melhor e remar sem afobação. A descida vem com pressão real, exige leitura afiada. Serve gente de todo nível, cada um encontra seu canto. Pra se planejar, fica de referência pra decisão do próximo turno de luz.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "torres|peito-ombro|longo-11a13|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Manhã de mar liso",
+          "analise": "Assim que o dia clareia, o vento praticamente sumiu e a superfície do mar fica lisa, sem nenhuma marca de vento em cima da onda. Na água, a energia é boa, empurra com força e enche o peito, e sobra tempo de sobra entre uma onda e outra, dá pra estudar o pico com calma antes de remar. A descida vem com pressão real, exige leitura afiada. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, aproveitar essa janela da manhã compensa quem consegue acordar cedo.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|cabeca-1.5x|longo-11a13|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã: vento do mar",
+          "analise": "Assim que o dia clareia, o vento onshore (vento que vem do mar pra terra e bagunça a onda) sopra moderado. Na água, a força é grande, remada cansa e a saída também exige jogo de cintura, e a série vem bem espaçada e organizada, sinal de ondulação que viajou de longe e guardou força. O drop cobra caro, só repertório sólido aproveita bem essa força. Melhor pra quem já tem alguma experiência lendo o mar. Pra aproveitar bem, vale acordar cedo e aproveitar a manhã antes de esquentar.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|peito-ombro|longo-11a13|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde de vento do mar",
+          "analise": "A tarde chega e o vento onshore (vento que vem do mar pra terra e bagunça a onda) mal se sente na água. Na água, a energia é boa, empurra com força e enche o peito, e sobra tempo de sobra entre uma onda e outra, dá pra estudar o pico com calma antes de remar. A descida vem com pressão real, exige leitura afiada. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, a dica é não deixar pra última hora, a tarde tende a piorar.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|peito-ombro|longo-11a13|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite: vento do mar",
+          "analise": "Já de noite, sem luz pra surfar, mas o vento onshore (vento que vem do mar pra terra e bagunça a onda) sopra fraco. Na água, a força já é de respeito, a remada pede repertório, e a série vem bem espaçada e organizada, sinal de ondulação que viajou de longe e guardou força. O drop cobra decisão rápida, hesitar custa caro. Melhor pra quem já tem alguma experiência lendo o mar. Pra se planejar, sem visibilidade não dá pra entrar agora, mas vale já se programar pro próximo turno.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|ombro-cabeca|longo-11a13|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã de vento de lado",
+          "analise": "Já cedo, o vento entra de lado, quase de través (soprando lateral em cima da onda) e mal se sente na água. Na água, a força já é grande, remada cansa mais rápido, e a série vem bem espaçada e organizada, sinal de ondulação que viajou de longe e guardou força. O drop cobra consistência, não é pra quem tá começando. Dá pra todo mundo aproveitar, cada um no seu ritmo. Pra aproveitar bem, quem madruga sai na frente hoje.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|ombro-cabeca|bom-9a11|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã de vento do mar",
+          "analise": "A manhã amanhece e o vento onshore (vento que vem do mar pra terra e bagunça a onda) já dá pra sentir mexendo a água. Na água, a energia é forte, o caldo pesa pra quem cair, e o intervalo entre as ondas é bom, sobra tempo pra escolher a melhor e remar sem afobação. A descida vem com bastante pressão, exige prancha e leitura à altura. Serve gente de todo nível, cada um encontra seu canto. Pra aproveitar bem, aproveitar essa janela da manhã compensa quem consegue acordar cedo.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|ombro-cabeca|bom-9a11|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã: vento do mar",
+          "analise": "Assim que o dia clareia, o vento onshore (vento que vem do mar pra terra e bagunça a onda) sopra moderado nessa condição de hoje. Na água, a força já é grande, remada cansa mais rápido, e a série chega mais espaçada, dá tempo de ver a onda vindo de longe e se posicionar com calma. O drop cobra consistência, não é pra quem tá começando. Só quem já tem bagagem sólida aproveita essa condição com segurança. Pra aproveitar bem, vale acordar cedo e aproveitar a manhã antes de esquentar.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "mocambique|peito-ombro|longo-11a13|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite de mar liso",
+          "analise": "De noite, o vento praticamente sumiu e a superfície do mar fica lisa, sem nenhuma marca de vento em cima da onda nessa condição de hoje. Na água, a energia é boa, empurra com força e enche o peito, e sobra tempo de sobra entre uma onda e outra, dá pra estudar o pico com calma antes de remar. A descida vem com pressão real, exige leitura afiada. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra se planejar, o ideal é usar essa informação pra planejar a entrada assim que clarear.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|cabeca-1.5x|longo-11a13|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite com vento do mar",
+          "analise": "Já de noite, sem luz pra surfar, mas o vento onshore (vento que vem do mar pra terra e bagunça a onda) tá com uma força mediana. Na água, a força é grande, remada cansa e a saída também exige jogo de cintura, e a série vem bem espaçada e organizada, sinal de ondulação que viajou de longe e guardou força. O drop cobra caro, só repertório sólido aproveita bem essa força. Só quem já tem bagagem sólida aproveita essa condição com segurança. Pra se planejar, sem visibilidade não dá pra entrar agora, mas vale já se programar pro próximo turno.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-lagoa|joelho-cintura|bom-9a11|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite com mar liso",
+          "analise": "Já de noite, sem luz pra surfar, mas não tem vento nenhum mexendo a água, a face da onda fica limpa e espelhada. Na água, a força tá suave, boa pra pegar ritmo sem sofrer, e a série chega mais espaçada, dá tempo de ver a onda vindo de longe e se posicionar com calma. O drop é gentil, sem pressão nenhuma. Dá pra todo mundo aproveitar, cada um no seu ritmo. Pra se planejar, sem visibilidade não dá pra entrar agora, mas vale já se programar pro próximo turno.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|cabeca-1.5x|longo-11a13|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde de vento do mar forte",
+          "analise": "Mais pra tarde, o vento onshore (vento que vem do mar pra terra e bagunça a onda) bate firme e cansa mais remar, picando e desmanchando a parede. Na água, a força é grande, remada cansa e a saída também exige jogo de cintura, e a série vem bem espaçada e organizada, sinal de ondulação que viajou de longe e guardou força. O drop cobra caro, só repertório sólido aproveita bem essa força. Melhor pra quem já tem alguma experiência lendo o mar. Pra aproveitar bem, quem entrar no início da janela pega o melhor da tarde.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|cabeca-1.5x|longo-11a13|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite com vento do mar forte",
+          "analise": "De madrugada, pra quem lê a condição pro dia seguinte, o vento onshore (vento que vem do mar pra terra e bagunça a onda) tá soprando pesado, picando e desmanchando a parede. Na água, a energia é pesada, o caldo castiga quem errar o tempo, e sobra tempo de sobra entre uma onda e outra, dá pra estudar o pico com calma antes de remar. A descida é séria, decisão tem que ser rápida e precisa. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra se planejar, fica de referência pra decisão do próximo turno de luz.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "setiba|joelho-cintura|curto-vaga|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Manhã: vento do mar",
+          "analise": "Logo cedo, o vento onshore (vento que vem do mar pra terra e bagunça a onda) sopra fraco. Na água, a força tá suave, boa pra pegar ritmo sem sofrer, e a série chega apertada e meio atropelada, ondas quase em cima uma da outra, sem muito tempo de descanso entre elas. O drop é gentil, sem pressão nenhuma. Melhor pra quem já tem alguma experiência lendo o mar. Pra aproveitar bem, quem madruga sai na frente hoje.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "massaguacu|cintura-peito|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã com vento de lado",
+          "analise": "Logo cedo, o vento entra de lado, quase de través (soprando lateral em cima da onda) e tá bem ameno ainda nessa condição de hoje. Na água, a energia já empurra com vontade, mas sem exagero, e o mar tá com série curta e nervosa, típica de vento local, pouco espaço pra respirar entre uma onda e outra. A descida já tem uma pressão gostosa, sem cobrar demais. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, aproveitar essa janela da manhã compensa quem consegue acordar cedo.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "titanzinho|ombro-cabeca|curto-vaga|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Tarde de vento de lado",
+          "analise": "Já na parte da tarde, o vento entra de lado, quase de través (soprando lateral em cima da onda) e bate firme e cansa mais remar. Na água, a força já é grande, remada cansa mais rápido, e a série chega apertada e meio atropelada, ondas quase em cima uma da outra, sem muito tempo de descanso entre elas. O drop cobra consistência, não é pra quem tá começando. Só quem já tem bagagem sólida aproveita essa condição com segurança. Pra aproveitar bem, quem entrar no início da janela pega o melhor da tarde.",
+          "janela": "14h-17h",
+          "aviso": "Pico de localismo presente: respeite a fila e o pessoal de casa, principalmente sendo visitante."
+        }
+      ]
+    },
+    "praia-brava-buzios|peito-ombro|bom-9a11|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde de vento do mar forte",
+          "analise": "Passado o meio-dia, o vento onshore (vento que vem do mar pra terra e bagunça a onda) bate firme e cansa mais remar, picando e desmanchando a parede. Na água, a força já é de respeito, a remada pede repertório, e a série chega mais espaçada, dá tempo de ver a onda vindo de longe e se posicionar com calma. O drop cobra decisão rápida, hesitar custa caro. Melhor pra quem já tem alguma experiência lendo o mar. Pra aproveitar bem, vale entrar logo depois do almoço, antes que o vento suba mais.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-buzios|peito-ombro|bom-9a11|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite com vento de lado",
+          "analise": "Já escuro, vale registrar que o vento entra de lado, quase de través (soprando lateral em cima da onda) e tá soprando pesado. Na água, a força já é de respeito, a remada pede repertório, e a série chega mais espaçada, dá tempo de ver a onda vindo de longe e se posicionar com calma. O drop cobra decisão rápida, hesitar custa caro. Melhor pra quem já tem alguma experiência lendo o mar. Pra se planejar, guarde essa leitura pro próximo turno, quando o padrão costuma se repetir ou melhorar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "castelhanos|peito-ombro|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã: vento do mar",
+          "analise": "Nas primeiras horas da manhã, o vento onshore (vento que vem do mar pra terra e bagunça a onda) sopra moderado nessa condição de hoje. Na água, a energia é boa, empurra com força e enche o peito, e o espaçamento entre as ondas é razoável, nem apertado nem generoso, o suficiente pra pegar o ritmo. A descida vem com pressão real, exige leitura afiada. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, a dica é entrar logo, antes do vento mudar o padrão do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-futuro|ombro-cabeca|curto-vaga|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde com vento de lado",
+          "analise": "Já na parte da tarde, o vento entra de lado, quase de través (soprando lateral em cima da onda) e tá soprando pesado. Na água, a energia é forte, o caldo pesa pra quem cair, e o mar tá com série curta e nervosa, típica de vento local, pouco espaço pra respirar entre uma onda e outra. A descida vem com bastante pressão, exige prancha e leitura à altura. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, melhor não esperar demais, a tarde costuma fechar rápido essa condição.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|ombro-cabeca|bom-9a11|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite de vento de lado",
+          "analise": "De noite, o vento entra de lado, quase de través (soprando lateral em cima da onda) e bate firme e cansa mais remar. Na água, a energia é forte, o caldo pesa pra quem cair, e o intervalo entre as ondas é bom, sobra tempo pra escolher a melhor e remar sem afobação. A descida vem com bastante pressão, exige prancha e leitura à altura. Serve gente de todo nível, cada um encontra seu canto. Pra se planejar, o ideal é usar essa informação pra planejar a entrada assim que clarear.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tucuns|peito-ombro|bom-9a11|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde com vento do mar forte",
+          "analise": "A tarde chega e o vento onshore (vento que vem do mar pra terra e bagunça a onda) tá soprando pesado, picando e desmanchando a parede. Na água, a energia é boa, empurra com força e enche o peito, e o intervalo entre as ondas é bom, sobra tempo pra escolher a melhor e remar sem afobação. A descida vem com pressão real, exige leitura afiada. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, melhor não esperar demais, a tarde costuma fechar rápido essa condição.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "tucuns|peito-ombro|bom-9a11|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite: vento de lado",
+          "analise": "De madrugada, pra quem lê a condição pro dia seguinte, o vento entra de lado, quase de través (soprando lateral em cima da onda) e sopra com força. Na água, a energia é boa, empurra com força e enche o peito, e o intervalo entre as ondas é bom, sobra tempo pra escolher a melhor e remar sem afobação. A descida vem com pressão real, exige leitura afiada. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra se planejar, fica de referência pra decisão do próximo turno de luz.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|ombro-cabeca|bom-9a11|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Noite com terral",
+          "analise": "De noite, o vento é offshore, o terral que sai da terra pro mar e alisa a face da onda, e tá com uma força mediana. Na água, a energia é forte, o caldo pesa pra quem cair, e o intervalo entre as ondas é bom, sobra tempo pra escolher a melhor e remar sem afobação. A descida vem com bastante pressão, exige prancha e leitura à altura. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra se planejar, o ideal é usar essa informação pra planejar a entrada assim que clarear.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|peito-ombro|medio-7a9|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde: vento de lado",
+          "analise": "Passado o meio-dia, o vento entra de lado, quase de través (soprando lateral em cima da onda) e sopra com força. Na água, a força já é de respeito, a remada pede repertório, e a série vem com intervalo mediano, dá um tempinho curto pra se posicionar antes da próxima chegar. O drop cobra decisão rápida, hesitar custa caro. Só quem já tem bagagem sólida aproveita essa condição com segurança. Pra aproveitar bem, quem entrar no início da janela pega o melhor da tarde.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|peito-ombro|medio-7a9|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde de vento de lado",
+          "analise": "Já na parte da tarde, o vento entra de lado, quase de través (soprando lateral em cima da onda) e bate firme e cansa mais remar nessa condição de hoje. Na água, a força já é de respeito, a remada pede repertório, e a série vem com intervalo mediano, dá um tempinho curto pra se posicionar antes da próxima chegar. O drop cobra decisão rápida, hesitar custa caro. Melhor pra quem já tem alguma experiência lendo o mar. Pra aproveitar bem, vale entrar logo depois do almoço, antes que o vento suba mais.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "jureia|ombro-cabeca|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã: vento de lado",
+          "analise": "Assim que o dia clareia, o vento entra de lado, quase de través (soprando lateral em cima da onda) e sopra fraco nessa condição de hoje. Na água, a força já é grande, remada cansa mais rápido, e a série chega mais espaçada, dá tempo de ver a onda vindo de longe e se posicionar com calma. O drop cobra consistência, não é pra quem tá começando. Melhor pra quem já tem alguma experiência lendo o mar. Pra aproveitar bem, vale acordar cedo e aproveitar a manhã antes de esquentar.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|peito-ombro|medio-7a9|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde: vento de lado",
+          "analise": "Já na parte da tarde, o vento entra de lado, quase de través (soprando lateral em cima da onda) e sopra com força. Na água, a força já é de respeito, a remada pede repertório, e a série vem com intervalo mediano, dá um tempinho curto pra se posicionar antes da próxima chegar. O drop cobra decisão rápida, hesitar custa caro. Melhor pra quem já tem alguma experiência lendo o mar. Pra aproveitar bem, vale entrar logo depois do almoço, antes que o vento suba mais.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "bonete|cabeca-1.5x|longo-11a13|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã com vento de lado",
+          "analise": "Já cedo, o vento entra de lado, quase de través (soprando lateral em cima da onda) e tá com uma força mediana. Na água, a força é grande, remada cansa e a saída também exige jogo de cintura, e a série vem bem espaçada e organizada, sinal de ondulação que viajou de longe e guardou força. O drop cobra caro, só repertório sólido aproveita bem essa força. Só quem já tem bagagem sólida aproveita essa condição com segurança. Pra aproveitar bem, vale acordar cedo e aproveitar a manhã antes de esquentar.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "camburi|ombro-cabeca|longo-11a13|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Tarde com terral",
+          "analise": "Já na parte da tarde, o vento é offshore, o terral que sai da terra pro mar e alisa a face da onda, e tá bem ameno ainda. Na água, a energia é forte, o caldo pesa pra quem cair, e sobra tempo de sobra entre uma onda e outra, dá pra estudar o pico com calma antes de remar. A descida vem com bastante pressão, exige prancha e leitura à altura. Serve gente de todo nível, cada um encontra seu canto. Pra aproveitar bem, a dica é não deixar pra última hora, a tarde tende a piorar.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|cabeca-1.5x|bom-9a11|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite: vento de lado",
+          "analise": "De noite, o vento entra de lado, quase de través (soprando lateral em cima da onda) e sopra com força. Na água, a energia é pesada, o caldo castiga quem errar o tempo, e o intervalo entre as ondas é bom, sobra tempo pra escolher a melhor e remar sem afobação. A descida é séria, decisão tem que ser rápida e precisa. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra se planejar, o ideal é usar essa informação pra planejar a entrada assim que clarear.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|cabeca-1.5x|bom-9a11|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite: vento de lado",
+          "analise": "De madrugada, pra quem lê a condição pro dia seguinte, o vento entra de lado, quase de través (soprando lateral em cima da onda) e sopra com força nessa condição de hoje. Na água, a energia é pesada, o caldo castiga quem errar o tempo, e o intervalo entre as ondas é bom, sobra tempo pra escolher a melhor e remar sem afobação. A descida é séria, decisão tem que ser rápida e precisa. Pede repertório de quem já surfa mar de força, não é lugar de aprender. Pra se planejar, fica de referência pra decisão do próximo turno de luz.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-mole|joelho-cintura|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Manhã com terral",
+          "analise": "Nas primeiras horas da manhã, o vento é offshore, o terral que sai da terra pro mar e alisa a face da onda, e tá bem ameno ainda. Na água, a energia é leve, a remada é tranquila e não cansa, e o intervalo entre as ondas é bom, sobra tempo pra escolher a melhor e remar sem afobação. A descida é mansa, dá pra errar e ainda assim se recuperar. Já pede uma base de remada e leitura, não é indicado pra quem tá começando agora. Pra aproveitar bem, a dica é entrar logo, antes do vento mudar o padrão do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
     }
   },
-  "generated_at": "2026-08-19T12:17:56.117Z"
+  "generated_at": "2026-08-19T18:13:55.336Z"
 }
