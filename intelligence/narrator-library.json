@@ -104032,7 +104032,1327 @@
           "aviso": "Energia bem acima do normal do pico: iniciante que só surfa aqui em dia manso, cuidado redobrado."
         }
       ]
+    },
+    "arpoador|ombro-cabeca|bom-9a11|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Manhã com força pesada",
+          "analise": "A manhã amanhece com o mar mostrando uma energia forte, o mar cobra remada rápida e postura certa. Praticamente sem vento, a água fica espelhada, com textura limpa do início ao fim. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|ombro-cabeca|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Início de manhã: terral leve",
+          "analise": "Cedo, o mar já entrega força pesada, quem entra sente o peso da água logo na remada. O terral, vento que sai da terra e vai pro mar, sopra fraco e alisa a face, deixando a onda vitrificada. Na água, a sensação é de pressão real, a água empurra forte e não dá segunda chance no popup, e o fundo de pedra do point organiza bastante a quebra, mas também cobra respeito na queda. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": "6h-9h",
+          "aviso": "Fundo de pedra do point: com essa força, erro de queda machuca de verdade. Cuidado redobrado na entrada e na saída."
+        }
+      ]
+    },
+    "ipanema|ombro-cabeca|bom-9a11|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Amanhecer de mar exigente",
+          "analise": "A manhã chega e o mar traz energia considerável, a onda empurra com vontade e não perdoa erro de timing. Sem vento nenhum incomodando, a parede fica limpa e previsível. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "tramandai|peito-ombro|bom-9a11|offshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tarde que entrega terral firme",
+          "analise": "A tarde chega com o mar mostrando uma energia boa, já dá pra sentir peso de verdade na remada. O vento vem de terra e sopra moderado, o clássico terral que organiza e deixa a face limpa. Na água, dá pra sentir a água empurrando com vontade, exige presença mas sem exagero, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|ombro-cabeca|bom-9a11|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Cedo, energia forte",
+          "analise": "Já nas primeiras horas da manhã, o mar mostra um mar com força séria, pressão real na descida. Praticamente sem vento, a água fica espelhada, com textura limpa do início ao fim. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|ombro-cabeca|bom-9a11|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde com vento de lado",
+          "analise": "No fim de tarde, o mar traz uma energia forte, o mar cobra remada rápida e postura certa. O vento sopra de lado, quase de través, e pica um pouco a superfície, tirando parte da textura lisa. Na água, a sensação é de pressão real, a água empurra forte e não dá segunda chance no popup, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|ombro-cabeca|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Previsão noturna: força pesada",
+          "analise": "A noite cai e o mar mostra força pesada, quem entra sente o peso da água logo na remada. Lateral, esse vento que bate de lado na parede, pica um pouco a superfície, tirando parte da textura lisa. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|ombro-cabeca|bom-9a11|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Amanhecer de vento zerado",
+          "analise": "O sol ainda subindo e o mar já revela energia considerável, a onda empurra com vontade e não perdoa erro de timing. O vento mal sopra, então a face da onda fica lisa e organizada. Na água, a sensação é de pressão real, a água empurra forte e não dá segunda chance no popup, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|ombro-cabeca|bom-9a11|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Fechando o dia com mar exigente",
+          "analise": "Já de noite, a condição traz um mar com força séria, pressão real na descida. Vem um vento do mar pra terra, o maral que atrapalha a parede, e desmancha parte da força da parede, deixando a onda mais soprada. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-buzios|cintura-peito|bom-9a11|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Entardecer com maral mexendo",
+          "analise": "A tarde encontra o mar com uma energia moderada, mar gostoso pra treinar sem cobrar demais. O maral, vento que vem do mar pra terra, desmancha parte da força da parede, deixando a onda mais soprada. Na água, a sensação é de controle, a onda avisa antes de quebrar e dá tempo de se ajustar, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Dá pra surfar numa boa se você escolher bem as ondas da série, sem se apegar às primeiras que vierem soltas.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|peito-ombro|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã com força consistente",
+          "analise": "A manhã abre com força considerável, o mar já cobra atenção na descida na água. Terral fraco favorecendo: esse vento que nasce na terra e sopra pro mar mantém a onda arrumada. Na água, a remada já pesa de verdade e a descida pede popup rápido, o tipo de condição que ensina a ler o timing certo, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|peito-ombro|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Início de manhã: terral leve",
+          "analise": "De manhã cedo o mar aparece com energia consistente, a remada pesa e a onda empurra com vontade. O vento vem de terra e sopra fraco, o clássico terral que organiza e deixa a face limpa. Na água, dá pra sentir a água empurrando com vontade, exige presença mas sem exagero, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|ombro-cabeca|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Amanhecer de força pesada",
+          "analise": "A luz da manhã encontra um mar com uma energia forte, o mar cobra remada rápida e postura certa. Um vento lateral, batendo de lado na onda, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "bonete|ombro-cabeca|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã que entrega lateral fraco",
+          "analise": "Amanhece e a condição do mar mostra força pesada, quem entra sente o peso da água logo na remada. O vento sopra de lado, quase de través, e mexe pouco a superfície, sem estragar o conjunto. Na água, a sensação é de pressão real, a água empurra forte e não dá segunda chance no popup, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": "6h-9h",
+          "aviso": "Pico respeitado, de gente que já rodou bastante: essa força aqui não é pra quem tá começando."
+        }
+      ]
+    },
+    "saquarema|ombro-cabeca|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Cedo, mar exigente",
+          "analise": "Logo cedo, quem chega encontra energia considerável, a onda empurra com vontade e não perdoa erro de timing na água. Lateral, esse vento que bate de lado na parede, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": "7h-10h",
+          "aviso": "Pico respeitado, de gente que já rodou bastante: essa força aqui não é pra quem tá começando."
+        }
+      ]
+    },
+    "geriba|cintura-peito|bom-9a11|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde com maral mexendo",
+          "analise": "Já de tarde, a condição mostra força mediana, dá pra sentir a onda empurrando sem exagero. O vento onshore, batendo direto do mar pra areia, desmancha parte da força da parede, deixando a onda mais soprada. Na água, a sensação é de controle, a onda avisa antes de quebrar e dá tempo de se ajustar, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Dá pra surfar numa boa se você escolher bem as ondas da série, sem se apegar às primeiras que vierem soltas.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|ombro-cabeca|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Início de manhã: energia forte",
+          "analise": "A manhã traz um mar com um mar com força séria, pressão real na descida pra quem topar entrar cedo. Um vento lateral, batendo de lado na onda, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "torres|peito-ombro|bom-9a11|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde de maral mexendo",
+          "analise": "A tarde abre com um mar com corpo, força que exige leitura mas recompensa na água. O maral, vento que vem do mar pra terra, desmancha parte da força da parede, deixando a onda mais soprada. Na água, dá pra sentir a água empurrando com vontade, exige presença mas sem exagero, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. É uma condição mediana; vale entrar com calma e priorizar as ondas mais fechadinhas em vez de remar em tudo.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|peito-ombro|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã que entrega energia boa",
+          "analise": "Com a manhã ainda fresca, o mar mostra uma energia boa, já dá pra sentir peso de verdade na remada. Terral fraco favorecendo: esse vento que nasce na terra e sopra pro mar mantém a onda arrumada. Na água, a remada já pesa de verdade e a descida pede popup rápido, o tipo de condição que ensina a ler o timing certo, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|peito-ombro|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Entardecer com lateral fraco",
+          "analise": "Com a tarde avançando, o mar mostra força considerável, o mar já cobra atenção na descida. O vento vem de través, de lado, e mexe pouco a superfície, sem estragar o conjunto. Na água, dá pra sentir a água empurrando com vontade, exige presença mas sem exagero, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|ombro-cabeca|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã com mar exigente",
+          "analise": "Praia da Vila amanhece com uma energia forte, o mar cobra remada rápida e postura certa. Um vento lateral, batendo de lado na onda, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|ombro-cabeca|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Início de manhã: lateral fraco",
+          "analise": "O mar dessa manhã chega com força pesada, quem entra sente o peso da água logo na remada. O vento sopra de lado, quase de través, e mexe pouco a superfície, sem estragar o conjunto. Na água, a sensação é de pressão real, a água empurra forte e não dá segunda chance no popup, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": "6h-8h",
+          "aviso": "Pico respeitado, de gente que já rodou bastante: essa força aqui não é pra quem tá começando."
+        }
+      ]
+    },
+    "prainha|ombro-cabeca|bom-9a11|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde de energia forte",
+          "analise": "De tarde, quem entra encontra energia considerável, a onda empurra com vontade e não perdoa erro de timing. Lateral, esse vento que bate de lado na parede, pica um pouco a superfície, tirando parte da textura lisa. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": "13h-16h",
+          "aviso": "Pico respeitado, de gente que já rodou bastante: essa força aqui não é pra quem tá começando."
+        }
+      ]
+    },
+    "prainha|ombro-cabeca|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Fechando o dia com vento de lado",
+          "analise": "A noite chega com um mar com força séria, pressão real na descida na água. O vento vem de través, de lado, e pica um pouco a superfície, tirando parte da textura lisa. Na água, a sensação é de pressão real, a água empurra forte e não dá segunda chance no popup, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": null,
+          "aviso": "Pico respeitado, de gente que já rodou bastante: essa força aqui não é pra quem tá começando."
+        }
+      ]
+    },
+    "tucuns|cintura-peito|bom-9a11|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Entardecer com energia leve",
+          "analise": "A luz de tarde ilumina um mar com energia razoável, boa pra quem quer evoluir sem apanhar. Vem um vento do mar pra terra, o maral que atrapalha a parede, e desmancha parte da força da parede, deixando a onda mais soprada. Na água, a remada pesa um pouco mas nada que canse rápido, dá pra encadear várias sem sofrer, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Dá pra surfar numa boa se você escolher bem as ondas da série, sem se apegar às primeiras que vierem soltas.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|ombro-cabeca|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã com lateral fraco",
+          "analise": "Cedo da manhã, a condição já mostra uma energia forte, o mar cobra remada rápida e postura certa. O vento sopra de lado, quase de través, e mexe pouco a superfície, sem estragar o conjunto. Na água, a sensação é de pressão real, a água empurra forte e não dá segunda chance no popup, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|ombro-cabeca|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Início de manhã: mar exigente",
+          "analise": "A manhã começa e o mar responde com força pesada, quem entra sente o peso da água logo na remada. Lateral, esse vento que bate de lado na parede, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|ombro-cabeca|bom-9a11|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Amanhecer de vento zerado",
+          "analise": "Assim que clareia, o mar já mostra energia considerável, a onda empurra com vontade e não perdoa erro de timing. O vento mal sopra, então a face da onda fica lisa e organizada. Na água, a sensação é de pressão real, a água empurra forte e não dá segunda chance no popup, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|ombro-cabeca|bom-9a11|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde que entrega energia forte",
+          "analise": "Grumari entrega um mar com força séria, pressão real na descida nessa tarde. Um vento lateral, batendo de lado na onda, pica um pouco a superfície, tirando parte da textura lisa. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|ombro-cabeca|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite que aponta vento de lado",
+          "analise": "Com a noite fechando, o mar mostra uma energia forte, o mar cobra remada rápida e postura certa. O vento sopra de lado, quase de través, e pica um pouco a superfície, tirando parte da textura lisa. Na água, a sensação é de pressão real, a água empurra forte e não dá segunda chance no popup, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|ombro-cabeca|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite com força pesada",
+          "analise": "De noite, quem olha a previsão encontra força pesada, quem entra sente o peso da água logo na remada. Lateral, esse vento que bate de lado na parede, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "campeche|cintura-peito|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Fim de tarde: maral mexendo",
+          "analise": "A tarde traz uma condição de um mar com força tranquila, generoso com quem tá pegando o jeito. O vento onshore, batendo direto do mar pra areia, desmancha parte da força da parede, deixando a onda mais soprada. Na água, a sensação é de controle, a onda avisa antes de quebrar e dá tempo de se ajustar, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Não é o dia mais empolgante, mas dá pra aproveitar pra treinar remada e posicionamento sem grandes expectativas.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "setiba|joelho-cintura|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Tarde de pouca energia",
+          "analise": "Já entrando a tarde, o mar mostra pouca força, só ondinhas mansas e curtas. Vem um vento do mar pra terra, o maral que atrapalha a parede, e mexe de leve a face, nada que estrague o pacote. Na água, a remada é tranquila e a descida quase não pede esforço, ótimo pra treinar manobra básica sem pressão, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Condição fraca de verdade; melhor usar pra ajustar prancha e postura e guardar energia pra outra janela.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "setiba|joelho-cintura|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Fechando o dia com maral fraco",
+          "analise": "A noite mostra um mar com uma energia bem leve, mar brincalhão e sem pressão nenhuma. O maral, vento que vem do mar pra terra, mexe de leve a face, nada que estrague o pacote. Na água, dá pra ficar bastante tempo na água sem cansar, ideal pra quem tá começando a pegar ritmo, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Vale mais como treino do que como sessão de verdade; a dica é focar em fundamento e não forçar manobra.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "mocambique|peito-ombro|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite que aponta força consistente",
+          "analise": "Já escurecendo, a condição traz energia consistente, a remada pesa e a onda empurra com vontade. Lateral, esse vento que bate de lado na parede, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada já pesa de verdade e a descida pede popup rápido, o tipo de condição que ensina a ler o timing certo, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Funciona, mas está longe do auge; a dica é procurar os cantos mais organizados e não gastar energia com onda ruim.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "massaguacu|cintura-peito|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Noite com lateral fraco",
+          "analise": "A noite chega e revela uma energia moderada, mar gostoso pra treinar sem cobrar demais no mar. O vento vem de través, de lado, e mexe pouco a superfície, sem estragar o conjunto. Na água, a sensação é de controle, a onda avisa antes de quebrar e dá tempo de se ajustar, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. É uma condição mediana; vale entrar com calma e priorizar as ondas mais fechadinhas em vez de remar em tudo.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|cabeca-1.5x|longo-11a13|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Fim de tarde: mar grande",
+          "analise": "A tarde chega mostrando uma energia muito pesada, mar grande e sério, força de respeito no pico. Um vento lateral, batendo de lado na onda, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada exige fôlego e a descida vem com pressão séria, erro de leitura aqui vira caldo forte, e por rodar sobre pedra, a onda aqui é mais previsível, só que qualquer erro dói mais. Dia especial de verdade; a dica é ir com a prancha que rende mais nessa força e aproveitar cada onda da série.",
+          "janela": "14h-17h",
+          "aviso": "Mar grande de verdade: força pesada pra quem não tem experiência, atenção ao intervalo entre as séries e ao caminho de saída."
+        }
+      ]
+    },
+    "pitangueiras|cabeca-1.5x|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Noite de vento de lado",
+          "analise": "Pitangueiras mostra força extrema, o mar tá grande e cobra experiência de quem entra nessa noite. O vento sopra de lado, quase de través, e pica um pouco a superfície, tirando parte da textura lisa. Na água, a sensação é de respeito total, a água tem peso suficiente pra cansar rápido quem não tá preparado, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": null,
+          "aviso": "Mar grande de verdade: força pesada pra quem não tem experiência, atenção ao intervalo entre as séries e ao caminho de saída."
+        }
+      ]
+    },
+    "tramandai|peito-ombro|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã que entrega mar com corpo",
+          "analise": "A manhã amanhece com o mar mostrando um mar com corpo, força que exige leitura mas recompensa. Lateral, esse vento que bate de lado na parede, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada já pesa de verdade e a descida pede popup rápido, o tipo de condição que ensina a ler o timing certo, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|ombro-cabeca|longo-11a13|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Cedo, lateral fraco",
+          "analise": "Cedo, o mar já entrega energia considerável, a onda empurra com vontade e não perdoa erro de timing. O vento vem de través, de lado, e mexe pouco a superfície, sem estragar o conjunto. Na água, a sensação é de pressão real, a água empurra forte e não dá segunda chance no popup, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|ombro-cabeca|longo-11a13|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Tarde com energia forte",
+          "analise": "No período da tarde, a água mostra um mar com força séria, pressão real na descida. Um vento lateral, batendo de lado na onda, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|cintura-peito|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Previsão noturna: maral fraco",
+          "analise": "A previsão noturna aponta força mediana, dá pra sentir a onda empurrando sem exagero no mar. O maral, vento que vem do mar pra terra, mexe de leve a face, nada que estrague o pacote. Na água, a sensação é de controle, a onda avisa antes de quebrar e dá tempo de se ajustar, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. É uma condição mediana; vale entrar com calma e priorizar as ondas mais fechadinhas em vez de remar em tudo.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|cabeca-1.5x|bom-9a11|onshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Amanhecer de mar grande",
+          "analise": "A manhã chega e o mar traz energia pesadíssima, o caldo castiga quem erra o timing. Esse vento que sopra do mar pra terra desmancha boa parte da parede, deixando tudo bem soprado e picotado. Na água, a remada exige fôlego e a descida vem com pressão séria, erro de leitura aqui vira caldo forte, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": "7h-9h",
+          "aviso": "Mar grande de verdade: força pesada pra quem não tem experiência, atenção ao intervalo entre as séries e ao caminho de saída."
+        }
+      ]
+    },
+    "cidreira|peito-ombro|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã que entrega lateral fraco",
+          "analise": "Já nas primeiras horas da manhã, o mar mostra uma energia boa, já dá pra sentir peso de verdade na remada. O vento vem de través, de lado, e mexe pouco a superfície, sem estragar o conjunto. Na água, dá pra sentir a água empurrando com vontade, exige presença mas sem exagero, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|cabeca-1.5x|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Noite que aponta energia pesada",
+          "analise": "Com a noite tomando conta, o mar mostra um mar grande e brabo, força que só quem já rodou bastante aguenta bem. Um vento lateral, batendo de lado na onda, pica um pouco a superfície, tirando parte da textura lisa. Na água, a remada exige fôlego e a descida vem com pressão séria, erro de leitura aqui vira caldo forte, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": null,
+          "aviso": "Mar grande de verdade: força pesada pra quem não tem experiência, atenção ao intervalo entre as séries e ao caminho de saída."
+        }
+      ]
+    },
+    "praia-grande-arraial|cabeca-1.5x|bom-9a11|onshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã com maral forte",
+          "analise": "O sol ainda subindo e o mar já revela uma energia muito pesada, mar grande e sério, força de respeito. O maral, vento que vem do mar pra terra, desmancha boa parte da parede, deixando tudo bem soprado e picotado. Na água, a sensação é de respeito total, a água tem peso suficiente pra cansar rápido quem não tá preparado, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": "6h-8h",
+          "aviso": "Mar grande de verdade: força pesada pra quem não tem experiência, atenção ao intervalo entre as séries e ao caminho de saída."
+        }
+      ]
+    },
+    "praia-brava-arraial|cabeca-1.5x|bom-9a11|onshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Início de manhã: força extrema",
+          "analise": "A manhã abre com força extrema, o mar tá grande e cobra experiência de quem entra na água. Esse vento que sopra do mar pra terra desmancha boa parte da parede, deixando tudo bem soprado e picotado. Na água, a remada exige fôlego e a descida vem com pressão séria, erro de leitura aqui vira caldo forte, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": "6h-8h",
+          "aviso": "Mar grande de verdade: força pesada pra quem não tem experiência, atenção ao intervalo entre as séries e ao caminho de saída."
+        }
+      ]
+    },
+    "praia-do-pero|ombro-cabeca|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite de vento de lado",
+          "analise": "A noite traz uma condição de uma energia forte, o mar cobra remada rápida e postura certa. O vento vem de través, de lado, e pica um pouco a superfície, tirando parte da textura lisa. Na água, a sensação é de pressão real, a água empurra forte e não dá segunda chance no popup, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-mole|cintura-peito|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Fechando o dia com energia leve",
+          "analise": "Já de noite, o mar segue com energia razoável, boa pra quem quer evoluir sem apanhar. Vem um vento do mar pra terra, o maral que atrapalha a parede, e mexe de leve a face, nada que estrague o pacote. Na água, a remada pesa um pouco mas nada que canse rápido, dá pra encadear várias sem sofrer, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Dá pra surfar numa boa se você escolher bem as ondas da série, sem se apegar às primeiras que vierem soltas.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "regencia|peito-ombro|longo-11a13|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite que aponta maral fraco",
+          "analise": "A noite chega trazendo força considerável, o mar já cobra atenção na descida pra quem acompanha pro dia seguinte. O maral, vento que vem do mar pra terra, mexe de leve a face, nada que estrague o pacote. Na água, dá pra sentir a água empurrando com vontade, exige presença mas sem exagero, e a quebra na foz ganha uma leitura própria, com a correnteza da barra somando força à onda. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": null,
+          "aviso": "Foz de rio: a correnteza da barra soma à força da onda. Atenção redobrada em quem não conhece bem o pico."
+        }
+      ]
+    },
+    "foguete|cabeca-1.5x|bom-9a11|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã com energia pesada",
+          "analise": "De manhã cedo o mar aparece com energia pesadíssima, o caldo castiga quem erra o timing. Esse vento que sopra do mar pra terra desmancha parte da força da parede, deixando a onda mais soprada. Na água, a remada exige fôlego e a descida vem com pressão séria, erro de leitura aqui vira caldo forte, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": "6h-8h",
+          "aviso": "Mar grande de verdade: força pesada pra quem não tem experiência, atenção ao intervalo entre as séries e ao caminho de saída."
+        }
+      ]
+    },
+    "capao-da-canoa|peito-ombro|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Início de manhã: terral leve",
+          "analise": "A luz da manhã encontra um mar com energia consistente, a remada pesa e a onda empurra com vontade. O vento vem de terra e sopra fraco, o clássico terral que organiza e deixa a face limpa. Na água, dá pra sentir a água empurrando com vontade, exige presença mas sem exagero, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|peito-ombro|bom-9a11|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite de força consistente",
+          "analise": "Fechando o dia, a noite mostra um mar com corpo, força que exige leitura mas recompensa. Praticamente sem vento, a água fica espelhada, com textura limpa do início ao fim. Na água, a remada já pesa de verdade e a descida pede popup rápido, o tipo de condição que ensina a ler o timing certo, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "setiba|cintura-peito|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Fechando o dia com lateral fraco",
+          "analise": "No escuro, a condição registrada é de um mar com força tranquila, generoso com quem tá pegando o jeito. O vento sopra de lado, quase de través, e mexe pouco a superfície, sem estragar o conjunto. Na água, a sensação é de controle, a onda avisa antes de quebrar e dá tempo de se ajustar, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. É uma condição mediana; vale entrar com calma e priorizar as ondas mais fechadinhas em vez de remar em tudo.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "atalaia|joelho-cintura|bom-9a11|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite que aponta força fraca",
+          "analise": "A noite cai e o mar mostra força fraca, tudo bem suave na água. Sem vento nenhum incomodando, a parede fica limpa e previsível. Na água, a remada é tranquila e a descida quase não pede esforço, ótimo pra treinar manobra básica sem pressão, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Dá pra surfar numa boa se você escolher bem as ondas da série, sem se apegar às primeiras que vierem soltas.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|cabeca-1.5x|longo-11a13|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Tarde com lateral fraco",
+          "analise": "A tarde segue com um mar grande e brabo, força que só quem já rodou bastante aguenta bem na condição. O vento vem de través, de lado, e mexe pouco a superfície, sem estragar o conjunto. Na água, a sensação é de respeito total, a água tem peso suficiente pra cansar rápido quem não tá preparado, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. É daqueles dias que valem o despertador ou o sacrifício da tarde: condição rara, não vale a pena perder essa janela.",
+          "janela": "14h-16h",
+          "aviso": "Mar grande de verdade: força pesada pra quem não tem experiência, atenção ao intervalo entre as séries e ao caminho de saída."
+        }
+      ]
+    },
+    "maresias|peito-ombro|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Previsão noturna: mar com corpo",
+          "analise": "Já de noite, a condição traz uma energia boa, já dá pra sentir peso de verdade na remada. Um vento lateral, batendo de lado na onda, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada já pesa de verdade e a descida pede popup rápido, o tipo de condição que ensina a ler o timing certo, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|cabeca-1.5x|longo-11a13|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Tarde de lateral fraco",
+          "analise": "Com a tarde em curso, o mar entrega uma energia muito pesada, mar grande e sério, força de respeito. O vento sopra de lado, quase de través, e mexe pouco a superfície, sem estragar o conjunto. Na água, a sensação é de respeito total, a água tem peso suficiente pra cansar rápido quem não tá preparado, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Dia especial de verdade; a dica é ir com a prancha que rende mais nessa força e aproveitar cada onda da série.",
+          "janela": "13h-16h",
+          "aviso": "Mar grande de verdade: força pesada pra quem não tem experiência, atenção ao intervalo entre as séries e ao caminho de saída."
+        }
+      ]
+    },
+    "pitangueiras|ombro-cabeca|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã que entrega energia forte",
+          "analise": "Assim que clareia, o mar já mostra uma energia forte, o mar cobra remada rápida e postura certa. Lateral, esse vento que bate de lado na parede, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|cabeca-1.5x|longo-11a13|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Cedo, terral leve",
+          "analise": "Logo cedo, quem chega encontra força extrema, o mar tá grande e cobra experiência de quem entra na água. O vento vem de terra e sopra fraco, o clássico terral que organiza e deixa a face limpa. Na água, a sensação é de respeito total, a água tem peso suficiente pra cansar rápido quem não tá preparado, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Vale reorganizar a agenda por essa: condição assim não aparece toda semana, capriche na escolha do equipamento.",
+          "janela": "6h-9h",
+          "aviso": "Mar grande de verdade: força pesada pra quem não tem experiência, atenção ao intervalo entre as séries e ao caminho de saída."
+        }
+      ]
+    },
+    "recreio|cabeca-1.5x|longo-11a13|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Tarde com mar grande",
+          "analise": "Rumo ao entardecer, o mar aparece com energia pesadíssima, o caldo castiga quem erra o timing. Um vento lateral, batendo de lado na onda, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada exige fôlego e a descida vem com pressão séria, erro de leitura aqui vira caldo forte, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Dia especial de verdade; a dica é ir com a prancha que rende mais nessa força e aproveitar cada onda da série.",
+          "janela": "13h-15h",
+          "aviso": "Mar grande de verdade: força pesada pra quem não tem experiência, atenção ao intervalo entre as séries e ao caminho de saída."
+        }
+      ]
+    },
+    "recreio|ombro-cabeca|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Previsão noturna: vento de lado",
+          "analise": "A noite chega com energia considerável, a onda empurra com vontade e não perdoa erro de timing na água. O vento sopra de lado, quase de través, e pica um pouco a superfície, tirando parte da textura lisa. Na água, a sensação é de pressão real, a água empurra forte e não dá segunda chance no popup, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|cabeca-1.5x|longo-11a13|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Amanhecer de energia pesada",
+          "analise": "A manhã traz um mar com um mar grande e brabo, força que só quem já rodou bastante aguenta bem pra quem topar entrar cedo. Lateral, esse vento que bate de lado na parede, pica bastante a superfície, deixando a parede com bem menos textura lisa. Na água, a remada exige fôlego e a descida vem com pressão séria, erro de leitura aqui vira caldo forte, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": "6h-8h",
+          "aviso": "Mar grande de verdade: força pesada pra quem não tem experiência, atenção ao intervalo entre as séries e ao caminho de saída."
+        }
+      ]
+    },
+    "tombo|ombro-cabeca|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã que entrega lateral fraco",
+          "analise": "Com a manhã ainda fresca, o mar mostra um mar com força séria, pressão real na descida. O vento vem de través, de lado, e mexe pouco a superfície, sem estragar o conjunto. Na água, a sensação é de pressão real, a água empurra forte e não dá segunda chance no popup, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": "7h-10h",
+          "aviso": "Pico respeitado, de gente que já rodou bastante: essa força aqui não é pra quem tá começando."
+        }
+      ]
+    },
+    "bonete|ombro-cabeca|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite que aponta energia forte",
+          "analise": "No escuro, a condição registrada é de energia pesadíssima, o caldo castiga quem erra o timing. Um vento lateral, batendo de lado na onda, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": null,
+          "aviso": "Pico respeitado, de gente que já rodou bastante: essa força aqui não é pra quem tá começando."
+        }
+      ]
+    },
+    "itacoatiara|cabeca-1.5x|longo-11a13|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Tarde com vento de lado",
+          "analise": "A tarde bate e o mar responde com uma energia muito pesada, mar grande e sério, força de respeito. O vento sopra de lado, quase de través, e pica um pouco a superfície, tirando parte da textura lisa. Na água, a sensação é de respeito total, a água tem peso suficiente pra cansar rápido quem não tá preparado, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Vale reorganizar a agenda por essa: condição assim não aparece toda semana, capriche na escolha do equipamento.",
+          "janela": "13h-16h",
+          "aviso": "Mar grande de verdade: força pesada pra quem não tem experiência, atenção ao intervalo entre as séries e ao caminho de saída."
+        }
+      ]
+    },
+    "itacoatiara|cabeca-1.5x|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Previsão noturna: mar grande",
+          "analise": "De noite, quem olha a previsão encontra força extrema, o mar tá grande e cobra experiência de quem entra. Lateral, esse vento que bate de lado na parede, pica um pouco a superfície, tirando parte da textura lisa. Na água, a remada exige fôlego e a descida vem com pressão séria, erro de leitura aqui vira caldo forte, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": null,
+          "aviso": "Mar grande de verdade: força pesada pra quem não tem experiência, atenção ao intervalo entre as séries e ao caminho de saída."
+        }
+      ]
+    },
+    "rosa|cintura-peito|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Amanhecer de lateral fraco",
+          "analise": "Praia do Rosa amanhece com uma energia moderada, mar gostoso pra treinar sem cobrar demais. O vento vem de través, de lado, e mexe pouco a superfície, sem estragar o conjunto. Na água, a sensação é de controle, a onda avisa antes de quebrar e dá tempo de se ajustar, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Funciona, mas está longe do auge; a dica é procurar os cantos mais organizados e não gastar energia com onda ruim.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-floripa|joelho-cintura|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde que entrega pouca energia",
+          "analise": "A tarde chega com o mar mostrando pouca massa por trás, só onda fácil e sem sustos. Um vento lateral, batendo de lado na onda, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada é tranquila e a descida quase não pede esforço, ótimo pra treinar manobra básica sem pressão, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. É uma condição mediana; vale entrar com calma e priorizar as ondas mais fechadinhas em vez de remar em tudo.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-floripa|joelho-cintura|bom-9a11|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Noite que aponta maral mexendo",
+          "analise": "A noite mostra um mar com pouca força, só ondinhas mansas e curtas. O maral, vento que vem do mar pra terra, desmancha parte da força da parede, deixando a onda mais soprada. Na água, dá pra ficar bastante tempo na água sem cansar, ideal pra quem tá começando a pegar ritmo, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Vale mais como treino do que como sessão de verdade; a dica é focar em fundamento e não forçar manobra.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "castelhanos|peito-ombro|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite com força consistente",
+          "analise": "Já escurecendo, a condição traz força considerável, o mar já cobra atenção na descida. Esse vento que sopra do mar pra terra desmancha parte da força da parede, deixando a onda mais soprada. Na água, a remada já pesa de verdade e a descida pede popup rápido, o tipo de condição que ensina a ler o timing certo, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Funciona, mas está longe do auge; a dica é procurar os cantos mais organizados e não gastar energia com onda ruim.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "regencia|peito-ombro|longo-11a13|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Início de manhã: maral fraco",
+          "analise": "O mar dessa manhã chega com energia consistente, a remada pesa e a onda empurra com vontade. O vento onshore, batendo direto do mar pra areia, mexe de leve a face, nada que estrague o pacote. Na água, dá pra sentir a água empurrando com vontade, exige presença mas sem exagero, e a quebra na foz ganha uma leitura própria, com a correnteza da barra somando força à onda. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": "6h-8h",
+          "aviso": "Foz de rio: a correnteza da barra soma à força da onda. Atenção redobrada em quem não conhece bem o pico."
+        }
+      ]
+    },
+    "penha|joelho-cintura|bom-9a11|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Noite de força fraca",
+          "analise": "A noite chega e revela uma energia bem leve, mar brincalhão e sem pressão nenhuma no mar. Vem um vento do mar pra terra, o maral que atrapalha a parede, e mexe de leve a face, nada que estrague o pacote. Na água, a remada é tranquila e a descida quase não pede esforço, ótimo pra treinar manobra básica sem pressão, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Dá pra surfar numa boa se você escolher bem as ondas da série, sem se apegar às primeiras que vierem soltas.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|cabeca-1.5x|longo-11a13|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Manhã que entrega lateral forte",
+          "analise": "Cedo da manhã, a condição já mostra energia pesadíssima, o caldo castiga quem erra o timing. O vento sopra de lado, quase de través, e pica bastante a superfície, deixando a parede com bem menos textura lisa. Na água, a sensação é de respeito total, a água tem peso suficiente pra cansar rápido quem não tá preparado, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": "6h-9h",
+          "aviso": "Mar grande de verdade: força pesada pra quem não tem experiência, atenção ao intervalo entre as séries e ao caminho de saída."
+        }
+      ]
+    },
+    "unamar|cabeca-1.5x|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Noite que aponta energia pesada",
+          "analise": "Unamar mostra um mar grande e brabo, força que só quem já rodou bastante aguenta bem nessa noite. Lateral, esse vento que bate de lado na parede, pica um pouco a superfície, tirando parte da textura lisa. Na água, a remada exige fôlego e a descida vem com pressão séria, erro de leitura aqui vira caldo forte, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": null,
+          "aviso": "Mar grande de verdade: força pesada pra quem não tem experiência, atenção ao intervalo entre as séries e ao caminho de saída."
+        }
+      ]
+    },
+    "capao-da-canoa|peito-ombro|bom-9a11|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã com maral fraco",
+          "analise": "A manhã começa e o mar responde com um mar com corpo, força que exige leitura mas recompensa. O vento onshore, batendo direto do mar pra areia, mexe de leve a face, nada que estrague o pacote. Na água, dá pra sentir a água empurrando com vontade, exige presença mas sem exagero, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "domingas-dias|peito-ombro|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Previsão noturna: força consistente",
+          "analise": "A previsão noturna aponta uma energia boa, já dá pra sentir peso de verdade na remada no mar. Um vento lateral, batendo de lado na onda, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada já pesa de verdade e a descida pede popup rápido, o tipo de condição que ensina a ler o timing certo, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Funciona, mas está longe do auge; a dica é procurar os cantos mais organizados e não gastar energia com onda ruim.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "costao-do-santinho|cintura-peito|bom-9a11|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Noite de maral mexendo",
+          "analise": "Com a noite tomando conta, o mar mostra força mediana, dá pra sentir a onda empurrando sem exagero. O maral, vento que vem do mar pra terra, desmancha parte da força da parede, deixando a onda mais soprada. Na água, a sensação é de controle, a onda avisa antes de quebrar e dá tempo de se ajustar, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. É uma condição mediana; vale entrar com calma e priorizar as ondas mais fechadinhas em vez de remar em tudo.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|cintura-peito|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã que entrega energia leve",
+          "analise": "Assim que clareia, o mar já mostra energia razoável, boa pra quem quer evoluir sem apanhar. Lateral, esse vento que bate de lado na parede, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada pesa um pouco mas nada que canse rápido, dá pra encadear várias sem sofrer, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Dá pra surfar numa boa se você escolher bem as ondas da série, sem se apegar às primeiras que vierem soltas.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "setiba|cintura-peito|bom-9a11|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Cedo, vento zerado",
+          "analise": "A manhã amanhece com o mar mostrando um mar com força tranquila, generoso com quem tá pegando o jeito. O vento mal sopra, então a face da onda fica lisa e organizada. Na água, a sensação é de controle, a onda avisa antes de quebrar e dá tempo de se ajustar, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "camburi|peito-ombro|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite com mar com corpo",
+          "analise": "A noite traz uma condição de força considerável, o mar já cobra atenção na descida. Um vento lateral, batendo de lado na onda, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada já pesa de verdade e a descida pede popup rápido, o tipo de condição que ensina a ler o timing certo, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "mocambique|cintura-peito|longo-11a13|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Previsão noturna: lateral fraco",
+          "analise": "Já de noite, o mar segue com uma energia moderada, mar gostoso pra treinar sem cobrar demais. O vento sopra de lado, quase de través, e mexe pouco a superfície, sem estragar o conjunto. Na água, a sensação é de controle, a onda avisa antes de quebrar e dá tempo de se ajustar, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|peito-ombro|longo-11a13|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tarde de força consistente",
+          "analise": "No fim de tarde, o mar traz energia consistente, a remada pesa e a onda empurra com vontade. Lateral, esse vento que bate de lado na parede, pica um pouco a superfície, tirando parte da textura lisa. Na água, a remada já pesa de verdade e a descida pede popup rápido, o tipo de condição que ensina a ler o timing certo, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|peito-ombro|longo-11a13|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Fechando o dia com vento de lado",
+          "analise": "A noite chega trazendo um mar com corpo, força que exige leitura mas recompensa pra quem acompanha pro dia seguinte. O vento vem de través, de lado, e pica um pouco a superfície, tirando parte da textura lisa. Na água, dá pra sentir a água empurrando com vontade, exige presença mas sem exagero, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "atalaia|joelho-cintura|bom-9a11|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Cedo, força fraca",
+          "analise": "Cedo, o mar já entrega força fraca, tudo bem suave na água. Praticamente sem vento, a água fica espelhada, com textura limpa do início ao fim. Na água, a remada é tranquila e a descida quase não pede esforço, ótimo pra treinar manobra básica sem pressão, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Dá pra surfar numa boa se você escolher bem as ondas da série, sem se apegar às primeiras que vierem soltas.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "atalaia|joelho-cintura|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde com lateral fraco",
+          "analise": "A tarde encontra o mar com pouca massa por trás, só onda fácil e sem sustos. O vento sopra de lado, quase de través, e mexe pouco a superfície, sem estragar o conjunto. Na água, dá pra ficar bastante tempo na água sem cansar, ideal pra quem tá começando a pegar ritmo, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Funciona, mas está longe do auge; a dica é procurar os cantos mais organizados e não gastar energia com onda ruim.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "atalaia|cintura-peito|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Previsão noturna: força moderada",
+          "analise": "Fechando o dia, a noite mostra força mediana, dá pra sentir a onda empurrando sem exagero. Lateral, esse vento que bate de lado na parede, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada pesa um pouco mas nada que canse rápido, dá pra encadear várias sem sofrer, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. É uma condição mediana; vale entrar com calma e priorizar as ondas mais fechadinhas em vez de remar em tudo.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|ombro-cabeca|longo-11a13|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Amanhecer de lateral fraco",
+          "analise": "A manhã chega e o mar traz força pesada, quem entra sente o peso da água logo na remada. O vento vem de través, de lado, e mexe pouco a superfície, sem estragar o conjunto. Na água, a sensação é de pressão real, a água empurra forte e não dá segunda chance no popup, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "jureia|ombro-cabeca|longo-11a13|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Tarde que entrega energia forte",
+          "analise": "Já de tarde, a condição mostra energia considerável, a onda empurra com vontade e não perdoa erro de timing. Praticamente sem vento, a água fica espelhada, com textura limpa do início ao fim. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. É daqueles dias que valem o despertador ou o sacrifício da tarde: condição rara, não vale a pena perder essa janela.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "jureia|ombro-cabeca|longo-11a13|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Noite que aponta vento zerado",
+          "analise": "No escuro, a condição registrada é de um mar com força séria, pressão real na descida. O vento tá quase inexistente, deixando a superfície lisa, sem enrugar a parede. Na água, a sensação é de pressão real, a água empurra forte e não dá segunda chance no popup, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Vale reorganizar a agenda por essa: condição assim não aparece toda semana, capriche na escolha do equipamento.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|ombro-cabeca|longo-11a13|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Manhã com força pesada",
+          "analise": "Já nas primeiras horas da manhã, o mar mostra uma energia forte, o mar cobra remada rápida e postura certa. Esse vento que sopra do mar pra terra mexe de leve a face, nada que estrague o pacote. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por rodar sobre pedra, a onda aqui é mais previsível, só que qualquer erro dói mais. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": "6h-8h",
+          "aviso": "Fundo de pedra do point: com essa força, erro de queda machuca de verdade. Cuidado redobrado na entrada e na saída."
+        }
+      ]
+    },
+    "farol-de-santa-marta|cabeca-1.5x|longo-11a13|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Fim de tarde: lateral forte",
+          "analise": "A tarde abre com uma energia muito pesada, mar grande e sério, força de respeito na água. O vento vem de través, de lado, e pica bastante a superfície, deixando a parede com bem menos textura lisa. Na água, a sensação é de respeito total, a água tem peso suficiente pra cansar rápido quem não tá preparado, e o fundo de pedra do point organiza bastante a quebra, mas também cobra respeito na queda. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": "14h-17h",
+          "aviso": "Mar grande de verdade: força pesada pra quem não tem experiência, atenção ao intervalo entre as séries e ao caminho de saída."
+        }
+      ]
+    },
+    "farol-de-santa-marta|ombro-cabeca|bom-9a11|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite de mar exigente",
+          "analise": "Fechando o dia, a noite mostra uma energia forte, o mar cobra remada rápida e postura certa. Um vento lateral, batendo de lado na onda, pica bastante a superfície, deixando a parede com bem menos textura lisa. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por rodar sobre pedra, a onda aqui é mais previsível, só que qualquer erro dói mais. É uma condição mediana; vale entrar com calma e priorizar as ondas mais fechadinhas em vez de remar em tudo.",
+          "janela": null,
+          "aviso": "Fundo de pedra do point: com essa força, erro de queda machuca de verdade. Cuidado redobrado na entrada e na saída."
+        }
+      ]
+    },
+    "ipanema|ombro-cabeca|longo-11a13|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Manhã que entrega lateral fraco",
+          "analise": "A manhã traz um mar com energia considerável, a onda empurra com vontade e não perdoa erro de timing pra quem topar entrar cedo. O vento sopra de lado, quase de través, e mexe pouco a superfície, sem estragar o conjunto. Na água, a sensação é de pressão real, a água empurra forte e não dá segunda chance no popup, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "tramandai|ombro-cabeca|medio-7a9|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite que aponta energia forte",
+          "analise": "A noite traz uma condição de força pesada, quem entra sente o peso da água logo na remada. Lateral, esse vento que bate de lado na parede, pica bastante a superfície, deixando a parede com bem menos textura lisa. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Funciona, mas está longe do auge; a dica é procurar os cantos mais organizados e não gastar energia com onda ruim.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|ombro-cabeca|longo-11a13|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde com vento de lado",
+          "analise": "Com a tarde avançando, o mar mostra uma energia forte, o mar cobra remada rápida e postura certa. O vento vem de través, de lado, e pica um pouco a superfície, tirando parte da textura lisa. Na água, a sensação é de pressão real, a água empurra forte e não dá segunda chance no popup, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "pantano-do-sul|joelho-cintura|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Início de manhã: força fraca",
+          "analise": "A manhã abre com pouca força, só ondinhas mansas e curtas na água. Vem um terral fraco, o vento que sai da praia e vai pro mar, segurando a parede lisa. Na água, a remada é tranquila e a descida quase não pede esforço, ótimo pra treinar manobra básica sem pressão, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Dá pra surfar numa boa se você escolher bem as ondas da série, sem se apegar às primeiras que vierem soltas.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "pantano-do-sul|joelho-cintura|bom-9a11|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Tarde de vento de lado",
+          "analise": "De tarde, quem entra encontra uma energia bem leve, mar brincalhão e sem pressão nenhuma. O vento sopra de lado, quase de través, e pica um pouco a superfície, tirando parte da textura lisa. Na água, dá pra ficar bastante tempo na água sem cansar, ideal pra quem tá começando a pegar ritmo, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Não é o dia mais empolgante, mas dá pra aproveitar pra treinar remada e posicionamento sem grandes expectativas.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "pantano-do-sul|joelho-cintura|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Fechando o dia com pouca energia",
+          "analise": "A noite chega com força fraca, tudo bem suave na água na água. Lateral, esse vento que bate de lado na parede, pica um pouco a superfície, tirando parte da textura lisa. Na água, a remada é tranquila e a descida quase não pede esforço, ótimo pra treinar manobra básica sem pressão, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Condição fraca de verdade; melhor usar pra ajustar prancha e postura e guardar energia pra outra janela.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|ombro-cabeca|longo-11a13|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Entardecer com maral mexendo",
+          "analise": "A luz de tarde ilumina um mar com força pesada, quem entra sente o peso da água logo na remada. O vento onshore, batendo direto do mar pra areia, desmancha parte da força da parede, deixando a onda mais soprada. Na água, a sensação é de pressão real, a água empurra forte e não dá segunda chance no popup, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|peito-ombro|longo-11a13|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã com força consistente",
+          "analise": "De manhã cedo o mar aparece com uma energia boa, já dá pra sentir peso de verdade na remada. Vem um vento do mar pra terra, o maral que atrapalha a parede, e mexe de leve a face, nada que estrague o pacote. Na água, a remada já pesa de verdade e a descida pede popup rápido, o tipo de condição que ensina a ler o timing certo, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|peito-ombro|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Início de manhã: lateral fraco",
+          "analise": "A luz da manhã encontra um mar com força considerável, o mar já cobra atenção na descida. O vento sopra de lado, quase de través, e mexe pouco a superfície, sem estragar o conjunto. Na água, dá pra sentir a água empurrando com vontade, exige presença mas sem exagero, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|ombro-cabeca|longo-11a13|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Noite de força pesada",
+          "analise": "Com a noite fechando, o mar mostra energia considerável, a onda empurra com vontade e não perdoa erro de timing. Lateral, esse vento que bate de lado na parede, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|joelho-cintura|longo-11a13|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã que entrega terral leve",
+          "analise": "Amanhece e a condição do mar mostra pouca massa por trás, só onda fácil e sem sustos. O vento vem de terra e sopra fraco, o clássico terral que organiza e deixa a face limpa. Na água, dá pra ficar bastante tempo na água sem cansar, ideal pra quem tá começando a pegar ritmo, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Funciona, mas está longe do auge; a dica é procurar os cantos mais organizados e não gastar energia com onda ruim.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|cintura-peito|longo-11a13|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Entardecer com força moderada",
+          "analise": "Joaquina entrega energia razoável, boa pra quem quer evoluir sem apanhar nessa tarde. Vem um vento do mar pra terra, o maral que atrapalha a parede, e desmancha parte da força da parede, deixando a onda mais soprada. Na água, a remada pesa um pouco mas nada que canse rápido, dá pra encadear várias sem sofrer, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. É uma condição mediana; vale entrar com calma e priorizar as ondas mais fechadinhas em vez de remar em tudo.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|cintura-peito|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite com vento de lado",
+          "analise": "De noite, quem olha a previsão encontra um mar com força tranquila, generoso com quem tá pegando o jeito. O vento sopra de lado, quase de través, e pica um pouco a superfície, tirando parte da textura lisa. Na água, a sensação é de controle, a onda avisa antes de quebrar e dá tempo de se ajustar, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Dá pra surfar numa boa se você escolher bem as ondas da série, sem se apegar às primeiras que vierem soltas.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "cidreira|ombro-cabeca|bom-9a11|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Previsão noturna: energia forte",
+          "analise": "A noite mostra um mar com um mar com força séria, pressão real na descida. Lateral, esse vento que bate de lado na parede, pica bastante a superfície, deixando a parede com bem menos textura lisa. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Funciona, mas está longe do auge; a dica é procurar os cantos mais organizados e não gastar energia com onda ruim.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "itacoatiara|ombro-cabeca|longo-11a13|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Amanhecer de lateral fraco",
+          "analise": "Logo cedo, quem chega encontra uma energia forte, o mar cobra remada rápida e postura certa na água. O vento vem de través, de lado, e mexe pouco a superfície, sem estragar o conjunto. Na água, a sensação é de pressão real, a água empurra forte e não dá segunda chance no popup, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": "7h-10h",
+          "aviso": "Pico respeitado, de gente que já rodou bastante: essa força aqui não é pra quem tá começando."
+        }
+      ]
+    },
+    "ibiraquera|peito-ombro|longo-11a13|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tarde que entrega energia boa",
+          "analise": "A tarde traz uma condição de energia consistente, a remada pesa e a onda empurra com vontade. Um vento lateral, batendo de lado na onda, pica um pouco a superfície, tirando parte da textura lisa. Na água, a remada já pesa de verdade e a descida pede popup rápido, o tipo de condição que ensina a ler o timing certo, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|peito-ombro|longo-11a13|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite que aponta vento de lado",
+          "analise": "Já escurecendo, a condição traz um mar com corpo, força que exige leitura mas recompensa. O vento sopra de lado, quase de través, e pica um pouco a superfície, tirando parte da textura lisa. Na água, dá pra sentir a água empurrando com vontade, exige presença mas sem exagero, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|ombro-cabeca|longo-11a13|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Manhã com mar exigente",
+          "analise": "A manhã traz um mar com força pesada, quem entra sente o peso da água logo na remada pra quem topar entrar cedo. Lateral, esse vento que bate de lado na parede, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": "6h-9h",
+          "aviso": "Pico respeitado, de gente que já rodou bastante: essa força aqui não é pra quem tá começando."
+        }
+      ]
+    },
+    "cassino|cintura-peito|longo-11a13|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Início de manhã: vento de lado",
+          "analise": "Com a manhã ainda fresca, o mar mostra uma energia moderada, mar gostoso pra treinar sem cobrar demais. O vento vem de través, de lado, e pica um pouco a superfície, tirando parte da textura lisa. Na água, a sensação é de controle, a onda avisa antes de quebrar e dá tempo de se ajustar, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Dá pra surfar numa boa se você escolher bem as ondas da série, sem se apegar às primeiras que vierem soltas.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|cintura-peito|longo-11a13|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde de mar tranquilo",
+          "analise": "Já entrando a tarde, o mar mostra força mediana, dá pra sentir a onda empurrando sem exagero. Vem um vento do mar pra terra, o maral que atrapalha a parede, e desmancha parte da força da parede, deixando a onda mais soprada. Na água, a remada pesa um pouco mas nada que canse rápido, dá pra encadear várias sem sofrer, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Funciona, mas está longe do auge; a dica é procurar os cantos mais organizados e não gastar energia com onda ruim.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "torres|peito-ombro|longo-11a13|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã que entrega maral fraco",
+          "analise": "Torres amanhece com uma energia boa, já dá pra sentir peso de verdade na remada. O maral, vento que vem do mar pra terra, mexe de leve a face, nada que estrague o pacote. Na água, dá pra sentir a água empurrando com vontade, exige presença mas sem exagero, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "matinhos|flat|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Noite que aponta mar parado",
+          "analise": "A noite chega e revela uma força bem fraca, quase parada, mais poça balançando que outra coisa no mar. Lateral, esse vento que bate de lado na parede, mexe pouco a superfície, sem estragar o conjunto. Na água, a sensação é de deslizar sem embalo nenhum, mais rolê de prancha do que surf de verdade, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Vale mais como treino do que como sessão de verdade; a dica é focar em fundamento e não forçar manobra.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-floripa|cintura-peito|longo-11a13|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde com maral fraco",
+          "analise": "A tarde chega mostrando energia razoável, boa pra quem quer evoluir sem apanhar no pico. O vento onshore, batendo direto do mar pra areia, mexe de leve a face, nada que estrague o pacote. Na água, a sensação é de controle, a onda avisa antes de quebrar e dá tempo de se ajustar, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Funciona, mas está longe do auge; a dica é procurar os cantos mais organizados e não gastar energia com onda ruim.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|peito-ombro|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Início de manhã: mar com corpo",
+          "analise": "O mar dessa manhã chega com força considerável, o mar já cobra atenção na descida. Um vento lateral, batendo de lado na onda, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada já pesa de verdade e a descida pede popup rápido, o tipo de condição que ensina a ler o timing certo, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|ombro-cabeca|longo-11a13|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Noite de lateral fraco",
+          "analise": "Praia Brava (Cabo Frio) mostra energia considerável, a onda empurra com vontade e não perdoa erro de timing nessa noite. O vento sopra de lado, quase de través, e mexe pouco a superfície, sem estragar o conjunto. Na água, a sensação é de pressão real, a água empurra forte e não dá segunda chance no popup, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. É um dia bom de verdade; leve a prancha certa pra essa força e não perca tempo remando pra fora à toa.",
+          "janela": null,
+          "aviso": "Pico respeitado, de gente que já rodou bastante: essa força aqui não é pra quem tá começando."
+        }
+      ]
+    },
+    "praia-da-vila|ombro-cabeca|longo-11a13|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Manhã que entrega energia forte",
+          "analise": "Cedo da manhã, a condição já mostra um mar com força séria, pressão real na descida. Lateral, esse vento que bate de lado na parede, mexe pouco a superfície, sem estragar o conjunto. Na água, a remada cansa rápido e a descida cobra postura firme, quem hesita fica pra trás na série, e por ser fundo de areia, a quebra pode variar de pico pra pico ao longo do dia. Vale muito a pena entrar; a dica é aproveitar enquanto a condição segura, escolhendo as ondas mais espaçadas da série.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|peito-ombro|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Cedo, terral leve",
+          "analise": "A manhã começa e o mar responde com energia consistente, a remada pesa e a onda empurra com vontade. O vento vem de terra e sopra fraco, o clássico terral que organiza e deixa a face limpa. Na água, dá pra sentir a água empurrando com vontade, exige presença mas sem exagero, e o fundo de areia perdoa parte do erro de leitura, o formato muda com a maré. Compensa se organizar e ir cedo pra pegar o pico ainda arrumado, aproveitando o corpo da série antes de virar.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
     }
   },
-  "generated_at": "2026-08-23T08:58:00.586Z"
+  "generated_at": "2026-08-23T12:17:27.028Z"
 }
