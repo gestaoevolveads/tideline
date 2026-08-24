@@ -106672,7 +106672,1327 @@
           "aviso": "Vento forte e swell fora do ângulo ideal deixam o mar mais imprevisível: cuidado redobrado se você tiver menos experiência."
         }
       ]
+    },
+    "unamar|ombro-cabeca|bom-9a11|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Unamar, mar grande e swell encaixado",
+          "analise": "Unamar aparece com porte grande, dá pra ver de longe, a série vem mais espaçada, com tempo de sobra pra ver a onda se formar e essa é a direção de swell que esse trecho pede. Na água, um onshore fraco (vento que vem do mar pra terra) já dá uma leve enrugada na superfície, mas ainda não estraga o programa. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. Vale aparecer no fim da tarde, quando o vento costuma dar uma trégua.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "tramandai|peito-ombro|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tramandaí: mar com corpo, swell encaixado",
+          "analise": "Por aqui, o mar ganha peso, a arrebentação já se faz notar, a série chega organizada, com espaço suficiente pra ler o pico e essa é a direção de swell que esse trecho pede. Na água, um vento fraco de lado mexe pouco na superfície. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. A dica é ir num horário mais tranquilo da tarde, evitando o pico do vento.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|cintura-peito|bom-9a11|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Condição mediana em Cassino",
+          "analise": "Cassino oferece uma leitura mediana, sem grandes surpresas, a série vem mais espaçada, com tempo de sobra pra ver a onda se formar e o swell encaixa direto na janela que essa praia gosta de receber. Na água, um lateral moderado bagunça um pouco a parede, é vento soprando de lado. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. Compensa esperar a tarde avançar um pouco antes de remar.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|cabeca-1.5x|longo-11a13|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8.5,
+          "titulo": "Praia da Vila: mar puxado, swell encaixado",
+          "analise": "O mar dessa parte da costa ganha corpo pesado, tamanho que exige respeito, a série cava mais, com bastante espaço entre uma onda e outra e a direção do swell bate certo com esse pico. Na água, um onshore fraco (vento que vem do mar pra terra) já dá uma leve enrugada na superfície, mas ainda não estraga o programa. Serve bem pra quem já perdeu o medo e busca ganhar consistência. Com a noite chegando não tem sessão hoje, o negócio é acompanhar como o mar amanhece.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "cidreira|peito-ombro|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar com corpo em Cidreira",
+          "analise": "Cidreira vem robusto o suficiente pra exigir atenção, o intervalo entre as ondas é folgado, dá pra escolher com calma e a direção do swell bate certo com esse pico. Na água, um vento fraco de lado mexe pouco na superfície. Quem já tem uma base de remada e leitura aproveita bem esse tipo de condição. Compensa esperar a tarde avançar um pouco antes de remar.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "caioba|flat|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 1.5,
+          "titulo": "Caiobá: mar de piscina, swell encaixado",
+          "analise": "O mar dessa parte da costa segue liso e parado, ondulação quase nula, o intervalo entre as ondas é razoável, nem apertado nem folgado e a direção do swell bate certo com esse pico. Na água, um vento fraco de lado mexe pouco na superfície. Quem já tem uma base de remada e leitura aproveita bem esse tipo de condição. Com a noite chegando não tem sessão hoje, o negócio é acompanhar como o mar amanhece.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|cabeca-1.5x|longo-11a13|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8.5,
+          "titulo": "Monte Alto: mar puxado, swell encaixado",
+          "analise": "O mar dessa parte da costa ganha corpo pesado, tamanho que exige respeito, o intervalo entre as séries é largo, dá tempo de sobra pra se posicionar e o ângulo do swell entra em cheio aqui. Na água, o vento de lado mexe na superfície sem destruir o programa, mas já pede atenção na hora de remar. Serve bem pra quem já perdeu o medo e busca ganhar consistência. Com a noite chegando não tem sessão hoje, o negócio é acompanhar como o mar amanhece.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|ombro-cabeca|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar grande em Praia Brava (Cabo Frio)",
+          "analise": "Praia Brava (Cabo Frio) chega crescido, a arrebentação já avisa de longe, as ondas se separam bem, sobra tempo pra respirar entre elas e a leitura do swell fecha com o que esse pico gosta de receber. Na água, sopra um lateral leve, vento soprando de lado que quase não incomoda. É condição pra quem já tem bagagem, remada forte e leitura rápida de pico. De noite ninguém rema, o que importa aqui é ver como essa energia se comporta até o nascer do sol.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-mole|joelho-cintura|bom-9a11|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Praia Mole, onda pequena e swell encaixado",
+          "analise": "Praia Mole chega baixinho, sem se impor, o intervalo entre as ondas é folgado, dá pra escolher com calma e o ângulo do swell entra em cheio aqui. Na água, há um onshore fraco batendo, vento de mar pra terra que mexe de leve na textura da água. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. Vale aparecer no fim da tarde, quando o vento costuma dar uma trégua.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-mole|joelho-cintura|bom-9a11|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Praia Mole, onda pequena e swell encaixado",
+          "analise": "Praia Mole mostra energia contida, tudo em escala pequena, a série vem mais espaçada, com tempo de sobra pra ver a onda se formar e o ângulo do swell entra em cheio aqui. Na água, sopra um onshore leve, aquele vento que sobe do mar: incomoda pouco, só tira um pouco do brilho da parede. Quem já tem uma base de remada e leitura aproveita bem esse tipo de condição. Essa leitura é de virada da noite, o boletim de amanhã cedo é que vai dizer se compensa remar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|joelho-cintura|bom-9a11|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Joaquina com onda pequena",
+          "analise": "Joaquina oferece uma condição miúda, tranquila de encarar, o intervalo entre as ondas é folgado, dá pra escolher com calma e o ângulo do swell entra em cheio aqui. Na água, sopra um onshore leve, aquele vento que sobe do mar: incomoda pouco, só tira um pouco do brilho da parede. É condição pra quem já tem bagagem, remada forte e leitura rápida de pico. Quem entrar mais tarde tende a pegar a água mais organizada.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|joelho-cintura|bom-9a11|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Joaquina com onda pequena",
+          "analise": "O mar dessa parte da costa traz uma ondulação pequena, do tipo que mal levanta, o compasso da série é generoso, favorece quem lê bem a água e o swell encaixa direto na janela que essa praia gosta de receber. Na água, um onshore fraco (vento que vem do mar pra terra) já dá uma leve enrugada na superfície, mas ainda não estraga o programa. É condição pra quem já tem bagagem, remada forte e leitura rápida de pico. A leitura de agora serve pra planejar a virada, ninguém entra na água nesse horário.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|ombro-cabeca|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Praia do Forte, mar grande e swell encaixado",
+          "analise": "Praia do Forte sobe de tamanho e ganha corpo nas paredes, o intervalo entre as ondas é folgado, dá pra escolher com calma e o ângulo do swell entra em cheio aqui. Na água, um vento fraco de lado mexe pouco na superfície. Atende níveis bem diferentes, cada um encontra seu canto. Essa leitura é de virada da noite, o boletim de amanhã cedo é que vai dizer se compensa remar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|cabeca-1.5x|longo-11a13|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8.5,
+          "titulo": "Praia Brava (Arraial) com mar puxado",
+          "analise": "Praia Brava (Arraial) ganha corpo pesado, tamanho que exige respeito, a série vem espaçada e generosa, cada onda entra com peso concentrado e o swell encaixa direto na janela que essa praia gosta de receber. Na água, sopra um lateral com presença, vento de lado que já interfere na leitura. Pede repertório, não é lugar pra estrear em mar grande. A leitura de agora serve pra planejar a virada, ninguém entra na água nesse horário.",
+          "janela": null,
+          "aviso": "Energia alta com vento mexendo bastante na água, respeite a correnteza e não force além da sua experiência."
+        }
+      ]
+    },
+    "praia-do-pero|ombro-cabeca|bom-9a11|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Praia do Peró com mar grande",
+          "analise": "O mar dessa parte da costa vem robusto, com energia visível na arrebentação, o compasso da série é generoso, favorece quem lê bem a água e o swell encaixa direto na janela que essa praia gosta de receber. Na água, um terral leve ajuda: é o vento que sai da terra pro mar e alisa a onda por dentro. Quem já tem uma base de remada e leitura aproveita bem esse tipo de condição. A leitura de agora serve pra planejar a virada, ninguém entra na água nesse horário.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|cabeca-1.5x|longo-11a13|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8.5,
+          "titulo": "Figueira, mar puxado e swell encaixado",
+          "analise": "Figueira impõe respeito só de olhar da areia, o ritmo da série é folgado e poderoso, típico de swell bem formado e a leitura do swell fecha com o que esse pico gosta de receber. Na água, um lateral moderado bagunça um pouco a parede, é vento soprando de lado. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. Essa leitura é de virada da noite, o boletim de amanhã cedo é que vai dizer se compensa remar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "maresias|ombro-cabeca|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Maresias com mar grande",
+          "analise": "Maresias vem robusto, com energia visível na arrebentação, as ondas se separam bem, sobra tempo pra respirar entre elas e o swell encaixa direto na janela que essa praia gosta de receber. Na água, sopra um lateral leve, vento soprando de lado que quase não incomoda. Pede repertório, não é lugar pra estrear em mar grande. A leitura de agora serve pra planejar a virada, ninguém entra na água nesse horário.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|cabeca-1.5x|longo-11a13|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8.5,
+          "titulo": "Praia Grande, mar puxado e swell encaixado",
+          "analise": "Praia Grande impõe respeito só de olhar da areia, o intervalo entre as séries é largo, dá tempo de sobra pra se posicionar e a leitura do swell fecha com o que esse pico gosta de receber. Na água, sopra um lateral com presença, vento de lado que já interfere na leitura. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. Essa leitura é de virada da noite, o boletim de amanhã cedo é que vai dizer se compensa remar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-floripa|joelho-cintura|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Praia Brava (Floripa) com onda pequena",
+          "analise": "Esse trecho oferece uma condição miúda, tranquila de encarar, a série chega organizada, com espaço suficiente pra ler o pico e a leitura do swell fecha com o que esse pico gosta de receber. Na água, um vento fraco de lado mexe pouco na superfície. Pede repertório, não é lugar pra estrear em mar grande. A leitura de agora serve pra planejar a virada, ninguém entra na água nesse horário.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "cacimba-do-padre|ombro-cabeca|medio-7a9|lateral-moderado|tarde|fora": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Mar grande em Cacimba do Padre",
+          "analise": "Cacimba do Padre sobe de tamanho e ganha corpo nas paredes, o ritmo da série é moderado, dá tempo de se posicionar e o ângulo do swell foge do que esse trecho gosta, a onda perde organização. Na água, um lateral moderado bagunça um pouco a parede, é vento soprando de lado. Pede repertório, não é lugar pra estrear em mar grande. Compensa esperar a tarde avançar um pouco antes de remar.",
+          "janela": "13h-17h",
+          "aviso": "Ponto perigoso quando o mar cresce, respeite sua experiência antes de entrar."
+        }
+      ]
+    },
+    "penha|joelho-cintura|longo-11a13|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Onda pequena em Penha",
+          "analise": "Penha chega baixinho, sem se impor, cada onda chega isolada, com energia bem concentrada e o ângulo do swell entra em cheio aqui. Na água, um vento fraco de lado mexe pouco na superfície. Quem já tem uma base de remada e leitura aproveita bem esse tipo de condição. Compensa esperar a tarde avançar um pouco antes de remar.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|ombro-cabeca|longo-11a13|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Pitangueiras: mar grande, swell encaixado",
+          "analise": "Pitangueiras chega grande, com bastante água se movendo, cada onda chega isolada, com energia bem concentrada e a leitura do swell fecha com o que esse pico gosta de receber. Na água, há um onshore fraco batendo, vento de mar pra terra que mexe de leve na textura da água. Atende níveis bem diferentes, cada um encontra seu canto. A dica é ir num horário mais tranquilo da tarde, evitando o pico do vento.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|peito-ombro|longo-11a13|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Ibiraquera com mar com corpo",
+          "analise": "Ibiraquera mostra energia visível, dá pra sentir de longe, cada onda chega isolada, com energia bem concentrada e o swell encaixa direto na janela que essa praia gosta de receber. Na água, o vento de lado sopra forte, mexe bastante na água e cobra remada extra pra manter a posição. Serve bem pra quem já perdeu o medo e busca ganhar consistência. Quem entrar mais tarde tende a pegar a água mais organizada.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|cabeca-1.5x|longo-11a13|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 9.5,
+          "titulo": "Mar puxado em Prainha",
+          "analise": "Prainha impõe respeito só de olhar da areia, o intervalo entre as séries é largo, dá tempo de sobra pra se posicionar e o ângulo do swell entra em cheio aqui. Na água, sopra um offshore fraco, vento de terra pro mar que segura bem a parede. Exige experiência: só quem já rodou bastante em mar puxado vai curtir sem sofrer. De noite ninguém rema, o que importa aqui é ver como essa energia se comporta até o nascer do sol.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|peito-ombro|longo-11a13|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Praia da Silveira com mar com corpo",
+          "analise": "O mar dessa parte da costa ganha peso, a arrebentação já se faz notar, o intervalo entre as séries é largo, dá tempo de sobra pra se posicionar e a direção do swell bate certo com esse pico. Na água, o vento de lado sopra forte, mexe bastante na água e cobra remada extra pra manter a posição. É condição pra quem já tem bagagem, remada forte e leitura rápida de pico. Quem entrar mais tarde tende a pegar a água mais organizada.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-mole|cintura-peito|bom-9a11|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Praia Mole, condição mediana e swell encaixado",
+          "analise": "Praia Mole oferece uma leitura mediana, sem grandes surpresas, a série chega organizada, com espaço suficiente pra ler o pico e a direção do swell bate certo com esse pico. Na água, um offshore mais forte alisa bem a superfície, vento de terra pro mar que ajuda a onda a manter a forma. Quem já tem uma base de remada e leitura aproveita bem esse tipo de condição. Essa leitura é de virada da noite, o boletim de amanhã cedo é que vai dizer se compensa remar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "massaguacu|cintura-peito|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Massaguaçu, condição mediana e swell encaixado",
+          "analise": "Massaguaçu chega com volume moderado, equilibrado, o intervalo entre as ondas é razoável, nem apertado nem folgado e a direção do swell bate certo com esse pico. Na água, um vento fraco de lado mexe pouco na superfície. Serve bem pra quem já perdeu o medo e busca ganhar consistência. Essa leitura é de virada da noite, o boletim de amanhã cedo é que vai dizer se compensa remar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|ombro-cabeca|longo-11a13|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Tombo, mar grande e swell encaixado",
+          "analise": "Tombo aparece com porte grande, dá pra ver de longe, a série cava mais, com bastante espaço entre uma onda e outra e o swell encaixa direto na janela que essa praia gosta de receber. Na água, há um onshore fraco batendo, vento de mar pra terra que mexe de leve na textura da água. É condição pra quem já tem bagagem, remada forte e leitura rápida de pico. Vale aparecer no fim da tarde, quando o vento costuma dar uma trégua.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "pantano-do-sul|joelho-cintura|bom-9a11|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Pântano do Sul: onda pequena, swell encaixado",
+          "analise": "Pântano do Sul oferece uma condição miúda, tranquila de encarar, as ondas se separam bem, sobra tempo pra respirar entre elas e essa é a direção de swell que esse trecho pede. Na água, um onshore mais presente enruga a superfície e atrapalha bastante a leitura da parede. Serve bem pra quem já perdeu o medo e busca ganhar consistência. A dica é ir num horário mais tranquilo da tarde, evitando o pico do vento.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|cintura-peito|bom-9a11|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Joaquina com condição mediana",
+          "analise": "Por aqui, o mar traz uma energia média, nem manso nem forte, o compasso da série é generoso, favorece quem lê bem a água e o swell encaixa direto na janela que essa praia gosta de receber. Na água, o terral sopra com força suficiente pra segurar a parede, é o vento que sai da terra pro mar. É condição pra quem já tem bagagem, remada forte e leitura rápida de pico. A leitura de agora serve pra planejar a virada, ninguém entra na água nesse horário.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "fernando-de-noronha|ombro-cabeca|medio-7a9|lateral-moderado|tarde|fora": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Fernando de Noronha com mar grande",
+          "analise": "Por aqui, o mar vem robusto, com energia visível na arrebentação, a série se organiza num ritmo equilibrado e o swell vem de fora da janela que essa praia prefere, tende a chegar mais fechado. Na água, um lateral moderado bagunça um pouco a parede, é vento soprando de lado. É condição pra quem já tem bagagem, remada forte e leitura rápida de pico. Quem entrar mais tarde tende a pegar a água mais organizada.",
+          "janela": "13h-16h",
+          "aviso": "Energia alta com vento mexendo bastante na água, respeite a correnteza e não force além da sua experiência."
+        }
+      ]
+    },
+    "grumari|cabeca-1.5x|longo-11a13|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 9.5,
+          "titulo": "Mar puxado em Grumari",
+          "analise": "Grumari impõe respeito só de olhar da areia, o intervalo entre as séries é largo, dá tempo de sobra pra se posicionar e o ângulo do swell entra em cheio aqui. Na água, sopra um offshore fraco, vento de terra pro mar que segura bem a parede. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. De noite ninguém rema, o que importa aqui é ver como essa energia se comporta até o nascer do sol.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "campeche|cintura-peito|bom-9a11|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Condição mediana em Campeche",
+          "analise": "Campeche vem com um corpo intermediário, sem grande imponência, o compasso da série é generoso, favorece quem lê bem a água e o swell encaixa direto na janela que essa praia gosta de receber. Na água, o terral sopra com força suficiente pra segurar a parede, é o vento que sai da terra pro mar. Exige experiência: só quem já rodou bastante em mar puxado vai curtir sem sofrer. De noite ninguém rema, o que importa aqui é ver como essa energia se comporta até o nascer do sol.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|peito-ombro|longo-11a13|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Praia do Ferrugem, mar com corpo e swell encaixado",
+          "analise": "Praia do Ferrugem traz uma condição de porte médio pra grande, cada onda chega isolada, com energia bem concentrada e essa é a direção de swell que esse trecho pede. Na água, o vento de lado está pesado, atrapalha bastante e exige remada de sobra. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. Vale aparecer no fim da tarde, quando o vento costuma dar uma trégua.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "guarda-do-embau|cintura-peito|curto-vaga|lateral-forte|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 2.5,
+          "titulo": "Guarda do Embaú, condição mediana e swell na borda",
+          "analise": "Guarda do Embaú oferece uma leitura mediana, sem grandes surpresas, a série vem apertada e meio atropelada, mar picotado de vento e o swell está na borda da janela ideal, funciona mas sem a exuberância dos dias certos. Na água, o vento de lado sopra forte, mexe bastante na água e cobra remada extra pra manter a posição. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. Vale aparecer no fim da tarde, quando o vento costuma dar uma trégua.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "tramandai|peito-ombro|medio-7a9|lateral-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tramandaí, mar com corpo e swell na borda",
+          "analise": "Tramandaí vem robusto o suficiente pra exigir atenção, o intervalo entre as ondas é razoável, nem apertado nem folgado e o swell está na borda da janela ideal, funciona mas sem a exuberância dos dias certos. Na água, o vento de lado mexe na superfície sem destruir o programa, mas já pede atenção na hora de remar. Serve bem pra quem já perdeu o medo e busca ganhar consistência. Vale aparecer no fim da tarde, quando o vento costuma dar uma trégua.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|ombro-cabeca|medio-7a9|lateral-forte|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Mar grande em Ibiraquera",
+          "analise": "Ibiraquera chega crescido, a arrebentação já avisa de longe, a série se organiza num ritmo equilibrado e o ângulo do swell é aceitável, mas longe do encaixe perfeito. Na água, o vento de lado está pesado, atrapalha bastante e exige remada de sobra. Serve bem pra quem já perdeu o medo e busca ganhar consistência. Compensa esperar a tarde avançar um pouco antes de remar.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|peito-ombro|medio-7a9|lateral-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Ibiraquera: mar com corpo, swell na borda",
+          "analise": "Esse trecho ganha peso, a arrebentação já se faz notar, as ondas chegam num compasso tranquilo, sem pressa e essa direção de swell passa perto da janela ideal, sem cravar. Na água, sopra um lateral com presença, vento de lado que já interfere na leitura. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. Com a noite chegando não tem sessão hoje, o negócio é acompanhar como o mar amanhece.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "capao-da-canoa|ombro-cabeca|medio-7a9|lateral-fraco|noite|borda": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Capão da Canoa, mar grande e swell na borda",
+          "analise": "Capão da Canoa aparece com porte grande, dá pra ver de longe, as ondas chegam num compasso tranquilo, sem pressa e o swell está na borda da janela ideal, funciona mas sem a exuberância dos dias certos. Na água, o vento de lado está discreto, mal se percebe na água. Funciona pra praticamente todo mundo, o segredo é escolher bem o pico. Essa leitura é de virada da noite, o boletim de amanhã cedo é que vai dizer se compensa remar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|ombro-cabeca|bom-9a11|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Prainha: mar grande, swell encaixado",
+          "analise": "Esse trecho cresce e forma paredes com peso real, as ondas se separam bem, sobra tempo pra respirar entre elas e a direção do swell bate certo com esse pico. Na água, um terral leve ajuda: é o vento que sai da terra pro mar e alisa a onda por dentro. Exige experiência: só quem já rodou bastante em mar puxado vai curtir sem sofrer. Com a noite chegando não tem sessão hoje, o negócio é acompanhar como o mar amanhece.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|peito-ombro|medio-7a9|onshore-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Cassino, mar com corpo e swell na borda",
+          "analise": "Cassino vem robusto o suficiente pra exigir atenção, o intervalo entre as ondas é razoável, nem apertado nem folgado e o swell está na borda da janela ideal, funciona mas sem a exuberância dos dias certos. Na água, sopra onshore com força, vento de mar pra terra que desmancha a onda antes da hora. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. Vale sair cedo pra pegar a janela mais limpa antes do vento virar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|cintura-peito|medio-7a9|offshore-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Cassino: condição mediana, swell na borda",
+          "analise": "Por aqui, o mar segue num porte médio, nada extremo pra nenhum lado, o intervalo entre as ondas é razoável, nem apertado nem folgado e essa direção de swell passa perto da janela ideal, sem cravar. Na água, o terral está forte, entalha bem a parede e deixa a onda com cara de foto. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. A dica é ir num horário mais tranquilo da tarde, evitando o pico do vento.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|cintura-peito|medio-7a9|offshore-fraco|noite|borda": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Cassino com condição mediana",
+          "analise": "Por aqui, o mar traz uma energia média, nem manso nem forte, a série mantém um ritmo médio, dá pra achar o timing sem correria e a direção do swell chega meio de raspão, dentro do possível. Na água, o terral está discreto, aquele vento de terra que dá uma alisada gostosa na onda. Serve bem pra quem já perdeu o medo e busca ganhar consistência. A leitura de agora serve pra planejar a virada, ninguém entra na água nesse horário.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "itacoatiara|ombro-cabeca|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar grande em Itacoatiara",
+          "analise": "Itacoatiara sobe de tamanho e ganha corpo nas paredes, a série vem mais espaçada, com tempo de sobra pra ver a onda se formar e a leitura do swell fecha com o que esse pico gosta de receber. Na água, sopra um lateral leve, vento soprando de lado que quase não incomoda. É condição pra quem já tem bagagem, remada forte e leitura rápida de pico. Compensa esperar a tarde avançar um pouco antes de remar.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|peito-ombro|medio-7a9|lateral-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Praia da Silveira, mar com corpo e swell na borda",
+          "analise": "Praia da Silveira sobe de porte e a parede ganha volume real, a série se organiza num ritmo equilibrado e o swell está na borda da janela ideal, funciona mas sem a exuberância dos dias certos. Na água, um lateral moderado bagunça um pouco a parede, é vento soprando de lado. É condição pra quem já tem bagagem, remada forte e leitura rápida de pico. Essa leitura é de virada da noite, o boletim de amanhã cedo é que vai dizer se compensa remar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-cupe|peito-ombro|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Praia do Cupe com mar com corpo",
+          "analise": "Praia do Cupe mostra energia visível, dá pra sentir de longe, o intervalo entre as ondas é razoável, nem apertado nem folgado e essa é a direção de swell que esse trecho pede. Na água, sopra onshore com força, vento de mar pra terra que desmancha a onda antes da hora. Quem já tem uma base de remada e leitura aproveita bem esse tipo de condição. Quem entrar mais tarde tende a pegar a água mais organizada.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-mole|cintura-peito|medio-7a9|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Praia Mole: condição mediana, swell encaixado",
+          "analise": "Por aqui, o mar segue num porte médio, nada extremo pra nenhum lado, as ondas chegam num compasso tranquilo, sem pressa e essa é a direção de swell que esse trecho pede. Na água, o vento de lado está pesado, atrapalha bastante e exige remada de sobra. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. A dica é ir num horário mais tranquilo da tarde, evitando o pico do vento.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "tucuns|ombro-cabeca|bom-9a11|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Tucuns: mar grande, swell encaixado",
+          "analise": "Tucuns cresce e forma paredes com peso real, o compasso da série é generoso, favorece quem lê bem a água e o ângulo do swell entra em cheio aqui. Na água, o vento de lado mexe na superfície sem destruir o programa, mas já pede atenção na hora de remar. Serve bem pra quem já perdeu o medo e busca ganhar consistência. A dica é chegar logo de manhã, antes do calor bagunçar o vento.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "baia-formosa|peito-ombro|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Baía Formosa, mar com corpo e swell encaixado",
+          "analise": "Baía Formosa sobe de porte e a parede ganha volume real, o ritmo da série é moderado, dá tempo de se posicionar e o swell encaixa direto na janela que essa praia gosta de receber. Na água, sopra um lateral leve, vento soprando de lado que quase não incomoda. Quem já tem uma base de remada e leitura aproveita bem esse tipo de condição. Vale sair cedo pra pegar a janela mais limpa antes do vento virar.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "regencia|ombro-cabeca|longo-11a13|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8.5,
+          "titulo": "Regência com mar grande",
+          "analise": "Esse trecho cresce e forma paredes com peso real, a série cava mais, com bastante espaço entre uma onda e outra e o ângulo do swell entra em cheio aqui. Na água, um vento fraco de lado mexe pouco na superfície. É condição pra quem já tem bagagem, remada forte e leitura rápida de pico. Quem chegar nas primeiras horas leva vantagem sobre o resto do dia.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "regencia|ombro-cabeca|longo-11a13|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7.5,
+          "titulo": "Mar grande em Regência",
+          "analise": "Regência aparece com porte grande, dá pra ver de longe, cada onda chega isolada, com energia bem concentrada e o ângulo do swell entra em cheio aqui. Na água, um onshore mais presente enruga a superfície e atrapalha bastante a leitura da parede. Pede repertório, não é lugar pra estrear em mar grande. Compensa esperar a tarde avançar um pouco antes de remar.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|cintura-peito|medio-7a9|lateral-forte|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Joaquina com condição mediana",
+          "analise": "Esse trecho traz uma energia média, nem manso nem forte, o ritmo da série é moderado, dá tempo de se posicionar e a direção do swell chega meio de raspão, dentro do possível. Na água, o vento de lado está pesado, atrapalha bastante e exige remada de sobra. Pede repertório, não é lugar pra estrear em mar grande. Quem entrar mais tarde tende a pegar a água mais organizada.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|cintura-peito|medio-7a9|offshore-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Joaquina com condição mediana",
+          "analise": "Joaquina oferece uma leitura mediana, sem grandes surpresas, a série se organiza num ritmo equilibrado e o ângulo do swell é aceitável, mas longe do encaixe perfeito. Na água, um offshore mais forte alisa bem a superfície, vento de terra pro mar que ajuda a onda a manter a forma. Pede repertório, não é lugar pra estrear em mar grande. De noite ninguém rema, o que importa aqui é ver como essa energia se comporta até o nascer do sol.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|ombro-cabeca|longo-11a13|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8.5,
+          "titulo": "Arpoador, mar grande e swell encaixado",
+          "analise": "Arpoador aparece com porte grande, dá pra ver de longe, o intervalo entre as séries é largo, dá tempo de sobra pra se posicionar e o swell encaixa direto na janela que essa praia gosta de receber. Na água, o vento de lado está discreto, mal se percebe na água. Serve bem pra quem já perdeu o medo e busca ganhar consistência. Vale aparecer no fim da tarde, quando o vento costuma dar uma trégua.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|ombro-cabeca|medio-7a9|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Farol de Santa Marta, mar grande e swell encaixado",
+          "analise": "Farol de Santa Marta sobe de tamanho e ganha corpo nas paredes, o intervalo entre as ondas é razoável, nem apertado nem folgado e a direção do swell bate certo com esse pico. Na água, o vento de lado sopra forte, mexe bastante na água e cobra remada extra pra manter a posição. Exige experiência: só quem já rodou bastante em mar puxado vai curtir sem sofrer. Essa leitura é de virada da noite, o boletim de amanhã cedo é que vai dizer se compensa remar.",
+          "janela": null,
+          "aviso": "Energia alta com vento mexendo bastante na água, respeite a correnteza e não force além da sua experiência."
+        }
+      ]
+    },
+    "barra-do-sahy|peito-ombro|longo-11a13|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar com corpo em Barra do Sahy",
+          "analise": "Barra do Sahy traz uma condição de porte médio pra grande, a série cava mais, com bastante espaço entre uma onda e outra e a leitura do swell fecha com o que esse pico gosta de receber. Na água, sopra um onshore leve, aquele vento que sobe do mar: incomoda pouco, só tira um pouco do brilho da parede. É uma condição amigável pra quem está começando. Compensa madrugar um pouco pra aproveitar a condição no ponto certo.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-do-sahy|peito-ombro|longo-11a13|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7.5,
+          "titulo": "Barra do Sahy com mar com corpo",
+          "analise": "Esse trecho chega com corpo, já impõe respeito na entrada, o intervalo entre as séries é largo, dá tempo de sobra pra se posicionar e a direção do swell bate certo com esse pico. Na água, o vento de lado está discreto, mal se percebe na água. Dá pra levar quem ainda está aprendendo, sem grandes sustos. Quem entrar mais tarde tende a pegar a água mais organizada.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "fernando-de-noronha|ombro-cabeca|bom-9a11|lateral-forte|tarde|fora": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Fernando de Noronha, mar grande e swell fora da janela",
+          "analise": "Fernando de Noronha aparece com porte grande, dá pra ver de longe, as ondas se separam bem, sobra tempo pra respirar entre elas e o ângulo do swell foge do que esse trecho gosta, a onda perde organização. Na água, um lateral forte castiga: é vento soprando de lado com intensidade, difícil manter o pico organizado. É condição pra quem já tem bagagem, remada forte e leitura rápida de pico. Vale aparecer no fim da tarde, quando o vento costuma dar uma trégua.",
+          "janela": "14h-17h",
+          "aviso": "Energia alta com vento mexendo bastante na água, respeite a correnteza e não force além da sua experiência."
+        }
+      ]
+    },
+    "fernando-de-noronha|ombro-cabeca|bom-9a11|lateral-forte|noite|fora": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Mar grande em Fernando de Noronha",
+          "analise": "Fernando de Noronha chega crescido, a arrebentação já avisa de longe, o compasso da série é generoso, favorece quem lê bem a água e o swell vem de fora da janela que essa praia prefere, tende a chegar mais fechado. Na água, o vento de lado sopra forte, mexe bastante na água e cobra remada extra pra manter a posição. Pede repertório, não é lugar pra estrear em mar grande. De noite ninguém rema, o que importa aqui é ver como essa energia se comporta até o nascer do sol.",
+          "janela": null,
+          "aviso": "Energia alta com vento mexendo bastante na água, respeite a correnteza e não force além da sua experiência."
+        }
+      ]
+    },
+    "grumari|ombro-cabeca|bom-9a11|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Grumari: mar grande, swell encaixado",
+          "analise": "Por aqui, o mar chega grande, com bastante água se movendo, o intervalo entre as ondas é folgado, dá pra escolher com calma e a leitura do swell fecha com o que esse pico gosta de receber. Na água, o terral está discreto, aquele vento de terra que dá uma alisada gostosa na onda. Quem já tem uma base de remada e leitura aproveita bem esse tipo de condição. Com a noite chegando não tem sessão hoje, o negócio é acompanhar como o mar amanhece.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "pipa|cintura-peito|curto-vaga|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Condição mediana em Praia de Pipa",
+          "analise": "Praia de Pipa vem com um corpo intermediário, sem grande imponência, o intervalo entre as ondas é curto, quase sem tempo de escolher e a direção do swell bate certo com esse pico. Na água, um onshore mais presente enruga a superfície e atrapalha bastante a leitura da parede. Tem espaço pra quem está começando e pra quem já é craque, cada um no seu ritmo. De noite ninguém rema, o que importa aqui é ver como essa energia se comporta até o nascer do sol.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|ombro-cabeca|bom-9a11|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Macumba, mar grande e swell encaixado",
+          "analise": "Macumba aparece com porte grande, dá pra ver de longe, a série chega organizada, com espaço suficiente pra ler o pico e o ângulo do swell entra em cheio aqui. Na água, o terral está discreto, aquele vento de terra que dá uma alisada gostosa na onda. Atende níveis bem diferentes, cada um encontra seu canto. Essa leitura é de virada da noite, o boletim de amanhã cedo é que vai dizer se compensa remar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "maracaipe|cintura-peito|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Maracaípe com condição mediana",
+          "analise": "Maracaípe traz uma energia média, nem manso nem forte, o ritmo da série é moderado, dá tempo de se posicionar e a leitura do swell fecha com o que esse pico gosta de receber. Na água, um onshore mais presente enruga a superfície e atrapalha bastante a leitura da parede. Tem espaço pra quem está começando e pra quem já é craque, cada um no seu ritmo. Quem entrar mais tarde tende a pegar a água mais organizada.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|ombro-cabeca|longo-11a13|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8.5,
+          "titulo": "Ipanema: mar grande, swell encaixado",
+          "analise": "Por aqui, o mar cresce e forma paredes com peso real, o intervalo entre as séries é largo, dá tempo de sobra pra se posicionar e o swell encaixa direto na janela que essa praia gosta de receber. Na água, um vento fraco de lado mexe pouco na superfície. Atende níveis bem diferentes, cada um encontra seu canto. A dica é ir num horário mais tranquilo da tarde, evitando o pico do vento.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|ombro-cabeca|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Ipanema com mar grande",
+          "analise": "Esse trecho vem robusto, com energia visível na arrebentação, o intervalo entre as ondas é folgado, dá pra escolher com calma e o swell encaixa direto na janela que essa praia gosta de receber. Na água, o vento de lado está discreto, mal se percebe na água. Funciona pra praticamente todo mundo, o segredo é escolher bem o pico. A leitura de agora serve pra planejar a virada, ninguém entra na água nesse horário.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "setiba|peito-ombro|bom-9a11|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Setiba, mar com corpo e swell encaixado",
+          "analise": "Setiba sobe de porte e a parede ganha volume real, o intervalo entre as ondas é folgado, dá pra escolher com calma e essa é a direção de swell que esse trecho pede. Na água, sopra um onshore leve, aquele vento que sobe do mar: incomoda pouco, só tira um pouco do brilho da parede. Quem já tem uma base de remada e leitura aproveita bem esse tipo de condição. Essa leitura é de virada da noite, o boletim de amanhã cedo é que vai dizer se compensa remar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "geriba|peito-ombro|bom-9a11|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Geribá: mar com corpo, swell encaixado",
+          "analise": "O mar dessa parte da costa ganha peso, a arrebentação já se faz notar, as ondas se separam bem, sobra tempo pra respirar entre elas e a direção do swell bate certo com esse pico. Na água, o vento de lado sopra forte, mexe bastante na água e cobra remada extra pra manter a posição. Funciona pra praticamente todo mundo, o segredo é escolher bem o pico. Com a noite chegando não tem sessão hoje, o negócio é acompanhar como o mar amanhece.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|peito-ombro|medio-7a9|lateral-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Praia do Ferrugem com mar com corpo",
+          "analise": "O mar dessa parte da costa mostra energia visível, dá pra sentir de longe, a série mantém um ritmo médio, dá pra achar o timing sem correria e a direção do swell chega meio de raspão, dentro do possível. Na água, sopra um lateral com presença, vento de lado que já interfere na leitura. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. A leitura de agora serve pra planejar a virada, ninguém entra na água nesse horário.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "cidreira|peito-ombro|medio-7a9|lateral-fraco|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Mar com corpo em Cidreira",
+          "analise": "Cidreira sobe de porte e a parede ganha volume real, o intervalo entre as ondas é razoável, nem apertado nem folgado e o ângulo do swell é aceitável, mas longe do encaixe perfeito. Na água, sopra um lateral leve, vento soprando de lado que quase não incomoda. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. De noite ninguém rema, o que importa aqui é ver como essa energia se comporta até o nascer do sol.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|ombro-cabeca|medio-7a9|onshore-fraco|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Arroio do Sal com mar grande",
+          "analise": "Esse trecho chega grande, com bastante água se movendo, a série se organiza num ritmo equilibrado e a direção do swell chega meio de raspão, dentro do possível. Na água, um onshore fraco (vento que vem do mar pra terra) já dá uma leve enrugada na superfície, mas ainda não estraga o programa. Quem já tem uma base de remada e leitura aproveita bem esse tipo de condição. Quem entrar mais tarde tende a pegar a água mais organizada.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|ombro-cabeca|medio-7a9|lateral-fraco|noite|borda": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Arroio do Sal, mar grande e swell na borda",
+          "analise": "Arroio do Sal aparece com porte grande, dá pra ver de longe, a série mantém um ritmo médio, dá pra achar o timing sem correria e o swell está na borda da janela ideal, funciona mas sem a exuberância dos dias certos. Na água, o vento de lado está discreto, mal se percebe na água. Quem já tem uma base de remada e leitura aproveita bem esse tipo de condição. Essa leitura é de virada da noite, o boletim de amanhã cedo é que vai dizer se compensa remar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|ombro-cabeca|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar grande em Unamar",
+          "analise": "Unamar aparece com porte grande, dá pra ver de longe, as ondas chegam num compasso tranquilo, sem pressa e a direção do swell bate certo com esse pico. Na água, o vento de lado mexe na superfície sem destruir o programa, mas já pede atenção na hora de remar. Quem já tem uma base de remada e leitura aproveita bem esse tipo de condição. De noite ninguém rema, o que importa aqui é ver como essa energia se comporta até o nascer do sol.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "penha|peito-ombro|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Penha, mar com corpo e swell encaixado",
+          "analise": "Penha traz uma condição de porte médio pra grande, as ondas se sucedem rápido demais pra grandes escolhas e essa é a direção de swell que esse trecho pede. Na água, o vento de lado está discreto, mal se percebe na água. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. Vale sair cedo pra pegar a janela mais limpa antes do vento virar.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "penha|cintura-peito|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Penha com condição mediana",
+          "analise": "Por aqui, o mar mostra uma condição mediana, um degrau acima do básico, a série se organiza num ritmo equilibrado e essa é a direção de swell que esse trecho pede. Na água, há um onshore fraco batendo, vento de mar pra terra que mexe de leve na textura da água. Serve bem pra quem já perdeu o medo e busca ganhar consistência. Quem entrar mais tarde tende a pegar a água mais organizada.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|peito-ombro|medio-7a9|offshore-fraco|noite|borda": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Praia do Porto (Imbituba), mar com corpo e swell na borda",
+          "analise": "Praia do Porto (Imbituba) traz uma condição de porte médio pra grande, o ritmo da série é moderado, dá tempo de se posicionar e o swell está na borda da janela ideal, funciona mas sem a exuberância dos dias certos. Na água, o terral está discreto, aquele vento de terra que dá uma alisada gostosa na onda. Pede repertório, não é lugar pra estrear em mar grande. Essa leitura é de virada da noite, o boletim de amanhã cedo é que vai dizer se compensa remar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tramandai|peito-ombro|medio-7a9|onshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tramandaí, mar com corpo e swell na borda",
+          "analise": "Tramandaí vem robusto o suficiente pra exigir atenção, o ritmo da série é moderado, dá tempo de se posicionar e o swell está na borda da janela ideal, funciona mas sem a exuberância dos dias certos. Na água, há um onshore fraco batendo, vento de mar pra terra que mexe de leve na textura da água. Quem já tem uma base de remada e leitura aproveita bem esse tipo de condição. Vale sair cedo pra pegar a janela mais limpa antes do vento virar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|peito-ombro|medio-7a9|lateral-fraco|noite|fora": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Ibiraquera, mar com corpo e swell fora da janela",
+          "analise": "Ibiraquera vem robusto o suficiente pra exigir atenção, a série se organiza num ritmo equilibrado e o ângulo do swell foge do que esse trecho gosta, a onda perde organização. Na água, o vento de lado está discreto, mal se percebe na água. Quem já tem uma base de remada e leitura aproveita bem esse tipo de condição. Essa leitura é de virada da noite, o boletim de amanhã cedo é que vai dizer se compensa remar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "capao-da-canoa|peito-ombro|medio-7a9|onshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Capão da Canoa, mar com corpo e swell na borda",
+          "analise": "Capão da Canoa traz uma condição de porte médio pra grande, a série mantém um ritmo médio, dá pra achar o timing sem correria e o swell está na borda da janela ideal, funciona mas sem a exuberância dos dias certos. Na água, sopra um onshore leve, aquele vento que sobe do mar: incomoda pouco, só tira um pouco do brilho da parede. Funciona pra praticamente todo mundo, o segredo é escolher bem o pico. Vale sair cedo pra pegar a janela mais limpa antes do vento virar.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "capao-da-canoa|peito-ombro|medio-7a9|lateral-fraco|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Capão da Canoa: mar com corpo, swell na borda",
+          "analise": "Capão da Canoa ganha peso, a arrebentação já se faz notar, o intervalo entre as ondas é razoável, nem apertado nem folgado e essa direção de swell passa perto da janela ideal, sem cravar. Na água, um vento fraco de lado mexe pouco na superfície. Tem espaço pra quem está começando e pra quem já é craque, cada um no seu ritmo. A dica é ir num horário mais tranquilo da tarde, evitando o pico do vento.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|peito-ombro|bom-9a11|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar com corpo em Prainha",
+          "analise": "Prainha vem robusto o suficiente pra exigir atenção, as ondas se separam bem, sobra tempo pra respirar entre elas e essa é a direção de swell que esse trecho pede. Na água, o terral está discreto, aquele vento de terra que dá uma alisada gostosa na onda. É condição pra quem já tem bagagem, remada forte e leitura rápida de pico. Compensa esperar a tarde avançar um pouco antes de remar.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|joelho-cintura|medio-7a9|glassy|manha|borda": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Cassino, onda pequena e swell na borda",
+          "analise": "Cassino segue de porte reduzido, sem alarde nenhum, a série mantém um ritmo médio, dá pra achar o timing sem correria e o swell está na borda da janela ideal, funciona mas sem a exuberância dos dias certos. Na água, não tem vento incomodando, o mar fica liso feito espelho. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. Vale sair cedo pra pegar a janela mais limpa antes do vento virar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|joelho-cintura|medio-7a9|glassy|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Onda pequena em Cassino",
+          "analise": "Cassino segue de porte reduzido, sem alarde nenhum, as ondas chegam num compasso tranquilo, sem pressa e o ângulo do swell é aceitável, mas longe do encaixe perfeito. Na água, não tem vento incomodando, o mar fica liso feito espelho. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. Compensa esperar a tarde avançar um pouco antes de remar.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "mocambique|peito-ombro|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Mar com corpo em Moçambique",
+          "analise": "Moçambique sobe de porte e a parede ganha volume real, a série se organiza num ritmo equilibrado e o swell encaixa direto na janela que essa praia gosta de receber. Na água, sopra um onshore leve, aquele vento que sobe do mar: incomoda pouco, só tira um pouco do brilho da parede. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. Compensa esperar a tarde avançar um pouco antes de remar.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "mocambique|peito-ombro|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Mar com corpo em Moçambique",
+          "analise": "Moçambique sobe de porte e a parede ganha volume real, a série mantém um ritmo médio, dá pra achar o timing sem correria e essa é a direção de swell que esse trecho pede. Na água, sopra um onshore leve, aquele vento que sobe do mar: incomoda pouco, só tira um pouco do brilho da parede. Quem já tem uma base de remada e leitura aproveita bem esse tipo de condição. De noite ninguém rema, o que importa aqui é ver como essa energia se comporta até o nascer do sol.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "itacoatiara|ombro-cabeca|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Itacoatiara: mar grande, swell encaixado",
+          "analise": "Esse trecho cresce e forma paredes com peso real, a série vem mais espaçada, com tempo de sobra pra ver a onda se formar e o swell encaixa direto na janela que essa praia gosta de receber. Na água, sopra um offshore fraco, vento de terra pro mar que segura bem a parede. É condição pra quem já tem bagagem, remada forte e leitura rápida de pico. A dica é chegar logo de manhã, antes do calor bagunçar o vento.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|peito-ombro|medio-7a9|lateral-fraco|noite|fora": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Praia da Silveira: mar com corpo, swell fora da janela",
+          "analise": "Por aqui, o mar mostra energia visível, dá pra sentir de longe, o ritmo da série é moderado, dá tempo de se posicionar e a direção do swell não é a ideal pra esse pico, o resultado costuma ser mais bagunçado. Na água, um vento fraco de lado mexe pouco na superfície. Exige experiência: só quem já rodou bastante em mar puxado vai curtir sem sofrer. Com a noite chegando não tem sessão hoje, o negócio é acompanhar como o mar amanhece.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-cupe|ombro-cabeca|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8.5,
+          "titulo": "Praia do Cupe, mar grande e swell encaixado",
+          "analise": "Praia do Cupe aparece com porte grande, dá pra ver de longe, o intervalo entre as ondas é razoável, nem apertado nem folgado e a leitura do swell fecha com o que esse pico gosta de receber. Na água, não tem vento incomodando, o mar fica liso feito espelho. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. Vale sair cedo pra pegar a janela mais limpa antes do vento virar.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-cupe|ombro-cabeca|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Praia do Cupe com mar grande",
+          "analise": "Por aqui, o mar cresce e forma paredes com peso real, o ritmo da série é moderado, dá tempo de se posicionar e o ângulo do swell entra em cheio aqui. Na água, sopra onshore com força, vento de mar pra terra que desmancha a onda antes da hora. Quem já tem uma base de remada e leitura aproveita bem esse tipo de condição. Quem entrar mais tarde tende a pegar a água mais organizada.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-cupe|ombro-cabeca|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Praia do Cupe: mar grande, swell encaixado",
+          "analise": "O mar dessa parte da costa vem robusto, com energia visível na arrebentação, as ondas chegam num compasso tranquilo, sem pressa e essa é a direção de swell que esse trecho pede. Na água, o onshore, vento que vem do mar pra terra, bagunça a cara da onda e deixa tudo mais picado. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. Com a noite chegando não tem sessão hoje, o negócio é acompanhar como o mar amanhece.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "bonete|peito-ombro|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Praia do Bonete com mar com corpo",
+          "analise": "O mar dessa parte da costa chega com corpo, já impõe respeito na entrada, o compasso da série é generoso, favorece quem lê bem a água e a leitura do swell fecha com o que esse pico gosta de receber. Na água, um terral leve ajuda: é o vento que sai da terra pro mar e alisa a onda por dentro. Pede repertório, não é lugar pra estrear em mar grande. Quem chegar nas primeiras horas leva vantagem sobre o resto do dia.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "tucuns|peito-ombro|medio-7a9|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Tucuns: mar com corpo, swell encaixado",
+          "analise": "Esse trecho chega com corpo, já impõe respeito na entrada, o ritmo da série é moderado, dá tempo de se posicionar e essa é a direção de swell que esse trecho pede. Na água, o vento de lado sopra forte, mexe bastante na água e cobra remada extra pra manter a posição. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. A dica é ir num horário mais tranquilo da tarde, evitando o pico do vento.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-lagoa|cintura-peito|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Barra da Lagoa: condição mediana, swell encaixado",
+          "analise": "Esse trecho segue num porte médio, nada extremo pra nenhum lado, a série mantém um ritmo médio, dá pra achar o timing sem correria e a leitura do swell fecha com o que esse pico gosta de receber. Na água, um onshore fraco (vento que vem do mar pra terra) já dá uma leve enrugada na superfície, mas ainda não estraga o programa. Tem espaço pra quem está começando e pra quem já é craque, cada um no seu ritmo. Com a noite chegando não tem sessão hoje, o negócio é acompanhar como o mar amanhece.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "itacarezinho|cintura-peito|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Itacarezinho: condição mediana, swell encaixado",
+          "analise": "O mar dessa parte da costa traz uma energia média, nem manso nem forte, a série se organiza num ritmo equilibrado e a direção do swell bate certo com esse pico. Na água, um onshore mais presente enruga a superfície e atrapalha bastante a leitura da parede. Quem já tem uma base de remada e leitura aproveita bem esse tipo de condição. A dica é ir num horário mais tranquilo da tarde, evitando o pico do vento.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|cintura-peito|medio-7a9|offshore-fraco|noite|borda": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Condição mediana em Joaquina",
+          "analise": "Joaquina chega com volume moderado, equilibrado, a série se organiza num ritmo equilibrado e o ângulo do swell é aceitável, mas longe do encaixe perfeito. Na água, um terral leve ajuda: é o vento que sai da terra pro mar e alisa a onda por dentro. É condição pra quem já tem bagagem, remada forte e leitura rápida de pico. De noite ninguém rema, o que importa aqui é ver como essa energia se comporta até o nascer do sol.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|peito-ombro|bom-9a11|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia do Forte, mar com corpo e swell encaixado",
+          "analise": "Praia do Forte traz uma condição de porte médio pra grande, as ondas se separam bem, sobra tempo pra respirar entre elas e o ângulo do swell entra em cheio aqui. Na água, um lateral moderado bagunça um pouco a parede, é vento soprando de lado. Funciona pra praticamente todo mundo, o segredo é escolher bem o pico. Vale sair cedo pra pegar a janela mais limpa antes do vento virar.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|peito-ombro|medio-7a9|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Praia do Forte com mar com corpo",
+          "analise": "O mar dessa parte da costa mostra energia visível, dá pra sentir de longe, o ritmo da série é moderado, dá tempo de se posicionar e a leitura do swell fecha com o que esse pico gosta de receber. Na água, o vento de lado sopra forte, mexe bastante na água e cobra remada extra pra manter a posição. Tem espaço pra quem está começando e pra quem já é craque, cada um no seu ritmo. A leitura de agora serve pra planejar a virada, ninguém entra na água nesse horário.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|ombro-cabeca|medio-7a9|lateral-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Praia Brava (Arraial) com mar grande",
+          "analise": "Esse trecho vem robusto, com energia visível na arrebentação, as ondas chegam num compasso tranquilo, sem pressa e a direção do swell chega meio de raspão, dentro do possível. Na água, um lateral forte castiga: é vento soprando de lado com intensidade, difícil manter o pico organizado. É condição pra quem já tem bagagem, remada forte e leitura rápida de pico. A leitura de agora serve pra planejar a virada, ninguém entra na água nesse horário.",
+          "janela": null,
+          "aviso": "Energia alta com vento mexendo bastante na água, respeite a correnteza e não force além da sua experiência."
+        }
+      ]
+    },
+    "arpoador|peito-ombro|bom-9a11|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar com corpo em Arpoador",
+          "analise": "Arpoador sobe de porte e a parede ganha volume real, a série chega organizada, com espaço suficiente pra ler o pico e a leitura do swell fecha com o que esse pico gosta de receber. Na água, um onshore fraco (vento que vem do mar pra terra) já dá uma leve enrugada na superfície, mas ainda não estraga o programa. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. Compensa madrugar um pouco pra aproveitar a condição no ponto certo.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "atalaia|peito-ombro|curto-vaga|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Atalaia: mar com corpo, swell encaixado",
+          "analise": "Atalaia mostra energia visível, dá pra sentir de longe, as ondas se sucedem rápido demais pra grandes escolhas e a direção do swell bate certo com esse pico. Na água, não tem vento incomodando, o mar fica liso feito espelho. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. A dica é chegar logo de manhã, antes do calor bagunçar o vento.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "atalaia|peito-ombro|medio-7a9|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7.5,
+          "titulo": "Atalaia, mar com corpo e swell encaixado",
+          "analise": "Atalaia traz uma condição de porte médio pra grande, a série mantém um ritmo médio, dá pra achar o timing sem correria e a leitura do swell fecha com o que esse pico gosta de receber. Na água, reina a calmaria: sem vento nenhum mexendo na água. Serve bem pra quem já perdeu o medo e busca ganhar consistência. Vale aparecer no fim da tarde, quando o vento costuma dar uma trégua.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "rosa|peito-ombro|curto-vaga|onshore-moderado|manha|fora": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Mar com corpo em Praia do Rosa",
+          "analise": "Praia do Rosa sobe de porte e a parede ganha volume real, as ondas se sucedem rápido demais pra grandes escolhas e o ângulo do swell foge do que esse trecho gosta, a onda perde organização. Na água, um onshore mais presente enruga a superfície e atrapalha bastante a leitura da parede. Serve bem pra quem já perdeu o medo e busca ganhar consistência. Compensa madrugar um pouco pra aproveitar a condição no ponto certo.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "rosa|peito-ombro|curto-vaga|lateral-fraco|tarde|fora": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Praia do Rosa: mar com corpo, swell fora da janela",
+          "analise": "O mar dessa parte da costa mostra energia visível, dá pra sentir de longe, as ondas se amontoam, série curta e nervosa e o swell vem de fora da janela que essa praia prefere, tende a chegar mais fechado. Na água, sopra um lateral leve, vento soprando de lado que quase não incomoda. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. A dica é ir num horário mais tranquilo da tarde, evitando o pico do vento.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "rosa|peito-ombro|medio-7a9|onshore-fraco|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Praia do Rosa com mar com corpo",
+          "analise": "Por aqui, o mar ganha peso, a arrebentação já se faz notar, as ondas chegam num compasso tranquilo, sem pressa e a direção do swell chega meio de raspão, dentro do possível. Na água, um onshore fraco (vento que vem do mar pra terra) já dá uma leve enrugada na superfície, mas ainda não estraga o programa. Serve bem pra quem já perdeu o medo e busca ganhar consistência. A leitura de agora serve pra planejar a virada, ninguém entra na água nesse horário.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "torres|cintura-peito|medio-7a9|glassy|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Torres com condição mediana",
+          "analise": "Torres mostra uma condição mediana, um degrau acima do básico, o ritmo da série é moderado, dá tempo de se posicionar e a direção do swell chega meio de raspão, dentro do possível. Na água, reina a calmaria: sem vento nenhum mexendo na água. Serve bem pra quem já perdeu o medo e busca ganhar consistência. Quem entrar mais tarde tende a pegar a água mais organizada.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|ombro-cabeca|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Farol de Santa Marta, mar grande e swell encaixado",
+          "analise": "Farol de Santa Marta chega crescido, a arrebentação já avisa de longe, as ondas chegam num compasso tranquilo, sem pressa e essa é a direção de swell que esse trecho pede. Na água, o onshore, vento que vem do mar pra terra, bagunça a cara da onda e deixa tudo mais picado. É condição pra quem já tem bagagem, remada forte e leitura rápida de pico. Vale sair cedo pra pegar a janela mais limpa antes do vento virar.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|ombro-cabeca|medio-7a9|lateral-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Figueira: mar grande, swell na borda",
+          "analise": "Esse trecho chega grande, com bastante água se movendo, a série mantém um ritmo médio, dá pra achar o timing sem correria e essa direção de swell passa perto da janela ideal, sem cravar. Na água, o vento de lado está pesado, atrapalha bastante e exige remada de sobra. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. Com a noite chegando não tem sessão hoje, o negócio é acompanhar como o mar amanhece.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|peito-ombro|bom-9a11|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Grumari: mar com corpo, swell encaixado",
+          "analise": "O mar dessa parte da costa chega com corpo, já impõe respeito na entrada, a série vem mais espaçada, com tempo de sobra pra ver a onda se formar e a leitura do swell fecha com o que esse pico gosta de receber. Na água, o terral está discreto, aquele vento de terra que dá uma alisada gostosa na onda. Quem já tem uma base de remada e leitura aproveita bem esse tipo de condição. A dica é ir num horário mais tranquilo da tarde, evitando o pico do vento.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|ombro-cabeca|bom-9a11|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Foguete: mar grande, swell encaixado",
+          "analise": "Foguete cresce e forma paredes com peso real, as ondas se separam bem, sobra tempo pra respirar entre elas e a leitura do swell fecha com o que esse pico gosta de receber. Na água, um lateral forte castiga: é vento soprando de lado com intensidade, difícil manter o pico organizado. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. A dica é chegar logo de manhã, antes do calor bagunçar o vento.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|ombro-cabeca|medio-7a9|lateral-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Foguete: mar grande, swell na borda",
+          "analise": "O mar dessa parte da costa chega grande, com bastante água se movendo, a série mantém um ritmo médio, dá pra achar o timing sem correria e essa direção de swell passa perto da janela ideal, sem cravar. Na água, o vento de lado sopra forte, mexe bastante na água e cobra remada extra pra manter a posição. Quem já tem uma base de remada e leitura aproveita bem esse tipo de condição. Com a noite chegando não tem sessão hoje, o negócio é acompanhar como o mar amanhece.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "maresias|cintura-peito|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Condição mediana em Maresias",
+          "analise": "Maresias vem com um corpo intermediário, sem grande imponência, o intervalo entre as ondas é folgado, dá pra escolher com calma e essa é a direção de swell que esse trecho pede. Na água, um vento fraco de lado mexe pouco na superfície. É condição pra quem já tem bagagem, remada forte e leitura rápida de pico. Compensa esperar a tarde avançar um pouco antes de remar.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|ombro-cabeca|bom-9a11|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia Grande com mar grande",
+          "analise": "Praia Grande cresce e forma paredes com peso real, a série chega organizada, com espaço suficiente pra ler o pico e a direção do swell bate certo com esse pico. Na água, o vento de lado sopra forte, mexe bastante na água e cobra remada extra pra manter a posição. Serve bem pra quem já perdeu o medo e busca ganhar consistência. Quem chegar nas primeiras horas leva vantagem sobre o resto do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|ombro-cabeca|medio-7a9|lateral-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Praia Grande: mar grande, swell na borda",
+          "analise": "Esse trecho cresce e forma paredes com peso real, a série se organiza num ritmo equilibrado e essa direção de swell passa perto da janela ideal, sem cravar. Na água, o vento de lado sopra forte, mexe bastante na água e cobra remada extra pra manter a posição. Serve bem pra quem já perdeu o medo e busca ganhar consistência. Com a noite chegando não tem sessão hoje, o negócio é acompanhar como o mar amanhece.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|peito-ombro|bom-9a11|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar com corpo em Macumba",
+          "analise": "Macumba traz uma condição de porte médio pra grande, a série chega organizada, com espaço suficiente pra ler o pico e a direção do swell bate certo com esse pico. Na água, sopra um offshore fraco, vento de terra pro mar que segura bem a parede. Funciona pra praticamente todo mundo, o segredo é escolher bem o pico. Compensa esperar a tarde avançar um pouco antes de remar.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "maracaipe|cintura-peito|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Maracaípe: condição mediana, swell encaixado",
+          "analise": "Esse trecho segue num porte médio, nada extremo pra nenhum lado, o ritmo da série é moderado, dá tempo de se posicionar e a leitura do swell fecha com o que esse pico gosta de receber. Na água, sopra onshore com força, vento de mar pra terra que desmancha a onda antes da hora. Funciona pra praticamente todo mundo, o segredo é escolher bem o pico. Com a noite chegando não tem sessão hoje, o negócio é acompanhar como o mar amanhece.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|peito-ombro|bom-9a11|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Ipanema, mar com corpo e swell encaixado",
+          "analise": "Ipanema sobe de porte e a parede ganha volume real, as ondas se separam bem, sobra tempo pra respirar entre elas e a direção do swell bate certo com esse pico. Na água, há um onshore fraco batendo, vento de mar pra terra que mexe de leve na textura da água. Atende níveis bem diferentes, cada um encontra seu canto. Vale sair cedo pra pegar a janela mais limpa antes do vento virar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "campeche|peito-ombro|curto-vaga|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar com corpo em Campeche",
+          "analise": "Campeche sobe de porte e a parede ganha volume real, as ondas se amontoam, série curta e nervosa e o ângulo do swell entra em cheio aqui. Na água, o terral sopra com força suficiente pra segurar a parede, é o vento que sai da terra pro mar. Exige experiência: só quem já rodou bastante em mar puxado vai curtir sem sofrer. Compensa madrugar um pouco pra aproveitar a condição no ponto certo.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "geriba|peito-ombro|medio-7a9|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Geribá com mar com corpo",
+          "analise": "O mar dessa parte da costa ganha peso, a arrebentação já se faz notar, o ritmo da série é moderado, dá tempo de se posicionar e a leitura do swell fecha com o que esse pico gosta de receber. Na água, um lateral forte castiga: é vento soprando de lado com intensidade, difícil manter o pico organizado. Funciona pra praticamente todo mundo, o segredo é escolher bem o pico. Quem entrar mais tarde tende a pegar a água mais organizada.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|peito-ombro|medio-7a9|lateral-fraco|noite|fora": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Praia do Ferrugem com mar com corpo",
+          "analise": "Praia do Ferrugem chega com corpo, já impõe respeito na entrada, o ritmo da série é moderado, dá tempo de se posicionar e o ângulo do swell foge do que esse trecho gosta, a onda perde organização. Na água, um vento fraco de lado mexe pouco na superfície. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. A leitura de agora serve pra planejar a virada, ninguém entra na água nesse horário.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-floripa|peito-ombro|medio-7a9|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7.5,
+          "titulo": "Praia Brava (Floripa), mar com corpo e swell encaixado",
+          "analise": "Praia Brava (Floripa) sobe de porte e a parede ganha volume real, a série se organiza num ritmo equilibrado e o ângulo do swell entra em cheio aqui. Na água, o terral está forte, entalha bem a parede e deixa a onda com cara de foto. Pede repertório, não é lugar pra estrear em mar grande. Vale sair cedo pra pegar a janela mais limpa antes do vento virar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "cidreira|peito-ombro|medio-7a9|lateral-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Cidreira com mar com corpo",
+          "analise": "Por aqui, o mar ganha peso, a arrebentação já se faz notar, a série mantém um ritmo médio, dá pra achar o timing sem correria e a direção do swell chega meio de raspão, dentro do possível. Na água, sopra um lateral leve, vento soprando de lado que quase não incomoda. É o tipo de mar que recompensa quem já domina o básico e quer evoluir. Quem chegar nas primeiras horas leva vantagem sobre o resto do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
     }
   },
-  "generated_at": "2026-08-23T18:35:58.404Z"
+  "generated_at": "2026-08-24T00:16:30.070Z"
 }
