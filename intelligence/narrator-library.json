@@ -130406,7 +130406,359 @@
           "aviso": null
         }
       ]
+    },
+    "bonete|ombro-cabeca|bom-9a11|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Praia do Bonete: onda grande e forte à tarde, com vento de lado",
+          "analise": "Ao longo da tarde, entra uma condição grande, do tipo que enche o pico de adrenalina, com swell do sudeste que bate direto na direção favorita do pico. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), moderado, dando uma leve enrugada na parede. A ondulação chega organizada, com espaço bom entre uma série e outra. Na água, quem errar o tempo certo de entrada sente o caldo castigar, e dia de avançado, iniciante nem se aproxima do pico. Fechando o dia, vale nadar bem e conhecer a correnteza antes de remar.",
+          "janela": "12h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|ombro-cabeca|bom-9a11|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Praia Brava (Cabo Frio): onda grande e forte à tarde, com vento de lado",
+          "analise": "A tarde chega com uma condição encorpada de verdade, com força pesada, com swell do sul que entra em cheio na direção que a praia gosta. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), bem forte, sem estragar de vez a sessão. A ondulação chega organizada, com espaço bom entre uma série e outra. Na água, a queda vem com peso de verdade, sem espaço pra hesitação, e pede experiência de verdade, não é dia de arriscar sem saber nadar bem. Fechando o dia, só entra quem já domina remada forte em mar grande.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|cabeca-1.5x|bom-9a11|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Unamar: onda grande e pesada à tarde, com vento de lado",
+          "analise": "A tarde chega com uma condição grande, séria, sem meio termo, com swell do sul que bate direto na direção favorita do pico. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), com força de verdade, dando uma leve enrugada na parede. A ondulação chega organizada, com espaço bom entre uma série e outra. Na água, cada série cobra decisão rápida, não tem espaço pra hesitar, e só pra quem já surfou grande antes, sem exceção. Fechando o dia, só pra quem já provou mar grande antes, sem exceção.",
+          "janela": "12h-15h",
+          "aviso": "Tamanho grande de verdade: nade bem, respeite o próprio limite e evite entrar sem companhia no pico."
+        }
+      ]
+    },
+    "unamar|cabeca-1.5x|medio-7a9|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Unamar: onda grande e pesada à noite, com vento de lado",
+          "analise": "No escuro, entra uma condição grande, séria, sem meio termo, com swell do sudeste que chega certinho na janela que essa praia pede. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), forte, sem estragar de vez a sessão. A série vem num ritmo mediano, nem apertada nem espaçada demais. Na água, a força da água é grande demais pra quem não tem repertório, e pede repertório de verdade, mar pesado não perdoa. Fechando o dia, vale ter alguém de confiança no pico nesse tamanho.",
+          "janela": null,
+          "aviso": "Tamanho grande de verdade: nade bem, respeite o próprio limite e evite entrar sem companhia no pico."
+        }
+      ]
+    },
+    "praia-grande-arraial|cabeca-1.5x|bom-9a11|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Praia Grande: onda grande e pesada de manhã, com vento de lado",
+          "analise": "Nas primeiras horas da manhã, chega uma condição grande e brava, com força de swell puro, com swell do sul que chega certinho na janela que essa praia pede. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), moderado, sem estragar de vez a sessão. O intervalo entre as ondas é generoso, sobra tempo pra escolher a melhor. Na água, a queda pesa de verdade e a correnteza costuma vir junto, e dia de gente muito experiente, o resto melhor ficar na areia vendo. Fechando o dia, melhor respeitar o próprio limite nesse tamanho.",
+          "janela": "6h-9h",
+          "aviso": "Tamanho grande de verdade: nade bem, respeite o próprio limite e evite entrar sem companhia no pico."
+        }
+      ]
+    },
+    "praia-grande-arraial|cabeca-1.5x|medio-7a9|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Praia Grande: onda grande e pesada à noite, com vento de lado",
+          "analise": "Com a noite tomando conta, chega uma condição grande de verdade, do tipo que muda o dia, com swell do sudeste que chega certinho na janela que essa praia pede. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), com força de verdade, pedindo um ajuste fino na remada. O espaçamento é mediano, o suficiente pra remar com calma até o pico. Na água, a queda pesa de verdade e a correnteza costuma vir junto, e só pra quem já surfou grande antes, sem exceção. Fechando o dia, melhor respeitar o próprio limite nesse tamanho.",
+          "janela": null,
+          "aviso": "Tamanho grande de verdade: nade bem, respeite o próprio limite e evite entrar sem companhia no pico."
+        }
+      ]
+    },
+    "caioba|joelho-cintura|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Caiobá: onda pequena e tranquila à tarde, com vento de lado",
+          "analise": "A tarde chega com uma condição pequena e gentil, com swell do leste que entra em cheio na direção que a praia gosta. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), leve, pedindo um ajuste fino na remada. A série vem num ritmo mediano, nem apertada nem espaçada demais. Na água, a remada é curta e o drop não assusta ninguém, e quem tá começando aproveita sem medo. Fechando o dia, boa pedida é uma prancha mais longa pra aproveitar sem cobrar performance.",
+          "janela": "12h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|cabeca-1.5x|bom-9a11|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Foguete: onda grande e pesada à tarde, com vento de lado",
+          "analise": "No fim de tarde, a praia recebe uma condição grande, séria, sem meio termo, com swell do sul que bate direto na direção favorita do pico. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), forte, sem estragar de vez a sessão. O intervalo entre as ondas é generoso, sobra tempo pra escolher a melhor. Na água, a força da água é grande demais pra quem não tem repertório, e dia de gente muito experiente, o resto melhor ficar na areia vendo. Fechando o dia, melhor respeitar o próprio limite nesse tamanho.",
+          "janela": "14h-17h",
+          "aviso": "Tamanho grande de verdade: nade bem, respeite o próprio limite e evite entrar sem companhia no pico."
+        }
+      ]
+    },
+    "foguete|cabeca-1.5x|medio-7a9|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Foguete: onda grande e pesada à noite, com vento de lado",
+          "analise": "Já de noite, a praia recebe uma condição grande, séria, sem meio termo, com swell do sudeste que chega certinho na janela que essa praia pede. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), bem forte, sem estragar de vez a sessão. O intervalo entre as ondas é ok, dá pra escolher a série sem afobação. Na água, a queda pesa de verdade e a correnteza costuma vir junto, e pede repertório de verdade, mar pesado não perdoa. Fechando o dia, só pra quem já provou mar grande antes, sem exceção.",
+          "janela": null,
+          "aviso": "Tamanho grande de verdade: nade bem, respeite o próprio limite e evite entrar sem companhia no pico."
+        }
+      ]
+    },
+    "praia-do-forte|ombro-cabeca|bom-9a11|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Praia do Forte: onda grande e forte à tarde, com vento de lado",
+          "analise": "Com o sol já alto, a tarde traz uma condição grande, do tipo que enche o pico de adrenalina, com swell do sul que chega certinho na janela que essa praia pede. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), com força de verdade, pedindo um ajuste fino na remada. O período é bom: série bem espaçada, dá tempo de ver a onda vindo de longe e se posicionar com calma. Na água, a remada de saída já é um treino à parte e o drop cobra decisão na hora, e dia de avançado, iniciante nem se aproxima do pico. Quem for no Canto do Forte sente a diferença, mas vale nadar bem e conhecer a correnteza antes de remar.",
+          "janela": "14h-17h",
+          "aviso": "Pico conhecido por pesar: nível iniciante deve observar da areia antes de decidir entrar."
+        }
+      ]
+    },
+    "fernando-de-noronha|peito-ombro|medio-7a9|lateral-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Fernando de Noronha: onda de bom porte de manhã, com vento de lado",
+          "analise": "A manhã amanhece com uma condição encorpada, com peso de verdade, com swell do sudeste que chega quase na direção ideal, mas de raspão. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), de intensidade média, pedindo um ajuste fino na remada. O espaçamento é mediano, o suficiente pra remar com calma até o pico. Na água, a remada exige força e o drop cobra decisão rápida, e nível intermediário pra cima consegue se posicionar bem. Fechando o dia, vale remar com decisão e não hesitar na entrada.",
+          "janela": "7h-11h",
+          "aviso": null
+        }
+      ]
+    },
+    "fernando-de-noronha|peito-ombro|medio-7a9|lateral-forte|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Fernando de Noronha: onda de bom porte à tarde, com vento de lado",
+          "analise": "Com o sol já alto, a tarde traz uma condição encorpada, com peso de verdade, com swell do sudeste que vem numa direção próxima da ideal, sem acertar em cheio. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), forte, dando uma leve enrugada na parede. O intervalo entre as ondas é ok, dá pra escolher a série sem afobação. Na água, a queda vem com empurrão forte, não dá pra remar bonito, e quem tem experiência aproveita, quem tá aprendendo pode se assustar. Fechando o dia, vale estudar o pico um pouco antes de entrar.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "fernando-de-noronha|peito-ombro|medio-7a9|lateral-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Fernando de Noronha: onda de bom porte à noite, com vento de lado",
+          "analise": "Com a noite tomando conta, chega uma condição encorpada, com peso de verdade, com swell do leste que vem numa direção próxima da ideal, sem acertar em cheio. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), forte, pedindo um ajuste fino na remada. A série vem num ritmo mediano, nem apertada nem espaçada demais. Na água, o volume da água já pesa na paleta e no posicionamento, e quem tem experiência aproveita, quem tá aprendendo pode se assustar. Fechando o dia, melhor ir com prancha de mais volume pra facilitar a remada.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|cabeca-1.5x|bom-9a11|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Figueira: onda grande e pesada de manhã, com vento de lado",
+          "analise": "A manhã amanhece com uma condição grande e brava, com força de swell puro, com swell do sul que bate direto na direção favorita do pico. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), de intensidade média, sem estragar de vez a sessão. O intervalo entre as ondas é generoso, sobra tempo pra escolher a melhor. Na água, cada série cobra decisão rápida, não tem espaço pra hesitar, e dia de gente muito experiente, o resto melhor ficar na areia vendo. Fechando o dia, vale ter alguém de confiança no pico nesse tamanho.",
+          "janela": "7h-10h",
+          "aviso": "Tamanho grande de verdade: nade bem, respeite o próprio limite e evite entrar sem companhia no pico."
+        }
+      ]
+    },
+    "figueira|cabeca-1.5x|medio-7a9|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Figueira: onda grande e pesada à noite, com vento de lado",
+          "analise": "No escuro, entra uma condição bem grande e pesada, com swell do sudeste que entra em cheio na direção que a praia gosta. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), forte, dando uma leve enrugada na parede. O espaçamento é mediano, o suficiente pra remar com calma até o pico. Na água, a queda pesa de verdade e a correnteza costuma vir junto, e dia de gente muito experiente, o resto melhor ficar na areia vendo. Fechando o dia, melhor respeitar o próprio limite nesse tamanho.",
+          "janela": null,
+          "aviso": "Tamanho grande de verdade: nade bem, respeite o próprio limite e evite entrar sem companhia no pico."
+        }
+      ]
+    },
+    "cacimba-do-padre|peito-ombro|medio-7a9|lateral-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Cacimba do Padre: onda de bom porte de manhã, com vento de lado",
+          "analise": "Nas primeiras horas da manhã, chega uma condição de porte generoso e séria, com swell do sudeste que chega quase na direção ideal, mas de raspão. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), moderado, dando uma leve enrugada na parede. O período dá um espaçamento razoável entre as ondas, tempo de se posicionar sem correria. Na água, a remada exige força e o drop cobra decisão rápida, e surfista avançado se diverte, iniciante melhor observar da areia. Quem for entre os Dois Irmãos sente a diferença, mas vale estudar o pico um pouco antes de entrar.",
+          "janela": "7h-10h",
+          "aviso": "Pico conhecido por pesar: nível iniciante deve observar da areia antes de decidir entrar."
+        }
+      ]
+    },
+    "cacimba-do-padre|peito-ombro|medio-7a9|lateral-forte|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Cacimba do Padre: onda de bom porte à tarde, com vento de lado",
+          "analise": "Com o sol já alto, a tarde traz uma condição de porte generoso e séria, com swell do sudeste que roça na janela boa sem entrar totalmente. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), bem forte, pedindo um ajuste fino na remada. O período dá um espaçamento razoável entre as ondas, tempo de se posicionar sem correria. Na água, a força na parede não perdoa remada fraca, e surfista avançado se diverte, iniciante melhor observar da areia. Quem for entre os Dois Irmãos sente a diferença, mas vale remar com decisão e não hesitar na entrada.",
+          "janela": "12h-15h",
+          "aviso": "Pico conhecido por pesar: nível iniciante deve observar da areia antes de decidir entrar."
+        }
+      ]
+    },
+    "cacimba-do-padre|peito-ombro|medio-7a9|lateral-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Cacimba do Padre: onda de bom porte à noite, com vento de lado",
+          "analise": "Com a noite tomando conta, chega uma condição de porte generoso e séria, com swell do leste que roça na janela boa sem entrar totalmente. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), forte, sem estragar de vez a sessão. O espaçamento é mediano, o suficiente pra remar com calma até o pico. Na água, o volume da água já pesa na paleta e no posicionamento, e surfista avançado se diverte, iniciante melhor observar da areia. Quem for entre os Dois Irmãos sente a diferença, mas vale estudar o pico um pouco antes de entrar.",
+          "janela": null,
+          "aviso": "Pico conhecido por pesar: nível iniciante deve observar da areia antes de decidir entrar."
+        }
+      ]
+    },
+    "matinhos|joelho-cintura|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Matinhos: onda pequena e tranquila à tarde, com vento de lado",
+          "analise": "Ao longo da tarde, entra uma condição curta, tranquila, com swell do leste que bate direto na direção favorita do pico. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), fraco, sem estragar de vez a sessão. O espaçamento é mediano, o suficiente pra remar com calma até o pico. Na água, a queda é suave, sem susto, e é dia de levar quem tá aprendendo. Fechando o dia, vale levar prancha com mais volume e só curtir o deslize.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "guarda-do-embau|joelho-cintura|curto-vaga|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Guarda do Embaú: onda pequena e tranquila à tarde, com vento bagunçando",
+          "analise": "Com o sol já alto, a tarde traz uma condição pequena e gentil, com swell do leste que chega certinho na janela que essa praia pede. O vento é onshore (vento que vem do mar pra terra e bagunça a onda), bem forte, desmanchando a onda mais cedo do que devia. A série vem curta e nervosa, mar mais de vento do que de swell organizado. Na água, a remada é curta e o drop não assusta ninguém, e quem tá começando aproveita sem medo. Fechando o dia, dá pra treinar remada e leitura de pico sem pressão nenhuma.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|ombro-cabeca|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Ipanema: onda grande e forte de manhã, com vento de lado",
+          "analise": "Logo cedo, a praia recebe uma condição grande, empurrando com força, com swell do sul que entra em cheio na direção que a praia gosta. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), fraco, pedindo um ajuste fino na remada. A ondulação chega organizada, com espaço bom entre uma série e outra. Na água, a força da água empurra o surfista e exige leitura rápida do pico, e só quem já tem repertório de onda grande deve entrar. Fechando o dia, melhor observar o pico de fora antes de decidir entrar.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|cabeca-1.5x|bom-9a11|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Saquarema: onda grande e pesada à tarde, com vento de lado",
+          "analise": "Ao longo da tarde, entra uma condição grande de verdade, do tipo que muda o dia, com swell do sul que entra em cheio na direção que a praia gosta. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), de intensidade média, sem estragar de vez a sessão. O período é bom: série bem espaçada, dá tempo de ver a onda vindo de longe e se posicionar com calma. Na água, a força da água é grande demais pra quem não tem repertório, e só pra quem já surfou grande antes, sem exceção. Fechando o dia, melhor respeitar o próprio limite nesse tamanho.",
+          "janela": "13h-17h",
+          "aviso": "Tamanho grande de verdade: nade bem, respeite o próprio limite e evite entrar sem companhia no pico."
+        }
+      ]
+    },
+    "joaquina|cintura-peito|medio-7a9|onshore-forte|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Joaquina: onda de porte médio à tarde, com vento bagunçando",
+          "analise": "Com o sol já alto, a tarde traz uma condição média, com uma força gostosa, com swell do leste que roça na janela boa sem entrar totalmente. O vento é onshore (vento que vem do mar pra terra e bagunça a onda), bem forte, desmanchando a onda mais cedo do que devia. O período dá um espaçamento razoável entre as ondas, tempo de se posicionar sem correria. Na água, a remada pega um pouco mais de força, mas nada que canse à toa, e bom terreno pra sair da zona de conforto. Fechando o dia, vale focar em posicionamento pra pegar a onda no ponto certo.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|cabeca-1.5x|bom-9a11|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Monte Alto: onda grande e pesada de manhã, com vento de lado",
+          "analise": "A manhã amanhece com uma condição grande e brava, com força de swell puro, com swell do sul que chega certinho na janela que essa praia pede. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), moderado, sem estragar de vez a sessão. O período é bom: série bem espaçada, dá tempo de ver a onda vindo de longe e se posicionar com calma. Na água, cada série cobra decisão rápida, não tem espaço pra hesitar, e dia de gente muito experiente, o resto melhor ficar na areia vendo. Fechando o dia, melhor respeitar o próprio limite nesse tamanho.",
+          "janela": "7h-10h",
+          "aviso": "Tamanho grande de verdade: nade bem, respeite o próprio limite e evite entrar sem companhia no pico."
+        }
+      ]
+    },
+    "monte-alto|cabeca-1.5x|medio-7a9|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Monte Alto: onda grande e pesada à noite, com vento de lado",
+          "analise": "Já de noite, a praia recebe uma condição bem grande e pesada, com swell do sudeste que entra em cheio na direção que a praia gosta. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), forte, pedindo um ajuste fino na remada. O espaçamento é mediano, o suficiente pra remar com calma até o pico. Na água, a força da água é grande demais pra quem não tem repertório, e pede repertório de verdade, mar pesado não perdoa. Fechando o dia, só pra quem já provou mar grande antes, sem exceção.",
+          "janela": null,
+          "aviso": "Tamanho grande de verdade: nade bem, respeite o próprio limite e evite entrar sem companhia no pico."
+        }
+      ]
+    },
+    "recreio|ombro-cabeca|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Recreio dos Bandeirantes: onda grande e forte de manhã, com vento de lado",
+          "analise": "Nas primeiras horas da manhã, chega uma condição grande, do tipo que enche o pico de adrenalina, com swell do sul que bate direto na direção favorita do pico. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), leve, sem estragar de vez a sessão. A série vem espaçada de verdade, dá pra estudar o pico antes de remar. Na água, a queda vem com peso de verdade, sem espaço pra hesitação, e pede experiência de verdade, não é dia de arriscar sem saber nadar bem. Fechando o dia, melhor observar o pico de fora antes de decidir entrar.",
+          "janela": "7h-11h",
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|ombro-cabeca|bom-9a11|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Recreio dos Bandeirantes: onda grande e forte à tarde, com vento de lado",
+          "analise": "Ao longo da tarde, entra uma condição grande e brava, exige respeito, com swell do sul que chega certinho na janela que essa praia pede. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), firme, pedindo um ajuste fino na remada. O intervalo entre as ondas é generoso, sobra tempo pra escolher a melhor. Na água, a queda vem com peso de verdade, sem espaço pra hesitação, e surfista com bagagem se diverte, o resto assiste da areia. Fechando o dia, vale nadar bem e conhecer a correnteza antes de remar.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|ombro-cabeca|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Recreio dos Bandeirantes: onda grande e forte à noite, com vento de lado",
+          "analise": "No escuro, entra uma condição encorpada de verdade, com força pesada, com swell do sudeste que entra em cheio na direção que a praia gosta. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), leve, dando uma leve enrugada na parede. O espaçamento é mediano, o suficiente pra remar com calma até o pico. Na água, a remada de saída já é um treino à parte e o drop cobra decisão na hora, e só quem já tem repertório de onda grande deve entrar. Fechando o dia, melhor observar o pico de fora antes de decidir entrar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "camburi|peito-ombro|bom-9a11|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Camburi: onda de bom porte à tarde, com terral ajudando",
+          "analise": "Ao longo da tarde, entra uma condição encorpada, com peso de verdade, com swell do sul que entra em cheio na direção que a praia gosta. O vento é offshore (vento que sai da terra pro mar e alisa a onda), bem fraco, segurando a parede em pé por mais tempo. O período é bom: série bem espaçada, dá tempo de ver a onda vindo de longe e se posicionar com calma. Na água, a força na parede não perdoa remada fraca, e quem tem experiência aproveita, quem tá aprendendo pode se assustar. Fechando o dia, melhor ir com prancha de mais volume pra facilitar a remada.",
+          "janela": "12h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "geriba|ombro-cabeca|medio-7a9|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Geribá: onda grande e forte à noite, com vento de lado",
+          "analise": "No escuro, entra uma condição de tamanho sério, pesada, com swell do sudeste que chega certinho na janela que essa praia pede. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), bem forte, sem estragar de vez a sessão. O intervalo entre as ondas é ok, dá pra escolher a série sem afobação. Na água, a queda vem com peso de verdade, sem espaço pra hesitação, e pede experiência de verdade, não é dia de arriscar sem saber nadar bem. Fechando o dia, só entra quem já domina remada forte em mar grande.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tucuns|ombro-cabeca|bom-9a11|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tucuns: onda grande e forte à tarde, com vento bagunçando",
+          "analise": "Com o sol já alto, a tarde traz uma condição grande, do tipo que enche o pico de adrenalina, com swell do sudeste que entra em cheio na direção que a praia gosta. O vento é onshore (vento que vem do mar pra terra e bagunça a onda), forte, bagunçando a face antes da hora. O período é bom: série bem espaçada, dá tempo de ver a onda vindo de longe e se posicionar com calma. Na água, o volume é grande e a correnteza costuma apertar também, e dia de avançado, iniciante nem se aproxima do pico. Fechando o dia, melhor observar o pico de fora antes de decidir entrar.",
+          "janela": "14h-17h",
+          "aviso": "Mar grande com vento desorganizando: só siga se já tiver experiência e conhecer bem a correnteza do pico."
+        }
+      ]
+    },
+    "tucuns|ombro-cabeca|medio-7a9|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tucuns: onda grande e forte à noite, com vento de lado",
+          "analise": "Com a noite tomando conta, chega uma condição grande, empurrando com força, com swell do sudeste que entra em cheio na direção que a praia gosta. O vento é lateral (vento soprando de lado, que mexe a onda sem desmanchar de vez), forte, pedindo um ajuste fino na remada. O espaçamento é mediano, o suficiente pra remar com calma até o pico. Na água, a força da água empurra o surfista e exige leitura rápida do pico, e dia de avançado, iniciante nem se aproxima do pico. Fechando o dia, melhor observar o pico de fora antes de decidir entrar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
     }
   },
-  "generated_at": "2026-08-28T18:15:26.895Z"
+  "generated_at": "2026-08-29T00:20:12.756Z"
 }
