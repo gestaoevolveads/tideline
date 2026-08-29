@@ -130758,7 +130758,997 @@
           "aviso": null
         }
       ]
+    },
+    "pantano-do-sul|cintura-peito|curto-vaga|onshore-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Vento mexe Pântano do Sul",
+          "analise": "Pântano do Sul amanhece, difícil, ângulo ruim de todo lado. Sopra vento onshore, que vem do mar pra terra e enruga tudo. O swell chega de leste, de raspão, sem entrar de frente na bancada. Na água, força moderada, pede atenção na escolha do pico mas não assusta, e a série vem apertada e atropelada, mar de vento que não perdoa quem demora a decidir. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|cintura-peito|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Cassino inconstante hoje",
+          "analise": "Cassino abre o dia, de bom tamanho, só um pouco irregular. Sopra vento lateral, soprando de través, dá uma enrugada sem destruir tudo. Na água, energia mediana, a remada cansa um pouco mais mas ainda é de boa vontade, e as ondas se amontoam em série curta, tudo mais nervoso e sem tempo de sobra. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "rosa|cintura-peito|curto-vaga|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Terral ajeita Praia do Rosa",
+          "analise": "A manhã encontra Praia do Rosa, bem desenhada, no ponto. Sopra vento offshore, aquele terral que sopra da areia pro mar e dá acabamento liso. Na água, força moderada, pede atenção na escolha do pico mas não assusta, e a formação é curta e apertada, parece mar de vento, exige remada rápida. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|peito-ombro|medio-7a9|onshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Vento mexe Unamar",
+          "analise": "Unamar recebe o primeiro sol, complicada, cortada e fora de posição. Sopra vento onshore, que vem do mar pra terra e enruga tudo. O swell chega de leste, de raspão, sem entrar de frente na bancada. Na água, energia forte, o drop cobra decisão rápida e quem hesita toma caldo, e a série vem mais espaçada, dá tempo de ver a onda chegar de longe e se posicionar com calma. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": "5h-8h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "matinhos|flat|medio-7a9|onshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 0.5,
+          "titulo": "Matinhos sem força",
+          "analise": "Cedo, Matinhos já mostra a cara, o mar amanhece raso e sem força, mais poça que onda. Quando forma alguma coisa, as ondas chegam em série espaçada, sobra tempo pra escolher a certa e remar sem afobação, mas não é o dia de contar com força. Dá pra todo mundo se divertir hoje, cada um no seu canto e no seu ritmo.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "cidreira|ombro-cabeca|curto-vaga|onshore-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Cidreira sob o onshore",
+          "analise": "Cidreira segura a virada da noite, complicada, cortada e fora de posição. Sopra vento onshore, que entra do mar e desmancha a parede. O swell chega de leste, de raspão, sem entrar de frente na bancada. Na água, força avassaladora na água, remada exige fôlego e o mar cobra respeito, e a formação é curta e apertada, parece mar de vento, exige remada rápida. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": null,
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "ferrugem|peito-ombro|curto-vaga|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Vento mexe Praia do Ferrugem",
+          "analise": "Praia do Ferrugem segue a tarde, com força, mas crespa. Sopra vento onshore, que vem do mar pra terra e enruga tudo. Na água, a força é pesada, o caldo castiga quem erra o tempo e a remada cansa de verdade, e a série vem apertada e atropelada, mar de vento que não perdoa quem demora a decidir. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": "14h-17h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "caioba|flat|medio-7a9|onshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 0.5,
+          "titulo": "Caiobá zerada",
+          "analise": "Caiobá abre o dia, o mar amanhece raso e sem força, mais poça que onda. Quando forma alguma coisa, as ondas chegam em série espaçada, sobra tempo pra escolher a certa e remar sem afobação, mas não é o dia de contar com força. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "rosa|peito-ombro|curto-vaga|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Praia do Rosa entre luz e sombra",
+          "analise": "Praia do Rosa entra na tarde, com corpo, ainda que um pouco incomodada. Sopra vento lateral, atravessado, que incomoda mas não estraga de vez. Na água, força moderada, pede atenção na escolha do pico mas não assusta, e a formação é curta e apertada, parece mar de vento, exige remada rápida. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|peito-ombro|curto-vaga|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Vento mexe Praia do Porto (Imbituba)",
+          "analise": "Praia do Porto (Imbituba) recebe o primeiro sol, de bom tamanho, porém cortada. Sopra vento onshore, que vem do mar pra terra e enruga tudo. Na água, energia mediana, a remada cansa um pouco mais mas ainda é de boa vontade, e a série vem apertada e atropelada, mar de vento que não perdoa quem demora a decidir. É dia pra quem já rodou bastante, a leitura tem que ser rápida e a decisão também.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|peito-ombro|curto-vaga|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Praia do Porto (Imbituba) crespa hoje",
+          "analise": "Praia do Porto (Imbituba) aguenta o tranco da tarde, com força, mas crespa. Sopra vento onshore, aquele que sopra do mar pra terra e bagunça a água. Na água, força moderada, pede atenção na escolha do pico mas não assusta, e as ondas se amontoam em série curta, tudo mais nervoso e sem tempo de sobra. Só quem tem experiência de verdade deve se arriscar hoje, leitura rápida é obrigatória.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|cintura-peito|curto-vaga|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Terral ajeita Praia do Porto (Imbituba)",
+          "analise": "Praia do Porto (Imbituba) segura a virada da noite, bem desenhada, no ponto. Sopra vento offshore, aquele terral que sopra da areia pro mar e dá acabamento liso. Na água, energia mediana, a remada cansa um pouco mais mas ainda é de boa vontade, e a formação é curta e apertada, parece mar de vento, exige remada rápida. É dia pra quem já rodou bastante, a leitura tem que ser rápida e a decisão também.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "baia-formosa|ombro-cabeca|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Baía Formosa com o vento de lado",
+          "analise": "Baía Formosa amanhece, com corpo, ainda que um pouco incomodada. Sopra vento lateral, de través, que mexe a água sem desmanchar de vez. Na água, a energia é muito pesada, o caldo não perdoa e só quem está afiado deve entrar, e a série vem mais espaçada, dá tempo de ver a onda chegar de longe e se posicionar com calma. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": "7h-10h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "recreio|joelho-cintura|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Recreio dos Bandeirantes inconstante hoje",
+          "analise": "Recreio dos Bandeirantes abre o dia, de bom tamanho, só um pouco irregular. Sopra vento lateral, soprando de través, dá uma enrugada sem destruir tudo. Na água, pouca força na água, remada tranquila, dá pra ficar horas sem sentir o braço pesar, e as ondas chegam em série espaçada, sobra tempo pra escolher a certa e remar sem afobação. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": "5h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|peito-ombro|curto-vaga|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Ibiraquera sob o onshore",
+          "analise": "Ibiraquera entra na tarde, com força, mas crespa. Sopra vento onshore, que entra do mar e desmancha a parede. Na água, a força é pesada, o caldo castiga quem erra o tempo e a remada cansa de verdade, e a formação é curta e apertada, parece mar de vento, exige remada rápida. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": "15h-17h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "silveira|peito-ombro|curto-vaga|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Vento mexe Praia da Silveira",
+          "analise": "A tarde pega Praia da Silveira, de bom tamanho, porém cortada. Sopra vento onshore, que vem do mar pra terra e enruga tudo. Na água, energia forte, o drop cobra decisão rápida e quem hesita toma caldo, e a série vem apertada e atropelada, mar de vento que não perdoa quem demora a decidir. É dia pra quem já rodou bastante, a leitura tem que ser rápida e a decisão também.",
+          "janela": "13h-16h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "capao-da-canoa|ombro-cabeca|curto-vaga|onshore-fraco|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Capão da Canoa crespa hoje",
+          "analise": "Já escuro, Capão da Canoa mantém a rotina, difícil, ângulo ruim de todo lado. Sopra vento onshore, aquele que sopra do mar pra terra e bagunça a água. O swell chega de leste, de raspão, sem entrar de frente na bancada. Na água, a energia é muito pesada, o caldo não perdoa e só quem está afiado deve entrar, e as ondas se amontoam em série curta, tudo mais nervoso e sem tempo de sobra. Dá pra todo mundo se divertir hoje, cada um no seu canto e no seu ritmo.",
+          "janela": null,
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "torres|peito-ombro|curto-vaga|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Torres sob o onshore",
+          "analise": "No fim de tarde, Torres segue, de bom tamanho, porém cortada. Sopra vento onshore, que entra do mar e desmancha a parede. Na água, energia mediana, a remada cansa um pouco mais mas ainda é de boa vontade, e a formação é curta e apertada, parece mar de vento, exige remada rápida. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "torres|peito-ombro|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Torres com o vento de lado",
+          "analise": "Torres fecha o dia, com corpo, ainda que um pouco incomodada. Sopra vento lateral, de través, que mexe a água sem desmanchar de vez. Na água, a força é pesada, o caldo castiga quem erra o tempo e a remada cansa de verdade, e a série vem apertada e atropelada, mar de vento que não perdoa quem demora a decidir. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": null,
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "grumari|cintura-peito|curto-vaga|offshore-forte|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Grumari no ponto",
+          "analise": "Grumari abre o dia, com bom acabamento, porém de raspão. Sopra vento offshore, terral que vem da praia pro mar e segura a parede lisa. O swell chega de leste, de raspão, sem entrar de frente na bancada. Na água, energia mediana, a remada cansa um pouco mais mas ainda é de boa vontade, e as ondas se amontoam em série curta, tudo mais nervoso e sem tempo de sobra. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|cintura-peito|curto-vaga|offshore-forte|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Terral ajeita Prainha",
+          "analise": "A manhã encontra Prainha, limpa, mas mal alinhada. Sopra vento offshore, aquele terral que sopra da areia pro mar e dá acabamento liso. O swell chega de leste, de raspão, sem entrar de frente na bancada. Na água, força moderada, pede atenção na escolha do pico mas não assusta, e a formação é curta e apertada, parece mar de vento, exige remada rápida. Só quem tem experiência de verdade deve se arriscar hoje, leitura rápida é obrigatória.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "camburi|cintura-peito|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Camburi com o vento de lado",
+          "analise": "Camburi entra na noite, de bom tamanho, só um pouco irregular. Sopra vento lateral, de través, que mexe a água sem desmanchar de vez. Na água, pouca força na água, remada tranquila, dá pra ficar horas sem sentir o braço pesar, e a série vem apertada e atropelada, mar de vento que não perdoa quem demora a decidir. Tanto quem está aprendendo quanto quem já manda bem encontram graça nessa condição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|ombro-cabeca|curto-vaga|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Arroio do Sal inconstante hoje",
+          "analise": "Arroio do Sal aguenta o tranco da tarde, com corpo, ainda que um pouco incomodada. Sopra vento lateral, soprando de través, dá uma enrugada sem destruir tudo. Na água, a energia é muito pesada, o caldo não perdoa e só quem está afiado deve entrar, e as ondas se amontoam em série curta, tudo mais nervoso e sem tempo de sobra. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": "13h-15h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "massaguacu|joelho-cintura|curto-vaga|lateral-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 1.5,
+          "titulo": "Massaguaçu entre luz e sombra",
+          "analise": "Massaguaçu desperta, incerta, sofrendo com o ângulo. Sopra vento lateral, atravessado, que incomoda mas não estraga de vez. O swell chega de leste, de raspão, sem entrar de frente na bancada. Na água, pouca força na água, remada tranquila, dá pra ficar horas sem sentir o braço pesar, e a formação é curta e apertada, parece mar de vento, exige remada rápida. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": "5h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "massaguacu|joelho-cintura|medio-7a9|lateral-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Massaguaçu com o vento de lado",
+          "analise": "Massaguaçu segue a tarde, irregular e de raspão. Sopra vento lateral, de través, que mexe a água sem desmanchar de vez. O swell chega de leste, de raspão, sem entrar de frente na bancada. Na água, força moderada, pede atenção na escolha do pico mas não assusta, e a série vem mais espaçada, dá tempo de ver a onda chegar de longe e se posicionar com calma. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": "15h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|cintura-peito|curto-vaga|offshore-forte|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Macumba no ponto",
+          "analise": "Macumba abre o dia, com bom acabamento, porém de raspão. Sopra vento offshore, terral que vem da praia pro mar e segura a parede lisa. O swell chega de leste, de raspão, sem entrar de frente na bancada. Na água, energia mediana, a remada cansa um pouco mais mas ainda é de boa vontade, e as ondas se amontoam em série curta, tudo mais nervoso e sem tempo de sobra. Tanto quem está aprendendo quanto quem já manda bem encontram graça nessa condição.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "cidreira|ombro-cabeca|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Cidreira entre luz e sombra",
+          "analise": "Cidreira entra na tarde, com corpo, ainda que um pouco incomodada. Sopra vento lateral, atravessado, que incomoda mas não estraga de vez. Na água, a energia é muito pesada, o caldo não perdoa e só quem está afiado deve entrar, e a formação é mais espaçada, então dá pra estudar o pico antes de se comprometer. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": "14h-17h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "farol-de-santa-marta|cabeca-1.5x|curto-vaga|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Farol de Santa Marta com o vento de lado",
+          "analise": "Farol de Santa Marta entra na noite, de bom tamanho, só um pouco irregular. Sopra vento lateral, de través, que mexe a água sem desmanchar de vez. Na água, força avassaladora na água, remada exige fôlego e o mar cobra respeito, e a série vem apertada e atropelada, mar de vento que não perdoa quem demora a decidir. É dia pra quem já rodou bastante, a leitura tem que ser rápida e a decisão também.",
+          "janela": null,
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "maresias|joelho-cintura|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Maresias inconstante hoje",
+          "analise": "Maresias aguenta o tranco da tarde, com corpo, ainda que um pouco incomodada. Sopra vento lateral, soprando de través, dá uma enrugada sem destruir tudo. Na água, a força é fraca, a remada sai leve e o passeio rende sem cansar, e as ondas se amontoam em série curta, tudo mais nervoso e sem tempo de sobra. Só quem tem experiência de verdade deve se arriscar hoje, leitura rápida é obrigatória.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|cintura-peito|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tombo entre luz e sombra",
+          "analise": "Tombo segura a virada da noite, de bom tamanho, só um pouco irregular. Sopra vento lateral, atravessado, que incomoda mas não estraga de vez. Na água, energia mediana, a remada cansa um pouco mais mas ainda é de boa vontade, e a formação é curta e apertada, parece mar de vento, exige remada rápida. É dia pra quem já rodou bastante, a leitura tem que ser rápida e a decisão também.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "barra-do-sahy|joelho-cintura|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Barra do Sahy com o vento de lado",
+          "analise": "Barra do Sahy segue a tarde, com corpo, ainda que um pouco incomodada. Sopra vento lateral, de través, que mexe a água sem desmanchar de vez. Na água, a força é fraca, a remada sai leve e o passeio rende sem cansar, e a série vem apertada e atropelada, mar de vento que não perdoa quem demora a decidir. Quem está começando aproveita melhor ficando na parte mais cheia, perto da arrebentação suave.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "jureia|cintura-peito|curto-vaga|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Jureia crespa hoje",
+          "analise": "Sem luz, Jureia segue, de bom tamanho, porém cortada. Sopra vento onshore, aquele que sopra do mar pra terra e bagunça a água. Na água, energia mediana, a remada cansa um pouco mais mas ainda é de boa vontade, e as ondas se amontoam em série curta, tudo mais nervoso e sem tempo de sobra. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "torres|peito-ombro|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Torres entre luz e sombra",
+          "analise": "A manhã encontra Torres, com corpo, ainda que um pouco incomodada. Sopra vento lateral, atravessado, que incomoda mas não estraga de vez. Na água, a força é pesada, o caldo castiga quem erra o tempo e a remada cansa de verdade, e a formação é mais espaçada, então dá pra estudar o pico antes de se comprometer. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": "7h-10h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "itamambuca|cintura-peito|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Itamambuca com o vento de lado",
+          "analise": "Itamambuca entra na noite, de bom tamanho, só um pouco irregular. Sopra vento lateral, de través, que mexe a água sem desmanchar de vez. Na água, energia mediana, a remada cansa um pouco mais mas ainda é de boa vontade, e a série vem apertada e atropelada, mar de vento que não perdoa quem demora a decidir. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|cintura-peito|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Pitangueiras inconstante hoje",
+          "analise": "Já escuro, Pitangueiras mantém a rotina, com corpo, ainda que um pouco incomodada. Sopra vento lateral, soprando de través, dá uma enrugada sem destruir tudo. Na água, força moderada, pede atenção na escolha do pico mas não assusta, e as ondas se amontoam em série curta, tudo mais nervoso e sem tempo de sobra. Dá pra todo mundo se divertir hoje, cada um no seu canto e no seu ritmo.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-tijuca|peito-ombro|curto-vaga|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Barra da Tijuca entre luz e sombra",
+          "analise": "Barra da Tijuca desperta, de bom tamanho, só um pouco irregular. Sopra vento lateral, atravessado, que incomoda mas não estraga de vez. Na água, energia forte, o drop cobra decisão rápida e quem hesita toma caldo, e a formação é curta e apertada, parece mar de vento, exige remada rápida. Tanto quem está aprendendo quanto quem já manda bem encontram graça nessa condição.",
+          "janela": "6h-9h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "barra-da-tijuca|peito-ombro|curto-vaga|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Vento mexe Barra da Tijuca",
+          "analise": "Barra da Tijuca segue a tarde, com força, mas crespa. Sopra vento onshore, que vem do mar pra terra e enruga tudo. Na água, a força é pesada, o caldo castiga quem erra o tempo e a remada cansa de verdade, e a série vem apertada e atropelada, mar de vento que não perdoa quem demora a decidir. Dá pra todo mundo se divertir hoje, cada um no seu canto e no seu ritmo.",
+          "janela": "14h-17h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "pantano-do-sul|cintura-peito|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Pântano do Sul crespa hoje",
+          "analise": "Pântano do Sul abre o dia, de bom tamanho, porém cortada. Sopra vento onshore, aquele que sopra do mar pra terra e bagunça a água. Na água, energia mediana, a remada cansa um pouco mais mas ainda é de boa vontade, e as ondas chegam em série espaçada, sobra tempo pra escolher a certa e remar sem afobação. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "itacarezinho|peito-ombro|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Itacarezinho entre luz e sombra",
+          "analise": "A manhã encontra Itacarezinho, com corpo, ainda que um pouco incomodada. Sopra vento lateral, atravessado, que incomoda mas não estraga de vez. Na água, a força é pesada, o caldo castiga quem erra o tempo e a remada cansa de verdade, e a formação é mais espaçada, então dá pra estudar o pico antes de se comprometer. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": "5h-8h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "mocambique|peito-ombro|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Moçambique com o vento de lado",
+          "analise": "Moçambique entra na noite, de bom tamanho, só um pouco irregular. Sopra vento lateral, de través, que mexe a água sem desmanchar de vez. Na água, energia forte, o drop cobra decisão rápida e quem hesita toma caldo, e a série vem mais espaçada, dá tempo de ver a onda chegar de longe e se posicionar com calma. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": null,
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "foguete|peito-ombro|curto-vaga|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Foguete crespa hoje",
+          "analise": "Foguete aguenta o tranco da tarde, com força, mas crespa. Sopra vento onshore, aquele que sopra do mar pra terra e bagunça a água. Na água, a energia é muito pesada, o caldo não perdoa e só quem está afiado deve entrar, e as ondas se amontoam em série curta, tudo mais nervoso e sem tempo de sobra. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": "13h-16h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "cassino|cintura-peito|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Cassino entre luz e sombra",
+          "analise": "Cassino desperta, de bom tamanho, só um pouco irregular. Sopra vento lateral, atravessado, que incomoda mas não estraga de vez. Na água, energia mediana, a remada cansa um pouco mais mas ainda é de boa vontade, e a formação é mais espaçada, então dá pra estudar o pico antes de se comprometer. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|peito-ombro|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Praia do Porto (Imbituba) com o vento de lado",
+          "analise": "Praia do Porto (Imbituba) segue a tarde, com corpo, ainda que um pouco incomodada. Sopra vento lateral, de través, que mexe a água sem desmanchar de vez. Na água, a força é pesada, o caldo castiga quem erra o tempo e a remada cansa de verdade, e a série vem mais espaçada, dá tempo de ver a onda chegar de longe e se posicionar com calma. Só quem tem experiência de verdade deve se arriscar hoje, leitura rápida é obrigatória.",
+          "janela": "13h-15h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|peito-ombro|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Praia do Porto (Imbituba) no ponto",
+          "analise": "Sem luz, Praia do Porto (Imbituba) segue, redondinha e convidativa. Sopra vento offshore, terral que vem da praia pro mar e segura a parede lisa. Na água, energia forte, o drop cobra decisão rápida e quem hesita toma caldo, e as ondas chegam em série espaçada, sobra tempo pra escolher a certa e remar sem afobação. É dia pra quem já rodou bastante, a leitura tem que ser rápida e a decisão também.",
+          "janela": null,
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "tombo|peito-ombro|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tombo entre luz e sombra",
+          "analise": "A manhã encontra Tombo, com corpo, ainda que um pouco incomodada. Sopra vento lateral, atravessado, que incomoda mas não estraga de vez. Na água, a força é pesada, o caldo castiga quem erra o tempo e a remada cansa de verdade, e a formação é curta e apertada, parece mar de vento, exige remada rápida. Só quem tem experiência de verdade deve se arriscar hoje, leitura rápida é obrigatória.",
+          "janela": "7h-9h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "praia-brava-floripa|peito-ombro|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Praia Brava (Floripa) com o vento de lado",
+          "analise": "Praia Brava (Floripa) recebe o primeiro sol, de bom tamanho, só um pouco irregular. Sopra vento lateral, de través, que mexe a água sem desmanchar de vez. Na água, energia forte, o drop cobra decisão rápida e quem hesita toma caldo, e a série vem mais espaçada, dá tempo de ver a onda chegar de longe e se posicionar com calma. É dia pra quem já rodou bastante, a leitura tem que ser rápida e a decisão também.",
+          "janela": "6h-9h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "praia-brava-buzios|peito-ombro|curto-vaga|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Praia Brava (Búzios) no ponto",
+          "analise": "Cedo, Praia Brava (Búzios) já mostra a cara, redondinha e convidativa. Sopra vento offshore, terral que vem da praia pro mar e segura a parede lisa. Na água, a força é pesada, o caldo castiga quem erra o tempo e a remada cansa de verdade, e as ondas se amontoam em série curta, tudo mais nervoso e sem tempo de sobra. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": "6h-10h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|cintura-peito|curto-vaga|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Praia Brava (Cabo Frio) entre luz e sombra",
+          "analise": "Praia Brava (Cabo Frio) desperta, de bom tamanho, só um pouco irregular. Sopra vento lateral, atravessado, que incomoda mas não estraga de vez. Na água, energia mediana, a remada cansa um pouco mais mas ainda é de boa vontade, e a formação é curta e apertada, parece mar de vento, exige remada rápida. É dia pra quem já rodou bastante, a leitura tem que ser rápida e a decisão também.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|peito-ombro|curto-vaga|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Unamar com o vento de lado",
+          "analise": "Unamar amanhece, com corpo, ainda que um pouco incomodada. Sopra vento lateral, de través, que mexe a água sem desmanchar de vez. Na água, a força é pesada, o caldo castiga quem erra o tempo e a remada cansa de verdade, e a série vem apertada e atropelada, mar de vento que não perdoa quem demora a decidir. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": "5h-8h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "capao-da-canoa|peito-ombro|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9.5,
+          "titulo": "Capão da Canoa no ponto",
+          "analise": "Capão da Canoa abre o dia, redondinha e convidativa. Sopra vento offshore, terral que vem da praia pro mar e segura a parede lisa. Na água, força avassaladora na água, remada exige fôlego e o mar cobra respeito, e as ondas chegam em série espaçada, sobra tempo pra escolher a certa e remar sem afobação. Tanto quem está aprendendo quanto quem já manda bem encontram graça nessa condição.",
+          "janela": "7h-9h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "jureia|ombro-cabeca|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Jureia entre luz e sombra",
+          "analise": "A manhã encontra Jureia, com corpo, ainda que um pouco incomodada. Sopra vento lateral, atravessado, que incomoda mas não estraga de vez. Na água, a energia é muito pesada, o caldo não perdoa e só quem está afiado deve entrar, e a formação é curta e apertada, parece mar de vento, exige remada rápida. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": "6h-9h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "bonete|peito-ombro|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia do Bonete com o vento de lado",
+          "analise": "Praia do Bonete recebe o primeiro sol, de bom tamanho, só um pouco irregular. Sopra vento lateral, de través, que mexe a água sem desmanchar de vez. Na água, energia forte, o drop cobra decisão rápida e quem hesita toma caldo, e a série vem apertada e atropelada, mar de vento que não perdoa quem demora a decidir. É dia pra quem já rodou bastante, a leitura tem que ser rápida e a decisão também.",
+          "janela": "6h-10h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "guarda-do-embau|cintura-peito|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Guarda do Embaú inconstante hoje",
+          "analise": "Cedo, Guarda do Embaú já mostra a cara, com corpo, ainda que um pouco incomodada. Sopra vento lateral, soprando de través, dá uma enrugada sem destruir tudo. Na água, força moderada, pede atenção na escolha do pico mas não assusta, e as ondas chegam em série espaçada, sobra tempo pra escolher a certa e remar sem afobação. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|peito-ombro|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Pitangueiras entre luz e sombra",
+          "analise": "Pitangueiras desperta, de bom tamanho, só um pouco irregular. Sopra vento lateral, atravessado, que incomoda mas não estraga de vez. Na água, energia forte, o drop cobra decisão rápida e quem hesita toma caldo, e a formação é curta e apertada, parece mar de vento, exige remada rápida. Tanto quem está aprendendo quanto quem já manda bem encontram graça nessa condição.",
+          "janela": "5h-8h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "saquarema|ombro-cabeca|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Saquarema com o vento de lado",
+          "analise": "Saquarema fecha o dia, com corpo, ainda que um pouco incomodada. Sopra vento lateral, de través, que mexe a água sem desmanchar de vez. Na água, a energia é muito pesada, o caldo não perdoa e só quem está afiado deve entrar, e a série vem mais espaçada, dá tempo de ver a onda chegar de longe e se posicionar com calma. Só quem tem experiência de verdade deve se arriscar hoje, leitura rápida é obrigatória.",
+          "janela": null,
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "cacimba-do-padre|peito-ombro|medio-7a9|offshore-forte|manha|borda": {
+      "variacoes": [
+        {
+          "score": 8.5,
+          "titulo": "Cacimba do Padre no ponto",
+          "analise": "Cacimba do Padre abre o dia, com bom acabamento, porém de raspão. Sopra vento offshore, terral que vem da praia pro mar e segura a parede lisa. O swell vem de sudeste, meio de lado pro banco, sem encaixe perfeito. Na água, força avassaladora na água, remada exige fôlego e o mar cobra respeito, e as ondas chegam em série espaçada, sobra tempo pra escolher a certa e remar sem afobação. É dia pra quem já rodou bastante, a leitura tem que ser rápida e a decisão também.",
+          "janela": "6h-9h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "geriba|peito-ombro|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Geribá entre luz e sombra",
+          "analise": "A manhã encontra Geribá, com corpo, ainda que um pouco incomodada. Sopra vento lateral, atravessado, que incomoda mas não estraga de vez. Na água, a força é pesada, o caldo castiga quem erra o tempo e a remada cansa de verdade, e a formação é mais espaçada, então dá pra estudar o pico antes de se comprometer. Dá pra todo mundo se divertir hoje, cada um no seu canto e no seu ritmo.",
+          "janela": "6h-10h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "praia-grande-arraial|ombro-cabeca|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7.5,
+          "titulo": "Vento mexe Praia Grande",
+          "analise": "Praia Grande recebe o primeiro sol, de bom tamanho, porém cortada. Sopra vento onshore, que vem do mar pra terra e enruga tudo. Na água, força avassaladora na água, remada exige fôlego e o mar cobra respeito, e a série vem mais espaçada, dá tempo de ver a onda chegar de longe e se posicionar com calma. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": "7h-10h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "cassino|joelho-cintura|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2.5,
+          "titulo": "Cassino crespa hoje",
+          "analise": "Já escuro, Cassino mantém a rotina, com força, mas crespa. Sopra vento onshore, aquele que sopra do mar pra terra e bagunça a água. Na água, a força é fraca, a remada sai leve e o passeio rende sem cansar, e as ondas chegam em série espaçada, sobra tempo pra escolher a certa e remar sem afobação. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|ombro-cabeca|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7.5,
+          "titulo": "Figueira sob o onshore",
+          "analise": "Figueira desperta, de bom tamanho, porém cortada. Sopra vento onshore, que entra do mar e desmancha a parede. Na água, força avassaladora na água, remada exige fôlego e o mar cobra respeito, e a formação é mais espaçada, então dá pra estudar o pico antes de se comprometer. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": "7h-9h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "rosa|peito-ombro|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Praia do Rosa lisa e generosa",
+          "analise": "Praia do Rosa amanhece, organizada e generosa. Sopra vento offshore, o terral que sai da terra pro mar e alisa a onda. Na água, a força é pesada, o caldo castiga quem erra o tempo e a remada cansa de verdade, e a série vem mais espaçada, dá tempo de ver a onda chegar de longe e se posicionar com calma. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": "6h-9h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "maresias|peito-ombro|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Maresias inconstante hoje",
+          "analise": "Maresias abre o dia, de bom tamanho, só um pouco irregular. Sopra vento lateral, soprando de través, dá uma enrugada sem destruir tudo. Na água, energia forte, o drop cobra decisão rápida e quem hesita toma caldo, e as ondas chegam em série espaçada, sobra tempo pra escolher a certa e remar sem afobação. É dia pra quem já rodou bastante, a leitura tem que ser rápida e a decisão também.",
+          "janela": "6h-10h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "itacoatiara|ombro-cabeca|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7.5,
+          "titulo": "Itacoatiara sob o onshore",
+          "analise": "A manhã encontra Itacoatiara, com força, mas crespa. Sopra vento onshore, que entra do mar e desmancha a parede. Na água, a energia é muito pesada, o caldo não perdoa e só quem está afiado deve entrar, e a formação é mais espaçada, então dá pra estudar o pico antes de se comprometer. Só quem tem experiência de verdade deve se arriscar hoje, leitura rápida é obrigatória.",
+          "janela": "7h-10h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|peito-ombro|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Praia do Porto (Imbituba) lisa e generosa",
+          "analise": "Cedo, Praia do Porto (Imbituba) já mostra a cara, organizada e generosa. Sopra vento offshore, o terral que sai da terra pro mar e alisa a onda. Na água, energia forte, o drop cobra decisão rápida e quem hesita toma caldo, e a série vem mais espaçada, dá tempo de ver a onda chegar de longe e se posicionar com calma. É dia pra quem já rodou bastante, a leitura tem que ser rápida e a decisão também.",
+          "janela": "5h-8h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|peito-ombro|curto-vaga|lateral-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Praia do Porto (Imbituba) inconstante hoje",
+          "analise": "Já escuro, Praia do Porto (Imbituba) mantém a rotina, irregular e de raspão. Sopra vento lateral, soprando de través, dá uma enrugada sem destruir tudo. O swell vem de nordeste, fora do ângulo que a praia mais gosta. Na água, a força é pesada, o caldo castiga quem erra o tempo e a remada cansa de verdade, e as ondas se amontoam em série curta, tudo mais nervoso e sem tempo de sobra. Só quem tem experiência de verdade deve se arriscar hoje, leitura rápida é obrigatória.",
+          "janela": null,
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "praia-brava-arraial|ombro-cabeca|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7.5,
+          "titulo": "Praia Brava (Arraial) sob o onshore",
+          "analise": "Praia Brava (Arraial) desperta, de bom tamanho, porém cortada. Sopra vento onshore, que entra do mar e desmancha a parede. Na água, força avassaladora na água, remada exige fôlego e o mar cobra respeito, e a formação é mais espaçada, então dá pra estudar o pico antes de se comprometer. É dia pra quem já rodou bastante, a leitura tem que ser rápida e a decisão também.",
+          "janela": "6h-9h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "recreio|peito-ombro|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9.5,
+          "titulo": "Recreio dos Bandeirantes lisa e generosa",
+          "analise": "Recreio dos Bandeirantes amanhece, organizada e generosa. Sopra vento offshore, o terral que sai da terra pro mar e alisa a onda. Na água, a energia é muito pesada, o caldo não perdoa e só quem está afiado deve entrar, e a série vem mais espaçada, dá tempo de ver a onda chegar de longe e se posicionar com calma. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": "6h-10h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "praia-brava-buzios|peito-ombro|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Praia Brava (Búzios) inconstante hoje",
+          "analise": "Praia Brava (Búzios) abre o dia, de bom tamanho, só um pouco irregular. Sopra vento lateral, soprando de través, dá uma enrugada sem destruir tudo. Na água, energia forte, o drop cobra decisão rápida e quem hesita toma caldo, e as ondas chegam em série espaçada, sobra tempo pra escolher a certa e remar sem afobação. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": "7h-10h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "barra-do-sahy|peito-ombro|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Barra do Sahy entre luz e sombra",
+          "analise": "Barra do Sahy entra na tarde, com corpo, ainda que um pouco incomodada. Sopra vento lateral, atravessado, que incomoda mas não estraga de vez. Na água, a força é pesada, o caldo castiga quem erra o tempo e a remada cansa de verdade, e a formação é mais espaçada, então dá pra estudar o pico antes de se comprometer. Quem está começando aproveita melhor ficando na parte mais cheia, perto da arrebentação suave.",
+          "janela": "14h-16h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "monte-alto|ombro-cabeca|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7.5,
+          "titulo": "Vento mexe Monte Alto",
+          "analise": "Monte Alto recebe o primeiro sol, de bom tamanho, porém cortada. Sopra vento onshore, que vem do mar pra terra e enruga tudo. Na água, força avassaladora na água, remada exige fôlego e o mar cobra respeito, e a série vem mais espaçada, dá tempo de ver a onda chegar de longe e se posicionar com calma. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": "7h-9h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "fernando-de-noronha|peito-ombro|medio-7a9|offshore-forte|manha|borda": {
+      "variacoes": [
+        {
+          "score": 8.5,
+          "titulo": "Fernando de Noronha no ponto",
+          "analise": "Cedo, Fernando de Noronha já mostra a cara, limpa, mas mal alinhada. Sopra vento offshore, terral que vem da praia pro mar e segura a parede lisa. O swell vem de sudeste, meio de lado pro banco, sem encaixe perfeito. Na água, a energia é muito pesada, o caldo não perdoa e só quem está afiado deve entrar, e as ondas chegam em série espaçada, sobra tempo pra escolher a certa e remar sem afobação. Só quem tem experiência de verdade deve se arriscar hoje, leitura rápida é obrigatória.",
+          "janela": "6h-9h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "tucuns|peito-ombro|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Tucuns entre luz e sombra",
+          "analise": "Tucuns desperta, de bom tamanho, só um pouco irregular. Sopra vento lateral, atravessado, que incomoda mas não estraga de vez. Na água, energia forte, o drop cobra decisão rápida e quem hesita toma caldo, e a formação é mais espaçada, então dá pra estudar o pico antes de se comprometer. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": "6h-10h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "engenhoca|cintura-peito|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Engenhoca com o vento de lado",
+          "analise": "Engenhoca fecha o dia, com corpo, ainda que um pouco incomodada. Sopra vento lateral, de través, que mexe a água sem desmanchar de vez. Na água, força moderada, pede atenção na escolha do pico mas não assusta, e a série vem mais espaçada, dá tempo de ver a onda chegar de longe e se posicionar com calma. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tramandai|cintura-peito|medio-7a9|lateral-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Tramandaí inconstante hoje",
+          "analise": "Tramandaí abre o dia, incerta, sofrendo com o ângulo. Sopra vento lateral, soprando de través, dá uma enrugada sem destruir tudo. O swell chega de leste, de raspão, sem entrar de frente na bancada. Na água, energia mediana, a remada cansa um pouco mais mas ainda é de boa vontade, e as ondas chegam em série espaçada, sobra tempo pra escolher a certa e remar sem afobação. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": "5h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "itacarezinho|cintura-peito|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Itacarezinho entre luz e sombra",
+          "analise": "A noite cobre Itacarezinho, com corpo, ainda que um pouco incomodada. Sopra vento lateral, atravessado, que incomoda mas não estraga de vez. Na água, força moderada, pede atenção na escolha do pico mas não assusta, e a formação é mais espaçada, então dá pra estudar o pico antes de se comprometer. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "cacimba-do-padre|peito-ombro|medio-7a9|offshore-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 7.5,
+          "titulo": "Cacimba do Padre lisa e generosa",
+          "analise": "A tarde pega Cacimba do Padre, com bom acabamento, porém de raspão. Sopra vento offshore, o terral que sai da terra pro mar e alisa a onda. O swell chega de leste, de raspão, sem entrar de frente na bancada. Na água, energia forte, o drop cobra decisão rápida e quem hesita toma caldo, e a série vem mais espaçada, dá tempo de ver a onda chegar de longe e se posicionar com calma. É dia pra quem já rodou bastante, a leitura tem que ser rápida e a decisão também.",
+          "janela": "13h-16h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "cacimba-do-padre|peito-ombro|medio-7a9|offshore-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 7.5,
+          "titulo": "Cacimba do Padre no ponto",
+          "analise": "Já escuro, Cacimba do Padre mantém a rotina, limpa, mas mal alinhada. Sopra vento offshore, terral que vem da praia pro mar e segura a parede lisa. O swell chega de leste, de raspão, sem entrar de frente na bancada. Na água, a força é pesada, o caldo castiga quem erra o tempo e a remada cansa de verdade, e as ondas chegam em série espaçada, sobra tempo pra escolher a certa e remar sem afobação. Só quem tem experiência de verdade deve se arriscar hoje, leitura rápida é obrigatória.",
+          "janela": null,
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "praia-grande-arraial|cintura-peito|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Praia Grande entre luz e sombra",
+          "analise": "Praia Grande segura a virada da noite, de bom tamanho, só um pouco irregular. Sopra vento lateral, atravessado, que incomoda mas não estraga de vez. Na água, energia mediana, a remada cansa um pouco mais mas ainda é de boa vontade, e a formação é mais espaçada, então dá pra estudar o pico antes de se comprometer. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tiririca|cintura-peito|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tiririca com o vento de lado",
+          "analise": "Tiririca fecha o dia, com corpo, ainda que um pouco incomodada. Sopra vento lateral, de través, que mexe a água sem desmanchar de vez. Na água, força moderada, pede atenção na escolha do pico mas não assusta, e a série vem mais espaçada, dá tempo de ver a onda chegar de longe e se posicionar com calma. Dá pra todo mundo se divertir hoje, cada um no seu canto e no seu ritmo.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|peito-ombro|medio-7a9|lateral-fraco|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Foguete inconstante hoje",
+          "analise": "O sol mais alto encontra Foguete, incerta, sofrendo com o ângulo. Sopra vento lateral, soprando de través, dá uma enrugada sem destruir tudo. O swell chega de leste, de raspão, sem entrar de frente na bancada. Na água, energia forte, o drop cobra decisão rápida e quem hesita toma caldo, e as ondas chegam em série espaçada, sobra tempo pra escolher a certa e remar sem afobação. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": "15h-17h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "figueira|cintura-peito|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Figueira entre luz e sombra",
+          "analise": "A noite cobre Figueira, com corpo, ainda que um pouco incomodada. Sopra vento lateral, atravessado, que incomoda mas não estraga de vez. Na água, força moderada, pede atenção na escolha do pico mas não assusta, e a formação é mais espaçada, então dá pra estudar o pico antes de se comprometer. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "castelhanos|cintura-peito|medio-7a9|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Castelhanos lisa e generosa",
+          "analise": "A tarde pega Castelhanos, organizada e generosa. Sopra vento offshore, o terral que sai da terra pro mar e alisa a onda. Na água, energia mediana, a remada cansa um pouco mais mas ainda é de boa vontade, e a série vem mais espaçada, dá tempo de ver a onda chegar de longe e se posicionar com calma. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|cintura-peito|curto-vaga|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Praia do Peró inconstante hoje",
+          "analise": "Praia do Peró aguenta o tranco da tarde, com corpo, ainda que um pouco incomodada. Sopra vento lateral, soprando de través, dá uma enrugada sem destruir tudo. Na água, força moderada, pede atenção na escolha do pico mas não assusta, e as ondas se amontoam em série curta, tudo mais nervoso e sem tempo de sobra. Quem já tem experiência de remada consegue posicionar bem e aproveitar a janela certa.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|joelho-cintura|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2.5,
+          "titulo": "Praia do Peró sob o onshore",
+          "analise": "Praia do Peró segura a virada da noite, de bom tamanho, porém cortada. Sopra vento onshore, que entra do mar e desmancha a parede. Na água, pouca força na água, remada tranquila, dá pra ficar horas sem sentir o braço pesar, e a formação é mais espaçada, então dá pra estudar o pico antes de se comprometer. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|cintura-peito|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Praia Brava (Arraial) com o vento de lado",
+          "analise": "Praia Brava (Arraial) fecha o dia, com corpo, ainda que um pouco incomodada. Sopra vento lateral, de través, que mexe a água sem desmanchar de vez. Na água, força moderada, pede atenção na escolha do pico mas não assusta, e a série vem mais espaçada, dá tempo de ver a onda chegar de longe e se posicionar com calma. Só quem tem experiência de verdade deve se arriscar hoje, leitura rápida é obrigatória.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|joelho-cintura|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Praia do Forte inconstante hoje",
+          "analise": "Sem luz, Praia do Forte segue, de bom tamanho, só um pouco irregular. Sopra vento lateral, soprando de través, dá uma enrugada sem destruir tudo. Na água, pouca força na água, remada tranquila, dá pra ficar horas sem sentir o braço pesar, e as ondas chegam em série espaçada, sobra tempo pra escolher a certa e remar sem afobação. Tanto quem está aprendendo quanto quem já manda bem encontram graça nessa condição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|joelho-cintura|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Praia Brava (Cabo Frio) entre luz e sombra",
+          "analise": "A noite cobre Praia Brava (Cabo Frio), com corpo, ainda que um pouco incomodada. Sopra vento lateral, atravessado, que incomoda mas não estraga de vez. Na água, a força é fraca, a remada sai leve e o passeio rende sem cansar, e a formação é mais espaçada, então dá pra estudar o pico antes de se comprometer. Só quem tem experiência de verdade deve se arriscar hoje, leitura rápida é obrigatória.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|cintura-peito|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Monte Alto com o vento de lado",
+          "analise": "Monte Alto entra na noite, de bom tamanho, só um pouco irregular. Sopra vento lateral, de través, que mexe a água sem desmanchar de vez. Na água, energia mediana, a remada cansa um pouco mais mas ainda é de boa vontade, e a série vem mais espaçada, dá tempo de ver a onda chegar de longe e se posicionar com calma. Surfista intermediário faz bonito lendo o pico com calma antes de se comprometer.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "fernando-de-noronha|peito-ombro|medio-7a9|offshore-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 7.5,
+          "titulo": "Fernando de Noronha no ponto",
+          "analise": "Fernando de Noronha aguenta o tranco da tarde, limpa, mas mal alinhada. Sopra vento offshore, terral que vem da praia pro mar e segura a parede lisa. O swell chega de leste, de raspão, sem entrar de frente na bancada. Na água, a força é pesada, o caldo castiga quem erra o tempo e a remada cansa de verdade, e as ondas chegam em série espaçada, sobra tempo pra escolher a certa e remar sem afobação. Só quem tem experiência de verdade deve se arriscar hoje, leitura rápida é obrigatória.",
+          "janela": "14h-16h",
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
+    },
+    "fernando-de-noronha|peito-ombro|medio-7a9|offshore-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 7.5,
+          "titulo": "Terral ajeita Fernando de Noronha",
+          "analise": "Fernando de Noronha segura a virada da noite, com bom acabamento, porém de raspão. Sopra vento offshore, aquele terral que sopra da areia pro mar e dá acabamento liso. O swell chega de leste, de raspão, sem entrar de frente na bancada. Na água, energia forte, o drop cobra decisão rápida e quem hesita toma caldo, e a formação é mais espaçada, então dá pra estudar o pico antes de se comprometer. É dia pra quem já rodou bastante, a leitura tem que ser rápida e a decisão também.",
+          "janela": null,
+          "aviso": "força de verdade na água hoje, respeite se não estiver em dia com o preparo físico"
+        }
+      ]
     }
   },
-  "generated_at": "2026-08-29T00:20:12.756Z"
+  "generated_at": "2026-08-29T06:16:14.436Z"
 }
