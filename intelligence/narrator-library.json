@@ -139001,7 +139001,1327 @@
           "aviso": "O fundo tem trechos de pedra, e com essa força na água a queda pede muito mais cuidado de quem não conhece o pico."
         }
       ]
+    },
+    "prainha|joelho-cintura|curto-vaga|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Prainha: Mar manso",
+          "analise": "Prainha recebe o swell com um terral de presença (vento que sai da terra e alisa a parede), deixando a água com acabamento liso. A série chega apertada, quase atropelada, com pouco intervalo entre uma onda e outra, e a energia é fraca, a remada não cansa e o drop não cobra quase nada. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: condição pra quem já rema bem e sabe escolher a hora certa de ir, respeito ao pico é lei.",
+          "janela": null,
+          "aviso": "Point de localismo respeitado: chegue observando, cumprimente quem já está na água e espere sua vez."
+        }
+      ]
+    },
+    "arroio-do-sal|ombro-cabeca|curto-vaga|onshore-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Arroio do Sal: Energia de peso",
+          "analise": "O mar de Arroio do Sal vem com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. Litoral norte gaúcho, beach break exposto aos swells de sul. As ondas vêm em cima uma da outra, série curta que não dá muito tempo de escolha, e a energia é forte, cada onda cobra remada decidida e o drop pesa na perna. O swell chega meio de raspão, na borda do que essa praia costuma aproveitar melhor, então a consistência não é garantida. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|joelho-cintura|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Praia Brava (Cabo Frio): Água calma",
+          "analise": "Praia Brava (Cabo Frio) entra nesse turno com um vento de través moderado (de lado, sem alisar nem desmanchar de vez), dando uma textura leve à parede. É série fechada, mar de vento mesmo com a condição favorável, decisão tem que ser rápida, e a energia é fraca, a remada não cansa e o drop não cobra quase nada. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale entrar com prancha um pouco mais estreita, o drop pede decisão rápida.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "rosa|peito-ombro|curto-vaga|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Praia do Rosa: Força na medida",
+          "analise": "A parede de Praia do Rosa chega com um vento de través bem fraco (soprando de lado), que passa quase despercebido na água. A série chega apertada, quase atropelada, com pouco intervalo entre uma onda e outra, e a energia é moderada, dá corpo real pra onda sem exigir preparo físico extremo. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: janela boa pra evoluir posicionamento, vale estudar o pico antes de remar pra dentro.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|joelho-cintura|curto-vaga|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Grumari: Mar manso",
+          "analise": "Grumari segue com um terral de presença (vento que sai da terra e alisa a parede), deixando a água com acabamento liso. Praia selvagem vizinha à Prainha, área de proteção ambiental, sem construções. As ondas vêm em cima uma da outra, série curta que não dá muito tempo de escolha, e a energia é fraca, a remada não cansa e o drop não cobra quase nada. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|joelho-cintura|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Recreio dos Bandeirantes: Dia tranquilo",
+          "analise": "O pico de Recreio dos Bandeirantes trabalha com um vento de través moderado (de lado, sem alisar nem desmanchar de vez), dando uma textura leve à parede. É série fechada, mar de vento mesmo com a condição favorável, decisão tem que ser rápida, e a energia é fraca, sessão leve, boa pra quem quer treinar sem gastar muita força. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|cintura-peito|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Macumba: Água calma",
+          "analise": "A condição de Macumba vem com um vento de través moderado (de lado, sem alisar nem desmanchar de vez), dando uma textura leve à parede. A série chega apertada, quase atropelada, com pouco intervalo entre uma onda e outra, e a energia é fraca, a remada não cansa e o drop não cobra quase nada. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: dia que serve gente de níveis diferentes, cada um encontra seu canto.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|joelho-cintura|curto-vaga|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Macumba: Sessão suave",
+          "analise": "Macumba abre a sessão com um terral de presença (vento que sai da terra e alisa a parede), deixando a água com acabamento liso. Beach break democrático do Recreio/Macumba, escola de muita gente do Rio. As ondas vêm em cima uma da outra, série curta que não dá muito tempo de escolha, e a energia é fraca, sessão leve, boa pra quem quer treinar sem gastar muita força. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: dá uma volta pela faixa antes de escolher onde entrar, a praia tem mais de um pico bom.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "costao-do-santinho|peito-ombro|curto-vaga|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Costão do Santinho: Mar com corpo",
+          "analise": "Costão do Santinho recebe o swell com um terral fraquinho (vento que sai da terra e vai pro mar), só dando uma leve arrumada na superfície. É série fechada, mar de vento mesmo com a condição favorável, decisão tem que ser rápida, e a energia é moderada, pede atenção na remada mas não castiga quem erra a posição. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|peito-ombro|medio-7a9|onshore-fraco|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Unamar: Condição equilibrada",
+          "analise": "O mar de Unamar vem com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. A série vem num intervalo razoável, dá tempo de se posicionar com calma antes de remar, e a energia é moderada, dá corpo real pra onda sem exigir preparo físico extremo. O encaixe do swell fica na borda da janela que essa praia prefere, então a qualidade pode variar de onda pra onda. Fechamento: janela boa pra evoluir posicionamento, vale estudar o pico antes de remar pra dentro.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "massaguacu|joelho-cintura|curto-vaga|offshore-forte|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Massaguaçu: Água calma",
+          "analise": "Massaguaçu entra nesse turno com um terral forte (vento que sai da terra e disciplina a água), que já segura tanto a onda que ela demora mais pra fechar. Beach break de Caraguatatuba, pega bem os swells de sul, ondas com força. As ondas vêm em cima uma da outra, série curta que não dá muito tempo de escolha, e a energia é fraca, a remada não cansa e o drop não cobra quase nada. O swell chega meio de raspão, na borda do que essa praia costuma aproveitar melhor, então a consistência não é garantida. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "mocambique|peito-ombro|curto-vaga|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Moçambique: Força na medida",
+          "analise": "A parede de Moçambique chega com um terral fraquinho (vento que sai da terra e vai pro mar), só dando uma leve arrumada na superfície. É série fechada, mar de vento mesmo com a condição favorável, decisão tem que ser rápida, e a energia é moderada, dá corpo real pra onda sem exigir preparo físico extremo. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|ombro-cabeca|medio-7a9|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Arroio do Sal: Mar pesado",
+          "analise": "Arroio do Sal segue com um vento de través forte (soprando de lado com intensidade), mexendo a parede e empurrando quem rema. A série vem num intervalo razoável, dá tempo de se posicionar com calma antes de remar, e a energia é pesada, a remada cansa de verdade e o drop vem com pressão. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: janela boa pra evoluir posicionamento, vale estudar o pico antes de remar pra dentro.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "atalaia|cintura-peito|curto-vaga|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Atalaia: Condição equilibrada",
+          "analise": "O pico de Atalaia trabalha com um terral de presença (vento que sai da terra e alisa a parede), deixando a água com acabamento liso. Praia do litoral norte catarinense (Itajaí/BC), beach break com swell de sul. As ondas vêm em cima uma da outra, série curta que não dá muito tempo de escolha, e a energia é moderada, dá corpo real pra onda sem exigir preparo físico extremo. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|peito-ombro|medio-7a9|onshore-fraco|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Monte Alto: Bom pique",
+          "analise": "A condição de Monte Alto vem com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. A série chega num ritmo tranquilo, tempo suficiente pra escolher a onda e se ajustar, e a energia é moderada, pede atenção na remada mas não castiga quem erra a posição. O encaixe é limítrofe hoje, então vale ser seletivo e não remar pra qualquer formação. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-do-sahy|cintura-peito|curto-vaga|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Barra do Sahy: Sessão suave",
+          "analise": "Barra do Sahy abre a sessão com um terral de presença (vento que sai da terra e alisa a parede), deixando a água com acabamento liso. A série chega apertada, quase atropelada, com pouco intervalo entre uma onda e outra, e a energia é fraca, sessão leve, boa pra quem quer treinar sem gastar muita força. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: dia bom pra quem tá começando aproveitar sem pressa, o canto mais protegido pede menos leitura.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "rosa|peito-ombro|medio-7a9|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Praia do Rosa: Mar com corpo",
+          "analise": "Praia do Rosa recebe o swell com um vento de través forte (soprando de lado com intensidade), mexendo a parede e empurrando quem rema. Enseada cênica de Imbituba, uma das mais bonitas do Brasil, avistamento de baleias franca no inverno. O intervalo entre as ondas é confortável, dá pra estudar o pico sem pressa, e a energia é moderada, pede atenção na remada mas não castiga quem erra a posição. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "torres|peito-ombro|medio-7a9|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Torres: Energia de peso",
+          "analise": "O mar de Torres vem com um vento de través forte (soprando de lado com intensidade), mexendo a parede e empurrando quem rema. A série chega num ritmo tranquilo, tempo suficiente pra escolher a onda e se ajustar, e a energia é forte, cada onda cobra remada decidida e o drop pesa na perna. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|peito-ombro|medio-7a9|offshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia do Porto (Imbituba): Bom pique",
+          "analise": "Praia do Porto (Imbituba) entra nesse turno com um terral forte (vento que sai da terra e disciplina a água), que já segura tanto a onda que ela demora mais pra fechar. A série vem num intervalo razoável, dá tempo de se posicionar com calma antes de remar, e a energia é moderada, pede atenção na remada mas não castiga quem erra a posição. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: condição pra quem já rema bem e sabe escolher a hora certa de ir, respeito ao pico é lei.",
+          "janela": "8h-11h",
+          "aviso": null
+        }
+      ]
+    },
+    "camburi|cintura-peito|curto-vaga|offshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Camburi: Sessão suave",
+          "analise": "A parede de Camburi chega com um terral de presença (vento que sai da terra e alisa a parede), deixando a água com acabamento liso. Beach break badalado do litoral norte de SP, entre São Sebastião e Maresias. As ondas vêm em cima uma da outra, série curta que não dá muito tempo de escolha, e a energia é fraca, sessão leve, boa pra quem quer treinar sem gastar muita força. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: dá uma volta pela faixa antes de escolher onde entrar, a praia tem mais de um pico bom.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-lagoa|cintura-peito|curto-vaga|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Barra da Lagoa: Mar manso",
+          "analise": "Barra da Lagoa segue com um terral fraquinho (vento que sai da terra e vai pro mar), só dando uma leve arrumada na superfície. É série fechada, mar de vento mesmo com a condição favorável, decisão tem que ser rápida, e a energia é fraca, a remada não cansa e o drop não cobra quase nada. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale prestar atenção no horário sugerido, a condição tende a fechar melhor nesse intervalo.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "guarda-do-embau|cintura-peito|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Guarda do Embaú: Dia tranquilo",
+          "analise": "O pico de Guarda do Embaú trabalha com um vento de través bem fraco (soprando de lado), que passa quase despercebido na água. A série vem num intervalo razoável, dá tempo de se posicionar com calma antes de remar, e a energia é fraca, sessão leve, boa pra quem quer treinar sem gastar muita força. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: janela boa pra evoluir posicionamento, vale estudar o pico antes de remar pra dentro.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|peito-ombro|curto-vaga|lateral-forte|manha|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Unamar: Bom pique",
+          "analise": "A condição de Unamar vem com um vento de través forte (soprando de lado com intensidade), mexendo a parede e empurrando quem rema. Beach break de Tamoios/Cabo Frio, pega swell de sul. As ondas vêm em cima uma da outra, série curta que não dá muito tempo de escolha, e a energia é moderada, pede atenção na remada mas não castiga quem erra a posição. O swell chega meio de raspão, na borda do que essa praia costuma aproveitar melhor, então a consistência não é garantida. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": "8h-11h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|peito-ombro|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Foguete: Parede com força",
+          "analise": "Foguete abre a sessão com um vento de través forte (soprando de lado com intensidade), mexendo a parede e empurrando quem rema. É série fechada, mar de vento mesmo com a condição favorável, decisão tem que ser rápida, e a energia é forte, cada onda cobra remada decidida e o drop pesa na perna. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "setiba|cintura-peito|curto-vaga|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Setiba: Mar com corpo",
+          "analise": "Setiba recebe o swell com um vento de través forte (soprando de lado com intensidade), mexendo a parede e empurrando quem rema. A série chega apertada, quase atropelada, com pouco intervalo entre uma onda e outra, e a energia é moderada, pede atenção na remada mas não castiga quem erra a posição. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: janela boa pra evoluir posicionamento, vale estudar o pico antes de remar pra dentro.",
+          "janela": "12h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|peito-ombro|curto-vaga|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tombo: Condição equilibrada",
+          "analise": "O mar de Tombo vem com um terral fraquinho (vento que sai da terra e vai pro mar), só dando uma leve arrumada na superfície. A onda mais forte do Guarujá, praia de tombo, sede de campeonatos. As ondas vêm em cima uma da outra, série curta que não dá muito tempo de escolha, e a energia é moderada, dá corpo real pra onda sem exigir preparo físico extremo. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: guarde fôlego pra remada de volta, aqui ela cansa mais do que parece de fora.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|peito-ombro|curto-vaga|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Pitangueiras: Bom pique",
+          "analise": "Pitangueiras entra nesse turno com um terral fraquinho (vento que sai da terra e vai pro mar), só dando uma leve arrumada na superfície. É série fechada, mar de vento mesmo com a condição favorável, decisão tem que ser rápida, e a energia é moderada, pede atenção na remada mas não castiga quem erra a posição. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale prestar atenção no horário sugerido, a condição tende a fechar melhor nesse intervalo.",
+          "janela": "8h-11h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-do-sahy|peito-ombro|curto-vaga|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Barra do Sahy: Força na medida",
+          "analise": "A parede de Barra do Sahy chega com um vento de través bem fraco (soprando de lado), que passa quase despercebido na água. A série chega apertada, quase atropelada, com pouco intervalo entre uma onda e outra, e a energia é moderada, dá corpo real pra onda sem exigir preparo físico extremo. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: dia bom pra quem tá começando aproveitar sem pressa, o canto mais protegido pede menos leitura.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "itacoatiara|ombro-cabeca|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Itacoatiara: Mar pesado",
+          "analise": "Itacoatiara segue com um vento de través bem fraco (soprando de lado), que passa quase despercebido na água. Itacoa, em Niterói, uma das ondas mais pesadas e tradicionais do RJ. O intervalo entre as ondas é confortável, dá pra estudar o pico sem pressa, e a energia é pesada, a remada cansa de verdade e o drop vem com pressão. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: guarde fôlego pra remada de volta, aqui ela cansa mais do que parece de fora.",
+          "janela": null,
+          "aviso": "Point de localismo respeitado: chegue observando, cumprimente quem já está na água e espere sua vez."
+        }
+      ]
+    },
+    "pantano-do-sul|cintura-peito|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Pântano do Sul: Dia tranquilo",
+          "analise": "O pico de Pântano do Sul trabalha com um maral fraco no ar (vento que vem do mar pra terra e enruga a água), sem atrapalhar muito a leitura. A série chega num ritmo tranquilo, tempo suficiente pra escolher a onda e se ajustar, e a energia é fraca, sessão leve, boa pra quem quer treinar sem gastar muita força. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|peito-ombro|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Recreio dos Bandeirantes: Dia forte",
+          "analise": "A condição de Recreio dos Bandeirantes vem com um vento de través bem fraco (soprando de lado), que passa quase despercebido na água. A série vem num intervalo razoável, dá tempo de se posicionar com calma antes de remar, e a energia é pesada, a remada cansa de verdade e o drop vem com pressão. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: janela boa pra evoluir posicionamento, vale estudar o pico antes de remar pra dentro.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|cintura-peito|curto-vaga|lateral-forte|manha|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Praia do Forte: Força na medida",
+          "analise": "Praia do Forte abre a sessão com um vento de través forte (soprando de lado com intensidade), mexendo a parede e empurrando quem rema. 7km de beach break exposto em Cabo Frio. As ondas vêm em cima uma da outra, série curta que não dá muito tempo de escolha, e a energia é moderada, dá corpo real pra onda sem exigir preparo físico extremo. O swell chega meio de raspão, na borda do que essa praia costuma aproveitar melhor, então a consistência não é garantida. Dica de amigo: dá uma volta pela faixa antes de escolher onde entrar, a praia tem mais de um pico bom.",
+          "janela": "6h-10h",
+          "aviso": "Tem rocha em trechos da praia: fique de olho na maré e mantenha distância nos pontos mais rasos."
+        }
+      ]
+    },
+    "regencia|peito-ombro|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Regência: Mar pesado",
+          "analise": "Regência recebe o swell com um vento de través moderado (de lado, sem alisar nem desmanchar de vez), dando uma textura leve à parede. A série vem espaçada e organizada, sobra tempo até pra respirar entre uma onda e outra, e a energia é pesada, a remada cansa de verdade e o drop vem com pressão. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale entrar com prancha um pouco mais estreita, o drop pede decisão rápida.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "guarda-do-embau|joelho-cintura|medio-7a9|offshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Guarda do Embaú: Água calma",
+          "analise": "O mar de Guarda do Embaú vem com um terral forte (vento que sai da terra e disciplina a água), que já segura tanto a onda que ela demora mais pra fechar. A série vem num intervalo razoável, dá tempo de se posicionar com calma antes de remar, e a energia é fraca, sessão leve, boa pra quem quer treinar sem gastar muita força. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: janela boa pra evoluir posicionamento, vale estudar o pico antes de remar pra dentro.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|ombro-cabeca|bom-9a11|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Unamar: Energia no talo",
+          "analise": "Unamar entra nesse turno com um vento de través forte (soprando de lado com intensidade), mexendo a parede e empurrando quem rema. Beach break de Tamoios/Cabo Frio, pega swell de sul. O intervalo entre as ondas é generoso, dá pra ver a onda vindo de longe e se posicionar sem afobação, e a energia é bem pesada, a remada exige fôlego e o caldo castiga quem se atrasa no drop. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": "14h-17h",
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "foguete|ombro-cabeca|bom-9a11|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Foguete: Peso no pico",
+          "analise": "A parede de Foguete chega com um vento de través castigando (de lado, sem trégua), bagunçando a leitura da parede de ponta a ponta. A série vem espaçada e organizada, sobra tempo até pra respirar entre uma onda e outra, e a energia é muito pesada hoje, sessão de gente com preparo físico em dia. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": "13h-17h",
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "matinhos|joelho-cintura|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Matinhos: Mar manso",
+          "analise": "Matinhos segue com um terral fraquinho (vento que sai da terra e vai pro mar), só dando uma leve arrumada na superfície. A série vem num intervalo razoável, dá tempo de se posicionar com calma antes de remar, e a energia é fraca, a remada não cansa e o drop não cobra quase nada. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: dia que serve gente de níveis diferentes, cada um encontra seu canto.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "mocambique|peito-ombro|bom-9a11|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Moçambique: Condição equilibrada",
+          "analise": "O pico de Moçambique trabalha com um terral forte (vento que sai da terra e disciplina a água), que já segura tanto a onda que ela demora mais pra fechar. A praia mais longa de Floripa, deserta e preservada (parque estadual). O intervalo entre as ondas é generoso, dá pra ver a onda vindo de longe e se posicionar sem afobação, e a energia é moderada, dá corpo real pra onda sem exigir preparo físico extremo. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "caioba|joelho-cintura|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Caiobá: Água calma",
+          "analise": "A condição de Caiobá vem com um terral fraquinho (vento que sai da terra e vai pro mar), só dando uma leve arrumada na superfície. A série chega num ritmo tranquilo, tempo suficiente pra escolher a onda e se ajustar, e a energia é fraca, a remada não cansa e o drop não cobra quase nada. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": "8h-11h",
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|ombro-cabeca|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Arpoador: Parede com força",
+          "analise": "Arpoador abre a sessão com um terral fraquinho (vento que sai da terra e vai pro mar), só dando uma leve arrumada na superfície. A série chega bem espaçada, com tempo de sobra pra escolher a onda certa e preservar fôlego, e a energia é forte, cada onda cobra remada decidida e o drop pesa na perna. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: janela boa pra evoluir posicionamento, vale estudar o pico antes de remar pra dentro.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|ombro-cabeca|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Arpoador: Mar grande e pesado",
+          "analise": "Arpoador recebe o swell com um vento de través bem fraco (soprando de lado), que passa quase despercebido na água. O coração do surf carioca, peso geracional. O intervalo entre as ondas é generoso, dá pra ver a onda vindo de longe e se posicionar sem afobação, e a energia é bem pesada, a remada exige fôlego e o caldo castiga quem se atrasa no drop. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": "12h-15h",
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "praia-brava-arraial|ombro-cabeca|bom-9a11|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia Brava (Arraial): Dia de respeito",
+          "analise": "O mar de Praia Brava (Arraial) vem com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. A série vem espaçada e organizada, sobra tempo até pra respirar entre uma onda e outra, e a energia é muito pesada hoje, sessão de gente com preparo físico em dia. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale entrar com prancha um pouco mais estreita, o drop pede decisão rápida.",
+          "janela": "7h-10h",
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "praia-brava-arraial|ombro-cabeca|bom-9a11|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia Brava (Arraial): Energia no talo",
+          "analise": "Praia Brava (Arraial) entra nesse turno com um vento de través castigando (de lado, sem trégua), bagunçando a leitura da parede de ponta a ponta. A série chega bem espaçada, com tempo de sobra pra escolher a onda certa e preservar fôlego, e a energia é bem pesada, a remada exige fôlego e o caldo castiga quem se atrasa no drop. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: condição pra quem já rema bem e sabe escolher a hora certa de ir, respeito ao pico é lei.",
+          "janela": "14h-17h",
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "monte-alto|ombro-cabeca|bom-9a11|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Monte Alto: Peso no pico",
+          "analise": "A parede de Monte Alto chega com um vento de través castigando (de lado, sem trégua), bagunçando a leitura da parede de ponta a ponta. Beach break tranquilo de Arraial do Cabo. O intervalo entre as ondas é generoso, dá pra ver a onda vindo de longe e se posicionar sem afobação, e a energia é muito pesada hoje, sessão de gente com preparo físico em dia. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": "13h-17h",
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "praia-da-vila|ombro-cabeca|bom-9a11|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia da Vila: Mar grande e pesado",
+          "analise": "Praia da Vila segue com um vento de través forte (soprando de lado com intensidade), mexendo a parede e empurrando quem rema. A série vem espaçada e organizada, sobra tempo até pra respirar entre uma onda e outra, e a energia é bem pesada, a remada exige fôlego e o caldo castiga quem se atrasa no drop. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": "12h-15h",
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "saquarema|ombro-cabeca|bom-9a11|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Saquarema: Dia de respeito",
+          "analise": "O pico de Saquarema trabalha com um vento de través forte (soprando de lado com intensidade), mexendo a parede e empurrando quem rema. A série chega bem espaçada, com tempo de sobra pra escolher a onda certa e preservar fôlego, e a energia é muito pesada hoje, sessão de gente com preparo físico em dia. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: condição pra quem já rema bem e sabe escolher a hora certa de ir, respeito ao pico é lei.",
+          "janela": "13h-16h",
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "barra-da-tijuca|ombro-cabeca|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Barra da Tijuca: Dia forte",
+          "analise": "A condição de Barra da Tijuca vem com um vento de través moderado (de lado, sem alisar nem desmanchar de vez), dando uma textura leve à parede. Extenso beach break da Barra, vários picos ao longo dos postos. O intervalo entre as ondas é generoso, dá pra ver a onda vindo de longe e se posicionar sem afobação, e a energia é pesada, a remada cansa de verdade e o drop vem com pressão. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: dá uma volta pela faixa antes de escolher onde entrar, a praia tem mais de um pico bom.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|ombro-cabeca|bom-9a11|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia Grande: Peso no pico",
+          "analise": "Praia Grande abre a sessão com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. A série vem espaçada e organizada, sobra tempo até pra respirar entre uma onda e outra, e a energia é muito pesada hoje, sessão de gente com preparo físico em dia. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": "6h-10h",
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "praia-grande-arraial|ombro-cabeca|bom-9a11|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia Grande: Mar grande e pesado",
+          "analise": "Praia Grande recebe o swell com um vento de través castigando (de lado, sem trégua), bagunçando a leitura da parede de ponta a ponta. A série chega bem espaçada, com tempo de sobra pra escolher a onda certa e preservar fôlego, e a energia é bem pesada, a remada exige fôlego e o caldo castiga quem se atrasa no drop. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: janela boa pra evoluir posicionamento, vale estudar o pico antes de remar pra dentro.",
+          "janela": "12h-15h",
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "pantano-do-sul|joelho-cintura|medio-7a9|offshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Pântano do Sul: Água calma",
+          "analise": "O mar de Pântano do Sul vem com um terral forte (vento que sai da terra e disciplina a água), que já segura tanto a onda que ela demora mais pra fechar. Vila de pescadores no sul de Floripa, ondas com swell de sul, cenário tradicional. O intervalo entre as ondas é confortável, dá pra estudar o pico sem pressa, e a energia é fraca, sessão leve, boa pra quem quer treinar sem gastar muita força. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|ombro-cabeca|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Recreio dos Bandeirantes: Parede com força",
+          "analise": "Recreio dos Bandeirantes entra nesse turno com um terral de presença (vento que sai da terra e alisa a parede), deixando a água com acabamento liso. A série vem espaçada e organizada, sobra tempo até pra respirar entre uma onda e outra, e a energia é pesada, a remada cansa de verdade e o drop vem com pressão. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": "8h-11h",
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|ombro-cabeca|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Ipanema: Parede com força",
+          "analise": "A parede de Ipanema chega com um terral fraquinho (vento que sai da terra e vai pro mar), só dando uma leve arrumada na superfície. A série chega bem espaçada, com tempo de sobra pra escolher a onda certa e preservar fôlego, e a energia é forte, cada onda cobra remada decidida e o drop pesa na perna. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: dia que serve gente de níveis diferentes, cada um encontra seu canto.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|ombro-cabeca|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Ipanema: Mar grande e pesado",
+          "analise": "Ipanema segue com um vento de través bem fraco (soprando de lado), que passa quase despercebido na água. Beach break icônico da zona sul carioca. O intervalo entre as ondas é generoso, dá pra ver a onda vindo de longe e se posicionar sem afobação, e a energia é bem pesada, a remada exige fôlego e o caldo castiga quem se atrasa no drop. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: dá uma volta pela faixa antes de escolher onde entrar, a praia tem mais de um pico bom.",
+          "janela": "12h-15h",
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "figueira|ombro-cabeca|bom-9a11|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Figueira: Dia de respeito",
+          "analise": "O pico de Figueira trabalha com um vento de través castigando (de lado, sem trégua), bagunçando a leitura da parede de ponta a ponta. A série vem espaçada e organizada, sobra tempo até pra respirar entre uma onda e outra, e a energia é muito pesada hoje, sessão de gente com preparo físico em dia. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": "13h-16h",
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "foguete|cintura-peito|medio-7a9|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Foguete: Bom pique",
+          "analise": "A condição de Foguete vem com um terral fraquinho (vento que sai da terra e vai pro mar), só dando uma leve arrumada na superfície. A série vem num intervalo razoável, dá tempo de se posicionar com calma antes de remar, e a energia é moderada, pede atenção na remada mas não castiga quem erra a posição. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: janela boa pra evoluir posicionamento, vale estudar o pico antes de remar pra dentro.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|peito-ombro|curto-vaga|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Arroio do Sal: Força na medida",
+          "analise": "Arroio do Sal abre a sessão com um maral fraco no ar (vento que vem do mar pra terra e enruga a água), sem atrapalhar muito a leitura. Litoral norte gaúcho, beach break exposto aos swells de sul. As ondas vêm em cima uma da outra, série curta que não dá muito tempo de escolha, e a energia é moderada, dá corpo real pra onda sem exigir preparo físico extremo. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "cidreira|cintura-peito|curto-vaga|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Cidreira: Mar manso",
+          "analise": "Cidreira recebe o swell com um vento de través moderado (de lado, sem alisar nem desmanchar de vez), dando uma textura leve à parede. É série fechada, mar de vento mesmo com a condição favorável, decisão tem que ser rápida, e a energia é fraca, a remada não cansa e o drop não cobra quase nada. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": "12h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|joelho-cintura|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Joaquina: Dia tranquilo",
+          "analise": "O mar de Joaquina vem com um vento de través moderado (de lado, sem alisar nem desmanchar de vez), dando uma textura leve à parede. A série vem num intervalo razoável, dá tempo de se posicionar com calma antes de remar, e a energia é fraca, sessão leve, boa pra quem quer treinar sem gastar muita força. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: condição pra quem já rema bem e sabe escolher a hora certa de ir, respeito ao pico é lei.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|ombro-cabeca|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Farol de Santa Marta: Dia forte",
+          "analise": "Farol de Santa Marta entra nesse turno com um vento de través bem fraco (soprando de lado), que passa quase despercebido na água. O intervalo entre as ondas é confortável, dá pra estudar o pico sem pressa, e a energia é pesada, a remada cansa de verdade e o drop vem com pressão. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: guarde fôlego pra remada de volta, aqui ela cansa mais do que parece de fora.",
+          "janela": "8h-11h",
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|peito-ombro|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Prainha: Força na medida",
+          "analise": "A parede de Prainha chega com um vento de través moderado (de lado, sem alisar nem desmanchar de vez), dando uma textura leve à parede. É série fechada, mar de vento mesmo com a condição favorável, decisão tem que ser rápida, e a energia é moderada, dá corpo real pra onda sem exigir preparo físico extremo. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale entrar com prancha um pouco mais estreita, o drop pede decisão rápida.",
+          "janela": null,
+          "aviso": "Point de localismo respeitado: chegue observando, cumprimente quem já está na água e espere sua vez."
+        }
+      ]
+    },
+    "foguete|peito-ombro|curto-vaga|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Foguete: Mar com corpo",
+          "analise": "Foguete segue com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. A série chega apertada, quase atropelada, com pouco intervalo entre uma onda e outra, e a energia é moderada, pede atenção na remada mas não castiga quem erra a posição. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: janela boa pra evoluir posicionamento, vale estudar o pico antes de remar pra dentro.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|peito-ombro|curto-vaga|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Praia Brava (Arraial): Condição equilibrada",
+          "analise": "O pico de Praia Brava (Arraial) trabalha com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. Praia brava de Arraial do Cabo, mais pesada e exposta. As ondas vêm em cima uma da outra, série curta que não dá muito tempo de escolha, e a energia é moderada, dá corpo real pra onda sem exigir preparo físico extremo. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: guarde fôlego pra remada de volta, aqui ela cansa mais do que parece de fora.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|peito-ombro|curto-vaga|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Monte Alto: Força na medida",
+          "analise": "Monte Alto abre a sessão com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. É série fechada, mar de vento mesmo com a condição favorável, decisão tem que ser rápida, e a energia é moderada, pede atenção na remada mas não castiga quem erra a posição. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|peito-ombro|curto-vaga|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tombo: Força na medida",
+          "analise": "Tombo abre a sessão com um maral fraco no ar (vento que vem do mar pra terra e enruga a água), sem atrapalhar muito a leitura. A série chega apertada, quase atropelada, com pouco intervalo entre uma onda e outra, e a energia é moderada, dá corpo real pra onda sem exigir preparo físico extremo. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: condição pra quem já rema bem e sabe escolher a hora certa de ir, respeito ao pico é lei.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|peito-ombro|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tombo: Mar pesado",
+          "analise": "Tombo recebe o swell com um maral forte (vento do mar que embola a água antes da hora), a superfície fica irregular e pede leitura rápida. A onda mais forte do Guarujá, praia de tombo, sede de campeonatos. O intervalo entre as ondas é confortável, dá pra estudar o pico sem pressa, e a energia é pesada, a remada cansa de verdade e o drop vem com pressão. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: guarde fôlego pra remada de volta, aqui ela cansa mais do que parece de fora.",
+          "janela": null,
+          "aviso": "Mar mais bagunçado pelo vento: condição pra quem já tem estrada, cuidado redobrado no caldo."
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|joelho-cintura|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Praia Brava (Cabo Frio): Dia tranquilo",
+          "analise": "O mar de Praia Brava (Cabo Frio) vem com um maral fraco no ar (vento que vem do mar pra terra e enruga a água), sem atrapalhar muito a leitura. A série chega num ritmo tranquilo, tempo suficiente pra escolher a onda e se ajustar, e a energia é fraca, sessão leve, boa pra quem quer treinar sem gastar muita força. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale entrar com prancha um pouco mais estreita, o drop pede decisão rápida.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|joelho-cintura|curto-vaga|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Praia Brava (Cabo Frio): Sessão suave",
+          "analise": "Praia Brava (Cabo Frio) entra nesse turno com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. A série chega apertada, quase atropelada, com pouco intervalo entre uma onda e outra, e a energia é fraca, a remada não cansa e o drop não cobra quase nada. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: condição pra quem já rema bem e sabe escolher a hora certa de ir, respeito ao pico é lei.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|cintura-peito|curto-vaga|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Praia Brava (Cabo Frio): Mar manso",
+          "analise": "A parede de Praia Brava (Cabo Frio) chega com um maral fraco no ar (vento que vem do mar pra terra e enruga a água), sem atrapalhar muito a leitura. Trecho bravo de Cabo Frio, exposto e forte. As ondas vêm em cima uma da outra, série curta que não dá muito tempo de escolha, e a energia é fraca, sessão leve, boa pra quem quer treinar sem gastar muita força. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: guarde fôlego pra remada de volta, aqui ela cansa mais do que parece de fora.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|peito-ombro|curto-vaga|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Pitangueiras: Mar com corpo",
+          "analise": "Pitangueiras segue com um maral fraco no ar (vento que vem do mar pra terra e enruga a água), sem atrapalhar muito a leitura. É série fechada, mar de vento mesmo com a condição favorável, decisão tem que ser rápida, e a energia é moderada, pede atenção na remada mas não castiga quem erra a posição. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale prestar atenção no horário sugerido, a condição tende a fechar melhor nesse intervalo.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|peito-ombro|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Pitangueiras: Energia de peso",
+          "analise": "O pico de Pitangueiras trabalha com um maral forte (vento do mar que embola a água antes da hora), a superfície fica irregular e pede leitura rápida. A série vem num intervalo razoável, dá tempo de se posicionar com calma antes de remar, e a energia é forte, cada onda cobra remada decidida e o drop pesa na perna. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: dia que serve gente de níveis diferentes, cada um encontra seu canto.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|peito-ombro|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Grumari: Bom pique",
+          "analise": "A condição de Grumari vem com um vento de través moderado (de lado, sem alisar nem desmanchar de vez), dando uma textura leve à parede. Praia selvagem vizinha à Prainha, área de proteção ambiental, sem construções. As ondas vêm em cima uma da outra, série curta que não dá muito tempo de escolha, e a energia é moderada, pede atenção na remada mas não castiga quem erra a posição. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|cintura-peito|curto-vaga|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Praia do Peró: Sessão suave",
+          "analise": "Praia do Peró abre a sessão com um vento de través bem fraco (soprando de lado), que passa quase despercebido na água. É série fechada, mar de vento mesmo com a condição favorável, decisão tem que ser rápida, e a energia é fraca, sessão leve, boa pra quem quer treinar sem gastar muita força. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "jureia|peito-ombro|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Jureia: Mar pesado",
+          "analise": "Jureia recebe o swell com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. A série vem num intervalo razoável, dá tempo de se posicionar com calma antes de remar, e a energia é pesada, a remada cansa de verdade e o drop vem com pressão. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: janela boa pra evoluir posicionamento, vale estudar o pico antes de remar pra dentro.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "torres|cintura-peito|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Torres: Condição equilibrada",
+          "analise": "O mar de Torres vem com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. A capital do surf gaúcho, junto aos molhes e à Guarita. O intervalo entre as ondas é confortável, dá pra estudar o pico sem pressa, e a energia é moderada, dá corpo real pra onda sem exigir preparo físico extremo. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "domingas-dias|peito-ombro|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Domingas Dias: Bom pique",
+          "analise": "Domingas Dias entra nesse turno com um vento de través moderado (de lado, sem alisar nem desmanchar de vez), dando uma textura leve à parede. É série fechada, mar de vento mesmo com a condição favorável, decisão tem que ser rápida, e a energia é moderada, pede atenção na remada mas não castiga quem erra a posição. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Dica de amigo: prancha com mais volume ajuda a entrar nas ondas sem gastar tanta remada.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|peito-ombro|curto-vaga|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Praia Grande: Força na medida",
+          "analise": "A parede de Praia Grande chega com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. A série chega apertada, quase atropelada, com pouco intervalo entre uma onda e outra, e a energia é moderada, dá corpo real pra onda sem exigir preparo físico extremo. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: janela boa pra evoluir posicionamento, vale estudar o pico antes de remar pra dentro.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|joelho-cintura|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Praia do Forte: Mar manso",
+          "analise": "Praia do Forte segue com um maral fraco no ar (vento que vem do mar pra terra e enruga a água), sem atrapalhar muito a leitura. 7km de beach break exposto em Cabo Frio. O intervalo entre as ondas é confortável, dá pra estudar o pico sem pressa, e a energia é fraca, a remada não cansa e o drop não cobra quase nada. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: dá uma volta pela faixa antes de escolher onde entrar, a praia tem mais de um pico bom.",
+          "janela": "6h-9h",
+          "aviso": "Tem rocha em trechos da praia: fique de olho na maré e mantenha distância nos pontos mais rasos."
+        }
+      ]
+    },
+    "macumba|peito-ombro|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Macumba: Condição equilibrada",
+          "analise": "O pico de Macumba trabalha com um vento de través moderado (de lado, sem alisar nem desmanchar de vez), dando uma textura leve à parede. É série fechada, mar de vento mesmo com a condição favorável, decisão tem que ser rápida, e a energia é moderada, dá corpo real pra onda sem exigir preparo físico extremo. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale prestar atenção no horário sugerido, a condição tende a fechar melhor nesse intervalo.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|peito-ombro|curto-vaga|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Figueira: Bom pique",
+          "analise": "A condição de Figueira vem com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. A série chega apertada, quase atropelada, com pouco intervalo entre uma onda e outra, e a energia é moderada, pede atenção na remada mas não castiga quem erra a posição. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: janela boa pra evoluir posicionamento, vale estudar o pico antes de remar pra dentro.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "regencia|ombro-cabeca|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Regência: Parede com força",
+          "analise": "Regência abre a sessão com um vento de través forte (soprando de lado com intensidade), mexendo a parede e empurrando quem rema. Onda de foz do Rio Doce, direita longa e famosa, capital capixaba do surf. As ondas vêm em cima uma da outra, série curta que não dá muito tempo de escolha, e a energia é forte, cada onda cobra remada decidida e o drop pesa na perna. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: guarde fôlego pra remada de volta, aqui ela cansa mais do que parece de fora.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|grande-2x+|medio-7a9|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Farol de Santa Marta: Mar grande e pesado",
+          "analise": "Farol de Santa Marta recebe o swell com um vento de través castigando (de lado, sem trégua), bagunçando a leitura da parede de ponta a ponta. A série chega num ritmo tranquilo, tempo suficiente pra escolher a onda e se ajustar, e a energia é bem pesada, a remada exige fôlego e o caldo castiga quem se atrasa no drop. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale entrar com prancha um pouco mais estreita, o drop pede decisão rápida.",
+          "janela": "6h-9h",
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "farol-de-santa-marta|grande-2x+|medio-7a9|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Farol de Santa Marta: Dia de respeito",
+          "analise": "O mar de Farol de Santa Marta vem com um vento de través castigando (de lado, sem trégua), bagunçando a leitura da parede de ponta a ponta. A série vem num intervalo razoável, dá tempo de se posicionar com calma antes de remar, e a energia é muito pesada hoje, sessão de gente com preparo físico em dia. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: condição pra quem já rema bem e sabe escolher a hora certa de ir, respeito ao pico é lei.",
+          "janela": "13h-16h",
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "prainha|peito-ombro|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Prainha: Dia forte",
+          "analise": "Prainha entra nesse turno com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. Enseada em formato de V que concentra energia: quase sempre tem onda, mesmo com o resto flat. O intervalo entre as ondas é confortável, dá pra estudar o pico sem pressa, e a energia é pesada, a remada cansa de verdade e o drop vem com pressão. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: guarde fôlego pra remada de volta, aqui ela cansa mais do que parece de fora.",
+          "janela": "8h-11h",
+          "aviso": "Point de localismo respeitado: chegue observando, cumprimente quem já está na água e espere sua vez."
+        }
+      ]
+    },
+    "prainha|ombro-cabeca|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Prainha: Parede com força",
+          "analise": "A parede de Prainha chega com um maral forte (vento do mar que embola a água antes da hora), a superfície fica irregular e pede leitura rápida. A série chega num ritmo tranquilo, tempo suficiente pra escolher a onda e se ajustar, e a energia é forte, cada onda cobra remada decidida e o drop pesa na perna. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale entrar com prancha um pouco mais estreita, o drop pede decisão rápida.",
+          "janela": "13h-17h",
+          "aviso": "Point de localismo respeitado: chegue observando, cumprimente quem já está na água e espere sua vez."
+        }
+      ]
+    },
+    "prainha|grande-2x+|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Prainha: Mar grande e pesado",
+          "analise": "Prainha segue com um maral forte (vento do mar que embola a água antes da hora), a superfície fica irregular e pede leitura rápida. A série vem num intervalo razoável, dá tempo de se posicionar com calma antes de remar, e a energia é bem pesada, a remada exige fôlego e o caldo castiga quem se atrasa no drop. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: condição pra quem já rema bem e sabe escolher a hora certa de ir, respeito ao pico é lei.",
+          "janela": null,
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "itamambuca|peito-ombro|curto-vaga|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Itamambuca: Condição equilibrada",
+          "analise": "O pico de Itamambuca trabalha com um vento de través bem fraco (soprando de lado), que passa quase despercebido na água. O point mais tradicional de Ubatuba, sede de campeonatos, rio e mata atlântica. As ondas vêm em cima uma da outra, série curta que não dá muito tempo de escolha, e a energia é moderada, dá corpo real pra onda sem exigir preparo físico extremo. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "itamambuca|ombro-cabeca|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Itamambuca: Dia forte",
+          "analise": "A condição de Itamambuca vem com um vento de través moderado (de lado, sem alisar nem desmanchar de vez), dando uma textura leve à parede. A série chega num ritmo tranquilo, tempo suficiente pra escolher a onda e se ajustar, e a energia é pesada, a remada cansa de verdade e o drop vem com pressão. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "campeche|ombro-cabeca|curto-vaga|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Campeche: Parede com força",
+          "analise": "Campeche abre a sessão com um vento de través castigando (de lado, sem trégua), bagunçando a leitura da parede de ponta a ponta. A série chega apertada, quase atropelada, com pouco intervalo entre uma onda e outra, e a energia é forte, cada onda cobra remada decidida e o drop pesa na perna. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: condição pra quem já rema bem e sabe escolher a hora certa de ir, respeito ao pico é lei.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-floripa|peito-ombro|medio-7a9|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Praia Brava (Floripa): Mar com corpo",
+          "analise": "Praia Brava (Floripa) recebe o swell com um vento de través castigando (de lado, sem trégua), bagunçando a leitura da parede de ponta a ponta. A onda mais forte do norte de Floripa, beach break pesado e tubular com swell de S/SE. O intervalo entre as ondas é confortável, dá pra estudar o pico sem pressa, e a energia é moderada, pede atenção na remada mas não castiga quem erra a posição. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: guarde fôlego pra remada de volta, aqui ela cansa mais do que parece de fora.",
+          "janela": "6h-9h",
+          "aviso": "Point de localismo respeitado: chegue observando, cumprimente quem já está na água e espere sua vez."
+        }
+      ]
+    },
+    "castelhanos|cintura-peito|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Castelhanos: Condição equilibrada",
+          "analise": "O mar de Castelhanos vem com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. A série chega num ritmo tranquilo, tempo suficiente pra escolher a onda e se ajustar, e a energia é moderada, dá corpo real pra onda sem exigir preparo físico extremo. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "castelhanos|ombro-cabeca|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Castelhanos: Dia forte",
+          "analise": "Castelhanos entra nesse turno com um vento de través moderado (de lado, sem alisar nem desmanchar de vez), dando uma textura leve à parede. A série vem num intervalo razoável, dá tempo de se posicionar com calma antes de remar, e a energia é pesada, a remada cansa de verdade e o drop vem com pressão. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: janela boa pra evoluir posicionamento, vale estudar o pico antes de remar pra dentro.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "castelhanos|ombro-cabeca|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Castelhanos: Peso no pico",
+          "analise": "A parede de Castelhanos chega com um vento de través moderado (de lado, sem alisar nem desmanchar de vez), dando uma textura leve à parede. A praia exposta de Ilhabela, do outro lado da ilha, ondas de mar aberto. O intervalo entre as ondas é confortável, dá pra estudar o pico sem pressa, e a energia é muito pesada hoje, sessão de gente com preparo físico em dia. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": null,
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "geriba|ombro-cabeca|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Geribá: Mar pesado",
+          "analise": "Geribá segue com um vento de través forte (soprando de lado com intensidade), mexendo a parede e empurrando quem rema. A série chega num ritmo tranquilo, tempo suficiente pra escolher a onda e se ajustar, e a energia é pesada, a remada cansa de verdade e o drop vem com pressão. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale prestar atenção no horário sugerido, a condição tende a fechar melhor nesse intervalo.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "costao-do-santinho|ombro-cabeca|medio-7a9|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Costão do Santinho: Energia de peso",
+          "analise": "O pico de Costão do Santinho trabalha com um vento de través castigando (de lado, sem trégua), bagunçando a leitura da parede de ponta a ponta. A série vem num intervalo razoável, dá tempo de se posicionar com calma antes de remar, e a energia é forte, cada onda cobra remada decidida e o drop pesa na perna. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: janela boa pra evoluir posicionamento, vale estudar o pico antes de remar pra dentro.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|ombro-cabeca|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Unamar: Dia forte",
+          "analise": "A condição de Unamar vem com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. Beach break de Tamoios/Cabo Frio, pega swell de sul. O intervalo entre as ondas é confortável, dá pra estudar o pico sem pressa, e a energia é pesada, a remada cansa de verdade e o drop vem com pressão. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": "8h-11h",
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|grande-2x+|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Unamar: Peso no pico",
+          "analise": "Unamar abre a sessão com um maral forte (vento do mar que embola a água antes da hora), a superfície fica irregular e pede leitura rápida. A série chega num ritmo tranquilo, tempo suficiente pra escolher a onda e se ajustar, e a energia é muito pesada hoje, sessão de gente com preparo físico em dia. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": null,
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "foguete|ombro-cabeca|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Foguete: Mar pesado",
+          "analise": "Foguete recebe o swell com um maral forte (vento do mar que embola a água antes da hora), a superfície fica irregular e pede leitura rápida. A série vem num intervalo razoável, dá tempo de se posicionar com calma antes de remar, e a energia é pesada, a remada cansa de verdade e o drop vem com pressão. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: janela boa pra evoluir posicionamento, vale estudar o pico antes de remar pra dentro.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|grande-2x+|medio-7a9|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Foguete: Dia de respeito",
+          "analise": "O mar de Foguete vem com um maral forte (vento do mar que embola a água antes da hora), a superfície fica irregular e pede leitura rápida. Beach break de Cabo Frio, ondas com força e areia branca. O intervalo entre as ondas é confortável, dá pra estudar o pico sem pressa, e a energia é muito pesada hoje, sessão de gente com preparo físico em dia. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": null,
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "vermelha-do-norte|peito-ombro|curto-vaga|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Vermelha do Norte: Bom pique",
+          "analise": "Vermelha do Norte entra nesse turno com um vento de través bem fraco (soprando de lado), que passa quase despercebido na água. É série fechada, mar de vento mesmo com a condição favorável, decisão tem que ser rápida, e a energia é moderada, pede atenção na remada mas não castiga quem erra a posição. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "vermelha-do-norte|ombro-cabeca|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Vermelha do Norte: Parede com força",
+          "analise": "A parede de Vermelha do Norte chega com um vento de través bem fraco (soprando de lado), que passa quase despercebido na água. A série vem num intervalo razoável, dá tempo de se posicionar com calma antes de remar, e a energia é forte, cada onda cobra remada decidida e o drop pesa na perna. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: janela boa pra evoluir posicionamento, vale estudar o pico antes de remar pra dentro.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|peito-ombro|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Arpoador: Mar pesado",
+          "analise": "Arpoador segue com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. O coração do surf carioca, peso geracional. O intervalo entre as ondas é confortável, dá pra estudar o pico sem pressa, e a energia é pesada, a remada cansa de verdade e o drop vem com pressão. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|ombro-cabeca|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Arpoador: Energia de peso",
+          "analise": "O pico de Arpoador trabalha com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. A série chega num ritmo tranquilo, tempo suficiente pra escolher a onda e se ajustar, e a energia é forte, cada onda cobra remada decidida e o drop pesa na perna. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|grande-2x+|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Arpoador: Energia no talo",
+          "analise": "A condição de Arpoador vem com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. A série vem num intervalo razoável, dá tempo de se posicionar com calma antes de remar, e a energia é bem pesada, a remada exige fôlego e o caldo castiga quem se atrasa no drop. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: janela boa pra evoluir posicionamento, vale estudar o pico antes de remar pra dentro.",
+          "janela": null,
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "praia-brava-arraial|ombro-cabeca|medio-7a9|onshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Praia Brava (Arraial): Parede com força",
+          "analise": "Praia Brava (Arraial) abre a sessão com um maral forte (vento do mar que embola a água antes da hora), a superfície fica irregular e pede leitura rápida. Praia brava de Arraial do Cabo, mais pesada e exposta. O intervalo entre as ondas é confortável, dá pra estudar o pico sem pressa, e a energia é forte, cada onda cobra remada decidida e o drop pesa na perna. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: guarde fôlego pra remada de volta, aqui ela cansa mais do que parece de fora.",
+          "janela": "6h-10h",
+          "aviso": "Mar mais bagunçado pelo vento: condição pra quem já tem estrada, cuidado redobrado no caldo."
+        }
+      ]
+    },
+    "praia-brava-arraial|grande-2x+|medio-7a9|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Praia Brava (Arraial): Mar grande e pesado",
+          "analise": "Praia Brava (Arraial) recebe o swell com um maral castigando (vento do mar que desmonta a parede antes da hora), deixando o mar bem bagunçado. A série chega num ritmo tranquilo, tempo suficiente pra escolher a onda e se ajustar, e a energia é bem pesada, a remada exige fôlego e o caldo castiga quem se atrasa no drop. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale entrar com prancha um pouco mais estreita, o drop pede decisão rápida.",
+          "janela": null,
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "monte-alto|ombro-cabeca|medio-7a9|onshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Monte Alto: Energia de peso",
+          "analise": "O mar de Monte Alto vem com um maral forte (vento do mar que embola a água antes da hora), a superfície fica irregular e pede leitura rápida. A série vem num intervalo razoável, dá tempo de se posicionar com calma antes de remar, e a energia é forte, cada onda cobra remada decidida e o drop pesa na perna. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: janela boa pra evoluir posicionamento, vale estudar o pico antes de remar pra dentro.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|grande-2x+|medio-7a9|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Monte Alto: Energia no talo",
+          "analise": "Monte Alto entra nesse turno com um maral castigando (vento do mar que desmonta a parede antes da hora), deixando o mar bem bagunçado. Beach break tranquilo de Arraial do Cabo. O intervalo entre as ondas é confortável, dá pra estudar o pico sem pressa, e a energia é bem pesada, a remada exige fôlego e o caldo castiga quem se atrasa no drop. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": null,
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "tombo|cabeca-1.5x|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tombo: Peso no pico",
+          "analise": "A parede de Tombo chega com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. A série chega num ritmo tranquilo, tempo suficiente pra escolher a onda e se ajustar, e a energia é muito pesada hoje, sessão de gente com preparo físico em dia. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale entrar com prancha um pouco mais estreita, o drop pede decisão rápida.",
+          "janela": "13h-17h",
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "tombo|cabeca-1.5x|bom-9a11|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tombo: Mar grande e pesado",
+          "analise": "Tombo segue com um maral forte (vento do mar que embola a água antes da hora), a superfície fica irregular e pede leitura rápida. A série chega bem espaçada, com tempo de sobra pra escolher a onda certa e preservar fôlego, e a energia é bem pesada, a remada exige fôlego e o caldo castiga quem se atrasa no drop. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: condição pra quem já rema bem e sabe escolher a hora certa de ir, respeito ao pico é lei.",
+          "janela": null,
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|ombro-cabeca|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Praia Brava (Cabo Frio): Dia de respeito",
+          "analise": "O pico de Praia Brava (Cabo Frio) trabalha com um maral forte (vento do mar que embola a água antes da hora), a superfície fica irregular e pede leitura rápida. Trecho bravo de Cabo Frio, exposto e forte. O intervalo entre as ondas é confortável, dá pra estudar o pico sem pressa, e a energia é muito pesada hoje, sessão de gente com preparo físico em dia. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: guarde fôlego pra remada de volta, aqui ela cansa mais do que parece de fora.",
+          "janela": null,
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "pitangueiras|cabeca-1.5x|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Pitangueiras: Energia no talo",
+          "analise": "A condição de Pitangueiras vem com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. A série chega num ritmo tranquilo, tempo suficiente pra escolher a onda e se ajustar, e a energia é bem pesada, a remada exige fôlego e o caldo castiga quem se atrasa no drop. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale prestar atenção no horário sugerido, a condição tende a fechar melhor nesse intervalo.",
+          "janela": "14h-17h",
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "pitangueiras|cabeca-1.5x|bom-9a11|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Pitangueiras: Peso no pico",
+          "analise": "Pitangueiras abre a sessão com um maral forte (vento do mar que embola a água antes da hora), a superfície fica irregular e pede leitura rápida. A série chega bem espaçada, com tempo de sobra pra escolher a onda certa e preservar fôlego, e a energia é muito pesada hoje, sessão de gente com preparo físico em dia. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: dia que serve gente de níveis diferentes, cada um encontra seu canto.",
+          "janela": null,
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "praia-brava-buzios|ombro-cabeca|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia Brava (Búzios): Mar pesado",
+          "analise": "Praia Brava (Búzios) recebe o swell com um vento de través forte (soprando de lado com intensidade), mexendo a parede e empurrando quem rema. Praia de Búzios voltada ao leste, pega swells de SE/L. O intervalo entre as ondas é confortável, dá pra estudar o pico sem pressa, e a energia é pesada, a remada cansa de verdade e o drop vem com pressão. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "barra-do-sahy|cabeca-1.5x|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Barra do Sahy: Dia de respeito",
+          "analise": "O mar de Barra do Sahy vem com um maral fraco no ar (vento que vem do mar pra terra e enruga a água), sem atrapalhar muito a leitura. A série chega num ritmo tranquilo, tempo suficiente pra escolher a onda e se ajustar, e a energia é muito pesada hoje, sessão de gente com preparo físico em dia. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Dica de amigo: prancha com mais volume ajuda a entrar nas ondas sem gastar tanta remada.",
+          "janela": "13h-16h",
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "barra-do-sahy|cabeca-1.5x|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Barra do Sahy: Energia no talo",
+          "analise": "Barra do Sahy entra nesse turno com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. A série vem num intervalo razoável, dá tempo de se posicionar com calma antes de remar, e a energia é bem pesada, a remada exige fôlego e o caldo castiga quem se atrasa no drop. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: dia bom pra quem tá começando aproveitar sem pressa, o canto mais protegido pede menos leitura.",
+          "janela": null,
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "rosa|ombro-cabeca|medio-7a9|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Praia do Rosa: Peso no pico",
+          "analise": "A parede de Praia do Rosa chega com um vento de través castigando (de lado, sem trégua), bagunçando a leitura da parede de ponta a ponta. Enseada cênica de Imbituba, uma das mais bonitas do Brasil, avistamento de baleias franca no inverno. O intervalo entre as ondas é confortável, dá pra estudar o pico sem pressa, e a energia é muito pesada hoje, sessão de gente com preparo físico em dia. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": "13h-17h",
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
+    },
+    "rosa|peito-ombro|medio-7a9|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia do Rosa: Mar pesado",
+          "analise": "Praia do Rosa segue com um vento de través forte (soprando de lado com intensidade), mexendo a parede e empurrando quem rema. A série chega num ritmo tranquilo, tempo suficiente pra escolher a onda e se ajustar, e a energia é pesada, a remada cansa de verdade e o drop vem com pressão. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|peito-ombro|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Grumari: Energia de peso",
+          "analise": "O pico de Grumari trabalha com um maral de peso (vento que sopra do mar pra terra e desmancha a parede), deixando a superfície mais granulada. A série vem num intervalo razoável, dá tempo de se posicionar com calma antes de remar, e a energia é forte, cada onda cobra remada decidida e o drop pesa na perna. O encaixe do swell casa direto com a janela que essa praia gosta, então a condição tende a ficar confiável de ponta a ponta. Fechamento: janela boa pra evoluir posicionamento, vale estudar o pico antes de remar pra dentro.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|ombro-cabeca|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Grumari: Dia forte",
+          "analise": "A condição de Grumari vem com um maral forte (vento do mar que embola a água antes da hora), a superfície fica irregular e pede leitura rápida. Praia selvagem vizinha à Prainha, área de proteção ambiental, sem construções. O intervalo entre as ondas é confortável, dá pra estudar o pico sem pressa, e a energia é pesada, a remada cansa de verdade e o drop vem com pressão. O encaixe do swell é direto, dentro do que essa praia pede, o que deixa a condição mais previsível. Dica de amigo: observe duas ou três séries da areia antes de entrar, o pico muda de lugar ao longo da sessão.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|grande-2x+|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Grumari: Peso no pico",
+          "analise": "Grumari abre a sessão com um maral forte (vento do mar que embola a água antes da hora), a superfície fica irregular e pede leitura rápida. A série chega num ritmo tranquilo, tempo suficiente pra escolher a onda e se ajustar, e a energia é muito pesada hoje, sessão de gente com preparo físico em dia. O swell entra bem no que essa praia gosta de receber, dando mais consistência à sessão. Vale se posicionar um pouco mais afastado do miolo do pico, onde a leitura fica mais limpa.",
+          "janela": null,
+          "aviso": "Energia bem pesada hoje: vá com fôlego em dia, remada de volta cansa mais do que parece."
+        }
+      ]
     }
   },
-  "generated_at": "2026-08-31T18:15:54.648Z"
+  "generated_at": "2026-09-01T00:17:09.374Z"
 }
