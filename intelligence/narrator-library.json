@@ -145799,7 +145799,964 @@
           "aviso": "Energia pesada, avalie o preparo físico antes de remar até fora."
         }
       ]
+    },
+    "foguete|ombro-cabeca|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Mar pesado de manhã",
+          "analise": "O mar chega com uma força bruta, sem meio-termo. A série chega bem espaçada, dá tempo de ver a onda vindo de longe e se posicionar com calma. Um terral fraco, aquele vento que sai da terra e vai pro mar, já ajuda a segurar a face. O braço queima remando contra esse tanto de água. Vale a pena encarar: a dica é escolher o canto mais protegido do vento e não forçar a mão fora da hora certa.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "rosa|peito-ombro|medio-7a9|onshore-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Mar com força leve à noite",
+          "analise": "O mar chega com uma força ainda leve, que dá pra sentir sem cansar. A série chega com um espaçamento que ajuda a ler o próximo conjunto, vindo de leste meio de raspão pra esse pico, o que já tira um pouco da força antes de chegar na arrebentação. Um onshore moderado entra, picotando a face e deixando a água menos organizada. Dá pra sentir o empurrão sem que ele domine a manobra. Fraquinho pra quem busca onda de peso, mas bom pra evoluir remada e leitura: vale ler bem o banco antes de remar pra fora e escolher a prancha certa pro tamanho do dia.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|peito-ombro|curto-vaga|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Mar com força leve à noite",
+          "analise": "A leitura de hoje mostra uma força ainda leve, que dá pra sentir sem cansar. As séries vêm juntas e rápidas, mal dá tempo de se posicionar de novo. Um onshore fraco, vento fraco vindo do mar pra terra, mexe pouco a superfície. O corpo sente o gás, mas responde bem sem sufoco. Dia mais fraco de energia, ideal pra quem quer treinar sem cobrança: tem espaço pra todo mundo, mas observar o banco antes de entrar sempre ajuda.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|joelho-cintura|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Mar manso à tarde",
+          "analise": "O mar chega com pouca força, quase sem empurrão. O intervalo entre as ondas dá um respiro razoável, dá pra se ajustar sem correria. Sopra um onshore leve, aquele vento do mar que só encrespa de leve a água. A remada sai fácil, sem gastar quase nada de braço. Não é o dia mais generoso, mas serve pra treinar sem pressão: a dica é escolher o canto mais protegido do vento e não forçar a mão fora da hora certa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "barra-do-sahy|cintura-peito|curto-vaga|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Mar com força leve à noite",
+          "analise": "A água entra com uma força ainda leve, que dá pra sentir sem cansar. O intervalo entre as ondas é curto, dá pra sentir aquele mar mais atropelado. O vento praticamente não sopra, a superfície fica lisa igual a um espelho. Dá pra sentir o empurrão sem que ele domine a manobra. Não é o dia perfeito, mas rende uma sessão honesta: vale usar uma prancha maior, com mais volume, pra facilitar entrada e remada.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|peito-ombro|curto-vaga|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Mar com força leve à noite",
+          "analise": "A condição traz uma força ainda leve, que dá pra sentir sem cansar. As séries vêm juntas e rápidas, mal dá tempo de se posicionar de novo. Sopra um onshore leve, aquele vento do mar que só encrespa de leve a água. O corpo sente o gás, mas responde bem sem sufoco. Dia mais fraco de energia, ideal pra quem quer treinar sem cobrança: dá pra explorar o pico com confiança, mas o respeito à fila e a leitura do banco seguem sendo a diferença.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "setiba|joelho-cintura|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Mar manso à noite",
+          "analise": "A leitura de hoje mostra pouca força, quase sem empurrão. O intervalo entre as ondas dá um respiro razoável, dá pra se ajustar sem correria. Um vento fraco de lado mal se sente na água. A remada sai fácil, sem gastar quase nada de braço. Dá pra aproveitar com prancha e expectativa certas: a dica é escolher o canto mais protegido do vento e não forçar a mão fora da hora certa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "capao-da-canoa|cintura-peito|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Mar manso à tarde",
+          "analise": "A água entra com pouca força, quase sem empurrão. A série chega com um espaçamento que ajuda a ler o próximo conjunto. Um onshore moderado entra, picotando a face e deixando a água menos organizada. O corpo mal sente resistência entrando na água. Fraquinho pra quem busca onda de peso, mas bom pra evoluir remada e leitura: cada nível encontra seu canto aqui, então vale observar o pico um pouco antes de remar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|peito-ombro|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Mar com força leve de manhã",
+          "analise": "O pico recebe uma força ainda leve, que dá pra sentir sem cansar. As ondas vêm com um ritmo mais organizado, tempo suficiente pra se recompor. O onshore, vento que vem do mar pra terra e bagunça a onda, sopra com alguma força e tira um pouco da limpeza. O corpo sente o gás, mas responde bem sem sufoco. Dia mais fraco de energia, ideal pra quem quer treinar sem cobrança: melhor remar com calma, escolher a série certa e não gastar energia em onda ruim.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "regencia|cintura-peito|curto-vaga|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Mar manso à noite",
+          "analise": "A condição traz pouca força, quase sem empurrão. A série chega apertada, uma onda atrás da outra, sem tempo de respirar entre elas. Um lateral forte entra, vento soprando de través com bastante intensidade, exige ajuste constante de remada. A remada sai fácil, sem gastar quase nada de braço, já que a onda nasce bem na foz do rio, então o banco de areia muda com frequência e vale ler o canal antes de remar pra fora. Não é o dia mais generoso, mas serve pra treinar sem pressão: quem já tem repertório vai aproveitar bem, mas a dica é escolher a série certa e não forçar remada em cima da hora.",
+          "janela": null,
+          "aviso": "Foz de rio muda banco e correnteza o tempo todo, cuidado redobrado na saída e na leitura do canal."
+        }
+      ]
+    },
+    "foguete|peito-ombro|curto-vaga|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Mar com força leve de manhã",
+          "analise": "A superfície apresenta uma força ainda leve, que dá pra sentir sem cansar. O intervalo entre as ondas é curto, dá pra sentir aquele mar mais atropelado. Um onshore fraco, vento fraco vindo do mar pra terra, mexe pouco a superfície. Dá pra sentir o empurrão sem que ele domine a manobra. Fraquinho pra quem busca onda de peso, mas bom pra evoluir remada e leitura: vale ler bem o banco antes de remar pra fora e escolher a prancha certa pro tamanho do dia.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "itacoatiara|peito-ombro|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Mar com força leve de manhã",
+          "analise": "A arrebentação entrega uma força ainda leve, que dá pra sentir sem cansar. As ondas vêm com um ritmo mais organizado, tempo suficiente pra se recompor. Um onshore moderado entra, picotando a face e deixando a água menos organizada. O corpo sente o gás, mas responde bem sem sufoco. Dia mais fraco de energia, ideal pra quem quer treinar sem cobrança: dá pra explorar o pico com confiança, mas o respeito à fila e a leitura do banco seguem sendo a diferença.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "maresias|peito-ombro|curto-vaga|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Mar com força leve de manhã",
+          "analise": "A previsão aponta uma força ainda leve, que dá pra sentir sem cansar. A série chega apertada, uma onda atrás da outra, sem tempo de respirar entre elas. O onshore, vento que vem do mar pra terra e bagunça a onda, sopra com alguma força e tira um pouco da limpeza. A remada pede um esforço moderado, mas segue tranquila. Não é o dia mais generoso, mas serve pra treinar sem pressão: quem já tem repertório vai aproveitar bem, mas a dica é escolher a série certa e não forçar remada em cima da hora.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|ombro-cabeca|curto-vaga|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Mar com força média à tarde",
+          "analise": "O mar chega com uma força já presente, que começa a cobrar da remada. O intervalo entre as ondas é curto, dá pra sentir aquele mar mais atropelado. Um onshore forte entra e destrói boa parte da organização, vento de frente atrapalhando a remada. O corpo sente o puxão logo na entrada, exige postura firme. Fraquinho pra quem busca onda de peso, mas bom pra evoluir remada e leitura: vale ler bem o banco antes de remar pra fora e escolher a prancha certa pro tamanho do dia.",
+          "janela": null,
+          "aviso": "Combinação de mar grande com vento forte cobra experiência real na remada de saída e na leitura do canal."
+        }
+      ]
+    },
+    "vermelha-do-norte|peito-ombro|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Mar com força média à noite",
+          "analise": "A leitura de hoje mostra uma força já presente, que começa a cobrar da remada. As séries vêm juntas e rápidas, mal dá tempo de se posicionar de novo. Um vento fraco de lado mal se sente na água. Dá pra sentir o peso na descida, cobra atenção no pé de trás. Longe de ser o melhor dia, mas ainda vale entrar: melhor remar com calma, escolher a série certa e não gastar energia em onda ruim.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "bonete|ombro-cabeca|curto-vaga|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Mar forte à noite",
+          "analise": "O mar chega com uma força pesada, que já exige braço. A série chega apertada, uma onda atrás da outra, sem tempo de respirar entre elas. Um onshore moderado entra, picotando a face e deixando a água menos organizada. O braço cansa rápido remando contra esse volume. Dá pra aproveitar com prancha e expectativa certas: quem já tem repertório vai aproveitar bem, mas a dica é escolher a série certa e não forçar remada em cima da hora.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|peito-ombro|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Mar com força leve de manhã",
+          "analise": "A faixa de onda chega com uma força ainda leve, que dá pra sentir sem cansar. A série chega com um espaçamento que ajuda a ler o próximo conjunto. O onshore, vento que vem do mar pra terra e bagunça a onda, sopra com alguma força e tira um pouco da limpeza. Dá pra sentir o empurrão sem que ele domine a manobra. Fraquinho pra quem busca onda de peso, mas bom pra evoluir remada e leitura: cada nível encontra seu canto aqui, então vale observar o pico um pouco antes de remar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "geriba|peito-ombro|medio-7a9|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar forte à noite",
+          "analise": "A leitura de hoje mostra uma força pesada, que já exige braço. As ondas vêm com um ritmo mais organizado, tempo suficiente pra se recompor. Sopra um terral leve, vento de terra pro mar que alisa sem exagero. A remada exige ritmo forte, sem espaço pra preguiça. Condição boa de verdade hoje: tem espaço pra todo mundo, mas observar o banco antes de entrar sempre ajuda.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "mocambique|ombro-cabeca|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar forte de manhã",
+          "analise": "A água entra com uma força pesada, que já exige braço. O intervalo entre as ondas dá um respiro razoável, dá pra se ajustar sem correria. Um vento fraco de lado mal se sente na água. O braço cansa rápido remando contra esse volume. Vale a pena encarar: a dica é escolher o canto mais protegido do vento e não forçar a mão fora da hora certa.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|cabeca-1.5x|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Mar pesado à tarde",
+          "analise": "A leitura de hoje mostra uma força bruta, sem meio-termo. O intervalo entre as ondas é generoso, o mar fica mais organizado e as paredes ganham corpo. Sopra uma brisa fraca de través, vento soprando de lado sem incomodar muito. O corpo sente o caldo pesado, a descida cobra decisão rápida, já que a quebra acontece numa laje de pedra, o que desenha melhor a parede mas cobra respeito na saída perto da pedra. É um daqueles dias que compensa se organizar pra aproveitar: a onda pede leitura rápida e prancha ajustada ao tamanho, então vale estudar o pico antes de remar pra fora.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|ombro-cabeca|bom-9a11|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar pesado à noite",
+          "analise": "A água entra com uma força bruta, sem meio-termo. As ondas chegam espaçadas, com aquele tempo extra que deixa tudo mais previsível. O vento praticamente não sopra, a superfície fica lisa igual a um espelho. A remada vira treino de verdade, cada onda testa o fôlego inteiro, já que a quebra acontece numa laje de pedra, o que desenha melhor a parede mas cobra respeito na saída perto da pedra. Condição boa de verdade hoje: dá pra explorar o pico com confiança, mas o respeito à fila e a leitura do banco seguem sendo a diferença.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-buzios|peito-ombro|medio-7a9|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar forte à noite",
+          "analise": "A condição traz uma força pesada, que já exige braço. O intervalo entre as ondas dá um respiro razoável, dá pra se ajustar sem correria. Sopra um terral leve, vento de terra pro mar que alisa sem exagero. O braço cansa rápido remando contra esse volume. Vale a pena encarar: a dica é escolher o canto mais protegido do vento e não forçar a mão fora da hora certa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "itacoatiara|cabeca-1.5x|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar pesado de manhã",
+          "analise": "A condição traz uma força bruta, sem meio-termo. A série chega com um espaçamento que ajuda a ler o próximo conjunto. Um onshore fraco, vento fraco vindo do mar pra terra, mexe pouco a superfície. O corpo sente o caldo pesado, a descida cobra decisão rápida. É um daqueles dias que compensa se organizar pra aproveitar: a onda pede leitura rápida e prancha ajustada ao tamanho, então vale estudar o pico antes de remar pra fora.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "itacoatiara|cabeca-1.5x|bom-9a11|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Mar pesado à noite",
+          "analise": "O pico recebe uma força bruta, sem meio-termo. As ondas chegam espaçadas, com aquele tempo extra que deixa tudo mais previsível. Sem vento nenhum, a água segue parada, lisa, quase sem textura. A remada vira treino de verdade, cada onda testa o fôlego inteiro. Condição boa de verdade hoje: dá pra explorar o pico com confiança, mas o respeito à fila e a leitura do banco seguem sendo a diferença.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "maresias|ombro-cabeca|medio-7a9|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Mar pesado à noite",
+          "analise": "A superfície apresenta uma força bruta, sem meio-termo. O intervalo entre as ondas dá um respiro razoável, dá pra se ajustar sem correria. Um terral fraco, aquele vento que sai da terra e vai pro mar, já ajuda a segurar a face. O braço queima remando contra esse tanto de água. Vale a pena encarar: quem já tem repertório vai aproveitar bem, mas a dica é escolher a série certa e não forçar remada em cima da hora.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-floripa|peito-ombro|curto-vaga|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Mar com força leve à tarde",
+          "analise": "O conjunto que entra traz uma força ainda leve, que dá pra sentir sem cansar. O intervalo entre as ondas é curto, dá pra sentir aquele mar mais atropelado. Um onshore moderado entra, picotando a face e deixando a água menos organizada. Dá pra sentir o empurrão sem que ele domine a manobra. Fraquinho pra quem busca onda de peso, mas bom pra evoluir remada e leitura: a onda pede leitura rápida e prancha ajustada ao tamanho, então vale estudar o pico antes de remar pra fora.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "vermelha-do-norte|ombro-cabeca|medio-7a9|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar forte à tarde",
+          "analise": "O pico recebe uma força pesada, que já exige braço. As ondas vêm com um ritmo mais organizado, tempo suficiente pra se recompor. O vento praticamente não sopra, a superfície fica lisa igual a um espelho. A remada exige ritmo forte, sem espaço pra preguiça. Condição boa de verdade hoje: melhor remar com calma, escolher a série certa e não gastar energia em onda ruim.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "tucuns|peito-ombro|medio-7a9|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar forte à noite",
+          "analise": "A superfície apresenta uma força pesada, que já exige braço. O intervalo entre as ondas dá um respiro razoável, dá pra se ajustar sem correria. Sopra um terral leve, vento de terra pro mar que alisa sem exagero. O braço cansa rápido remando contra esse volume. Vale a pena encarar: a dica é escolher o canto mais protegido do vento e não forçar a mão fora da hora certa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|ombro-cabeca|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar forte de manhã",
+          "analise": "A arrebentação entrega uma força pesada, que já exige braço. A série chega com um espaçamento que ajuda a ler o próximo conjunto. Um terral fraco, aquele vento que sai da terra e vai pro mar, já ajuda a segurar a face. O corpo sente cada tranco, a descida vem com pressão real. É um daqueles dias que compensa se organizar pra aproveitar: vale ler bem o banco antes de remar pra fora e escolher a prancha certa pro tamanho do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|peito-ombro|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Mar com força leve de manhã",
+          "analise": "O mar chega com energia moderada, um empurrão gostoso de perceber. As ondas vêm com um ritmo mais organizado, tempo suficiente pra se recompor. Sopra uma brisa fraca de través, vento soprando de lado sem incomodar muito. O corpo sente o gás, mas responde bem sem sufoco. Longe de ser o melhor dia, mas ainda vale entrar: melhor remar com calma, escolher a série certa e não gastar energia em onda ruim.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|cabeca-1.5x|bom-9a11|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Mar pesado à noite",
+          "analise": "A arrebentação entrega uma força bruta, sem meio-termo. A série chega bem espaçada, dá tempo de ver a onda vindo de longe e se posicionar com calma. O vento praticamente não sopra, a superfície fica lisa igual a um espelho. O braço queima remando contra esse tanto de água. Vale a pena encarar: a dica vale pra quem já manja: escolha o canto certo e ajuste a prancha ao momento.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-tijuca|cabeca-1.5x|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar pesado de manhã",
+          "analise": "A previsão aponta uma força bruta, sem meio-termo. A série chega com um espaçamento que ajuda a ler o próximo conjunto. Sopra um onshore leve, aquele vento do mar que só encrespa de leve a água. O corpo sente o caldo pesado, a descida cobra decisão rápida. É um daqueles dias que compensa se organizar pra aproveitar: cada nível encontra seu canto aqui, então vale observar o pico um pouco antes de remar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "castelhanos|ombro-cabeca|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Mar forte à tarde",
+          "analise": "A previsão aponta uma força pesada, que já exige braço. As ondas vêm com um ritmo mais organizado, tempo suficiente pra se recompor. Um onshore fraco, vento fraco vindo do mar pra terra, mexe pouco a superfície. A remada exige ritmo forte, sem espaço pra preguiça. Longe de ser o melhor dia, mas ainda vale entrar: melhor remar com calma, escolher a série certa e não gastar energia em onda ruim.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "capao-da-canoa|ombro-cabeca|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar forte de manhã",
+          "analise": "A faixa de onda chega com uma força pesada, que já exige braço. O intervalo entre as ondas dá um respiro razoável, dá pra se ajustar sem correria. Sopra um terral leve, vento de terra pro mar que alisa sem exagero. O braço cansa rápido remando contra esse volume. Vale a pena encarar: a dica vale pra quem já manja: escolha o canto certo e ajuste a prancha ao momento.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "domingas-dias|ombro-cabeca|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar forte de manhã",
+          "analise": "O conjunto que entra traz uma força pesada, que já exige braço. A série chega com um espaçamento que ajuda a ler o próximo conjunto. Um terral fraco, aquele vento que sai da terra e vai pro mar, já ajuda a segurar a face. O corpo sente cada tranco, a descida vem com pressão real. É um daqueles dias que compensa se organizar pra aproveitar: vale usar uma prancha maior, com mais volume, pra facilitar entrada e remada.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|cabeca-1.5x|bom-9a11|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Mar pesado à noite",
+          "analise": "A faixa de onda chega com uma força bruta, sem meio-termo. As ondas chegam espaçadas, com aquele tempo extra que deixa tudo mais previsível. Sem vento nenhum, a água segue parada, lisa, quase sem textura. A remada vira treino de verdade, cada onda testa o fôlego inteiro. Condição boa de verdade hoje: melhor remar com calma, escolher a série certa e não gastar energia em onda ruim.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "geriba|peito-ombro|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Mar com força leve à noite",
+          "analise": "A leitura de hoje mostra energia moderada, um empurrão gostoso de perceber. O intervalo entre as ondas dá um respiro razoável, dá pra se ajustar sem correria. O onshore, vento que vem do mar pra terra e bagunça a onda, sopra com alguma força e tira um pouco da limpeza. A remada pede um esforço moderado, mas segue tranquila. Não é o dia mais generoso, mas serve pra treinar sem pressão: a dica vale pra quem já manja: escolha o canto certo e ajuste a prancha ao momento.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|ombro-cabeca|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar forte à noite",
+          "analise": "O mar chega com energia forte, empurrando com peso real. A série chega com um espaçamento que ajuda a ler o próximo conjunto. Um lateral moderado entra e dá uma textura na água, atravessa o pico sem destruir tudo. O corpo sente cada tranco, a descida vem com pressão real. É um daqueles dias que compensa se organizar pra aproveitar: vale ler bem o banco antes de remar pra fora e escolher a prancha certa pro tamanho do dia.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|peito-ombro|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Mar com força média à noite",
+          "analise": "A água entra com uma força já presente, que começa a cobrar da remada. As ondas vêm com um ritmo mais organizado, tempo suficiente pra se recompor. Um vento fraco de lado mal se sente na água. Dá pra sentir o peso na descida, cobra atenção no pé de trás. Longe de ser o melhor dia, mas ainda vale entrar: tem espaço pra todo mundo, mas observar o banco antes de entrar sempre ajuda.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "mocambique|cintura-peito|bom-9a11|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Mar com força leve à noite",
+          "analise": "A água entra com energia moderada, um empurrão gostoso de perceber. A série chega bem espaçada, dá tempo de ver a onda vindo de longe e se posicionar com calma. Sopra um onshore leve, aquele vento do mar que só encrespa de leve a água. A remada pede um esforço moderado, mas segue tranquila. Dá pra aproveitar com prancha e expectativa certas: a dica é escolher o canto mais protegido do vento e não forçar a mão fora da hora certa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|peito-ombro|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Mar com força leve de manhã",
+          "analise": "A condição traz energia moderada, um empurrão gostoso de perceber. A série chega com um espaçamento que ajuda a ler o próximo conjunto. Um onshore fraco, vento fraco vindo do mar pra terra, mexe pouco a superfície. Dá pra sentir o empurrão sem que ele domine a manobra. Não é o dia perfeito, mas rende uma sessão honesta: vale ler bem o banco antes de remar pra fora e escolher a prancha certa pro tamanho do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|ombro-cabeca|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar forte à noite",
+          "analise": "A leitura de hoje mostra energia forte, empurrando com peso real. As ondas vêm com um ritmo mais organizado, tempo suficiente pra se recompor. Um lateral moderado entra e dá uma textura na água, atravessa o pico sem destruir tudo. A remada exige ritmo forte, sem espaço pra preguiça. Condição boa de verdade hoje: dá pra explorar o pico com confiança, mas o respeito à fila e a leitura do banco seguem sendo a diferença.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "pantano-do-sul|joelho-cintura|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Mar manso à tarde",
+          "analise": "O pico recebe pouca força, quase sem empurrão. A série chega apertada, uma onda atrás da outra, sem tempo de respirar entre elas. O vento de lado, soprando através da linha, mexe a superfície sem arruinar de vez. A remada sai fácil, sem gastar quase nada de braço. Não é o dia mais generoso, mas serve pra treinar sem pressão: a dica é escolher o canto mais protegido do vento e não forçar a mão fora da hora certa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|ombro-cabeca|bom-9a11|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar pesado de manhã",
+          "analise": "O conjunto que entra traz uma força bruta, sem meio-termo. O intervalo entre as ondas é generoso, o mar fica mais organizado e as paredes ganham corpo. Sopra um onshore leve, aquele vento do mar que só encrespa de leve a água. O corpo sente o caldo pesado, a descida cobra decisão rápida. É um daqueles dias que compensa se organizar pra aproveitar: vale ler bem o banco antes de remar pra fora e escolher a prancha certa pro tamanho do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|ombro-cabeca|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar forte à noite",
+          "analise": "A água entra com energia forte, empurrando com peso real. As ondas vêm com um ritmo mais organizado, tempo suficiente pra se recompor. O vento de lado, soprando através da linha, mexe a superfície sem arruinar de vez. A remada exige ritmo forte, sem espaço pra preguiça. Condição boa de verdade hoje: melhor remar com calma, escolher a série certa e não gastar energia em onda ruim.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|ombro-cabeca|bom-9a11|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar forte de manhã",
+          "analise": "A condição traz energia forte, empurrando com peso real. A série chega bem espaçada, dá tempo de ver a onda vindo de longe e se posicionar com calma. Sopra um onshore leve, aquele vento do mar que só encrespa de leve a água. O braço cansa rápido remando contra esse volume, já que a quebra acontece numa laje de pedra, o que desenha melhor a parede mas cobra respeito na saída perto da pedra. Vale a pena encarar: quem já tem repertório vai aproveitar bem, mas a dica é escolher a série certa e não forçar remada em cima da hora.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|peito-ombro|bom-9a11|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar forte à tarde",
+          "analise": "O pico recebe energia forte, empurrando com peso real. O intervalo entre as ondas é generoso, o mar fica mais organizado e as paredes ganham corpo. O vento de lado sopra forte, atravessando a linha e deixando a água irregular. O corpo sente cada tranco, a descida vem com pressão real, já que a quebra acontece numa laje de pedra, o que desenha melhor a parede mas cobra respeito na saída perto da pedra. É um daqueles dias que compensa se organizar pra aproveitar: a onda pede leitura rápida e prancha ajustada ao tamanho, então vale estudar o pico antes de remar pra fora.",
+          "janela": "13h-16h",
+          "aviso": "Fundo de pedra e vento forte de través pedem atenção redobrada perto da laje, principalmente na saída."
+        }
+      ]
+    },
+    "praia-brava-buzios|peito-ombro|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Mar com força leve à noite",
+          "analise": "O pico recebe energia moderada, um empurrão gostoso de perceber. As ondas vêm com um ritmo mais organizado, tempo suficiente pra se recompor. Um onshore moderado entra, picotando a face e deixando a água menos organizada. O corpo sente o gás, mas responde bem sem sufoco. Dia mais fraco de energia, ideal pra quem quer treinar sem cobrança: melhor remar com calma, escolher a série certa e não gastar energia em onda ruim.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|peito-ombro|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar forte à tarde",
+          "analise": "A superfície apresenta energia forte, empurrando com peso real. O intervalo entre as ondas dá um respiro razoável, dá pra se ajustar sem correria. O vento de lado, soprando através da linha, mexe a superfície sem arruinar de vez. O braço cansa rápido remando contra esse volume. Vale a pena encarar: a dica vale pra quem já manja: escolha o canto certo e ajuste a prancha ao momento.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|peito-ombro|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Mar com força média à noite",
+          "analise": "A condição traz uma força já presente, que começa a cobrar da remada. A série chega com um espaçamento que ajuda a ler o próximo conjunto. Um lateral moderado entra e dá uma textura na água, atravessa o pico sem destruir tudo. O corpo sente o puxão logo na entrada, exige postura firme. Não é o dia perfeito, mas rende uma sessão honesta: cada nível encontra seu canto aqui, então vale observar o pico um pouco antes de remar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tiririca|peito-ombro|curto-vaga|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Mar com força leve de manhã",
+          "analise": "A superfície apresenta energia moderada, um empurrão gostoso de perceber. As séries vêm juntas e rápidas, mal dá tempo de se posicionar de novo. O vento de lado, soprando através da linha, mexe a superfície sem arruinar de vez. O corpo sente o gás, mas responde bem sem sufoco. Longe de ser o melhor dia, mas ainda vale entrar: tem espaço pra todo mundo, mas observar o banco antes de entrar sempre ajuda.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "tiririca|cabeca-1.5x|curto-vaga|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Mar forte à noite",
+          "analise": "A arrebentação entrega energia forte, empurrando com peso real. A série chega apertada, uma onda atrás da outra, sem tempo de respirar entre elas. Um onshore moderado entra, picotando a face e deixando a água menos organizada. O braço cansa rápido remando contra esse volume. Dá pra aproveitar com prancha e expectativa certas: a dica vale pra quem já manja: escolha o canto certo e ajuste a prancha ao momento.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "cidreira|peito-ombro|medio-7a9|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Mar com força média à noite",
+          "analise": "O pico recebe uma força já presente, que começa a cobrar da remada. A série chega com um espaçamento que ajuda a ler o próximo conjunto. O vento de lado sopra forte, atravessando a linha e deixando a água irregular. O corpo sente o puxão logo na entrada, exige postura firme. Não é o dia perfeito, mas rende uma sessão honesta: vale ler bem o banco antes de remar pra fora e escolher a prancha certa pro tamanho do dia.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|ombro-cabeca|bom-9a11|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar pesado de manhã",
+          "analise": "O mar chega com energia pesada de verdade, um peso que impõe respeito. As ondas chegam espaçadas, com aquele tempo extra que deixa tudo mais previsível. Sopra um onshore leve, aquele vento do mar que só encrespa de leve a água. A remada vira treino de verdade, cada onda testa o fôlego inteiro. Condição boa de verdade hoje: melhor remar com calma, escolher a série certa e não gastar energia em onda ruim.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|ombro-cabeca|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar forte à noite",
+          "analise": "A previsão aponta energia forte, empurrando com peso real. O intervalo entre as ondas dá um respiro razoável, dá pra se ajustar sem correria. O vento de lado, soprando através da linha, mexe a superfície sem arruinar de vez. O braço cansa rápido remando contra esse volume. Vale a pena encarar: a dica é escolher o canto mais protegido do vento e não forçar a mão fora da hora certa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "itacarezinho|cabeca-1.5x|curto-vaga|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Mar forte à noite",
+          "analise": "A faixa de onda chega com energia forte, empurrando com peso real. O intervalo entre as ondas é curto, dá pra sentir aquele mar mais atropelado. Um onshore moderado entra, picotando a face e deixando a água menos organizada. O corpo sente cada tranco, a descida vem com pressão real. Não é o dia perfeito, mas rende uma sessão honesta: vale ler bem o banco antes de remar pra fora e escolher a prancha certa pro tamanho do dia.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|ombro-cabeca|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar forte à noite",
+          "analise": "O conjunto que entra traz energia forte, empurrando com peso real. As ondas vêm com um ritmo mais organizado, tempo suficiente pra se recompor. Um vento fraco de lado mal se sente na água. A remada exige ritmo forte, sem espaço pra preguiça. Condição boa de verdade hoje: melhor remar com calma, escolher a série certa e não gastar energia em onda ruim.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|ombro-cabeca|medio-7a9|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar forte à noite",
+          "analise": "O mar chega com um tranco cansativo, água carregada de verdade. O intervalo entre as ondas dá um respiro razoável, dá pra se ajustar sem correria. Um terral mais firme entra e organiza bem a face, vento de terra pro mar fazendo o trabalho certo. O braço cansa rápido remando contra esse volume. Vale a pena encarar: quem já tem repertório vai aproveitar bem, mas a dica é escolher a série certa e não forçar remada em cima da hora.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "engenhoca|peito-ombro|curto-vaga|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Mar com força leve de manhã",
+          "analise": "A arrebentação entrega energia moderada, um empurrão gostoso de perceber. O intervalo entre as ondas é curto, dá pra sentir aquele mar mais atropelado. O vento de lado, soprando através da linha, mexe a superfície sem arruinar de vez. Dá pra sentir o empurrão sem que ele domine a manobra. Não é o dia perfeito, mas rende uma sessão honesta: vale ler bem o banco antes de remar pra fora e escolher a prancha certa pro tamanho do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "engenhoca|cabeca-1.5x|curto-vaga|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Mar forte à noite",
+          "analise": "A leitura de hoje mostra um tranco cansativo, água carregada de verdade. As séries vêm juntas e rápidas, mal dá tempo de se posicionar de novo. Um onshore moderado entra, picotando a face e deixando a água menos organizada. A remada exige ritmo forte, sem espaço pra preguiça. Longe de ser o melhor dia, mas ainda vale entrar: melhor remar com calma, escolher a série certa e não gastar energia em onda ruim.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|ombro-cabeca|medio-7a9|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar forte à noite",
+          "analise": "A água entra com um tranco cansativo, água carregada de verdade. O intervalo entre as ondas dá um respiro razoável, dá pra se ajustar sem correria. O terral, vento que sai da terra e alisa a onda, sopra com presença e deixa a parede limpa. O braço cansa rápido remando contra esse volume. Vale a pena encarar: a dica é escolher o canto mais protegido do vento e não forçar a mão fora da hora certa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|peito-ombro|bom-9a11|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar forte de manhã",
+          "analise": "A condição traz um tranco cansativo, água carregada de verdade. O intervalo entre as ondas é generoso, o mar fica mais organizado e as paredes ganham corpo. Sem vento nenhum, a água segue parada, lisa, quase sem textura. O corpo sente cada tranco, a descida vem com pressão real. É um daqueles dias que compensa se organizar pra aproveitar: vale ler bem o banco antes de remar pra fora e escolher a prancha certa pro tamanho do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|peito-ombro|medio-7a9|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar com força média à noite",
+          "analise": "A superfície apresenta uma força já presente, que começa a cobrar da remada. As ondas vêm com um ritmo mais organizado, tempo suficiente pra se recompor. Um terral fraco, aquele vento que sai da terra e vai pro mar, já ajuda a segurar a face. Dá pra sentir o peso na descida, cobra atenção no pé de trás. Condição boa de verdade hoje: melhor remar com calma, escolher a série certa e não gastar energia em onda ruim.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|ombro-cabeca|bom-9a11|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar pesado de manhã",
+          "analise": "A leitura de hoje mostra energia pesada de verdade, um peso que impõe respeito. A série chega bem espaçada, dá tempo de ver a onda vindo de longe e se posicionar com calma. Sem vento nenhum, a água segue parada, lisa, quase sem textura. O braço queima remando contra esse tanto de água. Vale a pena encarar: quem já tem repertório vai aproveitar bem, mas a dica é escolher a série certa e não forçar remada em cima da hora.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|ombro-cabeca|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar forte à tarde",
+          "analise": "O pico recebe um tranco cansativo, água carregada de verdade. O intervalo entre as ondas é generoso, o mar fica mais organizado e as paredes ganham corpo. Um vento fraco de lado mal se sente na água. O corpo sente cada tranco, a descida vem com pressão real. É um daqueles dias que compensa se organizar pra aproveitar: a onda pede leitura rápida e prancha ajustada ao tamanho, então vale estudar o pico antes de remar pra fora.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-do-sahy|peito-ombro|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar forte à tarde",
+          "analise": "A superfície apresenta um tranco cansativo, água carregada de verdade. As ondas vêm com um ritmo mais organizado, tempo suficiente pra se recompor. Um lateral moderado entra e dá uma textura na água, atravessa o pico sem destruir tudo. A remada exige ritmo forte, sem espaço pra preguiça. Condição boa de verdade hoje: bom momento pra treinar equilíbrio na espuma antes de se arriscar mais pra dentro.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "vermelha-do-norte|peito-ombro|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Mar com força leve à noite",
+          "analise": "A previsão aponta energia moderada, um empurrão gostoso de perceber. O intervalo entre as ondas dá um respiro razoável, dá pra se ajustar sem correria. Um vento fraco de lado mal se sente na água. A remada pede um esforço moderado, mas segue tranquila. Dá pra aproveitar com prancha e expectativa certas: a dica é escolher o canto mais protegido do vento e não forçar a mão fora da hora certa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|peito-ombro|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Mar com força leve de manhã",
+          "analise": "A faixa de onda chega com energia moderada, um empurrão gostoso de perceber. A série chega com um espaçamento que ajuda a ler o próximo conjunto. Sopra um onshore leve, aquele vento do mar que só encrespa de leve a água. Dá pra sentir o empurrão sem que ele domine a manobra. Não é o dia perfeito, mas rende uma sessão honesta: vale ler bem o banco antes de remar pra fora e escolher a prancha certa pro tamanho do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|peito-ombro|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Mar com força média à noite",
+          "analise": "A arrebentação entrega uma força já presente, que começa a cobrar da remada. As ondas vêm com um ritmo mais organizado, tempo suficiente pra se recompor. Um vento fraco de lado mal se sente na água. Dá pra sentir o peso na descida, cobra atenção no pé de trás. Longe de ser o melhor dia, mas ainda vale entrar: dá pra explorar o pico com confiança, mas o respeito à fila e a leitura do banco seguem sendo a diferença.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tramandai|cintura-peito|medio-7a9|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Mar com força leve de manhã",
+          "analise": "O conjunto que entra traz energia moderada, um empurrão gostoso de perceber. O intervalo entre as ondas dá um respiro razoável, dá pra se ajustar sem correria. Um lateral forte entra, vento soprando de través com bastante intensidade, exige ajuste constante de remada. A remada pede um esforço moderado, mas segue tranquila. Dá pra aproveitar com prancha e expectativa certas: a dica é escolher o canto mais protegido do vento e não forçar a mão fora da hora certa.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "tucuns|peito-ombro|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Mar com força leve à noite",
+          "analise": "O mar chega com um gás contido, nada que assuste. A série chega com um espaçamento que ajuda a ler o próximo conjunto. O onshore, vento que vem do mar pra terra e bagunça a onda, sopra com alguma força e tira um pouco da limpeza. Dá pra sentir o empurrão sem que ele domine a manobra. Fraquinho pra quem busca onda de peso, mas bom pra evoluir remada e leitura: vale ler bem o banco antes de remar pra fora e escolher a prancha certa pro tamanho do dia.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|cintura-peito|medio-7a9|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Mar com força leve à tarde",
+          "analise": "A leitura de hoje mostra um gás contido, nada que assuste. As ondas vêm com um ritmo mais organizado, tempo suficiente pra se recompor. Um lateral forte entra, vento soprando de través com bastante intensidade, exige ajuste constante de remada. O corpo sente o gás, mas responde bem sem sufoco. Longe de ser o melhor dia, mas ainda vale entrar: dá pra explorar o pico com confiança, mas o respeito à fila e a leitura do banco seguem sendo a diferença.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "massaguacu|cintura-peito|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Mar manso à noite",
+          "analise": "A superfície apresenta pouca força, quase sem empurrão. A série chega apertada, uma onda atrás da outra, sem tempo de respirar entre elas. O vento de lado, soprando através da linha, mexe a superfície sem arruinar de vez. A remada sai fácil, sem gastar quase nada de braço. Não é o dia mais generoso, mas serve pra treinar sem pressão: a dica é escolher o canto mais protegido do vento e não forçar a mão fora da hora certa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|peito-ombro|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar forte à tarde",
+          "analise": "A arrebentação entrega um tranco cansativo, água carregada de verdade. A série chega com um espaçamento que ajuda a ler o próximo conjunto. Um lateral moderado entra e dá uma textura na água, atravessa o pico sem destruir tudo. O corpo sente cada tranco, a descida vem com pressão real. É um daqueles dias que compensa se organizar pra aproveitar: a onda pede leitura rápida e prancha ajustada ao tamanho, então vale estudar o pico antes de remar pra fora.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|peito-ombro|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Mar com força média à noite",
+          "analise": "A previsão aponta uma força já presente, que começa a cobrar da remada. As ondas vêm com um ritmo mais organizado, tempo suficiente pra se recompor. O vento de lado, soprando através da linha, mexe a superfície sem arruinar de vez. Dá pra sentir o peso na descida, cobra atenção no pé de trás. Longe de ser o melhor dia, mas ainda vale entrar: dá pra explorar o pico com confiança, mas o respeito à fila e a leitura do banco seguem sendo a diferença.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "fernando-de-noronha|peito-ombro|curto-vaga|offshore-forte|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Mar com força média de manhã",
+          "analise": "A faixa de onda chega com uma força já presente, que começa a cobrar da remada. A série chega apertada, uma onda atrás da outra, sem tempo de respirar entre elas, vindo de sudeste meio de raspão pra esse pico, o que já tira um pouco da força antes de chegar na arrebentação. Um terral forte entra, deixa tudo liso mas exige remada mais decidida pra vencer o vento na largada. A remada já cansa o braço um pouco antes do pico, já que o fundo mistura areia e trechos de pedra, o que pede mais cuidado com o pé de apoio na descida. Dá pra aproveitar com prancha e expectativa certas: quem já tem repertório vai aproveitar bem, mas a dica é escolher a série certa e não forçar remada em cima da hora.",
+          "janela": "6h-9h",
+          "aviso": "Vento forte e acesso restrito na ilha pedem experiência e cautela extra na entrada e na saída do pico."
+        }
+      ]
+    },
+    "fernando-de-noronha|peito-ombro|curto-vaga|offshore-forte|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Mar com força média à tarde",
+          "analise": "O conjunto que entra traz uma força já presente, que começa a cobrar da remada. O intervalo entre as ondas é curto, dá pra sentir aquele mar mais atropelado, vindo de sudeste meio de raspão pra esse pico, o que já tira um pouco da força antes de chegar na arrebentação. O terral sopra forte, vento de terra pro mar que alisa mas também segura o bico da prancha na entrada. O corpo sente o puxão logo na entrada, exige postura firme, já que o fundo mistura areia e trechos de pedra, o que pede mais cuidado com o pé de apoio na descida. Não é o dia perfeito, mas rende uma sessão honesta: a onda pede leitura rápida e prancha ajustada ao tamanho, então vale estudar o pico antes de remar pra fora.",
+          "janela": "13h-16h",
+          "aviso": "Vento forte e acesso restrito na ilha pedem experiência e cautela extra na entrada e na saída do pico."
+        }
+      ]
+    },
+    "macumba|ombro-cabeca|medio-7a9|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar forte à noite",
+          "analise": "A previsão aponta um tranco cansativo, água carregada de verdade. As ondas vêm com um ritmo mais organizado, tempo suficiente pra se recompor. Um terral mais firme entra e organiza bem a face, vento de terra pro mar fazendo o trabalho certo. A remada exige ritmo forte, sem espaço pra preguiça. Condição boa de verdade hoje: tem espaço pra todo mundo, mas observar o banco antes de entrar sempre ajuda.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|ombro-cabeca|bom-9a11|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar pesado de manhã",
+          "analise": "A água entra com energia pesada de verdade, um peso que impõe respeito. A série chega bem espaçada, dá tempo de ver a onda vindo de longe e se posicionar com calma. O vento praticamente não sopra, a superfície fica lisa igual a um espelho. O braço queima remando contra esse tanto de água. Vale a pena encarar: a dica é escolher o canto mais protegido do vento e não forçar a mão fora da hora certa.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|ombro-cabeca|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar forte à tarde",
+          "analise": "A faixa de onda chega com um tranco cansativo, água carregada de verdade. O intervalo entre as ondas é generoso, o mar fica mais organizado e as paredes ganham corpo. Sopra uma brisa fraca de través, vento soprando de lado sem incomodar muito. O corpo sente cada tranco, a descida vem com pressão real. É um daqueles dias que compensa se organizar pra aproveitar: vale ler bem o banco antes de remar pra fora e escolher a prancha certa pro tamanho do dia.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "jureia|peito-ombro|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Mar com força média à noite",
+          "analise": "O mar chega com energia firme, com peso suficiente pra empurrar de verdade. As ondas vêm com um ritmo mais organizado, tempo suficiente pra se recompor. O vento de lado, soprando através da linha, mexe a superfície sem arruinar de vez. Dá pra sentir o peso na descida, cobra atenção no pé de trás. Longe de ser o melhor dia, mas ainda vale entrar: melhor remar com calma, escolher a série certa e não gastar energia em onda ruim.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "capao-da-canoa|peito-ombro|medio-7a9|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Mar com força média à noite",
+          "analise": "A leitura de hoje mostra energia firme, com peso suficiente pra empurrar de verdade. O intervalo entre as ondas dá um respiro razoável, dá pra se ajustar sem correria. Um lateral forte entra, vento soprando de través com bastante intensidade, exige ajuste constante de remada. A remada já cansa o braço um pouco antes do pico. Dá pra aproveitar com prancha e expectativa certas: a dica vale pra quem já manja: escolha o canto certo e ajuste a prancha ao momento.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|ombro-cabeca|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar forte à noite",
+          "analise": "O conjunto que entra traz um tranco cansativo, água carregada de verdade. A série chega com um espaçamento que ajuda a ler o próximo conjunto. O vento de lado, soprando através da linha, mexe a superfície sem arruinar de vez. O corpo sente cada tranco, a descida vem com pressão real. É um daqueles dias que compensa se organizar pra aproveitar: vale ler bem o banco antes de remar pra fora e escolher a prancha certa pro tamanho do dia.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "rosa|cintura-peito|medio-7a9|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Mar com força leve à tarde",
+          "analise": "A água entra com um gás contido, nada que assuste. As ondas vêm com um ritmo mais organizado, tempo suficiente pra se recompor. Um lateral forte entra, vento soprando de través com bastante intensidade, exige ajuste constante de remada. O corpo sente o gás, mas responde bem sem sufoco. Longe de ser o melhor dia, mas ainda vale entrar: melhor remar com calma, escolher a série certa e não gastar energia em onda ruim.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-de-ilheus|cintura-peito|curto-vaga|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Mar com força leve à noite",
+          "analise": "A condição traz um gás contido, nada que assuste. A série chega apertada, uma onda atrás da outra, sem tempo de respirar entre elas. O onshore sopra forte, aquele vento do mar que bagunça tudo, deixando a superfície bem picada. A remada pede um esforço moderado, mas segue tranquila. Não é o dia mais generoso, mas serve pra treinar sem pressão: a dica é escolher o canto mais protegido do vento e não forçar a mão fora da hora certa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|peito-ombro|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Mar com força leve de manhã",
+          "analise": "O pico recebe um gás contido, nada que assuste. A série chega com um espaçamento que ajuda a ler o próximo conjunto. Sopra um onshore leve, aquele vento do mar que só encrespa de leve a água. Dá pra sentir o empurrão sem que ele domine a manobra. Não é o dia perfeito, mas rende uma sessão honesta: a onda pede leitura rápida e prancha ajustada ao tamanho, então vale estudar o pico antes de remar pra fora.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "camburi|peito-ombro|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar forte à tarde",
+          "analise": "O mar chega com força valente, que não perdoa remada fraca. As ondas vêm com um ritmo mais organizado, tempo suficiente pra se recompor. O vento de lado, soprando através da linha, mexe a superfície sem arruinar de vez. A remada exige ritmo forte, sem espaço pra preguiça. Condição boa de verdade hoje: tem espaço pra todo mundo, mas observar o banco antes de entrar sempre ajuda.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-02T06:21:35.937Z"
+  "generated_at": "2026-09-02T12:21:18.424Z"
 }
