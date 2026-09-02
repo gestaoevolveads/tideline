@@ -144182,7 +144182,744 @@
           "aviso": "Energia acima do costume pra praia com muito iniciante: atenção redobrada na remada e no pico."
         }
       ]
+    },
+    "praia-grande-arraial|peito-ombro|curto-vaga|onshore-forte|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Vento forte pega o pico de resvalo",
+          "analise": "A ondulação chega de um ângulo que não é bem de frente pra esse pico, então perde parte da força na entrada, mas ainda tem corpo pra cansar o braço. A série vem apertada, mal dá tempo de se posicionar entre uma onda e outra. O vento que sopra do mar pra terra já entra forte pela manhã e deixa a parede toda granulada, difícil de ler. Quem for, capricha numa prancha com mais volume e tenta pegar antes que o vento piore.",
+          "janela": "6h-9h",
+          "aviso": "Vento forte bagunça a leitura das ondas, cuidado redobrado na hora de remar de volta."
+        }
+      ]
+    },
+    "recreio|cintura-peito|curto-vaga|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Sequência apertada enche a zona oeste",
+          "analise": "O Recreio recebe a ondulação com uma sequência curta e apertada, que cobra atenção de quem quer se posicionar direito. A energia é mediana: cansa o braço sem exagerar, boa pegada pra treinar reação rápida. O vento do mar já sopra moderado e enruga a superfície, deixando a entrada da onda menos previsível. Reserve o começo da manhã, antes do vento crescer ainda mais.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "castelhanos|joelho-cintura|curto-vaga|offshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tarde tranquila do lado selvagem da ilha",
+          "analise": "Do lado exposto da ilha, o mar chega pequeno e gentil, com energia bem fraca que não cansa quase nada. A série é curta mas organizada, e o vento que sai da terra ajuda a alisar cada parede antes de quebrar. Quem enfrentar o acesso difícil até lá encontra um mar generoso, ótimo pra treinar sem pressão. Boa praia pra passar a tarde sem crowd, só levar água e comida porque não tem infraestrutura por perto.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|peito-ombro|medio-7a9|onshore-fraco|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite com onda de corpo em Arraial",
+          "analise": "A ondulação chega de um ângulo que não é o favorito desse pico, então perde um pouco de força, mas ainda entrega ondas com corpo suficiente pra fazer o drop pesar. O vento do mar sopra fraco e não estraga tanto a parede. Sem visibilidade de janela nesse horário, vale ir com prancha de confiança e checar a condição de perto antes de entrar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|cintura-peito|medio-7a9|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde de mar liso em Ipanema",
+          "analise": "Ipanema entrega uma tarde rara: quase sem vento, o mar fica liso e espelhado, deixando a parede limpa do começo ao fim. A energia é mediana, dá pra sentir a força sem cansar demais, e a série vem com espaçamento que ajuda a escolher a onda certa. As ilhas na frente ainda seguram parte do impacto, então o surf rende mais nos cantos do que no meio. Vale aproveitar antes que o crowd tome conta, típico de dia bonito ali.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|cintura-peito|curto-vaga|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "A enseada que sempre tem onda",
+          "analise": "Mesmo em dia mais fraco no resto do litoral, essa enseada em formato de V concentra a energia que chega e quase sempre entrega alguma onda surfável. A série vem curta e apertada, o vento do mar já enruga a superfície pela manhã, então a leitura fica mais difícil. É a direita mais cobiçada do Rio, então quem entrar vai encontrar nível alto na água e prancha afiada é obrigatória. Melhor ir cedo e respeitar o pessoal de casa.",
+          "janela": "6h-9h",
+          "aviso": "Localismo forte por ali, respeite a ordem na fila."
+        }
+      ]
+    },
+    "costao-do-santinho|peito-ombro|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Costão de Floripa ganha força à tarde",
+          "analise": "Junto ao costão histórico do norte da ilha, a ondulação entra com força considerável e faz a remada pesar de verdade. A série é curta e apertada, exige reação rápida pra não tomar caldo desnecessário. O vento de banda sopra moderado e mexe na caminhada da onda, empurrando de lado quem não ajustar a linha. Ainda assim rende ondas de qualidade, só ajustar o ritmo ao vento.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|cintura-peito|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite mansa em Cabo Frio",
+          "analise": "O mar chega manso essa noite, com energia baixa que não exige muito do fôlego. O vento de banda sopra fraco e quase não interfere na parede. É um dia mais de treino do que de emoção, ideal pra quem está começando a pegar confiança. Sem visão de condição de longe, vale checar de perto antes de entrar na água.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|cintura-peito|medio-7a9|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Arpoador espelhado à tarde",
+          "analise": "Quase sem vento, o mar fica espelhado em frente ao costão que emoldura o pico mais carismático do Rio. A energia é mediana e a série vem com espaçamento suficiente pra escolher bem a onda. Ali surfar bem é quase teatro, com a plateia da pedra observando cada manobra, então a fila tem que ser respeitada à risca. Boa tarde pra quem gosta de condição limpa e não se incomoda com movimento.",
+          "janela": "14h-17h",
+          "aviso": "Respeite a fila, é lei ali."
+        }
+      ]
+    },
+    "massaguacu|cintura-peito|curto-vaga|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Terral leve alisa o mar de Caraguá",
+          "analise": "O vento que sai da terra sopra fraco pela manhã e já ajuda a alisar a superfície. A energia é baixa, remada tranquila, boa pra quem quer ondas sem drama. A série vem curta, então convém ficar atento ao ritmo entre uma e outra. Dia mais de aquecimento do que de repique forte.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|peito-ombro|curto-vaga|onshore-forte|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Brava de Arraial cobra experiência",
+          "analise": "A ondulação chega de um ângulo que não é o ideal pra essa praia mais exposta, então perde parte da força, mas ainda sobra energia suficiente pra castigar quem não estiver preparado. O vento do mar já sopra forte pela manhã e deixa a parede irregular, difícil de ler o ponto certo de entrada. É a praia mais pesada de Arraial, feita pra quem já tem experiência. Vá com prancha de mais volume e reserve energia pra remada de volta.",
+          "janela": "6h-9h",
+          "aviso": "Praia pesada e exposta, não é lugar pra iniciante."
+        }
+      ]
+    },
+    "grumari|cintura-peito|curto-vaga|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Grumari acorda selvagem e generosa",
+          "analise": "Vizinha da Prainha, essa praia protegida entrega um mar de energia mediana, com série curta e apertada que cobra atenção na entrada. O vento do mar já sopra moderado e mexe na textura da parede. O cenário intocado compensa qualquer imperfeição na condição. Ótima opção pra quem busca sossego longe do crowd das praias mais movimentadas.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "tramandai|peito-ombro|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tramandaí com série espaçada à tarde",
+          "analise": "Junto à barra, o mar chega com energia considerável e série bem espaçada, dando tempo de ver a onda vindo e se posicionar com calma. O vento de banda sopra fraco e interfere pouco na parede. É um litoral bem exposto, então maré e vento decidem o dia rápido, vale aproveitar enquanto está assim. Tarde boa pra treinar remadas mais longas e pegar ondas com corpo.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "campeche|peito-ombro|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Campeche entrega força de manhã",
+          "analise": "Com a ilha na frente moldando o caminho da ondulação, esse pico entrega energia com corpo e série de espaçamento razoável, dando tempo de se posicionar. O vento de banda sopra moderado e empurra a caminhada da onda pro lado, exigindo ajuste fino na linha. É um dos picos mais fortes e respeitados de Floripa, então remada e leitura precisam estar afiadas. Bom dia pra quem já tem repertório e busca tubo com a maré certa.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "tiririca|ombro-cabeca|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Itacaré pesado no pico central",
+          "analise": "O pico central de Itacaré chega grande e com energia pesada, do tipo que cansa o braço rápido e cobra respeito no drop. A série vem curta e apertada, pouca folga entre as ondas. O vento de banda sopra moderado e mexe na linha da parede, então ajustar a posição vira rotina. A vibe da comunidade ali segue tranquila mesmo com o mar cobrando, então quem for, avalia bem o próprio preparo antes de entrar.",
+          "janela": "13h-16h",
+          "aviso": "Energia pesada, avalie seu preparo antes de remar pra fora."
+        }
+      ]
+    },
+    "tiririca|ombro-cabeca|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Itacaré segue forte à noite",
+          "analise": "O pico central segue entregando energia pesada mesmo com o dia terminando, série com espaçamento razoável que ajuda a escolher a onda certa. O vento do mar sopra fraco e não estraga muito a parede. Sem enxergar a condição de longe nesse horário, vale entrar com calma e prancha de confiança. A força ali cobra respeito de qualquer nível.",
+          "janela": null,
+          "aviso": "Energia pesada mesmo com pouca luz, redobre a atenção."
+        }
+      ]
+    },
+    "itacarezinho|ombro-cabeca|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Itacarezinho pesado e aberto",
+          "analise": "Essa praia longa e cênica recebe energia pesada, com série curta que cobra reação rápida pra não tomar caldo. O vento de banda sopra moderado e empurra a linha da onda pro lado, então ajustar a posição é constante. Por ser mais aberta, o pico se espalha e dá mais opção de onde entrar. Tarde boa pra quem já tem experiência com mar de força.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "itacarezinho|ombro-cabeca|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Itacarezinho fecha o dia com força",
+          "analise": "A energia segue pesada mesmo à noite, com série de espaçamento razoável que dá tempo de se posicionar. O vento de banda sopra fraco e interfere pouco na parede. Sem visão de condição à distância nesse horário, entre com calma e observe de perto antes de remar pra fora. A praia aberta ajuda a espalhar o pico e reduzir a pressão em cada trecho isolado.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "mocambique|peito-ombro|medio-7a9|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Moçambique com vento forte à tarde",
+          "analise": "Na praia mais comprida e deserta de Floripa, a energia chega com corpo e a série tem espaçamento razoável. Mas o vento do mar sopra forte à tarde e deixa a parede toda irregular, difícil de prever onde vai quebrar. Como a faixa é enorme e tem vários picos espalhados, ainda dá pra caçar um canto mais protegido. Vale caminhar um pouco pra achar o trecho que está quebrando melhor.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|ombro-cabeca|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Foguete detona de manhã em Cabo Frio",
+          "analise": "Esse pico de areia branca recebe a ondulação de sul com energia forte, do tipo que rasga o braço na remada e cobra respeito no drop. A série tem espaçamento razoável, dá tempo de ver a onda chegando e se posicionar direito. O terral sopra fraco e ajuda a manter a parede organizada. Dia de força de verdade, então prancha de confiança e fôlego são obrigatórios.",
+          "janela": "6h-9h",
+          "aviso": "Energia forte, só entre se estiver com o fôlego em dia."
+        }
+      ]
+    },
+    "engenhoca|ombro-cabeca|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Engenhoca pesada na trilha de Itacaré",
+          "analise": "Depois da trilha na mata pra chegar até essa praia de tombo, o mar recompensa com energia pesada e série curta e apertada, que cobra atenção redobrada. O vento de banda sopra moderado e empurra a linha da onda, exigindo ajuste constante. É historicamente mais forte que a vizinha Tiririca, então respeito ao mar é regra. Cenário paradisíaco pra quem topar o esforço do acesso.",
+          "janela": "13h-16h",
+          "aviso": "Onda mais forte que a vizinha, avalie bem antes de entrar."
+        }
+      ]
+    },
+    "engenhoca|ombro-cabeca|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Engenhoca segue forte à noite",
+          "analise": "A energia continua pesada com o dia terminando, série de espaçamento razoável que ajuda na escolha da onda certa. O vento do mar sopra fraco e não estraga muito a formação. Sem enxergar de longe nesse horário, entre com calma e confira a condição de perto primeiro. O acesso pela trilha já filtra bastante gente, então tende a ficar mais tranquilo lá.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|cintura-peito|medio-7a9|offshore-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Cassino recebe onda de resvalo pela manhã",
+          "analise": "Na praia mais longa do mundo, a ondulação chega de um ângulo que não é o favorito desse trecho, perdendo parte da força ao entrar. Ainda assim a energia é mediana e a série tem espaçamento razoável. O terral sopra moderado junto aos molhes e ajuda a segurar a parede. Água fria por ali, então neoprene é item obrigatório mesmo com o sol aparecendo.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|joelho-cintura|medio-7a9|offshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Cassino pequeno e alisado à tarde",
+          "analise": "O mar chega pequeno junto aos molhes da barra, energia baixa que não cansa muito o braço. O terral sopra forte e alisa bastante a parede, mas com essa intensidade pode até segurar demais o drop de quem for mais leve. A água segue fria, então proteção térmica não é opcional. Tarde mais de treino técnico do que de repique de energia.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "guarda-do-embau|joelho-cintura|curto-vaga|offshore-forte|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Guarda do Embaú fraca mas alisada",
+          "analise": "Na foz do rio, reserva mundial de surf com a clássica direita, a ondulação chega de um ângulo que não é o ideal, perdendo força na entrada. A energia é baixa hoje, remada tranquila mas com pouco impulso. O terral sopra forte e alisa bastante a superfície, compensando um pouco a falta de força. Vale a travessia mesmo em dia mais fraco, pelo cenário e pela vila preservada ao redor.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|peito-ombro|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Brava de Cabo Frio com força de manhã",
+          "analise": "Nesse trecho mais exposto e respeitado, a energia chega forte, cansando o braço rápido e cobrando atenção total no drop. A série tem espaçamento razoável, dá tempo de escolher bem a onda. O terral sopra fraco e ajuda a manter a parede organizada. Menos gente na água que os picos vizinhos, mas o peso da onda pede experiência de verdade.",
+          "janela": "6h-9h",
+          "aviso": "Trecho exposto e pesado, recomendado só pra quem já tem repertório."
+        }
+      ]
+    },
+    "barra-da-lagoa|cintura-peito|medio-7a9|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Barra da Lagoa mexida à tarde",
+          "analise": "Nessa vila de pescadores com acesso fácil pra todos os níveis, a energia chega mediana e a série tem espaçamento razoável. Mas o vento do mar sopra forte à tarde e deixa a parede irregular, então a leitura fica mais difícil. O canal perto do molhe ajuda na saída, o que compensa um pouco a condição mexida. Boa opção pra quem está começando e não quer se afastar muito da praia.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "torres|joelho-cintura|curto-vaga|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Torres pequena e mexida à tarde",
+          "analise": "Na capital do surf gaúcho, junto aos molhes, o mar chega pequeno com energia baixa, remada tranquila sem grande esforço. A série é curta e apertada, então convém ficar de olho no ritmo entre as ondas. O vento do mar sopra moderado e já deixa a parede um pouco irregular. Água fria como sempre por ali, então bom neoprene faz toda diferença no conforto.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|cintura-peito|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Point de Santa Marta segue potente à noite",
+          "analise": "Nesses points de pedra de padrão mundial, a energia chega com corpo mesmo à noite, série curta mas com força suficiente pra formar ondas longas e potentes. O vento de banda sopra fraco e interfere pouco na parede. Sem visão de condição de longe nesse horário, vale entrar com calma e prancha à altura do que o pico pode entregar. Um dos picos mais respeitados do país, natureza bruta em volta.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "massaguacu|cintura-peito|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Massaguaçu tranquilo outra manhã",
+          "analise": "O mar segue com energia baixa nesse pico de Caraguatatuba, remada tranquila e sem grande esforço. A série tem espaçamento razoável, dá tempo de se posicionar com calma. O terral sopra fraco e ajuda a manter a superfície organizada. Bom dia pra quem está evoluindo e quer condição sem pressão.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "camburi|cintura-peito|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Camburi com série espaçada de manhã",
+          "analise": "A série vem bem espaçada nesse pico badalado do litoral norte paulista, dando bastante tempo de ver a onda chegando e se posicionar com calma. A energia é mediana, cansa moderadamente mas recompensa quem souber esperar a onda certa. O vento de banda sopra fraco e interfere pouco na parede. Manhã boa pra todos os níveis aproveitarem a cena vibrante da praia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|cintura-peito|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Monte Alto tranquilo e vazio",
+          "analise": "Esse pico costuma ter menos gente que os vizinhos de Arraial, e hoje entrega energia mediana com série de espaçamento razoável. O vento de banda sopra fraco e não atrapalha muito a leitura da parede. Bom dia pra treinar sem disputar onda com ninguém. Vale aproveitar o sossego enquanto os picos mais famosos ficam lotados.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "cacimba-do-padre|peito-ombro|curto-vaga|offshore-moderado|noite|fora": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Cacimba fora de janela ideal à noite",
+          "analise": "A onda mais séria de Noronha recebe uma ondulação que vem de um ângulo bem fora do que essa laje de pedra pega bem, então perde muita força e chega desorganizada. Mesmo assim ainda tem energia suficiente pra castigar quem se arriscar sem preparo. O terral sopra moderado, mas sozinho não resolve o problema do ângulo errado. Sem visão de condição à noite, melhor esperar um dia com a ondulação vindo do norte pra ver esse pico funcionar de verdade.",
+          "janela": null,
+          "aviso": "Onda perigosa mesmo fora do ângulo ideal, só pra quem já conhece o pico."
+        }
+      ]
+    },
+    "figueira|cintura-peito|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Figueira com energia mediana de manhã",
+          "analise": "Esse pico aberto de Arraial recebe energia mediana e série de espaçamento razoável, dando tempo de escolher bem a onda. O vento de banda sopra fraco e quase não atrapalha a parede. Funciona bem com esse tipo de ondulação, então tende a estar organizado. Boa manhã pra evoluir sem pressão.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-floripa|joelho-cintura|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Brava do norte de Floripa mais mansa hoje",
+          "analise": "A onda mais forte do norte da ilha aparece incomumente pequena hoje, com energia baixa que não exige muito esforço na remada. A série tem espaçamento razoável e o vento do mar sopra fraco, sem estragar muito a parede. É um dia raro pra quem quer conhecer o pico sem enfrentar o peso que ele costuma ter. Ainda assim, o fundo e o histórico do lugar pedem respeito.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|joelho-cintura|curto-vaga|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Peró bem fraco à noite",
+          "analise": "O mar chega bem fraco essa noite, energia baixa que quase não cansa o braço. O terral sopra fraco e mantém a superfície organizada, mesmo com pouca força pra trabalhar. É dia mais de boia do que de repique, útil só pra manter o ritmo na água. Sem visão de condição de longe, confira de perto antes de entrar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "fernando-de-noronha|peito-ombro|curto-vaga|offshore-moderado|noite|fora": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noronha fora do ângulo ideal à noite",
+          "analise": "Na ilha de acesso limitado e lineup pequeno, a ondulação chega de um ângulo que não é o que a ilha pega bem nessa época, perdendo força e organização ao entrar. Ainda sobra energia suficiente pra formar ondas com corpo, mas a leitura fica mais difícil que o normal. O terral sopra moderado e ajuda um pouco, sem resolver o desencaixe do ângulo. As ondulações vindas do norte no inverno do hemisfério de cima é que costumam acender esse arquipélago de verdade.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|cintura-peito|curto-vaga|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Unamar com energia mediana de manhã",
+          "analise": "Esse pico entre Tamoios e Cabo Frio recebe a ondulação de sul com energia mediana, cansando moderadamente o braço na remada. A série vem curta e apertada, então convém ficar atento ao ritmo entre as ondas. O vento do mar já sopra moderado pela manhã e enruga um pouco a parede. Ainda dá pra pegar boas ondas antes que o vento cresça mais ao longo do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "castelhanos|peito-ombro|curto-vaga|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Castelhanos com mais força à tarde",
+          "analise": "Do lado exposto de Ilhabela, a energia chega com mais corpo hoje, cansando o braço de forma perceptível. A série vem curta e apertada, exige atenção pra não perder o timing. O vento do mar sopra moderado e mexe na textura da parede. Quem topar o acesso difícil encontra um mar generoso e sem crowd nenhum.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "capao-da-canoa|ombro-cabeca|medio-7a9|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Capão da Canoa forte à noite",
+          "analise": "O principal balneário do litoral norte gaúcho recebe energia pesada mesmo com o dia terminando, série de espaçamento razoável que ajuda a escolher a onda certa. O terral sopra moderado e ajuda a segurar bem a parede. Sem visão de longe nesse horário, entre com calma e prancha à altura da força que está rolando. Bom dia pra quem já tem experiência com mar mais forte.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "caioba|cintura-peito|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Caiobá tranquilo à noite",
+          "analise": "Na principal praia de surf do Paraná, o mar chega com energia baixa essa noite, remada tranquila sem grande esforço. A série é curta, então convém prestar atenção no ritmo entre as ondas. O vento de banda sopra moderado e mexe um pouco na caminhada da onda. Sem enxergar de longe, confira a condição de perto antes de entrar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tramandai|peito-ombro|curto-vaga|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tramandaí com vento forte de banda",
+          "analise": "Junto à barra, a energia chega com corpo essa manhã, cansando o braço de forma perceptível. A série vem curta e apertada, cobrando reação rápida. O vento de banda sopra forte e empurra bastante a caminhada da onda pro lado, exigindo ajuste constante na linha. Litoral bem exposto, então a condição pode mudar rápido ao longo do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|ombro-cabeca|medio-7a9|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Arroio do Sal pesado à noite",
+          "analise": "Nesse pico exposto do litoral norte gaúcho, a energia chega pesada mesmo à noite, do tipo que cansa o braço rápido e cobra respeito no drop. A série tem espaçamento razoável, dá tempo de se posicionar. O terral sopra moderado e ajuda a segurar a parede, apesar da força toda. Sem visão de longe nesse horário, entre com calma e avalie o próprio preparo antes.",
+          "janela": null,
+          "aviso": "Energia pesada, avalie bem o preparo antes de entrar à noite."
+        }
+      ]
+    },
+    "bonete|ombro-cabeca|curto-vaga|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Bonete com força depois da trilha",
+          "analise": "Depois do acesso por trilha ou barco até essa praia isolada de Ilhabela, o mar recompensa com energia pesada, cansando o braço rápido. A série vem curta e apertada, exigindo reação ágil pra não tomar caldo. O vento do mar sopra moderado e mexe na textura da parede. Cenário selvagem e ondas de qualidade pra quem topar o esforço de chegar até lá.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "matinhos|cintura-peito|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Matinhos calmo à noite",
+          "analise": "Nesse pico democrático do Paraná, a energia chega baixa essa noite, remada tranquila sem grande esforço. A série é curta, então vale ficar de olho no ritmo entre as ondas. O vento de banda sopra moderado e mexe um pouco na parede. Bom pra quem quer manter o ritmo sem se desgastar muito.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "vermelha-do-norte|joelho-cintura|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Vermelha do Norte pequena e vazia",
+          "analise": "Essa praia de Ubatuba, com menos gente que a vizinha Itamambuca, recebe energia baixa essa manhã, remada tranquila sem grande esforço. A série vem curta, então convém ficar atento ao ritmo entre as ondas. O vento de banda sopra fraco e quase não interfere na parede. Ótimo dia pra treinar com sossego.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "itamambuca|joelho-cintura|curto-vaga|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Itamambuca pequeno pela manhã",
+          "analise": "No point mais tradicional de Ubatuba, a energia chega baixa hoje, remada tranquila e sem grande esforço. A série vem curta e apertada, então vale ficar atento ao ritmo entre as ondas. O vento do mar sopra fraco e quase não atrapalha a formação. Bom dia pra quem está evoluindo, longe da força que o pico costuma ter em dias maiores.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|cabeca-1.5x|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Unamar vira mar grande à tarde",
+          "analise": "O pico que normalmente é tranquilo vira outra praia hoje: a energia sobe muito, do tipo que cansa o braço em poucas remadas e cobra respeito total no drop. A série tem espaçamento razoável, ajuda a escolher o melhor momento pra entrar. O vento do mar sopra moderado e já deixa a parede irregular em cima de tanta força. Só quem já lida com mar grande deveria se arriscar hoje, o resto observa da praia.",
+          "janela": "13h-16h",
+          "aviso": "Mar bem maior que o normal pra essa praia, só pra quem tem experiência com energia forte."
+        }
+      ]
+    },
+    "castelhanos|ombro-cabeca|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Castelhanos pesado do lado selvagem",
+          "analise": "Do lado exposto de Ilhabela, a energia chega pesada hoje, cansando o braço rápido e cobrando respeito no drop. A série tem espaçamento razoável, dá tempo de se posicionar com calma. O vento de banda sopra fraco e interfere pouco na parede. Quem enfrentar o acesso difícil encontra um dos dias mais fortes desse trecho intocado.",
+          "janela": "6h-9h",
+          "aviso": "Energia bem mais forte que o comum por aqui, avalie o preparo antes."
+        }
+      ]
+    },
+    "silveira|peito-ombro|medio-7a9|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Silveira entrega força de manhã",
+          "analise": "Na comunidade de pescadores que também surfam, o mar chega com energia de corpo, cansando o braço de forma perceptível. A série tem espaçamento razoável, dá tempo de escolher bem a onda. O terral sopra moderado e alisa bastante a parede, deixando tudo mais organizado. Uma das ondas mais consistentes do Sul, boa manhã pra quem já tem repertório.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|peito-ombro|medio-7a9|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Ibiraquera alisada de manhã",
+          "analise": "Perto da lagoa que também vira point de kite, esse pico recebe energia de corpo, cansando o braço de forma perceptível. A série tem espaçamento razoável, dá tempo de se posicionar com calma. O terral sopra moderado e alisa bem a parede. Boa manhã pra aproveitar antes que o vento vire e a condição mude.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|peito-ombro|medio-7a9|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Ferrugem com força e mar alisado",
+          "analise": "Nessa praia badalada de Garopaba, a energia chega com corpo pela manhã, cansando o braço de forma perceptível. A série tem espaçamento razoável, ajudando a escolher bem a onda. O terral sopra moderado e alisa a parede, deixando a condição bem organizada. Cena jovem e vibrante, mas de manhã cedo costuma estar mais tranquilo antes do movimento aumentar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|cabeca-1.5x|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Ipanema vira mar grande à tarde",
+          "analise": "O pico icônico da zona sul muda de cara hoje: a energia sobe muito, do tipo que exige remada forte e cobra respeito total no drop. A série tem espaçamento razoável, ajuda a escolher o momento certo. O vento do mar sopra moderado e já deixa a parede irregular em cima de tanta força. As ilhas na frente ainda filtram parte do impacto, mas mesmo assim é dia pra quem já lida com energia forte, não pra estreia.",
+          "janela": "14h-17h",
+          "aviso": "Mar bem maior que o normal pra essa praia, cuidado redobrado na água."
+        }
+      ]
+    },
+    "itacoatiara|cabeca-1.5x|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Itacoa pesado como sempre, hoje mais",
+          "analise": "Numa das ondas mais fortes e tradicionais do estado, a energia sobe ainda mais hoje, cansando o braço rápido e cobrando respeito total em cada drop. A série tem espaçamento razoável, dá tempo de escolher bem o momento de entrar. O vento do mar sopra moderado e deixa a parede mais irregular em cima de tanta força. Fundo raso, tubo forte e localismo respeitado, então só entra quem já conhece bem o pico.",
+          "janela": "14h-17h",
+          "aviso": "Fundo raso e energia extrema, só pra quem já tem repertório avançado ali."
+        }
+      ]
+    },
+    "capao-da-canoa|peito-ombro|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Capão da Canoa com força à tarde",
+          "analise": "No principal balneário do litoral norte gaúcho, a energia chega com corpo, cansando o braço de forma perceptível. A série tem espaçamento razoável, dá tempo de se posicionar. O vento de banda sopra fraco e interfere pouco na parede. Boa tarde pra todos os níveis aproveitarem, com movimento típico de temporada.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "capao-da-canoa|peito-ombro|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Capão da Canoa segue com força à noite",
+          "analise": "A energia segue com corpo mesmo com o dia terminando, série de espaçamento razoável que ajuda na escolha da onda. O vento do mar sopra fraco e não estraga muito a parede. Sem visão de condição de longe, entre com calma e prancha de confiança. Bom fechamento de dia pra quem gosta de mar com força.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|ombro-cabeca|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Itaúna entrega força de padrão mundial",
+          "analise": "No point mais respeitado do surf brasileiro, a energia chega muito pesada, do tipo que exige remada forte e cobra respeito máximo em cada drop. A série tem espaçamento razoável, dá tempo de escolher o momento certo de entrar. O vento do mar sopra moderado e já mexe um pouco na parede, mesmo com o terral de norte sendo o ideal por ali. Peso competitivo de verdade, então só quem já tem repertório de alto nível deveria se arriscar hoje.",
+          "janela": "6h-9h",
+          "aviso": "Energia muito pesada e pico competitivo, recomendado só pra quem já tem repertório avançado."
+        }
+      ]
+    },
+    "arroio-do-sal|peito-ombro|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Arroio do Sal com força à noite",
+          "analise": "Esse pico exposto do litoral norte gaúcho segue com energia de corpo mesmo à noite, cansando o braço de forma perceptível. A série tem espaçamento razoável, dá tempo de se posicionar com calma. O vento do mar sopra fraco e não estraga muito a parede. Sem visão de condição de longe, entre com calma e confira de perto antes.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "jureia|cabeca-1.5x|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Jureia vira mar grande e solitário",
+          "analise": "Nessa estação ecológica com poucos surfistas por ali, a energia sobe muito hoje, do tipo que exige remada forte e cobra respeito total em cada drop. A série tem espaçamento razoável, dá tempo de escolher o momento certo. O vento do mar sopra moderado e já deixa a parede mais irregular em cima de tanta força. Por ter pouca gente na água, ir sozinho num dia desses pede ainda mais cautela.",
+          "janela": "6h-9h",
+          "aviso": "Mar grande e praia isolada com pouca gente por perto, avise alguém antes de entrar."
+        }
+      ]
+    },
+    "arpoador|cabeca-1.5x|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Arpoador vira palco de mar grande",
+          "analise": "O pico mais carismático do Rio muda de cara hoje: a energia sobe muito, exigindo remada forte e cobrando respeito total em cada drop. A série tem espaçamento razoável, ajuda a escolher bem o momento de entrar. O vento do mar sopra moderado e já deixa a parede mais irregular em cima de tanta força. Com a plateia do costão de olho e o crowd que sempre aparece em dia grande, a fila fica ainda mais decisiva.",
+          "janela": "14h-17h",
+          "aviso": "Mar bem maior que o normal, respeite a fila e avalie o preparo antes de entrar."
+        }
+      ]
+    },
+    "vermelha-do-norte|peito-ombro|medio-7a9|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Vermelha do Norte com força à tarde",
+          "analise": "Essa praia de Ubatuba, normalmente mais tranquila que a vizinha Itamambuca, ganha energia pesada hoje, cansando o braço rápido. A série tem espaçamento razoável, dá tempo de se posicionar com calma. O terral sopra fraco e ajuda a manter a parede organizada apesar da força toda. Tarde boa pra quem gosta de onda com corpo sem o crowd dos points mais famosos.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|cintura-peito|medio-7a9|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Porto de Imbituba com corpo à noite",
+          "analise": "Nessa praia que já recebeu etapa de circuito mundial, a energia chega com corpo mesmo à noite, cansando o braço de forma perceptível. A série tem espaçamento razoável, dá tempo de se posicionar. O terral sopra fraco e ajuda a manter a parede organizada. Sem visão de condição de longe, entre com calma e prancha à altura do padrão competitivo do lugar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "itamambuca|peito-ombro|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Itamambuca com força de manhã",
+          "analise": "No point mais tradicional de Ubatuba, a energia chega pesada hoje, bem diferente dos dias mais mansos. A série tem espaçamento razoável, dá tempo de escolher bem a onda. O vento de banda sopra fraco e interfere pouco na parede. Manhã de repique de verdade, prancha de confiança faz diferença.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "rosa|cintura-peito|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Rosa com força na enseada cênica",
+          "analise": "Nessa enseada considerada uma das mais bonitas do Brasil, a energia chega com corpo, cansando o braço de forma perceptível. A série tem espaçamento razoável, dá tempo de se posicionar com calma. O vento de banda sopra moderado e mexe um pouco na caminhada da onda. Tarde boa pra unir surf de qualidade com a paisagem que atrai turismo o ano todo.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|ombro-cabeca|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "O canto da igrejinha entra pesado",
+          "analise": "Esse canto mais abrigado ao lado da igrejinha costuma segurar a onda quando o point vizinho fica grande demais, e hoje mesmo ele entra com energia bem pesada. A série tem espaçamento razoável, dá tempo de escolher o momento certo de entrar. O vento do mar sopra moderado e já mexe na parede, apesar da proteção natural do lugar. Referência histórica da região, então vale entrar com respeito ao nível de força que está rolando.",
+          "janela": "6h-9h",
+          "aviso": "Energia mais forte que o normal mesmo no canto abrigado, avalie o preparo antes."
+        }
+      ]
+    },
+    "camburi|cabeca-1.5x|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Camburi vira mar grande de manhã",
+          "analise": "O pico badalado que normalmente é bem tranquilo muda de cara hoje: a energia sobe muito, exigindo remada forte e cobrando respeito total em cada drop. A série tem espaçamento razoável, ajuda a escolher bem o momento de entrar. O vento de banda sopra fraco e interfere pouco, deixando a parede relativamente organizada apesar da força toda. Dia raro pra esse pico, então só quem já lida com energia forte deveria se arriscar.",
+          "janela": "6h-9h",
+          "aviso": "Mar bem maior que o normal pra essa praia democrática, cuidado redobrado."
+        }
+      ]
+    },
+    "praia-do-forte|peito-ombro|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Forte com esquerdas de qualidade",
+          "analise": "Nessa extensão enorme de praia exposta, a ondulação de sul entra cheia e forma esquerdas de qualidade, com série de espaçamento razoável que dá tempo de se posicionar. A energia tem corpo, cansa o braço mas recompensa quem lê bem a formação. O terral sopra fraco pela manhã e ajuda a alisar a parede. Com mar mais forte, cuidado com as rochas em alguns trechos, e o Canto do Forte segura bem quando o meio fecha.",
+          "janela": "6h-9h",
+          "aviso": "Fique atento às rochas em trechos quando o mar aumenta."
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-01T18:21:27.510Z"
+  "generated_at": "2026-09-02T00:20:43.601Z"
 }
