@@ -148384,7 +148384,865 @@
           "analise": "A longa faixa de praia exposta que se estende por Cabo Frio ganha porte médio nessa tarde, com predominância de esquerdas puxando bem o swell de sul. O vento lateral sopra fraco, mexe pouco a face, e o intervalo entre as séries é razoável, dá pra se posicionar sem correria. A energia leve a moderada mantém a remada tranquila, e o Canto do Forte segue segurando bem esse tipo de condição mais contida. Vale ficar de olho nos trechos com rocha ao longo da praia, principalmente se o mar crescer ao longo do dia."
         }
       ]
+    },
+    "praia-brava-floripa|peito-ombro|bom-9a11|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Onshore no pico em Praia Brava (Floripa)",
+          "analise": "A noite chega com vento onshore soprando, o tipo que vem da água pra areia e desorganiza a parede sobre Praia Brava (Floripa). A onda vem num porte generoso, com volume decente por trás, e o espaçamento entre as ondas é generoso, sobra tempo de escolher a certa. A força na medida, empurra sem exagerar na cobrança. A sensação na água é de parede menos previsível, cortada pelo vento, exigindo reação rápida no drop. Dá pra todo mundo aproveitar, cada um no seu ritmo, sem grandes sustos, e vale ficar no trecho mais protegido, sem forçar as ondas mais fechadas da série.",
+          "janela": null,
+          "aviso": "Pico com localismo presente: respeite a ordem na água e não force prioridade sem conhecer o pico."
+        }
+      ]
+    },
+    "geriba|peito-ombro|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Vento de lado em Geribá",
+          "analise": "É noite em Geribá, e vento lateral, batendo quase de través, de lado na onda segue soprando. O porte chega bom, já com corpo suficiente pra empurrar quem pega, e a série chega bem espaçada, dá tempo de ver a onda vindo de longe. A força na medida, empurra sem exagerar na cobrança. Quem rema sente uns solavancos na face, então o timing da tomada precisa ser mais preciso. É condição honesta pra quem já não é mais tão novato, e vale escolher os picos mais protegidos do vento pra achar a parede mais limpa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|ombro-cabeca|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Lateral no pico em Arroio do Sal",
+          "analise": "Amanhece em Arroio do Sal com vento lateral cruzando o pico, soprando quase de través. O mar traz porte generoso, condição de mais peso, e o intervalo entre as ondas é confortável, sem correria. A força já pesa, a remada pede ritmo e a onda cobra presença. A sensação é de parede um pouco irregular, sem ficar feia, mas cobrando atenção na entrada. Quem já tem uma base de surf aproveita bem esse dia, e vale escolher os picos mais protegidos do vento pra achar a parede mais limpa.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|ombro-cabeca|bom-9a11|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Vento do mar em Arroio do Sal",
+          "analise": "A tarde chega com um onshore firme, o vento que sobe do mar e bagunça a superfície soprando sobre Arroio do Sal. A onda chega num porte já robusto, exigindo mais preparo, e a série chega bem espaçada, dá tempo de ver a onda vindo de longe. A força já pesa, a remada pede ritmo e a onda cobra presença. Quem rema sente a superfície mexida, então vale escolher bem a onda pra não pegar o pior trecho. É uma condição que recompensa quem já pega ritmo, e a dica é remar com antecedência pra dentro da onda e não perder o pique inicial.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|peito-ombro|bom-9a11|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Noite de condição de espelho em Praia do Forte",
+          "analise": "Anoitece e brisa quase nula, mar liso do início ao fim permanece firme em Praia do Forte. O mar traz um porte médio pra grande, com boa massa d’água, e a série vem organizada e espaçada, boa leitura de longe. A força aperta um pouco, a remada exige atenção. A sensação é de controle total, com a face segurando limpa onda após onda. Quem já tem uma base de surf aproveita bem esse dia, e o ideal é não perder tempo, esse tipo de mar limpo custa a repetir.",
+          "janela": null,
+          "aviso": "Trechos com rocha exposta no fundo: cuidado redobrado na entrada e na saída."
+        }
+      ]
+    },
+    "joaquina|peito-ombro|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Joaquina: vento do mar de tarde",
+          "analise": "A tarde em Joaquina traz vento onshore, aquele que vem do mar pra terra e enruga a face da onda. A onda vem num porte generoso, com volume decente por trás, e a série organiza num ritmo tranquilo, nem apertado nem espaçado demais. A força na medida, empurra sem exagerar na cobrança. A sensação na água é de parede menos previsível, cortada pelo vento, exigindo reação rápida no drop. Dá pra todo mundo aproveitar, cada um no seu ritmo, sem grandes sustos, e o ideal é não forçar a sessão se a bagunça piorar ao longo do dia.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "rosa|ombro-cabeca|bom-9a11|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Praia do Rosa: vento do mar de tarde",
+          "analise": "Entrando a tarde, Praia do Rosa sente um onshore firme, o vento que sobe do mar e bagunça a superfície. A onda chega num porte já robusto, exigindo mais preparo, e o espaçamento entre as ondas é generoso, sobra tempo de escolher a certa. A força já pesa, a remada pede ritmo e a onda cobra presença. Na água, a face vem mais enrugada e a leitura precisa ser rápida antes da bagunça tomar conta. Quem já tem uma base de surf aproveita bem esse dia, e melhor escolher as ondas mais limpas da série e não insistir nas mais bagunçadas.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|ombro-cabeca|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Noite de vento de lado em Ibiraquera",
+          "analise": "Pra essa condição de noite, vento lateral, batendo quase de través, de lado na onda define o clima em Ibiraquera. O mar traz porte generoso, condição de mais peso, e a série vem organizada e espaçada, boa leitura de longe. A força já pesa, a remada pede ritmo e a onda cobra presença. A sensação é de parede um pouco irregular, sem ficar feia, mas cobrando atenção na entrada. É uma condição que recompensa quem já pega ritmo, e vale se posicionar um pouco mais fundo no pico pra pegar a onda já formada.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-buzios|peito-ombro|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Noite de lateral no pico em Praia Brava (Búzios)",
+          "analise": "Já escuro, Praia Brava (Búzios) segue com um vento de lado, o lateral, picando a face sem virar bagunça total. O porte chega bom, já com corpo suficiente pra empurrar quem pega, e a série vem organizada e espaçada, boa leitura de longe. A força na medida, empurra sem exagerar na cobrança. Na água, a parede chega com uma textura leve, pedindo mais precisão no pop-up, o movimento de levantar da prancha de uma vez. É uma condição que recompensa quem já pega ritmo, e vale se posicionar um pouco mais fundo no pico pra pegar a onda já formada.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|peito-ombro|bom-9a11|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Condição de espelho em Praia do Peró",
+          "analise": "Anoitece e um vento tão fraco que praticamente some, deixando a superfície lisa permanece firme em Praia do Peró. A onda vem num porte generoso, com volume decente por trás, e a série vem organizada e espaçada, boa leitura de longe. A força aperta um pouco, a remada exige atenção. Quem rema sente a superfície inteira lisa, o que facilita qualquer manobra. É condição honesta pra quem já não é mais tão novato, e vale aproveitar bem essa janela, porque mar assim liso não é sempre.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|ombro-cabeca|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Noite de vento atravessado em Praia da Silveira",
+          "analise": "Anoitece e um vento de lado, o lateral, picando a face sem virar bagunça total permanece firme em Praia da Silveira. A onda chega num porte já robusto, exigindo mais preparo, e a série vem organizada e espaçada, boa leitura de longe. A força aperta um pouco, a remada exige atenção. A sensação é de parede um pouco irregular, sem ficar feia, mas cobrando atenção na entrada. Quem já tem uma base de surf aproveita bem esse dia, e vale escolher os picos mais protegidos do vento pra achar a parede mais limpa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "penha|cintura-peito|bom-9a11|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Penha sob mar bagunçado pelo vento",
+          "analise": "Anoitece e vento onshore soprando, o tipo que vem da água pra areia e desorganiza a parede permanece firme em Penha. O mar traz um porte discreto, dia mais ameno, e a série vem organizada e espaçada, boa leitura de longe. A força é moderada, dá pra sentir o empurrão sem cansar demais. A sensação na água é de parede menos previsível, cortada pelo vento, exigindo reação rápida no drop. Dá pra todo mundo aproveitar, cada um no seu ritmo, sem grandes sustos, e vale ficar no trecho mais protegido, sem forçar as ondas mais fechadas da série.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-mole|peito-ombro|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Praia Mole: vento do mar de tarde",
+          "analise": "A tarde em Praia Mole traz um onshore firme, o vento que sobe do mar e bagunça a superfície. O mar traz um porte médio pra grande, com boa massa d’água, e a série vem numa cadência razoável, dá pra ler e se posicionar com calma. A força é moderada, dá pra sentir o empurrão sem cansar demais. A sensação na água é de parede menos previsível, cortada pelo vento, exigindo reação rápida no drop. Dá pra todo mundo aproveitar, cada um no seu ritmo, sem grandes sustos, e vale ficar no trecho mais protegido, sem forçar as ondas mais fechadas da série.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|peito-ombro|bom-9a11|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Praia Brava (Cabo Frio) sob mar liso",
+          "analise": "Pra essa condição de noite, um vento tão fraco que praticamente some, deixando a superfície lisa define o clima em Praia Brava (Cabo Frio). O mar traz um porte médio pra grande, com boa massa d’água, e a série chega bem espaçada, dá tempo de ver a onda vindo de longe. A força aperta um pouco, a remada exige atenção. A sensação é de controle total, com a face segurando limpa onda após onda. É uma condição que recompensa quem já pega ritmo, e vale se posicionar um pouco mais fundo no pico pra pegar a onda já formada.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|ombro-cabeca|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia do Porto (Imbituba): vento atravessado de manhã",
+          "analise": "Praia do Porto (Imbituba) acorda com um vento de lado, o lateral, picando a face sem virar bagunça total nesta manhã. A onda chega num porte já robusto, exigindo mais preparo, e a série organiza num ritmo tranquilo, nem apertado nem espaçado demais. A força aperta um pouco, a remada exige atenção. A sensação é de parede um pouco irregular, sem ficar feia, mas cobrando atenção na entrada. É condição honesta pra quem já não é mais tão novato, e vale se posicionar um pouco mais fundo no pico pra pegar a onda já formada.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|ombro-cabeca|bom-9a11|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tarde de vento do mar em Praia do Porto (Imbituba)",
+          "analise": "A tarde em Praia do Porto (Imbituba) traz vento onshore soprando, o tipo que vem da água pra areia e desorganiza a parede. O mar traz porte generoso, condição de mais peso, e o espaçamento entre as ondas é generoso, sobra tempo de escolher a certa. A força já pesa, a remada pede ritmo e a onda cobra presença. A sensação na água é de parede menos previsível, cortada pelo vento, exigindo reação rápida no drop. É uma condição que recompensa quem já pega ritmo, e a dica é remar com antecedência pra dentro da onda e não perder o pique inicial.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-lagoa|peito-ombro|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Lateral no pico em Barra da Lagoa",
+          "analise": "A manhã em Barra da Lagoa amanhece com vento lateral, batendo quase de través, de lado na onda. A onda vem num porte generoso, com volume decente por trás, e a série organiza num ritmo tranquilo, nem apertado nem espaçado demais. A força na medida, empurra sem exagerar na cobrança. Quem rema sente uns solavancos na face, então o timing da tomada precisa ser mais preciso. É condição gentil, ideal pra quem ainda tá pegando o jeito, e o ideal é buscar o canto que estiver mais de costas pro vento.",
+          "janela": "7h-9h",
+          "aviso": "Perto de molhe e canal, a correnteza pode puxar forte: fique atento à saída de água."
+        }
+      ]
+    },
+    "tucuns|peito-ombro|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Noite de vento atravessado em Tucuns",
+          "analise": "De noite, vento lateral, batendo quase de través, de lado na onda é a marca da condição em Tucuns. O mar traz um porte médio pra grande, com boa massa d’água, e a série chega bem espaçada, dá tempo de ver a onda vindo de longe. A força é moderada, dá pra sentir o empurrão sem cansar demais. Quem rema sente uns solavancos na face, então o timing da tomada precisa ser mais preciso. Quem já tem uma base de surf aproveita bem esse dia, e vale se posicionar um pouco mais fundo no pico pra pegar a onda já formada.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|ombro-cabeca|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Praia do Ferrugem sob lateral no pico",
+          "analise": "Já escuro, Praia do Ferrugem segue com vento lateral cruzando o pico, soprando quase de través. A onda chega num porte já robusto, exigindo mais preparo, e o espaçamento entre as ondas é generoso, sobra tempo de escolher a certa. A força aperta um pouco, a remada exige atenção. Quem rema sente uns solavancos na face, então o timing da tomada precisa ser mais preciso. É condição honesta pra quem já não é mais tão novato, e vale escolher os picos mais protegidos do vento pra achar a parede mais limpa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "costao-do-santinho|peito-ombro|bom-9a11|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Mar bagunçado pelo vento em Costão do Santinho",
+          "analise": "Já escuro, Costão do Santinho segue com vento onshore soprando, o tipo que vem da água pra areia e desorganiza a parede. O porte chega bom, já com corpo suficiente pra empurrar quem pega, e a série chega bem espaçada, dá tempo de ver a onda vindo de longe. A força aperta um pouco, a remada exige atenção. A sensação na água é de parede menos previsível, cortada pelo vento, exigindo reação rápida no drop. É uma condição que recompensa quem já pega ritmo, e o ideal é não forçar a sessão se a bagunça piorar ao longo do dia.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "geriba|peito-ombro|bom-9a11|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Geribá: onshore no pico de tarde",
+          "analise": "Já de tarde, Geribá segue com um onshore firme, o vento que sobe do mar e bagunça a superfície. A onda vem num porte generoso, com volume decente por trás, e o espaçamento entre as ondas é generoso, sobra tempo de escolher a certa. A força já pesa, a remada pede ritmo e a onda cobra presença. Na água, a face vem mais enrugada e a leitura precisa ser rápida antes da bagunça tomar conta. É condição honesta pra quem já não é mais tão novato, e melhor escolher as ondas mais limpas da série e não insistir nas mais bagunçadas.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|cintura-peito|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Arroio do Sal sob lateral no pico",
+          "analise": "A noite chega com vento lateral cruzando o pico, soprando quase de través sobre Arroio do Sal. O mar traz um porte discreto, dia mais ameno, e o espaçamento entre as ondas é generoso, sobra tempo de escolher a certa. A força é baixa, a remada custa pouco. A sensação é de parede um pouco irregular, sem ficar feia, mas cobrando atenção na entrada. É uma condição tranquila, boa pra quem tá ganhando confiança na água, e vale ficar no trecho mais protegido, sem forçar as ondas mais fechadas da série.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|peito-ombro|bom-9a11|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Praia do Forte sob lateral no pico",
+          "analise": "No fim de tarde, um vento de lado, o lateral, picando a face sem virar bagunça total toma conta de Praia do Forte. O porte chega bom, já com corpo suficiente pra empurrar quem pega, e a série chega bem espaçada, dá tempo de ver a onda vindo de longe. A força aperta um pouco, a remada exige atenção. A sensação é de parede um pouco irregular, sem ficar feia, mas cobrando atenção na entrada. Quem já tem uma base de surf aproveita bem esse dia, e vale escolher os picos mais protegidos do vento pra achar a parede mais limpa.",
+          "janela": "13h-15h",
+          "aviso": "Trechos com rocha exposta no fundo: cuidado redobrado na entrada e na saída."
+        }
+      ]
+    },
+    "pantano-do-sul|cintura-peito|medio-7a9|offshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Manhã de terral firme em Pântano do Sul",
+          "analise": "Amanhece em Pântano do Sul com um terral firme, vento offshore que deixa a onda vitrificada. A onda chega num porte mais baixo, sem grande volume, e o intervalo entre as ondas é confortável, sem correria. A força é baixa, a remada custa pouco. Quem rema sente a onda empinando redondo, sem tranco, face vitrificada do início ao fim. Dá pra todo mundo aproveitar, cada um no seu ritmo, sem grandes sustos, e a dica é escolher as ondas menores da série pra treinar sem sufoco.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "itacoatiara|ombro-cabeca|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Itacoatiara sob vento atravessado",
+          "analise": "De noite, vento lateral cruzando o pico, soprando quase de través é a marca da condição em Itacoatiara. O porte vem grande, com bastante massa d’água por trás, e a série chega bem espaçada, dá tempo de ver a onda vindo de longe. A força pesa de verdade, a remada cansa rápido. Na água, a parede chega com uma textura leve, pedindo mais precisão no pop-up, o movimento de levantar da prancha de uma vez. É condição exigente, melhor deixar pra quem já tem experiência, e vale ir com prancha mais estreita pra aproveitar a força sem perder controle.",
+          "janela": null,
+          "aviso": "Pico com localismo presente: respeite a ordem na água e não force prioridade sem conhecer o pico."
+        }
+      ]
+    },
+    "itacarezinho|ombro-cabeca|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Itacarezinho: vento de lado de noite",
+          "analise": "É noite em Itacarezinho, e um vento de lado, o lateral, picando a face sem virar bagunça total segue soprando. O porte vem grande, com bastante massa d’água por trás, e o mar vem em série curta, uma onda logo em cima da outra. A força é moderada, dá pra sentir o empurrão sem cansar demais. A sensação é de parede um pouco irregular, sem ficar feia, mas cobrando atenção na entrada. É uma condição que recompensa quem já pega ritmo, e o ideal é buscar o canto que estiver mais de costas pro vento.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|cintura-peito|bom-9a11|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Cassino: offshore alisando de manhã",
+          "analise": "A manhã chega e vento offshore, o terral que sai da terra pro mar e alisa a face marca a condição em Cassino. O mar traz um porte discreto, dia mais ameno, e a série vem organizada e espaçada, boa leitura de longe. A força é baixa, a remada custa pouco. Quem rema sente a onda empinando redondo, sem tranco, face vitrificada do início ao fim. É condição gentil, ideal pra quem ainda tá pegando o jeito, e a dica é escolher as ondas menores da série pra treinar sem sufoco.",
+          "janela": "6h-10h",
+          "aviso": "Perto de molhe e canal, a correnteza pode puxar forte: fique atento à saída de água."
+        }
+      ]
+    },
+    "maresias|peito-ombro|bom-9a11|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Noite de offshore alisando em Maresias",
+          "analise": "Já escuro, Maresias segue com vento offshore soprando da areia pro mar, alisando tudo. O mar traz um porte médio pra grande, com boa massa d’água, e o espaçamento entre as ondas é generoso, sobra tempo de escolher a certa. A força na medida, empurra sem exagerar na cobrança. Na água, a descida vem seca e precisa, com a parede segurando lisa até o fim da manobra. É uma condição que recompensa quem já pega ritmo, e esse é o tipo de janela que compensa madrugar pra pegar limpo.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|peito-ombro|bom-9a11|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Grumari sob vento limpo",
+          "analise": "É noite em Grumari, e vento offshore, o terral que sai da terra pro mar e alisa a face segue soprando. O mar traz um porte médio pra grande, com boa massa d’água, e a série vem organizada e espaçada, boa leitura de longe. A força já pesa, a remada pede ritmo e a onda cobra presença. A sensação é de controle total na descida, a prancha responde limpo do início ao fim. É condição honesta pra quem já não é mais tão novato, e vale aproveitar enquanto o terral segura a condição limpa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|peito-ombro|bom-9a11|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Tarde de vento de lado em Praia Brava (Cabo Frio)",
+          "analise": "A tarde em Praia Brava (Cabo Frio) traz vento lateral cruzando o pico, soprando quase de través. O porte chega bom, já com corpo suficiente pra empurrar quem pega, e o espaçamento entre as ondas é generoso, sobra tempo de escolher a certa. A força aperta um pouco, a remada exige atenção. A sensação é de parede um pouco irregular, sem ficar feia, mas cobrando atenção na entrada. Quem já tem uma base de surf aproveita bem esse dia, e vale escolher os picos mais protegidos do vento pra achar a parede mais limpa.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "guarda-do-embau|cintura-peito|medio-7a9|offshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Offshore alisando em Guarda do Embaú",
+          "analise": "Amanhece em Guarda do Embaú com vento offshore soprando da areia pro mar, alisando tudo. O mar traz um porte discreto, dia mais ameno, e o intervalo entre as ondas é confortável, sem correria. A força vem fraca, remada leve, sem muita cobrança. Quem rema sente a onda empinando redondo, sem tranco, face vitrificada do início ao fim. É uma condição tranquila, boa pra quem tá ganhando confiança na água, e vale ficar no trecho mais protegido, sem forçar as ondas mais fechadas da série.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-cupe|peito-ombro|curto-vaga|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Manhã de mar bagunçado pelo vento em Praia do Cupe",
+          "analise": "Já de manhã, vento onshore soprando, o tipo que vem da água pra areia e desorganiza a parede domina o cenário em Praia do Cupe. A onda vem num porte generoso, com volume decente por trás, e o mar vem em série curta, uma onda logo em cima da outra. A força é baixa, a remada custa pouco. Quem rema sente a superfície mexida, então vale escolher bem a onda pra não pegar o pior trecho. É uma condição tranquila, boa pra quem tá ganhando confiança na água, e vale ficar no trecho mais protegido, sem forçar as ondas mais fechadas da série.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|cabeca-1.5x|curto-vaga|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 0,
+          "titulo": "Noite de mar bagunçado pelo vento em Praia Brava (Arraial)",
+          "analise": "Já escuro, Praia Brava (Arraial) segue com vento onshore soprando, o tipo que vem da água pra areia e desorganiza a parede. O porte vem bem grande, pesado, condição que pede respeito, e a série chega apertada, quase atropelada. A força vem pesada, o caldo castiga quem erra o tempo. Na água, a face vem mais enrugada e a leitura precisa ser rápida antes da bagunça tomar conta. É condição pesada, pede repertório de quem já rodou mar assim, e vale ir com prancha mais estreita pra aproveitar a força sem perder controle.",
+          "janela": null,
+          "aviso": "Porte grande com força pesada: condição só pra quem já tem experiência em mar de peso."
+        }
+      ]
+    },
+    "monte-alto|cabeca-1.5x|curto-vaga|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 0,
+          "titulo": "Monte Alto sob mar bagunçado pelo vento",
+          "analise": "A noite chega com um onshore firme, o vento que sobe do mar e bagunça a superfície sobre Monte Alto. O mar traz um porte fora do comum, dia de peso, e o mar vem em série curta, uma onda logo em cima da outra. A força pesa de verdade, a remada cansa rápido. Na água, a face vem mais enrugada e a leitura precisa ser rápida antes da bagunça tomar conta. Só quem já surfa mar de peso vai curtir esse dia de verdade, e a dica é buscar o pico mais fundo, onde a onda já vem formada.",
+          "janela": null,
+          "aviso": "Porte grande com força pesada: condição só pra quem já tem experiência em mar de peso."
+        }
+      ]
+    },
+    "rosa|ombro-cabeca|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Lateral no pico em Praia do Rosa",
+          "analise": "Já escuro, Praia do Rosa segue com um vento de lado, o lateral, picando a face sem virar bagunça total. A onda chega num porte já robusto, exigindo mais preparo, e as ondas se sucedem rápido, sem muito respiro entre uma e outra. A força é moderada, dá pra sentir o empurrão sem cansar demais. Quem rema sente uns solavancos na face, então o timing da tomada precisa ser mais preciso. Quem já tem uma base de surf aproveita bem esse dia, e a dica é remar com antecedência pra dentro da onda e não perder o pique inicial.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|cabeca-1.5x|curto-vaga|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Noite de vento do mar em Foguete",
+          "analise": "Pra essa condição de noite, um onshore firme, o vento que sobe do mar e bagunça a superfície define o clima em Foguete. O porte vem bem grande, pesado, condição que pede respeito, e o mar vem em série curta, uma onda logo em cima da outra. A força vem pesada, o caldo castiga quem erra o tempo. Na água, a face vem mais enrugada e a leitura precisa ser rápida antes da bagunça tomar conta. É condição pesada, pede repertório de quem já rodou mar assim, e vale ir com prancha mais estreita pra aproveitar a força sem perder controle.",
+          "janela": null,
+          "aviso": "Porte grande com força pesada: condição só pra quem já tem experiência em mar de peso."
+        }
+      ]
+    },
+    "figueira|cabeca-1.5x|curto-vaga|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 0,
+          "titulo": "Noite de mar bagunçado pelo vento em Figueira",
+          "analise": "Pra essa condição de noite, vento onshore, aquele que vem do mar pra terra e enruga a face da onda define o clima em Figueira. A onda chega grande de verdade, volume pesado por trás, e a série chega apertada, quase atropelada. A força pesa de verdade, a remada cansa rápido. Na água, a face vem mais enrugada e a leitura precisa ser rápida antes da bagunça tomar conta. É condição pesada, pede repertório de quem já rodou mar assim, e melhor escolher as ondas mais limpas da série e não insistir nas mais bagunçadas.",
+          "janela": null,
+          "aviso": "Porte grande com força pesada: condição só pra quem já tem experiência em mar de peso."
+        }
+      ]
+    },
+    "itaunas|cintura-peito|curto-vaga|onshore-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Itaúnas: mar bagunçado pelo vento de manhã",
+          "analise": "Itaúnas acorda com vento onshore, aquele que vem do mar pra terra e enruga a face da onda nesta manhã. O porte vem mais contido hoje, condição mais tranquila, e o mar vem em série curta, uma onda logo em cima da outra. A força vem fraca, remada leve, sem muita cobrança. Quem rema sente a superfície mexida, então vale escolher bem a onda pra não pegar o pior trecho. É condição gentil, ideal pra quem ainda tá pegando o jeito, e melhor escolher as ondas mais limpas da série e não insistir nas mais bagunçadas.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|cabeca-1.5x|curto-vaga|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 0,
+          "titulo": "Praia Grande sob vento do mar",
+          "analise": "De noite, vento onshore soprando, o tipo que vem da água pra areia e desorganiza a parede é a marca da condição em Praia Grande. O porte vem bem grande, pesado, condição que pede respeito, e as ondas se sucedem rápido, sem muito respiro entre uma e outra. A força vem pesada, o caldo castiga quem erra o tempo. Na água, a face vem mais enrugada e a leitura precisa ser rápida antes da bagunça tomar conta. É condição pesada, pede repertório de quem já rodou mar assim, e a dica é buscar o pico mais fundo, onde a onda já vem formada.",
+          "janela": null,
+          "aviso": "Porte grande com força pesada: condição só pra quem já tem experiência em mar de peso."
+        }
+      ]
+    },
+    "unamar|peito-ombro|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Vento do mar em Unamar",
+          "analise": "A manhã em Unamar amanhece com um onshore firme, o vento que sobe do mar e bagunça a superfície. A onda vem num porte generoso, com volume decente por trás, e a série organiza num ritmo tranquilo, nem apertado nem espaçado demais. A força é moderada, dá pra sentir o empurrão sem cansar demais. Na água, a face vem mais enrugada e a leitura precisa ser rápida antes da bagunça tomar conta. É condição gentil, ideal pra quem ainda tá pegando o jeito, e melhor escolher as ondas mais limpas da série e não insistir nas mais bagunçadas.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|cabeca-1.5x|curto-vaga|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Unamar: mar bagunçado pelo vento de noite",
+          "analise": "De noite, um onshore firme, o vento que sobe do mar e bagunça a superfície é a marca da condição em Unamar. O mar traz um porte fora do comum, dia de peso, e as ondas se sucedem rápido, sem muito respiro entre uma e outra. A força pesa de verdade, a remada cansa rápido. Na água, a face vem mais enrugada e a leitura precisa ser rápida antes da bagunça tomar conta. É condição pesada, pede repertório de quem já rodou mar assim, e o ideal é não forçar a sessão se a bagunça piorar ao longo do dia.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|ombro-cabeca|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Praia do Forte sob onshore no pico",
+          "analise": "Amanhece em Praia do Forte com vento onshore soprando, o tipo que vem da água pra areia e desorganiza a parede. O mar traz porte generoso, condição de mais peso, e a série organiza num ritmo tranquilo, nem apertado nem espaçado demais. A força já pesa, a remada pede ritmo e a onda cobra presença. Na água, a face vem mais enrugada e a leitura precisa ser rápida antes da bagunça tomar conta. É condição honesta pra quem já não é mais tão novato, e a dica é remar com antecedência pra dentro da onda e não perder o pique inicial.",
+          "janela": "6h-10h",
+          "aviso": "Trechos com rocha exposta no fundo: cuidado redobrado na entrada e na saída."
+        }
+      ]
+    },
+    "praia-do-forte|peito-ombro|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite de onshore no pico em Praia do Forte",
+          "analise": "É noite em Praia do Forte, e vento onshore, aquele que vem do mar pra terra e enruga a face da onda segue soprando. A onda vem num porte generoso, com volume decente por trás, e a série vem numa cadência razoável, dá pra ler e se posicionar com calma. A força já pesa, a remada pede ritmo e a onda cobra presença. A sensação na água é de parede menos previsível, cortada pelo vento, exigindo reação rápida no drop. É uma condição que recompensa quem já pega ritmo, e vale se posicionar um pouco mais fundo no pico pra pegar a onda já formada.",
+          "janela": null,
+          "aviso": "Trechos com rocha exposta no fundo: cuidado redobrado na entrada e na saída."
+        }
+      ]
+    },
+    "praia-brava-arraial|cabeca-1.5x|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã de vento do mar em Praia Brava (Arraial)",
+          "analise": "Cedo, Praia Brava (Arraial) recebe um onshore firme, o vento que sobe do mar e bagunça a superfície. O porte vem bem grande, pesado, condição que pede respeito, e o intervalo entre as ondas é confortável, sem correria. A força é grande demais pra brincadeira, exige preparo físico. Quem rema sente a superfície mexida, então vale escolher bem a onda pra não pegar o pior trecho. É condição pesada, pede repertório de quem já rodou mar assim, e o ideal é não forçar a sessão se a bagunça piorar ao longo do dia.",
+          "janela": "6h-10h",
+          "aviso": "Porte grande com força pesada: condição só pra quem já tem experiência em mar de peso."
+        }
+      ]
+    },
+    "praia-brava-arraial|cabeca-1.5x|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde de vento do mar em Praia Brava (Arraial)",
+          "analise": "A tarde em Praia Brava (Arraial) traz um onshore firme, o vento que sobe do mar e bagunça a superfície. A onda chega grande de verdade, volume pesado por trás, e a série vem numa cadência razoável, dá pra ler e se posicionar com calma. A força é grande demais pra brincadeira, exige preparo físico. Na água, a face vem mais enrugada e a leitura precisa ser rápida antes da bagunça tomar conta. Só quem já surfa mar de peso vai curtir esse dia de verdade, e melhor escolher as ondas mais limpas da série e não insistir nas mais bagunçadas.",
+          "janela": "14h-16h",
+          "aviso": "Porte grande com força pesada: condição só pra quem já tem experiência em mar de peso."
+        }
+      ]
+    },
+    "monte-alto|cabeca-1.5x|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Monte Alto sob vento do mar",
+          "analise": "A manhã em Monte Alto amanhece com um onshore firme, o vento que sobe do mar e bagunça a superfície. O mar traz um porte fora do comum, dia de peso, e o intervalo entre as ondas é confortável, sem correria. A força é grande demais pra brincadeira, exige preparo físico. Na água, a face vem mais enrugada e a leitura precisa ser rápida antes da bagunça tomar conta. É condição pesada, pede repertório de quem já rodou mar assim, e o ideal é não forçar a sessão se a bagunça piorar ao longo do dia.",
+          "janela": "6h-10h",
+          "aviso": "Porte grande com força pesada: condição só pra quem já tem experiência em mar de peso."
+        }
+      ]
+    },
+    "monte-alto|cabeca-1.5x|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde de mar bagunçado pelo vento em Monte Alto",
+          "analise": "Entrando a tarde, Monte Alto sente vento onshore, aquele que vem do mar pra terra e enruga a face da onda. O porte vem bem grande, pesado, condição que pede respeito, e o intervalo entre as ondas é confortável, sem correria. A força vem muito pesada, o caldo é punitivo pra quem não tá pronto. A sensação na água é de parede menos previsível, cortada pelo vento, exigindo reação rápida no drop. Só quem já surfa mar de peso vai curtir esse dia de verdade, e vale ir com prancha mais estreita pra aproveitar a força sem perder controle.",
+          "janela": "14h-16h",
+          "aviso": "Porte grande com força pesada: condição só pra quem já tem experiência em mar de peso."
+        }
+      ]
+    },
+    "ibiraquera|cintura-peito|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Ibiraquera sob offshore alisando",
+          "analise": "Amanhece em Ibiraquera com vento offshore, o terral que sai da terra pro mar e alisa a face. A onda chega num porte mais baixo, sem grande volume, e o intervalo entre as ondas é confortável, sem correria. A força é baixa, a remada custa pouco. Quem rema sente a onda empinando redondo, sem tranco, face vitrificada do início ao fim. Dá pra todo mundo aproveitar, cada um no seu ritmo, sem grandes sustos, e a dica é escolher as ondas menores da série pra treinar sem sufoco.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|ombro-cabeca|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Lateral no pico em Praia do Peró",
+          "analise": "Entrando a tarde, Praia do Peró sente vento lateral, batendo quase de través, de lado na onda. O mar traz porte generoso, condição de mais peso, e a série organiza num ritmo tranquilo, nem apertado nem espaçado demais. A força aperta um pouco, a remada exige atenção. Quem rema sente uns solavancos na face, então o timing da tomada precisa ser mais preciso. É condição honesta pra quem já não é mais tão novato, e vale se posicionar um pouco mais fundo no pico pra pegar a onda já formada.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|cintura-peito|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Offshore alisando em Praia da Silveira",
+          "analise": "Já de manhã, um terral firme, vento offshore que deixa a onda vitrificada domina o cenário em Praia da Silveira. O mar traz um porte discreto, dia mais ameno, e a série organiza num ritmo tranquilo, nem apertado nem espaçado demais. A força é baixa, a remada custa pouco. A sensação é de controle total na descida, a prancha responde limpo do início ao fim. É condição gentil, ideal pra quem ainda tá pegando o jeito, e vale aproveitar enquanto o terral segura a condição limpa.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|ombro-cabeca|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Grumari: lateral no pico de tarde",
+          "analise": "Entrando a tarde, Grumari sente vento lateral, batendo quase de través, de lado na onda. A onda chega num porte já robusto, exigindo mais preparo, e o intervalo entre as ondas é confortável, sem correria. A força vem muito pesada, o caldo é punitivo pra quem não tá pronto. A sensação é de parede um pouco irregular, sem ficar feia, mas cobrando atenção na entrada. Só quem já surfa mar de peso vai curtir esse dia de verdade, e a dica é buscar o pico mais fundo, onde a onda já vem formada.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|cabeca-1.5x|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Figueira: vento do mar de manhã",
+          "analise": "Cedo, Figueira recebe vento onshore, aquele que vem do mar pra terra e enruga a face da onda. O mar traz um porte fora do comum, dia de peso, e o intervalo entre as ondas é confortável, sem correria. A força vem muito pesada, o caldo é punitivo pra quem não tá pronto. A sensação na água é de parede menos previsível, cortada pelo vento, exigindo reação rápida no drop. É condição pesada, pede repertório de quem já rodou mar assim, e melhor escolher as ondas mais limpas da série e não insistir nas mais bagunçadas.",
+          "janela": "6h-9h",
+          "aviso": "Porte grande com força pesada: condição só pra quem já tem experiência em mar de peso."
+        }
+      ]
+    },
+    "figueira|cabeca-1.5x|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde de vento do mar em Figueira",
+          "analise": "A tarde chega com um onshore firme, o vento que sobe do mar e bagunça a superfície soprando sobre Figueira. O porte vem bem grande, pesado, condição que pede respeito, e a série vem numa cadência razoável, dá pra ler e se posicionar com calma. A força é grande demais pra brincadeira, exige preparo físico. Na água, a face vem mais enrugada e a leitura precisa ser rápida antes da bagunça tomar conta. É condição exigente, melhor deixar pra quem já tem experiência, e a dica é buscar o pico mais fundo, onde a onda já vem formada.",
+          "janela": "13h-16h",
+          "aviso": "Porte grande com força pesada: condição só pra quem já tem experiência em mar de peso."
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|ombro-cabeca|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Onshore no pico em Praia Brava (Cabo Frio)",
+          "analise": "Amanhece em Praia Brava (Cabo Frio) com vento onshore, aquele que vem do mar pra terra e enruga a face da onda. O mar traz porte generoso, condição de mais peso, e a série organiza num ritmo tranquilo, nem apertado nem espaçado demais. A força já pesa, a remada pede ritmo e a onda cobra presença. Quem rema sente a superfície mexida, então vale escolher bem a onda pra não pegar o pior trecho. É condição honesta pra quem já não é mais tão novato, e melhor escolher as ondas mais limpas da série e não insistir nas mais bagunçadas.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|peito-ombro|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Praia Brava (Cabo Frio): onshore no pico de noite",
+          "analise": "A noite chega com vento onshore soprando, o tipo que vem da água pra areia e desorganiza a parede sobre Praia Brava (Cabo Frio). O porte chega bom, já com corpo suficiente pra empurrar quem pega, e o intervalo entre as ondas é confortável, sem correria. A força já pesa, a remada pede ritmo e a onda cobra presença. Quem rema sente a superfície mexida, então vale escolher bem a onda pra não pegar o pior trecho. É uma condição que recompensa quem já pega ritmo, e a dica é remar com antecedência pra dentro da onda e não perder o pique inicial.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "itaunas|peito-ombro|curto-vaga|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Vento do mar em Itaúnas",
+          "analise": "Já escuro, Itaúnas segue com um onshore firme, o vento que sobe do mar e bagunça a superfície. O mar traz um porte médio pra grande, com boa massa d’água, e a série chega apertada, quase atropelada. A força é baixa, a remada custa pouco. Na água, a face vem mais enrugada e a leitura precisa ser rápida antes da bagunça tomar conta. É condição gentil, ideal pra quem ainda tá pegando o jeito, e melhor escolher as ondas mais limpas da série e não insistir nas mais bagunçadas.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|cabeca-1.5x|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Praia Grande: onshore no pico de manhã",
+          "analise": "A manhã chega e vento onshore, aquele que vem do mar pra terra e enruga a face da onda marca a condição em Praia Grande. O porte vem bem grande, pesado, condição que pede respeito, e o intervalo entre as ondas é confortável, sem correria. A força vem muito pesada, o caldo é punitivo pra quem não tá pronto. A sensação na água é de parede menos previsível, cortada pelo vento, exigindo reação rápida no drop. É condição exigente, melhor deixar pra quem já tem experiência, e o ideal é não forçar a sessão se a bagunça piorar ao longo do dia.",
+          "janela": "7h-9h",
+          "aviso": "Porte grande com força pesada: condição só pra quem já tem experiência em mar de peso."
+        }
+      ]
+    },
+    "praia-grande-arraial|cabeca-1.5x|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Praia Grande: mar bagunçado pelo vento de tarde",
+          "analise": "No fim de tarde, um onshore firme, o vento que sobe do mar e bagunça a superfície toma conta de Praia Grande. A onda chega grande de verdade, volume pesado por trás, e o intervalo entre as ondas é confortável, sem correria. A força vem muito pesada, o caldo é punitivo pra quem não tá pronto. Na água, a face vem mais enrugada e a leitura precisa ser rápida antes da bagunça tomar conta. É condição exigente, melhor deixar pra quem já tem experiência, e o ideal é não forçar a sessão se a bagunça piorar ao longo do dia.",
+          "janela": "14h-17h",
+          "aviso": "Porte grande com força pesada: condição só pra quem já tem experiência em mar de peso."
+        }
+      ]
+    },
+    "macumba|ombro-cabeca|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde de vento atravessado em Macumba",
+          "analise": "Já de tarde, Macumba segue com vento lateral, batendo quase de través, de lado na onda. O porte vem grande, com bastante massa d’água por trás, e a série organiza num ritmo tranquilo, nem apertado nem espaçado demais. A força vem muito pesada, o caldo é punitivo pra quem não tá pronto. A sensação é de parede um pouco irregular, sem ficar feia, mas cobrando atenção na entrada. Só quem já surfa mar de peso vai curtir esse dia de verdade, e a dica é buscar o pico mais fundo, onde a onda já vem formada.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|cintura-peito|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Terral firme em Praia do Ferrugem",
+          "analise": "Amanhece em Praia do Ferrugem com vento offshore, o terral que sai da terra pro mar e alisa a face. A onda chega num porte mais baixo, sem grande volume, e a série vem numa cadência razoável, dá pra ler e se posicionar com calma. A força vem fraca, remada leve, sem muita cobrança. A sensação é de controle total na descida, a prancha responde limpo do início ao fim. Dá pra todo mundo aproveitar, cada um no seu ritmo, sem grandes sustos, e vale ficar no trecho mais protegido, sem forçar as ondas mais fechadas da série.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|cabeca-1.5x|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Tombo sob brisa fraca no pico",
+          "analise": "Já de manhã, brisa quase nula, mar liso do início ao fim domina o cenário em Tombo. O mar traz um porte fora do comum, dia de peso, e o intervalo entre as ondas é confortável, sem correria. A força vem muito pesada, o caldo é punitivo pra quem não tá pronto. Quem rema sente a superfície inteira lisa, o que facilita qualquer manobra. É condição pesada, pede repertório de quem já rodou mar assim, e vale ir com prancha mais estreita pra aproveitar a força sem perder controle.",
+          "janela": "6h-10h",
+          "aviso": "Porte grande com força pesada: condição só pra quem já tem experiência em mar de peso."
+        }
+      ]
+    },
+    "tombo|ombro-cabeca|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Vento de lado em Tombo",
+          "analise": "Já de tarde, Tombo segue com um vento de lado, o lateral, picando a face sem virar bagunça total. O mar traz porte generoso, condição de mais peso, e a série vem numa cadência razoável, dá pra ler e se posicionar com calma. A força aperta um pouco, a remada exige atenção. Na água, a parede chega com uma textura leve, pedindo mais precisão no pop-up, o movimento de levantar da prancha de uma vez. Quem já tem uma base de surf aproveita bem esse dia, e vale escolher os picos mais protegidos do vento pra achar a parede mais limpa.",
+          "janela": "13h-15h",
+          "aviso": "Fundo que fecha rápido em dias de porte maior: cuidado com o impacto no raso."
+        }
+      ]
+    },
+    "prainha|ombro-cabeca|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Lateral no pico em Prainha",
+          "analise": "No fim de tarde, um vento de lado, o lateral, picando a face sem virar bagunça total toma conta de Prainha. A onda chega num porte já robusto, exigindo mais preparo, e a série organiza num ritmo tranquilo, nem apertado nem espaçado demais. A força é grande demais pra brincadeira, exige preparo físico. A sensação é de parede um pouco irregular, sem ficar feia, mas cobrando atenção na entrada. É condição exigente, melhor deixar pra quem já tem experiência, e vale ir com prancha mais estreita pra aproveitar a força sem perder controle.",
+          "janela": "13h-16h",
+          "aviso": "Pico com localismo presente: respeite a ordem na água e não force prioridade sem conhecer o pico."
+        }
+      ]
+    },
+    "unamar|cabeca-1.5x|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Mar bagunçado pelo vento em Unamar",
+          "analise": "A manhã em Unamar amanhece com vento onshore, aquele que vem do mar pra terra e enruga a face da onda. O porte vem bem grande, pesado, condição que pede respeito, e a série vem numa cadência razoável, dá pra ler e se posicionar com calma. A força é grande demais pra brincadeira, exige preparo físico. Quem rema sente a superfície mexida, então vale escolher bem a onda pra não pegar o pior trecho. É condição exigente, melhor deixar pra quem já tem experiência, e a dica é buscar o pico mais fundo, onde a onda já vem formada.",
+          "janela": "6h-10h",
+          "aviso": "Porte grande com força pesada: condição só pra quem já tem experiência em mar de peso."
+        }
+      ]
+    },
+    "pitangueiras|cabeca-1.5x|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Manhã de brisa fraca no pico em Pitangueiras",
+          "analise": "A manhã em Pitangueiras amanhece com quase sem vento, o mar fica liso feito espelho. O porte vem bem grande, pesado, condição que pede respeito, e a série organiza num ritmo tranquilo, nem apertado nem espaçado demais. A força é grande demais pra brincadeira, exige preparo físico. Na água, a parede vem limpa e previsível, sem interferência nenhuma do vento. Só quem já surfa mar de peso vai curtir esse dia de verdade, e o ideal é não perder tempo, esse tipo de mar limpo custa a repetir.",
+          "janela": "7h-9h",
+          "aviso": "Porte grande com força pesada: condição só pra quem já tem experiência em mar de peso."
+        }
+      ]
+    },
+    "pitangueiras|ombro-cabeca|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Pitangueiras sob lateral no pico",
+          "analise": "A tarde em Pitangueiras traz vento lateral, batendo quase de través, de lado na onda. A onda chega num porte já robusto, exigindo mais preparo, e a série organiza num ritmo tranquilo, nem apertado nem espaçado demais. A força aperta um pouco, a remada exige atenção. Na água, a parede chega com uma textura leve, pedindo mais precisão no pop-up, o movimento de levantar da prancha de uma vez. É uma condição que recompensa quem já pega ritmo, e vale se posicionar um pouco mais fundo no pico pra pegar a onda já formada.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "cidreira|cintura-peito|curto-vaga|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Cidreira sob lateral no pico",
+          "analise": "Já de manhã, vento lateral cruzando o pico, soprando quase de través domina o cenário em Cidreira. O mar traz um porte discreto, dia mais ameno, e o mar vem em série curta, uma onda logo em cima da outra. A força vem fraca, remada leve, sem muita cobrança. Na água, a parede chega com uma textura leve, pedindo mais precisão no pop-up, o movimento de levantar da prancha de uma vez. É condição gentil, ideal pra quem ainda tá pegando o jeito, e a dica é escolher as ondas menores da série pra treinar sem sufoco.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|cintura-peito|medio-7a9|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Vento atravessado em Arroio do Sal",
+          "analise": "Arroio do Sal vira a tarde com um vento de lado, o lateral, picando a face sem virar bagunça total. O mar traz um porte discreto, dia mais ameno, e a série organiza num ritmo tranquilo, nem apertado nem espaçado demais. A força é baixa, a remada custa pouco. Na água, a parede chega com uma textura leve, pedindo mais precisão no pop-up, o movimento de levantar da prancha de uma vez. É uma condição tranquila, boa pra quem tá ganhando confiança na água, e vale ficar no trecho mais protegido, sem forçar as ondas mais fechadas da série.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "setiba|peito-ombro|curto-vaga|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Setiba sob brisa fraca no pico",
+          "analise": "Amanhece em Setiba com um vento tão fraco que praticamente some, deixando a superfície lisa. A onda vem num porte generoso, com volume decente por trás, e as ondas se sucedem rápido, sem muito respiro entre uma e outra. A força é baixa, a remada custa pouco. Quem rema sente a superfície inteira lisa, o que facilita qualquer manobra. É uma condição tranquila, boa pra quem tá ganhando confiança na água, e vale aproveitar bem essa janela, porque mar assim liso não é sempre.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|ombro-cabeca|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Lateral no pico em Praia Brava (Arraial)",
+          "analise": "Já de tarde, Praia Brava (Arraial) segue com vento lateral, batendo quase de través, de lado na onda. O porte vem grande, com bastante massa d’água por trás, e a série organiza num ritmo tranquilo, nem apertado nem espaçado demais. A força vem pesada, o caldo castiga quem erra o tempo. A sensação é de parede um pouco irregular, sem ficar feia, mas cobrando atenção na entrada. É condição pesada, pede repertório de quem já rodou mar assim, e vale ir com prancha mais estreita pra aproveitar a força sem perder controle.",
+          "janela": "14h-16h",
+          "aviso": "Fundo que fecha rápido em dias de porte maior: cuidado com o impacto no raso."
+        }
+      ]
+    },
+    "recreio|ombro-cabeca|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde de vento de lado em Recreio dos Bandeirantes",
+          "analise": "Entrando a tarde, Recreio dos Bandeirantes sente um vento de lado, o lateral, picando a face sem virar bagunça total. O mar traz porte generoso, condição de mais peso, e a série organiza num ritmo tranquilo, nem apertado nem espaçado demais. A força aperta um pouco, a remada exige atenção. Na água, a parede chega com uma textura leve, pedindo mais precisão no pop-up, o movimento de levantar da prancha de uma vez. É uma condição que recompensa quem já pega ritmo, e vale escolher os picos mais protegidos do vento pra achar a parede mais limpa.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "itacarezinho|ombro-cabeca|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Lateral no pico em Itacarezinho",
+          "analise": "Cedo, Itacarezinho recebe vento lateral cruzando o pico, soprando quase de través. A onda chega num porte já robusto, exigindo mais preparo, e as ondas se sucedem rápido, sem muito respiro entre uma e outra. A força já pesa, a remada pede ritmo e a onda cobra presença. A sensação é de parede um pouco irregular, sem ficar feia, mas cobrando atenção na entrada. Quem já tem uma base de surf aproveita bem esse dia, e vale escolher os picos mais protegidos do vento pra achar a parede mais limpa.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "tramandai|cintura-peito|curto-vaga|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tramandaí sob lateral no pico",
+          "analise": "A manhã em Tramandaí amanhece com vento lateral cruzando o pico, soprando quase de través. A onda chega num porte mais baixo, sem grande volume, e as ondas se sucedem rápido, sem muito respiro entre uma e outra. A força é baixa, a remada custa pouco. Na água, a parede chega com uma textura leve, pedindo mais precisão no pop-up, o movimento de levantar da prancha de uma vez. É condição gentil, ideal pra quem ainda tá pegando o jeito, e vale escolher os picos mais protegidos do vento pra achar a parede mais limpa.",
+          "janela": "6h-10h",
+          "aviso": "Perto de molhe e canal, a correnteza pode puxar forte: fique atento à saída de água."
+        }
+      ]
+    },
+    "ipanema|ombro-cabeca|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde de vento atravessado em Ipanema",
+          "analise": "A tarde em Ipanema traz um vento de lado, o lateral, picando a face sem virar bagunça total. O porte vem grande, com bastante massa d’água por trás, e a série vem numa cadência razoável, dá pra ler e se posicionar com calma. A força aperta um pouco, a remada exige atenção. A sensação é de parede um pouco irregular, sem ficar feia, mas cobrando atenção na entrada. É condição honesta pra quem já não é mais tão novato, e vale se posicionar um pouco mais fundo no pico pra pegar a onda já formada.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|ombro-cabeca|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Ipanema sob vento de lado",
+          "analise": "De noite, vento lateral, batendo quase de través, de lado na onda é a marca da condição em Ipanema. A onda chega num porte já robusto, exigindo mais preparo, e a série organiza num ritmo tranquilo, nem apertado nem espaçado demais. A força aperta um pouco, a remada exige atenção. A sensação é de parede um pouco irregular, sem ficar feia, mas cobrando atenção na entrada. É condição honesta pra quem já não é mais tão novato, e vale se posicionar um pouco mais fundo no pico pra pegar a onda já formada.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|ombro-cabeca|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia Grande: vento atravessado de tarde",
+          "analise": "Entrando a tarde, Praia Grande sente um vento de lado, o lateral, picando a face sem virar bagunça total. O porte vem grande, com bastante massa d’água por trás, e a série organiza num ritmo tranquilo, nem apertado nem espaçado demais. A força pesa de verdade, a remada cansa rápido. A sensação é de parede um pouco irregular, sem ficar feia, mas cobrando atenção na entrada. É condição pesada, pede repertório de quem já rodou mar assim, e o ideal é buscar o canto que estiver mais de costas pro vento.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|ombro-cabeca|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite de vento de lado em Tombo",
+          "analise": "De noite, um vento de lado, o lateral, picando a face sem virar bagunça total é a marca da condição em Tombo. O porte vem grande, com bastante massa d’água por trás, e a série organiza num ritmo tranquilo, nem apertado nem espaçado demais. A força já pesa, a remada pede ritmo e a onda cobra presença. Na água, a parede chega com uma textura leve, pedindo mais precisão no pop-up, o movimento de levantar da prancha de uma vez. É uma condição que recompensa quem já pega ritmo, e vale escolher os picos mais protegidos do vento pra achar a parede mais limpa.",
+          "janela": null,
+          "aviso": "Fundo que fecha rápido em dias de porte maior: cuidado com o impacto no raso."
+        }
+      ]
+    },
+    "pitangueiras|ombro-cabeca|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite de vento atravessado em Pitangueiras",
+          "analise": "Já escuro, Pitangueiras segue com vento lateral cruzando o pico, soprando quase de través. O porte vem grande, com bastante massa d’água por trás, e a série vem numa cadência razoável, dá pra ler e se posicionar com calma. A força aperta um pouco, a remada exige atenção. Na água, a parede chega com uma textura leve, pedindo mais precisão no pop-up, o movimento de levantar da prancha de uma vez. É uma condição que recompensa quem já pega ritmo, e vale se posicionar um pouco mais fundo no pico pra pegar a onda já formada.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-03T00:24:05.559Z"
+  "generated_at": "2026-09-03T06:17:45.030Z"
 }
