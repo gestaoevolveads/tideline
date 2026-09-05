@@ -151992,7 +151992,227 @@
           "aviso": "Sessão de noite, mesmo com vento calmo, pede atenção: sem luz natural, entre só quem conhece bem o banco."
         }
       ]
+    },
+    "prainha|cabeca-1.5x|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã pesada na famosa direita carioca",
+          "analise": "A Prainha amanhece com aquela força que só as manhãs de ondulação forte trazem, enchendo a famosa direita de energia pesada, do tipo que faz a remada cansar e o caldo cobrar de quem erra o tempo. Vento de lado soprando fraco mal encrespa a água, então a parede segue com corpo firme sem perder a qualidade. Quem entra vai sentir o drop com pressão de verdade, a prancha ganhando velocidade rápido, então é hora de escolher bem a onda e não se afobar na descida. Fechamento sincero: manhã boa pra quem já rema com segurança em mar grande, e vale respeitar a vez de quem já está no pico.",
+          "janela": "6h-9h",
+          "aviso": "Point concorrido e com localismo forte: respeite a prioridade de quem já está no pico antes de remar pra dentro."
+        }
+      ]
+    },
+    "praia-do-pero|ombro-cabeca|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã de energia boa e vento ainda manso",
+          "analise": "O mar amanhece com uma energia boa vinda do sul, chegando numa série espaçada que dá tempo de enxergar a onda vindo de longe antes dela quebrar. O vento de lado sopra fraco, só arranhando a superfície sem destruir a parede, então a onda ainda fecha limpa na maior parte das séries. Na água a sensação é de remada com corpo, aquela pressão que exige postura mas recompensa quem pega o pico certo da onda. Fechamento honesto: maré média ajuda a organizar o pico, então vale entrar cedo, antes do vento crescer.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|cabeca-1.5x|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã de força bruta na área selvagem",
+          "analise": "A manhã chega com energia pesada empurrada pela ondulação de sul, bem organizada, o tipo de série que faz a remada cansar rápido e a espuma bater com peso na saída. Vento de lado fraco mal mexe a água, então a parede segue com corpo firme e fecha rápido, cobrando presença de quem entra. Na água dá pra sentir o caldo pegando pesado quando erra o tempo da descida, típico dessa praia sem estrutura por perto, cenário aberto e intocado. Fechamento honesto: só entra quem já nada bem e tem experiência com mar de força, porque aqui não tem posto de salvamento nem infraestrutura por perto.",
+          "janela": "6h-9h",
+          "aviso": "Praia sem posto de salvamento nem estrutura por perto: só entre com experiência e fôlego pra mar de força."
+        }
+      ]
+    },
+    "arroio-do-sal|peito-ombro|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Noite de vento do mar mexendo tudo",
+          "analise": "A noite chega com vento vindo do mar pra terra, aquele onshore que bagunça a cara da onda e deixa a água com uma espuma constante em vez de parede lisa. A energia é mais contida, dá pra sentir a remada tranquila mas sem muita pressão no drop, um mar mais macio que exigente. Quem tá de olho pro dia seguinte já pode anotar que se o vento não virar, a condição segue desorganizada, com ondas fechando em pedaços em vez de parede inteira. Fechamento sincero: não é a condição mais bonita do litoral norte gaúcho, mas dá pra uma sessão tranquila pra quem só quer se molhar sem cobrança.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "barra-do-sahy|peito-ombro|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite tranquila numa foz protegida",
+          "analise": "A noite mostra um vento fraco vindo do mar, o tipo de onshore levinho que só dá uma leve arrepiada na superfície sem destruir a organização da onda. A energia é moderada e a proteção natural da foz de rio segura o impacto do mar aberto, deixando tudo mais manso pra quem tá começando. Na água a sensação é de remada tranquila, sem grandes sustos, ideal pra treinar postura e leitura de série sem pressão. Fechamento honesto: segue sendo um refúgio bom pra família e iniciante, mesmo com o mar mais mexido em outros pontos do litoral norte paulista.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|peito-ombro|medio-7a9|lateral-fraco|noite|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite de ondulação de raspão vindo de leste",
+          "analise": "A ondulação que vem de longe chega essa noite mais de leste do que do quadrante sul que a praia prefere, então a energia entra meio de raspão, sem aquele encaixe perfeito. O vento de lado sopra fraco e não estraga muito, mas a série vem menos organizada, com ondas mais curtas de percurso. Na água dá pra sentir que falta aquela pressão cheia por trás da parede, é uma condição mais de treino do que de sessão marcante. Fechamento sincero: vale entrar se a vontade for grande, mas não espere a mesma qualidade dos dias em que a ondulação entra certinha do sul.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|ombro-cabeca|medio-7a9|lateral-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde de energia boa mas vento de lado forte",
+          "analise": "A tarde traz uma energia respeitável vinda de leste, direção que essa praia aceita bem, formando ondas com corpo suficiente pra empurrar bem quem rema. O vento de lado, batendo quase de través, é o que mais atrapalha aqui: pica a superfície e tira um pouco da limpeza da parede. Na água a sensação é de onda com força mas com textura, exigindo mais precisão na descida do que numa condição de vento calmo. Fechamento honesto: ainda vale a sessão pela energia, mas quem busca parede lisa vai se frustrar um pouco com o vento mexendo tanto.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|ombro-cabeca|medio-7a9|lateral-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite com o vento de lado que não deu trégua",
+          "analise": "A noite chega com o mesmo vento de lado forte que soprou o dia inteiro, o través que insiste em picar a onda vinda de leste sem destruir a série por completo. A energia se mantém mediana, entregando corpo suficiente pra uma remada com alguma pressão, ainda longe de ser um dia de força total. Quem pensa em entrar sente a parede menos lisa, com uma textura que pede leitura rápida pra escolher o pedaço mais limpo da onda. Fechamento sincero: condição de aproveitar o que dá, sem esperar a melhor versão da praia enquanto esse vento de lado não amansar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|peito-ombro|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite de vento parado no point mais cobiçado do país",
+          "analise": "O vento praticamente sumiu essa noite, deixando a água lisa como vidro e servindo a energia média que vem da ondulação de sudeste sem atrapalho nenhum. É a combinação que faz o point mais respeitado do surf brasileiro brilhar, mesmo sem ser um dia de energia extrema. Na água a sensação é de parede rápida e oca, motivo do point ser sede de etapa do circuito mundial, com peso suficiente pra cobrar postura de quem entra. Fechamento honesto: mar bonito de se ver, mas o pico é competitivo e pesado até em dia mediano, então só quem já tem repertório em beach break forte deve se meter.",
+          "janela": null,
+          "aviso": "Point de padrão mundial com peso competitivo: mesmo em dia mediano, a disputa por onda e a força do banco pedem repertório de quem já surfa beach break forte."
+        }
+      ]
+    },
+    "monte-alto|ombro-cabeca|medio-7a9|lateral-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde de energia média longe da multidão",
+          "analise": "A tarde entrega uma energia mediana vinda de leste, o suficiente pra formar ondas com algum corpo sem virar um dia de cobrança. O vento de lado sopra moderado e mexe a superfície, tirando um pouco do brilho da parede, mas sem estragar de vez a sessão. Na água a sensação é de remada tranquila com uma textura leve na descida, nada muito exigente pra quem já tem uma prática mediana. Fechamento honesto: vale a visita justamente pelo pico mais vazio, então quem busca sossego sem abrir mão de onda decente encontra aqui uma boa pedida.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|ombro-cabeca|medio-7a9|lateral-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite com o mesmo vento de lado moderado",
+          "analise": "A noite segue no mesmo padrão de vento de lado moderado, picando a superfície da onda vinda de leste sem destruir a série por completo. A energia continua mediana, dando corpo suficiente pra uma remada com alguma pressão, mas longe de ser um dia de força total. Quem pensa em entrar sente a parede menos lisa, exigindo leitura rápida pra pegar o pedaço mais limpo antes do vento bagunçar de novo. Fechamento sincero: pico mais vazio que os vizinhos segue sendo o grande trunfo aqui, mesmo numa condição só ok de vento e energia.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|ombro-cabeca|medio-7a9|offshore-forte|manha|borda": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã de terral forte no trecho mais exposto",
+          "analise": "O vento sai da terra pro mar com uma força fora do comum essa manhã, o tipo de terral que alisa a face mas também segura a onda com tanta pressão que dificulta a remada de entrada. A energia é mediana, então a parede ganha corpo justamente pela ajuda do vento, ficando vitrificada e com mais empinada na cara do que o normal pra faixa. Na água a sensação é de dificuldade pra furar a arrebentação, o vento empurrando a espuma de volta com força, e quem consegue passar encontra uma parede limpa mas exigente na descida. Fechamento honesto: manhã pra quem já tem experiência de remada forte, porque esse terral tão intenso cansa rápido e pode virar problema pra quem se afobar na saída.",
+          "janela": "6h-9h",
+          "aviso": "Terral muito forte pode empurrar quem está mais cansado de volta pra praia bem na hora de furar a arrebentação: só entre com fôlego de sobra."
+        }
+      ]
+    },
+    "praia-brava-arraial|ombro-cabeca|medio-7a9|lateral-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde pesada no trecho mais bravo",
+          "analise": "O vento de lado não dá trégua na tarde, batendo quase de través numa energia vinda de leste que ainda assim entrega corpo pro trecho mais pesado da região. A força do mar aqui já é maior por natureza, então mesmo com o vento atrapalhando um pouco, a parede segue exigindo postura firme na descida. Quem entra sente a remada puxada e o caldo batendo com intensidade quando erra o tempo da onda. Fechamento sincero: trecho pra quem já é família de mar forte, o vento de lado só reforça que aqui não é lugar pra iniciante.",
+          "janela": "13h-17h",
+          "aviso": "Trecho mais exposto e pesado da região, com correnteza que cobra experiência: não indicado pra quem está começando."
+        }
+      ]
+    },
+    "foguete|ombro-cabeca|medio-7a9|lateral-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde de areia branca e vento de lado moderado",
+          "analise": "A tarde traz uma energia boa vinda de leste, formando ondas com força suficiente pra empurrar bem quem rema, mesmo essa praia sendo mais conhecida pela ondulação que entra do sul. O vento de lado sopra moderado, picando a superfície sem destruir a organização da série por completo. Na água a sensação é de remada com corpo e uma descida que pede atenção pela textura deixada pelo vento. Fechamento honesto: dia de aproveitar a energia disponível, mesmo sem ser a condição mais limpa que essa areia branca costuma entregar.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|ombro-cabeca|medio-7a9|lateral-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite de vento ainda insistindo no litoral de Cabo Frio",
+          "analise": "A noite mantém o vento de lado soprando com moderação, mexendo a superfície da onda que ainda chega com energia razoável vinda de leste. A série segue com corpo mediano, dando uma remada com alguma pressão, mas sem a limpeza que um vento calmo traria pra parede. Quem pensa na condição pra depois sabe que a textura de vento tende a seguir enquanto essa direção não mudar. Fechamento sincero: condição de aproveitar o que a energia dá, sem esperar a parede mais lisa que a praia costuma entregar em dias de vento fraco.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|peito-ombro|curto-vaga|offshore-fraco|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde de mar mais fraco mas vento ajudando",
+          "analise": "A tarde chega com uma energia mais fraca e uma série apertada e atropelada, que dá menos tempo de se posicionar entre uma onda e outra. Por outro lado o vento sai fraco da terra pro mar, o offshore que alisa a face mesmo num dia mais mole, segurando a qualidade apesar da força reduzida. Na água a sensação é de remada leve, sem grande cobrança, mas também sem aquela pressão de série mais espaçada que empurra a prancha com força. Fechamento honesto: dia mais de treino técnico que de sessão memorável, mas vale pela superfície limpa que esse vento ainda garante.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|peito-ombro|curto-vaga|lateral-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde fraca no trecho mais isolado de Cabo Frio",
+          "analise": "A série chega apertada e atropelada nessa tarde, um sinal de energia mais fraca que atropela um pouco a sequência de ondas. O vento de lado sopra moderado e mexe a superfície, tirando parte da limpeza que esse trecho mais exposto costuma ter em dias melhores. Quem entra sente uma remada mais leve, sem a pressão pesada que costuma marcar esse pedaço mais bravo da costa, mas ainda com uma textura chata na descida por causa do vento. Fechamento sincero: dia fraco pra esse trecho, mais indicado pra manter a forma do que pra buscar a sessão mais marcante por aqui.",
+          "janela": "13h-17h",
+          "aviso": "Trecho mais isolado e com menos gente por perto: fique atento à correnteza mesmo num dia mais fraco de energia."
+        }
+      ]
+    },
+    "praia-grande-arraial|ombro-cabeca|medio-7a9|offshore-forte|manha|borda": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã de terral fora do padrão na mais movimentada de Arraial",
+          "analise": "Um terral fora do padrão toma conta da manhã, soprando tão forte da terra pro mar que a arrebentação vira um desafio à parte antes mesmo de pensar na onda. A energia é mediana, ganhando uma sensação extra de empinada por causa da pressão desse vento firme segurando a água. Na água o desafio é furar a linha de espuma com esse vento batendo de frente, mas quem consegue passar encontra uma parede vitrificada e limpa, com a água clara típica daqui ajudando a enxergar o fundo. Fechamento honesto: manhã pra quem já tem fôlego de remada forte, porque esse terral tão intenso cansa rápido quem não está preparado.",
+          "janela": "6h-9h",
+          "aviso": "Terral muito forte pode segurar a remada de quem está mais cansado bem na hora de furar a arrebentação: entre com fôlego de sobra."
+        }
+      ]
+    },
+    "praia-grande-arraial|ombro-cabeca|medio-7a9|lateral-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde de vento de lado na mais movimentada de Arraial",
+          "analise": "A água transparente que marca essa praia ganha uma textura chata na tarde, com o vento de lado batendo quase de través numa energia razoável vinda de leste. A série ainda entrega corpo suficiente pra uma remada com alguma pressão, só que a parede perde parte da limpeza por causa do vento mexendo tudo. Quem entra sente a descida menos previsível, com uma textura que exige mais atenção logo na saída da prancha. Fechamento sincero: ainda dá pra aproveitar a energia disponível, mas quem busca parede lisa vai preferir esperar o vento amansar.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|peito-ombro|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite de vento parado no canto da igrejinha",
+          "analise": "O vento praticamente parou essa noite, deixando a água lisa como vidro bem no canto mais abrigado da região, ao lado da igrejinha que marca esse pico. A energia é mediana, entrando alinhada o suficiente pra formar séries organizadas mesmo sem muita força extra. Na água a sensação é de remada tranquila com uma descida limpa, sem a textura de vento que costuma atrapalhar em outros pontos. Fechamento honesto: esse canto costuma salvar o dia justamente quando o pico principal fica grande demais, então vale guardar essa referência histórica pras próximas sessões.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-04T18:14:34.946Z"
+  "generated_at": "2026-09-05T00:15:15.924Z"
 }
