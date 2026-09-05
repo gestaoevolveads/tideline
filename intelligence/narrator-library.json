@@ -153103,7 +153103,733 @@
           "aviso": "Série apertada, vento de lado e pouca luz à noite: atenção redobrada na leitura do pico."
         }
       ]
+    },
+    "praia-brava-arraial|cintura-peito|bom-9a11|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Janela boa pra remar",
+          "analise": "A onda vem de porte médio, já empurra mas ainda dá pra escolher com calma qual pegar, e a série vem mais espaçada, sobra tempo de ver a onda chegando de longe e se posicionar com calma. Um vento fraco vindo do mar, aquele que costuma bagunçar a onda, ainda não atrapalha muito a forma, e a força é moderada, cansa a remada mas não passa do que dá pra aguentar. No geral é um mar que compensa entrar. De manhã, vale ler bem o banco antes de entrar e respeitar quem já tá remando pra fora.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|cintura-peito|medio-7a9|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Mar difícil",
+          "analise": "O tamanho é mediano, tem corpo suficiente pra render uma remada boa sem virar sufoco, e a série ainda vem um pouco corrida, mas dá pra pegar o ritmo se prestar atenção no intervalo. O vento forte vindo do mar desmonta a parede e cobra atenção redobrada de quem entra, e a energia sobe um degrau, dá pra sentir o peso mas ainda administrável. Não é um dia de se animar demais, serve mais pra quem já tá por perto ou quer treinar em condição difícil. Essa tarde, vale calcular o tempo de fôlego antes de se comprometer com uma série maior.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|joelho-cintura|bom-9a11|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar redondo",
+          "analise": "A onda vem pequena, boa pra pegar ritmo sem sufoco, e o intervalo entre as séries é generoso, dá tempo de escolher a onda sem correria. Sopra um pouco de vento do mar pra terra, mas fraco o bastante pra não desmontar a parede, e a força vem baixa, o corpo agradece porque a remada rende sem sufoco. É um daqueles dias que valem a pena tirar da cama. De manhã, vale escolher o canto que combina com o seu nível antes de remar pra fora.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|cintura-peito|bom-9a11|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Dia que compensa",
+          "analise": "O mar aparece com porte intermediário, nem manso nem punitivo, e as ondas chegam com folga entre elas, o suficiente pra respirar e se recolocar no pico. Tem uma brisa fraca vindo do mar, o tipo que enruga um pouco mas não estraga a sessão, e a energia sobe um degrau, dá pra sentir o peso mas ainda administrável. Sobra motivo pra encarar essa sessão com vontade. De manhã, vale escolher bem o pico e não forçar remada onde a corrente puxa mais.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|cintura-peito|medio-7a9|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Dia de pouca escolha",
+          "analise": "A onda ganha um corpo razoável, o suficiente pra dar velocidade sem assustar, e o intervalo entre as ondas é razoável, nem apertado nem folgado, dá pra se organizar. Sopra forte um vento que vem do mar, bagunça tudo e deixa a superfície agitada e imprevisível, e a energia já pesa um pouco, a remada cansa mais mas ainda compensa o esforço. É um mar mais pra sofrer do que pra aproveitar, melhor ir com expectativa baixa. Essa tarde, vale observar uma série inteira antes de se comprometer com uma onda.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "jureia|cintura-peito|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Mar de trabalho",
+          "analise": "Vem um porte médio, com força pra empurrar a prancha mas ainda gerenciável, e o ritmo das séries é mediano, funciona pra quem gosta de ficar ligado na água. Um vento fraco vindo do mar, aquele que costuma bagunçar a onda, ainda não atrapalha muito a forma, e a força é moderada, cansa a remada mas não passa do que dá pra aguentar. Não é um dia perfeito, mas rende uma sessão decente pra quem for com expectativa certa. Logo cedo, vale guardar energia pra remada de volta, que costuma pesar mais que a ida.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|cintura-peito|bom-9a11|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar organizado",
+          "analise": "O tamanho fica na média, dá pra escolher a onda com calma antes de remar, e o ritmo é tranquilo, cada série dá um tempo bom pra remar de volta sem sufoco. Sopra um pouco de vento do mar pra terra, mas fraco o bastante pra não desmontar a parede, e a energia já pesa um pouco, a remada cansa mais mas ainda compensa o esforço. É um mar generoso, sem grandes desculpas pra ficar de fora. De manhã, vale escolher bem o pico e não forçar remada onde a corrente puxa mais.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|cintura-peito|bom-9a11|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Bom dia pra entrar",
+          "analise": "A onda ganha um corpo razoável, o suficiente pra dar velocidade sem assustar, e a série vem mais espaçada, sobra tempo de ver a onda chegando de longe e se posicionar com calma. Tem uma brisa fraca vindo do mar, o tipo que enruga um pouco mas não estraga a sessão, e a energia sobe um degrau, dá pra sentir o peso mas ainda administrável. No geral é um mar que compensa entrar. De manhã, vale observar uma série inteira antes de se comprometer com uma onda.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|cintura-peito|medio-7a9|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Mar bagunçado",
+          "analise": "O tamanho é mediano, tem corpo suficiente pra render uma remada boa sem virar sufoco, e a série vem num compasso ok, exige atenção mas não sufoca quem tá remando. O vento do mar castiga com força, deixa a água picotada e a remada mais dura, e a energia sobe um degrau, dá pra sentir o peso mas ainda administrável. Não empolga, e quem entrar deve saber que vai ter que trabalhar duro por pouca recompensa. À tarde, vale guardar energia pra remada de volta, que costuma pesar mais que a ida.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|cintura-peito|bom-9a11|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar generoso",
+          "analise": "O mar aparece com porte intermediário, nem manso nem punitivo, e o intervalo entre as séries é generoso, dá tempo de escolher a onda sem correria. Um vento fraco vindo do mar, aquele que costuma bagunçar a onda, ainda não atrapalha muito a forma, e a energia já pesa um pouco, a remada cansa mais mas ainda compensa o esforço. É um daqueles dias que valem a pena tirar da cama. Nessa manhã, vale escolher bem o pico e não forçar remada onde a corrente puxa mais.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|joelho-cintura|bom-9a11|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Janela boa pra remar",
+          "analise": "O tamanho é discreto, dá pra entrar tranquilo e treinar manobra sem pressão, e as ondas chegam com folga entre elas, o suficiente pra respirar e se recolocar no pico. Sopra um pouco de vento do mar pra terra, mas fraco o bastante pra não desmontar a parede, e a energia é fraca, dá pra remar sem cansar e ainda sobra fôlego. Sobra motivo pra encarar essa sessão com vontade. De manhã, vale escolher a prancha certa pro peso da água em vez de forçar o equipamento errado.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "maresias|cintura-peito|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Dá pra aproveitar",
+          "analise": "A onda ganha um corpo razoável, o suficiente pra dar velocidade sem assustar, e a série ainda vem um pouco corrida, mas dá pra pegar o ritmo se prestar atenção no intervalo. Tem uma brisa fraca vindo do mar, o tipo que enruga um pouco mas não estraga a sessão, e a força vem fraca, remada leve, a água quase não empurra de volta. É um mar de trabalho, dá pra aproveitar sem esperar o dia do ano. Nessa manhã, vale ler bem o banco antes de entrar e respeitar quem já tá remando pra fora.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-cupe|cintura-peito|bom-9a11|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Mar honesto",
+          "analise": "Vem um porte médio, com força pra empurrar a prancha mas ainda gerenciável, e o ritmo é tranquilo, cada série dá um tempo bom pra remar de volta sem sufoco. O vento de lado já dá uma leve desorganizada na parede, e a força é moderada, cansa a remada mas não passa do que dá pra aguentar. Vale entrar sabendo que não é o auge, mas ainda compensa. No fim de tarde, vale observar uma série inteira antes de se comprometer com uma onda.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "itacoatiara|cintura-peito|bom-9a11|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar redondo",
+          "analise": "O tamanho fica na média, dá pra escolher a onda com calma antes de remar, e a série vem mais espaçada, sobra tempo de ver a onda chegando de longe e se posicionar com calma. Um vento fraco vindo do mar, aquele que costuma bagunçar a onda, ainda não atrapalha muito a forma, e a energia sobe um degrau, dá pra sentir o peso mas ainda administrável. É um mar generoso, sem grandes desculpas pra ficar de fora. De manhã, vale calcular o tempo de fôlego antes de se comprometer com uma série maior.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|cintura-peito|bom-9a11|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Dia que compensa",
+          "analise": "A onda vem de porte médio, já empurra mas ainda dá pra escolher com calma qual pegar, e o intervalo entre as séries é generoso, dá tempo de escolher a onda sem correria. Sopra um pouco de vento do mar pra terra, mas fraco o bastante pra não desmontar a parede, e a força é moderada, cansa a remada mas não passa do que dá pra aguentar. No geral é um mar que compensa entrar. Nessa manhã, vale escolher a prancha certa pro peso da água em vez de forçar o equipamento errado.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|joelho-cintura|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar organizado",
+          "analise": "O mar mostra um porte baixo hoje, mais pra brincar do que pra remar forte, e as ondas chegam com folga entre elas, o suficiente pra respirar e se recolocar no pico. Um vento fraco soprando de lado mexe pouco na superfície, e a força vem fraca, remada leve, a água quase não empurra de volta. É um daqueles dias que valem a pena tirar da cama. De manhã, vale guardar energia pra remada de volta, que costuma pesar mais que a ida.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|cintura-peito|bom-9a11|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Bom dia pra entrar",
+          "analise": "O tamanho é mediano, tem corpo suficiente pra render uma remada boa sem virar sufoco, e o ritmo é tranquilo, cada série dá um tempo bom pra remar de volta sem sufoco. Tem uma brisa fraca vindo do mar, o tipo que enruga um pouco mas não estraga a sessão, e a energia sobe um degrau, dá pra sentir o peso mas ainda administrável. Sobra motivo pra encarar essa sessão com vontade. Nessa manhã, vale escolher bem o pico e não forçar remada onde a corrente puxa mais.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|cintura-peito|medio-7a9|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Precisa de paciência hoje",
+          "analise": "O mar aparece com porte intermediário, nem manso nem punitivo, e o intervalo entre as ondas é razoável, nem apertado nem folgado, dá pra se organizar. O vento forte vindo do mar desmonta a parede e cobra atenção redobrada de quem entra, e a força é moderada, cansa a remada mas não passa do que dá pra aguentar. É um dia difícil de recomendar, só compensa pra quem não tem outra opção por perto. Essa tarde, vale observar uma série inteira antes de se comprometer com uma onda.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|cintura-peito|bom-9a11|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar generoso",
+          "analise": "Vem um porte médio, com força pra empurrar a prancha mas ainda gerenciável, e a série vem mais espaçada, sobra tempo de ver a onda chegando de longe e se posicionar com calma. Um vento fraco vindo do mar, aquele que costuma bagunçar a onda, ainda não atrapalha muito a forma, e a energia sobe um degrau, dá pra sentir o peso mas ainda administrável. É um mar generoso, sem grandes desculpas pra ficar de fora. De manhã, vale guardar energia pra remada de volta, que costuma pesar mais que a ida.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|ombro-cabeca|medio-7a9|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Mar castigador",
+          "analise": "A onda vem grande e pesada, terreno só pra quem já tem estrada percorrida na água, e o ritmo das séries é mediano, funciona pra quem gosta de ficar ligado na água. Sopra forte um vento que vem do mar, bagunça tudo e deixa a superfície agitada e imprevisível, e a energia vem no talo, é daquele tipo que não perdoa hesitação. Não é um dia de se animar demais, serve mais pra quem já tá por perto ou quer treinar em condição difícil. De noite, vale ler bem o banco antes de entrar e respeitar quem já tá remando pra fora, com atenção redobrada porque enxergar a onda chegando fica mais difícil no escuro.",
+          "janela": null,
+          "aviso": "Onda grande combinada com pouca luz pede cautela redobrada: se não conhece bem o pico, é melhor deixar pra outra sessão."
+        }
+      ]
+    },
+    "domingas-dias|peito-ombro|curto-vaga|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Dia de expectativa baixa",
+          "analise": "A onda vem robusta, pede postura firme e remada afiada, e a série vem apertada, as ondas se atropelam e obriga a remar rápido pra não ficar preso lá dentro. Vem um vento fraco de través, que sopra de lado sem incomodar demais, e a força chega pesada, quem erra o tempo da remada sente o caldo cobrar. É um mar mais pra sofrer do que pra aproveitar, melhor ir com expectativa baixa. No fim de tarde, vale ir com prancha maior e escolher o canto mais tranquilo pra não se afobar.",
+          "janela": "13h-17h",
+          "aviso": "Esse porte de onda foge do padrão tranquilo que costuma pegar por aqui: quem está começando pode preferir esperar baixar."
+        }
+      ]
+    },
+    "praia-grande-arraial|ombro-cabeca|medio-7a9|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Mar difícil",
+          "analise": "O porte é grande, com bastante peso, situação de gente com experiência acumulada, e a série vem num compasso ok, exige atenção mas não sufoca quem tá remando. O vento do mar castiga com força, deixa a água picotada e a remada mais dura, e a força é grande, exige remada rápida e faz o mar cobrar caro de quem hesita. Não empolga, e quem entrar deve saber que vai ter que trabalhar duro por pouca recompensa. De noite, vale escolher bem o pico e não forçar remada onde a corrente puxa mais, com atenção redobrada porque enxergar a onda chegando fica mais difícil no escuro.",
+          "janela": null,
+          "aviso": "Onda grande combinada com pouca luz pede cautela redobrada: se não conhece bem o pico, é melhor deixar pra outra sessão."
+        }
+      ]
+    },
+    "figueira|ombro-cabeca|medio-7a9|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Dia de pouca escolha",
+          "analise": "O mar cresce de verdade, com um porte que exige respeito e leitura apurada do banco, e a série ainda vem um pouco corrida, mas dá pra pegar o ritmo se prestar atenção no intervalo. O vento forte vindo do mar desmonta a parede e cobra atenção redobrada de quem entra, e a força é grande, exige remada rápida e faz o mar cobrar caro de quem hesita. É um dia difícil de recomendar, só compensa pra quem não tem outra opção por perto. Essa noite, vale observar uma série inteira antes de se comprometer com uma onda, com atenção redobrada porque enxergar a onda chegando fica mais difícil no escuro.",
+          "janela": null,
+          "aviso": "Onda grande combinada com pouca luz pede cautela redobrada: se não conhece bem o pico, é melhor deixar pra outra sessão."
+        }
+      ]
+    },
+    "vermelha-do-norte|peito-ombro|curto-vaga|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Mar bagunçado",
+          "analise": "O porte é maior, exige leitura rápida e uma remada segura pra não tomar de jeito, e o intervalo entre uma onda e outra é curto, quase sem tempo de respirar entre as levadas. Um vento fraco saindo da terra pro mar ajuda a segurar a forma e deixa a parede mais limpa, e a energia já pesa um pouco, a remada cansa mais mas ainda compensa o esforço. Não é um dia de se animar demais, serve mais pra quem já tá por perto ou quer treinar em condição difícil. À tarde, vale guardar energia pra remada de volta, que costuma pesar mais que a ida.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "maresias|ombro-cabeca|curto-vaga|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Precisa de paciência hoje",
+          "analise": "Vem uma onda grande, pesada, do tipo que separa quem treina do resto, e a série chega corrida, tipo mar de vento, sem folga pra escolher com calma. Sopra um pouco de vento do mar pra terra, mas fraco o bastante pra não desmontar a parede, e a energia vem bem pesada, o caldo castiga forte quem se atrasa na remada. É um mar mais pra sofrer do que pra aproveitar, melhor ir com expectativa baixa. À tarde, vale calcular o tempo de fôlego antes de se comprometer com uma série maior.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|peito-ombro|curto-vaga|onshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Mar castigador",
+          "analise": "O mar cresce um degrau, com corpo suficiente pra exigir comprometimento na remada, e o ritmo das ondas vem apertado, dá pra sentir que a água não descansa entre uma série e outra. Sopra forte um vento que vem do mar, bagunça tudo e deixa a superfície agitada e imprevisível, e a energia vem alta, exige preparo físico e leitura rápida de quando remar. Não empolga, e quem entrar deve saber que vai ter que trabalhar duro por pouca recompensa. Logo cedo, vale escolher bem o pico e não forçar remada onde a corrente puxa mais.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "setiba|peito-ombro|medio-7a9|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Dia mediano",
+          "analise": "A onda ganha porte, já cobra postura de quem entra e não perdoa remada mole, e o intervalo entre as ondas é razoável, nem apertado nem folgado, dá pra se organizar. Vem um terral fraco, vento que sai da terra, o tipo que penteia a onda em vez de atrapalhar, e a energia sobe um degrau, dá pra sentir o peso mas ainda administrável. É um mar mediano, honesto no que entrega, sem enganar ninguém. De noite, vale observar uma série inteira antes de se comprometer com uma onda, com atenção redobrada porque enxergar a onda chegando fica mais difícil no escuro.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|cintura-peito|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Dia de expectativa baixa",
+          "analise": "O mar aparece com porte intermediário, nem manso nem punitivo, e a série ainda vem um pouco corrida, mas dá pra pegar o ritmo se prestar atenção no intervalo. O vento que sobe do mar já deixa a face da onda com umas rugas visíveis, e a energia já pesa um pouco, a remada cansa mais mas ainda compensa o esforço. É um dia difícil de recomendar, só compensa pra quem não tem outra opção por perto. À tarde, vale guardar energia pra remada de volta, que costuma pesar mais que a ida.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|peito-ombro|bom-9a11|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Janela boa pra remar",
+          "analise": "Vem um tamanho considerável, que separa quem tá afiado de quem tá enferrujado, e o intervalo entre as séries é generoso, dá tempo de escolher a onda sem correria. Tem uma brisa fraca vindo do mar, o tipo que enruga um pouco mas não estraga a sessão, e a energia vem bem pesada, o caldo castiga forte quem se atrasa na remada. No geral é um mar que compensa entrar. No fim de tarde, vale escolher a prancha certa pro peso da água em vez de forçar o equipamento errado.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|cintura-peito|bom-9a11|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar redondo",
+          "analise": "O tamanho fica na média, dá pra escolher a onda com calma antes de remar, e as ondas chegam com folga entre elas, o suficiente pra respirar e se recolocar no pico. Sem vento nenhum bagunçando, a superfície do mar fica lisa, sem uma ruga, e a força é moderada, cansa a remada mas não passa do que dá pra aguentar. É um daqueles dias que valem a pena tirar da cama. No fim de tarde, vale observar o pico de fora um pouco antes de se comprometer.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|cintura-peito|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Mar difícil",
+          "analise": "A onda vem de porte médio, já empurra mas ainda dá pra escolher com calma qual pegar, e a série vem num compasso ok, exige atenção mas não sufoca quem tá remando. Vem um vento do mar mais presente, o suficiente pra enrugar a superfície e atrapalhar a leitura, e a energia sobe um degrau, dá pra sentir o peso mas ainda administrável. Não é um dia de se animar demais, serve mais pra quem já tá por perto ou quer treinar em condição difícil. Essa tarde, vale ler bem o banco antes de entrar e respeitar quem já tá remando pra fora.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|peito-ombro|bom-9a11|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Mar que rende o suficiente",
+          "analise": "O porte sobe, dá pra sentir o peso da água empurrando mais forte, e o ritmo é tranquilo, cada série dá um tempo bom pra remar de volta sem sufoco. Sopra um vento do mar de intensidade média, e já dá pra sentir a parede menos limpa, e a energia vem alta, exige preparo físico e leitura rápida de quando remar. Não é um dia perfeito, mas rende uma sessão decente pra quem for com expectativa certa. No fim de tarde, vale calcular o tempo de fôlego antes de se comprometer com uma série maior.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|peito-ombro|bom-9a11|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Dia que compensa",
+          "analise": "A onda vem robusta, pede postura firme e remada afiada, e a série vem mais espaçada, sobra tempo de ver a onda chegando de longe e se posicionar com calma. Um vento fraco vindo do mar, aquele que costuma bagunçar a onda, ainda não atrapalha muito a forma, e a energia vem no talo, é daquele tipo que não perdoa hesitação. Sobra motivo pra encarar essa sessão com vontade. No fim de tarde, vale escolher bem o pico e não forçar remada onde a corrente puxa mais.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|peito-ombro|bom-9a11|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar organizado",
+          "analise": "O porte é maior, exige leitura rápida e uma remada segura pra não tomar de jeito, e o intervalo entre as séries é generoso, dá tempo de escolher a onda sem correria. Não tem vento incomodando, o mar segue liso, quase espelhado, e a força é grande, exige remada rápida e faz o mar cobrar caro de quem hesita. É um mar generoso, sem grandes desculpas pra ficar de fora. De noite, vale observar uma série inteira antes de se comprometer com uma onda, com atenção redobrada porque enxergar a onda chegando fica mais difícil no escuro.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|cintura-peito|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Dia de pouca escolha",
+          "analise": "A onda vem de porte médio, já empurra mas ainda dá pra escolher com calma qual pegar, e a série ainda vem um pouco corrida, mas dá pra pegar o ritmo se prestar atenção no intervalo. O vento que sobe do mar já deixa a face da onda com umas rugas visíveis, e a força é moderada, cansa a remada mas não passa do que dá pra aguentar. É um mar mais pra sofrer do que pra aproveitar, melhor ir com expectativa baixa. No fim de tarde, vale guardar energia pra remada de volta, que costuma pesar mais que a ida.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|cintura-peito|bom-9a11|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Bom dia pra entrar",
+          "analise": "A onda vem de porte médio, já empurra mas ainda dá pra escolher com calma qual pegar, e as ondas chegam com folga entre elas, o suficiente pra respirar e se recolocar no pico. A ausência de vento deixa a água parada por cima, um espelho raro de se ver, e a energia sobe um degrau, dá pra sentir o peso mas ainda administrável. No geral é um mar que compensa entrar. À tarde, vale escolher a prancha certa pro peso da água em vez de forçar o equipamento errado.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|peito-ombro|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Sessão de compromisso",
+          "analise": "O mar cresce um degrau, com corpo suficiente pra exigir comprometimento na remada, e o intervalo entre as ondas é razoável, nem apertado nem folgado, dá pra se organizar. Sopra uma brisa fraca da terra pro mar, aquele vento que alisa a superfície em vez de estragar, e a força é grande, exige remada rápida e faz o mar cobrar caro de quem hesita. É um mar de trabalho, dá pra aproveitar sem esperar o dia do ano. Logo cedo, vale escolher bem o pico e não forçar remada onde a corrente puxa mais.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|peito-ombro|bom-9a11|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar generoso",
+          "analise": "A onda ganha porte, já cobra postura de quem entra e não perdoa remada mole, e o ritmo é tranquilo, cada série dá um tempo bom pra remar de volta sem sufoco. Sopra um pouco de vento do mar pra terra, mas fraco o bastante pra não desmontar a parede, e a força é grande, exige remada rápida e faz o mar cobrar caro de quem hesita. É um daqueles dias que valem a pena tirar da cama. À tarde, vale observar uma série inteira antes de se comprometer com uma onda.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|peito-ombro|bom-9a11|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Janela boa pra remar",
+          "analise": "Vem um tamanho considerável, que separa quem tá afiado de quem tá enferrujado, e a série vem mais espaçada, sobra tempo de ver a onda chegando de longe e se posicionar com calma. Sem vento nenhum bagunçando, a superfície do mar fica lisa, sem uma ruga, e a energia vem bem pesada, o caldo castiga forte quem se atrasa na remada. Sobra motivo pra encarar essa sessão com vontade. De noite, vale guardar energia pra remada de volta, que costuma pesar mais que a ida, com atenção redobrada porque enxergar a onda chegando fica mais difícil no escuro.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|peito-ombro|longo-11a13|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Mar redondo",
+          "analise": "O porte sobe, dá pra sentir o peso da água empurrando mais forte, e a série vem bem espaçada, sobra tempo de sobra pra escolher a onda certa sem pressa nenhuma. Não tem vento incomodando, o mar segue liso, quase espelhado, e a força chega pesada, quem erra o tempo da remada sente o caldo cobrar. É um mar generoso, sem grandes desculpas pra ficar de fora. De manhã, vale escolher bem o pico e não forçar remada onde a corrente puxa mais.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|cintura-peito|longo-11a13|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Dia que compensa",
+          "analise": "A onda ganha um corpo razoável, o suficiente pra dar velocidade sem assustar, e o intervalo entre uma onda e outra é longo, dá pra remar de volta com folga e ainda descansar. A ausência de vento deixa a água parada por cima, um espelho raro de se ver, e a energia vem forte, a remada pede fôlego e o caldo empurra com vontade. No geral é um mar que compensa entrar. Logo cedo, vale observar uma série inteira antes de se comprometer com uma onda.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|cintura-peito|longo-11a13|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar organizado",
+          "analise": "Vem um porte médio, com força pra empurrar a prancha mas ainda gerenciável, e as séries chegam bem separadas, sinal de energia vindo de longe e organizada. Tem uma brisa fraca vindo do mar, o tipo que enruga um pouco mas não estraga a sessão, e a energia vem forte, a remada pede fôlego e o caldo empurra com vontade. É um daqueles dias que valem a pena tirar da cama. No fim de tarde, vale guardar energia pra remada de volta, que costuma pesar mais que a ida.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|cintura-peito|longo-11a13|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Bom dia pra entrar",
+          "analise": "O tamanho fica na média, dá pra escolher a onda com calma antes de remar, e o compasso das ondas é generoso, quase preguiçoso, sobra tempo pra tudo dentro d'água. Sem vento nenhum bagunçando, a superfície do mar fica lisa, sem uma ruga, e a energia vem alta, exige preparo físico e leitura rápida de quando remar. Sobra motivo pra encarar essa sessão com vontade. De manhã, vale escolher bem o pico e não forçar remada onde a corrente puxa mais.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|cintura-peito|longo-11a13|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar generoso",
+          "analise": "A onda vem de porte médio, já empurra mas ainda dá pra escolher com calma qual pegar, e a série vem bem espaçada, sobra tempo de sobra pra escolher a onda certa sem pressa nenhuma. Sopra um vento fraco lateral, de lado, quase sem efeito na parede, e a força é moderada, cansa a remada mas não passa do que dá pra aguentar. É um mar generoso, sem grandes desculpas pra ficar de fora. No fim de tarde, vale observar uma série inteira antes de se comprometer com uma onda.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|cintura-peito|longo-11a13|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Janela boa pra remar",
+          "analise": "O tamanho é mediano, tem corpo suficiente pra render uma remada boa sem virar sufoco, e o intervalo entre uma onda e outra é longo, dá pra remar de volta com folga e ainda descansar. Não tem vento incomodando, o mar segue liso, quase espelhado, e a energia vem forte, a remada pede fôlego e o caldo empurra com vontade. No geral é um mar que compensa entrar. Logo cedo, vale conversar com quem já tá na água sobre onde a onda tá fechando melhor.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|cintura-peito|longo-11a13|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar redondo",
+          "analise": "O mar aparece com porte intermediário, nem manso nem punitivo, e as séries chegam bem separadas, sinal de energia vindo de longe e organizada. Um vento fraco soprando de lado mexe pouco na superfície, e a energia vem alta, exige preparo físico e leitura rápida de quando remar. É um daqueles dias que valem a pena tirar da cama. No fim de tarde, vale escolher o canto que combina com o seu nível antes de remar pra fora.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|peito-ombro|longo-11a13|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Dia que compensa",
+          "analise": "A onda vem robusta, pede postura firme e remada afiada, e o compasso das ondas é generoso, quase preguiçoso, sobra tempo pra tudo dentro d'água. A ausência de vento deixa a água parada por cima, um espelho raro de se ver, e a força chega pesada, quem erra o tempo da remada sente o caldo cobrar. Sobra motivo pra encarar essa sessão com vontade. Nessa manhã, vale guardar energia pra remada de volta, que costuma pesar mais que a ida.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|peito-ombro|longo-11a13|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar organizado",
+          "analise": "O porte é maior, exige leitura rápida e uma remada segura pra não tomar de jeito, e a série vem bem espaçada, sobra tempo de sobra pra escolher a onda certa sem pressa nenhuma. Um vento fraco vindo do mar, aquele que costuma bagunçar a onda, ainda não atrapalha muito a forma, e a energia vem alta, exige preparo físico e leitura rápida de quando remar. É um mar generoso, sem grandes desculpas pra ficar de fora. No fim de tarde, vale escolher bem o pico e não forçar remada onde a corrente puxa mais.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-do-sahy|cintura-peito|longo-11a13|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Bom dia pra entrar",
+          "analise": "A onda vem de porte médio, já empurra mas ainda dá pra escolher com calma qual pegar, e o intervalo entre uma onda e outra é longo, dá pra remar de volta com folga e ainda descansar. Sem vento nenhum bagunçando, a superfície do mar fica lisa, sem uma ruga, e a energia já pesa um pouco, a remada cansa mais mas ainda compensa o esforço. No geral é um mar que compensa entrar. De manhã, vale entrar com calma, sem pressa de acompanhar quem já surfa há mais tempo.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "cidreira|ombro-cabeca|curto-vaga|onshore-forte|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Swell de lado errado",
+          "analise": "O tamanho sobe bastante, e a água carrega um peso que não é pra qualquer um, e a série vem apertada, as ondas se atropelam e obriga a remar rápido pra não ficar preso lá dentro. O swell chega de um ângulo que não é bem o que essa praia gosta, entra meio de raspão e perde parte da organização. O vento do mar castiga com força, deixa a água picotada e a remada mais dura, e a energia vem bem pesada, o caldo castiga forte quem se atrasa na remada. Não empolga, e quem entrar deve saber que vai ter que trabalhar duro por pouca recompensa. No fim de tarde, vale observar uma série inteira antes de se comprometer com uma onda.",
+          "janela": "13h-17h",
+          "aviso": "Combinação de porte grande com vento forte deixa o mar imprevisível: só pra quem já sabe ler correnteza e sabe a hora de sair."
+        }
+      ]
+    },
+    "cidreira|ombro-cabeca|curto-vaga|lateral-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Janela estreita hoje",
+          "analise": "A onda vem grande e pesada, terreno só pra quem já tem estrada percorrida na água, e o intervalo entre uma onda e outra é curto, quase sem tempo de respirar entre as levadas. O swell chega de um ângulo que não é bem o que essa praia gosta, entra meio de raspão e perde parte da organização. O vento forte de lado bate na parede e complica bastante a leitura da onda, e a força é grande, exige remada rápida e faz o mar cobrar caro de quem hesita. É um dia difícil de recomendar, só compensa pra quem não tem outra opção por perto. De noite, vale guardar energia pra remada de volta, que costuma pesar mais que a ida, com atenção redobrada porque enxergar a onda chegando fica mais difícil no escuro.",
+          "janela": null,
+          "aviso": "Onda grande combinada com pouca luz pede cautela redobrada: se não conhece bem o pico, é melhor deixar pra outra sessão."
+        }
+      ]
+    },
+    "maresias|cintura-peito|longo-11a13|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Mar generoso",
+          "analise": "A onda ganha um corpo razoável, o suficiente pra dar velocidade sem assustar, e as séries chegam bem separadas, sinal de energia vindo de longe e organizada. Não tem vento incomodando, o mar segue liso, quase espelhado, e a energia sobe um degrau, dá pra sentir o peso mas ainda administrável. É um daqueles dias que valem a pena tirar da cama. Nessa manhã, vale ler bem o banco antes de entrar e respeitar quem já tá remando pra fora.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "itacoatiara|peito-ombro|longo-11a13|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Janela boa pra remar",
+          "analise": "O mar cresce um degrau, com corpo suficiente pra exigir comprometimento na remada, e o compasso das ondas é generoso, quase preguiçoso, sobra tempo pra tudo dentro d'água. A ausência de vento deixa a água parada por cima, um espelho raro de se ver, e a energia vem forte, a remada pede fôlego e o caldo empurra com vontade. Sobra motivo pra encarar essa sessão com vontade. Nessa manhã, vale calcular o tempo de fôlego antes de se comprometer com uma série maior.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "itacoatiara|peito-ombro|longo-11a13|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar redondo",
+          "analise": "A onda ganha porte, já cobra postura de quem entra e não perdoa remada mole, e a série vem bem espaçada, sobra tempo de sobra pra escolher a onda certa sem pressa nenhuma. Sopra um pouco de vento do mar pra terra, mas fraco o bastante pra não desmontar a parede, e a energia vem alta, exige preparo físico e leitura rápida de quando remar. É um mar generoso, sem grandes desculpas pra ficar de fora. À tarde, vale escolher a prancha certa pro peso da água em vez de forçar o equipamento errado.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|peito-ombro|longo-11a13|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Dia que compensa",
+          "analise": "Vem um tamanho considerável, que separa quem tá afiado de quem tá enferrujado, e o intervalo entre uma onda e outra é longo, dá pra remar de volta com folga e ainda descansar. Sem vento nenhum bagunçando, a superfície do mar fica lisa, sem uma ruga, e a energia vem alta, exige preparo físico e leitura rápida de quando remar. No geral é um mar que compensa entrar. De manhã, vale ler bem o banco antes de entrar e respeitar quem já tá remando pra fora.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|peito-ombro|longo-11a13|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar organizado",
+          "analise": "O porte sobe, dá pra sentir o peso da água empurrando mais forte, e as séries chegam bem separadas, sinal de energia vindo de longe e organizada. Tem uma brisa fraca vindo do mar, o tipo que enruga um pouco mas não estraga a sessão, e a energia vem alta, exige preparo físico e leitura rápida de quando remar. É um daqueles dias que valem a pena tirar da cama. À tarde, vale calcular o tempo de fôlego antes de se comprometer com uma série maior.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|peito-ombro|longo-11a13|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Bom dia pra entrar",
+          "analise": "A onda ganha porte, já cobra postura de quem entra e não perdoa remada mole, e o compasso das ondas é generoso, quase preguiçoso, sobra tempo pra tudo dentro d'água. Não tem vento incomodando, o mar segue liso, quase espelhado, e a força chega pesada, quem erra o tempo da remada sente o caldo cobrar. Sobra motivo pra encarar essa sessão com vontade. De manhã, vale observar o pico de fora um pouco antes de se comprometer.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|cintura-peito|longo-11a13|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Mar generoso",
+          "analise": "O tamanho fica na média, dá pra escolher a onda com calma antes de remar, e a série vem bem espaçada, sobra tempo de sobra pra escolher a onda certa sem pressa nenhuma. A ausência de vento deixa a água parada por cima, um espelho raro de se ver, e a energia vem alta, exige preparo físico e leitura rápida de quando remar. É um mar generoso, sem grandes desculpas pra ficar de fora. Logo cedo, vale escolher a prancha certa pro peso da água em vez de forçar o equipamento errado.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|cintura-peito|longo-11a13|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Janela boa pra remar",
+          "analise": "O tamanho é mediano, tem corpo suficiente pra render uma remada boa sem virar sufoco, e a série vem bem espaçada, sobra tempo de sobra pra escolher a onda certa sem pressa nenhuma. Vem um vento fraco de través, que sopra de lado sem incomodar demais, e a energia já pesa um pouco, a remada cansa mais mas ainda compensa o esforço. No geral é um mar que compensa entrar. No fim de tarde, vale ler bem o banco antes de entrar e respeitar quem já tá remando pra fora.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "castelhanos|joelho-cintura|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Mar redondo",
+          "analise": "A onda aparece pequena, do tipo que enche a água de gente numerosa mas sem drama, e o intervalo entre as séries é generoso, dá tempo de escolher a onda sem correria. Sopra um vento fraco lateral, de lado, quase sem efeito na parede, e a força vem fraca, remada leve, a água quase não empurra de volta. É um daqueles dias que valem a pena tirar da cama. No fim de tarde, vale escolher bem o pico e não forçar remada onde a corrente puxa mais.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-tijuca|peito-ombro|longo-11a13|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Dia que compensa",
+          "analise": "O porte é maior, exige leitura rápida e uma remada segura pra não tomar de jeito, e as séries chegam bem separadas, sinal de energia vindo de longe e organizada. Sem vento nenhum bagunçando, a superfície do mar fica lisa, sem uma ruga, e a energia vem forte, a remada pede fôlego e o caldo empurra com vontade. Sobra motivo pra encarar essa sessão com vontade. De manhã, vale conversar com quem já tá na água sobre onde a onda tá fechando melhor.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-tijuca|cintura-peito|longo-11a13|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar organizado",
+          "analise": "O tamanho é mediano, tem corpo suficiente pra render uma remada boa sem virar sufoco, e o compasso das ondas é generoso, quase preguiçoso, sobra tempo pra tudo dentro d'água. Um vento fraco vindo do mar, aquele que costuma bagunçar a onda, ainda não atrapalha muito a forma, e a energia vem alta, exige preparo físico e leitura rápida de quando remar. É um mar generoso, sem grandes desculpas pra ficar de fora. Essa tarde, vale escolher o canto que combina com o seu nível antes de remar pra fora.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "capao-da-canoa|ombro-cabeca|curto-vaga|onshore-forte|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Mar de ângulo torto",
+          "analise": "O porte é grande, com bastante peso, situação de gente com experiência acumulada, e a série chega corrida, tipo mar de vento, sem folga pra escolher com calma. O swell chega de um ângulo que não é bem o que essa praia gosta, entra meio de raspão e perde parte da organização. O vento forte vindo do mar desmonta a parede e cobra atenção redobrada de quem entra, e a força é grande, exige remada rápida e faz o mar cobrar caro de quem hesita. Não é um dia de se animar demais, serve mais pra quem já tá por perto ou quer treinar em condição difícil. À tarde, vale observar o pico de fora um pouco antes de se comprometer.",
+          "janela": "13h-16h",
+          "aviso": "Combinação de porte grande com vento forte deixa o mar imprevisível: só pra quem já sabe ler correnteza e sabe a hora de sair."
+        }
+      ]
+    },
+    "capao-da-canoa|ombro-cabeca|curto-vaga|lateral-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Dia de encaixe ruim",
+          "analise": "O mar cresce de verdade, com um porte que exige respeito e leitura apurada do banco, e o ritmo das ondas vem apertado, dá pra sentir que a água não descansa entre uma série e outra. O swell chega de um ângulo que não é bem o que essa praia gosta, entra meio de raspão e perde parte da organização. Sopra um vento lateral, de través, o suficiente pra tirar um pouco da limpeza da onda, e a energia vem bem pesada, o caldo castiga forte quem se atrasa na remada. É um mar mais pra sofrer do que pra aproveitar, melhor ir com expectativa baixa. De noite, vale conversar com quem já tá na água sobre onde a onda tá fechando melhor, com atenção redobrada porque enxergar a onda chegando fica mais difícil no escuro.",
+          "janela": null,
+          "aviso": "Onda grande combinada com pouca luz pede cautela redobrada: se não conhece bem o pico, é melhor deixar pra outra sessão."
+        }
+      ]
+    },
+    "camburi|cintura-peito|longo-11a13|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Bom dia pra entrar",
+          "analise": "O mar aparece com porte intermediário, nem manso nem punitivo, e a série vem bem espaçada, sobra tempo de sobra pra escolher a onda certa sem pressa nenhuma. Sopra um pouco de vento do mar pra terra, mas fraco o bastante pra não desmontar a parede, e a energia já pesa um pouco, a remada cansa mais mas ainda compensa o esforço. No geral é um mar que compensa entrar. Nessa manhã, vale escolher o canto que combina com o seu nível antes de remar pra fora.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|ombro-cabeca|curto-vaga|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Mar bagunçado",
+          "analise": "Vem uma onda grande, pesada, do tipo que separa quem treina do resto, e a série vem apertada, as ondas se atropelam e obriga a remar rápido pra não ficar preso lá dentro. Sopra forte um vento que vem do mar, bagunça tudo e deixa a superfície agitada e imprevisível, e a força chega pesada, quem erra o tempo da remada sente o caldo cobrar. Não empolga, e quem entrar deve saber que vai ter que trabalhar duro por pouca recompensa. De noite, vale observar uma série inteira antes de se comprometer com uma onda, com atenção redobrada porque enxergar a onda chegando fica mais difícil no escuro.",
+          "janela": null,
+          "aviso": "Onda grande combinada com pouca luz pede cautela redobrada: se não conhece bem o pico, é melhor deixar pra outra sessão."
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-05T12:17:55.960Z"
+  "generated_at": "2026-09-05T18:15:04.117Z"
 }
