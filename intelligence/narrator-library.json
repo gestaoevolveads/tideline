@@ -156007,7 +156007,436 @@
           "aviso": null
         }
       ]
+    },
+    "praia-do-porto-imbituba|ombro-cabeca|curto-vaga|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã de mar forte com través",
+          "analise": "O mar amanhece com força boa, e uma massa d'água que já exige remada firme. Na água, a série vem apertada, quase atropelada, mal dá tempo de ler a onda e se posicionar, enquanto o vento de través (soprando de lado) sopra forte, mexe bastante na parede e complica a remada. Na prática, pede leitura afiada e remada forte, o tipo de condição que separa quem treina de quem só aparece, e o mar aqui tende a perdoar quem lê o pico com calma. Quem puder escolher o horário, vale focar entre 6h e 9h pra pegar o pico ainda mais organizado.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-tijuca|ombro-cabeca|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã de mar forte com onshore",
+          "analise": "Nas primeiras horas da manhã, o mar chega com força puxada, com bastante água por trás de cada série. No pico, a série vem com espaçamento razoável entre as ondas, dá pra ler o pico com calma antes de remar, enquanto o onshore (vento que vem do mar pra terra) sopra forte, desmancha a face e engrossa o caldo. No fim das contas, tem espaço pra quem tá começando remar sem sufoco e pra quem já rema mais forte se divertir também, e o mar aqui cobra mais do que perdoa hoje. A dica é priorizar a janela entre 6h e 10h, quando o pico tende a ficar mais organizado.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-mole|peito-ombro|curto-vaga|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Manhã de mar mediano com través",
+          "analise": "Assim que a manhã abre, o mar aparece com força mediana, que já pede um fôlego extra na remada. Ali na água, as ondas se sucedem rápido demais, sobra pouco tempo entre uma e outra pra respirar, enquanto o través (vento soprando de lado) sopra com tudo, sacode a parede e atrapalha a remada. Pra quem entra na água, quem já pega onda com uma folga sente o drop gostoso, precisa só ajustar o tempo de remada, e o mar aqui segue mais generoso do que cobrador hoje. Se der pra escolher, o horário entre 7h e 10h costuma render a melhor versão do pico.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "torres|ombro-cabeca|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã de mar forte com través",
+          "analise": "Com a manhã ainda fresca, o mar surge com força boa, e uma massa d'água que já exige remada firme. No fundo da condição, o intervalo entre as ondas já dá um respiro, dá pra escolher com calma qual pegar, enquanto o vento de través (soprando de lado) sopra forte, mexe bastante na parede e complica a remada. No dia a dia do pico, quem já pega onda com uma folga sente o drop gostoso, precisa só ajustar o tempo de remada, e o mar aqui ainda dá espaço pra quem chega com calma. Vale se programar pra pegar o intervalo entre 7h e 9h, quando a condição costuma compensar mais.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|peito-ombro|curto-vaga|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Manhã de mar mediano com través",
+          "analise": "O amanhecer encontra o mar com força na medida certa, nem cansa demais nem entrega fácil. Na água, a série vem apertada, quase atropelada, mal dá tempo de ler a onda e se posicionar, enquanto o través (vento soprando de lado) sopra com tudo, sacode a parede e atrapalha a remada. Na prática, pede leitura afiada e remada forte, o tipo de condição que separa quem treina de quem só aparece, e o mar aqui perdoa quem escolhe bem a onda. Quem puder escolher o horário, vale focar entre 6h e 8h pra pegar o pico ainda mais organizado.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|cabeca-1.5x|bom-9a11|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Manhã de mar pesado com onshore",
+          "analise": "Logo cedo, o mar já aparece com força pesada, do tipo que bota respeito e cobra preparo físico. No pico, a série vem bem espaçada, dá tempo de enxergar a onda de longe, escolher a melhor e se posicionar sem pressa, enquanto um onshore (vento que vem do mar pra terra) ainda fraco mexe pouco na face. No fim das contas, pede leitura afiada e remada forte, o tipo de condição que separa quem treina de quem só aparece, e o mar aqui tende a perdoar quem lê o pico com calma. A dica é priorizar a janela entre 6h e 9h, quando o pico tende a ficar mais organizado.",
+          "janela": "6h-9h",
+          "aviso": "Com essa força toda, a correnteza de retorno castiga: fique de olho no canal pra voltar sem gastar energia à toa."
+        }
+      ]
+    },
+    "praia-brava-arraial|cabeca-1.5x|bom-9a11|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde de mar pesado com onshore",
+          "analise": "A tarde encontra o mar com força grande, com massa d'água que impõe ritmo e cansa rápido. Ali na água, as ondas chegam com bastante intervalo, sobra tempo de sobra pra ver formar e se posicionar sem correria, enquanto o onshore (vento que vem do mar pra terra) mexe na parede e engorda um pouco o caldo. Pra quem entra na água, pede leitura afiada e remada forte, o tipo de condição que separa quem treina de quem só aparece, e o mar aqui segue mais generoso do que cobrador hoje. Se der pra escolher, o horário entre 14h e 17h costuma render a melhor versão do pico.",
+          "janela": "14h-17h",
+          "aviso": "Energia grande assim puxa correnteza forte de volta: reserve fôlego pra remada de retorno e não brigue contra ela."
+        }
+      ]
+    },
+    "unamar|cabeca-1.5x|bom-9a11|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Tarde de mar pesado com onshore",
+          "analise": "No fim da tarde, o mar aparece com força pesada, do tipo que bota respeito e cobra preparo físico. No fundo da condição, a série vem bem espaçada, dá tempo de enxergar a onda de longe, escolher a melhor e se posicionar sem pressa, enquanto o onshore (vento que vem do mar pra terra) ainda tá fraco e mal atrapalha a face. No dia a dia do pico, quem já pega onda com uma folga sente o drop gostoso, precisa só ajustar o tempo de remada, e o mar aqui ainda dá espaço pra quem chega com calma. Vale se programar pra pegar o intervalo entre 13h e 15h, quando a condição costuma compensar mais.",
+          "janela": "13h-15h",
+          "aviso": "É força de sobra: quem se afobar no caldo pode se cansar rápido, então dose o esforço e observe o canal antes de entrar."
+        }
+      ]
+    },
+    "pitangueiras|cabeca-1.5x|bom-9a11|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Manhã de mar pesado com onshore",
+          "analise": "Na virada da manhã, o mar vem com força grande, com massa d'água que impõe ritmo e cansa rápido. Na água, as ondas chegam com bastante intervalo, sobra tempo de sobra pra ver formar e se posicionar sem correria, enquanto um onshore (vento que vem do mar pra terra) ainda fraco mexe pouco na face. Na prática, tem espaço pra quem tá começando remar sem sufoco e pra quem já rema mais forte se divertir também, e o mar aqui perdoa quem escolhe bem a onda. Quem puder escolher o horário, vale focar entre 7h e 9h pra pegar o pico ainda mais organizado.",
+          "janela": "7h-9h",
+          "aviso": "Com essa força toda, a correnteza de retorno castiga: fique de olho no canal pra voltar sem gastar energia à toa."
+        }
+      ]
+    },
+    "praia-grande-arraial|cabeca-1.5x|bom-9a11|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde de mar pesado com onshore",
+          "analise": "Com a tarde avançando, o mar segue com força pesada, do tipo que bota respeito e cobra preparo físico. No pico, a série vem bem espaçada, dá tempo de enxergar a onda de longe, escolher a melhor e se posicionar sem pressa, enquanto o onshore (vento que vem do mar pra terra) já mexe a água e deixa o caldo um pouco mais grosso. No fim das contas, quem já pega onda com uma folga sente o drop gostoso, precisa só ajustar o tempo de remada, e o mar aqui tende a perdoar quem lê o pico com calma. A dica é priorizar a janela entre 15h e 17h, quando o pico tende a ficar mais organizado.",
+          "janela": "15h-17h",
+          "aviso": "Energia grande assim puxa correnteza forte de volta: reserve fôlego pra remada de retorno e não brigue contra ela."
+        }
+      ]
+    },
+    "monte-alto|cabeca-1.5x|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite de mar pesado com través",
+          "analise": "A noite cai sobre um mar com força grande, com massa d'água que impõe ritmo e cansa rápido. Ali na água, as ondas chegam com bastante intervalo, sobra tempo de sobra pra ver formar e se posicionar sem correria, enquanto o vento de través (soprando de lado) sopra forte, mexe bastante na parede e complica a remada. Pra quem entra na água, quem já pega onda com uma folga sente o drop gostoso, precisa só ajustar o tempo de remada, e o mar aqui segue mais generoso do que cobrador hoje. Vale ir com expectativa realista: sem boa luz o pico cobra mais cautela do que de dia, e uma prancha com mais volume ajuda na remada no escuro.",
+          "janela": null,
+          "aviso": "É força de sobra: quem se afobar no caldo pode se cansar rápido, então dose o esforço e observe o canal antes de entrar."
+        }
+      ]
+    },
+    "macumba|cabeca-1.5x|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Tarde de mar pesado com través",
+          "analise": "A tarde chega e o mar surge com força pesada, do tipo que bota respeito e cobra preparo físico. No fundo da condição, a série vem bem espaçada, dá tempo de enxergar a onda de longe, escolher a melhor e se posicionar sem pressa, enquanto o vento de través (soprando de lado) mexe na parede sem destruir de vez. No dia a dia do pico, tem espaço pra quem tá começando remar sem sufoco e pra quem já rema mais forte se divertir também, e o mar aqui ainda dá espaço pra quem chega com calma. Se der pra escolher, o horário entre 13h e 16h costuma render a melhor versão do pico.",
+          "janela": "13h-16h",
+          "aviso": "Com essa força toda, a correnteza de retorno castiga: fique de olho no canal pra voltar sem gastar energia à toa."
+        }
+      ]
+    },
+    "itaunas|cintura-peito|curto-vaga|onshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Manhã de mar leve com onshore",
+          "analise": "Enquanto a manhã esquenta, o mar segue com força mais leve, remada tranquila e sem sufoco. Na água, as ondas se sucedem rápido demais, sobra pouco tempo entre uma e outra pra respirar, enquanto o onshore (vento que vem do mar pra terra) chega com tudo, desarruma a face e engrossa o caldo. Na prática, quem já pega onda com uma folga sente o drop gostoso, precisa só ajustar o tempo de remada, e o mar aqui não dá desconto, exige respeito. Vale se programar pra pegar o intervalo entre 6h e 10h, quando a condição costuma compensar mais.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "camburi|cabeca-1.5x|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 10,
+          "titulo": "Manhã de mar pesado com terral",
+          "analise": "A manhã revela um mar com força grande, com massa d'água que impõe ritmo e cansa rápido. No pico, as ondas chegam com bastante intervalo, sobra tempo de sobra pra ver formar e se posicionar sem correria, enquanto quase não sopra vento, o mar fica liso, o tipo de condição rara de aproveitar. No fim das contas, tem espaço pra quem tá começando remar sem sufoco e pra quem já rema mais forte se divertir também, e o mar aqui perdoa quem escolhe bem a onda. Quem puder escolher o horário, vale focar entre 7h e 10h pra pegar o pico ainda mais organizado.",
+          "janela": "7h-10h",
+          "aviso": "Energia grande assim puxa correnteza forte de volta: reserve fôlego pra remada de retorno e não brigue contra ela."
+        }
+      ]
+    },
+    "itacoatiara|cabeca-1.5x|bom-9a11|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Tarde de mar pesado com través",
+          "analise": "Já no meio da tarde, o mar vem com força pesada, do tipo que bota respeito e cobra preparo físico. Ali na água, a série vem bem espaçada, dá tempo de enxergar a onda de longe, escolher a melhor e se posicionar sem pressa, enquanto o través (vento de lado) sopra fraco e mal incomoda. Pra quem entra na água, pede leitura afiada e remada forte, o tipo de condição que separa quem treina de quem só aparece, e o mar aqui tende a perdoar quem lê o pico com calma. A dica é priorizar a janela entre 14h e 16h, quando o pico tende a ficar mais organizado.",
+          "janela": "14h-16h",
+          "aviso": "Localismo é respeitado nesse pico: quem não é da casa, mantenha o perfil baixo na fila."
+        }
+      ]
+    },
+    "maresias|cabeca-1.5x|bom-9a11|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Manhã de mar pesado com onshore",
+          "analise": "Com o sol subindo, o mar se mostra com força grande, com massa d'água que impõe ritmo e cansa rápido. No fundo da condição, as ondas chegam com bastante intervalo, sobra tempo de sobra pra ver formar e se posicionar sem correria, enquanto o onshore (vento que vem do mar pra terra) ainda tá fraco e mal atrapalha a face. No dia a dia do pico, pede leitura afiada e remada forte, o tipo de condição que separa quem treina de quem só aparece, e o mar aqui segue mais generoso do que cobrador hoje. Se der pra escolher, o horário entre 6h e 8h costuma render a melhor versão do pico.",
+          "janela": "6h-8h",
+          "aviso": "É força de sobra: quem se afobar no caldo pode se cansar rápido, então dose o esforço e observe o canal antes de entrar."
+        }
+      ]
+    },
+    "praia-brava-buzios|ombro-cabeca|medio-7a9|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã de mar forte com través",
+          "analise": "A manhã começa e o mar chega com força puxada, com bastante água por trás de cada série. Na água, a série vem com espaçamento razoável entre as ondas, dá pra ler o pico com calma antes de remar, enquanto o través (vento soprando de lado) sopra com tudo, sacode a parede e atrapalha a remada. Na prática, quem já pega onda com uma folga sente o drop gostoso, precisa só ajustar o tempo de remada, e o mar aqui ainda dá espaço pra quem chega com calma. Vale se programar pra pegar o intervalo entre 6h e 9h, quando a condição costuma compensar mais.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "geriba|ombro-cabeca|medio-7a9|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã de mar forte com través",
+          "analise": "Bem cedo, o mar já se apresenta com força boa, e uma massa d'água que já exige remada firme. No pico, o intervalo entre as ondas já dá um respiro, dá pra escolher com calma qual pegar, enquanto o vento de través (soprando de lado) sopra forte, mexe bastante na parede e complica a remada. No fim das contas, tem espaço pra quem tá começando remar sem sufoco e pra quem já rema mais forte se divertir também, e o mar aqui perdoa quem escolhe bem a onda. Quem puder escolher o horário, vale focar entre 6h e 10h pra pegar o pico ainda mais organizado.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "tucuns|ombro-cabeca|medio-7a9|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã de mar forte com través",
+          "analise": "De manhã, o mar aparece com força puxada, com bastante água por trás de cada série. Ali na água, a série vem com espaçamento razoável entre as ondas, dá pra ler o pico com calma antes de remar, enquanto o través (vento soprando de lado) sopra com tudo, sacode a parede e atrapalha a remada. Pra quem entra na água, quem já pega onda com uma folga sente o drop gostoso, precisa só ajustar o tempo de remada, e o mar aqui tende a perdoar quem lê o pico com calma. A dica é priorizar a janela entre 7h e 10h, quando o pico tende a ficar mais organizado.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|peito-ombro|medio-7a9|offshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã de mar mediano com terral",
+          "analise": "A manhã traz um mar com força mediana, que já pede um fôlego extra na remada. No fundo da condição, o intervalo entre as ondas já dá um respiro, dá pra escolher com calma qual pegar, enquanto o terral (vento que sai da terra pro mar) sopra forte, alisa a face e desenha bem a onda. No dia a dia do pico, pede leitura afiada e remada forte, o tipo de condição que separa quem treina de quem só aparece, e o mar aqui segue mais generoso do que cobrador hoje. Se der pra escolher, o horário entre 7h e 9h costuma render a melhor versão do pico.",
+          "janela": "7h-9h",
+          "aviso": "A fila aqui tem dono: localismo é levado a sério, então quem chega de fora, respeite a ordem e não force barra."
+        }
+      ]
+    },
+    "ferrugem|peito-ombro|curto-vaga|offshore-fraco|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite de mar mediano com terral",
+          "analise": "Já de noite, o mar aparece com força na medida certa, nem cansa demais nem entrega fácil, e o swell chega do leste, meio de raspão pro que esse pico prefere, e perde um pouco de força e organização no caminho. Além disso, a série vem apertada, quase atropelada, mal dá tempo de ler a onda e se posicionar, enquanto o vento praticamente não existe, deixando a água espelhada, condição rara de pegar. Na prática, quem já pega onda com uma folga sente o drop gostoso, precisa só ajustar o tempo de remada, e o mar aqui ainda dá espaço pra quem chega com calma. A dica é redobrar a cautela: sem boa luz pra ler o pico, vale entrar só quem já conhece bem o fundo dali.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-tijuca|peito-ombro|bom-9a11|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Manhã de mar mediano com terral",
+          "analise": "Ainda de manhã, o mar segue com força mediana, que já pede um fôlego extra na remada. Na água, a série vem bem espaçada, dá tempo de enxergar a onda de longe, escolher a melhor e se posicionar sem pressa, enquanto o terral (vento que sai da terra pro mar) sopra com uma força moderada, empurrando a água a favor e dando um contorno limpo pra onda. No fim das contas, tem espaço pra quem tá começando remar sem sufoco e pra quem já rema mais forte se divertir também, e o mar aqui perdoa quem escolhe bem a onda. Vale se programar pra pegar o intervalo entre 6h e 8h, quando a condição costuma compensar mais.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|peito-ombro|curto-vaga|offshore-fraco|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite de mar mediano com terral",
+          "analise": "No escuro da noite, o mar segue com força na medida certa, nem cansa demais nem entrega fácil, e o swell chega do leste, meio de raspão pro que esse pico prefere, e perde um pouco de força e organização no caminho. Além disso, as ondas se sucedem rápido demais, sobra pouco tempo entre uma e outra pra respirar, enquanto quase não sopra vento, o mar fica liso, o tipo de condição rara de aproveitar. Pra quem entra na água, quem já pega onda com uma folga sente o drop gostoso, precisa só ajustar o tempo de remada, e o mar aqui tende a perdoar quem lê o pico com calma. Sem boa luz o risco de errar a leitura sobe: melhor entrar com companhia e não se afastar demais do pico principal.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|peito-ombro|medio-7a9|offshore-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite de mar mediano com terral",
+          "analise": "Sob a noite, o mar vem com força mediana, que já pede um fôlego extra na remada, e o swell chega do leste, meio de raspão pro que esse pico prefere, e perde um pouco de força e organização no caminho. Além disso, a série vem com espaçamento razoável entre as ondas, dá pra ler o pico com calma antes de remar, enquanto o terral (vento que sai da terra pro mar) sopra firme, alisa a face e desenha bem a onda. No dia a dia do pico, quem já pega onda com uma folga sente o drop gostoso, precisa só ajustar o tempo de remada, e o mar aqui segue mais generoso do que cobrador hoje. Vale ir com expectativa realista: sem boa luz o pico cobra mais cautela do que de dia, e uma prancha com mais volume ajuda na remada no escuro.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|peito-ombro|medio-7a9|lateral-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Noite de mar mediano com través",
+          "analise": "Com a noite fechada, o mar se mostra com força na medida certa, nem cansa demais nem entrega fácil, e o swell chega do leste, meio de raspão pro que esse pico prefere, e perde um pouco de força e organização no caminho. Além disso, o intervalo entre as ondas já dá um respiro, dá pra escolher com calma qual pegar, enquanto o vento de través (soprando de lado) sopra forte, mexe bastante na parede e complica a remada. Na prática, pede leitura afiada e remada forte, o tipo de condição que separa quem treina de quem só aparece, e o mar aqui ainda dá espaço pra quem chega com calma. A dica é redobrar a cautela: sem boa luz pra ler o pico, vale entrar só quem já conhece bem o fundo dali.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "cidreira|peito-ombro|curto-vaga|lateral-fraco|noite|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Noite de mar mediano com través",
+          "analise": "Na quietude da noite, o mar aparece com força mediana, que já pede um fôlego extra na remada, e o swell chega do leste, meio de raspão pro que esse pico prefere, e perde um pouco de força e organização no caminho. Além disso, a série vem apertada, quase atropelada, mal dá tempo de ler a onda e se posicionar, enquanto o través (vento soprando de lado) balança a parede sem estragar de vez a onda. No fim das contas, quem já pega onda com uma folga sente o drop gostoso, precisa só ajustar o tempo de remada, e o mar aqui perdoa quem escolhe bem a onda. Sem boa luz o risco de errar a leitura sobe: melhor entrar com companhia e não se afastar demais do pico principal.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|peito-ombro|bom-9a11|offshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã de mar mediano com terral",
+          "analise": "A manhã abre e o mar chega com força na medida certa, nem cansa demais nem entrega fácil. No pico, as ondas chegam com bastante intervalo, sobra tempo de sobra pra ver formar e se posicionar sem correria, enquanto o terral (vento que sai da terra pro mar) sopra forte, empurrando a água a favor e dando um contorno limpo pra onda. Pra quem entra na água, tem espaço pra quem tá começando remar sem sufoco e pra quem já rema mais forte se divertir também, e o mar aqui tende a perdoar quem lê o pico com calma. Quem puder escolher o horário, vale focar entre 6h e 9h pra pegar o pico ainda mais organizado.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|peito-ombro|bom-9a11|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde de mar mediano com onshore",
+          "analise": "A tarde traz um mar com força mediana, que já pede um fôlego extra na remada. Ali na água, a série vem bem espaçada, dá tempo de enxergar a onda de longe, escolher a melhor e se posicionar sem pressa, enquanto o onshore (vento que vem do mar pra terra) sopra forte, desmancha a face e engrossa o caldo. No dia a dia do pico, tem espaço pra quem tá começando remar sem sufoco e pra quem já rema mais forte se divertir também, e o mar aqui tá mais exigente do que camarada hoje. A dica é priorizar a janela entre 14h e 17h, quando o pico tende a ficar mais organizado.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|peito-ombro|curto-vaga|offshore-fraco|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite de mar mediano com terral",
+          "analise": "Com a lua no céu, o mar segue com força na medida certa, nem cansa demais nem entrega fácil, e o swell chega do leste, meio de raspão pro que esse pico prefere, e perde um pouco de força e organização no caminho. Além disso, as ondas se sucedem rápido demais, sobra pouco tempo entre uma e outra pra respirar, enquanto o vento praticamente não existe, deixando a água espelhada, condição rara de pegar. Na prática, pede leitura afiada e remada forte, o tipo de condição que separa quem treina de quem só aparece, e o mar aqui segue mais generoso do que cobrador hoje. Vale ir com expectativa realista: sem boa luz o pico cobra mais cautela do que de dia, e uma prancha com mais volume ajuda na remada no escuro.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|peito-ombro|medio-7a9|offshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã de mar mediano com terral",
+          "analise": "Na primeira luz do dia, o mar aparece com força mediana, que já pede um fôlego extra na remada. No fundo da condição, a série vem com espaçamento razoável entre as ondas, dá pra ler o pico com calma antes de remar, enquanto o terral (vento que sai da terra pro mar) sopra forte, alisa a face e desenha bem a onda. No fim das contas, quem já pega onda com uma folga sente o drop gostoso, precisa só ajustar o tempo de remada, e o mar aqui ainda dá espaço pra quem chega com calma. Se der pra escolher, o horário entre 7h e 10h costuma render a melhor versão do pico.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "bonete|cintura-peito|bom-9a11|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã de mar leve com terral",
+          "analise": "A manhã desperta e o mar aparece com força baixa, do tipo que não cansa o braço. Na água, as ondas chegam com bastante intervalo, sobra tempo de sobra pra ver formar e se posicionar sem correria, enquanto o terral (vento que sai da terra pro mar) sopra com uma força moderada, empurrando a água a favor e dando um contorno limpo pra onda. Pra quem entra na água, pede leitura afiada e remada forte, o tipo de condição que separa quem treina de quem só aparece, e o mar aqui perdoa quem escolhe bem a onda. Vale se programar pra pegar o intervalo entre 7h e 9h, quando a condição costuma compensar mais.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|peito-ombro|bom-9a11|offshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã de mar mediano com terral",
+          "analise": "Com a luz batendo cedo, o mar surge com força na medida certa, nem cansa demais nem entrega fácil. No pico, a série vem bem espaçada, dá tempo de enxergar a onda de longe, escolher a melhor e se posicionar sem pressa, enquanto o terral (vento que sai da terra pro mar) sopra forte, alisa a face e desenha bem a onda. No dia a dia do pico, quem já pega onda com uma folga sente o drop gostoso, precisa só ajustar o tempo de remada, e o mar aqui tende a perdoar quem lê o pico com calma. Quem puder escolher o horário, vale focar entre 6h e 8h pra pegar o pico ainda mais organizado.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|peito-ombro|medio-7a9|lateral-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã de mar mediano com través",
+          "analise": "A manhã ainda começando, o mar já se mostra com força mediana, que já pede um fôlego extra na remada, e o swell chega do leste, meio de raspão pro que esse pico prefere, e perde um pouco de força e organização no caminho. Além disso, o intervalo entre as ondas já dá um respiro, dá pra escolher com calma qual pegar, enquanto o vento de través (soprando de lado) mexe na parede sem destruir de vez. Na prática, quem já pega onda com uma folga sente o drop gostoso, precisa só ajustar o tempo de remada, e o mar aqui segue mais generoso do que cobrador hoje. A dica é priorizar a janela entre 6h e 9h, quando o pico tende a ficar mais organizado.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|cintura-peito|medio-7a9|lateral-fraco|noite|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Noite de mar leve com través",
+          "analise": "Na escuridão, o mar vem com força mais leve, remada tranquila e sem sufoco, e o swell chega do leste, meio de raspão pro que esse pico prefere, e perde um pouco de força e organização no caminho. Além disso, a série vem com espaçamento razoável entre as ondas, dá pra ler o pico com calma antes de remar, enquanto o través (vento soprando de lado) balança a parede sem estragar de vez a onda. No fim das contas, quem já pega onda com uma folga sente o drop gostoso, precisa só ajustar o tempo de remada, e o mar aqui ainda dá espaço pra quem chega com calma. A dica é redobrar a cautela: sem boa luz pra ler o pico, vale entrar só quem já conhece bem o fundo dali.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|peito-ombro|medio-7a9|lateral-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Manhã de mar mediano com través",
+          "analise": "No começo do dia, o mar chega com força na medida certa, nem cansa demais nem entrega fácil, e o swell chega do leste, meio de raspão pro que esse pico prefere, e perde um pouco de força e organização no caminho. Além disso, o intervalo entre as ondas já dá um respiro, dá pra escolher com calma qual pegar, enquanto o través (vento soprando de lado) sopra com tudo, sacode a parede e atrapalha a remada. Pra quem entra na água, pede leitura afiada e remada forte, o tipo de condição que separa quem treina de quem só aparece, e o mar aqui perdoa quem escolhe bem a onda. Se der pra escolher, o horário entre 6h e 10h costuma render a melhor versão do pico.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|peito-ombro|medio-7a9|lateral-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Manhã de mar mediano com través",
+          "analise": "A manhã desponta e o mar surge com força mediana, que já pede um fôlego extra na remada, e o swell chega do leste, meio de raspão pro que esse pico prefere, e perde um pouco de força e organização no caminho. Além disso, a série vem com espaçamento razoável entre as ondas, dá pra ler o pico com calma antes de remar, enquanto o vento de través (soprando de lado) sopra forte, mexe bastante na parede e complica a remada. No dia a dia do pico, quem já pega onda com uma folga sente o drop gostoso, precisa só ajustar o tempo de remada, e o mar aqui tende a perdoar quem lê o pico com calma. Vale se programar pra pegar o intervalo entre 7h e 10h, quando a condição costuma compensar mais.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|peito-ombro|medio-7a9|lateral-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã de mar mediano com través",
+          "analise": "Cedo da manhã, o mar já aparece com força na medida certa, nem cansa demais nem entrega fácil, e o swell chega do leste, meio de raspão pro que esse pico prefere, e perde um pouco de força e organização no caminho. Além disso, o intervalo entre as ondas já dá um respiro, dá pra escolher com calma qual pegar, enquanto o vento de través (soprando de lado) mexe na parede sem destruir de vez. Na prática, quem já pega onda com uma folga sente o drop gostoso, precisa só ajustar o tempo de remada, e o mar aqui segue mais generoso do que cobrador hoje. Quem puder escolher o horário, vale focar entre 7h e 9h pra pegar o pico ainda mais organizado.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|peito-ombro|medio-7a9|lateral-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã de mar mediano com través",
+          "analise": "Assim que o sol nasce, o mar já vem com força mediana, que já pede um fôlego extra na remada, e o swell chega do leste, meio de raspão pro que esse pico prefere, e perde um pouco de força e organização no caminho. Além disso, a série vem com espaçamento razoável entre as ondas, dá pra ler o pico com calma antes de remar, enquanto o través (vento soprando de lado) balança a parede sem estragar de vez a onda. No fim das contas, quem já pega onda com uma folga sente o drop gostoso, precisa só ajustar o tempo de remada, e o mar aqui ainda dá espaço pra quem chega com calma. A dica é priorizar a janela entre 6h e 8h, quando o pico tende a ficar mais organizado.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|cintura-peito|medio-7a9|lateral-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Noite de mar leve com través",
+          "analise": "De noite, o mar já se mostra com força baixa, do tipo que não cansa o braço, e o swell chega do leste, meio de raspão pro que esse pico prefere, e perde um pouco de força e organização no caminho. Além disso, o intervalo entre as ondas já dá um respiro, dá pra escolher com calma qual pegar, enquanto o través (vento soprando de lado) sopra com tudo, sacode a parede e atrapalha a remada. Pra quem entra na água, quem já pega onda com uma folga sente o drop gostoso, precisa só ajustar o tempo de remada, e o mar aqui perdoa quem escolhe bem a onda. Sem boa luz o risco de errar a leitura sobe: melhor entrar com companhia e não se afastar demais do pico principal.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-07T00:17:02.339Z"
+  "generated_at": "2026-09-07T06:19:43.025Z"
 }
