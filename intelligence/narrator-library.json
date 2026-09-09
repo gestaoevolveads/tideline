@@ -160110,7 +160110,227 @@
           "aviso": "Foz de rio: a correnteza da desembocadura pode ficar forte, principalmente com a maré em movimento. Avalie antes de entrar."
         }
       ]
+    },
+    "cassino|joelho-cintura|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã mansa nos molhes",
+          "analise": "A manhã amanhece com um mar pequeno e gentil, típico do extremo sul gaúcho perto dos molhes da barra. O vento onshore, que sopra do mar pra areia, já deixa a superfície com uma leve marolinha, então a remada é tranquila mas a onda não forma parede limpa. Na água, dá pra sentir a água fria cortando o corpo, e o surfista vai perceber que a força é fraca, boa pra treinar manobras sem pressão. Fechamento honesto: não é dia de onda de peso, mas serve pra pegar ritmo cedo antes do vento crescer. Dica: entre logo pela manhã, antes do onshore ganhar força.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|peito-ombro|medio-7a9|offshore-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Terral forte guarda a noite",
+          "analise": "A noite chega com um terral forte, aquele vento que sai da terra e alisa a superfície, desenhando parede mesmo sem a claridade do dia. O swell chega meio de raspão pelo leste, então nem toda série forma a mesma qualidade, mas quando pega o ângulo certo a força é notável e o caldo pesa. Na água, o surfista vai sentir a queda com pressão firme e vai precisar calcular a entrada só pelo som e pela silhueta da onda. Fechamento honesto: onda boa, mas surfar no escuro exige cautela redobrada e prancha que você já conhece bem. Dica: leve lanterna na areia pra escolher o pico antes de entrar.",
+          "janela": null,
+          "aviso": "Surfar de noite reduz a visibilidade da água e dos bancos de areia; avalie companhia e condições antes de entrar."
+        }
+      ]
+    },
+    "praia-do-pero|cintura-peito|bom-9a11|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Peró abre limpo de manhã",
+          "analise": "A manhã encontra o mar do Peró bem desenhado, com uma série espaçada que dá tempo de ver a onda vindo de longe e se posicionar com calma. A orientação da praia faz o vento soprar offshore, aquele terral que sai da terra e alisa a água, então a parede fica limpa e a remada compensa. O surfista vai sentir o drop com pressão equilibrada, nem fraco nem punitivo, e consegue encadear manobras na sequência. Fechamento honesto: é um daqueles dias que valem a viagem até Cabo Frio, principalmente pra quem quer evoluir sem apanhar. Dica: aproveite logo cedo, antes do vento virar com o sol mais alto.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|peito-ombro|medio-7a9|offshore-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Brava pesada sob o terral",
+          "analise": "Debaixo do escuro, a Brava recebe um terral forte que alisa a face mas não segura o tamanho da força que já vem armada. O swell chega de raspão pelo leste, então a leitura muda onda a onda, e só quem já rodou bastante água consegue achar o pico certo na praia mais exposta de Arraial. Na água, o caldo castiga quem erra o momento de entrar e o drop cobra proporcional à experiência de quem rema. Fechamento honesto: essa não é sessão pra quem está evoluindo, é onda de gente calejada. Dica: se não for surfista avançado, melhor assistir da areia hoje.",
+          "janela": null,
+          "aviso": "Condição pesada e no escuro, recomendada só para quem já tem experiência com ondas fortes."
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|cintura-peito|curto-vaga|onshore-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Imbituba mexida à tarde",
+          "analise": "A tarde chega em Imbituba com uma série apertada e atropelada, aquele mar de vento que não deixa respiro entre uma onda e outra. O onshore, vento que vem do mar e bagunça a superfície, já deixou a água picotada, e o swell entra de raspão, então a qualidade varia bastante de pico a pico nesse palco que já recebeu etapa de mundial. O surfista vai sentir a remada mais cansativa e o drop menos previsível, com a parede quebrando rápido demais pra manobra longa. Fechamento honesto: não é o dia de nível internacional que a praia é capaz de entregar, mas ainda dá pra se divertir num surf mais sujo. Dica: procure o pico mais protegido do vento antes de escolher onde entrar.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "jureia|ombro-cabeca|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Jureia grande na escuridão",
+          "analise": "A noite cobre a Jureia com um mar que chegou maior e mais pesado que o normal desse trecho preservado do litoral sul paulista. O vento lateral, que sopra de lado cruzando a linha da onda, está fraco hoje, então não estraga muito a formação, mas a força do swell de sul já se sente na remada, que pede mais braço. Na água, o surfista vai perceber o caldo com peso real e vai precisar calcular o momento de entrar só pela sombra da onda contra o céu, porque a estação ecológica não tem luz nenhuma por perto. Fechamento honesto: onda boa pra quem já rodou noite, arriscada pra quem não conhece o banco daqui. Dica: vá acompanhado e leve uma lanterna forte pra achar o caminho de volta.",
+          "janela": null,
+          "aviso": "Mar maior à noite sem iluminação natural: avalie experiência e visibilidade antes de entrar, e não vá sozinho."
+        }
+      ]
+    },
+    "joaquina|joelho-cintura|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Joaca pequena e ventosa",
+          "analise": "Na Joaca, a noite encontra um mar pequeno e um vento lateral moderado cruzando a linha da onda, o que deixa a parede menos organizada do que o pico historicamente pede. A força é fraca, então a remada não cansa, mas também não sobra energia pra manobra de impacto nessa praia acostumada a receber campeonato. O surfista vai sentir a queda suave e vai perceber que o mar não está exigindo nada além de presença de espírito. Fechamento honesto: não é sessão de foto, é sessão de manter o corpo na água mesmo fora do verão. Dica: entre perto das dunas, onde o vento lateral costuma incomodar menos.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|peito-ombro|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Prainha entrega força na noite",
+          "analise": "A enseada em V da Prainha segue concentrando energia mesmo de noite, e o mar chega com um tamanho respeitável apesar do onshore, vento do mar que bagunça a superfície, deixando a água mais desorganizada do que de dia. Ainda assim a força do swell de sul segura a parede em pé por mais tempo do que em praias abertas, então quem entende de leitura de banco encontra sequência. Na água, o surfista vai sentir o peso do caldo e vai perceber que errar o pico nessa direita respeitada custa remada dobrada pra voltar. Fechamento honesto: onda de identidade forte, mas o ambiente aqui pede respeito com quem já surfa o pico há anos. Dica: observe de fora antes de remar pra entender onde a série está fechando.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|peito-ombro|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Grumari selvagem sob o onshore",
+          "analise": "Vizinha da Prainha e sem nenhuma construção por perto, a Grumari recebe a noite com um mar de tamanho considerável e o onshore, vento que vem do mar e desorganiza a onda, mexendo bastante na superfície. A energia do swell de sul segue firme, então mesmo desarrumada a onda ainda empurra com força quando fecha certo. O surfista vai sentir a remada mais puxada pelo vento contra e vai perceber o caldo pesado quando errar o ângulo de entrada. Fechamento honesto: cenário intocado, mar de força, mas pouca luz ao redor pra quem precisa de referência na areia. Dica: marque um ponto fixo na paisagem antes de entrar, pra não se perder na volta.",
+          "janela": null,
+          "aviso": "Área isolada e sem iluminação: evite surfar sozinho à noite aqui."
+        }
+      ]
+    },
+    "praia-do-pero|peito-ombro|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Peró perde o abrigo à noite",
+          "analise": "De dia o vento sudoeste favorece o Peró, mas a noite chega com onshore, vento do mar que bagunça a superfície, e a proteção que a orientação da praia costuma dar desaparece. Ainda assim o swell de sul mantém um tamanho considerável, então a energia não falta, só a organização da parede que fica mais irregular. O surfista vai sentir a remada mais disputada contra o vento e vai perceber que o drop pede leitura rápida antes que a seção feche. Fechamento honesto: não é o Peró de melhor humor, mas ainda dá corpo suficiente pra valer a entrada. Dica: escolha o pico mais fechado da baía, onde o onshore bate com menos força.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|peito-ombro|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Ipanema com ajuda das Cagarras",
+          "analise": "À tarde, as ilhas Cagarras na frente do pico seguem fazendo o trabalho de moldar e reduzir o swell de sul antes que ele chegue na praia, o que ajuda a organizar a parede mesmo com o vento lateral cruzando a linha da onda. A energia chega em tamanho considerável, então a remada exige atenção, mas a leitura fica mais previsível graças a esse filtro natural. O surfista vai sentir o drop com pressão moderada e vai perceber a multidão de sempre disputando os poucos cantos que realmente funcionam. Fechamento honesto: onda boa pro fim de tarde, mas o Posto 9 social não é onde a melhor sequência costuma fechar. Dica: caminhe até os cantos, longe do centro social, pra achar espaço.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "itacoatiara|peito-ombro|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Itacoa pesada logo cedo",
+          "analise": "Cedo na Itacoa, o fundo raso já entrega aquele tubo forte que fez a praia virar tradição de bodyboard e surf de peso em Niterói. O vento lateral, cruzando a linha da onda, atrapalha um pouco o fechamento, mas a energia do swell de sul não perde força, e quem acerta o pico sente o caldo pesado logo na entrada. O surfista vai perceber a queda rápida e vai precisar de reflexo bom pra não bater no fundo raso quando errar o ângulo. Fechamento honesto: onda de gente que já rodou bastante água, localismo respeitado exige postura na fila. Dica: observe uma boa sequência da areia antes de remar pro pico.",
+          "janela": "6h-9h",
+          "aviso": "Fundo raso e tubo forte: onda recomendada só para surfistas experientes."
+        }
+      ]
+    },
+    "itacoatiara|peito-ombro|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Itacoa segue pesada à tarde",
+          "analise": "A tarde mantém o fundo raso da Itacoa entregando aquele tubo forte que já é tradição em Niterói, mesmo com o vento lateral cruzando a linha da onda e mexendo um pouco na formação. A energia do swell de sul continua firme, então quem domina a leitura ainda encontra sequência de peso nesse pico respeitado pelos locais. O surfista vai sentir o drop exigente e vai perceber que o fundo raso não perdoa hesitação no momento de entrar. Fechamento honesto: mantém o nível de exigência da manhã, então só vale a pena pra quem já tem repertório em onda forte. Dica: chegue perto da virada de maré, quando o banco costuma ficar mais generoso.",
+          "janela": "13h-16h",
+          "aviso": "Fundo raso e onda de força: recomendada só para quem já surfa nível avançado."
+        }
+      ]
+    },
+    "regencia|peito-ombro|bom-9a11|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Regência abre a direita longa",
+          "analise": "Na foz do Rio Doce, a manhã chega com uma série bem espaçada, dando tempo de ver a onda formando de longe e se posicionar com calma pra pegar a direita longa que fez a praia virar capital do surf capixaba. O vento offshore, terral que sai da terra e alisa a água, deixa a parede limpa, e a energia chega em tamanho generoso sem perder a organização. O surfista vai sentir o drop com pressão equilibrada e vai conseguir emendar manobra atrás de manobra numa onda que não fecha rápido. Fechamento honesto: é desses dias que lembram por que Regência virou palco de campeonato mesmo depois de tanta dificuldade rio acima. Dica: entre pela ponta pra pegar a onda inteira, do começo ao fim.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-tijuca|peito-ombro|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Barra mexida ao longo dos postos",
+          "analise": "A tarde na Barra encontra vários picos ativos ao longo dos postos, típico desse beach break extenso e democrático. O vento lateral, cruzando a linha da onda, mexe na formação, mas a energia do swell de sul segue firme o suficiente pra compensar quem procurar o banco certo. O surfista vai sentir o drop variando de posto a posto e vai perceber que a qualidade muda bastante dependendo de onde entra. Fechamento honesto: não é um dia parelho, é um dia de andar a praia até achar o pico que está fechando melhor. Dica: caminhe alguns postos antes de decidir onde remar.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "geriba|peito-ombro|medio-7a9|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Geribá alisada pelo terral noturno",
+          "analise": "Geribá ganha uma noite alisada pelo terral moderado, vento que sai da terra e segura a parede organizada mesmo sem o sol pra guiar a leitura. A energia do swell de sudeste mantém um tamanho considerável, então a praia mais social de Búzios entrega surf de qualidade pra quem topa surfar no escuro. O surfista vai sentir o drop com pressão boa e vai perceber que, sem o movimento do pico badalado de dia, sobra mais espaço na água. Fechamento honesto: condição consistente, só peça visibilidade redobrada porque a claridade já foi embora. Dica: use referência fixa na orla pra não perder a posição no pico.",
+          "janela": null,
+          "aviso": "Boa condição, mas a noite reduz a visibilidade: redobre a atenção com bancos e outros surfistas na água."
+        }
+      ]
+    },
+    "macumba|peito-ombro|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Macumba mais bagunçada à noite",
+          "analise": "O reduto democrático do Recreio recebe a noite com o onshore, vento do mar que desorganiza a superfície, tirando um pouco da limpeza que costuma atrair tanta gente pra aprender ali. A energia do swell de sudeste chega em tamanho considerável, então mesmo mexida a onda ainda empurra bem pra quem já pega o jeito. O surfista vai sentir a remada mais disputada contra o vento e vai perceber a queda menos previsível do que de costume. Fechamento honesto: não é a Macumba mais gentil, mas ainda serve pra manter o ritmo mesmo fora do horário de sempre. Dica: prefira o canto mais protegido da praia, onde o vento costuma incomodar menos.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-buzios|peito-ombro|medio-7a9|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Brava de Búzios lisa na escuridão",
+          "analise": "Voltada pro leste, a Brava de Búzios recebe bem os swells de sudeste e leste, e a noite chega com um terral moderado que alisa a água mesmo sem o cenário sofisticado da península visível no escuro. A energia do swell segue em tamanho considerável, então a parede se forma com organização, e quem já conhece o pico aproveita bem. O surfista vai sentir o drop com pressão equilibrada e vai perceber que a falta de luz pede mais atenção com as referências na água. Fechamento honesto: condição boa de verdade, só peça calma extra por ser sessão noturna. Dica: entre com alguém que já conhece o banco daqui.",
+          "janela": null,
+          "aviso": "Sessão noturna: prefira entrar acompanhado e com boa referência do pico."
+        }
+      ]
+    },
+    "arpoador|peito-ombro|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Arpoador com plateia à tarde",
+          "analise": "O costão que emoldura o pico segue dando aquele ar de palco no Arpoador, e a tarde chega com o vento lateral cruzando a linha da onda, mexendo um pouco na formação sem estragar de vez. A energia do swell de sul mantém tamanho considerável, então mesmo com a leve bagunça do vento, a onda ainda entrega drop de qualidade pra quem respeita a fila. O surfista vai sentir a pressão da queda e a plateia de sempre observando cada manobra nesse coração do surf carioca. Fechamento honesto: dia de disputa boa, tanto na água quanto pela vaga na sequência. Dica: espere sua vez com paciência, aqui a fila realmente é levada a sério.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "tucuns|peito-ombro|medio-7a9|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tucuns tranquila sob o terral",
+          "analise": "Mais deserta que a vizinha Geribá, a Tucuns recebe a noite com um terral moderado que alisa a água e segura a parede organizada, mesmo sem o movimento de gente que outras praias de Búzios costumam ter. A energia do swell de sudeste mantém tamanho considerável, então quem topa entrar no escuro encontra onda de qualidade e água praticamente só pra si. O surfista vai sentir o drop com pressão equilibrada e vai perceber o silêncio incomum pra uma praia tão perto do pico mais badalado da região. Fechamento honesto: condição consistente pra quem prefere sossego a multidão. Dica: leve uma lanterna forte e avise alguém que você vai entrar.",
+          "janela": null,
+          "aviso": "Praia mais isolada e sessão noturna: avise alguém antes de entrar e evite ir sozinho."
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-09T06:18:23.488Z"
+  "generated_at": "2026-09-09T12:15:45.015Z"
 }
