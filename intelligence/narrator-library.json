@@ -159395,7 +159395,381 @@
           "aviso": null
         }
       ]
+    },
+    "monte-alto|ombro-cabeca|medio-7a9|offshore-forte|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Terral forte segurando a rampa, mas o swell chega de raspão",
+          "analise": "A manhã amanhece com um terral forte castigando a face, aquele vento que sai da areia rumo ao mar e alisa a parede, mas o swell vem de um ângulo que não é o ideal desse pico e a onda fecha em seções, sem aquela linha limpa de ponta a ponta. Na água a sensação é de remada puxada, o vento forte empurra de volta na paddle e o take off pede decisão rápida antes que a rajada segure demais a crista. Vale a pena entrar, mas sem esperar perfeição: aproveite as poucas ondas que pegam a bancada de frente e não force as sobras de canto. Leve prancha com mais volume pra vencer o vento na remada.",
+          "janela": "7h-10h",
+          "aviso": "Vento forte pode fechar rajadas fortes na cara da onda; fique de olho antes do take off."
+        }
+      ]
+    },
+    "figueira|ombro-cabeca|medio-7a9|offshore-forte|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Onda aberta recebendo um swell torto essa manhã",
+          "analise": "O dia começa com um vento forte descendo da terra, que em tese alisa tudo, só que aqui a ondulação chega num ângulo de raspão e a praia aberta perde um pouco da organização, formando trechos bons misturados com pedaços fechados. Quem entrar sente a remada mais cansativa por causa da força do vento e precisa reler a sequência a cada conjunto, já que nem toda onda encaixa igual. Ainda dá pra aproveitar picos isolados que pegam a ondulação de frente, só não espere consistência o tempo todo. Prefira o trecho mais central da praia, onde a bancada costuma reagir melhor a essa direção.",
+          "janela": "7h-10h",
+          "aviso": "Rajadas fortes pedem atenção redobrada no take off."
+        }
+      ]
+    },
+    "torres|cintura-peito|curto-vaga|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Sessão de noite com vento de lado mexendo tudo",
+          "analise": "Já é noite e o vento forte de lado, que sopra atravessado e desorganiza a superfície, deixa o mar com uma série curta e apertada, quase sem pausa entre um conjunto e outro. A energia é enxuta, então a remada não cansa muito, mas o vento bagunçado exige leitura rápida pra pegar a onda no ponto certo antes que ela feche. É sessão honesta de treino, sem sobrar tempo pra escolher a melhor: pegue o que vier e não perca tempo estudando demais o pico. Quem conhece bem os molhes sabe aproveitar os cantos mais protegidos dessa condição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|peito-ombro|medio-7a9|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Terral bom alisando a areia branca logo cedo",
+          "analise": "A manhã traz um terral de intensidade boa, aquele vento que sai da terra e alisa a face da onda, dando um acabamento limpo pra série que chega num ritmo mediano, com uma pausa razoável entre uma onda e a próxima. Na água a remada é gostosa, sem exigir fôlego extra, e o drop vem com pressão suficiente pra sentir a força sem assustar. É condição boa pra evoluir manobra e ainda assim se diverter sem cansar demais. Aproveite o meio da praia, onde a areia branca costuma formar a bancada mais consistente.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-tijuca|cintura-peito|curto-vaga|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Pico democrático em ritmo tranquilo de noite",
+          "analise": "De noite, um onshore fraco (aquele vento que vem do mar pra terra e começa a enrugar a água) já dá uma leve textura na superfície, mas nada que atrapalhe muito. A série é curta e um tanto apertada, com energia enxuta, então a remada segue tranquila e dá pra ficar bastante tempo na água sem cansar. É sessão simples, sem grandes surpresas, boa pra treinar posicionamento e testar os postos que estiverem batendo melhor naquele momento. Escolha o pico com menos gente entre os postos e aproveite o ritmo calmo.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|peito-ombro|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Brisa leve de lado numa manhã de série mediana",
+          "analise": "Pela manhã sopra só uma brisa fraca de lado, que mexe pouco a superfície, enquanto a série chega num ritmo mediano, com tempo suficiente pra ver a onda vindo e se posicionar com calma. A energia é moderada, então a remada pede uma resistência gostosa sem virar sacrifício, e o drop tem uma pressão perceptível mas nada que assuste. A praia aberta funciona bem com esse swell entrando de frente, então quem estiver posicionado certo vai pegar boas sequências. Bom momento pra quem está evoluindo ganhar confiança em ondas mais cheias.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "camburi|peito-ombro|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Cena badalada com um terral fraquinho pela manhã",
+          "analise": "A manhã começa com um terral fraquinho, quase imperceptível, só um toque de brilho na água sem interferir muito na forma da onda, que chega numa série de ritmo mediano. A energia é boa, nem cansa demais nem deixa a remada monótona, e o drop vem com uma pressão que dá gosto de sentir. É condição convidativa pra qualquer nível se divertir, do iniciante que está pegando as primeiras ondas de pé até quem já manda manobra. Chegue cedo pra pegar um lugar bom antes da praia badalada encher.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|ombro-cabeca|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Mar liso e onda de força na reserva intocada",
+          "analise": "De manhã o vento está praticamente ausente, deixando a superfície lisa feito espelho pra receber uma série de ritmo mediano com bastante força por trás. A remada exige fôlego, energia não falta, e o drop cobra atenção porque a parede tem peso, recompensando quem se compromete com a manobra. O cenário preservado, sem construção à vista, deixa a sessão ainda mais especial pra quem topa remar um pouco mais. Prancha com bom volume ajuda a vencer a remada e aproveitar essa força.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|ombro-cabeca|medio-7a9|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Tarde de força na praia selvagem, quase sem vento",
+          "analise": "À tarde o vento segue quase ausente, só um fiozinho de brisa que não chega a incomodar, enquanto a série mantém um ritmo mediano com bastante força vindo de longe. Na água a remada pede fôlego e o drop tem pressão de verdade, então quem escorregar tarde demais sente o caldo pesar. A área protegida, sem nenhuma construção por perto, mantém aquele clima intocado que poucos picos ainda oferecem. Vale reservar energia pro fim da sessão, quando o vento costuma virar e a onda pode fechar mais rápido.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "geriba|ombro-cabeca|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Point social recebendo força sem vento nenhum de manhã",
+          "analise": "A manhã amanhece quase sem vento, superfície lisa, e a série de ritmo mediano chega com bastante força por trás, dando ondas cheias pra quem estiver no lugar certo. A remada exige um fôlego extra e o drop tem peso de verdade, recompensando quem se compromete e cobrando de quem hesita. O point social costuma encher rápido nesse tipo de condição, então chegar cedo ajuda a garantir espaço na fila. Boa manhã pra quem já domina o básico e quer sentir onda com corpo.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "camburi|peito-ombro|medio-7a9|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Terral fraco segurando a tarde na cena vibrante",
+          "analise": "À tarde um terral fraquinho ainda ajuda a manter a face arrumada, enquanto a série chega num ritmo mediano com energia boa, nem pesada nem fraca demais. A remada rende sem cansar demais e o drop vem com uma pressão gostosa de sentir, sem intimidar quem está evoluindo. A praia costuma estar animada nesse horário, com gente de todos os níveis dividindo o pico numa boa. Se o vento virar mais forte no fim da tarde, vale reavaliar e procurar o trecho mais protegido.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "camburi|peito-ombro|medio-7a9|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Sessão de noite com terral fraco ainda ajudando",
+          "analise": "De noite o terral segue fraquinho, mal se sente, mas ainda contribui pra manter a série arrumada num ritmo mediano e com energia razoável. A remada não cansa muito e o drop vem numa pressão tranquila, boa pra quem quer surfar sem grandes sustos mesmo com pouca luz. A cena costuma esvaziar nesse horário, o que deixa mais espaço pra escolher a melhor onda da série. Leve uma lanterna pra entrada e saída da água, já que a visibilidade cai bastante.",
+          "janela": null,
+          "aviso": "Visibilidade baixa à noite, redobre a atenção com outros surfistas na água."
+        }
+      ]
+    },
+    "ferrugem|peito-ombro|medio-7a9|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde tranquila e sem vento na praia badalada",
+          "analise": "À tarde o vento praticamente desaparece, deixando a água lisa pra receber uma série de ritmo mediano com energia equilibrada, nem pesada nem fraca. A remada é confortável e o drop chega numa pressão moderada, ótima pra treinar manobra sem se preocupar demais com a força da parede. A cena jovem e animada costuma lotar rápido nesse tipo de tarde, então esperar a sua vez faz parte do pacote. Boa condição pra quem está ganhando confiança em ondas mais cheias.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|ombro-cabeca|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "A melhor direita do Rio sem vento pra atrapalhar",
+          "analise": "A manhã amanhece com o vento quase zerado, deixando a enseada em formato de V concentrar toda a força numa série de ritmo mediano que entra cheia de energia. A remada pede fôlego e o drop cobra comprometimento, com uma parede que empurra forte e recompensa quem se joga sem hesitar. É reduto de gente experiente e a disputa pela onda costuma ser acirrada, então respeitar a fila e o local faz toda diferença. Reserve essa sessão pra quando já tiver read confiante de onda com corpo.",
+          "janela": "6h-9h",
+          "aviso": "Pico concorrido e de localismo forte; observe a dinâmica antes de remar pro pico."
+        }
+      ]
+    },
+    "prainha|ombro-cabeca|medio-7a9|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Tarde de força na enseada mais concentrada do Rio",
+          "analise": "À tarde o vento segue quase ausente e a enseada em V continua concentrando energia numa série de ritmo mediano, cheia e consistente mesmo quando o resto da região está fraco. Na água a remada exige preparo e o drop tem peso real, então quem hesitar no compromisso sente o caldo cobrar caro. A qualidade elevada atrai gente boa pro pico, e a disputa por espaço é natural nesse cenário de mata em volta. Vale surfar com humildade e esperar a sua vez com paciência.",
+          "janela": "13h-16h",
+          "aviso": "Pico concorrido e de localismo forte; observe a dinâmica antes de remar pro pico."
+        }
+      ]
+    },
+    "monte-alto|cabeca-1.5x|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Onda cheia e pesada na manhã tranquila de Arraial",
+          "analise": "A manhã traz uma brisa fraca de lado, que mexe pouco a superfície, enquanto a série de ritmo mediano chega bem cheia e com força pesada por trás. A remada cansa e o drop cobra caro de quem não tiver preparo, com uma parede que empurra forte do começo ao fim da descida. É condição pra quem já surfa há um tempo e sabe ler uma onda de corpo maior, sem se afobar na hora do take off. Prancha com volume extra ajuda bastante a vencer a remada nesse tamanho.",
+          "janela": "6h-9h",
+          "aviso": "Onda de bastante força; exige experiência para remar e assumir o drop com segurança."
+        }
+      ]
+    },
+    "monte-alto|cabeca-1.5x|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Força pesada com vento de lado mexendo a tarde",
+          "analise": "À tarde o vento de lado sopra moderado, mexendo bastante a superfície, enquanto a série de ritmo mediano continua cheia e pesada. A remada exige fôlego de sobra e o drop tem peso real, com o vento atravessado ainda dificultando um pouco a leitura do ponto exato pra decolar. Não é sessão pra quem está começando: pede experiência pra ler a bagunça na água e assumir o compromisso do drop mesmo assim. Quem topa o desafio encontra onda de corpo bom com menos gente que os picos vizinhos.",
+          "janela": "13h-16h",
+          "aviso": "Onda pesada com vento atravessado; leitura mais difícil, recomendado só pra quem tem experiência."
+        }
+      ]
+    },
+    "jureia|ombro-cabeca|curto-vaga|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Força na reserva ecológica com série curta pela manhã",
+          "analise": "A manhã amanhece quase sem vento, mas a série vem curta e apertada, sem muita pausa entre um conjunto e outro, mesmo com bastante força por trás. A remada exige fôlego e o ritmo apertado pede decisão rápida na hora de escolher a onda, já que a próxima chega logo em seguida. O cenário preservado da estação ecológica, com pouca gente na água, compensa o esforço extra de remada exigido por essa série. Boa sessão pra quem gosta de ritmo intenso e não se importa de remar bastante.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|peito-ombro|medio-7a9|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Consistência de sempre numa tarde sem vento",
+          "analise": "À tarde o vento quase não aparece, deixando a série correr num ritmo mediano com energia moderada, nem pesada nem fraca. A remada rende bem e o drop chega numa pressão que exige atenção, mas sem exagero, condizente com o padrão elevado desse pico. Aqui o surf é rotina de vida pra comunidade local, não passeio ocasional, e isso se sente na qualidade da leitura de quem está na água. Surfe com respeito ao ritmo local e aproveite uma das ondas mais queridas do Sul.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|cabeca-1.5x|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã de força pesada na areia branca de Cabo Frio",
+          "analise": "A manhã traz só uma brisa fraca de lado, quase sem efeito na água, enquanto a série de ritmo mediano chega bem cheia e pesada. A remada cansa de verdade e o drop cobra compromisso total, com uma parede que empurra forte assim que a onda levanta. É sessão pra quem já tem experiência com onda de corpo grande e sabe escolher o momento certo de remar. Prancha com volume e fôlego reservado fazem toda diferença nessa condição.",
+          "janela": "6h-9h",
+          "aviso": "Onda de bastante força; recomendado só pra quem já surfa condições cheias com segurança."
+        }
+      ]
+    },
+    "recreio|ombro-cabeca|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Ponta de força sem vento nenhum pela manhã",
+          "analise": "A manhã amanhece com o vento praticamente zerado, deixando a série de ritmo mediano entrar cheia de força na ponta que costuma pegar bem esse tipo de swell. A remada pede fôlego e o drop chega com pressão real, recompensando quem se compromete e não hesita na descida. O beach break longo dá opção de espalhar pelos postos caso o pico principal encha de gente. Boa manhã pra quem já tem confiança em onda de corpo maior.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|ombro-cabeca|medio-7a9|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Tarde de força na zona oeste, mar liso",
+          "analise": "À tarde o vento segue bem fraco, quase sem interferir, e a série de ritmo mediano mantém bastante força vinda de longe. A remada exige preparo físico e o drop tem peso de verdade, então quem escorregar no compromisso sente o caldo pesar. O trecho mais forte costuma concentrar a galera mais experiente, mas o beach break longo permite achar um canto mais tranquilo pra quem prefere. Boa tarde pra evoluir em onda com corpo, respeitando o próprio limite.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "regencia|ombro-cabeca|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Direita famosa da foz rodando de noite sem vento",
+          "analise": "De noite o vento está praticamente ausente e a onda famosa da foz do rio mantém uma série longa de ritmo mediano, cheia de força e consistência. A remada pede fôlego e o drop tem peso real, recompensando quem conhece bem essa direita histórica e sabe posicionar o take off certo. A correnteza da foz costuma puxar forte, e a pouca luz da noite exige ainda mais atenção pra não perder a referência do pico. Só entre se já conhecer bem esse rio e tiver companhia na água.",
+          "janela": null,
+          "aviso": "Foz de rio com correnteza forte e visibilidade baixa à noite; só para quem já conhece bem o local."
+        }
+      ]
+    },
+    "praia-grande-arraial|cabeca-1.5x|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia mais surfada de Arraial recebendo força pesada",
+          "analise": "A manhã chega com um vento de lado moderado mexendo a superfície, enquanto a série de ritmo mediano entra bem cheia e pesada, exposta em cheio ao swell dessa direção. A remada cansa e o drop cobra compromisso total, com o vento atravessado ainda dificultando um pouco a leitura do ponto certo de decolagem. Não é sessão pra quem está começando: pede experiência pra lidar com onda de corpo grande e água mexida ao mesmo tempo. A água transparente ajuda a enxergar os bancos mesmo com esse tamanho todo.",
+          "janela": "6h-9h",
+          "aviso": "Onda pesada com vento atravessado; recomendado só pra quem já surfa condições grandes."
+        }
+      ]
+    },
+    "praia-brava-arraial|cabeca-1.5x|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia brava entregando força pesada logo cedo",
+          "analise": "A manhã amanhece com um vento de lado moderado mexendo a água, e a série de ritmo mediano chega cheia e pesada, do jeito que essa praia mais exposta costuma entregar. A remada exige fôlego de sobra e o drop cobra comprometimento total, sem espaço pra hesitação no meio da descida. É onda pra quem já tem experiência de verdade com força e sabe ler água mexida sem perder a referência. Quem topa o desafio encontra aqui uma das condições mais completas da região nesse tamanho.",
+          "janela": "6h-9h",
+          "aviso": "Praia pesada e exposta; recomendada apenas para quem já tem experiência com ondas grandes."
+        }
+      ]
+    },
+    "unamar|cabeca-1.5x|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Força cheia sem vento pela manhã em Tamoios",
+          "analise": "A manhã amanhece com o vento quase ausente, superfície lisa, e a série de ritmo mediano chega bem cheia e pesada. A remada cansa de verdade e o drop cobra compromisso, com uma parede que empurra forte do início ao fim da descida. É condição pra quem já domina onda de corpo grande e sabe escolher o momento certo de remar pro pico. Prancha com volume extra e fôlego guardado fazem diferença real nessa força.",
+          "janela": "6h-9h",
+          "aviso": "Onda de bastante força; recomendado só para quem já tem experiência com condições grandes."
+        }
+      ]
+    },
+    "unamar|cabeca-1.5x|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde pesada com apenas uma brisa de lado",
+          "analise": "À tarde sopra só uma brisa fraca de lado, quase sem efeito na água, enquanto a série de ritmo mediano segue cheia e pesada. A remada exige fôlego de sobra e o drop tem peso real, recompensando quem se compromete e cobrando de quem hesita na descida. É sessão pra surfista já experiente, que sabe posicionar o take off e aguentar uma remada mais puxada. Reserve energia extra: o cansaço chega rápido nesse tamanho de série.",
+          "janela": "13h-16h",
+          "aviso": "Onda de bastante força; recomendado só para quem já tem experiência com condições grandes."
+        }
+      ]
+    },
+    "ibiraquera|peito-ombro|medio-7a9|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde tranquila ao lado da lagoa, sem vento",
+          "analise": "À tarde o vento praticamente desaparece, deixando a água lisa pra receber uma série de ritmo mediano com energia moderada, nem pesada nem fraca. A remada rende bem e o drop chega com pressão perceptível, boa pra treinar manobra sem grande sobressalto. A lagoa ao lado costuma trazer gente do kite também, então vale ficar de olho na divisão do espaço. Boa tarde pra evoluir com calma numa condição amigável.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "tucuns|ombro-cabeca|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Menos gente e mais força numa manhã sem vento",
+          "analise": "A manhã amanhece com o vento quase ausente, deixando a série de ritmo mediano entrar cheia de força numa praia que já é conhecida por ter menos gente que a vizinha mais famosa. A remada pede fôlego e o drop vem com pressão real, recompensando quem se compromete com a descida. Pra quem foge do crowd, essa é a chance de pegar onda boa sem disputar cada pico. Aproveite a tranquilidade e surfe com calma, sem pressa de escolher a próxima.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|cabeca-1.5x|medio-7a9|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia aberta recebendo força pesada de manhã",
+          "analise": "A manhã traz só uma brisa fraca de lado, que mexe pouco, enquanto a série de ritmo mediano chega cheia e pesada nessa praia aberta que funciona bem com esse tipo de swell. A remada cansa e o drop cobra compromisso total, com uma parede que empurra forte assim que levanta. É condição pra quem já tem experiência com onda de corpo grande, sem se afobar na hora de remar pro pico. O trecho mais central costuma formar a bancada mais organizada nesse tamanho.",
+          "janela": "6h-9h",
+          "aviso": "Onda de bastante força; recomendado só para quem já surfa condições grandes."
+        }
+      ]
+    },
+    "figueira|cabeca-1.5x|medio-7a9|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tarde pesada com vento de lado mexendo a praia aberta",
+          "analise": "À tarde o vento de lado sopra moderado, mexendo bastante a superfície dessa praia aberta, enquanto a série de ritmo mediano segue cheia e pesada. A remada exige fôlego de sobra e o drop cobra comprometimento, com o vento atravessado dificultando a leitura exata do ponto de decolagem. Não é sessão pra quem está começando: pede experiência pra lidar com força e água mexida ao mesmo tempo. Quem topa encontra onda de corpo bom, ainda que menos organizada que pela manhã.",
+          "janela": "13h-16h",
+          "aviso": "Onda pesada com vento atravessado; recomendado só para quem já surfa condições grandes."
+        }
+      ]
+    },
+    "macumba|ombro-cabeca|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Reduto de longboard recebendo força sem vento",
+          "analise": "A manhã amanhece com o vento quase ausente, superfície lisa, e a série de ritmo mediano chega com bastante força, mais cheia do que o normal desse pico democrático. A remada pede um fôlego extra e o drop vem com pressão real, ainda que a onda mantenha aquele jeito mais amistoso que atrai tanta gente do Rio. Bom momento até pra quem está evoluindo, desde que já tenha confiança em onda mais cheia. A galera do longboard costuma aproveitar bem esse tipo de série mais espaçada.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|ombro-cabeca|medio-7a9|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde cheia e sem vento no pico democrático",
+          "analise": "À tarde o vento segue quase ausente e a série de ritmo mediano mantém bastante força, deixando o pico mais cheio do que costuma ser. A remada exige um pouco mais de fôlego e o drop chega com pressão perceptível, sem perder aquele jeito amistoso que faz desse lugar uma escola pra tanta gente. A maré mais baixa desse horário tende a deixar a onda um pouco mais oca que de manhã. Boa tarde pra quem já pegou confiança e quer sentir a onda com mais corpo.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-buzios|ombro-cabeca|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Cenário sofisticado recebendo força sem vento",
+          "analise": "A manhã amanhece com o vento praticamente zerado, e a série de ritmo mediano chega cheia de força nessa praia voltada pro nascente que costuma pegar bem esse tipo de swell. A remada pede fôlego e o drop vem com pressão real, recompensando quem se compromete com a descida sem hesitar. O cenário elegante da península acompanha uma onda à altura, boa pra quem já tem experiência intermediária pra cima. Aproveite o horário mais cedo, antes do vento típico da região começar a mexer mais forte.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-08T18:19:14.689Z"
+  "generated_at": "2026-09-09T00:15:10.494Z"
 }
