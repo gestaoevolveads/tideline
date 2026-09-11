@@ -161969,7 +161969,469 @@
           "aviso": null
         }
       ]
+    },
+    "capao-da-canoa|cintura-peito|bom-9a11|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde redonda em Capão da Canoa",
+          "analise": "A tarde entrega séries espaçadas, dá tempo de ver a onda vindo de longe e se posicionar com calma antes da rampa formar. O vento mal se mexe, só um sopro fraco vindo do mar, então a parede segue quase lisa e a remada rende sem gastar energia à toa. Na água a sensação é de onda que empurra bem e perdoa quem ainda tá pegando o jeito, sem cobrar leitura fina. Fechamento honesto: dia bom pra evoluir manobra, só ficar de olho porque esse vento fraco de tarde costuma engordar com o passar das horas.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|ombro-cabeca|bom-9a11|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Manhã pesada e organizada no Foguete",
+          "analise": "De manhã cedo o vento sopra firme da terra pro mar, alisando bem a parede e dando aquele brilho de vidro na onda que já vem grande e cheia de força. As séries chegam espaçadas, então dá pra estudar o pico antes de remar, mas quando a onda pega o corpo o empurrão é forte e a queda cobra respeito. Quem já tem experiência vai sentir a descida rápida e a pressão da água logo depois de entrar, aquele momento de decidir a linha rápido. Vale entrar cedo, enquanto o vento ainda segura essa condição, porque esse pico costuma virar bagunça depois que o sol sobe mais.",
+          "janela": "6h-9h",
+          "aviso": "Energia alta e queda com peso: cuidado redobrado pra quem não tem prática em ondas maiores."
+        }
+      ]
+    },
+    "caioba|joelho-cintura|medio-7a9|offshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Manhã fraca em Caiobá, ondulação de raspão",
+          "analise": "A ondulação chega de um ângulo que não bate direto na praia, então mesmo com o vento fraco vindo da terra ajudando a organizar, a onda fica pequena e sem muita força por trás. Na água a remada é tranquila, quase sem cansaço, mas o empurrão é curto e a maioria das ondas fecha rápido sem dar sequência longa. É um dia mais de treinar postura e pegada do que de buscar volume, principalmente pra quem ainda tá começando. A dica é não esperar muito da sessão e aproveitar pra repetir manobras básicas com calma.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|joelho-cintura|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã modesta e organizada no Cassino",
+          "analise": "O mar chega pequeno essa manhã, mas as séries vêm bem espaçadas, dando tempo de escolher a onda com calma antes de remar. Um vento fraco de lado mexe um pouco a superfície sem destruir a parede, então ainda dá pra sentir uma descida limpa mesmo com pouca força por trás. É um dia mais gentil, bom pra quem quer remar tranquilo e treinar posicionamento sem pressão de onda grande. A água gelada do extremo sul pede roupa de neoprene, e vale aproveitar o começo da manhã antes do vento crescer.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "jureia|cintura-peito|bom-9a11|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde limpa na Jureia",
+          "analise": "A tarde recebe uma ondulação que encaixa bem na praia, formando séries espaçadas que dão tempo de estudar o pico vazio antes de remar. Um vento fraco que sai da terra ajuda a alisar a face, então a parede fica com boa definição e a remada rende sem gastar demais. Na água dá pra sentir um empurrão de tamanho médio, generoso o bastante pra render manobra sem cobrar peso na queda. Fechamento: a Jureia segue sendo aquele refúgio sem gente, e essa tarde tranquila é motivo de sobra pra fazer a viagem até lá.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "matinhos|joelho-cintura|medio-7a9|offshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Manhã pequena em Matinhos, na borda do swell",
+          "analise": "Aqui a ondulação também entra de um ângulo que não bate direto na praia, e mesmo com o vento fraco da terra ajudando a organizar, a onda fica pequena e sem muita continuidade. A remada é fácil, sem cansaço, mas as ondas fecham rápido e entregam pouca sequência pra manobra. É um dia mais democrático, bom pra quem tá aprendendo aproveitar sem pressão de onda forte. A dica aqui é ir com expectativa baixa e focar em repetir pop-up e remada com calma.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|cintura-peito|bom-9a11|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde de vidro em Arroio do Sal",
+          "analise": "O vento mal se mexe essa tarde, e as séries chegam espaçadas, dando tempo de ver a onda se formando de longe e se posicionar sem pressa. Com o sopro do mar quase imperceptível, a parede segue com boa definição do início ao fim da série. Dá pra sentir um empurrão de tamanho médio, com aquela queda tranquila que não cobra peso nem cansa a remada. Fechamento: dia redondo pro litoral norte gaúcho, vale entrar cedo na tarde antes do vento decidir mudar de ideia.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|cintura-peito|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde favorável no Peró",
+          "analise": "O ângulo dessa praia faz o vento de sudoeste soprar quase alisando a água mesmo vindo meio de lado, e hoje ele sopra fraco, então a parede segue com bastante definição. As séries chegam espaçadas, dando tempo de escolher a onda certa antes de remar, e o empurrão de tamanho médio rende manobra sem cobrar muito da queda. Na água a sensação é de organização, poucas surpresas, um mar que recompensa quem lê bem a série. Fechamento: essa praia é a salvação quando o mar vem forte de sul, e essa tarde mostra bem por quê.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|peito-ombro|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde forte e atropelada nas Pitangueiras",
+          "analise": "A onda chega considerável essa tarde, mas as séries vêm apertadas, quase em cima uma da outra, dando aquela sensação de mar de vento, quando não dá tempo de respirar entre uma rema e outra. Um vento de lado, com força moderada, pica a superfície e deixa a parede menos lisa do que poderia ser com esse tamanho de onda. Na água o corpo sente o empurrão forte e a queda pede reação rápida, principalmente pela falta de espaçamento entre as ondas. Fechamento honesto: tem força boa, mas exige gás e escolha certa da onda, porque quem pegar a errada leva caldo puxado sem dar sequência.",
+          "janela": "13h-17h",
+          "aviso": "Muita gente costuma lotar essa praia urbana; atenção redobrada em dia de mar puxado."
+        }
+      ]
+    },
+    "barra-do-sahy|cintura-peito|medio-7a9|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã tranquila e alisada na Barra do Sahy",
+          "analise": "De manhã o vento sopra com força moderada saindo da terra pro mar, alisando bem a parede e deixando a onda com aquele acabamento de vidro. As séries organizam num ritmo mediano, nem apertadas nem muito espaçadas, o suficiente pra dar tempo de reação sem parecer bagunça. O empurrão de tamanho médio é gentil, ótimo pra quem ainda tá pegando confiança na água, já que a foz do rio protege bastante o pico. Fechamento: praia ideal pra quem trouxe a família ou tá começando, e a manhã de hoje só reforça isso.",
+          "janela": "7h-11h",
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|peito-ombro|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde pesada e apertada no Tombo",
+          "analise": "O mar chega com bastante força essa tarde, mas as séries vêm apertadas, atropelando uma na outra sem dar respiro, típico de dia com pouco espaçamento entre ondas. Um vento de lado com força moderada pica a superfície, então a parede perde um pouco do brilho e fica mais irregular na descida. Quem já surfa esse pico pesado do Guarujá vai sentir a queda rápida e o caldo forte castigando se errar o tempo de remada. Fechamento: onda com carga boa pra quem tem experiência, mas não é dia de aprender, o ritmo apertado não perdoa hesitação.",
+          "janela": "13h-17h",
+          "aviso": "Pico conhecido por pesar a mão; só quem já tem experiência em ondas fortes deve entrar."
+        }
+      ]
+    },
+    "praia-brava-buzios|ombro-cabeca|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tarde grande e levemente enrugada na Brava",
+          "analise": "A onda chega grande essa tarde, com bastante força por trás, e um vento fraco vindo do mar enruga só um pouco a superfície sem destruir a parede. As séries organizam num ritmo mediano, dando tempo curto pra reagir mas ainda previsível pra quem já lê bem o pico. Na água o corpo sente o peso do empurrão, a queda cobra postura firme e a remada cansa mais rápido do que num dia pequeno. Fechamento: tem tamanho de sobra pra quem busca adrenalina na península, só ir com o preparo físico em dia.",
+          "janela": "13h-17h",
+          "aviso": "Mar grande pede preparo físico e experiência; iniciante deve assistir de fora nesse tamanho."
+        }
+      ]
+    },
+    "praia-brava-buzios|ombro-cabeca|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite grande e lisa na Brava",
+          "analise": "A noite chega com o mar ainda maior do que estava antes, e o vento praticamente para, deixando a parede lisa como vidro mesmo com todo esse tamanho. As séries organizam num ritmo mediano, e sem o sol pra guiar a leitura, cada onda pede mais atenção pra enxergar onde ela vai fechar. Quem encarar vai sentir o peso do empurrão forte logo na queda, com a superfície tão limpa que a prancha desliza rápido demais se não tiver postura firme. Fechamento honesto: onda ótima na teoria, mas surfar grande sem luz natural exige experiência séria e companhia por perto.",
+          "janela": null,
+          "aviso": "Mar grande e visibilidade baixa por causa da noite: só para quem já surfa esse tipo de condição e nunca sozinho."
+        }
+      ]
+    },
+    "tucuns|ombro-cabeca|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tarde grande em Tucuns, ainda com pique",
+          "analise": "A onda vem grande essa tarde, carregando bastante força, e um vento fraco do mar enruga de leve a parede sem estragar de vez a leitura. As séries chegam num ritmo mediano, curto pra respirar mas ainda dá pra estudar o pico antes de remar. Na água o corpo sente logo o peso do empurrão, e a queda pede postura firme pra não perder o rumo. Fechamento: dia bom pra fugir da multidão do pico vizinho e ainda pegar onda com corpo, só ir preparado fisicamente.",
+          "janela": "13h-17h",
+          "aviso": "Onda com bastante força; recomendado só pra quem já tem experiência em mar grande."
+        }
+      ]
+    },
+    "tucuns|ombro-cabeca|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite parada e grande em Tucuns",
+          "analise": "À noite o vento quase desaparece, e a onda, que já vinha grande, ganha uma face lisa e brilhante mesmo no escuro. As séries seguem num ritmo mediano, e sem a claridade do sol pra ajudar a leitura, cada uma pede atenção redobrada de quem entrar. O corpo sente o empurrão forte assim que a onda pega, com a parede tão limpa que a queda cobra reação rápida. Fechamento honesto: condição rara de qualidade, mas surfar assim exige experiência e nunca ir sozinho nesse tamanho.",
+          "janela": null,
+          "aviso": "Mar grande à noite, visibilidade baixa: só para experientes e sempre acompanhado."
+        }
+      ]
+    },
+    "domingas-dias|ombro-cabeca|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite grande e abrigada em Domingas Dias",
+          "analise": "Essa noite chega com o mar grande, mas o abrigo natural dessa praia segura boa parte do impacto, e um vento fraco de lado mal mexe a superfície. As séries organizam num ritmo mediano, e mesmo sem luz natural o pico costuma ficar mais previsível aqui do que em praias mais expostas. Quem entrar sente o empurrão com corpo, mas a proteção do lugar deixa a queda menos brusca do que em praia aberta. Fechamento: opção mais segura pra encarar mar grande no escuro, ainda assim vale ir com companhia e lanterna.",
+          "janela": null,
+          "aviso": "Mesmo abrigada, mar grande à noite pede companhia e cautela redobrada."
+        }
+      ]
+    },
+    "foguete|cabeca-1.5x|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite pesada e vítrea no Foguete",
+          "analise": "O mar chega bem grande dessa vez, com bastante carga de força, e o vento quase zerado deixa a parede lisa como vidro do início ao fim da série. As séries seguem num ritmo mediano, e sem a luz do sol, ler onde a onda vai fechar exige experiência e atenção total. Quem entrar sente o peso forte do empurrão logo na queda, com a energia alta cobrando reação rápida e físico em dia. Fechamento honesto: condição de sonho pra quem já rodou mar grande, mas não é hora de arriscar sem prática séria.",
+          "janela": null,
+          "aviso": "Mar bem grande e pesado, no escuro: só para surfistas experientes, com companhia e conhecimento do pico."
+        }
+      ]
+    },
+    "geriba|ombro-cabeca|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tarde grande e concorrida em Geribá",
+          "analise": "A onda chega com bastante força essa tarde, e um vento fraco do mar enruga só de leve a parede, sem tirar a leitura do pico. As séries seguem num ritmo mediano, dando um tempo curto mas ainda gerenciável pra escolher a onda certa. Na água o corpo sente o empurrão forte, com a queda pedindo postura firme, principalmente pelo tanto de gente que costuma dividir esse pico. Fechamento: tem tamanho de sobra, só que a disputa pela onda aqui costuma ser tão grande quanto o próprio mar.",
+          "janela": "13h-17h",
+          "aviso": "Pico bastante concorrido; em dia de mar grande a disputa por onda fica mais tensa ainda."
+        }
+      ]
+    },
+    "geriba|ombro-cabeca|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite grande e vazia em Geribá",
+          "analise": "Esse pico costuma ficar lotado de gente, mas nesse horário o cenário muda e entrega o mesmo mar grande praticamente sem ninguém na água, com o vento quase parado deixando a face lisa e limpa. As séries seguem num ritmo mediano, e sem a claridade do sol cada onda pede leitura mais cuidadosa antes de remar. Quem encarar sente o peso do empurrão forte logo na descida, numa condição que raramente aparece tão vazia por aqui. Fechamento honesto: é a chance de surfar esse pico sem disputa por onda, mas só vale a pena com experiência e alguém por perto.",
+          "janela": null,
+          "aviso": "Mar grande à noite, mesmo vazio: recomendado só para quem já tem prática nesse tipo de condição."
+        }
+      ]
+    },
+    "praia-grande-arraial|ombro-cabeca|medio-7a9|onshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã grande e bagunçada na Praia Grande",
+          "analise": "A manhã já nasce com o mar grande e um vento forte vindo do mar que desmancha boa parte da parede antes mesmo da onda fechar. As séries chegam num ritmo mediano, mas a superfície picotada torna a leitura mais difícil, com pouca previsibilidade de onde a onda vai parir. O corpo sente o empurrão forte e a queda irregular, exigindo reação rápida numa água que não perdoa demora. Fechamento honesto: tem tamanho e força de sobra, mas a bagunça na superfície deixa a sessão mais trabalho do que prazer hoje.",
+          "janela": "6h-9h",
+          "aviso": "Mar grande e vento forte: correnteza mais puxada, atenção redobrada e só para quem já tem experiência."
+        }
+      ]
+    },
+    "praia-grande-arraial|cabeca-1.5x|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite bem grande na Praia Grande",
+          "analise": "Nesse horário o mar cresce ainda mais, carregando bastante energia, e um vento fraco do mar enruga só de leve a parede sem estragar demais a leitura. As séries seguem num ritmo mediano, e sem luz natural cada uma pede atenção redobrada pra saber onde vai fechar. Quem encarar sente o peso forte do empurrão logo na queda, numa condição que cobra físico e experiência séria com mar grande. Fechamento honesto: onda de respeito, e enfrentar isso no escuro só faz sentido pra quem já rodou muito mar parecido.",
+          "janela": null,
+          "aviso": "Mar bem grande à noite: risco real de correnteza e baixa visibilidade, só para experientes acompanhados."
+        }
+      ]
+    },
+    "praia-brava-arraial|cabeca-1.5x|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite pesada na Brava de Arraial",
+          "analise": "Esse pico já é mais exposto e pesado por natureza, e nesse horário o mar chega bem grande, com um vento fraco do mar enrugando só de leve a face. As séries seguem num ritmo mediano, e a escuridão torna ainda mais difícil enxergar onde a força da onda vai se concentrar. O corpo sente o peso forte do empurrão assim que a onda pega, com a queda exigindo reação rápida e experiência de mar grande. Fechamento honesto: essa praia já pesa a mão em pleno dia, no escuro e grande assim só é lugar pra quem já é experiente.",
+          "janela": null,
+          "aviso": "Pico pesado por natureza, mar grande e escuridão: risco real, só para surfistas experientes e nunca sozinho."
+        }
+      ]
+    },
+    "cidreira|peito-ombro|curto-vaga|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite parada e forte em Cidreira",
+          "analise": "Essa noite chega com o mar considerável e o vento praticamente parado, deixando a parede limpa mesmo com as séries vindo apertadas uma atrás da outra. Esse ritmo mais curto entre ondas dá pouco tempo de respirar, mas a superfície lisa ajuda a compensar a falta de espaçamento. Quem entrar sente o empurrão forte logo na queda, num mar que exige reação rápida mesmo sendo bonito de se ver sem vento nenhum. Fechamento honesto: onda com carga boa pro litoral médio gaúcho, só que no escuro pede experiência pra ler o ritmo apertado das séries.",
+          "janela": null,
+          "aviso": "Séries apertadas e mar com força à noite: atenção redobrada com a falta de luz natural."
+        }
+      ]
+    },
+    "pitangueiras|ombro-cabeca|medio-7a9|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite grande e alisada nas Pitangueiras",
+          "analise": "Essa noite entrega mar grande nessa praia central do Guarujá, e um vento fraco saindo da terra ajuda a alisar bastante a parede mesmo sem o sol pra guiar a leitura. As séries seguem num ritmo mediano, e a superfície limpa compensa um pouco a dificuldade de enxergar onde a onda vai fechar no escuro. O corpo sente o peso forte do empurrão assim que a onda pega, cobrando postura firme na queda. Fechamento honesto: condição rara de qualidade pra essa praia urbana, mas grande assim e no escuro, só quem já tem prática deve entrar.",
+          "janela": null,
+          "aviso": "Mar grande à noite: mesmo com vento favorável, risco de correnteza e baixa visibilidade é real."
+        }
+      ]
+    },
+    "massaguacu|peito-ombro|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite considerável em Massaguaçu",
+          "analise": "Essa noite chega com o mar de bom tamanho, e um vento fraco de lado mexe pouco a superfície, deixando a parede ainda com boa definição. As séries seguem num ritmo mediano, previsíveis o bastante mesmo sem a luz do sol pra ajudar. Quem entrar sente um empurrão de força considerável, com a queda pedindo atenção mas sem o peso extremo de um mar realmente grande. Fechamento honesto: dia de força boa pra esse pico de Caraguatatuba, só ir preparado pra surfar no escuro com companhia por perto.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|cabeca-1.5x|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite grande e vítrea na Figueira",
+          "analise": "Essa noite entrega um mar bem grande em Arraial, e o vento quase zerado deixa a face lisa como vidro mesmo com toda essa força por trás. As séries seguem num ritmo mediano, e sem luz natural, ler onde a onda vai fechar pede experiência e atenção total. O corpo sente o peso forte do empurrão logo na queda, numa energia alta que cansa rápido e cobra físico em dia. Fechamento honesto: condição de mar grande e limpo é rara, mas no escuro só faz sentido pra quem já rodou muita onda parecida.",
+          "janela": null,
+          "aviso": "Mar bem grande à noite: risco real de correnteza, recomendado só para experientes e acompanhados."
+        }
+      ]
+    },
+    "monte-alto|cabeca-1.5x|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite pesada e sem vento em Monte Alto",
+          "analise": "Esse pico costuma ter menos gente que os vizinhos, e agora o mar chega bem grande com o vento praticamente parado, deixando a parede lisa do início ao fim da série. As séries seguem num ritmo mediano, e a escuridão exige leitura cuidadosa antes de cada remada. Quem encarar sente o peso forte do empurrão assim que a onda pega, com a energia alta cobrando físico e reação rápida na queda. Fechamento honesto: mar grande e limpo desse jeito não aparece toda hora, mas no escuro só é indicado pra quem já tem prática séria.",
+          "janela": null,
+          "aviso": "Mar bem grande à noite: só para surfistas experientes, nunca sozinho."
+        }
+      ]
+    },
+    "tombo|ombro-cabeca|medio-7a9|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite firme e alisada no Tombo",
+          "analise": "Essa noite chega com o mar grande nesse pico pesado do Guarujá, e um vento fraco saindo da terra ajuda a alisar bem a parede mesmo no escuro. As séries seguem num ritmo mediano, e a superfície limpa entrega uma queda mais previsível do que costuma ser aqui. O corpo sente o peso forte do empurrão assim que a onda pega, cobrando postura firme e reação rápida na descida. Fechamento honesto: condição boa pra quem já conhece esse pico de força, mas no escuro a cautela precisa dobrar.",
+          "janela": null,
+          "aviso": "Pico conhecido por pesar a mão, agora no escuro: só para experientes e com companhia."
+        }
+      ]
+    },
+    "arroio-do-sal|peito-ombro|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã de força boa em Arroio do Sal",
+          "analise": "A manhã chega com uma onda de bom tamanho, carregando força considerável, e um vento fraco do mar enruga só de leve a parede sem estragar a leitura. As séries seguem num ritmo mediano, dando tempo curto mas gerenciável pra escolher a onda certa. Na água o corpo sente um empurrão firme, com a queda pedindo atenção mas sem o peso de um mar realmente grande. Fechamento: dia de bom volume pro litoral norte gaúcho, ótimo pra quem quer sentir força sem exagero.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|peito-ombro|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã de força no Forte, vento mexendo",
+          "analise": "O Forte acorda com uma onda de bom tamanho essa manhã, mas um vento com força moderada vindo do mar já pica bastante a superfície, tirando parte do brilho da parede. As séries seguem num ritmo mediano, e a leitura fica mais trabalhosa com a água mexida, exigindo mais precisão na entrada. O corpo sente um empurrão firme, com a queda cobrando reação rápida por causa da superfície irregular. Fechamento honesto: tem volume bom, mas quem for cedo aproveita mais antes do vento crescer ainda mais ao longo da manhã; vale ficar perto do canto mais abrigado, onde o mar costuma perdoar mais.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|ombro-cabeca|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tarde de bom volume no Foguete",
+          "analise": "A tarde chega com onda de bom tamanho, e um vento fraco do mar enruga só de leve a parede, sem tirar muito da leitura. As séries seguem num ritmo mediano, dando tempo curto mas ainda gerenciável pra escolher a onda certa. O corpo sente um empurrão firme, com a queda pedindo postura mas sem o peso de um dia realmente grande. Fechamento: esse pico já é conhecido pela força, e essa tarde mantém o padrão, boa pra quem já tem experiência intermediária.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|joelho-cintura|medio-7a9|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Noite pequena e ventosa no Cassino",
+          "analise": "Essa noite chega com o mar pequeno no Cassino, mas um vento de lado bem forte mexe bastante a superfície, deixando a água agitada mesmo com pouca força por trás da onda. As séries seguem num ritmo mediano, só que a bagunça do vento atrapalha a leitura e deixa a parede irregular. Na água a remada é tranquila, sem cansar, mas o vento forte incomoda mais do que a própria onda hoje. Fechamento honesto: não é dia de buscar qualidade aqui, o vento manda mais que o mar dessa vez.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|cabeca-1.5x|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã pesada com vento de lado na Figueira",
+          "analise": "A manhã chega com o mar bem grande na Figueira, e um vento de lado com força moderada pica a superfície, tirando parte da definição que a parede poderia ter. As séries seguem num ritmo mediano, e a leitura fica mais exigente com a água mexida cobrindo a energia alta que vem por trás da onda. Quem entrar sente o peso forte do empurrão, com a queda cobrando reação rápida numa superfície que não ajuda. Fechamento honesto: tem tamanho de sobra, mas só quem já é experiente aproveita bem esse tipo de condição mexida.",
+          "janela": "6h-9h",
+          "aviso": "Mar grande com superfície mexida: recomendado só para quem já tem experiência em ondas fortes."
+        }
+      ]
+    },
+    "figueira|ombro-cabeca|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tarde grande e levemente enrugada na Figueira",
+          "analise": "A tarde segue com o mar grande na Figueira, e um vento fraco do mar enruga só de leve a parede, sem estragar demais a leitura. As séries seguem num ritmo mediano, e mesmo com a energia alta por trás, ainda dá pra estudar o pico com calma antes de remar. O corpo sente o peso forte do empurrão, com a queda pedindo postura firme mas recompensando quem acerta o tempo certo. Fechamento: tarde de bom tamanho pra quem já tem experiência intermediária, com a superfície ainda favorável.",
+          "janela": "13h-17h",
+          "aviso": "Mar grande; recomendado para quem já tem experiência em ondas de energia alta."
+        }
+      ]
+    },
+    "monte-alto|cabeca-1.5x|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã forte e mexida em Monte Alto",
+          "analise": "A manhã chega com o mar bem grande nesse pico mais vazio de Arraial, e um vento de lado com força moderada pica a superfície, tirando um pouco do brilho da parede. As séries seguem num ritmo mediano, e a leitura exige mais atenção com a água mexida escondendo a energia alta que vem por trás. Quem entrar sente o peso forte do empurrão, com a queda cobrando reação rápida numa superfície irregular. Fechamento honesto: tamanho e força de sobra, mas só recomendado pra quem já tem prática séria com mar grande e mexido.",
+          "janela": "6h-9h",
+          "aviso": "Mar grande e mexido: recomendado só para experientes."
+        }
+      ]
+    },
+    "monte-alto|ombro-cabeca|medio-7a9|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tarde grande e mais calma em Monte Alto",
+          "analise": "A tarde chega com o mar grande em Monte Alto, e um vento fraco do mar enruga só de leve a parede, deixando a leitura ainda razoável. As séries seguem num ritmo mediano, dando tempo curto mas gerenciável pra escolher bem a onda. O corpo sente o peso forte do empurrão, com a queda cobrando postura firme mas recompensando quem acerta a entrada. Fechamento: esse pico costuma ter menos gente que os vizinhos, e hoje ainda entrega tamanho de sobra pra quem já tem prática.",
+          "janela": "13h-17h",
+          "aviso": "Mar grande; recomendado para quem já tem experiência com ondas de energia alta."
+        }
+      ]
+    },
+    "barra-da-lagoa|cintura-peito|medio-7a9|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde mexida na Barra da Lagoa",
+          "analise": "A tarde chega com onda de tamanho médio na Barra da Lagoa, mas um vento de lado bem forte mexe bastante a superfície, atrapalhando a definição da parede. As séries seguem num ritmo mediano, só que a água agitada deixa a leitura mais difícil do que o tamanho da onda sugere. Na água a remada ainda é tranquila, sem cansar demais, mas o vento forte rouba a qualidade que o pico costuma ter perto do canal. Fechamento honesto: dia mais de treinar remada do que buscar parede limpa, o vento manda hoje.",
+          "janela": "13h-17h",
+          "aviso": "Vento forte pode gerar correnteza mais puxada perto do canal e do molhe; atenção na entrada e saída."
+        }
+      ]
+    },
+    "barra-de-ilheus|joelho-cintura|medio-7a9|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã pequena na foz em Ilhéus",
+          "analise": "A manhã chega com onda pequena na Barra de Ilhéus, e um vento de lado com força moderada mexe a superfície sem estragar de vez a leitura. As séries seguem num ritmo mediano, mas a pouca força por trás faz a onda fechar rápido, sem dar muita sequência de manobra. Na água a remada é tranquila, sem cansar, ideal pra quem quer só se molhar sem pressão. Fechamento: os bancos de areia dessa foz de rio mudam bastante depois das cheias, então vale sempre observar antes de remar.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "guarda-do-embau|cintura-peito|curto-vaga|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde pequena e desorganizada na Guarda do Embaú",
+          "analise": "A tarde chega com onda de tamanho médio na Guarda do Embaú, mas um vento forte vindo do mar desmancha boa parte da parede antes mesmo dela fechar. As séries seguem apertadas, sem dar tempo de respirar, e a superfície picotada torna a leitura difícil mesmo pra quem já conhece o pico. Na água a remada cansa mais rápido do que o tamanho da onda sugere, com o vento empurrando água contra o corpo o tempo todo. Fechamento honesto: não é o dia clássico dessa reserva, mas vale lembrar que a travessia até o pico é de barco ou a nado, então informe-se das condições antes de ir.",
+          "janela": "13h-17h",
+          "aviso": "A travessia até o pico é de barco ou a nado, com correnteza da foz do rio; informe-se das condições antes de entrar."
+        }
+      ]
+    },
+    "engenhoca|cintura-peito|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã média e enrugada em Engenhoca",
+          "analise": "A manhã chega com onda de tamanho médio nessa praia de acesso por trilha em Itacaré, e um vento com força moderada vindo do mar pica bastante a superfície, tirando o brilho da parede. As séries seguem num ritmo mediano, mas a leitura fica mais trabalhosa com a água mexida cobrindo as melhores ondas da sequência. Na água o empurrão é razoável, com a queda pedindo mais atenção do que num dia de vento fraco. Fechamento honesto: esse pico costuma ser mais forte que o vizinho, e mesmo com o vento atrapalhando, ainda entrega ondas melhores que a média.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "jureia|peito-ombro|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã de bom tamanho e vento mexendo na Jureia",
+          "analise": "A manhã chega com onda de bom tamanho na Jureia, mas um vento com força moderada vindo do mar já pica a superfície, tirando parte da definição que a parede poderia ter num dia mais calmo. As séries seguem num ritmo mediano, e a leitura exige mais atenção com a água mexida escondendo as melhores ondas da sequência. O corpo sente um empurrão firme, com a queda cobrando reação rápida por causa da superfície irregular. Fechamento: mesmo com o vento atrapalhando, esse refúgio sem gente compensa pela tranquilidade de surfar sem disputa por onda.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "tiririca|cintura-peito|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã média e mexida na Tiririca",
+          "analise": "A manhã chega com onda de tamanho médio no pico central de Itacaré, e um vento com força moderada vindo do mar pica bastante a superfície, tirando um pouco do brilho da parede. As séries seguem num ritmo mediano, mas a leitura fica mais trabalhosa com a água mexida cobrindo as melhores sequências. Na água o empurrão é razoável, e a queda pede mais atenção do que num dia de vento fraco. Fechamento honesto: mesmo com o vento atrapalhando, esse pico sem pressa segue com a vibe tranquila de sempre, boa pra surfar sem estresse.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-10T18:18:06.121Z"
+  "generated_at": "2026-09-11T00:38:19.547Z"
 }
