@@ -165478,7 +165478,337 @@
           "aviso": "Maré baixa deixa alguns trechos mais rasos; preste atenção ao caminhar até a água."
         }
       ]
+    },
+    "praia-da-vila|peito-ombro|bom-9a11|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Vila com corpo e série espaçada",
+          "analise": "A praia da Vila acorda com uma onda de bom corpo e série espaçada, dando tempo de ler a formação antes de remar. Na água, o surfista sente o vento lateral (que sopra de lado) moderado mexendo um pouco na parede, mas a maioria das séries ainda fecha organizada. É um mar honesto pra quem já tem alguma estrada: rende bem se você escolher o pico certo e não perder a paciência nas séries maiores. Dica: fique mais aberto pro canto perto da igrejinha, onde a moldura protege mais do vento.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|cintura-peito|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7.5,
+          "titulo": "Vila mais tranquila na virada da tarde",
+          "analise": "Na virada da tarde a Vila entrega uma onda de tamanho mais moderado, com série ainda espaçada, dando ritmo bom pra pegar embalo. O vento lateral (que sopra de lado) agora sopra fraco, então a parede segue limpa a maior parte do tempo e a remada não cansa tanto. É um mar generoso pra treinar manobra sem se afogar em caldo, sobretudo pra quem já entende o pico. Fechamento sincero: sem furo grande, mas o tipo de sessão que rende sorriso fácil. Dica: aproveite as primeiras da série, que chegam mais arrumadas.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|cintura-peito|bom-9a11|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Peró com onshore mexendo a manhã",
+          "analise": "O Peró começa o dia com altura na medida boa e período espaçado, o tipo de série que ajuda até quem está pegando ritmo. Hoje, porém, o vento onshore (que vem do mar pra terra e enruga a água) sopra moderado, então a parede perde um pouco da limpeza e a remada exige mais atenção pro tempo certo de entrada. Ainda dá pra aproveitar, principalmente nos primeiros horários, antes do vento ganhar mais força ao longo do dia. Dica honesta: entre cedo e escolha os picos mais formados, deixando os mais fechados pra depois.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "itamambuca|joelho-cintura|medio-7a9|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Itamambuca pequena e arrumada",
+          "analise": "Itamambuca fecha a tarde com uma onda mais contida, ideal pra quem quer treinar sem pressão. O terral (vento que sai da terra e alisa a água) sopra fraco, deixando a superfície lisa e a parede bem desenhada mesmo sendo pequena. Na água, a sensação é de remada tranquila e queda suave, terreno ótimo pra evoluir manobra ou só se divertir sem muita gente disputando o pico. Fechamento sincero: dia pra levar quem está começando, sem cobrar nada além de presença na água.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|cintura-peito|bom-9a11|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Forte segurando a noite",
+          "analise": "O Forte guarda a noite com onda de tamanho mediano e série ainda espaçada, um mar que não perdeu a forma mesmo com a luz baixando. O vento onshore (que vem do mar e mexe na água) sopra fraco por enquanto, então a superfície ainda aguenta ficar razoavelmente organizada. Pra quem está de olho no que vem, essa é uma leitura que sugere continuidade se o vento não virar. Fechamento: sem sessão possível agora, mas vale voltar no app pra ver se a condição segura até o próximo turno.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|cintura-peito|bom-9a11|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Brava mantém a fama mesmo modesta",
+          "analise": "A Brava de Cabo Frio mantém a fama mesmo em noite mais modesta: altura mediana e período ainda espaçado, números que por si só nem assustam. Só que esse pedaço é exposto e carrega peso mesmo quando o mar não está grande, então a sensação na água pesa mais do que os números sozinhos sugerem. O onshore fraco (vento do mar, ainda suave) não desorganiza muito agora, mas o lugar cobra experiência de quem entra. Fechamento honesto: não é ponto pra estreia, guarda essa pra quando já tiver mais estrada.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|peito-ombro|bom-9a11|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7.5,
+          "titulo": "Arpoador forte e concorrido de manhã",
+          "analise": "O Arpoador desperta com corpo bom e série espaçada, o tipo de manhã que enche a água de gente cedo. O vento lateral (que sopra de lado) vem moderado e empurra a parede, mas a formação segue de pé, dando tempo de escolher a rasgada certa. Na água, a disputa pela vaga pesa tanto quanto a força da onda, então remar com educação rende mais do que remar rápido. Fechamento: onda que recompensa quem respeita a fila e lê o pico antes de se meter.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|cintura-peito|bom-9a11|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Arpoador recolhido na virada da noite",
+          "analise": "Quando a luz cai, o Arpoador troca de cara e entrega altura mediana com período ainda generoso, série que dá tempo de se posicionar sem correria. O onshore fraco (vento leve do mar) ainda não estraga a superfície, deixando a parede aproveitável pra quem pegar esse fim de dia. É um mar recolhido, mas com boa leitura pra quem prefere sessão mais tranquila e menos gente na água. Fechamento: onda de bom tamanho pra aproveitar sem pressa antes de a luz cair de vez.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|peito-ombro|bom-9a11|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Saquarema com força de casa grande",
+          "analise": "Saquarema chega forte nesta manhã, com corpo cheio e série espaçada, o tipo de combinação que faz jus à fama do point. O vento lateral (que sopra de lado) vem moderado e não derruba a qualidade da parede, mantendo a onda com bastante força pra quem já rema com confiança. Na água, a energia é alta: a remada cansa mais rápido e a queda cobra decisão rápida de quem está lá. Fechamento: dia de padrão competitivo, guarda esse horário pra quem já tem repertório pra aproveitar sem se afogar no próprio ego.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|cintura-peito|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Saquarema mais gentil na tarde",
+          "analise": "Na tarde, Itaúna suaviza e entrega um mar de tamanho mediano mas com período ainda espaçado, dando ritmo bom pra série. O vento lateral (que sopra de lado) agora sopra fraco, o que ajuda a parede a se manter organizada mesmo com a energia mais contida de hoje. Na água, a sensação é de remada mais leve e onda ainda com corpo suficiente pra render boas voltas. Fechamento: janela mais amena pra quem quer sentir Itaúna sem a pressão do point mais pesado.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|peito-ombro|bom-9a11|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7.5,
+          "titulo": "Ipanema forte e concorrida de manhã",
+          "analise": "Ipanema entra na manhã com corpo generoso e série espaçada, um daqueles dias que enchem a praia de gente de olho na água. O vento lateral (que sopra de lado) vem moderado, mas as ilhas na frente ajudam a segurar parte da bagunça, então a parede ainda fecha com forma nos cantos certos. Na água, a disputa é grande: remar com atenção ao próximo da fila rende mais do que forçar entrada. Fechamento: onda boa pra quem já tem repertório e paciência pra lidar com a lotação.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|cintura-peito|bom-9a11|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Ipanema mais serena na virada da noite",
+          "analise": "Na virada da noite, Ipanema segue com tamanho mediano e período ainda generoso, série que dá tempo de escolher a onda certa. O onshore fraco (vento leve do mar) ainda não amassa muito a superfície, então a parede aguenta ficar razoável até o fim do dia. Com menos gente na areia, a leitura fica mais tranquila pra quem gosta de sessão mais recolhida. Fechamento: bom tamanho, clima mais calmo, ótima chance pra fechar o dia na água.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "itacoatiara|peito-ombro|bom-9a11|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7.5,
+          "titulo": "Itacoatiara pesada e de qualidade",
+          "analise": "Itacoatiara chega com uma manhã de energia que já é lenda em Niterói, período espaçado e corpo forte de sobra. O vento lateral (que sopra de lado) vem moderado mas não tira a força da parede, que fecha rápido sobre o fundo raso característico do pico. Na água, a queda cobra decisão instantânea: quem hesita paga com caldo forte, quem entra na hora certa ganha tubo de verdade. Fechamento sincero: dia de padrão alto, mas só pra quem já convive com fundo raso e gente disputando cada pico.",
+          "janela": "6h-10h",
+          "aviso": "Fundo raso e queda rápida: risco real de caldo forte pra quem não estiver com o ritmo calibrado."
+        }
+      ]
+    },
+    "domingas-dias|cintura-peito|bom-9a11|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Domingas Dias gentil pra começar",
+          "analise": "Domingas Dias recebe a manhã com onda de tamanho mediano e período espaçado, ótima combinação pra quem está construindo confiança na água. O terral fraco (vento que sai da terra e alisa a superfície) deixa a parede limpinha, sem grandes surpresas na queda. Na água, a sensação é de remada tranquila e onda previsível, perfeita pra praticar leitura de pico sem pressão de muita gente. Fechamento: dia ideal pra levar quem está começando, com margem de erro generosa.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|peito-ombro|curto-vaga|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Peró com corpo e série mais apertada",
+          "analise": "Na tarde, o Peró aparece com corpo bom mas série mais apertada, atropelando um pouco a formação da parede. O vento lateral (que sopra de lado) fraco não atrapalha muito, então ainda dá pra pegar bons trechos entre uma onda e outra. Na água, a sensação é de remada mais frequente, já que as ondas se sucedem rápido e sobra pouco tempo de descanso entre elas. Fechamento: onda com corpo, mas pede mais fôlego que técnica hoje.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "caioba|joelho-cintura|curto-vaga|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Caiobá quieta na virada da noite",
+          "analise": "Caiobá se recolhe na virada da noite com uma onda bem pequena e série curta e apertada, quase um lago com espuma. O terral fraco (vento que sai da terra e alisa a água) mantém a superfície limpa, mas a energia é baixa demais pra render remada empolgante. Na água, dá pra sentir mais a queda suave do que qualquer força, ideal só pra quem quer boiar e treinar posicionamento. Fechamento honesto: sem graça pra quem busca força, mas serve pra manter o corpo n'água.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "matinhos|joelho-cintura|curto-vaga|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Matinhos também baixo na virada da noite",
+          "analise": "Matinhos entra na noite com onda pequena e série curta e apertada, sobra pouca energia pra empurrar qualquer remada. O terral fraco (vento que sai da terra e alisa a água) segura a superfície limpa, mas falta corpo pra render manobra de verdade. Na água, a experiência fica mais de familiarização com o pico democrático da praia do que de sessão empolgante. Fechamento: dia de esperar o próximo swell chegar com mais força.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "itacarezinho|peito-ombro|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Itacarezinho aberta e de corpo bom",
+          "analise": "Itacarezinho recebe a tarde com onda de corpo bom, mas série mais curta e apertada, que dá menos tempo de respiro entre uma e outra. O vento lateral (que sopra de lado) moderado empurra a parede e ainda deixa jogável os trechos mais abertos da praia. Na água, o formato mais aberto ajuda a espalhar a galera e evita concentração excessiva num pico só. Fechamento: onda com força, pede remada esperta pra aproveitar o pique certo.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|cintura-peito|curto-vaga|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Cassino frio e discreto na virada da noite",
+          "analise": "O Cassino esfria ainda mais na virada da noite, com onda de tamanho mediano mas série curta e apertada, o clássico mar de vento fraco do litoral gaúcho. O terral fraco (vento que sai da terra e alisa a água) ajuda a manter a superfície decente, mesmo sem o corpo mais generoso de outros dias. Na água, o frio pesa tanto quanto a condição em si, então proteção térmica não é luxo por ali. Fechamento: onda aproveitável, mas leve o traje certo antes de mais nada.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|peito-ombro|curto-vaga|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Arroio do Sal com corpo e vento a favor",
+          "analise": "Arroio do Sal entrega uma manhã de corpo bom, mesmo com série mais curta e apertada. O terral fraco (vento que sai da terra e alisa a água) alisa a superfície, então mesmo com o período mais corrido a parede ainda fecha com alguma limpeza. Na água, o surfista sente a energia empurrando com força moderada, boa pra quem gosta de onda mais rápida e decidida. Fechamento: dia rende bem pra quem entra cedo, antes do vento mudar de direção.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|peito-ombro|curto-vaga|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Silveira com corpo mas vento atrapalhando",
+          "analise": "A Silveira chega na tarde com onda de bom corpo, mas o combo de série curta com onshore moderado (vento do mar que enruga a parede) bagunça bastante a formação. Na água, a sensação é de remada mais cansativa, já que a superfície fica irregular e as ondas se sucedem rápido demais pra escolher com calma. Ainda existe força suficiente pra quem gosta de surfar mar mexido, mas a qualidade cai bastante em relação a um dia de vento mais favorável. Fechamento honesto: onda de fundo bom escondida atrás de um vento que hoje não ajuda.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|peito-ombro|curto-vaga|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Ibiraquera também sofre com o onshore",
+          "analise": "Ibiraquera repete o padrão da região nesta tarde: onda de corpo razoável, mas série curta e onshore moderado (vento do mar que desmancha a parede) deixando tudo mais bagunçado. Na água, a remada exige mais esforço porque a superfície não segura a forma por muito tempo entre uma onda e outra. Ainda dá pra aproveitar quem tem paciência pra escolher os intervalos mais limpos entre as rajadas. Fechamento: dia de mar com corpo, mas vento cobra flexibilidade de quem entra.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|peito-ombro|curto-vaga|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Ferrugem no mesmo pacote de vento",
+          "analise": "O Ferrugem fecha o trio de Garopaba nesta tarde com o mesmo cenário: onda de corpo razoável, série curta e onshore moderado (vento do mar que mexe na parede) bagunçando bastante a formação. A cena mais jovem e animada da praia contrasta com uma condição que exige mais leitura do que estilo hoje. Na água, vale escolher os poucos intervalos onde o vento dá uma trégua pra pegar a onda com mais forma. Fechamento: dia de aproveitar o clima da praia mais do que o mar em si.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "torres|cintura-peito|bom-9a11|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Torres segura tamanho na virada da noite",
+          "analise": "Torres atravessa a noite com onda de tamanho mediano e período ainda espaçado, herança direta dos swells fortes que costumam bater na capital gaúcha do surf. O onshore fraco (vento leve do mar) ainda não desmancha a parede, deixando a condição aproveitável por mais um tempo. A água fria, marca registrada do litoral sul, pesa tanto quanto o mar em si, então proteção térmica não é opcional por ali. Fechamento: onda de bom tamanho pra fechar o dia, desde que o frio não seja desculpa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|cintura-peito|curto-vaga|lateral-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Porto de Imbituba mexido pelo vento forte",
+          "analise": "O point de Imbituba, mesmo com currículo de etapa mundial, chega nesta noite com onda de tamanho mediano vindo de um ângulo que não encaixa bem na janela ideal da praia, o que já deixa a formação menos organizada. Some a isso o vento lateral (que sopra de lado) forte, que empurra a parede com bastante intensidade, mais a série curta e apertada, e o resultado é um mar bem mexido, difícil de ler. Na água, segurar posição fica mais cansativo que remar propriamente, e cada onda pede ajuste de última hora. Fechamento honesto: dia pra guardar o material e voltar quando direção de swell e vento colaborarem juntos.",
+          "janela": null,
+          "aviso": "Vento lateral forte deixa a correnteza mais traiçoeira: fique de olho na deriva pro lado durante a sessão."
+        }
+      ]
+    },
+    "costao-do-santinho|joelho-cintura|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Costão do Santinho pequeno e limpo",
+          "analise": "O Costão do Santinho recebe a tarde com onda pequena, mas período ainda espaçado, o que ajuda a manter alguma organização mesmo com pouco corpo. O vento lateral (que sopra de lado) fraco quase não interfere, deixando a parede limpa pra quem gosta de onda mais suave pra treinar. Na água, a sensação é de remada tranquila e queda controlada, cenário perfeito pra evoluir sem pressão de tamanho. Fechamento: dia mais de paisagem e prática do que de sessão puxada, e o costão ao lado ainda rende boa vista entre uma onda e outra.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "maresias|peito-ombro|bom-9a11|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Maresias com força de dia grande",
+          "analise": "Maresias acorda pesada nesta manhã, com período bem espaçado e energia nas alturas, a combinação que consagrou a praia como fábrica de nomes do surf brasileiro. O vento lateral (que sopra de lado) moderado empurra a parede mas não desmonta a formação, que segue rápida e com peso suficiente pra cobrar decisão rápida na queda. Na água, a sensação é de remada puxada e onda que não perdoa hesitação, um daqueles dias que separam quem treina de quem só aparece. Fechamento: janela de padrão alto, aproveite se o preparo físico acompanhar a vontade.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|cabeca-1.5x|bom-9a11|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Unamar grande e pesada de manhã",
+          "analise": "Unamar amanhece bem grande, com período longo e energia muito alta, um daqueles dias em que o mar realmente empurra com tudo. O vento lateral (que sopra de lado) moderado ainda deixa a parede com alguma organização, mas o volume de água por trás de cada onda já muda o jogo pra quem entra. Na água, a remada cansa rápido e a corrente de retorno fica mais forte que o normal, então gastar energia demais logo cedo cobra caro depois. Fechamento sincero: dia só pra quem já surfa mar grande com regularidade, sem espaço pra ousadia de estreante.",
+          "janela": "6h-9h",
+          "aviso": "Mar grande de verdade: avalie a corrente e o canal de saída antes de entrar, e nunca surfe sozinho num dia assim."
+        }
+      ]
+    },
+    "monte-alto|cabeca-1.5x|bom-9a11|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Monte Alto gigante e com vento forte",
+          "analise": "Monte Alto amanhece ainda maior que o normal, com energia extrema e período longo, um cenário de mar grande de verdade pro litoral de Arraial. O vento lateral (que sopra de lado) forte se soma a isso, empurrando a parede com intensidade e tornando a leitura da onda ainda mais exigente. Na água, cada rasgada pede reação rápida e a corrente puxa com força incomum, cobrando fôlego e experiência de sobra de quem decide entrar. Fechamento honesto: dia de mar grande e vento forte juntos, questão pra poucos e só com companhia.",
+          "janela": "6h-9h",
+          "aviso": "Combinação de mar grande com vento lateral forte cria correnteza pesada: avalie a saída, tenha companhia e nunca superestime o próprio preparo hoje."
+        }
+      ]
+    },
+    "rosa|cintura-peito|curto-vaga|lateral-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Rosa mexida pelo vento na virada da noite",
+          "analise": "A Praia do Rosa se despede do dia com onda de tamanho mediano, mas o swell chega de um ângulo que não encaixa bem na janela ideal, o que já tira parte da organização natural da parede. O vento lateral (que sopra de lado) forte reforça a bagunça, empurrando a água com intensidade, e a série curta não dá tempo de a formação se recompor entre uma onda e outra. Na água, manter posição vira o maior desafio da sessão, mais do que a força da própria onda. Fechamento: cenário mais pra observar a baía bonita do que pra entrar, pelo menos até o vento dar uma trégua.",
+          "janela": null,
+          "aviso": "Vento lateral forte com swell fora do ângulo ideal deixa a correnteza imprevisível: redobre a atenção se decidir entrar mesmo assim."
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-12T12:17:41.861Z"
+  "generated_at": "2026-09-12T18:16:44.755Z"
 }
