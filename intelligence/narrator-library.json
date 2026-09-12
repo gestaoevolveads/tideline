@@ -164906,7 +164906,326 @@
           "aviso": "Mar de porte bem grande à noite, com visibilidade reduzida: só pra quem já conhece o pico e nunca sozinho."
         }
       ]
+    },
+    "praia-grande-arraial|peito-ombro|bom-9a11|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Energia boa chegando mas o vento atrapalha à tarde",
+          "analise": "Essa condição vem com uma energia pesada, puxada pelo swell que sopra do sul e dá impulso forte assim que a remada começa. O vento onshore, esse que sopra do mar pra terra e desorganiza a face da onda, sopra moderado e tira parte da limpeza da parede, deixando a superfície mais irregular. Na água a sensação é de remada pesada com pressão real no drop, então quem não tem experiência vai sentir o caldo cobrando caro. A dica é escolher bem o pico dentro da janela da tarde e prezar pela vaga mais fechada, deixando passar as que vêm mais bagunçadas.",
+          "janela": "13h-16h",
+          "aviso": "Onda com energia pesada e vento desorganizando a face: cuidado redobrado com o impacto do caldo pra quem ainda tá pegando embalo."
+        }
+      ]
+    },
+    "praia-grande-arraial|ombro-cabeca|bom-9a11|offshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite com vento forte alisando um mar pesado",
+          "analise": "Já de noite, o mar segue com uma energia pesada, mantendo a força que vinha crescendo ao longo do dia. O vento offshore, esse que sai da terra pro mar e alisa a face da onda, sopra forte e deixa a parede vitrificada, mesmo com a força que o mar carrega. A sensação na água é de uma parede lisa mas com peso real por trás, exigindo remada firme e leitura rápida pra não ser pego atrás da arrebentação. Vale surfar com cautela porque o vento forte também pode formar rajadas que empurram a prancha na hora da entrada.",
+          "janela": null,
+          "aviso": "Vento forte e energia pesada juntos: rajadas podem empurrar a prancha na entrada, e quem não tem experiência sente o caldo cobrar caro."
+        }
+      ]
+    },
+    "recreio|peito-ombro|longo-11a13|offshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Tarde de série espaçada e vento alisando bem",
+          "analise": "A série chega bem alinhada com o que o pico gosta de receber: swell de sul, energia boa, sem exagero. O período longo faz a série vir bem espaçada, dando tempo de ver a onda chegar de longe e se posicionar com calma antes da parede fechar. O vento offshore, aquele que sai da terra pro mar e alisa a face, sopra moderado e deixa tudo redondo, então a remada compensa. Um beach break comprido como esse recompensa quem anda o pico procurando o banco certo, então vale explorar mais de um pico na mesma janela da tarde.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|peito-ombro|longo-11a13|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite com série espaçada mas vento de lado mexendo",
+          "analise": "A energia segue boa mesmo com a virada de noite, mantendo o impulso que o swell de sul trouxe ao longo do dia. O período longo segue favorecendo, com a série vindo espaçada e dando tempo de se posicionar sem correria. O vento lateral, esse que sopra de lado, mexe um pouco na textura da água e tira parte da limpeza, então a parede não fica tão previsível quanto de dia. Ainda vale a pena entrar, só que escolhendo bem o pico onde a formação do banco segura mais a bagunça do vento.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "bonete|peito-ombro|bom-9a11|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tarde de energia boa só que o vento mexe na parede",
+          "analise": "Esse pico isolado recebe hoje uma energia boa, suficiente pra dar impulso decente em quem rema até lá. O período dá uma série razoável, nem muito apertada nem muito espaçada, então dá pra ler o set com alguma antecedência. O vento onshore, aquele que vem do mar pra terra e bagunça a face, sopra moderado e tira um pouco da limpeza que o lugar costuma entregar em dias mais alisados. Como o acesso já exige caminhada ou barco, vale só encarar essa janela da tarde se topar remar num mar mais irregular do que o de costume por aqui.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|peito-ombro|bom-9a11|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tarde pesada com o vento tirando a limpeza da parede",
+          "analise": "O mar aqui já é exposto e pesado por natureza, e esse swell de sul chega reforçando com uma energia forte que exige experiência. O vento onshore, esse que sopra do mar pra terra e desorganiza a onda, vai moderado e tira parte da limpeza da parede, deixando a superfície mais irregular pro fim da tarde. Quem entrar vai sentir a remada cansativa e o drop cobrando pressão real, sem espaço pra quem ainda tá pegando embalo. A dica é reservar esse pico pra quem já tem repertório e escolher a vaga mais fechada dentro da janela da tarde.",
+          "janela": "13h-16h",
+          "aviso": "Pico exposto e pesado pra quem tem experiência: energia forte com vento desorganizando pede cautela redobrada."
+        }
+      ]
+    },
+    "praia-brava-arraial|ombro-cabeca|bom-9a11|offshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Noite de parede lisa mas com peso de sobra",
+          "analise": "O vento é quem rouba a cena nessa virada de noite: sopra forte e alisa a face mesmo com o peso que o swell carrega. A sensação na água é de potência real, com o drop cobrando pressão e a remada exigindo experiência pra não ser pego atrás. O vento forte também traz rajadas que mexem na entrada da onda, então a leitura precisa ser rápida. Vale reservar esse pico pra quem já rodou mar pesado, porque aqui a exigência é séria mesmo com a face alisada.",
+          "janela": null,
+          "aviso": "Vento forte alisando um mar pesado: rajadas na entrada e drop com pressão real pedem experiência."
+        }
+      ]
+    },
+    "macumba|peito-ombro|longo-11a13|offshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Tarde democrática com série espaçada",
+          "analise": "Esse beach break democrático recebe bem o swell de sul, com uma energia boa e amistosa que serve tanto pra quem tá começando quanto pra quem já rema mais. O período longo faz a série vir espaçada, dando tempo de estudar o pico antes de remar, o que ajuda bastante quem ainda tá pegando prática de leitura de mar. O vento offshore, aquele que sai da terra pro mar e alisa a face, sopra moderado e deixa tudo redondo, favorecendo até quem prefere prancha maior. É um dia bom pra reunir a turma na areia e revezar picos dentro da janela da tarde.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|peito-ombro|longo-11a13|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Noite redonda com vento alisando o beach break",
+          "analise": "A virada de noite mantém a energia boa que o swell de sul trouxe, com bastante amistosidade pra quem gosta desse pico democrático. O período longo continua favorecendo, com a série vindo espaçada e sem apertar demais. O vento offshore, esse que sai da terra pro mar e alisa a onda, segue moderado e mantém a parede redonda mesmo com a virada da noite. Um dia gostoso de aproveitar até o fim, sem pressa, escolhendo as vagas mais limpas do banco.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "itacoatiara|peito-ombro|longo-11a13|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Noite de tubo forte pra quem já tem repertório",
+          "analise": "O fundo raso aqui já é conhecido por entregar tubo forte, e a energia pesada do swell de sul reforça isso nessa virada de noite. O período longo dá uma série bem espaçada, o que ajuda a ler o pico antes de remar, mas a onda ainda quebra com potência e exige leitura afiada. O vento offshore, aquele que sai da terra pro mar e alisa a face, sopra fraco e segura bem a parede mesmo com a virada da noite. Como o fundo é raso e o localismo é respeitado por aqui, vale entrar com humildade e reservar esse pico pra quem já tem prática nesse tipo de onda.",
+          "janela": null,
+          "aviso": "Fundo raso com tubo forte: risco real de bater no fundo pra quem não tem prática nesse tipo de onda."
+        }
+      ]
+    },
+    "barra-da-tijuca|peito-ombro|longo-11a13|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite de energia boa com vento fraco mexendo pouco",
+          "analise": "Esse trecho extenso de praia segue recebendo uma energia boa do swell de sul, com bastante vaga se espalhando pelos postos mesmo de noite. O período longo segue favorecendo, trazendo uma série espaçada que dá tempo de escolher o pico certo. O vento onshore, esse que vem do mar pra terra e bagunça a face, sopra fraco e mexe pouco na organização, então a onda ainda mantém boa parte da limpeza. Como aqui a qualidade varia bastante de banco pra banco, vale caminhar um pouco pela areia até achar o pico que está fechando melhor nessa virada de noite.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|ombro-cabeca|bom-9a11|offshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Noite de força com vento soprando firme da terra",
+          "analise": "O vento é quem segura esse pico de areia branca nessa virada de noite: sopra firme da terra pro mar e mantém a parede organizada mesmo com a força que o mar carrega. A sensação na água é de potência real, com o drop cobrando pressão e pedindo remada segura pra furar a arrebentação. Vale entrar com cautela nessa virada de noite, escolhendo bem o momento das rajadas mais fortes de vento pra não perder a entrada certa.",
+          "janela": null,
+          "aviso": "Vento forte e energia pesada juntos: rajadas podem atrapalhar a entrada, remada segura é essencial."
+        }
+      ]
+    },
+    "maresias|cintura-peito|bom-9a11|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde de energia moderada com vento de través mexendo",
+          "analise": "O período é o grande trunfo dessa tarde: a série vem numa cadência boa, ajudando a ler o set com antecedência nesse pico que formou nomes grandes do surf. O swell de sul entra com uma energia moderada, dando impulso suficiente pra remadas de qualidade sem ser um dia de força total. O vento lateral, esse que sopra de lado, mexe um pouco na textura da água e tira parte da limpeza que o pico costuma entregar em dias mais alisados. Ainda assim vale entrar na janela da tarde e procurar o canto que segura melhor a bagunça do vento.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|peito-ombro|longo-11a13|offshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Tarde intocada com série espaçada e vento alisando",
+          "analise": "O swell de sul entra com uma energia boa nesse trecho selvagem de área protegida, mantendo um cenário intocado e um mar de força honesta. O período longo faz a série vir espaçada, dando tempo de se posicionar com calma antes da parede fechar. O vento offshore, aquele que sai da terra pro mar e alisa a face, sopra moderado e deixa tudo redondo, valorizando ainda mais o visual preservado ao redor. Vale aproveitar essa janela da tarde com calma, sem pressa, já que o acesso mais isolado costuma render um mar menos disputado.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|peito-ombro|longo-11a13|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Noite redonda num trecho selvagem",
+          "analise": "O cenário intocado segue o mesmo nessa virada de noite, com o swell de sul mantendo uma energia boa e a força honesta de sempre. O período longo continua favorecendo, com série espaçada que dá tempo de estudar o set com calma. O vento offshore, esse que sai da terra pro mar e alisa a face, segue moderado e mantém a parede redonda mesmo com a virada da noite. É um dia bom pra fechar com uma sessão tranquila, aproveitando o cenário que a região preserva.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|peito-ombro|longo-11a13|offshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Tarde que entrega onda mesmo quando o resto some",
+          "analise": "Essa enseada em formato de V concentra energia mesmo quando o resto do litoral está parado, e hoje o swell de sul chega reforçando com uma energia boa. O período longo faz a série vir espaçada, dando tempo de ler o pico com calma antes de remar pra dentro. O vento offshore, aquele que sai da terra pro mar e alisa a face, sopra moderado e mantém a parede limpa, valorizando a fama de melhor direita da região. Como o localismo por aqui é forte, vale entrar com respeito e aproveitar essa janela da tarde com humildade.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|peito-ombro|longo-11a13|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Noite de direita limpa numa enseada que sempre entrega",
+          "analise": "Essa enseada segue entregando onda mesmo de noite, raramente ficando sem opção mesmo quando a região ao redor está mais fraca. O período longo segue favorecendo a leitura, com série espaçada e tempo de sobra pra se posicionar. O vento offshore, esse que sai da terra pro mar e alisa a face, segue moderado e preserva a limpeza da parede mesmo com a virada da noite. Vale entrar com respeito ao pico, já que aqui o localismo é forte e a qualidade atrai bastante gente.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|peito-ombro|longo-11a13|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite de energia forte com as ilhas moldando o swell",
+          "analise": "As ilhas na frente ajudam a moldar o swell de sul, que chega com uma energia forte nessa virada de noite nesse beach break icônico. O período longo faz a série vir espaçada, dando tempo de escolher bem o canto onde o surf funciona melhor. O vento lateral, esse que sopra de lado, vai fraco e mexe pouco na organização, deixando boa parte da parede ainda limpa. Como o movimento de gente costuma ser grande por aqui, vale procurar os cantos mais vazios pra aproveitar essa virada de noite com mais espaço.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|peito-ombro|longo-11a13|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Noite de peso com o costão emoldurando o pico",
+          "analise": "O costão que emoldura esse pico também emoldura a energia forte que o swell de sul traz nessa virada de noite. O período longo dá uma série espaçada, ajudando a ler o set com antecedência mesmo com o movimento de gente que costuma se formar ali. O vento lateral, esse que sopra de lado, vai fraco e mexe pouco na limpeza da parede, então a qualidade segue boa apesar do vento. Vale entrar respeitando a fila, que aqui é lei, e aproveitar essa virada de noite com atenção ao que já está remando dentro.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "maresias|cintura-peito|bom-9a11|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã de vento alisando mas energia ainda fraca",
+          "analise": "Logo pela manhã o swell de sul ainda entra com uma energia fraca nesse pico que formou nomes grandes do surf, então não é um dia de força total. O período segue bom, com a série vindo numa cadência que ajuda bastante a leitura mesmo com pouca potência por trás. O vento offshore, aquele que sai da terra pro mar e alisa a face, sopra moderado e deixa a parede bem organizada, o que compensa parte da energia fraca. Vale aproveitar essa manhã pra treinar leitura de pico com calma, já que a parede limpa ajuda quem quer aprimorar remada e posicionamento.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|cintura-peito|curto-vaga|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde fraca e picotada nesse trecho exposto",
+          "analise": "Esse trecho exposto de Cabo Frio recebe o swell de sul com uma energia fraca hoje, longe da força que costuma justificar o respeito que o lugar tem. O período curto deixa a série apertada e atropelada, um mar mais de vento do que de swell organizado. O vento onshore, esse que vem do mar pra terra e bagunça a face, sopra fraco mas já é suficiente pra picotar ainda mais a superfície num dia de pouca energia. Vale usar essa janela da tarde mais pra treino do que pra buscar onda de peso, já que o trecho costuma entregar mais força em outras condições.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|cintura-peito|curto-vaga|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde de mar fraco e sem o vento que salva o pico",
+          "analise": "Esse pico costuma se salvar quando chega um swell forte de sudoeste, porque a orientação da praia faz o vento desse quadrante soprar alisando a face. Hoje não é bem esse cenário: o swell de sul entra com uma energia fraca e o vento onshore, esse que vem do mar pra terra e bagunça a onda, sopra fraco mas ainda tira parte da organização. O período curto deixa a série apertada, um mar mais atropelado do que espaçado. Vale entrar só se topar um treino de remada num dia mais fraco, guardando esse pico pra quando o swell chegar mais forte do quadrante certo.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|cintura-peito|curto-vaga|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã de vento quase parado na praia mais longa do mundo",
+          "analise": "Pela manhã o swell de sudeste entra com uma energia ainda fraca nessa praia enorme, uma das mais compridas do planeta, bem junto aos molhes da barra. O vento está quase parado, então a face da onda fica lisa mesmo sem a força de um dia mais forte, o que ajuda bastante quem ainda tá aprendendo a ler o pico. O período curto deixa a série mais apertada, então a leitura precisa ser rápida mesmo com pouca potência por trás. Como a água aqui é fria o ano inteiro, vale entrar bem agasalhado e escolher um trecho longe dos molhes, onde a correnteza costuma ficar mais forte.",
+          "janela": "6h-9h",
+          "aviso": "Correnteza mais forte perto dos molhes: prefira um trecho de praia mais afastado pra remar com segurança."
+        }
+      ]
+    },
+    "tramandai|peito-ombro|curto-vaga|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã de energia moderada junto à barra gaúcha",
+          "analise": "Junto à barra gaúcha, a manhã traz uma energia moderada puxada pelo swell de sul, já dando algum impulso na remada. O período curto deixa a série mais apertada e atropelada, um mar mais de vento do que de swell bem organizado. O vento offshore, esse que sai da terra pro mar e alisa a face, sopra fraco e ajuda um pouco a segurar a bagunça, mesmo sem virar o pico completamente a favor. Vale prestar atenção em como a maré está nesse horário, porque aqui ela e o vento mandam bastante no resultado final do pico.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|peito-ombro|bom-9a11|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tarde de padrão competitivo com o vento atrapalhando",
+          "analise": "O swell de sul entra com uma energia boa nesse beach break que já recebeu etapa de circuito mundial, então a estrutura da onda tem qualidade de sobra. O período segue bom, com a série vindo numa cadência que ajuda bastante a leitura do set. O vento onshore, esse que vem do mar pra terra e bagunça a face, sopra moderado e tira parte da limpeza que o pico entrega em dias mais alisados. Vale entrar dentro da janela da tarde escolhendo o pico com calma, já que a estrutura de fundo segue boa mesmo com o vento atrapalhando um pouco.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-floripa|cintura-peito|bom-9a11|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite parada de vento na onda mais forte do norte da ilha",
+          "analise": "O vento quase parado é a grande notícia dessa virada de noite nesse pico conhecido por ser o mais forte do norte da ilha, mesmo com o swell de sudeste trazendo pouca força hoje. A face fica lisa mesmo sem muita energia por trás, uma condição rara pra um lugar que costuma exigir bastante experiência. O período segue bom, com série numa cadência que ajuda a leitura mesmo com pouca energia. Vale aproveitar essa virada de noite mais tranquila pra treinar leitura de tubo num dia de menos pressão do que o normal por aqui.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "rosa|peito-ombro|bom-9a11|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tarde de energia boa numa enseada cênica",
+          "analise": "Essa enseada cênica recebe o swell de sul com uma energia boa nessa tarde, dando impulso suficiente pra uma sessão de qualidade. O período segue bom, com a série vindo numa cadência que ajuda a leitura do set com alguma antecedência. O vento onshore, esse que vem do mar pra terra e bagunça a face, sopra moderado e tira parte da limpeza que o lugar costuma entregar em dias mais alisados. Vale aproveitar essa janela da tarde com calma, já que o cenário ao redor compensa até nos dias em que o vento atrapalha um pouco.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|joelho-cintura|bom-9a11|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite parada e fraca na praia de herança competitiva",
+          "analise": "O vento quase parado também marca essa virada de noite nesse pico de herança competitiva catarinense, mesmo com o swell de sudeste chegando fraco. A face fica lisa mesmo com pouca potência por trás. O período segue bom, com série numa cadência tranquila que ajuda quem quer treinar remada e posicionamento sem pressa. Vale entrar mais pelo prazer da parede lisa do que pela busca de energia, guardando esse pico pra quando o swell chegar com mais força.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-mole|joelho-cintura|bom-9a11|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite tranquila e fraca num pico cercado de morros",
+          "analise": "Cercado de morros, esse beach break recebe o swell de sudeste fraco nessa virada de noite, com o vento quase parado como único consolo de quem entra na água. O período segue bom, com série numa cadência tranquila que favorece quem busca uma sessão mais de treino do que de adrenalina. A face fica lisa mesmo com pouca força por trás, o que ainda rende uma sessão agradável. Vale entrar sem grandes expectativas de força, aproveitando a parede lisa e o cenário cercado de morros pra uma sessão mais leve.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-12T00:19:51.179Z"
+  "generated_at": "2026-09-12T06:16:27.684Z"
 }
