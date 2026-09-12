@@ -164499,7 +164499,414 @@
           "aviso": "Energia bem acima do padrão de sempre e visibilidade baixa à noite: só com experiência real e nunca sozinho."
         }
       ]
+    },
+    "praia-brava-cabo-frio|cintura-peito|bom-9a11|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde de porte bom e vento sujando a face",
+          "analise": "O mar de Cabo Frio chega na tarde com porte bom e série bem encadeada, dando tempo de estudar o pico antes de remar. O vento sopra fraco do mar pra terra, o onshore que enruga a superfície e tira um pouco do desenho da parede, mas a força continua de verdade. Na água a remada pesa e o caldo cobra experiência, esse trecho é exposto e tem bem menos gente que os vizinhos, o que sobra em espaço vem também em responsabilidade. A dica é entrar logo no começo da janela da tarde, escolhendo o canto onde a bancada segura melhor a energia antes do vento crescer.",
+          "janela": "13h-16h",
+          "aviso": "Trecho exposto e forte, com correnteza de puxada real. Recomendado só pra quem já tem experiência com mar pesado."
+        }
+      ]
+    },
+    "recreio|peito-ombro|longo-11a13|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã com série espaçada e vento de lado",
+          "analise": "A manhã entrega porte robusto com uma série bem espaçada, o tipo que dá tempo de ver a onda vindo de longe e se posicionar com calma. O vento sopra fraco de lado, aquele través que belisca um pouco a superfície sem estragar a parede, e ainda dá pra sentir a força do swell de sul chegando cheio. Na água a remada exige fôlego, mas recompensa com paredões que correm, pico bom pra quem já tem alguma leitura de mar. A dica da manhã é buscar a ponta, que segura o swell de sul com mais força, e priorizar as séries que chegam mais espaçadas.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|peito-ombro|longo-11a13|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã de série longa no pico mais disputado",
+          "analise": "O pico mais tradicional do surf carioca acorda com porte robusto e série bem espaçada, dando tempo de estudar a onda antes de remar. O vento sopra fraco de lado, aquele través que belisca a superfície sem tirar a força do swell de sul. Na água dá pra sentir o paredão correndo com potência, emoldurado pelo costão que fecha o pico de um jeito único. A dica da manhã é remar pro pico de fora, onde a onda pega inteira e a disputa é mais tranquila que perto da pedra.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|peito-ombro|longo-11a13|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Tarde lisa com o terral alisando o pico mais disputado",
+          "analise": "A tarde chega com terral fraco, aquele vento que sai da terra pro mar e alisa a face da onda, desenhando bem a parede nesse pico de porte robusto. A série segue longa e espaçada, dando tempo de estudar cada onda antes de remar, e o swell de sul entra com potência real. Na água o drop fica mais previsível e a parede corre limpa, condição boa pra quem gosta de manobra na régua. Vale aproveitar o fim da tarde antes do terral cair, quando a face costuma ficar ainda mais desenhada.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|cintura-peito|bom-9a11|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde de porte bom no extenso beach break de Cabo Frio",
+          "analise": "Esse extenso beach break de Cabo Frio recebe a tarde com porte bom e série bem encadeada, o tipo que dá tempo de escolher a onda com calma. O vento de tarde sopra fraco do mar pra terra, o onshore que enruga a superfície, tirando um pouco do brilho da parede sem acabar com a força do swell de sudeste. Na água a sensação é de pico generoso mas com textura; esse trecho grande de areia dá muitas opções pra quem procurar o canto certo. A dica é buscar o trecho mais abrigado da faixa, onde a marola costuma segurar melhor mesmo com o mar mexido.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|peito-ombro|bom-9a11|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã pesada com vento de mar mexendo tudo",
+          "analise": "A manhã chega com bastante força e porte robusto, mas o vento sopra moderado do mar pra terra, o onshore que enruga e desmonta parte da parede logo cedo. Ainda assim a série vem bem encadeada, então dá pra sentir o empuxo grande por trás de cada onda mesmo com a superfície mexida. Na água a remada cansa mais que o normal e o caldo cobra atenção, esse pico costuma ter menos gente que os vizinhos, o que ajuda a escolher com calma. A dica da manhã é entrar cedo, antes do vento crescer mais e bagunçar de vez a superfície.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|peito-ombro|longo-11a13|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã de série espaçada no pico mais concorrido da zona sul",
+          "analise": "Esse beach break icônico acorda com porte robusto e série bem espaçada, dando tempo de estudar a onda antes de remar. O vento sopra fraco de lado, aquele través que belisca a superfície sem acabar com a força do swell de sul, que aqui chega já reduzido pelas ilhas na frente. Na água dá pra sentir o paredão correndo com potência, mas o pico costuma reunir muita gente, então a leitura da fila pesa tanto quanto a leitura do mar. A dica da manhã é buscar os cantos mais isolados da faixa, onde o crowd é menor e a onda ainda pega inteira.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|peito-ombro|longo-11a13|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Tarde lisa com terral desenhando a parede na zona sul",
+          "analise": "O terral fraco entra na tarde e ajuda a desenhar a face da onda, esse vento que sai da terra pro mar que costuma dar uma limpeza rara à parede. O porte segue robusto e a série vem longa e espaçada, com o swell de sul entrando com potência real mesmo depois de passar pelas ilhas na frente. Na água o drop fica mais limpo e previsível, ótima janela pra quem gosta de manobra, embora o crowd costume aumentar nesse horário. Vale entrar logo no início da tarde, antes do pico encher de gente e da qualidade cair com o sol mais alto.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "itacoatiara|peito-ombro|longo-11a13|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde pesada numa das ondas mais fortes do Rio",
+          "analise": "Uma das ondas mais pesadas e tradicionais do estado recebe a tarde com porte robusto e série longa, bem espaçada, dando tempo de estudar cada set antes de remar. O vento sopra fraco de lado, um través que belisca pouco a superfície e não tira a força bruta do swell de sul batendo em cima de um fundo raso. Na água o tubo fecha rápido e cobra remada forte e timing preciso, pico de cultura forte no bodyboard e no surf pesado, sem espaço pra amadorismo. A dica é respeitar o localismo do pico e só entrar se já tiver experiência de verdade com fundo raso e caldo forte.",
+          "janela": "13h-16h",
+          "aviso": "Fundo raso e tubo forte: caldo pode bater com força na areia. Só pra quem já tem experiência com esse tipo de onda."
+        }
+      ]
+    },
+    "castelhanos|cintura-peito|bom-9a11|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã tranquila na praia isolada do outro lado da ilha",
+          "analise": "Do outro lado da ilha, essa praia de acesso difícil acorda com porte mais moderado e uma série que ainda vem bem encadeada. O vento sopra fraco do mar pra terra, o onshore que enruga um pouco a superfície, mas sem força suficiente pra estragar a diversão de quem está ali pela paisagem intocada tanto quanto pela onda. Na água a remada é tranquila e a energia é leve, dia bom pra quem já tem alguma experiência mas não busca radicalidade. A dica da manhã é ir preparado pra trilha ou barco de acesso e aproveitar o silêncio do lugar tanto quanto o mar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-tijuca|peito-ombro|longo-11a13|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Tarde de terral fraco no extenso beach break democrático",
+          "analise": "Barra da Tijuca recebe a tarde com o terral fraco alisando a superfície, aquele vento que sai da terra pro mar e desenha a parede direitinho. O porte é robusto e a série chega longa e espaçada, com o swell de sul entregando potência real em vários pontos ao longo da faixa. Na água a sensação é de onda limpa e generosa, mas a qualidade varia bastante de banco pra banco, então vale rodar um pouco antes de escolher o pico. A dica é procurar o trecho onde o banco estiver mais fechado e a parede correr mais, aproveitando o vento favorável antes dele cair.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|peito-ombro|bom-9a11|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã forte e mexida em Arraial",
+          "analise": "Arraial do Cabo acorda com bastante força nessa manhã, porte robusto de verdade, mas o vento sopra moderado do mar pra terra e desmonta parte do desenho da parede. A série ainda vem bem encadeada, então dá pra sentir o empuxo grande por trás de cada onda mesmo com a superfície mexida. Na água a remada cansa e o caldo pesa, esse beach break aberto funciona bem com esse tipo de swell mas hoje cobra mais preparo físico que técnica fina. A dica da manhã é entrar cedo, buscando o intervalo entre rajadas pra pegar a onda com a face mais limpa.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "bonete|peito-ombro|longo-11a13|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Tarde de terral numa das praias mais bonitas de São Paulo",
+          "analise": "Isolada e só acessível por trilha ou barco, essa praia recebe a tarde com terral fraco alisando bem a face da onda. O porte é robusto e a série vem longa, bem espaçada, com o swell de sul entrando com potência de verdade nesse cenário ainda selvagem. Na água a parede corre desenhada e o drop fica previsível, condição boa pra quem já rema bem e busca qualidade longe do crowd. A dica é ir com companhia e planejar a volta com folga, já que o acesso remoto não perdoa imprevisto no fim do dia.",
+          "janela": "13h-16h",
+          "aviso": "Acesso isolado, só por trilha longa ou barco: vá com companhia e planeje a volta com antecedência."
+        }
+      ]
+    },
+    "camburi|cintura-peito|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde fraca e mexida no litoral norte de São Paulo",
+          "analise": "A tarde chega fraca nesse beach break badalado do litoral norte, com pouca energia por trás da onda e vento moderado soprando do mar pra terra, o onshore que enruga a face. A série tem ritmo mediano, nem muito espaçada nem apertada, então a onda nasce e morre rápido, sem muito corpo pra trabalhar. Na água a sensação é de remada tranquila mas pouco empuxo, dia mais de aprender e brincar que de buscar performance. A dica é aproveitar pra treinar remada e pop-up, o movimento de levantar da prancha, sem esperar muito da força do mar hoje.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "castelhanos|cintura-peito|medio-7a9|offshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde pequena mas lisa do outro lado da ilha",
+          "analise": "Essa praia aberta ao mar de fora chega pequena nessa tarde, com pouca energia, mas o terral moderado, esse vento que sai da terra pro mar, alisa bem a face mesmo com a onda mais curta. A série tem ritmo mediano e a parede fecha rápido, sem muito corpo, então o aproveitamento depende de escolher bem o momento de remar. Na água a sensação é leve, boa pra treinar posicionamento numa condição que perdoa erro. A dica é aproveitar o vento favorável pra treinar leitura de pico mesmo num dia de pouca força.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|peito-ombro|curto-vaga|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Noite de mar mexido e vento forte",
+          "analise": "A noite chega com porte robusto mas série curta e apertada, o tipo de mar de vento que atropela uma onda em cima da outra sem dar tempo de respirar. O vento sopra moderado do mar pra terra, o onshore que enruga tudo, e nessa condição de pouca luz a leitura do pico fica ainda mais difícil de fazer de olho. Na água a remada exige atenção redobrada porque as séries chegam picotadas e sem aviso, condição mais pra quem já conhece bem esse pico tranquilo de outros dias com mais claridade. A dica pra quem for de noite é usar luz auxiliar e escolher um trecho já conhecido, evitando testar canto novo no escuro.",
+          "janela": null,
+          "aviso": "Mar mexido e pouca luz juntos pedem cautela redobrada: evite testar pico novo e leve iluminação auxiliar."
+        }
+      ]
+    },
+    "figueira|peito-ombro|curto-vaga|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Noite de série apertada e vento forte em Arraial",
+          "analise": "Figueira entra na noite com porte robusto mas série curta e apertada, o tipo de mar de vento que empilha onda em cima de onda sem dar tempo de respirar. O vento sopra moderado do mar pra terra, o onshore que enruga tudo, e com pouca luz a leitura do pico exige ainda mais atenção. Na água a remada pede reação rápida porque as séries chegam picotadas, condição mais indicada pra quem já conhece o fundo desse pico de outras vezes. A dica pra quem entrar de noite é ir acompanhado e ficar num trecho que já conheça bem, sem se afastar muito da praia.",
+          "janela": null,
+          "aviso": "Mar picotado e pouca visibilidade à noite pedem companhia e cautela: fique perto do trecho conhecido."
+        }
+      ]
+    },
+    "arpoador|peito-ombro|medio-7a9|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde de vento quase zero no pico mais disputado",
+          "analise": "Esse pico símbolo do surf carioca recebe a tarde quase sem vento, mar liso como vidro e a face da onda bem desenhada. O porte é robusto e a série tem ritmo mediano, nem muito espaçada nem apertada, mas a ausência de vento entrega uma parede limpa do início ao fim. Na água o drop fica extremamente previsível, ótima condição pra treinar manobra fina, embora o crowd costume aparecer forte assim que a notícia do mar bom se espalha. A dica é entrar o quanto antes na tarde, antes do pico encher de vez.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|peito-ombro|medio-7a9|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde de mar liso na praia mais concorrida da zona sul",
+          "analise": "Ipanema recebe a tarde quase sem vento, mar liso e a face da onda bem desenhada do início ao fim. O porte é robusto e a série tem ritmo mediano, sem muita variação entre uma onda e outra, mas a calmaria do vento já garante qualidade por si só. Na água o drop fica previsível e a parede corre limpa, condição rara que costuma atrair bastante gente pro pico rapidinho. A dica é entrar logo no começo da tarde e escolher os cantos mais isolados da faixa antes do crowd tomar conta.",
+          "janela": "13h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "matinhos|joelho-cintura|curto-vaga|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde pequena e limpa no litoral paranaense",
+          "analise": "Matinhos recebe a tarde pequena, com pouca energia por trás da onda, mas o terral fraco, vento que sai da terra pro mar, ainda alisa bem a face mesmo curta. A série é curta e apertada, então as ondas nascem e morrem rápido, sem corpo pra trabalhar muita manobra. Na água a sensação é leve e tranquila, condição democrática que serve bem pra quem está começando ou quer só brincar sem cobrança. A dica é aproveitar pra treinar remada e posicionamento num dia que perdoa qualquer erro.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "itacoatiara|peito-ombro|medio-7a9|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde de vento quase zero numa onda pesada de Niterói",
+          "analise": "Itacoatiara recebe a tarde quase sem vento, mar liso e a face bem desenhada em cima de um fundo raso que sempre cobra respeito. O porte é robusto e a série tem ritmo mediano, mas a calmaria do vento entrega um tubo mais fechado e mais fácil de ler que o normal por aqui. Na água o timing ainda precisa ser preciso, pico de cultura forte no bodyboard e no surf pesado, sem espaço pra amadorismo mesmo num dia mais calmo. A dica é aproveitar a condição rara, mas só entrar se já tiver experiência de verdade com fundo raso.",
+          "janela": "13h-16h",
+          "aviso": "Fundo raso e tubo forte mesmo em dia calmo: caldo pode bater com força na areia."
+        }
+      ]
+    },
+    "caioba|joelho-cintura|curto-vaga|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde pequena e limpa na principal praia de surf do Paraná",
+          "analise": "Caiobá recebe a tarde pequena e com pouca energia, mas o terral fraco alisa bem a face mesmo curta. A série é curta e apertada, então as ondas nascem e morrem rápido, sem muito corpo pra trabalhar manobra. Na água a sensação é leve, dia mais de treino e diversão tranquila que de buscar performance, mesmo nessa praia de cena local tão forte. A dica é aproveitar pra treinar remada e leitura de pico num dia que perdoa qualquer erro.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|peito-ombro|medio-7a9|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã de vento quase zero em Cabo Frio",
+          "analise": "A manhã acorda quase sem vento nesse beach break de areia branca, mar liso e a face da onda bem desenhada do início ao fim. O porte é robusto e a série tem ritmo mediano, mas a calmaria já garante uma parede limpa e previsível. Na água o drop rende bem e o swell de sul entrega força de verdade nessa condição rara de vento parado. A dica da manhã é entrar cedo, antes do vento típico da região começar a soprar e mexer a superfície.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "capao-da-canoa|cintura-peito|curto-vaga|offshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde de terral forte e série apertada no litoral gaúcho",
+          "analise": "Esse balneário badalado do litoral norte gaúcho recebe a tarde com terral moderado, um vento que sai da terra pro mar e ajuda a segurar a face da onda mesmo com a série vindo curta e apertada. O porte é médio e a energia moderada, mas o ritmo apertado das ondas atropela um pouco a leitura de quem está tentando escolher a melhor da série. Na água a sensação é de onda rápida, que exige remada ligeira e decisão rápida pra pegar o pico certo. A dica é aproveitar o vento favorável, mas remar com antecedência porque a janela pra decidir cada onda é curta.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|ombro-cabeca|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã forte e limpa perto da lagoa",
+          "analise": "Essa praia com lagoa ao lado acorda com porte grande e energia de verdade, e o terral fraco, vento que sai da terra pro mar, ajuda a alisar boa parte da face mesmo com a série num ritmo mediano. Na água o empuxo é forte e o caldo já pesa, exigindo remada firme e leitura rápida de quem está se posicionando pra pegar a onda certa. Esse pico costuma recompensar quem já tem alguma experiência com mar de porte grande. A dica da manhã é entrar logo cedo, aproveitando o vento ainda calmo antes de virar.",
+          "janela": "6h-9h",
+          "aviso": "Porte grande com bastante energia: recomendado pra quem já tem experiência com mar forte."
+        }
+      ]
+    },
+    "ibiraquera|ombro-cabeca|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde forte mas mexida perto da lagoa",
+          "analise": "A tarde chega com porte grande e bastante energia, mas o vento sopra moderado do mar pra terra, o onshore que enruga e desmonta parte da parede. A série segue num ritmo mediano, então mesmo com a superfície mexida dá pra sentir o empuxo forte por trás de cada onda. Na água a remada cansa e o caldo pesa bastante, condição mais indicada pra quem já tem experiência com mar grande e mexido. A dica é escolher os intervalos entre rajadas de vento pra pegar a onda com a face mais limpa possível.",
+          "janela": "13h-16h",
+          "aviso": "Porte grande com energia forte e mar mexido: recomendado só pra quem já tem experiência."
+        }
+      ]
+    },
+    "maracaipe|joelho-cintura|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Manhã pequena e mexida no point pernambucano",
+          "analise": "Esse point de areia clássico de Pernambuco acorda pequeno e com pouca energia, e o vento sopra moderado do mar pra terra, o onshore que enruga a já pouca força da onda. A série tem ritmo mediano, mas o porte baixo faz a onda nascer e morrer rápido, sem muito corpo pra trabalhar manobra. Na água a sensação é leve, dia mais de treino e diversão que de buscar performance, bom pra quem está começando. A dica da manhã é aproveitar pra treinar remada e pop-up, o movimento de levantar da prancha, sem esperar muita força do mar hoje.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|ombro-cabeca|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã forte e desenhada em Garopaba",
+          "analise": "Uma das melhores ondas do Sul acorda com porte grande e bastante energia, e o terral fraco, vento que sai da terra pro mar, alisa boa parte da face mesmo com a série chegando num ritmo mediano. Na água o empuxo é forte e o caldo já pesa, exigindo remada firme e decisão rápida pra não ficar preso na zona de arrebentação. Esse pico é de comunidade que surfa quase todo dia e conhece cada mudança de banco, então vale prestar atenção em quem já está na água antes de escolher onde entrar. A dica da manhã é aproveitar o vento ainda calmo e entrar logo cedo, mas só se já tiver experiência com mar de porte grande.",
+          "janela": "6h-9h",
+          "aviso": "Porte grande com energia forte: recomendado só pra quem já tem experiência com mar pesado."
+        }
+      ]
+    },
+    "silveira|ombro-cabeca|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde forte e mexida em Garopaba",
+          "analise": "Silveira recebe a tarde com porte grande e bastante energia, mas o vento sopra moderado do mar pra terra, o onshore que enruga e desmonta parte da parede. A série segue num ritmo mediano, então mesmo com a superfície mexida o empuxo por trás de cada onda continua forte. Na água a remada cansa e o caldo pesa bastante, condição mais indicada pra quem já tem experiência com mar grande. A dica é escolher os intervalos entre rajadas pra pegar a onda com a face mais limpa possível.",
+          "janela": "13h-16h",
+          "aviso": "Porte grande com energia forte e mar mexido: recomendado só pra quem já tem experiência."
+        }
+      ]
+    },
+    "ferrugem|ombro-cabeca|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã forte e desenhada na praia badalada de Garopaba",
+          "analise": "Essa praia badalada de cena jovem acorda com porte grande e bastante energia, e o terral fraco, vento que sai da terra pro mar, alisa boa parte da face mesmo com a série chegando num ritmo mediano. Na água o empuxo é forte e o caldo já pesa, exigindo remada firme e leitura rápida de quem está se posicionando pra pegar a onda certa. É um mar honesto, bom pra quem já rema bem mas exigente demais pra quem está no início. A dica da manhã é entrar logo cedo, aproveitando o vento ainda calmo antes dele virar.",
+          "janela": "6h-9h",
+          "aviso": "Porte grande com energia considerável: vá com atenção redobrada se ainda estiver evoluindo no mar aberto."
+        }
+      ]
+    },
+    "ferrugem|ombro-cabeca|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde forte e mexida na praia badalada de Garopaba",
+          "analise": "Ferrugem recebe a tarde com porte grande e bastante energia, mas o vento sopra moderado do mar pra terra, o onshore que enruga e desmonta parte da parede. A série segue num ritmo mediano, então mesmo com a superfície mexida o empuxo por trás de cada onda continua forte. Na água a remada cansa e o caldo pesa, condição mais indicada pra quem já tem alguma experiência com mar grande e mexido. A dica é escolher os intervalos entre rajadas de vento pra pegar a onda com a face mais limpa.",
+          "janela": "13h-16h",
+          "aviso": "Porte grande com energia considerável e mar mexido: vá com atenção redobrada se ainda estiver evoluindo no mar aberto."
+        }
+      ]
+    },
+    "saquarema|cabeca-1.5x|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite pesada no point mais competitivo do país",
+          "analise": "O point mais competitivo do país recebe a noite com porte bem grande e uma força fora do comum, série ainda bem encadeada apesar do tamanho. O vento sopra fraco de lado, um través que belisca pouco a superfície e não tira quase nada da potência bruta que esse pico sempre entrega com esse tipo de swell. Na água o peso é competitivo de verdade, remada forte e leitura rápida são obrigatórias, e a pouca luz da noite torna a decisão de cada onda ainda mais delicada. A dica pra quem for de noite é só entrar se já conhecer bem o pico de dia com esse mesmo porte, e sempre acompanhado.",
+          "janela": null,
+          "aviso": "Mar de porte bem grande e muita energia à noite, com visibilidade reduzida: só pra quem já é experiente nesse pico e nunca sozinho."
+        }
+      ]
+    },
+    "unamar|ombro-cabeca|bom-9a11|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Manhã grande e lisa em Cabo Frio",
+          "analise": "A manhã acorda quase sem vento nesse beach break de Tamoios, mar liso e um porte grande com bastante energia por trás de cada onda. A série vem bem encadeada, dando tempo de estudar a onda antes de remar, e a calmaria do vento entrega uma parede desenhada do início ao fim, rara pra esse tipo de porte. Na água o empuxo é forte e a remada de entrada exige atenção, já que o volume de água por trás da onda é grande mesmo sem o vento atrapalhar. A dica da manhã é aproveitar a condição rara, mas ficar de olho na correnteza que esse tipo de energia costuma formar na saída da arrebentação.",
+          "janela": "6h-9h",
+          "aviso": "Bastante energia por trás da onda: fique atento à correnteza mesmo com o mar liso."
+        }
+      ]
+    },
+    "mocambique|cintura-peito|bom-9a11|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite tranquila e lisa na praia mais preservada de Floripa",
+          "analise": "A praia mais longa e preservada de Floripa recebe a noite quase sem vento, mar liso e um porte moderado que ainda carrega alguma energia por trás da onda. A série vem bem encadeada, dando tempo de ver a onda chegar mesmo com a claridade menor, e a calmaria do vento ajuda bastante na leitura do pico no escuro. Na água a remada é tranquila e o mar perdoa, mas a pouca luz pede mais atenção que de dia, principalmente pra achar o pico certo numa faixa tão extensa com vários bancos. A dica pra quem for de noite é usar um trecho que já conheça e nunca ir sozinho, aproveitando a calmaria rara do vento.",
+          "janela": null,
+          "aviso": "Praia extensa e deserta, com pouca luz à noite: prefira um trecho conhecido e vá acompanhado."
+        }
+      ]
+    },
+    "tombo|ombro-cabeca|bom-9a11|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde pesada e mexida na onda mais forte do Guarujá",
+          "analise": "A onda mais forte do Guarujá recebe a tarde com porte bem grande e muita energia, mas o vento sopra moderado do mar pra terra, o onshore que enruga e desmonta parte da parede. A série ainda vem bem encadeada, então mesmo com a superfície mexida o empuxo por trás de cada onda continua pesado de verdade. Na água a remada cansa rápido e o caldo castiga, pico que sedia campeonato e não costuma perdoar quem se aventura sem preparo. A dica é escolher os intervalos entre rajadas de vento e só entrar se já tiver experiência de verdade com mar pesado.",
+          "janela": "13h-16h",
+          "aviso": "Porte bem grande com muita energia e mar mexido: só pra quem já tem experiência com mar pesado."
+        }
+      ]
+    },
+    "pitangueiras|ombro-cabeca|bom-9a11|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde pesada e mexida na praia central do Guarujá",
+          "analise": "Essa praia central e bem movimentada recebe a tarde com porte bem grande e muita energia, mas o vento sopra moderado do mar pra terra, o onshore que enruga e desmonta parte da parede. A série ainda vem bem encadeada, então mesmo com a superfície mexida o empuxo por trás de cada onda continua forte de verdade. Na água a remada cansa rápido e o caldo pesa bem mais que o normal por aqui, mesmo sendo um pico democrático e cheio de gente na areia. A dica é escolher os intervalos entre rajadas de vento e ter atenção redobrada com esse tanto de energia num pico tão frequentado.",
+          "janela": "13h-16h",
+          "aviso": "Porte bem grande com muita energia, mesmo num pico democrático: vá com atenção redobrada."
+        }
+      ]
+    },
+    "praia-da-vila|cabeca-1.5x|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite pesada no canto mais abrigado de Saquarema",
+          "analise": "O canto mais abrigado de Saquarema, bem ao lado da igrejinha, recebe a noite com porte bem grande e muita energia, série ainda bem encadeada apesar do tamanho. O vento sopra fraco de lado, um través que belisca pouco a superfície e mantém boa parte da força desse swell de sul. Na água o peso pega quem não espera, e a pouca luz da noite torna a leitura de cada onda ainda mais delicada nesse pico que costuma funcionar quando o point principal fica grande demais. A dica pra quem for de noite é só entrar se já conhecer esse canto de outras vezes, e sempre acompanhado.",
+          "janela": null,
+          "aviso": "Mar de porte bem grande à noite, com visibilidade reduzida: só pra quem já conhece o pico e nunca sozinho."
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-11T18:19:07.771Z"
+  "generated_at": "2026-09-12T00:19:51.179Z"
 }
