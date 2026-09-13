@@ -166765,7 +166765,315 @@
           "aviso": "Travessia do rio por barco ou a nado: a correnteza da foz muda com a maré, atravesse com atenção."
         }
       ]
+    },
+    "praia-brava-arraial|peito-ombro|medio-7a9|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Noite pesada com onshore forte",
+          "analise": "A noite chega com o mar de sul encaixando direito na janela que essa praia gosta, dando corpo de sobra pra onda. O onshore, vento que sopra do mar pra terra e desorganiza a água, entra forte e pica bastante a superfície, tirando a parede lisa que o fundo poderia entregar. Na água o surfista sente o caldo empurrando com força, só que de qualquer jeito, com remada cansativa e pouca leitura de onde vai fechar. Essa entrada pede gente com estrada em mar pesado, então quem está começando faz bem em ficar de fora hoje.",
+          "janela": null,
+          "aviso": "Combinação de energia alta com vento forte deixa a arrebentação instável; só para quem já tem experiência com mar bravo."
+        }
+      ]
+    },
+    "praia-grande-arraial|peito-ombro|medio-7a9|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Sul de sobra, mas o vento não colabora",
+          "analise": "Por aqui a energia do sul não falta nessa noite, chegando com tudo pra dar corpo à onda. O problema é o onshore, vento que sai do mar pra terra e bagunça tudo, soprando firme e enchendo a superfície de marolinha picada por cima do fundo. Na água a sensação é de empurrão bom, mas sem limpeza nenhuma, dificultando ler onde a onda vai fechar certinho. Vale mais esperar essa condição amenizar do que forçar a entrada com a água toda revirada.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|peito-ombro|medio-7a9|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "O vento manda mais que o swell hoje",
+          "analise": "O onshore é quem manda a conversa nessa noite, soprando forte e desorganizando um mar de sul que, sozinho, teria corpo de sobra. Esse vento que sopra do mar pra terra enche a superfície de marolinha por cima, prejudicando bastante a limpeza da parede nesse pico aberto. Na água o surfista sente bastante empurrão, mas também bastante caldo batendo de qualquer jeito, o que cansa rápido a remada. Fica a dica de escolher as ondas mais isoladas da série, essas ainda chegam com uma leitura mais limpa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|peito-ombro|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Vento mais brando ajuda essa noite",
+          "analise": "Nem tudo é onshore forte hoje: aqui o vento que sopra do mar pra terra vem mais brando que nos vizinhos, apesar do mesmo sul carregado chegando pela região. Isso significa menos marolinha por cima da água, deixando a parede um pouco mais lisa pra quem entrar. Na água a sensação ainda é de empurrão robusto, mas com mais espaço pra reagir e se posicionar direito antes da quebra. É a melhor opção entre as noites da região agora, mesmo pedindo atenção porque a energia do mar segue alta.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|peito-ombro|medio-7a9|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Menos gente, mesmo vento forte de sempre",
+          "analise": "Menos gente, mas o mesmo sul carregado bateu aqui hoje, trazendo energia de sobra pra noite. O onshore, vento que sopra do mar pra terra e bagunça a água, entra firme e deixa a superfície bem picada, tirando a limpeza que o fundo poderia entregar. Na água dá pra sentir a força empurrando bem, só que junto vem bastante caldo desorganizado quebrando fora de hora. Vale surfar se já tiver estrada com mar bagunçado, escolhendo sempre a onda mais isolada da série pra ganhar uma leitura melhor.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "maresias|ombro-cabeca|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Parede limpa pra quem tem categoria",
+          "analise": "Categoria pede categoria: essa tarde entrega um mar de sul com corpo de sobra, entrando certinho na janela que esse pico adora e ganhando força na quebra. O vento lateral, que sopra de lado em vez de bater de frente na onda, está bem fraco hoje e quase não mexe na superfície, então a parede fica com aquela textura lisa. Na água o surfista sente uma onda com peso real, série com espaçamento bom que dá tempo de ler o pico e se posicionar com calma. O nível aqui costuma ser alto, então quem está começando talvez prefira assistir do canal e escolher outro pico pra treinar.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-do-sahy|ombro-cabeca|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Até o pico de família cresceu hoje",
+          "analise": "Hoje o mar cresceu até pra esse cantinho de foz de rio, que costuma proteger bem quem está aprendendo. O vento lateral, que sopra de lado, está fraco e quase não incomoda, deixando a água bem organizada mesmo com essa energia toda. Na água a sensação é de empurrão mais forte do que o de costume nesse pico tranquilo, exigindo mais atenção na remada de quem ainda está pegando prática. Pra família e iniciante o conselho de hoje é observar antes de entrar, e se a criançada for surfar, melhor no início da tarde, antes do mar cansar mais gente.",
+          "janela": "13h-15h",
+          "aviso": "Tamanho acima do costume para um pico normalmente calmo: iniciante deve avaliar bem antes de entrar sozinho."
+        }
+      ]
+    },
+    "cidreira|cintura-peito|curto-vaga|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Mar curto, sem drama, sem festa",
+          "analise": "Mar curto, sem drama, sem festa: assim é essa noite, com um sudeste discreto dando uma energia mais contida pra onda por aqui. O período é curto, então a série vem apertada, uma onda quase em cima da outra, sem muito tempo de descanso entre elas. Junto entra o vento lateral, que sopra de lado, com bastante força, picando ainda mais essa água já mexida e deixando tudo mais irregular. É um mar honesto, mas sem brilho, então quem entrar deve ajustar a expectativa pra sessão só de manter o corpo em movimento.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|cintura-peito|curto-vaga|lateral-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Pouca força perto dos molhes",
+          "analise": "Perto dos molhes, a noite chega sem muita força: o swell vem de leste, de raspão na janela que esse trecho prefere, e perde bastante energia antes de virar onda de verdade. A pouca energia que sobra já cansa pouco a remada, porque simplesmente não empurra com vontade. O vento lateral, que sopra de lado, ainda entra forte e pica o que resta de superfície organizada. Sinceramente essa noite não compensa o frio da água por aqui, melhor esperar um pacote com ângulo mais favorável chegar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "jureia|ombro-cabeca|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Energia boa na reserva preservada",
+          "analise": "Na reserva preservada, a tarde traz um sudeste caprichado, entrando bem na janela que essa praia gosta e dando corpo de sobra pra onda. O período é curto, série apertada com pouco espaço entre uma onda e a próxima, o que exige reação rápida de quem está lá dentro. O vento lateral, que sopra de lado, mexe moderamente a água, tirando um pouco da limpeza mas sem destruir a parede. A energia cobra remada de verdade, então quem for aproveitar essa tarde isolada faz bem em guardar fôlego pro final da sessão.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "tramandai|cintura-peito|curto-vaga|onshore-forte|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Falta ângulo e sobra vento",
+          "analise": "Falta ângulo pra essa tarde render o que o tamanho promete: o swell chega de leste, na borda da janela que esse trecho junto à barra prefere, perdendo boa parte da força no caminho. O período curto ainda deixa a série apertada, ondas quase grudadas uma na outra. Pra piorar, o onshore, vento que sopra do mar pra terra e desorganiza tudo, entra forte e transforma a pouca energia que sobra numa água picada e sem leitura clara. É tarde pra treinar remada mais do que pra pegar onda de verdade, e vale ficar de olho na correnteza que costuma se formar forte perto da barra.",
+          "janela": null,
+          "aviso": "Correnteza costuma ficar mais forte perto da barra nesses dias de vento firme; atenção redobrada na entrada e na saída."
+        }
+      ]
+    },
+    "barra-do-sahy|peito-ombro|medio-7a9|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite tranquila no pico de família",
+          "analise": "Já é noite e o pico de família ainda recebe um sudeste com corpo razoável, dentro do que esse trecho protegido costuma aguentar bem. O período tem espaçamento bom, série que dá tempo de ver a onda chegando e se posicionar sem pressa. O vento lateral, que sopra de lado, mexe moderamente a água, sem tirar toda a organização da parede. É uma condição honesta pra esse pico mais família, mas o conselho de sempre vale: iniciante evita sessão à noite e guarda essa janela pra quando o sol estiver de volta.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|cintura-peito|curto-vaga|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Litoral aberto sem muita generosidade",
+          "analise": "O litoral aberto recebe o leste dentro da janela certa, mas o tamanho segue mais contido que o normal da temporada. O período curto deixa a série apertada, uma onda logo atrás da outra sem muito respiro. O onshore, vento que sopra do mar pra terra e bagunça a água, sopra firme e transforma essa energia mais fraca numa superfície picada e sem parede definida. Dá pra molhar a prancha, mas sem grande expectativa de qualidade, então o foco de hoje é mais condicionamento do que onda de verdade.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|peito-ombro|curto-vaga|lateral-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tamanho cresce, ângulo não ajuda",
+          "analise": "O tamanho cresce nessa noite, só que o ângulo não colabora: o leste chega na borda da janela que esse litoral prefere, então parte dessa energia se perde antes de virar parede de verdade. O período segue curto, série apertada sem muito espaço entre as ondas. O vento lateral, que sopra de lado, ainda entra forte e pica bastante essa superfície já instável. O tamanho chama atenção, mas a organização não acompanha, então quem entrar deve respeitar mais o caldo do que o costume.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|ombro-cabeca|medio-7a9|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "A ponta ganha força essa tarde",
+          "analise": "A força do sudeste encontra o formato certo nessa ponta, entrando bem na janela que o trecho adora e ganhando ainda mais corpo na quebra por causa do fundo daqui. O período tem espaçamento bom, série que dá tempo de escolher a onda e se posicionar com calma antes da descida. O vento lateral, que sopra de lado, entra forte e tira um pouco da limpeza da parede, deixando ela com uma textura mais irregular. Ainda assim a energia compensa, e a dica é buscar o pico mais perto da ponta, onde o fundo costuma organizar melhor a onda mesmo com o vento atrapalhando.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|ombro-cabeca|medio-7a9|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Sem prédio, sem gente, cheio de força",
+          "analise": "Sem prédio, sem gente, só o sudeste generoso batendo forte nesse trecho preservado, entrando bem na janela que a praia gosta. A energia vem alta, o tipo de mar que já cansa o braço na remada antes mesmo de pegar a primeira onda. O período ajuda, série com espaçamento que dá tempo de ler o pico, mas o vento lateral, que sopra de lado, entra forte e deixa a parede com uma textura mais irregular. Vale a força e o cenário intocado, mas guarda energia porque o retorno até a areia também vai exigir remada.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "cidreira|cintura-peito|curto-vaga|onshore-forte|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Sem ângulo e sem força essa tarde",
+          "analise": "Sem ângulo e sem força: a tarde aqui decepciona um pouco, porque o leste chega na borda da janela que esse litoral exposto prefere e perde parte da força no caminho até virar onda. O período curto mantém a série apertada, sem muito espaço entre uma onda e outra. O onshore, vento que sopra do mar pra terra e desorganiza a água, entra forte e transforma essa energia já contida numa superfície picada e sem parede limpa. É tarde de expectativa baixa, mais indicada pra quem quer só entrar na água do que buscar onda de qualidade.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|ombro-cabeca|medio-7a9|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Força extra no pico de todo mundo",
+          "analise": "De todo nível, o pico mais democrático da tarde recebe uma força extra hoje: o sudeste entra bem na janela que a praia gosta, passando do amistoso de sempre. O período tem espaçamento bom, dá tempo de ver o set chegando e escolher a onda com calma. O vento lateral, que sopra de lado, entra forte e mexe na superfície, tirando um pouco daquela limpeza fácil que costuma atrair a galera do longboard. Quem está começando pode aproveitar, mas com mais respeito hoje, e prancha com mais volume ajuda a segurar a força extra.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|ombro-cabeca|medio-7a9|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "A enseada concentra energia de novo",
+          "analise": "A enseada faz o que sempre faz: concentra energia e entrega parede mesmo quando o resto anda mais fraco, e hoje com o sudeste entrando bem na janela favorita daqui, a onda ganha corpo de sobra. O período ajuda a organizar, série com espaçamento que dá tempo de posicionar antes da parede fechar. O vento lateral, que sopra de lado, entra forte e tira um pouco da textura lisa que esse pico de qualidade costuma entregar. É pico concorrido e de nível alto, então quem não conhece bem a dinâmica local faz bem em observar antes de remar pro pico principal.",
+          "janela": "13h-16h",
+          "aviso": "Pico de localismo forte e nível alto; quem não é da casa deve observar a dinâmica antes de remar pro pico principal."
+        }
+      ]
+    },
+    "jureia|ombro-cabeca|curto-vaga|lateral-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tamanho impressiona, organização não",
+          "analise": "O tamanho impressiona nessa noite, com o leste trazendo bastante energia e deixando a onda bem acima do costume nesse trecho preservado. Mas o ângulo atrapalha: o swell entra na borda da janela que a praia prefere, então parte dessa força se perde e a onda fecha de um jeito menos organizado do que o tamanho sugere. O período curto ainda deixa a série apertada, apertando o tempo de reação. O vento lateral, que sopra de lado, mexe moderamente a água, e o resultado é uma noite de mar grande, só que exigente e pouco generoso na quebra.",
+          "janela": null,
+          "aviso": "Tamanho bem acima do normal por aqui à noite; só experiente e com boa referência do banco deve considerar entrar."
+        }
+      ]
+    },
+    "bonete|peito-ombro|curto-vaga|lateral-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Força de sobra na praia isolada",
+          "analise": "Só quem chega de trilha ou barco vê essa noite de força: um sudeste com corpo de sobra entra bem na janela que esse trecho isolado gosta. O período curto deixa a série apertada, ondas chegando rápido umas atrás das outras. O vento lateral, que sopra de lado, entra forte e pica bastante a superfície, tirando a limpeza que esse cenário selvagem mereceria. É condição pra quem já manja, porque isolamento à noite significa socorro bem mais demorado se algo der errado.",
+          "janela": null,
+          "aviso": "Acesso isolado, só trilha ou barco: qualquer imprevisto à noite demora bem mais pra ter ajuda. Só pra quem já manja do pico."
+        }
+      ]
+    },
+    "barra-da-tijuca|peito-ombro|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Energia espalhada por vários picos",
+          "analise": "Vários picos, uma tarde só: o sudeste espalha energia por todo esse trecho extenso, entrando bem na janela que a praia gosta e dando um bom corpo pra onda quebrar. O período curto mantém a série apertada, exigindo reação rápida de quem está lá dentro. O vento lateral, que sopra de lado, mexe moderamente a superfície, sem tirar toda a organização da parede. É tarde boa pra molhar a prancha em qualquer nível, e a dica é caminhar pelos postos até achar o banco que estiver formando a onda mais limpa do dia.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|peito-ombro|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Ponta mais serena que o de costume",
+          "analise": "Depois da força de outros dias, essa tarde vem mais serena na ponta: o sudeste chega mais contido que o normal, mas ainda com corpo suficiente pra formar parede na janela que a praia prefere. O período curto deixa a série apertada, sem muito espaço de descanso entre as ondas. O vento lateral, que sopra de lado, mexe moderamente a água sem estragar de vez a organização. É uma tarde mais amena que o costume forte desse pico, boa pra quem quer treinar posicionamento sem tanta pressão.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|ombro-cabeca|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Fama de pico pesado confirmada hoje",
+          "analise": "Fama de pico pesado, hoje confirmada: o leste chega com corpo de sobra, entrando bem na janela que o fundo daqui aproveita bastante. O período curto deixa a série apertada, ondas fechando rápido uma atrás da outra e cobrando reação imediata. O vento lateral, que sopra de lado, mexe moderamente a superfície sem tirar toda a força da quebra. É condição de peso real, então quem não tem estrada em mar pesado faz bem em assistir da areia hoje.",
+          "janela": "13h-16h",
+          "aviso": "Pico historicamente pesado e sede de campeonato; energia alta hoje pede experiência real em mar forte."
+        }
+      ]
+    },
+    "praia-da-vila|peito-ombro|curto-vaga|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Refúgio ao lado da igrejinha",
+          "analise": "Ao lado da igrejinha, o refúgio de sempre recebe um sudeste com corpo suficiente pra formar parede na janela que esse canto mais abrigado prefere, algo que costuma segurar bem quando o pico principal da região fica grande demais. O período curto mantém a série apertada, sem muito espaço de descanso entre as ondas. O vento lateral, que sopra de lado, entra forte e mexe bastante a superfície, tirando parte da limpeza que esse refúgio costuma oferecer. Ainda assim vale a entrada pra quem quer fugir da força do pico ao lado e treinar num ambiente mais protegido.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|peito-ombro|medio-7a9|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Sudeste bom, vento com vontade de atrapalhar",
+          "analise": "Sudeste com corpo, vento com vontade de atrapalhar: assim é essa tarde nesse beach break, que recebe energia real entrando bem na janela que a região gosta. O período tem espaçamento bom, série que dá tempo de ler o set e se posicionar com calma antes da descida. O vento lateral, que sopra de lado, entra forte e pica bastante a superfície, tirando boa parte da limpeza que o período bom poderia entregar. Ainda dá pra aproveitar a força, mas escolhendo sempre a onda mais isolada da série pra fugir da parte mais picada.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|ombro-cabeca|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Energia grande no meio da cidade",
+          "analise": "No meio da cidade, o leste traz energia que ninguém esperava pra esse trecho central e sempre movimentado, entrando bem na janela que a praia costuma aproveitar. O período curto deixa a série apertada, exigindo remada ativa pra não ficar preso atrás da arrebentação. O vento lateral, que sopra de lado, mexe moderamente a água sem comprometer de vez a organização da parede. Com tanta gente por perto, a dica de hoje é escolher um trecho menos cheio pra aproveitar essa energia toda com mais espaço.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|peito-ombro|curto-vaga|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Padrão mundial com vento no meio do caminho",
+          "analise": "Padrão mundial pede parede rápida, e o sudeste de hoje entrega isso nesse pico que já foi sede de etapa do circuito mundial, entrando bem na janela que faz esse lugar ser especial. O período curto deixa a série apertada, cobrando remada ativa pra se posicionar antes da onda fechar rápido demais. O vento lateral, que sopra de lado, entra forte e tira um pouco da textura lisa que costuma render tubo aqui, deixando a parede mais irregular do que o de praxe. É pico de nível altíssimo e peso competitivo enorme, então quem não é experiente faz bem em assistir da areia.",
+          "janela": "13h-16h",
+          "aviso": "Pico de nível muito alto com forte disputa por onda; só experiente deve remar pro pico principal."
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-13T12:21:56.577Z"
+  "generated_at": "2026-09-13T18:17:33.531Z"
 }
