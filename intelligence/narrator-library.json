@@ -167260,7 +167260,117 @@
           "aviso": null
         }
       ]
+    },
+    "capao-da-canoa|peito-ombro|curto-vaga|lateral-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Capão da Canoa tem manhã de vento fraco e swell de raspão",
+          "analise": "A manhã abre serena no litoral norte gaúcho, vento fraco de lado, esse lateral que mal arrepia a água sem estragar a sessão. O swell, a ondulação que vem de longe, chega de leste e entra só de raspão nessa praia, então a força não vem cheia, mas ainda dá pra aproveitar. Na água a remada fica tranquila e o drop vem sem muita pressão, só que a série curta e apertada pede atenção pra não perder o intervalo certo entre uma onda e outra. Praia democrática, boa pra quem tá começando: vale aproveitar entre 6h e 9h, quando o vento ainda sopra mais fraco.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "tramandai|ombro-cabeca|curto-vaga|lateral-forte|noite|fora": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Tramandaí enfrenta vento forte durante a noite",
+          "analise": "Já é noite, mas fica o registro pra quem confere o app pensando na próxima sessão: o vento de lado tá forte, quase 43 km/h, esse lateral que desorganiza bastante a superfície da água. O swell, a ondulação que vem de longe, chega de nordeste e essa direção não entra direito nessa praia, então mesmo com energia alta por trás, a água fica bagunçada e sem forma boa. Quem imaginar entrar sentiria o caldo puxando de lado, remada cansativa e queda sem previsibilidade, típico de mar de vento forte. Vale deixar essa sessão de lado por agora e conferir a próxima atualização no app, de olho num vento que dê uma trégua.",
+          "janela": null,
+          "aviso": "Vento forte e swell fora da janela ideal: se decidir entrar mesmo assim, redobre a atenção com a correnteza perto da barra."
+        }
+      ]
+    },
+    "jureia|ombro-cabeca|curto-vaga|lateral-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Jureia tem tarde de vento moderado batendo de lado",
+          "analise": "O vento de lado ganha corpo nessa tarde na estação ecológica do litoral sul paulista, um lateral moderado que mexe a superfície sem destruir de vez a parede. O swell, a ondulação que vem de longe, entra de leste meio de raspão, e isso muda a leitura: a energia forte por trás não converte tudo em potência limpa. Na água a sensação é de pressão boa no drop e remada que cansa um pouco mais, com a série curta e apertada pedindo atenção pra não se atropelar entre as ondas. Vale aproveitar a tranquilidade de poucos surfistas na água e escolher as ondas mais fechadinhas da série.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|ombro-cabeca|curto-vaga|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Pitangueiras tem tarde de vento fraco e swell bem encaixado",
+          "analise": "No Guarujá, a tarde chega com vento fraco de lado, esse lateral que mal arrepia a água e deixa a sessão limpa. O swell, a ondulação que vem de longe, entra de leste bem encaixado nessa praia, e a energia alta vira potência de verdade, com séries que empurram gostoso. Na água dá pra sentir o drop com pressão boa e a remada compensando com onda que entrega, mas o período curto deixa a série mais apertada, então o timing entre ondas pede atenção. Praia central e concorrida: se quiser mais espaço, vale buscar os cantos menos cheios da faixa de areia.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "tiririca|ombro-cabeca|curto-vaga|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tiririca segue com vento forte do mar durante a noite",
+          "analise": "A noite chega pesada em Itacaré, vento forte vindo do mar pra terra, esse onshore que bagunça a cara da onda e tira a forma limpa da parede. O swell, a ondulação que vem de longe, chega de sudeste e encaixa bem no pico, então mesmo com o vento ruim a energia alta segue presente por baixo da bagunça. Quem imaginar entrar sentiria a pressão boa no drop, só que a superfície picada e a série curta e apertada tornam a leitura mais difícil, exigindo mais atenção antes de remar. Esse pico carrega a identidade baiana sem pressa de Itacaré: vale deixar essa condição de lado por agora e conferir a próxima atualização no app.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "bonete|peito-ombro|curto-vaga|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Bonete tem tarde de vento moderado e onda de qualidade",
+          "analise": "Isolada em Ilhabela, a praia recebe uma tarde de vento moderado de lado, o lateral que mexe a superfície sem destruir a parede. O swell, a ondulação que vem de longe, entra de sudeste bem encaixado, e a energia converte em potência de verdade: remada que pesa um pouco, drop com pressão boa. Recomendado só pra quem já tem experiência de mar mais exigente, já que o nível pedido aqui é avançado. O acesso por trilha ou barco garante cenário selvagem e pouca gente na água, então quem topar a caminhada aproveita quase sozinho essa tarde boa.",
+          "janela": "13h-17h",
+          "aviso": "Acesso só por trilha ou barco: em qualquer imprevisto o resgate demora bem mais, avalie isso antes de entrar."
+        }
+      ]
+    },
+    "cassino|peito-ombro|curto-vaga|onshore-forte|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Cassino enfrenta tarde de vento forte vindo do mar",
+          "analise": "No extremo sul gaúcho, a tarde chega com vento forte vindo do mar pra terra, esse onshore que bagunça a cara da onda e tira a forma da parede. O swell, a ondulação que vem de longe, chega de leste e pega essa praia só de raspão, então a energia já baixa perde ainda mais força, e a série vem fraca e apertada. Na água a sensação é de pouca pressão no drop e remada que não compensa o esforço, tudo isso somado à água fria típica da região. Vento decisivo como sempre manda por aqui: melhor esperar a condição virar antes de buscar essa praia.",
+          "janela": null,
+          "aviso": "Perto dos molhes da barra a correnteza pode ficar traiçoeira: redobre a atenção se decidir entrar mesmo assim."
+        }
+      ]
+    },
+    "atalaia|cintura-peito|curto-vaga|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Atalaia tem manhã de vento moderado e pouca energia no mar",
+          "analise": "A manhã no litoral catarinense chega com vento moderado de lado, o lateral que mexe a superfície sem acabar de vez com a parede. O swell, a ondulação que vem de longe, chega de leste bem encaixado nessa praia, mas a energia é baixa, então a remada compensa fácil e o drop vem sem muita pressão. Quem entrar vai sentir uma sessão tranquila, ideal pra quem tá ganhando confiança na água, já que o mar não cobra nem castiga. Vale aproveitar o início da manhã, entre 7h e 10h, antes do vento de lado ganhar mais força ao longo do dia.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "engenhoca|ombro-cabeca|curto-vaga|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Engenhoca segue com vento forte do mar durante a noite",
+          "analise": "Na mata atlântica de Itacaré, a noite segue com vento forte vindo do mar, esse onshore que bagunça a onda e pica bastante a superfície. O swell, a ondulação que vem de longe, chega de sudeste encaixado direto no pico, e como aqui a onda já quebra mais forte perto da areia, a energia alta vira bastante potência mesmo com o vento atrapalhando a forma. Quem imaginar entrar sentiria o caldo pesado e o drop cobrando decisão rápida, já que o fundo raso faz a onda tombar rápido. Vale deixar essa condição de lado por agora e conferir a próxima atualização no app, de olho num vento que dê uma trégua.",
+          "janela": null,
+          "aviso": "Onda de tombo quebra perto da areia com bastante força: cuidado redobrado com o impacto no fundo raso, principalmente pra quem não conhece o pico."
+        }
+      ]
+    },
+    "tombo|ombro-cabeca|curto-vaga|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tombo tem tarde de vento fraco e onda pesada no Guarujá",
+          "analise": "O Guarujá entrega uma tarde mais pesada na onda: vento fraco de lado, o lateral que quase não mexe na parede e deixa a sessão limpa. O swell, a ondulação que vem de longe, entra de leste bem encaixado, e a energia alta aqui vira bastante potência, já que essa é a praia mais forte da região, sede de campeonato. Quem entrar vai sentir o caldo forte e o drop cobrando rápido, exigindo o pop-up preciso, o movimento de levantar da prancha de uma vez, porque a onda tomba perto da areia. Recomendado só pra quem já tem experiência de mar mais exigente: aproveite entre 13h e 17h, enquanto o vento de lado segue fraco o suficiente pra não estragar a parede.",
+          "janela": "13h-17h",
+          "aviso": "Fundo raso e onda de tombo: impacto forte pra quem cair, recomendado só pra quem já é surfista avançado."
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-14T00:15:52.718Z"
+  "generated_at": "2026-09-14T06:13:45.441Z"
 }
