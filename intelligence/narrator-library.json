@@ -173629,7 +173629,546 @@
           "aviso": "Praia isolada, de acesso difícil e sem luz: risco real para quem não conhece bem o local."
         }
       ]
+    },
+    "vermelha-do-norte|cintura-peito|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã de porte médio com onshore ainda mole",
+          "analise": "A manhã começa com o mar entregando porte médio e uma cadência na medida, nem apertada nem espaçada, o que ajuda a se posicionar sem correria. O vento onshore, aquele que sopra do mar pra terra e baba a face, ainda está fraco, então só tira um pouco do brilho sem estragar a onda. A energia é moderada, dá pra sentir a remada puxando sem exagero, boa pra quem já tem alguma vivência na água mas ainda não quer se arriscar demais. A dica é sair cedo, antes do vento crescer e bagunçar mais a superfície.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "guarda-do-embau|joelho-cintura|curto-vaga|onshore-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Manhã pequena na foz, direção só na borda",
+          "analise": "Cedo, o mar aparece pequeno e com uma série mais apertada, as ondas vêm rápido uma atrás da outra, o que deixa menos tempo pra se posicionar com calma. O vento onshore, que sopra do mar pra terra e enruga a face, já está moderado e mistura a água, tirando a limpeza que o point costuma ter perto da foz do rio. A energia é fraca e a direção da ondulação está só na borda do que esse trecho pede, então o pico tende a entregar menos do que promete no papel. Vale mais a pena pra treinar remada e leitura de canal do que pra buscar a onda perfeita hoje.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "rosa|ombro-cabeca|medio-7a9|lateral-forte|tarde|fora": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde de porte grande mas direção errada",
+          "analise": "À tarde, o mar mostra porte grande e bastante força bruta, só que a ondulação vem de um quadrante fora da janela que essa enseada gosta de receber, então o formato tende a sair mais fechado e menos organizado do que os números sugerem. O vento lateral, que sopra de lado, está forte e chacoalha a água inteira, dificultando achar uma linha limpa pra surfar. A energia é pesada, quem cai sente o preço e a remada de saída cobra fôlego, então não é o dia ideal pra quem ainda está pegando experiência. Se for encarar, prancha com mais volume ajuda a vencer o caldo e a remada contra o vento.",
+          "janela": "13h-17h",
+          "aviso": "energia pesada com vento forte: cuidado redobrado com o fôlego na remada de saída"
+        }
+      ]
+    },
+    "ferrugem|ombro-cabeca|medio-7a9|glassy|noite|fora": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite de porte grande, mar quase sem vento mas fora da janela",
+          "analise": "À noite, o mar aparece grande e com bastante força, quase sem vento bagunçando a superfície, o que deixa a cara da onda mais limpa do que o normal nessa faixa de horário. Mas a ondulação chega de um quadrante que não é o ideal pra esse trecho, então mesmo parecendo grande nos números, tende a fechar mais rápido e sobrar menos parede pra manobra. A energia é pesada e cobra remada forte pra vencer o caldo, o que pede repertório de quem já surfa esse tipo de condição. Sem visibilidade de dia, vale reforçar a segurança e não entrar sozinho na água.",
+          "janela": null,
+          "aviso": "surf noturno em condição de energia pesada: prioridade pra segurança e nunca entrar sozinho"
+        }
+      ]
+    },
+    "ibiraquera|ombro-cabeca|medio-7a9|glassy|noite|fora": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite pesada ao lado da lagoa, mas ondulação de fora da janela",
+          "analise": "Depois do sol se esconder, o mar ainda entrega porte grande e uma energia pesada, com o vento quase ausente segurando a superfície limpa mesmo na escuridão. A ondulação, porém, vem de um quadrante que não é o forte desse trecho ao lado da lagoa, então parte da força se perde em formato desorganizado. Quem entra sente o caldo pesado e precisa de remada firme pra não ser engolido pela espuma. Por ser noite e faltar visão da praia, o mais sensato é surfar em dupla e ficar de olho no canal.",
+          "janela": null,
+          "aviso": "energia pesada à noite, sem visibilidade: só entrar acompanhado e de olho no canal"
+        }
+      ]
+    },
+    "silveira|ombro-cabeca|medio-7a9|glassy|noite|fora": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite de porte grande pede repertório, ondulação de fora",
+          "analise": "O mar chega grande essa noite, com o vento quase parado deixando a superfície incomumente limpa pro período. Mesmo assim, a ondulação entra de um quadrante fora do ideal pra esse pico, então uma condição que seria das melhores do litoral perde parte da organização e fecha mais rápido do que o esperado. A energia é pesada e exige leitura rápida de quem já é experiente nesse tipo de pico, remada forte e postura segura no drop. À noite, sem enxergar bem o fundo e as seções, o recomendado é só entrar quem já conhece bem esse pico de outras sessões.",
+          "janela": null,
+          "aviso": "pico avançado, energia pesada e visibilidade noturna reduzida: só pra quem já conhece o pico"
+        }
+      ]
+    },
+    "joaquina|peito-ombro|medio-7a9|onshore-forte|tarde|fora": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde forte na Joaca com onshore destruindo a face",
+          "analise": "No fim da tarde, o mar mostra porte robusto perto das dunas, mas o onshore, vento que sopra do mar pra terra e baba a onda, já está forte, engordando a espuma e atropelando quem tenta remar até o pico. A ondulação vem de um quadrante fora do que esse beach break de força pega melhor, então o mar fica ainda mais bagunçado do que costuma ficar em dia de sul organizado. A energia é boa, mas sem parede limpa pra aproveitar, o esforço vira mais briga com a espuma do que surf de verdade. Melhor guardar a sessão pra um dia com vento mais fraco e voltar quando a janela de sul se alinhar.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|cintura-peito|medio-7a9|offshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã de offshore forte segurando a onda dentro da janela",
+          "analise": "Cedo, o mar entrega porte médio com a ondulação encaixando bem na janela que essa praia gosta de receber, então o formato tende a ficar organizado. O offshore, vento que sai da terra pro mar e alisa a face, já sopra forte, o que deixa tudo com cara de vidro, mas também segura a onda e pede uma remada extra pra vencer o vento contra o rosto na hora do take off. A energia é moderada e a praia recebe todo tipo de surfista, do iniciante ao mais graduado, mesmo sendo bem frequentada. Prancha com um pouco mais de volume ajuda a furar o vento e pegar a onda antes que ela feche pela frente.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|cintura-peito|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde na medida, mas onshore já mexe a face",
+          "analise": "À tarde, a condição segue de porte médio e a ondulação continua encaixada na janela ideal desse trecho urbano e democrático. O onshore, vento do mar pra terra que baba a onda, já está moderado, enrugando a face e deixando tudo mais picotado, sinal de que a limpeza de horas atrás já foi embora. A energia é moderada, dá pra sentir a remada puxando sem exagero, condição que cabe bem pra quem tem alguma vivência mas não exige moleza. Vale entrar logo, porque o vento tende a piorar conforme as horas passam.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "itamambuca|joelho-cintura|curto-vaga|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite pequena e alisada perto do rio",
+          "analise": "Já de noite, o mar aparece pequeno perto da foz do rio, com uma série mais apertada que atropela um pouco a leitura de quem está se posicionando. O offshore, vento que sai da terra pro mar e alisa a face, sopra moderado e ajuda a segurar a limpeza mesmo com pouca luz, e a ondulação encaixa bem na janela que esse point tradicional gosta de receber. A energia é fraca, então a remada é tranquila e cabe bem pra quem já tem alguma experiência mas não quer se desgastar. Sem enxergar direito o fundo à noite, vale ficar perto de onde já se conhece o canal.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "mocambique|peito-ombro|medio-7a9|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde de porte robusto com picos espalhados",
+          "analise": "No fim da tarde, o mar chega com porte robusto e a ondulação encaixando bem na janela que essa faixa extensa e preservada gosta de receber. O offshore, vento que sai da terra pro mar e alisa a face, sopra fraco, só dando uma agradada no formato sem grandes exageros. A energia é boa, o suficiente pra sentir a remada puxando com intenção e o drop pedindo postura firme, condição que cai bem pra quem já tem alguma vivência na água. Como os picos se espalham por uma faixa longa e vazia, vale caminhar um pouco pra achar o banco mais organizado do dia.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|cintura-peito|medio-7a9|offshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã forte com offshore segurando o pico pesado",
+          "analise": "Cedo, o mar mostra porte médio mas com a força característica desse beach break mais pesado do litoral, e a ondulação encaixa bem na janela ideal do trecho. O offshore, vento que sai da terra pro mar e alisa a onda, já sopra forte, deixando a face bonita mas também segurando o pico e pedindo remada redobrada pra vencer o vento contra o rosto. A energia é moderada, o suficiente pra cobrar postura firme no drop, condição que pede repertório de quem já é experiente nesse tipo de pico pesado. Prancha mais estreita e remada antecipada ajudam a furar o vento antes da onda fechar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|cintura-peito|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Virada de tarde ainda dentro da janela, mas onshore já cobra",
+          "analise": "Já na virada da tarde, o pico segue de porte médio e a ondulação continua bem encaixada nesse trecho que costuma ser um dos mais fortes da região. O onshore, vento do mar pra terra que baba a face, já está moderado, enrugando a superfície e tirando a limpeza que o trecho tinha horas atrás. A energia é moderada e o pico exige experiência de quem entra, já que o fundo pesado não perdoa quem chega despreparado. Melhor entrar assim que possível, antes que o vento suba mais e o mar fique ainda mais bagunçado.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "cidreira|peito-ombro|medio-7a9|glassy|manha|borda": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã de porte robusto e vento quase parado",
+          "analise": "Cedo, o mar entrega porte robusto e o vento está quase parado, deixando a face com aquela cara de vidro que poucas manhãs têm nesse trecho exposto do litoral gaúcho. A ondulação está só na borda da janela ideal, então o pico entrega bastante força mas nem sempre com a organização perfeita, algumas séries chegam mais limpas que outras. A energia é boa, dá pra sentir o drop cobrando postura, condição que cabe bem pra quem já tem alguma experiência na água. Vale esperar as séries maiores, que tendem a vir mais alinhadas que o resto do lote.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "cidreira|cintura-peito|medio-7a9|offshore-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite de porte médio com offshore alisando o pouco que entra",
+          "analise": "De noite, o mar segue de porte médio nesse beach break gaúcho, com o offshore, vento que sai da terra pro mar e alisa a face, soprando moderado e ajudando a manter a superfície limpa mesmo no escuro. A ondulação está na borda da janela ideal, então nem toda série vem organizada, algumas fecham antes da hora. A energia é moderada, a remada pede alguma intenção mas sem exagero, condição que cabe pra quem já tem alguma vivência. Sem luz natural pra ler o banco, vale reduzir as expectativas e escolher bem as ondas antes de remar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|cintura-peito|medio-7a9|offshore-fraco|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde de porte médio na Joaca com direção só na borda",
+          "analise": "No fim da tarde, o mar aparece de porte médio nesse beach break de força catarinense, com o offshore, vento que sai da terra pro mar e alisa a onda, soprando fraco e dando uma agradada na face sem grandes exageros. A ondulação está na borda da janela que o pico gosta de receber, então a força que costuma marcar esse trecho aparece só em parte, com algumas séries mais fracas que outras. A energia é moderada, o suficiente pra sentir a remada trabalhando sem cobrar demais. Vale escolher bem as ondas e não gastar energia nas que vêm mais fechadas.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|cintura-peito|medio-7a9|offshore-moderado|noite|fora": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite fora da janela ideal na Joaca",
+          "analise": "À noite, o mar segue de porte médio, com o offshore, vento que sai da terra pro mar e alisa a face, soprando moderado e mantendo a superfície limpa mesmo sem luz natural. A ondulação, porém, vem de um quadrante fora do que esse pico de força costuma pegar bem, então a energia que aparece nos números não se traduz totalmente em onda organizada. A força ainda é moderada e cobra alguma remada, condição que exige repertório de quem já é experiente nesse tipo de pico exigente. Sem enxergar direito o fundo, melhor reduzir as expectativas e escolher as séries com calma.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "massaguacu|cintura-peito|medio-7a9|offshore-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã de porte médio com direção na borda",
+          "analise": "Cedo, o mar chega de porte médio nesse beach break que costuma responder bem ao sul, com o offshore, vento que sai da terra pro mar e alisa a face, soprando moderado e deixando tudo com boa cara. A ondulação está na borda da janela ideal, então parte da força que o pico costuma entregar aparece só em algumas séries, sem virar regra o dia inteiro. A energia é moderada, dá pra sentir a remada puxando sem cobrar demais, condição que cabe bem pra quem já tem alguma vivência na água. Vale prestar atenção nas séries maiores, que tendem a vir melhor formadas.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "massaguacu|cintura-peito|curto-vaga|offshore-fraco|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde apertada e de porte médio, direção na borda",
+          "analise": "No fim da tarde, o mar segue de porte médio mas com uma série mais apertada, as ondas emendam rápido uma na outra e sobra menos tempo pra se posicionar com calma. O offshore, vento que sai da terra pro mar e alisa a face, sopra fraco, só dando uma agradada sem grandes exageros. A ondulação está na borda da janela ideal desse trecho, então a força que o pico costuma entregar aparece só em parte. A energia é moderada, condição que cabe pra quem já tem alguma vivência mas exige atenção redobrada pela cadência apertada das séries.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-lagoa|cintura-peito|medio-7a9|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tarde acessível perto do canal, tudo dentro da janela",
+          "analise": "À tarde, o mar entrega porte médio com a ondulação bem encaixada na janela ideal desse trecho acessível perto do canal e do molhe. O offshore, vento que sai da terra pro mar e alisa a face, sopra fraco, deixando a superfície com boa cara sem grandes exageros. A energia é moderada, remada com alguma intenção mas sem cobrar demais, condição que recebe bem qualquer nível, do iniciante ao mais graduado. Fique de olho no canal ao lado, que costuma ajudar tanto na entrada quanto na saída da água.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|joelho-cintura|medio-7a9|offshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã pequena e amistosa com offshore forte",
+          "analise": "Cedo, o mar aparece pequeno mas com a ondulação bem encaixada na janela ideal desse pico conhecido por ondas mais amistosas e reduto de quem gosta de prancha grande. O offshore, vento que sai da terra pro mar e alisa a face, já sopra forte, deixando tudo com cara de vidro mas também segurando a onda e pedindo remada redobrada pra vencer o vento contra o rosto. A energia é fraca, remada tranquila, condição que recebe bem qualquer nível, inclusive quem está começando. Prancha com mais volume ajuda a furar o vento forte e ainda combina com o estilo mais tranquilo desse pico.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|joelho-cintura|curto-vaga|lateral-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Manhã pequena e apertada, longe do dia de sul forte",
+          "analise": "Logo cedo, a condição chega pequena e com uma série apertada, as ondas emendam rápido uma na outra e sobra pouco tempo pra se posicionar com calma. O vento lateral, que sopra de lado, está fraco e mexe pouco a superfície, sem grandes estragos. A ondulação está só na borda da janela ideal, longe daquele dia de sul forte que costuma deixar esse trecho impecável quando o vento sudoeste vira a favor. A energia é fraca, condição mais de treino do que de sessão marcante, boa pra quem já tem alguma vivência mas sem grandes expectativas hoje.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|joelho-cintura|curto-vaga|glassy|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde pequena e apertada com vento quase parado",
+          "analise": "No fim da tarde, o mar segue pequeno e com uma série mais apertada, ondas emendando rápido umas nas outras. O vento está quase parado, o que ajuda a manter a superfície com uma cara razoável mesmo sem muita força na ondulação. A direção está na borda do que esse trecho pede pra funcionar de verdade, longe do dia de sul forte que costuma salvar esse pico. A energia é fraca, remada tranquila, dá pra aproveitar mais pelo clima calmo do fim de tarde do que pela qualidade da onda em si.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "mocambique|cintura-peito|curto-vaga|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde de porte médio, mas onshore forte atropela",
+          "analise": "No fim da tarde, o mar segue de porte médio com a ondulação encaixada na janela ideal dessa faixa extensa e preservada. A série vem apertada, ondas emendando rápido uma na outra, e o onshore, vento do mar pra terra que baba a face, já sopra forte, engordando a espuma e atropelando quem tenta remar até o pico. A energia é moderada, mas sem parede limpa pra aproveitar o esforço vira mais luta com a espuma do que surf organizado. Como os picos se espalham pela faixa longa, vale caminhar em busca de algum canto mais protegido do vento.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "jureia|joelho-cintura|medio-7a9|onshore-fraco|noite|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite pequena e tranquila na estação ecológica",
+          "analise": "De noite, o mar aparece pequeno nesse trecho preservado de estação ecológica, com pouca gente por perto mesmo em condição razoável. O onshore, vento do mar pra terra que baba a face, está fraco, só tirando um pouco do brilho sem estragar a onda de vez. A ondulação está na borda da janela ideal, então a força vem em doses menores do que o pico costuma entregar em dia de sul mais alinhado. A energia é fraca, remada tranquila, condição que cabe pra quem já tem alguma vivência e não se importa com a visibilidade reduzida do escuro.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|joelho-cintura|curto-vaga|offshore-forte|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã pequena e selvagem com offshore forte",
+          "analise": "Cedo, o mar aparece pequeno nesse trecho de área protegida, sem construções por perto, cenário que ainda parece intocado. A série vem apertada, ondas emendando rápido umas nas outras, e o offshore, vento que sai da terra pro mar e alisa a face, já sopra forte, deixando tudo com cara de vidro mas também segurando a onda na entrada. A ondulação está na borda da janela ideal, então a força desse beach break aparece só em parte hoje. A energia é fraca, remada tranquila, boa pra quem já tem alguma experiência e curte surfar num cenário mais isolado.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|cintura-peito|medio-7a9|onshore-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã de porte médio antes do vento crescer",
+          "analise": "Cedo, o mar entrega porte médio nesse trecho de água transparente, bastante frequentado por quem surfa na região. O onshore, vento do mar pra terra que baba a face, já está moderado, enrugando a superfície, um sinal de que o dia tende a piorar conforme as horas passam. A ondulação está na borda da janela ideal, então a força vem em doses menores do que em dia de sul bem alinhado. A energia é moderada, remada com alguma intenção, condição que cabe pra quem já tem alguma vivência: vale entrar logo, antes que o vento encrespe ainda mais o mar como costuma fazer por aqui.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|joelho-cintura|curto-vaga|offshore-forte|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã pequena numa enseada que sempre concentra energia",
+          "analise": "Cedo, o mar aparece pequeno mas essa enseada tem o formato que concentra a força da ondulação, então costuma ter onda mesmo quando o resto da região está parado. A série vem apertada, ondas emendando rápido umas nas outras, e o offshore, vento que sai da terra pro mar e alisa a face, já sopra forte, deixando a face bonita mas segurando o pico na entrada. A ondulação está na borda da janela ideal, então a qualidade que costuma marcar esse pico aparece só em parte. A energia é fraca, mas o pico pede repertório e respeito à fila de quem já surfa ali: chegue cedo e observe antes de remar pro pico.",
+          "janela": "6h-9h",
+          "aviso": "pico de localismo forte e nível avançado: respeite a fila e observe antes de remar"
+        }
+      ]
+    },
+    "recreio|joelho-cintura|medio-7a9|offshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã pequena na ponta com offshore forte",
+          "analise": "Cedo, o mar aparece pequeno nessa ponta que costuma responder bem ao sul, com a ondulação encaixada na janela ideal do trecho. O offshore, vento que sai da terra pro mar e alisa a face, já sopra forte, deixando tudo com cara de vidro mas também segurando a onda e pedindo remada redobrada pra vencer o vento contra o rosto. A energia é fraca, remada tranquila, condição que cabe bem pra quem já tem alguma vivência na água. Prancha com remada antecipada ajuda a furar o vento antes da onda fechar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|cintura-peito|medio-7a9|onshore-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã de porte médio, mas já exposta ao vento",
+          "analise": "Cedo, o mar entrega porte médio nesse trecho mais exposto e pesado da região, que já pede experiência de quem entra. O onshore, vento do mar pra terra que baba a face, já está moderado, enrugando a superfície e tirando parte da limpeza que o pico teria num dia mais calmo. A ondulação está na borda da janela ideal, então a força chega em doses menores do que esse trecho costuma entregar. A energia é moderada, e a combinação de vento e fundo pesado pede postura firme, então melhor entrar assim que possível, antes que o mar fique ainda mais bagunçado.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|joelho-cintura|medio-7a9|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã pequena e emoldurada pelo costão",
+          "analise": "Cedo, o mar aparece pequeno perto do costão que emoldura esse pico tão conhecido, com a ondulação encaixada na janela ideal do trecho. O offshore, vento que sai da terra pro mar e alisa a face, sopra moderado e deixa tudo com boa cara, sem exagero. A energia é moderada, remada com alguma intenção, condição que cabe bem pra quem já tem alguma vivência na água mesmo com o pico sempre bem movimentado. Respeitar a fila de quem já está esperando a vez é a regra número um aqui, então observe antes de remar pro meio.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|cintura-peito|medio-7a9|onshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã de porte médio na areia branca de Cabo Frio",
+          "analise": "Cedo, o mar entrega porte médio nesse trecho de areia branca que costuma responder bem ao sul. O onshore, vento do mar pra terra que baba a face, ainda está fraco, então só tira um pouco do brilho sem estragar a onda. A ondulação está na borda da janela ideal, então a força que o pico costuma entregar aparece só em parte hoje. A energia é moderada, remada com alguma intenção, condição que cabe bem pra quem já tem alguma vivência na água.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|cintura-peito|medio-7a9|lateral-forte|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde de porte médio com vento lateral chacoalhando tudo",
+          "analise": "No fim da tarde, o mar segue de porte médio nesse trecho exposto do litoral norte gaúcho. O vento lateral, que sopra de lado, já está forte e chacoalha a água inteira, dificultando achar uma linha limpa pra surfar. A ondulação está na borda da janela ideal, então a força que o pico costuma entregar aparece só em parte, ainda mais espalhada pelo vento forte. A energia é moderada, mas com a superfície tão mexida o esforço vale mais pela prática do que pela qualidade da sessão hoje.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "domingas-dias|joelho-cintura|medio-7a9|offshore-fraco|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde pequena e abrigada, boa pra quem começa",
+          "analise": "No fim da tarde, o mar aparece pequeno nesse trecho mais abrigado, o tipo de lugar que costuma salvar a sessão quando o resto da região está grande demais. O offshore, vento que sai da terra pro mar e alisa a face, sopra fraco, só dando uma agradada sem grandes exageros. A ondulação está na borda da janela ideal, então a força vem em doses bem pequenas, o que combina justamente com o perfil mais protegido desse trecho. A energia é fraca, remada tranquila, ótima condição pra quem está começando a pegar as primeiras ondas com segurança.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "massaguacu|joelho-cintura|medio-7a9|offshore-fraco|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde pequena com offshore fraco alisando o pouco que entra",
+          "analise": "No fim da tarde, o mar aparece pequeno nesse beach break que costuma responder bem ao sul, com o offshore, vento que sai da terra pro mar e alisa a face, soprando fraco e deixando a superfície com boa cara. A ondulação está na borda da janela ideal, então a força que o pico costuma entregar aparece só em parte hoje. A energia é fraca, remada tranquila, condição mais mole do que costuma ser esse trecho de força. Boa pra treinar posicionamento sem a pressão de um dia grande.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|joelho-cintura|medio-7a9|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã pequena, melhor nos cantos que no meio social",
+          "analise": "Cedo, o mar aparece pequeno nesse trecho icônico onde as ilhas em frente reduzem e moldam a ondulação antes de chegar na praia, o que ajuda a manter tudo dentro da janela ideal. O offshore, vento que sai da terra pro mar e alisa a face, sopra moderado e deixa a superfície com boa cara. A energia é moderada, remada com alguma intenção, condição que recebe bem qualquer nível de surfista. Como o meio costuma ficar mais social e cheio de gente, vale procurar os cantos, onde o pico funciona de verdade.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "camburi|flat|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Manhã de mar deitado, quase sem força",
+          "analise": "Cedo, o mar aparece praticamente deitado nesse trecho badalado do litoral norte, sem força suficiente pra levantar uma onda que valha a pena surfar. O onshore, vento do mar pra terra que baba a face, ainda está fraco, mas isso pouco importa quando falta ondulação de verdade pra trabalhar. A energia é muito fraca, a remada não encontra resistência nenhuma, então hoje não é dia de prancha, é mais dia de aproveitar a cena badalada da praia. Melhor deixar a prancha guardada e voltar a checar assim que a ondulação crescer.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|joelho-cintura|medio-7a9|lateral-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Manhã pequena e mais organizada que o normal em Cabo Frio",
+          "analise": "Cedo, o mar aparece pequeno nesse trecho de Cabo Frio, com o vento lateral, que sopra de lado, fraco e mexendo pouco a superfície. A ondulação está na borda da janela ideal, longe daquele dia de sul forte que costuma deixar esse trecho impecável quando o vento vira a favor. A energia é fraca, remada tranquila, condição mais de manutenção do que de sessão marcante. Boa pra quem já tem alguma vivência e não se importa em surfar algo mais simples hoje.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-forte|joelho-cintura|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite pequena e espaçada perto do Canto do Forte",
+          "analise": "De noite, o mar aparece pequeno mas com uma série bem espaçada, dá tempo de ver a onda chegando de longe e escolher a melhor posição antes de remar. O vento lateral, que sopra de lado, está fraco e mexe pouco a superfície, sem estragar o que a ondulação, bem encaixada na janela ideal, já entrega de bom. A energia é fraca, remada tranquila, condição que recebe bem qualquer nível de surfista. O Canto do Forte costuma segurar melhor esse tipo de série mais mole, então vale procurar esse trecho se a visibilidade noturna permitir enxergar o pico.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|cintura-peito|medio-7a9|onshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã de porte médio antes do vento típico piorar",
+          "analise": "Ainda de manhã, o mar segue de porte médio nesse trecho de água transparente bastante frequentado da região. O onshore, vento do mar pra terra que baba a face, ainda está fraco, então só tira um pouco do brilho sem estragar de vez a onda. A ondulação está na borda da janela ideal, então a força vem em doses menores do que em dia de sul bem alinhado. A energia é moderada, remada com alguma intenção, condição que cabe bem pra quem já tem alguma vivência: aproveite logo, porque esse trecho costuma encrespar mais assim que o vento cresce.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|ombro-cabeca|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Manhã de porte grande e série espaçada num point de pedra",
+          "analise": "Cedo, o mar mostra porte grande com uma série bem espaçada, dá tempo de ver a onda chegando de longe e escolher a melhor posição, típico desse point de fundo de pedra considerado um dos melhores do país. O vento lateral, que sopra de lado, está fraco e mexe pouco a superfície, mantendo a cara boa que costuma marcar esse pico. A energia é pesada, o caldo pode castigar e o drop cobra postura firme, então é território de quem já tem repertório avançado e sabe ler canal em fundo de pedra. O risco de bater no fundo é real num pico de pedra com essa força, então só entre quem já conhece bem esse tipo de condição.",
+          "janela": "6h-9h",
+          "aviso": "fundo de pedra com energia pesada, risco real de impacto: só para quem já tem repertório avançado nesse tipo de pico"
+        }
+      ]
+    },
+    "barra-da-tijuca|joelho-cintura|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã pequena com picos espalhados ao longo dos postos",
+          "analise": "Cedo, o mar aparece pequeno nesse trecho extenso onde os picos se espalham ao longo dos postos numerados, com a ondulação encaixada na janela ideal. O onshore, vento do mar pra terra que baba a face, ainda está fraco, então só tira um pouco do brilho sem estragar a onda. A energia é fraca, remada tranquila, condição que recebe bem qualquer nível de surfista mesmo sendo um trecho bem frequentado. Como a qualidade muda bastante de posto pra posto, vale caminhar um pouco até achar o banco mais organizado do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|cintura-peito|medio-7a9|onshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã de porte médio ainda com vento fraco no trecho pesado",
+          "analise": "Ainda cedo, a condição aparece de porte médio nesse trecho mais exposto e pesado da região, que já pede experiência de quem entra na água. O onshore, vento do mar pra terra que baba a face, ainda está fraco, então só tira um pouco do brilho sem estragar de vez a onda. A ondulação está na borda da janela ideal, então a força chega em doses menores do que esse trecho costuma entregar num dia bem alinhado. A energia é moderada, e a combinação de fundo pesado com porte médio ainda pede postura firme mesmo sem o vento atrapalhar muito.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|joelho-cintura|medio-7a9|onshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã pequena no pico do costão, direção só na borda",
+          "analise": "Mais cedo ainda, o mar aparece pequeno perto do costão que emoldura esse pico tão conhecido, mas a ondulação está só na borda da janela ideal, então a força vem em doses menores do que o normal aqui. O onshore, vento do mar pra terra que baba a face, ainda está fraco, tirando só um pouco do brilho da onda. A energia é moderada, remada com alguma intenção, condição que cabe bem pra quem já tem alguma vivência na água mesmo com o pico sempre bem movimentado. Respeitar a fila de quem já está esperando a vez continua sendo a regra número um por ali.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|cintura-peito|medio-7a9|onshore-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde de porte médio na areia branca com onshore já mexendo",
+          "analise": "No fim da tarde, o mar segue de porte médio nesse trecho de areia branca que costuma responder bem ao sul. O onshore, vento do mar pra terra que baba a face, já está moderado, enrugando a superfície e tirando a limpeza que a face tinha horas atrás. A ondulação está na borda da janela ideal, então a força que o pico costuma entregar aparece só em parte hoje. A energia é moderada, remada com alguma intenção, condição que cabe pra quem já tem alguma vivência, melhor entrar logo antes que o vento suba ainda mais.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|cintura-peito|medio-7a9|onshore-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde de porte médio em Tamoios com onshore mexendo",
+          "analise": "No fim da tarde, o mar aparece de porte médio nesse beach break que costuma responder ao sul. O onshore, vento do mar pra terra que baba a face, já está moderado, enrugando a superfície e tirando parte da limpeza que o trecho tinha antes. A ondulação está na borda da janela ideal, então a força que o pico costuma entregar aparece só em parte hoje. A energia é moderada, remada com alguma intenção, condição que cabe pra quem já tem alguma vivência na água.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|joelho-cintura|medio-7a9|onshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã pequena num trecho bravo e pouco movimentado",
+          "analise": "Cedo, o mar aparece pequeno nesse trecho mais exposto e forte, com bem menos gente na água do que o normal na região. O onshore, vento do mar pra terra que baba a face, ainda está fraco, então só tira um pouco do brilho sem estragar de vez a onda. A ondulação está na borda da janela ideal, então a força que esse trecho costuma entregar aparece só em parte hoje. A energia é fraca, mas o fundo pesado ainda pede postura firme e algum repertório de quem já surfa esse tipo de pico exigente.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-cabo-frio|joelho-cintura|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite espaçada num trecho bravo e vazio",
+          "analise": "De noite, o mar aparece pequeno mas com uma série bem espaçada, dá tempo de ver a onda chegando de longe e se posicionar com calma, num trecho que costuma ter bem menos gente na água. O vento lateral, que sopra de lado, está fraco e mexe pouco a superfície, mantendo a cara boa da ondulação, que está bem encaixada na janela ideal. A energia é fraca, remada tranquila, mas o fundo mais pesado desse trecho ainda pede alguma experiência de quem entra. Sem visibilidade boa no escuro, vale reforçar a segurança e não entrar sozinho.",
+          "janela": null,
+          "aviso": "fundo pesado e pouca visibilidade à noite: melhor não entrar sozinho"
+        }
+      ]
+    },
+    "ipanema|joelho-cintura|medio-7a9|onshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã pequena, direção na borda mas ainda vale os cantos",
+          "analise": "De manhã, a condição aparece pequena nesse trecho icônico onde as ilhas em frente reduzem e moldam a ondulação antes de chegar na praia. A direção está só na borda da janela ideal hoje, então a força vem em doses menores do que quando tudo se alinha. O onshore, vento do mar pra terra que baba a face, ainda está fraco, tirando só um pouco do brilho da onda. A energia é fraca, remada tranquila, condição que recebe bem qualquer nível: vale procurar os cantos, que tendem a funcionar melhor que o meio social.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-17T06:33:43.856Z"
+  "generated_at": "2026-09-17T12:17:47.508Z"
 }
