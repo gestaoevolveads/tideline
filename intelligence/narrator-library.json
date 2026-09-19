@@ -176504,7 +176504,282 @@
           "aviso": "Porte fora do padrão desse pico normalmente mais tranquilo, à noite: cautela redobrada e não se afaste da praia."
         }
       ]
+    },
+    "barra-da-lagoa|peito-ombro|curto-vaga|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã de vento do mar na vila",
+          "analise": "A Barra acorda com energia consistente e um swell que entra bem na janela, encostando quase de frente na bancada. Só que o vento vem do mar pra terra (o famoso onshore) e já bagunça a face desde cedo, enrugando o que podia ser uma parede limpa. Na água você vai sentir remada mais pesada, caldo com mais espuma e menos definição pra ler a curva antes do drop. Ainda assim dá surf decente pra quem já pega beach break, principalmente perto do canal, onde a água escoa e ajuda a formar pico. Se puder escolher, prefira as primeiras horas de luz antes do vento ganhar mais força.",
+          "janela": "6h-9h",
+          "aviso": "Perto do canal e do molhe a correnteza puxa mais forte, atenção redobrada pra quem tá começando."
+        }
+      ]
+    },
+    "caioba|cintura-peito|curto-vaga|onshore-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde mole no litoral curto",
+          "analise": "Caiobá recebe um swell que chega meio de raspão hoje, sem encaixar direito na janela que a praia gosta, e isso já tira potência da onda antes mesmo do vento entrar em cena. Com pouca energia por trás e período apertado, a série vem cansada, empurrando pouco e formando paredes curtas. O vento do mar pra terra pica ainda mais a superfície à tarde, então você vai sentir a onda menos organizada, com bordas quebrando antes da hora. Não é dia de esperar grande coisa, mas serve pra treinar remada e ficar na água com a cena local que faz a fama do pico. Vale mais surfar no início da tarde, antes do vento subir de vez.",
+          "janela": "12h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|peito-ombro|curto-vaga|onshore-moderado|manha|fora": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "A Joaca com corpo mas fora de esquadro",
+          "analise": "Tem tamanho rolando na Joaquina essa manhã e a energia não é fraca, mas o swell chega de um ângulo que não é o que a praia pede, então a força vem meio espalhada em vez de concentrada num pico só. Some a isso o vento do mar pra terra já soprando forte desde cedo, e a superfície fica toda enrugada, difícil de ler. Quem surfa esse beach break de força vai sentir a parede fechando rápido e sem aquela curva limpa de costume, exigindo leitura mais fina pra não perder a rampa. É condição pra quem já tem estrada, sem ilusão de sessão perfeita, mas com adrenalina de sobra pelo tamanho. A dica é remar direto pro pico que estiver formando canal, geralmente perto das dunas.",
+          "janela": "6h-9h",
+          "aviso": "Fundo de areia mas com correnteza forte pelo tamanho da onda; canseira chega rápido pra quem não tem preparo."
+        }
+      ]
+    },
+    "joaquina|peito-ombro|medio-7a9|offshore-fraco|noite|fora": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite de terral fraco fora de eixo",
+          "analise": "A Joaquina segue com energia parecida agora à noite, período um pouco mais organizado que ajuda a série a vir com séries mais contáveis. O vento virou terral, o que sai da terra pro mar e alisa a face, só que sopra fraco, então o efeito é sutil, não chega a deixar tudo vítreo. O detalhe que pesa é o swell chegando de um ângulo fora do que a praia aproveita melhor, o que tira consistência mesmo com a energia presente. Pensando em quem acompanha o pico pela Joaca, essa combinação costuma render ondas isoladas e boas junto de outras bem fechadas. Vale ficar de olho se o ângulo do swell muda, porque o resto da receita já tá quase lá.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "matinhos|cintura-peito|curto-vaga|onshore-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde democrática mas sem força",
+          "analise": "Matinhos recebe um swell que entra de raspão, sem cravar a janela ideal da praia, e a energia por trás não é das maiores hoje. O período curto deixa a série apertada, com pouco tempo entre uma onda e outra pra se posicionar com calma. O vento do mar pra terra bagunça um pouco a superfície durante a tarde, engordando a espuma e deixando a parede menos definida. Ainda dá pra pegar onda tranquila, já que esse pico é conhecido por ser acessível pra todo mundo, só não espere puxar manobra ou parede longa. A dica é procurar os picos mais protegidos ao longo da praia, onde o vento incomoda menos.",
+          "janela": "12h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|cintura-peito|curto-vaga|glassy|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tarde sem vento no coração do surf carioca",
+          "analise": "O Arpoador vem com praticamente nada de vento essa tarde, então a face fica lisa mesmo sem terral pra ajudar, o que já valoriza qualquer onda que entrar. O swell chega de um ângulo mais de borda, não é o encaixe perfeito, e o período curto mantém a série apertada, sem muito tempo de sobra entre as ondas. Na água a sensação é de parede convidativa, fácil de ler, mas com pouco puxão por trás pra render manobra grande. É um pico concorrido e o costão que emoldura o pico vira palco, então respeitar a fila é o combinado de sempre por ali. Vale surfar mais perto do fim de tarde, quando costuma esvaziar um pouco.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "ipanema|cintura-peito|curto-vaga|glassy|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Ipanema lisa com swell de leste",
+          "analise": "Sem vento praticamente nenhum essa tarde, a água em Ipanema fica espelhada, o tipo de condição que deixa qualquer onda pequena mais bonita de surfar. O swell entra de um ângulo que não é o ideal pra praia, e as ilhas na frente ainda reduzem parte dessa energia antes de chegar na areia, então a onda vem mais mansa do que o normal pro tamanho. O período curto segura séries próximas, sem muito espaço pra escolher a melhor. Como o pico social costuma concentrar gente, vale procurar os cantos afastados, onde o surf costuma funcionar melhor que no meio da praia. Boa tarde pra treinar remada com calma, sem pressa nenhuma da água.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "itacoatiara|cintura-peito|curto-vaga|glassy|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Itacoa quase sem vento, mas sem força de sobra",
+          "analise": "O vento tá tão fraco essa tarde que a condição chega perto de vítrea, mesmo sendo tecnicamente um vento do mar pra terra, o efeito dele quase não aparece na água. O swell entra de um ângulo que não é o que costuma trazer o tubo pesado da casa, então a energia vem mais contida do que esse pico tradicional entrega nos seus melhores dias. Quem conhece o fundo raso vai sentir a descida ainda seca e rápida, só que sem aquela pressão brutal de costume. É condição pra quem já respeita o localismo forte do pico e sabe se posicionar sem invadir a vez de ninguém. Vale aproveitar justamente por ser um dia mais tranquilo pra quem tá pegando confiança ali.",
+          "janela": "14h-17h",
+          "aviso": "Fundo raso e comunidade de locais tradicional; melhor observar a dinâmica antes de remar pro pico."
+        }
+      ]
+    },
+    "pitangueiras|cintura-peito|medio-7a9|lateral-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã organizada na praia central",
+          "analise": "Pitangueiras recebe um período mais espaçado essa manhã, o que já ajuda a série a vir mais organizada, dando tempo de enxergar a onda chegando e se posicionar sem correria. O swell entra de um jeito que não é o encaixe perfeito da praia, mas a energia moderada segura ondas com corpo mesmo assim. O vento sopra de lado, mexendo um pouco a superfície sem chegar a destruir a parede, então você vai sentir uma textura leve na descida, nada que atrapalhe demais. Como é praia urbana e bem movimentada, o pico enche rápido conforme o dia avança. A dica é chegar cedo pra pegar a água ainda mais vazia e organizada.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "costao-do-santinho|peito-ombro|medio-7a9|offshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde de terral firme junto ao costão",
+          "analise": "O swell encaixa bem na janela do Santinho essa tarde, entrando em cheio na bancada e trazendo energia consistente pra formar paredes com corpo de verdade. O vento sai da terra pro mar com bastante força, o que alisa a face mas também segura o labio da onda, então você vai sentir a entrada mais desafiadora, pedindo remada firme pra vencer o vento contra. O período mais espaçado ajuda a organizar as séries, dando tempo de escolher a melhor onda em vez de remar pra qualquer uma. Esse trecho fica colado ao costão que guarda inscrições rupestres, cenário que já vale a sessão por si só. Vale se preparar pra remar com força extra na entrada e aproveitar a parede limpa depois que passar o pique inicial.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|joelho-cintura|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Noite modesta na praia selvagem",
+          "analise": "Grumari recebe um swell que entra bem na janela agora à noite, mas a energia por trás é baixa, então a onda vem pequena e sem muito peso mesmo encaixando certo. O vento do mar pra terra bagunça a pouca força que existe, enrugando a face e deixando tudo menos definido. Na água a sensação seria de pouca pressão no drop, remada tranquila mas retorno curto, o tipo de condição honesta sem grande recompensa. O cenário intocado ao lado da Prainha, numa área toda protegida, segue sendo o grande atrativo do lugar mesmo em dia fraco. Vale mais pela experiência isolada do que pela qualidade da onda em si hoje.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|cintura-peito|medio-7a9|lateral-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã mais leve na onda mais forte do Guarujá",
+          "analise": "O Tombo aparece hoje de manhã com energia moderada, um tom bem mais ameno do que esse pico costuma entregar nos seus dias de fama. O swell chega de um ângulo que não é o encaixe perfeito, então falta aquela potência extra característica da casa. O período mais espaçado organiza a série, e o vento de lado só mexe de leve a superfície, sem chegar a atrapalhar a leitura da parede. Mesmo sendo um dia mais tranquilo, vale lembrar que esse é o pico que recebe campeonato e tem fama de pesado, então o fundo ainda cobra respeito. Bom momento pra quem quer sentir a energia do lugar sem o susto do dia grande.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-tijuca|cintura-peito|curto-vaga|glassy|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde lisa no extenso litoral da Barra",
+          "analise": "Sem vento pra falar de errado essa tarde, a água na Barra da Tijuca fica com a face limpa, mesmo o swell chegando de um ângulo que não é o ideal pra praia. O período curto mantém a série apertada, então as ondas vêm próximas umas das outras, sem muito espaço de sobra pra escolher. Como esse é um trecho enorme com vários picos ao longo dos postos, a qualidade varia bastante conforme o banco de areia daquele ponto específico. Na água você vai sentir parede convidativa mas com pouco puxão de energia por trás. A dica é rodar pelos postos até achar o pico com banco mais formado, em vez de ficar preso no primeiro que aparecer.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|joelho-cintura|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite pequena mas encaixada na enseada",
+          "analise": "A Prainha segue firme na fama de sempre ter onda, porque o formato em V da enseada concentra a energia do swell mesmo num dia de força baixa como esse agora à noite. O swell entra bem na janela, então mesmo pequena a onda vem com uma organização boa, puxando pro lado que forma a direita famosa do lugar. O vento do mar pra terra atrapalha um pouco, enrugando a face e tirando parte da limpeza que o pico merece. Cercada de mata atlântica numa área toda protegida, a sensação na água costuma ser mais solitária que a maioria dos picos do Rio. Vale respeitar o localismo forte que existe ali, mesmo num dia mais modesto como esse.",
+          "janela": null,
+          "aviso": "Área de mata fechada e acesso mais isolado; localismo respeitado, então chegue com humildade."
+        }
+      ]
+    },
+    "itacoatiara|cintura-peito|medio-7a9|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã de Itacoa com tubo em tamanho contido",
+          "analise": "O swell encaixa direitinho na janela da Itacoatiara essa manhã, entrando em cheio na bancada mesmo com energia moderada por trás. O vento do mar pra terra já bagunça um pouco a face desde cedo, tirando parte da limpeza que esse pico costuma ter em dias de terral. Ainda assim, quem conhece o fundo raso da casa vai sentir a descida seca e rápida de sempre, só que numa versão mais contida do tubo tradicional. É um pico de cultura forte de bodyboard e localismo respeitado, então remar sem pressa e observar antes de se posicionar faz parte do jogo. Vale aproveitar o tamanho mais tranquilo pra treinar leitura de fundo raso com menos risco.",
+          "janela": "6h-9h",
+          "aviso": "Fundo raso mesmo em dia pequeno; cuidado redobrado na queda e leitura curta do pico."
+        }
+      ]
+    },
+    "arroio-do-sal|cintura-peito|medio-7a9|offshore-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Manhã de terral no litoral norte gaúcho",
+          "analise": "Arroio do Sal recebe um vento que sai da terra pro mar com força moderada essa manhã, alisando bem a face de quem for surfar cedo. O detalhe é que o swell chega de um ângulo que não é exatamente o que essa praia exposta aproveita melhor, então falta um pouco de potência apesar do vento favorável. O período mais espaçado ajuda a organizar a série, dando tempo de se posicionar com calma antes de cada onda. Na água a sensação deve ser de parede limpa mas com puxão mediano, nada de energia sobrando. Vale aproveitar justamente pelo vento a favor, já que esse é o fator que mais muda o pico por ali.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "torres|peito-ombro|longo-11a13|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Tarde de swell longo na capital gaúcha do surf",
+          "analise": "O swell chega em cheio na janela de Torres essa tarde, vindo bem do sul, o quadrante que essa praia exposta ao Atlântico mais gosta de receber. O período bem espaçado deixa a série organizada, dando tempo de sobra pra ver a onda chegando de longe e escolher a melhor posição antes do drop. A energia forte por trás garante corpo real na parede, com um vento de lado fraco que só mexe de leve a superfície sem atrapalhar a leitura. Junto aos molhes e à Guarita, o cenário tradicional do surf gaúcho ganha ainda mais peso nesse tipo de condição. Vale entrar bem equipado contra o frio da água, porque o resto da receita tá quase perfeita.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "jureia|ombro-cabeca|bom-9a11|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite de energia grande na estação ecológica",
+          "analise": "A Jureia recebe um swell grande que encaixa bem na janela agora à noite, trazendo bastante energia pesada por trás de cada série. O período mais espaçado ajuda a organizar as ondas, mas o vento do mar pra terra atrapalha a limpeza da face, deixando a parede mais enrugada do que o tamanho merecia. Quem entrar vai sentir remada puxada e queda com peso real, o tipo de condição que exige respeito mesmo pra quem já tem estrada. A estação ecológica ao redor mantém o lugar praticamente vazio, então a sensação na água costuma ser de isolamento total. Vale ir com companhia e cautela redobrada, já que ajuda por perto é rara por ali.",
+          "janela": null,
+          "aviso": "Tamanho grande e vento bagunçando a face numa área isolada e pouco frequentada; entre só com experiência e companhia."
+        }
+      ]
+    },
+    "farol-de-santa-marta|cabeca-1.5x|longo-11a13|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Noite épica no point de Laguna",
+          "analise": "O swell chega enorme e encaixado em cheio na janela do Farol de Santa Marta agora à noite, com energia brutal por trás de cada onda que rebenta na pedra. O período muito espaçado deixa a série lenta e organizada, dando tempo de sobra pra ler cada onda com calma antes de se comprometer. O vento sai da terra pro mar, mesmo fraco já basta pra alisar a face desse point de pedra, um dos mais respeitados do Brasil quando o sul entrega swell assim. Na água a sensação é de pressão total no drop, parede longa e potente, sem espaço pra erro de leitura. É condição só pra quem já rodou muito point break pesado, com fundo de pedra que não perdoa erro de posicionamento.",
+          "janela": null,
+          "aviso": "Fundo de pedra e energia altíssima; só pra surfistas muito experientes, erro de leitura ali sai caro."
+        }
+      ]
+    },
+    "arpoador|cabeca-1.5x|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Noite grande no coração do surf carioca",
+          "analise": "O Arpoador recebe um swell bem grande e encaixado em cheio na janela agora à noite, trazendo energia forte que muda completamente a cara desse pico normalmente mais suave. O período mais espaçado organiza a série, dando tempo pra escolher a onda certa em vez de remar desesperado pra qualquer uma. O vento de lado mexe moderadamente a superfície, texturizando a face sem destruir a força que vem por trás. O costão que emoldura o pico ganha ainda mais peso nesse tamanho, e a plateia que costuma lotar a areia de dia dá lugar a uma sessão mais fechada à noite. Vale entrar só quem já tem estrada nesse tipo de energia, respeitando quem já tá na água.",
+          "janela": null,
+          "aviso": "Tamanho bem acima do normal do pico; remada e leitura de canal exigem experiência de verdade."
+        }
+      ]
+    },
+    "recreio|cabeca-1.5x|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Noite forte na ponta do Recreio",
+          "analise": "A ponta do Recreio pega o swell de sul com tudo agora à noite, e a energia forte por trás mostra exatamente por que esse trecho é respeitado quando o mar cresce. O período espaçado organiza bem a série, com tempo de sobra pra se posicionar antes de cada onda chegar. O vento de lado sopra com uma força que já se sente na água, texturizando a face mas sem tirar o corpo que a onda carrega. Esse beach break longo da zona oeste ganha pico de peso real nesse tamanho, bem diferente do dia a dia mais tranquilo por ali. Vale remar com folga da zona de arrebentação e escolher bem o canal de saída, porque o volume de água que passa é grande.",
+          "janela": null,
+          "aviso": "Energia e tamanho elevados mudam o perfil normal do pico; atenção redobrada com o canal e a corrente de retorno."
+        }
+      ]
+    },
+    "ipanema|cabeca-1.5x|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Ipanema grande, longe do dia a dia social",
+          "analise": "Ipanema recebe um swell grande e bem encaixado agora à noite, o tipo de energia que muda completamente a rotina desse pico mais conhecido pela praia cheia do que pela onda pesada. O período espaçado organiza as séries, e mesmo com as ilhas na frente reduzindo parte da força, ainda sobra bastante corpo pra sentir na remada. O vento de lado mexe moderadamente a superfície, dando uma textura que pede mais precisão no pop-up, o movimento de levantar da prancha de uma vez. Nos cantos, onde o surf sempre funciona melhor que no meio social da praia, a onda deve chegar com ainda mais força concentrada. Vale entrar só com bagagem pra esse tamanho, já que o perfil raso de Ipanema não perdoa hesitação num dia assim.",
+          "janela": null,
+          "aviso": "Tamanho bem acima do normal pra essa praia democrática; fundo raso cobra remada e leitura seguras."
+        }
+      ]
+    },
+    "tramandai|cintura-peito|bom-9a11|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã organizada junto à barra gaúcha",
+          "analise": "Tramandaí recebe um swell que encaixa bem na janela essa manhã, trazendo energia moderada com um período mais espaçado que organiza a série direitinho. Isso já ajuda bastante, já que esse trecho junto à barra costuma depender demais de maré e vento pra funcionar bem. O vento de lado mexe a superfície sem destruir a parede, então você vai sentir uma leve textura na descida, mas nada que atrapalhe a leitura da onda. Na água a sensação deve ser de corpo suficiente pra puxar manobra sem exigir remada de atleta. Vale aproveitar logo cedo, já que o vento tende a mudar de perfil conforme o dia esquenta por ali.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|cabeca-1.5x|bom-9a11|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã grande na praia central do Guarujá",
+          "analise": "Pitangueiras amanhece com um swell grande e bem encaixado, saindo completamente do perfil tranquilo que costuma marcar essa praia urbana e democrática. O período espaçado organiza a série, dando tempo de sobra pra ler cada onda com calma antes de remar. O vento de lado mexe moderadamente a superfície, texturizando a face sem tirar a força que vem por trás desse tamanho fora do comum. Por ser um pico central e bem movimentado, a combinação de mar grande com água cheia de gente pede atenção redobrada com quem tá por perto. Vale entrar só quem já tem confiança nesse tamanho, e observar da areia antes se tiver qualquer dúvida.",
+          "janela": "6h-9h",
+          "aviso": "Mar bem maior que o normal numa praia urbana e cheia; cuidado com o volume de gente na água junto com o tamanho da onda."
+        }
+      ]
+    },
+    "tombo|cabeca-1.5x|bom-9a11|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "O Tombo mostra a força que tem fama",
+          "analise": "O Tombo recebe hoje de manhã exatamente o tamanho e a energia que justificam a fama de onda mais forte do Guarujá, com o swell de sul encaixando em cheio na janela. O período espaçado organiza bem a série, dando tempo de se posicionar antes de cada onda pesada chegar. O vento de lado texturiza a superfície sem tirar o corpo que a onda carrega, então a queda no drop vem com pressão real. Esse é o pico que recebe campeonato justamente por entregar dias assim, e hoje ele cumpre a promessa. Vale entrar só com experiência de beach break pesado, porque o fundo cobra leitura precisa nesse tamanho.",
+          "janela": "6h-9h",
+          "aviso": "Onda pesada mesmo pros padrões já fortes desse pico; só pra quem já surfa beach break de força com segurança."
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-18T18:22:18.201Z"
+  "generated_at": "2026-09-19T00:08:14.160Z"
 }
