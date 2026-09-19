@@ -177439,7 +177439,535 @@
           "aviso": "É a energia mais forte do lote: canseira vem rápido e onda de dentro pode prender quem não tiver ritmo de dia grande, entre com parceiro de referência."
         }
       ]
+    },
+    "torres|peito-ombro|curto-vaga|lateral-forte|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Torres entra na tarde com mar mediano",
+          "analise": "Torres recebe a tarde: um vento lateral forte bagunça de banda, deixando a face irregular, e vindo do leste, o swell fica na borda da janela dessa praia, entra meio de banda e rende menos do que poderia. Na água, a força é moderada, o suficiente pra sentir o impulso sem cansar, e o período é curto, série atropelada, sem muito respiro entre as ondas. É uma condição de meio de tabela, quem já manja da água aproveita mais; os molhes e a Guarita marcam o visual desse pico gaúcho. Vale prestar atenção no intervalo das séries pra não perder a melhor onda.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|cintura-peito|curto-vaga|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Macumba atravessa a tarde com mar mediano",
+          "analise": "No fim da tarde, Macumba mostra a condição: o terral (vento que sai da terra pro mar e alisa a onda) sopra com força boa e segura a parede, e o swell vindo do sudeste entra certinho na janela que essa praia gosta, batendo de frente e ganhando força. Na água, a energia fica no meio termo, nem sobra nem falta, e as ondas se sucedem rápido, série fechada que não dá muita folga. É uma condição amigável, dá pra todo mundo entrar sem susto; reduto tradicional de longboard, escola de muita gente do Rio. Vale escolher bem o pico e entrar antes de encher.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|ombro-cabeca|medio-7a9|onshore-fraco|noite|fora": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Praia do Ferrugem tem noite de mar pesado",
+          "analise": "Praia do Ferrugem atravessa a noite: o maral (vento que vem do mar e bagunça a onda) sopra fraco, incomoda pouco, e vindo do nordeste, o swell escapa da janela ideal e chega mais bagunçado do que macio. Na água, a energia vem pesada, a remada cansa rápido e o drop cobra postura, e a série segue num ritmo mediano, dá pra respirar entre uma onda e outra. É uma condição pesada, hoje passa do meio de tabela e pede experiência de verdade; point badalado de Garopaba, movimento típico da cena catarinense. Vale entrar já aquecido, porque a remada e o drop cobram o corpo inteiro.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "torres|peito-ombro|medio-7a9|lateral-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Torres amanhece com mar com corpo",
+          "analise": "Torres começa o dia: o través, vento soprando de lado, sopra moderado e mexe a parede de banda, e o swell vindo do leste chega de raspão, numa direção que só passa pela borda da janela ideal, perdendo um pouco de força e prumo. Na água, a força tem corpo, o drop já pesa um pouco na perna, e o período fica no meio termo, tempo razoável pra se recompor depois de cada onda. É uma condição de meio de tabela, quem já manja da água aproveita mais; os molhes e a Guarita marcam o visual desse pico gaúcho. Vale ficar de olho na fila e escolher a onda certa, porque a energia já pune erro de leitura.",
+          "janela": "8h-11h",
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|peito-ombro|curto-vaga|onshore-forte|manha|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Joaquina abre a manhã com mar mediano",
+          "analise": "Assim que clareia, Joaquina mostra a condição: um maral forte estraga a leitura, vento que vem do mar e não deixa a parede se formar direito, e vindo do nordeste, o swell fica na borda da janela dessa praia, entra meio de banda e rende menos do que poderia. Na água, a energia fica no meio termo, nem sobra nem falta, e as ondas se sucedem rápido, série fechada que não dá muita folga. É uma condição dentro do padrão desse pico mais exigente, ainda pede alguma experiência; as dunas ao lado lembram por que esse pico virou palco histórico de campeonato. Vale prestar atenção no intervalo das séries pra não perder a melhor onda.",
+          "janela": "6h-11h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-lagoa|peito-ombro|medio-7a9|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Barra da Lagoa tem noite de mar mediano",
+          "analise": "Barra da Lagoa encara a noite: o terral (vento que sai da terra pro mar e alisa a onda) sopra com força boa e segura a parede, e o swell vindo do nordeste entra certinho na janela que essa praia gosta, batendo de frente e ganhando força. Na água, a energia é mediana, dá um empurrão razoável na remada, e a série segue num ritmo mediano, dá pra respirar entre uma onda e outra. É uma condição amigável, dá pra todo mundo entrar sem susto; a vila de pescadores e o canal dão charme ao pico. Vale escolher bem o pico e entrar antes de encher.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|ombro-cabeca|medio-7a9|onshore-fraco|noite|fora": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Ibiraquera encara a noite com mar pesado",
+          "analise": "Ibiraquera fecha o dia: o maral (vento que vem do mar e bagunça a onda) sopra fraco, incomoda pouco, e vindo do nordeste, o swell escapa da janela ideal e chega mais bagunçado do que macio. Na água, a força é pesada na água, quem hesitar na remada fica pra trás, e o período fica no meio termo, tempo razoável pra se recompor depois de cada onda. É uma condição pesada, hoje passa do meio de tabela e pede experiência de verdade; a lagoa ao lado, point de kite, fica logo atrás da arrebentação. Vale entrar já aquecido, porque a remada e o drop cobram o corpo inteiro.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|ombro-cabeca|medio-7a9|lateral-forte|tarde|fora": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Praia do Porto (Imbituba) atravessa a tarde com mar pesado",
+          "analise": "No fim da tarde, Praia do Porto (Imbituba) mostra a condição: o través vem forte, esse vento de lado, e chacoalha a parede inteira, e o swell vindo do nordeste foge da janela que essa praia prefere, entra torto e perde organização. Na água, a energia é grande, o caldo pega se a queda não for limpa, e a série tem um intervalo confortável, nem apertada nem tão espaçada. É uma condição pesada, território que já é de quem tem estrada, hoje ainda mais puxado; pico que já sediou etapa de circuito mundial, referência do Sul. Vale respeitar o canal e não se posicionar embaixo do pico, o caldo pesa.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|ombro-cabeca|medio-7a9|onshore-moderado|noite|fora": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Praia do Porto (Imbituba) tem noite de mar pesado",
+          "analise": "Praia do Porto (Imbituba) atravessa a noite: um maral moderado enruga a água, esse vento que vem do mar e atrapalha o acabamento da onda, e vindo do nordeste, o swell escapa da janela ideal e chega mais bagunçado do que macio. Na água, a energia vem pesada, a remada cansa rápido e o drop cobra postura, e a série segue num ritmo mediano, dá pra respirar entre uma onda e outra. É uma condição pesada, território que já é de quem tem estrada, hoje ainda mais puxado; pico que já sediou etapa de circuito mundial, referência do Sul. Vale entrar já aquecido, porque a remada e o drop cobram o corpo inteiro.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|ombro-cabeca|medio-7a9|onshore-fraco|noite|fora": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Praia da Silveira encara a noite com mar pesado",
+          "analise": "Praia da Silveira ganha a noite: um maral fraco, esse vento que vem do mar pra terra, só enruga de leve a superfície, e o swell vindo do nordeste foge da janela que essa praia prefere, entra torto e perde organização. Na água, a força é pesada na água, quem hesitar na remada fica pra trás, e o período fica no meio termo, tempo razoável pra se recompor depois de cada onda. É uma condição pesada, território que já é de quem tem estrada, hoje ainda mais puxado; comunidade de pescadores que também surfam, rotina quase diária de água. Vale respeitar o canal e não se posicionar embaixo do pico, o caldo pesa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "rosa|ombro-cabeca|medio-7a9|lateral-moderado|noite|fora": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Praia do Rosa fecha o dia com mar pesado",
+          "analise": "Ao cair da noite, Praia do Rosa segue com a condição: um vento lateral moderado empurra a água de lado e atrapalha um pouco o acabamento, e vindo do nordeste, o swell escapa da janela ideal e chega mais bagunçado do que macio. Na água, a energia é grande, o caldo pega se a queda não for limpa, e a série tem um intervalo confortável, nem apertada nem tão espaçada. É uma condição pesada, hoje passa do meio de tabela e pede experiência de verdade; a enseada cênica costuma ter baleia franca à vista no inverno. Vale entrar já aquecido, porque a remada e o drop cobram o corpo inteiro.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "atalaia|ombro-cabeca|curto-vaga|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Atalaia tem manhã de mar pesado",
+          "analise": "Atalaia recebe a manhã: o través, vento soprando de lado, sopra moderado e mexe a parede de banda, e o swell vindo do nordeste entra certinho na janela que essa praia gosta, batendo de frente e ganhando força. Na água, a energia vem pesada, a remada cansa rápido e o drop cobra postura, e a série vem curta e apertada, uma onda quase em cima da outra. É uma condição pesada, hoje passa do meio de tabela e pede experiência de verdade; beach break típico do litoral norte catarinense. Vale respeitar o canal e não se posicionar embaixo do pico, o caldo pesa.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "jureia|peito-ombro|medio-7a9|lateral-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Jureia amanhece com mar mediano",
+          "analise": "Jureia abre o dia: o través, vento soprando de lado, sopra fraco e quase não interfere, e vindo do leste, o swell fica na borda da janela dessa praia, entra meio de banda e rende menos do que poderia. Na água, a força é moderada, o suficiente pra sentir o impulso sem cansar, e o período fica no meio termo, tempo razoável pra se recompor depois de cada onda. É uma condição de meio de tabela, quem já manja da água aproveita mais; estação ecológica ao redor, natureza preservada e pouca gente na água. Vale prestar atenção no intervalo das séries pra não perder a melhor onda.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "jureia|peito-ombro|curto-vaga|onshore-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Jureia atravessa a tarde com mar mediano",
+          "analise": "No fim da tarde, Jureia mostra a condição: o maral (vento que vem do mar pra terra e bagunça a onda) sopra moderado e já mexe bastante na parede, e o swell vindo do leste chega de raspão, numa direção que só passa pela borda da janela ideal, perdendo um pouco de força e prumo. Na água, a energia fica no meio termo, nem sobra nem falta, e as ondas se sucedem rápido, série fechada que não dá muita folga. É uma condição de meio de tabela, quem já manja da água aproveita mais; estação ecológica ao redor, natureza preservada e pouca gente na água. Vale escolher bem o pico e entrar antes de encher.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "jureia|peito-ombro|curto-vaga|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Jureia tem noite de mar mediano",
+          "analise": "Jureia atravessa a noite: o terral (vento que sai da terra pro mar e alisa a onda) sopra fraco, só um retoque na superfície, e vindo do leste, o swell acerta em cheio a janela dessa praia e chega com prumo. Na água, a energia é mediana, dá um empurrão razoável na remada, e a série vem curta e apertada, uma onda quase em cima da outra. É uma condição de meio de tabela, quem já manja da água aproveita mais; estação ecológica ao redor, natureza preservada e pouca gente na água. Vale prestar atenção no intervalo das séries pra não perder a melhor onda.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "recreio|cintura-peito|curto-vaga|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Recreio dos Bandeirantes encara a noite com mar leve",
+          "analise": "Recreio dos Bandeirantes ganha a noite: o terral (vento que sai da terra pro mar e alisa a onda) sopra com força boa e segura a parede, e o swell vindo do leste entra certinho na janela que essa praia gosta, batendo de frente e ganhando força. Na água, a força vem fraca, mais pra brincar do que pra cobrar, e o período é curto, série atropelada, sem muito respiro entre as ondas. É uma condição mais fraca do que esse pico costuma entregar, boa pra treinar sem o peso de sempre; a ponta segura bem quando o swell chega com força. Vale ir de prancha maior e focar em posicionamento, guardando energia pra outro dia mais gordo.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "grumari|cintura-peito|curto-vaga|lateral-fraco|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Grumari atravessa a tarde com mar leve",
+          "analise": "Ao longo da tarde, Grumari mantém a condição: o través, vento soprando de lado, sopra fraco e quase não interfere, e vindo do leste, o swell fica na borda da janela dessa praia, entra meio de banda e rende menos do que poderia. Na água, a energia baixa deixa a remada tranquila, sem susto, e as ondas se sucedem rápido, série fechada que não dá muita folga. É uma condição mais fraca do que esse pico costuma entregar, boa pra treinar sem o peso de sempre; área de proteção ambiental sem construção por perto, cenário intocado. Vale aproveitar o clima tranquilo pra treinar sem pressão.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|cintura-peito|curto-vaga|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Macumba tem noite de mar leve",
+          "analise": "Macumba encara a noite: o terral (vento que sai da terra pro mar e alisa a onda) sopra com força boa e segura a parede, e o swell vindo do leste entra certinho na janela que essa praia gosta, batendo de frente e ganhando força. Na água, a energia é leve, sem grande empurrão na remada, e a série vem curta e apertada, uma onda quase em cima da outra. É uma condição tranquila, ótima pra quem tá começando ou só quer curtir sem pressão; reduto tradicional de longboard, escola de muita gente do Rio. Vale ir de prancha maior e focar em posicionamento, guardando energia pra outro dia mais gordo.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|cintura-peito|medio-7a9|onshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tombo amanhece com mar mediano",
+          "analise": "Tombo abre o dia: o maral (vento que vem do mar e bagunça a onda) sopra fraco, incomoda pouco, e vindo do leste, o swell fica na borda da janela dessa praia, entra meio de banda e rende menos do que poderia. Na água, a força é moderada, o suficiente pra sentir o impulso sem cansar, e o período fica no meio termo, tempo razoável pra se recompor depois de cada onda. É uma condição dentro do padrão desse pico mais exigente, ainda pede alguma experiência; tradicional sede de campeonato, fama de onda mais forte do Guarujá. Vale prestar atenção no intervalo das séries pra não perder a melhor onda.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|cintura-peito|curto-vaga|onshore-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tombo atravessa a tarde com mar mediano",
+          "analise": "No fim da tarde, Tombo mostra a condição: o maral (vento que vem do mar pra terra e bagunça a onda) sopra moderado e já mexe bastante na parede, e o swell vindo do leste chega de raspão, numa direção que só passa pela borda da janela ideal, perdendo um pouco de força e prumo. Na água, a energia fica no meio termo, nem sobra nem falta, e as ondas se sucedem rápido, série fechada que não dá muita folga. É uma condição dentro do padrão desse pico mais exigente, ainda pede alguma experiência; tradicional sede de campeonato, fama de onda mais forte do Guarujá. Vale escolher bem o pico e entrar antes de encher.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|cintura-peito|medio-7a9|offshore-moderado|manha|fora": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Joaquina tem manhã de mar mediano",
+          "analise": "Logo cedo, Joaquina já mostra a cara: um terral moderado penteia a água, esse vento que sai da terra e deixa a face lisa, e vindo do nordeste, o swell escapa da janela ideal e chega mais bagunçado do que macio. Na água, a energia é mediana, dá um empurrão razoável na remada, e a série segue num ritmo mediano, dá pra respirar entre uma onda e outra. É uma condição dentro do padrão desse pico mais exigente, ainda pede alguma experiência; as dunas ao lado lembram por que esse pico virou palco histórico de campeonato. Vale prestar atenção no intervalo das séries pra não perder a melhor onda.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-floripa|cintura-peito|curto-vaga|onshore-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Praia Brava (Floripa) encara a noite com mar mediano",
+          "analise": "Praia Brava (Floripa) ganha a noite: o maral vem forte, esse vento que vem do mar pra terra, e desmancha quase tudo antes de a onda fechar, e o swell vindo do nordeste chega de raspão, numa direção que só passa pela borda da janela ideal, perdendo um pouco de força e prumo. Na água, a força é moderada, o suficiente pra sentir o impulso sem cansar, e o período é curto, série atropelada, sem muito respiro entre as ondas. É uma condição dentro do padrão desse pico mais exigente, ainda pede alguma experiência; fama de onda mais forte do norte de Floripa, localismo à espreita. Vale escolher bem o pico e entrar antes de encher.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|cintura-peito|curto-vaga|lateral-fraco|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Prainha atravessa a tarde com mar leve",
+          "analise": "Ao longo da tarde, Prainha mantém a condição: o través, vento soprando de lado, sopra fraco e quase não interfere, e vindo do leste, o swell fica na borda da janela dessa praia, entra meio de banda e rende menos do que poderia. Na água, a energia baixa deixa a remada tranquila, sem susto, e as ondas se sucedem rápido, série fechada que não dá muita folga. É uma condição bem mais leve do que o normal desse pico mais puxado, dia de folga mesmo pra quem gosta de mar grande; a enseada em formato de baía concentra energia mesmo quando o resto do litoral tá fraco. Vale aproveitar o clima tranquilo pra treinar sem pressão.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "prainha|cintura-peito|curto-vaga|offshore-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Prainha tem noite de mar leve",
+          "analise": "Prainha encara a noite: o terral (vento que sai da terra pro mar e alisa a onda) sopra com força boa e segura a parede, e o swell vindo do leste chega de raspão, numa direção que só passa pela borda da janela ideal, perdendo um pouco de força e prumo. Na água, a energia é leve, sem grande empurrão na remada, e a série vem curta e apertada, uma onda quase em cima da outra. É uma condição bem mais leve do que o normal desse pico mais puxado, dia de folga mesmo pra quem gosta de mar grande; a enseada em formato de baía concentra energia mesmo quando o resto do litoral tá fraco. Vale ir de prancha maior e focar em posicionamento, guardando energia pra outro dia mais gordo.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "maresias|joelho-cintura|curto-vaga|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Maresias encara a noite com mar bem fraco",
+          "analise": "Maresias fecha o dia: um maral moderado enruga a água, esse vento que vem do mar e atrapalha o acabamento da onda, e vindo do sul, o swell acerta em cheio a janela dessa praia e chega com prumo. Na água, a energia tá baixa, mal empurra a água, e o período é curto, série atropelada, sem muito respiro entre as ondas. É uma condição bem mais leve do que o normal desse pico mais puxado, dia de folga mesmo pra quem gosta de mar grande; terra que virou point de peregrinação depois dos títulos de Medina. Vale aproveitar pra treinar remada e leitura de onda com calma.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|peito-ombro|medio-7a9|offshore-moderado|tarde|fora": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Praia do Porto (Imbituba) atravessa a tarde com mar mediano",
+          "analise": "Praia do Porto (Imbituba) segue a tarde: o terral (vento que sai da terra pro mar e alisa a onda) sopra com força boa e segura a parede, e o swell vindo do nordeste foge da janela que essa praia prefere, entra torto e perde organização. Na água, a energia fica no meio termo, nem sobra nem falta, e a série tem um intervalo confortável, nem apertada nem tão espaçada. É uma condição dentro do padrão desse pico mais exigente, ainda pede alguma experiência; pico que já sediou etapa de circuito mundial, referência do Sul. Vale escolher bem o pico e entrar antes de encher.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|peito-ombro|medio-7a9|offshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Farol de Santa Marta tem tarde de mar com corpo",
+          "analise": "Farol de Santa Marta segue a tarde: um terral moderado penteia a água, esse vento que sai da terra e deixa a face lisa, e vindo do nordeste, o swell acerta em cheio a janela dessa praia e chega com prumo. Na água, a energia já tem corpo, a remada pede umas braçadas a mais, e a série segue num ritmo mediano, dá pra respirar entre uma onda e outra. É uma condição dentro do padrão desse pico mais exigente, ainda pede alguma experiência; point de pedra de fama mundial, cenário bruto de Laguna. Vale chegar com a prancha ajustada pro tamanho, a remada vai exigir.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|cintura-peito|medio-7a9|onshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Pitangueiras amanhece com mar mediano",
+          "analise": "Pitangueiras começa o dia: um maral fraco, esse vento que vem do mar pra terra, só enruga de leve a superfície, e o swell vindo do leste chega de raspão, numa direção que só passa pela borda da janela ideal, perdendo um pouco de força e prumo. Na água, a força é moderada, o suficiente pra sentir o impulso sem cansar, e o período fica no meio termo, tempo razoável pra se recompor depois de cada onda. É uma condição amigável, dá pra todo mundo entrar sem susto; praia central e urbana do Guarujá, sempre movimentada. Vale escolher bem o pico e entrar antes de encher.",
+          "janela": "8h-11h",
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|cintura-peito|curto-vaga|onshore-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Pitangueiras atravessa a tarde com mar mediano",
+          "analise": "Ao longo da tarde, Pitangueiras mantém a condição: um maral moderado enruga a água, esse vento que vem do mar e atrapalha o acabamento da onda, e vindo do leste, o swell fica na borda da janela dessa praia, entra meio de banda e rende menos do que poderia. Na água, a energia fica no meio termo, nem sobra nem falta, e as ondas se sucedem rápido, série fechada que não dá muita folga. É uma condição amigável, dá pra todo mundo entrar sem susto; praia central e urbana do Guarujá, sempre movimentada. Vale prestar atenção no intervalo das séries pra não perder a melhor onda.",
+          "janela": "14h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "atalaia|peito-ombro|medio-7a9|offshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Atalaia tem tarde de mar mediano",
+          "analise": "Atalaia atravessa a tarde: o terral (vento que sai da terra pro mar e alisa a onda) sopra com força boa e segura a parede, e o swell vindo do leste entra certinho na janela que essa praia gosta, batendo de frente e ganhando força. Na água, a energia é mediana, dá um empurrão razoável na remada, e a série segue num ritmo mediano, dá pra respirar entre uma onda e outra. É uma condição de meio de tabela, quem já manja da água aproveita mais; beach break típico do litoral norte catarinense. Vale escolher bem o pico e entrar antes de encher.",
+          "janela": "12h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-lagoa|cintura-peito|curto-vaga|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Barra da Lagoa amanhece com mar leve",
+          "analise": "Barra da Lagoa abre o dia: um maral moderado enruga a água, esse vento que vem do mar e atrapalha o acabamento da onda, e vindo do leste, o swell acerta em cheio a janela dessa praia e chega com prumo. Na água, a força vem fraca, mais pra brincar do que pra cobrar, e o período é curto, série atropelada, sem muito respiro entre as ondas. É uma condição tranquila, ótima pra quem tá começando ou só quer curtir sem pressão; a vila de pescadores e o canal dão charme ao pico. Vale aproveitar o clima tranquilo pra treinar sem pressão.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "capao-da-canoa|cintura-peito|medio-7a9|offshore-forte|manha|borda": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Capão da Canoa abre a manhã com mar mediano",
+          "analise": "Capão da Canoa amanhece: o terral vem forte, esse vento que sai da terra pro mar, e deixa a parede bem desenhada, embora atrapalhe quem rema contra ele, e o swell vindo do leste chega de raspão, numa direção que só passa pela borda da janela ideal, perdendo um pouco de força e prumo. Na água, a energia fica no meio termo, nem sobra nem falta, e a série tem um intervalo confortável, nem apertada nem tão espaçada. É uma condição amigável, dá pra todo mundo entrar sem susto; principal point de referência do litoral norte gaúcho. Vale escolher bem o pico e entrar antes de encher.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "mocambique|peito-ombro|curto-vaga|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Moçambique tem manhã de mar mediano",
+          "analise": "Logo cedo, Moçambique já mostra a cara: um maral moderado enruga a água, esse vento que vem do mar e atrapalha o acabamento da onda, e vindo do leste, o swell acerta em cheio a janela dessa praia e chega com prumo. Na água, a energia é mediana, dá um empurrão razoável na remada, e a série vem curta e apertada, uma onda quase em cima da outra. É uma condição de meio de tabela, quem já manja da água aproveita mais; a praia mais longa de Floripa, dentro de parque estadual e sempre mais vazia. Vale prestar atenção no intervalo das séries pra não perder a melhor onda.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|cintura-peito|medio-7a9|offshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Farol de Santa Marta amanhece com mar mediano",
+          "analise": "Farol de Santa Marta começa o dia: o terral (vento que sai da terra pro mar e alisa a onda) sopra com força boa e segura a parede, e o swell vindo do leste entra certinho na janela que essa praia gosta, batendo de frente e ganhando força. Na água, a força é moderada, o suficiente pra sentir o impulso sem cansar, e o período fica no meio termo, tempo razoável pra se recompor depois de cada onda. É uma condição dentro do padrão desse pico mais exigente, ainda pede alguma experiência; point de pedra de fama mundial, cenário bruto de Laguna. Vale escolher bem o pico e entrar antes de encher.",
+          "janela": "8h-11h",
+          "aviso": null
+        }
+      ]
+    },
+    "macumba|joelho-cintura|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Macumba abre a manhã com mar leve",
+          "analise": "Assim que clareia, Macumba mostra a condição: o maral (vento que vem do mar e bagunça a onda) sopra fraco, incomoda pouco, e vindo do leste, o swell acerta em cheio a janela dessa praia e chega com prumo. Na água, a energia baixa deixa a remada tranquila, sem susto, e a série tem um intervalo confortável, nem apertada nem tão espaçada. É uma condição tranquila, ótima pra quem tá começando ou só quer curtir sem pressão; reduto tradicional de longboard, escola de muita gente do Rio. Vale aproveitar o clima tranquilo pra treinar sem pressão.",
+          "janela": "6h-11h",
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|ombro-cabeca|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tombo tem noite de mar pesado",
+          "analise": "Tombo encara a noite: o maral (vento que vem do mar pra terra e bagunça a onda) sopra moderado e já mexe bastante na parede, e o swell vindo do sul entra certinho na janela que essa praia gosta, batendo de frente e ganhando força. Na água, a energia vem pesada, a remada cansa rápido e o drop cobra postura, e a série segue num ritmo mediano, dá pra respirar entre uma onda e outra. É uma condição pesada, território que já é de quem tem estrada, hoje ainda mais puxado; tradicional sede de campeonato, fama de onda mais forte do Guarujá. Vale respeitar o canal e não se posicionar embaixo do pico, o caldo pesa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-tijuca|cintura-peito|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Barra da Tijuca entra na tarde com mar mediano",
+          "analise": "Barra da Tijuca recebe a tarde: um maral moderado enruga a água, esse vento que vem do mar e atrapalha o acabamento da onda, e vindo do sudeste, o swell acerta em cheio a janela dessa praia e chega com prumo. Na água, a força é moderada, o suficiente pra sentir o impulso sem cansar, e o período fica no meio termo, tempo razoável pra se recompor depois de cada onda. É uma condição amigável, dá pra todo mundo entrar sem susto; faixa enorme de areia com vários picos espalhados ao longo dos postos. Vale prestar atenção no intervalo das séries pra não perder a melhor onda.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|ombro-cabeca|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Pitangueiras fecha o dia com mar pesado",
+          "analise": "Já de noite, Pitangueiras mostra a condição: o maral (vento que vem do mar pra terra e bagunça a onda) sopra moderado e já mexe bastante na parede, e o swell vindo do sul entra certinho na janela que essa praia gosta, batendo de frente e ganhando força. Na água, a energia é grande, o caldo pega se a queda não for limpa, e a série tem um intervalo confortável, nem apertada nem tão espaçada. É uma condição bem mais pesada do que esse pico costuma dar, hoje pede respeito e experiência de quem entrar; praia central e urbana do Guarujá, sempre movimentada. Vale respeitar o canal e não se posicionar embaixo do pico, o caldo pesa.",
+          "janela": null,
+          "aviso": "Mar grande e desorganizado: fila, escolha de onda e remada de volta pedem atenção redobrada hoje."
+        }
+      ]
+    },
+    "foguete|cabeca-1.5x|bom-9a11|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Foguete tem noite de mar grande",
+          "analise": "Foguete atravessa a noite: um maral forte estraga a leitura, vento que vem do mar e não deixa a parede se formar direito, e vindo do sul, o swell acerta em cheio a janela dessa praia e chega com prumo. Na água, a energia é muito pesada, quase brutal, remada exaustiva do início ao fim, e a série vem bem espaçada, dá tempo de ver a onda chegando de longe e se posicionar com calma. É uma condição pesada, hoje passa do meio de tabela e pede experiência de verdade; beach break com areia branca característica da região de Cabo Frio. Vale ficar observando pelo menos uma série inteira antes de decidir remar.",
+          "janela": null,
+          "aviso": "Mar grande e desorganizado: fila, escolha de onda e remada de volta pedem atenção redobrada hoje."
+        }
+      ]
+    },
+    "barra-da-tijuca|ombro-cabeca|bom-9a11|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Barra da Tijuca encara a noite com mar grande",
+          "analise": "Barra da Tijuca ganha a noite: o maral (vento que vem do mar pra terra e bagunça a onda) sopra moderado e já mexe bastante na parede, e o swell vindo do sul entra certinho na janela que essa praia gosta, batendo de frente e ganhando força. Na água, a força é monstra na água, respeito total pra quem entrar, e o período é generoso, aquele intervalo grande entre as ondas que deixa tudo mais organizado. É uma condição bem mais pesada do que esse pico costuma dar, hoje pede respeito e experiência de quem entrar; faixa enorme de areia com vários picos espalhados ao longo dos postos. Vale só entrar quem já rodou muito mar grande, e sempre de olho no canal de saída.",
+          "janela": null,
+          "aviso": "Mar grande e desorganizado: fila, escolha de onda e remada de volta pedem atenção redobrada hoje."
+        }
+      ]
+    },
+    "unamar|cabeca-1.5x|bom-9a11|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Unamar fecha o dia com mar grande",
+          "analise": "Ao cair da noite, Unamar segue com a condição: um maral forte estraga a leitura, vento que vem do mar e não deixa a parede se formar direito, e vindo do sul, o swell acerta em cheio a janela dessa praia e chega com prumo. Na água, a energia é gigante, o mar cobra experiência a cada rasgada, e a série chega espaçada, tempo de sobra pra escolher a onda certa. É uma condição pesada, hoje passa do meio de tabela e pede experiência de verdade; beach break tradicional da região de Tamoios. Vale ficar observando pelo menos uma série inteira antes de decidir remar.",
+          "janela": null,
+          "aviso": "Mar grande e desorganizado: fila, escolha de onda e remada de volta pedem atenção redobrada hoje."
+        }
+      ]
+    },
+    "tombo|peito-ombro|bom-9a11|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Tombo tem tarde de mar pesado",
+          "analise": "Tombo atravessa a tarde: o través, vento soprando de lado, sopra moderado e mexe a parede de banda, e o swell vindo do sudeste entra certinho na janela que essa praia gosta, batendo de frente e ganhando força. Na água, a energia vem pesada, a remada cansa rápido e o drop cobra postura, e a série vem bem espaçada, dá tempo de ver a onda chegando de longe e se posicionar com calma. É uma condição pesada, território que já é de quem tem estrada, hoje ainda mais puxado; tradicional sede de campeonato, fama de onda mais forte do Guarujá. Vale respeitar o canal e não se posicionar embaixo do pico, o caldo pesa.",
+          "janela": "12h-15h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|ombro-cabeca|bom-9a11|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia Brava (Arraial) entra na tarde com mar grande",
+          "analise": "Praia Brava (Arraial) recebe a tarde: um maral forte estraga a leitura, vento que vem do mar e não deixa a parede se formar direito, e vindo do sul, o swell acerta em cheio a janela dessa praia e chega com prumo. Na água, a força é monstra na água, respeito total pra quem entrar, e o período é generoso, aquele intervalo grande entre as ondas que deixa tudo mais organizado. É uma condição pesada, território que já é de quem tem estrada, hoje ainda mais puxado; fama de ser a praia mais pesada e exposta de Arraial. Vale ficar observando pelo menos uma série inteira antes de decidir remar.",
+          "janela": "13h-16h",
+          "aviso": "Mar grande e desorganizado: fila, escolha de onda e remada de volta pedem atenção redobrada hoje."
+        }
+      ]
+    },
+    "bonete|peito-ombro|bom-9a11|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Praia do Bonete fecha o dia com mar pesado",
+          "analise": "Já de noite, Praia do Bonete mostra a condição: o través, vento soprando de lado, sopra moderado e mexe a parede de banda, e o swell vindo do sul entra certinho na janela que essa praia gosta, batendo de frente e ganhando força. Na água, a energia é grande, o caldo pega se a queda não for limpa, e a série chega espaçada, tempo de sobra pra escolher a onda certa. É uma condição pesada, território que já é de quem tem estrada, hoje ainda mais puxado; acesso só por trilha ou barco, isolamento que vira paisagem. Vale respeitar o canal e não se posicionar embaixo do pico, o caldo pesa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|ombro-cabeca|bom-9a11|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Figueira tem tarde de mar grande",
+          "analise": "Figueira segue a tarde: um maral forte estraga a leitura, vento que vem do mar e não deixa a parede se formar direito, e vindo do sul, o swell acerta em cheio a janela dessa praia e chega com prumo. Na água, a energia é muito pesada, quase brutal, remada exaustiva do início ao fim, e a série vem bem espaçada, dá tempo de ver a onda chegando de longe e se posicionar com calma. É uma condição pesada, hoje passa do meio de tabela e pede experiência de verdade; beach break aberto, típico de Arraial do Cabo. Vale ficar observando pelo menos uma série inteira antes de decidir remar.",
+          "janela": "14h-17h",
+          "aviso": "Mar grande e desorganizado: fila, escolha de onda e remada de volta pedem atenção redobrada hoje."
+        }
+      ]
+    },
+    "praia-grande-arraial|ombro-cabeca|bom-9a11|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia Grande entra na tarde com mar grande",
+          "analise": "Praia Grande ganha a tarde: o maral vem forte, esse vento que vem do mar pra terra, e desmancha quase tudo antes de a onda fechar, e o swell vindo do sul entra certinho na janela que essa praia gosta, batendo de frente e ganhando força. Na água, a força é monstra na água, respeito total pra quem entrar, e o período é generoso, aquele intervalo grande entre as ondas que deixa tudo mais organizado. É uma condição pesada, hoje passa do meio de tabela e pede experiência de verdade; a praia mais surfada de Arraial, água costuma vir bem transparente. Vale só entrar quem já rodou muito mar grande, e sempre de olho no canal de saída.",
+          "janela": "12h-16h",
+          "aviso": "Mar grande e desorganizado: fila, escolha de onda e remada de volta pedem atenção redobrada hoje."
+        }
+      ]
+    },
+    "pitangueiras|peito-ombro|bom-9a11|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Pitangueiras atravessa a tarde com mar pesado",
+          "analise": "Pitangueiras atravessa a tarde: um vento lateral moderado empurra a água de lado e atrapalha um pouco o acabamento, e vindo do sudeste, o swell acerta em cheio a janela dessa praia e chega com prumo. Na água, a energia é grande, o caldo pega se a queda não for limpa, e a série chega espaçada, tempo de sobra pra escolher a onda certa. É uma condição bem mais pesada do que esse pico costuma dar, hoje pede respeito e experiência de quem entrar; praia central e urbana do Guarujá, sempre movimentada. Vale entrar já aquecido, porque a remada e o drop cobram o corpo inteiro.",
+          "janela": "14h-16h",
+          "aviso": "Mar grande e desorganizado: fila, escolha de onda e remada de volta pedem atenção redobrada hoje."
+        }
+      ]
+    },
+    "praia-do-pero|peito-ombro|bom-9a11|lateral-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Praia do Peró tem tarde de mar pesado",
+          "analise": "Praia do Peró atravessa a tarde: o través, vento soprando de lado, sopra moderado e mexe a parede de banda, e o swell vindo do sul entra certinho na janela que essa praia gosta, batendo de frente e ganhando força. Na água, a energia vem pesada, a remada cansa rápido e o drop cobra postura, e a série vem bem espaçada, dá tempo de ver a onda chegando de longe e se posicionar com calma. É uma condição pesada, hoje passa do meio de tabela e pede experiência de verdade; aqui o vento sudoeste vira aliado e sopra offshore justo quando o swell forte de sul aperta. Vale respeitar o canal e não se posicionar embaixo do pico, o caldo pesa.",
+          "janela": "12h-15h",
+          "aviso": null
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-19T06:30:37.329Z"
+  "generated_at": "2026-09-19T12:14:46.225Z"
 }
