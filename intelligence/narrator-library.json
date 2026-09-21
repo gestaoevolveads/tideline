@@ -180596,7 +180596,403 @@
           "aviso": null
         }
       ]
+    },
+    "barra-do-sahy|peito-ombro|medio-7a9|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Terral fraco ajeita a foz protegida",
+          "analise": "Barra do Sahy recebe swell que vem do sudeste bem encaixado na leitura da praia, o que mantém a onda organizada de ponta a ponta. O terral, vento fraco que sai da terra pro mar, dá só um retoque na superfície e deixa a parede limpa sem chegar a alisar tudo. A série chega com folga razoável entre uma onda e outra, dando tempo de remar e se posicionar sem correria. Pra quem tá começando, é um daqueles dias em que dá pra estudar a virada da onda com calma antes de se comprometer na descida.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|peito-ombro|medio-7a9|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tombo segue com o corpo mesmo de noite",
+          "analise": "O Tombo segue recebendo swell de leste durante a noite, mantendo a energia moderada que já marcou o dia nesse pico conhecido pela força. O terral moderado, vento que sai da terra e alisa a face, segura a parede organizada mesmo sem sol pra iluminar o pico. Quem acompanha o boletim de olho na próxima janela sente que o mar não perdeu ritmo, só ficou invisível por algumas horas. A recomendação é usar esse período pra planejar a entrada assim que a luz voltar, porque o pico costuma cobrar de quem chega sem ler a condição antes.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|peito-ombro|medio-7a9|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "O canto ao lado da igrejinha ganha força",
+          "analise": "O canto mais abrigado de Saquarema, o mesmo que segura a maré quando Itaúna fica grande demais pra maioria, recebe hoje de manhã um swell de leste com bastante corpo. O através, vento soprando de lado, mexe na parede e tira um pouco da limpeza, então a onda fecha com menos previsibilidade do que o normal desse refúgio. A remada exige atenção porque a energia forte empurra bastante água atrás da onda, e quem não se antecipar sente o caldo cobrando. Vale entrar cedo, antes do vento ganhar ainda mais força, e escolher o pico mais perto da igrejinha, que segura melhor o através.",
+          "janela": "6h-9h",
+          "aviso": "vento de través forte pode empurrar quem trocar de posição pro lado errado do canto, fique de olho na deriva."
+        }
+      ]
+    },
+    "ibiraquera|ombro-cabeca|medio-7a9|lateral-moderado|noite|fora": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Ibiraquera guarda potência mas perde o rumo à noite",
+          "analise": "De noite, a praia que divide espaço com a lagoa de kite ao lado recebe um swell que vem do nordeste, fora da janela que ela prefere receber vindo do sul, então mesmo com bastante energia por trás a onda perde organização e fecha rápido em vários pontos da faixa. O através moderado, vento soprando de lado, ainda mexe na parede e dificulta ler onde ela vai abrir. Quem mora perto da lagoa sente que o mar tá inquieto, com bastante força mas pouco compromisso de linha. Sem visibilidade e com a direção desencontrada, o conselho é só acompanhar o boletim e esperar o swell se realinhar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-floripa|ombro-cabeca|medio-7a9|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Norte de Floripa acorda pesado e concorrido",
+          "analise": "A onda mais forte do norte de Floripa recebe de manhã um swell de nordeste bem encaixado, e a energia pesada por trás garante tubo pra quem souber se posicionar certo. O através forte atrapalha a limpeza da parede, formando bastante espuma e dificultando prever onde ela vai fechar. É um pico respeitado, com localismo presente, então quem não é da casa sente o clima antes mesmo de entrar na água. A dica é observar de fora um bom tempo antes de remar, tanto pra ler o através quanto pra entender a dinâmica de quem já tá no pico.",
+          "janela": "6h-9h",
+          "aviso": "localismo presente, entrada errada pode gerar atrito real com quem surfa ali sempre."
+        }
+      ]
+    },
+    "mocambique|ombro-cabeca|medio-7a9|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "A praia mais longa de Floripa recebe energia à noite",
+          "analise": "A praia mais longa de Floripa, quase deserta dentro do parque estadual, recebe de noite um swell de nordeste bem alinhado com bastante energia por trás. O maral, vento que vem do mar pra terra, mexe a superfície e deixa a água mais crespa, tirando um pouco da limpeza que essa faixa costuma ter. Com vários picos espalhados ao longo da areia, a força chega distribuída, sem concentrar tudo num ponto só. Quem for acompanhar o boletim de madrugada vai ver se o maral cede antes da luz voltar, porque aí sim a organização deve melhorar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|ombro-cabeca|medio-7a9|lateral-moderado|noite|fora": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Garopaba recebe força fora de hora e fora do rumo",
+          "analise": "De noite, a praia badalada de Garopaba vê chegar um swell que vem do nordeste, fora da janela de sul que essa faixa prefere receber, então a energia pesada chega sem o alinhamento que faria a onda abrir limpa. O através moderado ainda desorganiza mais a parede, criando picos curtos e imprevisíveis ao longo da faixa. Mesmo com bastante força por trás, falta compromisso de linha pra quem gosta de ondas com corpo previsível. A leitura noturna serve de aviso: se o través não cair e a direção não mudar, amanhã tende a repetir essa bagunça.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|peito-ombro|medio-7a9|lateral-forte|manha|fora": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "A Joaca recebe manhã de vento cruzado",
+          "analise": "A Joaca, orgulho competitivo de Florianópolis, recebe de manhã um swell de nordeste, fora da janela de sul que costuma dar a ela a força que a fez famosa nos campeonatos. O através forte bagunça a parede e faz a energia consistente se perder em espuma antes de formar uma linha limpa. Com as dunas do lado, dá pra sentir o vento cruzado carregando areia antes mesmo de olhar o mar. Surfar bem nesse tipo de dia frio e desalinhado ainda separa quem tem repertório de quem só está de passagem, mas não é o dia mais generoso do pico.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|peito-ombro|medio-7a9|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "O Maracanã do surf recebe manhã de peso",
+          "analise": "Itaúna, o Maracanã do surf brasileiro, recebe de manhã um swell de leste com bastante corpo, mantendo o padrão de parede rápida que já rendeu tanto título por ali. O através forte atrapalha o terral de norte que costuma alisar esse pico, deixando a face mais irregular do que o de costume. Ainda assim a energia forte segura tubo em alguns setores, pra quem souber remar rápido e se comprometer cedo na descida. É um dia de peso competitivo mesmo fora de etapa, então quem não tem repertório de beach break forte sente o recado logo na primeira série.",
+          "janela": "6h-9h",
+          "aviso": "energia forte nesse beach break de padrão mundial: quem não domina esse tipo de onda arrisca segurar caldo forte, avalie seu preparo antes de remar."
+        }
+      ]
+    },
+    "pitangueiras|peito-ombro|medio-7a9|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Pitangueiras suaviza durante a noite",
+          "analise": "A praia central do Guarujá, sempre movimentada de dia, fica mais tranquila de noite enquanto recebe um swell de leste bem alinhado com a leitura do lugar. O terral moderado, vento que sai da terra e alisa a face, ajuda a organizar a energia moderada que chega, sem formar bagunça. É um recado de que o pico segue democrático mesmo fora do horário de mais gente. Vale acompanhar o boletim de madrugada pra ver se essa condição se mantém até o próximo turno de luz.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|peito-ombro|medio-7a9|lateral-moderado|noite|fora": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Referência competitiva do Sul perde o rumo à noite",
+          "analise": "De noite, o pico que já sediou etapa do CT mundial recebe um swell de nordeste, fora da janela de sul que costuma dar a ele o padrão internacional de parede. Mesmo com energia pesada empurrando água, o através moderado e a direção desencontrada tiram a limpeza que fez esse lugar ganhar respeito nas etapas. A força tá ali, mas sem compromisso de linha ela se perde em picos curtos ao longo da noite. Melhor esperar o swell voltar a se alinhar com o sul antes de contar com esse pico pra valer.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|ombro-cabeca|medio-7a9|lateral-moderado|noite|fora": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Uma das melhores do Sul foge do padrão à noite",
+          "analise": "De noite, um dos pontos mais respeitados do Sul recebe swell de nordeste, fora da janela de sul que garante a consistência quase diária que fez esse pico virar estilo de vida pra comunidade de pescadores da região. O através moderado desorganiza a parede e a energia pesada, mesmo generosa, se perde em picos sem linha definida. Quem conhece esse lugar sabe que ele raramente decepciona, então essa é uma daquelas noites fora do padrão de qualidade normal. A recomendação é acompanhar o boletim e confiar que o alinhamento com o sul deve voltar em breve.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "campeche|ombro-cabeca|medio-7a9|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "A ilha à frente testemunha manhã de força",
+          "analise": "Com a ilha do Campeche à frente, esse beach break respeitado recebe de manhã um swell de nordeste bem encaixado na leitura do lugar, trazendo energia pesada o suficiente pra abrir tubo quando a maré ajuda. O através forte mexe bastante na parede e exige leitura rápida de onde ela vai fechar, porque a janela de tubo fecha rápido. É um daqueles dias em que a força fala mais alto que a limpeza, e só quem já rodou bastante beach break forte consegue aproveitar sem levar caldo toda hora. Vale entrar cedo, antes do através ganhar ainda mais corpo ao longo da manhã.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "bonete|peito-ombro|medio-7a9|offshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "A trilha até a praia isolada vale a pena à tarde",
+          "analise": "A praia isolada de Ilhabela, que só se alcança de trilha ou barco, recebe à tarde um swell de sudeste bem alinhado com a leitura do lugar. O terral moderado, vento que sai da terra e alisa a onda, mantém a energia consistente organizada numa parede limpa do início ao fim. É um cenário selvagem raramente concorrido, então quem chegar até ali tende a surfar sozinho ou com pouca gente dividindo o pico. Vale só lembrar que, por ser isolada, qualquer imprevisto na água demora mais pra ter socorro, então surfar com companhia é mais importante do que de costume.",
+          "janela": "13h-17h",
+          "aviso": "acesso isolado por trilha ou barco: socorro demora, evite surfar sozinho."
+        }
+      ]
+    },
+    "arroio-do-sal|peito-ombro|medio-7a9|offshore-forte|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Litoral norte gaúcho recebe manhã de terral forte",
+          "analise": "O litoral norte gaúcho, sempre exposto aos swells que chegam de fora, recebe de manhã um swell de nordeste na borda da janela que a praia prefere receber do sul. O terral forte alisa bastante a face, mas em rajada mais forte também pode segurar demais a onda e atrasar a arrancada de quem rema. A energia consistente ainda entrega volume razoável mesmo com a direção só na borda do encaixe. A dica é remar com antecedência, porque o terral forte faz a onda demorar um pouco mais pra levantar e depois soltar tudo de uma vez.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "cidreira|peito-ombro|medio-7a9|offshore-forte|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Litoral médio gaúcho pega terral forte pela manhã",
+          "analise": "O beach break exposto do litoral médio gaúcho recebe de manhã um swell de leste na borda da janela que essa faixa prefere receber do sul, então a onda entrega volume sem estar cem por cento encaixada. O terral forte alisa bastante, mas exige atenção porque rajada mais forte pode segurar a onda e atrasar quem já tá remando pra pegar. A série chega com folga razoável entre uma onda e outra, dando tempo de escolher a melhor pra entrar. Vale aproveitar logo cedo, antes do terral perder força e o mar ficar mais bagunçado.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|peito-ombro|medio-7a9|offshore-fraco|tarde|fora": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde de swell desencontrado perto da lagoa",
+          "analise": "À tarde, a praia vizinha da lagoa que também atrai o kite recebe um swell de nordeste, fora da janela de sul que costuma organizar bem esse beach break. O terral fraco só dá um retoque na superfície, sem força suficiente pra corrigir a desorganização que a direção errada traz. A energia moderada ainda entrega alguma diversão, mas sem a limpeza que esse pico costuma ter quando o swell vem certo. É um dia mais de treino de leitura do que de aproveitar de verdade a energia disponível.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "torres|cintura-peito|medio-7a9|onshore-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "A capital do surf gaúcho esfria durante a noite",
+          "analise": "Junto aos molhes e à Guarita, a capital do surf gaúcho recebe de noite um swell de leste na borda do encaixe, com energia fraca que mal sustenta parede. O maral moderado, vento que vem do mar pra terra, ainda mexe a superfície e deixa tudo mais crespo do que já estava. Perto dos molhes a correnteza costuma ficar mais forte do que a onda sugere, então mesmo em dia fraco vale respeitar a distância deles. Sem força e sem limpeza, essa é uma noite mais de espera do que de expectativa real.",
+          "janela": null,
+          "aviso": "perto dos molhes a correnteza pode ficar forte mesmo com onda fraca, mantenha distância segura."
+        }
+      ]
+    },
+    "ferrugem|peito-ombro|medio-7a9|offshore-fraco|tarde|fora": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde de swell fora do rumo na praia badalada",
+          "analise": "Quem acompanha a tarde na praia badalada de Garopaba percebe um swell de nordeste que segue fora da janela de sul, a mesma que de costume organiza bem esse beach break de qualidade. O terral fraco dá só um retoque, sem força pra endireitar a leitura que a direção errada bagunça. A energia moderada entrega algum volume, mas a onda fecha sem manter linha por muito tempo. É um dia mediano, bom pra quem só quer molhar a prancha sem esperar muito da condição.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "costao-do-santinho|peito-ombro|medio-7a9|offshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "O costão com inscrições rupestres recebe manhã limpa",
+          "analise": "Junto ao costão que guarda inscrições rupestres, esse beach break do norte de Floripa recebe de manhã um swell de nordeste bem encaixado na leitura do lugar. O terral forte alisa bastante a face, deixando a parede limpa, mas em rajada mais forte também pode segurar a onda e exigir remada mais forte na entrada. A energia moderada garante volume suficiente pra manter a diversão sem pesar demais no corpo. Entre a natureza preservada em volta e a água limpa, vale aproveitar essa condição cedo, antes do vento oscilar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|peito-ombro|medio-7a9|offshore-fraco|tarde|fora": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde abaixo do padrão na praia dos pescadores",
+          "analise": "À tarde, o pico que virou rotina de vida pra comunidade de pescadores locais recebe um swell de nordeste ainda fora da janela de sul que garante a consistência quase diária de costume. O terral fraco não tem força suficiente pra endireitar a leitura que a direção errada traz. Ainda assim a energia moderada entrega alguma diversão pra quem não quer ficar parado esperando o alinhamento voltar. É um dia mediano nesse pico que raramente decepciona, mas hoje entrega menos do que o de costume.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|joelho-cintura|curto-vaga|onshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "O pico mais forte do Guarujá dá trégua pela manhã",
+          "analise": "O pico conhecido como a onda mais forte do Guarujá dá uma trégua de manhã, com energia fraca e swell de leste só na borda do encaixe que essa praia de tombo costuma exigir. O maral fraco mal chega a bagunçar, mas também não ajuda a dar corpo pra série, que chega apertada e atropelada, com uma onda em cima da outra. É um dia raro de mar mais brando nesse ponto respeitado pelas competições que já sediou. Serve bem pra quem tá evoluindo e quer treinar leitura de beach break sem o peso de costume.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "domingas-dias|joelho-cintura|curto-vaga|lateral-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "O refúgio abrigado de Ubatuba segue manso pela manhã",
+          "analise": "A praia abrigada e sofisticada de Ubatuba, que costuma segurar bem quando o mar fica grande em outros pontos, recebe de manhã energia fraca e um swell de leste só na borda do encaixe. O través fraco mal se sente, deixando a superfície quase parada. A série chega apertada, com pouco espaço entre uma onda e outra, o que pede remada mais ativa pra aproveitar qualquer janela. É um dia mais indicado pra quem tá começando, justamente pela condição leve e o ambiente protegido.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|joelho-cintura|curto-vaga|onshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Pico democrático do Guarujá amanhece fraco",
+          "analise": "O pico central e democrático do Guarujá amanhece com energia fraca e um swell de leste só na borda do encaixe que a praia prefere. O maral fraco mexe pouco a superfície, mas a série chega curta e apertada, sem muito espaço entre uma onda e outra. Pra quem divide o pico com todo tipo de nível, é um dia mais de aquecimento do que de aproveitar de verdade. Vale entrar cedo e aproveitar o pico mais vazio antes do movimento típico do lugar aumentar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "maresias|ombro-cabeca|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Terra de Medina recebe tarde de peso raro",
+          "analise": "Terra de Medina e fábrica de campeões, essa praia recebe à tarde um swell de sul bem encaixado, trazendo uma energia rara de tão pesada pra esse trecho do litoral. O maral moderado mexe a superfície e tira um pouco da limpeza que a cultura competitiva daqui exige pra render o melhor da onda. Mesmo assim a força por trás é grande o bastante pra separar quem tem repertório de quem só está de passagem, com queda que cobra comprometimento total. É um dia pesado de verdade, então respeitar o próprio nível antes de remar pro pico principal é mais importante do que impressionar alguém na areia.",
+          "janela": "13h-17h",
+          "aviso": "energia muito acima do normal: só entre se seu nível aguenta remada pesada e queda forte, o mar aqui não perdoa erro de cálculo."
+        }
+      ]
+    },
+    "regencia|ombro-cabeca|medio-7a9|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "A foz famosa segura força durante a noite",
+          "analise": "A foz do Rio Doce, capital capixaba do surf e berço de uma direita longa e famosa, recebe de noite um swell de sudeste bem alinhado, trazendo energia pesada pra essa desembocadura. O através fraco quase não interfere, então a parede deve seguir organizada, aproveitando o formato natural que a foz dá pra onda abrir por bastante distância. Foz de rio costuma esconder correnteza forte puxando pra dentro do canal, e à noite fica mais difícil enxergar por onde ela passa. Quem for acompanhar essa condição de longe já pode se planejar, mas entrar na água só depois de ver o canal com luz do dia.",
+          "janela": null,
+          "aviso": "foz de rio costuma ter correnteza forte de canal; sem visibilidade noturna, avaliar só de dia antes de entrar."
+        }
+      ]
+    },
+    "baia-formosa|cintura-peito|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Terra do Jadson André recebe manhã redonda",
+          "analise": "Na vila de pescadores que viu nascer Jadson André, esse point break recebe de manhã um swell de leste bem alinhado, exatamente o tipo de condição que faz a direita abrir por uma distância enorme. O maral fraco mal chega a incomodar, deixando a energia moderada trabalhar numa parede limpa e previsível. Com a maré mais baixa favorecendo o point, a onda tende a segurar forma por mais tempo antes de fechar. É um daqueles dias clássicos de point break generoso, bom tanto pra quem gosta de remar longe quanto pra quem só quer aproveitar uma parede honesta do início ao fim.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|cintura-peito|curto-vaga|glassy|manha|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Litoral norte gaúcho amanhece liso e fraco",
+          "analise": "O litoral norte gaúcho amanhece com a superfície lisa, praticamente sem vento pra bagunçar a água, mas o swell de leste chega só na borda do encaixe que essa praia prefere receber do sul. A energia fraca some rápido apesar da água limpa, então a série entrega pouca força por trás de cada onda. Sem vento nenhum atrapalhando, pelo menos dá pra ler a onda com clareza total antes de remar. É um dia mais de contemplar a água parada do que de esperar surf disputado.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|joelho-cintura|curto-vaga|glassy|manha|borda": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "A praia mais longa do mundo amanhece parada",
+          "analise": "A praia mais longa do mundo, no extremo sul gaúcho junto aos molhes da barra de Rio Grande, amanhece com a água lisa mas quase sem energia nenhuma pra formar onda de verdade. O swell de leste fica na borda do encaixe que esse trecho prefere receber do sul, então o pouco que chega já vem fraco de origem. Perto dos molhes a correnteza costuma se formar independente do tamanho da onda, puxando quem se aproxima demais da estrutura. Num dia tão parado como esse, vale mais aproveitar pra observar a barra e planejar a próxima janela do que tentar surfar o que não tem.",
+          "janela": "6h-9h",
+          "aviso": "perto dos molhes da barra a correnteza pode puxar mesmo sem onda, mantenha distância da estrutura."
+        }
+      ]
+    },
+    "ibiraquera|cintura-peito|curto-vaga|onshore-fraco|manha|fora": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Manhã fraca perto da lagoa de kite",
+          "analise": "Pela manhã, o beach break vizinho da lagoa de kite recebe um swell de nordeste, fora da janela de sul que organiza melhor essa faixa. O maral fraco mexe pouco a superfície, mas a série chega curta e apertada, sem folga entre uma onda e outra. A energia disponível é modesta, então a onda tende a fechar rápido sem sustentar muita parede. É um dia mais de treino técnico do que de aproveitar volume de verdade.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|cintura-peito|curto-vaga|onshore-fraco|tarde|fora": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Tarde modesta perto da lagoa",
+          "analise": "À tarde, a praia vizinha da lagoa de kite segue recebendo um swell de nordeste, ainda fora da janela de sul que de costume dá mais qualidade a esse beach break. O maral fraco segue quase sem efeito sobre a superfície. A energia fraca faz a série chegar curta e sem muito corpo, fechando rápido logo depois de levantar. Bom pra quem só quer manter o ritmo na água sem esperar uma tarde de verdade generosa.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|cintura-peito|curto-vaga|onshore-fraco|manha|fora": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Manhã curta de swell errado na praia badalada",
+          "analise": "A badalada praia de Garopaba recebe de manhã um swell de nordeste, fora da janela de sul que de costume garante qualidade a esse beach break. O maral fraco quase não interfere na superfície, mas isso não é suficiente pra compensar a direção errada. A série chega curta e apertada, com energia modesta que não sustenta muita parede antes de fechar. É uma manhã mais fraca do que o padrão desse pico costuma entregar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|cintura-peito|curto-vaga|onshore-fraco|tarde|fora": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Mesmo problema, tarde mais fraca ainda em Garopaba",
+          "analise": "À tarde, o mesmo desalinhamento de direção segue castigando a praia badalada de Garopaba: swell de nordeste fora da janela de sul que dá qualidade a esse beach break jovem. O maral fraco mal se sente sobre a água. A energia fraca faz a série chegar curta, sem folga entre uma onda e outra pra se posicionar com calma. Dia de expectativa baixa, melhor encarado como manutenção do que como sessão de verdade.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|cintura-peito|curto-vaga|glassy|manha|fora": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Manhã lisa mas sem força na referência do Sul",
+          "analise": "Pela manhã, a mesma praia que já sediou etapa do CT mundial recebe a superfície lisa, praticamente sem vento bagunçando a água, mas o swell de nordeste segue fora da janela de sul que costuma trazer o padrão internacional que a consagrou. Mesmo com a água limpa, a energia modesta faz a série chegar curta, com pouco corpo por trás de cada onda. É o tipo de manhã em que a leitura fica fácil pela calmaria, mas falta força pra aproveitar de verdade. Serve mais pra estudar o pico do que pra uma sessão completa.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|cintura-peito|curto-vaga|onshore-fraco|manha|fora": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Manhã fora do padrão na praia dos pescadores",
+          "analise": "Pela manhã, o desalinhamento de direção chega também nesse pico que virou estilo de vida pra comunidade de pescadores: swell de nordeste, fora da janela de sul que sustenta a consistência quase diária de costume. O maral fraco mal se sente, mas a direção errada já é suficiente pra tirar qualidade da série. A energia modesta faz a onda fechar rápido, sem sustentar parede por muito tempo. Pra um lugar que raramente decepciona, essa manhã fica abaixo do que os pescadores locais costumam ver por ali.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|cintura-peito|curto-vaga|onshore-fraco|tarde|fora": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Tarde de manutenção na praia dos pescadores",
+          "analise": "À tarde, o desalinhamento de direção segue firme nesse point que os pescadores locais transformaram em estilo de vida: swell de nordeste fora da janela de sul que garante a consistência de costume. O maral fraco quase não se sente sobre a água. A energia fraca faz a série chegar curta, sem folga entre uma onda e outra. Melhor tarde de manutenção do que de expectativa alta num lugar acostumado a entregar muito mais.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-21T00:14:06.087Z"
+  "generated_at": "2026-09-21T06:16:35.528Z"
 }
