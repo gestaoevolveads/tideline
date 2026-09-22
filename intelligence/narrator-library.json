@@ -182378,7 +182378,535 @@
           "aviso": null
         }
       ]
+    },
+    "praia-mole|cintura-peito|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "A Mole amanhece em porte médio",
+          "analise": "A Mole amanhece com onda de porte médio, o swell entrando bem no ângulo que o pico gosta aqui. Um onshore fraco, vento que vem do mar pra terra e enruga um pouco a superfície, tira o brilho mas não estraga a sessão. Na água a energia é moderada, pede remada de verdade sem cansar demais, e a série chega com um intervalo razoável, dá uma folga pra se posicionar. Vale entrar cedo, antes do vento crescer e picotar mais a parede.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|peito-ombro|medio-7a9|lateral-moderado|tarde|fora": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Silveira forte à tarde, mas fora do ângulo",
+          "analise": "A Silveira recebe à tarde uma onda maior, trazendo bastante parede e força na água. O detalhe é que esse swell vem de fora da janela que o pico prefere, então nem toda essa energia pesada converte em onda redonda, boa parte se perde em fechamento. Um lateral moderado, vento soprando de lado, ainda enruga parte da face e deixa a leitura mais difícil. Quem é experiente consegue catar as melhores sequências, mas vale ter paciência e escolher bem a onda antes de remar.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-floripa|peito-ombro|medio-7a9|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Brava de Floripa forte à tarde, no ângulo certo",
+          "analise": "A Brava recebe à tarde um swell que entra bem no ângulo que ela pede, trazendo onda maior com parede firme. A energia tá pesada, o caldo castiga quem erra o timing e o drop cobra decisão rápida. Um lateral fraco, vento de lado suave, mexe pouco e deixa a face limpa na maior parte do tempo. É pico pra quem já tem estrada, e vale estudar o line-up de fora antes de remar pro meio, o respeito ali conta tanto quanto a técnica.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|peito-ombro|medio-7a9|lateral-moderado|tarde|fora": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Ibiraquera forte à tarde, só que fora do ângulo",
+          "analise": "Ibiraquera pega à tarde uma onda maior, com bastante força vindo de longe. Só que esse swell chega de fora da janela que o pico prefere, então a qualidade cai mesmo com tanta energia pesada por trás, o mar fecha mais do que abre. Um lateral moderado, vento de lado, ainda desorganiza parte da parede e deixa a leitura instável de onda pra onda. Vale espiar o canto perto da lagoa, geralmente mais protegido, e escolher poucas ondas boas em vez de remar em tudo.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "joaquina|cintura-peito|medio-7a9|onshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Joaquina de porte médio, no limite da janela",
+          "analise": "A Joaquina amanhece com onda de porte médio e energia moderada, pede remada de verdade sem exagero. Esse swell tá na borda da janela que o pico gosta, então a consistência varia bastante, tem série boa e tem série que não fecha direito. Um onshore fraco, vento que vem do mar pra terra, tira um pouco do brilho da parede mas não chega a estragar. Pra quem já rodou o pico, vale ficar de olho nas dunas e escolher as ondas que vêm mais organizadas, ignorando o resto.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|peito-ombro|medio-7a9|lateral-moderado|tarde|fora": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Ferrugem forte à tarde, mas o swell erra o ângulo",
+          "analise": "O Ferrugem recebe à tarde uma onda maior, com bastante corpo e força na água. O problema é o ângulo: esse swell vem de fora da janela que o pico prefere, então boa parte dessa energia pesada se perde em fechamento e a onda entrega menos do que promete. Um lateral moderado, vento de lado, ainda bagunça pedaços da parede, deixando a leitura instável. Melhor remar com calma, observar de fora por uns minutos antes de escolher onde parar no line-up.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "pitangueiras|cintura-peito|curto-vaga|glassy|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Pitangueiras tranquila à noite, mar sem vento",
+          "analise": "A Pitangueiras vira a noite sem vento nenhum, a superfície fica lisa mesmo com a série curta e apertada, as ondas quase em cima uma da outra. Esse swell tá na borda da janela que o pico pega, então a consistência não é a melhor, mas o que entra costuma vir limpo. Na água a energia é leve, dá pra remar tranquilo sem cansar, ótimo pra quem tá começando a pegar ritmo em pico movimentado. À noite vale ficar mais atento à iluminação da praia e escolher onde entrar com calma.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "jureia|peito-ombro|curto-vaga|glassy|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Jureia tranquila à tarde, mar liso e vazio",
+          "analise": "A Jureia recebe à tarde uma onda maior sem vento nenhum, a superfície fica lisa e convidativa. A série vem curta e apertada, as ondas se atropelam um pouco, mas esse swell tá na borda da janela que o pico prefere, então a consistência oscila de conjunto pra conjunto. A energia já pesa na remada, cansa quem exagera, só que o cenário preservado e o pico vazio compensam a espera entre as séries. Vale aproveitar a calmaria pra estudar o pico antes de se comprometer com uma onda maior.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "caioba|joelho-cintura|curto-vaga|offshore-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Caiobá fraca à noite, mas com terral ajudando",
+          "analise": "Depois do sol sumir, Caiobá recebe onda pequena e força bem fraca, quase sem empurrão nas séries curtas e apertadas. Um terral moderado, vento que sai da terra pro mar, ainda alisa a pouca água que chega e segura a parede do jeito que dá. Esse swell tá na borda da janela que o pico costuma pegar, então boa parte das ondas nem chega a fechar direito. É noite mais pra soltar o braço e manter o ritmo do que pra buscar onda de verdade, sem pressa nenhuma no line-up.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "maresias|joelho-cintura|medio-7a9|offshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Maresias com terral firme pela manhã",
+          "analise": "Maresias amanhece com um terral forte, vento que sai da terra pro mar, segurando a parede com força e quase vitrificando a superfície. O swell entra bem no ângulo que o pico gosta, mas a onda vem pequena e a energia é leve, então a remada é tranquila sem cansar muito. A série tem um intervalo razoável, dá uma folga entre um conjunto e outro pra se posicionar com calma. Não é o dia mais forte da fábrica de campeões, mas o vento sozinho já vale a manhã cedo, antes de virar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "tombo|cintura-peito|curto-vaga|glassy|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tombo parado à noite, mar liso",
+          "analise": "O Tombo passa a noite sem vento nenhum, a superfície fica lisa mesmo com a série curta e apertada, ondas quase encavaladas uma na outra. Esse swell tá na borda da janela que o pico prefere, então a força que normalmente marca esse pico não aparece inteira hoje. A energia é leve, a remada não cansa, um contraste grande com o que esse lugar costuma entregar em dia cheio. Vale entrar sem expectativa de tubo e aproveitar pra treinar posicionamento no pico mais vazio da noite.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "matinhos|joelho-cintura|curto-vaga|offshore-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Matinhos fraca à noite, terral segurando o pouco que tem",
+          "analise": "Matinhos leva a noite com onda pequena e força bem fraca, mal dá empurrão nas séries curtas. Um terral moderado, vento que sai da terra pro mar, alisa a pouca água que chega e evita que ela feche rápido demais. Esse swell tá na borda da janela do pico, então boa parte das ondas nem forma direito. É noite tranquila, boa pra quem tá começando a soltar o braço num pico conhecido por ser democrático, sem cobrar nada de ninguém.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "campeche|peito-ombro|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Campeche forte pela manhã, encaixe bom",
+          "analise": "O Campeche amanhece com onda maior, trazendo parede firme e o swell entrando bem no ângulo que esse pico exige pra funcionar. A energia já pesa na remada, o caldo castiga quem se atrasa no drop, característica de um dos beach breaks mais respeitados de Floripa. Um onshore fraco, vento que vem do mar pra terra, tira um pouco do brilho mas não chega a bagunçar a sessão toda. Vale acompanhar a maré de perto, esse pico costuma fechar tubo quando ela acerta o ponto certo.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|peito-ombro|curto-vaga|lateral-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Monte Alto de porte bom pela manhã, sem crowd",
+          "analise": "Monte Alto amanhece com onda maior e energia moderada, já pede um pouco mais de braço na remada. A série vem curta e apertada, as ondas se atropelam, e esse swell tá na borda da janela que o pico prefere, então nem tudo fecha bonito. Um lateral fraco, vento de lado suave, mexe pouco e não atrapalha muito a leitura. A vantagem aqui é sempre a mesma: pico com bem menos gente que os vizinhos, dá pra escolher onda com calma.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "barra-da-lagoa|cintura-peito|curto-vaga|onshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Barra da Lagoa picada pela manhã",
+          "analise": "A Barra da Lagoa amanhece com onda de porte médio, o swell entrando bem no ângulo que o pico costuma pegar. Só que um onshore forte, vento que vem do mar pra terra e desmancha a parede, chega bagunçando bastante a superfície logo cedo. A série vem curta e apertada, some rápido, e a energia é leve, então não cansa remar mesmo com o mar mexido. É pico bom pra todo mundo, mas hoje vale usar o canal perto do molhe pra remar sem gastar energia à toa.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|cintura-peito|curto-vaga|glassy|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Itaúna abaixo do padrão, mas ainda com categoria",
+          "analise": "Itaúna amanhece com onda de porte médio, longe do tamanho que rendeu fama mundial ao pico, mas ainda com parede rápida na medida certa. Esse swell tá na borda da janela que a praia prefere, então a consistência varia, tem conjunto redondo e tem conjunto que fecha cedo demais. Um lateral fraco, vento de lado suave, mexe pouco e mantém boa parte da face organizada. Mesmo num dia mediano, o peso competitivo do pico se sente na fila, vale remar com respeito a quem já tá lá.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "mocambique|peito-ombro|curto-vaga|onshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Moçambique com vento forte pela manhã",
+          "analise": "Moçambique amanhece com onda maior, o swell entrando bem no ângulo que essa faixa enorme de praia costuma aproveitar. Um onshore forte, vento que vem do mar pra terra e desmancha a onda, chega picotando a parede logo cedo e atrapalha bastante a leitura. A série vem curta e apertada, junto com a energia moderada isso deixa a remada puxada mesmo sem ser um dia grande. Como a praia é comprida e tem vários picos ao longo da faixa, vale caminhar em busca de um trecho mais protegido do vento antes de remar.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|cintura-peito|curto-vaga|glassy|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Praia da Vila lisa pela manhã, refúgio de Itaúna",
+          "analise": "A Praia da Vila amanhece sem vento nenhum, a superfície fica lisa mesmo com a série curta e apertada. Esse swell tá na borda da janela que o canto prefere, então a consistência oscila, mas o que entra costuma vir limpo por causa da proteção natural do lugar. A energia é moderada, pede remada de verdade sem exagerar. É o refúgio de sempre quando Itaúna fica grande demais, e vale procurar o pico perto da igrejinha, que costuma segurar melhor o swell nesse tamanho.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|cintura-peito|medio-7a9|onshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Brava de Arraial com vento forte pela manhã",
+          "analise": "A Brava de Arraial amanhece com onda de porte médio, o swell entrando bem no ângulo que esse pico exposto costuma pegar. Um onshore forte, vento que vem do mar pra terra e desmancha a parede, chega bagunçando bastante a superfície logo cedo, difícil achar uma sequência limpa. A série tem um intervalo razoável, o que ajuda a escolher melhor mesmo com o vento atrapalhando. É pico de força pra quem já tem estrada, e hoje pede ainda mais paciência pra esperar a janela sem vento abrir.",
+          "janela": "6h-9h",
+          "aviso": "Pico exposto e mais pesado, exige experiência mesmo em dia de porte médio."
+        }
+      ]
+    },
+    "praia-grande-arraial|cintura-peito|medio-7a9|onshore-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Praia Grande de porte médio, antes do vento crescer",
+          "analise": "A Praia Grande amanhece com onda de porte médio, o swell entrando bem no ângulo que o pico mais surfado de Arraial costuma aproveitar. Já cedo um onshore forte, vento que vem do mar pra terra e desmancha a onda, mexe bastante na parede, e a tendência é piorar conforme o dia avança. A série tem um intervalo razoável, dá pra escolher as ondas mais limpas entre uma leva e outra. Vale aproveitar logo, porque esse vento costuma encrespar ainda mais o mar à medida que a manhã esquenta.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "arpoador|cabeca-1.5x|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Arpoador grande à noite, pico pesado sob o costão",
+          "analise": "O Arpoador vira à noite um pico de porte sério, o swell entrando cheio no ângulo que emoldura o costão e forma paredes bem maiores do que o normal por aqui. A energia tá muito pesada, cobra experiência e físico pra remar contra a corrente que puxa forte nesse tipo de mar. A série vem bem espaçada, dá tempo de ver o conjunto chegando de longe e escolher com calma onde entrar, um alívio dado o tamanho. Um lateral fraco, vento de lado suave, quase não atrapalha, mas a fila aqui é lei e vale entrar observando quem já tá remando antes de se meter no meio.",
+          "janela": null,
+          "aviso": "Mar de porte sério com energia muito pesada; pico pra quem já tem experiência com correnteza e ondas grandes, cuidado redobrado à noite com visibilidade reduzida."
+        }
+      ]
+    },
+    "ipanema|cabeca-1.5x|bom-9a11|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Ipanema grande à noite, Cagarras filtrando o swell",
+          "analise": "Ipanema recebe à noite um mar de porte bem sério, o swell entra cheio no ângulo certo e as ilhas Cagarras na frente ajudam a moldar e organizar parte dessas ondas maiores. A energia tá muito pesada, a remada cansa rápido e o caldo castiga quem erra o timing nesse tamanho. A série vem espaçada, dá tempo de estudar o conjunto antes de se comprometer, o que ajuda bastante numa noite de mar grande. Um lateral fraco quase não mexe na parede, mas vale buscar os cantos mais protegidos pelas ilhas em vez do meio do pico, mais cheio e mais puxado.",
+          "janela": null,
+          "aviso": "Mar grande e pesado à noite, visibilidade reduzida; recomendado só pra quem já surfa mar de porte sério e conhece a correnteza da praia."
+        }
+      ]
+    },
+    "fernando-de-noronha|peito-ombro|medio-7a9|lateral-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Noronha acende à noite com swell distante",
+          "analise": "Noronha recebe à noite uma onda maior, com energia pesada vinda de um swell que viaja de longe, dos invernos do hemisfério norte. Esse swell tá na borda da janela que a ilha prefere, então a consistência varia bastante entre uma série e outra. Um lateral moderado, vento de lado, mexe parte da parede e deixa a leitura menos previsível no escuro. É ilha de lineup pequeno e respeito ambiental forte, vale surfar com calma e deixar a onda vir até você em vez de forçar posição.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "cacimba-do-padre|peito-ombro|medio-7a9|lateral-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Cacimba pesada à noite, laje à espreita",
+          "analise": "A Cacimba do Padre recebe à noite uma onda maior, com energia pesada segurada pela laje de pedra que dá nome ao pico mais sério de Noronha. Esse swell tá na borda da janela que o fundo misto prefere, então a onda entrega tubo em algumas sequências e fecha maldosa em outras, do nada. Um lateral moderado, vento de lado, ainda mexe na parede e complica a leitura no escuro, entre os Dois Irmãos. É pico só pra quem já rodou reef break de verdade, sem essa experiência o risco de bater na pedra é real demais pra noite.",
+          "janela": null,
+          "aviso": "Fundo de laje de pedra exposta, tubos pesados entre os Dois Irmãos; risco real de impacto na pedra, só pra surfistas experientes em reef break, ainda mais à noite."
+        }
+      ]
+    },
+    "cidreira|joelho-cintura|curto-vaga|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Cidreira fraca à noite",
+          "analise": "Cidreira encerra o dia com onda pequena e força leve, a remada não cansa muito nas séries curtas e apertadas. O swell entra bem no ângulo que esse trecho exposto do litoral gaúcho costuma pegar, mesmo sendo um dia de pouco porte. Um onshore fraco, vento que vem do mar pra terra, enruga um pouco a superfície mas sem destruir a sessão. É noite mais pra manter o ritmo do que pra buscar onda de verdade, sem pressa nenhuma no line-up vazio.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|cintura-peito|curto-vaga|offshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Arroio do Sal com terral leve pela manhã",
+          "analise": "Arroio do Sal amanhece com onda de porte médio, um terral fraco, vento que sai da terra pro mar, já dá uma leve alisada na superfície logo cedo. Esse swell tá na borda da janela que o litoral norte gaúcho costuma pegar, então a consistência varia de conjunto pra conjunto. A série vem curta e apertada, e a energia é moderada, pede remada de verdade sem exagerar. Vale entrar cedo pra aproveitar o vento ainda ameno antes que ele mude de direção.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|joelho-cintura|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Arroio do Sal pequena à noite, mas no ângulo certo",
+          "analise": "Já escuro, Arroio do Sal recebe onda pequena, mas o swell entra bem no ângulo que esse trecho do litoral gaúcho gosta de receber. A energia é leve, a remada não cansa, boa noite pra manter o ritmo sem cobrar muito do corpo. Um lateral fraco, vento de lado suave, mexe pouco e deixa boa parte da série organizada mesmo sendo curta e apertada. Sem onda grande no radar, mas dá pra aproveitar o pico mais vazio da noite com calma.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|joelho-cintura|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Monte Alto pequena à noite, sem crowd de novo",
+          "analise": "Monte Alto encerra o giro do dia com onda pequena, o swell entrando bem no ângulo que esse canto mais tranquilo de Arraial costuma pegar. A série tem um intervalo razoável, dá uma folga entre um conjunto e outro mesmo com o porte baixo da ondulação. Um onshore fraco, vento que vem do mar pra terra, enruga a superfície mas sem destruir a sessão. Como sempre, esse pico costuma ter menos gente que os vizinhos à noite, bom lugar pra treinar posicionamento com calma.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "massaguacu|flat|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 1.5,
+          "titulo": "Massaguaçu com mar liso à noite, quase sem ondulação",
+          "analise": "Sem sol, Massaguaçu segue quase sem ondulação, o mar fica liso do início ao fim das poucas séries que chegam. A pouca energia que existe é bem fraca, quase sem empurrão, então remar vira mais treino do que sessão de verdade. Um lateral fraco, vento de lado suave, nem chega a incomodar essa calmaria. Melhor deixar a prancha guardada essa noite e voltar quando o swell crescer de novo.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|joelho-cintura|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Foguete tranquilo à noite, vento quase nulo",
+          "analise": "Virou noite e o Foguete segue com onda pequena, mas o swell entra bem no ângulo que esse trecho de areia branca de Cabo Frio costuma aproveitar. A série tem um intervalo razoável, dá uma folga boa entre os conjuntos mesmo com o porte baixo. O vento tá quase nulo, mal se sente na água, então a superfície segue organizada a noite toda. Onda pequena, mas honesta, boa pra fechar o dia remando sem pressa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "pantano-do-sul|flat|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 1.5,
+          "titulo": "Pântano do Sul com mar parado à noite",
+          "analise": "A noite pega o Pântano do Sul praticamente parado, quase sem ondulação chegando na vila de pescadores. A força que existe é bem fraca, quase sem empurrão, então nem vale remar esperando onda de verdade. Um lateral fraco, vento de lado suave, não muda em nada esse cenário parado. Noite mais pra apreciar o cenário tradicional da vila do que pra surfar, o swell deve voltar em breve.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|joelho-cintura|curto-vaga|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 2.5,
+          "titulo": "Cassino picado à tarde, vento manda no recado",
+          "analise": "O Cassino recebe à tarde onda pequena, e um onshore forte, vento que vem do mar pra terra e desmancha a parede, chega bagunçando o pouco que existe. A série vem curta e apertada, some rápido, e a força é leve, então a remada não cansa mesmo com o mar mexido. O swell entra no ângulo certo pra essa praia enorme perto dos molhes, mas o vento tira quase todo o brilho hoje. Com água fria e vento forte, vale caprichar na roupa de neoprene antes de entrar.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|joelho-cintura|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Silveira pequena à noite, longe do potencial de sempre",
+          "analise": "A Silveira passa a noite com onda pequena, bem longe do potencial que faz esse pico ser considerado um dos melhores do Sul. O swell entra no ângulo certo, mas a força é leve, então a remada não cansa nem um pouco. Um lateral fraco, vento de lado suave, mantém a maior parte da série organizada mesmo curta e apertada. Boa noite pra manter o ritmo na comunidade que vive de surf todo santo dia, sem esperar nada além disso hoje.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|joelho-cintura|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Brava de Arraial pequena à noite",
+          "analise": "A Brava de Arraial recebe a última janela do dia com onda pequena, o swell entra no ângulo que o pico prefere mesmo sendo um dia de pouco porte. A série tem um intervalo razoável, dá uma folga entre os conjuntos mesmo pequenos. Um onshore fraco, vento que vem do mar pra terra, enruga a superfície mas sem destruir a sessão. Pico normalmente exposto e pesado, hoje à noite dá pra quem tá pegando confiança treinar sem o peso de costume.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|joelho-cintura|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Praia Grande pequena à noite",
+          "analise": "A Praia Grande segue noite adentro com onda pequena, o swell entra bem no ângulo que esse pico mais surfado de Arraial costuma pegar. A série tem um intervalo razoável, dá uma folga entre um conjunto e outro. Um onshore fraco, vento que vem do mar pra terra, enruga a superfície mas sem destruir a sessão dessa vez. Água costuma ficar transparente nesse trecho, boa noite pra remar com calma mesmo sem onda de porte.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "saquarema|joelho-cintura|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Itaúna lisa à noite, pena o tamanho",
+          "analise": "Itaúna vira a noite sem vento nenhum, a superfície fica lisa mesmo com a onda pequena que chega. O swell entra bem no ângulo que faz esse pico ser referência mundial, só falta o porte de costume pra render o show completo. A série tem um intervalo razoável, dá uma folga boa entre os conjuntos pra remar com calma. Fica a dica de aproveitar a calmaria pra treinar leitura de pico, o peso competitivo de sempre segue no ar mesmo num dia pequeno.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "mocambique|joelho-cintura|curto-vaga|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Moçambique pequena à noite, praia deserta",
+          "analise": "Já escuro, Moçambique segue com onda pequena, o swell entra no ângulo certo pra essa faixa enorme e preservada de praia. A série vem curta e apertada, e a força é leve, então a remada não cansa. Um onshore fraco, vento que vem do mar pra terra, enruga a superfície sem destruir a sessão. Com a praia praticamente deserta à noite, vale caminhar em busca do pico mais organizado ao longo da faixa.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|joelho-cintura|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Ibiraquera pequena à noite, perto da lagoa",
+          "analise": "Ibiraquera encerra o dia com onda pequena, o swell entra bem no ângulo que o pico costuma pegar mesmo num dia de pouco porte. A força é leve, a remada não cansa, e a série vem curta e apertada mas segue organizada. Um lateral fraco, vento de lado suave, mexe pouco e deixa boa parte da face limpa. Vale espiar o canto perto da lagoa, costuma segurar melhor a pouca energia que chega essa noite.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|joelho-cintura|medio-7a9|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Figueira pequena à noite",
+          "analise": "A Figueira leva a noite com onda pequena, o swell entra bem no ângulo que esse beach break aberto de Arraial costuma pegar. A série tem um intervalo razoável, dá uma folga entre os conjuntos mesmo pequenos. Um onshore fraco, vento que vem do mar pra terra, enruga a superfície mas sem destruir a sessão. Pico aberto e sem muita proteção, então qualquer mudança de vento se sente rápido na água essa noite.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-da-vila|joelho-cintura|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Praia da Vila lisa à noite",
+          "analise": "A Praia da Vila passa a noite sem vento nenhum, a superfície fica lisa mesmo com a onda pequena que chega nesse canto abrigado. O swell entra bem no ângulo que o lugar costuma pegar, e a série tem um intervalo razoável, dá uma folga boa entre um conjunto e outro. A energia é leve, a remada não cansa nada. É a mesma proteção de sempre perto da igrejinha, boa noite pra quem quer remar tranquilo sem se preocupar com vento.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|joelho-cintura|medio-7a9|glassy|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Unamar lisa à noite",
+          "analise": "Depois do sol sumir, Unamar segue sem vento nenhum, a superfície fica lisa mesmo com a onda pequena que chega nessa faixa de praia de Tamoios. O swell entra bem no ângulo que o pico costuma pegar, e a série tem um intervalo razoável, dá uma folga boa entre os conjuntos. A energia é leve, a remada não cansa nada essa noite. Boa condição pra treinar posicionamento com calma à noite, sem vento nenhum atrapalhando a leitura.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|cintura-peito|curto-vaga|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Farol de Santa Marta fora do padrão à tarde",
+          "analise": "O Farol de Santa Marta recebe à tarde onda de porte médio, longe do tamanho que faz esses points de pedra serem considerados de nível mundial. Um onshore moderado, vento que vem do mar pra terra e enruga a onda, chega atrapalhando justo num pico que costuma ter terral com mais frequência. A série vem curta e apertada, some rápido, e a energia é moderada, pede remada de verdade sem exagerar. Não é o dia clássico do pico, mas ainda vale conferir o ponto de pedra pra quem já conhece a natureza bruta do lugar.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|joelho-cintura|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Ferrugem pequena à noite, sem a badalação do dia",
+          "analise": "O Ferrugem encerra o giro do dia com onda pequena, o swell entra bem no ângulo que o pico costuma pegar mesmo num dia de pouco porte. A força é leve, a remada não cansa, e a série vem curta e apertada mas segue organizada. Um lateral fraco, vento de lado suave, mexe pouco e deixa boa parte da face limpa. Sem a cena badalada do dia, a noite aqui rende sessão tranquila pra quem gosta de pico mais vazio.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "jureia|joelho-cintura|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Jureia pequena pela manhã, reserva vazia",
+          "analise": "A Jureia amanhece com onda pequena, o swell entra bem no ângulo que esse trecho preservado do litoral sul paulista costuma pegar. A série tem um intervalo razoável, dá uma folga entre os conjuntos mesmo pequenos. Um onshore fraco, vento que vem do mar pra terra, enruga a superfície mas sem destruir a sessão logo cedo. Com a reserva ecológica quase sempre vazia, é manhã boa pra remar sem pressa e aproveitar a natureza preservada em volta.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "rosa|joelho-cintura|curto-vaga|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Rosa pequena à tarde, cenário compensa",
+          "analise": "O Rosa recebe à tarde onda pequena, o swell entra no ângulo certo pra essa enseada considerada uma das mais bonitas do Brasil. A série vem curta e apertada, e a força é leve, então a remada não cansa nada. Um onshore fraco, vento que vem do mar pra terra, enruga a superfície mas sem destruir a sessão. Onda pequena pra hoje, mas o cenário e a chance de avistar baleia franca no inverno seguram bem a tarde.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "guarda-do-embau|flat|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 1.5,
+          "titulo": "Guarda do Embaú parada à noite",
+          "analise": "A noite pega a Guarda do Embaú praticamente parada, quase sem ondulação chegando na foz do rio da Madre. A força que existe é bem fraca, quase sem empurrão, então nem vale remar esperando a direita clássica que faz esse lugar ser reserva mundial de surf. Um lateral fraco, vento de lado suave, não muda em nada esse cenário parado. Noite mais pra apreciar a vila preservada do que pra surfar, melhor esperar o swell voltar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|joelho-cintura|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Arroio do Sal pequena pela manhã",
+          "analise": "Arroio do Sal amanhece com onda pequena, o swell entra no ângulo certo pra esse trecho do litoral norte gaúcho. A força é leve, a remada não cansa, boa manhã pra manter o ritmo sem cobrar muito do corpo. Um lateral fraco, vento de lado suave, mexe pouco e deixa boa parte da série organizada mesmo curta e apertada. Sem onda grande no radar, mas dá pra aproveitar o pico cedo antes do vento mudar de direção.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|joelho-cintura|curto-vaga|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 2.5,
+          "titulo": "Arroio do Sal picada à tarde",
+          "analise": "Arroio do Sal recebe à tarde onda pequena, e um onshore forte, vento que vem do mar pra terra e desmancha a parede, chega bagunçando o pouco que existe. A série vem curta e apertada, some rápido, e a força é leve, então a remada não cansa mesmo com o mar mexido. O swell entra no ângulo certo pra esse trecho do litoral gaúcho, mas o vento tira quase todo o brilho hoje. Melhor deixar pra depois que o vento amenizar, se der pra esperar até o fim do dia.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-21T18:08:18.239Z"
+  "generated_at": "2026-09-22T00:27:29.694Z"
 }
