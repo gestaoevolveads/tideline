@@ -186206,7 +186206,106 @@
           "aviso": "Perto da barra a correnteza costuma ficar forte, principalmente perto da virada de maré, atenção redobrada na entrada e na saída."
         }
       ]
+    },
+    "cassino|peito-ombro|bom-9a11|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã lisa e organizada no Cassino",
+          "analise": "O Cassino amanhece com o mar quase parado, vento fraco de lado que mal encosta na água e deixa a superfície lisa perto dos molhes da barra. A ondulação chega do sul, entra em cheio no ângulo que a praia mais longa do mundo gosta de receber, e forma séries bem espaçadas, dando tempo de escolher a onda e se posicionar com calma. Na água a remada pesa um pouco pela água fria do extremo sul gaúcho, mas o drop vem generoso, com pressão suficiente pra sentir a força sem virar caldo. É uma manhã honesta pra quem já pegou fundo de areia: vá cedo, antes do vento de lado crescer, e mantenha atenção à correnteza que se forma perto dos molhes.",
+          "janela": "6h-9h",
+          "aviso": "Corrente pode se formar perto dos molhes da barra: fique de olho na saída, principalmente em maré cheia."
+        }
+      ]
+    },
+    "cidreira|peito-ombro|longo-11a13|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Cidreira recebe série comprida do sudeste",
+          "analise": "Cidreira acorda com uma ondulação de sul bem organizada, chegando de sudeste, um pouco de lado em relação ao ângulo ideal mas ainda entrando cheia no pico. O período longo faz a água formar séries espaçadas, dá tempo de remar, se posicionar e escolher a melhor onda sem correria. O vento gira de lado nessa manhã, não é forte o bastante pra destruir a parede mas já belisca um pouco a superfície e exige mais precisão no pop-up, o movimento de levantar da prancha de uma vez. A energia vem robusta, a remada cansa mas o drop recompensa: quem pegar o horário mais cedo, antes do vento de lado apertar, sai na frente.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|cabeca-1.5x|longo-11a13|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Unamar recebe tarde pesada de sul",
+          "analise": "Unamar entra na tarde com o sul chegando cheio, período longo que empurra série atrás de série sem dar muito respiro. A energia vem pesada, a remada custa caro e quem entrar sem preparo sente o caldo virando cedo, mas o vento fraco de lado ainda deixa a parede limpa o bastante pra segurar a linha. Na água o volume por trás da onda é grande, o drop cobra decisão rápida e a saída pelo canal pede atenção redobrada com tanta água se movendo. É tarde pra quem já tem experiência em beach break de Cabo Frio: reme com calma, guarde fôlego e escolha bem a série, porque hoje o mar não perdoa quem hesita.",
+          "janela": "13h-16h",
+          "aviso": "Energia alta e muito volume de água: a saída pelo canal exige atenção, não é dia pra quem tá começando."
+        }
+      ]
+    },
+    "setiba|cintura-peito|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Setiba fecha a tarde com constância",
+          "analise": "Setiba fecha a tarde com o sudeste entrando dentro do ângulo que a praia gosta de receber, formando ondas de porte médio, nem grandes nem fracas, o tipo de mar que segura o surfista na água por horas. O período bom mantém a série espaçada, dá tempo de ver a onda vindo de longe e se posicionar sem pressa, enquanto o vento fraco de lado só belisca a superfície sem estragar a forma da parede. A energia é moderada, a remada não cansa demais e o drop entrega uma pressão gostosa de sentir sem exigir tanto do corpo. É tarde boa pra quem tá evoluindo: aproveite pra treinar leitura de pico numa praia que já viu etapa de competição de perto.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|joelho-cintura|curto-vaga|glassy|manha|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Arroio do Sal amanhece pequeno e de leste",
+          "analise": "Arroio do Sal amanhece com pouca ondulação, vinda de leste, fora do ângulo de sul que a praia recebe melhor, e isso já avisa: hoje a fila não vai ser das mais organizadas. O período curto deixa a série apertada e atropelada, tipo mar de vento, sem muito espaço entre uma onda e outra pra escolher a melhor. O vento sopra fraco do mar pra terra, o chamado onshore que costuma bagunçar a onda, mas como tá bem manso ainda não estraga de vez a forma, só tira um pouco do brilho. É uma manhã mais pra quem tá aprendendo a ler mar fraco do que pra buscar pressão: bom dia pra treinar remada e posicionamento sem a cobrança de uma onda forte.",
+          "janela": "7h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "guarda-do-embau|flat|curto-vaga|lateral-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Quase flat na foz do rio da Madre",
+          "analise": "Quase não existe ondulação nesse trecho hoje: o pouco que chega vem de leste, fora do ângulo de sul que a foz do rio da Madre recebe melhor, e mal forma alguma coisa que mereça o nome de onda. Guarda do Embaú segue com o vento fraco de lado, então pelo menos a água fica lisa, mas sem energia por trás não sobra o que ele organize. Na água a sensação vai ser mais de canoagem que de surf: sem pressão, sem drop, só a paisagem linda da vila pra compensar. Hoje é dia de guardar a prancha, aproveitar a travessia de barco ou a nado pra passear, ou só sentar na areia esperando a próxima ondulação de sul chegar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "farol-de-santa-marta|cintura-peito|curto-vaga|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Um amanhecer manso no ponto bruto do Farol",
+          "analise": "O Farol de Santa Marta, ponto de pedra que costuma cobrar pesado, amanhece raro e manso: a ondulação de leste entra dentro do ângulo que o pico aceita mas com pouca força, e o período curto deixa a série apertada, sem aquela potência que o pico é famoso por entregar. O vento sopra fraco do mar pra terra, o chamado onshore que costuma bagunçar a onda, mas como tá bem ameno só tira um pouco do brilho sem destruir a forma. Na água a remada é leve, o drop vem suave, dá pra sentir o fundo de pedra por baixo sem a pressão que normalmente exige surfista avançado. É manhã boa pra quem quer conhecer o pico sem o susto: entre com calma, respeite as pedras na entrada e saída, e aproveite o dia mais gentil que esse point costuma dar.",
+          "janela": "6h-9h",
+          "aviso": "Fundo de pedra: mesmo num dia mais manso, a entrada e a saída pedem atenção onde a laje aparece."
+        }
+      ]
+    },
+    "farol-de-santa-marta|peito-ombro|curto-vaga|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Noite de vento forte bagunça o point do Farol",
+          "analise": "À noite o Farol de Santa Marta segue recebendo a ondulação de leste dentro do ângulo que o pico aceita, mas o vento virou forte do mar pra terra, o chamado onshore que desmonta a onda, e isso destrói boa parte da organização que o point costuma entregar. A energia até seria de dar uma pegada respeitável, só que a superfície fica toda picotada, com a parede quebrando em pedaços em vez de formar aquela linha longa clássica do pico. Sem luz natural pra enxergar o fundo de pedra, a leitura do mar fica quase impossível, e é justamente aí que mora o perigo desse point que já é bruto de dia. A recomendação honesta pra essa noite é não entrar: espere o vento cair e a claridade voltar pra reencontrar o Farol do jeito que ele entrega o seu melhor.",
+          "janela": null,
+          "aviso": "Ponto de pedra, sem luz e vento forte bagunçando a leitura do mar: risco real de bater no fundo. Não entre nessa condição."
+        }
+      ]
+    },
+    "pantano-do-sul|flat|curto-vaga|onshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Pântano do Sul segue tranquilo, mar parado",
+          "analise": "A vila de pescadores no sul de Floripa segue tranquila hoje, quase sem ondulação pra contar: o pouco que chega vem de leste, fora do ângulo de sul que Pântano do Sul recebe melhor, e mal empurra água o bastante pra formar alguma parede. O vento sopra fraco do mar pra terra, o chamado onshore que costuma bagunçar a onda, mas sem energia nenhuma por trás não sobra nem o que ele desorganize. Quem entrar na água vai sentir mais a calma do vilarejo tradicional do que qualquer coisa parecida com surf, sem pressão, sem remada que valha a pena. Hoje o conselho é aproveitar o cenário e a vila, tomar um café olhando o mar, e voltar a checar o app quando o sul decidir aparecer de novo.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-24T00:08:18.550Z"
+  "generated_at": "2026-09-24T06:09:59.214Z"
 }
