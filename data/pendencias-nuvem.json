@@ -1,7 +1,210 @@
 [
  {
-  "key": "praia-da-vila|joelho-cintura|medio-7a9|onshore-fraco|noite|dentro",
+  "key": "cidreira|joelho-cintura|curto-vaga|onshore-moderado|noite|dentro",
+  "data": "2026-09-26",
+  "praia": "Cidreira",
+  "perfil": {
+   "fundo": "beach",
+   "orientacao": "S/SE",
+   "janelaSwell": [
+    "S",
+    "SE"
+   ],
+   "terral": "O/NO",
+   "mare": "media",
+   "nivel": "intermediario",
+   "carater": "Beach break do litoral médio gaúcho, exposto, ondas com swell de sul."
+  },
+  "condicao": {
+   "turno": "noite",
+   "altura_m": 0.78,
+   "faixa_altura": "joelho-cintura",
+   "periodo_s": 5.3,
+   "faixa_periodo": "curto-vaga",
+   "energia_kw": 1.6,
+   "vento_tipo": "onshore",
+   "vento_kmh": 14.5,
+   "swell_de": "leste",
+   "swell_fit": "dentro"
+  }
+ },
+ {
+  "key": "foguete|joelho-cintura|medio-7a9|lateral-moderado|tarde|dentro",
   "data": "2026-09-27",
+  "praia": "Foguete",
+  "perfil": {
+   "fundo": "beach",
+   "orientacao": "S/SE",
+   "janelaSwell": [
+    "S",
+    "SE"
+   ],
+   "terral": "N/NO",
+   "mare": "media",
+   "nivel": "intermediario",
+   "carater": "Beach break de Cabo Frio, ondas com força e areia branca. Pega bem os swells de sul."
+  },
+  "condicao": {
+   "turno": "tarde",
+   "altura_m": 0.77,
+   "faixa_altura": "joelho-cintura",
+   "periodo_s": 7.8,
+   "faixa_periodo": "medio-7a9",
+   "energia_kw": 2.2,
+   "vento_tipo": "lateral",
+   "vento_kmh": 15.1,
+   "swell_de": "sudeste",
+   "swell_fit": "dentro"
+  }
+ },
+ {
+  "key": "rosa|joelho-cintura|curto-vaga|onshore-moderado|tarde|dentro",
+  "data": "2026-09-27",
+  "praia": "Praia do Rosa",
+  "perfil": {
+   "fundo": "beach",
+   "orientacao": "S/SE",
+   "janelaSwell": [
+    "S",
+    "SE"
+   ],
+   "terral": "O/NO",
+   "mare": "media",
+   "nivel": "intermediario",
+   "carater": "Enseada cênica de Imbituba, uma das mais bonitas do Brasil, avistamento de baleias franca no inverno. Onda de qualidade, turismo sofisticado."
+  },
+  "condicao": {
+   "turno": "tarde",
+   "altura_m": 0.73,
+   "faixa_altura": "joelho-cintura",
+   "periodo_s": 5.8,
+   "faixa_periodo": "curto-vaga",
+   "energia_kw": 1.5,
+   "vento_tipo": "onshore",
+   "vento_kmh": 14.3,
+   "swell_de": "leste",
+   "swell_fit": "dentro"
+  }
+ },
+ {
+  "key": "figueira|joelho-cintura|medio-7a9|lateral-moderado|tarde|dentro",
+  "data": "2026-09-27",
+  "praia": "Figueira",
+  "perfil": {
+   "fundo": "beach",
+   "orientacao": "S/SE",
+   "janelaSwell": [
+    "S",
+    "SE"
+   ],
+   "terral": "N/NO",
+   "mare": "media",
+   "nivel": "intermediario",
+   "carater": "Praia de Arraial do Cabo, beach break aberto. Funciona com swell de sudeste e leste."
+  },
+  "condicao": {
+   "turno": "tarde",
+   "altura_m": 0.77,
+   "faixa_altura": "joelho-cintura",
+   "periodo_s": 7.8,
+   "faixa_periodo": "medio-7a9",
+   "energia_kw": 2.2,
+   "vento_tipo": "lateral",
+   "vento_kmh": 19.7,
+   "swell_de": "sudeste",
+   "swell_fit": "dentro"
+  }
+ },
+ {
+  "key": "figueira|joelho-cintura|medio-7a9|lateral-moderado|noite|dentro",
+  "data": "2026-09-27",
+  "praia": "Figueira",
+  "perfil": {
+   "fundo": "beach",
+   "orientacao": "S/SE",
+   "janelaSwell": [
+    "S",
+    "SE"
+   ],
+   "terral": "N/NO",
+   "mare": "media",
+   "nivel": "intermediario",
+   "carater": "Praia de Arraial do Cabo, beach break aberto. Funciona com swell de sudeste e leste."
+  },
+  "condicao": {
+   "turno": "noite",
+   "altura_m": 0.71,
+   "faixa_altura": "joelho-cintura",
+   "periodo_s": 7.7,
+   "faixa_periodo": "medio-7a9",
+   "energia_kw": 1.9,
+   "vento_tipo": "lateral",
+   "vento_kmh": 17.2,
+   "swell_de": "sudeste",
+   "swell_fit": "dentro"
+  }
+ },
+ {
+  "key": "monte-alto|joelho-cintura|medio-7a9|lateral-moderado|tarde|dentro",
+  "data": "2026-09-27",
+  "praia": "Monte Alto",
+  "perfil": {
+   "fundo": "beach",
+   "orientacao": "S/SE",
+   "janelaSwell": [
+    "S",
+    "SE"
+   ],
+   "terral": "N/NO",
+   "mare": "media",
+   "nivel": "intermediario",
+   "carater": "Beach break tranquilo de Arraial do Cabo. Costuma ter menos gente que os picos vizinhos."
+  },
+  "condicao": {
+   "turno": "tarde",
+   "altura_m": 0.74,
+   "faixa_altura": "joelho-cintura",
+   "periodo_s": 7.8,
+   "faixa_periodo": "medio-7a9",
+   "energia_kw": 2.1,
+   "vento_tipo": "lateral",
+   "vento_kmh": 19.7,
+   "swell_de": "sudeste",
+   "swell_fit": "dentro"
+  }
+ },
+ {
+  "key": "monte-alto|joelho-cintura|medio-7a9|lateral-moderado|noite|dentro",
+  "data": "2026-09-27",
+  "praia": "Monte Alto",
+  "perfil": {
+   "fundo": "beach",
+   "orientacao": "S/SE",
+   "janelaSwell": [
+    "S",
+    "SE"
+   ],
+   "terral": "N/NO",
+   "mare": "media",
+   "nivel": "intermediario",
+   "carater": "Beach break tranquilo de Arraial do Cabo. Costuma ter menos gente que os picos vizinhos."
+  },
+  "condicao": {
+   "turno": "noite",
+   "altura_m": 0.7,
+   "faixa_altura": "joelho-cintura",
+   "periodo_s": 7.7,
+   "faixa_periodo": "medio-7a9",
+   "energia_kw": 1.8,
+   "vento_tipo": "lateral",
+   "vento_kmh": 17.2,
+   "swell_de": "sudeste",
+   "swell_fit": "dentro"
+  }
+ },
+ {
+  "key": "praia-da-vila|joelho-cintura|curto-vaga|lateral-moderado|manha|dentro",
+  "data": "2026-09-28",
   "praia": "Praia da Vila",
   "perfil": {
    "fundo": "beach",
@@ -16,138 +219,21 @@
    "carater": "O canto mais abrigado de Saquarema, ao lado da igrejinha. Funciona quando Itaúna está grande demais. Point de referência histórica."
   },
   "condicao": {
-   "turno": "noite",
-   "altura_m": 0.65,
-   "faixa_altura": "joelho-cintura",
-   "periodo_s": 7.9,
-   "faixa_periodo": "medio-7a9",
-   "energia_kw": 1.6,
-   "vento_tipo": "onshore",
-   "vento_kmh": 8.3,
-   "swell_de": "sudeste",
-   "swell_fit": "dentro"
-  }
- },
- {
-  "key": "tramandai|cintura-peito|curto-vaga|onshore-forte|manha|dentro",
-  "data": "2026-09-27",
-  "praia": "Tramandaí",
-  "perfil": {
-   "fundo": "beach",
-   "orientacao": "S/SE",
-   "janelaSwell": [
-    "S",
-    "SE"
-   ],
-   "terral": "O/NO",
-   "mare": "media",
-   "nivel": "intermediario",
-   "carater": "Beach break gaúcho junto à barra, litoral retão exposto. Maré e vento mandam bastante."
-  },
-  "condicao": {
    "turno": "manha",
-   "altura_m": 0.83,
-   "faixa_altura": "cintura-peito",
-   "periodo_s": 5.1,
+   "altura_m": 0.74,
+   "faixa_altura": "joelho-cintura",
+   "periodo_s": 6.8,
    "faixa_periodo": "curto-vaga",
    "energia_kw": 1.8,
-   "vento_tipo": "onshore",
-   "vento_kmh": 24.3,
-   "swell_de": "leste",
-   "swell_fit": "dentro"
-  }
- },
- {
-  "key": "fernando-de-noronha|ombro-cabeca|bom-9a11|offshore-moderado|tarde|fora",
-  "data": "2026-09-27",
-  "praia": "Fernando de Noronha",
-  "perfil": {
-   "fundo": "misto",
-   "orientacao": "N/NE",
-   "janelaSwell": [
-    "N",
-    "NE",
-    "NO"
-   ],
-   "terral": "S/SE",
-   "mare": "todas",
-   "nivel": "avancado",
-   "carater": "Registro reverente. Acesso limitado, lineup pequeno e experiente, ética de guardião ambiental (Projeto Golfinho Rotador). Swells de N do inverno do Hemisfério Norte acendem a ilha. Água quente, cristalina."
-  },
-  "condicao": {
-   "turno": "tarde",
-   "altura_m": 1.7,
-   "faixa_altura": "ombro-cabeca",
-   "periodo_s": 9,
-   "faixa_periodo": "bom-9a11",
-   "energia_kw": 12.8,
-   "vento_tipo": "offshore",
-   "vento_kmh": 23.4,
-   "swell_de": "sudeste",
-   "swell_fit": "fora"
-  }
- },
- {
-  "key": "praia-grande-arraial|joelho-cintura|medio-7a9|lateral-moderado|tarde|dentro",
-  "data": "2026-09-27",
-  "praia": "Praia Grande",
-  "perfil": {
-   "fundo": "beach",
-   "orientacao": "S/SE",
-   "janelaSwell": [
-    "S",
-    "SE"
-   ],
-   "terral": "N/NO",
-   "mare": "media",
-   "nivel": "intermediario",
-   "carater": "A praia mais surfada de Arraial do Cabo, exposta aos swells de sul. Água transparente, vento pode encrespar à tarde."
-  },
-  "condicao": {
-   "turno": "tarde",
-   "altura_m": 0.77,
-   "faixa_altura": "joelho-cintura",
-   "periodo_s": 7.8,
-   "faixa_periodo": "medio-7a9",
-   "energia_kw": 2.2,
    "vento_tipo": "lateral",
-   "vento_kmh": 14.7,
+   "vento_kmh": 14.3,
    "swell_de": "sudeste",
    "swell_fit": "dentro"
   }
  },
  {
-  "key": "praia-brava-arraial|joelho-cintura|medio-7a9|lateral-moderado|tarde|dentro",
-  "data": "2026-09-27",
-  "praia": "Praia Brava (Arraial)",
-  "perfil": {
-   "fundo": "beach",
-   "orientacao": "S/SE",
-   "janelaSwell": [
-    "S",
-    "SE"
-   ],
-   "terral": "N/NO",
-   "mare": "media",
-   "nivel": "avancado",
-   "carater": "Praia brava de Arraial do Cabo, mais pesada e exposta. Onda de força para quem tem experiência."
-  },
-  "condicao": {
-   "turno": "tarde",
-   "altura_m": 0.77,
-   "faixa_altura": "joelho-cintura",
-   "periodo_s": 7.8,
-   "faixa_periodo": "medio-7a9",
-   "energia_kw": 2.2,
-   "vento_tipo": "lateral",
-   "vento_kmh": 14.7,
-   "swell_de": "sudeste",
-   "swell_fit": "dentro"
-  }
- },
- {
-  "key": "saquarema|joelho-cintura|medio-7a9|onshore-fraco|noite|dentro",
-  "data": "2026-09-27",
+  "key": "saquarema|joelho-cintura|curto-vaga|lateral-moderado|manha|dentro",
+  "data": "2026-09-28",
   "praia": "Saquarema",
   "perfil": {
    "fundo": "beach",
@@ -162,259 +248,80 @@
    "carater": "Itaúna, o Maracanã do surf brasileiro. Sede da etapa brasileira do CT. Beach break de padrão mundial: parede rápida, tubo, muita força com swell de S/SE e terral de N. Peso competitivo enorme."
   },
   "condicao": {
-   "turno": "noite",
-   "altura_m": 0.65,
+   "turno": "manha",
+   "altura_m": 0.74,
    "faixa_altura": "joelho-cintura",
-   "periodo_s": 7.9,
-   "faixa_periodo": "medio-7a9",
-   "energia_kw": 1.6,
-   "vento_tipo": "onshore",
-   "vento_kmh": 8.3,
+   "periodo_s": 6.8,
+   "faixa_periodo": "curto-vaga",
+   "energia_kw": 1.8,
+   "vento_tipo": "lateral",
+   "vento_kmh": 14.3,
    "swell_de": "sudeste",
    "swell_fit": "dentro"
   }
  },
  {
-  "key": "cacimba-do-padre|ombro-cabeca|bom-9a11|offshore-moderado|tarde|fora",
-  "data": "2026-09-27",
-  "praia": "Cacimba do Padre",
-  "perfil": {
-   "fundo": "misto",
-   "orientacao": "N/NO",
-   "janelaSwell": [
-    "N",
-    "NO",
-    "NE"
-   ],
-   "terral": "S/SE",
-   "mare": "media-alta",
-   "nivel": "avancado",
-   "carater": "A onda mais séria de Noronha. Com mar grande, a laje de pedra fica exposta e segura os big swells de N, formando tubos pesados entre os Dois Irmãos. Perigoso, só experiente."
-  },
-  "condicao": {
-   "turno": "tarde",
-   "altura_m": 1.7,
-   "faixa_altura": "ombro-cabeca",
-   "periodo_s": 9,
-   "faixa_periodo": "bom-9a11",
-   "energia_kw": 12.8,
-   "vento_tipo": "offshore",
-   "vento_kmh": 23.4,
-   "swell_de": "sudeste",
-   "swell_fit": "fora"
-  }
- },
- {
-  "key": "praia-brava-buzios|joelho-cintura|curto-vaga|lateral-moderado|manha|dentro",
-  "data": "2026-09-28",
-  "praia": "Praia Brava (Búzios)",
+  "key": "praia-do-porto-imbituba|cintura-peito|curto-vaga|onshore-moderado|manha|borda",
+  "data": "2026-09-29",
+  "praia": "Praia do Porto (Imbituba)",
   "perfil": {
    "fundo": "beach",
-   "orientacao": "L/SE",
+   "orientacao": "S/SE",
    "janelaSwell": [
-    "SE",
-    "L",
-    "S"
+    "S",
+    "SE"
    ],
    "terral": "O/NO",
    "mare": "media",
-   "nivel": "intermediario",
-   "carater": "Praia de Búzios voltada ao leste, pega swells de SE/L. Cenário sofisticado da península."
+   "nivel": "avancado",
+   "carater": "Imbituba sediou etapa do CT mundial. Beach break de padrão internacional com swell de sul. Referência competitiva do Sul."
   },
   "condicao": {
    "turno": "manha",
-   "altura_m": 0.7,
-   "faixa_altura": "joelho-cintura",
-   "periodo_s": 5.6,
+   "altura_m": 1.17,
+   "faixa_altura": "cintura-peito",
+   "periodo_s": 6.2,
    "faixa_periodo": "curto-vaga",
-   "energia_kw": 1.4,
-   "vento_tipo": "lateral",
-   "vento_kmh": 17.4,
-   "swell_de": "sudeste",
-   "swell_fit": "dentro"
+   "energia_kw": 4.1,
+   "vento_tipo": "onshore",
+   "vento_kmh": 15.1,
+   "swell_de": "leste",
+   "swell_fit": "borda"
   }
  },
  {
-  "key": "geriba|joelho-cintura|curto-vaga|lateral-moderado|manha|dentro",
-  "data": "2026-09-28",
-  "praia": "Geribá",
+  "key": "capao-da-canoa|cintura-peito|curto-vaga|lateral-forte|manha|dentro",
+  "data": "2026-09-30",
+  "praia": "Capão da Canoa",
   "perfil": {
    "fundo": "beach",
-   "orientacao": "L/SE",
+   "orientacao": "S/SE",
    "janelaSwell": [
-    "SE",
-    "L",
-    "S"
+    "S",
+    "SE"
    ],
    "terral": "O/NO",
    "mare": "media",
    "nivel": "todos",
-   "carater": "A praia mais surfada de Búzios, beach break democrático e social. Point badalado, muito crowd no verão."
+   "carater": "Principal balneário do litoral norte do RS, beach break movimentado no verão, ondas com swell de sul."
   },
   "condicao": {
    "turno": "manha",
-   "altura_m": 0.7,
-   "faixa_altura": "joelho-cintura",
-   "periodo_s": 5.6,
+   "altura_m": 1.13,
+   "faixa_altura": "cintura-peito",
+   "periodo_s": 6.3,
    "faixa_periodo": "curto-vaga",
-   "energia_kw": 1.4,
+   "energia_kw": 3.9,
    "vento_tipo": "lateral",
-   "vento_kmh": 17.4,
+   "vento_kmh": 27.1,
    "swell_de": "sudeste",
    "swell_fit": "dentro"
   }
  },
  {
-  "key": "arroio-do-sal|peito-ombro|curto-vaga|lateral-fraco|manha|borda",
-  "data": "2026-09-28",
-  "praia": "Arroio do Sal",
-  "perfil": {
-   "fundo": "beach",
-   "orientacao": "S/SE",
-   "janelaSwell": [
-    "S",
-    "SE"
-   ],
-   "terral": "O/NO",
-   "mare": "media",
-   "nivel": "intermediario",
-   "carater": "Litoral norte gaúcho, beach break exposto aos swells de sul."
-  },
-  "condicao": {
-   "turno": "manha",
-   "altura_m": 1.23,
-   "faixa_altura": "peito-ombro",
-   "periodo_s": 5.9,
-   "faixa_periodo": "curto-vaga",
-   "energia_kw": 4.4,
-   "vento_tipo": "lateral",
-   "vento_kmh": 12.4,
-   "swell_de": "leste",
-   "swell_fit": "borda"
-  }
- },
- {
-  "key": "arroio-do-sal|cintura-peito|curto-vaga|glassy|noite|borda",
-  "data": "2026-09-28",
-  "praia": "Arroio do Sal",
-  "perfil": {
-   "fundo": "beach",
-   "orientacao": "S/SE",
-   "janelaSwell": [
-    "S",
-    "SE"
-   ],
-   "terral": "O/NO",
-   "mare": "media",
-   "nivel": "intermediario",
-   "carater": "Litoral norte gaúcho, beach break exposto aos swells de sul."
-  },
-  "condicao": {
-   "turno": "noite",
-   "altura_m": 1.17,
-   "faixa_altura": "cintura-peito",
-   "periodo_s": 6.9,
-   "faixa_periodo": "curto-vaga",
-   "energia_kw": 4.6,
-   "vento_tipo": "lateral",
-   "vento_kmh": 2.4,
-   "swell_de": "leste",
-   "swell_fit": "borda"
-  }
- },
- {
-  "key": "tramandai|cintura-peito|curto-vaga|glassy|tarde|borda",
-  "data": "2026-09-28",
-  "praia": "Tramandaí",
-  "perfil": {
-   "fundo": "beach",
-   "orientacao": "S/SE",
-   "janelaSwell": [
-    "S",
-    "SE"
-   ],
-   "terral": "O/NO",
-   "mare": "media",
-   "nivel": "intermediario",
-   "carater": "Beach break gaúcho junto à barra, litoral retão exposto. Maré e vento mandam bastante."
-  },
-  "condicao": {
-   "turno": "tarde",
-   "altura_m": 1.15,
-   "faixa_altura": "cintura-peito",
-   "periodo_s": 6.4,
-   "faixa_periodo": "curto-vaga",
-   "energia_kw": 4.2,
-   "vento_tipo": "onshore",
-   "vento_kmh": 4.8,
-   "swell_de": "leste",
-   "swell_fit": "borda"
-  }
- },
- {
-  "key": "regencia|joelho-cintura|curto-vaga|lateral-moderado|tarde|dentro",
-  "data": "2026-09-28",
-  "praia": "Regência",
-  "perfil": {
-   "fundo": "rivermouth",
-   "orientacao": "L/SE",
-   "janelaSwell": [
-    "S",
-    "SE",
-    "L"
-   ],
-   "terral": "O/NO",
-   "mare": "media",
-   "nivel": "avancado",
-   "carater": "Onda de foz do Rio Doce, direita longa e famosa, capital capixaba do surf. Impactada pela tragédia de Mariana (lama), símbolo de resistência. Palco de campeonatos."
-  },
-  "condicao": {
-   "turno": "tarde",
-   "altura_m": 0.75,
-   "faixa_altura": "joelho-cintura",
-   "periodo_s": 6.9,
-   "faixa_periodo": "curto-vaga",
-   "energia_kw": 1.9,
-   "vento_tipo": "lateral",
-   "vento_kmh": 20.3,
-   "swell_de": "leste",
-   "swell_fit": "dentro"
-  }
- },
- {
-  "key": "tucuns|joelho-cintura|curto-vaga|lateral-moderado|manha|dentro",
-  "data": "2026-09-28",
-  "praia": "Tucuns",
-  "perfil": {
-   "fundo": "beach",
-   "orientacao": "L/SE",
-   "janelaSwell": [
-    "SE",
-    "L",
-    "S"
-   ],
-   "terral": "O/NO",
-   "mare": "media",
-   "nivel": "intermediario",
-   "carater": "A praia mais deserta de Búzios, ondas melhores e menos gente que Geribá. Preferida de quem foge do crowd."
-  },
-  "condicao": {
-   "turno": "manha",
-   "altura_m": 0.7,
-   "faixa_altura": "joelho-cintura",
-   "periodo_s": 5.6,
-   "faixa_periodo": "curto-vaga",
-   "energia_kw": 1.4,
-   "vento_tipo": "lateral",
-   "vento_kmh": 17.4,
-   "swell_de": "sudeste",
-   "swell_fit": "dentro"
-  }
- },
- {
-  "key": "itaunas|peito-ombro|curto-vaga|lateral-moderado|noite|borda",
+  "key": "itamambuca|cintura-peito|medio-7a9|lateral-fraco|noite|dentro",
   "data": "2026-09-30",
-  "praia": "Itaúnas",
+  "praia": "Itamambuca",
   "perfil": {
    "fundo": "beach",
    "orientacao": "L/SE",
@@ -426,19 +333,19 @@
    "terral": "O/NO",
    "mare": "media",
    "nivel": "intermediario",
-   "carater": "Beach break do extremo norte capixaba, dunas e vila do forró. Onda de qualidade com swell de S. Natureza preservada."
+   "carater": "O point mais tradicional de Ubatuba, sede de campeonatos, rio e mata atlântica. Onda de qualidade com swell de S/SE. Camping clássico do surf paulista."
   },
   "condicao": {
    "turno": "noite",
-   "altura_m": 1.2,
-   "faixa_altura": "peito-ombro",
-   "periodo_s": 5.2,
-   "faixa_periodo": "curto-vaga",
-   "energia_kw": 3.7,
+   "altura_m": 0.86,
+   "faixa_altura": "cintura-peito",
+   "periodo_s": 7.1,
+   "faixa_periodo": "medio-7a9",
+   "energia_kw": 2.6,
    "vento_tipo": "lateral",
-   "vento_kmh": 23.4,
-   "swell_de": "nordeste",
-   "swell_fit": "borda"
+   "vento_kmh": 7.5,
+   "swell_de": "sudeste",
+   "swell_fit": "dentro"
   }
  }
 ]
