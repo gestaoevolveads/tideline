@@ -186305,7 +186305,238 @@
           "aviso": null
         }
       ]
+    },
+    "barra-do-sahy|peito-ombro|longo-11a13|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Sul chegando redondo pela manhã",
+          "analise": "O mar amanhece com uma série espaçada chegando do sul, dando tempo de sobra pra enxergar a onda de longe e se posicionar com calma. Aqui, protegida pela foz do rio, a água tende a ficar mais organizada mesmo com um onshore fraco por perto (aquele vento que vem do mar e mexe na superfície), então a bagunça fica pequena. Na água a remada pesa um pouco mais que o normal, sinal de que a força por trás da onda está presente, mas o drop vem generoso e dá segurança pra quem está começando. Fechamento: aproveite logo cedo, antes do vento crescer, e prefira as ondas que fecham mais devagar pra treinar a leitura da série.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "ibiraquera|joelho-cintura|curto-vaga|lateral-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Noite fraca e picotada",
+          "analise": "A noite entrega um mar pequeno, com a série vindo apertada e atropelada, típica de mar de vento mais que de ondulação organizada. A força por trás da onda é fraca, então a remada é leve, mas o intervalo também é curto, sem fôlego pra pegar ritmo. Um vento lateral (que sopra de lado) mexe na parede e deixa a onda menos previsível, exigindo mais atenção de quem entra na água no escuro. Fechamento honesto: não é uma sessão pra se animar, mas serve pra treinar remada em condição adversa; se for entrar, prefira ficar num trecho já conhecido de dia.",
+          "janela": null,
+          "aviso": "Mar de noite: visibilidade baixa, atenção redobrada com o fundo e outros surfistas na água."
+        }
+      ]
+    },
+    "silveira|joelho-cintura|curto-vaga|lateral-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Pouca força também à noite",
+          "analise": "Debaixo do céu escuro, a água que vive girando ao redor do surf por aqui mostra uma série curta e apertada, sinal de mar mais bagunçado que ondulação de verdade. A força por trás da onda é fraca, a remada não cansa, mas o tempo entre uma onda e outra também não dá trégua pra escolher a melhor. Um vento lateral (que sopra de lado) desorganiza a parede, e mesmo quem já manja bem do pico sente a leitura mais difícil no escuro. Fechamento: não é sessão de treino técnico, é sessão de manter o corpo na água; se entrar, escolha um trecho que você já conhece de cor.",
+          "janela": null,
+          "aviso": "Mar de noite: visibilidade baixa, atenção redobrada com o fundo e outros surfistas na água."
+        }
+      ]
+    },
+    "ferrugem|joelho-cintura|curto-vaga|lateral-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Fraquinho também na badalada",
+          "analise": "A queda de luz essa noite não ajuda: a série chega curta e apertada, mais cara de mar batido por vento do que de ondulação vinda de longe. A força por trás da onda é fraca, então a remada não cansa, mas também não sobra tempo pra escolher a onda certa antes que a próxima já esteja em cima. O vento lateral (que sopra de lado) desmonta a parede e deixa tudo mais picado, típico de noite fraca por aqui. Fechamento: guarde a prancha pra um turno com mais força e, se ainda assim for entrar, vá com companhia por causa da visibilidade.",
+          "janela": null,
+          "aviso": "Mar de noite: visibilidade baixa, atenção redobrada com o fundo e outros surfistas na água."
+        }
+      ]
+    },
+    "setiba|joelho-cintura|medio-7a9|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã tranquila pra treinar leitura",
+          "analise": "A manhã chega com uma série de ritmo mediano, nem apertada nem espaçada, dando um tempo razoável pra observar o pico antes de remar. A força por trás da onda é fraca, a remada não cansa, mas também não empurra muito o drop, então o surfista sente um passeio mais suave que puxado. Um onshore fraco (vento que vem do mar e mexe um pouco na superfície) tira o brilho da parede sem estragar a sessão. Fechamento: boa condição pra quem está evoluindo testar posicionamento, prefira entrar logo antes do vento crescer com o sol.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "arroio-do-sal|peito-ombro|curto-vaga|glassy|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tarde com força boa mas rasteira",
+          "analise": "A tarde entrega uma força boa por trás da onda, dessas que fazem a remada pesar e o drop vir com pressão de verdade. A série, porém, chega apertada, batendo uma atrás da outra sem dar muito tempo de escolha, o que pede remada ligeira pra pegar no ponto certo. O vento é fraco e quase não mexe na parede, então a condição fica mais limpa do que o normal pra essa faixa de horário. Fechamento honesto: onda com corpo pede atenção redobrada na saída, prefira remar por fora e escolher bem antes de se comprometer.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "capao-da-canoa|peito-ombro|curto-vaga|glassy|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 6.5,
+          "titulo": "Tarde forte e disputada",
+          "analise": "Aqui a tarde traz uma força consistente por trás da onda, com remada pesada e um drop que cobra atenção desde a decolada. A série vem apertada, uma logo atrás da outra, então quem hesita acaba perdendo o encaixe. Um vento lateral fraco (soprando de lado, mas sem muita força) mexe pouco na parede, deixando a condição surfável pra praticamente todo nível. Fechamento: com o pico badalado e bastante gente na água, respeite a fila e escolha ondas dentro da sua régua pra aproveitar sem estresse.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "tramandai|peito-ombro|curto-vaga|lateral-fraco|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Tarde de barra exigente",
+          "analise": "A tarde aqui, junto à força por trás da onda, faz a remada pesar sem exagero. A série chega apertada, obrigando a escolher rápido antes que a próxima já esteja formada. O vento lateral (que sopra de lado) já é sentido com mais intensidade nesse trecho, desorganizando a parede e mexendo com a água ao redor de quem está remando. Fechamento honesto: aproveite a força da onda com remada econômica, e leia bem o pico antes de entrar.",
+          "janela": "13h-16h",
+          "aviso": "Vento e maré mandam bastante nesse trecho: fique de olho em deslocamento lateral na água."
+        }
+      ]
+    },
+    "ibiraquera|peito-ombro|curto-vaga|onshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã com corpo, série apertada",
+          "analise": "A manhã chega com uma força boa por trás da onda, dando aquela remada que cansa mas compensa no drop. A série vem apertada, uma em cima da outra, então o jogo é remar rápido e não titubear na escolha. Um onshore fraco (vento que vem do mar e mexe de leve na superfície) tira um pouco do brilho da parede sem estragar a sessão. Fechamento: com o corpo de onda que está vindo, prefira remar por fora pra não ficar preso no meio da série.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "silveira|peito-ombro|curto-vaga|onshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Força chegando cedo por aqui",
+          "analise": "Quem chega cedo encontra uma força boa por trás da onda, remada que pesa mas recompensa quem se compromete no drop. A série é apertada, sem muito espaço entre uma onda e outra, e isso pede leitura rápida de quem já manja do pico. Um onshore fraco (vento que vem do mar e mexe de leve na água) enruga a parede sem tirar a qualidade que faz esse trecho ser respeitado. Fechamento: aproveite enquanto o vento ainda está fraco, porque a condição tende a mudar ao longo do dia.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-porto-imbituba|peito-ombro|curto-vaga|lateral-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Padrão internacional em ritmo apertado",
+          "analise": "A manhã aqui entrega uma força respeitável por trás da onda, dessas que já vieram com nome no circuito. A série chega apertada, cobrando remada ligeira e decisão rápida pra não perder o encaixe. Um vento lateral fraco (soprando de lado, sem muita força) mexe pouco na parede, então a qualidade que consagrou esse pico segue presente. Fechamento honesto: nível avançado tira mais proveito da força que está rolando, quem está evoluindo pode observar de fora antes de se arriscar no pico principal.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "camburi|cintura-peito|bom-9a11|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Noite com série espaçada mas mexida",
+          "analise": "A noite traz uma série mais espaçada, dando tempo de ver a onda vindo de longe antes de se posicionar. A força por trás dela é moderada, remada nem leve nem pesada, um meio-termo que serve pra qualquer nível. Só que um onshore moderado (vento que vem do mar e bagunça a onda) já mexe bastante na parede, deixando tudo menos previsível pra quem enxerga pouco no escuro. Fechamento: se for entrar, escolha um trecho já conhecido e não force ondas fechando rápido.",
+          "janela": null,
+          "aviso": "Mar de noite: visibilidade baixa, atenção redobrada com o fundo e outros surfistas na água."
+        }
+      ]
+    },
+    "rosa|peito-ombro|curto-vaga|onshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5.5,
+          "titulo": "Enseada com força e vento de mar",
+          "analise": "Nessa enseada cênica, a manhã chega com uma força boa por trás da onda, remada que cansa mas entrega um drop com pressão. A série vem apertada, sem muito tempo de escolha, exigindo atenção assim que a onda se anuncia. O onshore (vento que vem do mar e bagunça a superfície) já se faz sentir, tirando um pouco do brilho da parede. Fechamento honesto: a beleza do lugar não engana a condição de vento, quem gosta de parede mais limpa pode esperar um turno com menos onshore.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "costao-do-santinho|cintura-peito|curto-vaga|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4.5,
+          "titulo": "Manhã de vento subindo cedo",
+          "analise": "A manhã aqui começa com uma força mais moderada por trás da onda, remada que não cansa demais nem empurra muito o drop. A série é apertada, então vale remar assim que a onda se forma pra não ficar pra trás. Um onshore moderado (vento que vem do mar e já bagunça de verdade a parede) chega cedo e picota a superfície, tirando o principal atrativo desse pico encostado na natureza. Fechamento: se puder escolher, priorize as primeiras horas antes do vento crescer ainda mais.",
+          "janela": "6h-8h",
+          "aviso": null
+        }
+      ]
+    },
+    "ferrugem|peito-ombro|curto-vaga|onshore-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Manhã de força antes do sol esquentar",
+          "analise": "A manhã traz uma força boa por trás da onda, com remada que pesa mas recompensa no drop. A série chega apertada, uma logo atrás da outra, pedindo decisão rápida de quem já está posicionado. Um onshore fraco (vento que vem do mar e mexe de leve na superfície) ainda não estraga a sessão, mas tende a crescer ao longo do dia como sempre acontece por aqui. Fechamento: aproveite logo cedo antes do pico badalado encher e o vento subir junto com o sol.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-floripa|cintura-peito|curto-vaga|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Pico pesado com força fraca hoje",
+          "analise": "Mesmo sendo um pico conhecido pela força, a manhã de hoje chega com energia baixa por trás da onda, remada leve e drop sem muita pressão. A série vem apertada, então o jogo é ficar atento pra não perder o pouco que está rolando. Um onshore moderado (vento que vem do mar e bagunça a parede) ainda desorganiza bastante mesmo com pouca força embaixo, deixando a sessão menos interessante que o normal por aqui. Fechamento honesto: não é dia de esperar o pico pesado que esse lugar promete, mas ainda serve pra treinar remada em mar mexido.",
+          "janela": "6h-9h",
+          "aviso": "Pico com localismo forte: chegue de boa e observe o grupo local antes de remar pro pico principal."
+        }
+      ]
+    },
+    "fernando-de-noronha|peito-ombro|curto-vaga|lateral-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Noite de vento forte na ilha",
+          "analise": "A noite aqui, nessa ilha que preserva sua vida marinha com cuidado raro, chega com uma força boa por trás da onda, mas a série vem apertada e não dá muito tempo de escolha. Um vento lateral forte (soprando de lado com bastante intensidade) desmonta a parede e cria correnteza sentida na remada, tornando a leitura ainda mais difícil no escuro. A força embaixo compensa em parte, só que o conjunto pede experiência de quem já conhece bem o pico. Fechamento honesto: com vento forte e pouca luz, essa não é noite pra quem está testando o lugar pela primeira vez.",
+          "janela": null,
+          "aviso": "Vento lateral forte à noite: risco de correnteza e baixa visibilidade, só para quem já conhece bem o pico."
+        }
+      ]
+    },
+    "itaunas|cintura-peito|curto-vaga|lateral-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 3.5,
+          "titulo": "Tarde de vento mandando mais que o mar",
+          "analise": "A tarde chega com pouca força por trás da onda, remada leve mas sem muito prêmio no drop. A série é curta e apertada, típica de mar mais mexido que ondulação organizada. Um vento lateral moderado (soprando de lado com uma força já perceptível) mostra que quem manda na condição hoje é o vento, não o mar. Fechamento: aproveite mais pra passear pelas dunas e voltar num turno com vento mais fraco.",
+          "janela": "12h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "itaunas|cintura-peito|curto-vaga|lateral-moderado|noite|borda": {
+      "variacoes": [
+        {
+          "score": 2.5,
+          "titulo": "Vento segue mandando à noite",
+          "analise": "Mesmo depois que o sol se põe, o vento lateral (que sopra de lado) segue com força moderada, e a série continua curta e apertada, sem ondulação de peso por trás. A remada é leve, o corpo da onda quase não se sente, e a pouca luz ainda dificulta enxergar por onde a correnteza está puxando. Não é uma condição que compensa o esforço de entrar no escuro. Fechamento honesto: melhor deixar essa sessão pra um turno de dia, quando dá pra ver o vento chegando.",
+          "janela": null,
+          "aviso": "Mar de noite com vento lateral: visibilidade baixa, atenção redobrada se decidir entrar."
+        }
+      ]
+    },
+    "cacimba-do-padre|peito-ombro|curto-vaga|lateral-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Noite de vento forte no ponto mais sério",
+          "analise": "Aqui, entre as pedras que dão nome a essa dupla de morros conhecida na ilha, a força por trás da onda já é grande o suficiente pra exigir experiência mesmo de dia. À noite, um vento lateral forte (soprando de lado com bastante intensidade) se soma a isso e desorganiza a parede sobre a laje de pedra. A série vem apertada, cobrando decisão rápida numa hora em que a visibilidade já é baixa por natureza. Fechamento honesto: esse não é lugar pra se arriscar sem conhecer cada detalhe do fundo, e menos ainda de noite com vento forte.",
+          "janela": null,
+          "aviso": "Fundo de pedra exposto e vento forte à noite: só para quem já surfa esse pico de dia e conhece cada detalhe da laje."
+        }
+      ]
+    },
+    "penha|peito-ombro|curto-vaga|offshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã limpa com vento a favor",
+          "analise": "A manhã chega com uma força mediana por trás da onda, remada equilibrada que não cansa demais nem deixa o drop sem graça. A série é apertada, então vale estar já posicionado quando ela chegar. Um offshore fraco (vento que sai da terra pro mar e alisa a onda) deixa a parede mais limpa e desenhada, favorecendo quem gosta de ler bem a onda antes de decidir a manobra. Fechamento: aproveite essa janela de vento a favor antes que ele mude ao longo do dia, é quando a condição costuma ficar mais gostosa.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-24T06:09:59.214Z"
+  "generated_at": "2026-09-24T12:08:10.773Z"
 }
