@@ -186833,7 +186833,348 @@
           "aviso": "É noite: sem visibilidade da linha, evite remar mar adentro sem referência clara da arrebentação."
         }
       ]
+    },
+    "castelhanos|ombro-cabeca|bom-9a11|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Castelhanos grande e cheio de maral leve",
+          "analise": "Castelhanos amanhece com bancada grande e período bom, aquela série que dá tempo de ver a onda vindo de longe e se ajeitar antes da parada. Sopra maral fraco, vento que vem do mar pra terra e tende a bagunçar a face, então a parede ainda tem alguma organização mas perde um pouco do brilho que teria num dia sem vento. Quem entrar sente remada pesada por causa do tamanho e vai precisar de fôlego pra furar a arrebentação, já que o acesso aqui é difícil e o pico fica isolado do lado de fora da ilha. A dica é ir cedo, quando o maral ainda está mais fraco, e escolher o canto mais protegido pra não gastar toda a energia só chegando lá.",
+          "janela": "6h-9h",
+          "aviso": "Acesso é difícil e isolado: avalie fôlego e experiência antes de entrar, socorro demora."
+        }
+      ]
+    },
+    "barra-do-sahy|cabeca-1.5x|longo-11a13|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Barra do Sahy foge do perfil de sempre",
+          "analise": "Barra do Sahy, que normalmente é aquele canto manso de foz de rio pra iniciante e família, amanhece hoje com tamanho bem acima do normal e série longa, bem espaçada, dando tempo de sobra pra ver a onda chegar e se posicionar com calma. O vento sopra de lado, lateral, aquele que não ajuda nem atrapalha muito mas mexe um pouco a face, então a parede ainda mantém alguma limpeza mesmo com essa força toda. Quem for de nível iniciante vai sentir a remada pesada e o caldo empurrando mais forte que o de costume, porque a energia aqui está bem acima do que essa praia costuma entregar. A dica de hoje é sinceridade: quem está começando fica pertinho da praia ou espera baixar; quem já tem experiência aproveita um dia raro de porte grande num pico que normalmente é tranquilo.",
+          "janela": "7h-11h",
+          "aviso": "Tamanho bem maior que o normal da praia: iniciante deve avaliar com calma antes de entrar, ou pedir orientação de quem já surfa aqui."
+        }
+      ]
+    },
+    "monte-alto|grande-2x+|longo-11a13|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Monte Alto ganha porte raro de mar aberto",
+          "analise": "Monte Alto troca a fama de pico tranquilo por um mar bem mais grande hoje, com série longa e espaçada que dá tempo de estudar o set antes de remar. Sopra maral fraco, vento que vem do mar e tende a bagunçar a face, mas como é fraco ainda dá pra aproveitar a força que vem por trás da onda, que hoje está bem pesada. Surfista de nível intermediário vai sentir o drop mais rápido e a remada mais cansativa que o normal desse pico, que costuma ser mais tranquilo que os vizinhos. Vale entrar com prancha com mais volume e escolher o canto mais organizado pra aproveitar o tamanho sem se afogar de remada.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|grande-2x+|longo-11a13|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 9,
+          "titulo": "Foguete acorda gigante e sem vento nenhum",
+          "analise": "Foguete amanhece com bancada gigante, série longa e bem espaçada, e o detalhe que muda tudo: quase não tem vento, a superfície fica lisa e a parede desenha inteira sem nenhuma rasteira de vento estragando. A energia que vem por trás da onda é das mais pesadas do litoral hoje, então quem entrar sente o drop rápido e o caldo pesado se errar o tempo. Pra quem já é intermediário e conhece a força da areia branca daqui, esse é daqueles dias raros que ficam na memória. A dica é remar cedo, escolher o pico mais aberto pra ter espaço de manobra e respeitar o tamanho: não é dia de forçar onda de fora se a remada já estiver cansando.",
+          "janela": "6h-9h",
+          "aviso": "Tamanho e energia bem acima do normal: só para quem já tem experiência com ondas grandes e remada forte."
+        }
+      ]
+    },
+    "figueira|grande-2x+|longo-11a13|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Figueira recebe swell de sul em porte grande",
+          "analise": "Figueira acorda com bancada grande vinda de sul, encaixando direto na praia, com série longa e espaçada que dá tempo de ver a onda de longe antes de remar. Sopra maral fraco, vento que vem do mar e tende a enrugar a face, então a parede perde um pouco do brilho mas ainda segura forma boa pra esse tamanho. Surfista intermediário vai sentir a energia pesada empurrando o corpo tanto na remada quanto no drop, exigindo mais fôlego que o normal desse beach break aberto. Vale entrar num canto mais protegido do vento e ter noção clara do próprio limite antes de forçar onda de fora.",
+          "janela": "7h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "camburi|cabeca-1.5x|longo-11a13|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Camburi some o vento e ganha porte generoso",
+          "analise": "Camburi amanhece com bancada bem generosa e série longa, espaçada, dando tempo de sobra pra estudar o set antes de remar pro pico. O vento praticamente não sopra hoje, então a face fica lisa e desenha inteira, sem nenhuma bagunça de vento estragando a parede. Isso deixa a energia da onda ainda mais evidente: quem entrar sente o drop com mais impulso e a remada puxando mais forte que num dia comum desse beach break badalado do litoral norte. A dica é chegar cedo, antes do pico badalado encher de gente, porque um dia assim some rápido da lista de vagas na água.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|grande-2x+|longo-11a13|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Praia Grande entrega o maior porte do dia em Arraial",
+          "analise": "Praia Grande, a mais surfada de Arraial, acorda hoje com o maior porte do lote: bancada bem grande, série longa e espaçada, que dá tempo de sobra pra ler o set antes de remar. O vento sopra fraco de lado, lateral, que mexe um pouco a face mas não desmancha, então a água ainda fica bem transparente e a parede mantém boa leitura apesar da força toda. Surfista intermediário vai sentir a remada puxando bastante e o drop rápido, energia bem acima da média que essa praia costuma entregar. A dica é ficar de olho no vento, que aqui costuma bagunçar com o avanço do dia, e aproveitar logo cedo enquanto a janela ainda está limpa.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|grande-2x+|longo-11a13|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Unamar recebe porte grande com mar espelhado",
+          "analise": "Unamar acorda com bancada grande e série longa, bem espaçada, o tipo de condição que dá tempo de sobra pra escolher a onda certa. Sem vento nenhum bagunçando, a água fica praticamente espelhada e a parede desenha limpa do início ao fim. A energia que vem por trás é pesada, então quem entrar sente o drop puxar forte e a remada cansar mais rápido que o normal desse beach break de Tamoios. Vale entrar cedo, antes que qualquer brisa apareça e tire o brilho da manhã, e escolher prancha com volume suficiente pra esse tamanho.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "maresias|cabeca-1.5x|longo-11a13|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Maresias amanhece no ponto que fez a fama do pico",
+          "analise": "Maresias acorda hoje com bancada bem generosa, série longa e espaçada, exatamente o tipo de condição que forjou surfista de ponta nessa praia. Sem vento pra bagunçar, a face fica lisa e limpa, mostrando a onda inteira desde a formação até o fechamento. Surfista avançado vai sentir a energia forte tanto na remada quanto no drop, um daqueles dias que lembram por que esse beach break virou destino de peregrinação depois dos títulos que saíram daqui. A dica é remar cedo: com esse porte e essa qualidade, o pico enche rápido de gente boa disputando a mesma onda.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "itacoatiara|grande-2x+|longo-11a13|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 8,
+          "titulo": "Itacoatiara junta porte grande com mar liso",
+          "analise": "Itacoatiara acorda pesada hoje: bancada grande, série longa e espaçada, e quase nenhum vento pra atrapalhar, então a parede fecha rápido e forte, do jeito que fez fama esse beach break de fundo raso. Quem já conhece o pico sabe que aqui o tubo vem forte e o caldo cobra caro de quem erra o tempo, ainda mais com essa energia toda por trás da onda. Surfista avançado vai sentir o drop seco e a necessidade de decidir rápido, sem espaço pra hesitar na entrada. A dica é respeitar o localismo do pico e só remar pra dentro se já tiver domínio de onda pesada e fundo raso.",
+          "janela": "6h-9h",
+          "aviso": "Fundo raso e tubo forte: só para quem já tem experiência com onda pesada, e o localismo do pico exige respeito."
+        }
+      ]
+    },
+    "praia-brava-arraial|grande-2x+|longo-11a13|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "A Brava de Arraial mostra a força que a fama promete",
+          "analise": "A Brava de Arraial vem grande hoje, com série longa e espaçada, entregando o tipo de energia que só quem já tem estrada aproveita direito. O vento sopra fraco de lado, mexendo um pouco a face mas sem tirar a organização da parede. Surfista avançado sente o drop puxando forte e a remada cansando rápido, prova de que esse pico mais exposto de Arraial não é lugar pra quem está testando as pernas. A dica é entrar acompanhado, ler bem o canal de saída e guardar energia pra série maior que sempre vem no meio do set.",
+          "janela": "6h-9h",
+          "aviso": "Onda de força pra quem já tem experiência: fundo pesado, não é pico pra iniciante."
+        }
+      ]
+    },
+    "monte-alto|ombro-cabeca|longo-11a13|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Monte Alto mistura porte bom com vento mexendo mais",
+          "analise": "Monte Alto amanhece com porte bom, série longa e espaçada que ainda dá tempo de estudar o set com calma. Hoje o vento lateral, que sopra de lado, vem mais forte que o comum, mexendo bastante a face e tirando um pouco da limpeza que esse pico costuma ter. Surfista intermediário sente a remada puxando e precisa se ajustar mais rápido na hora do drop, já que a superfície não está tão previsível quanto de costume. A dica é escolher o pico mais protegido do vento e não se afobar: o set organizado ainda aparece entre as rajadas.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|joelho-cintura|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Noite fraca em Monte Alto, mar de vento",
+          "analise": "A noite chega em Monte Alto com bancada pequena e série curta, apertada, ondas quase em cima umas das outras sem dar tempo de respirar direito. O vento lateral mexe bastante a face, e junto com o período curto deixa tudo mais bagunçado que o normal desse pico. Surfista intermediário não vai sentir muita força na remada nem no drop, é mais treino de leitura do que sessão de energia. A dica honesta é não esperar muito dessa condição: serve pra manter o corpo em movimento, não pra buscar onda de qualidade.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|joelho-cintura|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Foguete esfria de noite com mar pequeno",
+          "analise": "De noite, Foguete perde bastante força: bancada pequena, série curta e apertada, sem muito tempo entre uma onda e outra. O vento lateral fraco mexe pouco a face, então a bagunça vem mais do período curto do que do vento em si. Quem entrar sente pouca energia tanto na remada quanto no drop, condição mais pra passar tempo na água do que pra buscar sessão de verdade. A dica é ajustar a expectativa: onda curta pede prancha mais ágil e paciência pra escolher a que fecha mais devagar.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|joelho-cintura|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Figueira fecha o dia pequena e apertada",
+          "analise": "A noite encontra Figueira com bancada pequena e série curta, ondas chegando quase grudadas umas nas outras. O vento lateral moderado mexe a face com uma intensidade que atrapalha mais do que ajuda, deixando a parede irregular. Surfista intermediário sente pouca energia no drop e precisa remar mais pra compensar a falta de força da onda. A dica é entrar sem grandes expectativas e aproveitar mais pela companhia do que pela qualidade do mar hoje.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "geriba|joelho-cintura|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Geribá amanhece pequena, do jeito que recebe todo mundo",
+          "analise": "Geribá acorda com bancada pequena e série curta, apertada, o tipo de manhã tranquila que combina com o clima democrático desse pico badalado de Búzios. O vento lateral fraco mexe pouco a face, deixando a condição mais estável do que agitada. Quem está começando sente pouca força na remada e no drop, perfeito pra treinar posicionamento sem se afogar de energia. A dica é aproveitar o horário mais cedo, antes do pico encher com o movimento que costuma tomar conta daqui.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|joelho-cintura|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Praia Grande esfria e encolhe de noite",
+          "analise": "De noite, Praia Grande perde o porte grande de outros horários: bancada pequena, série curta e apertada, sem tempo de sobra entre as ondas. O vento lateral moderado mexe bastante a face, e a combinação com o período curto deixa a parede pouco previsível. Surfista intermediário sente pouca força no drop e precisa remar mais pra aproveitar qualquer onda que feche direito. A dica é não forçar sessão longa: a água aqui costuma ficar mais organizada em outros horários do dia.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|joelho-cintura|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Unamar termina o dia sem muita força",
+          "analise": "A noite chega em Unamar com bancada pequena e série curta, ondas se sucedendo rápido demais pra dar tempo de se posicionar com calma. O vento lateral fraco mexe pouco a face, então a condição fica mais fraca por falta de energia do que por bagunça do vento. Quem entrar sente pouco impulso tanto na remada quanto no drop, sessão mais de manutenção do que de aproveitamento. A dica é entrar com prancha mais volumosa pra compensar a falta de força da onda.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-buzios|joelho-cintura|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "A Brava de Búzios amanhece discreta",
+          "analise": "A Brava de Búzios acorda com bancada pequena e série curta, apertada, condição bem mais discreta do que o cenário sofisticado da península faz parecer. O vento lateral fraco mexe pouco a face, deixando a superfície razoavelmente estável apesar do período curto. Surfista intermediário sente pouca energia no drop e vai precisar remar bastante pra aproveitar qualquer onda que junte um pouco mais de força. A dica é ir cedo e não esperar porte grande, é dia de treinar remada e paciência.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|joelho-cintura|curto-vaga|lateral-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "De noite, a Brava de Arraial perde a fama de pesada",
+          "analise": "De noite, a Brava de Arraial troca a fama de pico pesado por uma bancada pequena e série curta, bem longe da força que costuma exigir experiência. O vento lateral moderado mexe bastante a face, deixando a condição irregular apesar do tamanho baixo. Surfista avançado sente pouca energia no drop, essa não é a versão do pico que atrai quem busca desafio. A dica é ver essa sessão como treino leve, guardando energia pra quando o porte voltar a subir.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "tucuns|joelho-cintura|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tucuns segue tranquila e sem crowd",
+          "analise": "Tucuns acorda com bancada pequena e série curta, apertada, mas mantém a vantagem de sempre: bem menos gente na água do que a vizinha mais badalada. O vento lateral fraco mexe pouco a face, então a condição fica estável mesmo sem muita força por trás da onda. Surfista intermediário sente pouca energia no drop e vai remar bastante pra aproveitar as ondas que juntarem um pouco mais de peso. A dica é aproveitar justamente a calmaria: pico vazio compensa a falta de tamanho.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-pero|joelho-cintura|curto-vaga|offshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "O Peró usa a orientação a seu favor",
+          "analise": "O Peró chega pequeno essa tarde, com série curta e apertada, mas tem a seu favor o detalhe que faz esse canto ser salvação em dias de swell forte de sul: sopra terral moderado, vento que sai da terra pro mar e alisa a face em vez de bagunçar, então mesmo com pouca energia a parede desenha limpa. Quem entrar sente pouca força no drop, mas a onda pelo menos fecha organizada, sem a rasteira que o vento de mar costuma dar. Surfista intermediário aproveita mais pela qualidade da parede do que pelo tamanho. A dica é entrar mesmo assim: tarde de vento favorável desse jeito não aparece sempre por aqui.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-floripa|joelho-cintura|curto-vaga|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "A Brava de Floripa apanha do vento à noite",
+          "analise": "De noite, a Brava de Floripa vem pequena e com série curta, e pra piorar sopra maral forte, vento que vem do mar e bagunça bastante a face, destruindo qualquer chance de parede organizada. Essa é a mesma praia que vira palco de campeonato quando o swell chega grande e limpo, mas hoje não tem nada daquela força. Surfista avançado sente a água picada e sem consistência, difícil até escolher onda pra remar. A dica sincera é esperar outra janela: hoje não é noite de buscar esse pico que costuma exigir respeito.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "guarda-do-embau|joelho-cintura|curto-vaga|offshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Guarda do Embaú fica limpa mas sem força",
+          "analise": "A Guarda do Embaú chega pequena essa tarde, com série curta e bem pouca energia por trás da onda, resultado de um swell fraco que sobra pra esse canto de foz de rio. Sopra terral moderado, vento que sai da terra e alisa a parede, então a pouca onda que chega ao menos desenha limpa, mantendo o charme do lugar mesmo sem força. Surfista intermediário sente muito pouco impulso no drop e vai precisar remar bastante pra aproveitar qualquer coisa. A dica é aproveitar mais o cenário e a travessia até o pico do que esperar por sessão de energia hoje.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "regencia|joelho-cintura|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Regência amanhece discreta na terra da direita famosa",
+          "analise": "Regência acorda com bancada pequena e série curta, bem longe do porte que fez essa direita ficar famosa no Espírito Santo. O vento lateral fraco mexe pouco a face, deixando a condição estável mesmo com pouca força por trás da onda. Surfista avançado sente pouca energia no drop, dia mais de manutenção técnica do que de buscar a linha longa que essa praia costuma entregar quando o swell cresce. A dica é aproveitar pra treinar leitura de pico, guardando expectativa maior pra quando o porte voltar a subir.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|joelho-cintura|curto-vaga|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Unamar abre o dia pequena e mexida",
+          "analise": "Unamar amanhece com bancada pequena e série curta, apertada, sem dar muito tempo entre uma onda e outra. O vento lateral moderado mexe bastante a face, deixando a condição mais irregular do que o normal desse beach break. Surfista intermediário sente pouca força no drop e ainda precisa lidar com a superfície bagunçada pelo vento. A dica é entrar só se a expectativa for baixa: hoje é sessão de manter o corpo ativo, não de buscar qualidade.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "costao-do-santinho|cintura-peito|curto-vaga|onshore-forte|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Costão do Santinho perde a qualidade de noite",
+          "analise": "De noite, o Costão do Santinho vem com porte um pouco mais generoso que o normal do turno, mas a série continua curta e apertada, ondas se sucedendo rápido demais. Sopra maral forte, vento que vem do mar e bagunça bastante a face, apagando a organização que esse beach break junto ao costão de inscrições na pedra costuma ter em dias melhores. Surfista intermediário sente a água picada e o drop imprevisível, difícil manter uma linha limpa. A dica é deixar essa sessão pra depois: com esse vento, a qualidade não compensa o esforço.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-floripa|joelho-cintura|curto-vaga|onshore-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "A Brava de Floripa segue pequena pela manhã",
+          "analise": "A Brava de Floripa amanhece com bancada pequena e série curta, e já sopra maral moderado, vento que vem do mar e enruga a face, tirando parte da organização que esse pico forte do norte de Floripa costuma ter. Surfista avançado sente pouca energia por trás da onda e ainda lida com a superfície mexida pelo vento, combinação que não favorece quem busca tubo. A dica é ir cedo, antes do maral ganhar mais força ao longo do dia, pra pegar a janela mais organizada possível.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "penha|joelho-cintura|curto-vaga|offshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Penha ganha uma mãozinha do vento à tarde",
+          "analise": "Penha chega pequena essa tarde, com série curta e apertada, mas conta com uma ajuda simples: sopra terral fraco, vento que sai da terra pro mar e alisa a face em vez de bagunçar, suavizando um pouco a condição. Surfista intermediário sente pouca energia no drop, mas pelo menos a parede não vem irregular como em dias de vento de mar. A dica é aproveitar essa janela mais calma pra treinar posicionamento, já que o litoral norte catarinense muda rápido de humor. Vale entrar com expectativa de sessão leve, não de porte grande.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "cidreira|peito-ombro|curto-vaga|offshore-fraco|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Cidreira ganha corpo mas o swell chega de raspão",
+          "analise": "Cidreira chega essa tarde com porte que já impõe respeito, bem mais que o habitual desse beach break exposto do litoral gaúcho, mas o swell vem de leste, direção que só chega de raspão nessa praia virada mais pra sul, então a onda não organiza tanto quanto o tamanho sugere. Sopra terral fraco, vento que sai da terra e alisa a face, o que ajuda, mas a série curta e apertada ainda deixa tudo meio atropelado. Surfista intermediário sente energia moderada na remada e no drop, um mar que engana pelo porte mas cobra atenção na leitura por causa do ângulo estranho do swell. A dica é escolher bem o canto, procurando o trecho que melhor recebe essa direção fora do padrão de hoje.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "massaguacu|joelho-cintura|curto-vaga|onshore-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Massaguaçu fecha o mês com pouco a favor",
+          "analise": "Massaguaçu chega pequena essa tarde, e o swell vem de leste, de raspão pra essa praia que normalmente pega melhor o sul, então a pouca força que tem ainda perde leitura por causa do ângulo. Sopra maral moderado, vento que vem do mar e bagunça a face, somando mais um obstáculo a uma tarde que já começa fraca. Surfista intermediário sente pouquíssima energia no drop e ainda lida com a superfície mexida pelo vento. A dica sincera é não esperar muito dessa tarde: melhor guardar energia pra quando o swell de sul, que é o forte da casa, voltar a aparecer.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-25T00:10:54.126Z"
+  "generated_at": "2026-09-25T06:12:44.098Z"
 }
