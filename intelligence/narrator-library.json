@@ -187614,7 +187614,139 @@
           "aviso": null
         }
       ]
+    },
+    "foguete|cintura-peito|curto-vaga|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Série curta mas o encaixe ajuda",
+          "analise": "À tarde, o swell (a ondulação que vem de longe) chega bem alinhado com a praia, mas em série curta, com as ondas se sucedendo rápido, sem dar muito espaço entre uma e outra. Na água, isso pede remada cedo e decisão rápida, porque o tempo pra ler a formação da parede fica curto, com uma força ainda moderada e sem pressão pesada no drop. O vento lateral, que sopra de banda, segue fraco e mal belisca a superfície, então não estraga o desenho da onda. Vale entrar com uma prancha de mais flutuação pra garantir a pega nas séries apertadas e buscar os picos que abrem mais organizados dentro da faixa de areia branca.",
+          "janela": "14h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|cintura-peito|curto-vaga|lateral-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Mesma janela do swell, agora sem luz",
+          "analise": "Já à noite, o swell segue chegando bem alinhado com a praia, em série curta que se repete rápido, ondas próximas umas das outras. Quem pegar essa condição sente uma força ainda moderada, sem muita pressão no drop, mas precisa de atenção porque o tempo de leitura da parede é curto. O vento lateral, que sopra de banda, permanece fraco e não bagunça muito a superfície, deixando a onda com um desenho ainda limpo. Sem luz natural, o ideal é guardar essa condição de referência pro início do dia seguinte, quando dá pra enxergar a praia inteira e escolher o canto certo.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "guarda-do-embau|flat|curto-vaga|offshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 1,
+          "titulo": "Foz da Madre quase parada de noite",
+          "analise": "À noite, o mar na foz do rio da Madre está quase parado, bem fraco, com pouquíssima força chegando na areia. O vento offshore (que sai da terra pro mar e alisa a superfície) está fraco, então pelo menos a água fica lisa, sem sujeira, mesmo sem ter muito o que surfar. Quem procurar essa condição vai sentir mais o silêncio da vila do que qualquer onda de verdade, remada parada na maior parte do tempo. Serve como noite de descanso: melhor esperar o próximo swell entrar pra aproveitar a clássica direita que faz esse pico ser Reserva Mundial de Surf.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "unamar|cintura-peito|curto-vaga|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde de sudeste começando a entrar",
+          "analise": "O beach break de Tamoios recebe à tarde um swell bem alinhado com a praia, ainda em série curta, ondas fechando rápido uma atrás da outra. Na água a força é mediana, dá pra sentir o empurrão mas sem cobrar demais na remada nem no drop. O vento onshore (que vem do mar pra terra e bagunça a onda) ainda está fraco, então só tira um pouco da lisura sem destruir o desenho da parede. Boa tarde pra treinar leitura de banco, aproveitando enquanto o vento não aperta mais forte.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "tramandai|peito-ombro|curto-vaga|lateral-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Manhã com corpo mas ângulo torto",
+          "analise": "A manhã no litoral gaúcho chega com um mar de corpo, força que já se sente na remada, mas o swell entra mais de raspão, sem bater no ângulo ideal pra essa faixa de areia exposta. A série vem curta, ondas próximas, então a janela pra ler cada uma e se posicionar fica pequena. O vento lateral, que sopra de banda, ainda está fraco e não estraga muito a superfície, mas aqui perto da barra a maré e o vento mandam bastante no formato do dia. Vale testar os bancos mais protegidos e ajustar a escolha de pico conforme a maré for virando.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "torres|peito-ombro|curto-vaga|onshore-moderado|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde mexida perto dos molhes",
+          "analise": "Perto dos molhes, a tarde chega com um mar de corpo, mas o swell entra mais de raspão, fora do ângulo que essa praia pega melhor. O vento onshore (que vem do mar pra terra e bagunça a onda) já sopra com uma força que se nota, picando a superfície e tirando a lisura da parede. Na água, isso significa remada mais cansativa pra achar a seção que ainda fecha limpa, com a série vindo curta e apertada. Melhor buscar o lado mais protegido do vento e guardar munição pra quando o ângulo do swell fechar melhor com a praia.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "torres|peito-ombro|curto-vaga|onshore-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Tarde de vento forte estragando um bom encaixe",
+          "analise": "O swell entra bem alinhado com a praia à tarde, o tipo de condição que teria tudo pra render, mas o vento onshore (que vem do mar pra terra e bagunça a onda) já sopra forte, destruindo boa parte da lisura da parede. Na água, a força ainda está presente, mas a superfície picada torna a leitura da onda mais difícil e a remada mais cansativa. A série continua curta, ondas amontoadas, o que soma à sensação de mar mexido e pouco previsível. Perto dos molhes, o mar mexido pede atenção redobrada com a correnteza que a estrutura de pedra costuma formar; melhor deixar essa sessão passar e esperar o vento acalmar.",
+          "janela": "13h-16h",
+          "aviso": "Vento forte deixando o mar bagunçado perto dos molhes; atenção à correnteza formada pela estrutura de pedra."
+        }
+      ]
+    },
+    "fernando-de-noronha|peito-ombro|curto-vaga|offshore-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite de vento forte saindo da ilha",
+          "analise": "Já de noite, um mar de corpo bom chega na ilha, mas o swell entra mais de raspão, sem o ângulo perfeito pra essa janela. O vento offshore (que sai da terra pro mar e alisa a superfície) sopra forte, o que ainda segura a parede em pé por mais tempo antes de arrebentar, mesmo com a série vindo curta. Quem pensar em entrar precisa lembrar que aqui o acesso já é limitado e o respeito pelo ambiente vem antes de qualquer onda, então checar a condição com calma e companhia é o caminho mais seguro. Sem visibilidade natural, o ideal é guardar essa força toda pra quando a luz natural deixar o pico inteiro visível.",
+          "janela": null,
+          "aviso": "Surf noturno exige visibilidade mínima; melhor aguardar o dia clarear pra avaliar o pico com segurança."
+        }
+      ]
+    },
+    "cacimba-do-padre|peito-ombro|curto-vaga|offshore-forte|noite|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite pesada na laje de Cacimba",
+          "analise": "De noite, o mar chega com corpo considerável na laje de pedra entre os Dois Irmãos, mas o swell entra mais de raspão, sem o ângulo ideal pra essa janela. O vento offshore (que sai da terra pro mar e alisa a superfície) sopra forte, segurando a parede em pé por mais tempo antes de arrebentar, o que aqui, em cima de fundo de pedra, pesa ainda mais a queda. A série vem curta, ondas próximas, exigindo remada e posicionamento precisos mesmo pra quem já conhece esse pico. Esse é ponto sério, indicado só pra quem já rodou nesse tipo de fundo raso; sem visibilidade e sem experiência, melhor nem cogitar entrar de noite.",
+          "janela": null,
+          "aviso": "Fundo de pedra raso e mar sem visibilidade à noite: pico só pra quem já tem experiência total nesse tipo de onda."
+        }
+      ]
+    },
+    "mocambique|ombro-cabeca|curto-vaga|onshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Noite de mar grande e vento de través",
+          "analise": "De noite, o mar cresce bastante nessa praia longa e preservada, chegando com um corpo grande e uma força que já pesa na remada. O swell entra bem alinhado com a janela ideal, dando uma energia forte que cobra respeito logo na entrada, o caldo castiga quem errar o tempo de saída. O vento onshore (que vem do mar pra terra e bagunça a onda) sopra com uma força que se nota, picando parte da superfície mas sem tirar toda a potência da parede. Com tanta faixa de areia deserta pra escolher, vale procurar os picos mais protegidos do vento e entrar já sabendo que essa condição pede experiência.",
+          "janela": null,
+          "aviso": "Surf noturno com mar grande exige visibilidade mínima e experiência; sem enxergar bem o pico, é melhor esperar a luz do dia."
+        }
+      ]
+    },
+    "maresias|peito-ombro|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Tarde com série espaçada e só o vento no caminho",
+          "analise": "À tarde, o mar chega com um corpo bom e o swell bem alinhado com a praia, além de uma série mais espaçada, que dá tempo de ver a onda chegar de longe e se posicionar com calma. Isso é raro por aqui e muda o jogo: a energia é forte, mas organizada, pressão de verdade sem virar bagunça. O vento onshore (que vem do mar pra terra e bagunça a onda) sopra com uma força que já se sente, picando um pouco a superfície e tirando parte da lisura que esse tipo de fundo de areia costuma entregar quando fica limpo. Ainda assim, dá pra aproveitar bastante: escolha o pico mais abrigado do vento e prepare o fôlego, porque aqui a régua da concorrência costuma ser alta.",
+          "janela": "13h-17h",
+          "aviso": null
+        }
+      ]
+    },
+    "itaunas|cintura-peito|curto-vaga|lateral-forte|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Tarde apertada com o swell fora do ângulo",
+          "analise": "À tarde, o mar entre as dunas chega com corpo mediano, mas o swell bate mais de raspão, longe do ângulo que essa praia gosta de receber. A série vem bem curta, ondas quase grudadas umas nas outras, o que deixa pouco tempo pra ler a formação antes de decidir remar. O vento lateral, que sopra forte de banda, já pica bastante a superfície e tira boa parte da lisura, deixando a parede irregular e mais difícil de trabalhar. Dia mais pra treinar leitura de banco do que pra buscar manobra: vale procurar o canto mais abrigado do vento e ajustar a expectativa pra baixo.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-25T18:13:56.828Z"
+  "generated_at": "2026-09-26T00:09:43.587Z"
 }
