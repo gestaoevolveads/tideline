@@ -187746,7 +187746,227 @@
           "aviso": null
         }
       ]
+    },
+    "praia-grande-arraial|ombro-cabeca|longo-11a13|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã de swell forte e organizado",
+          "analise": "A Praia Grande acorda com um swell, a ondulação que vem de longe, de sul entrando cheio na bancada e formando séries bem espaçadas, dando tempo de ver a onda vindo e se posicionar com calma. O vento bate de lado e pica um pouco a superfície, mas não destrói a organização da série que chega. Na remada dá pra sentir o peso real da massa d'água empurrando, e no drop a pressão cobra leitura rápida de quem entra. Fechamento honesto: é manhã pesada e boa pra quem já tem calo nas costas, vale escolher o trecho mais abrigado do vento e remar cedo antes que ele aumente.",
+          "janela": "6h-9h",
+          "aviso": "Energia forte e vento de lado batendo na água pedem atenção redobrada na queda e na remada de volta."
+        }
+      ]
+    },
+    "praia-brava-arraial|ombro-cabeca|longo-11a13|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Amanhecer pesado pede respeito",
+          "analise": "A Brava amanhece com swell de sul chegando cheio, período longo que organiza séries espaçadas e dá tempo de estudar o pico antes de remar. O vento de lado pica a superfície sem tirar a força da onda, que aqui já nasce mais violenta que nas praias vizinhas. Na água o caldo castiga quem erra o tempo do drop, e a remada de volta cansa por causa do volume de água jogado na praia. Vale entrar só depois de estudar a série de fora e escolher o canto que menos recebe o impacto direto.",
+          "janela": "6h-9h",
+          "aviso": "Praia mais exposta e pesada da região: só quem já tem experiência de verdade deve entrar hoje."
+        }
+      ]
+    },
+    "praia-brava-floripa|joelho-cintura|medio-7a9|lateral-forte|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde fraca e picada de vento",
+          "analise": "A Brava recebe hoje uma condição bem mais mansa do que o normal do pico, com pouca força e período curto que deixa a série apertada e menos organizada. O vento de lado sopra com força e amassa a superfície, tirando o pouco de definição que a onda tinha. Na água a sensação é de pouco empurrão, remada tranquila e queda sem susto, bem diferente do caráter pesado que essa praia costuma entregar. Fechamento honesto: dia fraco pra treinar manobra em onda pequena, não pra buscar tubo.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|ombro-cabeca|longo-11a13|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Série longa entra bonita no pico",
+          "analise": "O Foguete entra na manhã com um swell de sul cheio na bancada, período longo formando séries espaçadas que dão tempo de escolher a melhor onda da sequência. O vento de lado pica de leve a superfície, mas a força da água que vem de longe continua entregando peso real na queda. Quem rema vai sentir o puxão da corrente perto da praia clara de areia branca, e o drop cobra decisão rápida. Vale surfar mais pra dentro do pico, onde a arrebentação é menos violenta, e ficar de olho na correnteza ao voltar pra praia.",
+          "janela": "6h-9h",
+          "aviso": "Energia forte na areia branca: atenção ao impacto da onda ao quebrar perto da praia e à correnteza de retorno."
+        }
+      ]
+    },
+    "figueira|ombro-cabeca|longo-11a13|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Bancada recebe swell longo e generoso",
+          "analise": "A Figueira ganha uma manhã de swell de sul forte, período longo com séries espaçadas e fáceis de ler de fora antes de remar. O vento de lado pica a superfície aos poucos, mas não desmancha o corpo da onda que segue pesada. Na água dá pra sentir a remada puxando contra a correnteza formada pelo volume de água, e o drop pede decisão rápida assim que a parede fecha. Fechamento honesto: manhã boa pra quem já tem repertório em praia aberta de fundo de areia, melhor evitar o pico se ainda tá pegando o jeito.",
+          "janela": "6h-9h",
+          "aviso": "Onda com corpo real: reme com atenção e escolha o trecho mais protegido do vento pra evitar o impacto maior."
+        }
+      ]
+    },
+    "pitangueiras|peito-ombro|longo-11a13|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tarde cheia com onshore fraco",
+          "analise": "A tarde chega com um swell de sul, período longo que organiza uma série generosa e fácil de ler mesmo pra quem tá começando a entender o mar. O vento onshore, o que vem do mar pra terra e costuma bagunçar a onda, sopra fraco hoje e só enruga um pouco a superfície sem estragar a parede. Na água dá pra sentir bastante corpo na onda, remada com resistência e queda com uma pressão gostosa, sem ser assustadora. Fechamento honesto: tarde democrática, boa pra todos os níveis, só vale ficar esperto com o tanto de gente disputando pico.",
+          "janela": "13h-16h",
+          "aviso": "Praia bem movimentada: fique atento aos outros surfistas na fila e na saída da onda."
+        }
+      ]
+    },
+    "tombo|peito-ombro|longo-11a13|onshore-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Tombo mostra a força de sempre",
+          "analise": "O Tombo recebe à tarde um swell de sul com período longo, série espaçada que mantém a fama de sede de campeonato mesmo num dia mediano. O vento onshore, que vem do mar pra terra, sopra fraco e enruga só um pouco a face, sem tirar o corpo da onda. Quem entra sente o peso de verdade na queda, exigindo o movimento de levantar da prancha de uma vez só, rápido e preciso. Fechamento honesto: tarde pra quem já rema bem, com uma pressão que cobra experiência de quem se atreve na arrebentação pesada.",
+          "janela": "13h-16h",
+          "aviso": "Onda historicamente pesada e concorrida por atletas: cuidado redobrado na fila e no impacto perto da praia."
+        }
+      ]
+    },
+    "praia-brava-floripa|joelho-cintura|curto-vaga|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Tarde mini e cristalina",
+          "analise": "A Brava recebe uma tarde bem diferente do que costuma entregar: pouca força na água e período curto, que deixa a série mais apertada e menos organizada. Sem vento nenhum mexendo a superfície, o mar fica liso feito vidro, e a onda quebra limpa mesmo sendo pequena. Na água a sensação é leve, remada tranquila e queda sem susto, ótimo pra treinar manobra sem a pressão do dia a dia pesado desse pico. Fechamento honesto: dia raro de calmaria aqui, vale aproveitar pra afiar o repertório técnico.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "costao-do-santinho|joelho-cintura|curto-vaga|glassy|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Mar liso pro treino de tarde",
+          "analise": "O Costão do Santinho recebe uma tarde tranquila, com pouca força na água e período curto que deixa as séries mais amontoadas. Sem vento pra mexer a superfície, o mar fica espelhado e a onda pequena quebra bem definida, fácil de ler mesmo com pouca experiência. Na água dá pra sentir a queda suave e a remada leve, um convite pra quem quer evoluir sem a pressão de um mar grande. Fechamento honesto: aproveite o cenário do costão e a água calma pra repetir manobra várias vezes na mesma sessão.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|joelho-cintura|curto-vaga|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Manhã pequena e bagunçada",
+          "analise": "A Praia Grande amanhece com pouca força na água e período curto, série apertada que atropela uma onda na outra sem dar tempo de organizar. O vento de lado sopra forte e pica bastante a superfície, deixando a face da onda irregular. Na água a remada cansa mais do que deveria pro tamanho pequeno da condição, e a queda vem sem muita pressão por trás. Fechamento honesto: manhã fraca, melhor guardar a prancha e esperar outra janela mais organizada.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "praia-brava-arraial|joelho-cintura|curto-vaga|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Pouca água, vento incomodando",
+          "analise": "A Brava amanhece rara vez tão mansa, com pouca força na água e período curto que deixa a série apertada e sem organização. O vento de lado sopra forte e amassa a superfície, tirando qualquer chance de parede limpa. Quem entra sente pouco empurrão na queda e uma remada mais cansativa do que o tamanho pequeno da onda merece. Fechamento honesto: dia fraco até pra esse pico que normalmente cobra respeito, vale usar pra soltar o braço sem grandes expectativas.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "foguete|joelho-cintura|curto-vaga|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Foguete amanhece fraco",
+          "analise": "O Foguete amanhece com pouca força e período curto, série apertada que não dá muito tempo de escolha entre uma onda e outra. O vento de lado sopra moderado e pica a superfície, deixando a parede menos definida do que o normal desse pico. Na água a sensação é de queda suave e remada tranquila, sem a pressão que a praia costuma entregar em dias maiores. Fechamento honesto: manhã fraca pra buscar performance, mas serve bem pra quem só quer molhar a prancha sem compromisso.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "bonete|joelho-cintura|bom-9a11|lateral-fraco|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Trilha vale a pena hoje",
+          "analise": "O Bonete recebe à tarde uma condição pequena mas com período mais espaçado, o que organiza a série e dá tempo de escolher a onda certa mesmo com pouca força na água. O vento de lado sopra fraco e quase não mexe na superfície, deixando a parede limpa pro tamanho que chega. Na água a queda é suave e a remada tranquila, um contraste bonito com o cenário selvagem e isolado dessa praia de Ilhabela. Fechamento honesto: vale a trilha ou o barco pra aproveitar um mar organizado longe da multidão, só planeje a volta com calma.",
+          "janela": "13h-16h",
+          "aviso": "Praia isolada, só com acesso por trilha ou barco: vá com companhia e de olho no horário de volta antes de escurecer."
+        }
+      ]
+    },
+    "figueira|joelho-cintura|curto-vaga|lateral-forte|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Vento forte de lado atrapalha",
+          "analise": "A Figueira amanhece com pouca força na água e período curto, série apertada que se atropela sem dar tempo de organizar a remada. O vento de lado sopra forte hoje e pica bastante a superfície, deixando a face da onda irregular e difícil de ler. Quem entra sente pouco empurrão na queda e uma remada mais cansativa pro tamanho pequeno que chega. Fechamento honesto: manhã fraca por causa do vento, melhor esperar ele cair ou buscar outro pico mais protegido.",
+          "janela": null,
+          "aviso": null
+        }
+      ]
+    },
+    "camburi|joelho-cintura|bom-9a11|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Camburi ganha manhã redonda",
+          "analise": "Camburi acorda com uma condição pequena mas de período mais espaçado, o que organiza bem a série mesmo com pouca força na água. O vento de lado sopra fraco e quase não incomoda a superfície, deixando a onda limpa e fácil de ler pra qualquer nível. Na água a queda é suave, a remada tranquila, e dá pra repetir manobra várias vezes sem cansar demais. Fechamento honesto: manhã boa pra todo mundo aproveitar a energia vibrante da praia, do iniciante ao mais experiente.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "rosa|cintura-peito|curto-vaga|onshore-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Baía bonita com mar mexido",
+          "analise": "A Praia do Rosa recebe pela manhã um swell que chega meio de raspão, fora do ângulo ideal da baía, e isso já tira um pouco da organização mesmo com um tamanho razoável de água. O período curto deixa a série apertada, e o vento onshore, que vem do mar pra terra, sopra moderado e enruga bastante a superfície. Na água a sensação é de queda menos previsível e remada que exige mais atenção pra pegar o momento certo. Fechamento honesto: dia mediano nessa baía cênica, melhor entrar com expectativa baixa e aproveitar a paisagem entre uma onda e outra.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "cassino|peito-ombro|medio-7a9|lateral-fraco|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Molhe organiza pouco pela manhã",
+          "analise": "O Cassino tem uma manhã de swell que chega de um ângulo fora do ideal pra essa costa, o que deixa a onda com menos organização apesar do tamanho generoso que vem. O período médio ainda segura uma série razoável, e o vento de lado sopra fraco, quase não mexendo na superfície. Na água a temperatura fria já avisa que o corpo sente o esforço mais rápido, e a queda vem com um empurrão decente mesmo sem a leitura perfeita do swell. Fechamento honesto: vale surfar perto dos molhes onde a onda ainda organiza melhor, com atenção redobrada na correnteza da barra.",
+          "janela": "6h-9h",
+          "aviso": "Perto dos molhes a correnteza pode puxar forte e a água é fria: fique de olho na saída e não force sozinho."
+        }
+      ]
+    },
+    "cassino|peito-ombro|medio-7a9|onshore-fraco|tarde|borda": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Tarde fria e sem muita força",
+          "analise": "O Cassino recebe à tarde um swell de ângulo fora do ideal, o que já deixa a onda menos organizada mesmo com um tamanho que ainda chama atenção. O vento onshore, que vem do mar pra terra, sopra fraco e enruga a superfície aos poucos, tirando um pouco mais da definição da parede. Na água o frio pesa tanto quanto a condição, e a queda vem sem muita pressão por trás, exigindo paciência pra pegar a onda certa. Fechamento honesto: tarde mediana e gelada, melhor sessão curta e objetiva do que ficar horas esperando.",
+          "janela": "13h-16h",
+          "aviso": "Água gelada e correnteza perto dos molhes: não fique muito tempo exposto e sempre com companhia."
+        }
+      ]
+    },
+    "cassino|peito-ombro|medio-7a9|offshore-moderado|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Noite limpa perto do molhe",
+          "analise": "Já é noite, mas quem lê essa condição pra planejar a próxima entrada encontra um cenário organizado: swell, a ondulação que vem de longe, alinhado direto na costa, período médio segurando uma série com corpo razoável. O vento offshore, que sai da terra pro mar e alisa a onda, sopra moderado, o tipo de condição que costuma virar sessão de qualidade. Sem visibilidade não dá pra avaliar a água de verdade, então essa leitura serve só de aviso do que pode vir pela frente. Fechamento honesto: se o vento se mantiver firme, vale aproveitar assim que der pra enxergar o pico direito perto dos molhes.",
+          "janela": null,
+          "aviso": "Sem luz natural não dá pra ler a água com segurança: use essa leitura só pra planejar a entrada assim que der pra enxergar bem."
+        }
+      ]
+    },
+    "tramandai|peito-ombro|curto-vaga|offshore-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Barra entrega tamanho sem série",
+          "analise": "Tramandaí ganha uma manhã de tamanho generoso mas swell de ângulo fora do ideal, o que tira organização mesmo com bastante água chegando. O período curto deixa a série apertada e atropelada, sem muito espaço entre uma onda e outra. O vento offshore, que sai da terra pro mar, sopra moderado e alisa a face, ajudando a disfarçar um pouco a bagunça do período curto. Fechamento honesto: dá pra aproveitar o tamanho perto da barra, mas vale entrar com atenção total na correnteza que muda de um lado pro outro.",
+          "janela": "6h-9h",
+          "aviso": "Perto da barra a correnteza muda rápido: fique de olho no canal e não se afaste demais do pico."
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-26T00:09:43.587Z"
+  "generated_at": "2026-09-26T06:11:46.575Z"
 }
