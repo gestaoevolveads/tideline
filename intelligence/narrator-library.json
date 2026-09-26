@@ -187966,7 +187966,117 @@
           "aviso": "Perto da barra a correnteza muda rápido: fique de olho no canal e não se afaste demais do pico."
         }
       ]
+    },
+    "praia-brava-arraial|joelho-cintura|curto-vaga|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Manhã de swell leste pra quem já rema com confiança",
+          "analise": "A Brava acorda com um mar de força moderada, energia que ainda não castiga mas já pede remada firme pra furar a arrebentação. Você vai sentir o vento de lado, aquele que sopra na diagonal e mexe na textura da parede sem desmanchar de vez, exigindo leitura rápida pra pegar o pico certo. A série vem apertada, sinal de vaga mais de vento do que de swell organizado vindo de longe, então as ondas se atropelam um pouco. Esse pico é mais exposto e pesado por natureza, então a dica é reservar a sessão pra quem já tem estrada, escolhendo o canto mais abrigado do vento pra remar com menos luta.",
+          "janela": "6h-9h",
+          "aviso": "Mesmo pequena hoje, essa praia é mais exposta e pesada por natureza: não é o lugar ideal pra quem ainda tá evoluindo."
+        }
+      ]
+    },
+    "unamar|joelho-cintura|curto-vaga|lateral-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 2,
+          "titulo": "Vaguinha gostosa pra treinar remada em Unamar",
+          "analise": "O mar de Unamar vem manso essa manhã, com uma energia enxuta que empurra pouco e deixa a remada leve mesmo pra quem tá começando. O vento lateral está fraco, soprando de lado sem força pra bagunçar muito a textura, então a parede segue com uma limpeza razoável. O período curto entrega série apertada, ondas chegando quase uma em cima da outra, sem tempo de sobra pra escolher a melhor. É um dia bom pra quem já tem alguma base soltar a mão e treinar manobra em onda pequena, sem pressão de queda pesada.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-grande-arraial|joelho-cintura|curto-vaga|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Grande recebe o leste com pico organizado",
+          "analise": "A Grande recebe um swell de leste que entra com uma energia enxuta, dando uma remada tranquila pra quem já pegou onda antes. O vento sopra de lado, mexendo a face sem desmanchar de vez a parede, e a série chega apertada, sinal de ondas nascendo mais perto da costa do que vindo de longe. A praia costuma ficar cheia justamente por isso: onda fácil de ler e ambiente convidativo pro dia a dia do surfista. A dica pra hoje é remar cedo, aproveitando o pico mais organizado antes que o movimento do lugar aumente.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "monte-alto|joelho-cintura|curto-vaga|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Sossego de Monte Alto nessa manhã de swell moderado",
+          "analise": "Monte Alto segue seu estilo de sempre: mar tranquilo, poucas pessoas na água e uma condição fácil de ler. A energia hoje é mediana, dá pra sentir um empurrão razoável na remada sem cansar demais quem tá pegando onda. O vento vem de lado, bagunçando um pouco a textura da parede mas sem destruir a onda. As séries chegam próximas, sinal de período curto, então vale ficar mais tempo posicionado esperando a combinação certa. É uma boa manhã pra quem quer surfar sem disputar pico com ninguém.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "figueira|joelho-cintura|curto-vaga|lateral-moderado|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 3,
+          "titulo": "Figueira funcionando com o swell certo de leste",
+          "analise": "A Figueira gosta de leste e é exatamente o que está entrando hoje, encaixando direto na praia sem perder força pelo caminho. A energia é moderada, dá pra sentir um empurrão gostoso na remada sem que o caldo pese demais quando a onda fecha. O vento lateral, que sopra de lado, deixa a parede um pouco irregular, então a leitura de onde remar pede atenção redobrada. A série vem apertada, ondas próximas umas das outras, e a dica é aproveitar esse encaixe de leste enquanto ele dura, porque nem toda praia da região recebe essa direção.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "praia-do-cupe|peito-ombro|curto-vaga|glassy|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 6,
+          "titulo": "Cupe com a manhã mais consistente de Porto de Galinhas",
+          "analise": "O Cupe amanhece com uma energia mais forte do que o normal por aqui, ondas com peso de verdade empurrando o surfista na descida. O vento tá quase parado, mal dá pra sentir ele batendo de lado, então a superfície fica com uma lisura rara que ajuda a ler cada onda antes de remar. O período curto deixa as séries próximas umas das outras, atropelando um pouco a organização, mas a consistência típica daqui compensa a falta de intervalo. O fundo de areia se move com o tempo, então vale estudar o banco de perto antes de escolher onde entrar, principalmente com essa força toda na água.",
+          "janela": "6h-10h",
+          "aviso": null
+        }
+      ]
+    },
+    "capao-da-canoa|peito-ombro|curto-vaga|offshore-moderado|manha|borda": {
+      "variacoes": [
+        {
+          "score": 5,
+          "titulo": "Capão recebe um leste que só bate de raspão",
+          "analise": "Capão da Canoa está com um swell que entra de leste, direção que aqui só pega de raspão, sem embicar em cheio na praia como faria um bom sul. Mesmo assim a energia tá considerável, dá pra sentir a força empurrando na descida e cobrando atenção de quem se atrasa na queda. O vento sopra da terra pro mar, aquele terral que alisa a face, então a onda ganha uma parede limpa mesmo sem o encaixe perfeito de direção. A dica pra hoje é não esperar a versão mais organizada do pico, mas aproveitar a força que sobrou mesmo com o swell batendo de lado.",
+          "janela": "6h-9h",
+          "aviso": null
+        }
+      ]
+    },
+    "camburi|peito-ombro|medio-7a9|onshore-moderado|tarde|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Tarde de Camburi com onshore mexendo a paisagem",
+          "analise": "Camburi entra na tarde com uma energia que já dá gosto, empurrão de verdade na remada e queda com peso suficiente pra sentir a diferença de um dia fraco. O vento onshore, que vem do mar pra terra e bagunça a onda, já começou a encrespar a superfície, então a leitura fica mais disputada conforme os minutos passam. O período aqui nem é curto nem é longo, série que dá um respiro razoável entre as ondas sem virar atropelo. Vale entrar logo nas primeiras horas dessa janela, antes do vento ganhar ainda mais força e fechar de vez a parede.",
+          "janela": "13h-16h",
+          "aviso": null
+        }
+      ]
+    },
+    "itaunas|peito-ombro|curto-vaga|onshore-fraco|noite|dentro": {
+      "variacoes": [
+        {
+          "score": 4,
+          "titulo": "Noite de swell firme entre as dunas de Itaúnas",
+          "analise": "A noite chega com uma energia que ainda carrega peso, ondas que empurram com força mesmo sem o sol pra mostrar a cara do mar. O vento onshore está fraco, mal dando pra sentir aquele efeito de bagunçar a água que ele costuma trazer, então a condição segue mais organizada do que o normal por aqui. O período curto faz as séries chegarem próximas, atropelando um pouco a contagem de quem tenta ler o intervalo no escuro. A dica é anotar essa força toda e voltar assim que a luz do dia permitir enxergar o pico com segurança.",
+          "janela": null,
+          "aviso": "Sem visibilidade natural, remar de noite exige cautela redobrada mesmo com a onda organizada."
+        }
+      ]
+    },
+    "maresias|peito-ombro|bom-9a11|onshore-fraco|manha|dentro": {
+      "variacoes": [
+        {
+          "score": 7,
+          "titulo": "Manhã de peso em Maresias, terra do título mundial",
+          "analise": "Maresias amanhece com uma energia pesada de verdade, dessas que fazem o caldo cobrar caro de quem se atrasa na queda. O período vem espaçado, série que dá tempo de ver a onda chegando de longe e se posicionar com calma antes da parede fechar. O vento onshore está fraco, só arranhando a superfície sem desmanchar a força que vem por trás, então a condição segue firme e generosa pra quem tem nível. Aqui a régua é alta, terra de nomes grandes do surfe mundial, então a dica é remar com respeito à disputa de pico e escolher bem antes de se meter no canal principal.",
+          "janela": "6h-9h",
+          "aviso": "Pico concorrido, com hierarquia forte na água: se for visitante, vale escolher um canto mais vazio pra pegar suas ondas."
+        }
+      ]
     }
   },
-  "generated_at": "2026-09-26T06:11:46.575Z"
+  "generated_at": "2026-09-26T12:08:29.714Z"
 }
